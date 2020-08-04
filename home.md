@@ -1,7 +1,11 @@
 What is MythicMobs?
 -------------------
 
-![][1] MythicMobs allows server administrators to fully modify all
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/_YQUS3sDbI0" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
+MythicMobs allows server administrators to fully modify all
 attributes of monsters on your server, and even create your own mobs,
 bosses, and other many other fun mob-related things.
 
