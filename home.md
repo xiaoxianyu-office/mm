@@ -106,12 +106,20 @@ To sum it up, Mythic Mobs gives you control over and access to:
 Setup
 -----
 
--   [Configuration][]
--   [Commands][]
--   [Examples][]
--   [FAQ's][]
--   [Permissions][]
--   [Videos][]
+-   [Configuration]
+-   [Commands]
+-   [Examples]
+-   [FAQ's]
+-   [Permissions]
+-   [Videos]
+
+  [1]: youtube>_YQUS3sDbI0
+  [Configuration]: Configuration
+  [Commands]: Commands
+  [Examples]: Examples
+  [FAQ's]: FAQ's
+  [Permissions]: Permissions
+  [Videos]: Videos
 
 Help & Questions
 ----------------
