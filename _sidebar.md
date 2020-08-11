@@ -1,23 +1,14 @@
-Plugin Manual
-=============
-
 * [[Home]]
 * [[Changelogs]]
 * [[Premium Features]]
-* [[Commands]]
-* [[Permissions]]
+* [[Commands and Permissions]]
 * [FAQ / Common Issues](FAQ)
 * [Resources and Examples](Resources)
-* [Add-on: MythicArena](https://git.lumine.io/mythiccraft/MythicArena/)
-* [Add-on: MythicCrucible (Items)](https://git.lumine.io/mythiccraft/MythicCrucible/)
-* [Add-on: MythicEnchants (Enchants)](https://git.lumine.io/mythiccraft/MythicEnchants/)
-* [Add-on: MythicRPG / MMOCore](https://git.lumine.io/mythiccraft/MMOCore/)
+* [Mythic Add-ons](Add-ons)
 * [[Compatible Plugins]]
 * [API Information](API)
-
 ------------------------------------------------------------------------
-
-* Mobs
+### Mobs
   * [Overview](Mobs/Overview)
   * [Types](Mobs/Types)
   * [Mob Options](Mobs/Options)
