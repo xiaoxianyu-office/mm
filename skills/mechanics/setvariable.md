@@ -18,7 +18,8 @@ Attributes
 | duration  | d       | How long (in ticks) the variable should last. Does not apply to SKILL-scoped variables.                                                                                                                            | Infinite      |
 
   
-===== Examples =====
+Examples
+----
 
 In this example, the target players would only hear growling from any
 number of nearby bears once every 10 minutes.
