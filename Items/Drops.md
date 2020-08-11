@@ -1,138 +1,181 @@
-Item Attributes
-===============
+Drops and Drop Tables
+=====================
 
-*Added in version 2.4*
+![](http://fs5.directupload.net/images/160308/p4f6hk8e.jpg)
 
-The attributes section for items made with MythicMobs handles the new
-Minecraft 1.9 attribute system. It makes it possible to apply different
-attributes given to the entity wearing/using it depeding on the slot.
-The old system in which attributes for items where put into the
-*Options:*-tag are no longer supported.
+The *Drops* tag can be added to your custom mobs to allow them to drop
+items of your choice upon their death. There are three types of custom
+drops available in MythicMobs to distinguish between.
 
-    Item:
-      Id: item_id
-      Attributes:
-        Slot:
-          Attribute: [number]
+You can make any number of files in the DropTables folder, and they can
+be named anything you like as long as the file ends in .yml.
 
-Attributes in this section also allow number ranges and forced
-percentages. See examples at the bottom of the page.
-
-Attributes
-----------
-
-**AttackSpeed: \[number\]**
-
--   Handles the attack speed or cooldown time of the item. Only does
-    something when used on weapons.
--   Using this attribute will override the original attack speed value
-    of the item. Base item attack speed and custom attack speed do not
-    stack. See [Common Items](/databases/items/commonitems) for a list
-    of base attack speed values.
-
-**Armor: \[number\]**
-
--   Sets the armor stat of the item.
--   Is applicable to all items - not exclusive to armor type items.
--   1 armor = 0.5 plate pieces
-
-**ArmorToughness: \[number\]**
-
--   `Not sure what this does yet but it's in there!`
--   (Apparently affects the damage reduction percentage of the armor)
-
-**Damage: \[number\]**
-
--   Sets the melee damage of the item. (May in fact ADD onto the items
-    base damage.
--   Using this attribute will override the original damage value of the
-    item. Base item damage and custom damage do not stack.
--   The above may only apply to non-weapon/tool items.
--   1 damage = 0.5 hearts damage
-
-**FollowRange: \[number\]**
-
--   Sets the follow range stat of the item.
--   Only has an effect when worn by mobs.
--   `Not implemented yet as of build #1530`
-
-**Health: \[number\]**
-
--   Sets the health of the item which will give the wearer extra or
-    minus health.
--   Use positive numbers for extra health and negative numbers for minus
-    health.
--   1 health = 0.5 hearts health
-
-**Luck: \[number\]**
-
--   Sets the luck or bad luck of the item.
--   Use positive numbers for luck and negative numbers for bad luck.
-
-**KnockbackResistance: \[number\]**
-
--   Sets the knockback resistance of the item.
--   Use *\[number\]%* to force percentage values.
-    -   Examples:
-        -   **KnockbackResistance: 99%**
-
-**MovementSpeed: \[number\]**
-
--   Sets the movement speed of the item.
--   Use positive numbers for additional speed and negative numbers for
-    minus speed.
-
-Slots
+Drops
 -----
 
-| **Slot** | **Explanation**                                                           |
-|----------|---------------------------------------------------------------------------|
-| All      | Special option. Will apply the given attributes to all slots.             |
-| MainHand | Attributes will only apply if item is being held in the main hand.        |
-| OffHand  | Attributes will only apply if item is being held in the off hand.         |
-| Head     | Attributes will only apply if item is being worn on the head slot.        |
-| Chest    | Attributes will only apply if item is being worn on the chest/torso slot. |
-| Legs     | Attributes will only apply if item is being worn on the legs slot.        |
-| Feet     | Attributes will only apply if item is being worn on the feet slot.        |
+Drops are the simplest way to implement custom drops.
+
+    internal_mobname:
+      Type: <mobtype>
+      Drops:
+      - <item/exp/droptable> <amount> <chance>
+      - <item/exp/droptable> <amount> <chance>
+      - ...
+
+**&lt;item/exp/droptable&gt;**  
+Can be either an item from MythicMobs, a vanilla item, exp, a drop table
+or an item/experience for a supported plugin.
+
+**&lt;amount&gt;**  
+The amount of items to be dropped. Can be a number range; for example
+*1-3*.
+
+**&lt;chance&gt;**  
+The chance for the specified item to be dropped. Must be a number
+between 0 and 1 [1].  
+Note: Versions 2.5.0 and onwards allow lower chances than 0.1 . [2].  
+Note: Versions 4.4.1 and onwards allow percentage chances. (10% instead
+of 0.1).
+
+| **Special Drops**           | **Explanation**                                          | **Example**                             |
+|-----------------------------|----------------------------------------------------------|-----------------------------------------|
+| **champions-exp**           | Will drop experience points for the plugin *Champions*.  |                                         |
+| **skillapi-exp**            | Will drop experience points for the plugin *SkillAPI*.   |                                         |
+| **heroesexp**               | Will drop experience points for the plugin *Heroes*.     |                                         |
+| **mcmmo-exp**               | Will drop experience points for the plugin *MCMMO*.      |                                         |
+| **exp**                     | Will drop regular Minecraft experience points.           |                                         |
+| **money**                   | Will drop money for the plugin *Vault*.                  |                                         |
+| **mythicdrop &lt;item&gt;** | Will drop an &lt;item&gt; from the plugin *MythicDrops*. |                                         |
+| **phatloot &lt;item&gt;**   | Will drop an &lt;item&gt; from the plugin *PhatLoot*.    |                                         |
+| **cmd**                     | Will run a command in console                            | `- cmd{c="warp <trigger.name> spawn"}`  |
+| **mmoitems**                | Drops a mmoitems item                                    | `- mmoitems{type=sword;id=cutlass} 1 1` |
+
+For more about MMOItems, see here:
+<https://www.mythicmobs.net/mmoitems/manual/doku.php/items/droptables>
+
+Drop Tables
+-----------
+
+Drop Tables are collections of multiple drops that can be assigned to
+mobs. Using them makes it easier to organize your drops in almost any
+case where your mobs are supposed to drop multiple items.
+
+Drop Tables are stored in their own respective configuration-files
+located in */MythicMobs/DropTables*. They have the advantage of being
+able to utilize [Conditions](/conditions/start) and various other
+special options, and can be shared by multiple mobs without the need of
+duplicating it.
+
+Drop Tables can be nested - a Drop Table can contain multiple other Drop
+Tables.
+
+    internal_mobname:
+      Type: <mobtype>
+      Drops:
+      - <internal_droptablename>
+
+The structure of a fully-configured drop table looks like this:
+
+    internal_droptablename: #lets you specify exactly how many items will drop from this table
+      TotalItems: <amount>
+      MinItems: <amount> #defaults to TotalItems' value
+      MaxItems: <amount> #defaults to TotalItems' value
+      BonusLuckItems: <multiplier>
+      BonusLevelItems: <multiplier>
+      Conditions:        # Conditions of the dropper
+      - condition 1
+      - condition 2
+      - ...
+      TriggerConditions: # Conditions of the person that triggered the drop (i.e. the killer of the mob)
+      - condition 1
+      - ...
+      Drops:
+      - <item/exp/droptable> <amount> <chance>
+      - ...
+
+DropTable Options
+=================
+
+**TotalItems: \[number\]**
+
+-   Defines exactly how many items the table will drop
+-   Setting this causes item chances to be calculated as weights
+
+**MaxItems: \[number\]**
+
+-   Defines a maximum number of items that will drop
+-   If only this is set, drops will run down the list unless the maximum
+    number of items is reached
+
+**MinItems: \[number\]**
+
+-   Defines a minimum number of items that will drop
+-   If only this is set, drops will run down the list until the minimum
+    items is reached
+
+**If you enable *both* MinItems and MaxItems, the chances for each table
+entry will become *weights* instead.**
+
+**BonusLevelItems: \[number\]/\[range\]**
+
+-   A modifier on the number of items dropped based on the mob's level
+-   Can be set as a range, i.e. 0.2to0.5
+-   Works like: **amount = amount + (mob\_level \*
+    bonus\_level\_items)**
+-   Requires that **TotalItems**, **MinItems**, or **MaxItems** be set
+    on the table to work
+
+**BonusLuckItems: \[number\]/\[range\]**
+
+-   A modifier on the number of items dropped based on the killer's luck
+    stat
+-   Can be set as a range, i.e. 0.15to8
+-   Works with Luck attribute, Luck-based enchants/curses, and Luck
+    potion effects
+-   Works like: **amount = amount + (luck \* bonus\_luck\_items)**
+-   Requires that **TotalItems**, **MinItems**, or **MaxItems** be set
+    on the table to work
+
+*Bonus modifiers will increase any set Min/Max values as expected*
+
+This is all there is to it!
 
 Examples
-========
+--------
 
-This example item will grant +10 luck when the item is held in the main
-hand, but will grant +7 luck and +2 extra damage if the item is held in
-the off hand slot:
+This mob will always drop a bunch of experience and some rotten flesh,
+but is also using a droptable which is described further below.
 
-    lucky_charms:
-      Id: potato_item
-      Display: 'Rotten Lucky Charm'
-      Attributes:
-        MainHand:
-          Luck: 10
-        OffHand:
-          Luck: 7
-          Damage: 2
+    snow_loving_zombie:
+      Type: zombie
+      Health: 100
+      Equipment:
+      - snowsword:0
+      Drops:
+      - exp 75-125 1
+      - rare_snowsword_droptable
 
-This example item grants +2 extra health no matter in which slot the
-item is being held, but will also grant +4% movement speed if the item
-is worn in the feet slot:
+This example is a droptable that has a 5 % chance of dropping a custom
+sword, but only if the mob is killed in an "ICE\_PLAINS" biome and if a
+player is within 20 blocks.
 
-    happy_feet:
-      Id: leather_boots
-      Display: 'Penguin Hide'
-      Attributes:
-        All:
-          Health: 2
-        Feet:
-          MovementSpeed: 0.04
+    rare_snowsword_droptable:
+      Conditions:
+      - inbiome ICE_PLAINS
+      - playerwithin 20
+      Drops:
+      - snowsword 1 0.05
 
-Each time this item is generated it will have a random damage value
-between 3 and 5 and a random speed bonus between 1 % and 5 % when worn
-in the main hand:
+In this example, the DropTable would drop 5 gold/diamonds if the player
+has no Luck, and 15-27 gold/diamonds if the player has a Luck V enchant.
 
-    lucky_sword:
-      Id: wood_sword
-      Display: '&eLucky Sword&r'
-      Attributes:
-        MainHand:
-          Damage: 3-5
-          MovementSpeed: 0.01-0.05
+    LuckyDroptable:
+      TotalItems: 5
+      BonusLuckItems: 2to5
+      Drops:
+      - GOLD_NUGGET 1 1
+      - DIAMOND 1 0.2
+
+[1] 1 = 100 %, 0.5 = 50 % ...
+
+[2] This new limit is 2^-1022 or 2.225074e-308
