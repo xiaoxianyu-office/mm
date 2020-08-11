@@ -1,181 +1,254 @@
-Drops and Drop Tables
-=====================
+Items
+=====
 
-![](http://fs5.directupload.net/images/160308/p4f6hk8e.jpg)
+![](http://fs5.directupload.net/images/160306/or6m6n2s.jpg)
 
-The *Drops* tag can be added to your custom mobs to allow them to drop
-items of your choice upon their death. There are three types of custom
-drops available in MythicMobs to distinguish between.
+Making custom items in Mythic Mobs is quite easy. Unlike mobs and skills
+however, items made with this plugin do not come with any special or
+unique options. Any items you create with MythicMobs could also be
+created by Minecraft commands, though making the items using the
+MythicMobs configurations is much more comfortable.
 
-You can make any number of files in the DropTables folder, and they can
-be named anything you like as long as the file ends in .yml.
+Of the following options available for items, only *internal\_itemname*
+and *Id* are required. All other options/attributes are completely
+optional.
 
-Drops
------
+You can make any number of files in the Items folder, and they can be
+named anything you like as long as the file ends in .yml.
 
-Drops are the simplest way to implement custom drops.
+    iternal_itemname:
+      Id:
+      Data:
+      Display:
+      Model:
+      Attributes:
+      Amount:
+      Options:
+      Durability:
+      Enchantments:
+      Lore:
+      PotionEffects:
+      BannerLayers:
 
-    internal_mobname:
-      Type: <mobtype>
-      Drops:
-      - <item/exp/droptable> <amount> <chance>
-      - <item/exp/droptable> <amount> <chance>
-      - ...
+Breaking down the options
+-------------------------
 
-**&lt;item/exp/droptable&gt;**  
-Can be either an item from MythicMobs, a vanilla item, exp, a drop table
-or an item/experience for a supported plugin.
+-   **internal\_itemname:**
+    -   This string will be how your item is referenced internally in
+        MythicMobs and can be any name you like.
+    -   Must be alphanumerical and is case sensitive.
+    -   Examples:
+        -   **strong\_sword:**
+        -   **StrongSword:**
+        -   **strongsword:**
 
-**&lt;amount&gt;**  
-The amount of items to be dropped. Can be a number range; for example
-*1-3*.
+<!-- -->
 
-**&lt;chance&gt;**  
-The chance for the specified item to be dropped. Must be a number
-between 0 and 1 [1].  
-Note: Versions 2.5.0 and onwards allow lower chances than 0.1 . [2].  
-Note: Versions 4.4.1 and onwards allow percentage chances. (10% instead
-of 0.1).
+-   **Id:**
+    -   Defines the type of item.
+    -   Can be either the item id or the bukkit material/item name.
+    -   Often used items are listed here: [Common Item
+        IDs](/databases/items/commonitems)
+    -   A list of Spigot IDs for 1.12.2 is [available
+        here.](https://helpch.at/docs/1.12.2/org/bukkit/Material.html)
+    -   Examples:
+        -   **Id: 359**
+        -   **Id: diamond\_sword**
+    -   It is STRONGLY RECOMMENDED to use namespaced item IDs, e.g.
+        diamond\_sword, on Minecraft 1.12.2.
+    -   Numbered IDs do not exist in versions 1.13.2 and above, and you
+        will save yourself a lot of time if you don't rely on the old
+        numbered ID system.
 
-| **Special Drops**           | **Explanation**                                          | **Example**                             |
-|-----------------------------|----------------------------------------------------------|-----------------------------------------|
-| **champions-exp**           | Will drop experience points for the plugin *Champions*.  |                                         |
-| **skillapi-exp**            | Will drop experience points for the plugin *SkillAPI*.   |                                         |
-| **heroesexp**               | Will drop experience points for the plugin *Heroes*.     |                                         |
-| **mcmmo-exp**               | Will drop experience points for the plugin *MCMMO*.      |                                         |
-| **exp**                     | Will drop regular Minecraft experience points.           |                                         |
-| **money**                   | Will drop money for the plugin *Vault*.                  |                                         |
-| **mythicdrop &lt;item&gt;** | Will drop an &lt;item&gt; from the plugin *MythicDrops*. |                                         |
-| **phatloot &lt;item&gt;**   | Will drop an &lt;item&gt; from the plugin *PhatLoot*.    |                                         |
-| **cmd**                     | Will run a command in console                            | `- cmd{c="warp <trigger.name> spawn"}`  |
-| **mmoitems**                | Drops a mmoitems item                                    | `- mmoitems{type=sword;id=cutlass} 1 1` |
+<!-- -->
 
-For more about MMOItems, see here:
-<https://www.mythicmobs.net/mmoitems/manual/doku.php/items/droptables>
+-   **Data:**
+    -   Sets the data value of the item created.
+    -   Used to specify the *used up* durability points on items,
+        weapons or armor or to specify the sub-type of a block.
 
-Drop Tables
------------
+<!-- -->
 
-Drop Tables are collections of multiple drops that can be assigned to
-mobs. Using them makes it easier to organize your drops in almost any
-case where your mobs are supposed to drop multiple items.
+-   **Display: '\[display\_name\]'**
+    -   Sets the display name of the item.
+    -   Supports color codes and string variables:
+        [Variables](/skills/stringvariables)
+    -   Must be encased by single quotes.
+    -   For using single quotes inside of the name, you can use the
+        &lt;&sq&gt; variable.
+    -   Examples:
+        -   **Display: 'Very Strong Sword'**
+        -   **Display: '&eVery Strong Sword'**
 
-Drop Tables are stored in their own respective configuration-files
-located in */MythicMobs/DropTables*. They have the advantage of being
-able to utilize [Conditions](/conditions/start) and various other
-special options, and can be shared by multiple mobs without the need of
-duplicating it.
+<!-- -->
 
-Drop Tables can be nested - a Drop Table can contain multiple other Drop
-Tables.
+-   **Model: \[a number\]** *(Added in v4.7)*
 
-    internal_mobname:
-      Type: <mobtype>
-      Drops:
-      - <internal_droptablename>
+<!-- -->
 
-The structure of a fully-configured drop table looks like this:
+        * Sets the CustomModelData tag on the item.
+        * Only usable in 1.14+
 
-    internal_droptablename: #lets you specify exactly how many items will drop from this table
-      TotalItems: <amount>
-      MinItems: <amount> #defaults to TotalItems' value
-      MaxItems: <amount> #defaults to TotalItems' value
-      BonusLuckItems: <multiplier>
-      BonusLevelItems: <multiplier>
-      Conditions:        # Conditions of the dropper
-      - condition 1
-      - condition 2
-      - ...
-      TriggerConditions: # Conditions of the person that triggered the drop (i.e. the killer of the mob)
-      - condition 1
-      - ...
-      Drops:
-      - <item/exp/droptable> <amount> <chance>
-      - ...
+-   **Attributes:**
+    -   Special field that allows the addition of item attributes to
+        certain entity slots: [Item
+        Attributes](/databases/items/attributes)
 
-DropTable Options
-=================
+<!-- -->
 
-**TotalItems: \[number\]**
+-   **Amount:**
+    -   Defines the default amount of items to give when this item is
+        being called by the plugin.
+    -   Examples:
+        -   **Amount: 8**
 
--   Defines exactly how many items the table will drop
--   Setting this causes item chances to be calculated as weights
+<!-- -->
 
-**MaxItems: \[number\]**
+-   **Options:**
+    -   This is a special field which comes with numerous sub-options,
+        determining lots of extra attributes for the item.
+    -   A complete list of all available options: [Item
+        Options](/databases/items/options)
 
--   Defines a maximum number of items that will drop
--   If only this is set, drops will run down the list unless the maximum
-    number of items is reached
+<!-- -->
 
-**MinItems: \[number\]**
+-   **Durability:**
+    -   Defines the starting durability of the item.
 
--   Defines a minimum number of items that will drop
--   If only this is set, drops will run down the list until the minimum
-    items is reached
+<!-- -->
 
-**If you enable *both* MinItems and MaxItems, the chances for each table
-entry will become *weights* instead.**
+-   \*\*Hide: \*\* *Added in version 2.4*
+    -   Special field that allows to hide specific things from the item
+        tooltip.
+    -   Possible are "ATTRIBUTES", "ENCHANTS", "DESTROYS", "PLACED\_ON",
+        "POTION\_EFFECTS" and "UNBREAKABLE".
+    -   Examples:
+        -   `  Hide:
+              - ATTRIBUTES
+              - UNBREAKABLE`
 
-**BonusLevelItems: \[number\]/\[range\]**
+<!-- -->
 
--   A modifier on the number of items dropped based on the mob's level
--   Can be set as a range, i.e. 0.2to0.5
--   Works like: **amount = amount + (mob\_level \*
-    bonus\_level\_items)**
--   Requires that **TotalItems**, **MinItems**, or **MaxItems** be set
-    on the table to work
+-   **Enchantments:**
+    -   This field allows to add enchantments to items.
+    -   Any type of of item can have any enchanment(s).
+    -   A complete list of all available enchantments:
+        [Enchantments](/databases/items/enchantments)
 
-**BonusLuckItems: \[number\]/\[range\]**
+<!-- -->
 
--   A modifier on the number of items dropped based on the killer's luck
-    stat
--   Can be set as a range, i.e. 0.15to8
--   Works with Luck attribute, Luck-based enchants/curses, and Luck
-    potion effects
--   Works like: **amount = amount + (luck \* bonus\_luck\_items)**
--   Requires that **TotalItems**, **MinItems**, or **MaxItems** be set
-    on the table to work
+-   **Lore:**
+    -   Allows you to add custom lore to your items.
+    -   Supports color codes and string
+        [Variables](/skills/stringvariables).
+    -   Must be encased by single quotes.
+    -   For using single quotes inside of the name, you can use the
+        &lt;&sq&gt; variable.
+    -   Putting number ranges surrounded by curly braces will generate a
+        random number in that range when the item is created (i.e.
+        *Health: +{100-200}* would become something like *Health:
+        +152*). Works with ItemLoreStats.
+    -   Examples:`Lore:
+        - '&rThe weapon of a true warrior'
+        - ''
+        - '&cIncreases ones greed'`
 
-*Bonus modifiers will increase any set Min/Max values as expected*
+<!-- -->
 
-This is all there is to it!
+-   **PotionEffects:**
+    -   This allows you to add potion effects to your items.
+    -   These effects won't do anything, except for showing up in the
+        item tooltip, if the specified item isn't a potion.
+    -   See [Potions](/databases/items/potions).
+
+<!-- -->
+
+-   **BannerLayers:**
+    -   This option allows you to edit the layers of a banner.
+    -   Won't do anything if the selected item isn't a banner.
+    -   This option is capeable of passing minecraft's 6 layer limit.
+        However adding excessive amounts of layers may cause weird
+        behaviour and will not be supported.
+    -   See [Banner Layers](/databases/items/bannerlayers)
+
+### NBT Support
+
+You can now specify NBT tags on items in the format:
+
+    Item:
+      Id: DIAMOND_SWORD
+      NBT:
+        Base:
+          ATag: 20
+          SomeOtherTag: something
+        GemSlots:
+          RedGem: 0
+        'Denizen NBT':
+          somedenizentag: a_string
+
+This allows cross-over with a lot of other plugins, or just for storing
+some custom information.
+
+For the more technically-inclined, anything under 'Base' will go under
+the item's base compound tag, and anything else will go under the
+corresponding key (or if no sub-items are defined, everything will go
+under the base tag).
+
+If using with Denizen, all tags you want to use in Denizen must go under
+'Denizen NBT' and must be lower-case to work in your Denizen scripts.
 
 Examples
 --------
 
-This mob will always drop a bunch of experience and some rotten flesh,
-but is also using a droptable which is described further below.
+More items can be found in the [Examples](/examples) section.
 
-    snow_loving_zombie:
-      Type: zombie
-      Health: 100
-      Equipment:
-      - snowsword:0
-      Drops:
-      - exp 75-125 1
-      - rare_snowsword_droptable
+    ClothSlippers:
+      Id: 301
+      Data: 0
+      Display: '&fCloth Slippers'
+      Lore:
+      - ''
+      - 'So Soft!'
+      - ''
+      Enchantments:
+      - DURABILITY:1
+      Options:
+        Color: 200,200,200
 
-This example is a droptable that has a 5 % chance of dropping a custom
-sword, but only if the mob is killed in an "ICE\_PLAINS" biome and if a
-player is within 20 blocks.
+Lots of possible options included:
 
-    rare_snowsword_droptable:
-      Conditions:
-      - inbiome ICE_PLAINS
-      - playerwithin 20
-      Drops:
-      - snowsword 1 0.05
+    dat_item_though:
+      Id: banner
+      Data: 4
+      Display: '&c&lThe Banner&r'
+      Lore:
+      - ''
+      - '&rIt<&sq>s the perfect stone.'
+      - '&cNever question that.'
+      - ''
+      Amount: 8
+      Options:
+        Color: 200,200,200
+        Damage: 100
+        Health: 123
+        FollowRange: 12
+        KnockbackResistance: 1
+        MovementSpeed: 0.05
+        HideFlags: false
+        Unbreakable: true
+      Enchantments:
+      - DURABILITY:1
+      - ARROW_FIRE:10
 
-In this example, the DropTable would drop 5 gold/diamonds if the player
-has no Luck, and 15-27 gold/diamonds if the player has a Luck V enchant.
+This example will hide which enchantments and potion effects are on the
+item:
 
-    LuckyDroptable:
-      TotalItems: 5
-      BonusLuckItems: 2to5
-      Drops:
-      - GOLD_NUGGET 1 1
-      - DIAMOND 1 0.2
-
-[1] 1 = 100 %, 0.5 = 50 % ...
-
-[2] This new limit is 2^-1022 or 2.225074e-308
+    potato:
+      Id: carrot_item
+      Enchantments:
+      - DURABILITY:5
+      PotionEffects:
+      - BLINDNESS 20 1
+      Hide:
+      - ENCHANTS
+      - POTION_EFFECTS
