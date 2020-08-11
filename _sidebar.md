@@ -35,7 +35,6 @@
   * [Drops and Drop Tables](Items/Drops)
   * [Options](Items/Options)
   * [Attributes](Items/Attributes)
-  * [Common Item ID's](Items/Common Item Id's)
   * [Enchantments](Items/Enchantments)
   * [Potions](Items/Potions)
   * [Banner Layers](Items/Banner Layers)
