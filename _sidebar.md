@@ -7,6 +7,7 @@
 * [[Compatible Plugins]]
 * [API Information](API)
 ### [Mobs](Mobs)
+  * [Overview](Mobs)
   * [Types](Mobs/Types)
   * [Mob Options](Mobs/Options)
   * [Mob Levels](Mobs/Levels)
