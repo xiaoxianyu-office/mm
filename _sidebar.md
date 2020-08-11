@@ -34,6 +34,11 @@
 ### [Items & Drops](Items)
   * [Drops and Drop Tables](Items/Drops)
   * [Attributes/Options](Items/Options)
+  * [Common Item ID's] (Items/Common Item Id's)
+  * [Enchantments] (Items/Enchantments)
+  * [Potions] (Items/Potions)
+  * [Banner Layers] (Items/Banner Layers)
+
 ### Spawning
   * [[Spawners]]
   * [[Random Spawns]]
