@@ -174,3 +174,33 @@ Signal Commands
         abuse this command unless they have the operator powers
         neccessary to find specific mob UUIDs and internal signal names
         of mobs.
+
+Permissions
+===========
+
+At the moment MythicMobs only supports two permission nodes to grant
+full access to the plugin. The reason for this is that nearly all
+commands in MythicMobs are heavily abusable, and at the moment I don't
+see a reason for individual permissions for each feature. Regardless, I
+will add more permissions in the future when I have time for those that
+would like it, but it is not high on my priority list.
+
+General
+-------
+
+-   **mythicmobs.admin** - *Grants full access to the plugin's
+    commands.*
+-   **mythicmobs.signal** - *Permission to use the "/mm signal
+    &lt;mob.uuid&gt; &lt;signal&gt;" command*
+
+Commands
+--------
+
+-   Access to individual commands can be given using
+    **mythicmobs.command.&lt;command&gt;**
+
+<!-- -->
+
+        * **mythicmobs.command.info** - //Access to the **/mm info** command.//
+        * **mythicmobs.command.mobs.list** - //Access to the **/mm mobs list** command.//
+        * etc
