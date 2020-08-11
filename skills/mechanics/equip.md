@@ -11,9 +11,8 @@ Attributes
 |-----------|---------|-------------------------------------------|---------|
 | item      | i       | The item config string to run on the mob. |         |
 
-  
-===== Examples =====
-
+Examples
+----
 This example would equip the casting mob with a diamond sword.
 
     EquipDiamondSword:
