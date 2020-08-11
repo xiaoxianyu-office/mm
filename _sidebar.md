@@ -1,4 +1,3 @@
-
 * [[Home]]
 * [[Changelogs]]
 * [[Premium Features]]
@@ -7,7 +6,6 @@
 * [Mythic Add-ons](Add-ons)
 * [[Compatible Plugins]]
 * [API Information](API)
-
 ### [Mobs](Mobs)
   * [Types](Mobs/Types)
   * [Mob Options](Mobs/Options)
@@ -24,13 +22,13 @@
   * [Extra: Disguises](Mobs/Disguises)
   * [Extra: MiniaturePets](Mobs/MiniaturePets)
 ### [Skills](Skills)
-  * [[:skills:mechanics:start|Mechanics]]
-  * [[:skills:effects:start|Effects]]
-  * [[:skills:targeters:start|Targeters]]
-  * [[:skills:triggers:start|Triggers]]
-  * [[:conditions:start|Conditions]]
-  * [[:skills:stringvariables|Placeholders]]
-  * [[:skills:variables|Variables]]
+  * [Mechanics](Skills/Mechanics)
+  * [Effects](Skills/Effects)
+  * [Targeters](Skills/Targeters)
+  * [Triggers](Skills/Triggers)
+  * [Conditions]](Skills/Conditions)
+  * [Placeholders](Skills/Placeholders)
+  * [Variables](Skills/Variables)
 ### [Items & Drops](Items)
   * [Drops and Drop Tables](Items/Drops)
   * [Attributes/Options](Items/Options)
