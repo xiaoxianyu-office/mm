@@ -1,6 +1,3 @@
-Power Level
-===========
-
 ![](http://fs5.directupload.net/images/160325/wrovw3y5.jpg)
 
 Skill Power is an attribute available to all skills that increases the
