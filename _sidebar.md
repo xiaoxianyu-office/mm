@@ -1,15 +1,14 @@
+
 * [[Home]]
 * [[Changelogs]]
 * [[Premium Features]]
 * [[Commands and Permissions]]
 * [FAQ / Common Issues](FAQ)
-* [Resources and Examples](Resources)
 * [Mythic Add-ons](Add-ons)
 * [[Compatible Plugins]]
 * [API Information](API)
-------------------------------------------------------------------------
-### Mobs
-  * [Overview](Mobs/Overview)
+
+### [Mobs](Mobs)
   * [Types](Mobs/Types)
   * [Mob Options](Mobs/Options)
   * [Mob Levels](Mobs/Levels)
@@ -24,8 +23,7 @@
   * [Immunity Tables](Mobs/ImmunityTables)
   * [Extra: Disguises](Mobs/Disguises)
   * [Extra: MiniaturePets](Mobs/MiniaturePets)
-* Skills
-  * [[:skills:start|Overview]]
+### [Skills](Skills)
   * [[:skills:mechanics:start|Mechanics]]
   * [[:skills:effects:start|Effects]]
   * [[:skills:targeters:start|Targeters]]
@@ -33,27 +31,9 @@
   * [[:conditions:start|Conditions]]
   * [[:skills:stringvariables|Placeholders]]
   * [[:skills:variables|Variables]]
-* Items & Drops
-  * [[:databases:items:overview|Items]]
-  * [[:databases:drops:overview|Drops and Drop Tables]]
-  * [[:databases:items:attributes|Item Attributes]]
-  * [[:databases:items:options|Item Options]]
-  * [[:databases:items:commonitems|Common Item IDs]]
-  * [[:databases:items:enchantments|Enchantments]]
-  * [[:databases:items:potions|Potions]]
-  * [[:databases:items:bannerlayers|Banner Layers]]
-* Spawners
-  * [[:databases:spawners:spawners|Spawners]]
-  * [[:databases:spawners:randomspawners|Random Spawners]]
-* Tutorials
-  * [[:tutorials:firststeps|First Steps]]
-  * [[:tutorials:vanillaoverrides|Changing Vanilla Mobs]]
-  * [[:tutorials:randomspawns|Creating Random Spawners]]
-  * [[:tutorials:customai|Custom Mob AI]]
-  * [[:tutorials:commandskills|Using Command-Skills]]
-
-Community Pages
-===============
-
-* [[http://dev.bukkit.org/bukkit-plugins/mythicmobs/|BukkitDev]]
-* [[http://www.spigotmc.org/resources/mythicmobs.5702/|Spigot Page]]
+### [Items & Drops](Items)
+  * [Drops and Drop Tables](Items/Drops)
+  * [Attributes/Options](Items/Options)
+### Spawning
+  * [[Spawners]]
+  * [[Random Spawns]]
