@@ -9,17 +9,16 @@ Potion Options
 This attribute is used to apply potion effects to potion based items.
 Note that potion effects can be added to any kind of item, but will only
 have an actual function on potions. The sytax is easy:
-
-    internal_itemname:
-      Id: potion
-      Options:
-        Color: <RED>,<GREEN>,<BLUE>
-      PotionEffects:
-      - <type> <duration> <level>
-
+```
+internal_itemname:
+  Id: potion
+  Options:
+    Color: <RED>,<GREEN>,<BLUE>
+  PotionEffects:
+  - <type> <duration> <level>
+```
 **&lt;type&gt;**  
-Type of potion effect that should be applied. See below for a list of
-all options at your disposal.
+Type of potion effect that should be applied. See below for a list of all options at your disposal.
 
 **&lt;duration&gt;**  
 The duration of the potion effect measured in ticks [1].
@@ -28,15 +27,12 @@ The duration of the potion effect measured in ticks [1].
 The level-modifier for the potion effect. Lowest possible is "0".
 
 **colors**  
-The RGB color of the potion, i.e. **Color: 255,0,255** for a purple
-potion
+The RGB color of the potion, i.e. **Color: 255,0,255** for a purple potion
 
 Potion Effects
 --------------
 
-This is a complete list of all potion effects currently useable by
-MythicMobs. These can be utilized by either potion based items or the
-[potion mechanic](/skills/mechanics/potion).
+This is a complete list of all potion effects currently useable by MythicMobs. These can be utilized by either potion based items or the [potion mechanic](/skills/mechanics/potion).
 
 | **Potion Type**        | **Description**                                                                                                     |
 |------------------------|---------------------------------------------------------------------------------------------------------------------|
