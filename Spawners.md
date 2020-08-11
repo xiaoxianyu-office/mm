@@ -73,7 +73,7 @@ Options
 |**healonleash: &lt;true/false&gt;**|Whether the mob should heal to full health when it leashes back to its spawner|/mm s set <name> healonleash <true/false>||
 |**resetthreatonleash: &lt;true/false&gt;**|Resets ThreatTables (if enabled) when a mob teleports back toits spawner.||true|
 |**showflames: &lt;true/false&gt;**|Set this to true to show flames around the spawner.|/mm s set <name> showflames <true/false>||
-|**breakable: &lt;true/false&gt;**|*This entry needs clarification.*|||
+|**breakable: &lt;true/false&gt;**|Determines if the spawner is broken with the block it is placed on||false|
 |**conditions:**|Set conditions to be met for the spawner to activate.| MythicSpawners can only use the legacy conditions system.|[Find them here](/conditions/legacyconditions)||
 |**activemobs: &lt;number&gt;**|Used to keep track of mobs connected to (spawned by) the spawner.|*it does not require any user setting*.||
 
