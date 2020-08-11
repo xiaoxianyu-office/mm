@@ -26,7 +26,7 @@
   * [Effects](Skills/Effects)
   * [Targeters](Skills/Targeters)
   * [Triggers](Skills/Triggers)
-  * [Conditions]](Skills/Conditions)
+  * [Conditions](Skills/Conditions)
   * [Placeholders](Skills/Placeholders)
   * [Variables](Skills/Variables)
 ### [Items & Drops](Items)
