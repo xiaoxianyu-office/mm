@@ -22,6 +22,7 @@
   * [Extra: Disguises](Mobs/Disguises)
   * [Extra: MiniaturePets](Mobs/MiniaturePets)
 ### [Skills](Skills)
+  * [Overview](Skills/Overview)
   * [Mechanics](Skills/Mechanics)
   * [Effects](Skills/Effects)
   * [Targeters](Skills/Targeters)
