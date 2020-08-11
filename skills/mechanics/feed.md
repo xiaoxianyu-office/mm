@@ -1,7 +1,8 @@
 Mechanic: Feed
 --------------
 
-<img src="https://giant.gfycat.com/ColorfulSharpBeauceron.gif" width="400" height="50" alt="https://giant.gfycat.com/ColorfulSharpBeauceron.gif" />  
+<img src="https://giant.gfycat.com/ColorfulSharpBeauceron.gif" width="400" height="50" alt="https://giant.gfycat.com/ColorfulSharpBeauceron.gif" />
+  
 Feeds the targeted player.  
 Doesn't work for other mobs.
 
