@@ -60,19 +60,19 @@ Options
 |**radius: &lt;number&gt;**|This is the radius around the spawner at which the mob can spawn.| /mm s set <name> radius <radius>|0|
 |**radiusY: &lt;number&gt;**|This is the vertical radius around the spawner at which the mob can spawn|/mm s set <name> radiusy <radius>|0|
 |**usetimer: &lt;true/false&gt;**|Whether or not the spawner activates on a timer.|/mm s set <name> usetimer <true/false>|True|
-|**maxmobs: &lt;number&gt;**|This is the max number of mobs that can be spawned and existing in the world for this spawner. **Must be equal to or greater than mobsperspawn**|/mm s set <name> maxmobs <amount>||
-|**moblevel: &lt;number&gt;**|This is the level of the mob that should spawn from this spawner. Mob must have level configuration for this to work.|/mm s set <name> moblevel <level>||
-|**mobsperspawn: &lt;number&gt;**|This is the number of mobs spawned each time the spawner spawns a mob.|/mm s set <name> mobsperspawn <amount>||
-|**cooldown: &lt;number&gt;**|This the amount of time in seconds that the spawner waits after a mob has been spawned before another mob is spawned.|/mm s set <name> cooldown <time>||
+|**maxmobs: &lt;number&gt;**|This is the max number of mobs that can be spawned and existing in the world for this spawner. **Must be equal to or greater than mobsperspawn**|/mm s set <name> maxmobs <amount>|1|
+|**moblevel: &lt;number&gt;**|This is the level of the mob that should spawn from this spawner. Mob must have level configuration for this to work.|/mm s set <name> moblevel <level>|1|
+|**mobsperspawn: &lt;number&gt;**|This is the number of mobs spawned each time the spawner spawns a mob.|/mm s set <name> mobsperspawn <amount>|1|
+|**cooldown: &lt;number&gt;**|This the amount of time in seconds that the spawner waits after a mob has been spawned before another mob is spawned.|/mm s set <name> cooldown <time>|0|
 |**cooldowntimer: &lt;number&gt;**|This option is set automatically by the spawner. Used to bridge cooldowns over server reboots.|*does not require any user setting*||
-|**warmup: &lt;number&gt;**|The amount of time in seconds before the spawner starts cooldown. Warmup starts on activation and if maxmobs is reached and a mob dies.|/mm s set <name> warmup <duration>||
+|**warmup: &lt;number&gt;**|The amount of time in seconds before the spawner starts cooldown. Warmup starts on activation and if maxmobs is reached and a mob dies.|/mm s set <name> warmup <duration>|0|
 |**warmuptimer: &lt;number&gt;**|This option is set automatically by the spawner, used to bridge warmups over server reboots.|*does not require any user setting*.||
 |**checkforplayers: &lt;true/false&gt;**|Whether or not players must be near the spawner for it to "activate"||true (recommended for performance)|
 |**activationrange: &lt;number&gt;**|What radius must players be within for the spawner to activate.||40 blocks|
-|**leashrange: &lt;number&gt;**|This is the max distance that a mob can move from its spawn location before it is teleported back.|/mm s set <name> leashrange <distance>||
-|**healonleash: &lt;true/false&gt;**|Whether the mob should heal to full health when it leashes back to its spawner|/mm s set <name> healonleash <true/false>||
-|**resetthreatonleash: &lt;true/false&gt;**|Resets ThreatTables (if enabled) when a mob teleports back toits spawner.||true|
-|**showflames: &lt;true/false&gt;**|Set this to true to show flames around the spawner.|/mm s set <name> showflames <true/false>||
+|**leashrange: &lt;number&gt;**|This is the max distance that a mob can move from its spawn location before it is teleported back.|/mm s set <name> leashrange <distance>|-1(none)|
+|**healonleash: &lt;true/false&gt;**|Whether the mob should heal to full health when it leashes back to its spawner|/mm s set <name> healonleash <true/false>|false|
+|**resetthreatonleash: &lt;true/false&gt;**|Resets ThreatTables (if enabled) when a mob teleports back to its spawner.||false|
+|**showflames: &lt;true/false&gt;**|Set this to true to show flames around the spawner.|/mm s set <name> showflames <true/false>|false|
 |**breakable: &lt;true/false&gt;**|Determines if the spawner is broken with the block it is placed on||false|
 |**conditions:**|Set conditions to be met for the spawner to activate.| MythicSpawners can only use the legacy conditions system.|[Find them here](/conditions/legacyconditions)||
 |**activemobs: &lt;number&gt;**|Used to keep track of mobs connected to (spawned by) the spawner.|*it does not require any user setting*.||
