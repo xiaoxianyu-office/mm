@@ -1,20 +1,15 @@
 Item Attributes
 ===============
 
-*Added in version 2.4*
 
-The attributes section for items made with MythicMobs handles the new
-Minecraft 1.9 attribute system. It makes it possible to apply different
-attributes given to the entity wearing/using it depeding on the slot.
-The old system in which attributes for items where put into the
-*Options:*-tag are no longer supported.
-
-    Item:
-      Id: item_id
-      Attributes:
-        Slot:
-          Attribute: [number]
-
+The attributes section for items made with MythicMobs handles the Minecraft attribute system. It makes it possible to apply different attributes given to the entity wearing/using it depending on the slot.
+```
+Item:
+  Id: item_id
+  Attributes:
+    Slot:
+      Attribute: [number]
+```
 Attributes in this section also allow number ranges and forced
 percentages. See examples at the bottom of the page.
 
@@ -23,12 +18,8 @@ Attributes
 
 **AttackSpeed: \[number\]**
 
--   Handles the attack speed or cooldown time of the item. Only does
-    something when used on weapons.
--   Using this attribute will override the original attack speed value
-    of the item. Base item attack speed and custom attack speed do not
-    stack. See [Common Items](/databases/items/commonitems) for a list
-    of base attack speed values.
+-   Handles the attack speed or cooldown time of the item. Only does something when used on weapons.
+-   Using this attribute will override the original attack speed value of the item. Base item attack speed and custom attack speed do not stack. See [Common Items](/items/Common Item Id's) for a list of base attack speed values.
 
 **Armor: \[number\]**
 
@@ -38,31 +29,19 @@ Attributes
 
 **ArmorToughness: \[number\]**
 
--   `Not sure what this does yet but it's in there!`
--   (Apparently affects the damage reduction percentage of the armor)
+-   Alters the damage reduction percentage of the armor
 
 **Damage: \[number\]**
 
--   Sets the melee damage of the item. (May in fact ADD onto the items
-    base damage.
--   Using this attribute will override the original damage value of the
-    item. Base item damage and custom damage do not stack.
--   The above may only apply to non-weapon/tool items.
--   1 damage = 0.5 hearts damage
-
-**FollowRange: \[number\]**
-
--   Sets the follow range stat of the item.
--   Only has an effect when worn by mobs.
--   `Not implemented yet as of build #1530`
+-   Sets the melee damage of the item.
+-   Using this attribute will override the original damage value of the item. Base item damage and custom damage do not stack.
+-   1 damage = 0.5 hearts
 
 **Health: \[number\]**
 
--   Sets the health of the item which will give the wearer extra or
-    minus health.
--   Use positive numbers for extra health and negative numbers for minus
-    health.
--   1 health = 0.5 hearts health
+-   Sets the health of the item which will give the wearer extra or minus health.
+-   Use positive numbers for extra health and negative numbers for minus health.
+-   1 health = 0.5 hearts
 
 **Luck: \[number\]**
 
@@ -73,14 +52,12 @@ Attributes
 
 -   Sets the knockback resistance of the item.
 -   Use *\[number\]%* to force percentage values.
-    -   Examples:
-        -   **KnockbackResistance: 99%**
+-   Examples: ```KnockbackResistance: 99%```
 
 **MovementSpeed: \[number\]**
 
 -   Sets the movement speed of the item.
--   Use positive numbers for additional speed and negative numbers for
-    minus speed.
+-   Use positive numbers for additional speed and negative numbers for minus speed.
 
 Slots
 -----
@@ -101,38 +78,35 @@ Examples
 This example item will grant +10 luck when the item is held in the main
 hand, but will grant +7 luck and +2 extra damage if the item is held in
 the off hand slot:
-
-    lucky_charms:
-      Id: potato_item
-      Display: 'Rotten Lucky Charm'
-      Attributes:
-        MainHand:
-          Luck: 10
-        OffHand:
-          Luck: 7
-          Damage: 2
-
-This example item grants +2 extra health no matter in which slot the
-item is being held, but will also grant +4% movement speed if the item
-is worn in the feet slot:
-
-    happy_feet:
-      Id: leather_boots
-      Display: 'Penguin Hide'
-      Attributes:
-        All:
-          Health: 2
-        Feet:
-          MovementSpeed: 0.04
-
-Each time this item is generated it will have a random damage value
-between 3 and 5 and a random speed bonus between 1 % and 5 % when worn
-in the main hand:
-
-    lucky_sword:
-      Id: wood_sword
-      Display: '&eLucky Sword&r'
-      Attributes:
-        MainHand:
-          Damage: 3-5
-          MovementSpeed: 0.01-0.05
+```
+lucky_charms:
+  Id: potato_item
+  Display: 'Rotten Lucky Charm'
+  Attributes:
+    MainHand:
+      Luck: 10
+    OffHand:
+      Luck: 7
+      Damage: 2
+```
+This example item grants +2 extra health no matter in which slot the item is being held, but will also grant +4% movement speed if the item is worn in the feet slot:
+```
+happy_feet:
+  Id: leather_boots
+  Display: 'Penguin Hide'
+  Attributes:
+    All:
+      Health: 2
+    Feet:
+      MovementSpeed: 0.04
+```
+Each time this item is generated it will have a random damage value between 3 and 5 and a random speed bonus between 1 % and 5 % when worn in the main hand:
+```
+lucky_sword:
+  Id: wood_sword
+  Display: '&eLucky Sword&r'
+  Attributes:
+    MainHand:
+      Damage: 3-5
+      MovementSpeed: 0.01-0.05
+```
