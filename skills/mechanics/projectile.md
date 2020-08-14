@@ -85,6 +85,7 @@ Bullet types available are:
 -   **ARROW** - *projectile{bulletType=ARROW;...}*
 -   **BLOCK** - *projectile{bulletType=BLOCK;material=STONE;...}*
 -   **ITEM** - *projectile{bulletType=ITEM;material=STONE;...}*
+-   **MYTHICITEM** - *projectile{bulletType=MYTHICITEM;material=MyMythicItem;...}*
 -   **MOB** - *projectile{bulletType=MOB;mob=SkeletonKing;...}*
 
 Yes, that's right, you can even shoot projectiles made up of other
