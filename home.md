@@ -114,17 +114,17 @@ Setup
 
 -   [Configuration]
 -   [Commands]
--   [Examples]
--   [FAQ's]
 -   [Permissions]
+-   [FAQ's]
+-   [Examples]
 -   [Videos]
 
   [1]: youtube>_YQUS3sDbI0
   [Configuration]: Configuration
-  [Commands]: Commands
+  [Commands]: Commands%20and%20Permissions
   [Examples]: Examples
-  [FAQ's]: FAQ's
-  [Permissions]: Permissions
+  [FAQ's]: FAQ
+  [Permissions]: Commands%20and%20Permissions
   [Videos]: Videos
 
 Help & Questions
