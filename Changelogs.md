@@ -77,6 +77,13 @@ Placeholders
 ------------
 - Added various parent. placeholders
 
+Items
+-----
+For item names and lore:
+- Now allow hex colors in the format **`<#FFFFFF>`**
+- Now supports gradients in the format **`<gradient:#color1:#color2>text</gradient>`**
+- Now supports **`<rainbow>text</rainbow>`**
+
 Bug Fixes/Other
 ---------------
 - Fixed loading old imported bukkit items
