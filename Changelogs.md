@@ -3,23 +3,66 @@
 
 General
 -------
-- Added support for 1.16
-- Added support for 1.16.2
+- Added support for 1.16, including all the 1.16 mobs and particles
+- Added support for 1.16.2, including Piglin Brutes
 - Added in-line target conditions (premium-only)
 - Improved world data saving
 - Removed lots of deprecated methods, updated libraries and cleaned up
 
+New Mobs
+----
+- PIGLIN
+- HOGLIN
+- ZOGLIN
+- BABY_HOGLIN
+- BABY_ZOGLIN
+- STRIDER
+- PIGLIN_BRUTE
+
+### Piglins
+- Added AbleToHunt, ImmuneToZombification options to Piglin
+
+### Hoglins
+- Added PreventZombification option to Hoglins
+
 Mechanics
 ---------
+### General / Small Stuff
+- Added 1.16 particles: crimson_spore, soul_fire_flame, warped_spore, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, and soul
 - Allow math in variableSet mechanic
+- Added more placeholder support to Aura mechanic
+- Added placeholder support to prison mechanic
+- Added placeholder support to healPercent mechanic
+- Added placeholder support to Lunge mechanic
+- Slightly increased attractiveness and performance of AnimateArmorStandMechanic
 
-
+### Missile
 - Missiles can now target locations
 - Added targetYoffset to missile mechani
 
+Conditions
+----------
+### NEW: EnderDragonPhase condition
+### NEW: LivingInRadius condition
+### NEW: YDiff condition
+
+Targeters
+---------
+### General
+- Allow placeholders in @RLNT targeter amount
+- @Location targeter can now use placeholders
+
+### NEW: @Siblings
+### NEW: @RTTL / Random Threat Target Location
+
+
+Placeholders
+------------
+- Added various parent. placeholders
 
 Bug Fixes/Other
 ---------------
+- Fixed loading old imported bukkit items
 - Fixed world and global variables not loading properly after restarts
 - Fixed numerous issues with serialization and saving between restarts
 - Fixed various bugs with variables
@@ -30,7 +73,11 @@ Bug Fixes/Other
 - Fixed some bugs with target filters
 - Fixed error in drops when mobs killed by non-entity w/ Luck Mods
 - Fixed repeated mechanics looping forever if they throw an error
-- 
+- Fixed NPE when saving PlayerData with certain variables
+- Fixed DawnCondition not working
+- Fixed NPE caused by mob types that have been removed
+- Fixed entitytype condition not using conditionVar
+- Fixed mechanic-level cooldowns not respecting decimals
 
 4.9.1
 =====
