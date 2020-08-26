@@ -37,18 +37,23 @@ Mechanics
 - Slightly increased attractiveness and performance of AnimateArmorStandMechanic
 
 ### Message / Speak
-- Now allow hex colors in the format **<#FFFFFF>**
-- Now supports gradients in the format **<gradient:#color1:#color2>text</gradient>**
-- Now supports **<rainbow>text</rainbow>**
-- Now supports hover text in the format **<hover:show_text:'hover text??'>hover over me!</hover>**
-- Now supports clickable text in the format **<click:run_command:/say hello>click me!</click>**
+- Now allow hex colors in the format **`<#FFFFFF>`**
+- Now supports gradients in the format **`<gradient:#color1:#color2>text</gradient>`**
+- Now supports **`<rainbow>text</rainbow>`**
+- Now supports hover text in the format **`<hover:show_text:'hover text??'>hover over me!</hover>`**
+- Now supports clickable text in the format **`<click:run_command:/say hello>click me!</click>`**
 
 ### Missile
 - Missiles can now target locations
 - Added targetYoffset to missile mechanic
 
 ### NEW: RayTrace
-- 
+### NEW: Recoil Effect
+### NEW: PlayBlockBreakSound (paper-only)
+### NEW: PlayBlockFallSound (paper-only)
+### NEW: PlayBlockHitSound (paper-only)
+### NEW: PlayBlockPlaceSound (paper-only)
+### NEW: PlayBlockStepSound (paper-only)
 
 Conditions
 ----------
@@ -66,7 +71,6 @@ Targeters
 
 ### NEW: @Siblings
 ### NEW: @RTTL / Random Threat Target Location
-
 
 Placeholders
 ------------
@@ -90,6 +94,7 @@ Bug Fixes/Other
 - Fixed NPE caused by mob types that have been removed
 - Fixed entitytype condition not using conditionVar
 - Fixed mechanic-level cooldowns not respecting decimals
+- Fixed PAPI support
 
 4.9.1
 =====
