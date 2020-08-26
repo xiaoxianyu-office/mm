@@ -36,12 +36,24 @@ Mechanics
 - Added placeholder support to Lunge mechanic
 - Slightly increased attractiveness and performance of AnimateArmorStandMechanic
 
+### Message / Speak
+- Now allow hex colors in the format **<#FFFFFF>**
+- Now supports gradients in the format **<gradient:#color1:#color2>text</gradient>**
+- Now supports **<rainbow>text</rainbow>**
+- Now supports hover text in the format **<hover:show_text:'hover text??'>hover over me!</hover>**
+- Now supports clickable text in the format **<click:run_command:/say hello>click me!</click>**
+
 ### Missile
 - Missiles can now target locations
-- Added targetYoffset to missile mechani
+- Added targetYoffset to missile mechanic
+
+### NEW: RayTrace
+- 
 
 Conditions
 ----------
+### General / Small Stuff
+- Added exact option to moving condition, defaults to false
 ### NEW: EnderDragonPhase condition
 ### NEW: LivingInRadius condition
 ### NEW: YDiff condition
