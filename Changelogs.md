@@ -47,7 +47,8 @@ Mechanics
 - Missiles can now target locations
 - Added targetYoffset to missile mechanic
 
-### NEW: RayTrace
+### NEW: RayTrace (premium-only)
+### NEW: RayTraceAt (premium-only)
 ### NEW: Recoil Effect
 ### NEW: PlayBlockBreakSound (paper-only)
 ### NEW: PlayBlockFallSound (paper-only)
