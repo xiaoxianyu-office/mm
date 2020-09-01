@@ -21,12 +21,11 @@ These options are universal and will work regardless of the mobtype.
 
 **AlwaysShowName: \[true/false\]**
 
-      * Whether the name-tag should always be displayed, even when not looking at the mob and through blocks.
-      * Equivalent of the NBT-tag "CustomNameVisible"
-      * Versions:
-        * //MC 1.8 and earlier: armor stands only//
-        * //MC 1.9 and later: all entites//
-      * Defaults to false.
+-  Whether the name-tag should always be displayed, even when not looking at the mob and through blocks.
+- Equivalent of the NBT-tag "CustomNameVisible"
+- MC 1.8 and earlier: armor stands only
+- MC 1.9 and later: all entites
+- Defaults to false.
 
 **AttackSpeed: \[number\]** (2.4)
 
