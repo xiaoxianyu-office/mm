@@ -71,7 +71,7 @@ are able to target locations as well.
 | [Prison][]               | Imprisons the target inside a block                                         |
 | [Pull][]                 | Pulls the target towards the mob                                            |
 | [PushButton][]           | Pushes a button at the target location                                      |
-| [RayTrace][]                |                               |
+| [RayTrace]()                | Traces a straight line to the target                               |
 | [Rally][]                | Causes other nearby mobs to attack the target                               |
 | [Random Message][]       | Sends a random message to the target player                                 |
 | [Remount][]              | Remounts the mob the caster originally spawned riding, if it is still alive |
