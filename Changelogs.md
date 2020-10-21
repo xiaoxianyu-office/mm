@@ -1,10 +1,6 @@
 4.11.0  (Development Builds)
 =====
 
-General
--------
--
-
 Mechanics
 ----
 
