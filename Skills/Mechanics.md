@@ -71,7 +71,7 @@ are able to target locations as well.
 | [Prison][]               | Imprisons the target inside a block                                         |
 | [Pull][]                 | Pulls the target towards the mob                                            |
 | [PushButton][]           | Pushes a button at the target location                                      |
-| [RayTrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/raytrace-(Premium-Only))                | Traces a straight line to the target                               |
+| [RayTrace][]             | Traces a straight line to the target                                        |
 | [Rally][]                | Causes other nearby mobs to attack the target                               |
 | [Random Message][]       | Sends a random message to the target player                                 |
 | [Remount][]              | Remounts the mob the caster originally spawned riding, if it is still alive |
@@ -245,6 +245,7 @@ but not yet ready for use.
   [PushButton]: /skills/mechanics/pushbutton
   [Rally]: /skills/mechanics/rally
   [Random Message]: /skills/mechanics/randommessage
+  [Raytrace]: /skills/mechanics/raytrace
   [Remount]: /skills/mechanics/remount
   [Remove]: /skills/mechanics/remove
   [RemoveHeldItem]: /skills/mechanics/removehelditem
