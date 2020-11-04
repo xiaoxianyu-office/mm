@@ -23,3 +23,10 @@ This example will summon a lightning bolt to the designated targeters.
       Type: SHEEP
       Skills:
       - lightning @EntitiesInRadius{r=10} ~onTimer:100
+
+This example will summon a lightning bolt to the designated targeters and deal 6 damage.
+
+    StaticSheep:
+      Type: SHEEP
+      Skills:
+      - lightning{d=6} @EntitiesInRadius{r=10} ~onTimer:100
