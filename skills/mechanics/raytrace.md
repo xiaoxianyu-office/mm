@@ -1,7 +1,7 @@
 Mechanic: Raytrace
 ---------------------
 
-Traces a ray to the target
+Traces a ray to the target. [This is a premium-only mechanic.]
  
 Attributes
 ----------
