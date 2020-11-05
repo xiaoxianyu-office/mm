@@ -1,17 +1,30 @@
 4.11.0  (Development Builds)
 =====
 
+General
+-------
+- Added support for 1.16.4
+
 Mechanics
-----
+---------
 
 ### onAttack Aura
 - Allow placeholders in damageAdd, damageMultiplier
 
 ### NEW: BlockPhysics
+### NEW: Extinguish
+Removes any fire ticks from the target entity
 ### NEW: FawePaste
+### NEW: setNoDamageTicks
+Sets the immunity ticks on the target. Should be delayed if used immediately during an attack since the ticks are applied after an event completes.
+```
+- setNoDamageTicks{ticks=0;delay=1} @trigger ~onAttack
+```
+### NEW: Swap
+Swaps positions of the caster and the target entity.
 
 Effects
-----
+-------
 
 ### Particle Effects
 - Added dir=x,y,z option to particle effects to specify directional vector
@@ -30,6 +43,19 @@ Targeters
 Conditions
 ----------
 ### NEW: HasPassenger
+
+Items
+-----
+### NBT Tag Improvements
+- Added ability to specify data type for NBT tags
+```
+AnItem:
+  Id: EMERALD
+  NBT:
+    AnInteger: int/32
+    ADouble: double/50.0`
+    AByte: byte/1
+```
 
 Bug Fixes/Other
 ---------------
@@ -50,6 +76,9 @@ Bug Fixes/Other
 - Fixed recursive spawning overflow
 - Fixed mobs spawned by eggs sometimes spawning in walls
 - Fixed PreventBlockInfection option for silverfish
+- Fixed targeters not targeting creative players when they should
+- Fixed crash caused by remove mechanic running async on 1.16
+- Fixed NPE with location targeter
 
 4.10.0
 =====
