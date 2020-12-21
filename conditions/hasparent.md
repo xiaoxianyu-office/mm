@@ -1,4 +1,4 @@
-**Description:** Tests if the targeted mob has a 'parent'.
+**Description:** This condition checks if the target mob has a parent. 
 
 ---
 
@@ -10,17 +10,19 @@
 
 ---
 
-**Information:**
-
-- [x] Type: Entity
-- [x] Added in: 4.3
-- [x] Author: Joikd
-
----
-
 **Examples:**
 
 ```
 Conditions:
 - hasparent{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
+- [x] Added in: 4.3
+- [x] Author: Joikd
+
+
