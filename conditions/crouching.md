@@ -1,6 +1,7 @@
 **Description:** This condition checks if the target entity is crouching or not.
 
 **Type:** Entity
+
 ---
 
 **Attributes:**
