@@ -43,6 +43,7 @@ Targeters
 Conditions
 ----------
 ### NEW: HasPassenger
+### NEW: Burning // isBurning
 
 Items
 -----
