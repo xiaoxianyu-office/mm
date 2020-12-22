@@ -1,5 +1,6 @@
 **Description:** This condition checks if the target entity is wearing the selected item.
 
+**Type:** Entity
 
 ---
 
@@ -31,13 +32,5 @@
 Conditions:
 - wearing{slot=HAND;m=IRON_SWORD} true
 ```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
-- [x] Added in: 4.5
-- [x] Author: jaylawl
 
 
