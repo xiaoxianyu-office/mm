@@ -22,5 +22,5 @@ Conditions:
 **Extra Information:**
 
 - [x] Type: Entity
-
+- [x] Aliases: heightfromsurface
 
