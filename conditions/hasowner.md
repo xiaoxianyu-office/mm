@@ -15,7 +15,7 @@
 
 ```
 Conditions:
-- hasowner{} true
+- hasowner true
 ```
 
 ---
