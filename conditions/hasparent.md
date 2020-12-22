@@ -1,5 +1,7 @@
 **Description:** This condition checks if the target mob has a parent. 
 
+**Type:** Entity
+
 ---
 
 **Attributes:**
@@ -16,13 +18,3 @@
 Conditions:
 - hasparent true
 ```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
-- [x] Added in: 4.3
-- [x] Author: Joikd
-
-
