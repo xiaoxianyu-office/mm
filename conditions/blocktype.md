@@ -9,7 +9,7 @@
 | types     | type, t | A list of materials to check |
 
 Valid for any Bukkit material type.
-[](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
+https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 
 ---
 
