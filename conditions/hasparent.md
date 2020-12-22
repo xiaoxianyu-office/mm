@@ -14,7 +14,7 @@
 
 ```
 Conditions:
-- hasparent{} true
+- hasparent true
 ```
 
 ---
