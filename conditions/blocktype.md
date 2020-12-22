@@ -1,0 +1,27 @@
+**Description:** This condition tests the material type present at the target location.
+
+---
+
+**Attributes:**
+
+| Attribute | Aliases | Description                  |
+| --------- | ------- | ---------------------------- |
+| types     | type, t | A list of materials to check |
+
+Valid for any Bukkit material type.
+[](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
+
+---
+
+**Examples:**
+
+```
+Conditions:
+- blocktype DIRT,STONE,GRASS true
+```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
