@@ -22,7 +22,7 @@
 
 ```
 Conditions:
-- crouching{} true
+- crouching true
 ```
 
 ---
