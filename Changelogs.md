@@ -5,16 +5,40 @@ General
 -------
 - Added support for 1.16.4
 
+Mobs
+----
+- Added PIGLIN_BRUTE, BABY_PIGLIN_BRUTE
+- Changed Options.PreventItemPickup to default to true
+
 Mechanics
 ---------
 
 ### onAttack Aura
 - Allow placeholders in damageAdd, damageMultiplier
 
+### Orbitals
+- Added projectile bullets to Orbital
+
+### Shoot & Volley
+- Added Trident projectile type
+- Added splash_potion and lingering_potion projectile types
+- Added most of the options from the Projectile mechanic to Shoot & Volley
+
+### ShootFireball
+- Added type=[SMALL/LARGE/DRAGON] attribute
+
 ### NEW: BlockPhysics
+- Triggers a block physics update at the target location
+### NEW: PotionClear
+- Clears all potion effects from the target entity
 ### NEW: Extinguish
 Removes any fire ticks from the target entity
 ### NEW: FawePaste
+### NEW: Oxygen
+Gives the target player an amount of oxygen
+```
+- oxygen{amount=10}
+```
 ### NEW: setNoDamageTicks
 Sets the immunity ticks on the target. Should be delayed if used immediately during an attack since the ticks are applied after an event completes.
 ```
@@ -22,12 +46,26 @@ Sets the immunity ticks on the target. Should be delayed if used immediately dur
 ```
 ### NEW: Swap
 Swaps positions of the caster and the target entity.
+### NEW: WolfSit
+Sets the sitting state of the target wolf
+```
+- wolfSit{state=true}
+```
 
 Effects
 -------
 
 ### Particle Effects
 - Added dir=x,y,z option to particle effects to specify directional vector
+- Added audience=[world/target] options to all particle effects
+
+### NEW: TotemUndying effect
+- Plays the effect of a totem resurrecting a player
+- Can specify a model to use from texture packs to overlay on the player's screen
+- No you can't disable the sound :(
+```
+- totemUndying{model=2}
+```
 
 Targeters
 ---------
@@ -35,6 +73,7 @@ Targeters
 - Added yaw and pitch to @Location targeter
 - Upgraded raytrace mechanic to shoot thru barrier blocks
 
+### NEW: @BlocksInRadius{r=#} location targeter
 ### NEW: @CasterSpawnLocation
 ### NEW: @ObstructingBlock
 ### NEW: @FloorOfTargets meta-targeter
@@ -42,8 +81,14 @@ Targeters
 
 Conditions
 ----------
+### Moving
+- Updated moving condition to work with players
 ### NEW: HasPassenger
 ### NEW: Burning // isBurning
+### NEW: SlimeSize
+```
+- size >5
+```
 
 Items
 -----
@@ -57,6 +102,10 @@ AnItem:
     ADouble: double/50.0`
     AByte: byte/1
 ```
+
+API
+---
+- Added MythicMobItemGenerateEvent, called whenever an item is being generated
 
 Bug Fixes/Other
 ---------------
@@ -80,6 +129,24 @@ Bug Fixes/Other
 - Fixed targeters not targeting creative players when they should
 - Fixed crash caused by remove mechanic running async on 1.16
 - Fixed NPE with location targeter
+- Fixed SpecificFaction AI Targeter on 1.16
+- Fixed error in spawner find command on non-paper builds
+- Fixed concurrency error with skills closes #186
+- Fixed a bunch of AI bugs on 1.16+
+- Fixed bugs with setLevel mechanic running async
+- Fixed temporary player error with protocollib support
+- Fixed bugs with fly mechanic
+- Fixed orbital mechanic not executing onEnd skills
+- Fixed more issues with specificFaction AI goal working on players
+- Fixed skills in projectiles and auras not being properly marked as async
+- Fixed concurrency issues with @EIR targeter closes #210
+- Fixed particle effect direction not setting z value correctly
+- Fixed mob spawning bugs on 1.12
+- Fixed OtherFactions AI on 1.12
+- Fixed error when negative heal values try to set health <0
+- Fixed NPE in projectile mechanic
+- Fixed LevelModifiers to be prioritized over using global scaling equations
+- Removed ClickEvent
 
 4.10.0
 =====
