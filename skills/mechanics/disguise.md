@@ -28,8 +28,4 @@ This example would cause the mob to turn into a sheep.
       Skills:
       - disguise{d=SHEEP}
 
-This one would turn it into a player using the skin of Notch and giving
-it the display name *Jeb*. Color codes are useable in the nametag field.
-
-      Skills:
-      - disguise{type=player;player=&7Jeb;skin=Notch}
+Configure custom disguises using Lib's Disguises for more granular detail.
