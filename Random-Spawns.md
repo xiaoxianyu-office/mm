@@ -29,6 +29,7 @@ between:
     -   Detailed configurations as to how these spawn points are generated can be found in MythicMobs' configuration file "config.yml".
     -   **Please note** Action: ADD only generates points around survival & adventure mode players and if there is only a location present.
     -   If a condition is used that needs an entity it will throw an exception. In case of the biome condition you can use the Biomes: option!
+    -   For the Action: ADD to work, you will need to go to your plugins/MythicMobs/config.yml and set GenerateSpawnPoints to true!
 
 <!-- -->
 
