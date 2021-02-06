@@ -9,6 +9,8 @@ add them to your own skills and even combine them.
 Most effects are able to target both Entities and Locations. You control
 what your effect targets using a [Targeter][].
 
+Audience `audience=World` or `audience=Target` can be used to only display the effects to a specific group, rather than the entire Server. This can be useful in preventing too many particles from being displayed to everyone which can cause lag.
+
 ### Syntax
 
 A lot of effects don't have any options. To call them, you just call the
@@ -18,6 +20,8 @@ skill **effect:name**
     - effect:flames @target
     - effect:lightning @self
     - effect:ender @PlayersInRadius{r=20}
+    - effect:ender @PlayersInRadius{r=20}
+    - effect:particles{particle=reddust;color=#EE22CC;amount=10;speed=1;hS=0.15;vS=.15;audience=Target} @target
 
 ### Effects
 
