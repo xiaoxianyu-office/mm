@@ -1,4 +1,3 @@
-------
 
 Kill Messages allow you to customize what is displayed when a player is killed by your mobs. Normally when someone is killed, it will just print “Player was slain by Zombie” or “Player burned to death”, etc. Giving your mobs custom kill messages with MythicMobs is easy and can add new depth to… dying.
 
