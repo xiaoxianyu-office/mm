@@ -1,4 +1,3 @@
-Disguises
 ===========
 
 Mob disguises are dependent on the plugins [LibsDisguises ](https://www.spigotmc.org/resources/libs-disguises.81/)and [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/). They will not work without either of those plugins.
