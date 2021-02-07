@@ -1,5 +1,3 @@
-## Effect: Particles
-----
 Creates a particle effect at the targeted entity or location.
 
 A list of particle types can be found [here](/skills/effects/particles/types).
