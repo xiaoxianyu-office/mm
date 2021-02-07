@@ -41,7 +41,7 @@ skill **effect:name**
 | [Glow][]             | Gives the target the glow effect with different colors (req. GlowAPI) |
 | [Item Spray][]       | Sprays temporary items around the target                              |
 | [Lightning][]        | Causes a fake lightning strike                                        |
-| [Particles][]        | Creates particle effects around the target                            |
+| [Particles][/skills/effects/particles]        | Creates particle effects around the target                            |
 | [Particle Box][]     | Draws a box of particles around the target                            |
 | [Particle Line][]    | Draws a line of particle effects to the target                        |
 | [Particle Orbital][] | Draws orbiting particle effects around the target                     |
