@@ -203,6 +203,7 @@ Conditions
 | [World](/conditions/world)                                   | Location | Checks the name of the target world.                                                        |
 | [Worldtime](/conditions/worldtime)                           | Location | Matches a range against the target location's world's time.                                 |
 | [Yaw](/conditions/yaw)                                       | Entity   | Checks the yaw of the target entity against a range.                                        |
+| [yDiff](/conditions/ydiff)                                       | Entity   | Checks the difference in Y between the targeted entity and the caster.                                        |
 
 More Examples
 -------------
