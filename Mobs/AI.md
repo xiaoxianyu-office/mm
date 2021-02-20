@@ -25,7 +25,7 @@ ZombieAIMob:
 - 0 clear        [Clears the mob AI, will be explained down below]
 - 1 meleeattack  [Tells your mob to use a melee attack against its targets]
 - 2 randomstroll [Tells your mob to wander around]
-
-The order 0 - 1 - 2 is made to set priority over some AI Goals, by putting meleeattack at 1 and randomstroll at 2, the mob will priorize melee attacking its targets than randomly wandering around. Experiment with it!
 ```
+The order 0 - 1 - 2 is made to set priority over some AI Goals, by putting meleeattack at 1 and randomstroll at 2, the mob will priorize melee attacking its targets than randomly wandering around. Experiment with it!
+
 ---
