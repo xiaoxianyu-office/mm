@@ -1,5 +1,3 @@
-# Custom AI:
----
 This page includes all the AI Goal and Target Selectors for your mobs. It allows you to change the behavior and functionality.
 
 ---
@@ -36,8 +34,6 @@ The order 0 - 1 - 2 is made to set priority over some AI Goals, by putting melee
 ### Mobs - Goal and Target
 
 **Goal: All Mobs**
-
-All Mobs:
 
 | AI Goal | Alias  | Description |
 | ------- | ------ | ----------- |
