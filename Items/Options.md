@@ -19,6 +19,7 @@ These options are applicable to all items:
 **RepairCost: \[number\]**
 
   - Sets the repair cost of the item.
+
 **AppendType: \[true/false\]**
 
   - Toggles if the MYTHIC_TYPE should be appended to this item no matter way, necessary for the wearing condition to function properly.
