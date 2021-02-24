@@ -6,7 +6,7 @@
 
 | Attribute | Aliases        | Description               |
 | --------- | -------------  | ------------------------- |
-| amount|  | a| Range of how many targets to check for|
+| amount| a| Range of how many targets to check for|
 
 ---
 
