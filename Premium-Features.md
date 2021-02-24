@@ -8,15 +8,18 @@ with numerous Premium-only perks, including:
 -   Access to the premium support channel and ticket system
 -   Access to the latest version faster
 -   Access to development builds
--   Mob health and damage can be scaled using math formulas (Scaling
-    Equations)
--   Math and Placeholders are usable in most skills, drop amounts, and
-    options
--   Math and Placeholders are usable in item attributes
--   Ability to use hit-conditions in any projectile skills
+-   Access to premium-only mechanics, such as raytracing mechanics
 -   Ability to use custom damage types and damage modifiers
--   Ability to use several custom AI goals/targeters that can use
-    conditions
+-   Ability to use Math and Placeholders in:
+    - Mob attributes (health, damage, etc)
+    - Most skills 
+    - Item attributes
+    - Drop table amounts         
+-   Ability to use hit-conditions in any projectile skills
+-   Ability to use conditional AI goals/targeters
+-   Much more!
+
+Any new things unlocked with MythicMobs Premium can also be used in compatible Mythic, such as Crucible, Enchants, MMOItems, MMOCore, and more!
 
  More premium-only features will continue to be added as time goes
 on.  You can upgrade your account to Premium [by clicking
@@ -29,5 +32,5 @@ Premium+
 our Premium+ package gives you several added benefits: 
 
 -   Special Premium+ role in Discord
--   Priority on support tickets
+-   Priority on support tickets with ability to ping the developers
 -   License usable on multiple servers you own}
