@@ -101,7 +101,7 @@ Health: 20
 Disguise:
   Type: pig
 ```
-You may also use in line conditions for the mobs disguise. For example from the orc shown earlier:
+You may also use in line conditions for the mobs disguise. For example from the skeleton shown earlier:
 ```
 SLSkelF:
   Type: ZOMBIE
