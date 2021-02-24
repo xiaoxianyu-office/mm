@@ -19,7 +19,7 @@ with numerous Premium-only perks, including:
 -   Ability to use conditional AI goals/targeters
 -   Much more!
 
-Any new things unlocked with MythicMobs Premium can also be used in compatible Mythic, such as Crucible, Enchants, MMOItems, MMOCore, and more!
+Any new things unlocked with MythicMobs Premium can also be used in compatible Mythic plugins, such as Crucible, Enchants, MMOItems, MMOCore, and more!
 
  More premium-only features will continue to be added as time goes
 on.  You can upgrade your account to Premium [by clicking
