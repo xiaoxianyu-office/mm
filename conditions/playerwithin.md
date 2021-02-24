@@ -6,7 +6,7 @@
 
 | Attribute | Aliases        | Description               |
 | --------- | -------------  | ------------------------- |
-| distance| d| | The radius to check in |
+| distance| d| The radius to check in |
 
 ---
 
