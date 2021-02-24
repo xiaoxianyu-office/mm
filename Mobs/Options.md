@@ -112,6 +112,11 @@ These options are universal and will work regardless of the mobtype.
       * Defaults to false.
       * Note that when this is true, the mob CANNOT have the skill [[skills/mechanics/velocity|velocity]] used on it.
 
+**PassthroughDamage: \[true/false\]**
+
+      * Causes all damage taken to be redirected to the mob's parent, if they exist
+      * Defaults to false
+
 **Persistent: \[true/false\]**
 
       * Makes the mob immune to the "mm m killall" command
