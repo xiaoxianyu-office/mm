@@ -1,4 +1,4 @@
-**Description:** Tests if the number of inherited targets from the parent skilltree matches the given range.
+**Description:** A condition that checks the value of a [variable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Variables).
 
 ---
 
