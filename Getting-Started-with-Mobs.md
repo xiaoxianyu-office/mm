@@ -7,39 +7,39 @@ To create your first mob, navigate to the ``MythicMobs/Mobs`` folder and create 
 ### Setting up basics:
 Now that you have the mob file, lets start by populating it with your very own mob:
 ```
-
+# Internal name used by MythicMobs, this must be an alpha numeric, unique value as its how the mob is identified by the plugin.
 tutorial_pirate:
-  # Internal name used by MythicMobs, this must be an alpha numeric, unique value as its how the mob is identified by the plugin.
 
-  Type: ZOMBIE
   # Base mob type, must be a valid Minecraft Entity.
+  Type: ZOMBIE
 
-  Display: '&ePirate'
   # A String that will be used as the mob display name, can include color codes.
+  Display: '&ePirate'
 
-  Health: 100
   # Base Mob health.
-  Damage: 10
-  # Base Mob damage.
+  Health: 100
 
+  # Base Mob damage.
+  Damage: 10
+
+  # The equipment that the mob uses, in this current setup, it equips an Iron Sword on the Main Hand and a Shield on the Offhand. 
+  # Check Equipment for more info: https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Mobs/Equipment
   Equipment:
   - IRON_SWORD HAND
   - SHIELD OFFHAND
-  # The equipment that the mob uses, in this current setup, it equips an Iron Sword on the Main Hand and a Shield on the Offhand. 
-  # Check Equipment for more info: https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Mobs/Equipment
 
-  Options:
   # Customization Options for mobs:
   # More options on: https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Mobs/Options
-    AlwaysShowName: true
+  Options:
     # - If true, always show the display name as nametag.
-    PreventOtherDrops: true
+    AlwaysShowName: true
     # - If true, disable vanilla drops.
-    PreventSunburn: true
+    PreventOtherDrops: true
     # - If true, the mob won't burn in sunlight.
+    PreventSunburn: true
 
-  Faction: PIRATE
   # Sets the mob faction, useful for AI and combat. 
+  Faction: PIRATE
 
   Skills:
   - message{msg="I will crush your bones!"} @PIR{r=10} ~onSpawn
@@ -85,3 +85,42 @@ Options to customize the mob, this setup makes:
 - Display name always show.
 - Prevents vanilla drops.
 - Prevents the mob from burning in Daylight. 
+
+---
+```
+  Faction: PIRATE
+```
+Sets the faction of the mob as "Pirate".
+
+---
+```
+  Skills:
+  - message{msg="I will crush your bones!"} @PIR{r=10} ~onSpawn
+  - sound{s=entity.player.attack.sweep} @Self ~onAttack
+  - effect:particles{particle=sweep_attack;amount=1} @Self ~onAttack
+  - message{msg="How could I be defeated?!"} @PIR{r=10} ~onDeath
+```
+SKILLS TBA.
+
+---
+### Example Mob:
+```
+tutorial_pirate:
+  Type: ZOMBIE
+  Display: '&ePirate'
+  Health: 100
+  Damage: 10
+  Equipment:
+  - IRON_SWORD HAND
+  - SHIELD OFFHAND
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Faction: PIRATE
+  Skills:
+  - message{msg="I will crush your bones!"} @PIR{r=10} ~onSpawn
+  - sound{s=entity.player.attack.sweep} @Self ~onAttack
+  - effect:particles{particle=sweep_attack;amount=1} @Self ~onAttack
+  - message{msg="How could I be defeated?!"} @PIR{r=10} ~onDeath
+``` 
