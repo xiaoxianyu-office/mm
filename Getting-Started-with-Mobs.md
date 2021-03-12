@@ -47,3 +47,41 @@ tutorial_pirate:
   - effect:particles{particle=sweep_attack;amount=1} @Self ~onAttack
   - message{msg="How could I be defeated?!"} @PIR{r=10} ~onDeath
 ``` 
+
+### Explanation:
+```
+tutorial_pirate:
+```
+Sets the internal mob ID to "tutorial_pirate".
+
+---
+```
+  Health: 100
+```
+Defines the default mob health to 100.
+
+---
+```
+  Damage: 10
+```
+Defines the base mob damage to 10.
+
+---
+```
+  Equipment:
+  - IRON_SWORD HAND
+  - SHIELD OFFHAND
+```
+Equips an Iron Sword on the Main Hand and a Shield on the Offhand. 
+
+---
+```
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+```
+Options to customize the mob, this setup makes:
+- Display name always show.
+- Prevents vanilla drops.
+- Prevents the mob from burning in Daylight. 
