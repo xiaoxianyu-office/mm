@@ -9,7 +9,7 @@ Now that you have the mob file, lets start by populating it with your very own m
 ```
 
 tutorial_pirate:
-  # Basic part of a mob, this must be an alpha numeric, unique value as its how the mob is identified by the plugin.
+  # Internal name used by MythicMobs, this must be an alpha numeric, unique value as its how the mob is identified by the plugin.
 
   Type: ZOMBIE
   # Base mob type, must be a valid Minecraft Entity.
