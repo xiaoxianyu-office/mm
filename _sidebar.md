@@ -8,7 +8,6 @@
 * [API Information](API)
 ### [Mobs](Mobs)
   * [Overview](Mobs)
-  * [Getting Started](Getting-Started-with-Mobs)
   * [Types](Mobs/Types)
   * [Mob Options](Mobs/Options)
   * [Mob Levels](Mobs/Levels)
