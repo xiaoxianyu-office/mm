@@ -25,7 +25,8 @@ tutorial_pirate:
   Equipment:
   - IRON_SWORD HAND
   - SHIELD OFFHAND
-  # The equipment that the mob uses, in this current setup, it equips an Iron Sword on the Main Hand and a Shield on the Offhand. Check Equipment for more info: https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Mobs/Equipment
+  # The equipment that the mob uses, in this current setup, it equips an Iron Sword on the Main Hand and a Shield on the Offhand. 
+  # Check Equipment for more info: https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Mobs/Equipment
 
   Options:
   # Customization Options for mobs:
