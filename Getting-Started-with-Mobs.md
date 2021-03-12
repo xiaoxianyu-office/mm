@@ -7,14 +7,26 @@ To create your first mob, navigate to the ``MythicMobs/Mobs`` folder and create 
 ### Setting up basics:
 Now that you have the mob file, lets start by populating it with your very own mob:
 ```
+
 tutorial_pirate:
+# Basic part of a mob, this must be an alpha numeric, unique value as its how the mob is identified by the plugin.
+
   Type: ZOMBIE
+  # Base mob type, must be a valid Minecraft Entity.
+
   Display: '&ePirate'
+  # A String that will be used as the mob display name, can include color codes.
+
   Health: 100
+  # Base Mob health.
   Damage: 10
+  # Base Mob damage.
+
   Equipment:
   - IRON_SWORD HAND
   - SHIELD OFFHAND
+  # The equipment that the mob uses, in this current setup, it equips an Iron Sword on the Main Hand and a Shield on the Offhand. Check Equipment for more info: https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Mobs/Equipment
+
   Options:
     AlwaysShowName: true
     PreventOtherDrops: true
