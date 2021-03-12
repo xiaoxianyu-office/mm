@@ -8,7 +8,7 @@ To create your first mob, navigate to the ``MythicMobs/Mobs`` folder and create 
 Now that you have the mob file, lets start by populating it with your very own mob:
 ```
 tutorial_pirate:
-  Type: PILLAGER
+  Type: ZOMBIE
   Display: '&ePirate'
   Health: 100
   Damage: 10
@@ -18,6 +18,7 @@ tutorial_pirate:
   Options:
     AlwaysShowName: true
     PreventOtherDrops: true
+    PreventSunburn: true
   Faction: PIRATE
   Skills:
   - message{msg="I will crush your bones!"} @PIR{r=10} ~onSpawn
@@ -31,10 +32,25 @@ tutorial_pirate:
 tutorial_pirate:         # Basic part of a mob, this must be an alpha numeric, unique value
                          # as its how the mob is identified by the plugin.
   
-  Type: PILLAGER         # Base mob type, must be a valid Minecraft Entity.
+  Type: ZOMBIE           # Base mob type, must be a valid Minecraft Entity.
 
   Display: '&ePirate'    # A String that will be used as the mob display name, can include 
                          # color codes.
 
   Health: 100            # Base Mob health.
   Damage: 10             # Base Mob damage.
+  
+  Equipment:             # The equipment that the mob uses.
+  - IRON_SWORD HAND      # More documentation on:
+  - SHIELD OFFHAND       # https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Mobs/Equipment
+                         # The current setup equips an Iron Sword on the 
+                         # main hand and a Shield on the offhand.
+
+  Options:                    # Customization Options for mobs, 
+    AlwaysShowName: true      # - If true, always show the display name as nametag.
+    PreventOtherDrops: true   # - If true, disable vanilla drops.
+    PreventSunburn: true      # - If true, the mob won't burn in sunlight.
+
+    # More options on: https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Mobs/Options
+    
+  Faction: PIRATE             # Sets the mob faction, useful for AI and combat. 
