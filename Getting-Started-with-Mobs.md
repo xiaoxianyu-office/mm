@@ -60,6 +60,11 @@ Sets the internal mob ID to "tutorial_pirate".
 Sets the entity type as Zombie.
 
 ```
+  Display: '&ePirate'
+```
+Sets the entity display name as 'Pirate' with yellow color.
+
+```
   Health: 100
 ```
 Defines the default mob health to 100.
