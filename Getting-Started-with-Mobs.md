@@ -55,6 +55,11 @@ tutorial_pirate:
 Sets the internal mob ID to "tutorial_pirate".
 
 ```
+  Type: ZOMBIE
+```
+Sets the entity type as Zombie.
+
+```
   Health: 100
 ```
 Defines the default mob health to 100.
