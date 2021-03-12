@@ -54,19 +54,16 @@ tutorial_pirate:
 ```
 Sets the internal mob ID to "tutorial_pirate".
 
----
 ```
   Health: 100
 ```
 Defines the default mob health to 100.
 
----
 ```
   Damage: 10
 ```
 Defines the base mob damage to 10.
 
----
 ```
   Equipment:
   - IRON_SWORD HAND
@@ -74,7 +71,6 @@ Defines the base mob damage to 10.
 ```
 Equips an Iron Sword on the Main Hand and a Shield on the Offhand. 
 
----
 ```
   Options:
     AlwaysShowName: true
@@ -86,13 +82,11 @@ Options to customize the mob, this setup makes:
 - Prevents vanilla drops.
 - Prevents the mob from burning in Daylight. 
 
----
 ```
   Faction: PIRATE
 ```
 Sets the faction of the mob as "Pirate".
 
----
 ```
   Skills:
   - message{msg="I will crush your bones!"} @PIR{r=10} ~onSpawn
