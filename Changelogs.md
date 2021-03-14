@@ -1,5 +1,5 @@
-4.11.0  (Development Builds)
-=====
+4.11.0
+======
 
 General
 -------
@@ -146,6 +146,45 @@ Bug Fixes/Other
 - Fixed error when negative heal values try to set health <0
 - Fixed NPE in projectile mechanic
 - Fixed LevelModifiers to be prioritized over using global scaling equations
+- Fixed Worldtime Condition
+- Fixed issues with world audience on sound effect
+- Fixed some concurrency issues with mobs
+- Fixed bullet mobs on projectiles not setting caster as parent
+- Fixed placeholders not working on spin effect
+- Fixed DisableVanillaSpawns blocking mobs from RandomSpawning
+- Fixed doppeganger mechanic on mobs without display names
+- Fixed some issues with onHit skills w/ the shoot and volley mechanics
+- Fixed inheritFaction=false w/ summon mechanic
+- Fixed NPE in Projectile mechanic
+- Fixed some issues with onHit skills w/ the shoot and volley mechanics
+- Fixed vanilla override mobs dying instantly glitching out
+- Fixed NPE with invalid mmoitem drops that could cause mobs to break when dying
+- Fixed NPE in ParticleOrbital
+- Fixed localized lightning effect on 1.16
+- Fixed bossbar mechanic firing after mob is dead
+- Fixed several bugs caused by mob spawning being cancelled
+- Fixed bossbar blinking + some other issues
+- Fixed toast mechanics not revoking fake criteria
+- Fixes for lightlevel condition
+- Fixed blockwave fake blocks using wrong data values on 1.12
+- Fixed damage that ignores armor not triggering totems
+- Fixed @target targeter throwing error on item timer skills
+- Fixed drop table error with items w/ amount=0
+- Fixed @target w/ players going thru solid transparent blocks
+- Fixed setOwner mechanic not working with Cats and Parrots
+- Fixed several item-related bugs
+- Fixed NPE with Location mechanics targeting entities
+- Fixed bug with mobs becoming invincible when dying during the same tick they spawn
+- Fixed several bugs with aura mechanics
+- Fixed wearing condition breaking with durability and vanilla items
+- Fixed setOwner mechanic issues
+- Fixed animateArmorStand mechanic
+- Fixed ClassCastException thrown by damage mechanic
+- Fixed unidentified items with mmoitems drops
+- Fixed tridents not working with shoot mechanic
+- Fixed raytracing to non-damageable entities throwing an error
+- Attempted to fix item serialization in 30 different ways
+- Removed unused EffectLib compatibilities
 - Removed ClickEvent
 
 4.10.0
