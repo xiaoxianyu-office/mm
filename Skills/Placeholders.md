@@ -74,13 +74,21 @@ Skill Placeholders
 +- random number between #</td>
 </tr>
 <tr class="odd">
+<td>&lt;caster.l.x.double&gt;</td>
+<td>Returns the precise X coordinate of the caster</td>
+</tr>
+<tr class="even">
 <td>&lt;caster.l.y&gt;</td>
 <td>Returns the Y coordinate of the caster</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>&lt;caster.l.y.#&gt;</td>
 <td>Returns the Y coordinate of the caster<br />
 +- random number between #</td>
+</tr>
+<tr class="even">
+<td>&lt;caster.l.y.double&gt;</td>
+<td>Returns the precise Y coordinate of the caster</td>
 </tr>
 <tr class="odd">
 <td>&lt;caster.l.z&gt;</td>
@@ -92,22 +100,26 @@ Skill Placeholders
 +- random number between #</td>
 </tr>
 <tr class="odd">
+<td>&lt;caster.l.z.double&gt;</td>
+<td>Returns the precise Z coordinate of the caster</td>
+</tr>
+<tr class="even">
 <td>&lt;caster.l.yaw&gt;</td>
 <td>Returns the yaw of the caster</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>&lt;caster.l.pitch&gt;</td>
 <td>Returns the pitch of the caster</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>&lt;caster.stance&gt;</td>
 <td>Returns the current stance of the caster</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>&lt;caster.owner.name&gt;</td>
 <td>Returns the name of the wolf's owner</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>&lt;caster.owner.uuid&gt;</td>
 <td>Returns the uuid of the wolf's owner</td>
 </tr>
