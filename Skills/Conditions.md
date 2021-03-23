@@ -136,6 +136,7 @@ Conditions
 | [DistanceFromSpawn](/conditions/distancefromspawn)           | Location | Whether the distance from the world's spawn point to the target is within the given range   |
 | [Dusk](/conditions/dusk)                                     | Location | If the time is dusk, from 14000 to 18000 in-game time.                                      |
 | [EntityType](/conditions/entitytype)                         | Entity   | Tests the entity type of the target                                                         |
+| [Faction](/conditions/faction)                               | Entity   | Tests for the targets faction |
 | [FallSpeed](/conditions/fallspeed)                           | Entity   | If the fall speed of the target is within the given range                                   |
 | [FieldOfView](/conditions/fieldofview)                       | Compare  | Tests if the target is within the given angle from where the caster is looking              |
 | [Gliding](/conditions/gliding)                               | Entity   | If the target is gliding                                                                    |
