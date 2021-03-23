@@ -1,4 +1,4 @@
-**Description:** checks if the target is in a faction
+**Description:** Checks if the target is in a faction
 
 **Type:** Entity
 
@@ -8,7 +8,7 @@
 
 | Attribute    | Alias | Description              |
 | ------------ | ----- | ------------------------ |
-| Faction      | None  | The faction to check for |
+| faction      | None  | The faction to check for |
 
 ---
 
