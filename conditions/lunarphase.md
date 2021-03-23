@@ -6,9 +6,9 @@
 
 **Attributes:**
 
-| Attribute | Alias | Description                           |
-| --------- | ----- | ------------------------------------- |
-| phase     |   p   | the lunar phase you want to check for |
+| Attribute  | Alias      | Description                             |
+| ---------- | ---------- | --------------------------------------- |
+| phases     | p, phase   | the lunar phase/s you want to check for |
 
 ---
 
@@ -32,4 +32,8 @@ Please note that you **MUST** use the phase number. This chart is here to help y
 ```
 Conditions:
 - lunarphase{p=0} true
+```
+```
+Conditions:
+- lunarphase{p=0,2,4,6} true
 ```
