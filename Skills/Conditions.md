@@ -137,6 +137,7 @@ Conditions
 | [Distance](/conditions/distance)                             | Compare  | Whether the distance between the caster and target is within the given range                |
 | [DistanceFromSpawn](/conditions/distancefromspawn)           | Location | Whether the distance from the world's spawn point to the target is within the given range   |
 | [Dusk](/conditions/dusk)                                     | Location | If the time is dusk, from 14000 to 18000 in-game time.                                      |
+| [EnderDragonPhase](/conditions/EnderDragonPhase)             | Entity   | Checks if the ender dragon is in a phase or phases                                           |
 | [EntityType](/conditions/entitytype)                         | Entity   | Tests the entity type of the target                                                         |
 | [Faction](/conditions/faction)                               | Entity   | Tests for the targets faction |
 | [FallSpeed](/conditions/fallspeed)                           | Entity   | If the fall speed of the target is within the given range                                   |
