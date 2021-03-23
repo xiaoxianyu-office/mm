@@ -16,12 +16,12 @@
 
 ```
 Conditions:
-- enderdragonphase{phases=CIRCLING} true
+- enderdragonphase{phase=CIRCLING} true
 ```
 
 ```
 Conditions:
-- enderdragonphase{phase=FLY_TO_PORTAL,LEAVE_PORTAL} true
+- enderdragonphase{phases=FLY_TO_PORTAL,LEAVE_PORTAL} true
 ```
 
 List of ender dragon phases: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EnderDragon.Phase.html
