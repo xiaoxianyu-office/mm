@@ -143,6 +143,7 @@ Conditions
 | [FallSpeed](/conditions/fallspeed)                           | Entity   | If the fall speed of the target is within the given range                                   |
 | [FieldOfView](/conditions/fieldofview)                       | Compare  | Tests if the target is within the given angle from where the caster is looking              |
 | [FoodLevel](/conditions/FoodLevel)                           | Entity   | Checks if the target has food within the range                                               |
+| [FoodSaturation](/conditions/FoodSaturation)                 | Entity   | Checks if the target has food within the range                                               |
 | [Gliding](/conditions/gliding)                               | Entity   | If the target is gliding                                                                    |
 | [Globalscore](/conditions/globalscore)                       | Entity   | Checks a global scoreboard value                                                            |
 | [HasAura](/conditions/hasaura)                               | Entity   | Checks if the target entity has the given aura                                              |
