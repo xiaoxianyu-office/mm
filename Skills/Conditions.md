@@ -131,6 +131,7 @@ Conditions
 | [Crouching](/conditions/crouching)                           | Entity   | Whether or not the target entity is crouching                                               |
 | [Cuboid](/conditions/cuboid)                                 | Compare  | Whether the target is within the given cuboid between location1 x location2                 |
 | [DamageAmount](/conditions/DamageAmount)                     | Entity   | Checks for a range of damage taken                                                          |
+| [DamageCause](/conditions/DamageCause)                       | Entity   | Checks the type of the damage cause                                                          |
 | [Dawn](/conditions/dawn)                                     | Location | If the time is dawn, from 22000 to 2000 in-game time                                        |
 | [Day](/conditions/day)                                       | Location | If the time is day, from 2000 to 10000 in-game time                                         |
 | [Distance](/conditions/distance)                             | Compare  | Whether the distance between the caster and target is within the given range                |
