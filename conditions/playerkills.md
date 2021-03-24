@@ -14,5 +14,5 @@
 
 ```
   Conditions:
-  - playerkills{} true
+  - playerkills{k=>10} true
 ```
