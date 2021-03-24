@@ -16,5 +16,10 @@
 
 ```
 Conditions:
-- distancefromspawn{d=100} true
+- distancefromspawn{d=<100} true
+```
+
+```
+Conditions:
+- distancefromspawn{d=>50} true
 ```
