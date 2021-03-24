@@ -15,5 +15,5 @@
 
 ```
   Conditions:
-  - stance{} true
+  - stance{s=CombatStance;str=true} true
 ```
