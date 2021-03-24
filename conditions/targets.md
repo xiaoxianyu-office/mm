@@ -14,5 +14,10 @@
 
 ```
   Conditions:
-  - targets{} true
+  - targets{a=>0} true
+```
+
+```
+  Conditions:
+  - targets{a=0to5} true
 ```
