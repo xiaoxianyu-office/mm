@@ -17,5 +17,5 @@
 
 ```
 Conditions:
-- globalscore{o=KillCount;value=>5} true
+- globalscore{o=KillCount;value=5} true
 ```
