@@ -113,6 +113,7 @@ are able to target locations as well.
 | [Stun][]                   | Stuns the target entity                                                            |
 | [Suicide][]      | Causes the caster to die                      |
 | [Summon][]       | Summons other mobs at the target              |
+| [Swap][]         | Swaps locations with the target               |
 | [Add Tag][]      | Adds a scoreboard tag to the target           |
 | [Remove Tag][]   | Removes a scoreboard tag from the target      |
 | [Teleport][]     | Teleports to the target                       |
@@ -184,7 +185,6 @@ but not yet ready for use.
 
 | Mechanic           | Description                     |
 |--------------------|---------------------------------|
-| [Swap][]           | Swaps locations with the target |
 | [Time][]           | Changes the time                |
 
 
