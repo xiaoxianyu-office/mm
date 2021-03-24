@@ -15,8 +15,8 @@
 **Examples:**
 
 ```
-# make sure to use ALL CAPS, otherwise the console will
-# tell you it is not a valid material!!
+# make sure to use ALL CAPS, otherwise the console
+# will tell you it is not a valid material!!
 Conditions:
 - holding{m=DIAMOND_SWORD} true
 ```
