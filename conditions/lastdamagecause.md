@@ -16,6 +16,8 @@ List of all possible damage causes:
 
 https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
 
+---
+
 **Examples:**
 
 ```
