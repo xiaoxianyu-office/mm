@@ -14,5 +14,5 @@
 
 ```
   Conditions:
-  - playernotwithin{} true
+  - playernotwithin{d=10} true
 ```
