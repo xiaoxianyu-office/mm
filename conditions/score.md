@@ -8,7 +8,7 @@
 | --------- | -------------  | ------------------------- |
 | objective| o| The objective|
 | entry| e| The entry|
-| value| v| | The value to match |
+| value| v| The value to match |
 
 ---
 
@@ -16,5 +16,5 @@
 
 ```
   Conditions:
-  - score{} true
+  - score{o=PlayerKills;e=Akim91;v=10} true
 ```
