@@ -6,12 +6,14 @@ that deals damage. The shoot-mechanic has been significantly changed in
 version 2.4. See below for both how it worked prior and after those
 additions.
 
+Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4.11
+
 Attributes
 ----------
 
 | Attribute            | Aliases    | Description                                                                               | Default |
 |----------------------|------------|-------------------------------------------------------------------------------------------|---------|
-| type                 | t          | Type of projectile to shoot. Can be "arrow", "snowball", "egg", "enderpearl", or "potion" | arrow   |
+| type                 | t          | Type of projectile to shoot. Can be "arrow", "snowball", "egg", "enderpearl", or "potion" added "trident", "splash_potion", and "lingering_potion" in MM 4.11 | arrow   |
 | damage               | d          | How much damage the projectile will cause                                                 | 5       |
 | velocity             | v          | The velocity of the projectile                                                            | 1       |
 | maxDistance          | md         | The maximum distance the projectile will travel                                           | 64      |
