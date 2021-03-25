@@ -1,5 +1,3 @@
-**Threat Tables**
-
 Threat Tables change how a mob tracks its targets. Normally Minecraft mobs do not follow any kind of rigid system of what to target - they will simply bounce back and forth between attacking whatever hits them. Threat Tables change that.
 
 With Threat Tables enabled, mobs will keep track of how much damage each player does to them, and will attack the player that deals the most damage. That way you can avoid scenarios where one player will hit a mob and then run away while others follow behind smacking it forever, trivializing it.
