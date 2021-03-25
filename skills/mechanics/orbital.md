@@ -9,6 +9,8 @@ during its orbit.
 Much like projectile, it's great for creating complex skills, such as a
 fire shield, and is a very complex skill to master.  
 
+Added projectile bullets to Orbital in MM 4.11. See how to use them on the [projectiles mechanic](/skills/mechanics/projectile) page.
+
 Attributes
 ----------
 
