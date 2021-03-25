@@ -14,6 +14,7 @@ Attributes
 | fireTicks     | ft        | How long (in ticks) fire left behind by the fireball will persist.             | 0             |
 | smallfireball | small,sml | Whether or not to use the smaller blaze fireball instead of the ghast fireball | false         |
 | playsound     | ps        | Whether or not to play the fireball launching sound when it is created         | false         |
+| type          |           | SMALL/LARGE/DRAGON Added in MM 4.11 | SMALL |
 
   
 
