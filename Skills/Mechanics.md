@@ -96,6 +96,7 @@ are able to target locations as well.
 | [Set Mob Color][]          | Changes the color of the target if it is a colorable mob                           |
 | [Set Mob Score][]          | Sets a scoreboard value on the casting mob                                         |
 | [Set Name][]               | Changes the target entity's name                                                   |
+| [Set NoDamageTicks][]      | sets the nodamageticks of the target |
 | [Set Owner][]              | Makes the target the owner of the casting mob                                      |
 | [Set Rotation][]           | Sets the rotation of the target                                                    |
 | [Set Target Score][]       | Sets the score of the target                                                       |
@@ -269,6 +270,7 @@ but not yet ready for use.
   [Set Mob Color]: /skills/mechanics/setmobcolor
   [Set Mob Score]: /skills/mechanics/setmobscore
   [Set Name]: /skills/mechanics/setname
+  [Set NoDamageTicks]: /skills/mechanics/setnodamageticks
   [Set Owner]: /skills/mechanics/setowner
   [Set Rotation]: /skills/mechanics/setrotation
   [Set Target Score]: /skills/mechanics/settargetscore
