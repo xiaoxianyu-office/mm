@@ -5,6 +5,14 @@ Sends a chat message to the target, if the target is a player. [Color
 codes](/databases/misc/colorcodes) and
 [variables](/skills/stringvariables) are useable in this mechanic.
 
+**Added in 4.10**
+
+* Now allow hex colors in the format **`<#FFFFFF>`**
+* Now supports gradients in the format **`<gradient:#color1:#color2>text</gradient>`**
+* Now supports **`<rainbow>text</rainbow>`**
+* Now supports hover text in the format **`<hover:show_text:'hover text??'>hover over me!</hover>`**
+* Now supports clickable text in the format **`<click:run_command:/say hello>click me!</click>`**
+
 Attributes
 ----------
 
