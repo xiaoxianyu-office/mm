@@ -4,6 +4,14 @@ Mechanic: Speak
 Makes the caster speak using chat and speech bubbles. Supports
 Holograms.
 
+**Added in 4.10**
+
+* Now allow hex colors in the format **`<#FFFFFF>`**
+* Now supports gradients in the format **`<gradient:#color1:#color2>text</gradient>`**
+* Now supports **`<rainbow>text</rainbow>`**
+* Now supports hover text in the format **`<hover:show_text:'hover text??'>hover over me!</hover>`**
+* Now supports clickable text in the format **`<click:run_command:/say hello>click me!</click>`**
+
 Attributes
 ----------
 
