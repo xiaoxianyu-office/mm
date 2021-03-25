@@ -53,7 +53,7 @@ skill **effect:name**
 | [Smoke Swirl][]      | Creates a persistent "swirl" of smoke                                 |
 | [Sound][]            | Plays a sound effect from a resource pack                             |
 | [Spin][]             | Causes the mob to spin                                                |
-| [TotemUndying][]     | Plays the totemUndying effect at the caster                           |
+| [TotemUndying][]     | Plays the effect of a player resurrecting                             |
 
 ### EffectLib Effects
 
