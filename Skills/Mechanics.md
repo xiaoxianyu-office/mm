@@ -123,6 +123,7 @@ are able to target locations as well.
 | [Toggle Lever][] | Toggles a lever at the target location        |
 | [Velocity][]     | Modifies the velocity of the target entity(s) |
 | [Weather][]      | Modifies the weather in the target world      |
+| [WolfSit][]      | Modifies the target wolves position           |
 
 Effect Mechanics
 ----------------
@@ -294,6 +295,7 @@ but not yet ready for use.
   [Toggle Lever]: /skills/mechanics/togglelever
   [Velocity]: /skills/mechanics/velocity
   [Weather]: /skills/mechanics/weather
+  [WolfSit]: /skills/mechanics/wolfsit
   [View the list of Effect Mechanics by clicking here]: /skills/effects/
   [Skill]: /skills/mechanics/skill
   [Aura]: /skills/mechanics/aura
