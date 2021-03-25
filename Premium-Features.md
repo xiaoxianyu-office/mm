@@ -1,35 +1,31 @@
 Premium
 -------
 [MythicMobs
-Premium](http://www.mythicmobs.net/index.php?account/upgrades) comes
-with numerous Premium-only perks, including: 
+Premium](http://www.mythicmobs.net/index.php?account/upgrades) comes with numerous Premium-only perks, including: 
 
 -   Special Premium role in Discord
 -   Access to the premium support channel and ticket system
 -   Access to the latest version faster
 -   Access to development builds
--   Access to premium-only mechanics, such as raytracing mechanics
+-   Access to premium-only mechanics, such as [raytracing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/raytrace) mechanics
 -   Ability to use custom damage types and damage modifiers
--   Ability to use Math and Placeholders in:
+-   Ability to use Math and [Placeholders](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Placeholders) in:
     - Mob attributes (health, damage, etc)
     - Most skills 
     - Item attributes
     - Drop table amounts         
--   Ability to use hit-conditions in any projectile skills
--   Ability to use conditional AI goals/targeters
+-   Ability to use on hit conditions in [projectile skills](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/projectile)
+-   Ability to use conditional [AI goals/targeters](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/AI)
 -   Much more!
 
 Any new things unlocked with MythicMobs Premium can also be used in compatible Mythic plugins, such as Crucible, Enchants, MMOItems, MMOCore, and more!
 
- More premium-only features will continue to be added as time goes
-on.  You can upgrade your account to Premium [by clicking
-here](http://www.mythicmobs.net/index.php?account/upgrades).
+More premium-only features will continue to be added as time goes on.  You can upgrade your account to Premium [by clicking here](http://www.mythicmobs.net/index.php?account/upgrades).
 
 Premium+
 --------
 
- For those who wish to donate a little more or who have large servers,
-our Premium+ package gives you several added benefits: 
+ For those who wish to donate a little more or who have large servers, our Premium+ package gives you several added benefits: 
 
 -   Special Premium+ role in Discord
 -   Priority on support tickets with ability to ping the developers
