@@ -4,8 +4,6 @@ Creates a wave of the specified blocks, with varying shapes, speeds and blocks.
 
 Note that the blockwave effect will never actually change any blocks in the world and thus will never grief the environment in any way. The changes made this effect are purely cosmetic, no actual blocks are changed and everything will always return to its original state.
 
-**Type:** Location
-
 ---
 
 **Attributes:**
