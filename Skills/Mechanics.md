@@ -45,6 +45,7 @@ are able to target locations as well.
 | [Eject Passenger][]    | Ejects anything riding the caster                              |
 | [Equip][]                | Causes the casting mob to equip an item                                     |
 | [Explosion][]            | Causes an explosion                                                         |
+| [Extinguish][]           | removes fire ticks from the target entity                                   |
 | [Feed][]                 | Feeds the target player                                                     |
 | [Fly][]                  | Applies an [aura][] that allows the target to fly                           |
 | [Force Pull][]           | Teleports the target to the mob                                             |
@@ -219,6 +220,7 @@ but not yet ready for use.
   [Eject Passenger]: /skills/mechanics/ejectpassenger
   [Equip]: /skills/mechanics/equip
   [Explosion]: /skills/mechanics/explosion
+  [Extinguish]: /skills/mechanics/extinguish
   [Feed]: /skills/mechanics/feed
   [Fly]: /skills/mechanics/fly
   [aura]: /skills/mechanics/aura
