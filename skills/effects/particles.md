@@ -5,6 +5,9 @@ Creates a particle effect at the targeted entity or location.
 
 A list of particle types can be found [here](/skills/effects/particles/types).
 
+Added in 4.11: 
+* Added dir=x,y,z option to particle effects to specify directional vector
+* Added audience=\[world/target/caster\] options to all particle effects
 ### Attributes
 ----
 
