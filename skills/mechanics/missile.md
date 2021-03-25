@@ -10,6 +10,11 @@ differences. Missiles cannot be summoned as the "METEOR"-type and cannot
 hug the surface. However you can edit the inertia, add an onStart-skill
 and specify wether or not the missiles can only hit their targets.
 
+**Added in 4.10**
+
+* Missiles can now target locations
+* Added targetYoffset to missile mechanic
+
 Attributes
 ----------
 
