@@ -153,30 +153,38 @@ Special Placeholders
 | <score.objective.dummyname>      | Returns the score of "dummyname" (fake player) from "objective" **(2.3)** |
 | <random.\#-\#>  | Returns a random number in the specified range                                             |
 
-##### Examples
+Examples
+--------------------
 
-This will make a mob send a teal (<&b>) message to all players in a radius of 20 blocks around in itself, stating that it was slain by player (<trigger.name>) in green (<&a>)
+**This will make a mob send a teal message to all players in a radius of 20 blocks around in itself, stating what entity killed it in green.**
 
+```
     Skills:
     - message{m="<&b><caster.name><&r> was slain by <&a><trigger.name><&r>."} @PIR{r=20} ~onDeath
+```
 
-This skill will make an announcement like this:
+**This skill will make an announcement when the mob spawns that looks like this:**
+
 ![image](uploads/91ed6d8aaa669e8ae21f8745e8ff4643/image.png)
-when the mob spawns
+
 ```
   Skills:
   - Skill{s=SaveBossLocation} @self ~onSpawn
   - message{m="&eA &BGiant Zombie&e (Level &4<caster.level>&e) &ehas spawned at <caster.var.SpawnLoc>"} ~onSpawn @PlayersInWorld
   - message{m="&eThe &BGiant Zombie&e (Level &4<caster.level>&e) &espawned at <caster.var.SpawnLoc>&e has been slain."} ~onDeath @PlayersInWorld
 ```
+
 Be sure to place this skill somewhere in the skills file
+
 ```
 SaveBossLocation:
   Skills:
   - setvariable{var=SpawnLoc;type=STRING;value="&b<caster.l.x>&e, &b<caster.l.y>&e, &b<caster.l.z>";scope=CASTER} @self
 ```
-You can also use color tags and formatting tags to make the mobs have pretty names:
+**You can also use color tags and formatting tags to make the mobs have pretty names:**
+
 ![image](uploads/9ad97422803c3f35fbeac2e4df7f7d52/image.png)
+
 ```
 ZOMBIE:
   Display: 'ZOMBIE &F- &A<caster.hp>/<caster.mhp>HP &F- &ELv.<caster.level>'
