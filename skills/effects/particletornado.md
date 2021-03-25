@@ -6,7 +6,7 @@ Before using this effect on live servers, make sure you know and understand exac
 
 **Attributes:**
 
-This effect extends the general Particle Effect and uses all attributes from it.
+This effect extends the general [Particle Effect](/skills/effects/particles) and uses all attributes from it.
 
 | Attribute        | Alias | Description                                                   | Default Value | Recommended Value |
 | ---------------- | ----- | ------------------------------------------------------------- | ------------- | ----------------- |
