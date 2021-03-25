@@ -34,6 +34,12 @@
 |---------------------------------|--------------|---------------|---------|--------------------------------------------------------------------------------------------------------------------------------|
 | White, grey and orange particle | Wind, Fire   | Average       | Average | Low speed causes particles to stay in place and fall towards the ground. Faster speed causes particles to fly outward quickly. |
 
+**crimson_spore**
+
+| Description                 | Common Usage | Particle Size | Speed | Speed Effect |
+|-----------------------------|--------------|---------------|-------|--------------|
+| New to 1.16 nether update   | NA           | NA            | NA    | NA           |
+
 **crit**
 
 | Description                        | Common Usage | Particle Size | Speed     | Speed Effect                                                                                                                          |
@@ -75,6 +81,12 @@
 | Description                                                    | Common Usage | Particle Size | Speed | Speed Effect                            | 1.12 Name |
 |----------------------------------------------------------------|--------------|---------------|-------|-----------------------------------------|-----------|
 | Creates a particle of lava that hovers for a second then drops | Blood        | Average       | Slow  | Slows down or speeds up dripping effect | dripLava  |
+
+**dripping_obsidian_tear**
+
+| Description                 | Common Usage | Particle Size | Speed | Speed Effect |
+|-----------------------------|--------------|---------------|-------|--------------|
+| New to 1.16 nether update   | NA           | NA            | NA    | NA           |
 
 **drip_water**
 
@@ -118,6 +130,12 @@
 |---------------------------------------------|-----------------------------------|---------------|-------|--------------|-------------|
 | Similar to reddust but smaller/with gravity | Any general colored effects/ashes | Average       | Slow  | Unknown      | fallingDust |
 
+**falling_obsidian_tear**
+
+| Description                 | Common Usage | Particle Size | Speed | Speed Effect |
+|-----------------------------|--------------|---------------|-------|--------------|
+| New to 1.16 nether update   | NA           | NA            | NA    | NA           |
+
 **fireworks_spark**
 
 | Description                                          | Common Usage          | Particle Size | Speed   | Speed Effect                                                                                          | 1.12 Name      |
@@ -147,6 +165,12 @@
 | Description                                                                         | Common Usage                     | Particle Size | Speed   | Speed Effect          | 1.12 Name |
 |-------------------------------------------------------------------------------------|----------------------------------|---------------|---------|-----------------------|-----------|
 | Takes the icon of an item and break it into pieces that quickly fall to the ground. | Varies depending on icon choosen | Average       | Average | | iconcrack_[id]_[data] |
+
+**landing_obsidian_tear**
+
+| Description                 | Common Usage | Particle Size | Speed | Speed Effect |
+|-----------------------------|--------------|---------------|-------|--------------|
+| New to 1.16 nether update   | NA           | NA            | NA    | NA           |
 
 **lava**
 
@@ -213,6 +237,18 @@
 | Description | Common Usage | Particle Size | Speed | Speed Effect | 1.12 Name |
 |-------------|--------------|---------------|-------|--------------|-----------|
 | snowshovel  |              |               |       |              |           |
+
+**soul**
+
+| Description                 | Common Usage | Particle Size | Speed | Speed Effect |
+|-----------------------------|--------------|---------------|-------|--------------|
+| New to 1.16 nether update   | NA           | NA            | NA    | NA           |
+
+**soul_fire_flame**
+
+| Description                 | Common Usage | Particle Size | Speed | Speed Effect |
+|-----------------------------|--------------|---------------|-------|--------------|
+| New to 1.16 nether update   | NA           | NA            | NA    | NA           |
 
 **spell_instant**
 
@@ -290,3 +326,9 @@
 | Description | Common Usage | Particle Size | Speed | Speed Effect |
 |-------------|--------------|---------------|-------|--------------|
 | Fishing.    |              |               |       |              |
+
+**warped_spore**
+
+| Description                 | Common Usage | Particle Size | Speed | Speed Effect |
+|-----------------------------|--------------|---------------|-------|--------------|
+| New to 1.16 nether update   | NA           | NA            | NA    | NA           |
