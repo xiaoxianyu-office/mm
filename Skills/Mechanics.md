@@ -66,6 +66,7 @@ are able to target locations as well.
 | [Mount][]                | Summons a mob for the caster and mounts it                                  |
 | [Mount Me][]             | Forces the target entity to mount the caster                                |
 | [Mount Target][]         | Mounts the target                                                           |
+| [Oxygen][]               | Gives oxygen to a player target                                             |
 | [PoseArmorStand][]       | Changes the pose of the target ArmorStand                                   |
 | [Potion][]               | Applies a potion effect to the target                                       |
 | [Prison][]               | Imprisons the target inside a block                                         |
@@ -240,6 +241,7 @@ but not yet ready for use.
   [Mount]: /skills/mechanics/mount
   [Mount Me]: /skills/mechanics/mountme
   [Mount Target]: /skills/mechanics/mounttarget
+  [Oxygen]: /skills/mechanics/oxygen
   [PoseArmorStand]: /skills/mechanics/posearmorstand
   [Potion]: /skills/mechanics/potion
   [Prison]: /skills/mechanics/prison
