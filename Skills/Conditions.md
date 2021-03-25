@@ -152,6 +152,7 @@ Conditions
 | [HasInventorySpace](/conditions/hasinventoryspace)           | Entity   | If the target has the given amount of empty inventory space                                 |
 | [HasOwner](/conditions/hasowner)                             | Entity   | Tests if the target mob has an owner                                                        |
 | [HasParent](/conditions/hasparent)                           | Entity   | Tests if the target mob has a parent                                                        |
+| [HasPassenger](/skills/conditions/hasPassenger)              | Entity   | Checks if the target entity has a passenger                                                 |
 | [HasGravity](/conditions/hasgravity)                         | Entity   | Tests if the target mob has gravity                                                         |
 | [HasPotionEffect](/conditions/haspotioneffect)               | Entity   | Tests if the target entity has a potion effect                                              |
 | [HasTag](/conditions/hastag)                                 | Entity   | Tests if the target has a scoreboard tag                                                    |
