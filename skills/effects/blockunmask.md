@@ -2,8 +2,6 @@
 
 The blockunmask effect is used to revert blockchanges made by the blockmask effect. For instance, this effect can be used in a high radius after a mob has died in order to “clean up” the fake block updates sent. However this is not neccessary, because the fake block changes created by the blockmask effect will be reverted if a chunk is reloaded for a player (but will only revert for that player).
 
-**Type:** Location
-
 ---
 
 **Attributes:**
