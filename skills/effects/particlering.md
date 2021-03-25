@@ -1,6 +1,6 @@
 **Description:** 
 
-Creates a line of particles from the caster to the targeted entity or location. Extension of the [Particle Effect](/skills/effects/particles).
+Creates a ring of particles around the targeted entity or location. Extension of the [Particle Effect](/skills/effects/particles).
 
 A list of particle types can be found [here](/skills/effects/particles/types).
 
