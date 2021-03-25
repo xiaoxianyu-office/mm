@@ -4,13 +4,6 @@ Creates an explosion effect at the specified target. Will play the sound and the
 
 ---
 
-**Attributes:**
-
-| Attribute | Alias  | Description                                       | Default Value |
-| --------- | ------ | ------------------------------------------------- | ------------- |
-
----
-
 **Examples:**
 
 ```
