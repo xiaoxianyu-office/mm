@@ -1,14 +1,11 @@
 Introduction
 ------------
 
-Legacy Conditions (2.5.11 and below) can be found
-[here](/conditions/legacyconditions).
-
 Conditions are used to determine whether or not an action may execute.
 These conditions are placed under the Condition section in the
 configuration as shown below (bottom of page).
 
-Conditions can be used on [1]:
+Conditions can be used in [1]:
 
 -   [Skill Mechanics](/skills/mechanics/skill)
 -   [Drop Tables](/databases/drops/overview)
