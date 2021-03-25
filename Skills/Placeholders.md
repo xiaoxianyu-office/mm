@@ -24,10 +24,6 @@ Skill Placeholders
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><em>Some placeholders may not function properly if they don't apply to the caster (e.g. the caster is a player). Pre 4.6.0 versions use "mob" instead of "caster"</em></td>
-<td></td>
-</tr>
 <tr class="even">
 <td>&lt;caster.uuid&gt;</td>
 <td>Returns the UUID of the caster</td>
