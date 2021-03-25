@@ -70,6 +70,7 @@ are able to target locations as well.
 | [Oxygen][]               | Gives oxygen to a player target                                             |
 | [PoseArmorStand][]       | Changes the pose of the target ArmorStand                                   |
 | [Potion][]               | Applies a potion effect to the target                                       |
+| [PotionClear][]          | Removes all potion effects from target entity                               |
 | [Prison][]               | Imprisons the target inside a block                                         |
 | [Pull][]                 | Pulls the target towards the mob                                            |
 | [PushButton][]           | Pushes a button at the target location                                      |
@@ -246,6 +247,7 @@ but not yet ready for use.
   [Oxygen]: /skills/mechanics/oxygen
   [PoseArmorStand]: /skills/mechanics/posearmorstand
   [Potion]: /skills/mechanics/potion
+  [PotionClear]: /skills/mechanics/potionclear
   [Prison]: /skills/mechanics/prison
   [Pull]: /skills/mechanics/pull
   [PushButton]: /skills/mechanics/pushbutton
