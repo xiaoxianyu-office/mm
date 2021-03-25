@@ -22,7 +22,9 @@ Note that the blockwave effect will never actually change any blocks in the worl
 
 ---
 
-Material must be the corresponding Bukkit-material name.
+Material must be the corresponding Bukkit-material name. A list of possible materials is below:
+
+https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
 
 The data value is only needed for old minecraft server versions - For example: using data value 1 on dirt will create coarse dirt.
 
