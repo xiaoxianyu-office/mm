@@ -1,8 +1,6 @@
 Mechanic: Velocity
 ==================
 
-*Added in version 2.2*
-
 Modifies the velocity of the targeted entity(s). May be used on players,
 too. Useful for all sorts of things like true knockback resistance,
 force-skills or simulated wind.
