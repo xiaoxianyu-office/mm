@@ -3,7 +3,7 @@ Spawners
 
 Spawners allow you to define specific points in your worlds at which your custom mob creations can spawn. They can with a variety of useful options, conditions and built-in timers, cooldowns and warmups. Note that in MythicSpawners you can only use the old conditions system. Here can you find them: [Legacy Conditions](/conditions/legacyconditions)
 
-You can create spawners directly ingame by using [Commands](/commands) and by creating the a configuration file in the folder */MythicMobs/Spawners*. Note that once a spawner-configuration file has been loaded onto a running server, it can only be edited by ingame commands. If you want to edit a already loaded spawner-configuration file in a text-editor, you have to stop the server in the meantime.
+You can create spawners directly ingame by using [Commands](/commands and permissions) and by creating the a configuration file in the folder */MythicMobs/Spawners*. Note that once a spawner-configuration file has been loaded onto a running server, it can only be edited by ingame commands. If you want to edit a already loaded spawner-configuration file in a text-editor, you have to stop the server in the meantime.
 
 ### Pros of Spawners
 
