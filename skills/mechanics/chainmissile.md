@@ -1,4 +1,4 @@
-A missile that chains between entities.
+A missile that chains between entities. This is a **Premium-Only** mechanic!
 
 ---
 
