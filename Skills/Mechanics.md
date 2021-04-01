@@ -152,7 +152,7 @@ by these will "inherit" the targets (if applicable).
 | [CancelEvent][]     | Cancel the Event that triggered the current skill-tree                                  |
 | [Cast][]            | "Casts" a meta-skill using various advanced options                                     |
 | [Chain][]           | Chains a skill between multiple targets that are near each other.                       |
-| [ChainMissile][]    | A missile that chains between entities                                            |
+| [ChainMissile][]    | A missile that chains between entities. **Premium-Only** mechanic!                |
 | [Delay][]           | Delays execution of the current skill list                                              |
 | [Global Cooldown][] | Sets the caster's Global Cooldown timer                                                 |
 | [Missile][]         | Fires a homing missile projectile                                                       |
