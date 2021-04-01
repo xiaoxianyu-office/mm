@@ -162,6 +162,10 @@ Conditions
 | [Inblock](/conditions/inblock)                               | Location | Checks the material at the target location                                                  |
 | [Incombat](/conditions/incombat)                             | Entity   | If the target mob is considered in combat                                                   |
 | [Inside](/conditions/inside)                                 | Location | Checks if the target has a block over their head                                            |
+| [isCaster](/skills/conditions/iscaster)                      | Entity   | Checks if the target is the caster                                                         |
+| [isLiving](/skills/conditions/isliving)                      | Entity   | Checks if the target is a living entity                                                  |
+| [isMonster](/skills/conditions/ismonster)                      | Entity   | Checks if the target is a monster                                                         |
+| [isPlayer](/skills/conditions/isplayer)                      | Entity   | Checks if the target is a player                                                         |
 | [ItemRecharging](/conditions/itemrecharging)                 | Entity   | Checks if the target's weapon is recharging                                                 |
 | [LastDamageCause](/conditions/lastdamagecause)               | Entity   | Checks the target's last damage cause                                                       |
 | [LastSignal](/conditions/lastsignal)                         | Entity   | Matches the last signal received by the target mob                                          |
