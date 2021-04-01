@@ -34,6 +34,7 @@ are able to target locations as well.
 | [DisguiseTarget][]     | Changes the target's disguise                                  |
 | [Undisguise][]         | Remove the caster's disguise                                   |
 | [Dismount][]           | Makes the caster dismount whatever they're riding              |
+| [ClearThreat][]        | Makes a mob clear its threat table                             |
 | [Currency Give][]      | Give money to a player. Requires Vault and a currency plugin   |
 | [Currency Take][]      | Take money from a player. Requires Vault and a currency plugin |
 | [Damage][]             | Damages the target for an amount                               |
@@ -210,6 +211,7 @@ but not yet ready for use.
   [DisguiseTarget]: /skills/mechanics/disguisetarget
   [Undisguise]: /skills/mechanics/undisguise
   [Dismount]: /skills/mechanics/dismount
+  [ClearThreat]: /skills/mechanics/clearthreat
   [Currency Give]: /skills/mechanics/currencygive
   [Currency Take]: /skills/mechanics/currencytake
   [Damage]: /skills/mechanics/damage
