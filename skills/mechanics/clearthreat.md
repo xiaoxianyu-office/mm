@@ -1,4 +1,4 @@
-makes a mob clear its threat table
+Makes a mob clear its threat table. Removes all entities from the threat table completely.
 
 **Attributes**
 
