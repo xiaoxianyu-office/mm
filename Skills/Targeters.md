@@ -35,6 +35,7 @@ Entity Targeters
 | @Children            |           | Targets any child entities summoned by the caster.         |
 | @Passenger           |           | Targets the rider of the mob.                              |
 | @CasterSpawnLocation |           | Targets the location the caster spawned at. Added in MM 4.11 |
+| @PlayerByName{name="Ashijin"} |  | Targets a specific player by name, supports placeholders. Added in MM 4.12 |
 
 ### Multi-Entity Targeters
 
