@@ -6,6 +6,12 @@ Checks if the target is the caster
 | --------- | ----- | ----------- |
 | none      | none  | none        |
 
+---
+
+Added in MM 4.12
+
+---
+
 **Examples**
 
 ```
