@@ -142,12 +142,12 @@ Breaking down the options
 **AIGoalSelectors:**
 
 -   This field is used to customize the AI goals of the mob.
--   [Custom AI](/databases/mobs/aigoals)
+-   [Custom AI](//Mobs/AI)
 
 **AITargetSelectors:**
 
 -   This field is used to customize the AI targets of the mob.
--   [Custom AI](/databases/mobs/aigoals)
+-   [Custom AI](/Mobs/AI)
 
 **Drops:**
 
