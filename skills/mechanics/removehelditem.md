@@ -11,11 +11,11 @@ Attributes
 |-----------|---------|-------------|---------------|
 | amount    | a       |             | 1             |
 
-  
-
 Examples
 --------
 
       Skills:
       - consumeHeldItem{amount=1} ~onUse
       - ...
+
+If consumeHeldItem does not work for you, try using consumeUsedItem!
