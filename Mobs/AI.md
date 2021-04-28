@@ -32,7 +32,18 @@ This zombie would attack players, and walk around randomly when not targeting an
 | lookatplayers |                  | The mob will look at nearby players                   |
 | opendoors     | opendoor         | The mob will open doors it runs into and close the door behind it |
 | closedoors    | restrictopendoor | Not sure what this one does                           |
-| randomlookaround | lookaround    | the mob will randomly look around                     |
+| randomlookaround | lookaround    | The mob will randomly look around                     |
+| fleeconditional |                | Causes the mob to flee based on provided conditions.  |
+
+FleeConditional Example:
+```
+AIGoalSelectors:
+- clear 0
+- fleeConditional{distance=5; speed=2; conditions=[
+      - inlineofsight true
+      - entitytype COW true
+    ]} 1
+```
 
 **Creatures Only**
 
@@ -66,6 +77,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | arrowattack   |                  | Projectile attack (shooting a bow for a skeleton)     |
 | skeletonbowattack | bowshoot, bowmaster | The new strafing AI for skeletons in Minecraft 1.9 and up |
 
+
 **Target Selectors**
 
 Target Selectors are used with the AITargetSelectors field and determine what mobs want to target.
@@ -97,6 +109,17 @@ SuperMob:
 | players       |                  | Targets players.                                      |
 | villagers     |                  | Targets villagers.                                    |
 | golems        |                  | Targets Golems.                                       |
+| NearestConditionalTarget |       | Targets the nearest entity that meets the conditions provided. |
+
+NearestConditionalTarget Example:
+```
+AITargetSelectors:
+- clear 0
+- nearestConditionalTarget{conditions=[
+      - entitytype PLAYER true
+      - hasaura{aura=marked_for_death} true
+    ]} 1
+```
 
 **All Creatures(Faction Support)**
 
