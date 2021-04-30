@@ -38,11 +38,11 @@ This zombie would attack players, and walk around randomly when not targeting an
 FleeConditional Example:
 ```
 AIGoalSelectors:
-- clear 0
-- fleeConditional{distance=5; speed=2; conditions=[
+- 0 clear
+- 1 fleeConditional{distance=5; speed=2; conditions=[
       - inlineofsight true
       - entitytype COW true
-    ]} 1
+    ]}
 ```
 
 **Creatures Only**
@@ -114,11 +114,11 @@ SuperMob:
 NearestConditionalTarget Example:
 ```
 AITargetSelectors:
-- clear 0
-- nearestConditionalTarget{conditions=[
+- 0 clear
+- 1 nearestConditionalTarget{conditions=[
       - entitytype PLAYER true
       - hasaura{aura=marked_for_death} true
-    ]} 1
+    ]}
 ```
 
 **All Creatures(Faction Support)**
