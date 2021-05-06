@@ -31,13 +31,14 @@ CreateFog, DarkenSky, and PlayMusic are buggy and do not currently work as of 2.
 Test:
 
 ```
-Mobtype: creeper
-Display: '&cTest'
-Health: 20
-BossBar:
-  Enabled: true
-  Title: 'Test'
-  Range: 20
-  Color: RED
-  Style: SOLID
+SuperCreeper:
+  Type: creeper
+  Display: '&cTest'
+  Health: 20
+  BossBar:
+    Enabled: true
+    Title: 'Test'
+    Range: 20
+    Color: RED
+    Style: SOLID
 ```
