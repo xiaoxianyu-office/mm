@@ -4,6 +4,57 @@
 General
 -------
 
+### Skill Parameters
+Skill parameters are a new feature allowing you to more easily create generic skills and pass parameters to them from other skills. If that sounds confusing, here's an example!
+
+Currently most people have a lot similar damage skills that are just tweaked a bit for all their different mobs for slight variances in damage, but they do basically the same thing otherwise.
+
+**The old way of doing it:**
+```
+ShadowDamage20:
+  Skills:
+  - damage{amount=20}
+  - some shadowy effect
+
+ShadowDamage50:
+  Skills:
+  - damage{amount=50}
+  - some shadowy effect
+
+Mob1:
+  Skills:
+  - skill:ShadowDamage20 ~onAttack
+
+Mob2:
+  Skills:
+  - skill:ShadowDamage50 ~onAttack
+```
+
+**With Skill Parameters, we can combine these all into a single skill! The new way:**
+```
+ShadowDamage:
+  Skills:
+  - damage{amount=<skill.damage>}
+
+Mob1:
+  Skills:
+  - skill:ShadowDamage{damage=20} ~onAttack
+
+Mob2:
+  Skills:
+  - skill:ShadowDamage{damage=50} ~onAttack
+```
+The "skill parameter" system will pass __any__ options from the **skill/metaskill** mechanic (except options that are specific to it) down the skill tree where you can reference them later. If a later skill passes the same parameter, it will overwrite it. These can be used anywhere placeholders are supported.
+
+```
+- skill{skill=SomeSkill;anything=2;somethingElse=5}
+
+SomeSkill:
+  Skills:
+  - particles{amount=<skill.anything>}
+  - damage{amount=<skill.somethingElse>}
+```
+
 Mobs
 ----
 
@@ -11,11 +62,42 @@ Mobs
 Mechanics
 ---------
 
+### BreakBlock
+- Added doDrops, doEffect, useTool options
+
+### FAWEPaste
+- Added chestDropTable option
+- Allows you to specify a MythicMobs droptable that will automagically populate and randomize any chests in that schematic when it's pasted
+
+### GiveItem
+- Added fakeLooting=true option to play the pickup-item animation from the origin
+
+### Messages
+- Added audience option
+
+### ModifyProjectile
+- Added radius trait for orbitals
+
 ### Projectiles
 - Greatly improved block collision detection
 - Improved collision detection with huge mobs (giants, ghasts, etc)
 - Improved collision detection with ModelEngine mobs
 
+### RemoveAura
+- You can now specify "ANY" to remove all auras from the target
+
+### NEW: ChainMissile (premium-only)
+- Combines the Chain and Missile mechanics, making a missile that will bounce between so many targets
+
+### NEW: giveItemFromTarget
+- Gives the caster an item while playing the pickup-item animation from the target entity or location
+
+### NEW: ShootShulkerBullet
+- Shoots a shulker bullet
+- Has onTick, onHit, onEnd otpions
+
+### NEW: clearThreat
+- Clears the mob's threat table
 
 Effects
 -------
@@ -29,25 +111,35 @@ Effects
 - You can then specify a MythicMob using mob=[type]
 - This is a hacky way for you to use mobs as "particles" in effects using no-tick ArmorStands wearing models or using font characters. You can use things other than ArmorStands if you want, but we don't recommend it for performance.
 
+### BlockWave
+- Added velocityX, velocityY, velocityZ, and ignoreAir options
+
 Targeters
 ---------
-
+### NEW: @PlayerByName{name=""}
 
 Conditions
 ----------
 ### NEW: isCaster
-### NEW: 
-### NEW: 
+### NEW: isChild
+### NEW: isLiving
+### NEW: isMonster
+### NEW: isPlayer
 ### NEW: isSprinting
 - only works on players
-
-
-```
-- size >5
-```
+### NEW: name{name=""}
+- Matches a specific player name.
+- Supports placeholders
+### NEW: vehicleIsDead
 
 Items
 -----
+
+### In-line item additions
+- Added model, enchants, potioneffects, skullOwner and skullTexture to in-line item creation
+```
+diamond{display="test";enchants=DAMAGE_ALL:4,PROTECTION_ALL:4;model=2}
+```
 
 Placeholders
 ------------
@@ -70,7 +162,10 @@ Bug Fixes/Other
 - Fixed an NPE in metaskills
 - Fixed certain things such as bullets not showing up until after a reload
 - Fixed NPE when spawning certain mobs on non-paper servers
-
+- Fixed issues with mobs changing targets
+- Fixed auras not finishing after the caster dies
+- Fixed auras not falling off when a player dies
+- Fixed bossbars not going away when spawner mobs despawn due to mm reload
 
 4.11.0
 ======
