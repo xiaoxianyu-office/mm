@@ -1,6 +1,13 @@
 4.12.0 (Dev Builds)
 ======
 
+**Highlights**
+----------
+- New Skill Parameter system
+- Disguise mechanic changes
+- Mob particles
+- orElseCast condition action
+
 General
 -------
 
@@ -57,7 +64,9 @@ SomeSkill:
 
 Mobs
 ----
-
+### NEW: EXPERIENCE_ORB
+- Added EXPERIENCE_ORB mob type (why?)
+- Can specify Options.Experience: amount
 
 Mechanics
 ---------
@@ -65,9 +74,16 @@ Mechanics
 ### BreakBlock
 - Added doDrops, doEffect, useTool options
 
+### Disguise **MAJOR CHANGE** 
+- Renamed disguise mechanic to disguiseOld
+- Disguise now just accepts a LibsDisguises config string with d=
+
 ### FAWEPaste
 - Added chestDropTable option
 - Allows you to specify a MythicMobs droptable that will automagically populate and randomize any chests in that schematic when it's pasted
+
+### FillChest
+- Fills a chest at the targeted location with the contents of a droptable
 
 ### GiveItem
 - Added fakeLooting=true option to play the pickup-item animation from the origin
@@ -92,12 +108,18 @@ Mechanics
 ### NEW: giveItemFromTarget
 - Gives the caster an item while playing the pickup-item animation from the target entity or location
 
+### NEW: raytraceTo (premium-only)
+- Raytraces from the origin to the targeted location
+- Same options as the raytrace mechanic
+
 ### NEW: ShootShulkerBullet
 - Shoots a shulker bullet
 - Has onTick, onHit, onEnd otpions
 
 ### NEW: clearThreat
 - Clears the mob's threat table
+
+### NEW: variableUnset{var=}
 
 Effects
 -------
@@ -117,9 +139,18 @@ Effects
 Targeters
 ---------
 ### NEW: @PlayerByName{name=""}
+### NEW: @Vehicle
 
 Conditions
 ----------
+### New condition action: orElseCast
+- If the condition isn't true, it will instead cast the given skill
+```
+SomeSkill:
+  Conditions:
+  - night orElseCast SomeOtherSkill
+```
+
 ### NEW: isCaster
 ### NEW: isChild
 ### NEW: isLiving
@@ -166,6 +197,11 @@ Bug Fixes/Other
 - Fixed auras not finishing after the caster dies
 - Fixed auras not falling off when a player dies
 - Fixed bossbars not going away when spawner mobs despawn due to mm reload
+- Fixed the setSpeed mechanic
+- Fixed BreakBlock mechanic to respect worldguard with player casters
+- Fixed an NPE in threat tables
+- Fixed bug with auraRemove mechanic and removing specific aura stacks
+- 
 
 4.11.0
 ======
