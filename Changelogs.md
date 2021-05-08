@@ -5,6 +5,7 @@
 ----------
 - New Skill Parameter system
 - Disguise mechanic changes
+- ChainMissile mecahnic
 - Mob particles
 - orElseCast condition action
 
@@ -128,7 +129,7 @@ Effects
 - Added *caster* audience
 - Added *@targeter* audience, allowing you to use any entity-targeter as an audience
 
-### Particle Effects - Mob particles???
+### Particle Effects - Mob particles??? **(premium-only)**
 - Added special type particle=mob on all particle effects
 - You can then specify a MythicMob using mob=[type]
 - This is a hacky way for you to use mobs as "particles" in effects using no-tick ArmorStands wearing models or using font characters. You can use things other than ArmorStands if you want, but we don't recommend it for performance.
