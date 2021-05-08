@@ -1,3 +1,77 @@
+4.12.0 (Dev Builds)
+======
+
+General
+-------
+
+Mobs
+----
+
+
+Mechanics
+---------
+
+### Projectiles
+- Greatly improved block collision detection
+- Improved collision detection with huge mobs (giants, ghasts, etc)
+- Improved collision detection with ModelEngine mobs
+
+
+Effects
+-------
+
+### Audiences
+- Added *caster* audience
+- Added *@targeter* audience, allowing you to use any entity-targeter as an audience
+
+### Particle Effects - Mob particles???
+- Added special type particle=mob on all particle effects
+- You can then specify a MythicMob using mob=[type]
+- This is a hacky way for you to use mobs as "particles" in effects using no-tick ArmorStands wearing models or using font characters. You can use things other than ArmorStands if you want, but we don't recommend it for performance.
+
+Targeters
+---------
+
+
+Conditions
+----------
+### NEW: isCaster
+### NEW: 
+### NEW: 
+### NEW: isSprinting
+- only works on players
+
+
+```
+- size >5
+```
+
+Items
+-----
+
+Placeholders
+------------
+- Added <caster.l.x.double>
+- Added <caster.l.y.double>
+- Added <caster.l.z.double>
+- Added <skill.targets>
+
+Compatibility
+-------------
+- Updated to latest LibsDisguises
+- Removed CMI support completely
+- Removed unused EffectLib compatibility
+
+Bug Fixes/Other
+---------------
+- Fixed @ring targeter being slightly off-center
+- Fixed audiences not working with certain particle effects
+- Fixed invisible armorstands flickering for a tick when spawning
+- Fixed an NPE in metaskills
+- Fixed certain things such as bullets not showing up until after a reload
+- Fixed NPE when spawning certain mobs on non-paper servers
+
+
 4.11.0
 ======
 
