@@ -4,7 +4,7 @@ Mechanic: Potion
 Applies a potion effect to the target entity, which is usually
 frequently used on custom mob creations and a quite powerful tool; as it
 allows for countless interesting applications. See the [potions
-page](Items/Potions.md) for a complete list of available potion
+page](/Items/Potions) for a complete list of available potion
 effects.
 
 Potion effects are currently the only way to make mobs invisible, with
