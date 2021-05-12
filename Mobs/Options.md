@@ -357,7 +357,7 @@ different mobtype.
 
 #### Fox
 
-**Type: \[Entity type\] (4.9)**
+**FoxType: \[Entity type\] (4.9)**
 
       * Determines the type of the fox. 
       * Can be RED or SNOW
