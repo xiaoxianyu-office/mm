@@ -8,7 +8,7 @@ configuration as shown below (bottom of page).
 Conditions can be used in [1]:
 
 -   [Skill Mechanics](/skills/mechanics/skill)
--   [Drop Tables](/databases/drops/overview)
+-   [Drop Tables](/Items/Drops#drop-tables)
 -   [Spawners](/databases/spawners/spawners) (deprecated condition
     system)
 -   [Random Spawners](/databases/spawners/randomspawners)
