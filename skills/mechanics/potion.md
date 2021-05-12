@@ -17,7 +17,7 @@ Attributes
 
 | Attribute    | Aliases        | Description                                                                               | Default |
 |--------------|----------------|-------------------------------------------------------------------------------------------|---------|
-| type         | t              | The type of [potion effect](/databases/items/potions) to apply.                           |         |
+| type         | t              | The type of [potion effect](/Items/Potions) to apply.                           |         |
 | duration     | d              | The duration of the effect in ticks [1].                                                  | 100     |
 | level        | l              | The modifier-level of the potion effect. The lowest possible strength of a potion is "0". | 1       |
 | force        |                | Whether not to override the current potion effect or not. (4.0+)                          | false   |
