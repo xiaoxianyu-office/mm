@@ -1,5 +1,3 @@
-# ATTENTION - This wiki is a *work in progress* - Please use the [manual](https://www.mythicmobs.net/manual/doku.php/start) on the [mythicmobs.net](https://www.mythicmobs.net/) website until this wiki has been completed.
-
 What is MythicMobs?
 -------------------
 
