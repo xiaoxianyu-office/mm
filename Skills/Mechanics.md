@@ -10,6 +10,8 @@ Some Mechanics are able to target Entities, Locations, or both! Some
 don't target anything. You control what your skill targets using a
 [Targeter][].
 
+Learn about the new Skill Parameter system added in MM 4.12 [here!][]
+
 Mechanics
 ---------
 
@@ -195,6 +197,7 @@ but not yet ready for use.
 | [Time][]           | Changes the time                |
 
 
+  [here!]: /skills/skillparametersystem
   [Targeter]: /skills/targeters/
   [Activate Spawner]: /skills/mechanics/activatespawner
   [Animate ArmorStand]: /skills/mechanics/animatearmorstand
