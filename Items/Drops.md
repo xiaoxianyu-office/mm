@@ -60,7 +60,7 @@ All of this inline item data can also be used in [Equipment:](/mobs/equipment)!
 
 Options added in 4.12 are **model**, **enchants**, **potioneffects**, **skullOwner**, and **skulltexture**.
 
-The below drops section will drop a Panda player head item that has 2 enchants on it, and will drop 3 pieces of diamond armor that all of names, lore, and enchantments on them!
+The below drops section will drop a Panda player head item that has 2 enchants on it, and will drop 3 pieces of diamond armor that all have names, lore, and enchantments on them!
 
 ```
   Drops:
