@@ -46,6 +46,31 @@ The chance for the specified item to be dropped.
 
 [For more about MMOItems, see here.](https://git.lumine.io/mythiccraft/mmoitems/-/wikis/Item%20Drop%20Tables)
 
+**In-line Drops**
+------------------
+
+For very basic equipment, you can add some inline item data so that you don't always have to create a mythic item. Options currently available in-line on builds below 4.12 include **name**, **data**, **amount**, **lore**, and **color**
+
+All of this inline item data can also be used in [Equipment:](/mobs/equipment)!
+
+```
+ Drops:
+ - leather_chestplate{name="Dark Leather";lore="&8A vest made of darkened leather";color=BLACK} 1 1
+```
+
+Options added in 4.12 are **model**, **enchants**, **potioneffects**, **skullOwner**, and **skulltexture**.
+
+The below drops section will drop a Panda player head item that has 2 enchants on it, and will drop 3 pieces of diamond armor that all of names, lore, and enchantments on them!
+
+```
+  Drops:
+  - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY0NjNlNjRjZTI5NzY0ZGIzY2I0NjgwNmNlZTYwNmFmYzI0YmRmMGNlMTRiNjY2MGMyNzBhOTZjNzg3NDI2In19fQ==;enchants=WATER_WORKER:1,OXYGEN:3} 1 1
+  - DIAMOND_CHESTPLATE{name="Panda<&sq>s Will";lore="A Panda must be vigilant";enchants=PROTECTION_ENVIRONMENTAL:4,DURABILITY:3,MENDING:1,THORNS:2} 1 1
+  - DIAMOND_LEGGINGS{name="Panda<&sq>s Strength";lore="A Panda must be strong";enchants=PROTECTION_ENVIRONMENTAL:4,DURABILITY:3,MENDING:1,THORNS:2} 1 1
+  - DIAMOND_BOOTS{name="Panda<&sq>s Speed";lore="A Panda must be fast";enchants=PROTECTION_ENVIRONMENTAL:4,DURABILITY:3,MENDING:1,PROTECTION_FALL:4,DEPTH_STRIDER:3} 1 1
+```
+
+
 Drop Tables
 -----------
 
