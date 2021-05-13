@@ -333,6 +333,13 @@ different mobtype.
       * Meant for Endermen but //might// work on other mobs. May break teleport skills!
       * Defaults to false.
 
+#### Experience_orb
+
+**Experience: \[Number\]**
+
+      * Sets the amount of experience give by the experience orb mob (4.12 MM)
+      * Defaults to 0
+
 #### Falling Blocks
 
 **Block: \[Material type\]**
