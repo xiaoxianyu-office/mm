@@ -115,6 +115,7 @@ are able to target locations as well.
 | [Shoot Fireball][]         | Shoots a fireball at the target                                                    |
 | [Shoot Potion][]           | Throws a potion at the target                                                      |
 | [Shoot Skull][]            | Shoots a wither skull at the target                                                |
+| [Shoot Shulker Bullet][]   | Shoots a shulker bullet at the target entity                              |
 | [Signal][]                 | Sends a signal to a mob                                                            |
 | [Speak][]                  | Causes the mob to speak in chat, with options for speech bubbles                   |
 | [Spring][]                 | Creates a temporary spring of liquid at the target                                 |
@@ -298,6 +299,7 @@ but not yet ready for use.
   [Shoot Fireball]: /skills/mechanics/shootfireball
   [Shoot Potion]: /skills/mechanics/shootpotion
   [Shoot Skull]: /skills/mechanics/shootskull
+  [Shoot Shulker Bullet]: /skills/mechanics/shootshulkerbullet
   [Signal]: /skills/mechanics/signal
   [Speak]: /skills/mechanics/speak
   [Spring]: /skills/mechanics/spring
