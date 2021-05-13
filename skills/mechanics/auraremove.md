@@ -11,7 +11,11 @@ Attributes
 | aura      | buff, debuff, name, b, n | The name of the aura |               |
 | stacks    | s                        | The amount of stacks | Max stacks    |
 
-  
+----------
+
+As of 4.12 MM:
+
+You can now specify "ANY" to remove all auras from the target
 
 Examples
 --------
