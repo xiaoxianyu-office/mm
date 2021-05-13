@@ -164,6 +164,7 @@ Conditions
 | [Incombat](/conditions/incombat)                             | Entity   | If the target mob is considered in combat                                                   |
 | [Inside](/conditions/inside)                                 | Location | Checks if the target has a block over their head                                            |
 | [isCaster](/skills/conditions/iscaster)                      | Entity   | Checks if the target is the caster                                                         |
+| [isChild](/skills/conditions/ischild)                        | Entity   | Checks if the target is a child of the caster                                            |
 | [isLiving](/skills/conditions/isliving)                      | Entity   | Checks if the target is a living entity                                                  |
 | [isMonster](/skills/conditions/ismonster)                      | Entity   | Checks if the target is a monster                                                         |
 | [isPlayer](/skills/conditions/isplayer)                      | Entity   | Checks if the target is a player                                                         |
