@@ -8,6 +8,12 @@ A list of particle types can be found [here](/skills/effects/particles/types).
 Added in 4.11: 
 * Added dir=x,y,z option to particle effects to specify directional vector
 * Added audience=\[world/target/caster\] options to all particle effects
+
+Added in 4.12 (Premium Only!):
+* Added special type particle=mob on all particle effects
+* You can then specify a MythicMob using mob=\[type\]
+* This is a hacky way for you to use mobs as "particles" in effects using no-tick ArmorStands wearing models or using font characters. You can use things other than ArmorStands if you want, but we don't recommend it for performance.
+
 ### Attributes
 ----
 
