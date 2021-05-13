@@ -5,6 +5,8 @@ Skill parameters are a new feature allowing you to more easily create generic sk
 
 Currently most people have a lot similar damage skills that are just tweaked a bit for all their different mobs for slight variances in damage, but they do basically the same thing otherwise.
 
+Make sure to use all lowercase in your skill parameters! Testing this lead to getting errors when using any capital letters. It works fine when using all lowercase parameter names!
+
 **The old way of doing it:**
 
 ------------------
