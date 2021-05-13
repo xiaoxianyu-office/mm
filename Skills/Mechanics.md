@@ -54,6 +54,7 @@ are able to target locations as well.
 | [Force Pull][]           | Teleports the target to the mob                                             |
 | [Glow][]                 | Makes the target glow                                                       |
 | [Give Item][]            | Gives an item to the target                                                 |
+| [Give Item From Target][] | Gives an item to the caster from the target                                |
 | [Heal][]                 | Heals the target                                                            |
 | [HealPercent][]          | Heals the target for a percentage of its max-health                         |
 | [Ignite][]               | Sets the target on fire                                                     |
@@ -234,6 +235,7 @@ but not yet ready for use.
   [Force Pull]: /skills/mechanics/forcepull
   [Glow]: /skills/mechanics/glow
   [Give Item]: /skills/mechanics/giveitem
+  [Give Item From Target]: /skills/mechanics/giveitemfromtarget
   [Heal]: /skills/mechanics/heal
   [HealPercent]: /skills/mechanics/healpercent
   [Ignite]: /skills/mechanics/ignite
