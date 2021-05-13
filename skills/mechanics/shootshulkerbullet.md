@@ -19,7 +19,7 @@ Notes:
 
 Added in 4.12 MM
 
-This skill seems to require an entity for a target. Tried using @forward{f=30;y=0} and it did spawn the shulker bullet. 
+This skill seems to require an entity for a target. Tried using @forward{f=30;y=0} and it did not spawn the shulker bullet. 
 
 ------------
 
