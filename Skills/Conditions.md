@@ -114,6 +114,7 @@ conditions. The default condition action is **true**
 | **power [multiplier]**   | Modifies the skill's power (e.i. power 2.0 would double the skill's power) |
 | **cast [skill]**         | Casts an additional skill if the condition is met.                         |
 | **castinstead [skill]**  | Casts a different skill instead if the condition is met.                   |
+| **orElseCast [skill]**   | Casts a different skill instead if the condition is not met. (4.12 MM)     |
 
 Conditions
 ----------
