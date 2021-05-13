@@ -172,6 +172,7 @@ by these will "inherit" the targets (if applicable).
 | [Variable Add][]      | Adds an amount to a numeric variable                                   |
 | [Variable Math][]     | Performs math on a numeric variable                                    |
 | [Set Variable][]      | Sets the value of a variable                                           |
+| [Variable Unset][]    | Unsets the variable                                                    |
 | [Variable Subtract][] | Subtracts an amount from a numeric variable                            |
 
 Universal Attributes
@@ -335,6 +336,7 @@ but not yet ready for use.
   [Variable Add]: /skills/mechanics/variableadd
   [Variable Math]: /skills/mechanics/variablemath
   [Set Variable]: /skills/mechanics/setvariable
+  [Variable Unset]: /skills/mechanics/variableunset
   [Variable Subtract]: /skills/mechanics/variablesubtract
   [Swap]: /skills/mechanics/swap
   [Time]: /skills/mechanics/time
