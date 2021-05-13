@@ -13,6 +13,8 @@ Attributes
 | doEffect  |           | Whether or not to play the break block particles (?) | true |
 | useTool   |           | Whether or not to use the tool in the players hands (?) | true |
 
+doDrops, doEffect, and useTool were all added in 4.12 MM
+
 ----------
 Notes:
 
