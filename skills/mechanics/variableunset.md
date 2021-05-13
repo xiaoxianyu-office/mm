@@ -12,6 +12,10 @@ Attributes
 | scope     | s       | The [scope](/skills/variables#variable_scopes) of the variable, e.g. where the variable will be located.                                                                                                           | SKILL         |
 
 --------
+
+This mechanic was added in 4.12
+
+--------
  
 Examples
 ----
