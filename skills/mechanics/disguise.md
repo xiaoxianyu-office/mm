@@ -9,6 +9,8 @@ disguises.
 
 As of 4.12 Disguise mechanic got an overhaul and allows for direct command strings from LibsDiguises to work inside of its disguise attribute. The old way was renamed disguiseOld and the new way is disguise!
 
+If you are on a version older then 4.12, then the old way is all that exists and it is still - disguise{} instead of - disguiseOld{}!
+
 Attributes
 ----------
 
