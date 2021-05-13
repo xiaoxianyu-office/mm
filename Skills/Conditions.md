@@ -9,9 +9,9 @@ Conditions can be used in [1]:
 
 -   [Skill Mechanics](/skills/mechanics/skill)
 -   [Drop Tables](/Items/Drops#drop-tables)
--   [Spawners](/databases/spawners/spawners) (deprecated condition
+-   [Spawners](/Spawners) (deprecated condition
     system)
--   [Random Spawners](/databases/spawners/randomspawners)
+-   [Random Spawners](/Random%20Spawns)
 
 When applying multiple conditions, all of them must be met in order for
 the action to be executed. Some conditions allow arrays that can be
