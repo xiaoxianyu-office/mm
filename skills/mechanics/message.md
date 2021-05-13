@@ -16,11 +16,14 @@ codes](/databases/misc/colorcodes) and
 Attributes
 ----------
 
-| Attribute | Aliases | Description          | Default |
-|-----------|---------|----------------------|---------|
-| message   | msg,m   | The message to send. | None    |
+| Attribute | Aliases | Description                 | Default |
+|-----------|---------|-----------------------------|---------|
+| message   | msg,m   | The message to send.        | None    |
+| audience  |         | the audience of the message |         |
 
-  
+---------------
+
+Audience attribute was added in 4.12. possible audience options are: caster, target, and world.
 
 Examples
 --------
