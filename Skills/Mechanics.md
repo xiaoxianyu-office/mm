@@ -159,6 +159,7 @@ by these will "inherit" the targets (if applicable).
 | [Delay][]           | Delays execution of the current skill list                                              |
 | [Global Cooldown][] | Sets the caster's Global Cooldown timer                                                 |
 | [Missile][]         | Fires a homing missile projectile                                                       |
+| [Modify Projectile][] | Modifying the projectile / missile / orbital                                   |
 | [onAttack][]        | Applies an [aura][] to the target that triggers skills when they attack                 |
 | [onDamaged][]       | Applies an [aura][] to the target that triggers skills when they take damage            |
 | [onShoot][]         | Applies an [aura][] to the target that triggers skills when they shoot a bow            |
@@ -323,6 +324,7 @@ but not yet ready for use.
   [Delay]: /skills/mechanics/delay
   [Global Cooldown]: /skills/mechanics/globalcooldown
   [Missile]: /skills/mechanics/missile
+  [Modify Projectile]: /skills/mechanics/modifyprojectile
   [onAttack]: /skills/mechanics/onattack
   [onDamaged]: /skills/mechanics/ondamaged
   [onShoot]: /skills/mechanics/onshoot
