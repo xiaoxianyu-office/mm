@@ -370,6 +370,13 @@ different mobtype.
       * Can be RED or SNOW
       * Defaults to RED
 
+#### Hoglin
+
+**PreventZombification: \[true/false\] (4.10)**
+
+      * Whether or not the hoglin is immune to being zombified
+      * Defaults to false
+
 #### Horses, Donkeys, and Mules
 
 **HorseArmor: \[armor\_type\]**
@@ -438,6 +445,18 @@ different mobtype.
       * Sets the hidden gene that the panda can pass on to it's offspring.
       * Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN
       * Defaults to NORMAL
+
+#### Piglin
+
+**AbleToHunt: \[true/false\] (4.10)**\*
+
+      * Whether or not the piglin is able to hunt
+      * Defaults to false
+
+**ImmuneToZombification: \[true/false\] (4.10)**\*
+
+      * Whether or not the piglin is immune to being zombified
+      * Defaults to false
 
 #### Pigs
 
