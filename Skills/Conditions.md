@@ -18,6 +18,8 @@ the action to be executed. Some conditions allow arrays that can be
 split by commas. These conditions only require one of the strings in the
 arrays to match.
 
+To see how to use the premium only in-line target conditions, [click here!](/skills/conditions/in-linetargetconditions)
+
 Usage
 -----
 
@@ -67,7 +69,6 @@ because they compare 2 entities where 1 of them is always the caster and
 the other one is the entitiy of the targeter. If they are used in the
 Conditions node the caster and the target are always the same.
 
-  
 **Format**:  
 Since 4.0.0, all conditions now have a new format.
 
