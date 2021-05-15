@@ -169,6 +169,7 @@ Conditions
 | [isLiving](/skills/conditions/isliving)                      | Entity   | Checks if the target is a living entity                                                  |
 | [isMonster](/skills/conditions/ismonster)                      | Entity   | Checks if the target is a monster                                                         |
 | [isPlayer](/skills/conditions/isplayer)                      | Entity   | Checks if the target is a player                                                         |
+| [isSprinting](/skills/conditions/issprinting)                | Entity   | Checks if the target **Player** is sprinting                                        |
 | [ItemRecharging](/conditions/itemrecharging)                 | Entity   | Checks if the target's weapon is recharging                                                 |
 | [LastDamageCause](/conditions/lastdamagecause)               | Entity   | Checks the target's last damage cause                                                       |
 | [LastSignal](/conditions/lastsignal)                         | Entity   | Matches the last signal received by the target mob                                          |
