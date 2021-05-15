@@ -33,7 +33,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | opendoors     | opendoor         | The mob will open doors it runs into and close the door behind it |
 | closedoors    | restrictopendoor | Not sure what this one does                           |
 | randomlookaround | lookaround    | The mob will randomly look around                     |
-| fleeconditional |                | Causes the mob to flee based on provided conditions.  |
+| fleeConditional **[Premium-only]** |                | Causes the mob to flee based on provided conditions.  |
 
 FleeConditional Example:
 ```
@@ -109,7 +109,7 @@ SuperMob:
 | players       |                  | Targets players.                                      |
 | villagers     |                  | Targets villagers.                                    |
 | golems        |                  | Targets Golems.                                       |
-| NearestConditionalTarget |       | Targets the nearest entity that meets the conditions provided. |
+| NearestConditionalTarget **[Premium-only]** |       | Targets the nearest entity that meets the conditions provided. |
 
 NearestConditionalTarget Example:
 ```
