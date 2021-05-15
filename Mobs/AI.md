@@ -109,7 +109,7 @@ SuperMob:
 | players       |                  | Targets players.                                      |
 | villagers     |                  | Targets villagers.                                    |
 | golems        |                  | Targets Golems.                                       |
-| NearestConditionalTarget **[Premium-only]** |       | Targets the nearest entity that meets the conditions provided. |
+| nearestConditionalTarget **[Premium-only]** |       | Targets the nearest entity that meets the conditions provided. |
 
 NearestConditionalTarget Example:
 ```
