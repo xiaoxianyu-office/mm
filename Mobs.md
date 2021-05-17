@@ -99,6 +99,8 @@ Breaking down the options
 -   1 damage = 0.5 hearts.
 -   Examples:
     -   **Armor: 7**
+-    Please note, the Armor stat is currently not working on both free and premium builds.
+-    As a work around, add 5HP to the mob's Health stat for each point of Armor
 
 **BossBar:** (2.4)
 
