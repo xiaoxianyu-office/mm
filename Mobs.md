@@ -159,7 +159,7 @@ Breaking down the options
     condition system.
 -   See [Drops Overview](/databases/drops/overview) for more
     information.
-
+<!--
 **DropsPerLevel:**
 
 -   Drops per level work just like regular drops, but the amount of
@@ -169,7 +169,7 @@ Breaking down the options
     Levels](/databases/mobs/levels).
 -   This option was removed in 4.4; please use BonusLevelItems in drop
     tables instead.
-
+-->
 **DamageModifiers:**
 
 -   This field allows for full control over how and how much damage
