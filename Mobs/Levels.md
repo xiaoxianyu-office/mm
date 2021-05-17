@@ -18,7 +18,7 @@ on their level, or even change where/how they spawn depending on what
 level they are (using spawners and randomspawns.)
 
 Mob levels can be influenced by world scaling (see below), [Random
-Spawners](/databases/spawners/randomspawners) or the [SetLevel
+Spawners](/Random%20Spawns) or the [SetLevel
 mechanic](/skills/mechanics/setlevel).
 
 This page will only be covering the basics, a future guides/examples
@@ -38,7 +38,7 @@ section may include more in-depth tutorials later on.
       LevelModifiers:
         Health: 5
         Damage: 0.5
-
+<!--
 DropsPerLevel
 -------------
 
@@ -50,7 +50,7 @@ a chance to drop up to 6 gold nuggets.
 See [Drops Overview](/databases/drops/overview) for more information.
 
 *DropsPerLevel has been removed as of v4.4*
-
+-->
 LevelModifiers
 --------------
 
