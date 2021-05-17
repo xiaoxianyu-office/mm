@@ -190,7 +190,7 @@ Breaking down the options
 
 -   Allows you to customize the broadcasted kill messages that appear
     when a mob kills a player.
--   [Custom Kill Messages](/databases/mobs/killmessages)
+-   [Custom Kill Messages](/Mobs/KillMessages)
 
 **LevelModifiers:**
 
