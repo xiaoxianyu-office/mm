@@ -10,7 +10,7 @@ levels to your mob can allow for several different things.
 
 You can have their damage and hitpoints scale up as their level
 increases, you can have them drop more items depending on what their
-level is.
+level is (see _BonusLevelItems_ in [Droptable Options](/Items/Drops#droptable-options)).
 
 Or, for more advanced configs you could change their drops completely
 depending on what level they are, give them different skills depending
@@ -32,9 +32,7 @@ section may include more in-depth tutorials later on.
       Options:
         MovementSpeed: 0.3
       Drops:
-      - GOLD_NUGGET 1 1
-      DropsPerLevel: (Below v4.4 only)
-      - GOLD_NUGGET 1 0.5
+      - myDroptable
       LevelModifiers:
         Health: 5
         Damage: 0.5
