@@ -2,7 +2,7 @@ Mechanic: Equip
 ===============
 
 Equips the mob with an item. Uses the exact same syntax as the
-[Equipment](/[[databases/misc/equipment) configuration.
+[Equipment](/mobs/equipment) configuration.
 
 Attributes
 ----------
