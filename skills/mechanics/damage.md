@@ -11,6 +11,7 @@ Damages the targeted entity.
 | ignoreArmor      | ia      | Whether or not to ignore armor      | false   |
 | preventknockback | pkb, pk | Whether or not to prevent knockback | false   |
 | preventimmunity  | pi      | Whether or not to ignore immunities | false   |
+| element          | type    | Sets the type of damage to be inflicted | false   |
 
 *"preventknockback" and "preventimmunity" were added in version 2.3*  
 
