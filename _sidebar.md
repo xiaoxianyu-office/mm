@@ -22,7 +22,7 @@
   * [Immunity Tables](Mobs/ImmunityTables)
   * [Extra: Disguises](Mobs/Disguises)
   * [Extra: MiniaturePets](Mobs/MiniaturePets)
-### [Skills](Skills)
+### [Skills](Skills/Start)
   * [Overview](Skills/Start)
   * [Mechanics](Skills/Mechanics)
   * [Effects](Skills/Effects)
