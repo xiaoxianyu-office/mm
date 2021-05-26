@@ -36,6 +36,7 @@ named anything you like as long as the file ends in .yml.
       LevelModifiers:
       Disguise:
       Skills:
+      Trades:
 
 Breaking down the options
 -------------------------
@@ -211,6 +212,31 @@ Breaking down the options
     utilize and when it will do so.
 -   See [Skills Overview](/skills/start) to get started on making your
     own skills.
+
+**Trades:**
+
+- Allows you to customize villager trades. Villagers must have certain professions to be able to trade, and some items may require the villager to be a certain level.
+```
+MerchantTest:
+  Type: VILLAGER
+  Display: '&6Merchant Test'
+  Health: 20
+  Faction: tester 
+  Options:
+    Profession: CLERIC
+    Type: DESERT
+    Level: 2
+  Trades:
+    1:
+      Item1: 5 EMERALD
+      Item2: 5 DIAMOND
+      Result: DIAMOND_SWORD
+      MaxUses: 5
+    2:
+      Item1: 64 EMERALD
+      Result: SkeletonKingSword
+      MaxUses: 1
+```
 
 Example with all options used
 -----------------------------
