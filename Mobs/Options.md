@@ -323,7 +323,7 @@ different mobtype.
 
 **PreventSuicide: \[true/false\]**
 
-      * Prevents creepers from dying upon exploding.
+      * Prevents creepers from dying upon exploding. Set `mobGriefing` gamerule to true for this option to work.
       * Defaults to false.
 
 #### Endermen
@@ -543,14 +543,28 @@ different mobtype.
       * Villager can be traded with.
       * Defaults to false.
 
-**VillagerType: \[type\]**
+**Profession: \[profession\]**
 
       * Specifies the profession of the villager type mob.
-      * Can be "BLACKSMITH", "BUTCHER", "FARMER", "LIBRARIAN" or "PRIEST".
+      * Can be ARMORER, BUTCHER, CARTOGROPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, NONE, SHEPHERD, TOOLSMITH, WEAPONSMITH.
       * Villagers without this option will roll a random profession on their initial spawn.
       * Examples:
-        * **VillagerType: BLACKSMITH**
+        Profession: MASON
 
+**Type: \[type\]**
+
+      * Represents Villager type, usually corresponding to what biome they spawn in.
+      * Can be DESERT, JUNGLE, PLAINS, SAVANNA, SNOW, SWAMP, TAIGA.
+      * Defaults to PLAINS.
+      * Examples:
+        Type: PLAINS
+
+**Level: \[level\]**
+
+      * Villager profession level, levels 1 - 5.
+      * Level 1 villagers might switch professions. If you want a villager to hold its profession, give them a level of 2 or higher.
+      * Required if setting villager professions.
+      
 #### Zombies (all variants)
 
 **PreventJockeyMounts: \[true/false\] (4.9)**
