@@ -8,7 +8,7 @@ Attributes
 
 | Attribute | Aliases | Description | Default Value |
 |-----------|---------|-------------|---------------|
-| trait     |         | the trait to modify. Can be intertia, gravity, velocity, power, and radius | |
+| trait     |         | the trait to modify. Can be inertia, gravity, velocity, power, and radius | |
 | action    |         | SET or MULTIPLY |           |
 | value     |         | amount to modify the trait | |
 
