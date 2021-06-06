@@ -196,3 +196,7 @@ Currently sort can have the following values:
 -   RANDOM
 -   NEAREST
 -   FURTHEST
+-   HIGHEST_HEALTH
+-   LOWEST_HEALTH
+-   HIGHEST_THREAT
+-   LOWEST_THREAT
