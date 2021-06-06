@@ -152,10 +152,10 @@ A complete list of all available randomspawn options.
 
 <!-- -->
 
--   **PointType: \[LAND/SEA\]**
+-   **PositionType: \[LAND/SEA\]**
     -   Whether this RandomSpawn should use land or sea points to spawn
     -   Only does anything with Action: ADD
-    -   **PointType: LAND**
+    -   **PositionType: LAND**
 
 ### Extra Options in config.yml
 
