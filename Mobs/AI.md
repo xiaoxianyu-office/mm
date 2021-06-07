@@ -78,6 +78,11 @@ AIGoalSelectors:
 | arrowattack   |                  | Projectile attack (shooting a bow for a skeleton)     |
 | skeletonbowattack | bowshoot, bowmaster | The new strafing AI for skeletons in Minecraft 1.9 and up |
 
+**Piglins and Pillagers Only**
+
+| AI Goal       | Aliases          | Description                                           |
+| ------------- | ---------------- | ----------------------------------------------------- |
+| crossbowAttack   |                  | attack with a crossbow     |
 
 **Target Selectors**
 ---
