@@ -50,7 +50,6 @@ are able to target locations as well.
 | [Explosion][]            | Causes an explosion                                                         |
 | [Extinguish][]           | removes fire ticks from the target entity                                   |
 | [Feed][]                 | Feeds the target player                                                     |
-| [FillChest][]            | Fills a chest with loot                                                     |
 | [Fly][]                  | Applies an [aura][] that allows the target to fly                           |
 | [Force Pull][]           | Teleports the target to the mob                                             |
 | [Glow][]                 | Makes the target glow                                                       |
