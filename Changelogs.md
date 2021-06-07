@@ -1,4 +1,4 @@
-4.12.0 (Dev Builds)
+4.12.0
 ======
 
 **Highlights**
@@ -15,7 +15,7 @@ General
 
 ### Added Java 16 support
 
-### Skill Parameters
+### Skill Parameters (Premium Feature)
 Skill parameters are a new feature allowing you to more easily create generic skills and pass parameters to them from other skills. If that sounds confusing, here's an example!
 
 Currently most people have a lot similar damage skills that are just tweaked a bit for all their different mobs for slight variances in damage, but they do basically the same thing otherwise.
@@ -75,7 +75,7 @@ Mobs
 Mechanics
 ---------
 
-### NEW: Origin Override (Premium-Only)
+### NEW: Origin Override (Premium Feature)
 - Added `origin=@targeter` option to set the origin in any mechanic. Will pass through to any child mechanics.
 
 ### BreakBlock
@@ -109,7 +109,7 @@ Mechanics
 ### RemoveAura
 - You can now specify "ANY" to remove all auras from the target
 
-### NEW: ChainMissile (premium-only)
+### NEW: ChainMissile (Premium Feature)
 - Combines the Chain and Missile mechanics, making a missile that will bounce between so many targets
 
 ### NEW: giveItemFromTarget
