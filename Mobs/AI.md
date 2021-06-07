@@ -33,7 +33,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | opendoors     | opendoor         | The mob will open doors it runs into and close the door behind it |
 | closedoors    | restrictopendoor | Not sure what this one does                           |
 | randomlookaround | lookaround    | The mob will randomly look around                     |
-| fleeConditional **[Premium-only]** |                | Causes the mob to flee based on provided conditions.  |
+| fleeConditional **[Premium-only]** | fleeIf               | Causes the mob to flee based on provided conditions.  |
 | doNothing **[Premium-only]** |                  | Causes the mob to do nothing if conditions are met |
 
 FleeConditional Example:
