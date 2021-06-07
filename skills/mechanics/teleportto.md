@@ -12,7 +12,7 @@ Attributes
 | world                 | w         | The destination-world. Optional attribute if "location" is given              |               |
 | yaw                   | y         | The yaw that the affected entities should assume                              | 0             |
 | pitch                 | p         | The pitch that the affected entities should assume                            | 0             |
-| mode                  | m         | The mode used for the location, can be relative or directional                |               |
+| relative                 | r        | If the location is relative or directional                | false              |
 | origin                | o         | When use any mode, if the origin should be from the caster or from the target |               |
 
 Examples
