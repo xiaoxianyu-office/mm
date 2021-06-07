@@ -50,6 +50,7 @@ are able to target locations as well.
 | [Explosion][]            | Causes an explosion                                                         |
 | [Extinguish][]           | removes fire ticks from the target entity                                   |
 | [Feed][]                 | Feeds the target player                                                     |
+| [FillChest][]            | Fills a chest with loot                                                     |
 | [Fly][]                  | Applies an [aura][] that allows the target to fly                           |
 | [Force Pull][]           | Teleports the target to the mob                                             |
 | [Glow][]                 | Makes the target glow                                                       |
@@ -233,6 +234,7 @@ but not yet ready for use.
   [Explosion]: /skills/mechanics/explosion
   [Extinguish]: /skills/mechanics/extinguish
   [Feed]: /skills/mechanics/feed
+  [FillChest]: /skills/mechanics/fillChest
   [Fly]: /skills/mechanics/fly
   [aura]: /skills/mechanics/aura
   [Force Pull]: /skills/mechanics/forcepull
