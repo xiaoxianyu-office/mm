@@ -8,9 +8,12 @@
 - ChainMissile mecahnic
 - Mob particles
 - orElseCast condition action
+- origin=@targeter option
 
 General
 -------
+
+### Added Java 16 support
 
 ### Skill Parameters
 Skill parameters are a new feature allowing you to more easily create generic skills and pass parameters to them from other skills. If that sounds confusing, here's an example!
@@ -71,6 +74,9 @@ Mobs
 
 Mechanics
 ---------
+
+### NEW: Origin Override (Premium-Only)
+- Added `origin=@targeter` option to set the origin in any mechanic. Will pass through to any child mechanics.
 
 ### BreakBlock
 - Added doDrops, doEffect, useTool options
@@ -188,6 +194,7 @@ Compatibility
 
 Bug Fixes/Other
 ---------------
+- Name placeholder will now return the canonical mob type name if the mob has no display name set
 - Fixed @ring targeter being slightly off-center
 - Fixed audiences not working with certain particle effects
 - Fixed invisible armorstands flickering for a tick when spawning
@@ -202,7 +209,14 @@ Bug Fixes/Other
 - Fixed BreakBlock mechanic to respect worldguard with player casters
 - Fixed an NPE in threat tables
 - Fixed bug with auraRemove mechanic and removing specific aura stacks
-- 
+- Fixed onShoot trigger to work with skeletons, withers, dragons, snowmen, ghasts, llamas, etc.
+- Fixed item serialization issues when using old color codes and new hex colors making text italicized
+- Fixed WorldTime condition
+- Fixed NPE in item generation
+- Fixed NPE in spawners
+- Fixed BreakBlock mechanic not respecting regions/perms for players
+- Fixed issues with hasAura condition
+- Fixed some issues with and optimized @MobsInRadius targeter
 
 4.11.0
 ======
