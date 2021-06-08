@@ -38,7 +38,7 @@ TestingDisguiseMechanic:
   - disguise{d="Sheep SetBurning SetSpinning SetCustomNameVisible setCustomName DizzyBoi"} @self
 ```
 
-This next example will turn you into a steve head that glides across the floor. No good way to describe it. It is pretty funny. I recommend you try it out! Credit to JackWalms for this disguise setup.
+This next example will turn you into a steve head that glides across the floor. No good way to describe it. It is pretty funny. I recommend you try it out!
 
 ```
 TestingDisguiseMechanic:
