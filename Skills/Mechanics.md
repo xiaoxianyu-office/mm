@@ -49,6 +49,7 @@ are able to target locations as well.
 | [Equip][]                | Causes the casting mob to equip an item                                     |
 | [Explosion][]            | Causes an explosion                                                         |
 | [Extinguish][]           | removes fire ticks from the target entity                                   |
+| [fawePaste][]            | Pastes a Schematic using FAWE                                               |
 | [Feed][]                 | Feeds the target player                                                     |
 | [Fly][]                  | Applies an [aura][] that allows the target to fly                           |
 | [Force Pull][]           | Teleports the target to the mob                                             |
@@ -232,6 +233,7 @@ but not yet ready for use.
   [Equip]: /skills/mechanics/equip
   [Explosion]: /skills/mechanics/explosion
   [Extinguish]: /skills/mechanics/extinguish
+  [fawePaste]: /fawePaste
   [Feed]: /skills/mechanics/feed
   [FillChest]: /skills/mechanics/fillChest
   [Fly]: /skills/mechanics/fly
