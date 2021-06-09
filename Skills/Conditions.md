@@ -169,7 +169,6 @@ Conditions
 | [isChild](/skills/conditions/ischild)                        | Entity   | Checks if the target is a child of the caster                                            |
 | [isLiving](/skills/conditions/isliving)                      | Entity   | Checks if the target is a living entity                                                  |
 | [isMonster](/skills/conditions/ismonster)                      | Entity   | Checks if the target is a monster                                                         |
-| [isNaturalBlock](/skills/conditions/isnaturalblock)          | Location | Checks if the target block was naturally generated.                                       |
 | [isPlayer](/skills/conditions/isplayer)                      | Entity   | Checks if the target is a player                                                         |
 | [isSprinting](/skills/conditions/issprinting)                | Entity   | Checks if the target **Player** is sprinting                                        |
 | [ItemRecharging](/conditions/itemrecharging)                 | Entity   | Checks if the target's weapon is recharging                                                 |
