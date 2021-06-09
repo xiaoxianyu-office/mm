@@ -35,6 +35,7 @@ skill **effect:name**
 | [Ender][]            | Causes the "Ender" effect                                             |
 | [Ender Beam][]       | Creates the enderbeam effects at the target                           |
 | [Explosion][]        | Causes an explosion effect                                            |
+| [fawePaste][]        | Pastes a Schematic using FAWE                                         |
 | [Firework][]         | Causes a firework explosion                                           |
 | [Flames][]           | Causes the Mob Spawner flame effect                                   |
 | [Geyser][]           | Creates a "geyser" of water or lava                                   |
