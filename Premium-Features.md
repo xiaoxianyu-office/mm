@@ -7,16 +7,16 @@ Premium](http://www.mythicmobs.net/index.php?account/upgrades) comes with numero
 -   Access to the premium support channel and ticket system
 -   Access to the latest version faster
 -   Access to development builds
--   Access to premium-only mechanics, such as [raytracing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/raytrace) and chain-missile!
+-   Access to premium-only mechanics, such as [raytracing](/skills/mechanics/raytrace) and [chain-missile](/skills/mechanics/chainmissile)!
 -   Ability to use custom damage types and damage modifiers
--   Ability to use Math and [Placeholders](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Placeholders) in:
+-   Ability to use Math and [Placeholders](/Skills/Placeholders) in:
     - Mob attributes (health, damage, etc)
     - Most skills 
     - Item attributes
     - Drop table amounts        
 -   Ability to use [Skill Parameters](/skills/skillparametersystem)
--   Ability to use on hit conditions in [projectile skills](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/projectile)
--   Ability to use conditional [AI goals/targeters](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/AI)
+-   Ability to use on hit conditions in [projectile skills](/skills/mechanics/projectile)
+-   Ability to use conditional [AI goals/targeters](/Mobs/AI)
 -   Ability to use `origin=@targeter` in any mechanic
 -   Much more!
 
