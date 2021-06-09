@@ -92,7 +92,7 @@ Location Targeters
 | @Ring{radius=#;points=#}                      |             | Target points to form a ring of locations                                                                                            |
 | @Cone{angle=#;points=#;range=#;rotation=#;} |             | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down) |
 | @EntitiesInCone{angle=#;range=#;rotation=#;} |             | Targets all entities within the cone                                                                                                 |
-| @BlocksInRadius{r=#;ry=#;noise=#;s=CUBE/SPHERE;onlyair=false;noair=true} |     | Targets the locations of all blocks within radius |
+| @BlocksInRadius{r=#;ry=#;noise=#;s=sphere/cube;onlyair=false;noair=true} |     | Targets the locations of all blocks within radius |
 
 Special Targeters
 -----------------
