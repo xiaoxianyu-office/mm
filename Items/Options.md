@@ -125,3 +125,17 @@ dat_item_though:
   - DURABILITY:1
   - ARROW_FIRE:10
 ```
+An example of a firework rocket
+```
+FireworkGoBoom:
+  Id: FIREWORK_ROCKET
+  Display: 'Rocket'
+  Firework:
+    Colors:
+    - 255,0,255
+    - 0,0,0
+    FadeColors:
+    - 200,0,0
+    Flicker: true
+    Trail: true
+```
