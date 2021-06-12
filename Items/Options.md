@@ -66,6 +66,23 @@ Dyeable Items
 -   Can pick colors using the Paint program on Windows. Open it up then choose "Edit Colors" to get your RGB value
 -   Only usable on leather armor type and banners.
 
+**Fireworks**
+--------------------
+
+* Added options for FIREWORK and FIREWORK_CHARGE items
+* For Colors and FadeColors, you can specify what colors you want using the format **RED,GREEN,BLUE**
+
+```
+Firework:
+  Colors:
+  - 255,0,255
+  - 0,0,0
+  FadeColors:
+  - 200,0,0
+  Flicker: true
+  Trail: true
+```
+
 Examples
 ========
 ```
