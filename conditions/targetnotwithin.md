@@ -5,7 +5,7 @@
 
 | Attribute | Aliases        | Description               |
 | --------- | -------------  | ------------------------- |
-| | | |
+| distance | d | The distance to match |
 
 ---
 
