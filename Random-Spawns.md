@@ -115,7 +115,7 @@ A complete list of all available randomspawn options.
     -   The random spawn will fail if any of the given conditions aren't
         met
     -   The full list of available conditions can be found here:
-        [Conditions manual page](/conditions/start)
+        [Conditions manual page](/Skills/Conditions#conditions)
     -   **Conditions:**
     -   **- condition 1**
     -   **- condition 2**
