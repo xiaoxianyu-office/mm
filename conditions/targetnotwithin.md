@@ -13,5 +13,5 @@
 
 ```
   Conditions:
-  - targetnotwithin{} true
+  - targetnotwithin{d=5} true
 ```
