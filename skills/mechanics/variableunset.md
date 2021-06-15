@@ -1,6 +1,8 @@
 Mechanic: VariableUnset
 =======================
 
+**Aliases:** varUnset, unsetVariable, unsetVar
+
 Unsets a [variable](/skills/variables).
 
 Attributes
