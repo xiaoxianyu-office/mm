@@ -24,10 +24,10 @@ Entity Targeters
 
 | Targeter             | Shorthand | Description                                                |
 |----------------------|-----------|------------------------------------------------------------|
-| @Self                |           | Targets the mob itself                                     |
-| @Target              |           | Targets the mob's target                                   |
+| @Self                | @Caster   | Targets the mob itself                                     |
+| @Target              | @T        | Targets the mob's target                                   |
 | @Trigger             |           | Targets the entity that triggered the skill                |
-| @NearestPlayer{r=#} |           | Targets the nearest player in radius. r=5 by default       |
+| @NearestPlayer{r=#}  |           | Targets the nearest player in radius. r=5 by default       |
 | @WolfOwner           |           | Targets the owner of the wolf                              |
 | @Owner               |           | Targets the [owner](/skills/mechanics/setowner) of the mob |
 | @Mount (MM 2.5.0+)   |           | Targets the entity that the mob is currently riding        |
@@ -77,10 +77,10 @@ Location Targeters
 |------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | @SelfLocation          |           | Targets the mob's location itself                                                                                                                                                                                                                  |
 | @Forward{f=5;y=0.0}    |           | Targets a location 5 blocks infront of entities direction with yoffset 0.0                                                                                                                                                                         |
-| @TargetLocation        |           | Targets the mob's target's location                                                                                                                                                                                                                |
+| @TargetLocation        | @targetloc, @TL       | Targets the mob's target's location                                                                                                                                                                                                                |
 | @TriggerLocation       |           | Targets the location of the entity that triggered the skill                                                                                                                                                                                        |
 | @Location{c=x,y,z,yaw,pitch}     |           | The skill will target the coordinates specified. yaw and pitch were added in MM 4.11                                                                                                                                                                                                  |
-| @Origin{yoffset=0}     |           | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where that is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile). |
+| @Origin{xoffset=0;yoffset=0;zoffset=0}     |           | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where that is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile). |
 | @Spawner{s=[string]} |           | Targets the location of the specified spawner(s). The string can be the name of a spawner, or a a group of spawners (using g:groupname), and also accepts wildcards (Spawner* would target Spawner1,Spawner2,Spawner3,etc)                        |
 | @ObstructingBlock    |             | Targets any block in the way of pathfinding |
 
@@ -89,10 +89,9 @@ Location Targeters
 | Targeter                                        | Shorthand   | Description                                                                                                                          |
 |-------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | @PlayerLocationsInRadius{r=#}                  | @PLIR{r=#} | Targets all player locations in the given radius                                                                                     |
-| @Ring{radius=#;points=#}                      |             | Target points to form a ring of locations                                                                                            |
+| @Ring{radius=#;points=#;yoffset=#}              |             | Target points to form a ring of locations                                                                                            |
 | @Cone{angle=#;points=#;range=#;rotation=#;} |             | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down) |
 | @EntitiesInCone{angle=#;range=#;rotation=#;} |             | Targets all entities within the cone                                                                                                 |
-| @BlocksInRadius{r=#;ry=#;noise=#;s=sphere/cube;onlyair=false;noair=true} |     | Targets the locations of all blocks within radius |
 
 Special Targeters
 -----------------
@@ -126,9 +125,10 @@ meta-targeter uses.
 | @EntitiesInLine{r=#;fo=true/false}    | @EIL{r=#;fo=true/false}  | Targets any entities in a line between the target and the casting mob.                                                                                                                                                                                                                                                                                                                        |
 | @LivingNearTargetLocation{radius=5}    | @LNTL{r=#}               | Targets all living entities near meta-targeter location.                                                                                                                                                                                                                                                                                                                                      |
 | @PlayersNearTargetLocation{radius=5}   | @LNTL{r=#}               | Targets all players near meta-targeter location.                                                                                                                                                                                                                                                                                                                                              |
-| @RLNTE{a=#;r=#;s=#;minr=#;}        |                           | Targets random locations around targeted entities. (Example usage: Meteor skill. Amount would determine how many meteors there will be, radius is how wide the field of falling meteors will be, and the spacing will be how far apart they'll be spaced apart. Generally keep the radius larger than spacing, as it is untested how a smaller radius with a large spacing will do. - zDrakon |
-| @FloorOfTargets     |       | Targets the blocks underneath the targets  |
-| @LocationsOfTargets |       | Targets the location of the targets        |
+| @RLNTE{a=#;r=#;s=#;minr=#}        |                           | Targets random locations around targeted entities. (Example usage: Meteor skill. Amount would determine how many meteors there will be, radius is how wide the field of falling meteors will be, and the spacing will be how far apart they'll be spaced apart. Generally keep the radius larger than spacing, as it is untested how a smaller radius with a large spacing will do. - zDrakon |
+| @FloorOfTargets     | @FOT      | Targets the blocks underneath the targets  |
+| @LocationsOfTargets | @LOT       | Targets the location of the targets        |
+| @BlocksInRadius{r=#;ry=#;noise=#;shape=sphere;oa=false;na=true} |     | Targets all blocks in the radius of the inherited target |
 
 Targeter Options
 ================
