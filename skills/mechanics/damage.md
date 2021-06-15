@@ -11,9 +11,27 @@ Damages the targeted entity.
 | ignoreArmor      | ia      | Whether or not to ignore armor      | false   |
 | preventknockback | pkb, pk | Whether or not to prevent knockback | false   |
 | preventimmunity  | pi      | Whether or not to ignore immunities | false   |
-| element *         | type    | Sets the type of damage to be inflicted | false   |
+| element          | type    | Sets the type of damage to be inflicted | false   |
 
 *"preventknockback" and "preventimmunity" were added in version 2.3*  
+
+### Elements
+As seen above, the damage mechanic offers the ability to set an "element" for the damage, like so:
+
+    damage{amount=10;element=FIRE} @target \~onUse
+    damage{amount=10;element=ICE} @target \~onUse
+
+This element can by named anything, and can be used in a mob's DamageModifiers to alter resistance to the damage type as needed:
+
+    DamageModTest: 
+      Type: COW 
+      DamageModifiers:
+        - LIGHTNING 0.1
+        - FIRE 2.0
+        - AIR 1.0
+        - ICE 0.5 
+      Skills:
+        - message{m="Damaged by <skill.var.damage-type> for <skill.var.damage-amount>"} @PIR{r=50} \~onDamaged
 
 ### Examples
 
@@ -30,21 +48,6 @@ mob's target every 1 second (20 ticks).
       - effect:particles{p=drip_water;a=10;vs=0.5;hs=0.5;s=0;y=1;repeat=5;repeatInterval=20} @PIR{r=6}
       - potion{t=SLOW;d=120;l=6} @PIR{r=6}
       - damage{a=120;pkb=true} @PIR{r=6}
-
-Here are some examples of of the element modifier in action:
-
-1. damage{amount=10;element=FIRE} @target \~onUse
-1. damage{amount=10;element=ICE} @target \~onUse
-
-DamageModTest: 
-  Type: COW 
-  DamageModifiers:
-    - LIGHTNING 0.1
-    - FIRE 2.0
-    - AIR 1.0
-    - ICE 0.5 
-  Skills:
-    - message{m="Damaged by <skill.var.damage-type> for <skill.var.damage-amount>"} @PIR{r=50} \~onDamaged
 
 A more complex use of the **damage** mechanic can give illusions of say
 Ice attacks like the example above. Which uses effects to make the
