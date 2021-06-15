@@ -33,6 +33,8 @@ This element can by named anything, and can be used in a mob's DamageModifiers t
       Skills:
         - message{m="Damaged by <skill.var.damage-type> for <skill.var.damage-amount>"} @PIR{r=50} \~onDamaged
 
+These options can also be used in the "onDamaged" aura, using the `damageMods="FIRE 0.5"` attribute.
+
 ### Examples
 
       Skills:
