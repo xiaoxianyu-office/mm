@@ -62,6 +62,7 @@ AIGoalSelectors:
 | fleeplayers   | runfromplayers   | Causes the mob to avoid Players                       |
 | fleegolems    | runfromgolems    | Causes the mob to avoid Iron Golems                   |
 | fleevillagers | runfromvillages  | Causes the mob to avoid villagers                     |
+| fleewolves    | run from wolves  | Causes the mob to avoid wolves                        |
 | spiderattack  |                  | Uses the attack a spider would (doesn't seem any different from a meleeattack) |
 | leapattarget  |                  | Makes the mob leap at its target                      |
 | moveindoors   | | |
@@ -71,6 +72,7 @@ AIGoalSelectors:
 | gotolocation x,y,z | goto        | Makes the mob go to the specified location            |
 | gotoowner #   |                  | Makes the mob move towards its owner when beyond a certain distance (defaults to 5 blocks) |
 | gotoparent    |                  | Makes the mob move towards its parent mob             |
+| panic         |                  | Causes the mob panic when it takes damage             |
 
 **Ranged Entities Only**
 
@@ -111,7 +113,7 @@ SuperMob:
 | AI Goal       | Aliases          | Description                                           |
 | ------------- | ---------------- | ----------------------------------------------------- |
 | clear         |                  | Special Option. Clears all of the mob's AI.           |
-| attacker      | hurtbytarget     | Targets whatever attacks the mob                      |
+| attacker      | hurtbytarget, damager | Targets whatever attacks the mob                      |
 | monsters      |                  | Targets monsters.                                     |
 | players       |                  | Targets players.                                      |
 | villagers     |                  | Targets villagers.                                    |
