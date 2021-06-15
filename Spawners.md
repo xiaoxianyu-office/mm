@@ -53,7 +53,7 @@ Options
 -------
 | Option             | Description                      |Usage                       |Default|
 |--------------------------|-----------------------|-----------------------|-----------------------|
-|**mobtype: &lt;mobtype&gt;** or **mobname: &lt;mobtype&gt;:**|This is mob type that the spawner will spawn. Can only be set to an internal MythicMobs mob.|/mm s set <name> mobtype <new_mob_name>| N/A |
+|**mobtype: &lt;mobtype&gt;** or **mobname: &lt;mobtype&gt;:**|This is mob type that the spawner will spawn. Can only be set to an internal MythicMobs mob. Allows for an array of mobs with weightings.|/mm s set [name] mobtype 25%Mob1,25%Mob2,50%mMob2| N/A |
 |**world: &lt;worldname&gt;:**|    This is the filename of the world where the spawner is located|    /mm s set <name> world <world>|Creation World|
 |**spawnergroup: &lt;group name&gt;**|This sets the group name for the spawn. For larger configurations, such as if you are populating a dungeon, you can group all spawners and then change the settings for them all at the same time.|/mm s set g:<group> <setting> <value>|N/A|
 |**X: / Y: / Z:**|Coordinates of the spawner||Creation Location|
