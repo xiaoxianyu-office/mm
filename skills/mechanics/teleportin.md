@@ -1,6 +1,6 @@
 Mechanic: TeleportIn
 ====================
-Aliases: tpin, tpdir, tpi
+**Aliases:** tpin, tpdir, tpi
 
 Will teleport the target relative to where the mob is facing. The direction attribute must be in this format: direction=x,y,z
 
