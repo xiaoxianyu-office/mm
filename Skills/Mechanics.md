@@ -132,6 +132,7 @@ are able to target locations as well.
 | [Threat][]       | Modifies the mob's threat towards the target  |
 | [Throw][]        | Throws the target entity                      |
 | [Toggle Lever][] | Toggles a lever at the target location        |
+| [Toggle Sitting][] | Toggles the sitting state for cats, dogs, foxes, and parrots |
 | [Velocity][]     | Modifies the velocity of the target entity(s) |
 | [Weather][]      | Modifies the weather in the target world      |
 | [WolfSit][]      | Modifies the target wolves position           |
@@ -318,6 +319,7 @@ but not yet ready for use.
   [Threat]: /skills/mechanics/threat
   [Throw]: /skills/mechanics/throw
   [Toggle Lever]: /skills/mechanics/togglelever
+  [Toggle Sitting]: /skills/mechanics/togglesitting
   [Velocity]: /skills/mechanics/velocity
   [Weather]: /skills/mechanics/weather
   [WolfSit]: /skills/mechanics/wolfsit
