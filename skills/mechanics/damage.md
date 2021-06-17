@@ -18,8 +18,8 @@ Damages the targeted entity.
 ### Elements
 As seen above, the damage mechanic offers the ability to set an "element" for the damage, like so:
 
-    - damage{amount=10;element=FIRE} @target \~onUse
-    - damage{amount=10;element=ICE} @target \~onUse
+    - damage{amount=10;element=FIRE} @target ~onUse
+    - damage{amount=10;element=ICE} @target ~onUse
 
 This element can by named anything, and can be used in a mob's DamageModifiers to alter resistance to the damage type as needed:
 
