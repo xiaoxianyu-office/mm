@@ -32,7 +32,7 @@ Added in 4.12 (Premium Only!):
 | Size | | The size of the particles displayed | 1 |
 | color | c | [(1)](/wikis/skills/effects/particles "only works on colorable particle types like “reddust”")[(2)](/wikis/skills/effects/particles "color must be provided in hex-code") The color of the particle The color of the particle |  |
 | fromorigin |  |  | false |
-| directional | dir, d| Sets the directional velocity for the particle in the form of x,y,z. | 0,0,0 | 
+| directional | dir, d| Sets the directional velocity for the particle in the form of "dir=x,y,z". | 0,0,0 | 
 
 The “color” attribute was added in version 2.3
 
