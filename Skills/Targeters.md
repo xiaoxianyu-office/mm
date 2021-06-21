@@ -155,6 +155,7 @@ To make a targeter ONLY target players, you'd do something like this:
 
 Possible filters include:
 
+-   self
 -   animals *(non-hostile mobs)*
 -   creative *(ignored by default)*
 -   creatures *(any type of sentient entity)*
