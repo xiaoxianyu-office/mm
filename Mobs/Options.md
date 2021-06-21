@@ -372,10 +372,15 @@ different mobtype.
 
 #### Hoglin
 
-**PreventZombification: \[true/false\] (4.10)**
+**ImmuneToZombification: \[true/false\] (4.10)**
 
       * Whether or not the hoglin is immune to being zombified
       * Defaults to false
+
+**Huntable: \[true/false\] (4.10)**
+
+      * Whether the hoglin is able to be hunted by piglins.
+      * Defaults to true
 
 #### Horses, Donkeys, and Mules
 
