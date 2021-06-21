@@ -489,7 +489,7 @@ different mobtype.
       * Not sure why this exists.
       * Defaults to false.
 
-**IsKillerBunny: \[true/false\] (4.10)**\*
+**IsKillerBunny: \[true/false\]**
 
       * Sets the rabbit as the Killer Bunny.
 
