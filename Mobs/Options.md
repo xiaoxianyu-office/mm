@@ -463,6 +463,13 @@ different mobtype.
       * Whether or not the piglin is immune to being zombified
       * Defaults to false
 
+#### Piglin Brutes
+
+**ImmuneToZombification: \[true/false\] (4.10)**\*
+
+      * Whether or not the piglin is immune to being zombified
+      * Defaults to false
+
 #### Pigs
 
 **Saddled: \[true/false\]**\*
