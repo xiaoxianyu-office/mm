@@ -128,7 +128,7 @@ meta-targeter uses.
 | @RLNTE{a=#;r=#;s=#;minr=#}        |                           | Targets random locations around targeted entities. (Example usage: Meteor skill. Amount would determine how many meteors there will be, radius is how wide the field of falling meteors will be, and the spacing will be how far apart they'll be spaced apart. Generally keep the radius larger than spacing, as it is untested how a smaller radius with a large spacing will do. - zDrakon |
 | @FloorOfTargets     | @FOT      | Targets the blocks underneath the targets  |
 | @LocationsOfTargets | @LOT       | Targets the location of the targets        |
-| @BlocksInRadius{r=#;ry=#;noise=#;shape=sphere;oa=false;na=true} |     | Targets all blocks in the radius of the inherited target |
+| @BlocksInRadius{radius=#;radiusy=#;noise=#;shape=sphere/cube;onlyair=false;noair=true} |     | Targets all blocks in the radius of the inherited target |
 
 Targeter Options
 ================
