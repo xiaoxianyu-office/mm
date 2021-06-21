@@ -326,12 +326,16 @@ different mobtype.
       * Prevents creepers from dying upon exploding. Set `mobGriefing` gamerule to true for this option to work.
       * Defaults to false.
 
-#### Endermen
+#### Enderman
 
 **PreventTeleport: \[true/false\]**
 
-      * Meant for Endermen but //might// work on other mobs. May break teleport skills!
+      * Meant for Enderman but //might// work on other mobs. May break teleport skills!
       * Defaults to false.
+
+**HeldBlock: `[Material]`**
+
+      * Sets the block that the Enderman is carrying.
 
 #### Experience_orb
 
