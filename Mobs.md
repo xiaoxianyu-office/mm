@@ -215,7 +215,7 @@ Breaking down the options
 
 **Trades:**
 
-- Allows you to customize villager trades. Villagers must have certain professions to be able to trade, and some items may require the villager to be a certain level.
+- Allows you to customize villager trades. Villagers must have certain professions to be able to trade, and some items may require the villager to be a certain level. If you want to use MMOItems in villager trades, use `mmoitems.TYPE.ID`. 
 ```
 MerchantTest:
   Type: VILLAGER
@@ -234,7 +234,7 @@ MerchantTest:
       MaxUses: 5
     2:
       Item1: 64 EMERALD
-      Result: SkeletonKingSword
+      Result: mmoitems.SWORD.CUTLASS
       MaxUses: 1
 ```
 
