@@ -72,7 +72,7 @@ AIGoalSelectors:
 | gotolocation x,y,z | goto        | Makes the mob go to the specified location            |
 | gotoowner #   |                  | Makes the mob move towards its owner when beyond a certain distance (defaults to 5 blocks) |
 | gotoparent    |                  | Makes the mob move towards its parent mob             |
-| panic         |                  | Causes the mob panic when it takes damage             |
+| panicWhenOnFire | panic              | Run around panicking when on fire and look for water |
 
 **Ranged Entities Only**
 
