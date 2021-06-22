@@ -106,7 +106,7 @@ Breaking down the options
 -   **Enchantments:**
     -   This field allows to add enchantments to items.
     -   Any type of of item can have any enchanment(s).
-    -   A complete list of all available enchantments: [Enchantments](/databases/items/enchantments)
+    -   A complete list of all available enchantments: [Enchantments](/Items/Enchantments)
 
 <!-- -->
 
