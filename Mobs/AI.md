@@ -40,8 +40,8 @@ This zombie would attack players, and walk around randomly when not targeting an
 FleeConditional Example:
 ```
 AIGoalSelectors:
-- 0 clear
-- 1 fleeConditional{distance=5; speed=2; conditions=[
+- clear
+- fleeConditional{distance=5; speed=2; conditions=[
       - inlineofsight true
       - entitytype COW true
     ]}
@@ -99,13 +99,13 @@ SuperMob:
   Health: 200
   Display: 'Superb Zombie'
   AIGoalSelectors:
-  - 0 clear
-  - 1 meleeattack
-  - 2 randomstroll
+  - clear
+  - meleeattack
+  - randomstroll
   AITargetSelectors:
-  - 0 clear
-  - 1 players
-  - 2 golems
+  - clear
+  - players
+  - golems
 ```
 
 **All Creatures**
@@ -123,8 +123,8 @@ SuperMob:
 NearestConditionalTarget Example:
 ```
 AITargetSelectors:
-- 0 clear
-- 1 nearestConditionalTarget{conditions=[
+- clear
+- nearestConditionalTarget{conditions=[
       - entitytype PLAYER true
       - hasaura{aura=marked_for_death} true
     ]}
@@ -144,7 +144,7 @@ Example:
 
 ```
 AITargetSelectors:
-- 1 SpecificFaction undead
+- SpecificFaction undead
 ```
 
 This will force a mob to attack mobs only in the “undead” faction.
