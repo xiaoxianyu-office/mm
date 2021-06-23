@@ -14,9 +14,9 @@ SuperMob:
   Health: 200
   Display: 'Superb Zombie'
   AIGoalSelectors:
-  - 0 clear
-  - 1 meleeattack
-  - 2 randomstroll
+  - clear
+  - meleeattack
+  - randomstroll
 ```
 
 This zombie would attack players, and walk around randomly when not targeting an enemy.
