@@ -215,7 +215,7 @@ but not yet ready for use.
   [BarSet]: /skills/mechanics/barset
   [BarRemove]: /skills/mechanics/barremove
   [BreakBlock]: /skills/mechanics/breakblock
-  [BreakBlockAndGiveItem]: /skills/mechanics/breakblockandgiveitem
+  [BreakBlockAndGiveItem]: /skills/mechanics/breakBlockAndGiveItem
   [Close Inventory]: /skills/mechanics/closeinventory
   [Command]: /skills/mechanics/command
   [Consume]: /skills/mechanics/consume
