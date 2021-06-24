@@ -1,7 +1,7 @@
 Mechanic: breakBlockAndGiveItem
 ===================================
 
-Breaks the block at a target location and gives item. This mechanic will also drop the block (with exception of Bedrock). REQUIRES `forcesync=true`.
+Breaks the block at a target location and gives item(s). This mechanic will also drop the block (with exception of Bedrock). REQUIRES `forcesync=true`.
 
 Attributes
 --------------
