@@ -2,7 +2,7 @@ Mechanic: TeleportIn
 ====================
 **Aliases:** tpin, tpdir, tpi
 
-Will teleport the target relative to where the mob is facing. The direction attribute must be in this format: direction=x,y,z
+Will teleport the target relative to where the caster is facing. The direction attribute must be in this format: direction=x,y,z
 
 `x` is forward or backward, `y` is up or down, and `z` is left or right
 
@@ -17,7 +17,7 @@ Attributes
 Examples
 --------
 
-Will teleport the caster one block to the right.
+Will teleport the player that triggered the skill to the right of the caster.
 
     Skills:
-    - teleportin{direction=0,0,1} @Self
+    - teleportin{direction=0,0,1} @trigger ~onInteract
