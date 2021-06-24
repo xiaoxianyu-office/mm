@@ -28,6 +28,7 @@ are able to target locations as well.
 | [BarSet][]             | Modifies a custom boss bar on the casting mob                  |
 | [BarRemove][]          | Removes a custom boss bar on the casting mob                   |
 | [BreakBlock][]         | Breaks the block at the target location                        |
+| [BreakBlockAndGiveItem][] | Breaks the block at the target location and gives item/droptables |
 | [Close Inventory][]    | Closes the target player's inventory                           |
 | [Command][]            | Executes a command for each target                             |
 | [Consume][]            | Deals damage and restores health per target hit                |
@@ -214,6 +215,7 @@ but not yet ready for use.
   [BarSet]: /skills/mechanics/barset
   [BarRemove]: /skills/mechanics/barremove
   [BreakBlock]: /skills/mechanics/breakblock
+  [BreakBlockAndGiveItem]: /skills/mechanics/breakblockandgiveitem
   [Close Inventory]: /skills/mechanics/closeinventory
   [Command]: /skills/mechanics/command
   [Consume]: /skills/mechanics/consume
