@@ -18,6 +18,8 @@ Examples
 --------
 
 Using Crucible Items:
+
+Instead of dropping dirt, it'll instead give diamonds to the player.
 ```yaml
 CustomItem:
   Id: GOLDEN_SHOVEL
