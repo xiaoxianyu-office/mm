@@ -21,13 +21,14 @@ Using Crucible Items:
 
 Instead of dropping dirt, it'll instead give diamonds to the player.
 ```yaml
+#ITEMS FOLDER
 CustomItem:
   Id: GOLDEN_SHOVEL
   Display: 'Lucky Shovel'
   Skills:
   - skill{s=dirtToDiamonds;sync=true} @TargetLocation ~onBreakBlock
-```
-```yaml
+
+#SKILLS FOLDER
 dirtToDiamonds:
   TargetConditions:
   - blocktype{t=DIRT,GRASS_BLOCK} true
