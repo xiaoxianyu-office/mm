@@ -65,6 +65,8 @@ itself.
 | onPressCtrlQ          | When a player presses CTRL+Q to drop the item. Requires ProtocolLib |
 | onPressF              | When a player presses F to swap the item. Requires ProtocolLib |
 
+**Mythic Crucible** is another one of our Premium Plugins which adds new triggers and allows you to create incredible custom items! You can purchase it from [here](https://mythiccraft.io/index.php?resources/crucible-create-unbelievable-mythic-items.2/)!
+
 Using Triggers
 --------------
 
