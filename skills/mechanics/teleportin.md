@@ -2,7 +2,7 @@ Mechanic: TeleportIn
 ====================
 **Aliases:** tpin, tpdir, tpi
 
-Will teleport the target relative to where the caster is facing. The direction attribute must be in this format: direction=x,y,z
+Will teleport the target relative to the caster's yaw. The direction attribute must be in this format: direction=x,y,z
 
 `x` is forward or backward, `y` is up or down, and `z` is left or right
 
