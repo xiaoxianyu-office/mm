@@ -129,6 +129,7 @@ meta-targeter uses.
 | @FloorOfTargets     | @FOT      | Targets the blocks underneath the targets  |
 | @LocationsOfTargets | @LOT       | Targets the location of the targets        |
 | @BlocksInRadius{radius=#;radiusy=#;noise=#;shape=sphere/cube;onlyair=false;noair=true} |     | Targets all blocks in the radius of the inherited target |
+| @BlocksNearOrigin{radius=#;radiusy=#;noise=#;shape=sphere/cube;onlyair=false;noair=true} |     | Targets all blocks in the radius of the specified target |
 
 Targeter Options
 ================
