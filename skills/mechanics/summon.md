@@ -18,9 +18,8 @@ Attributes
 | copyThreatTable    | ctt     | Whether the summoned mobs should copy the parent's threat table. Requires threat tables to be enabled on the summoned mob to function.       | false         |
 | inheritThreatTable | itt     | Whether the summoned mobs should share a threat table with the parent. Requires threat tables to be enabled on the summoned mob to function. |               |
 | inheritFaction     | if      | Whether the summoned mobs should have the same faction as the parent.                                                                        |               |
-| summonerIsOwner | sio | (true/false) Whether to set the summoner as the owner of the mob. |
-| summonerIsParent | sip | (true/false) Whether to set the summoner as the parent of the mob. | 
-
+| summonerIsOwner | sio | Whether to set the summoner as the owner of the mob. | true |
+| summonerIsParent | sip | Whether to set the summoner as the parent of the mob. | true |
 
   
 
