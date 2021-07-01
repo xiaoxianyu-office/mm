@@ -32,7 +32,7 @@ are able to target locations as well.
 | [Close Inventory][]    | Closes the target player's inventory                           |
 | [Command][]            | Executes a command for each target                             |
 | [Consume][]            | Deals damage and restores health per target hit                |
-| [Disengage][]          | Clears the caster's target                                     |
+| [Disengage][]          | Causes the caster to leap backwards away from the target entity                               |
 | [Disguise][]           | Changes the caster's disguise                                  |
 | [DisguiseTarget][]     | Changes the target's disguise                                  |
 | [Undisguise][]         | Remove the caster's disguise                                   |
