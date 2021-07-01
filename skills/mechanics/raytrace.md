@@ -17,6 +17,7 @@ Attributes
 | accuracy            | ac, a                  | spread of the traced ray                              |1     |
 | verticalnoise       | vn                     | vertical spread of the ray                            | 0    |
 | horizontalnoise     | hn                     | horizontal spread of the ray                          | 0    |
+| raytraceConditions  | rc, rcon, rconditions  | Conditions applied to the raytraced target | NONE |
 
 Examples
 --------
