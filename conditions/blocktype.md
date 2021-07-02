@@ -17,7 +17,7 @@ https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 
 ```
 Conditions:
-- blocktype DIRT,STONE,GRASS true
+- blocktype{type=dirt} true
 ```
 
 ---
