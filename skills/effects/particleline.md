@@ -18,6 +18,9 @@ Particle attributes are “per point” in this effect, so keeping 'amount' low 
 | startYOffset    | syo, ys  | Offset Y location of the starting point of the line | 0             |
 | targetYOffset   | tyo, yt  | Offset Y location of the target point of the line   | 0             |
 | fromOrigin      | fo       | Whether to draw the line from the origin instead    | false         |
+| zigzag          | zz       | Whether to draw the line to the target as a zigzag  | false         |
+| zigzags         | zzs      | Amount of zigzags when using the zigzag option      | 10            |
+| zigzagOffset    | zzo      | Offset of each zigzag                               | 0.2           |
 
 ---
 
