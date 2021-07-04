@@ -126,6 +126,7 @@ Conditions
 | [Biome](/conditions/biome)                                   | Location | Tests if the target is within the given list of biomes                                      |
 | [BlockType](/conditions/blocktype)                           | Location | Tests the material type present at the target location                                      |
 | [Blocking](/conditions/blocking)                             | Entity   | Tests if the target entity is blocking with a shield                                        |
+| [Burning](/conditions/burning)                              | Entity | Whether or not the target entity is on fire |
 | [Children](/conditions/children)                             | Entity   | Tests how many children the caster has                                                      |
 | [Crouching](/conditions/crouching)                           | Entity   | Whether or not the target entity is crouching                                               |
 | [Cuboid](/conditions/cuboid)                                 | Compare  | Whether the target is within the given cuboid between location1 x location2                 |
