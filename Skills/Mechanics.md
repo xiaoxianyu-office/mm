@@ -129,7 +129,7 @@ are able to target locations as well.
 | [Add Tag][]      | Adds a scoreboard tag to the target           |
 | [Remove Tag][]   | Removes a scoreboard tag from the target      |
 | [Teleport][]     | Teleports to the target                       |
-| [TeleportIn][]   | Teleports the target relative to where to caster's yaw |
+| [TeleportIn][]   | Teleports the target relative to the caster's yaw |
 | [TeleportTo][]   | Teleports the target to a specified location  |
 | [Threat][]       | Modifies the mob's threat towards the target  |
 | [Throw][]        | Throws the target entity                      |
