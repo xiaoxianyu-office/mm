@@ -20,4 +20,4 @@ Examples
 Will teleport the player that triggered the skill to the right of the caster.
 
     Skills:
-    - teleportin{direction=0,0,1} @trigger ~onInteract
+    - teleportin{vector=0,0,1} @trigger ~onInteract
