@@ -11,7 +11,7 @@ Attributes
 
 | Attribute             | Aliases   | Description                                                                   | Default Value |
 |-----------------------|-----------|-------------------------------------------------------------------------------|---------------|
-| direction | dir,d,vector,v | The direction to where the mob will be teleported                                 | |
+| vector | dir,d,v | The direction to where the mob will be teleported                                 | |
 | yaw | y | Yaw modifier | 0 | 
                 
 Examples
