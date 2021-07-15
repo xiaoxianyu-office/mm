@@ -3,5 +3,5 @@
 * No you can't disable the sound :(
 
 ```
-- totemUndying{model=2}
+- totemofundying{model=2}
 ```
