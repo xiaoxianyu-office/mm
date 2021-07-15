@@ -3,6 +3,12 @@
 * No you can't disable the sound :(
 
 **Aliases**: totemeffect, totemresurrection 
+
+Example
+-----
+
 ```
-- totemofundying{model=2}
+PlayTotemEffect:
+  Skills:
+  - totemofundying{model=2} @Self
 ```
