@@ -53,7 +53,7 @@ skill **effect:name**
 | [Smoke Swirl][]      | Creates a persistent "swirl" of smoke                                 |
 | [Sound][]            | Plays a sound effect from a resource pack                             |
 | [Spin][]             | Causes the mob to spin                                                |
-| [TotemUndying][]     | Plays the effect of a player resurrecting                             |
+| [TotemOfUndying][]     | Plays the effect of a player resurrecting                             |
 
 ### EffectLib Effects
 
@@ -95,7 +95,7 @@ Note: EffectLib was dropped in MM ver 4.11, they may still work with older versi
   [Smoke Swirl]: /skills/effects/smokeswirl
   [Sound]: /skills/effects/sound
   [Spin]: /skills/effects/spin
-  [TotemUndying]: /skills/effects/totemUndying
+  [TotemUndying]: /skills/effects/totemOfUndying
   [Atom]: /skills/effects/atom
   [Particle Vortex]: /skills/effects/particlevortex
   [DNA]: /skills/effects/dna
