@@ -2,6 +2,7 @@
 * Can specify a model to use from texture packs to overlay on the player's screen
 * No you can't disable the sound :(
 
+**Aliases**: totemeffect, totemresurrection 
 ```
 - totemofundying{model=2}
 ```
