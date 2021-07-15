@@ -95,7 +95,7 @@ Note: EffectLib was dropped in MM ver 4.11, they may still work with older versi
   [Smoke Swirl]: /skills/effects/smokeswirl
   [Sound]: /skills/effects/sound
   [Spin]: /skills/effects/spin
-  [TotemUndying]: /skills/effects/totemOfUndying
+  [TotemOfUndying]: /skills/effects/totemOfUndying
   [Atom]: /skills/effects/atom
   [Particle Vortex]: /skills/effects/particlevortex
   [DNA]: /skills/effects/dna
