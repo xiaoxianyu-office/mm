@@ -9,8 +9,10 @@ In the following sections I will provide some examples on how to
 configure a couple common scenarios that you may want to use on your
 server.
 
-PLAYERS CAN BE APART OF MYTHICMOBS FACTIONS TO TAKE ADVANTAGE OF THE
-CUSTOM AI WITH THE faction.(factionname) PERMISSION NODE!
+**Note on Players:**
+By default, MythicMobs uses a permission system for players to be considered part of a faction. If a player has the permission `faction.(factionname)`, they will be considered in the faction.
+
+This behavior can be overridden using the API by registering a custom faction provider.
 
 AI Goals, Targets, and Factions
 -------------------------------
