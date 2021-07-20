@@ -1,8 +1,6 @@
 Mechanic: Feed
 --------------
 
-<img src="https://giant.gfycat.com/ColorfulSharpBeauceron.gif" width="400" height="50" alt="https://giant.gfycat.com/ColorfulSharpBeauceron.gif" />
-  
 Feeds the targeted player.  
 Doesn't work for other mobs.
 
@@ -17,8 +15,7 @@ Doesn't work for other mobs.
 **Note:**  
 1 amount is half a food unit.  
 Overfeeding means excess food is converted into saturation.  
-Read more about
-[hunger](https://minecraft.gamepedia.com/Hunger#Saturation) here!
+Allows for negative values to decrease food!
 
   
 
