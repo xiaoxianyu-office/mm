@@ -35,7 +35,7 @@ Examples
 ### Correctly written command-skills
 
     Skills:
-    - command{c="give <target.name> gold_bar 20"} @trigger ~onInteract
+    - command{c="give <target.name> gold_ingot 20"} @trigger ~onInteract
     - command{c="minecraft:tp <target.name> <mob.uuid>"} @self ~onDamaged
     - command{c="minecraft:summon Zombie ~ ~ ~ <&lc>NoAI:true,CustomName:<&dq>Summoned Zombie<&dq><&rc>"}
     - command{c="minecraft:summon Zombie ~ ~ ~ {NoAI:true,CustomName:<&dq>Summoned Zombie<&dq>}"}
