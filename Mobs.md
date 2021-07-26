@@ -177,14 +177,14 @@ Breaking down the options
     takes by which causes.
 -   For example can be used to make the mob immune to melee attacks, but
     very weak to ranged attacks.
--   See [Damage Modifiers](/databases/misc/damagemodifiers) for a
+-   See [Damage Modifiers](/Mobs/DamageModifiers) for a
     complete list of options.
 
 **Equipment:**
 
 -   Used to equip the mob with vanilla items or mythic items upon its
     initial spawn.
--   See [Equipment](/databases/misc/equipment) for a complete list of
+-   See [Equipment](/Mobs/Equipment) for a complete list of
     options.
 
 **KillMessages:**
@@ -197,20 +197,20 @@ Breaking down the options
 
 -   MythicMobs can have levels and this field is used to determine which
     kinds of statistics they should gain on which level.
--   [Mob Levels](/databases/mobs/levels)
+-   [Mob Levels](/Mobs/Levels)
 
 **Disguise:**
 
 -   This field requires the plugin "LibsDisguises" to be installed and
     functioning on your server.
 -   Used to make mobs appear like other entities.
--   [Add-on: Disguises](/addons/disguises/start)
+-   [Add-on: Disguises](/Mobs/Disguises)
 
 **Skills:**
 
 -   The skills section is used to determine which skills the mob can
     utilize and when it will do so.
--   See [Skills Overview](/skills/start) to get started on making your
+-   See [Skills Overview](/Skills/Start) to get started on making your
     own skills.
 
 **Trades:**
