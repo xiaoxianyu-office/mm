@@ -158,7 +158,7 @@ Breaking down the options
 -   Can be vanilla items, mythic items, experience points, cross-plugin
     items (if supported) or even custom drop tables with their own
     condition system.
--   See [Drops Overview](/databases/drops/overview) for more
+-   See [Drops Overview](/wikis/Items/Drops) for more
     information.
 <!--
 **DropsPerLevel:**
