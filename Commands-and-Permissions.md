@@ -126,8 +126,7 @@ General
 
 -   **mythicmobs.admin** - *Grants full access to the plugin's
     commands.*
--   **mythicmobs.signal** - *Permission to use the "/mm signal
-    &lt;mob.uuid&gt; &lt;signal&gt;" command*
+
 
 Commands
 --------
@@ -137,4 +136,5 @@ Commands
 
 - **mythicmobs.command.info** - *Access to the **/mm info** command.*
 - **mythicmobs.command.mobs.list** - *Access to the **/mm mobs list** command.*
-- etc
+- **mythicmobs.command.signal** - *Permission to use the "/mm signal
+    &lt;mob.uuid&gt; &lt;signal&gt;" command*
