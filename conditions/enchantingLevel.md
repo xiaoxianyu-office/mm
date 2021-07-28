@@ -8,7 +8,7 @@
 
 | Attribute  | Alias | Description                          |
 | ---------- | ----- | -----------------------------------  |
-| amount     | a     | range of amount of experience level to check for |
+| level    | l     | range of amount of experience level to check for |
 
 ---
 
@@ -16,5 +16,5 @@
 
 ```
 TargetConditions:
-- EnchantingLevel{a=<10} true
+- EnchantingLevel{l=<10} true
 ```
