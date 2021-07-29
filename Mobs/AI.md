@@ -61,8 +61,8 @@ AIGoalSelectors:
 | restrictsun   |                  | In theory this will keep the mob from entering sunlight |
 | fleeplayers   | runfromplayers   | Causes the mob to avoid Players                       |
 | fleegolems    | runfromgolems    | Causes the mob to avoid Iron Golems                   |
-| fleevillagers | runfromvillages  | Causes the mob to avoid villagers                     |
-| fleewolves    | run from wolves  | Causes the mob to avoid wolves                        |
+| fleevillagers | runfromvillagers  | Causes the mob to avoid villagers                     |
+| fleewolves    | runfromwolves  | Causes the mob to avoid wolves                        |
 | spiderattack  |                  | Uses the attack a spider would (doesn't seem any different from a meleeattack) |
 | leapattarget  |                  | Makes the mob leap at its target                      |
 | moveindoors   | | |
