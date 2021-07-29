@@ -11,7 +11,7 @@ Attributes
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onHit            | oH            | Skill to execute if the target is damaged                  |               |
 | cancelEvent      | cE            | Whether or not to cancel the event that triggered the aura | false         |
-| damageAdd        | add, a        |                                                            | 0             |
+| damageSub       | sub, s        |                                                            | 0             |
 | damageMultiplier | multiplier, m |                                                            | 1             |
 
   
