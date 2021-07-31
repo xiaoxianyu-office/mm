@@ -37,7 +37,7 @@ itself.
 | Trigger               | When it fires...                                            |
 |-----------------------|-------------------------------------------------------------|
 | onBlockBreak          | When the player breaks a block                              |
-| onBlockPlace          | When the mob hits something                                 |
+| onBlockPlace          | When the player places a block                              |
 | onConsume             | Triggered if the item is food or a potion that is eaten     |
 | onCrouch              | When the player crouches                                    |
 | onUnCrouch            | When the player stops crouching                             |
