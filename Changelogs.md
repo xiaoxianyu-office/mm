@@ -1,3 +1,117 @@
+5.0.0
+======
+
+**Highlights**
+----------
+- 1.17.1 Support
+
+General
+-------
+
+### Added 1.17.1 Support
+
+Mobs
+----
+### Added AXOLOTL
+### Added GLOW_SQUID
+### Added GOAT
+### Added MARKER
+
+Mechanics
+---------
+### NEW: disguiseAsBlock
+### NEW: Freeze
+Freezes the target for [duration] number of ticks, like when players are stuck in powdered snow.
+### NEW: giveItemFromSlot
+### NEW: onBlockBreak
+- Aura mechanic that triggers when the entity breaks a block
+### SudoSkill
+- Added target override option to sudoSkill mechanic
+
+Effects
+-------
+### New Particles
+- drippingDripstoneLava, drippingDripstoneWater, dustColorTransition,
+electricSpark, fallingDripstoneLava, fallingDripstoneWater, Glow,
+glowingInk, Light, reversePortal, Scrape, SmallFlame, vibration, waxOff,
+waxOn
+
+Targeters
+---------
+### General
+- Added length mutator to location targeters
+- Added origin=true option to @BlocksInRadius targeter
+### NEW: @BlocksInChunk
+### NEW: @BlocksNearOrigin
+### NEW: @ForwardWall
+### NEW: @ItemsInRadius
+### NEW: @ItemsNearOrigin
+### NEW: @NearestStructure
+### NEW: @SelfEyeLocation
+- has alias of EyeDirection for MME compat
+### NEW: @SpawnLocation
+### NEW: @TargetedLocation
+### NEW: @TargetedTarget
+### Forward
+- Added rotation
+
+Conditions
+----------
+### NEW: color
+### NEW: playersinRadius
+```
+  Conditions:
+  - pir{amount=>5;r=10}
+```
+### BlockType
+- Now supports mmoitems blocks
+### Holding
+- Now supports MythicMobs and MMOItems items
+
+Spawners
+--------
+### Added Pitch and Yaw options
+
+Items
+-----
+
+
+Placeholders
+------------
+- Added <target.entity_type>
+- Added <target.block.type>
+- Added <skill.targets>
+
+Compatibility
+-------------
+- Updated to latest FAWE for fawePaste
+
+Bug Fixes/Other
+---------------
+- Optimized a bunch of the entity targeters
+- Fixed bugs with ConsumeHeldItem mechanic
+- Fixed issues with look mechanic
+- Fixed a lot of issues with the RandomSkill mechanic
+- Fixed problems with Bees and Zombified Piglins w/ overrides
+- Fixed extra spaces breaking inline skills in some cases
+- Fixed shulkers with setColor mechanic
+- Fixed doubles not working with setLevel mechanic
+- Fixed NPE in Raytrace mechanic
+- Fixed broken leftLeg and rightLeg aliases on animateArmorStand mechanic
+- Fixed mmoitems drops in nested droptables not having the correct amount
+- Fixed an NPE in commands
+- Fixed some issues with location targeters
+- Fixed an NPE in threat tables
+- Fixed NPE with lost entities trying to unregister
+- Fixed death messages not showing properly on PaperSpigot
+- Fixed onShoot trigger for Ghasts
+- Fixed weather mechanic not setting the weather to sunny/clear
+- Fixed NPE with lost entities trying to unregister
+- Possible fix for BonusLuckItems option
+- Fixed awkward issue with skeletons shooting a bow on some versions
+- Fixed the fillChest mechanic
+
+
 4.12.0
 ======
 
@@ -220,6 +334,7 @@ Bug Fixes/Other
 
 Older Changelogs
 ================
+-   [4.12.X Changelogs](/4.12.x_changelogs)
 -   [4.11.X Changelogs](/4.11.x_changelogs)
 -   [4.10.X Changelogs](/4.10.x_changelogs)
 -   [4.9.X Changelogs](/4.9.x_changelogs)
