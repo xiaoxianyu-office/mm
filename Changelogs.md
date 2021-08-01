@@ -57,6 +57,10 @@ Targeters
 Conditions
 ----------
 ### NEW: color
+```
+  Conditions:
+  - color{c=RED}
+```
 ### NEW: playersinRadius
 ```
   Conditions:
@@ -80,6 +84,10 @@ Placeholders
 - Added <target.entity_type>
 - Added <target.block.type>
 - Added <skill.targets>
+- Added <target.l.yaw>
+- Added <target.l.pitch>
+- Added <trigger.l.yaw>
+- Added <trigger.l.pitch>
 
 Compatibility
 -------------
@@ -109,6 +117,7 @@ Bug Fixes/Other
 - Possible fix for BonusLuckItems option
 - Fixed awkward issue with skeletons shooting a bow on some versions
 - Fixed the fillChest mechanic
+- Leather Horse Armor is now dyeable
 
 
 4.12.0
