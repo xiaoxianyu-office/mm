@@ -91,6 +91,10 @@ These placeholders will return whatever variable has been called. For instance <
 | <skill.var.\[name\]>       | Returns the value of the variable \[name\] on the current skill tree.|
 | <skill.var.damage-amount>  | Returns the amount of damage taken in the onDamaged trigger |
 | <skill.var.damage-type>    | Returns the type of damage taken as specified in a mechanic, aura, etc.|
+| <skill.var.aura-name>      | Returns the name of the aura as specified in an aura. |
+| <skill.var.aura-charges>   | Returns the amount of charges the aura has left.      |
+| <skill.var.aura-duration   | Returns the duration of the aura.                     |
+| <skill.var.aura-stacks     | Returns the amount of stacks the aura has.            |
 
 **Target Placeholders**
 -----------------
@@ -109,6 +113,9 @@ These placeholders will return whatever target selector has been used. For insta
 |<target.l.y.#>|Returns the Y coordinate of the target +- random number between #|
 |<target.l.z>|Returns the Z coordinate of the target|
 |<target.l.z.#>|Returns the Z coordinate of the target +- random number between #|
+|<target.l.yaw>   |Returns the yaw of the target|
+|<target.l.pitch> |Returns the pitch of the target|
+|<target.block.type> |Returns the block type of the target|
 
 **Trigger Placeholders**
 These placeholders will return whatever attribute of the entity that caused the skill to happen. For instance `<trigger.name>` combined with an `~onDeath` trigger will return the name of the entity that killed the mob.
@@ -130,6 +137,8 @@ These placeholders will return whatever attribute of the entity that caused the 
 |<trigger.l.y.#>   |Returns the Y coordinate of the entity triggering the skill +- random number between #|
 |<trigger.l.z>     |Returns the Z coordinate of the entity triggering the skill|
 |<trigger.l.z.#>   |Returns the Z coordinate of the entity triggering the skill +- random number between #|
+|<trigger.l.yaw>   |Returns the yaw of the trigger|
+|<trigger.l.pitch> |Returns the pitch of the trigger|
   
 
 Misc Placeholders
