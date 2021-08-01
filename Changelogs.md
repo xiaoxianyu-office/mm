@@ -7,15 +7,14 @@
 
 General
 -------
-
-### Added 1.17.1 Support
+- Added 1.17.1 Support
 
 Mobs
 ----
-### Added AXOLOTL
-### Added GLOW_SQUID
-### Added GOAT
-### Added MARKER
+- Added AXOLOTL
+- Added GLOW_SQUID
+- Added GOAT
+- Added MARKER
 
 Mechanics
 ---------
