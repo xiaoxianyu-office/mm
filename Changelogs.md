@@ -88,6 +88,7 @@ Placeholders
 - Added <target.l.pitch>
 - Added <trigger.l.yaw>
 - Added <trigger.l.pitch>
+- Added <target.level>
 
 Compatibility
 -------------
