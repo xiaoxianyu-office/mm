@@ -93,8 +93,8 @@ These placeholders will return whatever variable has been called. For instance <
 | <skill.var.damage-type>    | Returns the type of damage taken as specified in a mechanic, aura, etc.|
 | <skill.var.aura-name>      | Returns the name of the aura as specified in an aura. |
 | <skill.var.aura-charges>   | Returns the amount of charges the aura has left.      |
-| <skill.var.aura-duration   | Returns the duration of the aura.                     |
-| <skill.var.aura-stacks     | Returns the amount of stacks the aura has.            |
+| <skill.var.aura-duration>  | Returns the duration of the aura.                     |
+| <skill.var.aura-stacks>    | Returns the amount of stacks the aura has.            |
 
 **Target Placeholders**
 -----------------
