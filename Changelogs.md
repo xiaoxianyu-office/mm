@@ -120,7 +120,8 @@ Bug Fixes/Other
 - Fixed the fillChest mechanic
 - Leather Horse Armor is now dyeable
 - Fixed item Options.HideFlags not hiding all the flags
-- Fixed an issue with `TeleportIn` mechanic attribute
+- Fixed an issue with TeleportIn mechanic attribute
+- Fixed an issue with Threat mechanic
 
 
 4.12.0
