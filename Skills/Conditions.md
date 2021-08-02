@@ -196,6 +196,7 @@ Conditions
 | [OwnerIsOnline](/conditions/ownerisonline)                   | Entity   | Checks if the owner of the target mob is online, if the owner is a player                   |
 | [Pitch](/conditions/pitch)                                   | Entity   | Checks if the pitch of the target entity is within a range                                  |
 | [PlayerKills](/conditions/playerkills)                       | Entity   | Matches how many players the target mob has killed                                          |
+| [PlayersInRadius](/conditions/playersinradius)               | Entity   | Checks how many players are in a radius                                                       |
 | [PlayerNotWithin](/conditions/playernotwithin)               | Location | Checks if any players are within a radius of the target                                     |
 | [PlayerWithin](/conditions/playerwithin)                     | Location | Checks if any players are within a radius of the target                                     |
 | [Raining](/conditions/raining)                               | Location | If it's raining in the target world                                                         |
