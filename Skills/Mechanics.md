@@ -52,6 +52,7 @@ are able to target locations as well.
 | [Extinguish][]           | removes fire ticks from the target entity                                   |
 | [fawePaste][]            | Pastes a Schematic using FAWE                                               |
 | [Feed][]                 | Feeds the target player                                                     |
+| [FillChest][]            | Fills a chest with items, or a droptable                                    |
 | [Fly][]                  | Applies an [aura][] that allows the target to fly                           |
 | [Force Pull][]           | Teleports the target to the mob                                             |
 | [Glow][]                 | Makes the target glow                                                       |
