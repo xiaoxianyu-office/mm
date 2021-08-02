@@ -29,6 +29,10 @@ These options are applicable to all items:
   - Sets the unbreakable tag on the item.
   - Items with this set to true will not lose durability.
 
+**HideFlags: \[true/false\]**
+
+  - Hides all the item flags.
+
 Playerheads
 -----------
 
