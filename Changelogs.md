@@ -51,6 +51,7 @@ Targeters
 ### NEW: @SpawnLocation
 ### NEW: @TargetedLocation
 ### NEW: @TargetedTarget
+### NEW: @UniqueIdentifier
 ### Forward
 - Added rotation
 
