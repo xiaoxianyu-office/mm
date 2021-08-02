@@ -36,6 +36,7 @@ Entity Targeters
 | @Passenger           |           | Targets the rider of the mob.                              |
 | @CasterSpawnLocation |           | Targets the location the caster spawned at.                |
 | @PlayerByName{name="Ashijin"} |  | Targets a specific player by name, supports placeholders. Added in 4.12 |
+| @UniqueIdentifier{u="someuuid"}  | @UUID | Targets a specific entity by their UUID, supports placeholders. Added in 5.0 |
 | @Vehicle             |           | Targets the Vehicle you are mounted on Added in 4.12       |
 
 ### Multi-Entity Targeters
