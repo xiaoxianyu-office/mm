@@ -119,6 +119,7 @@ Bug Fixes/Other
 - Fixed awkward issue with skeletons shooting a bow on some versions
 - Fixed the fillChest mechanic
 - Leather Horse Armor is now dyeable
+- Fixed item Options.HideFlags not hiding all the flags
 
 
 4.12.0
