@@ -128,6 +128,7 @@ Conditions
 | [Blocking](/conditions/blocking)                             | Entity   | Tests if the target entity is blocking with a shield                                        |
 | [Burning](/conditions/burning)                              | Entity | Whether or not the target entity is on fire |
 | [Children](/conditions/children)                             | Entity   | Tests how many children the caster has                                                      |
+| [Color](/conditions/color)                                   | Entity   | Tests the entity's colors |
 | [Crouching](/conditions/crouching)                           | Entity   | Whether or not the target entity is crouching                                               |
 | [Cuboid](/conditions/cuboid)                                 | Compare  | Whether the target is within the given cuboid between location1 x location2                 |
 | [DamageAmount](/conditions/DamageAmount)                     | Entity   | Checks for a range of damage taken                                                          |
