@@ -90,6 +90,7 @@ Placeholders
 - Added <trigger.l.yaw>
 - Added <trigger.l.pitch>
 - Added <target.level>
+- Added <caster.damage>
 
 Compatibility
 -------------
