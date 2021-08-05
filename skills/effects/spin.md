@@ -18,3 +18,7 @@ Causes the target entity to spin around for the given duration.
 ```
 - effect:spin{duration=100;velocity=20} @self
 ```
+
+**Tips:**
+
+When you set velocity to 0,this mob's direction will be locket
