@@ -7,6 +7,7 @@ It's great for creating complex, aesthetically pleasing skills, such as
 shadow bolts, balls of ice, or even meteors.  
 It has a lot of options(more than any other skill) and can be a bit of a
 nightmare to jump into without knowing what you're doing.
+It will disappear after reached targeted entity or location.
 
 Attributes
 ----------
@@ -119,4 +120,3 @@ first entity it hits:
       Skills:
       - damage{a=10}
       - potion{type=SLOW;duration=100;lvl=2}
-
