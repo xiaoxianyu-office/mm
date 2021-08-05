@@ -19,6 +19,7 @@ Possible Triggers
 -   ~onInteract
 -   ~onCombat
 -   ~onTeleport
+-   ~onUse(Required Crucible)
 
 Example
 -------
