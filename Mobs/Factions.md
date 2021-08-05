@@ -42,11 +42,11 @@ AI Goals, Targets, and Factions
       Damage: 1
       Faction: Undead
       AIGoalSelectors:
-      - 0 clear
-      - 1 arrowattack
+      - clear
+      - arrowattack
       AITargetSelectors:
-      - 0 clear
-      - 1 players
+      - clear
+      - players
       Options:
         FollowRange: 10
         MovementSpeed: 0.2
@@ -69,12 +69,12 @@ AI Goals, Targets, and Factions
       Damage: 1
       Faction: Undead
       AIGoalSelectors:
-      - 0 clear
-      - 1 meleeattack
+      - clear
+      - meleeattack
       AITargetSelectors:
-      - 0 clear
-      - 1 hurtbytarget
-      - 2 otherfactionmonsters
+      - clear
+      - hurtbytarget
+      - otherfactionmonsters
       Equipment:
       - COS_WoodSword:0
       Options:
@@ -147,13 +147,13 @@ Example 1: Guards attack nearby monsters
       - COS_StoneSword:0
       Faction: Guard
       AIGoalSelectors:
-      - 0 clear
-      - 1 opendoors
-      - 2 meleeattack
+      - clear
+      - opendoors
+      - meleeattack
       AITargetSelectors:
-      - 0 clear
-      - 1 hurtbytarget
-      - 2 otherfactionmonsters
+      - clear
+      - hurtbytarget
+      - otherfactionmonsters
       Options:
         Disguise: villager
         Despawn: true
@@ -183,12 +183,12 @@ Example 1: Guards attack nearby monsters
       Damage: 1
       Faction: Undead
       AIGoalSelectors:
-      - 0 clear
-      - 1 meleeattack
+      - clear
+      - meleeattack
       AITargetSelectors:
-      - 0 clear
-      - 1 hurtbytarget
-      - 2 players
+      - clear
+      - hurtbytarget
+      - players
       Equipment:
       - COS_RawHead:4
       - COS_WoodSword:0
@@ -243,14 +243,14 @@ Example 2: Orcs and Goblins attack each other
       Damage: 4
       Faction: Orcs
       AIGoalSelectors:
-      - 0 clear
-      - 1 opendoors
-      - 2 meleeattack
+      - clear
+      - opendoors
+      - meleeattack
       AITargetSelectors:
-      - 0 clear
-      - 1 hurtbytarget
-      - 2 specificfactionmonsters Goblin
-      - 3 players
+      - clear
+      - hurtbytarget
+      - specificfactionmonsters Goblin
+      - players
       Equipment:
       - C_DeathfistSkullcap:4
       - C_DeathfistTunic:3
@@ -274,14 +274,14 @@ Example 2: Orcs and Goblins attack each other
       Damage: 4
       Faction: Goblin
       AIGoalSelectors:
-      - 0 clear
-      - 1 opendoors
-      - 2 meleeattack
+      - clear
+      - opendoors
+      - meleeattack
       AITargetSelectors:
-      - 0 clear
-      - 1 hurtbytarget
-      - 2 specificfactionmonsters Orcs
-      - 3 players
+      - clear
+      - hurtbytarget
+      - specificfactionmonsters Orcs
+      - players
       Equipment:
       - COS_BronzeHead:4
       - COS_BronzeChest:3
