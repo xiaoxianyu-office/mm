@@ -13,7 +13,7 @@ list every time you are creating a new mob. All that really is required
 are the *internal\_mobname* and the *Type*.
 
 You can make any number of files in the Mobs folder, and they can be
-named anything you like as long as the file ends in .yml.
+named anything you like as long as the file ends in any document format(.txt .yml etc).
 
     internal_mobname:
       Type:
