@@ -19,7 +19,7 @@ Attributes
 |--------------|----------------|-------------------------------------------------------------------------------------------|---------|
 | type         | t              | The type of [potion effect](/Items/Potions) to apply.                           |         |
 | duration     | d              | The duration of the effect in ticks [1].                                                  | 100     |
-| level        | l              | The modifier-level of the potion effect. The lowest possible strength of a potion is "0". | 1       |
+| level        | l              | The modifier-level of the potion effect. The real level is level's value +1. | 1       |
 | force        |                | Whether not to override the current potion effect or not. (4.0+)                          | false   |
 | hasParticles | particles or p | Whether not to show the status effect particles. (4.6+)                                   | true    |
 | hasIcon      | icon or i      | Whether not to show the status effect icon. (4.6+)                                        | true    |
