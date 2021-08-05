@@ -7,7 +7,8 @@ It's great for creating complex, aesthetically pleasing skills, such as
 shadow bolts, balls of ice, or even meteors.  
 It has a lot of options(more than any other skill) and can be a bit of a
 nightmare to jump into without knowing what you're doing.  
-It will disappear after reached targeted entity or location.
+It will disappear after reached targeted entity or location.  
+Doesn't work on **Minecraft 1.12.x**(including olders) which using **MythicMobs 4.12**(including newers)
 
 Attributes
 ----------
