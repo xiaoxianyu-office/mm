@@ -208,18 +208,10 @@ ShadowDamage20:
   - damage{amount=20}
   - some shadowy effect
 
-ShadowDamage50:
-  Skills:
-  - damage{amount=50}
-  - some shadowy effect
-
 Mob1:
   Skills:
   - skill:ShadowDamage20 ~onAttack
 
-Mob2:
-  Skills:
-  - skill:ShadowDamage50 ~onAttack
 ```
 
 **With Skill Parameters, we can combine these all into a single skill! The new way:**
@@ -232,20 +224,10 @@ Mob1:
   Skills:
   - skill:ShadowDamage{damage=20} ~onAttack
 
-Mob2:
-  Skills:
-  - skill:ShadowDamage{damage=50} ~onAttack
 ```
+This Mobs still will cause 20 damage to target.  
 The "skill parameter" system will pass __any__ options from the **skill/metaskill** mechanic (except options that are specific to it) down the skill tree where you can reference them later. If a later skill passes the same parameter, it will overwrite it. These can be used anywhere placeholders are supported.
 
-```
-- skill{skill=SomeSkill;anything=2;somethingElse=5}
-
-SomeSkill:
-  Skills:
-  - particles{amount=<skill.anything>}
-  - damage{amount=<skill.somethingElse>}
-```
 
 Wrapping it all Up
 ==================
