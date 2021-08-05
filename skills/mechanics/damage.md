@@ -62,7 +62,7 @@ hearts) to players within 6 blocks.
 ### Examples(Premium Required)
 
       Skills:
-      - damage{amount=<caster.var.Baka> * 0.5 + 1} @target ~onTimer:20
+      - damage{amount=<caster.var.somevariable> * 0.5 + 1} @target ~onTimer:20
 
-This skill above does "<caster.var.Baka> * 0.5 + 1" damage
-if the varibute: <caster.var.Baka>'s value is 5,this mechaine will does 3.5 damage
+This skill above does "<caster.var.somevariable> * 0.5 + 1" damage
+if the varibute: <caster.var.somevariable>'s value is 5,this mechaine will does 3.5 damage
