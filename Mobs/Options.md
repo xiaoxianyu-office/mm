@@ -52,7 +52,7 @@ These options are universal and will work regardless of the mobtype.
 
 **FollowRange: \[value\]**
 
-      * Max distance the mob will hold aggro on a target.
+      * Max distance between the mob and target(can be a location)
       * Also defines max range at which a target will aggro a player initially.
       * Defaults to standard respective minecraft follow range
 
