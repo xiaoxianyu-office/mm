@@ -154,6 +154,7 @@ Conditions
 | [HasAuraStacks](/conditions/hasaurastacks)                   | Entity   | Tests if the target has the given range of stacks from an aura                              |
 | [HasCurrency](/conditions/hascurrency)                       | Entity   | If the target has the given amount of vault currency                                        |
 | [HasInventorySpace](/conditions/hasinventoryspace)           | Entity   | If the target has the given amount of empty inventory space                                 |
+| [HasItem](/conditions/hasItem)                               | Entity   | Tests if the target player has the given number of given material                                                |
 | [HasOwner](/conditions/hasowner)                             | Entity   | Tests if the target mob has an owner                                                        |
 | [HasParent](/conditions/hasparent)                           | Entity   | Tests if the target mob has a parent                                                        |
 | [HasPassenger](/skills/conditions/hasPassenger)              | Entity   | Checks if the target entity has a passenger                                                 |
