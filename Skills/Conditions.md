@@ -163,7 +163,7 @@ Conditions
 | [Height](/conditions/height)                                 | Location | Checks if the target's Y location is within a range                                         |
 | [HeightAbove](/conditions/heightabove)                       | Location | Checks if the target's Y location is above a value                                          |
 | [HeightBelow](/conditions/heightbelow)                       | Location | Checks if the target's Y location is below a given value                                    |
-| [Holding](/conditions/holding)                               | Entity   | Checks if the target is holding a given material                                            |
+| [Holding](/conditions/holding)                               | Entity   | Checks if the target is holding a given material(support MythicMobs and MMOItems)                                            |
 | [Inblock](/conditions/inblock)                               | Location | Checks the material at the target location                                                  |
 | [Incombat](/conditions/incombat)                             | Entity   | If the target mob is considered in combat                                                   |
 | [Inside](/conditions/inside)                                 | Location | Checks if the target has a block over their head                                            |
