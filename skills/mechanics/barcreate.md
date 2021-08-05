@@ -1,7 +1,7 @@
 Mechanic: Bar Create
 ====================
 
-Creates a custom boss bar on the casting mob.
+Creates a custom boss bar on the casting mob(cannot be player).
 
 Attributes
 ----------
