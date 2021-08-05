@@ -1,7 +1,7 @@
 Mechanic: Bar Remove
 ====================
 
-Removes a custom boss bar on the casting mob.
+Removes a custom boss bar on the casting mob(cannot be player).
 
 Attributes
 ----------
