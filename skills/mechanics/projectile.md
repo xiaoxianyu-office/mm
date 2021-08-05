@@ -6,7 +6,7 @@ using particle and sound effects.
 It's great for creating complex, aesthetically pleasing skills, such as
 shadow bolts, balls of ice, or even meteors.  
 It has a lot of options(more than any other skill) and can be a bit of a
-nightmare to jump into without knowing what you're doing.
+nightmare to jump into without knowing what you're doing.  
 It will disappear after reached targeted entity or location.
 
 Attributes
