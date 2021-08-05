@@ -22,7 +22,7 @@ Examples
 
 This example will stop all momentum of the casting mob upon taking
 damage. The effect will only last until the mob decides to move again or
-is moved by other sources.
+is moved by other sources.But still will be repulsed by Enchantment: **ARROW_KNOCKBACK**
 
     internal_mobname:
       Type: Zombie
