@@ -69,8 +69,8 @@ AIGoalSelectors:
 | movethroughvillage | | |
 | movetowardsrestriction | | |
 | patrol x1,y1,z1;x2,y2,z2;x3,y3,z3;… | patrolroute | Makes the mob patrol between the specified locations |
-| gotolocation x,y,z | goto        | Makes the mob go to the specified location            |
-| gotoowner #   |                  | Makes the mob move towards its owner when beyond a certain distance (defaults to 5 blocks) |
+| gotolocation x,y,z | goto        | Makes the mob go to the specified location(Notice Followrange must more than the distance between location and mob)            |
+| gotoowner #   |                  | Makes the mob move towards its owner when beyond a certain distance (defaults to 5 blocks,Notice Followrange must more than the distance between location and mob) |
 | gotoparent    |                  | Makes the mob move towards its parent mob             |
 | panicWhenOnFire | panic              | Run around panicking when on fire and look for water |
 
