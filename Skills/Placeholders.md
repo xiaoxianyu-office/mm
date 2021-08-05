@@ -95,7 +95,7 @@ These placeholders will return whatever variable has been called. For instance <
 | <skill.var.aura-charges>   | Returns the amount of charges the aura has left.      |
 | <skill.var.aura-duration>  | Returns the duration of the aura.                     |
 | <skill.var.aura-stacks>    | Returns the amount of stacks the aura has.            |
-
+| <skill.targets>            | Returns skill's targeted entities                     |
 **Target Placeholders**
 -----------------
 These placeholders will return whatever target selector has been used. For instance <target.name> + @NearestPlayer will return the name of the player closest to the casting mob.
@@ -116,6 +116,7 @@ These placeholders will return whatever target selector has been used. For insta
 |<target.l.yaw>   |Returns the yaw of the target|
 |<target.l.pitch> |Returns the pitch of the target|
 |<target.block.type> |Returns the block type of the target|
+|<target.entity.type> |Returns the entity type of the target|
 
 **Trigger Placeholders**
 These placeholders will return whatever attribute of the entity that caused the skill to happen. For instance `<trigger.name>` combined with an `~onDeath` trigger will return the name of the entity that killed the mob.
