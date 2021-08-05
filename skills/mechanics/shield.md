@@ -3,8 +3,9 @@ Mechanic: Shield
 
 Adds absorption hearts. Having maxShield as a greater value than amount
 is recommended.  
-Doesn't work on **Minecraft below 1.13**(excluding 1.13).
-Attributes
+Doesn't work on **Minecraft below 1.13**(excluding 1.13).  
+
+**Attributes**
 
 ----------
 
