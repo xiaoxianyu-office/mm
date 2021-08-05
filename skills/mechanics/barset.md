@@ -1,7 +1,7 @@
 Mechanic: Bar Set
 =================
 
-Modifies a custom boss bar on the casting mob.
+Modifies a custom boss bar on the casting mob(cannot be player).
 
 Attributes
 ----------
