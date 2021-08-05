@@ -402,7 +402,7 @@ different mobtype.
 **HorseColor: \[horse\_color\]**
 
       * Sets color of the horse
-      * Colors can be BLACK, BROWN, CHESTNUT, CREAMY, DARK_BROWN, GRAY or WHITE
+      * Colors Must be uppercase,can be BLACK, BROWN, CHESTNUT, CREAMY, DARK_BROWN, GRAY or WHITE
 
 **Saddled: \[true/false\]**
 
