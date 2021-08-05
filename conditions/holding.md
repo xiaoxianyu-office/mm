@@ -1,4 +1,4 @@
-**Description:** Checks if the target is holding a given item(In **5.0**,material Can be MythicItem or MMOItem's Item)
+**Description:** Checks if the target is holding a given material
 
 **Type:** Entity
 
@@ -8,7 +8,7 @@
 
 | Attribute | Alias   | Description                |
 | --------- | ------- | -------------------------- |
-| material  | m       | The material type to match |
+| material  | m       | The material type to match,support MythicMobs MMOItems |
 
 ---
 
