@@ -56,6 +56,7 @@ These placeholders will return whatever attribute of the caster that is called. 
 
 |Caster Placeholder|Function|
 |----------------------------------|-------------------------------------------------------------------------|
+|<caster.damage>|Returns the total amount of taken damage|
 |<caster.uuid>|Returns the UUID of the caster|
 |<caster.level>|Returns the level of the caster|
 |<caster.name>|Returns the name of the caster|
@@ -115,6 +116,7 @@ These placeholders will return whatever target selector has been used. For insta
 |<target.l.z.#>|Returns the Z coordinate of the target +- random number between #|
 |<target.l.yaw>   |Returns the yaw of the target|
 |<target.l.pitch> |Returns the pitch of the target|
+|<target.level> |Returns the level of the target|
 |<target.block.type> |Returns the block type of the target|
 |<target.entity.type> |Returns the entity type of the target|
 
