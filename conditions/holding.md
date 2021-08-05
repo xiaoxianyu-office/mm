@@ -8,7 +8,7 @@
 
 | Attribute | Alias   | Description                |
 | --------- | ------- | -------------------------- |
-| material  | m       | The material type to match,support MythicMobs MMOItems |
+| material  | m       | A material or MythicItem name to check for |
 
 ---
 
