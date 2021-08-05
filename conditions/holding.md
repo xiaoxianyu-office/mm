@@ -1,4 +1,4 @@
-**Description:** Checks if the target is holding a given item(On 5.0,material Can be MythicItem or MMOItem's Item)
+**Description:** Checks if the target is holding a given item(In **5.0**,material Can be MythicItem or MMOItem's Item)
 
 **Type:** Entity
 
