@@ -6,7 +6,7 @@
 
 | Attribute | Aliases | Description                  |
 | --------- | ------- | ---------------------------- |
-| types     | type, t | A list of materials to check |
+| types     | type, t | A list of materials or MMOItem's block name to check |
 
 Valid for any Bukkit material type.
 https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
