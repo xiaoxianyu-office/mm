@@ -43,8 +43,8 @@ The “color” attribute was added in version 2.3
 | Attribute       | Aliases  | Description | Default Value |
 |-----------------|----------|------|---------------|
 | useEyeLocation | uel | (true/false) Whether to base the particles on the entity's eyes | false |
-| forwardOffset   |  | The forward-offset from the targeted entity | 0 |
-| sideOffset | so | The side-offset from the targeted entity | 0 |
+| forwardOffset   |  | The forward-offset from the targeted entity,doesn'n work when set directional to true | 0 |
+| sideOffset | so | The side-offset from the targeted entity,doesn'n work when set directional to true | 0 |
 
 #### Particle Colors
 
@@ -62,7 +62,7 @@ As of MythicMobs version 2.3, some particles effects (mobSpell, mobSpellAmbient,
     Skills:
     - effect:particles{particle=block_crack_dirt_0;amount=100;hS=1;vS=1} @self
 
-1.13 block_crack
+1.13 block
 
     Skills:
-    - effect:particles{particle=block_crack;m=dirt;amount=100;hS=1;vS=1} @self
+    - effect:particles{particle=block;m=dirt;amount=100;hS=1;vS=1} @self
