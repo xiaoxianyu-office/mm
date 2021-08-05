@@ -21,4 +21,4 @@ Causes the target entity to spin around for the given duration.
 
 **Tips:**
 
-When you set velocity to 0,this mob's direction will be locket
+When you set velocity to 0,this mob's direction will be locked
