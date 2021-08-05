@@ -4,6 +4,8 @@ Damage Modifiers are an attribute you can add to your MythicMobs to increase or 
 
 Some of these won't work on mobs (such as SUICIDE) under normal circumstances.
 
+Also working on some mechaines,such as the damage caused by ignite will be affected
+
 Damage Modifiers are completely optional, you only need to add the ones you want to use.
 
 **Options**
