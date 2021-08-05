@@ -34,7 +34,10 @@ variable's value will be a string: "<caster.var.MM> * 2".
 
 A variable's "scope" is **where** that variable exists. Not all scopes
 are applicable for all situations (e.g. a condition may not have a
-caster, rather the caster is the target of the condition).
+caster, rather the caster is the target of the condition).  
+When use Setvariable to create a variable on target,only need set
+**var**'s vaule to "target.variable-name"(because **var**'s prefix is **scope**)
+this means u can copy caster's variable value to other mobs
 
 **Variable Scopes**:
 
