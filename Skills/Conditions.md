@@ -5,6 +5,8 @@ Conditions are used to determine whether or not an action may execute.
 These conditions are placed under the Condition section in the
 configuration as shown below (bottom of page).
 
+Couldn't use [Variables](/skills/variables) in Condition's option
+
 Conditions can be used in [1]:
 
 -   [Skill Mechanics](/skills/mechanics/skill)
