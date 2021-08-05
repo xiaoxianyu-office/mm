@@ -55,6 +55,7 @@ Examples
     - skill{s=AnotherSkill;sync=true} @Target ~onAttack
     - skill{s=ice_bolt;sync=true} @Target ~onTimer:100
     - skill{sync=true;s=flamethrower} @TargetLocation ~onTimer:200
+    - skill:Onemechainc @Target ~onDamaged
     - skill
         {
         skill=leafs;
