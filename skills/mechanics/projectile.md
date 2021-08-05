@@ -8,7 +8,7 @@ shadow bolts, balls of ice, or even meteors.
 It has a lot of options(more than any other skill) and can be a bit of a
 nightmare to jump into without knowing what you're doing.  
 It will disappear after reached targeted entity or location.  
-Doesn't work on **Minecraft 1.12.x**(including olders) which using **MythicMobs 4.12**(including newers)
+Doesn't work on **Minecraft below 1.13**(excluding 1.13) which using **MythicMobs above 4.11**(excluding 4.11)
 
 Attributes
 ----------
