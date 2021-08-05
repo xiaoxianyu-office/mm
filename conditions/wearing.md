@@ -1,5 +1,6 @@
 **Description:** This condition checks if the target entity is wearing the selected item.  
-                 Doesn't work on **Minecraft below 1.13**(excluding 1.13).
+
+**Note**:Doesn't work on **Minecraft below 1.13**(excluding 1.13).
 
 **Type:** Entity
 
