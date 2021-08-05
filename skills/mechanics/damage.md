@@ -58,3 +58,11 @@ a repeating interval to create a sort of lingering frost effect as well)
 and inflicting Slowness level 7 (which is -105% movement speed.) slowing
 the mob to a halt. Additionally the mechanic inflicts 120 damage (60
 hearts) to players within 6 blocks.
+
+### Examples(Premium Required)
+
+      Skills:
+      - damage{amount=<caster.var.Baka> * 0.5 + 1} @target ~onTimer:20
+
+This skill above does "<caster.var.Baka> * 0.5 + 1" damage
+if the varibute: <caster.var.Baka>'s value is 5,this mechaine will does 3.5 damage
