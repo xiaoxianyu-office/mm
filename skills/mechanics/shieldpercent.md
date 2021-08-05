@@ -2,7 +2,8 @@ Mechanic: ShieldPercent
 =======================
 
 Applies an absorb shield to the target entity for a percentage of their
-max health.
+max health.  
+Doesn't work on **Minecraft below 1.13**(excluding 1.13).
 
 Attributes
 ----------
