@@ -101,6 +101,9 @@ Compatibility
 -------------
 - Updated to latest FAWE for fawePaste
 
+### GriefPrevention
+- Added inClaim, nearClaim conditions
+
 Bug Fixes/Other
 ---------------
 - Optimized a bunch of the entity targeters
@@ -129,7 +132,7 @@ Bug Fixes/Other
 - Fixed item Options.HideFlags not hiding all the flags
 - Fixed an issue with TeleportIn mechanic attribute
 - Fixed an issue with Threat mechanic
-
+- Fixed bug with itemspray
 
 4.12.0
 ======
