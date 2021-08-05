@@ -1,6 +1,6 @@
 **Description:** Tests if the target player has the given number of given material
 
-**Type:** Player
+**Type:** Entity
 
 ---
 
