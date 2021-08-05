@@ -34,7 +34,9 @@ take a look at an example of what this looks like:
       Health: 50
       Skills:
       - mechanic 1
-      - mechanic 2
+      - skill{skill=Skill group name}
+      - skill{s=Skill group name}
+      - skill:Skill group name}
       - etc
 
 Each skill mechanic is assigned to the mob in a list such as the one
