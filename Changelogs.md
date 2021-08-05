@@ -67,6 +67,11 @@ Conditions
   Conditions:
   - pir{amount=>5;r=10}
 ```
+### NEW: hasitem
+```
+  Conditions:
+  - hasitem{i=STICK;amount=2}
+```
 ### BlockType
 - Now supports mmoitems blocks
 ### Holding
