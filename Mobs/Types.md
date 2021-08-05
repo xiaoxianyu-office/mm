@@ -14,6 +14,7 @@ List
 ----
 
 -   ARMOR\_STAND
+-   AXOLOTL(5.0 MM)
 -   BABY\_DROWNED
 -   BABY\_PIG\_ZOMBIE
 -   BABY\_PIG\_ZOMBIE\_VILLAGER
@@ -41,6 +42,8 @@ List
 -   EXPERIENCE_ORB (4.12 MM)
 -   GHAST
 -   GIANT
+-   GLOW_SQUID(5.0 MM)
+-   GOAT(5.0 MM)
 -   GUARDIAN
 -   HOGLIN
 -   HORSE
@@ -49,6 +52,7 @@ List
 -   IRON\_GOLEM
 -   LLAMA
 -   MAGMA\_CUBE
+-   MARKER(5.0 MM)
 -   MULE
 -   MUSHROOM\_COW
 -   OCELOT
