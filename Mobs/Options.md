@@ -307,10 +307,12 @@ different mobtype.
 **ExplosionRadius: \[number\]**
 
       * Sets the radius/power of the creepers explosion
+      * Defaults to 3
 
 **FuseTicks: \[number\]**
 
       * Sets the number of ticks it takes for creepers to explode.
+      * Defaults to 30
 
 **SuperCharged: \[true/false\]**
 
