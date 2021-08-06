@@ -80,7 +80,7 @@ These options are universal and will work regardless of the mobtype.
 
       * Number between 0 and 1 that defines resistance of mob to knockbacks. Defaults to 0.
       * 0.1 = 10%, 0.5 = 50% 1 = 100%
-      * Note that mobs with 100% resistance can still be knocked back by weapons enchanted with knockback or explosions.
+      * Note that mobs with 100% resistance can still be knocked back by bow's enchantment: ARROW_KNOCKBACK.
 
 **MaxCombatDistance: \[number\]**
 
