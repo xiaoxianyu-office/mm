@@ -666,6 +666,7 @@ Used for wolves and zombie pigmen.
 **PreventSlimeSplit: \[true/false\]**
 
       * Prevents slimes and magmacubes from splitting.
+      * Default to false
 
 **Size: \[number\]**
 
@@ -673,6 +674,7 @@ Used for wolves and zombie pigmen.
       * Normal slimes are between 1 and 8.
       * Can get VERY big and get exponentially larger with each increase.
       * Extremely high size will cause server lag and possibly crashes.
+      * Default to 1to3
 
 #### Tameable Mobs
 
