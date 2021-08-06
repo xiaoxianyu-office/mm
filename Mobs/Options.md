@@ -513,6 +513,7 @@ different mobtype.
 
 **Derp: \[true/false\]**
 
+      * Snow Golem is already sheared pumpkin
       * Defaults to false.
 
 **PreventSnowFormation: \[true/false\]**
