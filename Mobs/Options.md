@@ -156,6 +156,7 @@ These options are universal and will work regardless of the mobtype.
 **PreventSunburn: \[true/false\]**
 
       * Whether to prevent the mob from burning in the sun.
+      * Doesn't work on below Minecraft 1.13
       * Defaults to false.
 
 **RepeatAllSkills: \[true/false\]**
