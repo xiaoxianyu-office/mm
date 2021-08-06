@@ -81,6 +81,7 @@ List
 -   STRIDER
 -   TNT
 -   TROPICAL\_FISH
+-   TRADER\_LLAMA
 -   TURTLE
 -   VEX
 -   VILLAGER
