@@ -59,7 +59,7 @@ and inflicting Slowness level 7 (which is -105% movement speed.) slowing
 the mob to a halt. Additionally the mechanic inflicts 120 damage (60
 hearts) to players within 6 blocks.
 
-### Examples(Premium Required)
+### Examples(Requires Premium)
 
       Skills:
       - damage{amount=<caster.var.somevariable> * 0.5 + 1} @target ~onTimer:20
