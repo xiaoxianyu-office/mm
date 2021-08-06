@@ -673,7 +673,7 @@ Used for wolves and zombie pigmen.
       * Sets the size of slimes, magma cubes, and phantoms.
       * Can get VERY big and get exponentially larger with each increase.
       * Extremely high size will cause server lag and possibly crashes.
-      * Default to 1to8
+      * Default to 1to8(Phantoms is 1)
 
 #### Tameable Mobs
 
