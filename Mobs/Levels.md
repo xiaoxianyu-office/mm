@@ -62,7 +62,7 @@ for the affected attributes in the mob configuration.
       * **Health: [number]**
       * **Damage: [number] ((The damage value will never influence the damage dealt by potions (witches) or arrows (skeletons) ))**
       * **KnockbackResistance: [number]**
-      * [[databases:skills:power_level|Power]]**: [number]**
+      * [Power](/Mobs/Power)**: [number]**
       * **Armor: [number]**
       * **MovementSpeed: [number]**
       * **AttackSpeed: [number]**
