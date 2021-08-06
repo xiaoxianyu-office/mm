@@ -55,6 +55,7 @@ are able to target locations as well.
 | [FillChest][]            | Fills a chest with items, or a droptable                                    |
 | [Fly][]                  | Applies an [aura][] that allows the target to fly                           |
 | [Force Pull][]           | Teleports the target to the mob                                             |
+| [Freeze][]               |                                                                             |
 | [Glow][]                 | Makes the target glow                                                       |
 | [Give Item][]            | Gives an item to the target                                                 |
 | [Give Item From Target][] | Gives an item to the caster from the target                                |
@@ -90,55 +91,55 @@ are able to target locations as well.
 | [RemoveHeldItem][]       | Removes some of the item the target player is holding                       |
 | [RemoveOwner][]          | Removes the ownership of the target mob                                     |
 | [Run AI Goal Selector][] | Change PathfinderAIGoals                                                    |
-| [Run AI Target Selector][] | Change PathfinderTargetGoals                                                       |
-| [Send Action Message][]    | Sends an Actionbar Message to the target player                                    |
-| [Send Resource Pack][]     | Sends a Resource Pack to the target player                                         |
-| [Send Title Message][]     | Sends a Title/Subtitle Message to the target player                                |
-| [Send Toast][]             | Sends an achievement toast to the target player                                    |
-| [Set AI][]                 | Disables/enables the AI of the target mob                                          |
-| [Set Block Type][]         | Change block type at target location                                               |
-| [Set Game Mode][]          | Sets the Game Mode of the target player                                            |
-| [Set Gliding][]            | Makes the target glide if they have elytra                                         |
-| [Set Global Score][]       | Sets a global scoreboard value                                                     |
-| [Set Gravity][]            | Sets whether gravity affects the target entity                                     |
-| [Set Health][]             | Sets the health of the target entity                                               |
-| [Set Level][]              | Changes the casting mob's level                                                    |
-| [Set Max Health][]         | Sets the max health of the target entity                                           |
-| [Set Mob Color][]          | Changes the color of the target if it is a colorable mob                           |
-| [Set Mob Score][]          | Sets a scoreboard value on the casting mob                                         |
-| [Set Name][]               | Changes the target entity's name                                                   |
-| [Set NoDamageTicks][]      | sets the nodamageticks of the target |
-| [Set Owner][]              | Makes the target the owner of the casting mob                                      |
-| [Set Rotation][]           | Sets the rotation of the target                                                    |
-| [Set Target Score][]       | Sets the score of the target                                                       |
-| [Set Score][]              | Sets the scoreboard value of a dummy player                                        |
-| [Set Speed][]              | Sets the target entity's speed attribute                                           |
-| [Set Stance][]             | Sets the stance of the target mob                                                  |
-| [Shield][]                 | Applies an absorb shield to the target entity                                      |
+| [Run AI Target Selector][] | Change PathfinderTargetGoals                                              |
+| [Send Action Message][]    | Sends an Actionbar Message to the target player                           |
+| [Send Resource Pack][]     | Sends a Resource Pack to the target player                                |
+| [Send Title Message][]     | Sends a Title/Subtitle Message to the target player                       |
+| [Send Toast][]             | Sends an achievement toast to the target player                           |
+| [Set AI][]                 | Disables/enables the AI of the target mob                                 |
+| [Set Block Type][]         | Change block type at target location                                      |
+| [Set Game Mode][]          | Sets the Game Mode of the target player                                   |
+| [Set Gliding][]            | Makes the target glide if they have elytra                                |
+| [Set Global Score][]       | Sets a global scoreboard value                                            |
+| [Set Gravity][]            | Sets whether gravity affects the target entity                            |
+| [Set Health][]             | Sets the health of the target entity                                      |
+| [Set Level][]              | Changes the casting mob's level                                           |
+| [Set Max Health][]         | Sets the max health of the target entity                                  |
+| [Set Mob Color][]          | Changes the color of the target if it is a colorable mob                  |
+| [Set Mob Score][]          | Sets a scoreboard value on the casting mob                                |
+| [Set Name][]               | Changes the target entity's name                                          |
+| [Set NoDamageTicks][]      | sets the nodamageticks of the target                                      |
+| [Set Owner][]              | Makes the target the owner of the casting mob                             |
+| [Set Rotation][]           | Sets the rotation of the target                                           |
+| [Set Target Score][]       | Sets the score of the target                                              |
+| [Set Score][]              | Sets the scoreboard value of a dummy player                               |
+| [Set Speed][]              | Sets the target entity's speed attribute                                  |
+| [Set Stance][]             | Sets the stance of the target mob                                         |
+| [Shield][]                 | Applies an absorb shield to the target entity                             |
 | [ShieldPercent][]          | Applies an absorb shield to the target entity for a percentage of their max health |
-| [Shoot Fireball][]         | Shoots a fireball at the target                                                    |
-| [Shoot Potion][]           | Throws a potion at the target                                                      |
-| [Shoot Skull][]            | Shoots a wither skull at the target                                                |
+| [Shoot Fireball][]         | Shoots a fireball at the target                                           |
+| [Shoot Potion][]           | Throws a potion at the target                                             |
+| [Shoot Skull][]            | Shoots a wither skull at the target                                       |
 | [Shoot Shulker Bullet][]   | Shoots a shulker bullet at the target entity                              |
-| [Signal][]                 | Sends a signal to a mob                                                            |
-| [Speak][]                  | Causes the mob to speak in chat, with options for speech bubbles                   |
-| [Spring][]                 | Creates a temporary spring of liquid at the target                                 |
-| [Stun][]                   | Stuns the target entity                                                            |
-| [Suicide][]      | Causes the caster to die                      |
-| [Summon][]       | Summons other mobs at the target              |
-| [Swap][]         | Swaps locations with the target               |
-| [Add Tag][]      | Adds a scoreboard tag to the target           |
-| [Remove Tag][]   | Removes a scoreboard tag from the target      |
-| [Teleport][]     | Teleports to the target                       |
-| [TeleportIn][]   | Teleports the target relative to the caster's yaw |
-| [TeleportTo][]   | Teleports the target to a specified location  |
-| [Threat][]       | Modifies the mob's threat towards the target  |
-| [Throw][]        | Throws the target entity                      |
-| [Toggle Lever][] | Toggles a lever at the target location        |
-| [Toggle Sitting][] | Toggles the sitting state for cats, dogs, foxes, and parrots |
-| [Velocity][]     | Modifies the velocity of the target entity(s) |
-| [Weather][]      | Modifies the weather in the target world      |
-| [WolfSit][]      | Modifies the target wolves position           |
+| [Signal][]                 | Sends a signal to a mob                                                   |
+| [Speak][]                  | Causes the mob to speak in chat, with options for speech bubbles          |
+| [Spring][]                 | Creates a temporary spring of liquid at the target                        |
+| [Stun][]                   | Stuns the target entity                                                   |
+| [Suicide][]      | Causes the caster to die                                                            |
+| [Summon][]       | Summons other mobs at the target                                                    |
+| [Swap][]         | Swaps locations with the target                                                     |
+| [Add Tag][]      | Adds a scoreboard tag to the target                                                 |
+| [Remove Tag][]   | Removes a scoreboard tag from the target                                            |
+| [Teleport][]     | Teleports to the target                                                             |
+| [TeleportIn][]   | Teleports the target relative to the caster's yaw                                   |
+| [TeleportTo][]   | Teleports the target to a specified location                                        |
+| [Threat][]       | Modifies the mob's threat towards the target                                        |
+| [Throw][]        | Throws the target entity                                                            |
+| [Toggle Lever][] | Toggles a lever at the target location                                              |
+| [Toggle Sitting][] | Toggles the sitting state for cats, dogs, foxes, and parrots                      |
+| [Velocity][]     | Modifies the velocity of the target entity(s)                                       |
+| [Weather][]      | Modifies the weather in the target world                                            |
+| [WolfSit][]      | Modifies the target wolves position                                                 |
 
 Effect Mechanics
 ----------------
