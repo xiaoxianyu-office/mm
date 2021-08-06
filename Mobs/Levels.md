@@ -36,19 +36,7 @@ section may include more in-depth tutorials later on.
       LevelModifiers:
         Health: 5
         Damage: 0.5
-<!--
-DropsPerLevel
--------------
 
-The drops listed under this section will be applied depending on the
-level of the mob. In the example above the Zombie has a 50% chance of
-dropping an additional gold nugget per level. So if he's level 5 he has
-a chance to drop up to 6 gold nuggets.
-
-See [Drops Overview](/databases/drops/overview) for more information.
-
-*DropsPerLevel has been removed as of v4.4*
--->
 LevelModifiers
 --------------
 
@@ -66,8 +54,6 @@ for the affected attributes in the mob configuration.
       * **Armor: [number]**
       * **MovementSpeed: [number]**
       * **AttackSpeed: [number]**
-
-*"MovmentSpeed" and "AttackSpeed" were added in version 2.3.2.*
 
 World Scaling
 -------------
