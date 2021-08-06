@@ -25,7 +25,7 @@ These options are universal and will work regardless of the mobtype.
       * Equivalent of the NBT-tag "CustomNameVisible"
       * Defaults to false.
 
-**AttackSpeed: \[number\]** (2.4)
+**AttackSpeed: \[number\]**
 
       * Sets the attack speed of the mob.
       * Defaults to vanilla attack speed for the respective mobs.
@@ -35,7 +35,7 @@ These options are universal and will work regardless of the mobtype.
       * Sets permanent invisibility effect on the mob (No need for invisibility potions ~onSpawn).
       * Defaults to false.
 
-**Collidable: \[true/false\]** (2.4)
+**Collidable: \[true/false\]**
 
       * Whether the mob has collision.
       * Defaults to true.
@@ -54,7 +54,7 @@ These options are universal and will work regardless of the mobtype.
       * Also defines max range at which a target will aggro a player initially.
       * Defaults to standard respective minecraft follow range
 
-**Glowing: \[true/false\]** (2.4)
+**Glowing: \[true/false\]**
 
       * Whether the mob should permanently be glowing.
       * Defaults to false.
@@ -93,7 +93,7 @@ These options are universal and will work regardless of the mobtype.
       * Most mobs default to movement speed of 0.2
       * Values above 1 tend to make the mob difficult / impossible to fight.
 
-**NoAI: \[true/false\]** *(2.2.1)*
+**NoAI: \[true/false\]**
 
       * Wether or not the mob should have AI. //Will override any settings specified in AIGoalSelectors!//
       * As opposed to AIGoalSelectors, this will work on Enderdragons and Withers.
@@ -105,7 +105,7 @@ These options are universal and will work regardless of the mobtype.
       * If ImmunityTables are turned on for the mob, NoDamageTicks are per player as opposed to global.
       * Defaults to 10.
 
-**NoGravity: \[true/false\]** (2.5, MC 1.10)
+**NoGravity: \[true/false\]**
 
       * Whether the mob should not have gravity.
       * Defaults to false.
@@ -137,8 +137,6 @@ These options are universal and will work regardless of the mobtype.
 
       * Prevents mobs killed by that MythicMob from dropping loot.
       * Defaults to false.
-      * ''As of version 2.3 and before, this option will also prevent players from dropping their inventory upon death if killed by a mob with this option turned on. Do not use in combination with gamerule keepInventory false!''
-      * This is fixed in version 2.5.0
 
 **PreventOtherDrops: \[true/false\]**
 
@@ -203,7 +201,6 @@ different mobtype.
       * Whether an armor stand has arms or not.
       * Only applies to armor stand type mobs.
       * Defaults to false.
-      * Broken prior to 2.5.0
 
 **HasBasePlate: \[true/false\] (4.9)**
 
@@ -259,7 +256,7 @@ different mobtype.
       * Only applies to armor stand type mobs.
       * Defaults to false.
 
-**Pose:** (2.4.4)
+**Pose:**
 
 -   **Head: \[0,0,0\]**
 -   **Body: \[0,0,0\]**
@@ -607,7 +604,7 @@ different mobtype.
 
 #### Zombie Villagers
 
-**Profession: \[type\]** (2.4)
+**Profession: \[type\]**
 
       * Sets the type of the villager the zombie should represent.
       * This option will also make the zombie turn into the respective villager type when being cured using potions.
@@ -648,7 +645,6 @@ Used for sheep and wolves.
 
       * Number between 0 and 15
       * Sets the wool color of sheep or the collar color of wolves
-      * **NOTE: in MythicMobs 2.0.0 this has changed to a string value.**
       * **The string is the name of the color you want. Ex: Color: RED**
       * [[http://minecraft.gamepedia.com/Wool|http://minecraft.gamepedia.com/Wool]]
 
