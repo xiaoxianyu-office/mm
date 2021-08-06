@@ -671,10 +671,9 @@ Used for wolves and zombie pigmen.
 **Size: \[number\]**
 
       * Sets the size of slimes, magma cubes, and phantoms.
-      * Normal slimes are between 1 and 8.
       * Can get VERY big and get exponentially larger with each increase.
       * Extremely high size will cause server lag and possibly crashes.
-      * Default to 1to3
+      * Default to 1to8
 
 #### Tameable Mobs
 
