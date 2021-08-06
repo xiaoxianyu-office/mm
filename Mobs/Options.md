@@ -73,7 +73,6 @@ These options are universal and will work regardless of the mobtype.
 **LockPitch: \[true/false\] (4.9)**
 
       * Requires protocollib, keeps mobs heads from looking up/down.
-      * Protocollib Required
       * Defaults to false.
 
 **KnockbackResistance: \[number\]**
