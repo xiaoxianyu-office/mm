@@ -76,10 +76,10 @@ AIGoalSelectors:
 
 **Ranged Entities Only**
 
-| AI Goal       | Aliases          | Description                                           |
-| ------------- | ---------------- | ----------------------------------------------------- |
-| arrowattack   |                  | Projectile attack (shooting a bow for a skeleton)     |
-| skeletonbowattack | bowshoot, bowmaster | The new strafing AI for skeletons in Minecraft 1.9 and up |
+| AI Goal           | Aliases                 | Description                                           |
+| ----------------- | ----------------------- | ----------------------------------------------------- |
+| arrowattack       |                         | Projectile attack (shooting a bow for a skeleton)     |
+| skeletonbowattack | bowshoot, bowmaster     | Draw the bow and shoot the arrow                      |
 
 **Piglins and Pillagers Only**
 
