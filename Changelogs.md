@@ -133,6 +133,8 @@ Bug Fixes/Other
 - Fixed an issue with TeleportIn mechanic attribute
 - Fixed an issue with Threat mechanic
 - Fixed bug with itemspray
+- Fixed radiusY attribute for @BlocksInRadius
+- Added placeholder support for `@EntitiesInRadius`, `@PlayersInRadius`, and `@Ring`
 
 4.12.0
 ======
