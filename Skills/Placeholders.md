@@ -97,6 +97,7 @@ These placeholders will return whatever variable has been called. For instance <
 | <skill.var.aura-duration>  | Returns the duration of the aura.                     |
 | <skill.var.aura-stacks>    | Returns the amount of stacks the aura has.            |
 | <skill.targets>            | Returns skill's targeted entities                     |
+
 **Target Placeholders**
 -----------------
 These placeholders will return whatever target selector has been used. For instance <target.name> + @NearestPlayer will return the name of the player closest to the casting mob.
