@@ -119,7 +119,7 @@ These placeholders will return whatever target selector has been used. For insta
 |<target.l.pitch> |Returns the pitch of the target|
 |<target.level> |Returns the level of the target|
 |<target.block.type> |Returns the block type of the target|
-|<target.entity.type> |Returns the entity type of the target|
+|<target.entity_type> |Returns the entity type of the target|
 
 **Trigger Placeholders**
 -----------------
