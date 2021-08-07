@@ -122,6 +122,7 @@ These placeholders will return whatever target selector has been used. For insta
 |<target.entity.type> |Returns the entity type of the target|
 
 **Trigger Placeholders**
+-----------------
 These placeholders will return whatever attribute of the entity that caused the skill to happen. For instance `<trigger.name>` combined with an `~onDeath` trigger will return the name of the entity that killed the mob.
 
     Skills:
