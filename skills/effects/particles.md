@@ -3,7 +3,9 @@ Effect: Particles
 
 Creates a particle effect at the targeted entity or location.
 
-A list of particle types can be found [here](/skills/effects/particles/types).
+A list of particle types can be found [here](/skills/effects/particles/types). 
+
+[All of the spigot particle effects listed in the javadocs should be acceptable as well.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
 
 Added in 4.11: 
 * Added dir=x,y,z option to particle effects to specify directional vector
