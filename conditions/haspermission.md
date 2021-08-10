@@ -1,7 +1,5 @@
 **Description:** This condition checks if the target player has a permission. 
 
-**Type:** Entity (Player)
-
 ---
 
 **Attributes:**
@@ -25,4 +23,8 @@ TriggerConditions:
 - haspermission{p=permission.node.here} true
 ```
 
+---
 
+**Extra Information:**
+
+- [x] Type: Entity(Player)
