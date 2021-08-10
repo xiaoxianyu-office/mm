@@ -1,7 +1,5 @@
 **Description:** If the target entity is riding a mount/vehicle
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -16,5 +14,11 @@
 
 ```
 Conditions:
-- mounted{} true
+- mounted
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
