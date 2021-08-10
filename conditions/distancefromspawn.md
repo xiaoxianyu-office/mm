@@ -1,7 +1,5 @@
 **Description:** Whether the distance from the world's spawn point to the target is within the given range
 
-**Type:** Location
-
 ---
 
 **Attributes:**
@@ -23,3 +21,9 @@ Conditions:
 Conditions:
 - distancefromspawn{d=>50} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
