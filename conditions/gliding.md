@@ -1,7 +1,5 @@
 **Description:** If the target is gliding
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -18,3 +16,9 @@
 Conditions:
 - gliding{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
