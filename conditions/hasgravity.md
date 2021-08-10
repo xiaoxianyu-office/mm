@@ -1,7 +1,5 @@
 **Description:** If the target has gravity
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -16,5 +14,11 @@
 
 ```
 Conditions:
-- hasgravity{} true
+- hasgravity true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
