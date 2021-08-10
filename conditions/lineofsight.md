@@ -1,7 +1,5 @@
 **Description:** Tests if the target is within line of sight of the caster
 
-**Type:** Compare
-
 ---
 
 **Attributes:**
@@ -16,5 +14,11 @@
 
 ```
 Conditions:
-- lineofsight{} true
+- lineofsight
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Compare
