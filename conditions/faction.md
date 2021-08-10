@@ -19,4 +19,8 @@ TargetConditions:
 - faction{faction=MyFaction} true
 ```
 
+---
 
+**Extra Information:**
+
+- [x] Type: Entity
