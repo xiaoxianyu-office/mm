@@ -23,3 +23,9 @@ Conditions:
 Conditions:
 - mobsinworld{a=<50} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
