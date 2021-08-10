@@ -1,7 +1,5 @@
 **Description:** If the time is dusk, from 14000 to 18000 in-game time.
 
-**Type:** Location
-
 ---
 
 **Attributes:**
@@ -19,4 +17,8 @@ Conditions:
 - dusk true
 ```
 
+---
 
+**Extra Information:**
+
+- [x] Type: Location
