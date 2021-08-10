@@ -26,3 +26,9 @@ Uses Denizen, PlaceholderAPI, and MythicMobs to check whether the item the playe
   Conditions:
   - stringequals{val1="%denizen_<player[<trigger.uuid>].item_in_hand.raw_nbt.get[mythic_type].after[string:]>%";val2="SomeMythicItem"} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Skill
