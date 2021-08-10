@@ -1,7 +1,4 @@
 **Description:** Checks the material at the target location
-
-**Type:** Location
-
 ---
 
 **Attributes:**
@@ -24,3 +21,9 @@ https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 Conditions:
 - inblock{b=WATER,LAVA} false
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
