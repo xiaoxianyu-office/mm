@@ -1,7 +1,5 @@
 **Description:** Tests if the target player has the given number of given material
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -19,3 +17,10 @@
 Conditions:
 - hasitem{i=STICK;amount=2} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
+- [x] Aliases: 
