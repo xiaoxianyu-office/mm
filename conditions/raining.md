@@ -6,7 +6,7 @@
 
 | Attribute | Aliases        | Description               |
 | --------- | -------------  | ------------------------- |
-| | | |
+| 无 | 无 | 无 |
 
 ---
 
@@ -16,3 +16,9 @@
   Conditions:
   - raining{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
