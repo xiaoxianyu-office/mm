@@ -38,3 +38,9 @@ PoisonStormDamage:
   - potion{type=POISON;duration=100}
   - damage{amount=1;ignorearmor=true}
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Skill
