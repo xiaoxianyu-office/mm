@@ -16,3 +16,9 @@
   Conditions:
   - region{r=someregion} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
