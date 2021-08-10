@@ -1,7 +1,5 @@
 **Description:** Checks if the target entity has the given aura
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -18,3 +16,9 @@
 Conditions:
 - hasaura{n=firedebuff} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
