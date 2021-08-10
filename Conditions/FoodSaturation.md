@@ -22,4 +22,3 @@ TargetConditions:
 **Extra Information:**
 
 - [x] Type: Entity
-- [x] Aliases: 
