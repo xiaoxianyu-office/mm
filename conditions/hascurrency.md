@@ -1,7 +1,5 @@
 **Description:** If the target has the given amount of vault currency
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -18,3 +16,9 @@
 Conditions:
 - hascurrency{a=1000} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
