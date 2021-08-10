@@ -1,7 +1,5 @@
 **Description:** Tests if the target is within the given angle from where the caster is looking
 
-**Type:** Compare
-
 ---
 
 **Attributes:**
@@ -19,3 +17,9 @@
 TargetConditions:
 - fieldofview{angle=90} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
