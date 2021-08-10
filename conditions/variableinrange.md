@@ -14,8 +14,15 @@
 **Examples:**
 
 ```
-  TargetConditions:
-  - variableInRange{var=target.fear;value=>20} cancel
+  Conditions:
+  - variableInRange{var=caster.Cooldown;value=<0.01} cancel
   Skills:
-  - message{m="&7You feel very afraid..."}
+  - setvariable{var=caster.Cooldown;type=float;value="10"}
+  - message{m="&7Cooldown over!"}
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Skill
