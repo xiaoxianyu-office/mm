@@ -24,3 +24,7 @@ https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEve
 Conditions:
 - lastdamagecause{c=ENTITY_ATTACK} true
 ```
+
+**Extra Information:**
+
+- [x] Type: Entity
