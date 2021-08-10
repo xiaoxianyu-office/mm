@@ -1,7 +1,5 @@
 **Description:** Whether the target is within the given cuboid between location1 x location2
 
-**Type:** Compare
-
 ---
 
 **Attributes:**
@@ -21,4 +19,8 @@ TargetConditions:
 - cuboid{location1=x,y,z;location2=x,y,z;world=world;relative=true}
 ```
 
+---
 
+**Extra Information:**
+
+- [x] Type: Compare
