@@ -21,3 +21,9 @@
   Conditions:
   - targets{a=0to5} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Skill
