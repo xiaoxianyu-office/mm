@@ -1,7 +1,4 @@
 **Description:** Matches the last signal received by the target mob
-
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -18,3 +15,7 @@
 Conditions:
 - lastsignal{s=fireCannonShot} true
 ```
+
+**Extra Information:**
+
+- [x] Type: Entity
