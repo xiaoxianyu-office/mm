@@ -23,3 +23,9 @@ Conditions:
 TargetConditions:
 - mythicmobtype{t=HotZombie,LavaZombie,FireZombie} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
