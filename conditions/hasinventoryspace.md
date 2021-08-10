@@ -1,7 +1,5 @@
 **Description:** If the target has empty inventory space
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -18,3 +16,9 @@
 Conditions:
 - hasinventoryspace{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
