@@ -1,7 +1,5 @@
 **Description:** Tests if the target has a scoreboard tag
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -23,3 +21,9 @@ Conditions:
 TargetConditions:
 - hastag{t=PuzzleRoom1Solved} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
