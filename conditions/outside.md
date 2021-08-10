@@ -1,7 +1,5 @@
 **Description:** If the target has open sky above them
 
-**Type:** Location
-
 ---
 
 **Attributes:**
@@ -18,3 +16,9 @@
 Conditions:
 - outside{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
