@@ -18,3 +18,9 @@ Added in MM 4.12
 TargetConditions:
 - isCaster{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
