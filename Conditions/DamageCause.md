@@ -1,7 +1,5 @@
 **Description:** checks the cause of the damage taken
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -20,3 +18,9 @@ Conditions:
 ```
 
 List of damage causes: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
