@@ -18,3 +18,7 @@
 Conditions:
 - itemrecharging{} true
 ```
+
+**Extra Information:**
+
+- [x] Type: Entity
