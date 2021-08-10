@@ -1,7 +1,4 @@
 **Description:** Checks if the target's Y location is within a range
-
-**Type:** Location
-
 ---
 
 **Attributes:**
@@ -18,3 +15,9 @@
 Conditions:
 - height{h=<50} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
