@@ -20,3 +20,9 @@
 Conditions:
 - holding{m=DIAMOND_SWORD} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
