@@ -1,7 +1,5 @@
 **Description:** This conditions checks if the target entity is in the same faction as the caster.
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -18,3 +16,9 @@
 TargetConditions:
 - samefaction true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
