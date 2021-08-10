@@ -21,3 +21,9 @@ Added in 4.12
 TargetConditions:
 - isChild{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Compare
