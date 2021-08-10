@@ -13,6 +13,12 @@
 **Examples:**
 
 ```
-  Conditions:
-  - playernotwithin{d=10} true
+Conditions:
+- playernotwithin{d=10} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
