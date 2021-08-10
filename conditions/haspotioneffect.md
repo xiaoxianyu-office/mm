@@ -1,7 +1,5 @@
 **Description:** Tests if the target entity has a potion effect
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -25,3 +23,9 @@ Conditions:
 TargetConditions:
 - haspotioneffect{t=Speed;l=0-9} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
