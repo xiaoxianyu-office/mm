@@ -1,7 +1,5 @@
 **Description:** Checks the target's last damage cause
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
