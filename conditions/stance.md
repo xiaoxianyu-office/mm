@@ -14,6 +14,12 @@
 **Examples:**
 
 ```
-  Conditions:
-  - stance{s=CombatStance;str=true} true
+Conditions:
+- stance{s=CombatStance;str=true} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
