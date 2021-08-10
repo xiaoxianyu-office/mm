@@ -8,3 +8,9 @@
   Conditions:
   - thundering{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
