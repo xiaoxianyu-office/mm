@@ -1,7 +1,5 @@
 **Description:** checks the food saturation amount of the target
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -18,3 +16,10 @@
 TargetConditions:
 - FoodSaturation{a=<1} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
+- [x] Aliases: 
