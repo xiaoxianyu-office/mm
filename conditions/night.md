@@ -1,7 +1,4 @@
 **Description:** If the time is night, from 14000 to 22000 in-game time
-
-**Type:** Location
-
 ---
 
 **Attributes:**
@@ -18,3 +15,9 @@
 Conditions:
 - night{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
