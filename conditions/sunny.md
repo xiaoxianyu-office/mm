@@ -16,3 +16,9 @@
   Conditions:
   - sunny{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
