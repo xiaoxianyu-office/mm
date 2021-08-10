@@ -1,7 +1,5 @@
 **Description:** Checks if the target has a block over their head
 
-**Type:** Location
-
 ---
 
 **Attributes:**
@@ -16,5 +14,11 @@
 
 ```
 Conditions:
-- inside{} true
+- inside true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
