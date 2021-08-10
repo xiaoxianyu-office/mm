@@ -1,4 +1,4 @@
-Checks if the target **Player** is sprinting
+Checks if entity is sprinting
 
 **Attributes**
 
@@ -18,3 +18,7 @@ Added in MM 4.12
   TargetConditions:
   - isSprinting{} true
 ```
+
+**Extra Information:**
+
+- [x] Type: Entity(Player)
