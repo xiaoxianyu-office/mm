@@ -16,3 +16,9 @@
   Conditions:
   - playerkills{k=>10} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
