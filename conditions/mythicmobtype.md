@@ -1,7 +1,5 @@
 **Description:** Checks the MythicMob type of the target mob
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
