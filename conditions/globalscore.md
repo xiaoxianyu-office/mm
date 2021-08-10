@@ -1,7 +1,5 @@
 **Description:** Checks a global scoreboard value
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -19,3 +17,9 @@
 Conditions:
 - globalscore{o=KillCount;value=5} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
