@@ -1,7 +1,5 @@
 **Description:** Tests the entity type of the target
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -28,3 +26,9 @@ TargetConditions:
 TriggerConditions:
 - entitytype{t=PLAYER} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
