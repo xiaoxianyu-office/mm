@@ -1,7 +1,5 @@
 **Description:** If the target location is not within the given WorldGuard region
 
-**Type:** Location
-
 ---
 
 **Attributes:**
@@ -18,3 +16,9 @@
 Conditions:
 - notinregion{r=BossZone} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
