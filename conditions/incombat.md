@@ -1,7 +1,5 @@
 **Description:** If the target mob is considered in combat
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -16,5 +14,11 @@
 
 ```
 Conditions:
-- incombat{} true
+- incombat true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
