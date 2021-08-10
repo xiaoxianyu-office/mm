@@ -1,7 +1,5 @@
 **Description:** This condition checks if the target entity is crouching or not.
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -9,14 +7,6 @@
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
 | None      | None  | None        |
-
-**Aliases:**
-
-| Condition Aliases |
-| ----------------- | 
-| sneaking          |
-| iscrouching       |
-| issneaking        |
 
 ---
 
@@ -27,4 +17,9 @@ Conditions:
 - crouching true
 ```
 
+---
 
+**Extra Information:**
+
+- [x] Type: Entity
+- [x] Aliases: iscrouching sneaking issneaking
