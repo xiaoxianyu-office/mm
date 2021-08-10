@@ -6,7 +6,7 @@
 
 | Attribute | Aliases        | Description               |
 | --------- | -------------  | ------------------------- |
-| yaw| y| The yaw to check for|
+| yaw | y | The yaw to check for |
 
 ---
 
@@ -21,3 +21,9 @@
   Conditions:
   - yaw{y=>0} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
