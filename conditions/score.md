@@ -15,6 +15,12 @@
 **Examples:**
 
 ```
-  Conditions:
-  - score{o=PlayerKills;e=Akim91;v=10} true
+Conditions:
+- score{o=PlayerKills;e=Akim91;v=10} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
