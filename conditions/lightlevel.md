@@ -28,3 +28,9 @@ Conditions:
 Conditions:
 - lightlevel{l=1to10} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
