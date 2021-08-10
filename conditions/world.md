@@ -16,3 +16,9 @@
   Conditions:
   - world{w=tutorial_world} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
