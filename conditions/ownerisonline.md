@@ -1,7 +1,5 @@
 **Description:** Checks if the owner of the target mob is online, if the owner is a player
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -18,3 +16,9 @@
 Conditions:
 - ownerisonline{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
