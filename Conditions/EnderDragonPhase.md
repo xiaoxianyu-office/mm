@@ -1,7 +1,5 @@
 **Description:** checks the ender dragon phases
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -25,3 +23,7 @@ Conditions:
 ```
 
 List of ender dragon phases: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EnderDragon.Phase.html
+
+**Extra Information:**
+
+- [x] Type: Entity
