@@ -1,7 +1,5 @@
 **Description:** Matches the target's health
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -30,3 +28,9 @@ Conditions:
 Conditions:
 - health{h=>10} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
