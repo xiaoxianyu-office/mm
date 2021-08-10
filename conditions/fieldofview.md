@@ -22,4 +22,4 @@ TargetConditions:
 
 **Extra Information:**
 
-- [x] Type: Entity
+- [x] Type: Compare
