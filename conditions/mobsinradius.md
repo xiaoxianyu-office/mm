@@ -1,7 +1,5 @@
 **Description:** Checks how many mobs are in a given radius
 
-**Type:** Location
-
 ---
 
 **Attributes:**
@@ -18,5 +16,11 @@
 
 ```
 Conditions:
-- mobsInRadius{types=CoolZombie;amount=5to10;radius=15}
+- mobsInRadius{types=NewZombie;amount=5to10;radius=15}
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
