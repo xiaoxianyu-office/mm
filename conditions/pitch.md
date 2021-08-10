@@ -23,3 +23,9 @@ Conditions:
 Conditions:
 - pitch{p=>45} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
