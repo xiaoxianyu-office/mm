@@ -16,3 +16,9 @@
   Conditions:
   - worldtime{t=0to6000} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
