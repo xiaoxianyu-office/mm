@@ -1,7 +1,5 @@
 **Description:** Tests the light level at the target location
 
-**Type:** Location
-
 ---
 
 **Attributes:**
