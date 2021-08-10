@@ -1,6 +1,8 @@
 **Description**: Checks the color of Sheeps, Shulkers, Cat (Type), Parrots (Variants), Horses, Llamas, and TraderLlamas.
 
-**Type**: Entity
+---
+
+**Attributes:**
 
 | attribute | aliases | description |
 | --------- | ------- | ----------- |
@@ -8,11 +10,13 @@
 
 
 **Examples**:
-```yaml
-mySkill:
+
   Conditions:
   - color{c=RED} true
-  Skills:
-  - mechanics
-  - mechanics
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
