@@ -29,3 +29,9 @@ TargetConditions:
 TargetConditions:
 - onblock{m=DIRT,STONE,GRAVEL} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
