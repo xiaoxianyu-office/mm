@@ -23,3 +23,9 @@ Conditions:
 Conditions:
 - mobsinchunk{a=<5} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
