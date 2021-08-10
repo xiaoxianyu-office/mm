@@ -18,3 +18,9 @@
 Conditions:
 - onground{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
