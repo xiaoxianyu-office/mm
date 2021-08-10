@@ -12,3 +12,9 @@ Checks if the target entity has a passenger
 Conditions:
 - hasPassenger{} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
