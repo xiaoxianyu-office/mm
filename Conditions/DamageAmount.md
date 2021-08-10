@@ -6,7 +6,7 @@
 
 | Attribute         | Alias | Description                  |
 | ----------------- | ----- | ---------------------------- |
-| damageAmount      | None  | Range of damage to check for |
+| damageAmount      | amount  | Range of damage to check for |
 
 ---
 
