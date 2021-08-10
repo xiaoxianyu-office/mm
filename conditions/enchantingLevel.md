@@ -1,7 +1,5 @@
 **Description:** checks the entity's experience level
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -18,3 +16,7 @@
 TargetConditions:
 - EnchantingLevel{l=<10} true
 ```
+
+**Extra Information:**
+
+- [x] Type: Entity
