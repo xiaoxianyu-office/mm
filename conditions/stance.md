@@ -6,8 +6,8 @@
 
 | Attribute | Aliases        | Description               |
 | --------- | -------------  | ------------------------- |
-| stance| s| The stance to match|
-| strict| str| Whether to match exactly. Defaults to false.|
+| stance| s | The stance to match|
+| strict| str | Whether to match exactly. Defaults to false.|
 
 ---
 
