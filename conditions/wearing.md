@@ -18,14 +18,6 @@
 
 | HEAD | CHEST | LEGS | FEET | HAND | OFFHAND |       
 | ---- | ----- | ---- | ---- | ---- | ------- |  
-
-**Aliases:**
-
-| Condition Aliases |
-| ----------------- | 
-| iswearing         |
-| wielding          |
-| iswielding        |
 ---
 
 **Examples:**
@@ -34,3 +26,10 @@
 Conditions:
 - wearing{slot=HAND;m=IRON_SWORD} true
 ```
+
+---
+
+**拓展信息:**
+
+- [x] Type: 实体
+- [x] Aliases: iswearing wielding iswielding
