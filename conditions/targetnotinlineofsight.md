@@ -6,7 +6,7 @@
 
 | Attribute | Aliases        | Description               |
 | --------- | -------------  | ------------------------- |
-|  |  |  |
+| None | None | None |
 
 ---
 
@@ -14,5 +14,11 @@
 
 ```
   Conditions:
-  - targetnotinlineofsight{} true
+  - targetnotinlineofsight true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
