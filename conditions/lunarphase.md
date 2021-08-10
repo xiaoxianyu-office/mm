@@ -1,7 +1,5 @@
 **Description:** checks for the current lunar phase
 
-**Type:** Location
-
 ---
 
 **Attributes:**
@@ -37,3 +35,9 @@ Conditions:
 Conditions:
 - lunarphase{p=0,2,4,6} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
