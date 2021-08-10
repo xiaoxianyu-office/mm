@@ -1,7 +1,5 @@
 **Description:** Checks if the target's Y location is above a value
 
-**Type:** Location
-
 ---
 
 **Attributes:**
@@ -18,3 +16,9 @@
 Conditions:
 - heightabove{h=50} true
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Location
