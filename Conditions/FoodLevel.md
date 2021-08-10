@@ -1,7 +1,5 @@
 **Description:** checks the food amount of the target
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -19,3 +17,9 @@ TargetConditions:
 - FoodLevel{a=<10} true
 ```
 
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
+- [x] Aliases: 
