@@ -22,4 +22,3 @@
 **Extra Information:**
 
 - [x] Type: Entity
-
