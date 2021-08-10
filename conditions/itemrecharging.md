@@ -16,7 +16,7 @@
 
 ```
 Conditions:
-- itemrecharging{} true
+- itemrecharging true
 ```
 
 **Extra Information:**
