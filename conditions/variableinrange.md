@@ -6,6 +6,7 @@
 
 | Attribute | Aliases        | Description               |
 | --------- | -------------  | ------------------------- |
+| var | None | Variable to match |
 | value| val, v| A number range to match|
 
 ---
