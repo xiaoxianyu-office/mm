@@ -1,7 +1,5 @@
 **Description:** Checks the target MythicMob's level
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -33,3 +31,7 @@ Conditions:
 Conditions:
 - level{l=<10} true
 ```
+
+**Extra Information:**
+
+- [x] Type: Entity
