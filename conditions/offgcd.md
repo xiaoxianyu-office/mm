@@ -1,7 +1,5 @@
 **Description:** Checks if the target mob has an active Global Cooldown
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
@@ -16,5 +14,11 @@
 
 ```
 Conditions:
-- offgcd{} true
+- offgcd
 ```
+
+---
+
+**Extra Information:**
+
+- [x] Type: Entity
