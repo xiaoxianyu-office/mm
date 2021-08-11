@@ -1,8 +1,6 @@
 Mechanic: ModifyGlobalScore
 ===========================
 
-*Added in version 2.3*
-
 Modifies the scoreboard-objective value of the fake player _GLOBAL_.
 This is a notarget skill and cannot affect any other players' score.
 
