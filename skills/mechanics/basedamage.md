@@ -1,8 +1,6 @@
 Mechanic: BaseDamage
 ====================
 
-*Added in version 2.3*
-
 Damages the target entity for a percentage of the mob's damage stat.
 
 Attributes
@@ -10,7 +8,7 @@ Attributes
 
 | Attribute        | Aliases | Description                         | Default |
 |------------------|---------|-------------------------------------|---------|
-| multiplier       | m       | The percentage of damage to deal    | [1] 1   |
+| multiplier       | m       | The percentage of damage to deal    | 1   |
 | ignoreArmor      | ia      | Whether or not to ignore armor      | false   |
 | preventknockback | pkb, pk | Whether or not to prevent knockback | false   |
 | preventimmunity  | pi      | Whether or not to ignore immunities | false   |
