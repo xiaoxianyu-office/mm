@@ -14,7 +14,6 @@ in-depth tutorial on how to use command-skills see [command-skills
 tutorial](/tutorials/commandskills). That happens because the double
 quotes and curly brackets are reserved for MythicMobs itself trying to
 read the syntax you supplied.
-`Update: as of MythicMobs 2.4 curly brackets {} do not need to be replaced with message variables anymore. Double quotes " however, still need replacements.`
 
 Attributes
 ----------
