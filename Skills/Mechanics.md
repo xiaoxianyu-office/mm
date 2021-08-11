@@ -55,7 +55,7 @@ are able to target locations as well.
 | [FillChest][]            | Fills a chest with items, or a droptable                                    |
 | [Fly][]                  | Applies an [aura][] that allows the target to fly                           |
 | [Force Pull][]           | Teleports the target to the mob                                             |
-| [Freeze][]               |                                                                             |
+| [Freeze][]               | Chills the target entity                                                    |
 | [Glow][]                 | Makes the target glow                                                       |
 | [Give Item][]            | Gives an item to the target                                                 |
 | [Give Item From Target][] | Gives an item to the caster from the target                                |
