@@ -12,10 +12,6 @@ Attributes
 | amount     | a       | The amount to heal the target                               | 1       |
 | overheal* | oh      | Whether or not to apply overhealing as additional MaxHealth | false   |
 
-  
-**As of v4.6.0 overhealing will apply absorption hearts instead of
-increasing max health!*
-
 Examples
 --------
 
