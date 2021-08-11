@@ -9,7 +9,7 @@ Attributes
 
 | Attribute        | Aliases | Description                           | Default |
 |------------------|---------|---------------------------------------|---------|
-| damage           | d,dmg   | The amount of damage to deal          | None    |
+| damage           | d,dmg   | The amount of damage to deal          | 1    |
 | heal             | h       | The amount of healing per mob damaged | None    |
 | preventknockback | pkb, pk | Whether or not to prevent knockback   | false   |
 | preventimmunity  | pi      | Whether or not to ignore immunities   | false   |
