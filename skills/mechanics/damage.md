@@ -13,8 +13,6 @@ Damages the targeted entity.
 | preventimmunity  | pi      | Whether or not to ignore immunities | false   |
 | element          | type    | Sets the type of damage to be inflicted | false   |
 
-*"preventknockback" and "preventimmunity" were added in version 2.3*  
-
 ### Elements
 As seen above, the damage mechanic offers the ability to set an "element" for the damage, like so:
 
