@@ -24,4 +24,4 @@ Allows for negative values to decrease food!
 This skill feeds the player 10 hunger (or 5 drumsticks).
 
     Skills:
-    - feed{amount=10;} @trigger ~onInteract
+    - feed{amount=10} @trigger ~onInteract
