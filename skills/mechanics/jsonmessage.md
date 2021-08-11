@@ -1,8 +1,6 @@
 Mechanic: JSON Message
 ======================
 
-*Added in 2.3.2*
-
 Sends a json-format chat message to the target player(s). JSON-messages
 are capeable of hover-events, click events and some other perks that are
 unavailable in the other message mechanics. They also support [color
