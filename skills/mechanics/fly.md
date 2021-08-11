@@ -18,4 +18,3 @@ Examples
 
       Skills:
       - fly{duration=100} @trigger ~onInteract
-      - ...
