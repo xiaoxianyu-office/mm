@@ -9,9 +9,9 @@ Attributes
 
 | Attribute | Aliases   | Description                        | Default Value |
 |-----------|-----------|------------------------------------|---------------|
-| doDrops   |           | Whether or not to drop the block/s | true          |
-| doEffect  |           | Whether or not to play the break block particles (?) | true |
-| useTool   |           | Whether or not to use the tool in the players hands (?) | true |
+| doDrops   | drops, d | Whether or not to drop the block/s | true          |
+| doEffect  | efffect,e | Whether or not to play the break block particles (?) | true |
+| useTool   | tool,t | Whether or not to use the tool in the players hands (?) | true |
 
 doDrops, doEffect, and useTool were all added in 4.12 MM
 
