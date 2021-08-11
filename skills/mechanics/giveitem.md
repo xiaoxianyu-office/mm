@@ -9,7 +9,7 @@ Attributes
 | Attribute   | Aliases | Description       | Default Value |
 |-------------|---------|-------------------|---------------|
 | item        | i       | The item material |               |
-| fakeLooting |         | plays the pickup-item animation from the origin | false |
+| fakeLooting | fl      | plays the pickup-item animation from the origin | false |
 
 ------------
 
