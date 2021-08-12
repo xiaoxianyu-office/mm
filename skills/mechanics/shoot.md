@@ -21,9 +21,9 @@ Attributes
 | hspread              | hs         | The horizontal hit radius of the projectile                                               | 0       |
 | poweraffectsvelocity | pav        | Whether the mobs power level should affect the velocity of the projectile                 | true    |
 | interval             | int, i     | How often per second the projectile creates a tick-event                                  | 4       |
-| ontickskill          | ontick, ot | The meta-skill to execute on each tick/interval of the projectile                         |         |
-| onhitskill           | onhit, oh  | The meta-skill to execute when the projectile hits its target                             |         |
-| onendskill           | onend, oe  | The meta-skill to execute when the projectile misses and ends                             |         |
+| ontickskill          | ontick, ot | The meta-skill to execute on each tick/interval of the projectile                         | None |
+| onhitskill           | onhit, oh  | The meta-skill to execute when the projectile hits its target                             | None |
+| onendskill           | onend, oe  | The meta-skill to execute when the projectile misses and ends                             | None |
 
 Examples
 --------
