@@ -40,7 +40,7 @@ Attributes
 | onHit            | oH            | Skill to execute if the target hits something              | NONE |
 | cancelEvent      | cE            | Whether or not to cancel the event that triggered the aura | false         |
 | damageAdd        | add, a        | An optional multiplier on the original hit's damage to the original hit's damage | 0             |
-| damageMultiplier | multiplier, m | An optional static increase to the original hit's damage | 1             |
+| damageMultiplier | multiplier, m | An optional static increase to the original hit's damage | 1       |
 
 
 (See example below for usage)
@@ -52,10 +52,8 @@ The **onDamaged** aura type has the following options:
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onHit            | oH            | Skill to execute if the target is damaged                  |               |
 | cancelEvent      | cE            | Whether or not to cancel the event that triggered the aura | false         |
-| damageSub       | sub, s        | An optional static decrease (or increase if negative)
-    to the original hit's damage | 0             |
-| damageMultiplier | multiplier, m | An optional multiplier on the original hit's
-    damage | 1             |
+| damageSub       | sub, s        | An optional static decrease (or increase if negative) to the original hit's damage | 0             |
+| damageMultiplier | multiplier, m | An optional multiplier on the original hit's damage | 1             |
 (See example below for usage)
 
 Examples
