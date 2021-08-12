@@ -1,8 +1,6 @@
 Mechanic: Missile
 =================
 
-*Added in version 2.2*
-
 The missile skill is similar to the projectile skill. Missiles however
 are homing and will track down their targets. The available syntax is
 very similar to that of the projectile skill, too, but has some distinct
@@ -206,5 +204,3 @@ hitting its target.
       - effect:particles{p=lava;a=50;hS=1;vS=1}
       - effect:sound{s=entity.generic.explode;v=1;p=0}
       - damage{a=1337;i=false}
-
-  
