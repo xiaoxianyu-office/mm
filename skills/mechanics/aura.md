@@ -52,7 +52,7 @@ The **onDamaged** aura type has the following options:
 
 | Attribute        | Aliases       | Description                                                | Default Value |
 |------------------|---------------|------------------------------------------------------------|---------------|
-| onHit            | oH            | Skill to execute if the target is damaged                  |               |
+| onHit            | oH            | Skill to execute if the target is damaged                  | NONE        |
 | cancelEvent      | cE            | Whether or not to cancel the event that triggered the aura | false         |
 | damageSub       | sub, s        | An optional static decrease (or increase if negative) to the original hit's damage | 0             |
 | damageMultiplier | multiplier, m | An optional multiplier on the original hit's damage | 1             |
