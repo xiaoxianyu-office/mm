@@ -175,8 +175,6 @@ None</td>
 </tbody>
 </table>
 
-*"fromOrigin" was added in version 2.3*
-
 Examples
 --------
 
