@@ -50,3 +50,10 @@ In this example, the extra "IgnitionDamage" skill would only fire if the
       Skills:
       - ignite{ticks=20}
       - effects:particles{}
+
+In this example is a placeholder from MMOItems being stored inside a variable.
+
+    PlaceholderDamage:
+      Skills:
+      - setvariable{var=caster.new_skill_damage;value="%mmoitems_stat_skill_damage%";type=INTEGER} @self
+      - damage{a="100 * <caster.var.new_skill_damage>"} @PIR{r=5}
