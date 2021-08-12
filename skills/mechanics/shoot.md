@@ -25,9 +25,6 @@ Attributes
 | onhitskill           | onhit, oh  | The meta-skill to execute when the projectile hits its target                             |         |
 | onendskill           | onend, oe  | The meta-skill to execute when the projectile misses and ends                             |         |
 
-*"vspread", "hspread", "poweraffectsvelocity", "interval", "ontick",
-"onhit" and "onend" were added in version 2.4.*
-
 Examples
 --------
 
