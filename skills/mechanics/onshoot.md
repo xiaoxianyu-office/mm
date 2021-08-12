@@ -11,8 +11,8 @@ Attributes
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onHit            | oH            | Skill to execute if the target shoots something            |               |
 | cancelEvent      | cE            | Whether or not to cancel the event that triggered the aura | false         |
-| damageAdd        | add, a        |                                                            | 0             |
-| damageMultiplier | multiplier, m |                                                            | 1             |
+| damageAdd        | add, a        | An optional multiplier on the original hit's damage to the original hit's damage | 0             |
+| damageMultiplier | multiplier, m | An optional static increase to the original hit's damage | 1             |
 
   
 
