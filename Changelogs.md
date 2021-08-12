@@ -75,7 +75,7 @@ Conditions
 ### BlockType
 - Now supports mmoitems blocks
 ### Holding
-- Now supports MythicMobs and MMOItems items
+- Now supports MythicMobs and MMOItems items. For MMOItems, use `mmoitems.TYPE.ID` for the material/item attribute.
 
 Spawners
 --------
