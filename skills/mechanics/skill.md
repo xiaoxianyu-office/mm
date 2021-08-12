@@ -11,13 +11,8 @@ Syntax
     Skills:
     - skill{skill=AnotherSkill} @Target ~onAttack
     - skill{s=AnotherSkill} @Trigger ~onSpawn
+    - skill:OtherSkill @Trigger ~onDeath
 
-Since version 2.2.0 most mechanics are run async by default. If you
-experience trouble with any skills that worked fine in previous versions
-of MythicMobs, you may try adding ";sync=true" as syntax which will
-force the skill the be run sync again. This practice is also recommended
-if you're working with extremely timing-sensitive skills, but rarely
-needed.
 
 The attribute "sync=true" will be inherited by any sub-skills and cannot
 be set to *false* later in a skill-tree.
@@ -26,14 +21,11 @@ be set to *false* later in a skill-tree.
 |-----------|-----------|---------------------------------------------------------------------|---------|
 | forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft. | false   |
 
-*"forcesync" was added in version 2.2*
-
 Cooldown
 --------
 
-Skill configurations are capable of utilizing cooldown, set in seconds.
-Since version 2.2 it's also possible to provide cooldown values in
-decimals. Add cooldown to your skills like this:
+Skill configurations are capable of utilizing cooldown
+Add cooldown to your skills like this:
 
     internal_skillname:
       Cooldown: <seconds>
