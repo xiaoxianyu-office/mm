@@ -36,16 +36,16 @@ Attributes
 | AngularVelocityX    | avx, vx  | Modifies the angular velocity of the orbital on the X axis.                                                                                                                       | 0             |
 | AngularVelocityY    | avy, vy  | Modifies the angular velocity of the orbital on the Y axis.                                                                                                                       | 0             |
 | AngularVelocityZ    | avz, vz  | Modifies the angular velocity of the orbital on the Z axis.                                                                                                                       | 0             |
-| HitPlayers          | hp       |                                                                                                                                                                                   | true          |
-| HitNonPlayers       | hnp      |                                                                                                                                                                                   | false         |
-| HitSelf             | hs       |                                                                                                                                                                                   | false         |
-| CancelOnGiveDamage  | cogd     |                                                                                                                                                                                   | false         |
-| CancelOnTakeDamage  | cotd     |                                                                                                                                                                                   | false         |
-| CancelOnDeath       | cod      |                                                                                                                                                                                   | true          |
-| CancelOnTeleport    | cot      |                                                                                                                                                                                   | false         |
-| CancelOnChangeWorld | cocw     |                                                                                                                                                                                   | false         |
-| CancelOnSkillUse    | cosu     |                                                                                                                                                                                   | false         |
-| CancelOnQuit        | coq      |                                                                                                                                                                                   | true          |
+| HitPlayers          | hp       | Whether can hit players. | true          |
+| HitNonPlayers       | hnp      | Whether can hit non players. | false         |
+| HitSelf             | hs       | Whether can hit caster. | false         |
+| CancelOnGiveDamage  | cogd     | Whether end after given damage to other entities. | false         |
+| CancelOnTakeDamage  | cotd     | Whether end after taken damage from other entities. | false         |
+| CancelOnDeath       | cod      | Whether end after caster death. | true          |
+| CancelOnTeleport    | cot      | Whether end after caster teleported. | false         |
+| CancelOnChangeWorld | cocw     | Whether end after caster join other world. | false         |
+| CancelOnSkillUse    | cosu     | Whether end after caster spell a skill. | false         |
+| CancelOnQuit        | coq      | whether end after caster quit. | true          |
 
   
 
