@@ -35,6 +35,7 @@ Attributes
  The **onAttack** aura type has the following options:
 
 -   All options available to Auras
+
 | Attribute        | Aliases       | Description                                                | Default Value |
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onHit            | oH            | Skill to execute if the target hits something              | NONE |
@@ -48,6 +49,7 @@ Attributes
 The **onDamaged** aura type has the following options:
 
 -   All options available to Auras
+
 | Attribute        | Aliases       | Description                                                | Default Value |
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onHit            | oH            | Skill to execute if the target is damaged                  |               |
