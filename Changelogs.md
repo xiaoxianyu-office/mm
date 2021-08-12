@@ -54,6 +54,8 @@ Targeters
 ### NEW: @UniqueIdentifier
 ### Forward
 - Added rotation
+### TargetLocation
+- Added hitTransparent
 
 Conditions
 ----------
