@@ -137,6 +137,7 @@ Bug Fixes/Other
 - Fixed bug with itemspray
 - Fixed radiusY attribute for @BlocksInRadius
 - Added placeholder support for `@EntitiesInRadius`, `@PlayersInRadius`, and `@Ring`
+- Added placeholder support to velocity for Projectile mechanic
 
 4.12.0
 ======
