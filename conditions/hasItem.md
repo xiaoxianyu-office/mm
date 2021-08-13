@@ -1,13 +1,13 @@
-**Description:** Tests if the target player has the given number of given material
+**Description:** Tests if the target player, chest, or shulkerbox has the given number of given material
 
 ---
 
 **Attributes:**
 
-| Attribute | Alias   | Description |
-| --------- | ------- | ----------- |
-| item      | i    | A material to check for |
-| amount    | none | A Number to check for |
+| Attribute | Alias   | Description | Default |
+| --------- | ------- | ----------- | ------- |
+| item      | i, material, m | A material to check for | DIRT |
+| amount    | a | A Number to check for | >0 |
 
 ---
 
