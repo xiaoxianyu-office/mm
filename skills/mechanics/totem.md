@@ -26,14 +26,12 @@ Attributes
 | VerticalRadius   | vRadius, vR | The vertical radius entities will be hit in around the totem.                                   | Horizontal Radius |
 | Duration         | md          | The max duration (in ticks) the totem will persist.                                             | 200               |
 | YOffset          | yo          | How high off the ground the totem will spawn.                                                   | +1                |
-| HitPlayers       | hp          |                                                                                                 | false             |
-| HitNonPlayers    | hnp         |                                                                                                 | false             |
-| HitTarget        | ht          |                                                                                                 | true              |
-| HitTargetOnly    |             |                                                                                                 | false             |
+| HitPlayers       | hp          | Whether can hit players. | false             |
+| HitNonPlayers    | hnp         | Whether can hit non players. | false             |
+| HitTarget        | ht          | Whether can hit skill target. | true              |
+| HitTargetOnly    |             | Whether only can hit skill target | false             |
 
 Examples
 --------
 
 (coming soon)
-
-  
