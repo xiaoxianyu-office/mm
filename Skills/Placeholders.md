@@ -106,7 +106,10 @@ These placeholders will return whatever target selector has been used. For insta
 |----------------------------------|-------------------------------------------------------------------------|
 |<target.uuid>|Returns the UUID of the target|
 |<target.name>|Returns the name of the target|
-|<target.hp>|Returns the current hp of the target|
+|<target.hp>|Returns current hp of the target|
+|<target.mhp>|Returns the max hp of the target|
+|<target.php>|Returns the percent hp of the target|
+|<target.thp>|Returns the full number hp of the target|
 |<target.threat>|Returns the threat level of the target|
 |<target.l.w>|Returns the world name the target is in|
 |<target.l.x>|Returns the X coordinate of the target|
