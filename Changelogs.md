@@ -138,6 +138,7 @@ Bug Fixes/Other
 - Fixed radiusY attribute for @BlocksInRadius
 - Added placeholder support for `@EntitiesInRadius`, `@PlayersInRadius`, and `@Ring`
 - Added placeholder support to velocity for Projectile mechanic
+- Added placeholder support for Shield mechanic
 
 4.12.0
 ======
