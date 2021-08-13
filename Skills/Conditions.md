@@ -159,6 +159,7 @@ Conditions
 | [HasParent](/conditions/hasparent)                           | Entity   | Tests if the target mob has a parent                                                        |
 | [HasPassenger](/skills/conditions/hasPassenger)              | Entity   | Checks if the target entity has a passenger                                                 |
 | [HasGravity](/conditions/hasgravity)                         | Entity   | Tests if the target mob has gravity                                                         |
+| [HasItem](/conditions/hasitem)                               | Entity, Location | Checks if a player, chest, or shulkerbox has the item specified                    |   
 | [HasPotionEffect](/conditions/haspotioneffect)               | Entity   | Tests if the target entity has a potion effect                                              |
 | [HasTag](/conditions/hastag)                                 | Entity   | Tests if the target has a scoreboard tag                                                    |
 | [Haspermission](/conditions/haspermission)                   | Entity   | Tests if the target player has a permission                                                 |
