@@ -22,4 +22,4 @@ Conditions:
 
 **Extra Information:**
 
-- [x] Type: Entity
+- [x] Type: Entity, Location
