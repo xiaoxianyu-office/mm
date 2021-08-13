@@ -40,9 +40,9 @@ Attributes
 | PowerAffectsRange    | par         | Whether a mob's [power level](power level) affects the projectile's range.                                                                                                                              | true              |
 | PowerAffectsVelocity | pav         | Whether a mob's [power level](power level) affects the projectile's velocity.                                                                                                                           | true              |
 | gravity              | g           | Determines the gravity of the projectile; use fractions (0.1-0.2) for low gravity                                                                                                                       | 0                 |
-| Accuracy          | ac, a           |   | 1 |
-| HorizontalNoise   | hn | | 0 |
-| VerticalNoise     | vn | | 0 |
+| Accuracy          | ac, a           | Need description  | 1 |
+| HorizontalNoise   | hn | Need description  | 0 |
+| VerticalNoise     | vn | Need description  | 0 |
 
   
 
