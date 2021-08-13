@@ -47,7 +47,7 @@ Entity Targeters
 | @LivingInWorld                       | @EIW               | Targets all living entities in casters world                                                             |
 | @PlayersInRadius{r=#}               | @PIR{r=#}         | Targets all players in the given radius                                                                  |
 | @MobsInRadius{r=#;types=X,X,X}      | @MIR{r=#;t=X,X,X} | Targets all mobs of the given type in a radius                                                           |
-| @LivingEntitiesInRadius{r=#;types=X,X,X}  | @EIR{r=#;t=X,X,X} | Targets all entities in the given radius. If no type is specified, all types are targeted. |
+| @LivingEntitiesInRadius{r=#}  | @EIR{r=#;t=X,X,X} | Targets all entities in the given radius. |
 | @PlayersInWorld                      | @World             | Targets all players in the current world.                                                                |
 | @PlayersOnServer                     | @Server            | Targets all players in the server.                                                                       |
 | @PlayersInRing{min=#;max=#}        |                    | Target all players within the specified "ring" of radiis's.                                              |
