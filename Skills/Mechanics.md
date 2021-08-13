@@ -69,7 +69,7 @@ are able to target locations as well.
 | [Look][]                 | Causes the caster to look at the target                                     |
 | [Lunge][]                | Causes the caster to lunge forward at the target                            |
 | [Message][]              | Sends a message to the target player(s)                                     |
-| [Modify Global Score][]  | Modifies a scoreboard value of the fake player: /_/_Global/_/_ scoreboard value                                          |
+| [Modify Global Score][]  | Modifies a scoreboard value of the fake player: __Global__                  |
 | [Modify Target Score][]  | Modifies a scoreboard value of the target                                   |
 | [Modify Score][]         | Modifies the score of a dummy player                                        |
 | [Mount][]                | Summons a mob for the caster and mounts it                                  |
@@ -100,8 +100,7 @@ are able to target locations as well.
 | [Set Block Type][]         | Change block type at target location                                      |
 | [Set Game Mode][]          | Sets the Game Mode of the target player                                   |
 | [Set Gliding][]            | Makes the target glide if they have elytra                                |
-| [Set Global Score][]       | Sets a scoreboard value on the fake player: /_/_G
-lobal/_/_                                          |
+| [Set Global Score][]       | Sets a scoreboard value on the fake player: __Global__                    |
 | [Set Gravity][]            | Sets whether gravity affects the target entity                            |
 | [Set Health][]             | Sets the health of the target entity                                      |
 | [Set Level][]              | Changes the casting mob's level                                           |
