@@ -166,7 +166,7 @@ Special Placeholders
 | <caster.score.objective>         | Returns the score of the caster from "objective"       |
 | <target.score.objective>         | Returns the targeters score from "objective"         |
 | <trigger.score.objective>        | Returns the score of the trigger from "objective"          |
-| <global.score.objective>         | Returns the score of fake player: __GLOBAL__ score from "objective"             |
+| <global.score.objective>         | Returns the score of fake player: \_\_GLOBAL\_\_ score from "objective"             |
 | <score.objective.dummyname>      | Returns the score of "dummyname" (fake player) from "objective" |
 | <random.\#-\#>  | Returns a random number in the specified range                                             |
 
