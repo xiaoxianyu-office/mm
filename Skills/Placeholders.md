@@ -163,11 +163,11 @@ Special Placeholders
 
 | **Placeholder**                        | **Function**                                                              |
 |----------------------------------------|---------------------------------------------------------------------------|
-| <caster.score.objective>         | Returns the score of the caster from "objective" **(2.3)**                |
-| <target.score.objective>         | Returns the targeters score from "objective" **(2.3)**                    |
-| <trigger.score.objective>        | Returns the score of the trigger from "objective" **(2.3)**               |
-| <global.score.objective>         | Returns the global score from "objective" **(2.3)**                       |
-| <score.objective.dummyname>      | Returns the score of "dummyname" (fake player) from "objective" **(2.3)** |
+| <caster.score.objective>         | Returns the score of the caster from "objective"       |
+| <target.score.objective>         | Returns the targeters score from "objective"         |
+| <trigger.score.objective>        | Returns the score of the trigger from "objective"          |
+| <global.score.objective>         | Returns the score of fake player: __GLOBAL__ score from "objective"             |
+| <score.objective.dummyname>      | Returns the score of "dummyname" (fake player) from "objective" |
 | <random.\#-\#>  | Returns a random number in the specified range                                             |
 
 Examples
