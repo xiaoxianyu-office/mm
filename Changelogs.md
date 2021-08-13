@@ -55,7 +55,7 @@ Targeters
 ### Forward
 - Added rotation
 ### TargetLocation
-- Added hitTransparent
+- Added ignoreTransparent
 
 Conditions
 ----------
