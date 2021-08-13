@@ -60,7 +60,7 @@ In this example is a placeholder from MMOItems being stored inside a int/float v
 
 Also,other variables can be stored inside a int/float variable.
     
-      VariableDamage:
+    VariableDamage:
       Skills:
       - setvariable{var=caster.VariableA;value="%mmoitems_stat_skill_damage%";type=INTEGER} @self
       - setvariable{var=caster.VariableB;value="%<caster.var.VaribaleA> * 2";type=INTEGER} @self
