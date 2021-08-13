@@ -1,7 +1,7 @@
 Mechanic: ModifyGlobalScore
 ===========================
 
-Modifies the scoreboard-objective value of the fake player _GLOBAL_.
+Modifies the scoreboard-objective value of the fake player \_\_GLOBAL\_\_.
 This is a notarget skill and cannot affect any other players' score.
 
 A list of possible operations for the action-syntax:
