@@ -56,6 +56,12 @@ Targeters
 - Added rotation
 ### TargetLocation
 - Added ignoreTransparent
+### Ring
+- Supports placeholders
+### PlayersInRadius
+- Supports placeholders
+### EntitiesInRadius
+- Supports placeholders
 
 Conditions
 ----------
@@ -136,9 +142,8 @@ Bug Fixes/Other
 - Fixed an issue with Threat mechanic
 - Fixed bug with itemspray
 - Fixed radiusY attribute for @BlocksInRadius
-- Added placeholder support for `@EntitiesInRadius`, `@PlayersInRadius`, and `@Ring`
 - Added placeholder support to velocity for Projectile mechanic
-- Added placeholder support for Shield mechanic
+- Added placeholder support for Shield mechanic, Shoot mechanic, ShootShulker, mechanic
 
 4.12.0
 ======
