@@ -33,6 +33,10 @@ These options are applicable to all items:
 
   - Hides all the item flags.
 
+**PreventStacking: \[true/false\]**
+
+  - Prevents the item from stacking if the items are similar.
+
 Playerheads
 -----------
 
