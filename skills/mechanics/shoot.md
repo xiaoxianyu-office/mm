@@ -24,6 +24,10 @@ Attributes
 | ontickskill          | ontick, ot | The meta-skill to execute on each tick/interval of the projectile                         | None |
 | onhitskill           | onhit, oh  | The meta-skill to execute when the projectile hits its target                             | None |
 | onendskill           | onend, oe  | The meta-skill to execute when the projectile misses and ends                             | None |
+| bounce               |            | Whether the projectile will bounce when it hits something | false |
+| pickup               |            | Can pickup the item. Projectile item will disappear 5 seconds after it hits something | false |
+| accuracy             | ac, a      | Accuracy of the projectile  | 1 |
+
 
 Examples
 --------
