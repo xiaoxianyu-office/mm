@@ -5,7 +5,7 @@ Drops and Drop Tables
 
 The Drops tag can be added to your custom mobs to allow them to drop items of your choice upon their death. There are three types of custom drops available in MythicMobs to distinguish between.
 
-You can make any number of files in the DropTables folder, and they can be named anything you like as long as the file ends in .yml.
+You can make any number of files in the DropTables folder, and they can be named anything you like as long as the file ends in document common format(.txt .yml etc)
 
 Drops
 -----
