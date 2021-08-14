@@ -53,7 +53,7 @@ Only applicable to playerhead type items:
 **SkinTexture: \[url\]**
 
   - Also sets the texture of the player head, but instead uses a SkinURL.
-  - Player heads must use data value 3 for this to work.
+  - Below Minecraft 1.13, Player heads must use data value 3 for this to work.
   - Type into browser: https://sessionserver.mojang.com/session/minecraft/profile/trimmeduuidofplayerhere
   - Use http://mcuuid.net/ to find the trimmed uuid of the player
   - This option also supports hashes. 
