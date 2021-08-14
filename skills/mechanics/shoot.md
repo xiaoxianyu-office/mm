@@ -27,6 +27,8 @@ Attributes
 | bounce               |            | Whether the projectile will bounce when it hits something | false |
 | pickup               |            | Can pickup the item. Projectile item will disappear 5 seconds after it hits something | false |
 | accuracy             | ac, a      | Accuracy of the projectile  | 1 |
+| knockback    | kb | knockback strength of the projectile | 0 |
+| piercelevel  | pl | Need Description                     | 0 | 
 
 
 Examples
