@@ -272,3 +272,21 @@ trident.
 -   "Multishot"
 -   Used on crossbows.
 -   Fires 3 arrows as opposed to 1.
+
+**PIERCING**
+
+-   "Piercing"
+-   Crossbow projectiles pierce entities.
+-   At least 4 levels
+
+**QUICK_CHARGE**
+
+-   "Quick Charge"
+-   Charges crossbows quickly.
+-   At least 3 levels
+
+**SOUL_SPEED**
+
+-   "Soul Speed"
+-   Walk quicker on soul blocks.
+-   At least 3 levels.
