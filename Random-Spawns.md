@@ -166,15 +166,20 @@ your config.yml in order to have these options added to it. Use common
 sense when adjusting these values, as misconfigurations of this section
 may cause lag on your server.
 
-      RandomSpawning:
-        GenerateSpawnPoints: true
-        MaxMobsPerChunk: 3
-        SpawnRadiusPerPlayer: 64
-        SpawnRadiusPerPlayerY: 32
-        DespawnLazyRandomMobs: true
-        PointsPerSecond:
-          Land: 10
-          Sea: 5
+       RandomSpawning:
+         DisableVanillaSpawns: false
+         GenerateSpawnPoints: true
+         MaxMobsPerChunk: 2
+         SpawnRadiusPerPlayer: 64
+         SpawnRadiusPerPlayerY: 32
+         DespawnLazyRandomMobs: true
+         MaxGenerationTime: 20
+         PointsPerSecond:
+           Land: 5
+           Air: 0
+           Sea: 2
+           Lava: 0
+           Ground: 0
 
 Examples
 --------
