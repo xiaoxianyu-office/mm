@@ -82,7 +82,7 @@ Location Targeters
 | @Location{c=x,y,z,yaw,pitch}     |           | The skill will target the coordinates specified. yaw and pitch were added in MM 4.11                                                                                                                                                                                                  |
 | @Origin{xoffset=0;yoffset=0;zoffset=0}     |           | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where that is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile). |
 | @Spawner{s=[string]} |           | Targets the location of the specified spawner(s). The string can be the name of a spawner, or a a group of spawners (using g:groupname), and also accepts wildcards (Spawner* would target Spawner1,Spawner2,Spawner3,etc)                        |
-| @ObstructingBlock    |             | Targets any block in the way of pathfinding |
+| @ObstructingBlock    |             | Tries to target blocks in front of the caster that are obstructing it |
 
 ### Multi-Location Targeters
 
