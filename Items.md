@@ -69,7 +69,7 @@ Breaking down the options
     -   Only usable in 1.14+
 <!-- -->
 -   **Attributes:**
-    -   Special field that allows the addition of item attributes to certain entity slots: [Item Attributes](/databases/items/attributes)
+    -   Special field that allows the addition of item attributes to certain entity slots: [Item Attributes](/Items/Attributes)
 
 <!-- -->
 
