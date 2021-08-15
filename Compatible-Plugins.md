@@ -4,7 +4,7 @@ API.
 
 **Mythic Add-ons:**
 
--   [Artifacts](http://mythicmobs.net/index.php?resources/artifacts-mythic-items-early-access-25-off.37/) -
+-   [Crucible](https://mythiccraft.io/index.php?resources/crucible-create-unbelievable-mythic-items.2/) -
     Create unbelievable custom items using Mythic's skill system to give
     your players the edge they need against your mobs!
 -   [BossShop
