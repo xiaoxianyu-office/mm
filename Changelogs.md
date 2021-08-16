@@ -144,6 +144,7 @@ Bug Fixes/Other
 - Fixed radiusY attribute for @BlocksInRadius
 - Added placeholder support to velocity for Projectile mechanic
 - Added placeholder support for Shield mechanic, Shoot mechanic, ShootShulker, mechanic
+- Fixed an issue with Projectile mechanic when using these bullet types: ARROW, ITEM, and MYTHICITEM
 
 4.12.0
 ======
