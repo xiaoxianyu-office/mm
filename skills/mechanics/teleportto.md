@@ -13,7 +13,7 @@ Attributes
 | yaw                   | y         | The yaw that the affected entities should assume                              | 0             |
 | pitch                 | p         | The pitch that the affected entities should assume                            | 0             |
 | relative                 | r        | Whether the location is relative or directional                | false              |
-| targetasorigin                | tao         | When use any mode, if the origin should be from the caster or from the target |  false             |
+| targetasorigin                | tao         | Will use the target's location as the origin instead of the caster |  false             |
 
 Examples
 --------
