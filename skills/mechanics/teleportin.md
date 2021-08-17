@@ -13,6 +13,7 @@ Attributes
 |-----------------------|-----------|-------------------------------------------------------------------------------|---------------|
 | vector | direction,dir,d,v | The direction to where the mob will be teleported                                 | |
 | yaw | y | Yaw modifier | 0 | 
+| targetasorigin | tao | Will use the target's location as the origin instead of the caster's | false |
                 
 Examples
 --------
