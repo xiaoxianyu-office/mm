@@ -145,6 +145,7 @@ Bug Fixes/Other
 - Added placeholder support to velocity for Projectile mechanic
 - Added placeholder support for Shield mechanic, Shoot mechanic, ShootShulker, mechanic
 - Fixed an issue with Projectile mechanic when using these bullet types: ARROW, ITEM, and MYTHICITEM
+- Fixed an issue with Summon mechanic not setting players as the parent
 
 4.12.0
 ======
