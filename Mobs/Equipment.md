@@ -111,7 +111,9 @@ PandaZombie:
   - DIAMOND_BOOTS{name="Panda<&sq>s Speed";lore="A Panda must be fast";enchants=PROTECTION_ENVIRONMENTAL:4,DURABILITY:3,MENDING:1,PROTECTION_FALL:4,DEPTH_STRIDER:3} 1 1
 ```
 
-**MMOItems**
+MMOItems
+-------
+
 To equip a mob with an mmoitem, use the following syntax:
 ```
   Equipment:
