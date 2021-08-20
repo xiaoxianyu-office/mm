@@ -110,3 +110,15 @@ PandaZombie:
   - DIAMOND_LEGGINGS{name="Panda<&sq>s Strength";lore="A Panda must be strong";enchants=PROTECTION_ENVIRONMENTAL:4,DURABILITY:3,MENDING:1,THORNS:2} 1 1
   - DIAMOND_BOOTS{name="Panda<&sq>s Speed";lore="A Panda must be fast";enchants=PROTECTION_ENVIRONMENTAL:4,DURABILITY:3,MENDING:1,PROTECTION_FALL:4,DEPTH_STRIDER:3} 1 1
 ```
+
+**MMOItems**
+To equip a mob with an mmoitem, use the following syntax:
+```
+  Equipment:
+  - mmoitems{type=ARMOR;id=STEEL_HELMET}:4
+  - mmoitems{type=ARMOR;id=STEEL_CHESTPLATE}:3
+  - mmoitems{type=ARMOR;id=STEEL_LEGGINGS}:2
+  - mmoitems{type=ARMOR;id=STEEL_BOOTS}:1
+  - mmoitems{type=SWORD;id=RUBY_SWORD}:0
+```
+Please note that mmo stats on the armor DO NOT work on mythicmobs. They will not have extra hp, defense or attack damage because of it.
