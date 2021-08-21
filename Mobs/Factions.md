@@ -33,6 +33,8 @@ AI Goals, Targets, and Factions
     change the AI on these may even crash your server, so be wary and
     use test environments!**
 
+***
+
 <!-- -->
 
     DecayingSkeleton:
@@ -54,13 +56,15 @@ AI Goals, Targets, and Factions
 
 -   This example shows how the Skeleton AI generally works for
     attacking. (minus all the fluff, such as randomly walking around).
-
+现在守卫将锁定其它阵营的任何实体为目标并会在受伤后锁定攻击者为目标 (这将包括攻击它的玩家),同时在走向目标时会打开面前的门.
 <!-- -->
 
         * The **AIGoalSelectors** section tells the Skeleton Mob to use the **arrowattack** action when it is going about its day to day goals.
         * The **AITargetSelectors** section tells the Skeleton Mob that it should look to target players to use the **arrowattack** action on.
         * As you see **clear** is always first, which in this case wipes the mobs AI so you have a clean slate to work with. This is important otherwise your AI may not function the way you would expect.
     * Now lets say we want the skeleton to attack other mobs instead and we want him to use a melee attack instead of a ranged attack. See below for how we accomplish this.
+
+***
 
     DecayingSkeleton:
       Mobtype: skeleton
@@ -99,6 +103,8 @@ AI Goals, Targets, and Factions
 -   In the next two sections I will provide some examples for AI
     configuration for two common scenarios you may wish to implement on
     your server.
+
+***
 
 Example 1: Guards attack nearby monsters
 ----------------------------------------
