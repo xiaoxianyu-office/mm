@@ -56,6 +56,7 @@ Entity Targeters
 | @EntitiesNearOrigin{r=#}            | @EIO{r=#} / @ENO{r=#} |                                                                                                          |
 | @PlayersNearTargetLocation{r=#}     | @PNTL{r=#}        | Targets all players near targetlocation. Radius=5 by default.                                            |
 | @Siblings   |     | Targets the siblings of the target. |
+| @Targeted   |     | Targets the inherited targets. |
 
 ### ThreatTable Targeters
 
