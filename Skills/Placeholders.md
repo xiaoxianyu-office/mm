@@ -96,7 +96,7 @@ These placeholders will return whatever variable has been called. For instance <
 | <skill.var.aura-charges>   | Returns the amount of charges the aura has left.      |
 | <skill.var.aura-duration>  | Returns the duration of the aura.                     |
 | <skill.var.aura-stacks>    | Returns the amount of stacks the aura has.            |
-| <skill.targets>            | Returns skill's targeted entities                     |
+| <skill.targets>            | Returns the amount of inherited targets               |
 
 **Target Placeholders**
 -----------------
