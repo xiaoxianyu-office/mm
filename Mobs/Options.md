@@ -28,7 +28,7 @@ These options are universal and will work regardless of the mobtype.
 **AttackSpeed: \[number\]**
 
       * Sets the attack speed of the mob.
-      * Defaults to vanilla attack speed for the respective mobs.
+      * Defaults to vanilla attack speed for the respective mobs. (Doesn't do anything.)
 
 **ApplyInvisibility: \[true/false\]** (4.9)
 
