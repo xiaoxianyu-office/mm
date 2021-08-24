@@ -146,6 +146,7 @@ Bug Fixes/Other
 - Added placeholder support for Shield mechanic, Shoot mechanic, ShootShulker, mechanic
 - Fixed an issue with Projectile mechanic when using these bullet types: ARROW, ITEM, and MYTHICITEM
 - Fixed an issue with Summon mechanic not setting players as the parent
+- Fixed an issue with HasInventorySpace condition returning false if the first slot is empty
 
 4.12.0
 ======
