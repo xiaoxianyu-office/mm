@@ -1,8 +1,7 @@
 Mechanic: onShoot
 =================
 
-Applies an aura to the target that triggers a skill when they damage
-something. Can use any [aura](/skills/mechanics/aura) attribute
+Applies an aura to the target that triggers a skill when they shoot with a bow. Can use any [aura](/skills/mechanics/aura) attribute
 
 Attributes
 ----------
