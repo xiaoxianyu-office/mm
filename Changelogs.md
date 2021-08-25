@@ -84,6 +84,8 @@ Conditions
 - Now supports mmoitems blocks
 ### Holding
 - Now supports MythicMobs and MMOItems items. For MMOItems, use `mmoitems.TYPE.ID` for the material/item attribute.
+### Wearing
+- Now supports MMOItems. For MMOItems, use `mmoitems.Type.ID` for the material/item attribute.
 
 Spawners
 --------
@@ -147,6 +149,7 @@ Bug Fixes/Other
 - Fixed an issue with Projectile mechanic when using these bullet types: ARROW, ITEM, and MYTHICITEM
 - Fixed an issue with Summon mechanic not setting players as the parent
 - Fixed an issue with HasInventorySpace condition returning false if the first slot is empty
+
 
 4.12.0
 ======
