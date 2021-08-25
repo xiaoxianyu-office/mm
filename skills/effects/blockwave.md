@@ -13,13 +13,19 @@ Added in 4.12:
 
 | Attribute | Alias  | Description                              | Default Value |
 | --------- | ------ | ---------------------------------------- | ------------- |
-| material  | mat, m | The type of block used for the blockmask | gravel        |
+| material  | mat, m | The type of block used for the blockmask | null          |
 | data      | dv     | The data value used for the material     | 0             |
 | radius    | r      | The radius of the blockwave effect       | 0             |
 | radiusy   | n      | The y radius of the blockwave effect     | 0             |
-| duration  | d      | Duration of the effect in ticks          | 0             |
+| duration  | d      | Duration of the effect in ticks          | 15            |
 | shape     | s      | The shape of the effect (Sphere/Cube)    | sphere        |
-| velocity  | v      | The speed of the effect                  | 10            |
+| velocity  | v      | The speed of the effect                  | 0.2           |
+| velocityh | vh     | The speed of the effect in the horizontal direction      |
+| velocityx | vx     | The speed of the effect in the x (?) direction | 0       |
+| velocityy | vy     | The speed of the effect in the y (?) direction | 0       |
+| velocityz | vz     | The speed of the effect in the z (?) direction | 0       |
+| noise     | n      | The noise of the effect                        | 0       |
+| hidesource | hsb, hs | Hides the source block                       | true  |  
 
 ---
 
