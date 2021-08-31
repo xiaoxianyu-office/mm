@@ -29,4 +29,4 @@ If a mob has threat tables enabled, it will always target the entity with the hi
 
 However if you would like to manually make your mob target specific entites, or just throw in some tweaks that make your mobs targeting even smarter, you can do so using the [Threat Mechanic](/Skills/Mechanics/threat).
 
-Threat Tables also come with an API (Application Programming Interface), including a “taunt” method and threat altering methods, if another plugin author ever wanted to have skills or abilities that interact with threat.
+Threat Tables also come with an API, including a “taunt” method and threat altering method if another plugin author ever wanted to have skills or abilities that interact with threat.
