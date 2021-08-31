@@ -1,4 +1,4 @@
-Mythic is compatible with many of the most popular plugins in Minecraft,
+MythicMobs is compatible with many of the most popular plugins in Minecraft,
 and even has addons that extend its functionality further through our
 API.
 
