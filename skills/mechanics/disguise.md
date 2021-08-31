@@ -20,7 +20,7 @@ can also be used as an attribute in the skill.
 
 | Attribute | Aliases | Description                       | Default |
 |-----------|---------|-----------------------------------|---------|
-| disguise  | d, config, c, type | The disguise to apply to the mob. |         |
+| disguise  | d, type | The disguise to apply to the mob. |         |
 
   
 
