@@ -139,7 +139,7 @@ are able to target locations as well.
 | [Toggle Sitting][] | Toggles the sitting state for cats, dogs, foxes, and parrots                      |
 | [Velocity][]     | Modifies the velocity of the target entity(s)                                       |
 | [Weather][]      | Modifies the weather in the target world                                            |
-| [WolfSit][]      | Modifies the target wolves position                                                 |
+| [WolfSit][]      | Forces a targetted wolf to sit.                                               |
 
 Effect Mechanics
 ----------------
