@@ -1,8 +1,6 @@
 Mob Types
 =========
 
-<div align="center"><img src="http://fs5.directupload.net/images/160306/t8qrd9wb.jpg" width="500" height="125" alt="http://fs5.directupload.net/images/160306/t8qrd9wb.jpg" /></div>
-
 This is the current list of entity types implemented into MythicMobs.
 Other Bukkit entitytypes may work but options are only applied to
 supported entities. Custom mob types may work if they are registered in
