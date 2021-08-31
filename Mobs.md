@@ -1,8 +1,5 @@
 Mobs
 ====
-
-<img src="http://fs5.directupload.net/images/160306/bpdp2375.jpg" width="500" height="125" alt="http://fs5.directupload.net/images/160306/bpdp2375.jpg" />
-
 MythicMobs is based all around customized entities/mobs and there are
 plenty of options, attributes that you can utilize. Below you find a
 complete list of options/attributes that can be added to your custom
@@ -17,7 +14,6 @@ are the *internal\_mobname* and the *Type*.
       Display:
       Health:
       Damage:
-      Armor:
       BossBar:
       Faction:
       Mount:
@@ -79,31 +75,24 @@ Breaking down the options
 
 -   Sets the max health of the mob.
 -   MythicMobs doesn't have any limitations on max health. Spigot
-    however, will by default cap max health at "2048". This can easily
-    be changed in the spigot configuration file *spigot.yml*.
+    however will by default cap max health at "2048". This can easily
+    be changed in the Spigot configuration file *spigot.yml*.
 -   Examples:
     -   **Health: 200**
 
 **Damage: \[number\]**
 
 -   Sets the base melee damage of the mob.
--   1 damage = 0.5 hearts. Thus a mob with 6 damage will deal 3 hearts
+-   1 damage = 0.5 hearts, so a mob with 6 damage will deal 3 full hearts
     of damage.
 -   This attribute will never affect damage done by ranged attacks, like
     arrows or potions. It's only meant for melee damage.
+-   If the mob is holding a weapon or tool, the damage from this attribute will be added onto the base 
+    damage of the item.
 -   Examples:
     -   **Damage: 10**
 
-**Armor: \[number\]**
-
--   Will reduce any damage the mob takes by the specified amount.
--   1 damage = 0.5 hearts.
--   Examples:
-    -   **Armor: 7**
--    Please note, the Armor stat is currently not working on both free and premium builds.
--    As a work around, add 5HP to the mob's Health stat for each point of Armor
-
-**BossBar:** (2.4)
+**BossBar:**
 
 -   Defines and controls the healthbar of the mob. Looks like the
     Enderdragon's and Wither's health bar, but is configurable in
@@ -138,13 +127,13 @@ Breaking down the options
 
 **Modules:**
 
--   This field allows you to add sub-options that are used to enable
+-   This field allows you to add modules that are used to enable
     [Threat Tables](/databases/mobs/modules/threattables) and/or
     [Immunity Tables](/databases/mobs/modules/immunitytables).
 
 **AIGoalSelectors:**
 
--   This field is used to customize the AI goals of the mob.
+-   This field is used to customize the AI goals of the mob, i.e. what the mob will try to do.
 -   [Custom AI](/Mobs/AI#goal-selectors)
 
 **AITargetSelectors:**
@@ -173,9 +162,9 @@ Breaking down the options
 -->
 **DamageModifiers:**
 
--   This field allows for full control over how and how much damage
-    takes by which causes.
--   For example can be used to make the mob immune to melee attacks, but
+-   This field allows for full control over how much damage the mob takes
+    from different causes.
+-   For example, DamageModifiers can be used to make the mob immune to melee attacks, but
     very weak to ranged attacks.
 -   See [Damage Modifiers](/Mobs/DamageModifiers) for a
     complete list of options.
@@ -190,7 +179,7 @@ Breaking down the options
 **KillMessages:**
 
 -   Allows you to customize the broadcasted kill messages that appear
-    when a mob kills a player.
+    when the mob kills a player.
 -   [Custom Kill Messages](/Mobs/KillMessages)
 
 **LevelModifiers:**
