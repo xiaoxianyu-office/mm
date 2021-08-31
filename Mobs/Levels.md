@@ -1,12 +1,7 @@
 Mob Levels
 ==========
 
-<img src="http://fs5.directupload.net/images/160306/uozz9rdv.jpg" width="500" height="250" alt="http://fs5.directupload.net/images/160306/uozz9rdv.jpg" />
-
-This is a database of all Options available for Mob Levels.
-
-Mob levels are a useful function for adding levels to your mob. Adding
-levels to your mob can allow for several different things.
+Mob levels are a useful function for adding levels to your mob. Levels can allow for several useful features.
 
 You can have their damage and hitpoints scale up as their level
 increases, you can have them drop more items depending on what their
