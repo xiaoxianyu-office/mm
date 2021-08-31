@@ -16,12 +16,6 @@ certain variables to whatever situation is asked, however it will throw
 an error if you try to use a variable type for something that makes no
 sense.
 
-When u use [setVariable](/skills/mechanics/setvariable) set "type" to Integer or Float,then, set
-"value" to other variables(such as <caster.var.MM> * 2),the set variable's
-value will be a value: "<caster.var.MM>'s value * 2",if set "type" to String,the set
-variable's value will be a string: "<caster.var.MM> * 2".
-
-
 **Current Types**:
 
 | **Type** | **Description**                  |
@@ -35,9 +29,6 @@ variable's value will be a string: "<caster.var.MM> * 2".
 A variable's "scope" is **where** that variable exists. Not all scopes
 are applicable for all situations (e.g. a condition may not have a
 caster, rather the caster is the target of the condition).  
-When use Setvariable to create a variable on target,only need set
-**var**'s vaule to "target.variable-name"(because **var**'s prefix is **scope**)
-this means u can copy caster's variable value to other mobs
 
 **Variable Scopes**:
 
@@ -66,7 +57,7 @@ Variable mechanics are special mechanics that utilize variables. They
 can target entities, locations, or nothing, but the target can affect
 the outcome depending on what scope you're using. For example, trying to
 get a target-scope'd variable will obviously fail if you're not
-targeting en entity.
+targeting an entity.
 
 | Mechanic                                               | Description                                      |
 |--------------------------------------------------------|--------------------------------------------------|
