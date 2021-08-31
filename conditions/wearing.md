@@ -9,7 +9,7 @@
 | Attribute | Alias     | Description |
 | --------- | --------- | ----------- |
 | armorslot | slot, s   | The item slot to check. |
-| material  | mmitem, m | A material or MythicItem name to check for. |
+| material  | mmitem, m | A material or MythicItem name to check for. Also supports MMOItems in the format mmoitems.TYPE.ID |
 | checklore | cl        | Whether to strictly match item lore. |
 
 **Valid Slots:**
@@ -23,6 +23,7 @@
 ```
 Conditions:
 - wearing{slot=HAND;m=IRON_SWORD} true
+- wearing{slot=CHEST;m=mmoitems.TYPE.ID} true
 ```
 
 ---
