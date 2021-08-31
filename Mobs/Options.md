@@ -19,15 +19,15 @@ These options are universal and will work regardless of the mobtype.
 
 **AlwaysShowName: \[true/false\]**
 
-      * Whether the name-tag should always be displayed, even when not looking at the mob and through blocks.
+      * Whether the name-tag should always be displayed to the player, including while not looking at the mob.
       * Equivalent of the NBT-tag "CustomNameVisible"
       * Defaults to false.
-
+<!--
 **AttackSpeed: \[number\]**
 
       * Sets the attack speed of the mob.
       * Defaults to vanilla attack speed for the respective mobs. (Doesn't do anything.)
-
+-->
 **ApplyInvisibility: \[true/false\]** (4.9)
 
       * Sets permanent invisibility effect on the mob (No need for invisibility potions ~onSpawn).
@@ -38,6 +38,7 @@ These options are universal and will work regardless of the mobtype.
       * Whether the mob has collision.
       * Defaults to true.
       * Note that collisions in Minecraft are bidirectional, so this would need to be set to false on both the collidee and the collidant to ensure no collisions take place.
+      * Also note that setting this to false stops the mob from being pushable by the player.
 
 **Despawn: \[true/false\]**
 
@@ -48,7 +49,7 @@ These options are universal and will work regardless of the mobtype.
 
 **FollowRange: \[value\]**
 
-      * Max distance between the mob and target(can be a location)
+      * Max distance between the mob and target before the mob will lose aggro.
       * Also defines max range at which a target will aggro a player initially.
       * Defaults to standard respective minecraft follow range
 
@@ -78,6 +79,7 @@ These options are universal and will work regardless of the mobtype.
       * Number between 0 and 1 that defines resistance of mob to knockbacks. Defaults to 0.
       * 0.1 = 10%, 0.5 = 50% 1 = 100%
       * Note that mobs with 100% resistance can still be knocked back by bow's enchantment: ARROW_KNOCKBACK.
+      * For true knockback resistance, see the Velocity mechanic's wiki page
 
 **MaxCombatDistance: \[number\]**
 
@@ -95,6 +97,7 @@ These options are universal and will work regardless of the mobtype.
       * Wether or not the mob should have AI. //Will override any settings specified in AIGoalSelectors!//
       * As opposed to AIGoalSelectors, this will work on Enderdragons and Withers.
       * Defaults to false.
+      * Note that any mob with NoAI: true will never cast a skill under the Skills: tab.
 
 **NoDamageTicks:\[number\]**
 
@@ -110,7 +113,7 @@ These options are universal and will work regardless of the mobtype.
 
 **PassthroughDamage: \[true/false\]**
 
-      * Causes all damage taken to be redirected to the mob's parent, if they exist
+      * Causes all damage taken to be redirected to the mob's parent, if one exists. A mob's parent is the entity that initially summoned the mob.
       * Defaults to false
 
 **Persistent: \[true/false\]**
@@ -153,7 +156,6 @@ These options are universal and will work regardless of the mobtype.
 **PreventSunburn: \[true/false\]**
 
       * Whether to prevent the mob from burning in the sun.
-      * Doesn't work on below Minecraft 1.13
       * Defaults to false.
 
 **RepeatAllSkills: \[true/false\]**
@@ -180,14 +182,14 @@ different mobtype.
 
 #### Armor Stands
 
-**CanMove: \[true/false\] (4.9)**
+**CanMove: \[true/false\] **
 
       * Whether an armor stand can move or not.
       * Only applies to armor stand type mobs.
       * Defaults to true.
       * Requires PaperSpigot
 
-**CanTick: \[true/false\] (4.9)**
+**CanTick: \[true/false\] **
 
       * Whether an armor stand can tick or not.
       * Only applies to armor stand type mobs.
@@ -276,18 +278,18 @@ different mobtype.
 
 #### Bees
 
-**Anger: \[number\] (4.9)**
+**Anger: \[number\] **
 
       * Sets the time in ticks until bee anger ends.
       * If set to 0 the bee will not be angry.
       * Defaults to 0.
 
-**HasNectar: \[true/false\] (4.9)**
+**HasNectar: \[true/false\] **
 
       * Whether the bee is carrying pollen.
       * Defaults to false.
 
-**HasStung: \[true/false\] (4.9)**
+**HasStung: \[true/false\] **
 
       * Whether the bee has stung an entity.
       * Defaults to false.
@@ -326,7 +328,7 @@ different mobtype.
 
 **PreventTeleport: \[true/false\]**
 
-      * Meant for Enderman but //might// work on other mobs. May break teleport skills!
+      * Meant for Endermen but //might// work on other mobs. May break teleport skills!
       * Defaults to false.
 
 **HeldBlock: `[Material]`**
@@ -337,7 +339,7 @@ different mobtype.
 
 **Experience: \[Number\]**
 
-      * Sets the amount of experience give by the experience orb mob (4.12 MM)
+      * Sets the amount of experience give by the experience orb mob.
       * Defaults to 1
 
 #### Falling Blocks
@@ -364,7 +366,7 @@ different mobtype.
 
 #### Fox
 
-**FoxType: \[Entity type\] (4.9)**
+**FoxType: \[Entity type\] **
 
       * Determines the type of the fox. 
       * Can be RED or SNOW
@@ -372,12 +374,12 @@ different mobtype.
 
 #### Hoglin
 
-**ImmuneToZombification: \[true/false\] (4.10)**
+**ImmuneToZombification: \[true/false\] **
 
       * Whether or not the hoglin is immune to being zombified
       * Defaults to false
 
-**Huntable: \[true/false\] (4.10)**
+**Huntable: \[true/false\] **
 
       * Whether the hoglin is able to be hunted by piglins.
       * Defaults to true
@@ -431,7 +433,7 @@ different mobtype.
 
 #### Ocelots
 
-**Ocelot: \[type\] (4.9)**
+**Ocelot: \[type\] **
 
       * Sets the type of ocelot
       * Types can be BLACK_CAT, RED_CAT, SIAMESE_CAT, WILD_OCELOT
@@ -439,13 +441,13 @@ different mobtype.
 
 #### Panda
 
-**MainGene: \[Gene Type\] (4.9)**\*
+**MainGene: \[Gene Type\] **\*
 
       * Sets the main gene that the panda can pass on to it's offspring.
       * Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN
       * Defaults to NORMAL
 
-**HiddenGene: \[Gene Type\] (4.9)**\*
+**HiddenGene: \[Gene Type\] **\*
 
       * Sets the hidden gene that the panda can pass on to it's offspring.
       * Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN
@@ -453,19 +455,19 @@ different mobtype.
 
 #### Piglin
 
-**AbleToHunt: \[true/false\] (4.10)**\*
+**AbleToHunt: \[true/false\] **\*
 
       * Whether or not the piglin is able to hunt
       * Defaults to false
 
-**ImmuneToZombification: \[true/false\] (4.10)**\*
+**ImmuneToZombification: \[true/false\] **\*
 
       * Whether or not the piglin is immune to being zombified
       * Defaults to false
 
 #### Piglin Brutes
 
-**ImmuneToZombification: \[true/false\] (4.10)**\*
+**ImmuneToZombification: \[true/false\] **\*
 
       * Whether or not the piglin is immune to being zombified
       * Defaults to false
@@ -584,13 +586,13 @@ different mobtype.
       
 #### Zombies (all variants)
 
-**PreventJockeyMounts: \[true/false\] (4.9)**
+**PreventJockeyMounts: \[true/false\] **
 
       * Sets whether the zombie will spawn as a jockey.
       * Only works for Zombies.
       * Defaults to false.
 
-**PreventTransformation: \[true/false\] (4.8)**
+**PreventTransformation: \[true/false\] **
 
       * Sets whether zombies can be turned into pigmen/drowned.
       * Only works for Zombies.
