@@ -172,9 +172,9 @@ Possible filters include:
 -   watermobs
 -   More coming later...
 
-You can also turn off specific filters by just adding the option( **target** only)
+You can also turn off specific filters by just adding the option
 **targetXXXXX** replacing XXXXX with the filter name, e.g.
-**targetPlayers=false** or **targetcreative=true**  
+**targetPlayers=false** or **targetcreative=true**
 
 Target Limits
 -------------
