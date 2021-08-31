@@ -1,7 +1,7 @@
 Mechanic: Raytrace
 ---------------------
 
-Traces a ray to the target. [This is a premium-only mechanic, caster must be player.]
+Traces a ray to the target. [This is a premium-only mechanic.]
  
 Attributes
 ----------
