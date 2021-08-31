@@ -1,7 +1,7 @@
 Mechanic: Raytrace
 ---------------------
 
-Traces a ray to the target. [This is a premium-only mechanic, sync must be "true" Minecraft Version must ≥1.16.]
+Traces a ray to the target. [This is a premium-only mechanic, sync must be "true".]
  
 Attributes
 ----------
