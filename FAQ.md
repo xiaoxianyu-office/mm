@@ -28,16 +28,10 @@ our Premium+ package gives you several added benefits:
 -   Priority on support tickets
 -   License usable on multiple servers you own
 
-My server crashes when I try to make a passive mob attack!
+My mob disappears when I try to make a passive mob attack something!
 ----------------------------------------------------------
 
-Mojang removed the ability to give AI goals to mobs that don't naturally
-have those goals (like attacks on passive mobs). So, yes, if you put an
-attack goal on a passive mob, your server will crash.
-
-You can still make those mobs move towards players and have them
-"attack" using skills. A more common approach is to disguise a hostile
-mob as a passive mob using Lib's Disguises.
+Passive mobs types (sheep, pigs, cows, Etc.) are unable to attack any entity as the base mob does not have the ability to deal damage. In older versions of Minecraft, this behaviour may crash the server, while on newer versions the mob simply vanishes. The best way to work around this is to use a hostile mob type (such as a zombie), and disguise it as a passive mob type using LibsDisguises.
 
 How can I get custom heads on my mob?
 -------------------------------------
@@ -49,13 +43,7 @@ helmet.
 How do I make "caster" mobs that cast spells instead of using melee attacks?
 ----------------------------------------------------------------------------
 
-Simply use a similar format to the guide’s example of using the
-projectile skill here:
-
-[mythicmobs.net/manual/doku.php/databases/skills/projectileskill](/databases/skills/projectileskill)
-
-This will slow the mob so it stands still and "casts" the projectile
-spell skill to shoot a projectile spell.
+The best way to go about doing this is using a projectile casted onTimer. A more thorough example can be found on the wiki page for [Projectiles](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/projectile).
 
 How do I use color codes in Player Disguises?
 ---------------------------------------------
@@ -91,6 +79,7 @@ predictable, more spread out, and more random.
 -   Use the "GCD" (global cooldown) skill along with the "OffGCD"
     condition.
 -   Give your skills lower chances and cooldowns.
+-   Uses stances via the setstance mechanic and the stance condition.
 
 I want to use my own custom sound effect, how do I do this? (Answer provided by SeanArmor on the MythicMobs forums)
 -------------------------------------------------------------------------------------------------------------------
