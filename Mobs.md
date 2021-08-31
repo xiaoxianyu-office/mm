@@ -12,9 +12,6 @@ Most of them are optional, meaning you don't have configure the entire
 list every time you are creating a new mob. All that really is required
 are the *internal\_mobname* and the *Type*.
 
-You can make any number of files in the Mobs folder, and they can be
-named anything you like as long as the file is a YAML filetype (MyMobs.yml, BossMobs.yml, etc.).
-
     internal_mobname:
       Type:
       Display:
