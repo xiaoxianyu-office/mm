@@ -1,6 +1,6 @@
 **BossBar**
 
-The BossBar feature is used to give your custom bosses a healthbar in the same style used by the Ender Dragon and Wither plus a bunch of customization options.
+The BossBar feature is used to give your custom mobs a healthbar in the same style used by the Ender Dragon and Wither, but with a lot more options for customization.
 
 **Syntax**
 
@@ -18,13 +18,17 @@ internal_mobname:
     PlayMusic: [true/false]
 ```
 
-Available colors for Color (case sensitive): PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+Available colors for Color (case sensitive): PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE.
 
-Available styles for Style (case sensitive): SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+Available styles for Style (case sensitive): SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20.
 
-Range is the distance the BossBar will be displayed to players around the mob
+Range is the distance the BossBar will be displayed to players around the mob.
 
-CreateFog, DarkenSky, and PlayMusic are buggy and do not currently work as of 2.5.0
+CreateFog adds a fog-like effect to the player's vision while in the radius defined for the bossbar.
+
+DarkenSky darkens the sky while in the radius defined for the bossbar, similar to the effect created when the Wither is spawned.
+
+I'm not too sure what PlayMusic does, but I presume it plays boss music while in the radius defined for the bossbar.
 
 **Examples**
 
