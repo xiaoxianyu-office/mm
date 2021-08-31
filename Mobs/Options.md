@@ -1,8 +1,6 @@
 Mob Options
 ===========
 
-<img src="http://fs5.directupload.net/images/160306/36ll7s25.jpg" width="500" height="200" alt="http://fs5.directupload.net/images/160306/36ll7s25.jpg" />
-
 This is a database of all options available when creating a mob in
 MythicMobs. These options go under the Options tag like so:
 
