@@ -29,8 +29,6 @@ The amount of items to be dropped. Can be a number range; for example ```1-3```.
 **&lt;chance&gt;**  
 The chance for the specified item to be dropped.
   - Must be a number between 0 and 1 
-  - Must in the end of a line
-  - all special drops support chance,but must behind amount.
   - **Note:** allows percentage chances. (10% instead of 0.1).
 
 | **Special Drops**           | **Explanation**                                          | **Example**                             |
