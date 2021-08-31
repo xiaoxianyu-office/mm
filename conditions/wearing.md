@@ -1,7 +1,5 @@
 **Description:** This condition checks if the target entity is wearing the selected item.  
 
-**Note**:Doesn't work on **Minecraft below 1.13**(excluding 1.13),if u want to check item on Minecraft below 1.13,you can use MythicMobsExtension's Condiiton: '''ownsitem'''
-
 **Type:** Entity
 
 ---
@@ -29,7 +27,12 @@ Conditions:
 
 ---
 
-**拓展信息:**
 
-- [x] Type: 实体
-- [x] Aliases: iswearing wielding iswielding
+**Aliases:**
+
+| Condition Aliases |
+| ----------------- | 
+| iswearing         |
+| wielding          |
+| iswielding        |
+---
