@@ -5,7 +5,7 @@ Spawners allow you to define specific points in your worlds at which your custom
 
 You can create spawners directly ingame by using [Commands](/commands and permissions) and by creating the a configuration file in the folder */MythicMobs/Spawners*. Note that once a spawner-configuration file has been loaded onto a running server, it can only be edited by ingame commands. If you want to edit a already loaded spawner-configuration file in a text-editor, you have to stop the server in the meantime.
 
-When you change your mythicmobs version..all spawners config's maxmobs will change to -1
+When you change your mythicmobs version..all spawners config's maxmobs will change to -1(couldn't spawn anything)
 
 ### Pros of Spawners
 
