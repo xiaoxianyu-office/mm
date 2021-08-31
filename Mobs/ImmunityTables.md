@@ -1,4 +1,4 @@
-Immunity Tables allow a mob to track each player's damage and assigns NoDamageTicks individually, so that the mob can only take damage every half second PER PLAYER instead of TOTAL. Essentially, they allow for multiple players to hit a mob and still have all their damage count.
+Immunity Tables allow a mob to track each player's damage and assigns NoDamageTicks individually, so that the mob can only take damage every half second PER PLAYER instead of TOTAL. Essentially, they allow for multiple players to hit a mob and still have all their damage register.
 
 **Enabling Immunity Tables**
 
