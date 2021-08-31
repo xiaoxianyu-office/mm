@@ -152,7 +152,7 @@ non-hostile mobs, you'd use this:
 
     damage{a=20} @EntitiesInRadius{r=10;ignore=players,animals}
 
-To make a targeter ONLY target players, you'd do something like this:
+To make a targeter target players(not only), you'd do something like this:
 
     skill{s=ASkill} @EntitiesInRadius{r=5;target=players}
 
