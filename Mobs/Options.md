@@ -2,7 +2,7 @@ Mob Options
 ===========
 
 This is a database of all options available when creating a mob in
-MythicMobs. These options go under the Options tag like so:
+MythicMobs. These options go under the Options tag, like so:
 
     VeryFastSkeleton:
       Type: skeleton
