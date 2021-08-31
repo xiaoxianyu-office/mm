@@ -1,20 +1,10 @@
-The Equipment section in a mob config is a special droptable that
-defines what kind of equipment the mob will spawn with. The equipment
-will only be applied to the mob when it spawns or during a reload, and
-can be changed afterwards by using the [Equip
-mechanic](/skills/mechanics/equip).
+The Equipment section in a mob config defines what kind of equipment the mob will spawn with. The equipment will only be applied to the mob when it spawns or during a reload, and can be changed afterwards by using the [Equip mechanic](/skills/mechanics/equip).
 
-If you want your mob to not wear any kind of equipment, you can use the
-option "PreventRandomEquipment". See [Mob
-Options](/databases/mobs/options). An alternative to using that option
-is to equip your mob with *dummy items*. Such items need have the item
-ID AIR.
+If the PreventOtherDrops option is not enabled, then the mob will naturally drop all of its equipped items on death.
 
-Equipment is a special type of droptable and can reference other
-droptables, allowing you to use drop conditions to create advanced
-equipment sets. If you define the slot in a droptable and reference it
-normally in the Equipment section (or equip skill), the mob will "equip"
-the drops instead of dropping them.
+If you want your mob to not wear any equipment, you can use the option "PreventRandomEquipment". See [Mob Options](/databases/mobs/options). An alternative to using that option is to equip your mob with *dummy items*, such as AIR.
+
+Equipment slots can also accept droptables, allowing for the creation of "sets" where a random item is selected from the set. For example, a droptable can be created that contains every vanilla helmet, which can then be used on the mob in the equipment tab to select one random helmet to wear.
 
 Syntax
 ------
@@ -27,29 +17,28 @@ Syntax
       - ...
 
 **&lt;item&gt;**  
-Can be either the name of a [MythicMobs item](/databases/items/overview)
-or a vanilla item.
+Can be either the name of a [MythicMobs item](/databases/items/overview) or a vanilla item.
 
 **&lt;slot&gt;**  
 Defines the slot on the mob that item should be carried on.
 
 | Slot    | Description                                                                                                 |
 |---------|-------------------------------------------------------------------------------------------------------------|
-| HEAD    | The head slot. Apart from regular helmets can be any blocktype or player head. Most will render accurately. |
-| CHEST   | The chest slot. Will only render chestplates, but will carry any items.                                     |
-| LEGS    | The leg slot. Will only render leggings, but will carry any items.                                          |
-| FEET    | The feet slot. Will only render boots, but will carry any items.                                            |
-| HAND    | The mainhand slot. Will render any type of item.                                                            |
-| OFFHAND | The offhand slot, introduced in MC 1.9. Will render any type of item.                                       |
+| HEAD    | The head slot. Accepts regular helmets, playerheads, and even blocktypes. |
+| CHEST   | The chest slot. Will only render chestplates, but will carry any items. |
+| LEGS    | The leg slot. Will only render leggings, but will carry any items. |
+| FEET    | The feet slot. Will only render boots, but will carry any items. |
+| HAND    | The mainhand (right) hand slot. |
+| OFFHAND | The offhand (left) hand slot. |
 
-Examples
+Example
 --------
 
     awesome_boss:
       Type: pig_zombie
       Equipment:
-      - awesome_boss_helmet:4
-      - diamond_sword:0
+      - awesome_boss_helmet HEAD
+      - diamond_sword HAND
 
 --------
 
@@ -117,10 +106,10 @@ MMOItems
 To equip a mob with an mmoitem, use the following syntax:
 ```
   Equipment:
-  - mmoitems{type=ARMOR;id=STEEL_HELMET}:4
-  - mmoitems{type=ARMOR;id=STEEL_CHESTPLATE}:3
-  - mmoitems{type=ARMOR;id=STEEL_LEGGINGS}:2
-  - mmoitems{type=ARMOR;id=STEEL_BOOTS}:1
-  - mmoitems{type=SWORD;id=RUBY_SWORD}:0
+  - mmoitems{type=ARMOR;id=STEEL_HELMET} HEAD
+  - mmoitems{type=ARMOR;id=STEEL_CHESTPLATE} CHEST
+  - mmoitems{type=ARMOR;id=STEEL_LEGGINGS} LEGS
+  - mmoitems{type=ARMOR;id=STEEL_BOOTS} FEET
+  - mmoitems{type=SWORD;id=RUBY_SWORD} HAND
 ```
-Please note that mmo stats on the armor DO NOT work on mythicmobs. They will not have extra hp, defense or attack damage because of it.
+Please note that mmo stats on the armor DO NOT work on MythicMobs. As such, they will not have extra health, defense or attack damage because of it.
