@@ -51,5 +51,3 @@ API.
     skills and conditions dealing with currency
 -   [WorldGuard](https://dev.bukkit.org/projects/worldguard) - Spawning
     and conditions using WG Regions
-
-*(PM me if you have a plugin you'd like us to list here!)*
