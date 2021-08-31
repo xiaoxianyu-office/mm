@@ -2,7 +2,7 @@
 
 Damage Modifiers are an attribute you can add to your MythicMobs to increase or decrease the damage they receive from various sources.
 
-Some of these won't work on mobs (such as SUICIDE) under normal circumstances.
+Some of these won't work on certain mobs under normal circumstances (e.g. SUICIDE, as no mob naturally suicides).
 
 Damage Modifiers are completely optional, you only need to add the ones you want to use.
 
@@ -23,7 +23,7 @@ Damage Modifiers are completely optional, you only need to add the ones you want
 | WITHER        | Damage caused by the Wither potion effect. |
 | FALLING_BLOCK | Damage caused by being hit by a falling block which deals damage. |
 | THORNS        | Damage caused in retaliation to another attack by the Thorns enchantment. |
-| CUSTOM        | Damage caused by “Custom” sometimes used by other plugins. |
+| CUSTOM        | Damage caused by “Custom”, sometimes used by other plugins. |
 | LAVA          | Damage caused by touching lava. |
 | MELTING       | Damage caused by a snowman melting. |
 | FIRE_TICK     | Damage caused due to an ongoing fire effect. |
@@ -37,8 +37,8 @@ Damage Modifiers are completely optional, you only need to add the ones you want
 
 **Examples**
 
-NOTE: A modifier of 1 will cause the mob to take normal damage from that source, a number higher than 1 will increase the damage it takes by that amount. A number lower than 1 will reduce the damage it takes by that amount. And a 0 will make the mob immune to that damage source.
-A negative value (below 0) will cause the mob to heal from that type of damage. Note that this doesn't work if the mob is naturally immune to that damage. (e.g. Iron Golems and fall damage, Blazes and fire tick/lava damage)
+NOTE: A modifier of 1 will cause the mob to take normal damage from that source. A number higher than 1 will multiply the damage it takes by that amount. A number lower than 1 will reduce the damage it takes by that amount. And 0 will make the mob immune to that damage source.
+A negative value will cause the mob to heal from that type of damage. Note that this doesn't work if the mob is naturally immune to that damage, E.g. Iron Golems with FALL, Blazes with FIRE, FIRE_TICK, or LAVA. Etc.
 
 In this first example our Armored Zombie mob is just a basic MythicMob with nothing added to it.
 
@@ -77,7 +77,7 @@ ArmoredZombie:
   - MAGIC 1.25
 ```
 
-OK, I'd say he's just about done now. Our little Armored Zombie is now well protected against projectile and melee attacks but we gave him a nice weakness to magic (splash health potions).
+Our little Armored Zombie is still well protected against projectile and melee attacks, but we have given him a weakness to magic (splash health potions) to compensate.
 
 ——————-
 Our second example is a fire elemental- not only does this mob not take damage from burning, it also heals health when standing in fire, and regains even more health when in lava. Note: This DOES NOT work on Nether mobs as they don't take damage from fire at all, preventing them from having their fire and lava damage modified.
