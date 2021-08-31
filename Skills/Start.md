@@ -10,9 +10,6 @@ conditions. MythicMob's skill system is simple once you get used to it
 and highly flexible, and can even be used to recreate bosses from the
 most popular MMORPGs in Minecraft.
 
-Skill group(including many mechaines) must be stored in any document  
-which ends in document common format(.txt .yml etc) in **Skills** Folder
-
 Skills are made up of several distinct parts:
 
 -   [Mechanics]
