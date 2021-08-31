@@ -120,7 +120,7 @@ SLSkelF:
   - LEATHER_LEGGINGS LEGS
   - LEATHER_BOOTS FEET
   Display: '&BSkeletal Fighter\n&ELv.<mob.level>'
-  Disguise: SKELETON setGlowing setSpinning setBurning```
+  Disguise: SKELETON setGlowing setSpinning setBurning
+```
 
 This is a much neater way of doing mob disguises compared to the Options version, and matches both the disguise mechanic syntax and the disguise command syntax. If at all possible, please use this method of disguising mobs over the Options method.
-------------------------------------------------------------------------
