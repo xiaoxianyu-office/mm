@@ -11,8 +11,7 @@ API.
     Add-on](https://www.spigotmc.org/resources/mythicmobs-%E2%9A%94-bossshoppro-add-on-%E2%9A%94.58415/) -
     Provides compatibility with the popular shop plugin BossShopPro,
     allowing you to easily use MythicMobs' items in your shops.
--   [Denizen Add-on](https://github.com/BerndiVader/mmDenizenAddon) -
-    Adds full crossover compatibility with Denizen!
+-   [Depenizen](https://ci.citizensnpcs.co/view/All/job/Depenizen/) - Depenizen adds MythicMobs tags and features to [Denizen](https://guide.denizenscript.com/), and adds Denizen conditions and targeters to MythicMobs!
 -   [Quests
     Add-on](https://www.spigotmc.org/resources/mythicmobs-quests-module.7261/) -
     Provides compatibility with the popular Quests plugin, allowing you
@@ -29,6 +28,7 @@ API.
     Full compatibility for quest objectives
 -   [BeautyQuests](https://www.spigotmc.org/resources/beautyquests.39255/) -
     Full compatibility for quest objectives
+-   [Denizen](https://guide.denizenscript.com/) - Write custom scripts for your server to control mobs, players, and anything else you can think of
 -   [EnchantsPlus](https://www.spigotmc.org/resources/enchantsplus.3396/) -
     Use custom enchants on items
 -   [Graveyards](https://www.spigotmc.org/resources/graveyards-40-off.7191/) -
