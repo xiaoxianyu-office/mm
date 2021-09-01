@@ -1,8 +1,6 @@
 Drops and Drop Tables
 =====================
 
-![](http://fs5.directupload.net/images/160308/p4f6hk8e.jpg)
-
 The Drops tag can be added to your custom mobs to allow them to drop items of your choice upon their death. There are three types of custom drops available in MythicMobs to distinguish between.
 
 You can make any number of files in the DropTables folder, and they can be named anything you like as long as the file ends in .yml.
@@ -24,7 +22,7 @@ internal_mobname:
 Can be either an item from MythicMobs, a vanilla item, exp, a drop table or an item/experience for a supported plugin.
 
 **&lt;amount&gt;**  
-The amount of items to be dropped. Can be a number range; for example ```1-3```.
+The amount of items to be dropped. Can be a number range, for example: ```1-3```.
 
 **&lt;chance&gt;**  
 The chance for the specified item to be dropped.
@@ -78,8 +76,7 @@ Drop Tables are collections of multiple drops that can be assigned to mobs. Usin
 
 Drop Tables are stored in their own respective configuration-files located in \/MythicMobs\/DropTables. They have the advantage of being able to utilize [Conditions](/Skills/Conditions) and various other special options, and can be shared by multiple mobs without the need of duplicating it.
 
-Drop Tables can be nested - a Drop Table can contain multiple other Drop
-Tables.
+Drop Tables can be nested - a Drop Table can contain multiple other Drop Tables.
 ```
 internal_mobname:
   Type: <mobtype>
