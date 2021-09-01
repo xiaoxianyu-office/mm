@@ -9,12 +9,12 @@ add them to your own skills and even combine them.
 Most effects are able to target both Entities and Locations. You control
 what your effect targets using a [Targeter][].
 
-Audience `audience=World` or `audience=Target` can be used to only display the effects to a specific group, rather than the entire Server. This can be useful in preventing too many particles from being displayed to everyone which can cause lag.
+Audience arguments (`audience=World`, `audience=Target`, `audience=Caster`, Etc.) can be used to display the effect only to a specific group, rather than the entire server. This can be useful in preventing too many particles from being displayed to everyone which can cause lag.
 
 ### Syntax
 
 A lot of effects don't have any options. To call them, you just call the
-skill **effect:name**
+skill **effect:name**, for example:
 
     Skills:
     - effect:flames @target
@@ -33,9 +33,9 @@ skill **effect:name**
 | [Block Wave][]       | Creates a wave of blocks at the target location                       |
 | [Bloody Screen][]    | Makes the target's screen glow red                                    |
 | [Ender][]            | Causes the "Ender" effect                                             |
-| [Ender Beam][]       | Creates the enderbeam effects at the target                           |
+| [Ender Beam][]       | Creates the enderbeam effects at the target (similar to End Crystals)                           |
 | [Explosion][]        | Causes an explosion effect                                            |
-| [Firework][]         | Causes a firework explosion                                           |
+| [Firework][]         | Causes a firework explosion (currently not working in most builds)                 |
 | [Flames][]           | Causes the Mob Spawner flame effect                                   |
 | [Geyser][]           | Creates a "geyser" of water or lava                                   |
 | [Glow][]             | Gives the target the glow effect with different colors (req. GlowAPI) |
@@ -51,7 +51,7 @@ skill **effect:name**
 | [Skybox][]           | Alters the target's skybox                                            |
 | [Smoke][]            | Creates a puff of smoke                                               |
 | [Smoke Swirl][]      | Creates a persistent "swirl" of smoke                                 |
-| [Sound][]            | Plays a sound effect from a resource pack                             |
+| [Sound][]            | Plays a sound effect from both vanilla Minecraft and resource packs                           |
 | [Spin][]             | Causes the mob to spin                                                |
 | [TotemOfUndying][]     | Plays the effect of a player resurrecting                             |
 
@@ -59,7 +59,7 @@ skill **effect:name**
 
 These effects require the plugin "EffectLib" to be installed to use.
 
-Note: EffectLib was dropped in MM ver 4.11, they may still work with older versions however.
+Note: EffectLib was dropped in MM ver 4.11, so the below effects no longer work.
 
 | Effect Mechanic     | Description                                           |
 |---------------------|-------------------------------------------------------|
