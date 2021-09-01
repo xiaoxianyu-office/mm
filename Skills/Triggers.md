@@ -196,14 +196,12 @@ Detailed Descriptions & Examples
 
 -    Trigger the skill to execute based on a timer.
 -    The timer is in ticks so 20 ticks equates to 1 second.
--    Avoid using with health or chance parameters as it does not work
-    well with these at the moment.
 -    Care must be taken when using the Timer trigger as skills that are
-    not properly designed can potentially lead to server or client side
-    performance issues. Skills with particularly low timers that call
-    complex syntax can cause server side performance issues, while large
-    count particle effects and other graphic intensive things can lead
-    to potential client side performance issues.
+     not properly designed can potentially lead to server or client side
+     performance issues. Skills with particularly low timers that call
+     complex syntax can cause server side performance issues, while large
+     count particle effects and other graphic intensive things can lead
+     to potential client side performance issues.
 -    **- skill{s=SingleTargetFire} ~onTimer:200** (The mob will use the
     SingleTargetFire skill every 10 seconds)
 
@@ -211,13 +209,14 @@ Detailed Descriptions & Examples
 
 -    Trigger the skill to execute when the mob kills a player character.
 -    Can be used along with the health and chance parameters to further
-    define when this occurs.
+     define when this occurs.
 -    **- skill{s=BossRegen} ~onPlayerKill &gt;0 1** (The mob has a 100%
     chance to use the BossRegen spell when it kills a player)
 
 **~onEnterCombat**
 
 -    Trigger the skill to execute when the mob enters combat.
+-    This trigger will only work when ThreatTables are enabled.
 -    **- skill{s=BuffSelf} ~onEnterCombat &gt;0 1** (The mob has a 100%
     chance to use the BuffSelf skill when it enters combat with a player
     or mob)
@@ -225,6 +224,7 @@ Detailed Descriptions & Examples
 **~onDropCombat**
 
 -    Trigger the skill to execute when the mob drops combat.
+-    This trigger will only work when ThreatTables are enabled.
 -    **- skill{s=BossRegen} ~onDropCombat &gt;0 1** (The mob has a 100%
     chance to use the BossRegen skill when it drops combat with a player
     or mob)
@@ -232,6 +232,7 @@ Detailed Descriptions & Examples
 **~onChangeTarget**
 
 -    Trigger the skill to execute when the mob changes target.
+-    This trigger will only work when ThreatTables are enabled.
 -    **- skill{s=Charge} ~onChangeTarget &gt;0 1** (The mob has a 100%
     chance to use the Charge skill when it changes targets)
 
@@ -245,11 +246,10 @@ Detailed Descriptions & Examples
 
 **~onSignal** or **~onSignal:[signal]**
 
--   Trigger for skill to execute when the mob receives a signal or when
-    with :[signal] only a specific signal
+-   Trigger the skill to execute when the mob receives a specific signal from the Signal mechanic.
 -   Useful for skills that require communication between mobs or from a
-    player to a mob [2], which was previously (pre 2.3) only possible by
-    workarounds
+    player to a mob [2].
+-   Note: Currently when a mob recieves a signal, it will only trigger one skill with the respective signal. To elaborate, if the mob has two skills like so: `- skill{s=SKILL1} ~onSignal:DO_THING` `- skill{s=SKILL2} ~onSignal:DO_THING`, then only the first skill will trigger.
 -   See
     [signal-skill](http://www.mythicmobs.net/manual/doku.php/skills/mechanics/signal)
     page.
