@@ -2,23 +2,14 @@ Introduction
 ------------
 
 Conditions are used to determine whether or not an action may execute.
-These conditions are placed under the Condition section in the
-configuration as shown below (bottom of page).
-
-Couldn't use [Variables](/skills/variables) in Condition's option
 
 Conditions can be used in [1]:
-
 -   [Skill Mechanics](/skills/mechanics/skill)
 -   [Drop Tables](/Items/Drops#drop-tables)
--   [Spawners](/Spawners) (deprecated condition
-    system)
+-   [Spawners](/Spawners)
 -   [Random Spawners](/Random%20Spawns)
 
-When applying multiple conditions, all of them must be met in order for
-the action to be executed. Some conditions allow arrays that can be
-split by commas. These conditions only require one of the strings in the
-arrays to match.
+When applying multiple conditions, all of them must be met in order for the skill to be executed. Some conditions allow arrays that can be split by commas. Such conditions only require one of the strings in the array to match.
 
 To see how to use the premium only in-line target conditions, [click here!](/skills/conditions/in-linetargetconditions)
 
@@ -28,87 +19,70 @@ Usage
 ### Types
 
   
-Conditions can be broken into two types-
+Conditions can be broken into three types:
 
-1.  General conditions: Those that can be used on entities and locations
-    or on entities only.  
-    - Compare conditions: Those that need two entities or two locations.
-    This conditions only make sense if used in TargetConditions section
-    in the skill yamls. **See CompareConditions!**  
+1. Entity Conditions: These check the conditions of an entity.
+2. Location Conditions: These check the conditions at a location. If a location condition is used while an entity is targeted, it will check the conditions at the entity's location.
+3. Compare conditions: These check for certain conditions between two different "things". For example, "Cuboid" will return true if a target is within a cube where the corners are two coordinates, while "StringEquals" will return true or false depending on whether two strings match.
 
-Conditions that are used in the Conditions node of the skill:
+Conditions can also be used in three different places within a meta skill:
 
--   Every condition can be used.
--   The caster is ALWAYS the entity that will be checked. All conditions
-    can be used but conditions that compare 2 entities do not make sense
-    here.
-
-Conditions that are used in the TargetConditions node of the skill:
-
--   Every condition can be used.
--   TargetConditions node can only be used in skills.
--   The compare entity depends on the targeter of the skill. If the
-    skill use @self the compare entity is the caster if the skill use
-    any other targeter the compare entity/location is the entity given
-    in the targeter.
+1. Conditions: Conditions in this section check the conditions of the caster or the caster's location.
+2. TargetConditions: Conditions in this section check the conditions of the target or target location inherited from the skill's targeter.
+3. TriggerConditions: Conditions in this section check the conditions of the entity that triggered the skill.
 
 ### Examples
+```
+Conditions:
+- globalscore{objective=Test;v=>10}
+```
+In the example above, the globalscore condition will check the caster's global score.
+```
+TargetConditions:
+  - globalscore{objective=Test;v=>10}
+```
+The example above uses the exact same condition, but here the globalscore condition will check the inherited target's global score. Since globalscore is an entity condition, it will only work if an entity is targeted.
 
-    Conditions:
-    - globalscore{objective=Test;v=>10}
-
-This condition is used under Conditions node and will always use the
-caster as compare entity. No matter what the targeter of the skill is.
-
-      TargetConditions:
-      - globalscore{objective=Test;v=>10}
-
-This (the same) condition is used under TargetConditions node and will
-check the entity that is given by the targeter.
-
-NOTE: CompareConditions only make sense in the TargetConditions node
-because they compare 2 entities where 1 of them is always the caster and
-the other one is the entitiy of the targeter. If they are used in the
-Conditions node the caster and the target are always the same.
-
-**Format**:  
-Since 4.0.0, all conditions now have a new format.
-
-    Conditions:
+**Format**:
+```
+SkillName:
+  Conditions:
     - condition [variable]
+  TargetConditions:
     - condition [variable] [action]
+  TriggerConditions:
     - condition [variable] [action] [action_variable]
     - condition{variable1=value;variable2=value} [action] [action_variable]
+```
 
 These new "actions" control how the skill acts when a condition is met
 or not met. Here are some examples:
-
-    Conditions:
+```
+YourAwesomeSkill:
+  Conditions:
     - day required
+  TargetConditions:
     - stance defensive power 0.5
+  TriggerConditions:
     - stance{stance=defensive} power 0.5
     - score{objective=test;value=>20} cancel
     - haspotioneffect{type=POISON;level=>0;duration=0to100} true
-
+```
 **Ranged Values:**  
-Ranged values use either the format **#to#** or **#-#**. You must
-use "to" instead of "-" if you want to use negative numbers in the
-range. Here for example the distance condition:
-
-    TargetConditions:
-    - distance{d=1to10} true
-
-    TriggerConditions:
-    - distance{d=1to10} true
-
-    Conditions:
+Ranged values use either the format **#to#** or **#-#**. You must use "to" instead of "-" if you want to use negative numbers in the range. For:
+```
+YourMagnificentSkill:
+  Conditions:
     - altitude{a=1-5}
-
+  TargetConditions:
+    - distance{d=1to10} true
+  TriggerConditions:
+    - distance{d=1to10} true
+```
 Condition Actions
 -----------------
 
-Condition Actions allow you to do additional things based off of
-conditions. The default condition action is **true**
+Condition Actions allow you to do additional things based off of conditions. The default condition action is **true**
 
 | Action                     | Description                                                                |
 |----------------------------|----------------------------------------------------------------------------|
