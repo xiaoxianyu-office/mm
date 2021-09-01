@@ -24,7 +24,7 @@ Added in 4.12 (Premium Only!):
 | Attribute  | Aliases | Description | Default Value |
 | ------ | ------ | ------ | ------ |
 | particle  | p  | The particle type to use. See list here.  | reddust |
-| material | m | Block or Item to use with block_crack or item_crack respectively (1.13+) |
+| material | m | Block or Item to use with block_crack or item_crack respectively |
 | amount | a | The number of particles to create | 10    |
 | hSpread | hs  | The horizontal spread of the particles | 0     |
 | vSpread | vs  | The vertical spread of the particles | 0     |
