@@ -1,8 +1,9 @@
 Item Attributes
 ===============
-
-
+NOTE: Item attributes will ONLY work on Paper and its forks. Trying to use item attributes in Bukkit or Spigot will NOT work.
+----------
 The attributes section for items made with MythicMobs handles the Minecraft attribute system. It makes it possible to apply different attributes given to the entity wearing/using it depending on the slot.
+
 ```
 Item:
   Id: item_id
@@ -39,7 +40,7 @@ Attributes
 
 **Health: \[number\]**
 
--   Sets the health of the item which will give the wearer extra or minus health.
+-   Modifies the health of the user when holding/wearing the item.
 -   Use positive numbers for extra health and negative numbers for minus health.
 -   1 health = 0.5 hearts
 
@@ -89,7 +90,7 @@ lucky_charms:
       Luck: 7
       Damage: 2
 ```
-This example item grants +2 extra health no matter in which slot the item is being held, but will also grant +4% movement speed if the item is worn in the feet slot:
+This example item grants +2 extra health no matter which slot the item is being held, but will also grant +4% movement speed if the item is worn in the feet slot:
 ```
 happy_feet:
   Id: leather_boots
