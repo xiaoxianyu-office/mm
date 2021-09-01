@@ -34,11 +34,9 @@ Added in 4.12 (Premium Only!):
 | Size | | The size of the particles displayed | 1 |
 | color | c | [(1)](/wikis/skills/effects/particles "only works on colorable particle types like “reddust”")[(2)](/wikis/skills/effects/particles "color must be provided in hex-code") The color of the particle The color of the particle |  |
 | fromorigin |  |  | false |
-| directional | d | Causes the particles to move at # speed. Direction is based on origin and caster. | false | 
+| directional | d | Does the particle use directional travel | false | 
 | directionReversed | | Reverses the direction of the particles. | false | 
-| direction | dir | Specifies a coordinate for the particles to move towards. | None | 
-
-The “color” attribute was added in version 2.3
+| direction | dir | Specifies a vector for the particles to move towards. | 0,0,0 | 
 
 #### Entity-Only Attributes
 
@@ -59,12 +57,7 @@ As of MythicMobs version 2.3, some particles effects (mobSpell, mobSpellAmbient,
     Skills:
     - effect:particles{particle=flame;amount=200;hS=1;vS=1;speed=5} @self
     - ...
-1.12 block_crack
-
-    Skills:
-    - effect:particles{particle=block_crack_dirt_0;amount=100;hS=1;vS=1} @self
-
-1.13 block
 
     Skills:
     - effect:particles{particle=block;m=dirt;amount=100;hS=1;vS=1} @self
+    - ...
