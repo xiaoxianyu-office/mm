@@ -6,7 +6,7 @@
 
 | Attribute | Alias    | Description               |
 | --------- | -------- | ------------------------- |
-| type      | types, t | A list of MythicMob types, Can be set to "ANY" |
+| type      | types, t | A list of MythicMob types |
 
 ---
 
