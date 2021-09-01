@@ -3,8 +3,8 @@ Skill Mechanics
 
 Skill Mechanics (or base skills) are simple skills that are built into
 MythicMobs. You can call these basic skills by themselves in your mob's
-Skill List, or you can create your own skill by combining these
-mechanics.
+Skill List, or you can create your own meta-skill by combining these
+mechanics together.
 
 Some Mechanics are able to target Entities, Locations, or both! Some
 don't target anything. You control what your skill targets using a
@@ -28,7 +28,7 @@ are able to target locations as well.
 | [BarSet][]             | Modifies a custom boss bar on the casting mob                  |
 | [BarRemove][]          | Removes a custom boss bar on the casting mob                   |
 | [BreakBlock][]         | Breaks the block at the target location                        |
-| [BreakBlockAndGiveItem][] | Breaks the block at the target location and gives item/droptables |
+| [BreakBlockAndGiveItem][] | Breaks the block at the target location and gives an item/droptable |
 | [Close Inventory][]    | Closes the target player's inventory                           |
 | [Command][]            | Executes a command for each target                             |
 | [Consume][]            | Deals damage and restores health per target hit                |
@@ -49,12 +49,12 @@ are able to target locations as well.
 | [Eject Passenger][]    | Ejects anything riding the caster                              |
 | [Equip][]                | Causes the casting mob to equip an item                                     |
 | [Explosion][]            | Causes an explosion                                                         |
-| [Extinguish][]           | removes fire ticks from the target entity                                   |
-| [fawePaste][]            | Pastes a Schematic using FAWE                                               |
+| [Extinguish][]           | Removes fire ticks from the target entity                                   |
+| [fawePaste][]            | Pastes a Schematic using FAWE (Fast Async World Edit)                       |
 | [Feed][]                 | Feeds the target player                                                     |
 | [FillChest][]            | Fills a chest with items, or a droptable                                    |
 | [Fly][]                  | Applies an [aura][] that allows the target to fly                           |
-| [Force Pull][]           | Teleports the target to the mob                                             |
+| [Force Pull][]           | Teleports the target to the caster                                          |
 | [Freeze][]               | Chills the target entity                                                    |
 | [Glow][]                 | Makes the target glow                                                       |
 | [Give Item][]            | Gives an item to the target                                                 |
@@ -73,7 +73,7 @@ are able to target locations as well.
 | [Modify Target Score][]  | Modifies a scoreboard value of the target                                   |
 | [Modify Score][]         | Modifies the score of a dummy player                                        |
 | [Mount][]                | Summons a mob for the caster and mounts it                                  |
-| [Mount Me][]             | Forces the target entity to mount the caster                                |
+| [Mount Me][]             | Forces the targeted entity to mount the caster                                |
 | [Mount Target][]         | Mounts the target                                                           |
 | [Oxygen][]               | Gives oxygen to a player target                                             |
 | [PoseArmorStand][]       | Changes the pose of the target ArmorStand                                   |
@@ -90,8 +90,8 @@ are able to target locations as well.
 | [Remove][]               | Removes the target mob                                                      |
 | [RemoveHeldItem][]       | Removes some of the item the target player is holding                       |
 | [RemoveOwner][]          | Removes the ownership of the target mob                                     |
-| [Run AI Goal Selector][] | Change PathfinderAIGoals                                                    |
-| [Run AI Target Selector][] | Change PathfinderTargetGoals                                              |
+| [Run AI Goal Selector][] | Change the target's AIGoalSelectors                                         |
+| [Run AI Target Selector][] | Change the target's AITargetSelectors                                     |
 | [Send Action Message][]    | Sends an Actionbar Message to the target player                           |
 | [Send Resource Pack][]     | Sends a Resource Pack to the target player                                |
 | [Send Title Message][]     | Sends a Title/Subtitle Message to the target player                       |
@@ -108,7 +108,7 @@ are able to target locations as well.
 | [Set Mob Color][]          | Changes the color of the target if it is a colorable mob                  |
 | [Set Mob Score][]          | Sets a scoreboard value on the casting mob                                |
 | [Set Name][]               | Changes the target entity's name                                          |
-| [Set NoDamageTicks][]      | sets the nodamageticks of the target                                      |
+| [Set NoDamageTicks][]      | Sets the nodamageticks of the target                                      |
 | [Set Owner][]              | Makes the target the owner of the casting mob                             |
 | [Set Rotation][]           | Sets the rotation of the target                                           |
 | [Set Target Score][]       | Sets the score of the target                                              |
@@ -139,7 +139,7 @@ are able to target locations as well.
 | [Toggle Sitting][] | Toggles the sitting state for cats, dogs, foxes, and parrots                      |
 | [Velocity][]     | Modifies the velocity of the target entity(s)                                       |
 | [Weather][]      | Modifies the weather in the target world                                            |
-| [WolfSit][]      | Forces a targetted wolf to sit.                                               |
+| [WolfSit][]      | Forces a targeted wolf to sit.                                               |
 
 Effect Mechanics
 ----------------
@@ -159,25 +159,25 @@ by these will "inherit" the targets (if applicable).
 | Mechanic            | Description                                                                             |
 |---------------------|-----------------------------------------------------------------------------------------|
 | **[Skill][]**       | Executes a meta-skill. The butter for your bread.                                       |
-| [Aura][]            | Used to create custom status effects (buffs/debuffs) that can be targeted onto entities |
-| [CancelEvent][]     | Cancel the Event that triggered the current skill-tree                                  |
-| [Cast][]            | "Casts" a meta-skill using various advanced options                                     |
+| [Aura][]            | Applies an aura to the targeted entity, allowing for skills to be run onStart/onTick/onEnd/Etc which all originate from the target. |
+| [CancelEvent][]     | Cancel the Event that triggered the current skill-tree. Only works for certain triggers.                                  |
+| [Cast][]            | "Casts" a meta-skill using various advanced options.                                     |
 | [Chain][]           | Chains a skill between multiple targets that are near each other.                       |
 | [ChainMissile][]    | A missile that chains between entities. **Premium-Only** mechanic!                |
-| [Delay][]           | Delays execution of the current skill list                                              |
+| [Delay][]           | Delays execution of the current skill list by a set number of ticks.                                              |
 | [Global Cooldown][] | Sets the caster's Global Cooldown timer                                                 |
-| [Missile][]         | Fires a homing missile projectile                                                       |
+| [Missile][]         | Fires a homing projectile towards the target.                                                      |
 | [Modify Projectile][] | Modifying the projectile / missile / orbital                                   |
 | [onAttack][]        | Applies an [aura][] to the target that triggers skills when they attack                 |
 | [onDamaged][]       | Applies an [aura][] to the target that triggers skills when they take damage            |
 | [onShoot][]         | Applies an [aura][] to the target that triggers skills when they shoot a bow            |
 | [Orbital][]         | Applies an [aura][] that causes a projectile to orbit around the target                 |
 | [Projectile][]      | Fires a highly-customizable projectile towards the target                               |
-| [Shoot][]           | Shoots a projectile-item at the target                                                  |
+| [Shoot][]           | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                  |
 | [Volley][]            | Shoots a volley of projectile-items at the target with various options |
 | [SudoSkill][]         | Makes the target execute a skill                                       |
 | [Random Skill][]      | Executes a random skill from a list                                    |
-| [Totem][]             | Creates a static "totem" at a location that pulses other skills        |
+| [Totem][]             | Creates a static "totem" at a location that can execute other skills        |
 | [Variable Add][]      | Adds an amount to a numeric variable                                   |
 | [Variable Math][]     | Performs math on a numeric variable                                    |
 | [Set Variable][]      | Sets the value of a variable                                           |
@@ -191,8 +191,8 @@ The following attributes are applicable to all mechanics.
 
 | Attribute      | Shorthand | Description                                    | Default |
 |----------------|-----------|------------------------------------------------|---------|
-| cooldown       | cd        | In seconds                                     | 0       |
-| delay          |           | Delays the execution of the mechanic           | 0       |
+| cooldown       | cd        | In seconds. Allows for decimal values.         | 0       |
+| delay          |           | Delays the execution of the mechanic by a set number of ticks.          | 0       |
 | repeat         |           | How many times the mechanic should be repeated | 0       |
 | repeatInterval |           | How many ticks must elapse between repetitions | 0       |
 
