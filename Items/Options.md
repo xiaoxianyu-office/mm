@@ -22,7 +22,7 @@ These options are applicable to all items:
 
 **AppendType: \[true/false\]**
 
-  - Toggles if the MYTHIC_TYPE should be appended to this item no matter way, necessary for the wearing condition to function properly.
+  - Toggles if the MYTHIC_TYPE should be appended to this item no matter what. Necessary for the wearing condition to function properly.
 
 **Unbreakable: \[true/false\]**
 
@@ -31,7 +31,7 @@ These options are applicable to all items:
 
 **HideFlags: \[true/false\]**
 
-  - Hides all the item flags.
+  - Hides all the item flags, making things like enchants not visible in the item's lore (please note however that the item will still have an enchanted glow).
 
 **PreventStacking: \[true/false\]**
 
