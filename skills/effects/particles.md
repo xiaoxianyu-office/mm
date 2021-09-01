@@ -36,7 +36,7 @@ Added in 4.12 (Premium Only!):
 | fromorigin |  |  | false |
 | directional | d | Does the particle use directional travel | false | 
 | directionReversed | | Reverses the direction of the particles. | false | 
-| direction | dir | Specifies a vector for the particles to move towards. | 0,0,0 | 
+| direction | dir | Specifies a vector for the particles to move towards. | 0,0,0 (x,y,z) | 
 
 #### Entity-Only Attributes
 
