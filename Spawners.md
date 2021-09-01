@@ -1,23 +1,24 @@
 Spawners
 ========
 
-Spawners allow you to define specific points in your worlds at which your custom mob creations can spawn. They can with a variety of useful options, conditions and built-in timers, cooldowns and warmups. Note that in MythicSpawners you can only use the old conditions system. Here can you find them: [Legacy Conditions](/conditions/legacyconditions)
+Spawners allow you to define specific points in your worlds at which your custom mob creations can spawn. They can be used with a variety of useful options such as; conditions, built-in timers, cooldowns, and warmups. 
 
-You can create spawners directly ingame by using [Commands](/commands and permissions) and by creating the a configuration file in the folder */MythicMobs/Spawners*. Note that once a spawner-configuration file has been loaded onto a running server, it can only be edited by ingame commands. If you want to edit a already loaded spawner-configuration file in a text-editor, you have to stop the server in the meantime.
+Note that Spawners use the old conditions system. You can find them here: [Legacy Conditions](/conditions/legacyconditions)
+
+You can create spawners directly ingame by using [Commands](/commands and permissions) or by creating the a configuration file in the folder */MythicMobs/Spawners*. Note that once a spawner-configuration file has been loaded onto a running server, it can only be edited by ingame commands. If you want to edit an already loaded spawner-configuration file in a text-editor, you have to stop the server while you do so.
 
 ### Pros of Spawners
 
 -   Doesn't require natural mob spawning to be enabled to work.
--   Allows for a much more specific and consistent implementation because you can specify exactly where and how each mob spawn.
+-   Allows for much more control over your spawning implementation as you can specify exactly where and how each mob spawn.
 -   Support timers, leashing and other features.
--   Good to populate small arenas or dungeons.
+-   Great for populating small arenas or dungeons.
 
 ### Cons of Spawners
 
--   Setup can be time consuming especially for larger implementations.
+-   Setup can be time consuming, especially for larger implementations.
 -   Can become very difficult to manage if not planned out correctly.
 -   Mobs need to be configured appropriately.
--   Despawn false isnt a option that is meant to be used in mythic spawners.
 
 Example Config
 --------------
