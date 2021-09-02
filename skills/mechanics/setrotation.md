@@ -1,7 +1,7 @@
 Mechanic: Set Rotation
 ======================
 
-Changes the rotation of the target(couldn't be a player).
+Changes the rotation of the target (only works on non-player entities).
 
 Attributes
 ----------
