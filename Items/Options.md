@@ -22,7 +22,7 @@ These options are applicable to all items:
 
 **AppendType: \[true/false\]**
 
-  - Toggles if the MYTHIC_TYPE should be appended to this item no matter what. Necessary for the wearing condition to function properly.
+  - Toggles if the MYTHIC_TYPE should be appended to this item no matter what. Necessary for wearing, holding, and hasitem conditions to work properly.
 
 **Unbreakable: \[true/false\]**
 
