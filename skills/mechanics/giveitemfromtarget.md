@@ -10,7 +10,7 @@ Attributes
 
 | Attribute   | Aliases | Description       | Default Value |
 |-------------|---------|-------------------|---------------|
-| item        | i       | The item material |               |
+| item        | i       | The item material (supports for mythicmobs item) | None |
 | amount      | a       | The amount given  | 1             |
 | fakeLooting |         | plays the pickup-item animation from the target | false |
 
