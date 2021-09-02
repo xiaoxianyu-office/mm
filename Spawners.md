@@ -75,7 +75,7 @@ Options
 |**resetthreatonleash: &lt;true/false&gt;**|Resets ThreatTables (if enabled) when a mob teleports back to its spawner.||false|
 |**showflames: &lt;true/false&gt;**|Set this to true to show flames around the spawner.|/mm s set <name> showflames <true/false>|false|
 |**breakable: &lt;true/false&gt;**|Determines if the spawner is broken with the block it is placed on||false|
-|**conditions:**|et conditions to be met for the spawner to activate.|/mm s addcondition <name> <condition> <action>|None|
+|**conditions:**|et conditions to be met for the spawner to activate.|/mm s addcondition spawnername condition action|None|
 |**activemobs: &lt;number&gt;**|Used to keep track of mobs connected to (spawned by) the spawner.|*it does not require any user setting*.||
 
 **Note on timing of spawns:** ```Timing: warmup-> mob spawns-> cooldown-> mob spawns*>```
