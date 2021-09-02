@@ -8,7 +8,7 @@ Attributes
 
 | Attribute   | Aliases | Description       | Default Value |
 |-------------|---------|-------------------|---------------|
-| item        | i       | The item material |               |
+| item        | i       | The item material (supports for mythicmobs item) |               |
 | fakeLooting | fl      | plays the pickup-item animation from the origin | false |
 
 ------------
