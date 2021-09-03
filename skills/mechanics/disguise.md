@@ -35,7 +35,7 @@ This will disguise you as a sheep that is on fire and spinning. It will also set
 ```
 TestingDisguiseMechanic:
   Skills:
-  - disguise{d="Sheep SetBurning SetSpinning SetCustomNameVisible setCustomName DizzyBoi"} @self
+  - disguise{d=Sheep SetBurning SetSpinning SetCustomNameVisible setCustomName DizzyBoi} @self
 ```
 
 This next example will turn you into a steve head that glides across the floor. No good way to describe it. It is pretty funny. I recommend you try it out!
@@ -43,7 +43,7 @@ This next example will turn you into a steve head that glides across the floor. 
 ```
 TestingDisguiseMechanic:
   Skills:
-  - disguise{d="Zombie setYModifier -1.5 setPitchLocked setInvisible setHelmet PLAYER_HEAD"} @self
+  - disguise{d=Zombie setYModifier -1.5 setPitchLocked setInvisible setHelmet PLAYER_HEAD} @self
 ```
 
 ---------
