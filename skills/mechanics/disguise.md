@@ -7,7 +7,7 @@ Disguises and ProtocolLib be installed to enable Disguise functionality.
 See [Add-On: Disguises](/addons/disguises/start) for a list of available
 disguises.
 
-As of 4.12 Disguise mechanic got an overhaul and allows for direct command strings from LibsDiguises to work inside of its disguise attribute. The old way was renamed disguiseOld and the new way is disguise!
+As of 4.12 the Disguise mechanic got an overhaul and allows for direct command strings from LibsDiguises to work inside of its disguise attribute. The old way was renamed disguiseOld and the new way is disguise!
 
 If you are on a version older then 4.12, then the old way is all that exists and it is still - disguise{} instead of - disguiseOld{}!
 
@@ -35,7 +35,7 @@ This will disguise you as a sheep that is on fire and spinning. It will also set
 ```
 TestingDisguiseMechanic:
   Skills:
-  - disguise{d=“Sheep SetBurning SetSpinning SetCustomNameVisible setCustomName DizzyBoi”} @self
+  - disguise{d=“Sheep SetBurning SetSpinning”} @self
 ```
 
 This next example will turn you into a steve head that glides across the floor. No good way to describe it. It is pretty funny. I recommend you try it out!
