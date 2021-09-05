@@ -646,7 +646,6 @@ Used for sheep and wolves.
 
 **Color: \[number\]**
 
-      * Number between 0 and 15
       * Sets the wool color of sheep or the collar color of wolves
       * **The string is the name of the color you want. Ex: Color: RED**
       * [[http://minecraft.gamepedia.com/Wool|http://minecraft.gamepedia.com/Wool]]
