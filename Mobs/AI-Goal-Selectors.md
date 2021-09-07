@@ -66,7 +66,8 @@ AIGoalSelectors:
 | gotolocation x,y,z | goto        | Makes the mob go to the specified location(Notice Followrange must more than the distance between location and mob)            |
 | gotoowner #   |                  | Makes the mob move towards its owner when beyond a certain distance (defaults to 5 blocks,Notice Followrange must more than the distance between location and mob) |
 | gotoparent    |                  | Makes the mob move towards its parent mob             |
-| panicWhenOnFire | panic              | Run around panicking when on fire and look for water |
+| panicWhenOnFire | panic              | Run around panicking when on fire and look for water 
+| randomFly     |  | Fly around randomly |
 
 **Ranged Entities Only**
 
