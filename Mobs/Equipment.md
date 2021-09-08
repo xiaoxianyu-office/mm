@@ -106,10 +106,10 @@ MMOItems
 To equip a mob with an mmoitem, use the following syntax:
 ```
   Equipment:
-  - mmoitems{type=ARMOR;id=STEEL_HELMET} HEAD
-  - mmoitems{type=ARMOR;id=STEEL_CHESTPLATE} CHEST
-  - mmoitems{type=ARMOR;id=STEEL_LEGGINGS} LEGS
-  - mmoitems{type=ARMOR;id=STEEL_BOOTS} FEET
-  - mmoitems{type=SWORD;id=RUBY_SWORD} HAND
+  - mmoitems{type=ARMOR;id=STEEL_HELMET}:4
+  - mmoitems{type=ARMOR;id=STEEL_CHESTPLATE}:3
+  - mmoitems{type=ARMOR;id=STEEL_LEGGINGS}:2
+  - mmoitems{type=ARMOR;id=STEEL_BOOTS}:1
+  - mmoitems{type=SWORD;id=RUBY_SWORD}:0
 ```
 Please note that mmo stats on the armor DO NOT work on MythicMobs. As such, they will not have extra health, defense or attack damage because of it.
