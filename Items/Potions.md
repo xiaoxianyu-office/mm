@@ -36,6 +36,7 @@ This is a complete list of all potion effects currently usable by MythicMobs. Th
 |------------------------|---------------------------------------------------------------------------------------------------------------------|
 | **ABSORPTION**         | Increases the maximum health of an entity with health that cannot be regenerated, but is refilled every 30 seconds. |
 | **BLINDNESS**          | Blinds an entity.                                                                                                   |
+| **BAD_OMEN** | oof. |
 | **CONDUIT\_POWER**     | Increases underwater visibility and mining speed, prevents drowning.                                                |
 | **CONFUSION**          | Warps vision on the client.                                                                                         |
 | **DAMAGE\_RESISTANCE** | Decreases damage dealt to an entity.                                                                                |
