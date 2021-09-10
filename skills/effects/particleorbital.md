@@ -9,7 +9,7 @@ A list of particle types can be found [here](/skills/effects/particles/types).
 ----
 
 #### Particle Attributes
-[All options for regular particles are applicable. Click here to see them.](/skills/effects/particle).
+Options for regular particles are applicable.
 
 #### General Attributes
 
