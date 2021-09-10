@@ -14,7 +14,7 @@ Attributes
 | value     | val     | The value to set the variable to. Must be applicable for **type** or the mechanic will fail. Should be surrounded in double-quotes if using spaces. Value can also include placeholders, even from PlaceholderAPI. |               |
 | scope     | s       | The [scope](/skills/variables#variable_scopes) of the variable, e.g. where the variable will be located.                                                                                                           | SKILL         |
 | type      | t       | The [type](/skills/variables#variable_types) of the variable.                                                                                                                                                      | INTEGER       |
-| save      |         | Whether the variable should save between reloads. Does not apply to SKILL-scoped variables.                                                                                                                        | false         |
+| save      |         | Whether the variable should save between reloads, reboots and disconnects. Does not apply to SKILL-scoped variables.                                                                                                                        | false         |
 | duration  | d       | How long (in ticks) the variable should last. Does not apply to SKILL-scoped variables.                                                                                                                            | Infinite      |
 
   
