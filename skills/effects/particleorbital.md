@@ -29,8 +29,3 @@ A list of particle types can be found [here](/skills/effects/particles/types).
 | angularVelocityY | avy,vy  | Modifies the angular velocity around the Y axis | 0   |
 | angularVelocityZ | avz,vz  | Modifies the angular velocity around the Z axis | 0   |
 | reversed | reverse | Makes the particles orbit backwards | false |
-
-Example
--------
-
-    - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=flame} @self ~onSpawn
