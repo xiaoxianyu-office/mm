@@ -148,7 +148,8 @@ Bug Fixes/Other
 - Added placeholder support for Shield mechanic, Shoot mechanic, ShootShulker, mechanic
 - Fixed an issue with Projectile mechanic when using these bullet types: ARROW, ITEM, and MYTHICITEM
 - Fixed an issue with Summon mechanic not setting players as the parent
-- Fixed an issue with HasInventorySpace condition returning false if the first slot is empty
+- Fixed an issue with HasInventorySpace condition
+- Fixed a bug with nearestConditionalTarget ignoring players in 1.16.5
 
 
 4.12.0
@@ -370,7 +371,6 @@ Bug Fixes/Other
 - Fixed BreakBlock mechanic not respecting regions/perms for players
 - Fixed issues with hasAura condition
 - Fixed some issues with and optimized @MobsInRadius targeter
-- Fixed a bug with nearestConditionalTarget ignoring players in 1.16.5
 
 Older Changelogs
 ================
