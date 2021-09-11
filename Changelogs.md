@@ -63,6 +63,11 @@ Targeters
 ### EntitiesInRadius
 - Supports placeholders
 
+
+Custom AI
+----------
+### NEW: fleeFaction
+
 Conditions
 ----------
 ### NEW: color
