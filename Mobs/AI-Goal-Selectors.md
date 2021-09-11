@@ -57,6 +57,7 @@ AIGoalSelectors:
 | fleegolems    | runfromgolems    | Causes the mob to avoid Iron Golems                   |
 | fleevillagers | runfromvillagers  | Causes the mob to avoid villagers                     |
 | fleewolves    | runfromwolves  | Causes the mob to avoid wolves                        |
+| fleefaction   | runfromfaction | Causes the mob to avoid entities in a given faction   |
 | spiderattack  |                  | Uses the attack a spider would (doesn't seem any different from a meleeattack) |
 | leapattarget  |                  | Makes the mob leap at its target                      |
 | moveindoors   | | |
