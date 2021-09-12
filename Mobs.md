@@ -22,7 +22,6 @@ are the *internal\_mobname* and the *Type*.
       AIGoalSelectors:
       AITargetSelectors:
       Drops:
-      DropsPerLevel: (Below v4.4 only)
       DamageModifiers:
       Equipment:
       KillMessages:
