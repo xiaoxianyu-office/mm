@@ -155,6 +155,7 @@ Bug Fixes/Other
 - Fixed an issue with Summon mechanic not setting players as the parent
 - Fixed an issue with HasInventorySpace condition
 - Fixed a bug with nearestConditionalTarget ignoring players in 1.16.5
+- Fixed an issue with ownerattacker and ownertarget not working as intended
 
 
 4.12.0
