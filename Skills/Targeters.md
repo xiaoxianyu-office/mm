@@ -46,7 +46,7 @@ Entity Targeters
 | @EntitiesNearOrigin{r=#}            |                    |                                                                                                          |
 | @PlayersNearTargetLocation{r=#}     | @PNTL{r=#}        | Targets all players near targetlocation. Radius=5 by default.                                            |
 | @Siblings   |     | Targets any mobs that share the same parent as the caster. |
-| @Targeted   |     | Targets the inherited targets. |
+| @TargetedTarget   | @Targeted | Targets the inherited targets. |
 
 ### ThreatTable Targeters
 
