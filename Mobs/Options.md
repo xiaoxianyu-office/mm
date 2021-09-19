@@ -40,11 +40,12 @@ These options are universal and will work regardless of the mobtype.
       * Note that collisions in Minecraft are bidirectional, so this would need to be set to false on both the collidee and the collidant to ensure no collisions take place.
       * Also note that setting this to false stops the mob from being pushable by the player.
 
-**Despawn: \[true/false\]**
+**Despawn: \[true/false/chunk/persistent\]**
 
       * Determines whether mobs will despawn if no players are nearby.
       * Should generally be turned on if you are using a lot of a mob spawners or entities will overwhelm your server.
       * Equivalent NBT-tag is "PersistenceRequired"
+      * CHUNK will despawn mobs when they enter an unloaded chunk, but not when players aren't nearby.
       * Defaults to true.
 
 **FollowRange: \[value\]**
