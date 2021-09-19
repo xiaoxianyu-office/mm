@@ -48,6 +48,7 @@ skill **effect:name**, for example:
 | [Particle Ring][]    | Draws a ring of particles around the target                           |
 | [Particle Sphere][]  | Draws a sphere of particles around the target                         |
 | [Particle Tornado][] | Draws a persistent "tornado" of particles at the target               |
+| [Recoil][]           | Kicks the casters screen                                              |
 | [Skybox][]           | Alters the target's skybox                                            |
 | [Smoke][]            | Creates a puff of smoke                                               |
 | [Smoke Swirl][]      | Creates a persistent "swirl" of smoke                                 |
@@ -90,6 +91,7 @@ Note: EffectLib was dropped in MM ver 4.11, so the below effects no longer work.
   [Particle Ring]: /skills/effects/particlering
   [Particle Sphere]: /skills/effects/particlesphere
   [Particle Tornado]: /skills/effects/particletornado
+  [Recoil]: /skills/effects/recoil
   [Skybox]: /skills/effects/skybox
   [Smoke]: /skills/effects/smoke
   [Smoke Swirl]: /skills/effects/smokeswirl
