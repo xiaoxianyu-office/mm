@@ -26,6 +26,7 @@ Special Characters
 | <&lb>     | Returns a left bracket (\[)           |
 | <&rc>     | Returns a right curly bracket (})     |
 | <&lc>     | Returns a left curly bracket ({)      |
+| <&nm>     | Returns a number sign (#)             |
 | <&nl>     | Forces a new line                     |
 | <&heart>  | Returns a heart                       |
 | <&skull>  | Returns a skull and bones             |
