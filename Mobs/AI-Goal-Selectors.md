@@ -29,7 +29,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | randomlookaround | lookaround    | The mob will randomly look around                     |
 | gotospawnlocation | gotospawn    | Mob will pathfind to the its spawn location         |
 | fleeConditional **[Premium-only]** | fleeIf  | Causes the mob to flee based on provided conditions.  |
-| doNothing **[Premium-only]** |                  | Causes the mob to do nothing if conditions are met. Safe speed is required for distanes greater than 5. This goal won't work at all on peaceful mode! |
+| doNothing **[Premium-only]** |                  | Causes the mob to do nothing if conditions are met. Safe speed is required for distanes greater than 5. **This goal won't work at all on peaceful mode!** |
 
 FleeConditional Example:
 ```
