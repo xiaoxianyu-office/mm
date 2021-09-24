@@ -1,5 +1,7 @@
 Goal Selectors are used with the AIGoalSelectors field and determine what mobs want to “do”. Certain custom goals might not work if they're not included in the base AI of the mob you're creating. For example, a zombie won't be able to use the AI goal “EatGrass” because a zombie would never use that goal in the first place. Feel free to experiment to figure out what does and doesn't work!
 
+Note: Certain goals will not work correctly if the world is in peaceful mode.
+
 Example:
 
 ```
@@ -28,7 +30,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | closedoors    | restrictopendoor | Not sure what this one does                           |
 | randomlookaround | lookaround    | The mob will randomly look around                     |
 | gotospawnlocation | gotospawn    | Mob will pathfind to the its spawn location         |
-| fleeConditional **[Premium-only]** | fleeIf  | Causes the mob to flee based on provided conditions. Safe speed is required for distanes greater than 5. **This goal won't work at all on peaceful mode!**  |
+| fleeConditional **[Premium-only]** | fleeIf  | Causes the mob to flee based on provided conditions. Safe speed is required for distanes greater than 5. |
 | doNothing **[Premium-only]** |                  | Causes the mob to do nothing if conditions are met. |
 
 FleeConditional Example:
