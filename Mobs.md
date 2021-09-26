@@ -282,8 +282,8 @@ mob-type. After that it's completely up to you.
      - Health 2
      - Damage 1
      Disguise: player ashini setDisguiseName &6MythicMobs<&sq>s<&spGod
-      Skills:
-      - throw{v=5;vy=5} @rigger ~onAttack 0.5
-      - sound{s=entity.zombie.hurt;v=1;p=0} @self ~onDamaged
-      - e:particles{p=cloud;a=50;s=0.05} @self ~onDeath
+     Skills:
+     - throw{v=5;vy=5} @rigger ~onAttack 0.5
+     - sound{s=entity.zombie.hurt;v=1;p=0} ~onDamaged
+     - e:particles{p=cloud;a=50;s=0.05} ~onDeath
 ```
