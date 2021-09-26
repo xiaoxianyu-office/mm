@@ -289,7 +289,7 @@ mob-type. After that it's completely up to you.
         Skin: '&lSuper Zombie&r'
         Player: jaylawl
       Skills:
-      - throw{v=5;vy=5} @target ~onAttack 0.5
-      - effect:sound{s=mob.zombie.hurt;v=1;p=0} @self ~onDamaged
-      - effect:particles{p=cloud;a=50;s=0.05} @self ~onDeath
+      - throw{v=5;vy=5} @rigger ~onAttack 0.5
+      - sound{s=entity.zombie.hurt;v=1;p=0} @self ~onDamaged
+      - e:particles{p=cloud;a=50;s=0.05} @self ~onDeath
 ```
