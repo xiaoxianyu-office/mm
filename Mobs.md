@@ -281,7 +281,7 @@ mob-type. After that it's completely up to you.
      - KnockbackResistance: 0.05
      - Health: 2
      - Damage: 1
-     Disguise: player ashini setDisguiseName &6MythicMobs<&sq>s<&spGod
+     Disguise: player ashijin setDisguiseName &6MythicMobs<&sq>s<&spGod
      Skills:
      - throw{v=5;vy=5} @rigger ~onAttack 0.5
      - sound{s=entity.zombie.hurt;v=1;p=0} ~onDamaged
