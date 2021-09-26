@@ -48,7 +48,7 @@ skill **effect:name**, for example:
 | [Particle Ring][]    | Draws a ring of particles around the target                           |
 | [Particle Sphere][]  | Draws a sphere of particles around the target                         |
 | [Particle Tornado][] | Draws a persistent "tornado" of particles at the target               |
-| [Recoil][]           | Kicks the casters screen                                              |
+| [Recoil][]           | Kicks the target's screen                                              |
 | [Skybox][]           | Alters the target's skybox                                            |
 | [Smoke][]            | Creates a puff of smoke                                               |
 | [Smoke Swirl][]      | Creates a persistent "swirl" of smoke                                 |
