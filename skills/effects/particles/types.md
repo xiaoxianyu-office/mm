@@ -4,7 +4,7 @@
 
 | Description                 | Common Usage | Particle Size | Speed | Speed Effect |
 |-----------------------------|--------------|---------------|-------|--------------|
-| Doesn't seem to do anything | NA           | NA            | NA    | NA           |
+| Doesn't seem to do much | NA           | NA            | NA    | NA           |
 
 **block_crack**
 
