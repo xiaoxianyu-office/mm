@@ -1,6 +1,6 @@
 **Description:** 
 
-Kicks the casters screen to simulate recoil.
+Kicks the targets screen to simulate recoil.
 
 ---
 
