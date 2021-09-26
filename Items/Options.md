@@ -35,7 +35,7 @@ These options are applicable to all items:
 
 **PreventStacking: \[true/false\]**
 
-  - Prevents the item from stacking if the items are similar.
+  - Prevents the item from stacking to similar items.
 
 **MaxEnchants: \[Integer\]**
 
