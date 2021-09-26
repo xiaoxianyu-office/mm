@@ -238,56 +238,50 @@ mob. The only required options/attributes are the internal-mobname and a
 mob-type. After that it's completely up to you.
 ```
     super_zombie:
-      Type: zombie
-      Display: '&lSuper Zombie&r'
-      Health: 200
-      Damage: 14
-      Armor: 10
-      Faction: superb_zombies
-      Mount: super_zombie_undead_horse
-      Options:
-        PreventOtherDrops: true
-        PreventItemPickup: true
-        Despawn: false
-        KnockbackResistance: 0.25
-        MovementSpeed: 0.25
-      Modules:
-        ThreatTable: false
-        ImmunityTable: true
-      AIGoalSelectors:
-      - 0 clear
-      - 1 meleeattack
-      - 2 randomstroll
-      AITargetSelectors:
-      - 0 clear
-      - 1 attacker
-      - 2 players
-      Drops:
-      - diamond 1-3 1
-      - exp 50 1
-      - super_zombie_sword 1 1
-      DropsPerLevel:
-      - rotten_flesh 1-3 0.5
-      - exp 10 1
-      DamageModifiers:
-      - ENTITY_ATTACK 0
-      - PROJECTILE 1.25
-      - MAGIC 1.75
-      Equipment:
-      - super_zombie_helmet:4
-      - super_zombie_sword:0
-      KillMessages:
-      - '<target.name> was superbly slain by a <mob.name>'
-      LevelModifiers:
-      - Armor 0.05
-      - MovementSpeed: 0.01
-      - KnockbackResistance: 0.05
-      - Health: 2
-      - Damage: 1
-      Disguise:
-        Type: player
-        Skin: '&lSuper Zombie&r'
-        Player: jaylawl
+     Type: zombie
+     Display: '&lSuper Zombie&r'
+     Health: 200
+     Damage: 14
+     Armor: 10
+     Faction: superb_zombies
+     Mount: super_zombie_undead_horse
+     Options:
+      PreventOtherDrops: true
+      PreventItemPickup: true
+      Despawn: false
+      KnockbackResistance: 0.25
+      MovementSpeed: 0.25
+     Modules:
+      ThreatTable: false
+      ImmunityTable: true
+     AIGoalSelectors:
+     - clear
+     - meleeattack
+     - randomstroll
+     AITargetSelectors:
+     - clear
+     - attacker
+     - players
+     Drops:
+     - diamond 1-3 1
+     - exp 50 1
+     - super_zombie_sword 1 1
+     DamageModifiers:
+     - ENTITY_ATTACK 0
+     - PROJECTILE 1.25
+     - MAGIC 1.75
+     Equipment:
+     - super_zombie_helmet:4
+     - super_zombie_sword:0
+     KillMessages:
+     - '<target.name> was superbly slain by a <mob.name>'
+     LevelModifiers:
+     - Armor 0.05
+     - MovementSpeed 0.01
+     - KnockbackResistance 0.05
+     - Health 2
+     - Damage 1
+     Disguise: player ashini setDisguiseName &6MythicMobs<&sq>s<&spGod
       Skills:
       - throw{v=5;vy=5} @rigger ~onAttack 0.5
       - sound{s=entity.zombie.hurt;v=1;p=0} @self ~onDamaged
