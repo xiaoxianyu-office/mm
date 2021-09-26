@@ -276,11 +276,11 @@ mob-type. After that it's completely up to you.
      KillMessages:
      - '<target.name> was superbly slain by a <mob.name>'
      LevelModifiers:
-     - Armor 0.05
-     - MovementSpeed 0.01
-     - KnockbackResistance 0.05
-     - Health 2
-     - Damage 1
+     - Armor: 0.05
+     - MovementSpeed: 0.01
+     - KnockbackResistance: 0.05
+     - Health: 2
+     - Damage: 1
      Disguise: player ashini setDisguiseName &6MythicMobs<&sq>s<&spGod
      Skills:
      - throw{v=5;vy=5} @rigger ~onAttack 0.5
