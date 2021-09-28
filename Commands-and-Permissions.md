@@ -139,3 +139,5 @@ Commands
 - **mythicmobs.command.signal** - *Permission to use the "/mm signal
     &lt;mob.uuid&gt; &lt;signal&gt;" command*
 - **mythicmobs.command.test.cast** - *Permission to use "/mm test cast" command*
+- **mythicmobs.command.test.addthreat** - *Permission to use "/mm test addthreat" command*
+- **mythicmobs.command.test.reducethreat** - *Permission to use "/mm test reducethreat" command*
