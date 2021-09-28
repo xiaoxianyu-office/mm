@@ -138,3 +138,4 @@ Commands
 - **mythicmobs.command.mobs.list** - *Access to the **/mm mobs list** command.*
 - **mythicmobs.command.signal** - *Permission to use the "/mm signal
     &lt;mob.uuid&gt; &lt;signal&gt;" command*
+- **mythicmobs.command.test.cast** - *Permission to use "/mm test cast" command*
