@@ -47,6 +47,7 @@ Freezes the target for [duration] number of ticks, like when players are stuck i
 ### NEW: onBlockBreak
 - Aura mechanic that triggers when the entity breaks a block
 ### NEW: hideFromPlayers
+- Hides the caster, if the caster is a player, from other players for a set duration.
 ### NEW: trackLocation
 - Sets the caster's "tracked location", which can be referenced with the @TrackedLocation targeter or the distanceFromTrackedLocation condition
 ### Particles
