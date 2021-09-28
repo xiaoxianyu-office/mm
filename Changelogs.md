@@ -3,7 +3,23 @@
 
 **Highlights**
 ----------
+- Mythic API separated out into an independent module (for add-on authors)
+- Major API rewrite
+- Registering custom triggers
+
+
+
+4.13.0 (formerly 5.0.0-alpha1)
+======
+
+**Highlights**
+----------
 - 1.17.1 Support
+- Added inline false conditions using ?! 
+- Added inline trigger conditions using ?~
+- Added inline false trigger conditions using ?~!
+- Bunch of new mechanics and conditions
+- A million bug fixes 
 
 General
 -------
@@ -16,6 +32,11 @@ Mobs
 - Added GOAT
 - Added MARKER
 
+Changed Despawn option, now accepts TRUE, FALSE, CHUNK, or PERSISTENT. 
+- CHUNK will despawn mobs when they enter an unloaded chunk, but not when
+players aren't nearby.
+- PERSISTENT mobs will not despawn ever and will not be killed by `/mm m killall`
+
 Mechanics
 ---------
 ### NEW: disguiseAsBlock
@@ -24,6 +45,15 @@ Freezes the target for [duration] number of ticks, like when players are stuck i
 ### NEW: giveItemFromSlot
 ### NEW: onBlockBreak
 - Aura mechanic that triggers when the entity breaks a block
+### NEW: hideFromPlayers
+### NEW: trackLocation
+- Sets the caster's "tracked location", which can be referenced with the @TrackedLocation targeter or the distanceFromTrackedLocation condition
+### Particles
+Fixed some inconsistencies with particles when specifying direction: 
+- If direction is explicitly set, particles will now spawn at the target
+location normally
+- If direction is not explicitly set, particles will continue spawning
+at the origin and move towards the target as before
 ### SudoSkill
 - Added target override option to sudoSkill mechanic
 
@@ -32,7 +62,7 @@ Effects
 ### New Particles
 - drippingDripstoneLava, drippingDripstoneWater, dustColorTransition,
 electricSpark, fallingDripstoneLava, fallingDripstoneWater, Glow,
-glowingInk, Light, reversePortal, Scrape, SmallFlame, vibration, waxOff,
+glowingInk, Light, reversePortal, Scrape, snowflake, SmallFlame, vibration, waxOff,
 waxOn
 
 Targeters
@@ -51,6 +81,7 @@ Targeters
 ### NEW: @SpawnLocation
 ### NEW: @TargetedLocation
 ### NEW: @TargetedTarget
+### NEW: @TrackedLocation
 ### NEW: @UniqueIdentifier
 ### Forward
 - Added rotation
@@ -75,6 +106,12 @@ Conditions
   Conditions:
   - color{c=RED}
 ```
+### NEW: dimension
+```
+  Conditions:
+  - dimension NETHER
+```
+### NEW: distanceFromTrackedLocation
 ### NEW: playersinRadius
 ```
   Conditions:
@@ -85,6 +122,10 @@ Conditions
   Conditions:
   - hasitem{i=STICK;amount=2}
 ```
+### NEW: isLeashed
+### NEW: motionX, motionY, motionZ
+### Biome
+- Added exact=false option to biome condition
 ### BlockType
 - Now supports mmoitems blocks
 ### Holding
@@ -156,7 +197,20 @@ Bug Fixes/Other
 - Fixed an issue with HasInventorySpace condition
 - Fixed a bug with nearestConditionalTarget ignoring players in 1.16.5
 - Fixed an issue with ownerattacker and ownertarget not working as intended
-
+- Fixed recursive mob loading issue
+- Fixed RunAIGoal/TargetSelector mechanics using premium-only AIs
+- Fixed an issue with NearestConditionalTarget ignoring players in 1.16.5
+- Fixed blockwave and geyser leaving glitched blocks behind
+- Fixed `ownerattacker` and `ownertarget` not working correctly in 1.16.5
+- Fixed NPE in teleportto mechanic
+- Fixed targeting issues with onAttack, onDamaged auras closes
+- Fixed finite velocity error with projectiles closes 
+- Fixed Options.Interactable: false not working w/ ArmorStands closes 
+- Fixed NPE in summon mechanic closes 
+- Fixed particleOrbital reversed=true option not working closes 
+- Fixed several ChunkUnload errors closes 
+- Fixed some issues with non-paper spigot
+- Fixed some targeting issues with auras
 
 4.12.0
 ======
