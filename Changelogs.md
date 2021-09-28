@@ -15,6 +15,7 @@
 **Highlights**
 ----------
 - 1.17.1 Support
+- Removed 1.13, 1.14, and 1.15 support
 - Added inline false conditions using ?! 
 - Added inline trigger conditions using ?~
 - Added inline false trigger conditions using ?~!
