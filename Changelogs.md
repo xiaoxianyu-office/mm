@@ -182,7 +182,7 @@ Bug Fixes/Other
 - Fixed onShoot trigger for Ghasts
 - Fixed weather mechanic not setting the weather to sunny/clear
 - Fixed NPE with lost entities trying to unregister
-- Possible fix for BonusLuckItems option
+- Fixed BonusLuckItem option in Droptables
 - Fixed awkward issue with skeletons shooting a bow on some versions
 - Fixed the fillChest mechanic
 - Leather Horse Armor is now dyeable
@@ -199,16 +199,16 @@ Bug Fixes/Other
 - Fixed a bug with nearestConditionalTarget ignoring players in 1.16.5
 - Fixed an issue with ownerattacker and ownertarget not working as intended
 - Fixed recursive mob loading issue
-- Fixed RunAIGoal/TargetSelector mechanics using premium-only AIs
+- RunAIGoal/TargetSelector will now parse premium AIs.
 - Fixed an issue with NearestConditionalTarget ignoring players in 1.16.5
 - Fixed blockwave and geyser leaving glitched blocks behind
 - Fixed `ownerattacker` and `ownertarget` not working correctly in 1.16.5
 - Fixed NPE in teleportto mechanic
-- Fixed targeting issues with onAttack, onDamaged auras closes
-- Fixed finite velocity error with projectiles closes 
+- Fixed targeting issues with onAttack, onDamaged auras
+- Fixed finite velocity error with projectiles
 - Fixed Options.Interactable: false not working w/ ArmorStands closes 
-- Fixed NPE in summon mechanic closes 
-- Fixed particleOrbital reversed=true option not working closes 
+- Fixed NPE in summon mechanic
+- Fixed particleOrbital reversed=true option not working
 - Fixed several ChunkUnload errors closes 
 - Fixed some issues with non-paper spigot
 - Fixed some targeting issues with auras
