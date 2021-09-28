@@ -31,4 +31,4 @@ Premium+
 
 -   Special Premium+ role in Discord
 -   Priority on support tickets with ability to ping the developers
--   License usable on multiple servers you own}
+-   License usable on multiple servers you own
