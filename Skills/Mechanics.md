@@ -164,7 +164,7 @@ by these will "inherit" the targets (if applicable).
 |---------------------|-----------------------------------------------------------------------------------------|
 | **[Skill][]**       | Executes a meta-skill. The butter for your bread.                                       |
 | [Aura][]            | Applies an aura to the targeted entity, allowing for skills to be run onStart/onTick/onEnd/Etc which all originate from the target. |
-| [CancelEvent][]     | Cancel the Event that triggered the current skill-tree. Only works for certain triggers.                                  |
+| [Cancel Event][]     | Cancel the Event that triggered the current skill-tree. Only works for certain triggers.                                  |
 | [Cast][]            | "Casts" a meta-skill using various advanced options.                                     |
 | [Chain][]           | Chains a skill between multiple targets that are near each other.                       |
 | [Chain Missile][]    | A missile that chains between entities. **Premium-Only** mechanic!                |
@@ -274,14 +274,14 @@ but not yet ready for use.
   [Oxygen]: /skills/mechanics/oxygen
   [Pose ArmorStand]: /skills/mechanics/posearmorstand
   [Potion]: /skills/mechanics/potion
-  [PotionClear]: /skills/mechanics/potionclear
+  [Potion Clear]: /skills/mechanics/potionclear
   [Prison]: /skills/mechanics/prison
   [Pull]: /skills/mechanics/pull
-  [PushButton]: /skills/mechanics/pushbutton
+  [Push Button]: /skills/mechanics/pushbutton
   [Rally]: /skills/mechanics/rally
   [Random Message]: /skills/mechanics/randommessage
-  [Raytrace]: /skills/mechanics/raytrace
-  [RayTraceTo]: /skills/mechanics/raytraceto
+  [Ray Trace]: /skills/mechanics/raytrace
+  [Ray Trace To]: /skills/mechanics/raytraceto
   [Remount]: /skills/mechanics/remount
   [Remove]: /skills/mechanics/remove
   [Remove HeldItem]: /skills/mechanics/removehelditem
