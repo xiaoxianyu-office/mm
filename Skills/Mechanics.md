@@ -249,7 +249,7 @@ but not yet ready for use.
   [Feed]: /skills/mechanics/feed
   [Fill Chest]: /skills/mechanics/fillChest
   [Fly]: /skills/mechanics/fly
-  [Freeze]: /skills/mechanics/freeze
+  [Freeze]: Freeze-Mechanic
   [aura]: /skills/mechanics/aura
   [Force Pull]: /skills/mechanics/forcepull
   [Glow]: /skills/mechanics/glow
