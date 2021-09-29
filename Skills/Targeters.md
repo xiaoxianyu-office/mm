@@ -74,6 +74,7 @@ Location Targeters
 | @Origin{xoffset=0;yoffset=0;zoffset=0}     |           | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile). |
 | @Spawner{s=SpawnerName} |           | Targets the location of the specified spawner(s). The string can be the name of a spawner, or a a group of spawners (using g:groupname), and also accepts wildcards (Spawner* would target Spawner1,Spawner2,Spawner3,etc)                        |
 | @ObstructingBlock    |             | Tries to target blocks in front of the caster that are obstructing it |
+| @TrackedLocation | | targets the location set by mechanic: Traclocation
 
 ### Multi-Location Targeters
 
