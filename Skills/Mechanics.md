@@ -37,7 +37,7 @@ are able to target locations as well.
 | [Disguise Target][]     | Changes the target's disguise                                  |
 | [Undisguise][]         | Remove the caster's disguise                                   |
 | [Dismount][]           | Makes the caster dismount whatever they're riding              |
-| [ClearThreat][]        | Makes a mob clear its threat table                             |
+| [Clear Threat][]        | Makes a mob clear its threat table                             |
 | [Currency Give][]      | Give money to a player. Requires Vault and a currency plugin   |
 | [Currency Take][]      | Take money from a player. Requires Vault and a currency plugin |
 | [Damage][]             | Damages the target for an amount                               |
