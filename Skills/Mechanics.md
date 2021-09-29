@@ -218,9 +218,9 @@ but not yet ready for use.
   [Activate Spawner]: /skills/mechanics/activatespawner
   [Animate ArmorStand]: /skills/mechanics/animatearmorstand
   [Arrow Volley]: /skills/mechanics/arrowvolley
-  [AuraRemove]: /skills/mechanics/auraremove
-  [BarCreate]: /skills/mechanics/barcreate
-  [BarSet]: /skills/mechanics/barset
+  [Aura Remove]: /skills/mechanics/auraremove
+  [Bar Create]: /skills/mechanics/barcreate
+  [Bar Set]: /skills/mechanics/barset
   [Bar Remove]: /skills/mechanics/barremove
   [Break Block]: /skills/mechanics/breakblock
   [Break Block And Give Item]: /skills/mechanics/breakBlockAndGiveItem
