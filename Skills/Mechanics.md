@@ -143,7 +143,7 @@ are able to target locations as well.
 | [Track Location][] | Saves the target's location |
 | [Velocity][]     | Modifies the velocity of the target entity(s)                                       |
 | [Weather][]      | Modifies the weather in the target world                                            |
-| [WolfSit][]      | Forces a targeted wolf to sit.                                               |
+| [Wolf Sit][]      | Forces a targeted wolf to sit.                                               |
 
 Effect Mechanics
 ----------------
