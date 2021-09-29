@@ -183,14 +183,14 @@ different mobtype.
 
 #### Armor Stands
 
-**CanMove: \[true/false\] **
+**CanMove: \[true/false\]**
 
       * Whether an armor stand can move or not.
       * Only applies to armor stand type mobs.
       * Defaults to true.
       * Requires PaperSpigot
 
-**CanTick: \[true/false\] **
+**CanTick: \[true/false\]**
 
       * Whether an armor stand can tick or not.
       * Only applies to armor stand type mobs.
@@ -279,21 +279,33 @@ different mobtype.
 
 #### Bees
 
-**Anger: \[number\] **
+**Anger: \[number\]**
 
       * Sets the time in ticks until bee anger ends.
       * If set to 0 the bee will not be angry.
       * Defaults to 0.
 
-**HasNectar: \[true/false\] **
+**HasNectar: \[true/false\]**
 
       * Whether the bee is carrying pollen.
       * Defaults to false.
 
-**HasStung: \[true/false\] **
+**HasStung: \[true/false\]**
 
       * Whether the bee has stung an entity.
       * Defaults to false.
+
+#### Cat
+
+**CatType: \[type\]**
+
+     ** Sets the type of cat
+     ** Types can be ALL_BLACK, BLACK, BRITISH_SHORTHAIR, CALICO, PERSIAN, JELLIE, RAGDOLL, RED, SIAMESE, TABBY or WHITE.
+
+**CollarColor: \[color\]**
+
+    ** Sets the color of the cat's collar.
+    ** Available colors are: BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
 
 #### Chicken
 
@@ -367,7 +379,7 @@ different mobtype.
 
 #### Fox
 
-**FoxType: \[Entity type\] **
+**FoxType: \[Entity type\]**
 
       * Determines the type of the fox. 
       * Can be RED or SNOW
@@ -375,12 +387,12 @@ different mobtype.
 
 #### Hoglin
 
-**ImmuneToZombification: \[true/false\] **
+**ImmuneToZombification: \[true/false\]**
 
       * Whether or not the hoglin is immune to being zombified
       * Defaults to false
 
-**Huntable: \[true/false\] **
+**Huntable: \[true/false\]**
 
       * Whether the hoglin is able to be hunted by piglins.
       * Defaults to true
@@ -432,23 +444,15 @@ different mobtype.
       * Acts as if the player built the mob.
       * Defaults to false.
 
-#### Ocelots
-
-**Ocelot: \[type\] **
-
-      * Sets the type of ocelot
-      * Types can be BLACK_CAT, RED_CAT, SIAMESE_CAT, WILD_OCELOT
-      * Defaults to WILD_OCELOT
-
 #### Panda
 
-**MainGene: \[Gene Type\] **\*
+**MainGene: \[Gene Type\]**
 
       * Sets the main gene that the panda can pass on to it's offspring.
       * Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN
       * Defaults to NORMAL
 
-**HiddenGene: \[Gene Type\] **\*
+**HiddenGene: \[Gene Type\]**
 
       * Sets the hidden gene that the panda can pass on to it's offspring.
       * Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN
@@ -456,26 +460,26 @@ different mobtype.
 
 #### Piglin
 
-**AbleToHunt: \[true/false\] **\*
+**AbleToHunt: \[true/false\]**
 
       * Whether or not the piglin is able to hunt
       * Defaults to false
 
-**ImmuneToZombification: \[true/false\] **\*
+**ImmuneToZombification: \[true/false\]**
 
       * Whether or not the piglin is immune to being zombified
       * Defaults to false
 
 #### Piglin Brutes
 
-**ImmuneToZombification: \[true/false\] **\*
+**ImmuneToZombification: \[true/false\]**
 
       * Whether or not the piglin is immune to being zombified
       * Defaults to false
 
 #### Pigs
 
-**Saddled: \[true/false\]**\*
+**Saddled: \[true/false\]**
 
       * Wether or not the pig spawns with a saddle.
       * Defaults to false
