@@ -147,6 +147,7 @@ Conditions
 | [isCaster](/skills/conditions/iscaster)                      | Entity   | Checks if the target is the caster                                                         |
 | [isChild](/skills/conditions/ischild)                        | Entity   | Checks if the target is a child of the caster                                            |
 | [isLiving](/skills/conditions/isliving)                      | Entity   | Checks if the target is a living entity                                                  |
+| [isLeashed](/skills/conditions/isleashed)                      | Entity   | Checks if the target has been leashed                                                         |
 | [isMonster](/skills/conditions/ismonster)                      | Entity   | Checks if the target is a monster                                                         |
 | [isPlayer](/skills/conditions/isplayer)                      | Entity   | Checks if the target is a player                                                         |
 | [isSprinting](/skills/conditions/issprinting)                | Entity   | Checks if the target **Player** is sprinting                                        |
@@ -160,6 +161,8 @@ Conditions
 | [Mobsinradius](/conditions/mobsinradius)                     | Location | Checks how many mobs are in a given radius                                                  |
 | [Mobsinchunk](/conditions/mobsinchunk)                       | Location | Matches a range to how many mobs are in the target location's chunk                         |
 | [Mobsinworld](/conditions/mobsinworld)                       | Location | Matches a range to how many mobs are in the target world                                    |
+| [Motionx](/conditions/motionx) | Entity | |
+| [MotionZ](/conditions/motionz) | Entity | |
 | [Mounted](/conditions/mounted)                               | Entity   | If the target entity is riding a mount/vehicle                                              |
 | [Moving](/conditions/moving)                                 | Entity   | If the target has a velocity greater than zero                                              |
 | [MythicMobType](/conditions/mythicmobtype)                   | Entity   | Checks the MythicMob type of the target mob                                                 |
