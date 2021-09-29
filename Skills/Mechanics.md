@@ -23,44 +23,47 @@ are able to target locations as well.
 | [Activate Spawner][]   | Activates a MythicMobs spawner at the targeted location        |
 | [Animate ArmorStand][] | Animates an armorstand                                         |
 | [Arrow Volley][]       | Fires a volley of arrows                                       |
-| [AuraRemove][]         | Removes an aura from the target entity                         |
-| [BarCreate][]          | Creates a custom boss bar on the casting mob                   |
-| [BarSet][]             | Modifies a custom boss bar on the casting mob                  |
-| [BarRemove][]          | Removes a custom boss bar on the casting mob                   |
-| [BreakBlock][]         | Breaks the block at the target location                        |
-| [BreakBlockAndGiveItem][] | Breaks the block at the target location and gives an item/droptable |
+| [Aura Remove][]         | Removes an aura from the target entity                         |
+| [Bar Create][]          | Creates a custom boss bar on the casting mob                   |
+| [Bar Set][]             | Modifies a custom boss bar on the casting mob                  |
+| [Bar Remove][]          | Removes a custom boss bar on the casting mob                   |
+| [Break Block][]         | Breaks the block at the target location                        |
+| [Break Block And Give Item][] | Breaks the block at the target location and gives an item/droptable |
 | [Close Inventory][]    | Closes the target player's inventory                           |
 | [Command][]            | Executes a command for each target                             |
 | [Consume][]            | Deals damage and restores health per target hit                |
 | [Disengage][]          | Causes the caster to leap backwards away from the target entity                               |
 | [Disguise][]           | Changes the caster's disguise                                  |
-| [DisguiseTarget][]     | Changes the target's disguise                                  |
+| [Disguise Target][]     | Changes the target's disguise                                  |
 | [Undisguise][]         | Remove the caster's disguise                                   |
 | [Dismount][]           | Makes the caster dismount whatever they're riding              |
 | [ClearThreat][]        | Makes a mob clear its threat table                             |
 | [Currency Give][]      | Give money to a player. Requires Vault and a currency plugin   |
 | [Currency Take][]      | Take money from a player. Requires Vault and a currency plugin |
 | [Damage][]             | Damages the target for an amount                               |
-| [BaseDamage][]         | Damages the target for a percent of the mob's damage stat      |
-| [Percent Damage][]     | Damages the target for a percent of their health               |
+| [Base Damage][]         | Damages the target for a percent of the mob's damage stat      |
+| [Damage Percent][]     | Damages the target for a percent of their health               |
+| [Disguise As Block][] | |
 | [Decapitate][]         | Drops a player head item based on target                       |
 | [Doppleganger][]       | Copies the appearance of the target player                     |
-| [DropItem][]           | Drops an item or droptable at the target location              |
+| [Drop Item][]           | Drops an item or droptable at the target location              |
 | [Eject Passenger][]    | Ejects anything riding the caster                              |
 | [Equip][]                | Causes the casting mob to equip an item                                     |
 | [Explosion][]            | Causes an explosion                                                         |
 | [Extinguish][]           | Removes fire ticks from the target entity                                   |
-| [fawePaste][]            | Pastes a Schematic using FAWE (Fast Async World Edit)                       |
+| [Fawe Paste][]            | Pastes a Schematic using FAWE (Fast Async World Edit)                       |
 | [Feed][]                 | Feeds the target player                                                     |
-| [FillChest][]            | Fills a chest with items, or a droptable                                    |
+| [Fill Chest][]            | Fills a chest with items, or a droptable                                    |
 | [Fly][]                  | Applies an [aura][] that allows the target to fly                           |
 | [Force Pull][]           | Teleports the target to the caster                                          |
 | [Freeze][]               | Chills the target entity                                                    |
 | [Glow][]                 | Makes the target glow                                                       |
 | [Give Item][]            | Gives an item to the target                                                 |
 | [Give Item From Target][] | Gives an item to the caster from the target                                |
+| [Give Item From Slot][] | |
 | [Heal][]                 | Heals the target                                                            |
-| [HealPercent][]          | Heals the target for a percentage of its max-health                         |
+| [Heal Percent][]          | Heals the target for a percentage of its max-health                         |
+| [Hide From Players][] | Hides the caster, if the caster is a player, from other players for a set duration. |
 | [Ignite][]               | Sets the target on fire                                                     |
 | [JSON Message][]         | Sends a JSON-format message to the target player(s)                         |
 | [Jump][]                 | Causes the caster to jump                                                   |
@@ -76,19 +79,19 @@ are able to target locations as well.
 | [Mount Me][]             | Forces the targeted entity to mount the caster                                |
 | [Mount Target][]         | Mounts the target                                                           |
 | [Oxygen][]               | Gives oxygen to a player target                                             |
-| [PoseArmorStand][]       | Changes the pose of the target ArmorStand                                   |
+| [Pose ArmorStand][]       | Changes the pose of the target ArmorStand                                   |
 | [Potion][]               | Applies a potion effect to the target                                       |
-| [PotionClear][]          | Removes all potion effects from target entity                               |
+| [Potion Clear][]          | Removes all potion effects from target entity                               |
 | [Prison][]               | Imprisons the target inside a block                                         |
 | [Pull][]                 | Pulls the target towards the mob                                            |
-| [PushButton][]           | Pushes a button at the target location                                      |
-| [RayTrace][]             | Traces a straight line to the target                                        |
-| [RayTraceTo][]           | Executes a skill with the result of a raytrace to the target location       |
+| [Push Button][]           | Pushes a button at the target location                                      |
+| [Ray Trace][]             | Traces a straight line to the target                                        |
+| [Ray Trace To][]           | Executes a skill with the result of a raytrace to the target location       |
 | [Rally][]                | Causes other nearby mobs to attack the target                               |
 | [Random Message][]       | Sends a random message to the target player                                 |
 | [Remount][]              | Remounts the mob the caster originally spawned riding, if it is still alive |
 | [Remove][]               | Removes the target mob                                                      |
-| [RemoveHeldItem][]       | Removes some of the item the target player is holding                       |
+| [Remove HeldItem][]       | Removes some of the item the target player is holding                       |
 | [RemoveOwner][]          | Removes the ownership of the target mob                                     |
 | [Run AI Goal Selector][] | Change the target's AIGoalSelectors                                         |
 | [Run AI Target Selector][] | Change the target's AITargetSelectors                                     |
@@ -116,7 +119,7 @@ are able to target locations as well.
 | [Set Speed][]              | Sets the target entity's speed attribute                                  |
 | [Set Stance][]             | Sets the stance of the target mob                                         |
 | [Shield][]                 | Applies an absorb shield to the target entity                             |
-| [ShieldPercent][]          | Applies an absorb shield to the target entity for a percentage of their max health |
+| [Shield Percent][]          | Applies an absorb shield to the target entity for a percentage of their max health |
 | [Shoot Fireball][]         | Shoots a fireball at the target                                           |
 | [Shoot Potion][]           | Throws a potion at the target                                             |
 | [Shoot Skull][]            | Shoots a wither skull at the target                                       |
@@ -131,12 +134,13 @@ are able to target locations as well.
 | [Add Tag][]      | Adds a scoreboard tag to the target                                                 |
 | [Remove Tag][]   | Removes a scoreboard tag from the target                                            |
 | [Teleport][]     | Teleports to the target                                                             |
-| [TeleportIn][]   | Teleports the target relative to the caster's yaw                                   |
-| [TeleportTo][]   | Teleports the target to a specified location                                        |
+| [Teleport In][]   | Teleports the target relative to the caster's yaw                                   |
+| [Teleport To][]   | Teleports the target to a specified location                                        |
 | [Threat][]       | Modifies the mob's threat towards the target                                        |
 | [Throw][]        | Throws the target entity                                                            |
 | [Toggle Lever][] | Toggles a lever at the target location                                              |
-| [Toggle Sitting][] | Toggles the sitting state for cats, dogs, foxes, and parrots                      |
+| [Toggle Sitting][] | Toggles the sitting state for cats, dogs, foxes, and parrots.                   |
+| [Track Location][] | Saves the target's location |
 | [Velocity][]     | Modifies the velocity of the target entity(s)                                       |
 | [Weather][]      | Modifies the weather in the target world                                            |
 | [WolfSit][]      | Forces a targeted wolf to sit.                                               |
@@ -163,19 +167,20 @@ by these will "inherit" the targets (if applicable).
 | [CancelEvent][]     | Cancel the Event that triggered the current skill-tree. Only works for certain triggers.                                  |
 | [Cast][]            | "Casts" a meta-skill using various advanced options.                                     |
 | [Chain][]           | Chains a skill between multiple targets that are near each other.                       |
-| [ChainMissile][]    | A missile that chains between entities. **Premium-Only** mechanic!                |
+| [Chain Missile][]    | A missile that chains between entities. **Premium-Only** mechanic!                |
 | [Delay][]           | Delays execution of the current skill list by a set number of ticks.                                              |
 | [Global Cooldown][] | Sets the caster's Global Cooldown timer                                                 |
 | [Missile][]         | Fires a homing projectile towards the target.                                                      |
 | [Modify Projectile][] | Modifying the projectile / missile / orbital                                   |
-| [onAttack][]        | Applies an [aura][] to the target that triggers skills when they attack                 |
-| [onDamaged][]       | Applies an [aura][] to the target that triggers skills when they take damage            |
-| [onShoot][]         | Applies an [aura][] to the target that triggers skills when they shoot a bow            |
+| [On Attack][]        | Applies an [aura][] to the target that triggers skills when they attack                 |
+| [On Damaged][]       | Applies an [aura][] to the target that triggers skills when they take damage            |
+| [On Shoot][]         | Applies an [aura][] to the target that triggers skills when they shoot a bow            |
+| [On Block Break][] | Applies an [aura][] to the target that triggers skills when they bresks a block |
 | [Orbital][]         | Applies an [aura][] that causes a projectile to orbit around the target                 |
 | [Projectile][]      | Fires a highly-customizable projectile towards the target                               |
 | [Shoot][]           | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                  |
 | [Volley][]            | Shoots a volley of projectile-items at the target with various options |
-| [SudoSkill][]         | Makes the target execute a skill                                       |
+| [Sudo Skill][]         | Makes the target execute a skill                                       |
 | [Random Skill][]      | Executes a random skill from a list                                    |
 | [Totem][]             | Creates a static "totem" at a location that can execute other skills        |
 | [Variable Add][]      | Adds an amount to a numeric variable                                   |
@@ -216,33 +221,33 @@ but not yet ready for use.
   [AuraRemove]: /skills/mechanics/auraremove
   [BarCreate]: /skills/mechanics/barcreate
   [BarSet]: /skills/mechanics/barset
-  [BarRemove]: /skills/mechanics/barremove
-  [BreakBlock]: /skills/mechanics/breakblock
-  [BreakBlockAndGiveItem]: /skills/mechanics/breakBlockAndGiveItem
+  [Bar Remove]: /skills/mechanics/barremove
+  [Break Block]: /skills/mechanics/breakblock
+  [Break Block And Give Item]: /skills/mechanics/breakBlockAndGiveItem
   [Close Inventory]: /skills/mechanics/closeinventory
   [Command]: /skills/mechanics/command
   [Consume]: /skills/mechanics/consume
   [Disengage]: /skills/mechanics/disengage
   [Disguise]: /skills/mechanics/disguise
-  [DisguiseTarget]: /skills/mechanics/disguisetarget
+  [Disguise Target]: /skills/mechanics/disguisetarget
   [Undisguise]: /skills/mechanics/undisguise
   [Dismount]: /skills/mechanics/dismount
-  [ClearThreat]: /skills/mechanics/clearthreat
+  [Clear Threat]: /skills/mechanics/clearthreat
   [Currency Give]: /skills/mechanics/currencygive
   [Currency Take]: /skills/mechanics/currencytake
   [Damage]: /skills/mechanics/damage
-  [BaseDamage]: /skills/mechanics/basedamage
-  [Percent Damage]: /skills/mechanics/percentdamage
+  [Base Damage]: /skills/mechanics/basedamage
+  [Damage Percent]: /skills/mechanics/percentdamage
   [Decapitate]: /skills/mechanics/decapitate
   [Doppleganger]: /skills/mechanics/doppleganger
-  [DropItem]: /skills/mechanics/dropitem
+  [Drop Item]: /skills/mechanics/dropitem
   [Eject Passenger]: /skills/mechanics/ejectpassenger
   [Equip]: /skills/mechanics/equip
   [Explosion]: /skills/mechanics/explosion
   [Extinguish]: /skills/mechanics/extinguish
-  [fawePaste]: /fawePaste
+  [Fawe Paste]: /fawePaste
   [Feed]: /skills/mechanics/feed
-  [FillChest]: /skills/mechanics/fillChest
+  [Fill Chest]: /skills/mechanics/fillChest
   [Fly]: /skills/mechanics/fly
   [Freeze]: /skills/mechanics/freeze
   [aura]: /skills/mechanics/aura
@@ -251,7 +256,7 @@ but not yet ready for use.
   [Give Item]: /skills/mechanics/giveitem
   [Give Item From Target]: /skills/mechanics/giveitemfromtarget
   [Heal]: /skills/mechanics/heal
-  [HealPercent]: /skills/mechanics/healpercent
+  [Heal Percent]: /skills/mechanics/healpercent
   [Ignite]: /skills/mechanics/ignite
   [JSON Message]: /skills/mechanics/jsonmessage
   [Jump]: /skills/mechanics/jump
@@ -267,7 +272,7 @@ but not yet ready for use.
   [Mount Me]: /skills/mechanics/mountme
   [Mount Target]: /skills/mechanics/mounttarget
   [Oxygen]: /skills/mechanics/oxygen
-  [PoseArmorStand]: /skills/mechanics/posearmorstand
+  [Pose ArmorStand]: /skills/mechanics/posearmorstand
   [Potion]: /skills/mechanics/potion
   [PotionClear]: /skills/mechanics/potionclear
   [Prison]: /skills/mechanics/prison
@@ -279,8 +284,8 @@ but not yet ready for use.
   [RayTraceTo]: /skills/mechanics/raytraceto
   [Remount]: /skills/mechanics/remount
   [Remove]: /skills/mechanics/remove
-  [RemoveHeldItem]: /skills/mechanics/removehelditem
-  [RemoveOwner]: /skills/mechanics/removeowner
+  [Remove HeldItem]: /skills/mechanics/removehelditem
+  [Remove Owner]: /skills/mechanics/removeowner
   [Run AI Goal Selector]: /skills/mechanics/runaigoalselector
   [Run AI Target Selector]: /skills/mechanics/runaitargetselector
   [Send Action Message]: /skills/mechanics/sendactionmessage
@@ -307,7 +312,7 @@ but not yet ready for use.
   [Set Speed]: /skills/mechanics/setspeed
   [Set Stance]: /skills/mechanics/setstance
   [Shield]: /skills/mechanics/shield
-  [ShieldPercent]: /skills/mechanics/shieldpercent
+  [Shield Percent]: /skills/mechanics/shieldpercent
   [Shoot Fireball]: /skills/mechanics/shootfireball
   [Shoot Potion]: /skills/mechanics/shootpotion
   [Shoot Skull]: /skills/mechanics/shootskull
@@ -321,34 +326,34 @@ but not yet ready for use.
   [Add Tag]: /skills/mechanics/addtag
   [Remove Tag]: /skills/mechanics/removetag
   [Teleport]: /skills/mechanics/teleport
-  [TeleportIn]: /skills/mechanics/teleportin
-  [TeleportTo]: /skills/mechanics/teleportto
+  [Teleport In]: /skills/mechanics/teleportin
+  [Teleport To]: /skills/mechanics/teleportto
   [Threat]: /skills/mechanics/threat
   [Throw]: /skills/mechanics/throw
   [Toggle Lever]: /skills/mechanics/togglelever
   [Toggle Sitting]: /skills/mechanics/togglesitting
   [Velocity]: /skills/mechanics/velocity
   [Weather]: /skills/mechanics/weather
-  [WolfSit]: /skills/mechanics/wolfsit
+  [Wolf Sit]: /skills/mechanics/wolfsit
   [View the list of Effect Mechanics by clicking here]: /skills/effects/
   [Skill]: /skills/mechanics/skill
   [Aura]: /skills/mechanics/aura
-  [CancelEvent]: /skills/mechanics/cancelevent
+  [Cancel Event]: /skills/mechanics/cancelevent
   [Cast]: /skills/mechanics/cast
   [Chain]: /skills/mechanics/chain
-  [ChainMissile]: /skills/mechanics/chainmissile
+  [Chain Missile]: /skills/mechanics/chainmissile
   [Delay]: /skills/mechanics/delay
   [Global Cooldown]: /skills/mechanics/globalcooldown
   [Missile]: /skills/mechanics/missile
   [Modify Projectile]: /skills/mechanics/modifyprojectile
-  [onAttack]: /skills/mechanics/onattack
-  [onDamaged]: /skills/mechanics/ondamaged
-  [onShoot]: /skills/mechanics/onshoot
+  [On Attack]: /skills/mechanics/onattack
+  [On Damaged]: /skills/mechanics/ondamaged
+  [On Shoot]: /skills/mechanics/onshoot
   [Orbital]: /skills/mechanics/orbital
   [Projectile]: /skills/mechanics/projectile
   [Shoot]: /skills/mechanics/shoot
   [Volley]: /skills/mechanics/volley
-  [SudoSkill]: /skills/mechanics/sudoskill
+  [Sudo Skill]: /skills/mechanics/sudoskill
   [Random Skill]: /skills/mechanics/randomskill
   [Totem]: /skills/mechanics/totem
   [Variable Add]: /skills/mechanics/variableadd
@@ -358,3 +363,8 @@ but not yet ready for use.
   [Variable Subtract]: /skills/mechanics/variablesubtract
   [Swap]: /skills/mechanics/swap
   [Time]: /skills/mechanics/time
+  [Hide From Players]: /skills/mechanics/hidefromplayers
+  [Track Location]: /skills/mechanics/tracklocation
+  [Disguise As Block]: /skills/mechanics/disguiseasblock
+  [Give Item From Slot]: /skills/mechanics/giveitemfromslot
+  [On Block Break]: /skills/mechanics/onblockbreak
