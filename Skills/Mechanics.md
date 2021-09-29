@@ -92,7 +92,7 @@ are able to target locations as well.
 | [Remount][]              | Remounts the mob the caster originally spawned riding, if it is still alive |
 | [Remove][]               | Removes the target mob                                                      |
 | [Remove HeldItem][]       | Removes some of the item the target player is holding                       |
-| [RemoveOwner][]          | Removes the ownership of the target mob                                     |
+| [Remove Owner][]          | Removes the ownership of the target mob                                     |
 | [Run AI Goal Selector][] | Change the target's AIGoalSelectors                                         |
 | [Run AI Target Selector][] | Change the target's AITargetSelectors                                     |
 | [Send Action Message][]    | Sends an Actionbar Message to the target player                           |
