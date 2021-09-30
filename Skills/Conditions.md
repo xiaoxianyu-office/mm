@@ -87,7 +87,7 @@ Condition Actions allow you to do additional things based off of conditions. The
 | Action                     | Description                                                                |
 |----------------------------|----------------------------------------------------------------------------|
 | **required** (or **true**) | The condition is required for the skill to run.                            |
-| **cancel** (or **false**)  | The skill will not run if this condition is met.                           |
+| **cancel** (or **false**)  | The skill will not run if this condition is met.                           | **Level** | |
 | **power [multiplier]**   | Modifies the skill's power (e.i. power 2.0 would double the skill's power) |
 | **cast [skill]**         | Casts an additional skill if the condition is met.                         |
 | **castinstead [skill]**  | Casts a different skill instead if the condition is met.                   |
