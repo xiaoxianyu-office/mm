@@ -104,7 +104,7 @@ Disguise:
   Type: pig
 ```
 
-### Inline Disguises
+## Inline Disguises
 With the newer versions of MythicMobs, disguises can now be done completely inline using the same syntax as the ingame `/disguise` command.
 
 For example, let's say we want a skeleton that is glowing, spinning, and on fire. To get this disguise ingame, we would use the command: `/disguise SKELETON setGlowing setSpinning setBurning`.
