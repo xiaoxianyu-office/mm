@@ -4,9 +4,9 @@
 
 **Attributes:**
 
-| Attribute | Alias        | Description               |
-| --------- | -------------  | ------------------------- |
-| distance| d | The radius to check in|
+| Attribute | Alias        | Description               | Default |
+| --------- | -------------  | ------------------------- | ---- |
+| distance| d | The radius to check in | 0 |
 
 ---
 
