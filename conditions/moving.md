@@ -23,4 +23,5 @@ Conditions:
 
 **Extra Information:**
 
+- [x] Alias: ismoving
 - [x] Type: Entity
