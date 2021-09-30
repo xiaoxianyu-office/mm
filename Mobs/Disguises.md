@@ -14,9 +14,9 @@ Any entity type found in the spigot docs should function correctly.
 https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
 
 ## Inline Disguises
-With the newer versions of MythicMobs, disguises can now be done completely inline using the same **disguise string** syntax as the in-game `/disguise` command.
+With the newer versions of MythicMobs, disguises can now be done completely inline using the same **disguise string** syntax as the in-game ``/disguise`` command.
 
-For example, let's say we want a skeleton that is glowing, spinning, and on fire. To get this disguise ingame, we would use the command: `/disguise SKELETON setGlowing setSpinning setBurning`.
+For example, let's say we want a skeleton that is glowing, spinning, and on fire. To get this disguise ingame, we would use the command: ``/disguise SKELETON setGlowing setSpinning setBurning``.
 We can take this command, and use it on a mob next to the disguise option, like in the example below:
 ```
 SLSkelF:
@@ -43,8 +43,8 @@ This is a much neater way of doing mob disguises compared to the Options version
 ### Detailed steps
 
 1. ``RumiIsAwesome`` would be the name of your disguise
-2. ``player`` means its a player disguise
-3. ``<inherit>`` means it will take its name from MM Display: instead of you adding it here
+2. ``player`` means it's a player disguise
+3. ``<inherit>`` means it will take its name from `Display:` instead of adding it here
 4. ``setSkin RumiExMachina.png`` is telling it to set the disguise skin to your .png file in the skins folder  So if you have a skin named Goblin.png in the skins folder, use setSkin Goblin.png
 5. ``setDynamicName`` is used to allow the disguise name to change often, useful when you want to display the entity's health in its name
 
