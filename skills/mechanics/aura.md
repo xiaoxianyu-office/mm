@@ -11,7 +11,7 @@ Attributes
 
 | Attribute           | Aliases | Description                                                                                                                                                                                 | Default Value |
 |---------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| auraName            |         | Optional name, required to use associated mechanics & conditions that reference a specific aura                                                                                             | None          |
+| auraName            | auraname, buffname, debuffname | Optional name, required to use associated mechanics & conditions that reference a specific aura                                                                                             | None          |
 | onStart             | oS      | Meta-Skill executed when the aura first starts.                                                                                                                                             | None          |
 | onTick              | oT      | Meta-Skill executed every [interval] ticks on the affected entity.                                                                                                                        | None          |
 | onEnd               | oE      | Meta-Skill executed when the aura fades.                                                                                                                                                    | None          |
