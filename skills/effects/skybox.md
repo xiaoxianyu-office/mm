@@ -10,7 +10,7 @@ Changes the skybox of the target.
 | ---------------- | ----- | ------------------------------------------------------------- |
 | skybox           | sky, s, type, t, environment, env, e | What skybox should be shown to the player | 
 
-**Availd Skybox Value:**
+**Availd value for Skybox:**
 
 | Value | Description |
 | ----- | ----------- |
