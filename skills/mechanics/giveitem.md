@@ -15,7 +15,7 @@ Attributes
 
 **Note:**
 
-this mechanic do nothing when targeted target doesn't have any space in inventory.  
+this mechanic doesn't do anything when there is no space in targeted target's inventory.  
 
 fakeLooting was added in 4.12 MM and it makes the item being given show up on the screen and fly toward the players inventory like when a player picks an item up off of the ground.
 
