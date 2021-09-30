@@ -184,7 +184,7 @@ Conditions
 | [Region](/conditions/region)                                 | Location | If the target is within the given WorldGuard region                                         |
 | [SameFaction](/conditions/samefaction)                       | Entity   | Tests if the caster and target are in the same faction                                      |
 | [Score](/conditions/score)                                   | Entity   | Checks a scoreboard value of the target entity                                              |
-| [SlimeSize](/skills/conditions/slimesize)                    | Entity   | Checks the size of the target entity                                                         |
+| [Mob Size](/skills/conditions/mobsize)                    | Entity   | Checks the size of the target entity                                                         |
 | [Stance](/conditions/stance)                                 | Entity   | Checks the stance of the target mob                                                         |
 | [StringEquals](/conditions/stringequals)                     | Meta     | Checks if value1 equals value2. Both values can use variables and placeholders.             |
 | [Sunny](/conditions/sunny)                                   | Location | If the weather is sunny in the target world.                                                |
