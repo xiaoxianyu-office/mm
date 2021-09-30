@@ -10,7 +10,7 @@ Attributes
 
 | Attribute | Aliases | Description                                                                                                                                                                                                        | Default Value |
 |-----------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| variable  | var     | The name of the variable. Can optionally be prefixed with **scope.**                                                                                                                                               |               |
+| variable  | name, n, var, key, k     | The name of the variable. Can optionally be prefixed with **scope.**                                                                                                                                               |               |
 | value     | val     | The value to set the variable to. Must be applicable for **type** or the mechanic will fail. Should be surrounded in double-quotes if using spaces. Value can also include placeholders, even from PlaceholderAPI. |               |
 | scope     | s       | The [scope](/skills/variables#variable_scopes) of the variable, e.g. where the variable will be located.                                                                                                           | SKILL         |
 | type      | t       | The [type](/skills/variables#variable_types) of the variable.                                                                                                                                                      | INTEGER       |
@@ -65,3 +65,8 @@ Also,other variables can be stored inside a int/float variable.
       - setvariable{var=caster.VariableA;value="%mmoitems_stat_skill_damage%";type=INTEGER} @self
       - setvariable{var=caster.VariableB;value="%<caster.var.VaribaleA> * 2";type=INTEGER} @self
       - setvariable{var=caster.VariableC;value="<caster.var.VaribaleA> + <caster.var.VaribaleB>";type=INTEGER} @self
+
+Extra Information
+----------------
+
+- [x] Alias: setvar
