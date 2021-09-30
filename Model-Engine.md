@@ -21,9 +21,9 @@ Here is an example of a custom ModelEngine mob in vanilla minecraft
 ### Mechanics
 
 ModelEngine runs a few mechanics in order to apply to the mob.
-To apply the "kindletronjr" model to a mob you would use this in the skills section of the mob:
-`- model{mid=kindletronjr;n=false} @self ~onSpawn`
-To play an attack animation you have made, you would put this in the skills section of a mob:
+To apply the "kindletronjr" model to a mob you would use this in the skills section of the mob:  
+`- model{mid=kindletronjr;n=false} @self ~onSpawn`  
+To play an attack animation you have made, you would put this in the skills section of a mob:  
 `- state{mid=kindletronjr;s=attack;3} @self ~onAttack`
 
 For a full list of attributes and mechanics please visit the ModelEngine wiki:
