@@ -10,6 +10,12 @@ Changes the skybox of the target.
 | ---------------- | ----- | ------------------------------------------------------------- |
 | skybox           | sky, s, type, t, environment, env, e | What skybox should be shown to the player | 
 
+**Vaild Skybox Value:**
+
+| Value | Description |
+| ----- | ----------- |
+| Any Integer Below 1 | Cancel the modified skybox |
+| Any Integer Above 0 | Rainy |
 ---
 
 **Examples:**
@@ -17,5 +23,5 @@ Changes the skybox of the target.
 Makes the target see the end skybox
 
 ```
-- skybox{s=END} @PIR{r=20}
+- skybox{s=1} @PIR{r=20}
 ```
