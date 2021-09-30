@@ -7,7 +7,7 @@
 | Attribute | Aliases        | Description               |
 | --------- | -------------  | ------------------------- |
 | amount | a | the given range value to check | >0 |
-| radius | r, distance, d | the given radius to check | 32 |
+| radius | range, r | the given radius to check | 32 |
 
 Example
 ------
