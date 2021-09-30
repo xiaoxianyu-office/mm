@@ -6,7 +6,7 @@
 
 | Attribute | Aliases        | Description               |
 | --------- | -------------  | ------------------------- |
-| variable | name, n, key, k | Variable to match |
+| variable | name, n, var, key, k | Variable to match |
 | value| val, v| A number range to match|
 
 ---
