@@ -8,6 +8,8 @@
 | --------- | ----- | ----------- |
 | velocity | v  | The velocity to check for |
 
+Added in 4.13
+
 ---
 
 **Examples:**
