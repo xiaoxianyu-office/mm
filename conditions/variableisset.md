@@ -6,7 +6,7 @@
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| var      | None  | variable to match        |
+| variable  | name, n, var, key, k  | variable to match        |
 
 ---
 
@@ -21,4 +21,5 @@ Conditions:
 
 **Extra Information:**
 
+- [x] Alias: varisset, varset
 - [x] Type: Skill
