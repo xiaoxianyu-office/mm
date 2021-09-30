@@ -20,4 +20,4 @@ Extra Information
 ----------
 
 - [x] Alias: castername
-- [x] Type: Location
+- [x] Type: Entity
