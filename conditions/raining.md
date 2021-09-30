@@ -4,7 +4,7 @@
 
 **Attributes:**
 
-| Attribute | Aliases        | Description               |
+| Attribute | Alias        | Description               |
 | --------- | -------------  | ------------------------- |
 | 无 | 无 | 无 |
 
@@ -21,4 +21,5 @@
 
 **Extra Information:**
 
+- [x] Alias: inraining
 - [x] Type: Location
