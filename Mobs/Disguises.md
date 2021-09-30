@@ -130,8 +130,8 @@ This is a much neater way of doing mob disguises compared to the Options version
 2. use the command ``/savedisguise RumiIsAwesome player <inherit> setSkin RumiExMachina.png setDynamicName`` to save your skin to a disguise. 
 3. Apply it to your MM with ``Disguise: RumiIsAwesome``
 #### Break down
-1. RumiIsAwesome would be the name of your disguise
-2. player means its a player disguise
-3. <inherit> means it will take its name from MM Display: instead of you adding it here
-4. setSkin RumiExMachina.png is telling it to set the disguise skin to your .png file in the skins folder  So if you have a skin named Goblin.png in the skins folder, use setSkin Goblin.png
-5. setDynamicName is used to allow the disguise name to change often, useful when you want to display the entities health in its name
+1. ``RumiIsAwesome`` would be the name of your disguise
+2. ``player`` means its a player disguise
+3. ``<inherit>`` means it will take its name from MM Display: instead of you adding it here
+4. ``setSkin RumiExMachina.png`` is telling it to set the disguise skin to your .png file in the skins folder  So if you have a skin named Goblin.png in the skins folder, use setSkin Goblin.png
+5. ``setDynamicName`` is used to allow the disguise name to change often, useful when you want to display the entities health in its name
