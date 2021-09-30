@@ -43,5 +43,5 @@ PoisonStormDamage:
 
 **Extra Information:**
 
-- [x] Aliases: varinrange, varrange
+- [x] Aliases: vareq
 - [x] Type: Skill
