@@ -4,7 +4,7 @@
 
 **Attributes:**
 
-| Attribute | Alias    | Description               |
+| Attribute | Aliases    | Description               |
 | --------- | -------- | ------------------------- |
 | type      | types, t | A list of MythicMob types |
 
@@ -26,4 +26,5 @@ TargetConditions:
 
 **Extra Information:**
 
+- [x] Alias: mmtype
 - [x] Type: Entity
