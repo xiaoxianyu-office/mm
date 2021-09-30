@@ -6,9 +6,9 @@
 
 **Attributes:**
 
-| Attribute | Alias | Description               |
-| --------- | ----- | ------------------------- |
-| amount    | a     | The number range to match |
+| Attribute | Alias | Description               | Default |
+| --------- | ----- | ------------------------- | ------- |
+| amount    | a     | The number range to match | 0 |
 
 ---
 
