@@ -10,7 +10,7 @@ Attributes
 
 | Attribute   | Aliases | Description       | Default Value |
 |-------------|---------|-------------------|---------------|
-| slot        | s       | The given slot |               |
+| slot        | s       | The given slot | None |
 | fakeLooting | fl      | plays the pickup-item animation from the origin | false |
 
 **Valid Slots:**
