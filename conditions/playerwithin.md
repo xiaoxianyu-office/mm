@@ -16,3 +16,9 @@
   Conditions:
   - playerwithin{d=10} true
 ```
+
+**Extra Information**
+------
+
+- [x] Alias: playerswithin
+- [x] Type: Entity
