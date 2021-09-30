@@ -8,7 +8,7 @@
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| none      | none  | none        |
+| exact | e  |         |
 
 ---
 
