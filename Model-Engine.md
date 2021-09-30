@@ -1,6 +1,8 @@
 ### Modelengine Custom Models
 
-**ModelEngine is dependent on the plugin [ModelEngine](https://www.spigotmc.org/resources/conxeptworks-model-engine%E2%80%94ultimate-entity-model-manager-1-14-1-16-5.79477/) and requires the use of a custom resource pack. [The most up to date documentation for ModelEngine can be found here](https://github.com/Ticxo/Model-Engine-Wiki). They also have a [support discord](https://discord.gg/vbdyuac) should you need help with your models**
+**ModelEngine is dependent on the plugin [ModelEngine](https://www.spigotmc.org/resources/conxeptworks-model-engine%E2%80%94ultimate-entity-model-manager-1-14-1-16-5.79477/)  
+and requires the use of a custom resource pack. [The most up to date documentation for ModelEngine can be found here](https://github.com/Ticxo/Model-Engine-Wiki).  
+They also have a [support discord](https://discord.gg/vbdyuac) should you need help with your models**
 
 *Modelengine has a free trial for a few special models so you can try before you buy, and there is a free test model on their wiki. You will have to make, or buy, your own models.*
 
@@ -20,7 +22,8 @@ Here is an example of a custom ModelEngine mob in vanilla minecraft
 
 ### Mechanics
 
-ModelEngine runs a few mechanics in order to apply to the mob.
+ModelEngine runs a few mechanics in order to apply to the mob.  
+
 To apply the "kindletronjr" model to a mob you would use this in the skills section of the mob:  
 `- model{mid=kindletronjr;n=false} @self ~onSpawn`  
 To play an attack animation you have made, you would put this in the skills section of a mob:  
