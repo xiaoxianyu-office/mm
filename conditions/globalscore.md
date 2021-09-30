@@ -4,10 +4,10 @@
 
 **Attributes:**
 
-| Attribute | Alias | Description        |
+| Attribute | Aliases | Description        |
 | --------- | ----- | ------------------ |
-| objective | o     | The objective      |
-| value     | v     | The value to match |
+| objective | obj, o     | The objective      |
+| value     | val, v     | The value to match |
 
 ---
 
@@ -22,4 +22,5 @@ Conditions:
 
 **Extra Information:**
 
+- [x] Alias: scoreglobal
 - [x] Type: Entity
