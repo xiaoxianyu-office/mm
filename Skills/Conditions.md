@@ -162,8 +162,9 @@ Conditions
 | [Mobsinradius](/conditions/mobsinradius)                     | Location | Checks how many mobs are in a given radius                                                  |
 | [Mobsinchunk](/conditions/mobsinchunk)                       | Location | Matches a range to how many mobs are in the target location's chunk                         |
 | [Mobsinworld](/conditions/mobsinworld)                       | Location | Matches a range to how many mobs are in the target world                                    |
-| [Motionx](/conditions/motionx) | Entity | |
-| [MotionZ](/conditions/motionz) | Entity | |
+| [MotionX](/conditions/motionx) | Entity | Checks the X motion of the target entity against a range. |
+| [MotionY](/conditions/motiony) | Entity | Checks the Y motion of the target entity against a range. |
+| [MotionZ](/conditions/motionz) | Entity | If the target has a velocity greater than zero |
 | [Mounted](/conditions/mounted)                               | Entity   | If the target entity is riding a mount/vehicle                                              |
 | [Moving](/conditions/moving)                                 | Entity   | If the target has a velocity greater than zero                                              |
 | [MythicMobType](/conditions/mythicmobtype)                   | Entity   | Checks the MythicMob type of the target mob                                                 |
