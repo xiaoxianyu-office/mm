@@ -8,7 +8,7 @@
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| none      | none  | none        |
+|       |   |        |
 
 ---
 
@@ -23,4 +23,5 @@ Conditions:
 
 **Extra Information:**
 
+- [x] Alias: grounded
 - [x] Type: Location
