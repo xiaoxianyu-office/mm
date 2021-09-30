@@ -17,7 +17,6 @@ Attributes
 
 | HEAD | CHEST | LEGS | FEET | HAND | OFFHAND |       
 | ---- | ----- | ---- | ---- | ---- | ------- |  
-
 ---
 
 Added in MM 4.13
