@@ -4,7 +4,7 @@
 
 **Attributes:**
 
-| Attribute | Alias | Description |
+| Attribute | Aliases | Description |
 | --------- | ----- | ----------- |
 | variable  | name, n, var, key, k  | variable to match        |
 
@@ -21,5 +21,5 @@ Conditions:
 
 **Extra Information:**
 
-- [x] Alias: varisset, varset
+- [x] Aliases: varisset, varset
 - [x] Type: Skill
