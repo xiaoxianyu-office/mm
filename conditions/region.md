@@ -6,7 +6,7 @@
 
 | Attribute | Aliases        | Description               |
 | --------- | -------------  | ------------------------- |
-| region| r| The region to check|
+| region| r, name, n | The region to check|
 
 ---
 
@@ -21,4 +21,5 @@
 
 **Extra Information:**
 
+- [x] Alias: inregion
 - [x] Type: Location
