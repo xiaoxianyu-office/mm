@@ -6,8 +6,8 @@
 
 | Attribute | Aliases        | Description               |
 | --------- | -------------  | ------------------------- |
-| variable| var| The name of the variable. Can optionally be prefixed with scope|
-| value| val| The value that the variable must equal to return true. Must be applicable for type or the mechanic will fail. Should be surrounded in double-quotes if using spaces. Value can also include placeholders, even from PlaceholderAPI. |
+| variable| var, key, k | The name of the variable. Can optionally be prefixed with scope|
+| value| val, v | The value that the variable must equal to return true. Must be applicable for type or the mechanic will fail. Should be surrounded in double-quotes if using spaces. Value can also include placeholders, even from PlaceholderAPI. |
 | scope| s| The [scope ](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Variables#variable-scopes)of the variable, e.g. where the variable will be located|
 
 ---
@@ -43,4 +43,5 @@ PoisonStormDamage:
 
 **Extra Information:**
 
+- [x] Aliases: varinrange, varrange
 - [x] Type: Skill
