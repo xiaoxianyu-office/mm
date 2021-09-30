@@ -6,10 +6,10 @@
 
 **Attributes:**
 
-| Attribute | Alias     | Description |
-| --------- | --------- | ----------- |
-| armorslot | slot, s   | The item slot to check. |
-| material  | mmitem, m | A material or MythicItem name to check for. Also supports MMOItems in the format mmoitems.TYPE.ID |
+| Attribute | Alias     | Description | Default |
+| --------- | --------- | ----------- | ------- |
+| armorslot | slot, s   | The item slot to check. | HEAD |
+| material  | mmitem, m | A material or MythicItem name to check for. Also supports MMOItems in the format mmoitems.TYPE.ID | DIRT |
 
 **Valid Slots:**
 
