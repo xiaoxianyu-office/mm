@@ -31,4 +31,5 @@ Uses Denizen, PlaceholderAPI, and MythicMobs to check whether the item the playe
 
 **Extra Information:**
 
+- [x] Alias: stringeq
 - [x] Type: Skill
