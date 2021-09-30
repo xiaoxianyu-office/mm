@@ -56,7 +56,7 @@ are able to target locations as well.
 | [Fill Chest][]            | Fills a chest with items, or a droptable                                    |
 | [Fly][]                  | Applies an [aura][] that allows the target to fly                           |
 | [Force Pull][]           | Teleports the target to the caster                                          |
-| [Freeze][]               | Chills the target entity                                                    |
+| [Freeze][]               | Freezes the target for the given number of ticks using the Powdered Snow freezing effect                                                    |
 | [Glow][]                 | Makes the target glow                                                       |
 | [Give Item][]            | Gives an item to the target                                                 |
 | [Give Item From Target][] | Gives an item to the caster from the target                                |
