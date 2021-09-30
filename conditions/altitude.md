@@ -23,4 +23,3 @@ Conditions:
 
 - [x] Type: Entity
 - [x] Aliases: heightfromsurface
-
