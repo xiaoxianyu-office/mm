@@ -4,9 +4,9 @@
 
 **Attributes:**
 
-| Attribute | Aliases        | Description               |
+| Attribute | Alias        | Description               |
 | --------- | -------------  | ------------------------- |
-| distance| d| The radius to check in|
+| distance| d | The radius to check in|
 
 ---
 
@@ -21,4 +21,5 @@ Conditions:
 
 **Extra Information:**
 
+- [x] Alias: playersnotwithin
 - [x] Type: Entity
