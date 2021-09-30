@@ -4,9 +4,9 @@
 
 **Attributes:**
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| kills| k| The number range to match|
+| Attribute | Aliases        | Description               | Default |
+| --------- | -------------  | ------------------------- | ------- |
+| kills| k| The number range to match| 0 |
 
 ---
 
