@@ -6,7 +6,7 @@
 
 | Attribute | Alias | Description     |
 | --------- | ----- | --------------- |
-| region    | r     | the region name |
+| region    | r, name, n     | the region name |
 
 ---
 
