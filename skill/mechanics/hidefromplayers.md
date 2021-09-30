@@ -1,7 +1,8 @@
 Mechanic: Hide From Players
 ===================
 
-Hides the caster, if the caster is a player, from other players for a set duration. 
+Hides the caster, if the caster is a player, from other players for a set duration.  
+Caster will become a **vanilla** mob when it isn't a player.
 
 Attributes
 ----------
