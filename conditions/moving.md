@@ -1,7 +1,5 @@
 **Description:** If the target has a velocity greater than zero
 
-**Type:** Entity
-
 ---
 
 **Attributes:**
