@@ -8,7 +8,7 @@ Attributes
 
 | Attribute | Aliases      | Description                           | Default |
 |-----------|--------------|---------------------------------------|---------|
-| ticks     | t,d,duration | How many ticks the target should freeze | 60      |
+| ticks     | t | How many ticks the target should freeze | 60      |
 
   
 
