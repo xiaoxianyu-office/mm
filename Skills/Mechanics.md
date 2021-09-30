@@ -60,7 +60,7 @@ are able to target locations as well.
 | [Glow][]                 | Makes the target glow                                                       |
 | [Give Item][]            | Gives an item to the target                                                 |
 | [Give Item From Target][] | Gives an item to the caster from the target                                |
-| [Give Item From Slot][] | |
+| [Give Item From Slot][] | Gives an item to the target from the item in the given slot of caster |
 | [Heal][]                 | Heals the target                                                            |
 | [Heal Percent][]          | Heals the target for a percentage of its max-health                         |
 | [Hide From Players][] | Hides the caster, if the caster is a player, from other players for a set duration. |
