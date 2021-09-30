@@ -13,6 +13,12 @@ Attributes
 | slot        | s       | The given slot |               |
 | fakeLooting | fl      | plays the pickup-item animation from the origin | false |
 
+**Valid Slots:**
+
+| HEAD | CHEST | LEGS | FEET | HAND | OFFHAND |       
+| ---- | ----- | ---- | ---- | ---- | ------- |  
+---
+
 Added in MM 4.13
 
 ------------
