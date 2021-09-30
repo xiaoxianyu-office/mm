@@ -6,7 +6,7 @@
 
 | Attribute | Alias | Description                    |
 | --------- | ----- | ------------------------------ |
-| types     | t     | The types of mobs to check for |
+| types     | type, t     | The types of mobs to check for |
 | amount    | a     | The range of mobs to check for |
 | radius    | r     | The radius to check            |
 
