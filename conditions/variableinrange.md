@@ -25,4 +25,5 @@
 
 **Extra Information:**
 
+- [x] Aliases: varinrange, varrange
 - [x] Type: Skill
