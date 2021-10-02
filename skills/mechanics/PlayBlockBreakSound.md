@@ -2,7 +2,7 @@
 Plays the target block's breaking sound. Requires Paper.
 
 **Attributes**:
-| Attribute | Alias | Description | Default Vaule |
+| Attribute | Alias | Description | Default Value |
 | --------- | ----- | ----------- | ------------- |
 | pitch | p | The pitch of the sound. Can be between 0.01 and 2.0 | 1.0 |
 | volume | v | The volume of the sound. | 1.0 |
