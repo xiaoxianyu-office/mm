@@ -351,6 +351,11 @@ but not yet ready for use.
   [On Shoot]: /skills/mechanics/onshoot
   [Orbital]: /skills/mechanics/orbital
   [Projectile]: /skills/mechanics/projectile
+  [PlayBlockBreakSound]: skills/mechanics/PlayBlockBreakSound
+  [PlayBlockFallSound]: skills/mechanics/PlayBlockFallSound
+  [PlayBlockHitSound]: skills/mechanics/PlayBlockHitSound
+  [PlayBlockPlaceSound]: skills/mechanics/PlayBlockPlaceSound
+  [PlayBlockStepSound]: skills/mechanics/PlayBlockStepSound
   [Shoot]: /skills/mechanics/shoot
   [Volley]: /skills/mechanics/volley
   [Sudo Skill]: /skills/mechanics/sudoskill
