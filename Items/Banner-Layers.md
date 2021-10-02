@@ -41,8 +41,9 @@ Patterns
 | HALF\_VERTICAL           | TRIANGLE\_TOP         |
 | HALF\_VERTICAL\_MIRROR   | TRIANGLES\_BOTTOM     |
 | MOJANG                   | TRIANGLES\_TOP        |
-| RHOMBUS\_MIDDLE          |                       |
-| SKULL                    |                       |
+| RHOMBUS\_MIDDLE          | BRICKS                |
+| SKULL                    | GLOBE                 |
+| PIGLIN                   |                       |
 
 Examples
 --------
