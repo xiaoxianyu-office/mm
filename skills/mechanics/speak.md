@@ -24,6 +24,7 @@ Attributes
 | message       | m           | The message to be displayed (affects both hologram and chat). | NONE                             |
 | chatprefix    | cp          | The prefix for the chat message.                              | &lt;caster.name&gt;&f&lt;&co&gt; |
 | duration      | d, t        | The amount of time the hologram will be displayed for.        | MESSAGE LENGTH * 4              |
+| sendchatmessage | chatmessage, chat | Whether the message shows up in chat                  | true              |
 
   
 
