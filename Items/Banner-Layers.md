@@ -1,7 +1,7 @@
 Banner Layers
 =============
 
-<img src="http://fs5.directupload.net/images/160306/4jggyj4s.jpg" width="500" height="200" alt="http://fs5.directupload.net/images/160306/4jggyj4s.jpg" />
+![image](uploads/204528492902aa041447fe90880071d8/image.png)
 
 To make complex banner items in MythicMobs, you can use the following syntax. There is no hard limit placed by MythicMobs on the number of banner layers you can use and you can go past the vanilla maximum of 6 layers set by Minecraft using this. However going past 6 layers may cause unusual behavior and/or lag.
 
@@ -12,8 +12,7 @@ Syntax
 ```
 Banner:
   Id: <banner/shield>
-  Options:
-    Color: <BASE COLOR>
+#For Banners, the base color is set by the item ID
   BannerLayers:
   - <color> <pattern>
   - <color> <pattern>
@@ -48,28 +47,24 @@ Patterns
 Examples
 --------
 ```
-testbanner:
-  Id: banner
-  Display: '&rBanner of Test'
-  Options:
-Color: 0,0,0
+SkeletonKingBannerShield:
+  Id: shield
+  Display: '&4Skeleton King<&sq>s Banner'
   BannerLayers:
-  - GRAY DIAGONAL_RIGHT
-  - RED GRADIENT
-  - YELLOW GRADIENT_UP
-  - WHITE BORDER
-  - BLACK SKULL
-  - RED SKULL
-  - ORANGE SKULL
-  - YELLOW SKULL
+  - RED BASE
+  - WHITE CURLY_BORDER
+  - WHITE STRIPE_CENTER
+  - BLACK STRIPE_BOTTOM
+  - WHITE CREEPER
+  - YELLOW STRIPE_TOP
+  - BLACK TRIANGLES_TOP
 ```
 ```
 SkeletonKingBanner:
-  Id: banner
+  Id: orange_banner
   Display: '&4Skeleton King<&sq>s Banner'
-  Options:
-    Color: RED
   BannerLayers:
+  - RED BASE
   - WHITE CURLY_BORDER
   - WHITE STRIPE_CENTER
   - BLACK STRIPE_BOTTOM
