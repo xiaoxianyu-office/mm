@@ -25,8 +25,8 @@ are able to target locations as well.
 | [Arrow Volley][]       | Fires a volley of arrows                                       |
 | [Aura Remove][]         | Removes an aura from the target entity                         |
 | [Bar Create][]          | Creates a custom boss bar on the casting mob                   |
-| [Bar Set][]             | Modifies a custom boss bar on the casting mob                  |
 | [Bar Remove][]          | Removes a custom boss bar on the casting mob                   |
+| [Bar Set][]             | Modifies a custom boss bar on the casting mob                  |
 | [Break Block][]         | Breaks the block at the target location                        |
 | [Break Block And Give Item][] | Breaks the block at the target location and gives an item/droptable |
 | [Close Inventory][]    | Closes the target player's inventory                           |
