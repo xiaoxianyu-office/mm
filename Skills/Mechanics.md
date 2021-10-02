@@ -89,8 +89,7 @@ are able to target locations as well.
 | [Potion Clear][]          | Removes all potion effects from target entity                               |
 | [Prison][]               | Imprisons the target inside a block                                         |
 | [Pull][]                 | Pulls the target towards the mob                                            |
-| [Push Button][]           | Pushes a button at the target location                                      |
-
+| [Push Button][]           | Pushes a button at the target location                                      
 | [Ray Trace][]             | Traces a straight line to the target                                        |
 | [Ray Trace To][]           | Executes a skill with the result of a raytrace to the target location       |
 | [Rally][]                | Causes other nearby mobs to attack the target                               |
