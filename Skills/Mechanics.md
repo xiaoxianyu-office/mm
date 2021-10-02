@@ -79,12 +79,18 @@ are able to target locations as well.
 | [Mount Me][]             | Forces the targeted entity to mount the caster                                |
 | [Mount Target][]         | Mounts the target                                                           |
 | [Oxygen][]               | Gives oxygen to a player target                                             |
+| [PlayBlockBreakSound][] | Plays a block breaking sound                                                |
+| [PlayBlockFallSound][]  | Plays a block falling sound                                                 |
+| [PlayBlockHitSound][]   | Plays a block hit sound                                                     |
+| [PlayBlockPlaceSound][] | Plays a block place sound                                                   |
+| [PlayBlockStepSound][] | Plays a block step sound                                                     |
 | [Pose ArmorStand][]       | Changes the pose of the target ArmorStand                                   |
 | [Potion][]               | Applies a potion effect to the target                                       |
 | [Potion Clear][]          | Removes all potion effects from target entity                               |
 | [Prison][]               | Imprisons the target inside a block                                         |
 | [Pull][]                 | Pulls the target towards the mob                                            |
 | [Push Button][]           | Pushes a button at the target location                                      |
+
 | [Ray Trace][]             | Traces a straight line to the target                                        |
 | [Ray Trace To][]           | Executes a skill with the result of a raytrace to the target location       |
 | [Rally][]                | Causes other nearby mobs to attack the target                               |
