@@ -7,7 +7,12 @@
 - Major API rewrite
 - Registering custom triggers
 
+4.13.1
+======
 
+Bug Fixes/Other
+---------------
+- Fixed several critical issues with spawners
 
 4.13.0 (formerly 5.0.0-alpha1)
 ======
