@@ -58,6 +58,9 @@ Breaking down the options
 -   **Display: '\[display\_name\]'**
     -   Sets the display name of the item.
     -   Supports color codes and string variables: [Variables](/skills/stringvariables)
+    -   Can use hex colors in this format `<#FFFFFF>`
+    -   Can use gradients using this format `<gradient:#color1:#color2>text</gradient>`
+    -   Rainbows as well `<rainbow>YOURTEXTHERE</rainbow>`
     -   Must be encased by single quotes.
     -   For using single quotes inside of the name, you can use the &lt;&sq&gt; variable.
     -   Examples:
@@ -113,6 +116,9 @@ Breaking down the options
 -   **Lore:**
     -   Allows you to add custom lore to your items.
     -   Supports color codes and string [Variables](/skills/stringvariables).
+    -   Can use hex colors in this format `<#FFFFFF>`
+    -   Can use gradients using this format `<gradient:#color1:#color2>text</gradient>`
+    -   Rainbows as well `<rainbow>YOURTEXTHERE</rainbow>`
     -   Must be encased by single quotes.
     -   For using single quotes inside of the name, you can use the &lt;&sq&gt; variable.
     -   Putting number ranges surrounded by curly braces will generate a random number in that range when the item is created (i.e. *Health: +{100-200}* would become something like *Health: +152*). Works with ItemLoreStats.
