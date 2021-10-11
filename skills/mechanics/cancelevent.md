@@ -19,7 +19,9 @@ Possible Triggers
 -   ~onInteract
 -   ~onCombat
 -   ~onTeleport
--   ~onUse(Required Crucible)
+-   ~onShoot (Requires Crucible for a bow / crossbow)
+-   ~onUse (Requires Crucible)
+-   ~onConsume (Requires Crucible)
 
 Example
 -------
