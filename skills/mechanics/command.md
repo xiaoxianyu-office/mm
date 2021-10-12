@@ -23,7 +23,7 @@ Attributes
 | command       | c       | The command to execute                                                   |         |
 | asCaster      | ac      | If true the command will execute from the caster instead of the console. | false   |
 | asOp          | op      | Whether to execute the command with all permissions                      | false   |
-| asTarget      | at      | Executes the command as the skill target                                 | false   |
+| asTarget      | at      | Will execute the command as the targeted entity                          |                          | false |
 | requireTarget | rt      | Only executes if the skill has a target                                  | false   |
 
   
