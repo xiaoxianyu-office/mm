@@ -56,37 +56,43 @@ Breaking down the options
 
 <!-- -->
 
-####   **Display**: '\[display\_name\]'
+#### **Display**:
 -   Sets the display name of the item.
 -   Supports color codes and string variables: [Variables](/skills/stringvariables)
 -   Can use hex colors in this format `<#FFFFFF>`
 -   Can use gradients using this format `<gradient:#color1:#color2>text</gradient>`
--   Rainbows as well `<rainbow>YOURTEXTHERE</rainbow>`
+-   Can use rainbow using this format `<rainbow>YOURTEXTHERE</rainbow>`
 -   Must be encased by single quotes.
 -   For using single quotes inside of the name, you can use the &lt;&sq&gt; variable.
     -   Examples:
         -   ```Display: 'Very Strong Sword'```
         -   ```Display: '&eVery Strong Sword'```
+        -   ```Display: 'Phil<&sq>s Strong Sword'```
+        -   ```Display: 'Phil''s Strong Sword'```
 <!-- -->
--   **Model: \[a number\]**
-    -   Sets the CustomModelData tag on the item.
-    -   Only usable in 1.14+
+
+#### **Model**:
+-   Sets the CustomModelData tag on the item.
+-   Only usable in 1.14+
+    - Examples:
+      - ```Model: 1```
+
 <!-- -->
--   **Attributes:**
-    -   Special field that allows the addition of item attributes to certain entity slots: [Item Attributes](/Items/Attributes)
+#### **Attributes**:
+-   Special field that allows the addition of item attributes to certain entity slots: [Item Attributes](/Items/Attributes)
 
 <!-- -->
 
--   **Amount:**
-    -   Defines the default amount of items to give when this item isbeing called by the plugin.
+#### **Amount**:
+-   Defines the default amount of items to give when this item is being called by the plugin.
     -   Examples:
         -   ```Amount: 8```
 
 <!-- -->
 
--   **Options:**
-    -   This is a special field which comes with numerous sub-options, determining lots of extra attributes for the item.
-    -   A complete list of all available options: [Item Options](/databases/items/options)
+#### **Options**:
+-   This is a special field which comes with numerous sub-options, determining lots of extra attributes for the item.
+-   A complete list of all available options: [Item Options](/Items/Options)
 
 <!-- -->
 
@@ -95,41 +101,41 @@ Breaking down the options
 
 <!-- -->
 
-#### Hide:
+#### **Hide**:
 - Special field that allows to hide specific things from the item tooltip. All the possible flags that can be hidden are "ATTRIBUTES", "ENCHANTS", "DESTROYS", "DYE", "PLACED\_ON","POTION\_EFFECTS" and "UNBREAKABLE".
 
-  **Example:**
-  ```
-   Hide:
-   - ATTRIBUTES
-   - UNBREAKABLE
-  ```
+    - Examples
+      ```
+      Hide:
+      - ATTRIBUTES
+      - UNBREAKABLE
+      ```
 
 <!-- -->
 
--   **Enchantments:**
-    -   This field allows to add enchantments to items.
-    -   Any type of of item can have any enchanment(s).
-    -   A complete list of all available enchantments: [Enchantments](/Items/Enchantments)
+#### **Enchantments**:
+-   This field allows to add enchantments to items.
+-   Any type of of item can have any enchanment(s).
+-   A complete list of all available enchantments: [Enchantments](/Items/Enchantments)
 
 <!-- -->
 
--   **Lore:**
-    -   Allows you to add custom lore to your items.
-    -   Supports color codes and string [Variables](/skills/stringvariables).
-    -   Can use hex colors in this format `<#FFFFFF>`
-    -   Can use gradients using this format `<gradient:#color1:#color2>text</gradient>`
-    -   Rainbows as well `<rainbow>YOURTEXTHERE</rainbow>`
-    -   Must be encased by single quotes.
-    -   For using single quotes inside of the name, you can use the &lt;&sq&gt; variable.
-    -   Putting number ranges surrounded by curly braces will generate a random number in that range when the item is created (i.e. *Health: +{100-200}* would become something like *Health: +152*). Works with ItemLoreStats.
-Examples:
-```
-  Lore:
-  - '&rThe weapon of a true warrior'
-  - ''
-  - '&cIncreases ones greed'`
-```
+#### **Lore**:
+-   Allows you to add custom lore to your items.
+-   Supports color codes and string [Variables](/skills/stringvariables).
+-   Can use hex colors in this format `<#FFFFFF>`
+-   Can use gradients using this format `<gradient:#color1:#color2>text</gradient>`
+-   Can use rainbow using this format `<rainbow>YOURTEXTHERE</rainbow>`
+-   Must be encased by single quotes.
+-   For using single quotes inside of the name, you can use the &lt;&sq&gt; variable.
+-   Putting number ranges surrounded by curly braces will generate a random number in that range when the item is created (i.e. *Health: +{100-200}* would become something like *Health: +152*). Works with ItemLoreStats.
+    - Examples:
+      ```
+       Lore:
+       - '&rThe weapon of a true warrior'
+       - ''
+       - '&cIncreases ones greed'`
+      ```
 <!-- -->
 
 -   **PotionEffects:**
