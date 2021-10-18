@@ -151,9 +151,9 @@ Breaking down the options
 -   This option is capable of passing minecraft's 6 layer limit. However adding excessive amounts of layers may cause weird behavior and will not be supported.
 -   See [Banner Layers](/Items/Banner%20Layers)
 
-### NBT Support
+### **NBT**:
+- Specify what NBT tags to put on your items in the format:
 
-You can now specify NBT tags on items in the format:
 ```
 Item:
   Id: DIAMOND_SWORD
