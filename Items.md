@@ -27,21 +27,22 @@ iternal_itemname:
 Breaking down the options
 -------------------------
 
--   **internal\_itemname:**
-    -   This string will be how your item is referenced internally in MythicMobs and can be any name you like.
-    -   Must be alphanumerical and is case sensitive with **no spaces allowed**.
-    -   Examples:
-        -   ```strong_sword:```
-        -   ```StrongSword:```
-        -   ```strongsword:```
+#### **Internal_Name**:
+- This string will be how your item is referenced internally in MythicMobs and can be any name you like.
+- Must be alphanumeric, **NO SPACES ALLOWED**.
+   - Examples:
+     -   ```strong_sword:```
+     -   ```StrongSword:```
+     -   ```strongsword:```
+     -   ```StrongSword1:```
 
 <!-- -->
 
--   **Id:**
-    -   Defines the type of item.
-    -   Can be either the item id or the bukkit material/item name.
-    -   Often used items are listed here: [Common Item IDs](items/Common Item Id's)
-    -   A list of Spigot IDs for the current version is [available here.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
+#### **Id**:
+-   Defines the type of item.
+-   Can be either the item id or the bukkit material/item name.
+-   Often used items are listed here: [Common Item IDs](items/Common Item Id's)
+-   A list of Spigot IDs for the current version is [available here.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
     -   Example:
         -   ```Id: diamond\_sword```
     -   It is STRONGLY RECOMMENDED to use namespaced item IDs, e.g. ```diamond\_sword```
@@ -49,9 +50,9 @@ Breaking down the options
 
 <!-- -->
 
--   **Data:**
-    -   Sets the data value of the item created.
-    -   Used to specify the *used up* durability points on items, weapons or armor or to specify the sub-type of a block.
+####   **Data**:
+-   Sets the data value of the item created.
+-   Used to specify the *used up* durability points on items, weapons or armor or to specify the sub-type of a block.
 
 <!-- -->
 
@@ -94,15 +95,15 @@ Breaking down the options
 
 <!-- -->
 
-#### Hide
-Special field that allows to hide specific things from the item tooltip. All the possible flags that can be hidden are "ATTRIBUTES", "ENCHANTS", "DESTROYS", "DYE", "PLACED\_ON","POTION\_EFFECTS" and "UNBREAKABLE".
+#### Hide:
+- Special field that allows to hide specific things from the item tooltip. All the possible flags that can be hidden are "ATTRIBUTES", "ENCHANTS", "DESTROYS", "DYE", "PLACED\_ON","POTION\_EFFECTS" and "UNBREAKABLE".
 
-**Example:**
-```
-  Hide:
-  - ATTRIBUTES
-  - UNBREAKABLE
-```
+  **Example:**
+  ```
+   Hide:
+   - ATTRIBUTES
+   - UNBREAKABLE
+  ```
 
 <!-- -->
 
