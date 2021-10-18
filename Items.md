@@ -96,8 +96,8 @@ Breaking down the options
 
 <!-- -->
 
--   **Durability:**
-    -   Defines the starting durability of the item.
+#### **Durability**:
+-   Defines the starting durability of the item.
 
 <!-- -->
 
@@ -138,18 +138,18 @@ Breaking down the options
       ```
 <!-- -->
 
--   **PotionEffects:**
-    -   This allows you to add potion effects to your items.
-    -   These effects won't do anything, except for showing up in the item tooltip, if the specified item isn't a potion.
-    -   See [Potions](/databases/items/potions).
+#### **PotionEffects:**
+-   This allows you to add potion effects to your items.
+-   These effects won't do anything, except for showing up in the item tooltip, if the specified item isn't a potion.
+-   See [Potions](/Items/Potions).
 
 <!-- -->
 
--   **BannerLayers:**
-    -   This option allows you to edit the layers of a banner.
-    -   Won't do anything if the selected item isn't a banner.
-    -   This option is capable of passing minecraft's 6 layer limit. However adding excessive amounts of layers may cause weird behavior and will not be supported.
-    -   See [Banner Layers](/databases/items/bannerlayers)
+#### **BannerLayers:**
+-   This option allows you to edit the layers of a banner.
+-   Won't do anything if the selected item isn't a banner.
+-   This option is capable of passing minecraft's 6 layer limit. However adding excessive amounts of layers may cause weird behavior and will not be supported.
+-   See [Banner Layers](/Items/Banner%20Layers)
 
 ### NBT Support
 
