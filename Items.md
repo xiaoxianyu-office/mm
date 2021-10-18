@@ -50,20 +50,20 @@ Breaking down the options
 
 <!-- -->
 
-####   **Data**:
+#### **Data**:
 -   Sets the data value of the item created.
 -   Used to specify the *used up* durability points on items, weapons or armor or to specify the sub-type of a block.
 
 <!-- -->
 
--   **Display: '\[display\_name\]'**
-    -   Sets the display name of the item.
-    -   Supports color codes and string variables: [Variables](/skills/stringvariables)
-    -   Can use hex colors in this format `<#FFFFFF>`
-    -   Can use gradients using this format `<gradient:#color1:#color2>text</gradient>`
-    -   Rainbows as well `<rainbow>YOURTEXTHERE</rainbow>`
-    -   Must be encased by single quotes.
-    -   For using single quotes inside of the name, you can use the &lt;&sq&gt; variable.
+####   **Display**: '\[display\_name\]'
+-   Sets the display name of the item.
+-   Supports color codes and string variables: [Variables](/skills/stringvariables)
+-   Can use hex colors in this format `<#FFFFFF>`
+-   Can use gradients using this format `<gradient:#color1:#color2>text</gradient>`
+-   Rainbows as well `<rainbow>YOURTEXTHERE</rainbow>`
+-   Must be encased by single quotes.
+-   For using single quotes inside of the name, you can use the &lt;&sq&gt; variable.
     -   Examples:
         -   ```Display: 'Very Strong Sword'```
         -   ```Display: '&eVery Strong Sword'```
