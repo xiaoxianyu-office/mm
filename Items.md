@@ -94,9 +94,9 @@ Breaking down the options
 
 <!-- -->
 
--   **Hide:**
-    -   Special field that allows to hide specific things from the item tooltip.
-    -   Possible are "ATTRIBUTES", "ENCHANTS", "DESTROYS", "PLACED\_ON","POTION\_EFFECTS" and "UNBREAKABLE".
+###### Hide
+Special field that allows to hide specific things from the item tooltip. All the possible flags that can be hidden are "ATTRIBUTES", "ENCHANTS", "DESTROYS", "DYE", "PLACED\_ON","POTION\_EFFECTS" and "UNBREAKABLE".
+
 **Example:**
 ```
   Hide:
