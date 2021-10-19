@@ -17,7 +17,7 @@ Syntax
       - ...
 
 **&lt;item&gt;**  
-Can be either the name of a [MythicMobs item](/databases/items/overview) or a vanilla item.
+Can be either the name of a [MythicMobs item](Items) or a vanilla item.
 
 **&lt;slot&gt;**  
 Defines the slot on the mob that item should be carried on.
