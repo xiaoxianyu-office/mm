@@ -6,7 +6,7 @@ Spawns a hologram at a target location.
 | Attributes | Alias |    Description   |     Default Value     |
 | ---------- | ----- | ---------------- | --------------------- |
 |    text    | t     | The text to show | Hologram Text Missing |
-|    stay    | time  | hologram's stay time(ticks) | 100 |
+|    stay    | time  | The duration of the hologram | 100 |
 
 **Example**:
 -----------
