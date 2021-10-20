@@ -64,6 +64,7 @@ are able to target locations as well.
 | [Heal][]                 | Heals the target                                                            |
 | [Heal Percent][]          | Heals the target for a percentage of its max-health                         |
 | [Hide From Players][] | Hides the caster, if the caster is a player, from other players for a set duration. |
+| [Hologram][] | Summons a hologram to the targeted location                                             |
 | [Ignite][]               | Sets the target on fire                                                     |
 | [JSON Message][]         | Sends a JSON-format message to the target player(s)                         |
 | [Jump][]                 | Causes the caster to jump                                                   |
@@ -262,6 +263,7 @@ but not yet ready for use.
   [Give Item From Target]: /skills/mechanics/giveitemfromtarget
   [Heal]: /skills/mechanics/heal
   [Heal Percent]: /skills/mechanics/healpercent
+  [Hologram]: /skills/mechanics/hologram
   [Ignite]: /skills/mechanics/ignite
   [JSON Message]: /skills/mechanics/jsonmessage
   [Jump]: /skills/mechanics/jump
