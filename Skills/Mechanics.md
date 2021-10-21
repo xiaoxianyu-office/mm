@@ -54,7 +54,7 @@ are able to target locations as well.
 | [Fawe Paste][]            | Pastes a Schematic using FAWE (Fast Async World Edit)                       |
 | [Feed][]                 | Feeds the target player                                                     |
 | [Fill Chest][]            | Fills a chest with items, or a droptable                                    |
-| [Fly][]                  | Applies an [aura][] that allows the target to fly                           |
+| [Fly][]                  | Applies an [aura][] that allows the targeted player to fly                           |
 | [Force Pull][]           | Teleports the target to the caster                                          |
 | [Freeze][]               | Freezes the target for the given number of ticks using the Powdered Snow freezing effect                                                    |
 | [Glow][]                 | Makes the target glow                                                       |
