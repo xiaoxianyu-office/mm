@@ -43,7 +43,7 @@ helmet.
 How do I make "caster" mobs that cast spells instead of using melee attacks?
 ----------------------------------------------------------------------------
 
-The best way to go about doing this is using a projectile casted onTimer. A more thorough example can be found on the wiki page for [Projectiles](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/projectile).
+The best way to go about doing this is using a projectile casted onTimer. A more thorough example can be found on the wiki page for [Projectiles](/skills/mechanics/projectile).
 
 How do I use color codes in Player Disguises?
 ---------------------------------------------
