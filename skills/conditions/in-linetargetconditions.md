@@ -1,4 +1,4 @@
-**In-line Target Conditions (Premium Only!)**
+**In-line Conditions (Premium Only!)**
 =============================================
 
 In-line target conditions allow you to apply conditions to your targeters so that you only target the exact entity / location you are looking for. First lets look at the formatting of it. 
@@ -48,3 +48,11 @@ In this example we are inside of a meta-skill of a minigame. The targeter is che
   Skills:
   - skill{s=LMG_ActivateAGreen} @MIR{r=50;t=LaserMinigameButtons;conditions=[  - variableequals{var=target.myTeam;value="GREEN"} true  - variableequals{var=target.amActive;value=0} true ];limit=1;sort=RANDOM}
 ```
+
+In-line conditions are not limited to Target Conditions! You can also use the usual Trigger Conditions as well.
+
+Here's an example of how to do this `- stun{d=30;f=true} @target ~onAttack ?wearing{s=HAND;m=APPLE}`
+It's pretty simple, Mechanic, Targeter, Trigger, then Condition.
+`?` = True `?!` = False
+So `?wearing{s=HAND;m=APPLE}` requires the condition to be true, while `?!wearing{s=HAND;m=APPLE}` requires the condition to be false.
+You can also have multiple conditions separated by a simple space. Example: `- stun{d=30;f=true} @target ~onAttack ?wearing{s=HAND;m=APPLE} ?wearing{s=HEAD;m=DIAMOND_HELMET}`
