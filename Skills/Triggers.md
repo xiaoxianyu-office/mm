@@ -18,6 +18,8 @@ itself.
 | onSpawn               | When the mob spawns                                         |
 | onDespawn             | When the mob is despawned                                   |
 | onFirstSpawn          | Triggered the first time a mob is spawned from a spawner    |
+| onLoad                | When the mob is loaded (spawning or loading after a restart)
+|
 | onDeath               | When the mob dies                                           |
 | onTimer:\#            | Every \# ticks (where \# is the interval in ticks)          |
 | onInteract            | When the mob is right-clicked                               |
