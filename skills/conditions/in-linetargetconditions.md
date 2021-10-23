@@ -52,7 +52,12 @@ In this example we are inside of a meta-skill of a minigame. The targeter is che
 In-line conditions are not limited to Target Conditions! You can also use the usual Trigger Conditions as well.
 
 Here's an example of how to do this `- stun{d=30;f=true} @target ~onAttack ?wearing{s=HAND;m=APPLE}`
+
 It's pretty simple, Mechanic, Targeter, Trigger, then Condition.
+
 `?` = True `?!` = False
-So `?wearing{s=HAND;m=APPLE}` requires the condition to be true, while `?!wearing{s=HAND;m=APPLE}` requires the condition to be false.
+
+So `?wearing{s=HAND;m=APPLE}` requires the condition to be true, while `?!wearing{s=HAND;m=APPLE}` 
+requires the condition to be false.
+
 You can also have multiple conditions separated by a simple space. Example: `- stun{d=30;f=true} @target ~onAttack ?wearing{s=HAND;m=APPLE} ?wearing{s=HEAD;m=DIAMOND_HELMET}`
