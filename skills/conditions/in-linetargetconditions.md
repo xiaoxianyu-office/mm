@@ -61,3 +61,7 @@ So `?wearing{s=HAND;m=APPLE}` requires the condition to be true, while `?!wearin
 requires the condition to be false.
 
 You can also have multiple conditions separated by a simple space. Example: `- stun{d=30;f=true} @target ~onAttack ?wearing{s=HAND;m=APPLE} ?wearing{s=HEAD;m=DIAMOND_HELMET}`
+
+
+You can also add cooldowns in-line as well! It's really simple, here's an example `stun{d=30;f=true;cd=5}`
+You simply add `cd=number` to whatever mechanic you're using!
