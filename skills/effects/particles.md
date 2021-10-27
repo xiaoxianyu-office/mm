@@ -61,3 +61,7 @@ As of MythicMobs version 2.3, some particles effects (mobSpell, mobSpellAmbient,
     Skills:
     - effect:particles{particle=block;m=dirt;amount=100;hS=1;vS=1} @self
     - ...
+
+    Skills:
+    - particles{particle=flame;a=10;hs=0.3;vs=0.3;y=0.3;s=0.1125} @self
+    - ...
