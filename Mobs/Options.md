@@ -570,7 +570,7 @@ different mobtype.
 **Profession: \[profession\]**
 
       * Specifies the profession of the villager type mob.
-      * Can be ARMORER, BUTCHER, CARTOGROPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, NONE, SHEPHERD, TOOLSMITH, WEAPONSMITH.
+      * Can be ARMORER, BUTCHER, CARTOGRAPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, NONE, SHEPHERD, TOOLSMITH, WEAPONSMITH.
       * Villagers without this option will roll a random profession on their initial spawn.
       * Examples:
         Profession: MASON
