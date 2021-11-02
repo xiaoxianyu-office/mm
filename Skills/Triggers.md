@@ -32,6 +32,7 @@ itself.
 | onSignal              | When the mob receives a signal                              |
 | onSignal:*[signal]* | When the mob receives a specific signal                     |
 | onShoot               | When the mob fires a projectile                             |
+| onTame                | When the mob gets tamed                                     |
 
 **Table of all available **MythicCrucible** triggers:**
 
