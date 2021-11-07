@@ -269,13 +269,14 @@ different mobtype.
 -   All values accept number ranges - see example below.
 -   Note that these pose options will not be recognized under the
     options-tag but must be set like this:
--   ```Mob:
-      Type: armor_stand
-      Pose:
-        Head: 0,50,0
-        Body: 0,10,10
-        LeftArm: 0 to 360,0,0
-        RightArm: 0 to 90,0,0
+```
+Mob:
+  Type: armor_stand
+  Pose:
+    Head: 0,50,0
+    Body: 0,10,10
+    LeftArm: 0 to 360,0,0
+    RightArm: 0 to 90,0,0
 ```
 
 #### Bees
