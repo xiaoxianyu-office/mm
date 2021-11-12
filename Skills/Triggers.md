@@ -22,6 +22,7 @@ itself.
 | onDeath               | When the mob dies                                           |
 | onTimer:\#            | Every \# ticks (where \# is the interval in ticks)          |
 | onInteract            | When the mob is right-clicked                               |
+| onKill                | When something kills a mob                                  |
 | onKillPlayer          | When the mob kills a player                                 |
 | onPlayerDeath         | When a player dies for any reason                           |
 | onEnterCombat         | When the mob enters combat (requires threat tables be on)   |
