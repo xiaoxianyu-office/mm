@@ -42,7 +42,8 @@ These options are universal and will work regardless of the mobtype.
 
 **DigOutOfGround: \[true/false\]**
 
-      * Makes the mob dig out of the ground if it takes suffocation damage
+      * Teleports the mob two blocks up if takes SUFFOCATION damage.
+      * Defaults to false.
 
 **Despawn: \[true/false/chunk/persistent\]**
 
