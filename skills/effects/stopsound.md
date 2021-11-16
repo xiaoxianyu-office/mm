@@ -11,6 +11,8 @@ Stops a sound from playing from either the vanilla game or a resource pack for t
 | sound            | s     | Sound to stop playing                                            | entity.zombie.attack_iron_door           |
 | soundcategory    | sc    | The category at which the sound is played, useful for resourcepacks | MASTER     |
 
+A list of sound categories can be found [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/SoundCategory.html).
+
 ---
 
 **Examples:**
