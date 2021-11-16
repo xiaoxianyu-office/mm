@@ -52,8 +52,9 @@ skill **effect:name**, for example:
 | [Skybox][]           | Alters the target's skybox                                            |
 | [Smoke][]            | Creates a puff of smoke                                               |
 | [Smoke Swirl][]      | Creates a persistent "swirl" of smoke                                 |
-| [Sound][]            | Plays a sound effect from both vanilla Minecraft and resource packs                           |
+| [Sound][]            | Plays a sound effect from both vanilla Minecraft and resource packs   |               
 | [Spin][]             | Causes the mob to spin                                                |
+| [StopSound][]        | Stops a sound effect from playing                                     |
 | [TotemOfUndying][]     | Plays the effect of a player resurrecting                             |
 
 ### EffectLib Effects
@@ -97,6 +98,7 @@ Note: EffectLib was dropped in MM ver 4.11, so the below effects no longer work.
   [Smoke Swirl]: /skills/effects/smokeswirl
   [Sound]: /skills/effects/sound
   [Spin]: /skills/effects/spin
+  [StopSound]: /skills/effects/stopsound
   [TotemOfUndying]: /skills/effects/totemOfUndying
   [Atom]: /skills/effects/atom
   [Particle Vortex]: /skills/effects/particlevortex
