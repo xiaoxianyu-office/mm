@@ -11,7 +11,7 @@ have an actual function on potions. Here is an example:
 internal_itemname:
   Id: potion
   Options:
-    Color: <RED>,<GREEN>,<BLUE>
+    Color: <RED value>,<GREEN value>,<BLUE value>
   PotionEffects:
   - <type> <duration> <level>
 ```
@@ -25,7 +25,7 @@ The duration of the potion effect measured in ticks [1].
 The level modifier for the potion effect. 0 = Level I, 1 = Level II, Etc.
 
 **colors**  
-The RGB color of the potion, i.e. **Color: 255,0,255** for a purple potion
+The [RGB](https://www.w3schools.com/colors/colors_rgb.asp) color of the potion, i.e. **Color: 255,0,255** for a purple potion
 
 Potion Effects
 --------------
