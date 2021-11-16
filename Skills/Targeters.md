@@ -157,15 +157,18 @@ Possible filters include:
 
 -   self
 -   animals *(non-hostile mobs)*
+-   armorstands/armor_stands
 -   creative *(ignored by default)*
 -   creatures *(any type of sentient entity)*
 -   flyingmobs
+-   marker
 -   monsters *(hostile mobs)*
 -   NPCs *(Citizens NPCs, ignored by default)*
 -   players
 -   samefaction *(mobs marked with the same faction type)*
 -   spectators *(ignored by default)*
 -   vanilla
+-   villager
 -   watermobs
 -   More coming later...
 
