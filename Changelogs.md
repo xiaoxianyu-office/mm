@@ -5,7 +5,20 @@
 ----------
 - Mythic API separated out into an independent module (for add-on authors)
 - Major API rewrite
+- Bouncy projectiles
 - Registering custom triggers
+
+Mechanics
+---------
+### Projectile
+- Added **bounce=true** option (premium-only)
+- Added **bounceVelocityMod** option (defaults to 0.9)
+
+Adding **bounce=true** will cause projectiles to bounce off of surfaces instead of just stopping. Every time it bounces, its velocity will be multiplied by _bounceVelocityMod_.
+
+**The bounding box used for bouncing is calculated using the projectile's hit radius options, so if the projectile seems to be bouncing when it isn't close to a surface and you want more accuracy, try lowering the hit-radius!**
+
+Calculating the physics for bouncing is quite intensive, so don't go too crazy with it on weaker servers!
 
 4.13.1
 ======
