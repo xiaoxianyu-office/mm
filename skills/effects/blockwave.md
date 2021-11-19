@@ -29,9 +29,12 @@ Added in 4.12:
 
 ---
 
-Material must be the corresponding Bukkit-material name. A list of possible materials is below:
+Material must be the corresponding Bukkit-material name if one is added. A list of possible materials is below:
 
 https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+If material is left blank, it will use whatever material type it is used on. 
+Example: if you leave it blank and use it on a villager building, you will see the blocks of the building used in the blockwave. 
 
 The data value is only needed for old minecraft server versions - For example: using data value 1 on dirt will create coarse dirt.
 
