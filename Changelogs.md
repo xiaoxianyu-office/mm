@@ -7,6 +7,7 @@
 - Major API rewrite
 - Bouncy projectiles
 - Registering custom triggers
+- A few bug fixes
 
 Mechanics
 ---------
@@ -19,6 +20,18 @@ Adding **bounce=true** will cause projectiles to bounce off of surfaces instead 
 **The bounding box used for bouncing is calculated using the projectile's hit radius options, so if the projectile seems to be bouncing when it isn't close to a surface and you want more accuracy, try lowering the hit-radius!**
 
 Calculating the physics for bouncing is quite intensive, so don't go too crazy with it on weaker servers!
+
+### SendTitle
+- Allows <#colors>. For example, `<gradient:#570861:#228B22>THE VOID</gradient>`.
+
+### NEW: StopSound
+- effect:stopsound{sound=ambient.cave;soundcategory=master} @target
+- Stops a specific sound from being played to the targeted player.
+
+Entity Types
+--------
+### NEW: ITEM
+
 
 4.13.1
 ======
