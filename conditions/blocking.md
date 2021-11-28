@@ -1,4 +1,4 @@
-**Description:** This condition tests if the target entity is blocking with a shield. 
+**Description:** This condition tests if the target player is blocking with a shield. 
 
 ---
 
