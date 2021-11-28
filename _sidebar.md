@@ -16,7 +16,7 @@
   * [Damage Modifiers](Mobs/DamageModifiers)
   * [Equipment](Mobs/Equipment)
   * [BossBar](Mobs/BossBar)
-  * [Custom AI](Mobs/AI-Goal-Selectors)
+  * [Custom AI](Mobs/Custom-AI.md)
   * [Custom Kill Messages](Mobs/KillMessages)
   * [Threat Tables](Mobs/ThreatTables)
   * [Immunity Tables](Mobs/ImmunityTables)
