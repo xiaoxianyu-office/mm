@@ -101,7 +101,7 @@ Conditions
 | [Altitude](/conditions/altitude)                             | Entity   | Tests how far above the ground the target entity is                                         |
 | [Biome](/conditions/biome)                                   | Location | Tests if the target is within the given list of biomes                                      |
 | [BlockType](/conditions/blocktype)                           | Location | Tests the material type present at the target location                                      |
-| [Blocking](/conditions/blocking)                             | Entity   | Tests if the target entity is blocking with a shield                                        |
+| [Blocking](/conditions/blocking)                             | Entity   | Tests if the targeted player is blocking with a shield                                        |
 | [Burning](/conditions/burning)                              | Entity | Whether or not the target entity is on fire |
 | [Children](/conditions/children)                             | Entity   | Tests how many children the caster has                                                      |
 | [Color](/conditions/color)                                   | Entity   | Tests the entity's colors |
