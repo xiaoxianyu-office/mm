@@ -85,7 +85,7 @@ AIGoalSelectors:
 | ------------- | ---------------- | ----------------------------------------------------- |
 | crossbowAttack   |                  | attack with a crossbow     |
 
-**Target Selectors**
+**AI Target Selectors**
 ---
 Target Selectors are used with the AITargetSelectors field and determine what mobs try to target.
 
