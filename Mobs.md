@@ -61,7 +61,7 @@ Breaking down the options
     tag above it's head.
 -   Supports color codes and variables:
     [Variables](/skills/stringvariables)(but variables read only once after birth)
--   Use [setName](/skills/mechaincs/setname) to change display name
+-   Use [setName](/skills/mechanics/setname) to change display name
 -   Must be encased by single quotes.
 -   For using single quotes inside of the name, you can use the
     &lt;&sq&gt; variable.
