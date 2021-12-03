@@ -169,7 +169,8 @@ Special Placeholders
 | <trigger.score.objective>        | Returns the score of the trigger from "objective"          |
 | <global.score.objective>         | Returns the score of fake player: \_\_GLOBAL\_\_ score from "objective"             |
 | <score.objective.dummyname>      | Returns the score of "dummyname" (fake player) from "objective" |
-| <random.#to#>  | Returns a random number in the specified range                                             |
+| <random.#to#>  | Returns a random integer in the specified range                                    |
+| <random.float.#to#> | Returns a random float number in the specified range |
 
 Examples
 --------------------
