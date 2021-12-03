@@ -32,6 +32,10 @@ Entity Types
 --------
 ### NEW: ITEM
 
+Placeholders
+--------
+- `<random.float.#to#>`
+
 
 4.13.1
 ======
