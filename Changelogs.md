@@ -38,7 +38,7 @@ Entity Types
 
 Placeholders
 --------
-- Added `<random.float.#to#>`
+- Added `<random.float.#to#>` which returns a random floating point number in a specified range
 
 
 4.13.1
