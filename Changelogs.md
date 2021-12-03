@@ -28,13 +28,17 @@ Calculating the physics for bouncing is quite intensive, so don't go too crazy w
 - effect:stopsound{sound=ambient.cave;soundcategory=master} @target
 - Stops a specific sound from being played to the targeted player.
 
+### Delay
+- Added placeholder support
+
+
 Entity Types
 --------
 ### NEW: ITEM
 
 Placeholders
 --------
-- `<random.float.#to#>`
+- Added `<random.float.#to#>`
 
 
 4.13.1
