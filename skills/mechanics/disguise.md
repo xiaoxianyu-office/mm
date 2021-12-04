@@ -4,7 +4,7 @@ Mechanic: Disguise
 Runs a disguise string on the casting mob. This skill requires Libs'
 Disguises and ProtocolLib be installed to enable Disguise functionality.
 
-See [Add-On: Disguises](/addons/disguises/start) for a list of available
+See [Add-On: Disguises](/Mobs/Disguises) for a list of available
 disguises.
 
 As of 4.12 the Disguise mechanic got an overhaul and allows for direct command strings from LibsDiguises to work inside of its disguise attribute. The old way was renamed disguiseOld and the new way is disguise!
