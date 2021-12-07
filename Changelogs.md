@@ -31,6 +31,9 @@ Calculating the physics for bouncing is quite intensive, so don't go too crazy w
 ### Delay
 - Added placeholder support
 
+### NEW: onDeath
+- Added onDeath aura. Treat it as if it was ~onDeath trigger and not use any targeters that will target the entity that died.
+
 
 Entity Types
 --------
