@@ -37,10 +37,6 @@ These options are applicable to all items:
 
   - Prevents the item from stacking to similar items.
 
-**MaxEnchants: \[Integer\]**
-
-  - The max amount of enchantments that can be applied to the item.
-
 Playerheads
 -----------
 
