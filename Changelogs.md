@@ -9,6 +9,10 @@
 - Registering custom triggers
 - A few bug fixes
 
+General
+-------
+- Added 1.18 support
+
 Mechanics
 ---------
 ### Projectile
