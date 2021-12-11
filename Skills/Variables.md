@@ -29,9 +29,10 @@ A variable's "scope" is **where** that variable exists. Not all scopes are appli
 | CASTER   | On the casting mob.                                                                                |
 | TARGET   | On the target of the mechanic/condition.                                                           |
 | TRIGGER  | The entity or player that triggered the skill.                                                                                       |
+| PARENT   | The entity's parent.                                                                                        |
 | WORLD    | The current world.                                                                                 |
 | GLOBAL   | The server.                                                                                        |
-| PARENT   | The entity's parent.                                                                                        |
+
 
 ### Usage
 
