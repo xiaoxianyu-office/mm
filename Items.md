@@ -7,7 +7,7 @@ Making custom items in Mythic Mobs is quite easy. Unlike mobs and skills however
 
 Of the following options available for items, only ```internal_itemname``` and ```Id``` are required. All other options/attributes are completely optional.
 
-You can make any number of files in the Items folder, and they can be
+You can make any number of files in the `\plugins\MythicMobs\Items` folder, and they can be
 named anything you like as long as the file ends in .yml.
 ```
 iternal_itemname:
