@@ -38,6 +38,12 @@ Calculating the physics for bouncing is quite intensive, so don't go too crazy w
 ### NEW: onDeath
 - Added onDeath aura. Treat it as if it was ~onDeath trigger and not use any targeters that will target the entity that died.
 
+### RandomSkill
+- is now weighted.
+- not specifying a weight defaults it to 1.
+- randomskill will not select a skill with weight of 0.
+- Example: `- randomskill{skills=metaskill 95,otherskill 4,someskill 0,testskill}`
+
 
 Entity Types
 --------
