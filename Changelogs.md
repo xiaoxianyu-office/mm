@@ -40,9 +40,11 @@ Calculating the physics for bouncing is quite intensive, so don't go too crazy w
 
 ### RandomSkill
 - is now weighted.
-- not specifying a weight defaults it to 1.
+- skill weight defaults to 1 if not specified
 - randomskill will not select a skill with weight of 0.
-- Example: `- randomskill{skills=metaskill 95,otherskill 4,someskill 0,testskill}`
+- Here are a few examples: 
+  - `- randomskill{skills=metaskill 95,otherskill 4,someskill 0,testskill}`
+  - `- randomskill{skills=metaskill 200,otherskill 0.25,someskill 55.23,testskill}`
 
 
 Entity Types
