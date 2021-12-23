@@ -25,18 +25,15 @@ Adding **bounce=true** will cause projectiles to bounce off of surfaces instead 
 
 Calculating the physics for bouncing is quite intensive, so don't go too crazy with it on weaker servers!
 
-### SendTitle
-- Allows <#colors>. For example, `<gradient:#570861:#228B22>THE VOID</gradient>`.
-
 ### NEW: StopSound
 - effect:stopsound{sound=ambient.cave;soundcategory=master} @target
 - Stops a specific sound from being played to the targeted player.
 
-### Delay
-- Added placeholder support
-
 ### NEW: onDeath
 - Added onDeath aura. Treat it as if it was ~onDeath trigger and not use any targeters that will target the entity that died.
+
+### Delay
+- Added placeholder support
 
 ### RandomSkill
 - is now weighted.
@@ -46,6 +43,37 @@ Calculating the physics for bouncing is quite intensive, so don't go too crazy w
   - `- randomskill{skills=metaskill 95,otherskill 4,someskill 0,testskill}`
   - `- randomskill{skills=metaskill 200,otherskill 0.25,someskill 55.23,testskill}`
 
+### SendTitle
+- Allows <#colors>. For example, `<gradient:#570861:#228B22>THE VOID</gradient>`.
+
+### NEW TakeItem
+- removes a certain amount of items from the player's inventory.
+  - `- takeitem{i=myTestItem;amount=20} @PlayersInRadius{r=10}`
+
+### NEW ConsumeSlot
+- removes any item in the specified slot of the player's inventory.
+  - `consumeslot{slot=25;amount=21} @PlayersInRadius{r=10}`
+  - `consumeslot{slot=HAND;amount=21} @PlayersInRadius{r=10}`
+
+Conditions
+--------
+
+### NEW ItemIsSimilar
+- Tests if the item from the specified slot is similar to the item being compared
+  - `- itemissimilar{i=myTestItem;slot=25} true`
+  - `- itemissimilar{i=myTestItem;slot=CHEST} true`
+
+### NEW EntityItemIsSimilar
+- Tests if the item entity's ItemStack is similar to the item being compared
+  - `- entityitemissimilar{i=myTestItem} true`
+
+### NEW EntityItemType
+- Tests the item type of the target item entity, will check the item's custom model data.
+  - `- entityitemtype{types=diamond} true`
+
+### NEW EntityMaterialType
+- Tests the material type of the target item entity
+  - `- entitymaterialtype{types=diamond} true`
 
 Entity Types
 --------
@@ -55,6 +83,12 @@ Placeholders
 --------
 - Added `<random.float.#to#>` which returns a random floating point number in a specified range
 
+Bug Fixes/Other
+---------------
+- Fixed FillChest mechanic only filling chests with vanilla items
+- Allow ~onSignal to trigger multiple skills with the same signal ID
+- Fix SpawnMob command spawning the base mob instead of the overridden vanilla mob if there's any in the VanillaMobs.yml
+- Show droptables in get/give command
 
 4.13.1
 ======
