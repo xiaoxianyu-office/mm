@@ -46,32 +46,50 @@ Calculating the physics for bouncing is quite intensive, so don't go too crazy w
 ### SendTitle
 - Can use hex colors
 
-### NEW TakeItem
+### NEW: TakeItem
 - removes a certain amount of items from the player's inventory.
   - `- takeitem{i=myTestItem;amount=20} @PlayersInRadius{r=10}`
 
-### NEW ConsumeSlot
+### NEW: ConsumeSlot
 - removes any item in the specified slot of the player's inventory.
   - `consumeslot{slot=25;amount=21} @PlayersInRadius{r=10}`
   - `consumeslot{slot=HAND;amount=21} @PlayersInRadius{r=10}`
 
+Targeters
+--------
+
+### NEW: RingAroundOrigin
+- Targets points in a ring around the skill origin
+- Aliases: `RAO`
+  - `@ringaroundorigin{radius=#;points=#}`
+  
+### NEW: RandomLocationsNearOrigin
+- Targets random locations near the skill origin
+- Aliases: `RLO`, `randomLocationsOrigin`, `RLNO`
+  - `@randomlocationsnearorigin{amount=#;radius=#;minr=#;spacing=#}`
+
+### NEW: RandomLocationsNearCaster
+- Targets random locations near the skill caster
+- Aliases: `RandomLocations`, `RL`
+  - `@randomlocationsnearcaster{amount=#;radius=#;minr=#;spacing=#}`
+  
 Conditions
 --------
 
-### NEW ItemIsSimilar
+### NEW: ItemIsSimilar
 - Tests if the item from the specified slot is similar to the item being compared
   - `- itemissimilar{i=myTestItem;slot=25} true`
   - `- itemissimilar{i=myTestItem;slot=CHEST} true`
 
-### NEW EntityItemIsSimilar
+### NEW: EntityItemIsSimilar
 - Tests if the item entity's ItemStack is similar to the item being compared
   - `- entityitemissimilar{i=myTestItem} true`
 
-### NEW EntityItemType
+### NEW: EntityItemType
 - Tests the item type of the target item entity, will check the item's custom model data.
   - `- entityitemtype{types=diamond} true`
 
-### NEW EntityMaterialType
+### NEW: EntityMaterialType
 - Tests the material type of the target item entity
   - `- entitymaterialtype{types=diamond} true`
 
