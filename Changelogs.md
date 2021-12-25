@@ -91,6 +91,10 @@ Bug Fixes/Other
 - Show droptables in get/give command
 - Fix NPE in orbitals when using MOB as the bullet type
 - Fix command drops executing only one command
+- Fix MobsInRadius condition not working in RandomSpawns
+- Fix targeting issues with auras
+- Fix `Options.PreventSlimeSplit`
+- Fix precision issue with VariableAdd and VariableSubtract (#531)
 
 4.13.1
 ======
