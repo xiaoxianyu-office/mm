@@ -90,6 +90,7 @@ Bug Fixes/Other
 - Fix SpawnMob command spawning the base mob instead of the overridden vanilla mob if there's any in the VanillaMobs.yml
 - Show droptables in get/give command
 - Fix NPE in orbitals when using MOB as the bullet type
+- Fix command drops executing only one command
 
 4.13.1
 ======
