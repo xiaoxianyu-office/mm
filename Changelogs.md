@@ -44,7 +44,7 @@ Calculating the physics for bouncing is quite intensive, so don't go too crazy w
   - `- randomskill{skills=metaskill 200,otherskill 0.25,someskill 55.23,testskill}`
 
 ### SendTitle
-- Allows <#colors>. For example, `<gradient:#570861:#228B22>THE VOID</gradient>`.
+- Can use hex colors
 
 ### NEW TakeItem
 - removes a certain amount of items from the player's inventory.
