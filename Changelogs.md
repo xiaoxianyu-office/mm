@@ -89,6 +89,7 @@ Bug Fixes/Other
 - Allow ~onSignal to trigger multiple skills with the same signal ID
 - Fix SpawnMob command spawning the base mob instead of the overridden vanilla mob if there's any in the VanillaMobs.yml
 - Show droptables in get/give command
+- Fix NPE in orbitals when using MOB as the bullet type
 
 4.13.1
 ======
