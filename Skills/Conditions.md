@@ -132,7 +132,7 @@ Conditions
 | [HasItem](/skills/conditions/hasItem)                               | Entity   | Tests if the target player has the given number of given material                                                |
 | [HasOwner](/skills/conditions/hasowner)                             | Entity   | Tests if the target mob has an owner                                                        |
 | [HasParent](/skills/conditions/hasparent)                           | Entity   | Tests if the target mob has a parent                                                        |
-| [HasPassenger](/skills/skills/conditions/hasPassenger)              | Entity   | Checks if the target entity has a passenger                                                 |
+| [HasPassenger](/skills/conditions/hasPassenger)              | Entity   | Checks if the target entity has a passenger                                                 |
 | [HasGravity](/skills/conditions/hasgravity)                         | Entity   | Tests if the target mob has gravity                                                         |
 | [HasPotionEffect](/skills/conditions/haspotioneffect)               | Entity   | Tests if the target entity has a potion effect                                              |
 | [HasTag](/skills/conditions/hastag)                                 | Entity   | Tests if the target has a scoreboard tag                                                    |
@@ -169,7 +169,7 @@ Conditions
 | [Moving](/skills/conditions/moving)                                 | Entity   | If the target has a velocity greater than zero                                              |
 | [MythicMobType](/skills/conditions/mythicmobtype)                   | Entity   | Checks the MythicMob type of the target mob                                                 |
 | [Name](/skills/conditions/name) | Entity | Checks against the entity's name |
-| [NearClaim](/skills/conditons/nearclaim) | Location | If the target location is near any GriefPrevention claims |
+| [NearClaim](/skills/conditions/nearclaim) | Location | If the target location is near any GriefPrevention claims |
 | [Night](/skills/conditions/night)                                   | Location | If the time is night, from 14000 to 22000 in-game time                                      |
 | [NotInRegion](/skills/conditions/notinregion)                       | Location | If the target location is not within the given WorldGuard region                            |
 | [OffGCD](/skills/conditions/offgcd)                                 | Entity   | Checks if the target mob has an active Global Cooldown                                      |
