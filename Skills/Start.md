@@ -195,6 +195,6 @@ Once you get the hang of using individual base-skills, you can use Meta-Skills t
   [Effects]: /Skills/Effects/
   [Targeters]: /Skills/Targeters/
   [Triggers]: /Skills/Triggers/
-  [Conditions]: /Skills/Conditions/
+  [Conditions]: /Skills/conditions/
   [Here is a list of all the targeters]: /Skills/Targeters/
   [Click here to see which triggers work with Artifacts]: /Artifacts/Triggers

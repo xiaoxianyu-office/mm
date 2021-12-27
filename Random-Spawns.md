@@ -102,7 +102,7 @@ A complete list of all available randomspawn options.
     -   A list of conditions used to further shape the random spawn.
     -   The random spawn will fail if any of the given conditions aren't met
     -   The full list of available conditions can be found here:
-        [Conditions manual page](/Skills/Conditions#conditions)
+        [Conditions manual page](/Skills/conditions#conditions)
     -   **Conditions:**
     -   **- condition 1**
     -   **- condition 2**
