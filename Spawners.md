@@ -1,6 +1,3 @@
-Spawners
-========
-
 Spawners allow you to define specific points in your worlds at which your custom mob creations can spawn. They can be used with a variety of useful options such as; conditions, built-in timers, cooldowns, and warmups. 
 
 Note that Spawners use the old conditions system. You can find them here: [Legacy Conditions](/skills/conditions/legacyconditions)
