@@ -119,7 +119,7 @@ Development Builds
 
 Development builds are available to premium users, and can be found here:
 
-<http://www.mythicmobs.net/dev>
+<https://mythiccraft.io/index.php?pages/official-mythicmobs-dev/>
 
 Please note that development builds have untested features, and while I
 do not believe they will damage your server in any way, I can make no
