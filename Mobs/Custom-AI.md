@@ -72,6 +72,12 @@ AIGoalSelectors:
 | panicWhenOnFire | panic              | Run around panicking when on fire and look for water
 | randomFly     |  | Fly around randomly |
 
+**Piglins and Pillagers Only**
+
+| AI Goal       | Aliases          | Description                                           |
+| ------------- | ---------------- | ----------------------------------------------------- |
+| creeperswell   | creeperexplode      | Make a creeper want to explode on its target.    |
+
 **Ranged Entities Only**
 
 | AI Goal           | Aliases                 | Description                                           |
