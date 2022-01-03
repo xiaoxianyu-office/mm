@@ -72,7 +72,7 @@ AIGoalSelectors:
 | panicWhenOnFire | panic              | Run around panicking when on fire and look for water
 | randomFly     |  | Fly around randomly |
 
-**Piglins and Pillagers Only**
+**Creepers Only**
 
 | AI Goal       | Aliases          | Description                                           |
 | ------------- | ---------------- | ----------------------------------------------------- |
