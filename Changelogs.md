@@ -1,21 +1,27 @@
-5.0.0
+5.0.0 (Dev Builds)
+======
+- Mythic API separated out into an independent module (for add-on authors)
+- Major API rewrite
+- Registering custom triggers
+
+4.14.0
 ======
 
 **Highlights**
 ----------
-- Mythic API separated out into an independent module (for add-on authors)
-- Major API rewrite
+- Added 1.18.1 support
 - Bouncy projectiles
-- Registering custom triggers
 - A few bug fixes
 
 General
 -------
-- Added 1.18 support
+- Added 1.18.1 support
+- Changed reload command to run async
 
 Mechanics
 ---------
 ### Projectile
+- Added **hugLiquid=true** option - when using hugSurface will also move on top of liquids.
 - Added **bounce=true** option (premium-only)
 - Added **bounceVelocityMod** option (defaults to 0.9)
 
@@ -25,6 +31,13 @@ Adding **bounce=true** will cause projectiles to bounce off of surfaces instead 
 
 Calculating the physics for bouncing is quite intensive, so don't go too crazy with it on weaker servers!
 
+### NEW: ConsumeSlot
+- removes any item in the specified slot of the player's inventory.
+  - `consumeslot{slot=25;amount=21} @PlayersInRadius{r=10}`
+  - `consumeslot{slot=HAND;amount=21} @PlayersInRadius{r=10}`
+
+### NEW: PickUpItem
+
 ### NEW: StopSound
 - effect:stopsound{sound=ambient.cave;soundcategory=master} @target
 - Stops a specific sound from being played to the targeted player.
@@ -32,8 +45,21 @@ Calculating the physics for bouncing is quite intensive, so don't go too crazy w
 ### NEW: onDeath
 - Added onDeath aura. Treat it as if it was ~onDeath trigger and not use any targeters that will target the entity that died.
 
+### NEW: onBlockPlace
+- Aura that fires when the target places a block.
+
+### NEW: TakeItem
+- removes a certain amount of items from the player's inventory.
+  - `- takeitem{i=myTestItem;amount=20} @PlayersInRadius{r=10}`
+
 ### Delay
 - Added placeholder support
+
+### Firework
+- Completely rewritten and fixed
+
+### ItemSpray
+- Allow drop tables for itemSpray effect (will use random items from it)
 
 ### RandomSkill
 - is now weighted.
@@ -45,15 +71,6 @@ Calculating the physics for bouncing is quite intensive, so don't go too crazy w
 
 ### SendTitle
 - Can use hex colors
-
-### NEW: TakeItem
-- removes a certain amount of items from the player's inventory.
-  - `- takeitem{i=myTestItem;amount=20} @PlayersInRadius{r=10}`
-
-### NEW: ConsumeSlot
-- removes any item in the specified slot of the player's inventory.
-  - `consumeslot{slot=25;amount=21} @PlayersInRadius{r=10}`
-  - `consumeslot{slot=HAND;amount=21} @PlayersInRadius{r=10}`
 
 Targeters
 --------
@@ -72,6 +89,12 @@ Targeters
 - Targets random locations near the skill caster
 - Aliases: `RandomLocations`, `RL`
   - `@randomlocationsnearcaster{amount=#;radius=#;minr=#;spacing=#}`
+
+### TargetLocation
+- Added maxDistance option (defaults to 30 blocks)
+
+### Ring Targeter
+- Added rotZ, rotY, rotZ options to rotate the ring
   
 Conditions
 --------
@@ -100,19 +123,27 @@ Entity Types
 Placeholders
 --------
 - Added `<random.float.#to#>` which returns a random floating point number in a specified range
+- Added `<target.held.item>` and `<trigger.held.item>`
+- Added `<caster.display>`
+
+Random Spawns
+-------------
+- Added Cooldown option for random spawners (in seconds)
 
 Bug Fixes/Other
 ---------------
 - Fixed FillChest mechanic only filling chests with vanilla items
 - Allow ~onSignal to trigger multiple skills with the same signal ID
-- Fix SpawnMob command spawning the base mob instead of the overridden vanilla mob if there's any in the VanillaMobs.yml
+- Fixed SpawnMob command spawning the base mob instead of the overridden vanilla mob if there's any in the VanillaMobs.yml
 - Show droptables in get/give command
-- Fix NPE in orbitals when using MOB as the bullet type
-- Fix command drops executing only one command
-- Fix MobsInRadius condition not working in RandomSpawns
-- Fix targeting issues with auras
-- Fix `Options.PreventSlimeSplit`
-- Fix precision issue with VariableAdd and VariableSubtract (#531)
+- Fixed NPE in orbitals when using MOB as the bullet type
+- Fixed command drops executing only one command
+- Fixed MobsInRadius condition not working in RandomSpawns
+- Fixed targeting issues with auras
+- Fixed `Options.PreventSlimeSplit`
+- Fixed precision issue with VariableAdd and VariableSubtract (#531)
+- Fixed PlayerWithin-type conditions to ignore creative/spectator players
+- Fixed an issue with inline skills/conditions needing space before `]`
 
 4.13.1
 ======
