@@ -1,7 +1,7 @@
 Skills
 ======
 
-Skills are an integral feature of MythicMobs. All mobs (and items if you have the [Artifacts] add-on) are able to have skills of various types that can be triggered under different circumstances with varying
+Skills are an integral feature of MythicMobs. All mobs (and items if you have the [Crucible] add-on) are able to have skills of various types that can be triggered under different circumstances with varying
 conditions. The MythicMob skill system is quite intuitive once you get used to it, and can be used to create anything from simple mobs to incredibly complex bosses.
 
 Skills are made up of several distinct parts:
@@ -190,7 +190,7 @@ As you can see, while the original skill looked intimidating, breaking it down i
 
 Once you get the hang of using individual base-skills, you can use Meta-Skills to combine them into more complex skills. This will be covered in a later article.
 
-  [Artifacts]: /Artifacts
+  [Crucible]: https://git.mythiccraft.io/mythiccraft/mythiccrucible
   [Mechanics]: /Skills/Mechanics/
   [Effects]: /Skills/Effects/
   [Targeters]: /Skills/Targeters/
