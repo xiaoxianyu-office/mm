@@ -251,7 +251,7 @@ but not yet ready for use.
   [Equip]: /skills/mechanics/equip
   [Explosion]: /skills/mechanics/explosion
   [Extinguish]: /skills/mechanics/extinguish
-  [Fawe Paste]: /fawePaste
+  [Fawe Paste]: /skills/mechanics/fawepaste
   [Feed]: /skills/mechanics/feed
   [Fill Chest]: /skills/mechanics/fillChest
   [Fly]: /skills/mechanics/fly
