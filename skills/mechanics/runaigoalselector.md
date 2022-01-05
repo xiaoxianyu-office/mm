@@ -12,7 +12,7 @@ dont use clear, the pathfindergoal is added to the end of the already
 existing goals of the entity.
 
 A list of AI Goals can be found
-[here](/Mobs/Custom-AI)
+[here](/Mobs/Custom-AI#ai-goal-selectors)
 
 Example
 -------
