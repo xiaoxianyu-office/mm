@@ -1,13 +1,13 @@
-What is MythicMobs?
+What is Mythic?
 -------------------
 
-MythicMobs allows server owners to fully modify all attributes of any non-player entity on your server, and even allows for the creation of your own custom mobs and bosses!
+Mythic allows server owners to fully modify all attributes of any non-player entity on your server, and even allows for the creation of your own custom mobs and bosses!
 
 It gives you full control over how mobs behave, from simply increasing their HP and damage to giving mobs a vast arsenal of new abilities with a powerful yet simple scripting system. Your custom mobs can replace vanilla mobs, be spawned randomly using a vast array of spawn conditions, or you can set up custom mob spawners that activate under certain conditions or by commands.
 
 You can finally create that ultimate boss you've always dreamed of crushing your players with. It is an absolute essential for almost every server.
 
-As a brief summary, MythicMobs allows you to:
+As a brief summary, Mythic allows you to:
 
 -   **Mob Skills**:  
     Give mobs custom skills through the use of a powerful Yaml scripting system, with access to 
@@ -110,7 +110,7 @@ TLDR:
 -   [Discord Server](https://www.mythiccraft.io/discord)
 -   Official Server: **play.theloungemc.com**
 
-MythicMobs is a complex plugin that can be confusing to start out with due to the incredible number of features and the immense amount of customization you can do.
+Mythic is a complex plugin that can be confusing to start out with due to the incredible number of features and the immense amount of customization you can do.
 
 To get the most out of it, make sure you join the huge, active MythicMobs community to get help and support, either on our Discord Server or Forums, where you can ask questions, get ideas, and more, directly from the developers, as well as countless other server owners!
 
