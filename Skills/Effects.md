@@ -61,7 +61,7 @@ skill **effect:name**, for example:
 
 These effects require the plugin "EffectLib" to be installed to use.
 
-Note: EffectLib was dropped in MM ver 4.11, so the below effects no longer work.
+**Note: EffectLib was dropped in MM ver 4.11, so the below effects no longer work.**
 
 | Effect Mechanic     | Description                                           |
 |---------------------|-------------------------------------------------------|
