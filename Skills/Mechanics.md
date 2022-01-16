@@ -140,6 +140,7 @@ are able to target locations as well.
 | [Swap][]         | Swaps locations with the target                                                     |
 | [Add Tag][]      | Adds a scoreboard tag to the target                                                 |
 | [Remove Tag][]   | Removes a scoreboard tag from the target                                            |
+| [Take Item][]    | Removes an item from the targeted player's inventory                                         |
 | [Teleport][]     | Teleports to the target                                                             |
 | [Teleport In][]   | Teleports the target relative to the caster's yaw                                   |
 | [Teleport To][]   | Teleports the target to a specified location                                        |
