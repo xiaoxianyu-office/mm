@@ -10,6 +10,7 @@ Attributes
 |------------------|---------|---------------------------------------|---------|
 | slot             |    s    | The inventory slot to remove the item from. Accepts Slots 0 to 35, or equipment slots. | HAND |                                      
 | amount           | a       | The amount of items to remove              | 1   |
+
 Examples
 --------
 
