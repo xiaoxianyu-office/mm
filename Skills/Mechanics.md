@@ -32,6 +32,7 @@ are able to target locations as well.
 | [Close Inventory][]    | Closes the target player's inventory                           |
 | [Command][]            | Executes a command for each target                             |
 | [Consume][]            | Deals damage and restores health per target hit                |
+| [Consume Slot][]       | Remove an item from a specific slot of the player's inventory  |
 | [Disengage][]          | Causes the caster to leap backwards away from the target entity                               |
 | [Disguise][]           | Changes the caster's disguise                                  |
 | [Disguise Target][]     | Changes the target's disguise                                  |
@@ -233,6 +234,7 @@ but not yet ready for use.
   [Close Inventory]: /skills/mechanics/closeinventory
   [Command]: /skills/mechanics/command
   [Consume]: /skills/mechanics/consume
+  [Consume Slot]: /skills/mechanics/consumeslot
   [Disengage]: /skills/mechanics/disengage
   [Disguise]: /skills/mechanics/disguise
   [Disguise Target]: /skills/mechanics/disguisetarget
@@ -332,6 +334,7 @@ but not yet ready for use.
   [Summon]: /skills/mechanics/summon
   [Add Tag]: /skills/mechanics/addtag
   [Remove Tag]: /skills/mechanics/removetag
+  [Take Item]: /skills/mechanics/takeitem
   [Teleport]: /skills/mechanics/teleport
   [Teleport In]: /skills/mechanics/teleportin
   [Teleport To]: /skills/mechanics/teleportto
@@ -355,7 +358,10 @@ but not yet ready for use.
   [Modify Projectile]: /skills/mechanics/modifyprojectile
   [On Attack]: /skills/mechanics/onattack
   [On Damaged]: /skills/mechanics/ondamaged
+  [On Jump]: /skills/mechanics/onjump
   [On Shoot]: /skills/mechanics/onshoot
+  [On Swing]: /skills/mechanics/onswing
+  [On Use]: /skills/mechanics/onuse
   [Orbital]: /skills/mechanics/orbital
   [Projectile]: /skills/mechanics/projectile
   [PlayBlockBreakSound]: skills/mechanics/PlayBlockBreakSound
