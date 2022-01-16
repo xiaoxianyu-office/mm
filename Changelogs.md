@@ -4,6 +4,21 @@
 - Major API rewrite
 - Registering custom triggers
 
+Mechanics
+---------
+### NEW: onJump
+- Applies an aura to the targeted entity and triggers a skill when the entity jumps
+
+### NEW: onSwing
+- Applies an aura to the targeted player and triggers a skill when the player swings/left clicks
+
+### NEW: onUse
+- Applies an aura to the targeted entity and triggers a skill if the entity is interacted with
+
+Bug Fixes/Other
+--------
+- Fixed an issue with MythicMobs trying to remove a player
+
 4.14.0
 ======
 
