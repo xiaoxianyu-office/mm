@@ -17,7 +17,7 @@ Mechanics
 
 Bug Fixes/Other
 --------
-- Fixed an issue with MythicMobs trying to remove a player
+- Fixed an issue with MythicMobs trying to remove players
 
 4.14.0
 ======
