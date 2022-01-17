@@ -176,6 +176,8 @@ You can also turn off specific filters by just adding the option
 **targetXXXXX** replacing XXXXX with the filter name, e.g.
 **targetPlayers=false** or **targetcreative=true**
 
+Note: As of MM 4.15 or MM 5.0, you can set the default target filters in MythicMobs/config.yml
+
 Target Limits
 -------------
 
