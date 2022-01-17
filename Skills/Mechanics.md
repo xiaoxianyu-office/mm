@@ -148,7 +148,7 @@ are able to target locations as well.
 | [Throw][]        | Throws the target entity                                                            |
 | [Toggle Lever][] | Toggles a lever at the target location                                              |
 | [Toggle Sitting][] | Toggles the sitting state for cats, dogs, foxes, and parrots.                   |
-| [Track Location][] | Saves the target's location |
+| [Track Location][] | Sets the mob's tracked location to the targeted location |
 | [Velocity][]     | Modifies the velocity of the target entity(s)                                       |
 | [Weather][]      | Modifies the weather in the target world                                            |
 | [Wolf Sit][]      | Forces a targeted wolf to sit.                                               |
