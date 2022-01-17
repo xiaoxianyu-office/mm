@@ -6,7 +6,7 @@
 
 | Attribute | Alias   | Description | Default |
 | --------- | ------- | ----------- | ------- |
-| item      | i, material, m | A material to check for | DIRT |
+| item      | i, material, m | A material to check for. Can also check for MMOItems using `mmoitems.TYPE.ID` | DIRT |
 | amount    | a | A Number to check for | >0 |
 
 ---
