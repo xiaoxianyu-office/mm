@@ -12,6 +12,25 @@ Damages the targeted entity.
 | preventknockback | pkb, pk | Whether or not to prevent knockback | false   |
 | preventimmunity  | pi      | Whether or not to ignore immunities | false   |
 | element          | type    | Sets the type of damage to be inflicted | false   |
+| damagecause      | cause   | Sets the damage cause for this damage mechanic | entity_attack |
+
+### DamageCause
+This attribute is only available in newer MM 5.0 builds.
+Here are the available damage causes for now:
+
+```
+  - entity_attack
+  - thorns
+  - magic
+  - fire
+  - fire_tick
+  - fall
+  - freeze
+  - void
+  - dragon_breath
+  - lava
+  - hot_floor
+```
 
 ### Elements
 As seen above, the damage mechanic offers the ability to set an "element" for the damage, like so:
