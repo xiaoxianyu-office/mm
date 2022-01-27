@@ -14,7 +14,7 @@
 
 ```
 Conditions:
-- altitude{} true
+- altitude{h=3-5} true
 ```
 
 ---
