@@ -34,4 +34,10 @@ Attributes
 Examples
 --------
 
-(coming soon)
+  MyFirstTotem:
+    Skills:
+    - totem{ch=1;i=1;md=8;onTick=MFT_TICK} @self
+
+  MFT_TICK:
+    Skills:
+    - damage{a=3}
