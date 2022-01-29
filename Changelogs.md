@@ -6,6 +6,8 @@
 
 Mechanics
 ---------
+### NEW: GoTo
+
 ### NEW: onJump
 - Applies an aura to the targeted entity and triggers a skill when the entity jumps
 
@@ -15,9 +17,65 @@ Mechanics
 ### NEW: onUse
 - Applies an aura to the targeted entity and triggers a skill if the entity is interacted with
 
+### FAWEPaste
+- Added rotation=90/180/-90 to fawepaste mechanic
+
+Conditions
+----------
+### NEW: Charged
+True if a creeper is charged
+
 Bug Fixes/Other
 --------
+- 
+
+4.14.2
+======
+Commands
+--------
+- Made reload command sync again for now, added -a flag to make it async
+
+Conditions
+----------
+### NEW: Plugin
+  - plugin{p=XXXXXX}
+Returns true if the specified plugin is running on the server
+
+### NEW: Premium condition
+Returns true if Mythic Premium is running
+
+Bug Fixes/Other
+--------
+- Added several `Targeter` default options in config.yml
+- Added missing `FALLING_SPORE_BLOSSOM` and `SPORE_BLOSSOM_AIR` particles
+- Changed `os` to `osh` for onshoot aura option
+- Updated to support latest MythicLib
+- Double-check that chunk is actually loaded when EntitiesLoadEvent fires
 - Fixed an issue with MythicMobs trying to remove players
+- Fixed setowner and removeowner modifying mob health
+- Fixed an issue with randomspawner disabling MM if a biome is not valid.
+- Fixed maxdistance attribute in shoot mechanic and also added placeholder support to it
+- Fixed an issue with giveitem mechanic
+- Fixed NPE in summon mechanic
+- Fixed blocktype condition not checking for two or more block types.
+- Fixed NPE in equip mechanic
+- Fixed NPE in mob manager
+- Fixed PlayersInRadius condition being wildly inaccurate on distance
+- Fixed to return 'undefined' instead of null for unset string variables
+- Fixed DynamicTrades for villagers not loading without any regular trades
+
+4.14.1
+======
+API
+---
+- Added MythicMobInteractEvent
+
+Bug Fixes/Other
+--------
+- Fixed placeholders parsing as math if decimals don't start with 0
+- Improved tracking of vanilla types
+- Fixed reloading error with some conditions
+- 
 
 4.14.0
 ======
@@ -594,6 +652,7 @@ Bug Fixes/Other
 
 Older Changelogs
 ================
+-   [4.13.X Changelogs](/4.13.x_changelogs)
 -   [4.12.X Changelogs](/4.12.x_changelogs)
 -   [4.11.X Changelogs](/4.11.x_changelogs)
 -   [4.10.X Changelogs](/4.10.x_changelogs)
