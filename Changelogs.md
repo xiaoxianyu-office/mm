@@ -35,14 +35,14 @@ Mechanics
 Conditions
 ----------
 ### NEW: Charged
-True if a creeper is charged
+- True if a creeper is charged
 
 ### NEW: Plugin
-  - plugin{p=XXXXXX}
-Returns true if the specified plugin is running on the server
+- plugin{p=XXXXXX}
+- Returns true if the specified plugin is running on the server
 
 ### NEW: Premium condition
-Returns true if Mythic Premium is running
+- Returns true if Mythic Premium is running
 
 Bug Fixes/Other
 --------
