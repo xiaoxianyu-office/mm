@@ -49,13 +49,19 @@ In this example we are inside of a meta-skill of a minigame. The targeter is che
   - skill{s=LMG_ActivateAGreen} @MIR{r=50;t=LaserMinigameButtons;conditions=[  - variableequals{var=target.myTeam;value="GREEN"} true  - variableequals{var=target.amActive;value=0} true ];limit=1;sort=RANDOM}
 ```
 
-In-line conditions are not limited to Target Conditions! You can also use the usual Trigger Conditions as well.
+In-line conditions are not limited to Target Conditions! You can also use the usual Conditions and TriggerConditions as well.
+
+```
+  `?`  - evaluates the caster of the skill
+  `?~` - evaluates the trigger of the skill
+```
 
 Here's an example of how to do this `- stun{d=30;f=true} @target ~onAttack ?wearing{s=HAND;m=APPLE}`
 
 It's pretty simple, Mechanic, Targeter, Trigger, then Condition.
 
 `?` = True `?!` = False
+`?~` = True `?~!` = False
 
 So `?wearing{s=HAND;m=APPLE}` requires the condition to be true, while `?!wearing{s=HAND;m=APPLE}` 
 requires the condition to be false.
