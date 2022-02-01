@@ -6,6 +6,21 @@
 
 Mechanics
 ---------
+### FAWEPaste
+- Added rotation=90/180/-90 to fawepaste mechanic
+
+Bug Fixes/Other
+--------
+- Fixed mob drops on non-paper spigot
+
+4.14.2
+======
+Commands
+--------
+- Made reload command sync again for now, added -a flag to make it async
+
+Mechanics
+---------
 ### NEW: GoTo
 
 ### NEW: onJump
@@ -14,29 +29,14 @@ Mechanics
 ### NEW: onSwing
 - Applies an aura to the targeted player and triggers a skill when the player swings/left clicks
 
-### NEW: onUse
-- Applies an aura to the targeted entity and triggers a skill if the entity is interacted with
-
-### FAWEPaste
-- Added rotation=90/180/-90 to fawepaste mechanic
+### NEW: onInteract
+- Applies an aura to the targeted entity and triggers a skill if the entity is interacted with.
 
 Conditions
 ----------
 ### NEW: Charged
 True if a creeper is charged
 
-Bug Fixes/Other
---------
-- 
-
-4.14.2
-======
-Commands
---------
-- Made reload command sync again for now, added -a flag to make it async
-
-Conditions
-----------
 ### NEW: Plugin
   - plugin{p=XXXXXX}
 Returns true if the specified plugin is running on the server
