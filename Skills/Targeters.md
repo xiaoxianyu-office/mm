@@ -90,7 +90,8 @@ Location Targeters
 | @Cone{angle=#;points=#;range=#;rotation=#;yoffset=#} |             | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down) |
 | @EntitiesInCone{angle=#;range=#;rotation=#;} |             | Targets all entities within the cone                                                                                                 |
 | @Sphere{radius=#;points=#;yoffset=#}              |             | Target points to form a sphere of locations                                                                                            |
-| @TargetedLocation | Targets the inherited targets's location |
+| @TargetedLocation |  | Targets the inherited targets's location |
+| @RingAroundOrigin{radius=#;points=#;xRotation=#;yRotation=#;zRotation=#;xOffset=#;yOffset=#;zOffset=#} | @RAO | Targets locations in a specified ring around the origin |
 
 Special Targeters
 -----------------
