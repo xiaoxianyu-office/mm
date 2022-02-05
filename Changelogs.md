@@ -4,6 +4,15 @@
 - Major API rewrite
 - Registering custom triggers
 
+General
+-------
+
+Conditions
+----------
+
+Targeters
+---------
+
 Mechanics
 ---------
 ### FAWEPaste
@@ -12,6 +21,8 @@ Mechanics
 Bug Fixes/Other
 --------
 - Fixed mob drops on non-paper spigot
+- Fixed onHitSkill for shoot mechanic not inheriting skill variables, closes #687
+- Added `min(x, y)`, `max(x, y)`, `atan2(y, x)` math functions. You can see all the supported operators and functions in [Math](), and you can make suggestions to add more operators and functions to [gitlab](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/issues)
 
 4.14.2
 ======
