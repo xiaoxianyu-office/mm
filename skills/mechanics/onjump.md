@@ -1,4 +1,4 @@
-Mechanic: onInteract
+Mechanic: onJump
 ==================
 
 PAPER ONLY MECHANIC
