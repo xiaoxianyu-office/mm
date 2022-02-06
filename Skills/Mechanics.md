@@ -62,6 +62,7 @@ are able to target locations as well.
 | [Give Item][]            | Gives an item to the target                                                 |
 | [Give Item From Target][] | Gives an item to the caster from the target                                |
 | [Give Item From Slot][] | Gives an item to the target from the item in the given slot of caster |
+| [GoTo][]                | Move toward the location of the targeter (entity or location) |
 | [Heal][]                 | Heals the target                                                            |
 | [Heal Percent][]          | Heals the target for a percentage of its max-health                         |
 | [Hide From Players][] | Hides the caster, if the caster is a player, from other players for a set duration. |
@@ -264,6 +265,7 @@ but not yet ready for use.
   [Glow]: /skills/mechanics/glow
   [Give Item]: /skills/mechanics/giveitem
   [Give Item From Target]: /skills/mechanics/giveitemfromtarget
+  [GoTo]: /skills/mechanics/goto
   [Heal]: /skills/mechanics/heal
   [Heal Percent]: /skills/mechanics/healpercent
   [Hologram]: /skills/mechanics/hologram
