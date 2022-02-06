@@ -86,7 +86,7 @@ Location Targeters
 | Targeter                                        | Shorthand   | Description                                                                                                                          |
 |-------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | @PlayerLocationsInRadius{r=#}                  | @PLIR{r=#} | Targets all player locations in the given radius                                                                                     |
-| @Ring{radius=#;points=#;yoffset=#}              |             | Target points to form a ring of locations                                                                                            |
+| @Ring{radius=#;points=#;xRotation=#;yRotation=#;zRotation=#;xOffset=#;yOffset=#;zOffset=#}              |             | Target points to form a ring of locations                                                                                            |
 | @Cone{angle=#;points=#;range=#;rotation=#;yoffset=#} |             | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down) |
 | @EntitiesInCone{angle=#;range=#;rotation=#;} |             | Targets all entities within the cone                                                                                                 |
 | @Sphere{radius=#;points=#;yoffset=#}              |             | Target points to form a sphere of locations                                                                                            |
