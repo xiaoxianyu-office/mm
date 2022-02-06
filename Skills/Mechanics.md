@@ -186,6 +186,7 @@ by these will "inherit" the targets (if applicable).
 | [On Shoot][]         | Applies an [aura][] to the target that triggers skills when they shoot a bow            |
 | [On Block Break][] | Applies an [aura][] to the target that triggers skills when they break a block |
 | [On Swing][] | Applies an [aura][] to the target that triggers skills when they swing / left click |
+| [On Interact][] | Applies an [aura][] to the target that triggers skills when they interact / right click while holding a block or looking at an outlined block (NOT AIR) |
 | [Orbital][]         | Applies an [aura][] that causes a projectile to orbit around the target                 |
 | [Projectile][]      | Fires a highly-customizable projectile towards the target                               |
 | [Shoot][]           | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                  |
@@ -391,3 +392,4 @@ but not yet ready for use.
   [Give Item From Slot]: /skills/mechanics/giveitemfromslot
   [On Block Break]: /skills/mechanics/onblockbreak
   [On Swing]: /skills/mechanics/onswing
+  [On Interact]: /skills/mechanics/oninteract
