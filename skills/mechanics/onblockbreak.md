@@ -8,7 +8,7 @@ Attributes
 
 | Attribute        | Aliases       | Description                                                | Default Value |
 |------------------|---------------|------------------------------------------------------------|---------------|
-| onBlockBreak     | oB            | Skill to execute if the target hits something              | NONE |
+| onBlockBreak     | oB            | Skill to execute if the target breaks a block             | NONE |
 | cancelEvent      | cE            | Whether or not to cancel the event that triggered the aura | false         |
 
   
