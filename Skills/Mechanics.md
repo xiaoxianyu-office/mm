@@ -187,6 +187,7 @@ by these will "inherit" the targets (if applicable).
 | [On Block Break][] | Applies an [aura][] to the target that triggers skills when they break a block |
 | [On Swing][] | Applies an [aura][] to the target that triggers skills when they swing / left click |
 | [On Interact][] | Applies an [aura][] to the target that triggers skills when they interact / right click while holding a block or looking at an outlined block (NOT AIR) |
+| [On Jump][] | Applies an [aura][] to the target that triggers a skill when they jump (PAPER ONLY MECHANIC) |
 | [Orbital][]         | Applies an [aura][] that causes a projectile to orbit around the target                 |
 | [Projectile][]      | Fires a highly-customizable projectile towards the target                               |
 | [Shoot][]           | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                  |
@@ -393,3 +394,4 @@ but not yet ready for use.
   [On Block Break]: /skills/mechanics/onblockbreak
   [On Swing]: /skills/mechanics/onswing
   [On Interact]: /skills/mechanics/oninteract
+  [On Jump]: /skills/mechanics/onjump
