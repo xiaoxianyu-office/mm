@@ -184,7 +184,8 @@ by these will "inherit" the targets (if applicable).
 | [On Attack][]        | Applies an [aura][] to the target that triggers skills when they attack                 |
 | [On Damaged][]       | Applies an [aura][] to the target that triggers skills when they take damage            |
 | [On Shoot][]         | Applies an [aura][] to the target that triggers skills when they shoot a bow            |
-| [On Block Break][] | Applies an [aura][] to the target that triggers skills when they bresks a block |
+| [On Block Break][] | Applies an [aura][] to the target that triggers skills when they break a block |
+| [On Swing][] | Applies an [aura][] to the target that triggers skills when they swing / left click |
 | [Orbital][]         | Applies an [aura][] that causes a projectile to orbit around the target                 |
 | [Projectile][]      | Fires a highly-customizable projectile towards the target                               |
 | [Shoot][]           | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                  |
@@ -389,3 +390,4 @@ but not yet ready for use.
   [Disguise As Block]: /skills/mechanics/disguiseasblock
   [Give Item From Slot]: /skills/mechanics/giveitemfromslot
   [On Block Break]: /skills/mechanics/onblockbreak
+  [On Swing]: /skills/mechanics/onswing
