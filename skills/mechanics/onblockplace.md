@@ -34,6 +34,8 @@ Intermediate:
 
 Apply an onBlockPlace aura on yourself. When you place a block make it turn all non valueable ore blocks into glass. This is effectively an X-Ray ability. We have 2 meta-skills again this time, but we are not focusing the skill around the block place location. We use the second meta-skill to make sure that we do not set any valuable ore blocks to glass instead. We could center it around the block place location, you would just use 3 meta-skills instead, merging the top example with this one.
 
+If you don't want this xray to be permanent you can try using blockmask with material set to glass instead of using the setblock mechanic. Blockmask uses packets, so can cause client lag. Play around with it! its the best way to learn. 
+
     ApplyAura:
       Skills:
       - onBlockPlace{op=XRay;auraname=Cheater;d=200;i=1} @self
