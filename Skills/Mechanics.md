@@ -60,7 +60,6 @@ are able to target locations as well.
 | [Freeze][]               | Freezes the target for the given number of ticks using the Powdered Snow freezing effect                                                    |
 | [Glow][]                 | Makes the target glow                                                       |
 | [Give Item][]            | Gives an item to the target                                                 |
-| [Give Item From Target][] | Gives an item to the caster from the target                                |
 | [Give Item From Slot][] | Gives an item to the target from the item in the given slot of caster |
 | [GoTo][]                | Move toward the location of the targeter (entity or location) |
 | [Heal][]                 | Heals the target                                                            |
