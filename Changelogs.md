@@ -25,6 +25,7 @@ Bug Fixes/Other
 - Fixed mob drops on non-paper spigot
 - Fixed onHitSkill for shoot mechanic not inheriting skill variables, closes #687
 - Added `min(x, y)`, `max(x, y)`, `atan2(y, x)` math functions. You can see all the supported operators and functions in [Math](), and you can make suggestions to add more operators and functions to [gitlab](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/issues)
+- Fixed several mob AIs. closes #681
 
 4.14.2
 ======
