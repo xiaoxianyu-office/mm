@@ -9,6 +9,8 @@ General
 
 Conditions
 ----------
+### NEW: isFrozen
+- Tests if the targeted entity is frozen
 
 Targeters
 ---------
