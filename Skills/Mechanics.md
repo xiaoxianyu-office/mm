@@ -126,6 +126,7 @@ are able to target locations as well.
 | [Set Speed][]              | Sets the target entity's speed attribute                                  |
 | [Set Stance][]             | Sets the stance of the target mob                                         |
 | [Shield][]                 | Applies an absorb shield to the target entity                             |
+| [Shield Break][]           | Forces the player to lower their shield and puts it on cooldown           |
 | [Shield Percent][]          | Applies an absorb shield to the target entity for a percentage of their max health |
 | [Shoot Fireball][]         | Shoots a fireball at the target                                           |
 | [Shoot Potion][]           | Throws a potion at the target                                             |
@@ -398,3 +399,4 @@ but not yet ready for use.
   [On Interact]: /skills/mechanics/oninteract
   [On Jump]: /skills/mechanics/onjump
   [On Death]: /skills/mechanics/ondeath
+  [Shield Break]: /skills/mechanics/shieldbreak
