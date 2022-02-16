@@ -20,10 +20,12 @@ Mechanics
 ### NEW: onKeyPress
 - Requires [MythicKeys mod](https://github.com/ASangarin/MythicKeys) for the client and [MythicKeysPlugin](https://www.spigotmc.org/resources/mythickeysplugin-custom-keybinds-api.98893/) for the server.
 - Applies an aura to the targeted player and triggers a skill when the targeted player presses a key 
+  - `onKeyPress{key=minecraft:server;onPress=metaSkillHere}`
 
 ### NEW: onKeyRelease
 - Requires [MythicKeys mod](https://github.com/ASangarin/MythicKeys) for the client and [MythicKeysPlugin](https://www.spigotmc.org/resources/mythickeysplugin-custom-keybinds-api.98893/) for the server.
 - Applies an aura to the targeted player and triggers a skill when the targeted player releases a key 
+  - `onKeyRelease{key=minecraft:server;onRelease=metaSkillHere}`
 
 ### NEW: ShieldBreak
 - Breaks the target player's shield block and disables their shield for `duration` ticks.
