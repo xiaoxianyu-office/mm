@@ -25,6 +25,9 @@ Mechanics
 - Requires [MythicKeys mod](https://github.com/ASangarin/MythicKeys) for the client and [MythicKeysPlugin](https://www.spigotmc.org/resources/mythickeysplugin-custom-keybinds-api.98893/) for the server.
 - Applies an aura to the targeted player and triggers a skill when the targeted player releases a key 
 
+### NEW: ShieldBreak
+- Breaks the target player's shield block and disables their shield for `duration` ticks.
+
 ### PasteSchematic
 - Changed fawePaste to PasteSchematic, now works with regular WorldEdit
 - Added rotation=90/180/-90 to fawepaste mechanic
