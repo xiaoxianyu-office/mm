@@ -13,8 +13,8 @@ Attributes
 | age       | a     | Sets the age of ageable blocks. If applied to sapplings, it instead sets the growth stage of the sappling. | 0 |
 | waterlogged | | Whether or not the block is inside water | false |
 | blockface  | bf |  | [NORTH](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockFace.html "CLICK ME to view valid BlockFaces") |
-| attachedface | af |  | [WALL](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/data/FaceAttachable.AttachedFace.html "CLICK ME to view valid faces")|
-| axis | |  | [Y](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Axis.html "CLICK ME to view valid axes")|
+| attachedface | af | Where the buttons or levers are attached. Can be attached to a wall, floor, or ceiling. Used in conjuction with blockface. | [WALL](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/data/FaceAttachable.AttachedFace.html "CLICK ME to view valid faces")|
+| axis | | This is not to be confused with blockface. "X" orients the block east-west, "Y" orients the block vertically, and "Z" orients the block north-south.   | Y |
 | bisectedhalf | bhalf |  | [TOP](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/data/Bisected.Half.html "CLICK ME to view valid values") |
 | slabtype | sb |  | [BOTTOM](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/data/type/Slab.Type.html "CLICK ME to view valid types") |
 | stairshape | shape | The shape of the stair block | [STRAIGHT](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/data/type/Stairs.Shape.html "CLICK ME to view valid shapes") |
