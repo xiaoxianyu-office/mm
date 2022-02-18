@@ -10,7 +10,7 @@ Attributes
 |-----------|---------|--------------------------------|---------------|
 | material  | m       | The material for the block to be set to | [DIRT](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html "CLICK ME to view valid block materials")          |
 | data      | md      | Material data value.           | 0             |
-| age       | a     | Sets the age of ageable blocks. If applied to sapplings, it instead sets the growth stage of the sappling. | 0 |
+| age       | a     | Sets the age of ageable blocks. If applied to saplings, it instead sets the growth stage of the sapling. | 0 |
 | waterlogged | | Whether or not the block is inside water. | false |
 | blockface  | bf | Where the block is facing. NORTH, EAST, WEST, and SOUTH are valid for most blocks. | [NORTH](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockFace.html "CLICK ME to view valid BlockFaces") |
 | attachedface | af | Where the buttons or levers are attached. Can be attached to a wall, floor, or ceiling. Used in conjuction with blockface. | [WALL](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/data/FaceAttachable.AttachedFace.html "CLICK ME to view valid faces")|
