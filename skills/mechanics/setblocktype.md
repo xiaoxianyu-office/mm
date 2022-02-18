@@ -12,7 +12,7 @@ Attributes
 | data      | md      | Material data value.           | 0             |
 | age       | a     | Sets the age of ageable blocks. If applied to sapplings, it instead sets the growth stage of the sappling. | 0 |
 | waterlogged | | Whether or not the block is inside water | false |
-| blockface  | bf |  | [NORTH](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockFace.html "CLICK ME to view valid BlockFaces") |
+| blockface  | bf | Where the block is facing | [NORTH](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockFace.html "CLICK ME to view valid BlockFaces") |
 | attachedface | af | Where the buttons or levers are attached. Can be attached to a wall, floor, or ceiling. Used in conjuction with blockface. | [WALL](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/data/FaceAttachable.AttachedFace.html "CLICK ME to view valid faces")|
 | axis | | This is not to be confused with blockface. "X" orients the block east-west, "Y" orients the block vertically, and "Z" orients the block north-south.   | Y |
 | bisectedhalf | bhalf |  | [TOP](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/data/Bisected.Half.html "CLICK ME to view valid values") |
