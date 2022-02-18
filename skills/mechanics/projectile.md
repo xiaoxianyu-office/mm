@@ -116,7 +116,7 @@ first entity it hits:
 
     IceBolt:
       Skills:
-      - projectile{onTick=IceBolt-Tick;onHit=IceBolt-Hit;v=8;i=1;hR=1;vR=1}
+      - projectile{onTick=IceBolt-Tick;onHit=IceBolt-Hit;v=8;i=1;hR=1;vR=1;hnp=true}
     IceBolt-Tick:
       Skills:
       - effect:particles{p=snowballpoof;amount=20;speed=0;hS=0.2;vS=0.2} @origin
