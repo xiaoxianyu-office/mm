@@ -42,7 +42,7 @@ This is a much neater way of doing mob disguises compared to the Options version
 
 ### Detailed steps
 
-1. ``RumiIsAwesome`` would be the name of your disguise
+1. ``RumiIsSuperAwesome`` would be the name of your disguise
 2. ``player`` means it's a player disguise
 3. ``<inherit>`` means it will take its name from `Display:` instead of adding it here
 4. ``setSkin RumiExMachina.png`` is telling it to set the disguise skin to your .png file in the skins folder  So if you have a skin named Goblin.png in the skins folder, use setSkin Goblin.png
