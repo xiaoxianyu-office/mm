@@ -2,7 +2,7 @@
 
 **barrier**
 
-<img alt="image" height="200" src="uploads/wiki_images/barrier.png" width="200"/>
+![image](uploads/wiki_images/barrier.png)
 
 | Description                 | Common Usage | Particle Size | Speed | Speed Effect |
 |-----------------------------|--------------|---------------|-------|--------------|
