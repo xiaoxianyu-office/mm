@@ -26,11 +26,15 @@
 
 **bubble_column**
 
+![bubble_column](uploads/wiki_images/Particle_bubble_column_up.png)
+
 | Description                                           | Common Usage | Particle Size | Speed | Speed Effect |
 |-------------------------------------------------------|--------------|---------------|-------|--------------|
 | Upwards bubble columns made by soul sand under water. |              |               |       |              |
 
 **bubble_pop**
+
+![bubble_pop](uploads/wiki_images/Particle_bubble_pop.png)
 
 | Description                | Common Usage | Particle Size | Speed | Speed Effect |
 |----------------------------|--------------|---------------|-------|--------------|
