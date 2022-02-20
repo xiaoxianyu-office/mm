@@ -21,7 +21,7 @@
 | Plays a bubble particle. Only visible under water | Underwater particles | Very Small    |       |              |
 
 **bubble_column**
-
+![image](uploads/wiki_images/barrier.png)
 | Description                                           | Common Usage | Particle Size | Speed | Speed Effect |
 |-------------------------------------------------------|--------------|---------------|-------|--------------|
 | Upwards bubble columns made by soul sand under water. |              |               |       |              |
