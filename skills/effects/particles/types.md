@@ -1,7 +1,7 @@
 **The most up to date version of this list is always going to be in the spigot javadocs located [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)**
 
 **barrier**
-![img.png](barrier.png)
+![barrier.png](barrier.png)
 
 | Description                 | Common Usage | Particle Size | Speed | Speed Effect |
 |-----------------------------|--------------|---------------|-------|--------------|
