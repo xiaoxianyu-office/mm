@@ -1,7 +1,7 @@
 **The most up to date version of this list is always going to be in the spigot javadocs located [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)**
 
 **barrier**
-![image](/skills/effects/particles/images/barrier.png)
+<img alt="image" height="25" src="https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/effects/particles/images/barrier.png" width="25"/>
 
 | Description                 | Common Usage | Particle Size | Speed | Speed Effect |
 |-----------------------------|--------------|---------------|-------|--------------|
