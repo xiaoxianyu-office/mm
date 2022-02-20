@@ -48,14 +48,15 @@ skill **effect:name**, for example:
 | [Particle Ring][]    | Draws a ring of particles around the target                           |
 | [Particle Sphere][]  | Draws a sphere of particles around the target                         |
 | [Particle Tornado][] | Draws a persistent "tornado" of particles at the target               |
-| [Recoil][]           | Kicks the target's screen                                              |
+| [Play Animation][]   | Forces the entity to play an animation                                |
+| [Recoil][]           | Kicks the target's screen                                             |
 | [Skybox][]           | Alters the target's skybox                                            |
 | [Smoke][]            | Creates a puff of smoke                                               |
 | [Smoke Swirl][]      | Creates a persistent "swirl" of smoke                                 |
 | [Sound][]            | Plays a sound effect from both vanilla Minecraft and resource packs   |               
 | [Spin][]             | Causes the mob to spin                                                |
 | [StopSound][]        | Stops a sound effect from playing                                     |
-| [TotemOfUndying][]     | Plays the effect of a player resurrecting                             |
+| [TotemOfUndying][]     | Plays the effect of a player resurrecting                           |
 
 ### EffectLib Effects
 
@@ -103,3 +104,4 @@ These effects require the plugin "EffectLib" to be installed to use.
   [Atom]: /skills/effects/atom
   [Particle Vortex]: /skills/effects/particlevortex
   [DNA]: /skills/effects/dna
+  [Play Animation]: /skills/effects/playanimation
