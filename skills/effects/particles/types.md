@@ -18,6 +18,8 @@
 
 **bubble**
 
+![bubble](uploads/wiki_images/Particle_bubble.png)
+
 | Description                                       | Common Usage         | Particle Size | Speed | Speed Effect |
 |---------------------------------------------------|----------------------|---------------|-------|--------------|
 | Plays a bubble particle. Only visible under water | Underwater particles | Very Small    |       |              |
