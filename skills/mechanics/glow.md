@@ -13,10 +13,8 @@ Attributes
 
 | Attribute | Aliases | Description                     | Default |
 |-----------|---------|---------------------------------|---------|
-| color     | c       | The color the entity will glow. | white   |
+| color     | c       | The color the entity will glow: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, PURPLE, YELLOW, or WHITE | white   |
 | duration  | d       | How long the effect will last.  | 100     |
-
-  
 
 Examples
 --------
