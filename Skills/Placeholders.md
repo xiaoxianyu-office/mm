@@ -10,26 +10,26 @@ Special Characters
 ------------------
 
 | **Placeholder** | **Function**                      |
-|-----------------|-----------------------------------|
-| <&co>           | Returns a colon (:)               |
-| <&sq>           | Returns an apostrophe (')         |
-| <&da>           | Returns a dash (-)                |
-| <&bs>           | Returns a backslash (\\)          |
-| <&fs>           | Returns a forward slash (/)       |
-| <&sp>           | Returns a space                   |
-| <&cm>           | Returns a comma (,)               |
-| <&sc>           | Returns a semicolon (;)           |
-| <&eq>           | Returns an equals symbol \[=\]    |
-| <&ss>           | Returns a section symbol (ยง)     |
-| <&dq>           | Returns double quotes (")         |
-| <&rb>           | Returns a right bracket (\])      |
-| <&lb>           | Returns a left bracket (\[)       |
-| <&rc>           | Returns a right curly bracket (}) |
-| <&lc>           | Returns a left curly bracket ({)  |
-| <&nm>           | Returns a number sign (#)         |
-| <&nl>           | Forces a new line                 |
-| <&heart>        | Returns a heart                   |
-| <&skull>        | Returns a skull and bones         |
+|:---------------:|-----------------------------------|
+|      <&co>      | Returns a colon (:)               |
+|      <&sq>      | Returns an apostrophe (')         |
+|      <&da>      | Returns a dash (-)                |
+|      <&bs>      | Returns a backslash (\\)          |
+|      <&fs>      | Returns a forward slash (/)       |
+|      <&sp>      | Returns a space                   |
+|      <&cm>      | Returns a comma (,)               |
+|      <&sc>      | Returns a semicolon (;)           |
+|      <&eq>      | Returns an equals symbol \[=\]    |
+|      <&ss>      | Returns a section symbol (ยง)     |
+|      <&dq>      | Returns double quotes (")         |
+|      <&rb>      | Returns a right bracket (\])      |
+|      <&lb>      | Returns a left bracket (\[)       |
+|      <&rc>      | Returns a right curly bracket (}) |
+|      <&lc>      | Returns a left curly bracket ({)  |
+|      <&nm>      | Returns a number sign (#)         |
+|      <&nl>      | Forces a new line                 |
+|    <&heart>     | Returns a heart                   |
+|    <&skull>     | Returns a skull and bones         |
 
 Color Codes
 -----------
@@ -37,48 +37,63 @@ Color Codes
 These color codes work anywhere in mob- and skill-files. They will even
 properly format tellraw-commands used in command skills!
 
-| **Code** | **Color**   | **Code** | **Color**      |
-|----------|-------------|----------|----------------|
-| &0       | Black       | &B       | Aqua           |
-| &1       | Dark Blue   | &C       | Red            |
-| &2       | Dark Green  | &D       | Light Purple   |
-| &3       | Dark Aqua   | &E       | Yellow         |
-| &4       | Dark Red    | &F       | White          |
-| &5       | Dark Purple | &K       | Magic          |
-| &6       | Gold        | &L       | Bold           |
-| &7       | Gray        | &M       | Strike through |
-| &8       | Dark Gray   | N        | Underline      |
-| &9       | Blue        | &O       | Italic         |
-| &A       | Green       | &R       | Reset          |
+Legacy color codes:
+
+| **Code** |  **Color**  | **Code** |   **Color**    |
+|:--------:|:-----------:|:--------:|:--------------:|
+|    &0    |    Black    |    &B    |      Aqua      |
+|    &1    |  Dark Blue  |    &C    |      Red       |
+|    &2    | Dark Green  |    &D    |  Light Purple  |
+|    &3    |  Dark Aqua  |    &E    |     Yellow     |
+|    &4    |  Dark Red   |    &F    |     White      |
+|    &5    | Dark Purple |    &K    |     Magic      |
+|    &6    |    Gold     |    &L    |      Bold      |
+|    &7    |    Gray     |    &M    | Strike through |
+|    &8    |  Dark Gray  |    N     |   Underline    |
+|    &9    |    Blue     |    &O    |     Italic     |
+|    &A    |    Green    |    &R    |     Reset      |
+
+MiniMessage color formatting:
+
+|  **Code**  |       **Color**       |     **Example**      |            **Text Displayed**            |
+|:----------:|:---------------------:|:--------------------:|:----------------------------------------:|
+| \<HEXCODE> | The hex color defined |    <#F9DC58>TEXT     | <p><font color="#F9DC58">TEXT</font></p> |
+|    \<b>    |         Bold          |       \<b>BOLD       |                 **BOLD**                 |
+|    \<i>    |        Italic         |    \<i>ITALICIZED    |            <i>ITALICIZED</i>             |
+|   \<st>    |     Strikethrough     |  \<st>STRIKETHROUGH  |            ~~STRIKETHROUGH~~             |
+|    \<u>    |      Underlined       |    \<u>UNDERLINED    |            <u>UNDERLINED</u>             |
+|   \<obf>   |      Obfuscated       |        \<obf>        |                                          |
+|  \<reset>  |         Reset         | \<b>BOLD\<reset>TEXT |        <strong>BOLD</strong>TEXT         |
+
 
 Caster Placeholders
 ------------------
 These placeholders will return whatever attribute of the caster that is called. For instance `<caster.l.y.#>` will return the caster's Y location.
 
 | Caster Placeholder  | Function                                                          |
-|---------------------|-------------------------------------------------------------------|
-| <caster.damage>     | Returns the caster's Attack_Damage attribute value                |
-| <caster.uuid>       | Returns the UUID of the caster                                    |
-| <caster.level>      | Returns the level of the caster                                   |
-| <caster.name>       | Returns the name of the caster                                    |
-| <caster.hp>         | Returns current hp of the caster                                  |
-| <caster.mhp>        | Returns the max hp of the caster                                  |
-| <caster.php>        | Returns the percent hp of the caster                              |
-| <caster.thp>        | Returns the full number hp of the caster                          |
-| <caster.tt.top>     | Returns the name of the top threat holder of the caster           |
-| <caster.l.w>        | Returns the world name the caster is in                           |
-| <caster.l.x>        | Returns the X coordinate of the caster                            |
-| <caster.l.x.#>      | Returns the X coordinate of the caster +- random number between # |
+|:-------------------:|-------------------------------------------------------------------|
+|   <caster.damage>   | Returns the caster's Attack_Damage attribute value                |
+|    <caster.uuid>    | Returns the UUID of the caster                                    |
+|   <caster.level>    | Returns the level of the caster                                   |
+|    <caster.name>    | Returns the name of the caster                                    |
+|     <caster.hp>     | Returns current hp of the caster                                  |
+|    <caster.mhp>     | Returns the max hp of the caster                                  |
+|    <caster.php>     | Returns the percent hp of the caster                              |
+|    <caster.thp>     | Returns the full number hp of the caster                          |
+|   <caster.tt.top>   | Returns the name of the top threat holder of the caster           |
+|    <caster.l.w>     | Returns the world name the caster is in                           |
+|    <caster.l.x>     | Returns the X coordinate of the caster                            |
+|   <caster.l.x.#>    | Returns the X coordinate of the caster +- random number between # |
 | <caster.l.x.double> | Returns the precise X coordinate of the caster                    |
-| <caster.l.y>        | Returns the Y coordinate of the caster                            |
-| <caster.l.y.#>      | Returns the Y coordinate of the caster +- random number between # |
+|    <caster.l.y>     | Returns the Y coordinate of the caster                            |
+|   <caster.l.y.#>    | Returns the Y coordinate of the caster +- random number between # |
 | <caster.l.y.double> | Returns the precise Y coordinate of the caster                    |
-| <caster.l.z>        | Returns the Z coordinate of the caster                            |
-| <caster.l.z.#>      | Returns the Z coordinate of the caster +- random number between # |
+|    <caster.l.z>     | Returns the Z coordinate of the caster                            |
+|   <caster.l.z.#>    | Returns the Z coordinate of the caster +- random number between # |
 | <caster.l.z.double> | Returns the precise Z coordinate of the caster                    |
-| <caster.l.yaw>      | Returns the yaw of the caster                                     |
-| <caster.l.pitch>    | Returns the pitch of the caster                                   |
-| <caster.stance>     | Returns the current stance of the caster                          |
+|   <caster.l.yaw>    | Returns the yaw of the caster                                     |
+|  <caster.l.pitch>   | Returns the pitch of the caster                                   |
+|   <caster.stance>   | Returns the current stance of the caster                          |
 | <caster.owner.name> | Returns the name of the wolf's owner                              |
 | <caster.owner.uuid> | Returns the uuid of the wolf's owner                              |
 
@@ -88,42 +103,42 @@ These placeholders will return whatever attribute of the caster that is called. 
 These placeholders will return whatever variable has been called. For instance <caster.var.\[name\]> will return the value of the caster's \[name\] variable.
 
 | **Variable Placeholder**  | **Function**                                                            |     
-|---------------------------|-------------------------------------------------------------------------|
-| <caster.var.\[name\]>     | Returns the value of the variable \[name\] on the caster.               |
-| <skill.var.\[name\]>      | Returns the value of the variable \[name\] on the current skill tree.   |
+|:-------------------------:|-------------------------------------------------------------------------|
+|   <caster.var.\[name\]>   | Returns the value of the variable \[name\] on the caster.               |
+|   <skill.var.\[name\]>    | Returns the value of the variable \[name\] on the current skill tree.   |
 | <skill.var.damage-amount> | Returns the amount of damage taken in the onDamaged trigger             |
-| <skill.var.damage-type>   | Returns the type of damage taken as specified in a mechanic, aura, etc. |
-| <skill.var.aura-name>     | Returns the name of the aura as specified in an aura.                   |
+|  <skill.var.damage-type>  | Returns the type of damage taken as specified in a mechanic, aura, etc. |
+|   <skill.var.aura-name>   | Returns the name of the aura as specified in an aura.                   |
 | <skill.var.aura-charges>  | Returns the amount of charges the aura has left.                        |
 | <skill.var.aura-duration> | Returns the duration of the aura.                                       |
-| <skill.var.aura-stacks>   | Returns the amount of stacks the aura has.                              |
-| <skill.targets>           | Returns the amount of inherited targets                                 |
+|  <skill.var.aura-stacks>  | Returns the amount of stacks the aura has.                              |
+|      <skill.targets>      | Returns the amount of inherited targets                                 |
 
 **Target Placeholders**
 -----------------
 These placeholders will return whatever target selector has been used. For instance <target.name> + @NearestPlayer will return the name of the player closest to the casting mob.
 
 | **Target Placeholders** | **Function**                                                      |
-|-------------------------|-------------------------------------------------------------------|
-| <target.uuid>           | Returns the UUID of the target                                    |
-| <target.name>           | Returns the name of the target                                    |
-| <target.hp>             | Returns current hp of the target                                  |
-| <target.mhp>            | Returns the max hp of the target                                  |
-| <target.php>            | Returns the percent hp of the target                              |
-| <target.thp>            | Returns the full number hp of the target                          |
-| <target.threat>         | Returns the threat level of the target                            |
-| <target.l.w>            | Returns the world name the target is in                           |
-| <target.l.x>            | Returns the X coordinate of the target                            |
-| <target.l.x.#>          | Returns the X coordinate of the target +- random number between # |
-| <target.l.y>            | Returns the Y coordinate of the target                            |
-| <target.l.y.#>          | Returns the Y coordinate of the target +- random number between # |
-| <target.l.z>            | Returns the Z coordinate of the target                            |
-| <target.l.z.#>          | Returns the Z coordinate of the target +- random number between # |
-| <target.l.yaw>          | Returns the yaw of the target                                     |
-| <target.l.pitch>        | Returns the pitch of the target                                   |
-| <target.level>          | Returns the level of the target                                   |
-| <target.block.type>     | Returns the block type of the target                              |
-| <target.entity_type>    | Returns the entity type of the target                             |
+|:-----------------------:|-------------------------------------------------------------------|
+|      <target.uuid>      | Returns the UUID of the target                                    |
+|      <target.name>      | Returns the name of the target                                    |
+|       <target.hp>       | Returns current hp of the target                                  |
+|      <target.mhp>       | Returns the max hp of the target                                  |
+|      <target.php>       | Returns the percent hp of the target                              |
+|      <target.thp>       | Returns the full number hp of the target                          |
+|     <target.threat>     | Returns the threat level of the target                            |
+|      <target.l.w>       | Returns the world name the target is in                           |
+|      <target.l.x>       | Returns the X coordinate of the target                            |
+|     <target.l.x.#>      | Returns the X coordinate of the target +- random number between # |
+|      <target.l.y>       | Returns the Y coordinate of the target                            |
+|     <target.l.y.#>      | Returns the Y coordinate of the target +- random number between # |
+|      <target.l.z>       | Returns the Z coordinate of the target                            |
+|     <target.l.z.#>      | Returns the Z coordinate of the target +- random number between # |
+|     <target.l.yaw>      | Returns the yaw of the target                                     |
+|    <target.l.pitch>     | Returns the pitch of the target                                   |
+|     <target.level>      | Returns the level of the target                                   |
+|   <target.block.type>   | Returns the block type of the target                              |
+|  <target.entity_type>   | Returns the entity type of the target                             |
 
 **Trigger Placeholders**
 -----------------
@@ -134,30 +149,29 @@ These placeholders will return whatever attribute of the entity that caused the 
 
 -----------------
 | Trigger Placeholders | Function                                                                               |
-|----------------------|----------------------------------------------------------------------------------------|
-| <trigger.uuid>       | Returns the UUID of the entity triggering the skill                                    |
-| <trigger.name>       | Returns the name of the entity triggering the skill                                    |
-| <trigger.hp>         | Returns the current hp of the entity triggering the skill                              |
-| <trigger.threat>     | Returns the threat level of the entity triggering the skill                            |
-| <trigger.l.w>        | Returns the world name of the entity triggering the skill                              |
-| <trigger.l.x>        | Returns the X coordinate of the entity triggering the skill                            |
-| <trigger.l.x.#>      | Returns the X coordinate of the entity triggering the skill +- random number between # |
-| <trigger.l.y>        | Returns the Y coordinate of the entity triggering the skill                            |
-| <trigger.l.y.#>      | Returns the Y coordinate of the entity triggering the skill +- random number between # |
-| <trigger.l.z>        | Returns the Z coordinate of the entity triggering the skill                            |
-| <trigger.l.z.#>      | Returns the Z coordinate of the entity triggering the skill +- random number between # |
-| <trigger.l.yaw>      | Returns the yaw of the trigger                                                         |
-| <trigger.l.pitch>    | Returns the pitch of the trigger                                                       |
+|:--------------------:|----------------------------------------------------------------------------------------|
+|    <trigger.uuid>    | Returns the UUID of the entity triggering the skill                                    |
+|    <trigger.name>    | Returns the name of the entity triggering the skill                                    |
+|     <trigger.hp>     | Returns the current hp of the entity triggering the skill                              |
+|   <trigger.threat>   | Returns the threat level of the entity triggering the skill                            |
+|    <trigger.l.w>     | Returns the world name of the entity triggering the skill                              |
+|    <trigger.l.x>     | Returns the X coordinate of the entity triggering the skill                            |
+|   <trigger.l.x.#>    | Returns the X coordinate of the entity triggering the skill +- random number between # |
+|    <trigger.l.y>     | Returns the Y coordinate of the entity triggering the skill                            |
+|   <trigger.l.y.#>    | Returns the Y coordinate of the entity triggering the skill +- random number between # |
+|    <trigger.l.z>     | Returns the Z coordinate of the entity triggering the skill                            |
+|   <trigger.l.z.#>    | Returns the Z coordinate of the entity triggering the skill +- random number between # |
+|   <trigger.l.yaw>    | Returns the yaw of the trigger                                                         |
+|  <trigger.l.pitch>   | Returns the pitch of the trigger                                                       |
   
 
 Misc Placeholders
 -----------------
 
-| **Placeholder**       | **Function**                                        |
-|-----------------------|-----------------------------------------------------|
-| **Misc Placeholders** |                                                     |
-| <drops.xp>            | Returns the xp dropped via Heroes or SkillAPI mods  |
-| <drops.money>         | Returns the money dropped through the vault plug-in |
+|    **Placeholder**    | **Function**                                        |
+|:---------------------:|-----------------------------------------------------|
+|      <drops.xp>       | Returns the xp dropped via Heroes or SkillAPI mods  |
+|     <drops.money>     | Returns the money dropped through the vault plug-in |
 
 Special Placeholders
 --------------------
