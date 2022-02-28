@@ -1,6 +1,6 @@
 * [[Home]]
 * [[Changelogs]]
-* [[Premium Features]]
+* [Premium Features](Premium-Features)
 * [[Commands and Permissions]]
 * [FAQ / Common Issues](FAQ)
 * [Mythic Add-ons](Add-ons)
