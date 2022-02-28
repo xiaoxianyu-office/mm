@@ -1,12 +1,11 @@
-* [[Home]]
-* [[Changelogs]]
-* [Premium Features](Premium-Features)
-* [[Commands and Permissions]]
-* [FAQ / Common Issues](FAQ)
-* [Mythic Add-ons](Add-ons)
-* [[Compatible Plugins]]
-* [API Information](API)
-
+[[Home]]\
+[[Changelogs]]\
+[Premium Features](Premium-Features)\
+[[Commands and Permissions]]\
+[FAQ / Common Issues](FAQ)\
+[Mythic Add-ons](Add-ons)\
+[[Compatible Plugins]]\
+[API Information](API)
 <details>
 <summary>Mobs</summary>
 
