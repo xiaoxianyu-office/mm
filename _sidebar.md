@@ -8,7 +8,6 @@
 * [API Information](API)
 ### [Mobs](Mobs)
   * [Overview](Mobs)
-    * Phil's Secret Room
   * [Types](Mobs/Types)
   * [Mob Options](Mobs/Options)
   * [Mob Levels](Mobs/Levels)
