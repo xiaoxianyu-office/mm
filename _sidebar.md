@@ -7,7 +7,7 @@
 [[Compatible Plugins]]\
 [API Information](API)
 <details open>
-<summary style="font-size:25px">Mobs</summary>
+<summary><strong>Mobs</strong></summary>
 
 &nbsp; &nbsp; &nbsp;[Overview](Mobs)\
 &nbsp; &nbsp; &nbsp;[Types](Mobs/Types)\
@@ -27,7 +27,7 @@
 
 </details>
 <details open>
-<summary style="font-size:25px">Skills</summary>
+<summary><strong>Skills</strong></summary>
 
 &nbsp; &nbsp; &nbsp;[Overview](Skills/Start)\
 &nbsp; &nbsp; &nbsp;[Mechanics](Skills/Mechanics)\
@@ -42,7 +42,7 @@
 
 
 <details>
-<summary style="font-size:25px">Items & Drops</summary>
+<summary><strong>Items & Drops</strong></summary>
 
 &nbsp; &nbsp; &nbsp;[Items](Items)\
 &nbsp; &nbsp; &nbsp;[Drops and Drop Tables](Items/Drops)\
@@ -55,7 +55,7 @@
 
 
 <details>
-<summary style="font-size:25px">Spawning</summary>
+<summary><strong>Spawning</strong></summary>
 
 &nbsp; &nbsp; &nbsp;[Spawners](Spawners)\
 &nbsp; &nbsp; &nbsp;[Random Spawns](Random-Spawns)
