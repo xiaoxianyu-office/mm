@@ -7,7 +7,7 @@
 [[Compatible Plugins]]\
 [API Information](API)
 <details open>
-<summary><<strong style="color: blue">Mobs</strong></summary>
+<summary><strong>Mobs</strong></summary>
 
 [Overview](Mobs)\
 [Types](Mobs/Types)\
@@ -50,10 +50,12 @@
 [Potions](Items/Potions)\
 [Banner Layers](Items/Banner Layers)
 </details>
+<details open>
+<summary><strong>Spawning</strong></summary>
 
-### Spawning
-  * [[Spawners]]
-  * [[Random Spawns]]
+[Spawners](Spawners)\
+[Random Spawns](Random-Spawns)
+</details>
 
 ### Tutorials
   * [[DamageSpells]]
