@@ -7,7 +7,7 @@
 [[Compatible Plugins]]\
 [API Information](API)
 <details open>
-<summary><strong>Mobs</strong></summary>
+<summary><<strong style="color: blue">Mobs</strong></summary>
 
 [Overview](Mobs)\
 [Types](Mobs/Types)\
