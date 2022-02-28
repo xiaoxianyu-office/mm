@@ -57,7 +57,7 @@ MiniMessage color formatting:
 
 |  **Code**  |       **Color**       |      **Example**      |                                                     **DISPLAYED**                                                     |
 |:----------:|:---------------------:|:---------------------:|:---------------------------------------------------------------------------------------------------------------------:|
-| \<HEXCODE> | The hex color defined |     <#F9DC58>TEXT     |                                        $`\textcolor{#F9DC58}{\textsf{TEXT}}`$                                         |
+| \<HEXCODE> | The hex color defined |     <#F9DC58>TEXT     |                                        $`\textcolor{#F9DC58}{\textsf{\footnotesize{TEXT}}}`$                                         |
 |    \<b>    |         Bold          |       \<b>BOLD        |                                                 <strong>BOLD</strong>                                                 |
 |    \<i>    |        Italic         |    \<i>ITALICIZED     |                                                   <i>ITALICIZED</i>                                                   |
 |   \<st>    |     Strikethrough     |  \<st>STRIKETHROUGH   |                                                 <s>STRIKETHROUGH</s>                                                  |
