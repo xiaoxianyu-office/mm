@@ -40,7 +40,8 @@
 
 </details>
 
-<details open>
+
+<details>
 <summary><strong>Items & Drops</strong></summary>
 
 &nbsp; &nbsp; &nbsp;[Items](Items)\
@@ -51,12 +52,18 @@
 &nbsp; &nbsp; &nbsp;[Potions](Items/Potions)\
 &nbsp; &nbsp; &nbsp;[Banner Layers](Items/Banner Layers)
 </details>
-<details open>
+
+
+<details>
 <summary><strong>Spawning</strong></summary>
 
 &nbsp; &nbsp; &nbsp;[Spawners](Spawners)\
 &nbsp; &nbsp; &nbsp;[Random Spawns](Random-Spawns)
 </details>
 
-### Tutorials
-  * [[DamageSpells]]
+
+<details>
+<summary><strong>Tutorials</strong></summary>
+
+&nbsp; &nbsp; &nbsp;[DamageSpells](DamageSpells)
+</details>
