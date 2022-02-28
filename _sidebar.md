@@ -6,7 +6,7 @@
 [Mythic Add-ons](Add-ons)\
 [[Compatible Plugins]]\
 [API Information](API)
-<details>
+<details open>
 <summary>Mobs</summary>
 
 [Overview](Mobs)\
@@ -26,7 +26,7 @@
 [Extra: ModelEngine](Model-Engine)
 
 </details>
-<details>
+<details open>
 <summary>Skills</summary>
 
 [Overview](Skills/Start)\
@@ -39,7 +39,7 @@
 [Variables](Skills/Variables)
 </details>
 
-<details>
+<details open>
 <summary>Items & Drops</summary>
 
 [Items](Items)\
