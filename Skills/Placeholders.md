@@ -60,7 +60,7 @@ MiniMessage color formatting:
 | \<HEXCODE> | The hex color defined |    <#F9DC58>TEXT     | $`\textcolor{#F9DC58}{\textsf{TEXT}}`$ |
 |    \<b>    |         Bold          |       \<b>BOLD       |         <strong>BOLD</strong>          |
 |    \<i>    |        Italic         |    \<i>ITALICIZED    |           <i>ITALICIZED</i>            |
-|   \<st>    |     Strikethrough     |  \<st>STRIKETHROUGH  |          <s>Strikethrough</s>          |
+|   \<st>    |     Strikethrough     |  \<st>STRIKETHROUGH  |          <s>STRIKETHROUGH</s>          |
 |    \<u>    |      Underlined       |    \<u>UNDERLINED    |           <u>UNDERLINED</u>            |
 |   \<obf>   |      Obfuscated       |        \<obf>        |                                        |
 |  \<reset>  |         Reset         | \<b>BOLD\<reset>TEXT |       <strong>BOLD</strong>TEXT        |
