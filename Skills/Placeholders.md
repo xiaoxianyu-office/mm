@@ -65,7 +65,6 @@ MiniMessage color formatting:
 |   \<obf>   |      Obfuscated       | \<obf>OBFUSCATED TEXT<\obf> | [OBFUSCATED TEXT](https://webui.adventure.kyori.net/?mode=chat_closed&input=%3Cobf%3EObfuscated%3C%2Fobf%3E&bg=grass) |
 |  \<reset>  |         Reset         |    \<b>BOLD\<reset>TEXT     |                                               <strong>BOLD</strong>TEXT                                               |
 
-
 Caster Placeholders
 ------------------
 These placeholders will return whatever attribute of the caster that is called. For instance `<caster.l.y.#>` will return the caster's Y location.
