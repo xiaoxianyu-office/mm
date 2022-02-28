@@ -7,7 +7,7 @@
 [[Compatible Plugins]]\
 [API Information](API)
 <details open>
-<summary><h6>Mobs</h6></summary>
+<summary>Mobs</summary>
 
 [Overview](Mobs)\
 [Types](Mobs/Types)\
@@ -27,7 +27,7 @@
 
 </details>
 <details open>
-<summary><h6>Skills</h6></summary>
+<summary>Skills</summary>
 
 [Overview](Skills/Start)\
 [Mechanics](Skills/Mechanics)\
@@ -40,7 +40,7 @@
 </details>
 
 <details open>
-<summary><h6>Items & Drops</h6></summary>
+<summary>Items & Drops</summary>
 
 [Items](Items)\
 [Drops and Drop Tables](Items/Drops)\
