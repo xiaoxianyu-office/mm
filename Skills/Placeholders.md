@@ -55,15 +55,15 @@ Legacy color codes:
 
 MiniMessage color formatting:
 
-|  **Code**  |       **Color**       |     **Example**      |            **Text Displayed**            |
-|:----------:|:---------------------:|:--------------------:|:----------------------------------------:|
-| \<HEXCODE> | The hex color defined |    <#F9DC58>TEXT     | <p><font color="#F9DC58">TEXT</font></p> |
-|    \<b>    |         Bold          |       \<b>BOLD       |                 **BOLD**                 |
-|    \<i>    |        Italic         |    \<i>ITALICIZED    |            <i>ITALICIZED</i>             |
-|   \<st>    |     Strikethrough     |  \<st>STRIKETHROUGH  |            ~~STRIKETHROUGH~~             |
-|    \<u>    |      Underlined       |    \<u>UNDERLINED    |            <u>UNDERLINED</u>             |
-|   \<obf>   |      Obfuscated       |        \<obf>        |                                          |
-|  \<reset>  |         Reset         | \<b>BOLD\<reset>TEXT |        <strong>BOLD</strong>TEXT         |
+|  **Code**  |       **Color**       |     **Example**      |              **DISPLAYED**              |
+|:----------:|:---------------------:|:--------------------:|:---------------------------------------:|
+| \<HEXCODE> | The hex color defined |    <#F9DC58>TEXT     | $`\textcolor{#F9DC58}{\textsf{TEXT}}`$. |
+|    \<b>    |         Bold          |       \<b>BOLD       |                                         |
+|    \<i>    |        Italic         |    \<i>ITALICIZED    |                                         |
+|   \<st>    |     Strikethrough     |  \<st>STRIKETHROUGH  |                                         |
+|    \<u>    |      Underlined       |    \<u>UNDERLINED    |                                         |
+|   \<obf>   |      Obfuscated       |        \<obf>        |                                         |
+|  \<reset>  |         Reset         | \<b>BOLD\<reset>TEXT |                                         |
 
 
 Caster Placeholders
