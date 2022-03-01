@@ -6,7 +6,7 @@
 [Mythic Add-ons](Add-ons)\
 [[Compatible Plugins]]\
 [API Information](API)
-<details open>
+<details>
 <summary><strong>Mobs</strong></summary>
 
 &nbsp; &nbsp; &nbsp;[Overview](Mobs)\
@@ -26,7 +26,7 @@
 &nbsp; &nbsp; &nbsp;[Extra: ModelEngine](Model-Engine)
 
 </details>
-<details open>
+<details>
 <summary><strong>Skills</strong></summary>
 
 &nbsp; &nbsp; &nbsp;[Overview](Skills/Start)\
