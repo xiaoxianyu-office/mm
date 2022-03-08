@@ -12,7 +12,7 @@ A basic ranged attack that ranged entities can use.
 | speed          | s        | The attack speed modifier of this ai goal. |    1    |
 | attackspeedmax | smax     |                                            |   60    |
 | attackspeedmin | amin     |                                            |   20    |
-| attackradius   | radius,r |                                            |   15    |
+| attackradius   | radius,r | The attack radius of this ai goal.         |   15    |
 
 
 ### Examples
