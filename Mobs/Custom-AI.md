@@ -87,9 +87,9 @@ AIGoalSelectors:
 
 **Piglins and Pillagers Only**
 
-| AI Goal                                        | Aliases | Description            |
-|------------------------------------------------|---------|------------------------|
-| [crossbowAttack](/Mobs/ai/goals/crossbowattack |         | attack with a crossbow |
+| AI Goal                                         | Aliases | Description            |
+|-------------------------------------------------|---------|------------------------|
+| [crossbowAttack](/Mobs/ai/goals/crossbowattack) |         | attack with a crossbow |
 
 **AI Target Selectors**
 ---
