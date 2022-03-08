@@ -12,7 +12,6 @@ An advanced ranged attack that can often cause the shooter to strafe backwards o
 | attackspeedmax | smax     |                                            |   60    |
 | attackradius   | radius,r |                                            |   15    |
 
-
 ### Examples
 
 ```yaml
