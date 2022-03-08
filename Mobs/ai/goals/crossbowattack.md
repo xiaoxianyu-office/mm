@@ -5,10 +5,10 @@ Attack with a crossbow. Only Piglins and Pillagers can use crossbowAttack goal a
 
 ### Attributes
 
-| Attribute      | Aliases  | Description                                | Default |
-|----------------|----------|--------------------------------------------|:-------:|
-| speed          | s        | The attack speed modifier of this ai goal. |    1    |
-| attackradius   | radius,r | The attack radius of this ai goal.         |    8    |
+| Attribute      | Aliases  | Description                        | Default |
+|----------------|----------|------------------------------------|:-------:|
+| speed          | s        | Movement speed modifier            |    1    |
+| attackradius   | radius,r | The attack radius of this ai goal. |    8    |
 
 
 ### Examples

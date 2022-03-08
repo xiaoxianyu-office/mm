@@ -6,11 +6,11 @@ An advanced ranged attack that can often cause the shooter to strafe backwards o
 
 ### Attributes
 
-| Attribute      | Aliases  | Description                                | Default |
-|----------------|----------|--------------------------------------------|:-------:|
-| speed          | s        | The attack speed modifier of this ai goal. |    1    |
-| attackspeedmax | smax     |                                            |   60    |
-| attackradius   | radius,r |                                            |   15    |
+| Attribute      | Aliases  | Description             | Default |
+|----------------|----------|-------------------------|:-------:|
+| speed          | s        | Movement speed modifier |    1    |
+| attackspeedmax | smax     |                         |   60    |
+| attackradius   | radius,r |                         |   15    |
 
 ### Examples
 
