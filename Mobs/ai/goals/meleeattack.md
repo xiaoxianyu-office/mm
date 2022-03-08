@@ -5,9 +5,9 @@ Causes the mob to move to and melee attack its target
 
 ### Attributes
 
-| Attribute      | Aliases  | Description                             | Default |
-|----------------|----------|-----------------------------------------|:-------:|
-| speed          | s        | Movement speed modifier of this ai goal |    1    |
+| Attribute | Aliases | Description             | Default |
+|-----------|---------|-------------------------|:-------:|
+| speed     | s       | Movement speed modifier |    1    |
 
 
 
