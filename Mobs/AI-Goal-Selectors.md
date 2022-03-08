@@ -74,7 +74,7 @@ AIGoalSelectors:
 | AI Goal                                    | Aliases             | Description                      |
 |--------------------------------------------|---------------------|----------------------------------|
 | [rangedattack](/Mobs/ai/goals/arrowattack) | arrowattack         | A basic ranged/projectile attack |
-| [bowattack](/Mobs/ai/goals/bowattack)      | bowshoot, bowmaster | An advanced bow attack           |
+| [bowattack](/Mobs/ai/goals/bowattack)      | bowshoot, bowmaster | An advanced bow attack.          |
 
 **Piglins and Pillagers Only**
 
