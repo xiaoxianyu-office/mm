@@ -11,7 +11,7 @@ Special Notes
 -------------
 
 This is used in conjunction with the **owner condition** (see
-[Conditions](/conditions/start#targettrigger_only_conditions)) and
+[Conditions](/skills/conditions/owner)) and
 @Owner targets.  
 This is NOT the same as a owner for a wolf or ocelot.
 
