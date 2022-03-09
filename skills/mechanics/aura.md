@@ -30,6 +30,7 @@ Attributes
 | CancelOnChangeWorld | cocw    | Cancels the aura if the entity with the aura changes worlds. (Most times applies to players)                                                                                                | false         |
 | CancelOnSkillUse    | cosu    | Cancels the aura if the entity with the aura uses another skill while the aura is active.                                                                                                   | false         |
 | CancelOnQuit        | coq     | Cancels the aura if the entity with the aura logs out. (Only really applies to players)                                                                                                     | true          |
+| DoEndSkillOnTerminate | desot, ares | Whether or not the aura will run onEndSkill when it's removed by auraremove mechanic | true |
 
   
 ===== Special Options (4.6.0 +)=====  
