@@ -48,6 +48,8 @@ This is a much neater way of doing mob disguises compared to the Options version
 4. ``setSkin RumiExMachina.png`` is telling it to set the disguise skin to your .png file in the skins folder  So if you have a skin named Goblin.png in the skins folder, use setSkin Goblin.png
 5. ``setDynamicName`` is used to allow the disguise name to change often, useful when you want to display the entity's health in its name
 
+
+### NOTE: As of MM 5.0, you must setup your disguises using inline disguise.
 ## LEGACY: Disguise Options
 
 These options are no longer utilized in modern disguises and the documentation is preserved for historical purposes only.
