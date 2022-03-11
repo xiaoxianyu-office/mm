@@ -1,8 +1,14 @@
-5.0.0 (Dev Builds)
+5.0.1 (Beta Build)
 ======
-- Mythic API separated out into an independent module (for add-on authors)
+
+Highlights
+----------
+- Now requires Java 16
+- Mythic API being separated out into an independent module (for add-on authors)
 - Major API rewrite
 - Registering custom triggers
+- Native model configuration for both ModelEngine and MPets
+- MythicKeys mod support
 
 General
 -------
@@ -40,6 +46,8 @@ Bug Fixes/Other
 - Fixed onHitSkill for shoot mechanic not inheriting skill variables, closes #687
 - Added `min(x, y)`, `max(x, y)`, `atan2(y, x)` math functions. You can see all the supported operators and functions in [Math](), and you can make suggestions to add more operators and functions to [gitlab](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/issues)
 - Fixed several mob AIs. closes #681
+- Fixed NPE with WorldGuard support
+- Fixed disguises sometimes not disappearing on mob removal
 
 4.14.2
 ======
