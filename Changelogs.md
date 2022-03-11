@@ -7,11 +7,29 @@ Highlights
 - Mythic API being separated out into an independent module (for add-on authors)
 - Major API rewrite
 - Registering custom triggers
-- Native model configuration for both ModelEngine and MPets
+- Native model configuration for ModelEngine
 - MythicKeys mod support
 
 General
 -------
+
+### Model Configuration
+You can now configure ModelEngine models inside your mob.
+
+```
+Mob:
+  Model: [model id]
+```
+or with more options...
+```
+Mob:
+  Model:
+    Id: [model id]
+    ViewRadius: 64
+    Drive: true
+    DamageTint: true
+```
+etc...
 
 Conditions
 ----------
