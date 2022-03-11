@@ -39,6 +39,7 @@ skill **effect:name**, for example:
 | [Flames][]           | Causes the Mob Spawner flame effect                                   |
 | [Geyser][]           | Creates a "geyser" of water or lava                                   |
 | [Glow][]             | Gives the target the glow effect with different colors (req. GlowAPI) |
+| [GuardianBeam][]     | Draw a guardian beam between the origin and the target                |
 | [Item Spray][]       | Sprays temporary items around the target                              |
 | [Lightning][]        | Causes a fake lightning strike                                        |
 | [Particles][]        | Creates particle effects around the target                            |
@@ -84,6 +85,7 @@ These effects require the plugin "EffectLib" to be installed to use.
   [Flames]: /skills/effects/flames
   [Geyser]: /skills/effects/geyser
   [Glow]: /skills/effects/glow
+  [GuardianBeam]: /effects/guardianbeam
   [Item Spray]: /skills/effects/itemspray
   [Lightning]: /skills/effects/lightning
   [Particles]: /skills/effects/particles
