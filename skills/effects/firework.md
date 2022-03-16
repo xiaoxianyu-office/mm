@@ -9,23 +9,21 @@ NOTE: Appears to not be working in Dev #3591, needs further testing.
 
 | Attribute  | Aliases | Description | Default Value |
 | ------ | ------ | ------ | ------ |
-| type | t | The type of firework. See below for a list. | 0 |
-| duration | d | The flight duration of the firework. | 0 |
+| type | t | The type of firework. See below for a list. | BALL |
+| duration | d | The flight duration of the firework. | 2 |
 | flicker | f | Whether to add the flicker effect to the explosion. | false |
 | trail | tr | Whether to add the trail effect to the firework rocket. | false |
-| colors | c | The color of the firework explosion, in RGB | 0,0,0 |
-| fadecolors | fc | The fade colors of the firework explosion, in RBG | 0,0,0 |
+| colors | c | The color of the firework explosion, in RGB or hex | 0,0,0 |
+| fadecolors | fc | The fade colors of the firework explosion, in RBG or hex | 0,0,0 |
 
 #### Firework Types
-
-The type attribute is given as a number, each number corresponds to the type of firework to use:
-- 0 : Small Ball Explosion
-- 1 : Large Ball Explosion
-- 2 : Star Shaped Explosion
-- 3 : Creeper-head Shaped Explosion
-- 4 : Burst-style Explosion
+- BALL
+- BALL_LARGE
+- BURST
+- CREEPER
+- STAR
 
 ### Examples
 ----
     Skills:
-      - effect:firework{t=3;d=1;f=true;tr=true} @self ~onInteract
+      - effect:firework{t=BALL;d=1;f=true;tr=true} @self ~onInteract
