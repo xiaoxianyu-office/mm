@@ -2,7 +2,6 @@ Effect: Firework
 ----
 
 Creates a firework effect at the target.
-NOTE: Appears to not be working in Dev #3591, needs further testing.
 
 ### Attributes
 ----
