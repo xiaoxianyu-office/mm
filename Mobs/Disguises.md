@@ -39,13 +39,13 @@ Examples:
 
 ```yml
 #Invisible powered Creeper
-/disguise creeper setPowered true setInvisible true
+Disguise: creeper setPowered true setInvisible true
 
 #Brown horse with white spots and gold armor
-/disguise horse setColor brown setStyle white_dots setHorseArmor 418
+Disguise: horse setColor brown setStyle white_dots setHorseArmor 418
 
 #Upside-down player disguise with Notch's skin
-/disguise player Dinnerbone setSkin Notch
+Disguise: player Dinnerbone setSkin Notch
 ```
 
 ## Saving Disguises
