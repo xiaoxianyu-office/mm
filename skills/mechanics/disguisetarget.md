@@ -26,5 +26,5 @@ This one would turn it into a player using the skin of Notch and giving
 it the display name *Jeb*. Color codes are useable in the nametag field.
 ```yaml
 Skills:
-  - disguisetarget{d= "player libraryaddict setCustomName '&7Jeb' setSkin Notch.png"} @target
+  - disguisetarget{d="player libraryaddict setCustomName '&7Jeb' setSkin Notch.png"} @target
 ```
