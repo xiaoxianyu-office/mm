@@ -13,9 +13,8 @@ Disguises allow you to make your mob look like a different mob, a block, or even
 Any entity type found in the spigot docs should function correctly.
 https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
 
-## Inline Disguises
-With the newer versions of MythicMobs, disguises can now be done completely inline using the same **disguise string** syntax as the in-game ``/disguise`` command. 
-[Constructing a disguise string](https://www.spigotmc.org/wiki/lib-s-disguises-using-the-commands/#constructing-a-disguise-using-a-command).
+## How To Set up Disguises
+With the newer versions of MythicMobs, disguises can now be done completely inline using the same **disguise string** syntax as the in-game ``/disguise`` command.
 
 For example, let's say we want a skeleton that is glowing, spinning, and on fire. To get this disguise ingame, we would use the command: ``/disguise SKELETON setGlowing setSpinning setBurning``.
 We can take this command, and use it on a mob next to the disguise option, like in the example below:

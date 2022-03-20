@@ -7,16 +7,8 @@ Disguises and ProtocolLib be installed to enable Disguise functionality.
 See [Add-On: Disguises](/Mobs/Disguises) for a list of available
 disguises.
 
-As of 4.12 the Disguise mechanic got an overhaul and allows for direct command strings from LibsDiguises to work inside of its disguise attribute. The old way was renamed disguiseOld and the new way is disguise!
-
-If you are on a version older then 4.12, then the old way is all that exists and it is still - disguise{} instead of - disguiseOld{}!
-
 Attributes
 ----------
-
-Any [disguise-specific
-options](http://mythicmobs.net/manual/doku.php/addons/disguises/start#options)
-can also be used as an attribute in the skill.
 
 | Attribute | Aliases | Description                       | Default |
 |-----------|---------|-----------------------------------|---------|
@@ -26,8 +18,6 @@ can also be used as an attribute in the skill.
 
 Examples
 --------
-
-**New Way**
 
 you can test cast both of these disguises with ``/mm test cast TestingDisguiseMechanic``
 
@@ -46,6 +36,8 @@ TestingDisguiseMechanic:
   - disguise{d="Zombie setYModifier -1.5 setPitchLocked setInvisible setHelmet PLAYER_HEAD"} @self
 ```
 
+<!--
+
 ---------
 **Old Way**
 
@@ -57,3 +49,4 @@ This example would cause the mob to turn into a sheep.
 Configure custom disguises using Lib's Disguises for more granular detail.
 
 ---------
+-->
