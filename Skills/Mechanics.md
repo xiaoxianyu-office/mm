@@ -67,7 +67,7 @@ are able to target locations as well.
 | [HideFromPlayers][]       | Hides the caster, if the caster is a player, from other players for a set duration.      |
 | [Hologram][]              | Summons a hologram to the targeted location                                              |
 | [Ignite][]                | Sets the target on fire                                                                  |
-| [JSON Message][]          | Sends a JSON-format message to the target player(s)                                      |
+| [JSONMessage][]           | Sends a JSON-format message to the target player(s)                                      |
 | [Jump][]                  | Causes the caster to jump                                                                |
 | [Leap][]                  | Causes the caster to leap towards the target                                             |
 | [Lightning][]             | Strikes lightning at the target                                                          |
