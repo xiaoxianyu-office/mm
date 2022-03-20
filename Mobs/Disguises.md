@@ -14,11 +14,12 @@ Any entity type found in the spigot docs should function correctly.
 https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
 
 ## Inline Disguises
-With the newer versions of MythicMobs, disguises can now be done completely inline using the same **disguise string** syntax as the in-game ``/disguise`` command. [Constructing a disguise string](https://www.spigotmc.org/wiki/lib-s-disguises-using-the-commands/#constructing-a-disguise-using-a-command).
+With the newer versions of MythicMobs, disguises can now be done completely inline using the same **disguise string** syntax as the in-game ``/disguise`` command. 
+[Constructing a disguise string](https://www.spigotmc.org/wiki/lib-s-disguises-using-the-commands/#constructing-a-disguise-using-a-command).
 
 For example, let's say we want a skeleton that is glowing, spinning, and on fire. To get this disguise ingame, we would use the command: ``/disguise SKELETON setGlowing setSpinning setBurning``.
 We can take this command, and use it on a mob next to the disguise option, like in the example below:
-```
+```yml
 SLSkelF:
   Type: ZOMBIE
   Equipment:
@@ -31,8 +32,21 @@ SLSkelF:
   Display: '&BSkeletal Fighter\n&ELv.<mob.level>'
   Disguise: SKELETON setGlowing setSpinning setBurning
 ```
+## Disguise Options
 
-This is a much neater way of doing mob disguises compared to the Options version, and matches both the disguise mechanic syntax and the disguise command syntax. If at all possible, please use this method of disguising mobs over the Options method.
+You can view additional disguise options by using `/dhelp <disguisetype>`. You can also view more information on types by using `/dhelp`.\
+Examples:
+
+```yml
+#Invisible powered Creeper
+/disguise creeper setPowered true setInvisible true
+
+#Brown horse with white spots and gold armor
+/disguise horse setColor brown setStyle white_dots setHorseArmor 418
+
+#Upside-down player disguise with Notch's skin
+/disguise player Dinnerbone setSkin Notch
+```
 
 ## Saving Disguises
 
@@ -48,8 +62,61 @@ This is a much neater way of doing mob disguises compared to the Options version
 4. ``setSkin RumiExMachina.png`` is telling it to set the disguise skin to your .png file in the skins folder  So if you have a skin named Goblin.png in the skins folder, use setSkin Goblin.png
 5. ``setDynamicName`` is used to allow the disguise name to change often, useful when you want to display the entity's health in its name
 
+Excessive Example:
+```yml
+SneakyDisguisingMob:
+  Type: wither_skeleton
+  Display: 'meh'
+  CustomKillMessages:
+  - '<target.name> was sneaked upon! (to death)'
+  Health: 128
+  Disguise: player Steve setSkin meeeh.png setBurning true setSneaking true setSprinting true setModifyBoundingBox false setDynamicName true
+```
+
+#### Nameplates
+
+Nameplates allow you to extend the nameplates of Player-disguise mobs, which are normally limited to 16 characters.
+To use this, simply have Holograms installed and then leave out the “Player” field in your disguise (skin is still required!).
+If you don't specify the player field, it will use the Display field instead using a custom nameplate.
+
+```yml
+Monkey:
+  Type: skeleton
+  Display: "this display name is too long for players normally"
+  Disguise: player Steve setSkin Kurdie.png
+```
+This feature requires LibsDisguises and the Holograms plugin: [https://www.spigotmc.org/resources/holograms.4924/](https://www.spigotmc.org/resources/holograms.4924/)
+
+If you have premium you can use multi line disguise names using the `setDynamicName` option
+
+![image](uploads/e9f3926c7a8d74dfb1b8fa6d2cd2d67c/image.png)
+
+#### Examples
+
+Examples of Disguises being used:
+
+```yml
+ExampleMob:
+  Type: skeleton
+  Disguise: player libraryaddict setCustomName "&8Not Darkitect" setSkin Darkitect.png
+```
+
+```yml
+ExampleMob2:
+  Type: skeleton
+  Health: 20
+  Disguise: player Ashijin setSkin Notch.png
+```
+
+```yml
+ExampleMob3:
+  MobType: skeleton
+  Health: 20
+  Disguise: pig
+```
 
 
+<!-- NOT USED ANYMORE! KEEPING THIS HERE IF ANYONE WANTS TO USE DISGUISE OPTIONS SYNTAX
 ## LEGACY: Disguise Options
 
 ### NOTE: As of MM 5.0, you must setup your disguises using inline disguise.
@@ -71,73 +138,4 @@ Here are some common ones that may be of interest to you:
 - Disguise.Gliding: [true/false] - Makes the disguise glide permanently.
 
 “Glowing” and “Gliding” were added in version 2.3.2.
-
-Excessive Example:
-```
-SneakyDisguisingMob:
-  Type: wither_skeleton
-  Display: 'meh'
-  CustomKillMessages:
-  - '<target.name> was sneaked upon! (to death)'
-  Health: 128
-  Disguise:
-    Type: player
-    Skin: 'meeeh'
-    Player: Steve
-    Burning: true
-    Blocking: true
-    Invisible: false
-    ShowName: false
-    Sneaking: true
-    Sprinting: true
-    ModifyBoundingBox: false
-    setDynamicName: true
-```
-
-#### Nameplates
-
-Nameplates allow you to extend the nameplates of Player-disguise mobs, which are normally limited to 16 characters.
-To use this, simply have Holograms installed and then leave out the “Player” field in your disguise (skin is still required!).
-If you don't specify the player field, it will use the Display field instead using a custom nameplate.
-
-```
-Monkey:
-  Type: skeleton
-  Display: "this display name is too long for players normally"
-  Disguise:
-    Type: player
-    Skin: Kurdie
-```
-This feature requires LibsDisguises and the Holograms plugin: [https://www.spigotmc.org/resources/holograms.4924/](https://www.spigotmc.org/resources/holograms.4924/)
-
-If you have premium you can use multi line disguise names using the `setDynamicName` option
-
-![image](uploads/e9f3926c7a8d74dfb1b8fa6d2cd2d67c/image.png)
-
-#### Examples
-
-Examples of Disguises being used:
-
-```
-MobType: skeleton
-Disguise:
-  Type: player
-  Player: '&8Not Darkitect'
-  Skin: Darkitect
-```
-
-```
-MobType: skeleton
-Health: 20
-Disguise:
-  Type: player
-  Player: Ashijin
-  Skin: Notch
-```
-
-```
-MobType: skeleton
-Health: 20
-Disguise:
-  Type: pig
-```
+-->
