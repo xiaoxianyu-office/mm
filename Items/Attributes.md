@@ -20,7 +20,7 @@ Attributes
 **AttackSpeed: \[number\]**
 
 -   Handles the attack speed or cooldown time of the item. Only does something when used on weapons.
--   Using this attribute will override the original attack speed value of the item. Base item attack speed and custom attack speed do not stack. See [Common Items](/items/Common Item Id's) for a list of base attack speed values.
+-   Using this attribute will override the original attack speed value of the item. Base item attack speed and custom attack speed do not stack.
 
 **Armor: \[number\]**
 
