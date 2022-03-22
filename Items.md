@@ -41,7 +41,6 @@ Breaking down the options
 #### **Id**:
 -   Defines the type of item.
 -   Can be either the item id or the bukkit material/item name.
--   Often used items are listed here: [Common Item IDs](items/Common Item Id's)
 -   A list of Spigot IDs for the current version is [available here.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
     -   Example:
         -   ```Id: diamond\_sword```
