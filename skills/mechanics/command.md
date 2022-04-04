@@ -9,7 +9,7 @@ Color codes and variables are allowed. For a list of color codes look
 
 The command specified will not function correctly if it contains double
 quotes " or curly brackets {} and must be substitued with their
-respective [message variables](/skills/stringvariables). For a more
+respective [message variables](/skills/Placeholders#special-characters). For a more
 in-depth tutorial on how to use command-skills see [command-skills
 tutorial](/tutorials/commandskills). That happens because the double
 quotes and curly brackets are reserved for MythicMobs itself trying to
