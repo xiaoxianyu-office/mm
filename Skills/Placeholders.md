@@ -33,9 +33,8 @@ Special Characters
 
 Color Codes
 -----------
-
 These color codes work anywhere in mob- and skill-files. They will even
-properly format tellraw-commands used in command skills!
+properly format tellraw-commands used in command skills! 
 
 Legacy color codes:
 
@@ -49,7 +48,7 @@ Legacy color codes:
 |    &5    | Dark Purple |    &K    |     Magic      |
 |    &6    |    Gold     |    &L    |      Bold      |
 |    &7    |    Gray     |    &M    | Strike through |
-|    &8    |  Dark Gray  |    N     |   Underline    |
+|    &8    |  Dark Gray  |    &N    |   Underline    |
 |    &9    |    Blue     |    &O    |     Italic     |
 |    &A    |    Green    |    &R    |     Reset      |
 
