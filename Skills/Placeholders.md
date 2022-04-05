@@ -53,18 +53,6 @@ Legacy color codes:
 |    &9    |    Blue     |    &O    |     Italic     |
 |    &A    |    Green    |    &R    |     Reset      |
 
-MiniMessage color formatting:
-
-|  **Code**  |       **Color**       |      **Example**      |                                                     **DISPLAYED**                                                     |
-|:----------:|:---------------------:|:---------------------:|:---------------------------------------------------------------------------------------------------------------------:|
-| \<HEXCODE> | The hex color defined |     <#F9DC58>TEXT     |                                        $`\textcolor{#F9DC58}{\textsf{\footnotesize{TEXT}}}`$                                         |
-|    \<b>    |         Bold          |       \<b>BOLD        |                                                 <strong>BOLD</strong>                                                 |
-|    \<i>    |        Italic         |    \<i>ITALICIZED     |                                                   <i>ITALICIZED</i>                                                   |
-|   \<st>    |     Strikethrough     |  \<st>STRIKETHROUGH   |                                                 <s>STRIKETHROUGH</s>                                                  |
-|    \<u>    |      Underlined       |    \<u>UNDERLINED     |                                                   <u>UNDERLINED</u>                                                   |
-|   \<obf>   |      Obfuscated       | \<obf>OBFUSCATED TEXT | [OBFUSCATED TEXT](https://webui.adventure.kyori.net/?mode=chat_closed&input=%3Cobf%3EObfuscated%3C%2Fobf%3E&bg=grass) |
-|  \<reset>  |         Reset         | \<b>BOLD\<reset>TEXT  |                                               <strong>BOLD</strong>TEXT                                               |
-
 Caster Placeholders
 ------------------
 These placeholders will return whatever attribute of the caster that is called. For instance `<caster.l.y.#>` will return the caster's Y location.
