@@ -3,7 +3,7 @@
 # http://www.mythiccraft.io
 #  
 Configuration:
-  Version: 4.14
+  Version: 5.0.3
   General:
     AllowMetrics: true
     CheckForUpdates: true
@@ -22,6 +22,8 @@ Configuration:
   Components:
     CustomSpawners: true
     RandomSpawning: true
+  ItemUpdating:
+    Enabled: true
   Targeters:
     Filters:
       Default:
@@ -60,6 +62,8 @@ Configuration:
       world2_nether:
         Enabled: false
         PerBlocksFromSpawn: 100
+    BossBar:
+      UpdateInterval: 20
     ScalingEquations:
       Health: 'V * ((1.05)^(L-1))'
       Damage: 'V * ((1.05)^(L-1))'
@@ -100,5 +104,4 @@ Configuration:
       Enabled: true
       ShowMoneyMessage: true
       MoneyMessageFormat: '&7You receive <drop.amount> currency for slaying <dropper.name>'
-
 ```
