@@ -87,12 +87,12 @@ As a brief summary, Mythic allows you to:
 Setup
 -----
 
--   [Configuration]
+<!--   [Configuration] -->
 -   [Commands]
 -   [Permissions]
 -   [FAQ's]
 -   [Examples]
--   [Videos]
+<!--   [Videos] -->
 
   [1]: youtube>_YQUS3sDbI0
   [Configuration]: Configuration
