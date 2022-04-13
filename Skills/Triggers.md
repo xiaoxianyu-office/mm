@@ -252,9 +252,8 @@ Detailed Descriptions & Examples
 -   Trigger the skill to execute when the mob receives a specific signal from the Signal mechanic.
 -   Useful for skills that require communication between mobs or from a
     player to a mob [2].
--   Note: Currently when a mob recieves a signal, it will only trigger one skill with the respective signal. To elaborate, if the mob has two skills like so: `- skill{s=SKILL1} ~onSignal:DO_THING` `- skill{s=SKILL2} ~onSignal:DO_THING`, then only the first skill will trigger.
 -   See
-    [signal-skill](http://www.mythicmobs.net/manual/doku.php/skills/mechanics/signal)
+    [signal-skill](/skills/mechanics/signal)
     page.
 
 **~onShoot**
