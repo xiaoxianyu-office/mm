@@ -20,10 +20,6 @@ These options are applicable to all items:
 
   - Sets the repair cost of the item.
 
-**AppendType: \[true/false\]**
-
-  - Toggles if the MYTHIC_TYPE should be appended to this item no matter what. Necessary for wearing, holding, and hasitem conditions to work properly.
-
 **Unbreakable: \[true/false\]**
 
   - Sets the unbreakable tag on the item.
