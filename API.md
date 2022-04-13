@@ -19,9 +19,9 @@ Maven
 ### Dependency
 
     <dependency>
-        <groupId>io.lumine.xikage</groupId>
-        <artifactId>MythicMobs</artifactId>
-        <version>4.9.1</version>  
+        <groupId>io.lumine</groupId>
+        <artifactId>Mythic-Dist</artifactId>
+        <version>5.0.3-SNAPSHOT</version>  
         <scope>provided</scope>
     </dependency>
 
