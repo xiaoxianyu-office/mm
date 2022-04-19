@@ -31,4 +31,7 @@ todo
 ---
 
 ### Skills:
+
+[Damage Spells](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/DamageSpells)
+
 [Consumable Skills](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Consumable-Skills)
