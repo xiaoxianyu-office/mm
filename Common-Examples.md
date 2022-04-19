@@ -13,9 +13,8 @@ _todo_
 ---
 
 ### Items:
-<details><summary>Consumables</summary>
-todo
-</details>
+[Foods](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Foods)
+
 
 <details><summary>Wands</summary>
 todo
@@ -32,4 +31,4 @@ todo
 ---
 
 ### Skills:
-_todo_
+[Consumable Skills](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Consumable-Skills)
