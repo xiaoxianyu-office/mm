@@ -1,7 +1,7 @@
 Single Target Fire
 ---------------------
 * Basic
-```
+```yaml
 SingleTargetFire:
   Cooldown: 1
   Skills:
@@ -10,7 +10,7 @@ SingleTargetFire:
   - ignite{d=60;}
 ```
 * Advanced: Casting time, mob stops to cast
-```
+```yaml
 SingleTargetFire:
   Cooldown: 1
   Skills:
@@ -26,7 +26,7 @@ SingleTargetFire:
   - ignite{d=60;}
 ```
 * Advanced: Casting time. Mob stops to cast, conditions and GCD
-```
+```yaml
 SingleTargetFire:
   Cooldown: 1
   Conditions:
@@ -49,7 +49,7 @@ SingleTargetFire:
 AOE Fire
 ------------------------
 * Basic
-```
+```yaml
 AOEFire:
   Cooldown: 1
   Skills:
@@ -58,7 +58,7 @@ AOEFire:
   - ignite{d=60;} @PIR{r=10}
 ```
 * Advanced: Casting time, mob stops to cast
-```
+```yaml
 AOEFire:
   Cooldown: 1
   Skills:
@@ -73,7 +73,7 @@ AOEFire:
   - ignite{d=60;} @PIR{r=10}
 ```
 * Advanced: Casting time. Mob stops to cast, conditions and GCD
-```
+```yaml
 AOEFire:
   Cooldown: 1
   Conditions:
@@ -94,7 +94,7 @@ AOEFire:
 Single Target Frost
 ---------------------
 * Basic
-```
+```yaml
 SingleTargetFrost:
   Cooldown: 1
   Skills:
@@ -104,7 +104,7 @@ SingleTargetFrost:
   - potion{type=SLOW;d=60;level=3;} 
 ```
 * Advanced: Casting time, mob stops to cast
-```
+```yaml
 SingleTargetFrost:
   Cooldown: 1
   Skills:
@@ -118,7 +118,7 @@ SingleTargetFrost:
   - potion{type=SLOW;d=60;level=3;} 
 ```
 * Advanced: Casting time. Mob stops to cast, conditions and GCD
-```
+```yaml
 SingleTargetFrost:
   Cooldown: 1
   Conditions:
@@ -139,7 +139,7 @@ SingleTargetFrost:
 AOE Frost
 --------------
 * Basic
-```
+```yaml
 AOEFrost:
   Cooldown: 1
   Skills:
@@ -149,7 +149,7 @@ AOEFrost:
   - potion{type=SLOW;d=60;level=3;} @PIR{r=10}
 ```
 * Advanced: Casting time, mob stops to cast
-```
+```yaml
 AOEFrost:
   Cooldown: 1
   Skills:
@@ -163,7 +163,7 @@ AOEFrost:
   - potion{type=SLOW;d=60;level=3;} @PIR{r=10}
 ```
 * Advanced: Casting time. Mob stops to cast, conditions and GCD
-```
+```yaml
 AOEFrost:
   Cooldown: 1
   Conditions:
@@ -183,7 +183,7 @@ AOEFrost:
 Single Target Lightning
 ----------------------
 * Basic
-```
+```yaml
 SingleTargetLightning:
   Cooldown: 1
   Skills: 
@@ -192,7 +192,7 @@ SingleTargetLightning:
   - effect:particles{p=fireworksSpark;vs=1;hs=1;a=100;s=1;}
 ```
 * Advanced: Casting time, mob stops to cast
-```
+```yaml
 SingleTargetLightning:
   Cooldown: 1
   Skills: 
@@ -207,7 +207,7 @@ SingleTargetLightning:
   - effect:particles{p=reddust;vs=1;hs=1;a=500;s=0.01;}
 ```
 * Advanced: Casting time. Mob stops to cast, conditions and GCD
-```
+```yaml
 SingleTargetLightning:
   Cooldown: 1
   Conditions:
@@ -229,7 +229,7 @@ SingleTargetLightning:
 AOE Lightning
 ----------------
 * Basic
-```
+```yaml
 AOELightning:
   Cooldown: 1
   Skills: 
@@ -238,7 +238,7 @@ AOELightning:
   - effect:particles{p=fireworksSpark;vs=1;hs=5;a=100;s=1;}
 ```
 * Advanced: Casting time, mob stops to cast
-```
+```yaml
 AOELightning:
   Cooldown: 1
   Skills: 
@@ -255,7 +255,7 @@ AOELightning:
   - effect:particles{p=reddust;vs=1;hs=5;a=100;s=0.01;}
 ```
 * Advanced: Casting time. Mob stops to cast, conditions and GCD
-```
+```yaml
 AOELightning:
   Cooldown: 1
   Conditions:
@@ -276,7 +276,7 @@ AOELightning:
 AOE Lightning Storm
 --------------------
 * Advanced: Casting time. Mob stops to cast, conditions and GCD, multiple strikes
-```
+```yaml
 AOELightningStorm:
   Cooldown: 1
   Conditions:
@@ -327,7 +327,7 @@ AOELightningStorm:
 Single Target DOT
 --------------------
 * Basic
-```
+```yaml
 SingleTargetDOT:
   Cooldown: 1
   Skills:
@@ -337,7 +337,7 @@ SingleTargetDOT:
   - potion{type=SLOW;d=80;level=7;} @self
 ```
 * Advanced: Casting time, mob stops to cast
-```
+```yaml
 SingleTargetDOT:
   Cooldown: 1
   Skills:
@@ -350,7 +350,7 @@ SingleTargetDOT:
   - potion{type=POISON;d=200;level=1;}
 ```
 * Advanced: Casting time. Mob stops to cast, conditions and GCD
-```
+```yaml
 SingleTargetDOT:
   Cooldown: 1
   Conditions:
@@ -370,7 +370,7 @@ SingleTargetDOT:
 AOE DOT
 ----------------
 * Basic
-```
+```yaml
 AOEDOT:
   Cooldown: 1
   Skills:
@@ -379,7 +379,7 @@ AOEDOT:
   - potion{type=POISON;d=200;level=1;} @PIR{r=10}
 ```
 * Advanced: Casting time, mob stops to cast
-```
+```yaml
 AOEDOT:
   Cooldown: 1
   Skills:
@@ -392,7 +392,7 @@ AOEDOT:
   - potion{type=POISON;d=200;level=1;} @PIR{r=10}
 ```
 * Advanced: Casting time. Mob stops to cast, conditions and GCD
-```
+```yaml
 AOEDOT:
   Cooldown: 1
   Conditions:
@@ -411,7 +411,7 @@ AOEDOT:
 Single Target Lifetap
 -------------------
 * Basic
-```
+```yaml
 LifeTap:
   Cooldown: 1
   Skills:
@@ -420,7 +420,7 @@ LifeTap:
   - effect:particles{p=dripLava;hs=1;vs=1;a=250;s=0.1;} @self
 ```
 * Advanced: Casting time, mob stops to cast
-```
+```yaml
 LifeTap:
   Cooldown: 1
   Skills:
@@ -433,7 +433,7 @@ LifeTap:
   - effect:particles{p=dripLava;hs=1;vs=1;a=250;s=0.1;} @self
 ```
 * Advanced: Casting time. Mob stops to cast, conditions and GCD
-```
+```yaml
 LifeTap:
   Cooldown: 1
   Conditions:
@@ -453,7 +453,7 @@ LifeTap:
 Gravity Flux
 --------------
 * Launches player into air. * Advanced: casting time, mob stops to cast, conditions and GCD
-```
+```yaml
 GravityFlux:
   Cooldown: 30
   Conditions:
@@ -472,7 +472,7 @@ GravityFlux:
 Meteor
 ----------
 * Meteor v1 (Less CPU Intensive) * Advanced: Casting time. Mob stops to cast, conditions and GCD * Remember to specify this as an @target skill, eg. - skill{s=Meteor} @target
-```
+```yaml
 Meteor:
   Cooldown: 1
   Conditions:
@@ -525,7 +525,7 @@ Meteor:
   - damage{a=6;ignorearmor=true;}
 ```
 * Meteor v2 (More CPU intensive) * Advanced: Casting time. Mob stops to cast, conditions and GCD
-```
+```yaml
 Meteor:
   Cooldown: 1
   Conditions:
