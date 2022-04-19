@@ -1,5 +1,4 @@
-## Consumable Skills
-  These skills are usually triggered by a player when using an item, and utilizing [Mythic Crucible](https://git.lumine.io/mythiccraft/mythiccrucible).
+These skills are usually triggered by a player when using an item, and utilizing [Mythic Crucible](https://git.lumine.io/mythiccraft/mythiccrucible).
 ### Eat Food Skill
 ----------
 * A food consumption example skill that, when used, replenishes saturation and gives a short burst of the saturation potion effect while playing three sounds and particle on a slight delay.
