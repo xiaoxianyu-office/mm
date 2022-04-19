@@ -44,5 +44,4 @@
   * [[Random Spawns]]
 
 ### Tutorials
-  * [[DamageSpells]]
   * [[Common Examples]]
