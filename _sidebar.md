@@ -45,3 +45,4 @@
 
 ### Tutorials
   * [[DamageSpells]]
+  * [[Common Examples]]
