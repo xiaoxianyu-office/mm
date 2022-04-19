@@ -16,19 +16,19 @@ _todo_
 
 ### Items:
 <details><summary>Consumables</summary>
-_todo_
+todo
 </details>
 
 <details><summary>Wands</summary>
-_todo_
+todo
 </details>
 
 <details><summary>Guns</summary>
-_todo_
+todo
 </details>
 
 <details><summary>Tools</summary>
-_todo_
+todo
 </details>
 
 ---
