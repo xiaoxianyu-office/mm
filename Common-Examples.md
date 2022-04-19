@@ -1,8 +1,8 @@
-Welcome to the MythicMobs Common Examples wiki section! Here you will find examples on how to use MythicMobs features such as: Mobs, Items and Skills. This section will act as a tool to share knowledge and improve our userbase understanding of our plugin, so if you're looking for a place to start and learn how to use MythicMobs core features, this is the place.
+Welcome to the MythicMobs Common Examples wiki section! Here you will find examples of how to use MythicMobs features such as Mobs, Items, and Skills. This section will act as a tool to share knowledge and improve our userbase understanding of our plugin, so if you're looking for a place to start and learn how to use MythicMobs core features, this is the place.
 
-This page is divided in 3 sub-categories:
+This page is divided into 3 sub-categories:
 - **Mobs:** Configurations for mobs and entities powered by MythicMobs. 
-- **Items:** Items and Crucible Items / Equipments.
+- **Items:** Items and Crucible Items / Equipment.
 - **Skills:** Skills and mechanics examples.
 
 ---
@@ -15,18 +15,21 @@ _todo_
 ### Items:
 [Foods](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Foods)
 
+Potions
 
-<details><summary>Wands</summary>
-todo
-</details>
+_todo_
 
-<details><summary>Guns</summary>
-todo
-</details>
+Armor
 
-<details><summary>Tools</summary>
-todo
-</details>
+_todo_
+
+Tools
+
+_todo_
+
+Weapons
+
+_todo_
 
 ---
 
