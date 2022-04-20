@@ -1,6 +1,6 @@
 ### The Adventurer
 
-A simple mob that protects the land, attacking hostile mobs with an iron sword, speaks randomly and celebrates his victories.
+A simple mob that protects the land, attacking hostile mobs with an iron sword, speaks randomly, defends himself against attackers, and celebrates his victories.
 
 ---
 
