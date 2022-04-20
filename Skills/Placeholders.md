@@ -141,6 +141,7 @@ These placeholders will return whatever attribute of the entity that caused the 
 |    <trigger.uuid>    | Returns the UUID of the entity triggering the skill                                    |
 |    <trigger.name>    | Returns the name of the entity triggering the skill                                    |
 |     <trigger.hp>     | Returns the current hp of the entity triggering the skill                              |
+|    <trigger.mhp>     | Returns the max hp of the entity triggering the skill                                 |
 |   <trigger.threat>   | Returns the threat level of the entity triggering the skill                            |
 |    <trigger.l.w>     | Returns the world name of the entity triggering the skill                              |
 |    <trigger.l.x>     | Returns the X coordinate of the entity triggering the skill                            |
