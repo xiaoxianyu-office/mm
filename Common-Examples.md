@@ -8,7 +8,12 @@ This page is divided into 3 sub-categories:
 ---
 
 ### Mobs:
-_todo_
+
+[Hostile Mobs](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples#hostile-mobs)
+
+[Neutral Mobs](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples#neutral-mobs)
+
+[Passive Mobs](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples#neutral-mobs)
 
 ---
 
