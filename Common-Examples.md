@@ -22,19 +22,12 @@ This page is divided into 3 sub-categories:
 
 [Potions](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Potions)
 
-_todo_
+Armor _todo_
 
-Armor
+Tools _todo_
 
-_todo_
+Weapons _todo_
 
-Tools
-
-_todo_
-
-Weapons
-
-_todo_
 
 ---
 
