@@ -13,7 +13,7 @@ This page is divided into 3 sub-categories:
 
 [Neutral Mobs](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples#neutral-mobs)
 
-[Passive Mobs](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples#neutral-mobs)
+[Passive Mobs](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples#passive-mobs)
 
 ---
 
