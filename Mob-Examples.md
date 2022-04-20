@@ -1,6 +1,6 @@
 ## Hostile Mobs
 
-## The Demon
+### The Demon
 
 The Demon is hostile to players, those who attack it, and any MythicMob within the "good" faction. It is also equipped with a Netherite Axe, has flame particles, and can hover and shoot fireballs (due to it using the blaze as the base mob!) It uses a custom skin that requires [Disguises](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/Disguises).
 
