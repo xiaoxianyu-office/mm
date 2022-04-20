@@ -128,39 +128,40 @@ A fast and dangerous miniboss that makes horrific sounds, has particles, wears a
 
 ```yaml
 Sentinel:
-  Type: wither_skeleton
-  Display: 'Sentinel'
-  Damage: 10
-  Health: 120
-  Faction: bad
-  AIGoalSelectors:
-  - 0 clear
-  - 1 meleeattack
-  - 2 lookatplayers
-  - 3 randomstroll
+  Type: wither_skeleton # Base mob wither skeleton. Keep note that this means that when the mob attacks other entities, they will receive the WITHER effect.
+  Display: 'Sentinel' # The name of the mob.
+  Damage: 10 # Deals 10 damage on hit
+  Health: 120 # Has 120 HP.
+  Faction: bad # Sets the mob to be in the faction 'bad'
+  AIGoalSelectors: # What's the mob going to do?
+  - clear # Clears the mob's AI
+  - meleeattack # Melee-attacks its targets
+  - lookatplayers # Looks at players.
+  - randomstroll # Randomly walks around when off-combat.
   AITargetSelectors:
-  - 0 clear
-  - 1 players
-  - 2 attacker
-  - 3 otherfaction
-  Modules:
-    ThreatTable: true
-  Options:
-    PreventSunburn: true
-    AlwaysShowName: false
-    PreventOtherDrops: true
-    PreventMobKillDrops: true
-    MovementSpeed: 0.45
-    Silent: true
-  Equipment:
-  - COMMAND_BLOCK HEAD
-  - NETHERITE_SWORD HAND
+  - clear # Clears the mob's AI
+  - players # Targets players
+  - attacker # Then targets whatever attacks it
+  - otherfaction # Targets whatever is not in the 'bad' faction
+  Options: # Additional mob options
+    PreventSunburn: true # Prevents the mob from burning in daylight
+    AlwaysShowName: false # Prevents the mob from showing its name all the time. (Players will have to look at the mob to show the name)
+    PreventOtherDrops: true # Prevents vanilla wither skeleton drops.
+    PreventMobKillDrops: true # Prevents mobs that the Sentinel kills from dropping loot.
+    MovementSpeed: 0.45 # Fast movement speed.
+    Silent: true # Disables its default sounds. Useful if you are going to use custom sounds.
+  Equipment: # Things that the mob will wear.
+  - COMMAND_BLOCK HEAD # Wears a Command Block on its head.
+  - NETHERITE_SWORD HAND # Holds a Netherite Sword in its hand
   Skills:
+  # SOUNDS
   - effect:sound{s=entity.enderman.scream;v=1;p=0.2} @self ~onDeath
   - effect:sound{s=entity.enderman.hurt;v=1;p=0.2} @self ~onDamaged
-  - effect:sound{s=entity.enderman.stare;v=.2;p=0.2} @self 0.5 ~onTimer:150
+  - effect:sound{s=entity.enderman.stare;v=.2;p=0.2} @self ~onTimer:150 0.5
+  # PARTICLES
   - effect:particles{particle=spell;amount=50;hS=1;vS=1;speed=5} @self ~onTimer:2 0.8
-  - throw{velocity=8;velocityY=4} @EIR{r=4} ~onDamaged 0.2
+  # ABILITIES
+  - throw{velocity=8;velocityY=4} @EIR{r=4} ~onDamaged 0.2 # When damaged, the mob has a 20% chance to launch nearby players in a radius of 4.
 ```
 
 ## Neutral Mobs
