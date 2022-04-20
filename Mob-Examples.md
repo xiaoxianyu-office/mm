@@ -56,11 +56,11 @@ What we end up with is this:
 ```yml
   # ...
   Options:
-    AlwaysShowName: false
-    PreventOtherDrops: true
-    PreventMobKillDrops: true
-    MovementSpeed: 0.35
-    Silent: false
+    AlwaysShowName: false # Don't always show name unless hovered
+    PreventOtherDrops: true # Don't drop default blaze drops on death
+    PreventMobKillDrops: true # Prevent mobs that the demon kills from dropping loot
+    MovementSpeed: 0.35 # Sets movement speed
+    Silent: false # Play the default blaze sound effects
 ```
 
 Finally, let's make the mob more interesting by adding some abilities to it.
