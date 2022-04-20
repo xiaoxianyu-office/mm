@@ -1,28 +1,108 @@
 ## Hostile Mobs
 
-### The Demon
-
+### Demon
 The Demon is hostile to players, those who attack it, and any MythicMob within the "good" faction. It is also equipped with a Netherite Axe, has flame particles, and can hover and shoot fireballs (due to it using the blaze as the base mob!) It uses a custom skin that requires [Disguises](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/Disguises).
 
-```yaml
+Difficulty: `⭐⭐⭐` (Medium)
+<details>
+  <summary>Step-by-step Tutorial</summary>
+  
+### Tutorial
+Let's add some basic options to the mob:
+```yml
 Demon:
-  Type: blaze
-  Display: 'Demon'
-  Damage: 6
-  Health: 60
-  Faction: bad
-  Disguise: Player 164_ setCustomName Demon setCustomNameVisible false
+  Type: blaze # Mob Type
+  Display: 'Demon' # Mob Display name
+  Damage: 6 # The amount of Damage it deals
+  Health: 60 # The amount of Health it has
+  Faction: bad # Set the Demon's faction as "bad".
+  Disguise: Player 164_ setCustomName Demon setCustomNameVisible false # Disguise it as a player with a skin. Requires LibsDisguises.
+```
+
+Then, let's give it some custom AI to prevent it from attacking unwanted entities:
+
+```yml
+  # ...
   AIGoalSelectors:
-  - 0 meleeattack
-  - 2 randomstroll
-  - 3 float
+  - clear # Clears the mob's base AI
+  - meleeattack # Uses melee attacks
+  - randomstroll # Randomly walks
+  - float # Randomly floats
   AITargetSelectors:
-  - 0 clear
-  - 1 players
-  - 2 attacker
-  - 3 specificfaction good
+  - clear # Clears the mob's base AI
+  - players # Firstly targets players
+  - attacker # Targets whatever attacks it
+  - specificfaction good # Targets mobs from the faction "good"
+```
+
+Let's give the mob an axe:
+
+```yml
+  # ...
   Equipment:
-  - NETHERITE_AXE HAND
+  - NETHERITE_AXE HAND # Makes the mob hold a netherite axe in its hand
+```
+
+Now, we further customize the mob a bit:
+
+1. Let's make the mob not always show its name.
+2. Then, let's prevent vanilla blaze drops from dropping when the mob dies.
+3. Furthermore, let's prevent mobs the blaze kills from dropping their loot.
+4. Let's set the mob's movement speed to `0.35`.
+5. Let's make the mob have sounds.
+   
+What we end up with is this:
+
+```yml
+  # ...
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    MovementSpeed: 0.35
+    Silent: false
+```
+
+Finally, let's make the mob more interesting by adding some abilities to it.
+
+```yml
+  # ...
+  Skills:
+  # PARTICLE EFFECTS
+  - effect:flames @self ~onTimer:100 # Every 100 ticks (5 seconds), show a spawner flame effect on mob's location.
+  # SOUND EFFECTS
+  - effect:sound{s=entity.elder_guardian.ambient;v=1;p=2} @self 0.5 ~onTimer:150 # Every 150 ticks (7.5 seconds), 50% chance to play the entity.elder_guardian.ambient sound with volume 1 and pitch 2
+  - effect:sound{s=entity.elder_guardian.hurt;v=1;p=0.7} @self ~onDamaged # When the mob gets damaged, play the entity.elder_guardian.hurt sound with volume 1 and pitch 0.7
+  - effect:sound{s=entity.elder_guardian.death;v=1;p=0.7} @self ~onDeath # When the mob dies, play the entity.elder_guardian.death sound with volume 1 and pitch 0.7
+  - effect:sound{s=entity.blaze.death;v=0.3;p=0.7} @self ~onDeath # When the mob dies, also play the entity.blaze.death sound with volume 0.3 and pitch 0.7
+```
+
+These skills essentially add custom sounds and effects to the mob, which really brings it to life.
+</details>
+
+<details>
+  <summary>End Product</summary>
+
+```yml
+Demon:
+  Type: blaze # Mob Type
+  Display: 'Demon' # Mob Display name
+  Damage: 6 # The amount of Damage it deals
+  Health: 60 # The amount of Health it has
+  Faction: bad # Set the Demon's faction as "bad".
+  Disguise: Player 164_ setCustomName Demon setCustomNameVisible false # Disguise it as a player with a skin. Requires LibsDisguises.
+  AIGoalSelectors:
+  - clear # Clears the mob's base AI
+  - meleeattack # Uses melee attacks
+  - randomstroll # Randomly walks
+  - float # Randomly floats
+  AITargetSelectors:
+  - clear # Clears the mob's base AI
+  - players # Firstly targets players
+  - attacker # Targets whatever attacks it
+  - specificfaction good # Targets mobs from the faction "good"
+  Equipment:
+  - NETHERITE_AXE HAND # Makes the mob hold a netherite axe in its hand
   Options:
     AlwaysShowName: false
     PreventOtherDrops: true
@@ -30,12 +110,15 @@ Demon:
     MovementSpeed: 0.35
     Silent: false
   Skills:
-  - Flames @self ~onTimer:100
-  - effect:sound{s=entity.elder_guardian.death;v=1;p=0.7} @self ~onDeath
-  - effect:sound{s=entity.blaze.death;v=0.3;p=0.7} @self ~onDeath
-  - effect:sound{s=entity.elder_guardian.ambient;v=1;p=2} @self 0.5 ~onTimer:150
-  - effect:sound{s=entity.elder_guardian.hurt;v=1;p=0.7} @self ~onDamaged
+  # PARTICLE EFFECTS
+  - effect:flames @self ~onTimer:100 # Every 100 ticks (5 seconds), show a spawner flame effect on mob's location.
+  # SOUND EFFECTS
+  - effect:sound{s=entity.elder_guardian.ambient;v=1;p=2} @self 0.5 ~onTimer:150 # Ever 150 ticks (7.5 seconds), 50% chance to play the entity.elder_guardian.ambient sound with volume 1 and pitch 2
+  - effect:sound{s=entity.elder_guardian.hurt;v=1;p=0.7} @self ~onDamaged # When the mob gets damaged, play the entity.elder_guardian.hurt sound with volume 1 and pitch 0.7
+  - effect:sound{s=entity.elder_guardian.death;v=1;p=0.7} @self ~onDeath # When the mob dies, play the entity.elder_guardian.death sound with volume 1 and pitch 0.7
+  - effect:sound{s=entity.blaze.death;v=0.3;p=0.7} @self ~onDeath # When the mob dies, also play the entity.blaze.death sound with volume 0.3 and pitch 0.7
 ```
+</details>
 
 ---
 
