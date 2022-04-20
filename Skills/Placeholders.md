@@ -83,6 +83,7 @@ These placeholders will return whatever attribute of the caster that is called. 
 |   <caster.stance>   | Returns the current stance of the caster                          |
 | <caster.owner.name> | Returns the name of the wolf's owner                              |
 | <caster.owner.uuid> | Returns the uuid of the wolf's owner                              |
+| <caster.heldenchantlevel.#> | Returns the enchant level of specified # enchant          |
 
 
 **Variable Placeholders**
