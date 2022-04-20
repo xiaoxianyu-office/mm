@@ -15,7 +15,7 @@ _todo_
 ### Items:
 [Foods](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Foods)
 
-Potions
+[Potions](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Potions)
 
 _todo_
 
