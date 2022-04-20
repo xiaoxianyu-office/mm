@@ -20,4 +20,17 @@ eatmeal:
 
 ### Drink Flight Potion Skill
 ----------
-* _todo_
+* A potion consumption spell that, when used, grants the consumer with the ability to fly for 1 minute, with a bossbar that counts down the duration remaining.
+
+```yaml
+basicflypot:
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.generic.drink;v=1;p=1} @self
+  - effect:particles{p=fireworks_spark;amount=20;speed=.5;y=1} @self
+  - effect:sound{s=block.end_portal_frame.fill;v=0.3;p=2} @self
+  - effect:sound{s=item.bottle.fill_dragonbreath;v=0.3;p=0.8} @self
+  - effect:sound{s=minecraft:block.beacon.power_select;v=1;p=1.4} @self
+  - effect:particles{p=ELECTRIC_SPARK;amount=10;speed=.8;y=1} @self
+  - fly{duration=1200;ot=flightaura;i=20;bt=true;auraName=Flight Remaining:} @self
+```
