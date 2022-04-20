@@ -1,3 +1,9 @@
+## Hostile Mobs
+
+_todo_
+
+## Neutral Mobs
+
 ### The Adventurer
 
 A simple mob that protects the land, attacking hostile mobs with an iron sword, speaks randomly, defends himself against attackers, and celebrates his victories.
@@ -38,3 +44,7 @@ Adventurer:
   Drops:
   - IRON_SWORD 1
 ```
+
+## Passive Mobs
+
+_todo_
