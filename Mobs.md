@@ -229,7 +229,7 @@ MerchantTest:
 Example with all options used
 -----------------------------
 
-More mobs can be found in the [Examples](/examples) section.
+More mobs can be found in the [Examples](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples) section.
 
 Please keep in mind that you in no way have to use all of these mob
 options and that this is an advanced example designed to show the
