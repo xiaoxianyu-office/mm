@@ -32,7 +32,7 @@ Added in 4.12 (Premium Only!):
 | yOffset | y   | The Y offset of the particles from the target | 0 |
 | viewDistance | vd  | The distance the particles are rendered | 128   |
 | Size | | The size of the particles displayed | 1 |
-| color | c | [(1)](/wikis/skills/effects/particles "only works on colorable particle types like “reddust”")[(2)](/wikis/skills/effects/particles "color must be provided in hex-code") The color of the particle The color of the particle |  |
+| color | c | [(1)](/wikis/skills/effects/particles "only works on colorable particle types like “reddust”")[(2)](/wikis/skills/effects/particles "color must be provided in hex-code") The color of the particle |  |
 | fromorigin |  |  | false |
 | directional | d | Does the particle use directional travel | false | 
 | directionReversed | | Reverses the direction of the particles. | false | 
