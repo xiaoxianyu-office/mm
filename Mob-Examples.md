@@ -179,15 +179,15 @@ Adventurer:
   Faction: good
   Disguise: Player Refreshin setCustomName Adventurer setCustomNameVisible true
   AIGoalSelectors:
-  - 0 clear
-  - 1 meleeattack
-  - 2 lookatplayers
-  - 3 randomstroll
-  - 3 float
+  - clear
+  - meleeattack
+  - lookatplayers
+  - randomstroll
+  - float
   AITargetSelectors:
-  - 0 clear
-  - 1 attacker
-  - 2 otherfactionmonsters
+  - clear
+  - attacker
+  - otherfactionmonsters
   Equipment:
   - IRON_SWORD HAND
   Options:
@@ -220,12 +220,10 @@ Citizen:
   Faction: good
   Disguise: Player Refreshin setCustomName Civilian setCustomNameVisible true
   AIGoalSelectors:
-  - 0 fleeConditional{distance=15;speed=1;safespeed=1;conditions=[ - incombat true ]}
+  - fleeConditional{distance=15;speed=1;safespeed=1;conditions=[ - incombat true ]}
   AITargetSelectors:
-  - 0 clear
-  - 1 attacker
-  Modules:
-    ThreatTable: false
+  - clear
+  - attacker
   Options:
     PreventItemPickup: false
     AlwaysShowName: false
