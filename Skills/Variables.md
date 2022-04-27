@@ -55,9 +55,9 @@ Variable mechanics are special mechanics that utilize variables. They can target
 
 | Condition                                        | Description                                    |
 |--------------------------------------------------|------------------------------------------------|
-| [Variable Equals](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/conditions/variableequals)    | Checks if a variable equals a given value.     |
-| [Variable Is Set](/conditions/variableisset)     | Checks if a variable is set.                   |
-| [Variable In Range](/conditions/variableinrange) | Checks if a number variable is within a range. |
+| [Variable Equals](/skills/conditions/variableequals)    | Checks if a variable equals a given value.     |
+| [Variable Is Set](/skills/conditions/variableisset)     | Checks if a variable is set.                   |
+| [Variable In Range](/skills/conditions/variableinrange) | Checks if a number variable is within a range. |
 
 ### Variable Placeholders
 
