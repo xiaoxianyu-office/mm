@@ -27,7 +27,7 @@ Then, let's give it some custom AI to prevent it from attacking unwanted entitie
   - clear # Clears the mob's base AI
   - meleeattack # Uses melee attacks
   - randomstroll # Randomly walks
-  - float # Randomly floats
+  - float # floats on water
   AITargetSelectors:
   - clear # Clears the mob's base AI
   - players # Firstly targets players
