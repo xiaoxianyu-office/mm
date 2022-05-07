@@ -1,3 +1,81 @@
+5.1.0 (Dev Builds)
+=====
+
+
+5.0.4
+=====
+
+Mechanics
+---------
+### onDamaged Aura
+Added deflectProjectiles and deflectConditions options to onDamaged aura
+
+Conditions
+----------
+### NEW: BowTension Condition
+
+Triggers
+--------
+- Added ~onBreed trigger
+
+Targeters
+---------
+- Added limit,sort options for location targeters
+
+### NEW: @Mom and @Dad
+- Targets parents when mob was bred
+
+### @Forward
+- Added lockpitch=true option
+
+### @TargetLocation
+- Updated @TargetLocation to use raytracing for players to be more accurate
+
+Custom AI
+---------
+- Added breed goal for animals
+
+Bug Fixes/Other
+---------------
+- Readded `Options.AppendType: false` option for items
+- Placeholder support for horizontalradius in Projectile/totem/missile
+- Fixed crashing issue with mob types that no longer exist
+- Fixed several major compatibility issues
+- Fixed NPE in boss bars
+- Fixed orbital bullets spawning at the center point
+- Fixed speedModifier to several AI goals and goto mechanic
+- Fixed BlockWave not working on 1.18.2
+- Fixed color code issues
+- Fixed some placeholder NPEs
+- Fixed message formatting
+- Fixed some blackmask effect issues
+- Fixed vanilla mobs not working with spawn command
+- Fixed WorldGuard support not considering “block-plugin-spawning: false”
+- Fixed NPE with new model system
+- Fix mutators not working on @TriggerLocation
+- Fixed display issues with item drop type
+- Fixed Model Engine Sub-hitbox compatibility
+- Fixed yRadius in BlocksNearOriginTargeter
+- Fixed placeholders not parsing correctly in varequals
+- Fixed some issues with GoToLocation AI goal
+- Fixed RandomSpawns affecting vanilla mob spawning rate
+- Fixed bug with HolographicDisplays support
+- Fixed lag issues from ProtocolLib/ removed PL features since they aren't really relevant anymore
+- Fixed &r
+- Fixed shields always having a banner
+- Fixed placeholders in skill cooldowns
+- Fixed NPE with mob spawners
+- Fixed mobs doing damage even if damage is set to 0
+- Fixed oxygen mechanic running async
+- Fixed taming mobs with Options.Tameable: false set
+- Fixed trigger not passing in onAttack aura
+- Fixed trigger not passing in onDamaged aura
+
+5.0.2
+=====
+Bug Fixes/Other
+- Fixed several major compatibility issues
+
 5.0.1 (Beta Build)
 ======
 
