@@ -6,6 +6,7 @@
 * [Mythic Add-ons](Add-ons)
 * [[Compatible Plugins]]
 * [API Information](API)
+* [Packs](Packs)
 ### [Mobs](Mobs)
   * [Overview](Mobs)
   * [Types](Mobs/Types)
