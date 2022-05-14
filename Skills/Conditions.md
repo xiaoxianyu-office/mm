@@ -100,7 +100,7 @@ Conditions
 |-------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------|
 | [Altitude](/skills/conditions/altitude)                                       | Entity   | Tests how far above the ground the target entity is                                         |
 | [Biome](/skills/conditions/biome)                                             | Location | Tests if the target is within the given list of biomes                                      |
-| [BiomeType](/skills/conditions/biometype                                      | Location | Tests for the biome category at a location.
+| [BiomeType](/skills/conditions/biometype)                                     | Location | Tests for the biome category at a location.
 | [BlockType](/skills/conditions/blocktype)                                     | Location | Tests the material type present at the target location                                      |
 | [Blocking](/skills/conditions/blocking)                                       | Entity   | Tests if the targeted player is blocking with a shield                                      |
 | [BowTension](/skills/conditions/bowtension)                                   | Meta     | Checks the bow tension of when an entity shoots from a bow                                  |
