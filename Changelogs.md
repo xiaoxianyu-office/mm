@@ -17,6 +17,8 @@ Conditions
 Triggers
 --------
 - Added ~onBreed trigger
+- Added ~onPress trigger (Requires MythicKeys)
+- Added ~onRelease trigger (Requires MythicKeys)
 
 Targeters
 ---------
