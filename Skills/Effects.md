@@ -59,6 +59,7 @@ skill **effect:name**, for example:
 | [StopSound][]        | Stops a sound effect from playing                                     |
 | [TotemOfUndying][]     | Plays the effect of a player resurrecting                           |
 
+<!--
 ### EffectLib Effects
 
 These effects require the plugin "EffectLib" to be installed to use.
@@ -70,6 +71,7 @@ These effects require the plugin "EffectLib" to be installed to use.
 | [Atom][]            | Creates a representation of an atom around the target |
 | [Particle Vortex][] | Draws a "vortex" of particles around the target       |
 | [DNA][]             |                                                       |
+-->
 
   [skill mechanic]: /skills/mechanics/
   [Targeter]: /skills/targeters/
