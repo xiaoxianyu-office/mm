@@ -9,26 +9,29 @@ Most of them are optional, meaning you don't have configure the entire
 list every time you are creating a new mob. All that really is required
 are the *internal\_mobname* and the *Type*.
 
-    internal_mobname:
-      Type:
-      Display:
-      Health:
-      Damage:
-      BossBar:
-      Faction:
-      Mount:
-      Options:
-      Modules:
-      AIGoalSelectors:
-      AITargetSelectors:
-      Drops:
-      DamageModifiers:
-      Equipment:
-      KillMessages:
-      LevelModifiers:
-      Disguise:
-      Skills:
-      Trades:
+```yml
+internal_mobname:
+  Type:
+  Display:
+  Health:
+  Armor:
+  Damage:
+  BossBar:
+  Faction:
+  Mount:
+  Options:
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  DamageModifiers:
+  Equipment:
+  KillMessages:
+  LevelModifiers:
+  Disguise:
+  Skills:
+  Trades:
+```
 
 Breaking down the options
 -------------------------
@@ -89,7 +92,15 @@ Breaking down the options
 -   If the mob is holding a weapon or tool, the damage from this attribute will be added onto the base 
     damage of the item.
 -   Examples:
-    -   **Damage: 10**
+    - **Damage: 10**
+
+**Armor: \[number\]**
+
+- Will reduce any damage the mob takes by the specified amount.
+- Max vanilla armor is 30.
+- 1 damage = 0.5 hearts.
+- Examples:
+    -   **Armor: 7**
 
 **BossBar:**
 
