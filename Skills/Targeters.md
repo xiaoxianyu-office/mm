@@ -12,54 +12,54 @@ Entity Targeters
 
 ### Single-Entity Targeters
 
-| Targeter             | Shorthand | Description                                                |
-|----------------------|-----------|------------------------------------------------------------|
-| @Self                | @Caster   | Targets the caster of the skill                                    |
-| @Target              | @T        | Targets the mob's target                                   |
-| @Trigger             |           | Targets the entity that triggered the skill                |
-| @NearestPlayer{r=#}  |           | Targets the nearest player in radius. r=5 by default       |
-| @WolfOwner           |           | Targets the owner of the wolf                              |
-| @Owner               |           | Targets the [owner](/skills/mechanics/setowner) of the mob |
-| @Mount               |           | Targets the entity that the mob is currently riding        |
-| @Parent              |           | Targets the parent if mob was summoned by other mob.       |
-| @Children            |           | Targets any child entities summoned by the caster.         |
-| @Passenger           |           | Targets the rider of the mob.                              |
-| @SpawnLocation |           | Targets the location the world's spawn.                |
-| @CasterSpawnLocation |           | Targets the location the caster spawned at.                |
-| @PlayerByName{name="Ashijin"} |  | Targets a specific player by name, supports placeholders. Added in 4.12 |
-| @UniqueIdentifier{u="<target.uuid>"}  | @UUID | Targets a specific entity by their UUID, supports placeholders. Added in 5.0 |
-| @Vehicle             |           | Targets the Vehicle you are mounted on Added in 4.12       |
+| Targeter                             | Shorthand | Description                                                                  |
+|--------------------------------------|-----------|------------------------------------------------------------------------------|
+| @Self                                | @Caster   | Targets the caster of the skill                                              |
+| @Target                              | @T        | Targets the mob's target                                                     |
+| @Trigger                             |           | Targets the entity that triggered the skill                                  |
+| @NearestPlayer{r=#}                  |           | Targets the nearest player in radius. r=5 by default                         |
+| @WolfOwner                           |           | Targets the owner of the wolf                                                |
+| @Owner                               |           | Targets the [owner](/skills/mechanics/setowner) of the mob                   |
+| @Mount                               |           | Targets the entity that the mob is currently riding                          |
+| @Parent                              |           | Targets the parent if mob was summoned by other mob.                         |
+| @Children                            |           | Targets any child entities summoned by the caster.                           |
+| @Passenger                           |           | Targets the rider of the mob.                                                |
+| @SpawnLocation                       |           | Targets the location the world's spawn.                                      |
+| @CasterSpawnLocation                 |           | Targets the location the caster spawned at.                                  |
+| @PlayerByName{name="Ashijin"}        |           | Targets a specific player by name, supports placeholders. Added in 4.12      |
+| @UniqueIdentifier{u="<target.uuid>"} | @UUID     | Targets a specific entity by their UUID, supports placeholders. Added in 5.0 |
+| @Vehicle                             |           | Targets the Vehicle you are mounted on Added in 4.12                         |
 
 ### Multi-Entity Targeters
 
-| Targeter                             | Shorthand          | Description                                                                                              |
-|--------------------------------------|--------------------|----------------------------------------------------------------------------------------------------------|
-| @LivingInCone{a=90.0;r=16.0;rot=0.0} | @EIC{}             | Targets all living entities in cone with angle (a), length (r), and rotation (rot) relative to facing direction |
-| @LivingInWorld                       | @EIW               | Targets all living entities in casters world                                                             |
-| @PlayersInRadius{r=#}               | @PIR{r=#}         | Targets all players in the given radius                                                                  |
-| @MobsInRadius{r=#;types=X,X,X}      | @MIR{r=#;t=X,X,X} | Targets all mobs of the given type in a radius                                                           |
-| @LivingEntitiesInRadius{r=#}  | @EIR{r=#;t=X,X,X} | Targets all entities in the given radius. Can accept types (for specific entities), or no type (for ANY entity). |
-| @PlayersInWorld                      | @World             | Targets all players in the current world.                                                                |
-| @PlayersOnServer                     | @Server            | Targets all players in the server.                                                                       |
-| @PlayersInRing{min=#;max=#}        |                    | Target all players between the specified min and max radius.                                              |
-| @PlayersNearOrigin{r=#}             |                    | Targets players near the [origin](/skills/targeters/origin) of a meta-skill.                             |
-| @MobsNearOrigin{r=#;t=X}            |                    |                                                                                                          |
-| @EntitiesNearOrigin{r=#}            |                    |                                                                                                          |
-| @PlayersNearTargetLocation{r=#}     | @PNTL{r=#}        | Targets all players near targetlocation. Radius=5 by default.                                            |
-| @Siblings   |     | Targets any mobs that share the same parent as the caster. |
-| @TargetedTarget   | @Targeted | Targets the inherited targets. |
-| @ItemsNearOrigin | |  Targets item drops near the [origin](/skills/targeters/origin) of a meta-skill. |
-| @ItemsInRadius{r=#}               |   | Targets all item drops in the given radius
+| Targeter                             | Shorthand         | Description                                                                                                      |
+|--------------------------------------|-------------------|------------------------------------------------------------------------------------------------------------------|
+| @LivingInCone{a=90.0;r=16.0;rot=0.0} | @EIC{}            | Targets all living entities in cone with angle (a), length (r), and rotation (rot) relative to facing direction  |
+| @LivingInWorld                       | @EIW              | Targets all living entities in casters world                                                                     |
+| @PlayersInRadius{r=#}                | @PIR{r=#}         | Targets all players in the given radius                                                                          |
+| @MobsInRadius{r=#;types=X,X,X}       | @MIR{r=#;t=X,X,X} | Targets all mobs of the given type in a radius                                                                   |
+| @LivingEntitiesInRadius{r=#}         | @EIR{r=#;t=X,X,X} | Targets all entities in the given radius. Can accept types (for specific entities), or no type (for ANY entity). |
+| @PlayersInWorld                      | @World            | Targets all players in the current world.                                                                        |
+| @PlayersOnServer                     | @Server           | Targets all players in the server.                                                                               |
+| @PlayersInRing{min=#;max=#}          |                   | Target all players between the specified min and max radius.                                                     |
+| @PlayersNearOrigin{r=#}              |                   | Targets players near the [origin](/skills/targeters/origin) of a meta-skill.                                     |
+| @MobsNearOrigin{r=#;t=X}             |                   |                                                                                                                  |
+| @EntitiesNearOrigin{r=#}             |                   |                                                                                                                  |
+| @PlayersNearTargetLocation{r=#}      | @PNTL{r=#}        | Targets all players near targetlocation. Radius=5 by default.                                                    |
+| @Siblings                            |                   | Targets any mobs that share the same parent as the caster.                                                       |
+| @TargetedTarget                      | @Targeted         | Targets the inherited targets.                                                                                   |
+| @ItemsNearOrigin                     |                   | Targets item drops near the [origin](/skills/targeters/origin) of a meta-skill.                                  |
+| @ItemsInRadius{r=#}                  |                   | Targets all item drops in the given radius                                                                       |
 
 ### ThreatTable Targeters
 
 These targeters only work if the mob has Threat Tables enabled.
 
-| Targeter            | Shorthand | Description                                 |
-|---------------------|-----------|---------------------------------------------|
-| @RandomThreatTarget | @RTT      | Targets a random entity on the threat table |
-| @ThreatTable        | @TT       | Targets all entities on the threat table    |
-| @ThreatTablePlayers |           | Targets all players on the threat table     |
+| Targeter            | Shorthand | Description                                                 |
+|---------------------|-----------|-------------------------------------------------------------|
+| @RandomThreatTarget | @RTT      | Targets a random entity on the threat table                 |
+| @ThreatTable        | @TT       | Targets all entities on the threat table                    |
+| @ThreatTablePlayers |           | Targets all players on the threat table                     |
 | @RTTL               |           | Targets the location of a random target on the threat table |
 
 Location Targeters
@@ -67,31 +67,31 @@ Location Targeters
 
 ### Single-Location Targeters
 
-| Targeter               | Shorthand | Description                                                                                                                                                                                                                                        |
-|------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| @SelfLocation{y=0.0}          |           | Targets the caster's location an optional yoffset                                                                                                                                                                                                                                                                                                |
-| @Forward{f=5;y=0.0;sideOffset=0.0}    |           | Targets a location 5 blocks infront of caster's facing direction with a yoffset and sideoffset of 0.0                                                                                                                                                                         |
-| @ForwardWall{f=5;y=0.0;width=1;height=3}  |  | Targets a cube 5 blocks infront of caster's facing direction with a yoffset |
-| @TargetLocation        | @targetloc, @TL       | Targets the mob's target's location                                                                                                                                                                                                                |
-| @TriggerLocation       |           | Targets the location of the entity that triggered the skill                                                                                                                                                                                        |
-| @Location{c=x,y,z,yaw,pitch}     |           | The skill will target the coordinates specified.                                                                                                                                                                                                |
-| @Origin{xoffset=0;yoffset=0;zoffset=0}     |           | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile). |
-| @Spawner{s=SpawnerName} |           | Targets the location of the specified spawner(s). The string can be the name of a spawner, or a a group of spawners (using g:groupname), and also accepts wildcards (Spawner* would target Spawner1,Spawner2,Spawner3,etc)                        |
-| @ObstructingBlock    |             | Tries to target blocks in front of the caster that are obstructing it |
-| @TrackedLocation | | Targets the mob's tracked location|
-| @NearestStructure | | Targets the nearest structure's location |
+| Targeter                                 | Shorthand       | Description                                                                                                                                                                                                                                        |
+|------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| @SelfLocation{y=0.0}                     |                 | Targets the caster's location an optional yoffset                                                                                                                                                                                                  |
+| @Forward{f=5;y=0.0;sideOffset=0.0}       |                 | Targets a location 5 blocks infront of caster's facing direction with a yoffset and sideoffset of 0.0                                                                                                                                              |
+| @ForwardWall{f=5;y=0.0;width=1;height=3} |                 | Targets a cube 5 blocks infront of caster's facing direction with a yoffset                                                                                                                                                                        |
+| @TargetLocation                          | @targetloc, @TL | Targets the mob's target's location                                                                                                                                                                                                                |
+| @TriggerLocation                         |                 | Targets the location of the entity that triggered the skill                                                                                                                                                                                        |
+| @Location{c=x,y,z,yaw,pitch}             |                 | The skill will target the coordinates specified.                                                                                                                                                                                                   |
+| @Origin{xoffset=0;yoffset=0;zoffset=0}   |                 | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile). |
+| @Spawner{s=SpawnerName}                  |                 | Targets the location of the specified spawner(s). The string can be the name of a spawner, or a a group of spawners (using g:groupname), and also accepts wildcards (Spawner* would target Spawner1,Spawner2,Spawner3,etc)                         |
+| @ObstructingBlock                        |                 | Tries to target blocks in front of the caster that are obstructing it                                                                                                                                                                              |
+| @TrackedLocation                         |                 | Targets the mob's tracked location                                                                                                                                                                                                                 |
+| @NearestStructure                        |                 | Targets the nearest structure's location                                                                                                                                                                                                           |
 
 ### Multi-Location Targeters
 
-| Targeter                                        | Shorthand   | Description                                                                                                                          |
-|-------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| @PlayerLocationsInRadius{r=#}                  | @PLIR{r=#} | Targets all player locations in the given radius                                                                                     |
-| @Ring{radius=#;points=#;xRotation=#;yRotation=#;zRotation=#;xOffset=#;yOffset=#;zOffset=#}              |             | Target points to form a ring of locations                                                                                            |
-| @Cone{angle=#;points=#;range=#;rotation=#;yoffset=#} |             | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down) |
-| @EntitiesInCone{angle=#;range=#;rotation=#;} |             | Targets all entities within the cone                                                                                                 |
-| @Sphere{radius=#;points=#;yoffset=#}              |             | Target points to form a sphere of locations                                                                                            |
-| @TargetedLocation |  | Targets the inherited targets's location |
-| @RingAroundOrigin{radius=#;points=#;xRotation=#;yRotation=#;zRotation=#;xOffset=#;yOffset=#;zOffset=#} | @RAO | Targets locations in a specified ring around the origin |
+| Targeter                                                                                               | Shorthand  | Description                                                                                                                         |
+|--------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| @PlayerLocationsInRadius{r=#}                                                                          | @PLIR{r=#} | Targets all player locations in the given radius                                                                                    |
+| @Ring{radius=#;points=#;xRotation=#;yRotation=#;zRotation=#;xOffset=#;yOffset=#;zOffset=#}             |            | Target points to form a ring of locations                                                                                           |
+| @Cone{angle=#;points=#;range=#;rotation=#;yoffset=#}                                                   |            | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down) |
+| @EntitiesInCone{angle=#;range=#;rotation=#;}                                                           |            | Targets all entities within the cone                                                                                                |
+| @Sphere{radius=#;points=#;yoffset=#}                                                                   |            | Target points to form a sphere of locations                                                                                         |
+| @TargetedLocation                                                                                      |            | Targets the inherited targets's location                                                                                            |
+| @RingAroundOrigin{radius=#;points=#;xRotation=#;yRotation=#;zRotation=#;xOffset=#;yOffset=#;zOffset=#} | @RAO       | Targets locations in a specified ring around the origin                                                                             |
 
 Special Targeters
 -----------------
@@ -120,18 +120,18 @@ In the example skill above, the "ignite" mechanic will target entities between t
 
 Some meta-targeters also allow the mechanic to be casted "fromOrigin". This will change the starting location of the meta-targeter to be @Origin rather than the caster, which can allow for some complex effects, particularly when used with Projectiles.
 
-| Targeter                               | Shorthand                 | Description                                                                                                                                                                                                                                                                                                                                                                                   |
-|----------------------------------------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| @Line{radius=#;fromorigin=true/false} | @Line{r=#;fo=true/false} | Targets locations between the mob and the inherited target. |
-| @EntitiesInLine{r=#;fo=true/false}    | @EIL{r=#;fo=true/false}  | Targets any entities in a line between the inherited target and the casting mob. |
-| @LivingNearTargetLocation{radius=5}    | @LNTL{r=#}               | Targets all living entities near the   inherited target. |
-| @PlayersNearTargetLocation{radius=5}   | @LNTL{r=#}               | Targets all players near the inherited target. |
-| @RLNTE{a=#;r=#;s=#;minr=#}        | -                         | Targets random locations around the inherited target, where: a is the amount of locations, r is the radius around the inherited target, minr is the minimum radius, and s is the spacing between each location. |
-| @FloorOfTargets     | @FOT      | Targets the blocks underneath the inherited targets.  |
-| @LocationsOfTargets | @LOT       | Targets the location of the inherited targets        |
-| @BlocksInRadius{radius=#;radiusy=#;noise=#;shape=sphere/cube;onlyair=false;noair=true} |     | Targets all blocks in a radius of the inherited targets. |
-| @BlocksInChunk{noair=true/false;onlyair=true/false;nearorigin=true/false} | Targets all blocks in a chunk relative to the inherited target. |
-| @BlocksNearOrigin{radius=#;radiusy=#;noise=#;shape=sphere/cube;onlyair=false;noair=true} |     | Targets all blocks in a radius around the inherited target. |
+| Targeter                                                                                 | Shorthand                                                       | Description                                                                                                                                                                                                     |
+|------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| @Line{radius=#;fromorigin=true/false}                                                    | @Line{r=#;fo=true/false}                                        | Targets locations between the mob and the inherited target.                                                                                                                                                     |
+| @EntitiesInLine{r=#;fo=true/false}                                                       | @EIL{r=#;fo=true/false}                                         | Targets any entities in a line between the inherited target and the casting mob.                                                                                                                                |
+| @LivingNearTargetLocation{radius=5}                                                      | @LNTL{r=#}                                                      | Targets all living entities near the   inherited target.                                                                                                                                                        |
+| @PlayersNearTargetLocation{radius=5}                                                     | @LNTL{r=#}                                                      | Targets all players near the inherited target.                                                                                                                                                                  |
+| @RLNTE{a=#;r=#;s=#;minr=#}                                                               | -                                                               | Targets random locations around the inherited target, where: a is the amount of locations, r is the radius around the inherited target, minr is the minimum radius, and s is the spacing between each location. |
+| @FloorOfTargets                                                                          | @FOT                                                            | Targets the blocks underneath the inherited targets.                                                                                                                                                            |
+| @LocationsOfTargets                                                                      | @LOT                                                            | Targets the location of the inherited targets                                                                                                                                                                   |
+| @BlocksInRadius{radius=#;radiusy=#;noise=#;shape=sphere/cube;onlyair=false;noair=true}   |                                                                 | Targets all blocks in a radius of the inherited targets.                                                                                                                                                        |
+| @BlocksInChunk{noair=true/false;onlyair=true/false;nearorigin=true/false}                | Targets all blocks in a chunk relative to the inherited target. |
+| @BlocksNearOrigin{radius=#;radiusy=#;noise=#;shape=sphere/cube;onlyair=false;noair=true} |                                                                 | Targets all blocks in a radius around the inherited target.                                                                                                                                                     |
 
 Targeter Options
 ================
@@ -182,7 +182,7 @@ Note: As of MM 4.15 or MM 5.0, you can set the default target filters in MythicM
 Target Limits
 -------------
 
-All entity targeters also support target limits (as of v4.5). With this you can limit how many entities are targeted, including the order in which they are selected.
+All entity and location targeters also support target limits (as of v5.0.4). With this you can limit how many entities/locations are targeted, including the order in which they are selected.
 
 This is done with the options:
 
@@ -195,11 +195,14 @@ Lets say you want your ability to only target the 2 nearest players within 30 bl
 
 Currently, sort can have the following values:
 
--   NONE *(usually sorts by how long the entity has existed)*
--   RANDOM
--   NEAREST
--   FURTHEST
--   HIGHEST_HEALTH
--   LOWEST_HEALTH
--   HIGHEST_THREAT
--   LOWEST_THREAT
+**General sorters:**
+- NONE *(usually sorts by how long the entity has existed)*
+- RANDOM
+- NEAREST
+- FURTHEST
+
+**Entity Only Sorters**
+- HIGHEST_HEALTH
+- LOWEST_HEALTH
+- HIGHEST_THREAT
+- LOWEST_THREAT

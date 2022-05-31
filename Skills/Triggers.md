@@ -10,65 +10,31 @@ itself.
 
 **Table of all available triggers:**
 
-| Trigger               | When it fires...                                            |
-|-----------------------|-------------------------------------------------------------|
-| onCombat              | Default                                                     |
-| onAttack              | When the mob hits something                                 |
-| onDamaged             | When the mob is damaged                                     |
-| onSpawn               | When the mob spawns                                         |
-| onDespawn             | When the mob is despawned                                   |
-| onFirstSpawn          | Triggered the first time a mob is spawned from a spawner    |
-| onLoad                | When the mob is loaded (spawning or loading after a restart) |
-| onDeath               | When the mob dies                                           |
-| onTimer:\#            | Every \# ticks (where \# is the interval in ticks)          |
-| onInteract            | When the mob is right-clicked                               |
-| onKill                | When something kills a mob                                  |
-| onKillPlayer          | When the mob kills a player                                 |
-| onPlayerDeath         | When a player dies for any reason                           |
-| onEnterCombat         | When the mob enters combat (requires threat tables be on)   |
-| onDropCombat          | When the mob leaves combat (requires threat tables be on)   |
-| onChangeTarget        | When the mob changes targets (requires threat tables be on) |
-| onExplode             | When the mob explodes (typically only used for creepers)    |
-| onTeleport            | When the mob teleports (typically only used for endermen)   |
-| onSignal              | When the mob receives a signal                              |
-| onSignal:*[signal]* | When the mob receives a specific signal                     |
-| onShoot               | When the mob fires a projectile                             |
-| onTame                | When the mob gets tamed                                     |
-
-**Table of all available **MythicCrucible** triggers:**
-
-| Trigger               | When it fires...                                            |
-|-----------------------|-------------------------------------------------------------|
-| onBlockBreak          | When the player breaks a block                              |
-| onBlockPlace          | When the player places a block                              |
-| onConsume             | Triggered if the item is food or a potion that is eaten     |
-| onCrouch              | When the player crouches                                    |
-| onUnCrouch            | When the player stops crouching                             |
-| onDamaged             | When the player is damaged                                  |
-| onDeath               | When the player dies                                        |
-| onEquip               | When a player equips an armor piece.                        |
-| onUnEquip             | When a player unequips an armor piece.                      |
-| onInteract            | When the player interacts with an entity                    |
-| onBowHit              | When a player hits an entity with an arrow                  |
-| onPotionSplash        | Triggered if the item is a potion that was thrown           |
-| onRightClick          | When the player right-clicks                                |
-| onShoot               | When the player shoots a bow                                |
-| onSpawn               | When the player logs in or respawns                         |
-| onSwing               | When the player left-clicks                                 |
-| onTimer:\#            | Every # ticks (where # is the interval in ticks)            |
-| onUse                 | When the player right-clicks while holding the item         |
-| onFish                | When the player right-clicks while holding a fishing rod    |
-| onFishBite            | When a fish bites the hook from a fishing rod               |
-| onFishCatch           | When the fish latches onto the hook from a fishing rod      |
-| onFishGrab            | When the player right-clicks while holding the fishing rod with a latched fish |
-| onFishGround          | When the bobber is stuck in the ground                      |
-| onFishingReel         | When the player reels in a fishing rod with no fish on the other end |
-| onFishingFail         | When the player fails a fish attempt due usually due to poor timing |
-| onPressQ              | When a player presses Q to drop the item. Requires ProtocolLib |
-| onPressCtrlQ          | When a player presses CTRL+Q to drop the item. Requires ProtocolLib |
-| onPressF              | When a player presses F to swap the item. Requires ProtocolLib |
-
-**Mythic Crucible** is another one of our Premium Plugins which adds new triggers and allows you to create incredible custom items! You can purchase it from [here](https://mythiccraft.io/index.php?resources/crucible-create-unbelievable-mythic-items.2/)!
+| Trigger             | When it fires...                                             |
+|---------------------|--------------------------------------------------------------|
+| onCombat            | Default                                                      |
+| onAttack            | When the mob hits something                                  |
+| onDamaged           | When the mob is damaged                                      |
+| onSpawn             | When the mob spawns                                          |
+| onDespawn           | When the mob is despawned                                    |
+| onFirstSpawn        | Triggered the first time a mob is spawned from a spawner     |
+| onLoad              | When the mob is loaded (spawning or loading after a restart) |
+| onDeath             | When the mob dies                                            |
+| onTimer:\#          | Every \# ticks (where \# is the interval in ticks)           |
+| onInteract          | When the mob is right-clicked                                |
+| onKill              | When something kills a mob                                   |
+| onKillPlayer        | When the mob kills a player                                  |
+| onPlayerDeath       | When a player dies for any reason                            |
+| onEnterCombat       | When the mob enters combat (requires threat tables be on)    |
+| onDropCombat        | When the mob leaves combat (requires threat tables be on)    |
+| onChangeTarget      | When the mob changes targets (requires threat tables be on)  |
+| onExplode           | When the mob explodes (typically only used for creepers)     |
+| onTeleport          | When the mob teleports (typically only used for endermen)    |
+| onSignal            | When the mob receives a signal                               |
+| onSignal:*[signal]* | When the mob receives a specific signal                      |
+| onShoot             | When the mob fires a projectile                              |
+| onTame              | When the mob gets tamed                                      |
+| onBreed             | When the mob breeds with another mob.                        |
 
 Using Triggers
 --------------
