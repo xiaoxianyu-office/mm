@@ -195,6 +195,7 @@ by these will "inherit" the targets (if applicable).
 | [Shoot][]            | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                                               |
 | [Volley][]           | Shoots a volley of projectile-items at the target with various options                                                                                  |
 | [SudoSkill][]        | Makes the target execute a skill                                                                                                                        |
+| [Switch-Case][]      | Acts as a switch/case                                                                                                                                   |
 | [RandomSkill][]      | Executes a random skill from a list                                                                                                                     |
 | [Totem][]            | Creates a static "totem" at a location that can execute other skills                                                                                    |
 | [VariableAdd][]      | Adds an amount to a numeric variable                                                                                                                    |
@@ -400,3 +401,4 @@ but not yet ready for use.
   [OnJump]: /skills/mechanics/onjump
   [OnDeath]: /skills/mechanics/ondeath
   [ShieldBreak]: /skills/mechanics/shieldbreak
+  [Switch-Case]: /skills/mechanics/switch-case
