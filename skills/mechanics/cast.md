@@ -32,9 +32,12 @@ Attributes
 Examples
 --------
 
-    Skills:
+```yml
+myCoolMob:
+  Type: ZOMBIE
+  Skills:
     - cast{
-          skillName="&aFrost Blast"
+          skillName="&aFrost Blast";
           duration=40;
           onCast=FrostBlast-Cast;
           onTick=FrostBlast-Tick;
@@ -43,3 +46,4 @@ Examples
           cancelOnMove=true;
           showCastBar=true
         } @target ~onTimer:100
+```
