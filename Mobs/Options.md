@@ -608,7 +608,7 @@ Mob:
 
       * Sets whether zombies can be turned into pigmen/drowned.
       * Only works for Zombies.
-      * Defaults to false.
+      * Defaults to true.
 
 **ReinforcementsChance: \[number\]**
 
