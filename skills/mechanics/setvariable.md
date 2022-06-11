@@ -33,7 +33,7 @@ number of nearby bears once every 10 minutes.
       - variableEquals{var=target.heardbear;value="yes"} cancel
       Skills:
       - message{m="&7You hear a growling noise..."}
-      - setvariable{var=target.heardbear;value="yes";duration=6000}
+      - setvariable{var=target.heardbear;value="yes";type=STRING;duration=6000}
 
 In this example, the extra "IgnitionDamage" skill would only fire if the
 "do_ignite" variable were set on the skill tree.
