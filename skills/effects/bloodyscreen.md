@@ -1,6 +1,6 @@
 **Description:** 
 
-Shows the near world border effect. _Enable Fancy Graphics to see the effect._
+Shows the near world border effect. **_Enable Fancy Graphics to see the effect._**
 
 ---
 
