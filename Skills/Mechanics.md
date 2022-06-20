@@ -118,6 +118,7 @@ are able to target locations as well.
 | [SetMobColor][]           | Changes the color of the target if it is a colorable mob                                 |
 | [SetMobScore][]           | Sets a scoreboard value on the casting mob                                               |
 | [SetName][]               | Changes the target entity's name                                                         |
+| [SetFaction][]            | Changes the target entity's faction                                         |
 | [SetNoDamageTicks][]      | Sets the nodamageticks of the target                                                     |
 | [SetOwner][]              | Makes the target the owner of the casting mob                                            |
 | [SetRotation][]           | Sets the rotation of the target                                                          |
@@ -402,3 +403,4 @@ but not yet ready for use.
   [OnDeath]: /skills/mechanics/ondeath
   [ShieldBreak]: /skills/mechanics/shieldbreak
   [Switch-Case]: /skills/mechanics/switch-case
+  [SetFaction]: /skills/mechanics/setFaction
