@@ -15,7 +15,7 @@ Premium](http://www.mythicmobs.net/index.php?account/upgrades) comes with numero
     - Item attributes
     - Drop table amounts        
 -   Ability to use [Skill Parameters](/skills/skillparametersystem)
--   Ability to use on hit conditions in [projectile skills](/skills/mechanics/projectile)
+-   Ability to use on hit conditions & bounce in [projectile skills](/skills/mechanics/projectile)
 -   Ability to use conditional [AI goals/targeters](/Mobs/Custom-AI)
 -   Ability to use `origin=@targeter` in any mechanic
 -   Much more!
