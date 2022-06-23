@@ -14,14 +14,14 @@
 
 ```
 Conditions:
-- biome DESERT,DESERT_HILLS
+- biome{b=DESERT,DESERT_HILLS} true
 ```
 
 If using a custom biome (like from a datapack), you can define it with the namespaced key like this:
 
 ```
 Conditions:
-- biome far_end:void,far_end:warped_marsh
+- biome{b=far_end:void,far_end:warped_marsh} true
 ```
 
 ---
