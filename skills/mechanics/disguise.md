@@ -21,7 +21,7 @@ Examples
 
 you can test cast both of these disguises with ``/mm test cast TestingDisguiseMechanic``
 
-This will disguise you as a sheep that is on fire and spinning. It will also set the disguises custom name to DizzyBoi and make it visible!
+This will disguise you as a sheep that is on fire and spinning.
 ```yml
 TestingDisguiseMechanic:
   Skills:
