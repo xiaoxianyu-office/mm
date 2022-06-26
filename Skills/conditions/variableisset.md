@@ -14,7 +14,7 @@
 
 ```
 Conditions:
-- variableisset target.dazed true
+- variableisset{var=target.dazed} true
 ```
 
 ---
