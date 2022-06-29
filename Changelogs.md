@@ -10,11 +10,19 @@ Mechanics
 ### Damage
 - Added `ignoreEnchants=true/false`
 
+Conditions
+----------
+### NEW: HasAI
+  - Tests if the target has AI
+
+
 Custom AI
 ---------
-### NEW: GoToWater
-### NEW: GoToBlock
-### NEW: GoToLava
+### NEW: MoveToWater
+### NEW: MoveToBlock
+- `moveToBlock{material=STONE;radius=8;radiusY=2;speed=0.9}`
+
+### NEW: MoveToLava
 
 Bug Fixes/Other
 --------------
