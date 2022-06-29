@@ -1,6 +1,31 @@
 5.1.0 (Dev Builds)
 =====
 
+General
+-------
+- Added 1.19 support
+
+Mechanics
+---------
+### Damage
+- Added `ignoreEnchants=true/false`
+
+Custom AI
+---------
+### NEW: GoToWater
+### NEW: GoToBlock
+### NEW: GoToLava
+
+Bug Fixes/Other
+--------------
+- Fixed NPE when loading MythicItems
+- Fixed NPE with owner mechanics/conditions
+- Fixed cyclical dependency issues with ModelEngine and ProtocolLib
+- Fixed a spawning errors with the api
+- Fixed NPE in MythicMobSpawnEvent#getMythicSpawner
+- Fixed inaccurate skill cooldown
+- Add "<#>" to be able to comment out lines on inline metaskills
+- Fixed NPE in raytrace mechanics
 
 5.0.4
 =====
