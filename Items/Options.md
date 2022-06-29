@@ -33,6 +33,10 @@ These options are applicable to all items:
 
   - Prevents the item from stacking to similar items.
 
+**Model: \[number\]**
+
+  - Sets the custom model data ID for the item
+
 Playerheads
 -----------
 
