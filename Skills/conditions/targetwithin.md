@@ -8,7 +8,7 @@
 | --------- | -------------  | ------------------------- |
 | distance| d| Distance to check|
 
-As of July 4th 2022 this has been tested and seems to only be working from mobs, not from players!
+As of July 4th 2022 this has been tested and seems to only be working from mobs, not from players! - tested by Rhikcyn with the guidance of Akim91
 
 ---
 
