@@ -129,9 +129,9 @@ NearestConditionalTarget Example:
 AITargetSelectors:
 - clear
 - nearestConditionalTarget{conditions=[
-      - entitytype PLAYER true
-      - hasaura{aura=marked_for_death} true
-    ]}
+    - entitytype PLAYER true
+    - hasaura{aura=marked_for_death} true
+  ]}
 ```
 
 **All Creatures(Faction Support)**
