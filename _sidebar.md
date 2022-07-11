@@ -32,6 +32,7 @@
   * [Conditions](Skills/conditions)
   * [Placeholders](Skills/Placeholders)
   * [Variables](Skills/Variables)
+  * [Math](Skills/Math)
 ### [Items & Drops](Items)
   * [Drops and Drop Tables](Items/Drops)
   * [Options](Items/Options)
