@@ -166,6 +166,18 @@ Item:
       somedenizentag: a_string
 ```
 
+You can add a prefix to the tag value to change its type, tag values are STRINGS by default.
+
+| Prefix   | Example             |
+|----------|---------------------|
+| int/     | ATag: int/2         |
+| float/   | ATag: float/2.5555  |
+| double/  | ATag: double/2.5555 |
+| byte/    | ATag: byte/1        |
+| bool/    | ATag: bool/false    |
+| boolean/ | ATag: boolean/true  |
+
+
 This allows cross-over with a lot of other plugins, or just for storing
 some custom information.
 
