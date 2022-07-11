@@ -29,6 +29,7 @@ itself.
 | onDropCombat        | When the mob leaves combat (requires threat tables be on)    |
 | onChangeTarget      | When the mob changes targets (requires threat tables be on)  |
 | onExplode           | When the mob explodes (typically only used for creepers)     |
+| onPrime             | When the creeper charges up for an explosion                 |
 | onTeleport          | When the mob teleports (typically only used for endermen)    |
 | onSignal            | When the mob receives a signal                               |
 | onSignal:*[signal]* | When the mob receives a specific signal                      |
