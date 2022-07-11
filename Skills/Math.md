@@ -47,4 +47,4 @@ Functions
 | principal value of the arc tangent of y/x, expressed in radians |   atan2(y, x)    |
 | random with limits                                              | random(min, max) |
 
-NOTE: You can request to add more operators and functions using by making a suggestion ticket in our [issues page](/issues)
+NOTE: You can request to add more operators and functions using by making a suggestion ticket in our [issues page](-/issues)
