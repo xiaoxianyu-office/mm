@@ -1,19 +1,49 @@
-5.1.0 (Dev Builds)
+5.2.0 (Development)
+=====
+
+General
+-------
+- Added raider-related options to Raider mob types
+
+Bug Fixes/Other
+---------------
+- ???
+
+5.1.0
 =====
 
 General
 -------
 - Added 1.19 support
+  - Added FROG, TADPOLE, and WARDEN mob types
+  - Added support for particles SCULK_SOUL, SHRIEK, SCULK_CHARGE, SCULK_CHARGE_POPS, and SONIC_BOOM
+- Started on Item Editor GUI (premium-only)
+- Added random(min,max) function to math parser
+- Added more support for math and placeholders all over the place
 
 Mechanics
 ---------
+### NEW: SetTongueTarget
+- Sets the tongue target for a frog caster to the target entity
+
+### NEW: SetVariableLocation
+- Sets a variable to the target location
+
 ### Damage
 - Added `ignoreEnchants=true/false`
+
+### SchematicPaste
+- Will now read schematics from a Schematics folder in Packs
+
+### Stun
+- Added NoKnockback option
 
 Conditions
 ----------
 ### NEW: HasAI
   - Tests if the target has AI
+
+### NEW: isClimbing
 
 
 Custom AI
@@ -24,8 +54,13 @@ Custom AI
 
 ### NEW: MoveToLava
 
+API
+-----
+- Added some methods to BukkitAPIHelper
+- Fixed isFromMythicSpawner always returning false in MythicMobSpawnEvent
+
 Bug Fixes/Other
---------------
+---------------
 - Fixed NPE when loading MythicItems
 - Fixed NPE with owner mechanics/conditions
 - Fixed cyclical dependency issues with ModelEngine and ProtocolLib
@@ -34,6 +69,17 @@ Bug Fixes/Other
 - Fixed inaccurate skill cooldown
 - Add "<#>" to be able to comment out lines on inline metaskills
 - Fixed NPE in raytrace mechanics
+- Fixed raytracing hitting the caster when using multi-hitbox
+- Fixed cooldowns that are 1 second or less
+- Fixed isFromMythicSpawner always returning false in MythicMobSpawnEvent
+- Fixed an NPE in ownerIsOnline condition
+- Fixed an NPE when loading items
+- Fixed issue with projectile onBounce
+- Fixed OBB not working with OtherFactionGoal
+- Fixed an NPE on some server forks
+- Fixed projectiles on Mohist
+- Fixed BlocksInChunk targeter not working on blocks below y=0
+- Fixed RandomSpawns not always replacing vanilla mobs
 
 5.0.4
 =====
