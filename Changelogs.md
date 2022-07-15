@@ -5,6 +5,11 @@ General
 -------
 - Added raider-related options to Raider mob types
 
+Mechanics
+---------
+### Projectile
+- added arrowType=NORMAL,SPECTRAL,TRIDENT option if bulletType is an arrow
+
 Bug Fixes/Other
 ---------------
 - ???
@@ -15,8 +20,8 @@ Bug Fixes/Other
 General
 -------
 - Added 1.19 support
-  - Added FROG, TADPOLE, and WARDEN mob types
-  - Added support for particles SCULK_SOUL, SHRIEK, SCULK_CHARGE, SCULK_CHARGE_POPS, and SONIC_BOOM
+- Added FROG, TADPOLE, and WARDEN mob types
+- Added support for particles SCULK_SOUL, SHRIEK, SCULK_CHARGE, SCULK_CHARGE_POPS, and SONIC_BOOM
 - Started on Item Editor GUI (premium-only)
 - Added random(min,max) function to math parser
 - Added more support for math and placeholders all over the place
@@ -45,7 +50,6 @@ Conditions
 
 ### NEW: isClimbing
 
-
 Custom AI
 ---------
 ### NEW: MoveToWater
@@ -57,6 +61,7 @@ Custom AI
 API
 -----
 - Added some methods to BukkitAPIHelper
+- Fixed NPE in MythicMobSpawnEvent#getMythicSpawner
 - Fixed isFromMythicSpawner always returning false in MythicMobSpawnEvent
 
 Bug Fixes/Other
@@ -65,13 +70,11 @@ Bug Fixes/Other
 - Fixed NPE with owner mechanics/conditions
 - Fixed cyclical dependency issues with ModelEngine and ProtocolLib
 - Fixed a spawning errors with the api
-- Fixed NPE in MythicMobSpawnEvent#getMythicSpawner
 - Fixed inaccurate skill cooldown
 - Add "<#>" to be able to comment out lines on inline metaskills
 - Fixed NPE in raytrace mechanics
 - Fixed raytracing hitting the caster when using multi-hitbox
 - Fixed cooldowns that are 1 second or less
-- Fixed isFromMythicSpawner always returning false in MythicMobSpawnEvent
 - Fixed an NPE in ownerIsOnline condition
 - Fixed an NPE when loading items
 - Fixed issue with projectile onBounce
