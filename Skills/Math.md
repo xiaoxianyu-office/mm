@@ -1,4 +1,3 @@
-
 Operators
 -----------
 
@@ -27,7 +26,7 @@ Functions
 | cosine                                                          |      cos(x)      |
 | hyperbolic cosecant                                             |     csch(x)      |
 | euler's number raised to the power (e^x)                        |      exp(x)      |
-| nearest lower intege                                            |     floor(x)     |
+| nearest lower integer                                            |     floor(x)     |
 | logarithmus naturalis (base e                                   |      log(x)      |
 | logarithm to base 2                                             |     log2(x)      |
 | logarithm to base 10                                            |     log10(x)     |
