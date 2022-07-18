@@ -19,6 +19,7 @@ Attributes
 | verticalnoise        | vn                    | vertical spread of the ray                                                                                                                               | 0             |
 | horizontalnoise      | hn                    | horizontal spread of the ray                                                                                                                             | 0             |
 | raytraceConditions   | rc, rcon, rconditions | Conditions applied to the raytraced target                                                                                                               | NONE          |
+| headshotmultiplier   | hsmultiplier, hsm     | headshot power multiplier                                                                                                                                | 1             |
 
 Examples
 --------
