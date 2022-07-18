@@ -118,7 +118,7 @@ are able to target locations as well.
 | [SetMobColor][]           | Changes the color of the target if it is a colorable mob                                 |
 | [SetMobScore][]           | Sets a scoreboard value on the casting mob                                               |
 | [SetName][]               | Changes the target entity's name                                                         |
-| [SetFaction][]            | Changes the target entity's faction                                         |
+| [SetFaction][]            | Changes the target entity's faction                                                      |
 | [SetNoDamageTicks][]      | Sets the nodamageticks of the target                                                     |
 | [SetOwner][]              | Makes the target the owner of the casting mob                                            |
 | [SetRotation][]           | Sets the rotation of the target                                                          |
@@ -210,12 +210,20 @@ Universal Attributes
 
 The following attributes are applicable to all mechanics.
 
-| Attribute      | Shorthand | Description                                                    | Default |
-|----------------|-----------|----------------------------------------------------------------|---------|
-| cooldown       | cd        | In seconds. Allows for decimal values.                         | 0       |
-| delay          |           | Delays the execution of the mechanic by a set number of ticks. | 0       |
-| repeat         |           | How many times the mechanic should be repeated                 | 0       |
-| repeatInterval |           | How many ticks must elapse between repetitions                 | 0       |
+| Attribute      | Shorthand | Description                                                           | Default |
+|----------------|-----------|-----------------------------------------------------------------------|---------|
+| cooldown       | cd        | In seconds. Allows for decimal values.                                | 0       |
+| delay          |           | Delays the execution of the mechanic by a set number of ticks.        | 0       |
+| repeat         |           | How many times the mechanic should be repeated                        | 0       |
+| repeatInterval | repeatI   | How many ticks must elapse between repetitions                        | 0       |
+| targetInterval | targetI   | How many ticks must elapse between target selection                   | 0       |
+| origin         |           | Changed the origin to whatever targeter is supplied. Requires Premium |         |
+| forcesync      | sync      | Forces the execution type to be SYNC                                  | false   |
+| power          |           | [Power](/mobs/Power) multiplier                                       | 1       |
+| fromorigin     | fo        | Whether to cast the mechanic from origin                              | false   |
+| targetisorigin |           | Whether to set the target of the mechanic to be the origin            | false   |
+
+
 
 Upcoming Mechanics
 ------------------
