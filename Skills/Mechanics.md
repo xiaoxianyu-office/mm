@@ -210,18 +210,18 @@ Universal Attributes
 
 The following attributes are applicable to all mechanics.
 
-| Attribute      | Shorthand | Description                                                          | Default |
-|----------------|-----------|----------------------------------------------------------------------|---------|
-| cooldown       | cd        | In seconds. Allows for decimal values.                               | 0       |
-| delay          |           | Delays the execution of the mechanic by a set number of ticks.       | 0       |
-| repeat         |           | How many times the mechanic should be repeated                       | 0       |
-| repeatInterval | repeatI   | How many ticks must elapse between repetitions                       | 0       |
-| targetInterval | targetI   | How many ticks must elapse between target selection                  | 0       |
-| origin         |           | Change the origin to whatever targeter is supplied. Requires Premium |         |
-| forcesync      | sync      | Forces the execution type to be SYNC                                 | false   |
-| power          |           | [Power](/mobs/Power) multiplier                                      | 1       |
-| fromorigin     | fo        | Whether to cast the mechanic from origin                             | false   |
-| targetisorigin |           | Whether to set the target of the mechanic to be the origin           | false   |
+| Attribute            | Shorthand | Description                                                                 | Default |
+|----------------------|-----------|-----------------------------------------------------------------------------|---------|
+| cooldown             | cd        | In seconds. Allows for decimal values.                                      | 0       |
+| delay                |           | Delays the execution of the mechanic by a set number of ticks.              | 0       |
+| repeat               |           | How many times the mechanic should be repeated                              | 0       |
+| repeatInterval       | repeatI   | How many ticks must elapse between repetitions                              | 0       |
+| targetInterval       | targetI   | How many ticks must elapse between target selection                         | 0       |
+| origin **[PREMIUM]** |           | Change the origin to whatever targeter is supplied. `origin=@Forward{f=10}` |         |
+| forcesync            | sync      | Forces the execution type to be SYNC                                        | false   |
+| power                |           | [Power](/mobs/Power) multiplier                                             | 1       |
+| fromorigin           | fo        | Whether to cast the mechanic from origin                                    | false   |
+| targetisorigin       |           | Whether to set the target of the mechanic to be the origin                  | false   |
 
 
 
