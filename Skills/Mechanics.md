@@ -223,8 +223,6 @@ The following attributes are applicable to all mechanics.
 | fromorigin           | fo        | Whether to cast the mechanic from origin                                    | false   |
 | targetisorigin       |           | Whether to set the target of the mechanic to be the origin                  | false   |
 
-
-
 Upcoming Mechanics
 ------------------
 
