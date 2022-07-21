@@ -37,7 +37,7 @@ Entity Targeters
 | @LivingInCone{a=90.0;r=16.0;rot=0.0} | @EIC{}            | Targets all living entities in cone with angle (a), length (r), and rotation (rot) relative to facing direction  |
 | @LivingInWorld                       | @EIW              | Targets all living entities in casters world                                                                     |
 | @PlayersInRadius{r=#}                | @PIR{r=#}         | Targets all players in the given radius                                                                          |
-| @MobsInRadius{r=#;types=X,X,X}       | @MIR{r=#;t=X,X,X} | Targets all mythicmobs of the given type in a radius                                                                   |
+| @MobsInRadius{r=#;types=X,X,X}       | @MIR{r=#;t=X,X,X} | Targets all mythicmobs or vanilla overrides of the given type in a radius                                                                   |
 | @LivingEntitiesInRadius{r=#}         | @EIR{r=#;t=X,X,X} | Targets all entities in the given radius. Can accept types (for specific entities), or no type (for ANY entity). |
 | @PlayersInWorld                      | @World            | Targets all players in the current world.                                                                        |
 | @PlayersOnServer                     | @Server           | Targets all players in the server.                                                                               |
