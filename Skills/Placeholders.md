@@ -52,8 +52,8 @@ Legacy color codes:
 |    &9    |    Blue     |    &O    |     Italic     |
 |    &A    |    Green    |    &R    |     Reset      |
 
-Note: As of MM 5.0.1+, it's recommended that you use [MiniMessage standard tags](https://docs.adventure.kyori.net/minimessage/format.html#standard-tags) for text decorations for readability and configurability, since MythicMobs will try to convert legacy color codes to MiniMessage tags.
-Here's an example of using MiniMessage tags:
+As of MM 5.0.1+, it's recommended that you use [MiniMessage tags](https://docs.adventure.kyori.net/minimessage/format.html#standard-tags) for text styling and text decorations.
+Here's an example using MiniMessage tags:
 ```yml
 MessageSkill:
   Skills:
