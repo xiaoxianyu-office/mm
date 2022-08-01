@@ -205,7 +205,7 @@ example_item:
     SomeModifier:
       Value: double/0.25
       CanDoThis: boolean/true
-    'Denizen NBT':
+    Denizen NBT:
       somedenizentag: a_string
 ```
 ```yml
@@ -217,7 +217,7 @@ another_example_item:
       SomeOtherTag: something
     GemSlots:
       RedGem: 0
-    'Denizen NBT':
+    Denizen NBT:
       somedenizentag: a_string
 ```
 
