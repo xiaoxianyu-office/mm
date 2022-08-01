@@ -22,11 +22,13 @@ This page is divided into 3 sub-categories:
 
 [Potions](examples/Potions)
 
-Armor _todo_
+In Progress:
 
-Tools _todo_
+~~[Armors](examples/Armors)~~
 
-Weapons _todo_
+~~[Tools](examples/Tools)~~
+
+~~[Weapons](examples/Weapons)~~
 
 
 ---
