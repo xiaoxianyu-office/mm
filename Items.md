@@ -44,7 +44,6 @@ Sets the display name of the item.
 ```yml
 example_item:
   Id: leather_chestplate
-  Data: 0
   Display: <green>An Example Item</green>
 ```
 
@@ -53,7 +52,6 @@ Sets the lore of the item. You can generate a random number using `{min-max}`, `
 ```yml
 example_item:
   Id: leather_chestplate
-  Data: 0
   Display: <green>An Example Item</green>
   Lore:
     - <rainbow>This line is a rainbow</rainbow>
@@ -90,12 +88,8 @@ Sets the default amount of items to give when this item is being called by the p
 ```yml
 example_item:
   Id: leather_chestplate
-  Data: 0
   Display: <green>An Example Item</green>
   Model: 12345
-  Attributes:
-    Chest:
-      Health: 25
   Amount: 1
 ```
 
@@ -106,13 +100,9 @@ example_item:
   Id: leather_chestplate
   Display: <green>An Example Item</green>
   Model: 12345
-  Attributes:
-    Chest:
-      Health: 25
-  Amount: 1
   Options:
+    AppendType: true
     Color: 255,0,0
-    Durability: 0
 ```
 
 <!-- SEE ITEM OPTIONS
@@ -142,11 +132,6 @@ example_item:
   Id: leather_chestplate
   Data: 0
   Display: <green>An Example Item</green>
-  Model: 12345
-  Attributes:
-    Chest:
-      Health: 25
-  Amount: 1
   Options:
     Color: 255,0,0
   Enchantments:
@@ -176,18 +161,21 @@ example_item:
 ```
 
 #### **PotionEffects**
-Sets the potion effects of the item. These effects won't do anything if the [base item](Items#Id) is not a potion
--   This allows you to add potion effects to your items.
--   These effects won't do anything, except for showing up in the item tooltip, if the specified item isn't a potion.
--   See [Potions](/Items/Potions).
+Sets the potion effects of the item. These effects won't do anything if the [base item](Items#id) is not a `potion`, `splash_potion`, `lingering_potion`, or `tipped_arrow`.
+See [Potions](/Items/Potions).
+```yml
+example_item:
+  Id: potion
+  Display: <#f99cb3>Pink potion
+  Options:
+    Color: 249,156,179
+  PotionEffects:
+    - CONFUSION 100 2
+```
 
-<!-- -->
-
-#### **BannerLayers:**
--   This option allows you to edit the layers of a banner.
--   Won't do anything if the selected item isn't a banner.
--   This option is capable of passing minecraft's 6 layer limit. However, adding excessive amounts of layers may cause weird behavior and will not be supported.
--   See [Banner Layers](/Items/Banner%20Layers)
+#### **BannerLayers**
+Sets the banner layers of a banner or a shield. You can add more layers above vanilla's 6 layer limit.
+See [Banner Layers](/Items/Banner-Layers)
 
 ### **NBT**:
 - Specify what NBT tags to put on your items in the format:
