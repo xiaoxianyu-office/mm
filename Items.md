@@ -1,6 +1,3 @@
-Items
-=====
-
 ![](http://fs5.directupload.net/images/160306/or6m6n2s.jpg)
 
 Making custom items in Mythic Mobs is quite easy.
