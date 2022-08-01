@@ -77,7 +77,6 @@ example_item:
   Id: leather_chestplate
   Data: 0
   Display: <green>An Example Item</green>
-  Model: 12345
   Attributes:
     Chest:
       Health: 25
@@ -89,7 +88,6 @@ Sets the default amount of items to give when this item is being called by the p
 example_item:
   Id: leather_chestplate
   Display: <green>An Example Item</green>
-  Model: 12345
   Amount: 1
 ```
 
@@ -99,7 +97,6 @@ A special field that comes with numerous sub-options. See [Item Options](/Items/
 example_item:
   Id: leather_chestplate
   Display: <green>An Example Item</green>
-  Model: 12345
   Options:
     AppendType: true
     Color: 255,0,0
@@ -130,7 +127,6 @@ See also [enchantments](/items/Enchantments) page on how to configure item encha
 ```yml
 example_item:
   Id: leather_chestplate
-  Data: 0
   Display: <green>An Example Item</green>
   Options:
     Color: 255,0,0
@@ -147,7 +143,6 @@ example_item:
   Id: leather_chestplate
   Data: 0
   Display: <green>An Example Item</green>
-  Model: 12345
   Attributes:
     Chest:
       Health: 25
@@ -175,25 +170,21 @@ example_item:
 
 #### **BannerLayers**
 Sets the banner layers of a banner or a shield. You can add more layers above vanilla's 6 layer limit.
-See [Banner Layers](/Items/Banner-Layers)
-
-### **NBT**:
-- Specify what NBT tags to put on your items in the format:
-
-```
-Item:
-  Id: DIAMOND_SWORD
-  NBT:
-    Base:
-      ATag: 20
-      SomeOtherTag: something
-    GemSlots:
-      RedGem: 0
-    'Denizen NBT':
-      somedenizentag: a_string
+See [Banner Layers](/Items/Banner-Layers).
+```yml
+example_item:
+  Id: yellow_banner
+  BannerLayers:
+    - RED BASE
+    - WHITE CURLY_BORDER
+    - WHITE STRIPE_CENTER
 ```
 
-You can add a prefix to the tag value to change its type, tag values are STRINGS by default.
+### **NBT**
+Sets what NBT tags to put on your items.
+This allows cross-over with a lot of other plugins, or just for storing custom information.
+You can change the type of the tag value, which are strings by default, by adding a prefix in-front of the value,
+or if it's a list of strings then you format it similar to the item lore.
 
 | Prefix   | Example             |
 |----------|---------------------|
@@ -204,65 +195,36 @@ You can add a prefix to the tag value to change its type, tag values are STRINGS
 | bool/    | ATag: bool/false    |
 | boolean/ | ATag: boolean/true  |
 
-
-This allows cross-over with a lot of other plugins, or just for storing
-some custom information.
-
-For the more technically-inclined, anything under 'Base' will go under the item's base compound tag, and anything else will go under the corresponding key (or if no sub-items are defined, everything will go under the base tag).
-
-If using with Denizen, all tags you want to use in Denizen must go under 'Denizen NBT' and must be lower-case to work in your Denizen scripts.
+```yml
+example_item:
+  Id: diamond_sword
+  NBT:
+    CanDestroy:
+      - stone
+      - dirt
+    Base:
+      ATag: int/20
+      SomeOtherTag: something
+    SomeModifier:
+      Value: double/0.25
+      CanDoThis: boolean/true
+    'Denizen NBT':
+      somedenizentag: a_string
+```
+```yml
+another_example_item:
+  Id: diamond_sword
+  NBT:
+    Base:
+      ATag: 20
+      SomeOtherTag: something
+    GemSlots:
+      RedGem: 0
+    'Denizen NBT':
+      somedenizentag: a_string
+```
 
 Examples
 --------
 
-More items can be found in the [Examples](/examples) section.
-```yml
-ClothSlippers:
-  Id: leather_boots
-  Display: '&fCloth Slippers'
-  Lore:
-  - ''
-  - 'So Soft!'
-  - ''
-  Enchantments:
-  - DURABILITY:1
-  Options:
-    Color: 200,200,200
-```
-Lots of possible options included:
-```yml
-dat_item_though:
-  Id: banner
-  Data: 4
-  Display: '&c&lThe Banner&r'
-  Lore:
-  - ''
-  - '&rIt<&sq>s the perfect stone.'
-  - '&cNever question that.'
-  - ''
-  Amount: 8
-  Attributes:
-    MainHand:
-      Damage: 100
-      Health: 123
-  Options:
-    Color: 200,200,200
-    HideFlags: false
-    Unbreakable: true
-  Enchantments:
-  - DURABILITY:1
-  - ARROW_FIRE:10
-```
-This example will hide enchantments and potion effects that are on the
-item:
-```yml
-potato:
-  Id: carrot_item
-  Enchantments:
-  - DURABILITY:5
-  PotionEffects:
-  - BLINDNESS 20 1
-  Hide:
-  - ENCHANTS
-  - POTION_EFFECTS
-```
+More item examples can be found in the [Examples](/examples) section.
