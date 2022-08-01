@@ -10,7 +10,7 @@ Of the following options available for items, only `internal_name` and `Id` are 
 You can make any number of files in the `\plugins\MythicMobs\Items` folder, and they can be
 named anything you like as long as the file ends in .yml.
 
-Breaking down the options
+Breaking Down The Item Configuration
 -------------------------
 
 #### **Internal_Name**
