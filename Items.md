@@ -166,7 +166,7 @@ example_item:
 ```
 
 #### **BannerLayers**
-Sets the banner layers of a banner or a shield. You can add more layers above vanilla's 6 layer limit.
+Sets the banner layers of a banner or a shield.
 See [Banner Layers](/Items/Banner-Layers).
 ```yml
 example_item:
