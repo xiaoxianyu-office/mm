@@ -13,14 +13,14 @@ named anything you like as long as the file ends in .yml.
 Breaking Down The Item Configuration
 -------------------------
 
-#### **Internal_Name**
+#### Internal_Name
 This string will be how your item is referenced internally in MythicMobs and can be any name you like. 
 Must be alphanumeric, **NO SPACES ALLOWED**.
 ```yml
 example_item:
 ```
 
-#### **Id**
+#### Id
 The base material to use for your item, it can be any valid material that's listed [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html).
 ```yml
 example_item:
@@ -36,7 +36,7 @@ example_item:
 ```
 -->
 
-#### **Display**
+#### Display
 Sets the display name of the item.
 ```yml
 example_item:
@@ -44,7 +44,7 @@ example_item:
   Display: <green>An Example Item</green>
 ```
 
-#### **Lore**
+#### Lore
 Sets the lore of the item. You can generate a random number using `{min-max}`, `<random.#to#>`, or `<random.float.#to#>`.
 ```yml
 example_item:
@@ -57,8 +57,14 @@ example_item:
     - This is a random generated number > <random.-1to50>
 ```
 
-#### **Model**
-Sets the CustomModelData tag on the item.
+#### CustomModelData
+Sets the CustomModelData tag on the item. `Model` is also another alias for `CustomModelData`.
+```yml
+example_item:
+  Id: leather_chestplate
+  Display: <green>An Example Item</green>
+  CustomModelData: 12345
+```
 ```yml
 example_item:
   Id: leather_chestplate
