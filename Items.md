@@ -221,4 +221,4 @@ another_example_item:
 Examples
 --------
 
-More item examples can be found in the [Examples](/examples) section.
+More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
