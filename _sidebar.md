@@ -33,13 +33,13 @@
   * [Placeholders](Skills/Placeholders)
   * [Variables](Skills/Variables)
   * [Math](Skills/Math)
-### [Items & Drops](Items)
-  * [Drops and Drop Tables](Items/Drops)
+### [Items](Items)
   * [Options](Items/Options)
   * [Attributes](Items/Attributes)
   * [Enchantments](Items/Enchantments)
   * [Potions](Items/Potions)
   * [Banner Layers](Items/Banner Layers)
+### [Drops & DropTables](drops/Drops)
 
 ### Spawning
   * [[Spawners]]
