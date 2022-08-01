@@ -62,7 +62,6 @@ Sets the CustomModelData tag on the item.
 ```yml
 example_item:
   Id: leather_chestplate
-  Data: 0
   Display: <green>An Example Item</green>
   Model: 12345
 ```
@@ -72,7 +71,6 @@ Special field that allows the addition of item attributes to certain armor slots
 ```yml
 example_item:
   Id: leather_chestplate
-  Data: 0
   Display: <green>An Example Item</green>
   Attributes:
     Chest:
@@ -138,7 +136,6 @@ All possible flags can be found [here](https://hub.spigotmc.org/javadocs/spigot/
 ```yml
 example_item:
   Id: leather_chestplate
-  Data: 0
   Display: <green>An Example Item</green>
   Attributes:
     Chest:
