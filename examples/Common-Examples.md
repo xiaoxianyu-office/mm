@@ -9,18 +9,18 @@ This page is divided into 3 sub-categories:
 
 ### Mobs:
 
-[Hostile Mobs](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples#hostile-mobs)
+[Hostile Mobs](examples/Mob-Examples#hostile-mobs)
 
-[Neutral Mobs](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples#neutral-mobs)
+[Neutral Mobs](examples/Mob-Examples#neutral-mobs)
 
-[Passive Mobs](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples#passive-mobs)
+[Passive Mobs](examples/Mob-Examples#passive-mobs)
 
 ---
 
 ### Items:
-[Foods](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Foods)
+[Foods](examples/Foods)
 
-[Potions](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Potions)
+[Potions](examples/Potions)
 
 Armor _todo_
 
@@ -33,6 +33,6 @@ Weapons _todo_
 
 ### Skills:
 
-[Damage Spells](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/DamageSpells)
+[Damage Spells](examples/DamageSpells)
 
-[Consumable Skills](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Consumable-Skills)
+[Consumable Skills](examples/Consumable-Skills)

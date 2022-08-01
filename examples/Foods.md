@@ -16,4 +16,4 @@ donut:
   - skill{s=eatmeal} ~onConsume
 ```
 
-![image](uploads/66cd302e11d6e8fe2cc4a20b26f7f2e4/image.png)
+![image](../uploads/66cd302e11d6e8fe2cc4a20b26f7f2e4/image.png)

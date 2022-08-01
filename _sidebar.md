@@ -46,5 +46,4 @@
   * [[Spawners]]
   * [[Random Spawns]]
 
-### Tutorials
-  * [[Common Examples]]
+### [Examples](examples/Common-Examples)
