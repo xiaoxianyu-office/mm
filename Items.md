@@ -44,7 +44,7 @@ example_item:
   Display: <green>An Example Item</green>
 ```
 
-#### **Lore**:
+#### **Lore**
 Sets the lore of the item. You can generate a random number using `{min-max}`, `<random.#to#>`, or `<random.float.#to#>`.
 ```yml
 example_item:
