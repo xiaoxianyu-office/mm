@@ -34,6 +34,7 @@
   * [Variables](Skills/Variables)
   * [Math](Skills/Math)
 ### [Items](Items)
+  * [Overview](Items)
   * [Options](Items/Options)
   * [Attributes](Items/Attributes)
   * [Enchantments](Items/Enchantments)
