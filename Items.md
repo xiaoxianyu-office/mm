@@ -196,6 +196,23 @@ or if it's a list of strings then you format it similar to the item lore.
 | boolean/ |
 
 ```yml
+example_item:
+  Id: diamond_sword
+  NBT:
+    CanDestroy:
+      - stone
+      - dirt
+    Base:
+      ATag: int/20
+      SomeOtherTag: something
+    SomeModifier:
+      Value: double/0.25
+      CanDoThis: boolean/true
+    Denizen NBT:
+      somedenizentag: a_string
+```
+
+```yml
 another_example_item:
   Id: diamond_sword
   NBT:
