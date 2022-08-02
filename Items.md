@@ -186,31 +186,15 @@ This allows cross-over with a lot of other plugins, or just for storing custom i
 You can change the type of the tag value, which are strings by default, by adding a prefix in-front of the value,
 or if it's a list of strings then you format it similar to the item lore.
 
-| Prefix   | Example             |
-|----------|---------------------|
-| int/     | ATag: int/2         |
-| float/   | ATag: float/2.5555  |
-| double/  | ATag: double/2.5555 |
-| byte/    | ATag: byte/1        |
-| bool/    | ATag: bool/false    |
-| boolean/ | ATag: boolean/true  |
+| Prefix   | 
+|----------|
+| int/     |
+| float/   |
+| double/  |
+| byte/    |
+| bool/    |
+| boolean/ |
 
-```yml
-example_item:
-  Id: diamond_sword
-  NBT:
-    CanDestroy:
-      - stone
-      - dirt
-    Base:
-      ATag: int/20
-      SomeOtherTag: something
-    SomeModifier:
-      Value: double/0.25
-      CanDoThis: boolean/true
-    Denizen NBT:
-      somedenizentag: a_string
-```
 ```yml
 another_example_item:
   Id: diamond_sword
