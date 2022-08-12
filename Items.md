@@ -226,6 +226,7 @@ another_example_item:
 ```
 
 ### **ItemVersion**
+### **CRUCIBLE ONLY **
 Updates the item on MM reload when ItemVersion differs.
 This allows you to update items when MM reloads by changing the ItemVersion. If you haven't reset your config.yml in a while, then this feature requires the following to be added to the config.yml:
 
