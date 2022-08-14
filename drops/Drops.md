@@ -13,8 +13,8 @@ Drops are the simplest way to implement custom drops.
 internal_mobname:
   Type: <mobtype>
   Drops:
-  - <item/exp/droptable> <amount> <chance>
-  - <item/exp/droptable> <amount> <chance>
+  - <item/exp/droptable/cmd> <amount> <chance>
+  - <item/exp/droptable/cmd> <amount> <chance>
   - ...
 ```
 
