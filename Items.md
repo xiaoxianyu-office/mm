@@ -55,6 +55,7 @@ example_item:
     - <red>This line should be red</red>
     - 'Tis but a scratch
     - This is a random generated number > <random.-1to50>
+    - <gradient:#5e4fa2:#f79459>A really nice gradient</gradient>
 ```
 
 #### CustomModelData
