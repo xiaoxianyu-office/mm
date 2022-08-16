@@ -12,7 +12,7 @@ Damages the targeted entity.
 | preventknockback | pkb, pk | Whether or not to prevent knockback | false   |
 | preventimmunity  | pi      | Whether or not to ignore immunities | false   |
 | element          | type    | Sets the type of damage to be inflicted | false   |
-| damagecause      | cause   | Sets the damage cause for this damage mechanic | entity_attack |
+| damagecause      | cause   | Sets the damage cause for this damage mechanic. (This option is only available for 1.17+) | entity_attack |
 | ignoreenchants   | ie      | Whether or not to ignore enchantments when calculating total damage. (This option is only available for 1.19+) | false |
 
 ### DamageCause
