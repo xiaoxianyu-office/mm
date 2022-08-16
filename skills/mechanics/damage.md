@@ -13,7 +13,7 @@ Damages the targeted entity.
 | preventimmunity  | pi      | Whether or not to ignore immunities | false   |
 | element          | type    | Sets the type of damage to be inflicted | false   |
 | damagecause      | cause   | Sets the damage cause for this damage mechanic | entity_attack |
-| ignoreenchants   | ie      | Whether or not to ignore enchantments when calculating total damage done | false |
+| ignoreenchants   | ie      | Whether or not to ignore enchantments when calculating total damage | false |
 
 ### DamageCause
 This attribute is only available in newer MM 5.0 builds.
