@@ -1,24 +1,29 @@
 Enchantments
 ============
 
-The enchantments attribute is used to apply enchantments to items made using MythicMobs. Any of these can be put on any item and can exceed natural enchantment-level limits set by Minecraft. Some enchantments may not have any effects if put on items that they weren't made for.
+The enchantments attribute is used to apply enchantments to items made using MythicMobs.
+Any of these can be put on any item and can exceed natural enchantment-level limits set by Minecraft.
+Some enchantments may not have any effects if put on items that they weren't made for.
 
 Syntax
 ------
-```
+```yml
 internal_itemname:
-  Id: <item>
+  Id: <material>
   Enchantments:
   - <enchantment>:<level>
   - <enchantment>:<level>
   - ...
 ```
-**&lt;enchantment&gt;**  
+**\<enchantment>**  
 Type of enchantment to be applied to the specified item.
 
-**&lt;level&gt;**  
+**\<level>**  
 The level of the specified enchantment.
-```
+
+Example
+-------
+```yml
 lethal_pickaxe:
   Id: diamond_pickaxe
   Enchantments:
@@ -28,11 +33,10 @@ lethal_pickaxe:
 Available Enchantments
 ----------------------
 
-This is a list of all enchantments currently available in MythicMobs for
-application on items.
+A list of available [enchantments](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html) can be found on spigot javadocs
 
-[These use the Bukkit Enum for Enchantments, found here.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html)
 
+<!--
 **ARROW\_DAMAGE**
 
 -   "Power"
@@ -309,3 +313,5 @@ trident.
 -   "Soul Speed"
 -   Walk quicker on soul blocks.
 -   Vanilla Max: 3
+
+-->
