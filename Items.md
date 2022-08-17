@@ -187,14 +187,9 @@ This allows cross-over with a lot of other plugins, or just for storing custom i
 You can change the type of the tag value, which are strings by default, by adding a prefix in-front of the value,
 or if it's a list of strings then you format it similar to the item lore.
 
-| Prefix   | 
-|----------|
-| int/     |
-| float/   |
-| double/  |
-| byte/    |
-| bool/    |
-| boolean/ |
+| Prefix | int/ | float/ | double/ | byte/ | bool/ | boolean/ |
+|--------|------|--------|---------|-------|-------|----------|
+
 
 ```yml
 example_item:
