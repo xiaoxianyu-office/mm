@@ -31,7 +31,7 @@ internal_mobname:
   Trades:
 ```
 
-Breaking down the mob options
+Breaking Down The Mob Configuration
 -------------------------
 
 ### Internal_Name
