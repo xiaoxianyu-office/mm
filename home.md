@@ -96,10 +96,10 @@ Setup
 
   [1]: youtube>_YQUS3sDbI0
   [Configuration]: Configuration
-  [Commands]: Commands%20and%20Permissions
-  [Examples]: Examples
+  [Commands]: Commands-and-Permissions
+  [Examples]: examples/Common-Examples
   [FAQ's]: FAQ
-  [Permissions]: Commands%20and%20Permissions
+  [Permissions]: Commands-and-Permissions#permissions
   [Videos]: Videos
 
 Help & Questions
