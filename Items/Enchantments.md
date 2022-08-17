@@ -1,6 +1,3 @@
-Enchantments
-============
-
 The enchantments attribute is used to apply enchantments to items made using MythicMobs.
 Any of these can be put on any item and can exceed natural enchantment-level limits set by Minecraft.
 Some enchantments may not have any effects if put on items that they weren't made for.
