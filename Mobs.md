@@ -71,6 +71,7 @@ example_mob:
 
 #### Armor
 Sets the base value of the mob's armor attribute. Minecraft caps the max armor value to 30.
+Whenever the mob is holding or wearing an item with attribute modifiers will also affect the total armor.
 ```yml
 example_mob:
   Type: zombie
