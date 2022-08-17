@@ -283,7 +283,7 @@ MerchantTest:
 Examples
 -----------------------------
 
-More mobs examples can be found in the [Examples](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples) section.
+More mobs examples can be found in the [Examples](examples/Common-Examples#mobs) section.
 <!--
 Please keep in mind that you in no way have to use all of these mob
 options and that this is an advanced example designed to show the
