@@ -7,30 +7,6 @@ Most of the options below are optional, meaning you don't have to configure the 
 list every time you are creating a new mob. All that really is required
 are the `Internal_Name` and the `Type`.
 
-```yml
-internal_mobname:
-  Type:
-  Display:
-  Health:
-  Armor:
-  Damage:
-  BossBar:
-  Faction:
-  Mount:
-  Options:
-  Modules:
-  AIGoalSelectors:
-  AITargetSelectors:
-  Drops:
-  DamageModifiers:
-  Equipment:
-  KillMessages:
-  LevelModifiers:
-  Disguise:
-  Skills:
-  Trades:
-```
-
 Breaking Down The Mob Configuration
 -------------------------
 
@@ -46,11 +22,11 @@ This field determines which entity type your creation will be based upon.
 A complete list of available [entity types] can be found on spigot javadocs.\
 **Note: Several mob options for new entity types that Minecraft adds to the base game will not function until Mythic adds support for said entity types.**
 ```yml
-example_name:
+example_mob:
   Type: zombie
 ```
 ```yml
-another_name:
+another_mob:
   Type: ZOMBIE
 ```
 
@@ -59,12 +35,12 @@ Sets the display name of the mob that will appear as the mob's name tag above it
 This option supports color codes and [placeholders].
 The mob's name will not change or update on its own, you have to use [setname] mechanic to change or update it.
 ```yml
-example_name:
+example_mob:
   Type: zombie
   Display: Example Mob
 ```
 ```yml
-example_name:
+example_mob:
   Type: zombie
   Display: Example Mob <caster.hp> <red><&heart></red>
 ```
@@ -75,7 +51,7 @@ Mythic doesn't have any limitations on max health but Spigot, however, caps the 
 This can easily be changed in spigot's configuration file, `server_root\spigot.yml`.
 Whenever the mob is holding or wearing an item with attribute modifiers will also affect the total max health.
 ```yml
-example_name:
+example_mob:
   Type: zombie
   Display: Example Mob
   Health: 30
@@ -87,7 +63,7 @@ Sets the base value of the mob's attack damage attribute.
 This attribute will never affect damage done by ranged attacks, like arrows or potions.
 Whenever the mob is holding or wearing an item with attribute modifiers will also affect the mob's melee damage.
 ```yml
-example_name:
+example_mob:
   Type: zombie
   Display: Example Mob
   Damage: 20
@@ -96,7 +72,7 @@ example_name:
 #### Armor
 Sets the base value of the mob's armor attribute. Minecraft caps the max armor value to 30.
 ```yml
-example_name:
+example_mob:
   Type: zombie
   Display: Tanker
   Armor: 25
@@ -107,7 +83,7 @@ Defines and controls the health bar of the mob.
 Looks like the Ender Dragon's or the Wither's health bar, but is configurable in appearance.
 See [BossBar](Mobs/BossBar)
 ```yml
-example_name:
+example_mob:
   Type: zombie
   Armor: 25
   BossBar:
@@ -125,7 +101,7 @@ example_name:
 Sets the mob's faction, which can be used for advanced [Custom AI] configurations or [targeter filtering].
 Must be alphanumeric and is case-sensitive.
 ```yml
-example_name:
+example_mob:
   Type: zombie
   Armor: 25
   Faction: Tank
@@ -137,7 +113,7 @@ The mob will automatically ride on the defined mount when it spawns.
 ```yml
 another_example:
   Type: chicken
-  Mount: example_name
+  Mount: example_mo
 ```
 
 #### Options
@@ -155,7 +131,7 @@ slow_persistent_mob:
 #### Modules
 This field allows you to enable or disable modules, like [Threat Tables] and/or [Immunity Tables]
 ```yml
-example_name:
+example_mob:
   Type: husk
   Modules:
     ThreatTables: false
@@ -236,7 +212,7 @@ example_mob:
 #### KillMessages
 Customize the [kill messages] that appears when the mob kills a player.
 ```yml
-example_name:
+example_mob:
   Type: zombie
   Display: Tanker
   KillMessages:
@@ -247,7 +223,7 @@ example_name:
 #### LevelModifiers
 MythicMobs can have [levels](Mobs/Levels) and this field is used to determine which kinds of statistics they should gain on when their levels change.
 ```yml
-example_name:
+example_mob:
   Type: zombie
   Display: Dummy
   LevelModifiers:
