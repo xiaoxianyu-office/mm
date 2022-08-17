@@ -1,13 +1,11 @@
-Mobs
-====
 MythicMobs is based all around customized entities/mobs and there are
 plenty of options, attributes that you can utilize. Below you find a
 complete list of options/attributes that can be added to your custom
 creations.
 
-Most of them are optional, meaning you don't have configure the entire
+Most of them are optional, meaning you don't have to configure the entire
 list every time you are creating a new mob. All that really is required
-are the *internal\_mobname* and the *Type*.
+are the `Internal_Name` and the `Type`.
 
 ```yml
 internal_mobname:
@@ -33,194 +31,262 @@ internal_mobname:
   Trades:
 ```
 
-Breaking down the options
+Breaking down the mob options
 -------------------------
 
-**internal\_mobname:**
-
--   This string will be how your mob will be referenced internally in
-    MythicMobs and can be any name you like.
--   Must be alphanumerical and is case sensitive.
--   Examples:
-    -   **super\_zombie:**
-    -   **SuperZombie:**
-    -   **superzombie:**
-    -   **SuPeRzOmBiE:**
-
-
-**Type: \[mobtype\]**
-
--   This field determines which mobtype your creation will be based
-    upon.
--   Complete list of available entities: [Mob
-    Types](/databases/mobs/types)
--   Examples:
-    -   **Type: zombie**
-    -   **Type: SKELETON**
-
-**Display: '\[display\_name\]'**
-
--   Sets the display name of the mob that will appear as the mobs name
-    tag above it's head.
--   Supports color codes and variables:
-    [Variables](/skills/stringvariables)(but variables read only once after birth)
--   Use [setName](/skills/mechanics/setname) to change display name
--   Must be encased by single quotes.
--   For using single quotes inside of the name, you can use the
-    &lt;&sq&gt; variable.
--   Examples:
-    -   **Display: 'Super Zombie'**
-    -   **Display: '&eSuper Zombie'**
-    -   **Display: '&cSuper Zombie&r - &lt;mob.level&gt;'**
-
-**Health: \[number\]**
-
--   Sets the max health of the mob.
--   MythicMobs doesn't have any limitations on max health. Spigot
-    however will by default cap max health at "2048". This can easily
-    be changed in the Spigot configuration file *spigot.yml*.
--   Examples:
-    -   **Health: 200**
-
-**Damage: \[number\]**
-
--   Sets the base melee damage of the mob.
--   1 damage = 0.5 hearts, so a mob with 6 damage will deal 3 full hearts
-    of damage.
--   This attribute will never affect damage done by ranged attacks, like
-    arrows or potions. It's only meant for melee damage.
--   If the mob is holding a weapon or tool, the damage from this attribute will be added onto the base 
-    damage of the item.
--   Examples:
-    - **Damage: 10**
-
-**Armor: \[number\]**
-
-- Will reduce any damage the mob takes by the specified amount.
-- Max vanilla armor is 30.
-- 1 damage = 0.5 hearts.
-- Examples:
-    -   **Armor: 7**
-
-**BossBar:**
-
--   Defines and controls the healthbar of the mob. Looks like the
-    Enderdragon's and Wither's health bar, but is configurable in
-    appearance. See [BossBar](/databases/misc/bossbar).
-
-**Faction: \[name\]**
-
--   Sets the faction of the mob, which can be used for advanced AI
-    configurations.
--   Must be alphanumerical and is case sensitive.
--   Examples:
-    -   **Faction: SuperZombies**
-    -   **Faction: super\_zombies**
-
-**Mount: \[internal\_mobname\]**
-
--   Sets the mount of your mob, must be another MythicMob.
--   The mob will automatically ride on the defined mount when it spawns.
--   Examples:
-
-<!-- -->
-
-        * **Mount: super_zombie_horse**
-
-**Options:**
-
--   This is a special field which comes with numerous sub-options, like
-    determining if the mob should despawn, setting knockback resistance,
-    follow range, movement speed and many many more!
--   A complete list of all available options: [Mob
-    Options](/databases/mobs/options)
-
-**Modules:**
-
--   This field allows you to add modules that are used to enable
-    [Threat Tables](/databases/mobs/modules/threattables) and/or
-    [Immunity Tables](/databases/mobs/modules/immunitytables).
-
-**AIGoalSelectors:**
-
--   This field is used to customize the AI goals of the mob, i.e. what the mob will try to do.
--   [Custom AI](/Mobs/Custom-AI#ai-goal-selectors)
-
-**AITargetSelectors:**
-
--   This field is used to customize the AI targets of the mob.
--   [Custom AI](/Mobs/Custom-AI#ai-target-selectors)
-
-**Drops:**
-
--   Used to add custom drops to your mob.
--   Can be vanilla items, mythic items, experience points, cross-plugin
-    items (if supported) or even custom drop tables with their own
-    condition system.
--   See [Drops Overview](/drops/Drops.md) for more
-    information.
-<!--
-**DropsPerLevel:**
-
--   Drops per level work just like regular drops, but the amount of
-    drops will increase in a linear relation to the level of the mob.
--   This field is also covered in [Drops
-    Overview](/databases/drops/overview). Mob levels are covered in [Mob
-    Levels](/databases/mobs/levels).
--   This option was removed in 4.4; please use BonusLevelItems in drop
-    tables instead.
--->
-**DamageModifiers:**
-
--   This field allows for full control over how much damage the mob takes
-    from different causes.
--   For example, DamageModifiers can be used to make the mob immune to melee attacks, but
-    very weak to ranged attacks.
--   See [Damage Modifiers](/Mobs/DamageModifiers) for a
-    complete list of options.
-
-**Equipment:**
-
--   Used to equip the mob with vanilla items or mythic items upon its
-    initial spawn.
--   See [Equipment](/Mobs/Equipment) for a complete list of
-    options.
-
-**KillMessages:**
-
--   Allows you to customize the broadcasted kill messages that appear
-    when the mob kills a player.
--   [Custom Kill Messages](/Mobs/KillMessages)
-
-**LevelModifiers:**
-
--   MythicMobs can have levels and this field is used to determine which
-    kinds of statistics they should gain on which level.
--   [Mob Levels](/Mobs/Levels)
-
-**Disguise:**
-
--   This field requires the plugin "LibsDisguises" to be installed and
-    functioning on your server.
--   Used to make mobs appear like other entities.
--   [Add-on: Disguises](/Mobs/Disguises)
-
-**Skills:**
-
--   The skills section is used to determine which skills the mob can
-    utilize and when it will do so.
--   See [Skills Overview](/Skills/Start) to get started on making your
-    own skills.
-
-**Trades:**
-
-- Allows you to customize villager trades. Villagers must have certain professions to be able to trade, and some items may require the villager to be a certain level. If you want to use MMOItems in villager trades, use `mmoitems.TYPE.ID`. 
+### Internal_Name
+This string will be how your mob will be referenced internally in MythicMobs and can be any name you like.
+Must be a unique name and does not clash with other internal mob names, **NO SPACES ALLOWED**.
+```yml
+example_name:
 ```
+
+### Type
+This field determines which entity type your creation will be based upon.
+A complete list of available [entity types] can be found on spigot javadocs.\
+**Note: Several mob options for new entity types that Minecraft adds to the base game will not function until Mythic adds support for said entity types.**
+```yml
+example_name:
+  Type: zombie
+```
+```yml
+another_name:
+  Type: ZOMBIE
+```
+
+### Display
+Sets the display name of the mob that will appear as the mob's name tag above its head.
+This option supports color codes and [placeholders].
+The mob's name will not change or update on its own, you have to use [setname] mechanic to change or update it.
+```yml
+example_name:
+  Type: zombie
+  Display: Example Mob
+```
+```yml
+example_name:
+  Type: zombie
+  Display: Example Mob <caster.hp> <red><&heart></red>
+```
+
+### Health
+Sets the base value of the mob's max health attribute.
+Mythic doesn't have any limitations on max health but Spigot, however, caps the max health at `2048`.
+This can easily be changed in spigot's configuration file, `server_root\spigot.yml`.
+Whenever the mob is holding or wearing an item with attribute modifiers will also affect the total max health.
+```yml
+example_name:
+  Type: zombie
+  Display: Example Mob
+  Health: 30
+```
+
+### Damage
+Sets the base value of the mob's attack damage attribute.
+1 damage equals to 0.5 hearts, so a mob with 6 damage will deal 3 full hearts of damage.
+This attribute will never affect damage done by ranged attacks, like arrows or potions.
+Whenever the mob is holding or wearing an item with attribute modifiers will also affect the mob's melee damage.
+```yml
+example_name:
+  Type: zombie
+  Display: Example Mob
+  Damage: 20
+```
+
+### Armor
+Sets the base value of the mob's armor attribute. Minecraft caps the max armor value to 30.
+```yml
+example_name:
+  Type: zombie
+  Display: Tanker
+  Armor: 25
+```
+
+### BossBar
+Defines and controls the health bar of the mob.
+Looks like the Ender Dragon's or the Wither's health bar, but is configurable in appearance.
+See [BossBar](Mobs/BossBar)
+```yml
+example_name:
+  Type: zombie
+  Armor: 25
+  BossBar:
+    Enabled: true
+    Title: Tanker
+    Range: 20
+    Color: RED
+    Style: NOTCHED_6
+    CreateFog: true
+    DarkenSky: true
+    PlayMusic: true
+```
+
+### Faction
+Sets the mob's faction, which can be used for advanced [Custom AI] configurations or [targeter filtering].
+Must be alphanumeric and is case-sensitive.
+```yml
+example_name:
+  Type: zombie
+  Armor: 25
+  Faction: Tank
+```
+
+### Mount
+Sets the mount of your mob, must be another MythicMob.
+The mob will automatically ride on the defined mount when it spawns.
+```yml
+another_example:
+  Type: chicken
+  Mount: example_name
+```
+
+### Options
+This is a special field which comes with numerous sub-options, like determining if the mob should despawn,
+setting knockback resistance, follow range, movement speed and many more.
+A list of available mob options can be found in the [Mob Options](Mobs/Options) page
+```yml
+slow_persistent_mob:
+  Type: husk
+  Options:
+    MovementSpeed: 0.025
+    Despawn: PERSISTENT
+```
+
+### Modules
+This field allows you to enable or disable modules, like [Threat Tables] and/or [Immunity Tables]
+```yml
+example_name:
+  Type: husk
+  Modules:
+    ThreatTables: false
+    ImmunityTables: false
+```
+
+### AIGoalSelectors
+Modifies and customizes the [AI goals] of the mob.
+```yml
+dummy_mob:
+  Type: zombie
+  AIGoalSelectors:
+    - clear
+```
+```yml
+passive_mob:
+  Type: zombie
+  AIGoalSelectors:
+    - clear
+    - randomstroll
+    - randomlookaround
+```
+
+### AITargetSelectors
+Modifies and customizes the [AI targets] of the mob.
+```yml
+neutral_mob:
+  Type: zombie
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - randomstroll
+    - randomlookaround
+  AITargetSelectors:
+    - clear
+    - attacker
+```
+
+### Drops
+Add or completely modify the mob loot drops.
+Can be vanilla items, mythic items, experience points, cross-plugin items (if supported), or even custom drop tables with their own condition system.
+See [Drops & DropTables](drops/Drops) for more information.
+```yml
+example_mob:
+  Type: zombie
+  Options:
+    PreventOtherDrops: true
+  Drops:
+    - diamond 32 1
+    - netherite_ingot 12 0.5
+```
+
+### DamageModifiers
+Modifies how much damage the mob will take from different damage causes.
+For example, DamageModifiers can be used to make the mob immune to melee attacks, but weak to ranged attacks.
+See [Damage Modifiers](Mobs/DamageModifiers) for more information.
+```yml
+example_mob:
+  Type: zombie
+  DamageModifiers:
+    - ENTITY_ATTACK 0
+    - PROJECTILE 1.25
+```
+
+### Equipment
+Equips the mob with vanilla items or mythic items when it first spawns.
+See [Equipment](Mobs/Equipment) for more information.
+```yml
+example_mob:
+  Type: zombie
+  Options:
+    PreventRandomEquipment: true
+  Equipment:
+    - diamond_sword HAND
+    - diamond_helmet{name=<green>COMMON</green> helmet} HEAD
+```
+
+### KillMessages
+Customize the [kill messages] that appears when the mob kills a player.
+```yml
+example_name:
+  Type: zombie
+  Display: Tanker
+  KillMessages:
+    - <caster.name> yeeted <target.name>!!
+    - You're too weak <target.name>!!
+```
+
+### LevelModifiers
+MythicMobs can have [levels](Mobs/Levels) and this field is used to determine which kinds of statistics they should gain on when their levels change.
+```yml
+example_name:
+  Type: zombie
+  Display: Dummy
+  LevelModifiers:
+    Damage: 2
+    Health: 0.25
+```
+
+### Disguise
+Changes the appearance of the mob to be like other entity types.
+Requires the plugin [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81/) to be installed and functioning on your server.
+See [Add-on: Disguises](Mobs/Disguises) for more information.
+```yml
+#This mob acts like a zombie but looks like a chicken
+example_mob:
+  Type: zombie
+  Disguise: chicken
+```
+
+### Skills
+Skills are an integral feature of Mythic. All mobs are able to have skills of various types that can be triggered under different circumstances with varying
+conditions. The Mythic skill system is quite intuitive once you get used to it, and can be used to create anything from simple mobs to incredibly complex bosses.
+See [Skills](Skills/Skills) to get started on making your own skills.
+```yml
+#swaps locations with the player that right-clicked the mob
+example_mob:
+  Type: zombie
+  Skills:
+    - swap{} @trigger ~onInteract
+```
+
+### Trades
+Customizes the villager trades.
+Villagers must have a profession and a profession level of 2 to be able to keep its custom trades.
+See [Trades](Mobs/Trades) for more information.
+
+```yml
 MerchantTest:
   Type: VILLAGER
   Display: '&6Merchant Test'
-  Health: 20
-  Faction: tester 
   Options:
     Profession: CLERIC
     Type: DESERT
@@ -237,11 +303,11 @@ MerchantTest:
       MaxUses: 1
 ```
 
-Example with all options used
+Examples
 -----------------------------
 
-More mobs can be found in the [Examples](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples) section.
-
+More mobs examples can be found in the [Examples](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mob-Examples) section.
+<!--
 Please keep in mind that you in no way have to use all of these mob
 options and that this is an advanced example designed to show the
 possibilities. All that you need to apply is whatever you want for you
@@ -297,3 +363,14 @@ mob-type. After that it's completely up to you.
      - sound{s=entity.zombie.hurt;v=1;p=0} ~onDamaged
      - e:particles{p=cloud;a=50;s=0.05} ~onDeath
 ```
+-->
+[entity types]: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+[setname]: Skills/mechanics/setname
+[placeholders]: Skills/Placeholders
+[targeter filtering]: Skills/Targeters#targeter-options
+[Custom AI]: Mobs/Custom-AI
+[Threat Tables]: Mobs/ThreatTables
+[Immunity Tables]: Mobs/ImmunityTables
+[AI goals]: /Mobs/Custom-AI#ai-goal-selectors
+[AI targets]: /Mobs/Custom-AI#ai-target-selectors
+[kill messages]: Mobs/KillMessages

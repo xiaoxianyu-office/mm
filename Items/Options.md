@@ -1,9 +1,11 @@
-Item Options
-============
-
-This is a database of all Options available when creating an item in
-Mythic Mobs. They are put under the *Options:*-tag inside
-item-configurations.
+All available options will be listed here.
+These options must be placed under the `Options:` tag inside your item configurations.
+```yml
+example_item:
+  Id: diamond
+  Options:
+    SomeOption: value
+```
 
 Universal Options
 -----------------

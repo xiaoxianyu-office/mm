@@ -80,7 +80,7 @@ ArmoredZombie:
 Our little Armored Zombie is still well protected against projectile and melee attacks, but we have given him a weakness to magic (splash health potions) to compensate.
 
 ——————-
-Our second example is a fire elemental- not only does this mob not take damage from burning, it also heals health when standing in fire, and regains even more health when in lava. Note: This DOES NOT work on Nether mobs as they don't take damage from fire at all, preventing them from having their fire and lava damage modified.
+Our second example is a fire elemental, not only does this mob not take damage from burning, it also heals health when standing in fire, and regains even more health when in lava. Note: This DOES NOT work on Nether mobs as they don't take damage from fire at all, preventing them from having their fire and lava damage modified.
 
 ```
 FireElemental:
