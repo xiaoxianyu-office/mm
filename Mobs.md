@@ -3,7 +3,7 @@ plenty of options, attributes that you can utilize. Below you find a
 complete list of options/attributes that can be added to your custom
 creations.
 
-Most of them are optional, meaning you don't have to configure the entire
+Most of the options below are optional, meaning you don't have to configure the entire
 list every time you are creating a new mob. All that really is required
 are the `Internal_Name` and the `Type`.
 
