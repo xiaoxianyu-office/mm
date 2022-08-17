@@ -284,7 +284,7 @@ Examples
 -----------------------------
 
 More mobs examples can be found in the [Examples](examples/Common-Examples#mobs) section.
-<!--
+<!--  ONLY NEED TO LINK USERS TO EXAMPLES SECTION
 Please keep in mind that you in no way have to use all of these mob
 options and that this is an advanced example designed to show the
 possibilities. All that you need to apply is whatever you want for you

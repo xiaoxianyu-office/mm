@@ -9,7 +9,6 @@
 * [Packs](Packs)
 ### [Mobs](Mobs)
   * [Overview](Mobs)
-  * [Types](Mobs/Types)
   * [Mob Options](Mobs/Options)
   * [Mob Levels](Mobs/Levels)
   * [Mob Factions](Mobs/Factions)
