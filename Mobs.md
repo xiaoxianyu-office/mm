@@ -34,14 +34,14 @@ internal_mobname:
 Breaking Down The Mob Configuration
 -------------------------
 
-### Internal_Name
+#### Internal_Name
 This string will be how your mob will be referenced internally in MythicMobs and can be any name you like.
 Must be a unique name and does not clash with other internal mob names, **NO SPACES ALLOWED**.
 ```yml
 example_name:
 ```
 
-### Type
+#### Type
 This field determines which entity type your creation will be based upon.
 A complete list of available [entity types] can be found on spigot javadocs.\
 **Note: Several mob options for new entity types that Minecraft adds to the base game will not function until Mythic adds support for said entity types.**
@@ -54,7 +54,7 @@ another_name:
   Type: ZOMBIE
 ```
 
-### Display
+#### Display
 Sets the display name of the mob that will appear as the mob's name tag above its head.
 This option supports color codes and [placeholders].
 The mob's name will not change or update on its own, you have to use [setname] mechanic to change or update it.
@@ -69,7 +69,7 @@ example_name:
   Display: Example Mob <caster.hp> <red><&heart></red>
 ```
 
-### Health
+#### Health
 Sets the base value of the mob's max health attribute.
 Mythic doesn't have any limitations on max health but Spigot, however, caps the max health at `2048`.
 This can easily be changed in spigot's configuration file, `server_root\spigot.yml`.
@@ -81,7 +81,7 @@ example_name:
   Health: 30
 ```
 
-### Damage
+#### Damage
 Sets the base value of the mob's attack damage attribute.
 1 damage equals to 0.5 hearts, so a mob with 6 damage will deal 3 full hearts of damage.
 This attribute will never affect damage done by ranged attacks, like arrows or potions.
@@ -93,7 +93,7 @@ example_name:
   Damage: 20
 ```
 
-### Armor
+#### Armor
 Sets the base value of the mob's armor attribute. Minecraft caps the max armor value to 30.
 ```yml
 example_name:
@@ -102,7 +102,7 @@ example_name:
   Armor: 25
 ```
 
-### BossBar
+#### BossBar
 Defines and controls the health bar of the mob.
 Looks like the Ender Dragon's or the Wither's health bar, but is configurable in appearance.
 See [BossBar](Mobs/BossBar)
@@ -121,7 +121,7 @@ example_name:
     PlayMusic: true
 ```
 
-### Faction
+#### Faction
 Sets the mob's faction, which can be used for advanced [Custom AI] configurations or [targeter filtering].
 Must be alphanumeric and is case-sensitive.
 ```yml
@@ -131,7 +131,7 @@ example_name:
   Faction: Tank
 ```
 
-### Mount
+#### Mount
 Sets the mount of your mob, must be another MythicMob.
 The mob will automatically ride on the defined mount when it spawns.
 ```yml
@@ -140,7 +140,7 @@ another_example:
   Mount: example_name
 ```
 
-### Options
+#### Options
 This is a special field which comes with numerous sub-options, like determining if the mob should despawn,
 setting knockback resistance, follow range, movement speed and many more.
 A list of available mob options can be found in the [Mob Options](Mobs/Options) page
@@ -152,7 +152,7 @@ slow_persistent_mob:
     Despawn: PERSISTENT
 ```
 
-### Modules
+#### Modules
 This field allows you to enable or disable modules, like [Threat Tables] and/or [Immunity Tables]
 ```yml
 example_name:
@@ -162,7 +162,7 @@ example_name:
     ImmunityTables: false
 ```
 
-### AIGoalSelectors
+#### AIGoalSelectors
 Modifies and customizes the [AI goals] of the mob.
 ```yml
 dummy_mob:
@@ -179,7 +179,7 @@ passive_mob:
     - randomlookaround
 ```
 
-### AITargetSelectors
+#### AITargetSelectors
 Modifies and customizes the [AI targets] of the mob.
 ```yml
 neutral_mob:
@@ -194,7 +194,7 @@ neutral_mob:
     - attacker
 ```
 
-### Drops
+#### Drops
 Add or completely modify the mob loot drops.
 Can be vanilla items, mythic items, experience points, cross-plugin items (if supported), or even custom drop tables with their own condition system.
 See [Drops & DropTables](drops/Drops) for more information.
@@ -208,7 +208,7 @@ example_mob:
     - netherite_ingot 12 0.5
 ```
 
-### DamageModifiers
+#### DamageModifiers
 Modifies how much damage the mob will take from different damage causes.
 For example, DamageModifiers can be used to make the mob immune to melee attacks, but weak to ranged attacks.
 See [Damage Modifiers](Mobs/DamageModifiers) for more information.
@@ -220,7 +220,7 @@ example_mob:
     - PROJECTILE 1.25
 ```
 
-### Equipment
+#### Equipment
 Equips the mob with vanilla items or mythic items when it first spawns.
 See [Equipment](Mobs/Equipment) for more information.
 ```yml
@@ -233,7 +233,7 @@ example_mob:
     - diamond_helmet{name=<green>COMMON</green> helmet} HEAD
 ```
 
-### KillMessages
+#### KillMessages
 Customize the [kill messages] that appears when the mob kills a player.
 ```yml
 example_name:
@@ -244,7 +244,7 @@ example_name:
     - You're too weak <target.name>!!
 ```
 
-### LevelModifiers
+#### LevelModifiers
 MythicMobs can have [levels](Mobs/Levels) and this field is used to determine which kinds of statistics they should gain on when their levels change.
 ```yml
 example_name:
@@ -255,7 +255,7 @@ example_name:
     Health: 0.25
 ```
 
-### Disguise
+#### Disguise
 Changes the appearance of the mob to be like other entity types.
 Requires the plugin [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81/) to be installed and functioning on your server.
 See [Add-on: Disguises](Mobs/Disguises) for more information.
@@ -266,7 +266,7 @@ example_mob:
   Disguise: chicken
 ```
 
-### Skills
+#### Skills
 Skills are an integral feature of Mythic. All mobs are able to have skills of various types that can be triggered under different circumstances with varying
 conditions. The Mythic skill system is quite intuitive once you get used to it, and can be used to create anything from simple mobs to incredibly complex bosses.
 See [Skills](Skills/Skills) to get started on making your own skills.
@@ -278,7 +278,7 @@ example_mob:
     - swap{} @trigger ~onInteract
 ```
 
-### Trades
+#### Trades
 Customizes the villager trades.
 Villagers must have a profession and a profession level of 2 to be able to keep its custom trades.
 See [Trades](Mobs/Trades) for more information.
