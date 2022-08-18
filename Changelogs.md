@@ -72,7 +72,7 @@ General
 Mechanics
 ---------
 ### NEW: EndProjectile
-- Terminates the projectile. Only usable in projectile mechanic.
+- Terminates the projectile. Only usable in projectile mechanics.
 
 ### FillChest
 - Can now target other containers, not just chests
