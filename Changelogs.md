@@ -1,5 +1,65 @@
 5.2.0 (Development)
 =====
+General
+-------
+- ???
+
+Bug Fixes/Other
+--------------
+- ???
+
+5.1.2
+=====
+
+General
+-------
+- Added 1.19.x support
+- Added `CancelIfNoTargets: false` option for meta-skills, will continue executing the skill even if TargetConditions prune all
+  possible targets.
+- Added `Base: [level]`, `ScaleVanillaMobs: true`,`BelowZero: [modifier]` options for world level scaling
+
+Mobs
+---
+- Added Options.FlyingSpeed for flying mobs
+- Fixed some issues with attributes
+
+Mechanics
+--------
+### Auras
+- Fixed doEndSkillOnTerminate=false not working
+
+### Damaging Mechanics
+- Fixed `ignoreenchants` spelling
+
+Conditions
+---------
+### Altitude
+- Improved altitude condition to work in the nether and underground
+- MaxHeight option is now set to 30 by default
+
+### BowTension
+- Fixed an error with bowtension needing mythiclib methods
+
+API
+---
+- Added MythicHealMechanicEvent
+- Added several methods to Pack api
+- Added a few methods to UUIDUtil, CompoundTag & CompoundTagBuilder
+
+Bug Fixes/Other
+---------------
+- Updated to the latest adventure snapshot
+- Improved Skill logging
+- Fixed crashing caused by FillChest mechanic
+- Added more support for some sculk particles
+- Fixed BukkitEntity#getMaxHealth getting the incorrect value
+- Fixed issues with stun mechanic
+- Fixed NPE in distance condition
+- Fixed NPE with mount mechanic
+
+
+5.1.1
+=====
 
 General
 -------
@@ -7,12 +67,46 @@ General
 
 Mechanics
 ---------
+### NEW: EndProjectile
+- Terminates the projectile. Only usable in projectile mechanic.
+
+### FillChest
+- Can now target other containers, not just chests
+- Added `shouldStack=true/false` option
+
+### OnDamaged
+- Fixed ondmg deflect not checking subhitbox
+
+### ParticleLine
+- Added maxdistance to particleline effect (defaults to 256)
+
 ### Projectile
-- added arrowType=NORMAL,SPECTRAL,TRIDENT option if bulletType is an arrow
+- Added arrowType=NORMAL,SPECTRAL,TRIDENT to Projectiles
+- Fixed projectile max duration
+- Allow caster placeholders to be evaluated in projectile hit conditions
+
+### TakeItem
+- Can now target other containers instead of just player inventories
+
+Conditions
+----------
+### HasItem
+- Can also check other containers
+
+API
+---
+- Added several methods to SkillConditions
 
 Bug Fixes/Other
 ---------------
-- ???
+- Added <skill.var.interval> or <skill.var.itr> to mechanics using repeat & repeatInterval options
+- Fixed NPE for MythicDungeons world unloading
+- Fixed player not keeping same pitch/yaw when using teleport mechanic
+- Allow string lists in item NBT section
+- Added placeholder support to item attributes sections
+- Fixed spawner RadiusY not saving
+- Added Base level option to world scaling config
+- Added placeholder support to custom skill parameters
 
 5.1.0
 =====
