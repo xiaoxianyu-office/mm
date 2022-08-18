@@ -25,6 +25,10 @@ Mobs
 
 Mechanics
 --------
+### NEW: ShowEntity
+- Shows the hidden caster to the targeted players
+- `- showEntity{} @NearestPlayer{r=10}`
+
 ### Auras
 - Fixed doEndSkillOnTerminate=false not working
 
