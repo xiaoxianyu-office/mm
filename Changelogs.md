@@ -6,7 +6,8 @@ General
 
 Bug Fixes/Other
 --------------
-- ???
+- Fixed item attributes not working on spigot server
+- Fixed an issue in BukkitEntity#setCustomName if the server version is not supported
 
 5.1.2
 =====
