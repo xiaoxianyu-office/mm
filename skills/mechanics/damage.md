@@ -4,7 +4,6 @@ Mechanic: Damage
 Damages the targeted entity.
 
 ### Attributes
-
 | Attribute        | Aliases | Description                                                                                                         | Default       |
 |------------------|---------|---------------------------------------------------------------------------------------------------------------------|---------------|
 | amount           | a       | The amount of damage to deal                                                                                        | 1             |
