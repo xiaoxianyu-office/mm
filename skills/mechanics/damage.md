@@ -19,7 +19,7 @@ Damages the targeted entity.
 This attribute is only available in newer MM 5.0 builds.
 All available damage causes can be found on [spigot javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html)
 
-Note: Only `entity_attack`, `entity_sweep_attack`, `thorns`, `sonic_boom`, `entity_explosion`, and `projectile`, 
+Note: Only `entity_attack`, `entity_sweep_attack`, `thorns`, `sonic_boom`, `entity_explosion`, and `projectile` will return an entity damager, 
 meaning that `<trigger.name>` will not return "Unknown".
 
 ### Elements
