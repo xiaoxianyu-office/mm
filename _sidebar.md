@@ -1,10 +1,10 @@
-* [[Home]]
-* [[Changelogs]]
+* [Home](home)
+* [Changelogs](Changelogs)
 * [Premium Features](Premium-Features)
-* [[Commands and Permissions]]
+* [Commands and Permissions](Commands-and-Permissions)
 * [FAQ / Common Issues](FAQ)
 * [Mythic Add-ons](Add-ons)
-* [[Compatible Plugins]]
+* [Compatible Plugins](Compatible-Plugins)
 * [API Information](API)
 * [Packs](Packs)
 ### [Mobs](Mobs)
@@ -42,7 +42,7 @@
 ### [Drops & DropTables](drops/Drops)
 
 ### Spawning
-  * [[Spawners]]
-  * [[Random Spawns]]
+  * [Spawners](Spawners)
+  * [Random Spawns](Random-Spawns)
 
 ### [Examples](examples/Common-Examples)
