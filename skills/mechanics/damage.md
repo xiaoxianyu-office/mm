@@ -5,33 +5,22 @@ Damages the targeted entity.
 
 ### Attributes
 
-| Attribute        | Aliases | Description                         | Default |
-|------------------|---------|-------------------------------------|---------|
-| amount           | a       | The amount of damage to deal        | 1       |
-| ignoreArmor      | ia      | Whether or not to ignore armor      | false   |
-| preventknockback | pkb, pk | Whether or not to prevent knockback | false   |
-| preventimmunity  | pi      | Whether or not to ignore immunities | false   |
-| element          | type    | Sets the type of damage to be inflicted | false   |
-| damagecause      | cause   | Sets the damage cause for this damage mechanic. (This option is only available for 1.17+) | entity_attack |
-| ignoreenchants   | ie      | Whether or not to ignore enchantments when calculating total damage. (This option is only available for 1.19+) | false |
+| Attribute        | Aliases | Description                                                                                                         | Default       |
+|------------------|---------|---------------------------------------------------------------------------------------------------------------------|---------------|
+| amount           | a       | The amount of damage to deal                                                                                        | 1             |
+| ignoreArmor      | ia      | Whether or not to ignore armor, but will still use enchantment modifiers like when calculating total damage         | false         |
+| preventknockback | pkb, pk | Whether or not to prevent knockback                                                                                 | false         |
+| preventimmunity  | pi      | Whether or not to ignore immunities                                                                                 | false         |
+| element          | type    | Sets the type of damage to be inflicted                                                                             | false         |
+| damagecause      | cause   | Sets the damage cause for this damage mechanic.<br/> (This option is only available for 1.17+)                      | entity_attack |
+| ignoreenchants   | ie      | Whether or not to ignore enchantments when calculating total damage.<br/> (This option is only available for 1.19+) | false         |
 
 ### DamageCause
 This attribute is only available in newer MM 5.0 builds.
-Here are the available damage causes for now:
+All available damage causes can be found on [spigot javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html)
 
-```
-  - entity_attack
-  - thorns
-  - magic
-  - fire
-  - fire_tick
-  - fall
-  - freeze
-  - void
-  - dragon_breath
-  - lava
-  - hot_floor
-```
+Note: Only `entity_attack`, `entity_sweep_attack`, `thorns`, `sonic_boom`, `entity_explosion`, and `projectile`, 
+meaning that `<trigger.name>` will not return "Unknown".
 
 ### Elements
 As seen above, the damage mechanic offers the ability to set an "element" for the damage, like so:
@@ -39,7 +28,7 @@ As seen above, the damage mechanic offers the ability to set an "element" for th
     - damage{amount=10;element=FIRE} @target ~onUse
     - damage{amount=10;element=ICE} @target ~onUse
 
-This element can by named anything, and can be used in a mob's DamageModifiers to alter resistance to the damage type as needed:
+This element can buy named anything, and can be used in a mob's DamageModifiers to alter resistance to the damage type as needed:
 
     DamageModTest: 
       Type: COW 
@@ -74,7 +63,7 @@ Ice attacks like the example above. Which uses effects to make the
 targets of the mob appear as if they were frozen by using particles (On
 a repeating interval to create a sort of lingering frost effect as well)
 and inflicting Slowness level 7 (which is -105% movement speed.) slowing
-the mob to a halt. Additionally the mechanic inflicts 120 damage (60
+the mob to a halt. Additionally, the mechanic inflicts 120 damage (60
 hearts) to players within 6 blocks.
 
 ### Examples(Requires Premium)
