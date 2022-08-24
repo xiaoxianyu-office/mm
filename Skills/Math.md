@@ -46,4 +46,4 @@ Functions
 | principal value of the arc tangent of y/x, expressed in radians |   atan2(y, x)    |
 | random with limits                                              | random(min, max) |
 
-NOTE: You can request to add more operators and functions using by making a suggestion ticket in our [issues page](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/issues)
+NOTE: You can request to add more operators and functions by making a suggestion ticket in our [issues page](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/issues)
