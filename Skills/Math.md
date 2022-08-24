@@ -3,6 +3,7 @@ You can use math in most places that supports placeholders.
 
 Operators
 -----------
+Most of these operators can be found here https://www.objecthunter.net/exp4j/#Built-in_operators
 
 |         Operators         |  Example  |
 |:-------------------------:|:---------:|
@@ -17,6 +18,7 @@ Operators
 
 Functions
 ---------
+Most of these functions can be found here https://www.objecthunter.net/exp4j/#Built-in_functions
 
 | Functions                                                       |     Example      |
 |:----------------------------------------------------------------|:----------------:|
