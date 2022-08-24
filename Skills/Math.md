@@ -1,3 +1,6 @@
+Lets you make simple or advanced calculations. Any placeholders that returns a number is supported.
+You can use math in most places that supports placeholders.
+
 Operators
 -----------
 
@@ -17,7 +20,7 @@ Functions
 
 | Functions                                                       |     Example      |
 |:----------------------------------------------------------------|:----------------:|
-| absolute value                                                  |      abs(x)      |
+| the absolute value of (x)                                       |      abs(x)      |
 | arc cosine                                                      |     acos(x)      |
 | arc sine                                                        |     asin(x)      |
 | arc tangent                                                     |     atan(x)      |
@@ -26,8 +29,8 @@ Functions
 | cosine                                                          |      cos(x)      |
 | hyperbolic cosecant                                             |     csch(x)      |
 | euler's number raised to the power (e^x)                        |      exp(x)      |
-| nearest lower integer                                            |     floor(x)     |
-| logarithmus naturalis (base e                                   |      log(x)      |
+| nearest lower integer                                           |     floor(x)     |
+| logarithmus naturalis (base e)                                  |      log(x)      |
 | logarithm to base 2                                             |     log2(x)      |
 | logarithm to base 10                                            |     log10(x)     |
 | logarithm to base b                                             |     logb(x)      |
