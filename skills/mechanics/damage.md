@@ -7,7 +7,7 @@ Damages the targeted entity.
 | Attribute        | Aliases | Description                                                                                                         | Default       |
 |------------------|---------|---------------------------------------------------------------------------------------------------------------------|---------------|
 | amount           | a       | The amount of damage to deal                                                                                        | 1             |
-| ignoreArmor      | ia      | Whether or not to ignore armor, but will still use enchantment modifiers like when calculating total damage         | false         |
+| ignoreArmor      | ia      | Whether or not to ignore armor, but will still use enchantment modifiers when calculating total damage         | false         |
 | preventknockback | pkb, pk | Whether or not to prevent knockback                                                                                 | false         |
 | preventimmunity  | pi      | Whether or not to ignore immunities                                                                                 | false         |
 | element          | type    | Sets the type of damage to be inflicted                                                                             | false         |
