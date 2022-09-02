@@ -1,5 +1,5 @@
 This attribute is used to firework effects to a firework or firework_charge items.
-This attribute required for every firework or firework_charge items.
+This attribute is required for every firework or firework_charge items.
 
 ### Format
 ```yml
