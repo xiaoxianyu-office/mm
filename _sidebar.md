@@ -39,6 +39,7 @@
   * [Enchantments](Items/Enchantments)
   * [Potions](Items/Potions)
   * [Banner Layers](Items/Banner Layers)
+  * [Firework](/Items/Firework)
 ### [Drops & DropTables](drops/Drops)
 
 ### Spawning
