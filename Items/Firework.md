@@ -3,6 +3,8 @@ This attribute required for every firework or firework_charge items.
 
 ### Format
 ```yml
+ItemName:
+  Id: material
   Firework:
     Colors:
     FadeColors:
