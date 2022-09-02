@@ -16,7 +16,7 @@ Breaking Down The Firework Configuration
 ---------------------------------------
 
 ### Colors
-A list of primary colors to be added to the firework effect must be using RGB(red,green,blue) format
+A list of primary colors to be added to the firework effect. The colors must be using RGB(red,green,blue) format.
 ```yml
 # adds red(255,0,0), green(0,255,0), and blue(0,0,255) colors
 # to the firework effect
