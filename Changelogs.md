@@ -36,6 +36,7 @@ Bug Fixes/Other
 - Fixed item attributes not working on spigot servers
 - Fixed an issue in BukkitEntity#setCustomName if the server version is not supported
 - Added `<caster.children.size>` placeholder which returns the amount of children the caster currently has
+- Trying to fix some weird issues with onDamage aura
 
 5.1.2
 =====
