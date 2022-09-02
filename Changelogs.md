@@ -4,10 +4,38 @@ General
 -------
 - ???
 
+5.1.4
+=====
+Mechanics
+--------
+### NEW: SetRaiderPatrolLeader
+- Sets the raider patrol leader
+- setRaiderPatrolLeader{leader=true} @target
+
+### NEW: SetRaiderPatrolBlock
+- Sets the target raider to patrol the given location
+- setRaiderPatrolBlock @location
+
+### Damaging Mechanics
+- Fixed `ignoreEnchants` option
+- Added `FREEZE` damage cause
+- Fixed `preventKnockback` returning an unknown damager for some damage causes 
+- Fixed `preventImmunity` option not working as intended
+
+Conditions
+---------
+### NEW: isPatrolLeader
+- Checks if the target entity is the captain of a pillager group
+
 Bug Fixes/Other
 --------------
+- Fixed `preventStacking` item option
+- Fixed AI pathing with openDoor, breakDoor, float and fleeSun AI goals
+- Fixed the MythicHealMechanicEvent error being called async by making it only run when forced sync
+- Fixed guardian beam effect on 1.19
 - Fixed item attributes not working on spigot servers
 - Fixed an issue in BukkitEntity#setCustomName if the server version is not supported
+- Added `<caster.children.size>` placeholder which returns the amount of children the caster currently has
 
 5.1.2
 =====
