@@ -1,4 +1,4 @@
-This attribute is used to modify the firework effects to a firework or firework_charge items.
+This attribute is used to modify the firework effects of a firework or firework_charge items.
 This attribute is required for every firework or firework_charge items.
 
 ### Format
