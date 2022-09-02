@@ -184,12 +184,33 @@ example_item:
 ### **NBT**
 Sets what NBT tags to put on your items.
 This allows cross-over with a lot of other plugins, or just for storing custom information.
-You can change the type of the tag value, which are strings by default, by adding a prefix in-front of the value,
-or if it's a list of strings then you format it similar to the item lore.
+
+Before you add an NBT tag to your items, you have to understand [SNBT formatting](https://minecraft.fandom.com/wiki/NBT_format#SNBT_format).
+A tag value's type can be changed by adding a prefix to the tag value:
 
 | Prefixes | int/ | float/ | double/ | byte/ | bool/ | boolean/ |
 |----------|------|--------|---------|-------|-------|----------|
 
+Let's convert this snbt, `{name1:123,name2:"sometext1",name3:{subname1:456,subname2:"sometext2"}}`, to mythic formatting:
+
+```yml
+example_item:
+  Id: STICK
+  NBT:
+    name1: int/123
+    name2: sometext1
+    name3:
+      subname1: int/456
+      subname2: sometext2
+```
+
+```yml
+#An item with MYTHIC_TYPE tag
+example_item:
+  Id: stick
+  NBT:
+    MYTHIC_TYPE: example_item
+```
 
 ```yml
 example_item:
@@ -251,6 +272,22 @@ yet_another_example_item:
 
 The second sword will replace the first sword with the updated lore whenever a player interacts with it in their inventory.
 
+
+### Firework
+Sets several firework or firework_charge items.
+See [firework](/Items/Firework) for a break-down for each of its options.
+```yml
+example_item:
+  Id: firework
+  Firework:
+  Colors:
+    - 255,0,255
+    - 0,0,0
+  FadeColors:
+    - 200,0,0
+  Flicker: true
+  Trail: true
+```
 Examples
 --------
 
