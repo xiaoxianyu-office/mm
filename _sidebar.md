@@ -35,7 +35,7 @@
   * [Variables](Skills/Variables)
   * [Math](Skills/Math)
 
-### [Items](Items)
+### [Items](Items/Items)
 <!--* [Overview](Items)-->
   * [Options](Items/Options)
   * [Attributes](Items/Attributes)

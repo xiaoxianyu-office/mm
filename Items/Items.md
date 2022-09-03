@@ -157,7 +157,7 @@ example_item:
 ```
 
 #### **PotionEffects**
-Sets the potion effects of the item. These effects won't do anything if the [base item](Items#id) is not a `potion`, `splash_potion`, `lingering_potion`, or `tipped_arrow`.
+Sets the potion effects of the item. These effects won't do anything if the [base item](#id) is not a `potion`, `splash_potion`, `lingering_potion`, or `tipped_arrow`.
 See [Potions](/Items/Potions).
 ```yml
 example_item:
