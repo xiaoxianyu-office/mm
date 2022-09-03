@@ -1,7 +1,5 @@
-Skills
-======
-
-Skills are an integral feature of MythicMobs. All mobs (and items if you have the [Crucible] add-on) are able to have skills of various types that can be triggered under different circumstances with varying
+Skills are an integral feature of MythicMobs.
+All mobs (and items if you have the [Crucible] add-on) are able to have skills of various types that can be triggered under different circumstances with varying
 conditions. The MythicMob skill system is quite intuitive once you get used to it, and can be used to create anything from simple mobs to incredibly complex bosses.
 
 Skills are made up of several distinct parts:
@@ -13,7 +11,7 @@ Skills are made up of several distinct parts:
 -   [Conditions]
 
 Getting Started
-===============
+---------------
 
 So what makes a skill?
 
@@ -40,7 +38,7 @@ above. But what would a real mechanic look like? Here's a real example:
       Skills:
       - ignite{ticks=100} @target ~onAttack <50% 0.5
 
-Yikes! What does all of that mean? Lets take a look at what makes up
+Yikes! What does all of that mean? Let's take a look at what makes up
 this skill:
 
     Skills:
@@ -116,7 +114,7 @@ Some targeters also work hand-in-hand with certain triggers. For example, the @T
     Skills:
     - ignite{ticks=100} @Trigger ~onInteract
 
-**Note: Items have a different set of Triggers. [Click here to see which triggers work with Artifacts].**
+**Note: Items have a different set of Triggers. [Click here to see which triggers work with Crucible].**
 
 Health Modifiers
 ----------------
@@ -197,4 +195,4 @@ Once you get the hang of using individual base-skills, you can use Meta-Skills t
   [Triggers]: /Skills/Triggers/
   [Conditions]: /Skills/conditions/
   [Here is a list of all the targeters]: /Skills/Targeters/
-  [Click here to see which triggers work with Artifacts]: /Artifacts/Triggers
+  [Click here to see which triggers work with Crucible]: https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers

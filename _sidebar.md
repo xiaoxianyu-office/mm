@@ -1,4 +1,4 @@
-* [Home](home)
+**[Home](home)**
 * [Changelogs](Changelogs)
 * [Premium Features](Premium-Features)
 * [Commands and Permissions](Commands-and-Permissions)
@@ -7,6 +7,7 @@
 * [Compatible Plugins](Compatible-Plugins)
 * [API Information](API)
 * [Packs](Packs)
+
 ### [Mobs](Mobs)
 <!--* [Overview](Mobs)-->
   * [Mob Options](Mobs/Options)

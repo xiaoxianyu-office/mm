@@ -7,6 +7,10 @@ Most of the options below are optional, meaning you don't have to configure the 
 list every time you are creating a new mob. All that really is required
 are the `Internal_Name` and the `Type`.
 
+Table Of Contents:
+
+[[_TOC_]]
+
 Breaking Down The Mob Configuration
 -------------------------
 
