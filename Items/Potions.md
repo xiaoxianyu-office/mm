@@ -1,42 +1,38 @@
-Potions
-=======
-
-Potion Options
---------------
-
 This attribute is used to apply potion effects to potion based items.
 Note that potion effects can be added to any kind of item, but will only
 have an actual function on potions. Here is an example:
-```
+
+### Format
+```yml
 internal_itemname:
   Id: potion
   Options:
-    Color: <RED value>,<GREEN value>,<BLUE value>
+    Color: 0,0,0 #rgb(red,green,blue) format
   PotionEffects:
-  - <type> <duration> <level>
+    - <type> <duration> <level>
 ```
-**&lt;type&gt;**  
+#### **\<type>**
 The type of potion effect that should be applied. See below for a list of all types.
 
-**&lt;duration&gt;**  
-The duration of the potion effect measured in ticks [1].
+#### **\<duration>** 
+The duration of the potion effect measured in ticks <sup>(*20 ticks is 1 second*)</sup>.
 
-**&lt;level&gt;**  
+#### **\<level>** 
 The level modifier for the potion effect. 0 = Level I, 1 = Level II, Etc.
-
-**colors**  
-The [RGB](https://www.w3schools.com/colors/colors_rgb.asp) color of the potion, i.e. **Color: 255,0,255** for a purple potion
 
 Potion Effects
 --------------
 
+A complete list of all supported potion effects are listed on the [spigot javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html)
+
+<!--
 This is a complete list of all potion effects currently usable by MythicMobs. These can be utilized by either potion based items or the [potion mechanic](/skills/mechanics/potion).
 
 | **Potion Type**        | **Description**                                                                                                     |
 |------------------------|---------------------------------------------------------------------------------------------------------------------|
 | **ABSORPTION**         | Increases the maximum health of an entity with health that cannot be regenerated, but is refilled every 30 seconds. |
 | **BLINDNESS**          | Blinds an entity.                                                                                                   |
-| **BAD_OMEN** | oof. |
+| **BAD_OMEN**           | oof.                                                                                                                |
 | **CONDUIT\_POWER**     | Increases underwater visibility and mining speed, prevents drowning.                                                |
 | **CONFUSION**          | Warps vision on the client.                                                                                         |
 | **DAMAGE\_RESISTANCE** | Decreases damage dealt to an entity.                                                                                |
@@ -66,6 +62,8 @@ This is a complete list of all potion effects currently usable by MythicMobs. Th
 | **WEAKNESS**           | Decreases damage dealt by an entity.                                                                                |
 | **WITHER**             | Deals damage to an entity over time and gives the health to the shooter.                                            |
 
+-->
+<!--
 Pre-Made Potion Types and Effects
 ---------------------------------
 
@@ -107,15 +105,15 @@ them!
 | 8290               | 16482             |                      | Swiftness Potion II (4:00)    | Increased movement speed by 40% for 4 minutes                         |
 | 8292               | 16484             |                      | Poison Potion II (1:00)       | Does \~101 damage over a minute                                       |
 | 8297               | 16489             |                      | Strength Potion II (4:00)     | Increase melee damage by 260% + 130% per tier for 4 minutes           |
-
+-->
 Examples
 --------
-
-    SupremeHealingPotion:
+```yml
+SupremeHealingPotion:
       Id: potion
-      Data: 8195
       Display: '&6Supreme Healing Potion'
       Options:
+        Color: 239,103,216
         HideFlags: true
       PotionEffects:
       - HEAL 60 1
@@ -124,5 +122,4 @@ Examples
       - '&8An incredibly potent healing potion'
       - '&8able to cure even tremendous wounds.'
       - '&cNotice: May cause liver failure.'
-
-[1] 20 ticks = 1 second
+```
