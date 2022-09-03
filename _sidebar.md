@@ -1,14 +1,14 @@
-* [**Home**](home)
-* [**Changelogs**](Changelogs)
-* [**Premium Features**](Premium-Features)
-* [**Commands and Permissions**](Commands-and-Permissions)
-* [**FAQ / Common Issues**](FAQ)
-* [**Mythic Add-ons**](Add-ons)
-* [**Compatible Plugins**](Compatible-Plugins)
-* [**API Information**](API)
-* [**Packs**](Packs)
+[**Home**](home)\
+[**Changelogs**](Changelogs)\
+[**Premium Features**](Premium-Features)\
+[**Commands and Permissions**](Commands-and-Permissions)\
+[**FAQ / Common Issues**](FAQ)\
+[**Mythic Add-ons**](Add-ons)\
+[**Compatible Plugins**](Compatible-Plugins)\
+[**API Information**](API)\
+[**Packs**](Packs)
 
-* [**Mobs**](Mobs/Mobs)
+[**Mobs**](Mobs/Mobs)
   * [Mob Options](Mobs/Options)
   * [Mob Levels](Mobs/Levels)
   * [Mob Factions](Mobs/Factions)
@@ -23,7 +23,7 @@
   * [Extra: Disguises](Mobs/Disguises)
   * [Extra: ModelEngine](Model-Engine)
 
-* [**Skills**](Skills/Skills)
+[**Skills**](Skills/Skills)
   * [Mechanics](Skills/Mechanics)
   * [Effects](Skills/Effects)
   * [Targeters](Skills/Targeters)
@@ -33,7 +33,7 @@
   * [Variables](Skills/Variables)
   * [Math](Skills/Math)
 
-* [**Items**](Items/Items)
+[**Items**](Items/Items)
   * [Options](Items/Options)
   * [Attributes](Items/Attributes)
   * [Enchantments](Items/Enchantments)
@@ -41,11 +41,11 @@
   * [Banner Layers](Items/Banner Layers)
   * [Firework](/Items/Firework)
 
-* [**Drops & DropTables**](drops/Drops)
+[**Drops & DropTables**](drops/Drops)
   * [Drop Types](drops/DropTypes)
 
-* **Spawning**
+**Spawning**
   * [Spawners](Spawners)
   * [Random Spawns](Random-Spawns)
 
-* [**Examples**](examples/Common-Examples)
+[**Examples**](examples/Common-Examples)
