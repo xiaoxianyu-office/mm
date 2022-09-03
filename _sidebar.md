@@ -8,7 +8,7 @@
 * [API Information](API)
 * [Packs](Packs)
 
-### [Mobs](Mobs)
+### [Mobs](Mobs/Mobs)
 <!--* [Overview](Mobs)-->
   * [Mob Options](Mobs/Options)
   * [Mob Levels](Mobs/Levels)
