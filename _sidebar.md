@@ -8,7 +8,7 @@
 * [API Information](API)
 * [Packs](Packs)
 ### [Mobs](Mobs)
-  * [Overview](Mobs)
+<!--* [Overview](Mobs)-->
   * [Mob Options](Mobs/Options)
   * [Mob Levels](Mobs/Levels)
   * [Mob Factions](Mobs/Factions)
@@ -22,8 +22,9 @@
   * [Immunity Tables](Mobs/ImmunityTables)
   * [Extra: Disguises](Mobs/Disguises)
   * [Extra: ModelEngine](Model-Engine)
+
 ### [Skills](Skills/Skills)
-  * [Overview](Skills/Skills)
+<!--* [Overview](Skills/Skills)-->
   * [Mechanics](Skills/Mechanics)
   * [Effects](Skills/Effects)
   * [Targeters](Skills/Targeters)
@@ -32,15 +33,18 @@
   * [Placeholders](Skills/Placeholders)
   * [Variables](Skills/Variables)
   * [Math](Skills/Math)
+
 ### [Items](Items)
-  * [Overview](Items)
+<!--* [Overview](Items)-->
   * [Options](Items/Options)
   * [Attributes](Items/Attributes)
   * [Enchantments](Items/Enchantments)
   * [Potions](Items/Potions)
   * [Banner Layers](Items/Banner Layers)
   * [Firework](/Items/Firework)
+
 ### [Drops & DropTables](drops/Drops)
+  * [Drop Types](drops/DropTypes)
 
 ### Spawning
   * [Spawners](Spawners)
