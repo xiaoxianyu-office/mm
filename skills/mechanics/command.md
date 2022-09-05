@@ -38,6 +38,8 @@ Examples
     - command{c="minecraft:tp <target.name> <mob.uuid>"} @self ~onDamaged
     - command{c="minecraft:summon Zombie ~ ~ ~ <&lc>NoAI:true,CustomName:<&dq>Summoned Zombie<&dq><&rc>"}
     - command{c="minecraft:summon Zombie ~ ~ ~ {NoAI:true,CustomName:<&dq>Summoned Zombie<&dq>}"}
+    - command{c="say HELLO <target.name>";asTarget=true;asOp=true} @NearestPlayer{r=10}
+
 
 ### Invalid command-skills
 
