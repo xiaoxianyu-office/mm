@@ -191,7 +191,7 @@ A tag value's type can be changed by adding a prefix to the tag value:
 | Prefixes | int/ | float/ | double/ | byte/ | bool/ | boolean/ |
 |----------|------|--------|---------|-------|-------|----------|
 
-Let's convert this snbt, `{name1:123,name2:"sometext1",name3:{subname1:456,subname2:"sometext2"}}`, to mythic formatting:
+Let's convert this snbt:  `{name1:123,name2:"sometext1",name3:{subname1:456,subname2:"sometext2"}}` to mythic formatting:
 
 ```yml
 example_item:
