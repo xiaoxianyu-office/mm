@@ -28,6 +28,20 @@ Maven
 Examples
 --------
 
+### 1) Spawning a Mythicmob
+
+```java
+    Optional<MythicMob> mob = MythicBukkit.inst().getMobManager().getMythicMob("SkeletalKnight");
+    Location spawnLocation = player.getLocation();
+    if(mob.isPresent()){
+        // spawns mob            
+        ActiveMob knight = mob.get().spawn(BukkitAdapter.adapt(spawnLocation),1);
+        
+        // get mob as bukkit entity
+        Entity entity = knight.getEntity().getBukkitEntity();
+    }
+```
+
 The MythicMobs API contains numerous events and helper classes to help
 you utilize our mobs, items, and skill systems.
 
