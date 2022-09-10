@@ -27,18 +27,26 @@ Maven
 
 Examples
 --------
-
-### 1) Spawning a Mythicmob
+### 1) Spawning a MythicMob
 
 ```java
-    Optional<MythicMob> mob = MythicBukkit.inst().getMobManager().getMythicMob("SkeletalKnight");
+    MythicMob mob = MythicBukkit.inst().getMobManager().getMythicMob("SkeletalKnight").orElse(null);
     Location spawnLocation = player.getLocation();
-    if(mob.isPresent()){
+    if(mob != null){
         // spawns mob            
-        ActiveMob knight = mob.get().spawn(BukkitAdapter.adapt(spawnLocation),1);
+        ActiveMob knight = mob.spawn(BukkitAdapter.adapt(spawnLocation),1);
         
         // get mob as bukkit entity
         Entity entity = knight.getEntity().getBukkitEntity();
+    }
+```
+
+### 2) Check BukkitEntity for MythicMob
+
+```java
+    ActiveMob mythicMob = MythicBukkit.inst().getMobManager().getActiveMob(bukkitEntity.getUniqueId()).orElse(null);
+    if(mythicMob != null && mythicMob.getName().equals("SkeletalKnight")){
+    // do something with mob             
     }
 ```
 
