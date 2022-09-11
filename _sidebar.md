@@ -21,6 +21,7 @@
   * [Immunity Tables](Mobs/ImmunityTables)
   * [Extra: Disguises](Mobs/Disguises)
   * [Extra: ModelEngine](Model-Engine)
+  * [Templating](Config/Templating)
 ##### [Skills](Skills/Skills)
   * [Mechanics](Skills/Mechanics)
     * [In-line skill](Skills/inline-skills)
@@ -40,6 +41,7 @@
   * [Potions](Items/Potions)
   * [Banner Layers](Items/Banner-Layers)
   * [Firework](/Items/Firework)
+  * [Templating](Config/Templating)
 
 ##### [Drops & DropTables](drops/Drops)
   * [Drop Types](drops/DropTypes)
