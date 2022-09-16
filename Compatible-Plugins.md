@@ -49,5 +49,6 @@ API.
     Spawn custom mobs in TC Biomes
 -   [Vault](https://www.spigotmc.org/resources/vault.41918/) - Special
     skills and conditions dealing with currency
+-   [WeaponMechanics](https://www.spigotmc.org/resources/weaponmechanics.99913/) - Mechanics usable by mobs!
 -   [WorldGuard](https://dev.bukkit.org/projects/worldguard) - Spawning
     and conditions using WG Regions
