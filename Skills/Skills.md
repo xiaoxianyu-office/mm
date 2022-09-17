@@ -162,7 +162,7 @@ ShadowDamage20:
 
 Mob1:
   Skills:
-  - skill:ShadowDamage20 ~onAttack
+  - skill{s=ShadowDamage20} ~onAttack
 
 ```
 
@@ -174,7 +174,7 @@ ShadowDamage:
 
 Mob1:
   Skills:
-  - skill:ShadowDamage{damage=20} ~onAttack
+  - skill{s=ShadowDamage;damage=20} ~onAttack
 
 ```
 In the example above, the skill will still deal 20 damage to the target, we've just made the skill generic so that we can change the damage however we please on any mob.  
