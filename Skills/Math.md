@@ -4,16 +4,26 @@ You can use math in most places that supports placeholders.
 Operators
 -----------
 Most of these operators can be found here https://www.objecthunter.net/exp4j/#Built-in_operators
+#### Math Operators
 
-|         Operators         |  Example  |
-|:-------------------------:|:---------:|
-|       Addition (+)        |   2 + 2   |
-|      Subtraction (-)      |   2 - 2   |
-|    Multiplication (*)     |   2 * 2   |
-|       Division (/)        |   2 / 2   |
-|      Exponential (^)      |   2 ^ 2   |
-| Signed Operators (+ or -) | +2 - (-2) |
-|        Modulo (%)         |   2 % 2   |
+| Operator |   Description    |  Example  |
+|:--------:|:----------------:|:---------:|
+|    +     |    Unary plus    |   2 + 2   |
+|    -     |   Unary minus    |   2 - 2   |
+|    *     |  Multiplication  |   2 * 2   |
+|    /     |     Division     |   2 / 2   |
+|    ^     |      Power       |   2 ^ 2   |
+|    %     |    Remainder     |   2 % 2   |
+
+#### Boolean Operators
+| Operators |       Description        | Example |
+|:---------:|:------------------------:|:-------:|
+|    \<     |        Less than         |   2<5   |
+|    \<=    |  Less than or equal to   |  2<=5   |
+|    \>     |       Greater than       |   5>1   |
+|    \>=    | Greater than or equal to |  5>=0   |
+|    \==    |          Equals          |  0==0   |
+*Boolean operators will return `1` if the expression is true and `0` if it's false.*
 
 
 Functions
