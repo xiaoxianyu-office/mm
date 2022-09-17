@@ -63,3 +63,30 @@ Most of these functions can be found here https://www.objecthunter.net/exp4j/#Bu
 | random(min, max) | random with limits                                              |
 
 NOTE: You can request to add more operators and functions by making a suggestion ticket in our [issues page](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/issues)
+
+
+Example Usage
+------------
+```yml
+MyCoolMob:
+  Type: HUSK
+  AIGoalSelectors:
+    - clear
+  AITargetSelectors:
+    - clear
+  Skills:
+    - skill{s=[
+      - setvar{var=skill.test;type=FLOAT;val="<caster.hp> <= <caster.mhp>"} #returns 1 or 0 if the mob's health is less than or equal to its max health
+      - message{m=<skill.var.test>} #sends the player a message to see the value
+      ]} @trigger ~onInteract
+```
+
+```yml
+MyCoolItem:
+  Id: STICK
+  Skills:
+    - skill{s=[
+        - setvar{var=skill.test;type=FLOAT;val="1>=0"} #returns 1 since the expression evaluates to true
+        - message{m=<skill.var.test>} #sends the player a message to see the value
+      ]} @Self ~onUse
+```
