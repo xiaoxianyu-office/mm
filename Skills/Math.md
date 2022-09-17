@@ -23,6 +23,7 @@ Most of these operators can be found here https://www.objecthunter.net/exp4j/#Bu
 |    \>     |       Greater than       |   5>1   |
 |    \>=    | Greater than or equal to |  5>=0   |
 |    \==    |          Equals          |  0==0   |
+
 *Boolean operators will return `1` if the expression is true and `0` if it's false.*
 
 
