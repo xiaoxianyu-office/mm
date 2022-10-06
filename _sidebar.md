@@ -20,8 +20,7 @@
   * [Threat Tables](Mobs/ThreatTables)
   * [Immunity Tables](Mobs/ImmunityTables)
   * [Extra: Disguises](Mobs/Disguises)
-  * [Extra: ModelEngine](Model-Engine)
-  * [Templating](Config/Templating)
+  * [Extra: ModelEngine](Model-Engine)<!--* [Templating](Config/Templating)-->
 ##### [Skills](Skills/Skills)
   * [Mechanics](Skills/Mechanics)<!--   * [In-line skill](Skills/inline-skills)-->
   * [Effects](Skills/Effects)
@@ -39,8 +38,7 @@
   * [Enchantments](Items/Enchantments)
   * [Potions](Items/Potions)
   * [Banner Layers](Items/Banner-Layers)
-  * [Firework](/Items/Firework)
-  * [Templating](Config/Templating)
+  * [Firework](/Items/Firework)<!--* [Templating](Config/Templating)-->
 
 ##### [Drops & DropTables](drops/Drops)
   * [Drop Types](drops/DropTypes)
