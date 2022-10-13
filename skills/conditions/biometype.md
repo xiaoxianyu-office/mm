@@ -15,7 +15,7 @@
 
 ```
 Conditions:
-- biometpye{t=jungle,ocean,extreme_hills} true
+- biometype{t=jungle,ocean,extreme_hills} true
 ```
 ---
 
