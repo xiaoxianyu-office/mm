@@ -21,7 +21,7 @@ Maven
     <dependency>
         <groupId>io.lumine</groupId>
         <artifactId>Mythic-Dist</artifactId>
-        <version>5.0.3-SNAPSHOT</version>  
+        <version>5.1.4</version>  
         <scope>provided</scope>
     </dependency>
 
@@ -55,8 +55,7 @@ you utilize our mobs, items, and skill systems.
 
 Some examples to help you get started can be found here:
 
-1.  [MythicMobs API Examples
-    Repo](https://github.com/xikage/MythicMobs-API-Examples)
+1.  [MythicMobs API Examples Repo](https://github.com/xikage/MythicMobs-API-Examples)
 
 Events
 ------
