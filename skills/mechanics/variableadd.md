@@ -9,7 +9,7 @@ Attributes
 
 | Attribute | Aliases | Description                        | Default Value |
 |-----------|---------|------------------------------------|---------------|
-| var       | v       | The scope and name of the varibale | None |
+| var       | name, key | The scope and name of the varibale | None |
 | amount    | a       | The amount to add | 1             |
 
   
