@@ -2,7 +2,98 @@
 =====
 General
 -------
-- ???
+- Rewrote how mob data is saved
+  - Mobs will now save all data using Persistent Data Containers, instead of just certain data
+  - Mob data is no longer saved in a file at all
+  - Optimized and fixed numerous errors with mob saving/loading 
+- Rewrote Random Spawning system
+  - Now always obeys mob caps and rules in spigot.yml
+  - Fixed numerous bugs with random spawns
+  - Reduced overhead by 80%
+- Rewrote biome-related code
+  - Everywhere biomes are supported now support custom biomes
+  - Biomes use the same format as in the F3 menu, e.g. "minecraft:desert". Old biomes should translate over fine in most cases though.
+  - Biomes can use wildcards to match multiple biomes. such as "minecraft:*swamp" to match mangrove swamps too
+- Added <bar> placeholder
+- Added `/mythicmobsmenu` or `/mmm` command (premium-only)
+- Improved error messages and catching
+
+Mobs
+----
+- Added missing option for frogs, `Options.Type: [WARM/COLD/TEMPERATE]`
+
+Mechanics
+---------
+- Added `onCooldownSkill` option to meta-skills
+
+### NEW: setSkillCooldown
+- `- setSkillCooldown{skill=X;seconds=#}`
+
+Conditions
+---------
+### NEW: chance
+Finally added a regular chance condition
+- `- chance{chance=1}`
+- 1 = 100%
+- Supports placeholders and math
+
+### NEW: isFlying
+
+### NEW: playersOnline
+Matches number of players online
+- `- playersOnline{amount=>5}`
+
+### NEW: playersInWorld
+Matches number of players in the current world
+- `- playersInWorld{amount=>5}`
+
+### NEW: skillOnCooldown
+If a skill is on cooldown for the caster
+- `skillOnCooldown{skill=X}`
+
+Targeters
+---------
+- Added `blockCentered=true` option to all location targeters
+
+Items
+-----
+- Added Template support for items
+- Added `Group` option for grouping items into types
+- Added corresponding group view to items GUI
+
+Placeholders
+---------
+- Added more math operators: `>, >=, <, <=, ==`
+- Variable add/sub mechanics now supports placeholders
+- baseDamage mechanic now supports placeholders
+
+### NEW: <bar>
+- Special placeholder that generates a progress bar
+- Can have other placeholders nes
+
+### NEW: `<caster.skill.skill_name.cooldown>`
+
+GUI
+---
+### NEW: Mob GUI
+- Added a basic mob editor GUI (premium-only)
+- This is only for quickly editing basic attributes of mobs such as health and damage. While this might be expanded on in time, there are no plans to fully replace config files with GUIs, especially not for anything involving skills.
+
+Bug Fixes/Other
+--------------
+- Wearing condition can now check for AIR/empty armor slots.
+- Fixed concurrency exception in @MIR targeter
+- Fixed missing bossbar on non-despawning mobs after reload
+- Fixed NPE in /mm egg give when using amounts.
+- Fixed NPE in /mm m info command with invalid mob name.
+- Fixed NPE in orbital mechanic bullets
+- Fixed distance error in shoot mechanic
+- Fixed error in distance mechanic
+- Fixed NPE in projectile bullets involving worldguard
+- Fixed NPE in summon mechanic
+- Fixed command drops not running when killed by non-players
+- Fixed NPE in mob spawning when other plugins despawn a mob 1 tick later
+- Fixed onDamaged aura behaving oddly if ModelEngine isn't installed
 
 5.1.4
 =====
