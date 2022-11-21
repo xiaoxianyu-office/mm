@@ -1,4 +1,4 @@
-5.2.0 (Development)
+5.2.0
 =====
 General
 -------
@@ -29,6 +29,10 @@ Mechanics
 ### NEW: setSkillCooldown
 - `- setSkillCooldown{skill=X;seconds=#}`
 
+### NEW: setTarget
+- Sets the mob's target to the target entity
+- If using threat tables, will increase threat to the threshold to change targets for the targeted entity
+
 Conditions
 ---------
 ### NEW: chance
@@ -50,6 +54,11 @@ Matches number of players in the current world
 ### NEW: skillOnCooldown
 If a skill is on cooldown for the caster
 - `skillOnCooldown{skill=X}`
+
+### NEW: structure
+- Matches if the location is located inside of a structure
+- `structure{s=minecraft:desert_pyramid}`
+- Supports structures from datapacks
 
 Targeters
 ---------
@@ -79,8 +88,13 @@ GUI
 - Added a basic mob editor GUI (premium-only)
 - This is only for quickly editing basic attributes of mobs such as health and damage. While this might be expanded on in time, there are no plans to fully replace config files with GUIs, especially not for anything involving skills.
 
+Compatibility
+-------------
+- `inClaim` and `nearClaim` conditions now support the Lands plugin
+
 Bug Fixes/Other
 --------------
+- Added missing wildcard support to some spawner commands
 - Wearing condition can now check for AIR/empty armor slots.
 - Fixed concurrency exception in @MIR targeter
 - Fixed missing bossbar on non-despawning mobs after reload
@@ -94,6 +108,15 @@ Bug Fixes/Other
 - Fixed command drops not running when killed by non-players
 - Fixed NPE in mob spawning when other plugins despawn a mob 1 tick later
 - Fixed onDamaged aura behaving oddly if ModelEngine isn't installed
+- Fixed cuboid condition not supporting location targeters closes
+- Fixed ignore=owner target filter not working
+- Fixed itemSpray effect despawning too fast on some servers
+- Fixed spawn egg dupe with dispensers
+- Fixed fly mechanic targeting caster instead of target
+- Fixed heal mechanics running async
+- Fixed some NPEs in the error logger
+- Fixed IllegalArgumentException in Distance condition
+- Fixed various other bugs
 
 5.1.4
 =====
