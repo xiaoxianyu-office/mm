@@ -132,6 +132,9 @@ Some meta-targeters also allow the mechanic to be casted "fromOrigin". This will
 | @FloorOfTargets                                                                          | @FOT                                                            | Targets the blocks underneath the inherited targets.                                                                                                                                                            |
 | @LocationsOfTargets                                                                      | @LOT                                                            | Targets the location of the inherited targets                                                                                                                                                                   |
 | @BlocksInRadius{radius=#;radiusy=#;noise=#;shape=sphere/cube;onlyair=false;noair=true}   |                                                                 | Targets all blocks in a radius of the inherited targets.                                                                                                                                                        |
+| @TargetedBlock                                                                           |
+| Targets the block you are looking at
+|
 | @BlocksInChunk{noair=true/false;onlyair=true/false;nearorigin=true/false}                | Targets all blocks in a chunk relative to the inherited target. |
 | @BlocksNearOrigin{radius=#;radiusy=#;noise=#;shape=sphere/cube;onlyair=false;noair=true} |                                                                 | Targets all blocks in a radius around the inherited target.                                                                                                                                                     |
 
