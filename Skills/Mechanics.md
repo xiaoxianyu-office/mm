@@ -27,6 +27,7 @@ are able to target locations as well.
 | [BarCreate][]             | Creates a custom boss bar on the casting mob                                             |
 | [BarRemove][]             | Removes a custom boss bar on the casting mob                                             |
 | [BarSet][]                | Modifies a custom boss bar on the casting mob                                            |
+| [BoneMeal][]              | Applies a bone meal effect to the target blocks                             |
 | [BreakBlock][]            | Breaks the block at the target location                                                  |
 | [BreakBlockAndGiveItem][] | Breaks the block at the target location and gives an item/droptable                      |
 | [CloseInventory][]        | Closes the target player's inventory                                                     |
@@ -244,6 +245,7 @@ but not yet ready for use.
   [BarCreate]: /skills/mechanics/barcreate
   [BarSet]: /skills/mechanics/barset
   [BarRemove]: /skills/mechanics/barremove
+  [BoneMeal]: /skills/mechanics/bonemeal
   [BreakBlock]: /skills/mechanics/breakblock
   [BreakBlockAndGiveItem]: /skills/mechanics/breakBlockAndGiveItem
   [CloseInventory]: /skills/mechanics/closeinventory
