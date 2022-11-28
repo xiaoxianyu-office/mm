@@ -6,7 +6,7 @@ Threat Tables come with several built-in features to make the mob's targeting in
 
 Mobs will only switch targets if another player passes 110% threat over the current target.
 
-Note that activated threat tables will “override” the [AI target selectors](/Mobs/AI) you specified for the mob. A mob with activated threat tables will attempt to attack any entity that deals damage to it - even if such entites are not listed in the AI target selectors or even if the AI target selector list for the mob has been swiped clean and the mob doesn't naturally attack anything or anyone.
+Note that activated threat tables will “override” the [AI target selectors](/Mobs/Custom-AI#ai-target-selectors) you specified for the mob. A mob with activated threat tables will attempt to attack any entity that deals damage to it - even if such entites are not listed in the AI target selectors or even if the AI target selector list for the mob has been swiped clean and the mob doesn't naturally attack anything or anyone.
 
 **Enabling Threat Tables**
 
