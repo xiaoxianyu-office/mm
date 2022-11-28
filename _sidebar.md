@@ -1,3 +1,9 @@
+<div align="center" width="100%">
+<a href="https://bisecthosting.com/mythiccraft">
+<img src="https://www.bisecthosting.com/partners/custom-banners/08840efb-c57c-4c05-b4a8-28d958111eed.png" style="max-width: 100%; max-height: 100%;"  />
+</a>
+</div>
+
 ##### [Home](home)
 ##### [Changelogs](Changelogs)
 ##### [Premium Features](Premium-Features)
