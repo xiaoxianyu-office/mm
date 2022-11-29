@@ -105,6 +105,7 @@ Conditions
 | [Blocking](/skills/conditions/blocking)                                       | Entity   | Tests if the targeted player is blocking with a shield                                      |
 | [BowTension](/skills/conditions/bowtension)                                   | Meta     | Checks the bow tension of when an entity shoots from a bow                                  |
 | [Burning](/skills/conditions/burning)                                         | Entity   | Whether or not the target entity is on fire                                                 |
+| [Chance](skills/conditions/chance)                                            | Meta     | The chance that the metaskill has to be executed
 | [Children](/skills/conditions/children)                                       | Entity   | Tests how many children the caster has                                                      |
 | [Color](/skills/conditions/color)                                             | Entity   | Tests the entity's colors                                                                   |
 | [Crouching](/skills/conditions/crouching)                                     | Entity   | Whether or not the target entity is crouching                                               |
