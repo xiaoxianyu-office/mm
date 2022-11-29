@@ -1,4 +1,4 @@
-**Description**: Matches the number of players in the current world
+**Description**: Matches the number of players in the caster's world
 
 ---
 
