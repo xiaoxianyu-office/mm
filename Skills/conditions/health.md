@@ -4,9 +4,9 @@
 
 **Attributes:**
 
-| Attribute | Alias   | Description                   |
-| --------- | ------- | ----------------------------- |
-| amount    | a       | The health range to check for |
+| Attribute | Alias              | Description                   |
+| --------- | -------------------| ----------------------------- |
+| health    | h, amount, a       | The health range to check for |
 
 ---
 
