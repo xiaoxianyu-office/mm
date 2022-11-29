@@ -163,7 +163,8 @@ Conditions
 | [Level](/skills/conditions/level)                                             | Entity   | Checks the target MythicMob's level                                                         |
 | [LightLevel](/skills/conditions/lightlevel)                                   | Location | Tests the light level at the target location                                                |
 | [LineOfSight](/skills/conditions/lineofsight)                                 | Compare  | Tests if the target is within line of sight of the caster                                   |
-| [LunarPhase](/skills/conditions/lunarphase)                                   | Location | Checks the target world's lunar phase                                                       |
+| [LunarPhase](/skills/conditions/lunarphase)                                   | Location | Checks the target world's lunar phase
+| [MobSize](/skills/skills/conditions/mobsize)                                 | Entity   | Checks the size of the target entity                                                                                                               
 | [MobsInRadius](/skills/conditions/mobsinradius)                               | Location | Checks how many mobs are in a given radius                                                  |
 | [MobsInChunk](/skills/conditions/mobsinchunk)                                 | Location | Matches a range to how many mobs are in the target location's chunk                         |
 | [MobsInWorld](/skills/conditions/mobsinworld)                                 | Location | Matches a range to how many mobs are in the target world                                    |
@@ -194,7 +195,7 @@ Conditions
 | [Region](/skills/conditions/region)                                           | Location | If the target is within the given WorldGuard region                                         |
 | [SameFaction](/skills/conditions/samefaction)                                 | Entity   | Tests if the caster and target are in the same faction                                      |
 | [Score](/skills/conditions/score)                                             | Entity   | Checks a scoreboard value of the target entity                                              |
-| [Mob Size](/skills/skills/conditions/mobsize)                                 | Entity   | Checks the size of the target entity                                                        |
+| [SkillOnCooldown](/skills/conditions/skilloncooldown)                          | Entity  | Checks if the given skill is in cooldown for the target
 | [Stance](/skills/conditions/stance)                                           | Entity   | Checks the stance of the target mob                                                         |
 | [StringEquals](/skills/conditions/stringequals)                               | Meta     | Checks if value1 equals value2. Both values can use variables and placeholders.             |
 | [Sunny](/skills/conditions/sunny)                                             | Location | If the weather is sunny in the target world.                                                |
