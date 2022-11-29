@@ -66,35 +66,36 @@ Caster Placeholders
 ------------------
 These placeholders will return whatever attribute of the caster that is called. For instance `<caster.l.y.#>` will return the caster's Y location.
 
-|     Caster Placeholder      | Function                                                          |
-|:---------------------------:|-------------------------------------------------------------------|
-|       <caster.damage>       | Returns the caster's Attack_Damage attribute value                |
-|      <caster.display>       | Returns the caster's displayed name                               |
-|      <caster.mythic_type>   | Returns the caster's internal mob type                            |
-|        <caster.uuid>        | Returns the UUID of the caster                                    |
-|       <caster.level>        | Returns the level of the caster                                   |
-|        <caster.name>        | Returns the name of the caster                                    |
-|         <caster.hp>         | Returns current hp of the caster                                  |
-|        <caster.mhp>         | Returns the max hp of the caster                                  |
-|        <caster.php>         | Returns the percent hp of the caster                              |
-|        <caster.thp>         | Returns the full number hp of the caster                          |
-|       <caster.tt.top>       | Returns the name of the top threat holder of the caster           |
-|        <caster.l.w>         | Returns the world name the caster is in                           |
-|        <caster.l.x>         | Returns the X coordinate of the caster                            |
-|       <caster.l.x.#>        | Returns the X coordinate of the caster +- random number between # |
-|     <caster.l.x.double>     | Returns the precise X coordinate of the caster                    |
-|        <caster.l.y>         | Returns the Y coordinate of the caster                            |
-|       <caster.l.y.#>        | Returns the Y coordinate of the caster +- random number between # |
-|     <caster.l.y.double>     | Returns the precise Y coordinate of the caster                    |
-|        <caster.l.z>         | Returns the Z coordinate of the caster                            |
-|       <caster.l.z.#>        | Returns the Z coordinate of the caster +- random number between # |
-|     <caster.l.z.double>     | Returns the precise Z coordinate of the caster                    |
-|       <caster.l.yaw>        | Returns the yaw of the caster                                     |
-|      <caster.l.pitch>       | Returns the pitch of the caster                                   |
-|       <caster.stance>       | Returns the current stance of the caster                          |
-|     <caster.owner.name>     | Returns the name of the wolf's owner                              |
-|     <caster.owner.uuid>     | Returns the uuid of the wolf's owner                              |
-| <caster.heldenchantlevel.#> | Returns the enchant level of specified # enchant                  |
+|         Caster Placeholder         | Function                                                          |
+|:----------------------------------:|-------------------------------------------------------------------|
+|       <caster.damage>              | Returns the caster's Attack_Damage attribute value                |
+|      <caster.display>              | Returns the caster's displayed name                               |
+|      <caster.mythic_type>          | Returns the caster's internal mob type                            |
+|        <caster.uuid>               | Returns the UUID of the caster                                    |
+|       <caster.level>               | Returns the level of the caster                                   |
+|        <caster.name>               | Returns the name of the caster                                    |
+|         <caster.hp>                | Returns current hp of the caster                                  |
+|        <caster.mhp>                | Returns the max hp of the caster                                  |
+|        <caster.php>                | Returns the percent hp of the caster                              |
+|        <caster.thp>                | Returns the full number hp of the caster                          |
+|       <caster.tt.top>              | Returns the name of the top threat holder of the caster           |
+|        <caster.l.w>                | Returns the world name the caster is in                           |
+|        <caster.l.x>                | Returns the X coordinate of the caster                            |
+|       <caster.l.x.#>               | Returns the X coordinate of the caster +- random number between # |
+|     <caster.l.x.double>            | Returns the precise X coordinate of the caster                    |
+|        <caster.l.y>                | Returns the Y coordinate of the caster                            |
+|       <caster.l.y.#>               | Returns the Y coordinate of the caster +- random number between # |
+|     <caster.l.y.double>            | Returns the precise Y coordinate of the caster                    |
+|        <caster.l.z>                | Returns the Z coordinate of the caster                            |
+|       <caster.l.z.#>               | Returns the Z coordinate of the caster +- random number between # |
+|     <caster.l.z.double>            | Returns the precise Z coordinate of the caster                    |
+|       <caster.l.yaw>               | Returns the yaw of the caster                                     |
+|      <caster.l.pitch>              | Returns the pitch of the caster                                   |
+|       <caster.stance>              | Returns the current stance of the caster                          |
+|     <caster.owner.name>            | Returns the name of the wolf's owner                              |
+|     <caster.owner.uuid>            | Returns the uuid of the wolf's owner                              |
+| <caster.heldenchantlevel.#>        | Returns the enchant level of specified # enchant                  |
+| <caster.skill.\[skill_name\].cooldown> | Returns the current cooldown of the give skill as a float number |
 
 
 **Variable Placeholders**
