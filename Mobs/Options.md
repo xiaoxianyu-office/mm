@@ -392,6 +392,12 @@ Mob:
       * Can be RED or SNOW
       * Defaults to RED
 
+#### Frog
+**Type: \[Entity type\]**
+
+      * Determines the type of the Frog
+      * Can be WARM, COLD or TEMPERATE
+
 #### Hoglin
 
 **ImmuneToZombification: \[true/false\]**
