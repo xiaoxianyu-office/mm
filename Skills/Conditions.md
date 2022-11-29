@@ -186,6 +186,8 @@ Conditions
 | [Pitch](/skills/conditions/pitch)                                             | Entity   | Checks if the pitch of the target entity is within a range                                  |
 | [PlayerKills](/skills/conditions/playerkills)                                 | Entity   | Matches how many players the target mob has killed                                          |
 | [PlayersInRadius](/skills/conditions/playersinradius)                         | Entity   | Checks how many players are in a radius                                                     |
+| [PlayersOnline](/skills/conditions/playersonline)                             | Meta     | Matches the number of players online
+| [PlayersInWorld](skills/conditions/playersinworld)                            | Meta     | Matches the number of players in the caster's world
 | [PlayerNotWithin](/skills/conditions/playernotwithin)                         | Location | Checks if any players are within a radius of the target                                     |
 | [PlayerWithin](/skills/conditions/playerwithin)                               | Location | Checks if any players are within a radius of the target                                     |
 | [Raining](/skills/conditions/raining)                                         | Location | If it's raining in the target world                                                         |
@@ -193,7 +195,6 @@ Conditions
 | [SameFaction](/skills/conditions/samefaction)                                 | Entity   | Tests if the caster and target are in the same faction                                      |
 | [Score](/skills/conditions/score)                                             | Entity   | Checks a scoreboard value of the target entity                                              |
 | [Mob Size](/skills/skills/conditions/mobsize)                                 | Entity   | Checks the size of the target entity                                                        |
-| [PlayersOnline](/skills/conditions/playersonline)                             | Meta     | Matches the number of players online
 | [Stance](/skills/conditions/stance)                                           | Entity   | Checks the stance of the target mob                                                         |
 | [StringEquals](/skills/conditions/stringequals)                               | Meta     | Checks if value1 equals value2. Both values can use variables and placeholders.             |
 | [Sunny](/skills/conditions/sunny)                                             | Location | If the weather is sunny in the target world.                                                |
