@@ -200,6 +200,7 @@ by these will "inherit" the targets (if applicable).
 | [SudoSkill][]        | Makes the target execute a skill                                                                                                                        |
 | [Switch-Case][]      | Acts as a switch/case                                                                                                                                   |
 | [RandomSkill][]      | Executes a random skill from a list                                                                                                                     |
+| [SetSkillCooldown]   | Sets the given metakill's cooldown to the given value                             |
 | [Totem][]            | Creates a static "totem" at a location that can execute other skills                                                                                    |
 | [VariableAdd][]      | Adds an amount to a numeric variable                                                                                                                    |
 | [VariableMath][]     | Performs math on a numeric variable                                                                                                                     |
@@ -393,6 +394,7 @@ but not yet ready for use.
   [Volley]: /skills/mechanics/volley
   [SudoSkill]: /skills/mechanics/sudoskill
   [RandomSkill]: /skills/mechanics/randomskill
+  [SetSkillCooldown]: /skills/mechanics/setskillcooldown
   [Totem]: /skills/mechanics/totem
   [VariableAdd]: /skills/mechanics/variableadd
   [VariableMath]: /skills/mechanics/variablemath
