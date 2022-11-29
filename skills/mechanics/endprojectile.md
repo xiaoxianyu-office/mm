@@ -13,7 +13,7 @@ Examples
 
 **Mob file**
 ```
-Wiki_ExplodingProjectiles:
+Mob:
   Type: HUSK
   Skills:
   - skill{s=ExplodingProjectile} @target ~onTimer:20
