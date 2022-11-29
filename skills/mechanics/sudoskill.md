@@ -22,7 +22,7 @@ Skill.yml:
     sudo:
       Skills:
       - arrowvolley{a=20;s=25;v=10;f=50;rd=200} @EIR{r=30}
-      - message{msg="Triggername: <trigger.name>"} @world
+      - message{msg="Triggername<&co> <trigger.name>"} @world
 
 Mob.yml:
 
