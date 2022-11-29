@@ -11,6 +11,7 @@
 
 Examples
 ---
-```
-- playersOnline{amount=>5}
+```yaml
+Conditions:
+  - playersOnline{amount=>5}
 ```
