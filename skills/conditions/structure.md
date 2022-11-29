@@ -1,4 +1,4 @@
-**Description**: Matches if the location is located inside of a structure. Supports wildcards and structures from datapacks.
+**Description**: Matches if the target location is inside of a structure. Supports wildcards and structures from datapacks.
 
 ---
 
