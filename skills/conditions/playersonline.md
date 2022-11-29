@@ -9,9 +9,8 @@
 |-----------|-------------|-------------------------------------------------------------------------------------------------|---------|
 | amount |   | The number of players to check for. Can be a range |     |
 
+Examples
 ---
-
-**Examples**
 ```
 - playersOnline{amount=>5}
 ```
