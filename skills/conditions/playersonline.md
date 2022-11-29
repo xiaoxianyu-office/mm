@@ -1,4 +1,4 @@
-**Description**: Matches number of players online
+**Description**: Matches the number of players online
 
 ---
 
