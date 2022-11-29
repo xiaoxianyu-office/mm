@@ -126,3 +126,9 @@ do not believe they will damage your server in any way, I can make no
 guarantees about it. They could potentially alter and/or break your
 previous MythicMobs configurations and may contain bugs and unfinished
 features. Please make sure you read changelogs fully.
+
+<div align="center" width="100%">
+<a href="https://bisecthosting.com/mythiccraft">
+<img src="https://www.bisecthosting.com/partners/custom-banners/d6ed46c8-44f5-4d9e-b06c-af54d36afa18.png" />
+</a>
+</div>
