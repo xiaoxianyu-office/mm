@@ -123,6 +123,7 @@ are able to target locations as well.
 | [SetNoDamageTicks][]      | Sets the nodamageticks of the target                                                     |
 | [SetOwner][]              | Makes the target the owner of the casting mob                                            |
 | [SetRotation][]           | Sets the rotation of the target                                                          |
+| [SetTarget][]             | Sets the caster's target                                                     |
 | [SetTargetScore][]        | Sets the score of the target                                                             |
 | [SetScore][]              | Sets the scoreboard value of a dummy player                                              |
 | [SetSpeed][]              | Sets the target entity's speed attribute                                                 |
@@ -200,7 +201,7 @@ by these will "inherit" the targets (if applicable).
 | [SudoSkill][]        | Makes the target execute a skill                                                                                                                        |
 | [Switch-Case][]      | Acts as a switch/case                                                                                                                                   |
 | [RandomSkill][]      | Executes a random skill from a list                                                                                                                     |
-| [SetSkillCooldown]   | Sets the given metakill's cooldown to the given value                             |
+| [SetSkillCooldown][] | Sets the given metakill's cooldown to the given value                             |
 | [Totem][]            | Creates a static "totem" at a location that can execute other skills                                                                                    |
 | [VariableAdd][]      | Adds an amount to a numeric variable                                                                                                                    |
 | [VariableMath][]     | Performs math on a numeric variable                                                                                                                     |
@@ -336,6 +337,7 @@ but not yet ready for use.
   [SetNoDamageTicks]: /skills/mechanics/setnodamageticks
   [SetOwner]: /skills/mechanics/setowner
   [SetRotation]: /skills/mechanics/setrotation
+  [SetTarget]: /skills/mechanics/settarget
   [SetTargetScore]: /skills/mechanics/settargetscore
   [SetScore]: /skills/mechanics/setscore
   [SetSpeed]: /skills/mechanics/setspeed
