@@ -198,6 +198,7 @@ Conditions
 | [SkillOnCooldown](/skills/conditions/skilloncooldown)                          | Entity  | Checks if the given skill is in cooldown for the target
 | [Stance](/skills/conditions/stance)                                           | Entity   | Checks the stance of the target mob                                                         |
 | [StringEquals](/skills/conditions/stringequals)                               | Meta     | Checks if value1 equals value2. Both values can use variables and placeholders.             |
+| [Structure](/skills/conditions/structure)                                     | Location | Matches if the target location is inside of a structure
 | [Sunny](/skills/conditions/sunny)                                             | Location | If the weather is sunny in the target world.                                                |
 | [TargetInLineOfSight](/skills/conditions/targetinlineofsight)                 | Entity   | Tests if the target has line of sight to their target                                       |
 | [TargetNotInLineOfSight](/skills/conditions/targetnotinlineofsight)           | Entity   | Tests if the target doesn't have line of sight to their target                              |
