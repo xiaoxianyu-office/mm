@@ -193,6 +193,7 @@ Conditions
 | [SameFaction](/skills/conditions/samefaction)                                 | Entity   | Tests if the caster and target are in the same faction                                      |
 | [Score](/skills/conditions/score)                                             | Entity   | Checks a scoreboard value of the target entity                                              |
 | [Mob Size](/skills/skills/conditions/mobsize)                                 | Entity   | Checks the size of the target entity                                                        |
+| [PlayersOnline](/skills/conditions/playersonline)                             | Meta     | Matches the number of players online
 | [Stance](/skills/conditions/stance)                                           | Entity   | Checks the stance of the target mob                                                         |
 | [StringEquals](/skills/conditions/stringequals)                               | Meta     | Checks if value1 equals value2. Both values can use variables and placeholders.             |
 | [Sunny](/skills/conditions/sunny)                                             | Location | If the weather is sunny in the target world.                                                |
