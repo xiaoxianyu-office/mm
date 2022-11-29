@@ -8,7 +8,8 @@ Applies a bone meal effect to the target blocks
 | --------- | ----- | ----------- |
 | none      | none  | none        |
 
-**Examples**
+Examples
+--------
 
 ```
 - bonemeal @selflocation{y=-1}
