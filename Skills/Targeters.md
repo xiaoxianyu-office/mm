@@ -44,7 +44,7 @@ Entity Targeters
 | @PlayersInRing{min=#;max=#}          |                   | Target all players between the specified min and max radius.                                                     |
 | @PlayersNearOrigin{r=#}              |                   | Targets players near the [origin](/skills/targeters/origin) of a meta-skill.                                     |
 | @MobsNearOrigin{r=#;t=X}             |                   |                                                                                                                  |
-| @EntitiesNearOrigin{r=#}             |                   | Targets all entities near the [origin](/skills/targeters/origin) of a meta-skill                                                                                                                 |
+| @EntitiesNearOrigin{r=#}             | @ENO{r=#}         | Targets all entities near the [origin](/skills/targeters/origin) of a meta-skill                                                                                                                 |
 | @PlayersNearTargetLocation{r=#}      | @PNTL{r=#}        | Targets all players near targetlocation. Radius=5 by default.                                                    |
 | @Siblings                            |                   | Targets any mobs that share the same parent as the caster.                                                       |
 | @TargetedTarget                      | @Targeted         | Targets the inherited targets.                                                                                   |
