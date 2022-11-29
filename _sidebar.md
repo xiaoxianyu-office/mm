@@ -1,6 +1,6 @@
 <div align="center" width="100px">
 <a href="https://bisecthosting.com/mythiccraft">
-<img src="https://www.bisecthosting.com/partners/custom-banners/08840efb-c57c-4c05-b4a8-28d958111eed.png" width="200px" height="150px" />
+<img src="https://www.bisecthosting.com/partners/custom-banners/fcbe6cdc-f647-4270-8a5c-b33b91617613.png" width="200px" height="150px" />
 </a>
 </div>
 
