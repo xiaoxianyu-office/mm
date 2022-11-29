@@ -127,6 +127,7 @@ guarantees about it. They could potentially alter and/or break your
 previous MythicMobs configurations and may contain bugs and unfinished
 features. Please make sure you read changelogs fully.
 
+<hr>
 
 <div align="center" width="100%">
 <a href="https://bisecthosting.com/mythiccraft">
