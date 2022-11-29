@@ -180,6 +180,7 @@ by these will "inherit" the targets (if applicable).
 | [Chain][]            | Chains a skill between multiple targets that are near each other.                                                                                       |
 | [ChainMissile][]     | A missile that chains between entities. **Premium-Only** mechanic!                                                                                      |
 | [Delay][]            | Delays execution of the current skill list by a set number of ticks.                                                                                    |
+| [EndProjectile][]    | Terminates the projectile. Only usable in projectile mechanics.                   |
 | [GlobalCooldown][]   | Sets the caster's Global Cooldown timer                                                                                                                 |
 | [Missile][]          | Fires a homing projectile towards the target.                                                                                                           |
 | [ModifyProjectile][] | Modifying the projectile / missile / orbital                                                                                                            |
@@ -371,6 +372,7 @@ but not yet ready for use.
   [Chain]: /skills/mechanics/chain
   [ChainMissile]: /skills/mechanics/chainmissile
   [Delay]: /skills/mechanics/delay
+  [EndProjectile]: /skills/mechanics/endprojectile
   [GlobalCooldown]: /skills/mechanics/globalcooldown
   [Missile]: /skills/mechanics/missile
   [ModifyProjectile]: /skills/mechanics/modifyprojectile
