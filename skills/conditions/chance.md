@@ -1,4 +1,4 @@
-**Description**: sets the probability of the metaskill **not** being executed.
+**Description**: sets the probability of the metaskill being executed.
 
 ---
 
@@ -14,6 +14,12 @@
 **Examples**
 
 In this example, the metaskill will be executed only 30% of the times it has been triggered, on average.
+```yml
+Conditions:
+  - chance{chance=0.3} true
+```
+
+In this other example, the metaskill will be instead triggered 70% of the times it has been triggered
 ```yml
 Conditions:
   - chance{chance=0.3} false
