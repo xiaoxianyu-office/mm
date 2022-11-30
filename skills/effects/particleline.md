@@ -24,6 +24,7 @@ Particle attributes are “per point” in this effect, so keeping 'amount' low 
 | zigzag          | zz       | Whether to draw the line to the target as a zigzag  | false         |
 | zigzags         | zzs      | Amount of zigzags when using the zigzag option      | 10            |
 | zigzagOffset    | zzo      | Offset of each zigzag                               | 0.2           |
+| maxdistance     |          | The maximum distance the line can reach             | 256           |
 
 ---
 
