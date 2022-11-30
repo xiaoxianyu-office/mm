@@ -135,6 +135,7 @@ are able to target locations as well.
 | [ShootPotion][]           | Throws a potion at the target                                                            |
 | [ShootSkull][]            | Shoots a wither skull at the target                                                      |
 | [ShootShulkerBullet][]    | Shoots a shulker bullet at the target entity                                             |
+| [ShowEntity][]            | Shows the hidden caster to the targeted players                              |
 | [Signal][]                | Sends a signal to a mob                                                                  |
 | [Speak][]                 | Causes the mob to speak in chat, with options for speech bubbles                         |
 | [Spring][]                | Creates a temporary spring of liquid at the target                                       |
@@ -348,6 +349,7 @@ but not yet ready for use.
   [ShootPotion]: /skills/mechanics/shootpotion
   [ShootSkull]: /skills/mechanics/shootskull
   [ShootShulkerBullet]: /skills/mechanics/shootshulkerbullet
+  [ShowEntity]: /skills/mechanics/showentity
   [Signal]: /skills/mechanics/signal
   [Speak]: /skills/mechanics/speak
   [Spring]: /skills/mechanics/spring
