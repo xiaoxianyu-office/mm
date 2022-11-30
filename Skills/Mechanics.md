@@ -125,6 +125,7 @@ are able to target locations as well.
 | [SetRotation][]           | Sets the rotation of the target                                                          |
 | [SetTarget][]             | Sets the caster's target                                                     |
 | [SetTargetScore][]        | Sets the score of the target                                                             |
+| [SetTongueTarget][]       | Sets the tongue target for a frog caster to the target entity                |
 | [SetScore][]              | Sets the scoreboard value of a dummy player                                              |
 | [SetSpeed][]              | Sets the target entity's speed attribute                                                 |
 | [SetStance][]             | Sets the stance of the target mob                                                        |
@@ -340,6 +341,7 @@ but not yet ready for use.
   [SetRotation]: /skills/mechanics/setrotation
   [SetTarget]: /skills/mechanics/settarget
   [SetTargetScore]: /skills/mechanics/settargetscore
+  [SetTongueTarget]: /skills/mechanics/settonguetarget
   [SetScore]: /skills/mechanics/setscore
   [SetSpeed]: /skills/mechanics/setspeed
   [SetStance]: /skills/mechanics/setstance
