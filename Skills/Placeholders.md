@@ -113,6 +113,7 @@ These placeholders will return whatever variable has been called. For instance <
 | <skill.var.aura-duration> | Returns the duration of the aura.                                       |
 |  <skill.var.aura-stacks>  | Returns the amount of stacks the aura has.                              |
 |      <skill.targets>      | Returns the amount of inherited targets                                 |
+| <skill.var.interval>      | Returns the interval value in mechanics using repeat & repeatInterval options|
 
 **Target Placeholders**
 -----------------
