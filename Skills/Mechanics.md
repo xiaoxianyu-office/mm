@@ -208,6 +208,7 @@ by these will "inherit" the targets (if applicable).
 | [VariableAdd][]      | Adds an amount to a numeric variable                                                                                                                    |
 | [VariableMath][]     | Performs math on a numeric variable                                                                                                                     |
 | [SetVariable][]      | Sets the value of a variable                                                                                                                            |
+| [SetVariableLocation][]| Sets a variable to the target location                                          |
 | [VariableUnset][]    | Unsets the variable                                                                                                                                     |
 | [VariableSubtract][] | Subtracts an amount from a numeric variable                                                                                                             |
 
@@ -405,6 +406,7 @@ but not yet ready for use.
   [VariableAdd]: /skills/mechanics/variableadd
   [VariableMath]: /skills/mechanics/variablemath
   [SetVariable]: /skills/mechanics/setvariable
+  [SetVariableLocation]: /skills/mechanics/setvariablelocation
   [VariableUnset]: /skills/mechanics/variableunset
   [VariableSubtract]: /skills/mechanics/variablesubtract
   [Swap]: /skills/mechanics/swap
