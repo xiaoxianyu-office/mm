@@ -128,6 +128,7 @@ Conditions
 | [FoodSaturation](/skills/conditions/FoodSaturation)                           | Entity   | Checks if the target has food within the range                                              |
 | [Gliding](/skills/conditions/gliding)                                         | Entity   | If the target is gliding                                                                    |
 | [GlobalScore](/skills/conditions/globalscore)                                 | Entity   | Checks a global scoreboard value                                                            |
+| [HasAI](/skills/conditions/hasai)                                             | Entity   | Checks if the target entity has its AI enabled
 | [HasAura](/skills/conditions/hasaura)                                         | Entity   | Checks if the target entity has the given aura                                              |
 | [HasAuraStacks](/skills/conditions/hasaurastacks)                             | Entity   | Tests if the target has the given range of stacks from an aura                              |
 | [HasCurrency](/skills/conditions/hascurrency)                                 | Entity   | If the target has the given amount of vault currency                                        |
