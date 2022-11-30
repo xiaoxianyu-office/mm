@@ -27,7 +27,7 @@
 | NA                          | NA           | NA            | NA    | NA           |
 
 
-**block_maker-barrier**
+**block_marker-barrier**
 ---
 ![barrier](https://imgur.com/jvdhVvr.gif)
 ![barrier](uploads/wiki_images/Particle_barrier.png)
