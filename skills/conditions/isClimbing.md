@@ -1,4 +1,4 @@
-**Description**: checks if the target entity is climbing. A player climbing a ladder or a spider climbing a wall both match the condition.
+**Description**: Checks if the target entity is climbing. A player climbing a ladder or a spider climbing a wall both match the condition.
 
 ---
 
