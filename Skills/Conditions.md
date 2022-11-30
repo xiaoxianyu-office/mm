@@ -150,6 +150,7 @@ Conditions
 | [Inside](/skills/conditions/inside)                                           | Location | Checks if the target has a block over their head                                            |
 | [isCaster](/skills/conditions/iscaster)                                       | Entity   | Checks if the target is the caster                                                          |
 | [isChild](/skills/conditions/ischild)                                         | Entity   | Checks if the target is a child of the caster                                               |
+|  [isClimbing](/skills/conditions/isClimbing)                                  | Entity   | Checks if the target entity is climbing
 | [isFlying](/skills/conditions/isflying)                                       | Entity   | Checks if the target player is flying
 | [isLiving](/skills/conditions/isliving)                                       | Entity   | Checks if the target is a living entity                                                     |
 | [isLeashed](/skills/conditions/isleashed)                                     | Entity   | Checks if the target has been leashed                                                       |
