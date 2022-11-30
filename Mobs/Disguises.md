@@ -114,6 +114,12 @@ ExampleMob3:
   Disguise: pig
 ```
 
+```yml
+ExampleMob4:
+  MobType: skeleton
+  Health: 20
+  Disguise: FALLING_BLOCK STONE
+```
 
 <!-- NOT USED ANYMORE! KEEPING THIS HERE IF ANYONE WANTS TO USE DISGUISE OPTIONS SYNTAX
 ## LEGACY: Disguise Options
