@@ -1,16 +1,16 @@
 Goal: Move To Block
 --------------
 
-Makes the mob move towards the specified block. 
+Makes the mob move towards the specified block type. 
 
 ### Attributes
 
 | Attribute      | Aliases  | Description                                   | Default |
 |----------------|----------|-----------------------------------------------|:-------:|
 | material       |          | The block type to target                      |         |
-| radius         |          | the radius in which to search for the block   |         |
-| radiusy        |          | the y radius in which to search for the block |         |
-| speed          |          | the speed of movement                         |         |
+| radius         |          | The radius in which to search for the block   |         |
+| radiusy        |          | The y radius in which to search for the block |         |
+| speed          |          | The speed of movement                         |         |
 
 
 ### Examples
