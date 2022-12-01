@@ -87,11 +87,12 @@ These work with the projectile, missile, and orbital mechanics.
 
 Bullet types available are:
 
--   **ARROW** - *projectile{bulletType=ARROW;...}*
+-   **ARROW** - *projectile{bulletType=ARROW;arrowType=(NORMAL/SPECTRAL/TRIDENT);...}*
 -   **BLOCK** - *projectile{bulletType=BLOCK;material=STONE;...}*
 -   **ITEM** - *projectile{bulletType=ITEM;material=STONE;...}*
 -   **MYTHICITEM** - *projectile{bulletType=MYTHICITEM;material=MyMythicItem;...}*
 -   **MOB** - *projectile{bulletType=MOB;mob=SkeletonKing;...}*
+-   **TRACKING** - *projectile{bulletType=TRACKING;bulletmaterial=MyMythicItem;model=CustomModelData;...}*
 
 Yes, that's right, you can even shoot projectiles made up of other
 Mythic mobs! Mobs shot with the projectile skill cannot be interacted
