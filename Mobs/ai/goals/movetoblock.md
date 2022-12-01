@@ -10,7 +10,7 @@ Makes the mob move towards the specified block.
 | material       |          | The block type to target                      |         |
 | radius         |          | the radius in which to search for the block   |         |
 | radiusy        |          | the y radius in which to search for the block |         |
-| spee           |          | The attack radius of this ai goal.            |         |
+| speed          |          | the speed of movement                         |         |
 
 
 ### Examples
