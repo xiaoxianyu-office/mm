@@ -32,3 +32,8 @@ Having problems overviewing your randomskill-syntax? Try this:
         grandSkill,
         7331
         }
+
+You can also make your skills be executed with different chances via the weight system. Skills without a weight will default to weight 1.
+
+    Skills:
+    - randomskill{skills=metaskill 10,otherskill 0.5,someskill 0,testskill}
