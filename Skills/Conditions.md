@@ -152,7 +152,7 @@ Conditions
 | [Inside](/skills/conditions/inside)                                           | Location | Checks if the target has a block over their head                                            |
 | [isCaster](/skills/conditions/iscaster)                                       | Entity   | Checks if the target is the caster                                                          |
 | [isChild](/skills/conditions/ischild)                                         | Entity   | Checks if the target is a child of the caster                                               |
-|  [isClimbing](/skills/conditions/isClimbing)                                  | Entity   | Checks if the target entity is climbing
+| [isClimbing](/skills/conditions/isClimbing)                                   | Entity   | Checks if the target entity is climbing
 | [isFlying](/skills/conditions/isflying)                                       | Entity   | Checks if the target player is flying
 | [isFrozen](/skills/conditions/isfrozen)                                       | Entity   | Checks if the target entity is frozen
 | [isLiving](/skills/conditions/isliving)                                       | Entity   | Checks if the target is a living entity                                                     |
@@ -195,6 +195,8 @@ Conditions
 | [PlayersInWorld](skills/conditions/playersinworld)                            | Meta     | Matches the number of players in the caster's world
 | [PlayerNotWithin](/skills/conditions/playernotwithin)                         | Location | Checks if any players are within a radius of the target                                     |
 | [PlayerWithin](/skills/conditions/playerwithin)                               | Location | Checks if any players are within a radius of the target                                     |
+| [Plugin](/skills/conditions/plugin)                                           | Meta     | Checks if the specified plugin is running on the server
+| [Premium](/skills/conditions/premium)                                         | Meta     | Checks if MythicMobs Premium is running on the server
 | [Raining](/skills/conditions/raining)                                         | Location | If it's raining in the target world                                                         |
 | [Region](/skills/conditions/region)                                           | Location | If the target is within the given WorldGuard region                                         |
 | [SameFaction](/skills/conditions/samefaction)                                 | Entity   | Tests if the caster and target are in the same faction                                      |
