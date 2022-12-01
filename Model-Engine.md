@@ -49,3 +49,24 @@ KindletronJR:
     PreventOtherDrops: true
     PreventBlockInfection: true
 ```
+
+Alternatively, the following way of setting the model up is also available:
+```
+KindletronJR:
+  Type: SILVERFISH
+  Health: 20
+  Damage: 0
+  Model:
+    Id: kindletronjr
+    ViewRadius: 64
+    Drive: false
+    DamageTint: true
+  Skills:
+  - skill{s=KindletronJRInit;sync=true} @self ~onAttack
+  Options:
+    Silent: true
+    MovementSpeed: 0.1
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    PreventBlockInfection: true
+```
