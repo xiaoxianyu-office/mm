@@ -64,6 +64,9 @@ AIGoalSelectors:
 | leapattarget                        |                  | Makes the mob leap at its target                                                                                                                                   |
 | moveindoors                         |                  |                                                                                                                                                                    |
 | movethroughvillage                  |                  |                                                                                                                                                                    |
+| [movetoblock](/Mobs/ai/goals/movetoblock)|             | Makes the mob go towards a specific type of block                                                                                                     |
+| movetolava                          |                  | Makes the mob move towards lava                 |
+| movetowater                         |                  | Makes the mob move towards water               |
 | movetowardsrestriction              |                  |                                                                                                                                                                    |
 | patrol x1,y1,z1;x2,y2,z2;x3,y3,z3;… | patrolroute      | Makes the mob patrol between the specified locations                                                                                                               |
 | gotolocation x,y,z                  | goto             | Makes the mob go to the specified location(Notice Followrange must more than the distance between location and mob)                                                |
