@@ -36,6 +36,7 @@ Attributes
 | StopAtEntity         | sE          | Whether the projectile will stop upon hitting a targetable entity.                                                                                                                                      | true              |
 | StopAtBlock          | sB          | Whether the projectile will stop upon hitting an opaque block.                                                                                                                                          | true              |
 | HugSurface           | hs          | Whether or not the projectile should move along the ground.                                                                                                                                             | false             |
+| HugLiquid            |             | when using hugSurface will also move on top of liquids             | false
 | HeightFromSurface    | hfs         | For NORMAL projectiles, how high above the surface the projectile should glide if HugSurface is set to TRUE. For METEOR projectiles, how high above the surface the projectile starts above the target. | 0.5               |
 | PowerAffectsRange    | par         | Whether a mob's [power level](/Mobs/Power) affects the projectile's range.                                                                                                                              | true              |
 | PowerAffectsVelocity | pav         | Whether a mob's [power level](/Mobs/Power) affects the projectile's velocity.                                                                                                                           | true              |
@@ -43,6 +44,8 @@ Attributes
 | Accuracy          | ac, a           | Determines the accuracy of the projectile   | 1 |
 | HorizontalNoise   | hn | The randomness of the projectile in horizontal direction  | 0 |
 | VerticalNoise     | vn | The randomness of the projectile in the vertical direction | 0 |
+| Bounce            |    | Should the projectile bounce. Bounce radius depends on the projectile's hitbox                               | false |
+| BounceVelocityMod |    | Every time the projectile bounces, its velocity will be multiplied by this value | 0.9
 
   
 
