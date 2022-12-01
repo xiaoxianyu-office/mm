@@ -81,7 +81,8 @@ are able to target locations as well.
 | [Mount][]                 | Summons a mob for the caster and mounts it                                               |
 | [MountMe][]               | Forces the targeted entity to mount the caster                                           |
 | [MountTarget][]           | Mounts the target                                                                        |
-| [Oxygen][]                | Gives oxygen to a player target                                                          |
+| [Oxygen][]                | Gives oxygen to a player target                                             |
+| [PickUpItem][]            | Pick up the targeted item                                                   |
 | [PlayBlockBreakSound][]   | Plays a block breaking sound                                                             |
 | [PlayBlockFallSound][]    | Plays a block falling sound                                                              |
 | [PlayBlockHitSound][]     | Plays a block hit sound                                                                  |
@@ -305,6 +306,7 @@ but not yet ready for use.
   [MountMe]: /skills/mechanics/mountme
   [MountTarget]: /skills/mechanics/mounttarget
   [Oxygen]: /skills/mechanics/oxygen
+  [PickUpItem]: /skills/mechanics/pickupitem
   [PoseArmorStand]: /skills/mechanics/posearmorstand
   [Potion]: /skills/mechanics/potion
   [PotionClear]: /skills/mechanics/potionclear
