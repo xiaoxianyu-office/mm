@@ -1,187 +1,253 @@
-Mob Options
-===========
+All options available when creating a mob. These options go under the `Options` section, like so:
+```yml
+Dummy:
+  Type: skeleton
+  Options:
+    MovementSpeed: 0.3
+    PreventSunburn: true
+```
 
-This is a database of all options available when creating a mob in
-MythicMobs. These options go under the Options tag, like so:
+## Universal options
 
-    VeryFastSkeleton:
-      Type: skeleton
-      Display: 'Very Fast Skeleton'
-      Options:
-        MovementSpeed: 0.3
-        NoDamageTicks: 50
+These options are universal and will work regardless of the mob type.
 
-### Universal options
+#### AlwaysShowName
+Whether the name-tag is always displayed.
+Equivalent to the NBT-tag `CustomNameVisible`.
+Defaults to `false`.
+```yml
+Options:
+  AlwaysShowName: false
+```
 
-These options are universal and will work regardless of the mobtype.
-
-#### All mobs
-
-**AlwaysShowName: \[true/false\]**
-
-      * Whether the name-tag should always be displayed to the player, including while not looking at the mob.
-      * Equivalent of the NBT-tag "CustomNameVisible"
-      * Defaults to false.
 <!--
 **AttackSpeed: \[number\]**
 
       * Sets the attack speed of the mob.
       * Defaults to vanilla attack speed for the respective mobs. (Doesn't do anything.)
 -->
-**ApplyInvisibility: \[true/false\]** (4.9)
 
-      * Sets permanent invisibility effect on the mob (No need for invisibility potions ~onSpawn).
-      * Defaults to false.
+#### Invisible
+Sets the permanent invisibility effect on the mob; no need to apply invisibility potion with `~onSpawn` trigger.
+Defaults to `false`.
+```yml
+Options:
+  Invisible: true
+```
 
-**Collidable: \[true/false\]**
+#### Collidable
+Whether the mob has collisions. Collisions in Minecraft are bidirectional, so this would need to be set to `false` on both
+the entity colliders to ensure that no collisions takes place but will also stop the player from pushing the mob. Defaults to `true`.
+```yml
+Options:
+  Collidable: true
+```
 
-      * Whether the mob has collision.
-      * Defaults to true.
-      * Note that collisions in Minecraft are bidirectional, so this would need to be set to false on both the collidee and the collidant to ensure no collisions take place.
-      * Also note that setting this to false stops the mob from being pushable by the player.
+#### DigOutOfGround
+Teleports the mob two blocks up if it takes `SUFFOCATION` damage. Defaults to `false`.
+```yml
+Options:
+  DigOutOfGround: false
+```
 
-**DigOutOfGround: \[true/false\]**
+#### Despawn
+Determines how the mob will despawn.
+This option should be turned on if you're using a lot of mob spawners or entities will overwhelm your server.
+Defaults to `true`.
 
-      * Teleports the mob two blocks up if takes SUFFOCATION damage.
-      * Defaults to false.
+Available values:
+- `true` - despawns the mob if there are no nearby players, on chunk unload. This option obeys the regular `/mm m kill` command.
+- `false` - similar to `persistent` but can be despawned. This option obeys the regular `/mm m kill` command.
+- `chunk` - despawns the mob when the chunk unloads. This option obeys the regular `/mm m kill` command.
+- `persistent` - the mob is persistent and doesn't despawn. To remove a persistent mob, you have to append `-p` to the kill command, 
+like so: `/mm m kill -p <type>`.
+```yml
+Options:
+  Despawn: true
+```
 
-**Despawn: \[true/false/chunk/persistent\]**
+#### FollowRange
+The range in blocks within which a mob will target to attack or track an entity.
+Defaults to vanilla follow range - `32`.
+```yml
+Options:
+  FollowRange: 32
+```
 
-      * Determines whether mobs will despawn if no players are nearby.
-      * Should generally be turned on if you are using a lot of a mob spawners or entities will overwhelm your server.
-      * Equivalent NBT-tag is "PersistenceRequired"
-      * CHUNK will despawn mobs when they enter an unloaded chunk, but not when players aren't nearby.
-      * Defaults to true.
+#### Glowing
+Sets whether the mob is permanently glowing. Defaults to `false`.
+```yml
+Options:
+  Glowing: false
+```
 
-**FollowRange: \[value\]**
+#### Invincible
+Makes the mob completely invincible to all types of damage. This option cannot be changed by command skills.
+Defaults to `false`.
+```yml
+Options:
+  Invincible: false
+```
 
-      * Max distance between the mob and target before the mob will lose aggro.
-      * Also defines max range at which a target will aggro a player initially.
-      * Defaults to standard respective minecraft follow range
+#### Interactable
+Sets whether the mob can be interacted with. If the mob is an armor stand, it will deny any interaction with the equipments.
+Defaults to `false`.
+```yml
+Options:
+  Interactable: false
+```
 
-**Glowing: \[true/false\]**
+#### LockPitch
+Keeps the mob's head from looking up/down. Requires [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/).
+Defaults to `false`.
+```yml
+Options:
+  LockPitch: false
+```
 
-      * Whether the mob should permanently be glowing.
-      * Defaults to false.
+#### KnockbackResistance
+A percentage of knockback resisted from attacks. This option can be anywhere between `0` and `1`.
+But a mob with 100% knockback resistance can still be knocked back by a bow's enchantment: `ARROW_KNOCKBACK` (punch enchantment).
+For true knockback resistance, see the [velocity](/Skills/mechanics/velocity) mechanic page. Defaults to `0`.
+```yml
+Options:
+  KnockbackResistance: 0.5
+```
 
-**Invincible: \[true/false\]**
+#### MaxCombatDistance
+Prevents players that are a number of blocks away from damaging the mob.
+Setting this option to a number less than the distance of a certain mob skill or attack will ensure that the mob can damage the player and will not be as easy to exploit.
+Defaults to `256`.
+```yml
+Options:
+  MaxCombatDistance: 256 
+```
 
-      * Makes the mob completely invincible to all types of damage.
-      * //Cannot// be changed by command skills!
-      * Defaults to false.
+#### MovementSpeed
+The movement speed of the mob.
+Most mobs has a default move speed of `0.2` and any value higher than `1` tends to make a mob difficult or impossible to fight.
+```yml
+Options:
+  MovementSpeed: 0.2
+```
 
-**Interactable: \[true/false\]**
+#### NoAI
+Whether the mob should have AI. This option overrides any AI goals specified in [AIGoalSelectors](/Mobs/Mobs#aigoalselectors).
+As opposed to AIGoalSelectors, this will work on entities that have hardcoded AI. And if this is set to `true`, the mob will never cast any skills.
+Defaults to `false`.
+```yml
+Options:
+  NoAI: false
+```
 
-      * Make the mob none interactable. In case of armor stand, denies interacts with its equipment.
-      * Defaults to false.
+#### NoDamageTicks
+Defines how long in ticks the mob is invulnerable after taking damage.
+If [ImmunityTables](/Mobs/ImmunityTables) is enabled for the mob, then `NoDamageTicks` will be per player instead of global.
+Defaults to `10`.
+```yml
+Options:
+  NoDamageTicks: 20
+```
 
-**LockPitch: \[true/false\] (4.9)**
+#### NoGravity
+Whether the mob should not have gravity. If set to `true`, the mob **CANNOT** have the [velocity](/Skills/mechanics/velocity) mechanic used on it.
+Defaults to `false`.
+```yml
+Options:
+  NoGravity: false
+```
 
-      * Requires protocollib, keeps mobs heads from looking up/down.
-      * Defaults to false.
+#### PassthroughDamage
+Causes all damage taken to be redirected to the mob's parent, if one exists. A mob's parent is the entity that initially summoned the mob.
+Defaults to `false`.
+```yml
+Options:
+  PassthroughDamage: false
+```
 
-**KnockbackResistance: \[number\]**
+#### PreventItemPickup
+Prevent mobs from picking up items;
+Defaults to `true`.
+```yml
+Options:
+  PreventItemPickup: false
+```
 
-      * Number between 0 and 1 that defines resistance of mob to knockbacks. Defaults to 0.
-      * 0.1 = 10%, 0.5 = 50% 1 = 100%
-      * Note that mobs with 100% resistance can still be knocked back by bow's enchantment: ARROW_KNOCKBACK.
-      * For true knockback resistance, see the Velocity mechanic's wiki page
+#### PreventLeashing
+Whether to prevent a leash from being placed on the mob.
+Defaults to `true`.
+```yml
+Options:
+  PreventLeashing: false
+```
 
-**MaxCombatDistance: \[number\]**
+#### PreventMobKillDrops
+Prevents a MythicMob's target from dropping loot.
+Defaults to `false`.
+```yml
+Options:
+  PreventMobKillDrops: false
+```
 
-      * The mob cannot be damaged by players further away than # many blocks.
-      * Setting this option to a number less than the distance of a certain mob skill or attack will ensure that the mob can damage the player and will not be as easy to exploit.
+#### PreventOtherDrops
+Prevents the mob from dropping its vanilla loot table.
+Defaults to `false`.
+```yml
+Options:
+  PreventOtherDrops: false
+```
 
-**MovementSpeed: \[number\]**
+#### PreventRandomEquipment
+Prevents the mob from spawning with random equipment.
+Defaults to `false`.
+```yml
+Options:
+  PreventRandomEquipment: false
+```
 
-      * The movement speed of the mob.
-      * Most mobs default to movement speed of 0.2
-      * Values above 1 tend to make the mob difficult / impossible to fight.
+#### PreventRenaming
+Prevents the mob from being renamed using a nametag.
+Defaults to `true`.
+```yml
+Options:
+  PreventRenaming: false
+```
 
-**NoAI: \[true/false\]**
+#### PreventSunburn
+Prevents the mob from burning in the sun.
+Defaults to `false`.
+```yml
+Options:
+  PrevenSunburn: false
+```
 
-      * Wether or not the mob should have AI. //Will override any settings specified in AIGoalSelectors!//
-      * As opposed to AIGoalSelectors, this will work on Enderdragons and Withers.
-      * Defaults to false.
-      * Note that any mob with NoAI: true will never cast a skill under the Skills: tab.
+#### RepeatAllSkills
+Whether to repeat HP based skills if a mob heals back above the health threshold.
+Defaults to `false`.
+```yml
+Options:
+  RepeatAllSkills: false
+```
 
-**NoDamageTicks:\[number\]**
+#### ShowHealth
+Displays the health of the mob through messages broadcast within a radius and formatting by `Mobs.ShowHealth.Radius` and `Mobs.ShowHealth.Formatting`, respectively, in `/plugins/MythicMobs/config.yml`
+Defaults to `false`.
+```yml
+Options:
+  ShowHealth: false
+```
 
-      * Defines how long the mob is invulnerable after being hit.
-      * If ImmunityTables are turned on for the mob, NoDamageTicks are per player as opposed to global.
-      * Defaults to 10.
-
-**NoGravity: \[true/false\]**
-
-      * Whether the mob should not have gravity.
-      * Defaults to false.
-      * Note that when this is true, the mob CANNOT have the skill [[skills/mechanics/velocity|velocity]] used on it.
-
-**PassthroughDamage: \[true/false\]**
-
-      * Causes all damage taken to be redirected to the mob's parent, if one exists. A mob's parent is the entity that initially summoned the mob.
-      * Defaults to false
-
-**Persistent: \[true/false\]**
-
-      * Makes the mob immune to the "mm m killall" command
-      * The mob can still despawn if "Despawn" is set to true
-      * The mob can still be killed if targeted in the "mm m kill X" command or using a "minecraft:kill" command
-      * Defaults to false
-
-**PreventItemPickup: \[true/false\]**
-
-      * Prevents mobs from picking up items.
-      * Defaults to true.
-
-**PreventLeashing: \[true/false\]**
-
-      * Whether to prevents a leash from being placed on the mob.
-      * Defaults to true
-
-**PreventMobKillDrops: \[true/false\]**
-
-      * Prevents mobs killed by that MythicMob from dropping loot.
-      * Defaults to false.
-
-**PreventOtherDrops: \[true/false\]**
-
-      * Should MythicMobs block the mob from dropping its normal items?
-      * Defaults to false.
-
-**PreventRandomEquipment: \[true/false\]**
-
-      * Whether a mob should be allowed to spawn with random equipment.
-      * Defaults to false.
-
-**PreventRenaming: \[true/false\]**
-
-      * Whether to prevent renaming using a nametag.
-      * Defaults to true.
-
-**PreventSunburn: \[true/false\]**
-
-      * Whether to prevent the mob from burning in the sun.
-      * Defaults to false.
-
-**RepeatAllSkills: \[true/false\]**
-
-      * Whether to repeat HP based skills if a mob heals back above the health threshold for them.
-      * Defaults to false.
-
-**ShowHealth: \[true/false\]**
-
-      * Displays health of mob through messages broadcast within a radius defined by **show<nowiki>*</nowiki>health<nowiki>*</nowiki>radius**    and formatted according to **show<nowiki>*</nowiki>health<nowiki>*</nowiki>format**. Both of these are global settings under **config.yml**
-      * Defaults to false.
-
-**Silent: \[true/false\]**
-
-      * Whether or not a mob should use vanilla sound effects.
-      * Defaults to false.
+#### Silent
+Whether a mob should use vanilla sound effects.
+DDefaults to `false`. 
+```yml
+Options:
+  Silent: false
+```
 
 ------------------------------------------------------------------------
 
-### Mob specific options
+## Mob specific options
 
 These are specific mob options and will have no effect when used on a
 different mobtype.
