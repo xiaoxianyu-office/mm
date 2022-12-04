@@ -23,6 +23,8 @@ Attributes
 | refreshDuration     | rd | Makes the aura's duration refresh to the amount defined in the mechanic should the entity have the same aura applied to it again (4.6.0 +)                                                  | false         |
 | mergeSameCaster     | msc, mc | Merges all of the same auras applied by one entity to another into one aura (Prevents a mob from being able to stack an aura multiple times on the same entity) (4.6.0 +)                   | false         |
 | mergeAll            | ma | Merges all of the same auras applied by any and all entities to another into one aura (Prevents multiple mobs from being able to stack an aura multiple times on the same entity) (4.6.0 +) | false         |
+| overwriteSameCaster | | When applied, stops all of the same auras applied on the target by the same caster and replaces them with the new aura | false |
+| overwriteAll | | When applied, stops all of the same auras applied on the target and replaces them with the new aura | false |
 | CancelOnGiveDamage  | cogd    | Cancels the aura if the entity with the aura deals any damage to another entity.                                                                                                            | false         |
 | CancelOnTakeDamage  | cotd    | Cancels the aura if entity with the aura takes any sort of damage.                                                                                                                          | false         |
 | CancelOnDeath       | cod     | Cancels the aura if the entity with the aura dies.                                                                                                                                          | true          |
