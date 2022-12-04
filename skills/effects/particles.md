@@ -49,10 +49,10 @@ Added in 4.12 (Premium Only!):
 
 #### Dust_color_transition-Specific Attributes
 
-| Attribute | Aliases | Description                           |
-|-----------|---------|---------------------------------------|
-| color1    | uel     | The color the particles starts as     |
-| color2    |         | The color the particles transition to |
+| Attribute | Aliases | Description                            |
+|-----------|---------|----------------------------------------|
+| color1    |         | The color the particles starts as      |
+| color2    |         | The color the particles transitions to |
 
 
 #### Particle Colors
