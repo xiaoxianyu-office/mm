@@ -73,7 +73,9 @@ Configuration:
       Damage: 0
       KnockbackResistance: 0
       Power: 0
-  Skills:
+    ShowHealth:
+      Radius: 25
+      Format: $mobname: $mobhp/$mobmaxhp
     
   RandomSpawning:
     DisableVanillaSpawns: false
