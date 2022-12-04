@@ -25,6 +25,7 @@ Added in 4.12 (Premium Only!):
 | ------ | ------ | ------ | ------ |
 | particle  | p  | The particle type to use. See list here.  | reddust |
 | material | m | Block or Item to use with block_crack or item_crack respectively |
+| mob |   | The entity to spawn as the particle. Cannot be the original entity |
 | amount | a | The number of particles to create | 10    |
 | hSpread | hs  | The horizontal spread of the particles | 0     |
 | vSpread | vs  | The vertical spread of the particles | 0     |
@@ -41,16 +42,28 @@ Added in 4.12 (Premium Only!):
 #### Entity-Only Attributes
 
 | Attribute       | Aliases  | Description | Default Value |
-|-----------------|----------|------|---------------|
+|-----------------|----------|-------------|---------------|
 | useEyeLocation | uel | (true/false) Whether to base the particles on the entity's eyes | false |
 | forwardOffset   |  | The forward-offset from the targeted entity,doesn'n work when set directional to true | 0 |
 | sideOffset | so | The side-offset from the targeted entity,doesn'n work when set directional to true | 0 |
+
+#### Dust_color_transition-Specific Attributes
+
+| Attribute | Aliases | Description                           |
+|-----------|---------|---------------------------------------|
+| color1    | uel     | The color the particles starts as     |
+| color2    |         | The color the particles transition to |
+
 
 #### Particle Colors
 
 As of MythicMobs version 2.3, some particles effects (mobSpell, mobSpellAmbient, and reddust) can be colored by using an additional “color=hexcode” argument. Hexcodes for coloring particles can be found here: [Hex Colors](http://www.color-hex.com/) From MM Version 2.5.0+ and Minecraft version 1.10 onwards, fallingdust also may use the color option.
 
     - effect:particles{p=reddust;color=#FF00FF}
+
+### Mob-Type Particles
+
+This particle type will replace the spawned particle with the selected entity. The entity will act as a normal one, being able to attack, be hit, activate skills and so on. The entity will have no parent/owner relationship with the caster.
 
 ### Examples
 ----
