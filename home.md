@@ -5,7 +5,7 @@ Mythic allows server owners to fully modify all attributes of any non-player ent
 
 It gives you full control over how mobs behave, from simply increasing their HP and damage to giving mobs a vast arsenal of new abilities with a powerful yet simple scripting system. Your custom mobs can replace vanilla mobs[,](/Pande's-Secret-Lab) be spawned randomly using a vast array of spawn conditions, or you can set up custom mob spawners that activate under certain conditions or by commands.
 
-You can finally create that ultimate boss you've always dreamed of crushing your players with. It is an absolute essential for almost every server.
+You can finally create that ultimate boss you've always dreamed of crushing your players with[.](TestingPlace) It is an absolute essential for almost every server.
 
 As a brief summary, Mythic allows you to:
 
