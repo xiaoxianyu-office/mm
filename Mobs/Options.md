@@ -1,4 +1,4 @@
-All options available when creating a mob. These options go under the `Options` section, like so:
+All options available when creating a mob. Most of these options go under the `Options` section, like so:
 ```yml
 Dummy:
   Type: skeleton
@@ -239,7 +239,7 @@ Options:
 
 #### Silent
 Whether a mob should use vanilla sound effects.
-DDefaults to `false`. 
+Defaults to `false`. 
 ```yml
 Options:
   Silent: false
@@ -250,104 +250,182 @@ Options:
 ## Mob specific options
 
 These are specific mob options and will have no effect when used on a
-different mobtype.
+different mob type.
 
-#### Armor Stands
+### Armor Stands
 
-**CanMove: \[true/false\]**
-
-      * Whether an armor stand can move or not.
-      * Only applies to armor stand type mobs.
-      * Defaults to true.
-      * Requires PaperSpigot
-
-**CanTick: \[true/false\]**
-
-      * Whether an armor stand can tick or not.
-      * Only applies to armor stand type mobs.
-      * Defaults to true.
-      * Requires PaperSpigot
-
-**HasArms: \[true/false\]**
-
-      * Whether an armor stand has arms or not.
-      * Only applies to armor stand type mobs.
-      * Defaults to false.
-
-**HasBasePlate: \[true/false\] (4.9)**
-
-      * Whether an armor stand has a baseplate or not.
-      * Only applies to armor stand type mobs.
-      * Defaults to true.
-
-**HasGravity: \[true/false\]**
-
-      * Whether an armor stand is affected by gravity or not.
-      * Only applies to armor stand type mobs.
-      * Defaults to true.
-
-**Invisible: \[true/false\]**
-
-      * Whether an armor stand is invisible or not.
-      * Only applies to armor stand type mobs.
-      * Defaults to false.
-
-**ItemBody: \[MythicItem Name\]**
-
-      * Designates the Mythic Item that should go in the body/chest slot of an armor stand.
-      * Only applies to armor stand type mobs.
-
-**ItemFeet: \[MythicItem Name\]**
-
-      * Designates the Mythic Item that should go in the feet slot of an armor stand.
-      * Only applies to armor stand type mobs.
-
-**ItemHand: \[MythicItem Name\]**
-
-      * Designates the Mythic Item that should go in the hand slot of an armor stand.
-      * Only applies to armor stand type mobs.
-
-**ItemHead: \[MythicItem Name\]**
-
-      * Designates the Mythic Item that should go in the head slot of an armor stand.
-      * Only applies to armor stand type mobs.
-
-**ItemLegs: \[MythicItem Name\]**
-
-      * Designates the Mythic Item that should go in the legs slot of an armor stand.
-      * Only applies to armor stand type mobs.
-
-**Marker: \[true/false\]**
-
-      * Whether the Armor Stand should be a marker.
-      * Setting this option to true will prevent the armor stand from being destroyed in the game - making it completely non-interactable.
-
-**Small: \[true/false\]**
-
-      * Whether an armor stand is small or not.
-      * Only applies to armor stand type mobs.
-      * Defaults to false.
-
-**Pose:**
-
--   **Head: \[0,0,0\]**
--   **Body: \[0,0,0\]**
--   **LeftArm: \[0,0,0\]**
--   **RightArm: \[0,0,0\]**
--   **LeftLeg: \[0,0,0\]**
--   **RightLeg: \[0,0,0\]**
--   All these values default to zero.
--   All values accept number ranges - see example below.
--   Note that these pose options will not be recognized under the
-    options-tag but must be set like this:
+#### CanMove: \[true/false\]**
+Sets whether an armor stand can move. Defaults to `true` and requires PaperSpigot
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    CanMove: true
 ```
+
+#### CanTick
+Sets whether an armor stand can tick. Defaults to `true` and requires PaperSpigot
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    CanTick: true
+```
+
+#### HasArms
+Sets whether an armor stand has arms. Defaults to `false`.
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    HasArms: true
+```
+
+#### HasBasePlate
+Sets whether an armor stand has a baseplate. Defaults to `true`
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    HasBasePlate: true
+```
+
+#### HasGravity
+Sets whether the armor stand is affected by gravity. Defaults to `true`.
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    HasGravity: true
+```
+
+#### Invisible
+Sets whether the armor stand is invisible. Defaults to `false`.
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    Invisible: true
+```
+
+#### ItemBody
+Designates the [Mythic Item](/Items/Items) that should go in the body/chest slot of an armor stand.
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    ItemBody: AN_EXAMPLE_CHESTPLATE
+```
+
+#### ItemFeet
+Designates the [Mythic Item](/Items/Items) that should go in the feet slot of an armor stand.
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    ItemFeet: AN_EXAMPLE_BOOTS
+```
+
+#### ItemHand
+Designates the [Mythic Item](/Items/Items) that should go in the main hand slot of an armor stand.
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    ItemHand: AN_EXAMPLE_SWORD
+```
+
+#### ItemOffhand
+Designates the [Mythic Item](/Items/Items) that should go in the off hand slot of an armor stand.
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    ItemOffhand: AN_EXAMPLE_STICK
+```
+
+#### ItemHead
+Designates the [Mythic Item](/Items/Items) that should go in the helmet slot of an armor stand.
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    ItemHead: AN_EXAMPLE_HELMET
+```
+
+#### ItemLegs
+Designates the [Mythic Item](/Items/Items) that should go in the leggings slot of an armor stand.
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    ItemLegs: AN_EXAMPLE_PANTS
+```
+
+#### Marker
+Sets the armor stand as a marker. This option prevents the armor stand from being destroyed in game,
+making it completely non-interactable. Defaults to `false`.
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    Marker: false
+```
+
+#### Small
+Sets the armor stand to small variant. Defaults to `false`.
+```yml
+Dummy:
+  Type: ARMOR_STAND
+  Options:
+    Small: true
+```
+
+#### Pose
+Sets the body part's current pose.
+Default values are `0,0,0` and accepts ranges like `#to#`.
+These will go under the `Pose` section instead of the `Options` section.
+###### Head
+```yml
 Mob:
   Type: armor_stand
   Pose:
     Head: 0,50,0
+```
+###### Body
+```yml
+Mob:
+  Type: armor_stand
+  Pose:
     Body: 0,10,10
-    LeftArm: 0 to 360,0,0
-    RightArm: 0 to 90,0,0
+```
+###### LeftArm
+```yml
+Mob:
+  Type: armor_stand
+  Pose:
+    Body: 0to360,0,0
+```
+###### RightArm
+```yml
+Mob:
+  Type: armor_stand
+  Pose:
+    RightArm: 0to90,0,0
+```
+###### LeftLeg
+```yml
+Mob:
+  Type: armor_stand
+  Pose:
+    LegLeg: 0,0to80,0
+```
+###### RightLeg
+```yml
+Mob:
+  Type: armor_stand
+  Pose:
+    RightLeg: 20,25,0
 ```
 
 #### Bees
