@@ -21,7 +21,7 @@ Maven
     <dependency>
         <groupId>io.lumine</groupId>
         <artifactId>Mythic-Dist</artifactId>
-        <version>5.2.0/version>  
+        <version>5.2.0</version>  
         <scope>provided</scope>
     </dependency>
 
