@@ -218,7 +218,7 @@ Prevents the mob from burning in the sun.
 Defaults to `false`.
 ```yml
 Options:
-  PrevenSunburn: false
+  PreventSunburn: false
 ```
 
 #### RepeatAllSkills
