@@ -282,6 +282,11 @@ MerchantTest:
       Item1: 64 EMERALD
       Result: mmoitems.SWORD.CUTLASS
       MaxUses: 1
+    3:
+      Item1: 32 EMERALD
+      Item2: 1 PAPER
+      Result: 1 CUSTOM_ITEM
+      MaxUses: 1
 ```
 
 Examples
