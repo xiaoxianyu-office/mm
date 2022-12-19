@@ -42,7 +42,7 @@ The chance for the specified item to be dropped.
 | **cmd**                     | Will run a command in console                            | `- cmd{c="warp <trigger.name> spawn"}`  |
 | **mmoitems**                | Drops a mmoitems item                                    | `- mmoitems{type=SWORD;id=CUTLASS} 1 1` |
 
-[For more about MMOItems, see here.](https://git.lumine.io/mythiccraft/mmoitems/-/wikis/Item%20Drop%20Tables)
+[For more about MMOItems, see here.](https://gitlab.com/phoenix-dvpmt/mmoitems/-/wikis/Item%20Drop%20Tables#adding-mmoitems-to-mythicmobs-drop-tables)
 
 **In-line Drops**
 ------------------
