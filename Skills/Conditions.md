@@ -5,7 +5,7 @@ Conditions are used to determine whether or not an action may execute.
 
 Conditions can be used in [1]:
 -   [Skill Mechanics](/skills/mechanics/skill)
--   [Drop Tables](/Items/Drops#drop-tables)
+-   [Drop Tables](/drops/Drops#drop-tables)
 -   [Spawners](/Spawners)
 -   [Random Spawners](/Random%20Spawns)
 
