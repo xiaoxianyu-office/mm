@@ -47,7 +47,7 @@ Example
 
 For very basic equipment, you can add some inline item data so that you don't always have to create a mythic item. Options currently available in-line on builds below 4.12 include **name**, **data**, **amount**, **lore**, and **color**
 
-All of the inline item data that works in Equipment: also works in [Drops:](/items/drops)!
+All the inline item data that works under `Equipment` will also work under the [Drops](/drops/Drops) section.
 
 ```
  Equipment:
