@@ -36,6 +36,7 @@ itself.
 | onShoot             | When the mob fires a projectile                              |
 | onTame              | When the mob gets tamed                                      |
 | onBreed             | When the mob breeds with another mob.                        |
+| onTrade             | When the Villager completes a trade. Requires Paper          |
 
 Using Triggers
 --------------
