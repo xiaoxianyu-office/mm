@@ -142,6 +142,13 @@ A complete list of all available randomspawn options.
     -   Only works with Action: ADD
     -   **PositionType: LAND**
 
+<!-- -->
+
+-   **Cooldown: \[number\]**
+    -   The interval, in seconds, that must elapse between the spawning of two mobs by this same RandomSpawn
+    -   Added in MythicMobs 5.2.0
+    -   **Cooldown: 60**
+
 ### Extra Options in config.yml
 
 These options, located in MythicMobs' "config.yml"-file, are responsible for how SpawnPoints are generated on your server. It's best to use common sense when adjusting these values, as misconfigurations of this section may cause lag on your server.
