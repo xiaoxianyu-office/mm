@@ -18,6 +18,11 @@ Type of enchantment to be applied to the specified item.
 **\<level>**  
 The level of the specified enchantment.
 
+Available Enchantments
+----------------------
+
+A list of available [enchantments](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html) can be found on spigot javadocs
+
 Example
 -------
 ```yml
@@ -27,11 +32,6 @@ lethal_pickaxe:
   - DAMAGE_ALL:3
   - KNOCKBACK:1
 ```
-Available Enchantments
-----------------------
-
-A list of available [enchantments](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html) can be found on spigot javadocs
-
 
 <!--
 **ARROW\_DAMAGE**
