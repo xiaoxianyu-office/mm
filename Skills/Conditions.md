@@ -100,13 +100,13 @@ Conditions
 |-------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------|
 | [Altitude](/skills/conditions/altitude)                                       | Entity   | Tests how far above the ground the target entity is                                         |
 | [Biome](/skills/conditions/biome)                                             | Location | Tests if the target is within the given list of biomes                                      |
-| [BiomeType](/skills/conditions/biometype)                                     | Location | Tests for the biome category at a location.
+| [BiomeType](/skills/conditions/biometype)                                     | Location | Tests for the biome category at a location.                                                 |
 | [BlockType](/skills/conditions/blocktype)                                     | Location | Tests the material type present at the target location                                      |
 | [Blocking](/skills/conditions/blocking)                                       | Entity   | Tests if the targeted player is blocking with a shield                                      |
 | [BowTension](/skills/conditions/bowtension)                                   | Meta     | Checks the bow tension of when an entity shoots from a bow                                  |
 | [Burning](/skills/conditions/burning)                                         | Entity   | Whether or not the target entity is on fire                                                 |
-| [Chance](skills/conditions/chance)                                            | Meta     | The chance that the metaskill has to be executed
-| [Charged](/skills/conditions/charged)                                         | Entity   | Checks if the target creeper is charged
+| [Chance](skills/conditions/chance)                                            | Meta     | The chance that the metaskill has to be executed                                            |
+| [Charged](/skills/conditions/charged)                                         | Entity   | Checks if the target creeper is charged                                                     |
 | [Children](/skills/conditions/children)                                       | Entity   | Tests how many children the caster has                                                      |
 | [Color](/skills/conditions/color)                                             | Entity   | Tests the entity's colors                                                                   |
 | [Crouching](/skills/conditions/crouching)                                     | Entity   | Whether or not the target entity is crouching                                               |
@@ -129,7 +129,7 @@ Conditions
 | [FoodSaturation](/skills/conditions/FoodSaturation)                           | Entity   | Checks if the target has food within the range                                              |
 | [Gliding](/skills/conditions/gliding)                                         | Entity   | If the target is gliding                                                                    |
 | [GlobalScore](/skills/conditions/globalscore)                                 | Entity   | Checks a global scoreboard value                                                            |
-| [HasAI](/skills/conditions/hasai)                                             | Entity   | Checks if the target entity has its AI enabled
+| [HasAI](/skills/conditions/hasai)                                             | Entity   | Checks if the target entity has its AI enabled                                              |
 | [HasAura](/skills/conditions/hasaura)                                         | Entity   | Checks if the target entity has the given aura                                              |
 | [HasAuraStacks](/skills/conditions/hasaurastacks)                             | Entity   | Tests if the target has the given range of stacks from an aura                              |
 | [HasCurrency](/skills/conditions/hascurrency)                                 | Entity   | If the target has the given amount of vault currency                                        |
@@ -152,9 +152,9 @@ Conditions
 | [Inside](/skills/conditions/inside)                                           | Location | Checks if the target has a block over their head                                            |
 | [isCaster](/skills/conditions/iscaster)                                       | Entity   | Checks if the target is the caster                                                          |
 | [isChild](/skills/conditions/ischild)                                         | Entity   | Checks if the target is a child of the caster                                               |
-| [isClimbing](/skills/conditions/isClimbing)                                   | Entity   | Checks if the target entity is climbing
-| [isFlying](/skills/conditions/isflying)                                       | Entity   | Checks if the target player is flying
-| [isFrozen](/skills/conditions/isfrozen)                                       | Entity   | Checks if the target entity is frozen
+| [isClimbing](/skills/conditions/isClimbing)                                   | Entity   | Checks if the target entity is climbing                                                     |
+| [isFlying](/skills/conditions/isflying)                                       | Entity   | Checks if the target player is flying                                                       |
+| [isFrozen](/skills/conditions/isfrozen)                                       | Entity   | Checks if the target entity is frozen                                                       |
 | [isLiving](/skills/conditions/isliving)                                       | Entity   | Checks if the target is a living entity                                                     |
 | [isLeashed](/skills/conditions/isleashed)                                     | Entity   | Checks if the target has been leashed                                                       |
 | [isMonster](/skills/conditions/ismonster)                                     | Entity   | Checks if the target is a monster                                                           |
@@ -167,8 +167,8 @@ Conditions
 | [Level](/skills/conditions/level)                                             | Entity   | Checks the target MythicMob's level                                                         |
 | [LightLevel](/skills/conditions/lightlevel)                                   | Location | Tests the light level at the target location                                                |
 | [LineOfSight](/skills/conditions/lineofsight)                                 | Compare  | Tests if the target is within line of sight of the caster                                   |
-| [LunarPhase](/skills/conditions/lunarphase)                                   | Location | Checks the target world's lunar phase
-| [MobSize](/skills/skills/conditions/mobsize)                                 | Entity   | Checks the size of the target entity                                                                                                               
+| [LunarPhase](/skills/conditions/lunarphase)                                   | Location | Checks the target world's lunar phase                                                       |
+| [MobSize](/skills/skills/conditions/mobsize)                                  | Entity   | Checks the size of the target entity                                                        |
 | [MobsInRadius](/skills/conditions/mobsinradius)                               | Location | Checks how many mobs are in a given radius                                                  |
 | [MobsInChunk](/skills/conditions/mobsinchunk)                                 | Location | Matches a range to how many mobs are in the target location's chunk                         |
 | [MobsInWorld](/skills/conditions/mobsinworld)                                 | Location | Matches a range to how many mobs are in the target world                                    |
@@ -191,20 +191,20 @@ Conditions
 | [Pitch](/skills/conditions/pitch)                                             | Entity   | Checks if the pitch of the target entity is within a range                                  |
 | [PlayerKills](/skills/conditions/playerkills)                                 | Entity   | Matches how many players the target mob has killed                                          |
 | [PlayersInRadius](/skills/conditions/playersinradius)                         | Entity   | Checks how many players are in a radius                                                     |
-| [PlayersOnline](/skills/conditions/playersonline)                             | Meta     | Matches the number of players online
-| [PlayersInWorld](skills/conditions/playersinworld)                            | Meta     | Matches the number of players in the caster's world
+| [PlayersOnline](/skills/conditions/playersonline)                             | Meta     | Matches the number of players online                                                        |
+| [PlayersInWorld](skills/conditions/playersinworld)                            | Meta     | Matches the number of players in the caster's world                                         |
 | [PlayerNotWithin](/skills/conditions/playernotwithin)                         | Location | Checks if any players are within a radius of the target                                     |
 | [PlayerWithin](/skills/conditions/playerwithin)                               | Location | Checks if any players are within a radius of the target                                     |
-| [Plugin](/skills/conditions/plugin)                                           | Meta     | Checks if the specified plugin is running on the server
-| [Premium](/skills/conditions/premium)                                         | Meta     | Checks if MythicMobs Premium is running on the server
+| [Plugin](/skills/conditions/plugin)                                           | Meta     | Checks if the specified plugin is running on the server                                     |
+| [Premium](/skills/conditions/premium)                                         | Meta     | Checks if MythicMobs Premium is running on the server                                       |
 | [Raining](/skills/conditions/raining)                                         | Location | If it's raining in the target world                                                         |
 | [Region](/skills/conditions/region)                                           | Location | If the target is within the given WorldGuard region                                         |
 | [SameFaction](/skills/conditions/samefaction)                                 | Entity   | Tests if the caster and target are in the same faction                                      |
 | [Score](/skills/conditions/score)                                             | Entity   | Checks a scoreboard value of the target entity                                              |
-| [SkillOnCooldown](/skills/conditions/skilloncooldown)                          | Entity  | Checks if the given skill is in cooldown for the target
+| [SkillOnCooldown](/skills/conditions/skilloncooldown)                         | Entity   | Checks if the given skill is in cooldown for the target                                     |
 | [Stance](/skills/conditions/stance)                                           | Entity   | Checks the stance of the target mob                                                         |
 | [StringEquals](/skills/conditions/stringequals)                               | Meta     | Checks if value1 equals value2. Both values can use variables and placeholders.             |
-| [Structure](/skills/conditions/structure)                                     | Location | Matches if the target location is inside of a structure
+| [Structure](/skills/conditions/structure)                                     | Location | Matches if the target location is inside of a structure                                     |
 | [Sunny](/skills/conditions/sunny)                                             | Location | If the weather is sunny in the target world.                                                |
 | [TargetInLineOfSight](/skills/conditions/targetinlineofsight)                 | Entity   | Tests if the target has line of sight to their target                                       |
 | [TargetNotInLineOfSight](/skills/conditions/targetnotinlineofsight)           | Entity   | Tests if the target doesn't have line of sight to their target                              |
