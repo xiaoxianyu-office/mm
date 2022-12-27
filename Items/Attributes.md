@@ -1,71 +1,112 @@
-Item Attributes
-===============
-NOTE: Item attributes will ONLY work on Paper and its forks. Trying to use item attributes in Bukkit or Spigot will NOT work.
-----------
-The attributes section for items made with MythicMobs handles the Minecraft attribute system. It makes it possible to apply different attributes given to the entity wearing/using it depending on the slot.
+The attributes section for items made with MythicMobs handles the Minecraft attribute system.
+It makes it possible to apply different attributes given to the entity wearing/using the item depending on the slot.
 
-```
+Format
+------
+```yml
 Item:
   Id: item_id
   Attributes:
-    Slot:
-      Attribute: [number]
+    [Slot]:
+      [Attribute]: [value] <operation> 
 ```
-Attributes in this section also allow number ranges and forced
-percentages. See examples at the bottom of the page.
 
 Attributes
 ----------
+These are all the available attributes that can be put on the item.
+You can use general placeholders like `<random.#to#>` or `<random.float.#to#>`.
 
-**AttackSpeed: \[number\]**
+### AttackSpeed
+Determines the recharge rate of a fully charged attack.
 
--   Handles the attack speed or cooldown time of the item. Only does something when used on weapons.
--   Using this attribute will override the original attack speed value of the item. Base item attack speed and custom attack speed do not stack.
+```yml
+custom_item:
+  Id: stick
+  Attributes:
+    MainHand:
+      AttackSpeed: 0.1 MULTIPLY
+```
 
-**Armor: \[number\]**
+### Armor
+Sets the amount of armor.
+1 armor is equal to 0.5 armor plates.
+Vanilla caps the amount to 30.
+```yml
+custom_item:
+  Id: diamond_chestplate
+  Attributes:
+    Chest:
+      Armor: 2
+```
 
--   Sets the armor stat of the item.
--   Is applicable to all items - not exclusive to armor type items.
--   1 armor = 0.5 plate pieces
+### ArmorToughness
+Alters the damage reduction percentage of the armor attribute. [MC wiki](https://minecraft.fandom.com/wiki/Armor#Armor_toughness).
+```yml
+custom_item:
+  Id: diamond_chestplate
+  Attributes:
+    Chest:
+      ArmorToughness: 0.5
+```
 
-**ArmorToughness: \[number\]**
+### Damage
+Sets the damage dealt by melee attacks.
+1 damage equals to 0.5 hearts of damage dealt (without armor).
+```yml
+custom_item:
+  Id: stick
+  Attributes:
+    All:
+      Damage: 0.2 ADD_SCALAR
+```
 
--   Alters the damage reduction percentage of the armor
+### Health
+The maximum health modifier the user can have when either holding or wearing the item.
+1 health equals to 0.5 hearts.
+```yml
+custom_item:
+  Id: diamond_chestplate
+  Attributes:
+    MainHand:
+      Health: 2 ADD
+```
 
-**Damage: \[number\]**
+### Luck
+Sets the amount of luck modifier of the item. 
+This modifier affects the result of loot tables and also the [mob drops](/drops/Drops).
+```yml
+custom_item:
+  Id: stick
+  Attributes:
+    OffHand:
+      Luck: -10 ADD
+```
 
--   Sets the melee damage of the item.
--   Using this attribute will override the original damage value of the item. Base item damage and custom damage do not stack.
--   1 damage = 0.5 hearts
+### KnockbackResistance
+Sets the horizontal scale knockback resisted from attacks.
+```yml
+custom_item:
+  Id: diamond_chestplate
+  Attributes:
+    Chest:
+      KnockbackResistance: 2 MULTIPLY_BASE
+```
 
-**Health: \[number\]**
-
--   Modifies the health of the user when holding/wearing the item.
--   Use positive numbers for extra health and negative numbers for minus health.
--   1 health = 0.5 hearts
-
-**Luck: \[number\]**
-
--   Sets the luck or bad luck of the item.
--   Use positive numbers for luck and negative numbers for bad luck.
-
-**KnockbackResistance: \[number\]**
-
--   Sets the knockback resistance of the item.
--   Use *\[number\]%* to force percentage values.
--   Examples: ```KnockbackResistance: 99%```
-
-**MovementSpeed: \[number\]**
-
--   Sets the movement speed of the item.
--   Use positive numbers for additional speed and negative numbers for minus speed.
+### MovementSpeed
+Sets the movement speed modifier of the item.
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      MovementSpeed: -0.2 MULTIPLY_BASE
+```
 
 Slots
 -----
-
-| **Slot** | **Explanation**                                                           |
+| Slot     | Description                                                               |
 |----------|---------------------------------------------------------------------------|
-| All      | Special option. Will apply the given attributes to all slots.             |
+| All      | Will apply the given attributes to all slots.                             |
 | MainHand | Attributes will only apply if item is being held in the main hand.        |
 | OffHand  | Attributes will only apply if item is being held in the off hand.         |
 | Head     | Attributes will only apply if item is being worn on the head slot.        |
@@ -73,13 +114,24 @@ Slots
 | Legs     | Attributes will only apply if item is being worn on the legs slot.        |
 | Feet     | Attributes will only apply if item is being worn on the feet slot.        |
 
+Operations
+----------
+
+| Operation     | Aliases            | Description                                                                                       |
+|---------------|--------------------|---------------------------------------------------------------------------------------------------|
+| ADD           | 0, ADD_NUMBER      | Adds or subtracts the specified value to the base value.                                          |
+| MULTIPLY_BASE | 1, ADD_SCALAR      | Multiplies the base value with the sum of all the modifier's amount.                              |
+| MULTIPLY      | 2, MULTIPLY_SCALAR | Similar to `MULTIPLY_BASE` but multiplies all the modifier's amount instead of adding all of them |
+
+[*See MC wiki on how the game calculates the value for all modifiers*](https://minecraft.fandom.com/wiki/Attribute#Modifiers)
+
 Examples
 ========
 
 This example item will grant +10 luck when the item is held in the main
 hand, but will grant +7 luck and +2 extra damage if the item is held in
-the off hand slot:
-```
+the offhand slot:
+```yml
 lucky_charms:
   Id: potato_item
   Display: 'Rotten Lucky Charm'
@@ -91,7 +143,7 @@ lucky_charms:
       Damage: 2
 ```
 This example item grants +2 extra health no matter which slot the item is being held, but will also grant +4% movement speed if the item is worn in the feet slot:
-```
+```yml
 happy_feet:
   Id: leather_boots
   Display: 'Penguin Hide'
@@ -101,13 +153,13 @@ happy_feet:
     Feet:
       MovementSpeed: 0.04
 ```
-Each time this item is generated it will have a random damage value between 3 and 5 and a random speed bonus between 1 % and 5 % when worn in the main hand:
-```
+Each time this item is generated it will have a random damage value between 3 and 5 and a random speed bonus between 1% and 5% when worn in the main hand:
+```yml
 lucky_sword:
   Id: wood_sword
-  Display: '&eLucky Sword&r'
+  Display: '<yellow>Lucky Sword</yellow>'
   Attributes:
     MainHand:
       Damage: 3-5
-      MovementSpeed: 0.01-0.05
+      MovementSpeed: 0.01-0.05 MULTIPLY_BASE
 ```
