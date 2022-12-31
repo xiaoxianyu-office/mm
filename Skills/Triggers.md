@@ -1,6 +1,3 @@
-Skill Triggers
-==============
-
 Triggers are used to determine how a skill is triggered from within the
 mobs skill configuration section.
 
@@ -8,6 +5,7 @@ mobs skill configuration section.
 IN THEM.**</u> Triggers can only be used *to activate* the meta-skill
 itself.
 
+<!--
 **Table of all available triggers:**
 
 | Trigger             | When it fires...                                             |
@@ -37,27 +35,29 @@ itself.
 | onTame              | When the mob gets tamed                                      |
 | onBreed             | When the mob breeds with another mob.                        |
 | onTrade             | When the Villager completes a trade. Requires Paper          |
+-->
 
 Using Triggers
 --------------
 
 Triggers are defined in the skill section of the mob configuration and
-must use tilda (~) in front of them. In the case of the Timer, a time
+must use a tilde (~) in front of them. In the case of the Timer, a time
 in ticks is also required.
-
-    SkeletalWizard_Fire:
-      Type: WITHER_SKELETON
-      Display: '&Skeletal Fire Wizard'
-      Health: 50
-      Damage: 0.5
-      Skills:
-      - ignite{ticks=100} @target ~onAttack
-      - skill{s=FireShield} @trigger ~onDamaged 0.1
-      - skill{s=AOEFire} ~onTimer:300
+```yml
+SkeletalWizard_Fire:
+  Type: WITHER_SKELETON
+  Display: '&Skeletal Fire Wizard'
+  Health: 50
+  Damage: 0.5
+  Skills:
+  - ignite{ticks=100} @target ~onAttack
+  - skill{s=FireShield} @trigger ~onDamaged 0.1
+  - skill{s=AOEFire} ~onTimer:300
+```
 
 In this example the mob will also set its target on fire when
 melee-attacking, will use a "FireShield" skill when taking damage, and
-will use the "AOEFire" skill every 300 ticks [1].
+will use the "AOEFire" skill every 300 ticks, or every 15 seconds.
 
 Not using Triggers...
 ---------------------
@@ -67,172 +67,265 @@ skill should go off. It is **highly** recommended that you trigger all
 your skills using advanced triggers as opposed to the old, legacy
 methods.
 
-If a skill does not have a trigger, it will default to the "~onCombat"
-trigger (shown further below) which will execute when these four basic
-things occur:
-
--   The mob takes damage
--   The mob deals damage
--   The mob spawns
--   The mob dies
+If a skill does not have a trigger, it will default to the `~onCombat`
+trigger which will execute when these events occur:
+- When the mob deals or takes damage
+- When the mob spawns
+- When the mob dies
 
 <!-- -->
-
-    SkeletalWarrior:
-      Mobtype: skeleton
-      Display: '&9A Skeletal Warrior'
-      Health: 100
-      Damage: 2
-      Drops:
-      - DropTable
-      Skills:
-      - skill{s=Bash} =10%-90%
-
+```yml
+SkeletalWarrior:
+  Mobtype: skeleton
+  Display: '<blue>A Skeletal Warrior</blue>'
+  Skills:
+  - skill{s=Bash} =10%-90%
+```
 In this instance the Bash skill is triggered when the mob deals or takes
 damage when it is between 10% and 90% health.
 
 The @trigger Targeter
 ---------------------
 
-You may have noticed there is an @trigger targeter in the examples
-above, and listed in the targeters section. The @trigger will target the
-"cause" of the skill being set off, i.e. if a player damages a mob and
-that mob uses an onDamage-triggered skill, it will target that player.
-If a signal is being sent to a mob, it will target the mob that has sent
+You may have noticed there is an `@trigger` targeter in the examples
+shown above, and listed in the [targeters](/Skills/Targeters) section. The `@trigger` will target the
+entity that "caused" the skill to trigger, i.e. when a player damages a mob and
+that mob has an ~onDamaged skill, it will target that player.
+If a signal is being sent to a mob, it will target the mob that sent
 the signal, and so on.
 
-Detailed Descriptions & Examples
---------------------------------
+All Available Triggers
+----------------------
+#### ~onSpawn
+Executes the skill when the mob spawns. This does not have `@trigger`.
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob spawns
+    - message{m=SPAWN} @World ~onSpawn
+```
 
-**~onSpawn**
+#### ~onDeath
+Executes the skill when the mob dies. The entity that killed the mob is the `@trigger`.
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob dies
+    - message{m=DEATH} @World ~onDeath
+```
 
--    Trigger the skill to execute when the mob spawns.
--    This will only occur once.
--    Can be used along with the chance parameters to make the chance to
-    execute less than 100%
--    **- skill{s=DamageImmunity} ~onSpawn 0.50** (The mob has a 50%
-    chance to use a DamageImmunity skill when it spawns)
+#### ~onAttack
+Executes the skill when the mob attacks an entity.
+The `@trigger` is the entity that took damage from the attack.
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Damage: 1
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob attacks an entity
+    - message{m=ATTACK} @World ~onAttack
+```
 
-**~onDeath**
+#### ~onDamaged
+Executes the skill when the mob takes damage. The `@trigger` is the attacker.
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob takes damage
+    - message{m=DAMAGED} @World ~onDamaged
+```
 
--    Trigger the skill to execute when the mob dies.
--    This will only occur once.
--    Can be used along with the chance parameters to make the chance to
-    execute less than 100%
--    **- skill{s=SpawnSpiderlings} ~onDeath 1** (The mob has a 100%
-    chance to use a SpawnSpiderlings spell when it dies)
+#### ~onExplode
+Executes the skill when the mob explodes.
+Generally, this trigger only works with creepers and TNTs since other mobs tend to not explode...
+```yml
+EXAMPLE_MOB:
+  Type: CREEPER
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob explodes
+    - message{m=EXPLODE} @World ~onExplode
+```
 
-**~onAttack**
+#### ~onTeleport
+Executes the skill when the mob teleports.
+```yml
+EXAMPLE_MOB:
+  Type: ENDERMAN
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob teleports
+    - message{m=TELEPORT} @World ~onTeleport
+```
 
--    Trigger the skill to execute when the mob attacks.
--    This will occur anytime the mob attacks something.
--    Can be used along with the health and chance parameters to further
-    define when this occurs.
--    **- skill{s=Bash} ~onAttack &lt;50% 0.1** (The mob has a 10%
-    chance to use the Bash skill when it attacks and has less than 50%
-    health)
+#### ~onTimer:[tick(s)]
+Executes the skill every *n<sup>th</sup>* ticks. Ticks can't be zero and 20 ticks is equal to 1 second.
+**Care must be taken when using this trigger as it can lead to server/client performance issues.**
+**i.e. large amounts of particle effects can cause client lag, or can kick the client from the server**
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Skills:
+    # sends a message to all the players in the world every 0.05 seconds
+    - message{m=TIMER every tick (0.05 seconds)} @World ~onTimer:1
+    # sends a message to all the players in the world every 2 seconds
+    - message{m=TIMER every 40 ticks (2 seconds)} @World ~onTimer:40
+```
 
-**~onDamaged**
+#### ~onPlayerKill
+Executes the skill when the mob kills a player.
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob kills a player
+    - message{m=PLAYER KILLED} @World ~onPlayerKill
+```
 
--    Trigger the skill to execute when the mob takes damage.
--    This will occur anytime the mob takes damage.
--    Can be used along with the health and chance parameters to further
-    define when this occurs.
--    **- skill{s=FlameShield} ~onDamaged 1** (The mob has a 100% chance
-    to use the FlameShield skill when it takes damage)
+#### ~onEnterCombat
+Executes the skill when the mob enters combat. **REQUIRES [ThreatTables](/Mobs/ThreatTables) to be enabled**
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Modules:
+    ThreatTable: true
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob enters combat
+    - message{m=ENTERED COMBAT} @World ~onEnterCombat
+```
 
-**~onExplode**
+#### ~onDropCombat
+Executes the skill when the mob drops combat. **REQUIRES [ThreatTables](/Mobs/ThreatTables) to be enabled**
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Modules:
+    ThreatTable: true
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob enters combat
+    - message{m=DROPPED COMBAT} @World ~onDropCombat
+```
 
--    Trigger the skill to execute when the mob explodes.
--    This will generally occur only once unless you have the
-    PreventSuicide option set. Generally only works with creepers, since
-    other mobs tend to not explode...
--    Can be used along with the chance parameters to make the chance to
-    execute less than 100%
--    **- skill{s=SpawnCreeper} ~onExplode 0.25** (The mob has a 25%
-    chance to use the SpawnCreeper skill when it explodes)
+#### ~onChangeTarget
+Executes the skill when the mob changes target. **REQUIRES [ThreatTables] to be enabled**
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Modules:
+    ThreatTable: true
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob's target changes
+    - message{m=Target Changed} @World ~onChangeTarget
+```
 
-**~onTeleport**
+#### ~onInteract
+Executes the skill when a player interacts with, or *right-clicks*, the mob.
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
 
--    Trigger the skill to execute when the mob teleports.
--    Generally only used for Endermen or mobs that have skills that
-    allow them to teleport.
--    Can be used along with the health and chance parameters to further
-    define when this occurs.
--    **- skill{s=GustOfWind} ~onTeleport &lt;50% 1** (The mob has a
-    100% chance to use a GustOfWind spell when it teleports if it has
-    less than 50% health)
+  Skills:
+    # sends a message to all the players in the world
+    # when a player right-clicks the mob
+    - message{m=INTERACTED} @World ~onInteract
+```
 
-**~onTimer:&lt;ticks&gt;**
+#### ~onSignal:[signal]
+Executes the skill when the mob receives a signal from the [signal](/Skills/mechanics/signal) mechanic.
+A signal must be alphanumeric.
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Skills:
+    # sends a signal to all mythicmob entity in a radius of 64 blocks
+    # when a player right-clicks the mob
+    - signal{s=MOO_FOR_ME} @EIR{r=64} ~onInteract
+```
 
--    Trigger the skill to execute based on a timer.
--    The timer is in ticks so 20 ticks equates to 1 second.
--    Care must be taken when using the Timer trigger as skills that are
-     not properly designed can potentially lead to server or client side
-     performance issues. Skills with particularly low timers that call
-     complex syntax can cause server side performance issues, while large
-     count particle effects and other graphic intensive things can lead
-     to potential client side performance issues.
--    **- skill{s=SingleTargetFire} ~onTimer:200** (The mob will use the
-    SingleTargetFire skill every 10 seconds)
+```yml
+DUMMY_MOB:
+  Type: COW
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob receives a "MOO_FOR_ME" signal
+    - message{m=MOO} @World ~onSignal:MOO_FOR_ME
+```
 
-**~onPlayerKill**
+#### ~onShoot
+Executes the skill when the mob shoots a projectile.
+For example, skeletons with bows will shoot arrows; ghasts, blazes, or ender dragon will shoot some type of fireball.
+```yml
+EXAMPLE_MOB:
+  Type: SKELETON
+  Skills:
+    # sends a message to all the players in the world
+    # when the skeleton shoots from a bow
+    - message{m=I SHOT AN ARROW} @World ~onShoot
+```
 
--    Trigger the skill to execute when the mob kills a player character.
--    Can be used along with the health and chance parameters to further
-     define when this occurs.
--    **- skill{s=BossRegen} ~onPlayerKill &gt;0 1** (The mob has a 100%
-    chance to use the BossRegen spell when it kills a player)
+#### ~onBreed
+Executes the skill when the mob breeds with another mob.
+This trigger has `@Father` and `@Mother` targeters.
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob breeds
+    - message{m=LET'S GET THIS BREAD} @World ~onBreed
+```
 
-**~onEnterCombat**
+#### ~onTame
+Executes the skill when the player tames the mob.
+```yml
+EXAMPLE_MOB:
+  Type: WOLF
+  Skills:
+    # sends a message to all the players in the world
+    # when a player tames the mob
+    - message{m=I GOT TAMED} @World ~onTame
+```
 
--    Trigger the skill to execute when the mob enters combat.
--    This trigger will only work when ThreatTables are enabled.
--    **- skill{s=BuffSelf} ~onEnterCombat &gt;0 1** (The mob has a 100%
-    chance to use the BuffSelf skill when it enters combat with a player
-    or mob)
+#### ~onCreeperCharge
+Executes the skill when the mob, must be a creeper, is charged.
+```yml
+EXAMPLE_MOB:
+  Type: CREEPER
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob gets charge
+    - message{m=CHARGED} @World ~onCreeperCharge
+```
 
-**~onDropCombat**
+#### ~onPrime
+Executes the skill when the mob, must be a creeper, is primed
+```yml
+EXAMPLE_MOB:
+  Type: CREEPER
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob is primed
+    - message{m=OOO I'M GONNA EXPLODE} @World ~onChangeTarget
+```
 
--    Trigger the skill to execute when the mob drops combat.
--    This trigger will only work when ThreatTables are enabled.
--    **- skill{s=BossRegen} ~onDropCombat &gt;0 1** (The mob has a 100%
-    chance to use the BossRegen skill when it drops combat with a player
-    or mob)
-
-**~onChangeTarget**
-
--    Trigger the skill to execute when the mob changes target.
--    This trigger will only work when ThreatTables are enabled.
--    **- skill{s=Charge} ~onChangeTarget &gt;0 1** (The mob has a 100%
-    chance to use the Charge skill when it changes targets)
-
-**~onInteract**
-
--    Trigger the skill to execute when the player interacts with them
-    (right-clicks on them).
--    **- skill{s=QuestDialogue} ~onInteract &gt;0 1** (The mob has a
-    100% chance to use the QuestDialogue skill when the player interacts
-    or right-click on it)
-
-**~onSignal** or **~onSignal:[signal]**
-
--   Trigger the skill to execute when the mob receives a specific signal from the Signal mechanic.
--   Useful for skills that require communication between mobs or from a
-    player to a mob [2].
--   See
-    [signal-skill](/skills/mechanics/signal)
-    page.
-
-**~onShoot**
-
--    Trigger the skill to execute when the mob fires a projectile
-    (Ghast/Blaze Fireballs).
--    **- skill{s=ExplodeParticles} ~onShoot &gt;0 1** (The mob has a
-    100% chance to use the ExplodeParticles skill when it fires a
-    projectile)
-
-[1] 20 ticks = 1 second
-
-[2] players can communicate signals to mobs by using the
-mythicmobs-command /mm signal &lt;uuid&gt; &lt;signal&gt;
+#### ~onTrade
+Executes the skill when the villager trades with a player.
+```yml
+EXAMPLE_MOB:
+  Type: VILLAGER
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob's target changes
+    - message{m=TRADED} @World ~onTrade
+```
