@@ -328,7 +328,7 @@ EXAMPLE_MOB:
   Skills:
     # sends a message to all the players in the world
     # when the mob is primed
-    - message{m=OOO I'M GONNA EXPLODE} @World ~onChangeTarget
+    - message{m=OOO I'M GONNA EXPLODE} @World ~onPrime
 ```
 
 #### ~onTrade
