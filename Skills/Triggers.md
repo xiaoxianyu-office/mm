@@ -25,6 +25,7 @@ itself.
 | [onChangeTarget](#onchangetarget)      | When the mob changes targets (requires threat tables be on)  |
 | [onExplode](#onexplode)                | When the mob explodes (typically only used for creepers)     |
 | [onPrime](#onprime)                    | When the creeper charges up for an explosion                 |
+| [onCreeperCharge](#oncreepercharge)    | When the creeper is charged (when lightning hits a creeper)  |
 | [onTeleport](#onteleport)              | When the mob teleports (typically only used for endermen)    |
 | [onSignal:*[signal]*](#onsignalsignal) | When the mob receives a signal                               |
 | [onShoot](#onshoot)                    | When the mob fires a projectile                              |
