@@ -7,34 +7,36 @@ itself.
 
 **Table of all available triggers:**
 
-| Trigger                | When it fires...                                             |
-|------------------------|--------------------------------------------------------------|
-| onCombat               | Default                                                      |
-| [onAttack](#~onAttack) | When the mob hits something                                  |
-| onDamaged              | When the mob is damaged                                      |
-| onSpawn                | When the mob spawns                                          |
-| onDespawn              | When the mob is despawned                                    |
-| onFirstSpawn           | Triggered the first time a mob is spawned from a spawner     |
-| onLoad                 | When the mob is loaded (spawning or loading after a restart) |
-| onDeath                | When the mob dies                                            |
-| onTimer:*#*            | Every \# ticks (where \# is the interval in ticks)           |
-| onInteract             | When the mob is right-clicked                                |
-| onKill                 | When something kills a mob                                   |
-| onKillPlayer           | When the mob kills a player                                  |
-| onPlayerDeath          | When a player dies for any reason                            |
-| onEnterCombat          | When the mob enters combat (requires threat tables be on)    |
-| onDropCombat           | When the mob leaves combat (requires threat tables be on)    |
-| onChangeTarget         | When the mob changes targets (requires threat tables be on)  |
-| onExplode              | When the mob explodes (typically only used for creepers)     |
-| onPrime                | When the creeper charges up for an explosion                 |
-| onTeleport             | When the mob teleports (typically only used for endermen)    |
-| onSignal               | When the mob receives a signal                               |
-| onSignal:*[signal]*    | When the mob receives a specific signal                      |
-| onShoot                | When the mob fires a projectile                              |
-| onTame                 | When the mob gets tamed                                      |
-| onBreed                | When the mob breeds with another mob.                        |
-| onTrade                | When the Villager completes a trade. Requires Paper          |
+| Trigger                                | When it fires...                                             |
+|----------------------------------------|--------------------------------------------------------------|
+| onCombat                               | Default                                                      |
+| [onAttack](#onattack)                  | When the mob hits something                                  |
+| [onDamaged](#ondamaged)                | When the mob is damaged                                      |
+| [onSpawn](#onspawn)                    | When the mob spawns                                          |
+| [onDespawn](#ondespawn)                | When the mob is despawned                                    |
+| [onReady](#onready)                    | Triggered the first time a mob is spawned from a spawner     |
+| [onLoad](#onload)                      | When the mob is loaded (spawning or loading after a restart) |
+| [onDeath](#ondeath)                    | When the mob dies                                            |
+| [onTimer:*#*](#ontimerticks)           | Every \# ticks (where \# is the interval in ticks)           |
+| [onInteract](#oninteract)              | When the mob is right-clicked                                |
+| [onPlayerKill](#onplayerkill)          | When the mob kills a player                                  |
+| [onEnterCombat](#onentercombat)        | When the mob enters combat (requires threat tables be on)    |
+| [onDropCombat](#ondropcombat)          | When the mob leaves combat (requires threat tables be on)    |
+| [onChangeTarget](#onchangetarget)      | When the mob changes targets (requires threat tables be on)  |
+| [onExplode](#onexplode)                | When the mob explodes (typically only used for creepers)     |
+| [onPrime](#onprime)                    | When the creeper charges up for an explosion                 |
+| [onTeleport](#onteleport)              | When the mob teleports (typically only used for endermen)    |
+| [onSignal:*[signal]*](#onsignalsignal) | When the mob receives a signal                               |
+| [onShoot](#onshoot)                    | When the mob fires a projectile                              |
+| [onTame](#ontame)                      | When the mob gets tamed                                      |
+| [onBreed](#onbreed)                    | When the mob breeds with another mob.                        |
+| [onTrade](#ontrade)                    | When the Villager completes a trade. Requires Paper          |
 
+<!--
+ADD THIS TRIGGER BACK WHEN IT WORKS
+
+| onKill                       | When something kills a mob                                   |
+-->
 
 Using Triggers
 --------------
@@ -139,6 +141,17 @@ EXAMPLE_MOB:
     # sends a message to all the players in the world
     # when the mob takes damage
     - message{m=DAMAGED} @World ~onDamaged
+```
+
+#### ~onDespawn
+Executes the skill when the mob despawns.
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob takes damage
+    - message{m=DESPAWNED} @World ~onDespawn
 ```
 
 #### ~onExplode
@@ -327,4 +340,26 @@ EXAMPLE_MOB:
     # sends a message to all the players in the world
     # when the mob's target changes
     - message{m=TRADED} @World ~onTrade
+```
+
+#### ~onReady
+Executes the skill when the mob is ready to spawn from a [spawner](Spawners)
+```yml
+EXAMPLE_MOB:
+  Type: VILLAGER
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob is about to spawn from a spawner
+    - message{m=READY TO SPAWN FROM A SPAWNER} @World ~onReady
+```
+
+#### ~onLoad
+Executes the skill when the mob is loaded after a server restart.
+```yml
+EXAMPLE_MOB:
+  Type: VILLAGER
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob is loaded after a server restart
+    - message{m=LOADED} @World ~onLoad
 ```
