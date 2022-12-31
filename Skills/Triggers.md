@@ -246,7 +246,6 @@ Executes the skill when a player interacts with, or *right-clicks*, the mob.
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
-
   Skills:
     # sends a message to all the players in the world
     # when a player right-clicks the mob
