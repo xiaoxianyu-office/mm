@@ -167,7 +167,8 @@ Conditions
 | [Level](/skills/conditions/level)                                             | Entity   | Checks the target MythicMob's level                                                         |
 | [LightLevel](/skills/conditions/lightlevel)                                   | Location | Tests the light level at the target location                                                |
 | [LightLevelFromBlocks](/skills/conditions/lightlevelfromblocks)               | Location | Tests the light level originating from light-emitting blocks at the target location         |
-| [LineOfSight](/skills/conditions/lineofsight)                                 | Compare  | Tests if the target is within line of sight of the caster                                   |
+| [LineOfSight](/skills/conditions/lineofsight)                                 | Compare  | Tests if the target is within line of sight of the caster                                     |
+| [LineOfSightFromOrigin](/skills/conditions/lineofsightfromorigin)             | Compare  | Tests if the target is within line of sight of the caster                                     |
 | [LunarPhase](/skills/conditions/lunarphase)                                   | Location | Checks the target world's lunar phase                                                       |
 | [MobSize](/skills/skills/conditions/mobsize)                                  | Entity   | Checks the size of the target entity                                                        |
 | [MobsInRadius](/skills/conditions/mobsinradius)                               | Location | Checks how many mobs are in a given radius                                                  |
