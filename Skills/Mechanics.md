@@ -27,7 +27,7 @@ are able to target locations as well.
 | [BarCreate][]             | Creates a custom boss bar on the casting mob                                             |
 | [BarRemove][]             | Removes a custom boss bar on the casting mob                                             |
 | [BarSet][]                | Modifies a custom boss bar on the casting mob                                            |
-| [BoneMeal][]              | Applies a bone meal effect to the target blocks                             |
+| [BoneMeal][]              | Applies a bone meal effect to the target blocks                                          |
 | [BreakBlock][]            | Breaks the block at the target location                                                  |
 | [BreakBlockAndGiveItem][] | Breaks the block at the target location and gives an item/droptable                      |
 | [CloseInventory][]        | Closes the target player's inventory                                                     |
@@ -65,7 +65,7 @@ are able to target locations as well.
 | [GoTo][]                  | Move toward the location of the targeter (entity or location)                            |
 | [Heal][]                  | Heals the target                                                                         |
 | [HealPercent][]           | Heals the target for a percentage of its max-health                                      |
-| [HideFromPlayers][]       | Hides the caster, if the caster is a player, from other players for a set duration.      |
+| [Hide][]                  | Hides the caster from the targeted player(s) for a set duration.                         |
 | [Hologram][]              | Summons a hologram to the targeted location                                              |
 | [Ignite][]                | Sets the target on fire                                                                  |
 | [JSONMessage][]           | Sends a JSON-format message to the target player(s)                                      |
@@ -81,8 +81,8 @@ are able to target locations as well.
 | [Mount][]                 | Summons a mob for the caster and mounts it                                               |
 | [MountMe][]               | Forces the targeted entity to mount the caster                                           |
 | [MountTarget][]           | Mounts the target                                                                        |
-| [Oxygen][]                | Gives oxygen to a player target                                             |
-| [PickUpItem][]            | Pick up the targeted item                                                   |
+| [Oxygen][]                | Gives oxygen to a player target                                                          |
+| [PickUpItem][]            | Pick up the targeted item                                                                |
 | [PlayBlockBreakSound][]   | Plays a block breaking sound                                                             |
 | [PlayBlockFallSound][]    | Plays a block falling sound                                                              |
 | [PlayBlockHitSound][]     | Plays a block hit sound                                                                  |
@@ -124,9 +124,9 @@ are able to target locations as well.
 | [SetNoDamageTicks][]      | Sets the nodamageticks of the target                                                     |
 | [SetOwner][]              | Makes the target the owner of the casting mob                                            |
 | [SetRotation][]           | Sets the rotation of the target                                                          |
-| [SetTarget][]             | Sets the caster's target                                                     |
+| [SetTarget][]             | Sets the caster's target                                                                 |
 | [SetTargetScore][]        | Sets the score of the target                                                             |
-| [SetTongueTarget][]       | Sets the tongue target for a frog caster to the target entity                |
+| [SetTongueTarget][]       | Sets the tongue target for a frog caster to the target entity                            |
 | [SetScore][]              | Sets the scoreboard value of a dummy player                                              |
 | [SetSpeed][]              | Sets the target entity's speed attribute                                                 |
 | [SetStance][]             | Sets the stance of the target mob                                                        |
@@ -137,7 +137,7 @@ are able to target locations as well.
 | [ShootPotion][]           | Throws a potion at the target                                                            |
 | [ShootSkull][]            | Shoots a wither skull at the target                                                      |
 | [ShootShulkerBullet][]    | Shoots a shulker bullet at the target entity                                             |
-| [ShowEntity][]            | Shows the hidden caster to the targeted players                              |
+| [ShowEntity][]            | Shows the hidden caster to the targeted players                                          |
 | [Signal][]                | Sends a signal to a mob                                                                  |
 | [Speak][]                 | Causes the mob to speak in chat, with options for speech bubbles                         |
 | [Spring][]                | Creates a temporary spring of liquid at the target                                       |
@@ -413,7 +413,7 @@ but not yet ready for use.
   [VariableSubtract]: /skills/mechanics/variablesubtract
   [Swap]: /skills/mechanics/swap
   [Time]: /skills/mechanics/time
-  [HideFromPlayers]: /skills/mechanics/hidefromplayers
+  [Hide]: /skills/mechanics/hide
   [TrackLocation]: /skills/mechanics/tracklocation
   [DisguiseAsBlock]: /skills/mechanics/disguiseasblock
   [GiveItemFromSlot]: /skills/mechanics/giveitemfromslot
