@@ -28,5 +28,5 @@ Examples
   CUSTOM_ITEM:
     Id: STICK
     Skills:
-    - hide{d=100} @Server ~onInteract #User is now invisible from all online players, no armor is shown
+    - hide{d=100} @Server ~onUse #User is now invisible from all online players, no armor is shown
 ```
