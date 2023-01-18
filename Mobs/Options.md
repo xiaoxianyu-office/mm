@@ -580,7 +580,7 @@ Mob:
 **HorseStyle: \[horse\_style\]**
 
       * Sets the style of the horse.
-      * Styles can be BLACK_DOTS, WHITE, WHITE_DOTS, WHITEFIELD
+      * Styles can be BLACK_DOTS, WHITE, WHITE_DOTS, WHITEFIELD, NONE
 
 **Tamed: \[true/false\]**
 
