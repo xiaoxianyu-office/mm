@@ -773,7 +773,7 @@ Mob:
 
       * Sets the type of the villager the zombie should represent.
       * This option will also make the zombie turn into the respective villager type when being cured using potions.
-      * Can be "FARMER", ... FIXME
+      * Can be `ARMORER, BUTCHER, CARTOGRAPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, NONE, SHEPHERD, TOOLSMITH, WEAPONSMITH.`
 
 ------------------------------------------------------------------------
 
