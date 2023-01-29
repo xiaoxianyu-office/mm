@@ -19,7 +19,7 @@ Attributes
 | onTick               | oT          | Meta-Skill executed every [interval] ticks at the projectile's origin location.                                                                                                                       | None              |
 | onHit                | oH          | Meta-Skill executed when the projectile hits entities that allow be hit. Targets hit are inherited by the meta-skill.                                                                                                    | None              |
 | onEnd                | oE          | Meta-Skill executed when the projectile ends.                                                                                                                                                           | None              |
-| onBounce             |             | Meta-Skill executed when the projectile bounces.                                                                                                                                                         | None              |
+| onBounce             |             | Meta-Skill executed when the projectile bounces. **Premium Only** Mechanic.                                                                                                                                                        | None              |
 | Type                 |            | The "type" of projectile. Default projectiles are launched from the mob's location towards the target. METEOR type projectiles fall from the sky above the target.                                      | NORMAL            |
 | Interval             | i           | How often (in ticks) the projectile updates its position                                                                                                                                                | 4                 |
 | HorizontalRadius     | hRadius, hR | The horizontal radius entities will be hit in around the projectile.                                                                                                                                    | 1.25              |
@@ -47,8 +47,8 @@ Attributes
 | Accuracy          | ac, a           | Determines the accuracy of the projectile   | 1 |
 | HorizontalNoise   | hn | The randomness of the projectile in horizontal direction  | 0 |
 | VerticalNoise     | vn | The randomness of the projectile in the vertical direction | 0 |
-| Bounce            |    | Should the projectile bounce. Bounce radius depends on the projectile's hitbox                               | false |
-| BounceVelocityMod |    | Every time the projectile bounces, its velocity will be multiplied by this value | 0.9
+| Bounce            |    | Should the projectile bounce. Bounce radius depends on the projectile's hitbox. **Premium Only** Mechanic                                   | false |
+| BounceVelocityMod |    | Every time the projectile bounces, its velocity will be multiplied by this value. **Premium Only** Mechanic     | 0.9
 
   
 
