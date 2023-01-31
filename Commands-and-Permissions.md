@@ -33,8 +33,8 @@ Mob Commands
 -    **/mm mobs kill [mob_name]** *Removes all Mythic Mobs with  the provided name.*
 -    **/mm mobs killall** *Removes all active Mythic Mobs.*
 -    **/mm mobs killall -p** *Removes all persistent Mythic Mobs.*
--    **/mm mobs spawn [mob_name]:&lt;level&gt; &lt;amount&gt; &lt;world,x,y,z&gt;** *Spawns mobs with the provided name.*
--    **/mm mobs spawn -s [mob_name]:&lt;level&gt; &lt;amount&gt; &lt;world,x,y,z&gt;** *Silently spawns the mob in- no console text.*
+-    **/mm mobs spawn [mob_name]:&lt;level&gt; &lt;amount&gt; &lt;world,x,y,z,yaw,pitch&gt;** *Spawns mobs with the provided name.*
+-    **/mm mobs spawn -s [mob_name]:&lt;level&gt; &lt;amount&gt; &lt;world,x,y,z,yaw,pitch&gt;** *Silently spawns the mob in- no console text.*
 -    **/mm mobs stats** *Displays useful information about how many mobs are loaded on the server. (Amounts)*
 
 Mob Egg Commands
