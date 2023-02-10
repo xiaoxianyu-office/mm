@@ -19,3 +19,8 @@ Would remove whatever item is in slot 0, or the first slot, of the nearest playe
 Skills:
   - consumeslot{slot=0;amount=1} @NearestPlayer{r=10}
 ```
+Would remove whatever item is in the HAND equipment slot the nearest player's inventory
+```yaml
+Skills:
+  - consumeslot{slot=HAND;amount=1} @NearestPlayer{r=10}
+```
