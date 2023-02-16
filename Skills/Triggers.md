@@ -156,7 +156,7 @@ EXAMPLE_MOB:
 ```
 
 #### ~onExplode
-Executes the skill when the mob explodes.
+Executes the skill when the mob explodes. mobGriefing gamerule must be set to true for this to work.
 Generally, this trigger only works with creepers and TNTs since other mobs tend to not explode...
 ```yml
 EXAMPLE_MOB:
