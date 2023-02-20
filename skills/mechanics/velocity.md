@@ -23,7 +23,7 @@ Examples
 This example will stop all momentum of the casting mob upon taking
 damage. The effect will only last until the mob decides to move again or
 is moved by other sources.Note that mobs with this skill can still be knocked
- back by bow's enchantment: ARROW_KNOCKBAC
+ back by bow's enchantment: ARROW_KNOCKBACK, this can be mitigated by adding ";delay=1" to the skill below.
 
     internal_mobname:
       Type: Zombie
