@@ -4,15 +4,16 @@
 
 **Attributes:**
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| height    | altitude, a, h | The height range to check |
+| Attribute | Aliases        | Description                                             | Default |
+| --------- | -------------  | ------------------------------------------------------- | ------- |
+| height    | altitude, a, h | The height range to check                               |         |
+| maxHeight |                | Limits the maximum height this condition can checks for | 30      |
 
 ---
 
 **Examples:**
 
-```
+```yaml
 Conditions:
 - altitude{h=3-5} true
 ```
