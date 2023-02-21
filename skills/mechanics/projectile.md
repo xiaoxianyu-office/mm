@@ -49,7 +49,7 @@ Attributes
 | VerticalNoise     | vn | The randomness of the projectile in the vertical direction | 0 |
 | Bounce            |    | Should the projectile bounce. Bounce radius depends on the projectile's hitbox. **Premium Only** Mechanic                                   | false |
 | BounceVelocityMod |    | Every time the projectile bounces, its velocity will be multiplied by this value. **Premium Only** Mechanic     | 0.9
-| hitConditions     |    | A list of conditions that a target must meet in order for the projectile to be able to hit it  |  |
+| hitConditions     |    | A list of conditions that a target must meet in order for the projectile to be able to hit it. **Premium Only** Mechanic  |  |
   
 
 Special Notes
