@@ -49,7 +49,7 @@ Attributes
 | VerticalNoise     | vn | The randomness of the projectile in the vertical direction | 0 |
 | Bounce            |    | Should the projectile bounce. Bounce radius depends on the projectile's hitbox. **Premium Only** Mechanic                                   | false |
 | BounceVelocityMod |    | Every time the projectile bounces, its velocity will be multiplied by this value. **Premium Only** Mechanic     | 0.9
-
+| hitConditions     |    | A list of conditions that a target must meet in order for the projectile to be able to hit it  |  |
   
 
 Special Notes
@@ -113,14 +113,14 @@ Examples
 This example shoots a fast-moving ball of ice that damages and slows the
 first entity it hits:  
 **Mob File**  
-
+```yaml
     Mob:
       Type: SKELETON
       Skills:
       - skill{s=IceBolt} @target ~onTimer:100
-
+```
 **Skills File**  
-
+```yaml
     IceBolt:
       Skills:
       - projectile{onTick=IceBolt-Tick;onHit=IceBolt-Hit;v=8;i=1;hR=1;vR=1;hnp=true}
@@ -131,3 +131,8 @@ first entity it hits:
       Skills:
       - damage{a=10}
       - potion{type=SLOW;duration=100;lvl=2}
+```
+hitConditions usage example:
+```yaml
+  - projectile{hitConditions=[  - isMonster true  - isFrozen false ]}
+```
