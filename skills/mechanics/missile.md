@@ -175,7 +175,7 @@ None</td>
 <tr class="odd">
 <td> hitConditions </td>
 <td> </td>
-<td> A list of conditions that a target must meet in order for the projectile to be able to hit it. See the <a href="/skills/mechanics/projectile">projectile</a> mechanic for more info</td>
+<td> A list of conditions that a target must meet in order for the projectile to be able to hit it. See the <a href="/skills/mechanics/projectile">projectile</a> mechanic for more info. <b>Premium Only</b> Mechanic</td>
 <td> </td>
 </tr>
 </tbody>
