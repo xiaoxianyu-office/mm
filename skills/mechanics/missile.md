@@ -157,13 +157,13 @@ None</td>
 <tr class="even">
 <td>PowerAffectsRange</td>
 <td>par</td>
-<td>Whether a mob's <a href="/skills/mechanics/power_level">power level</a> affects the projectile's range.</td>
+<td>Whether a mob's <a href="Mobs/Power">power level</a> affects the projectile's range.</td>
 <td>true</td>
 </tr>
 <tr class="odd">
 <td>PowerAffectsVelocity</td>
 <td>pav</td>
-<td>Whether a mob's <a href="/skills/mechanics/power_level">power level</a> affects the projectile's velocity.</td>
+<td>Whether a mob's <a href="Mobs/Power">power level</a> affects the projectile's velocity.</td>
 <td>true</td>
 </tr>
 <tr class="even">
@@ -171,6 +171,12 @@ None</td>
 <td>fo</td>
 <td>Whether the missile should start from its origin</td>
 <td>false</td>
+</tr>
+<tr class="odd">
+<td> hitConditions </td>
+<td> </td>
+<td> A list of conditions that a target must meet in order for the projectile to be able to hit it. See the <a href="/skills/mechanics/projectile">projectile</a> mechanic for more info</td>
+<td> </td>
 </tr>
 </tbody>
 </table>
