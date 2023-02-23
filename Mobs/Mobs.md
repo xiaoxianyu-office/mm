@@ -35,7 +35,7 @@ another_mob:
 ```
 
 #### Display
-Sets the display name of the mob that will appear as the mob's name tag above its head.
+Sets the display name of the mob.
 This option supports color codes and [placeholders].
 The mob's name will not change or update on its own, you have to use [setname] mechanic to change or update it.
 ```yml
