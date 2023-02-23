@@ -65,6 +65,30 @@ These targeters only work if the mob has Threat Tables enabled.
 Location Targeters
 ------------------
 
+### Universal Attributes - Location Targeters
+There are some common attributes that can be used in most of the Location Targeters
+
+| Attribute                                | Shorthand        | Description                                                                                                      |
+| ---------------------------------------- | ---------------- | ----------------------------------------- |
+| Xoffset                                  | xo, x            | Centers the offset on the x axis           |
+| Yoffset                                  | yo, y            | Centers the offset on the y axis           |
+| Zoffset                                  | zo, z            | Centers the offset on the z axis           |
+| ForwardOffset                            | foffset, fo      | Centers forward and backward offset, based on the caster's viewing angle |
+| SideOffset                               | soffset, so      | Centers left and right offset, based on the caster's viewing angle |
+| Rotatex                                  | rotx             | Rotation on the x axis                    |
+| Rotatey                                  | roty             | Rotation on the y axis                    |
+| Rotatez                                  | rotz             | Rotation on the z axis                    |
+| Coordinatex                              | cx               | Sets the x axis coordinate                    |
+| Coordinatey                              | cy               | Sets the y axis coordinate                    |
+| Coordinatez                              | cz               | Sets the z axis coordinate                    |
+| BlockTypes                               | blocktype        | Only targets selected block types. Multiple blocks can be listed by separating them using a `,` |
+| BlockIgnores                             | blockignore      | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` |
+| CoordinateYaw                            | cyaw             | Sets the yaw value                        |
+| CoordinatePitch                          | cpitch           | Sets the pitch value                        |
+| blockCentered                            |                  | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself |
+
+
+
 ### Single-Location Targeters
 
 | Targeter                                 | Shorthand       | Description                                                                                                                                                                                                                                        |
