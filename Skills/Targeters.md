@@ -86,7 +86,7 @@ There are some common attributes that can be used in most of the Location Target
 | CoordinateYaw                            | cyaw             | Sets the yaw value                        |
 | CoordinatePitch                          | cpitch           | Sets the pitch value                        |
 | blockCentered                            |                  | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself |
-
+| ignoretranslucent                        | it               | Boolean value. If set to true, no translucent blocks will be targeted |
 
 
 ### Single-Location Targeters
