@@ -22,13 +22,16 @@ Examples
 --------
 
 This will set the mob level to 3 when it spawns
-
-    - setlevel{a=set;l=3} ~onSpawn
+```yaml
+    - setlevel{a=set;l=3} @self ~onSpawn
+```
 
 This will increase the mob level by 1 each time it kills a player
-
+```yaml
     - setlevel{a=add;l=1} ~onKillPlayer
+```
 
-Does not support ranges. Uses math instead. Use vars/placeholders to bypass restriction
-
-    - setlevel{l=<skill.value>-<random.1to5>} @self
+This will set the level of the mob to a random value between 1 and 5 when it spawns, plus the score of the `__GLOBAL__` fake player from the "testlevel" scoreboard. The usage of [Placeholders](/Skills/Placeholders) and [Math Operations](/Skills/Math) inside of a mechanic is **Premium Only**
+```yaml
+    - setlevel{a=set;l="<random.1to5> + <global.score.testlevel>"} @self ~onSpawn
+```
