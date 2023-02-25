@@ -28,3 +28,7 @@ This will set the mob level to 3 when it spawns
 This will increase the mob level by 1 each time it kills a player
 
     - setlevel{a=add;l=1} ~onKillPlayer
+
+Does not support ranges. Uses math instead. Use vars/placeholders to bypass restriction
+
+    - setlevel{l=<skill.value>-<random.1to5>} @self
