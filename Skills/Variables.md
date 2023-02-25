@@ -47,7 +47,7 @@ Variable mechanics are special mechanics that utilize variables. They can target
 | Mechanic                                               | Description                                      |
 |--------------------------------------------------------|--------------------------------------------------|
 | [SetVariable](/skills/mechanics/setvariable)           | Initializes and sets a variable.                 |
-| [SetVariableLocation](/skills/mechanics/setvariablelocation)   | Sets a variable to the target location.                 |
+| [SetVariableLocation](/skills/mechanics/setvariablelocation)   | Sets a variable, whose value depends on the target location.                 |
 | [VariableUnset](/skills/mechanics/variableunset)           | Unsets the variable.                 |
 | [VariableAdd](/skills/mechanics/variableadd)           | Adds to a numeric variable.                      |
 | [VariableSubtract](/skills/mechanics/variablesubtract) | Subtracts from a numeric variable.               |
