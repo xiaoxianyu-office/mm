@@ -274,6 +274,17 @@ DUMMY_MOB:
     - message{m=MOO} @World ~onSignal:MOO_FOR_ME
 ```
 
+You may also choose to not specify a signal for this trigger, in which case the associated mechanic will be triggered every time the mob receives a generic signal.
+```yml
+DUMMY_MOB:
+  Type: COW
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob receives a signal
+    - message{m=MOO...?} @World ~onSignal
+```
+
+
 #### ~onShoot
 Executes the skill when the mob shoots a projectile.
 For example, skeletons with bows will shoot arrows; ghasts, blazes, or ender dragon will shoot some type of fireball.
