@@ -150,6 +150,7 @@ Conditions
 | [InBlock](/skills/conditions/inblock)                                         | Location | Checks the material at the target location                                                  |
 | [InCombat](/skills/conditions/incombat)                                       | Entity   | If the target mob is considered in combat                                                   |
 | [Inside](/skills/conditions/inside)                                           | Location | Checks if the target has a block over their head                                            |
+| [isBaby](/skills/conditions/isbaby)                                           | Entity   | Checks if the target entity is a baby                                                       |
 | [isCaster](/skills/conditions/iscaster)                                       | Entity   | Checks if the target is the caster                                                          |
 | [isChild](/skills/conditions/ischild)                                         | Entity   | Checks if the target is a child of the caster                                               |
 | [isClimbing](/skills/conditions/isClimbing)                                   | Entity   | Checks if the target entity is climbing                                                     |
