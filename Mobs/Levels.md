@@ -18,7 +18,7 @@ section may include more in-depth tutorials later on.
       MobType: zombie
       Health: 100
       Damage: 10
-      Display: '&5Zombie Lvl - <mob.level>'
+      Display: '&5Zombie Lvl - <caster.level>'
       Options:
         MovementSpeed: 0.3
       Drops:
