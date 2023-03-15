@@ -17,6 +17,7 @@ Attributes
 | zOffset | z,zo      | The Z offset of pasting the Schematic from the target.   | 0             |
 | chestDropTable | chests,cdt      | Which MythicMob Drop Tables to supply the chests within the Schematic with.   | ""             |
 | trappedchestDropTable | trapchests,tcdt      | Which MythicMob Drop Tables to supply the Trapped Chests within the Schematic with.   | ""             |
+| blocksPerTick  |    | The number of blocks that are placed every tick          |               |
 
   
 
