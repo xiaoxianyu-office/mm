@@ -8,7 +8,7 @@ Attributes
 
 | Attribute        | Aliases       | Description                                                | Default Value |
 |------------------|---------------|------------------------------------------------------------|---------------|
-| onShoot            | os            | Skill to execute when the entity shoots            |               |
+| onShoot            | osh            | Skill to execute when the entity shoots            |               |
 | cancelEvent      | cE            | Whether or not to cancel the event that triggered the aura | false         |
 | forceaspower        | fap       | Whether to pass the force of the bow as the skill's power | true             |
 
