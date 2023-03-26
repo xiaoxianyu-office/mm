@@ -81,6 +81,14 @@ Options:
   Glowing: false
 ```
 
+#### HealOnReload
+Allows non-respawning mobs to heal once the chunk they are in gets reloaded. Defaults to `false`.
+```yml
+Options:
+  HealOnReload: false
+```
+
+
 #### Invincible
 Makes the mob completely invincible to all types of damage. This option cannot be changed by command skills.
 Defaults to `false`.
