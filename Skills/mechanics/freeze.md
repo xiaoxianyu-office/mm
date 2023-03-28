@@ -1,16 +1,16 @@
 Mechanic: Freeze 
 ================
 
-Freezes the target for the given number of ticks using the Powdered Snow freezing effect. (requires 1.17)
+Sets the ticks frozen in powdered snow. Freeze ticks are capped at 140 ticks for players. (requires 1.17)
 
 Attributes
 ----------
 
-| Attribute | Aliases      | Description                           | Default |
-|-----------|--------------|---------------------------------------|---------|
-| ticks     | t | How many ticks the target should freeze | 60      |
+| Attribute | Aliases | Description                   | Default |
+|-----------|---------|-------------------------------|---------|
+| ticks     | t       | Ticks frozen in powdered snow | 60      |
 
-  
+
 
 Examples
 --------
