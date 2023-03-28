@@ -1,23 +1,23 @@
 Mechanic: GoTo
 ============================
 
-Tells a mob to GoTo a location or an entity targeter
+Causes the mob to pathfind to a location.
 
 Attributes
 ----------
 
-| Attribute   | Aliases | Description                        | Default Value |
-|-------------|---------|------------------------------------|---------------|
-| speedModifier | s      | The movement speed modifier       | 1             |
-| spreadH     | sh      | Amount of horizontal spread it can be away from the target its moving towards                                  | 0           |
-| spreadV     | sv      | Amount of vertical spread it can be away from the target its moving towards                                 | 0          |
+| Attribute     | Aliases | Description                                                                   | Default Value |
+|---------------|---------|-------------------------------------------------------------------------------|---------------|
+| speedModifier | s       | The movement speed modifier                                                   | 1             |
+| spreadH       | sh      | Amount of horizontal spread it can be away from the target its moving towards | 0             |
+| spreadV       | sv      | Amount of vertical spread it can be away from the target its moving towards   | 0             |
 
   
 
 Examples
 --------
-
-    Skills:
-    - goto{speedModifier=1;sh=5;sv=5} @owner
-    - goto{speedModifier=1;sh=5;sv=5} @location{c=100,65,100}
-    - ...
+```yml
+Skills:
+  - goto{speedModifier=1;sh=5;sv=5} @owner
+  - goto{speedModifier=1;sh=5;sv=5} @location{c=100,65,100}
+```
