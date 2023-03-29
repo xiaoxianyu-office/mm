@@ -142,6 +142,7 @@ are able to target locations as well.
 | [Speak][]                 | Causes the mob to speak in chat, with options for speech bubbles                         |
 | [Spring][]                | Creates a temporary spring of liquid at the target                                       |
 | [Stun][]                  | Stuns the target entity                                                                  |
+| [StopUsingItem][]         | Stops the targeted entity from using an item                                             |
 | [Suicide][]               | Causes the caster to die                                                                 |
 | [Summon][]                | Summons other mobs at the target                                                         |
 | [Swap][]                  | Swaps locations with the target                                                          |
@@ -175,43 +176,43 @@ These skill mechanics have special advanced functions, and most are used
 to call other skills. If you specify a target, all other skills called
 by these will "inherit" the targets (if applicable).
 
-| Mechanic             | Description                                                                                                                                             |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **[Skill][]**        | Executes a meta-skill. The butter for your bread.                                                                                                       |
-| [Aura][]             | Applies an aura to the targeted entity, allowing for skills to be run onStart/onTick/onEnd/Etc which all originate from the target.                     |
-| [CancelEvent][]      | Cancel the Event that triggered the current skill-tree. Only works for certain triggers.                                                                |
-| [Cast][]             | "Casts" a meta-skill using various advanced options.                                                                                                    |
-| [Chain][]            | Chains a skill between multiple targets that are near each other.                                                                                       |
-| [ChainMissile][]     | A missile that chains between entities. **Premium-Only** mechanic!                                                                                      |
-| [Delay][]            | Delays execution of the current skill list by a set number of ticks.                                                                                    |
-| [EndProjectile][]    | Terminates the projectile. Only usable in projectile mechanics.                   |
-| [GlobalCooldown][]   | Sets the caster's Global Cooldown timer                                                                                                                 |
-| [Missile][]          | Fires a homing projectile towards the target.                                                                                                           |
-| [ModifyProjectile][] | Modifying the projectile / missile / orbital                                                                                                            |
-| [OnAttack][]         | Applies an [aura][] to the target that triggers skills when they attack                                                                                 |
-| [OnDamaged][]        | Applies an [aura][] to the target that triggers skills when they take damage                                                                            |
-| [OnShoot][]          | Applies an [aura][] to the target that triggers skills when they shoot a bow                                                                            |
-| [OnBlockBreak][]     | Applies an [aura][] to the target that triggers skills when they break a block                                                                          |
-| [OnBlockPlace][]     | Applies an [aura][] to the target that triggers skills when they place a block                                                                          |
-| [OnSwing][]          | Applies an [aura][] to the target that triggers skills when they swing / left click                                                                     |
-| [OnInteract][]       | Applies an [aura][] to the target that triggers skills when they interact / right click while holding a block or looking at an outlined block (NOT AIR) |
-| [OnJump][]           | Applies an [aura][] to the target that triggers a skill when they jump (PAPER ONLY MECHANIC)                                                            |
-| [OnDeath][]          | Applies an [aura][] to the target that triggers a skill when they die                                                                                   |
-| [Orbital][]          | Applies an [aura][] that causes a projectile to orbit around the target                                                                                 |
-| [Projectile][]       | Fires a highly-customizable projectile towards the target                                                                                               |
-| [Shoot][]            | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                                               |
-| [Volley][]           | Shoots a volley of projectile-items at the target with various options                                                                                  |
-| [SudoSkill][]        | Makes the target execute a skill                                                                                                                        |
-| [Switch-Case][]      | Acts as a switch/case                                                                                                                                   |
-| [RandomSkill][]      | Executes a random skill from a list                                                                                                                     |
-| [SetSkillCooldown][] | Sets the given metakill's cooldown to the given value                             |
-| [Totem][]            | Creates a static "totem" at a location that can execute other skills                                                                                    |
-| [VariableAdd][]      | Adds an amount to a numeric variable                                                                                                                    |
-| [VariableMath][]     | Performs math on a numeric variable                                                                                                                     |
-| [SetVariable][]      | Sets the value of a variable                                                                                                                            |
-| [SetVariableLocation][]| Sets a variable to the target location                                          |
-| [VariableUnset][]    | Unsets the variable                                                                                                                                     |
-| [VariableSubtract][] | Subtracts an amount from a numeric variable                                                                                                             |
+| Mechanic                | Description                                                                                                                                             |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **[Skill][]**           | Executes a meta-skill. The butter for your bread.                                                                                                       |
+| [Aura][]                | Applies an aura to the targeted entity, allowing for skills to be run onStart/onTick/onEnd/Etc which all originate from the target.                     |
+| [CancelEvent][]         | Cancel the Event that triggered the current skill-tree. Only works for certain triggers.                                                                |
+| [Cast][]                | "Casts" a meta-skill using various advanced options.                                                                                                    |
+| [Chain][]               | Chains a skill between multiple targets that are near each other.                                                                                       |
+| [ChainMissile][]        | A missile that chains between entities. **Premium-Only** mechanic!                                                                                      |
+| [Delay][]               | Delays execution of the current skill list by a set number of ticks.                                                                                    |
+| [EndProjectile][]       | Terminates the projectile. Only usable in projectile mechanics.                                                                                         |
+| [GlobalCooldown][]      | Sets the caster's Global Cooldown timer                                                                                                                 |
+| [Missile][]             | Fires a homing projectile towards the target.                                                                                                           |
+| [ModifyProjectile][]    | Modifying the projectile / missile / orbital                                                                                                            |
+| [OnAttack][]            | Applies an [aura][] to the target that triggers skills when they attack                                                                                 |
+| [OnDamaged][]           | Applies an [aura][] to the target that triggers skills when they take damage                                                                            |
+| [OnShoot][]             | Applies an [aura][] to the target that triggers skills when they shoot a bow                                                                            |
+| [OnBlockBreak][]        | Applies an [aura][] to the target that triggers skills when they break a block                                                                          |
+| [OnBlockPlace][]        | Applies an [aura][] to the target that triggers skills when they place a block                                                                          |
+| [OnSwing][]             | Applies an [aura][] to the target that triggers skills when they swing / left click                                                                     |
+| [OnInteract][]          | Applies an [aura][] to the target that triggers skills when they interact / right click while holding a block or looking at an outlined block (NOT AIR) |
+| [OnJump][]              | Applies an [aura][] to the target that triggers a skill when they jump (PAPER ONLY MECHANIC)                                                            |
+| [OnDeath][]             | Applies an [aura][] to the target that triggers a skill when they die                                                                                   |
+| [Orbital][]             | Applies an [aura][] that causes a projectile to orbit around the target                                                                                 |
+| [Projectile][]          | Fires a highly-customizable projectile towards the target                                                                                               |
+| [Shoot][]               | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                                               |
+| [Volley][]              | Shoots a volley of projectile-items at the target with various options                                                                                  |
+| [SudoSkill][]           | Makes the target execute a skill                                                                                                                        |
+| [Switch-Case][]         | Acts as a switch/case                                                                                                                                   |
+| [RandomSkill][]         | Executes a random skill from a list                                                                                                                     |
+| [SetSkillCooldown][]    | Sets the given metakill's cooldown to the given value                                                                                                   |
+| [Totem][]               | Creates a static "totem" at a location that can execute other skills                                                                                    |
+| [VariableAdd][]         | Adds an amount to a numeric variable                                                                                                                    |
+| [VariableMath][]        | Performs math on a numeric variable                                                                                                                     |
+| [SetVariable][]         | Sets the value of a variable                                                                                                                            |
+| [SetVariableLocation][] | Sets a variable to the target location                                                                                                                  |
+| [VariableUnset][]       | Unsets the variable                                                                                                                                     |
+| [VariableSubtract][]    | Subtracts an amount from a numeric variable                                                                                                             |
 
 Universal Attributes
 --------------------
@@ -358,6 +359,7 @@ but not yet ready for use.
   [Signal]: /skills/mechanics/signal
   [Speak]: /skills/mechanics/speak
   [Spring]: /skills/mechanics/spring
+  [StopUsingItem]: /skills/mechanics/stopusingitem
   [Stun]: /skills/mechanics/stun
   [Suicide]: /skills/mechanics/suicide
   [Summon]: /skills/mechanics/summon
