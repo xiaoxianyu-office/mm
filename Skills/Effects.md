@@ -26,7 +26,7 @@ skill **effect:name**, for example:
 ### Audience 
 Audience arguments (`audience=World`, `audience=Target`, `audience=Caster`, `audience=@Targeter`,  Etc.) can be used to display the effect only to a specific group, rather than the entire server. This can be useful in preventing too many particles from being displayed to everyone which can cause lag.
 
-Of particular relevance is the `audience=@Targeter` audience argument, that allows to use any entity targeter to be used as the audience of the effect
+Of particular relevance is the `audience=@Targeter` audience argument, that allows any entity targeter to be used as the audience of the effect
 ```yaml
     Skills:
     - effect:particles{particle=reddust;y=2;audience=@Owner} @self
