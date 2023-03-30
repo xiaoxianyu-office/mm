@@ -9,19 +9,28 @@ add them to your own skills and even combine them.
 Most effects are able to target both Entities and Locations. You control
 what your effect targets using a [Targeter][].
 
-Audience arguments (`audience=World`, `audience=Target`, `audience=Caster`, Etc.) can be used to display the effect only to a specific group, rather than the entire server. This can be useful in preventing too many particles from being displayed to everyone which can cause lag.
-
 ### Syntax
 
 A lot of effects don't have any options. To call them, you just call the
 skill **effect:name**, for example:
 
+```yaml
     Skills:
     - effect:flames @target
     - effect:lightning @self
     - effect:ender @PlayersInRadius{r=20}
     - effect:ender @PlayersInRadius{r=20}
     - effect:particles{particle=reddust;color=#EE22CC;amount=10;speed=1;hS=0.15;vS=.15;audience=Target} @target
+```
+
+### Audience 
+Audience arguments (`audience=World`, `audience=Target`, `audience=Caster`, `audience=@Targeter`,  Etc.) can be used to display the effect only to a specific group, rather than the entire server. This can be useful in preventing too many particles from being displayed to everyone which can cause lag.
+
+Of particular relevance is the `audience=@Targeter` audience argument, that allows to use any entity targeter to be used as the audience of the effect
+```yaml
+    Skills:
+    - effect:particles{particle=reddust;y=2;audience=@Owner} @self
+```
 
 ### Effects
 
