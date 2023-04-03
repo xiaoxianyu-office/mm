@@ -37,7 +37,7 @@ another_mob:
 #### Display
 Sets the display name of the mob.
 This option supports color codes and [placeholders].
-The mob's name will not change or update on its own, you have to use [setname] mechanic to change or update it.
+**The mob's name will not change or update on its own, you have to use [setname] mechanic to change or update it.**
 ```yml
 example_mob:
   Type: zombie
