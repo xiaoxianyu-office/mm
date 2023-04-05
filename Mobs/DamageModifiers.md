@@ -6,34 +6,44 @@ Some of these won't work on certain mobs under normal circumstances (e.g. SUICID
 
 Damage Modifiers are completely optional, you only need to add the ones you want to use.
 
+See the [spigot javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html) for a complete list of available damage types.
+
 **Options**
 
-| Modifier      | Explanation                                           |
-| ------------- | ----------------------------------------------------- |
-| DROWNING      | Damage caused by running out of air while in water.   |
-| BLOCK_EXPLOSION | Damage caused by being near an exploding block.     |
-| ENTITY_EXPLOSION | Damage caused by being in the area when an entity, such as a Creeper, explodes. |
-| VOID          | Damage caused by falling into the void.               |
-| LIGHTNING	    | Damage caused by being struck by lightning.           |
-| SUICIDE       | Damage caused by committing suicide using the command “/kill”. |
-| STARVATION    | Damage caused by starving due to having an empty hunger bar. |
-| POISON        | Damage caused due to an ongoing poison effect. |
-| MAGIC         | Damage caused by being hit by a potion or spell. |
-| DRAGON_BREATH	| Damage caused by being hit by the enderdragon's breath. |
-| WITHER        | Damage caused by the Wither potion effect. |
-| FALLING_BLOCK | Damage caused by being hit by a falling block which deals damage. |
-| THORNS        | Damage caused in retaliation to another attack by the Thorns enchantment. |
-| CUSTOM        | Damage caused by “Custom”, sometimes used by other plugins. |
-| LAVA          | Damage caused by touching lava. |
-| MELTING       | Damage caused by a snowman melting. |
-| FIRE_TICK     | Damage caused due to an ongoing fire effect. |
-| FIRE          | Damage caused by touching fire. |
-| HOT_FLOOR     | Damage caused by standing on magma blocks. |
-| FALL          | Damage caused when an entity falls a distance greater than 3 blocks. |
-| SUFFOCATION   | Damage caused by standing inside of a block. |
-| PROJECTILE    | Damage caused when attacked by a projectile. |
-| ENTITY_ATTACK | Damage caused when an entity attacks another entity. |
-| CONTACT       | Damage caused when an entity touches a block such as a cactus. |
+| Modifier            | Explanation                                                        |
+| ------------------- | ------------------------------------------------------------------ |
+| BLOCK_EXPLOSION     | Damage caused by being in the area when a block explodes.          |
+| CONTACT             | Damage caused when an entity contacts a block such as a Cactus, Dripstone (Stalagmite) or Berry Bush.                                                                |
+| CRAMMING            |Damage caused when an entity is colliding with too many entities due to the maxEntityCramming game rule.                                                               |
+| CUSTOM              | Damage caused by “Custom”, sometimes used by other plugins.        |
+| DRAGON_BREATH       | Damage caused by a dragon breathing fire.                          |
+| DROWNING            | Damage caused by running out of air while in water                 |
+| DRYOUT              | Damage caused when an entity that should be in water is not.       |
+| ENTITY_ATTACK       | Damage caused when an entity attacks another entity.               |
+| ENTITY_EXPLOSION    | Damage caused by being in the area when an entity, such as a Creeper, explodes. |
+| ENTITY_SWEEP_ATTACK | Damage caused when an entity attacks another entity in a sweep attack. |
+| FALL                | Damage caused when an entity falls a distance greater than 3 blocks. |
+| FALLING_BLOCK       | Damage caused by being hit by a falling block which deals damage.  |
+| FIRE                | Damage caused by direct exposure to fire                           |
+| FIRE_TICK           | Damage caused due to burns caused by fire                          |
+| FLY_INTO_WALL       | Damage caused when an entity runs into a wall while flying.        |
+| FREEZE              | Damage caused from freezing.                                       |
+| HOT_FLOOR           | Damage caused when an entity steps on Material.MAGMA_BLOCK.        |
+| LAVA                | Damage caused by direct exposure to lava                           |
+| LIGHTNING           | Damage caused by being struck by lightning                         |
+| MAGIC               | Damage caused by being hit by a damage potion or spell             |
+| MELTING             | Damage caused due to a snowman melting                             |
+| POISON              | Damage caused due to an ongoing poison effect                      |
+| PROJECTILE          | Damage caused when attacked by a projectile.                       |
+| SONIC_BOOM          | Damage caused by the Sonic Boom attack from Warden                 |
+| STARVATION          | Damage caused by starving due to having an empty hunger bar        |
+| SUFFOCATION         | Damage caused by being put in a block                              |
+| SUICIDE             | Damage caused by committing suicide.                               |
+| THORNS              | Damage caused in retaliation to another attack by the Thorns enchantment. |
+| VOID                | Damage caused by falling into the void                             |
+| WITHER              | Damage caused by Wither potion effect                              |
+
+
 
 **Examples**
 
