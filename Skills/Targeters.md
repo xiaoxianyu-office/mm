@@ -65,7 +65,7 @@ These targeters only work if the mob has Threat Tables enabled.
 Location Targeters
 ------------------
 
-### Universal Attributes - Location Targeters
+### Common Attributes - Location Targeters
 There are some common attributes that can be used in most of the Location Targeters
 
 | Attribute                                | Shorthand        | Description                                                                                                      |
