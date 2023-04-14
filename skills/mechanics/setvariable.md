@@ -63,7 +63,7 @@ Also,other variables can be stored inside a int/float variable.
     VariableSend:
       Skills:
       - setvariable{var=caster.VariableA;value="%mmoitems_stat_skill_damage%";type=INTEGER} @self
-      - setvariable{var=caster.VariableB;value="%<caster.var.VaribaleA> * 2";type=INTEGER} @self
+      - setvariable{var=caster.VariableB;value="<caster.var.VaribaleA> * 2";type=INTEGER} @self
       - setvariable{var=caster.VariableC;value="<caster.var.VaribaleA> + <caster.var.VaribaleB>";type=INTEGER} @self
 
 Extra Information
