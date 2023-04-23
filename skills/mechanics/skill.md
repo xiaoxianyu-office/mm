@@ -19,6 +19,7 @@ be set to *false* later in a skill-tree.
 
 | Attribute | Shorthand | Description                                                         | Default |
 |-----------|-----------|---------------------------------------------------------------------|---------|
+| skill     | s         | The metaskill to be executed.                                       |         |
 | forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft. | false   |
 
 Cooldown
