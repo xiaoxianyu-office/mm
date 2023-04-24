@@ -179,6 +179,7 @@ by these will "inherit" the targets (if applicable).
 | Mechanic                | Description                                                                                                                                             |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **[Skill][]**           | Executes a meta-skill. The butter for your bread.                                                                                                       |
+| **[VariableSkill][]**   | Executes a meta-skill. Supports placeholders.                                                                                                       |
 | [Aura][]                | Applies an aura to the targeted entity, allowing for skills to be run onStart/onTick/onEnd/Etc which all originate from the target.                     |
 | [CancelEvent][]         | Cancel the Event that triggered the current skill-tree. Only works for certain triggers.                                                                |
 | [Cast][]                | "Casts" a meta-skill using various advanced options.                                                                                                    |
@@ -378,6 +379,7 @@ but not yet ready for use.
   [WolfSit]: /skills/mechanics/wolfsit
   [View the list of Effect Mechanics by clicking here]: /skills/effects/
   [Skill]: /skills/mechanics/skill
+  [VariableSkill]: /skills/mechanics/variableskill
   [Aura]: /skills/mechanics/aura
   [CancelEvent]: /skills/mechanics/cancelevent
   [Cast]: /skills/mechanics/cast
