@@ -155,7 +155,7 @@ are able to target locations as well.
 | [Threat][]                | Modifies the mob's threat towards the target                                             |
 | [Throw][]                 | Throws the target entity                                                                 |
 | [ToggleLever][]           | Toggles a lever at the target location                                                   |
-| [ToggleSitting][]         | Toggles the sitting state for cats, dogs, foxes, and parrots.                            |
+| [ToggleSitting][]         | Toggles the sitting state for cats, dogs, foxes, and parrots.                            
 | [TrackLocation][]         | Sets the mob's tracked location to the targeted location                                 
 |
 | [Velocity][]              | Modifies the velocity of the target entity(s)                                            |
