@@ -156,8 +156,7 @@ are able to target locations as well.
 | [Throw][]                 | Throws the target entity                                                                 |
 | [ToggleLever][]           | Toggles a lever at the target location                                                   |
 | [ToggleSitting][]         | Toggles the sitting state for cats, dogs, foxes, and parrots.                            |
-| [TrackLocation][]         | Sets the mob's tracked location to the targeted location                                 |
-| [UndoPaste][]             | Undo a FawePaste
+| [TrackLocation][]         | Sets the mob's tracked location to the targeted location                                 
 |
 | [Velocity][]              | Modifies the velocity of the target entity(s)                                            |
 | [Weather][]               | Modifies the weather in the target world                                                 |
