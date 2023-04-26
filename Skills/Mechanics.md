@@ -157,6 +157,8 @@ are able to target locations as well.
 | [ToggleLever][]           | Toggles a lever at the target location                                                   |
 | [ToggleSitting][]         | Toggles the sitting state for cats, dogs, foxes, and parrots.                            |
 | [TrackLocation][]         | Sets the mob's tracked location to the targeted location                                 |
+| [UndoPaste][]             | Undo a FawePaste
+|
 | [Velocity][]              | Modifies the velocity of the target entity(s)                                            |
 | [Weather][]               | Modifies the weather in the target world                                                 |
 | [WolfSit][]               | Forces a targeted wolf to sit.                                                           |
@@ -208,8 +210,6 @@ by these will "inherit" the targets (if applicable).
 | [RandomSkill][]         | Executes a random skill from a list                                                                                                                     |
 | [SetSkillCooldown][]    | Sets the given metakill's cooldown to the given value                                                                                                   |
 | [Totem][]               | Creates a static "totem" at a location that can execute other skills                                                                                    |
-| [UndoPaste][]           | Undo a FawePaste
-|
 | [VariableAdd][]         | Adds an amount to a numeric variable                                                                                                                    |
 | [VariableMath][]        | Performs math on a numeric variable                                                                                                                     |
 | [SetVariable][]         | Sets the value of a variable                                                                                                                            |
