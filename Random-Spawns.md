@@ -153,21 +153,21 @@ A complete list of all available randomspawn options.
 
 These options, located in MythicMobs' "config.yml"-file, are responsible for how SpawnPoints are generated on your server. It's best to use common sense when adjusting these values, as misconfigurations of this section may cause lag on your server.
 
-       RandomSpawning:
-         DisableVanillaSpawns: false
-         GenerateSpawnPoints: true
-         MaxMobsPerChunk: 2
-         SpawnRadiusPerPlayer: 64
-         SpawnRadiusPerPlayerY: 32
-         DespawnLazyRandomMobs: true
-         MaxGenerationTime: 20
-         PointsPerSecond:
-           Land: 5
-           Air: 0
-           Sea: 2
-           Lava: 0
-           Ground: 0
-
+```yaml
+  RandomSpawning:
+    DisableVanillaSpawns: false
+    GenerateSpawnPoints: true
+    MaxMobsMultiplier: 1.0
+    SpawnRadiusPerPlayerY: 32
+    DespawnLazyRandomMobs: true
+    MaxGenerationTime: 20
+    PointsPerSecond:
+      Land: 5
+      Air: 0
+      Sea: 2
+      Lava: 0
+      Ground: 0
+```
 Examples
 --------
 
