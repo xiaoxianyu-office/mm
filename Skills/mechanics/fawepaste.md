@@ -11,8 +11,8 @@ Attributes
 
 | Attribute | Aliases | Description                                                   | Default Value |
 |-----------|---------|---------------------------------------------------------------|---------------|
-| schematic |  s       | Which schematic to load **from the MythicMobs Schematics folder**. | 1             |
-| pasteAir | air,a       | Should air be pasted? | 1             |
+| schematic |  s       | Which schematic to load. |               |
+| pasteAir | air,a       | Should air be pasted? |               |
 | xOffset | x,xo      | The X offset of pasting the Schematic from the target.   | 0             |
 | yOffset | y,yo      | The Y offset of pasting the Schematic from the target.   | 0             |
 | zOffset | z,zo      | The Z offset of pasting the Schematic from the target.   | 0             |
