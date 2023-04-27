@@ -112,7 +112,8 @@ EXAMPLE_MOB:
 ```
 
 #### ~onDeath
-Executes the skill when the mob dies. The entity that killed the mob is the `@trigger`.
+Executes the skill when the mob dies. The entity that killed the mob is the `@trigger`.<br>
+If the server is a Paper one, it is possible to cancel the death event as long as the cancelevent mechanic is synched. The health that the mob has after this is based on what is specified in the `ReviveHealth` Option.
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -121,7 +122,20 @@ EXAMPLE_MOB:
     # when the mob dies
     - message{m=DEATH} @World ~onDeath
 ```
-
+```yaml
+ImmortalCow:
+  Type: COW
+  Display: '&eImmortal Cow'
+  Health: 20
+  Options:
+    ReviveHealth: -1
+  Skills:
+  - skill{s=[
+    - cancelevent
+    - e:p{p=HEART;hs=0.5;vs=0.5;y=1.5}
+    - speak{m=Call an ambulance, but not for me!}
+    ];sync=true} @self ~onDeath
+```
 #### ~onAttack
 Executes the skill when the mob attacks an entity.
 The `@trigger` is the entity that took damage from the attack.
@@ -389,14 +403,13 @@ WorldJumper:
 
 #### ~onMilk
 Executes the skill when the cow is milked.
-```
+```yaml
 ANormalCow:
   Type: Cow
   Skills:
-  - skill{cd=2;s=[
+  - skill{s=[
     - message{m="HOW DARE YOU?!?"} @trigger
-    - sound{s=entity.creeper.primed} @self
-    - delay 30
-    - explosion{yield=5} @self
-    ]} @self ~onMilk
+    - sound{s=entity.creeper.primed}
+    - explosion{yield=5;delay=30}
+    ];cd=2} @self ~onMilk
 ```
