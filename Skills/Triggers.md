@@ -33,7 +33,7 @@ itself.
 | [onBreed](#onbreed)                    | When the mob breeds with another mob.                        |
 | [onTrade](#ontrade)                    | When the Villager completes a trade. Requires Paper          |
 | [onChangeWorld](#onchangeworld)        | When the mob changes world                                   |
-| [onMilk](#onmilk)                      | When the cow is milked <!--With a bucket, you perverts.-->   |
+| [onBucket](#onbucket)                  | When the cow is milked or an entity is bucketed (axolotl etc.)             |
 
 <!--
 ADD THIS TRIGGER BACK WHEN IT WORKS
@@ -401,8 +401,8 @@ WorldJumper:
   - command{c=say The Nether!} @self ~onChangeWorld ?varEquals{var=skill.world;value=world_nether}
 ```
 
-#### ~onMilk
-Executes the skill when the cow is milked.
+#### ~onBucket 
+Executes the skill when the cow is milked or when an entity is stored in a bucket (axolotl and the other bucketable ones).
 ```yaml
 ANormalCow:
   Type: Cow
