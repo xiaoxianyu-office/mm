@@ -158,6 +158,7 @@ Conditions
 | [isFrozen](/skills/conditions/isfrozen)                                       | Entity   | Checks if the target entity is frozen                                                       |
 | [isLiving](/skills/conditions/isliving)                                       | Entity   | Checks if the target is a living entity                                                     |
 | [isLeashed](/skills/conditions/isleashed)                                     | Entity   | Checks if the target has been leashed                                                       |
+| [isMythicMob](/skills/conditions/ismythicmob)                                 | Entity   | Checks if the target is a MythicMob                                                         |
 | [isMonster](/skills/conditions/ismonster)                                     | Entity   | Checks if the target is a monster                                                           |
 | [isPlayer](/skills/conditions/isplayer)                                       | Entity   | Checks if the target is a player                                                            |
 | [isSprinting](/skills/conditions/issprinting)                                 | Entity   | Checks if the target **Player** is sprinting                                                |
