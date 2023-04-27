@@ -161,6 +161,7 @@ Some meta-targeters also allow the mechanic to be casted "fromOrigin". This will
 | @BlocksInChunk{noair=true/false;onlyair=true/false;nearorigin=true/false}                | @BIC                                   
 | Targets all blocks in a chunk relative to the inherited target.                                            |
 | @BlocksNearOrigin{radius=#;radiusy=#;noise=#;shape=sphere/cube;onlyair=false;noair=true} | @BNO                                                            | Targets all blocks in a radius around the inherited target.                                                                                                                                                     |
+| @[**BlockVein**](/Skills/Targeters/BlockVein){blocktype=#;limit=#} | @vein<br>@bv                                                           | Target all adjancent blocks that match the blocktype, starting from the origin of the skill.                                                                                                                                                     |
 
 Targeter Options
 ================
