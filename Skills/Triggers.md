@@ -32,6 +32,7 @@ itself.
 | [onTame](#ontame)                      | When the mob gets tamed                                      |
 | [onBreed](#onbreed)                    | When the mob breeds with another mob.                        |
 | [onTrade](#ontrade)                    | When the Villager completes a trade. Requires Paper          |
+| [onChangeWorld](#onchangeworld)        | When the mob changes world                                   |
 
 <!--
 ADD THIS TRIGGER BACK WHEN IT WORKS
@@ -373,4 +374,14 @@ EXAMPLE_MOB:
     # sends a message to all the players in the world
     # when the mob is loaded after a server restart
     - message{m=LOADED} @World ~onLoad
+```
+
+#### ~onChangeWorld
+Executes the skill when the mob changes world.
+```yaml
+WorldJumper:
+  Type: WITHER_SKELETON
+  Skills:
+  - command{c=say The End!} @self ~onChangeWorld ?varEquals{var=skill.world;value=world_the_end}
+  - command{c=say The Nether!} @self ~onChangeWorld ?varEquals{var=skill.world;value=world_nether}
 ```
