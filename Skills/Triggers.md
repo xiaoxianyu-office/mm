@@ -33,6 +33,7 @@ itself.
 | [onBreed](#onbreed)                    | When the mob breeds with another mob.                        |
 | [onTrade](#ontrade)                    | When the Villager completes a trade. Requires Paper          |
 | [onChangeWorld](#onchangeworld)        | When the mob changes world                                   |
+| [onMilk](#onmilk)                      | When the cow is milked <!--With a bucket, you perverts.-->   |
 
 <!--
 ADD THIS TRIGGER BACK WHEN IT WORKS
@@ -384,4 +385,18 @@ WorldJumper:
   Skills:
   - command{c=say The End!} @self ~onChangeWorld ?varEquals{var=skill.world;value=world_the_end}
   - command{c=say The Nether!} @self ~onChangeWorld ?varEquals{var=skill.world;value=world_nether}
+```
+
+#### ~onMilk
+Executes the skill when the cow is milked.
+```
+ANormalCow:
+  Type: Cow
+  Skills:
+  - skill{cd=2;s=[
+    - message{m="HOW DARE YOU?!?"} @trigger
+    - sound{s=entity.creeper.primed} @self
+    - delay 30
+    - explosion{yield=5} @self
+    ]} @self ~onMilk
 ```
