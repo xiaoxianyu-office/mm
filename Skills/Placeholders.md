@@ -96,6 +96,7 @@ These placeholders will return whatever attribute of the caster that is called. 
 |     <caster.owner.uuid>            | Returns the uuid of the wolf's owner                              |
 | <caster.heldenchantlevel.#>        | Returns the enchant level of specified # enchant                  |
 | <caster.skill.\[skill_name\].cooldown> | Returns the current cooldown of the give skill as a float number |
+| <caster.raytrace>                  | Returns the name of the block being looked at by the caster (4.5 blocks of range) |
 
 
 **Variable Placeholders**
@@ -140,6 +141,7 @@ These placeholders will return whatever target selector has been used. For insta
 |     <target.level>      | Returns the level of the target                                   |
 |   <target.block.type>   | Returns the block type of the target                              |
 |  <target.entity_type>   | Returns the entity type of the target                             |
+|   <target.raytrace>     | Returns the name of the block being looked at by the target (4.5 blocks of range) |
 
 **Trigger Placeholders**
 -----------------
@@ -165,7 +167,8 @@ These placeholders will return whatever attribute of the entity that caused the 
 |   <trigger.l.z.#>    | Returns the Z coordinate of the entity triggering the skill +- random number between # |
 |   <trigger.l.yaw>    | Returns the yaw of the trigger                                                         |
 |  <trigger.l.pitch>   | Returns the pitch of the trigger                                                       |
-  
+|   <trigger.raytrace>     | Returns the name of the block being looked at by the trigger (4.5 blocks of range) |
+
 
 Misc Placeholders
 -----------------
