@@ -181,6 +181,26 @@ example_item:
     - WHITE STRIPE_CENTER
 ```
 
+#### **CanPlaceOn**
+Sets what blocks this item can be placed on, if the player is in adventure mode.
+```yaml
+MyCoolAnvil:
+  Id: ANVIL
+  CanPlaceOn:
+  - diamond_block
+```
+
+#### **CanBreak**
+Sets what blocks this item can break, if the player is in adventure mode.
+```yaml
+MyCoolStick:
+  Id: STICK
+  CanBreak:
+  - grass_block
+  - diamond_block
+  - obsidian
+```
+
 ### **NBT**
 Sets what NBT tags to put on your items.
 This allows cross-over with a lot of other plugins, or just for storing custom information.
