@@ -65,30 +65,6 @@ These targeters only work if the mob has Threat Tables enabled.
 Location Targeters
 ------------------
 
-### Common Attributes - Location Targeters
-There are some common attributes that can be used in most of the Location Targeters
-
-| Attribute                                | Shorthand        | Description                                                                                                      |
-| ---------------------------------------- | ---------------- | ----------------------------------------- |
-| Xoffset                                  | xo, x            | Centers the offset on the x axis           |
-| Yoffset                                  | yo, y            | Centers the offset on the y axis           |
-| Zoffset                                  | zo, z            | Centers the offset on the z axis           |
-| ForwardOffset                            | foffset, fo      | Centers forward and backward offset, based on the caster's viewing angle |
-| SideOffset                               | soffset, so      | Centers left and right offset, based on the caster's viewing angle |
-| Rotatex                                  | rotx             | Rotation on the x axis                    |
-| Rotatey                                  | roty             | Rotation on the y axis                    |
-| Rotatez                                  | rotz             | Rotation on the z axis                    |
-| Coordinatex                              | cx               | Sets the x axis coordinate                    |
-| Coordinatey                              | cy               | Sets the y axis coordinate                    |
-| Coordinatez                              | cz               | Sets the z axis coordinate                    |
-| BlockTypes                               | blocktype        | Only targets selected block types. Multiple blocks can be listed by separating them using a `,` |
-| BlockIgnores                             | blockignore      | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` |
-| CoordinateYaw                            | cyaw             | Sets the yaw value                        |
-| CoordinatePitch                          | cpitch           | Sets the pitch value                        |
-| blockCentered                            |                  | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself |
-| ignoretranslucent                        | it               | Boolean value. If set to true, no translucent blocks will be targeted |
-
-
 ### Single-Location Targeters
 
 | Targeter                                 | Shorthand       | Description                                                                                                                                                                                                                                        |
@@ -162,6 +138,38 @@ Some meta-targeters also allow the mechanic to be casted "fromOrigin". This will
 | Targets all blocks in a chunk relative to the inherited target.                                            |
 | @BlocksNearOrigin{radius=#;radiusy=#;noise=#;shape=sphere/cube;onlyair=false;noair=true} | @BNO                                                            | Targets all blocks in a radius around the inherited target.                                                                                                                                                     |
 | @[**BlockVein**](/Skills/Targeters/BlockVein){blocktype=#;limit=#} | @vein<br>@bv                                                           | Target all adjancent blocks that match the blocktype, starting from the origin of the skill.                                                                                                                                                     |
+
+
+# Common Attributes
+There are some common attributes that can be used in most of the Targeters, depending on the targeter's returned value
+
+## All Targeters
+| Attribute                                | Shorthand        | Description                                                                                                      |
+| ---------------------------------------- | ---------------- | ----------------------------------------- |
+| sudoparent                               | fromparent, ofparent, asparent, parent, ofParent                      | Allows to obtain the targeter as if it was the parent casting the mechanic |
+| sudoowner                                | fromowner, ofowner, asowner, owner, ofowner                      | Allows to obtain the targeter as if it was the owner casting the mechanic |
+
+## Location Targeters
+| Attribute                                | Shorthand        | Description                                                                                                      |
+| ---------------------------------------- | ---------------- | ----------------------------------------- |
+| Xoffset                                  | xo, x            | Centers the offset on the x axis           |
+| Yoffset                                  | yo, y            | Centers the offset on the y axis           |
+| Zoffset                                  | zo, z            | Centers the offset on the z axis           |
+| ForwardOffset                            | foffset, fo      | Centers forward and backward offset, based on the caster's viewing angle |
+| SideOffset                               | soffset, so      | Centers left and right offset, based on the caster's viewing angle |
+| Rotatex                                  | rotx             | Rotation on the x axis                    |
+| Rotatey                                  | roty             | Rotation on the y axis                    |
+| Rotatez                                  | rotz             | Rotation on the z axis                    |
+| Coordinatex                              | cx               | Sets the x axis coordinate                    |
+| Coordinatey                              | cy               | Sets the y axis coordinate                    |
+| Coordinatez                              | cz               | Sets the z axis coordinate                    |
+| BlockTypes                               | blocktype        | Only targets selected block types. Multiple blocks can be listed by separating them using a `,` |
+| BlockIgnores                             | blockignore      | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` |
+| CoordinateYaw                            | cyaw             | Sets the yaw value                        |
+| CoordinatePitch                          | cpitch           | Sets the pitch value                        |
+| blockCentered                            |                  | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself |
+| ignoretranslucent                        | it               | Boolean value. If set to true, no translucent blocks will be targeted |
+
 
 Targeter Options
 ================
