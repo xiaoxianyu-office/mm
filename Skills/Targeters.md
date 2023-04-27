@@ -146,8 +146,9 @@ There are some common attributes that can be used in most of the Targeters, depe
 ## All Targeters
 | Attribute                                | Shorthand        | Description                                                                                                      |
 | ---------------------------------------- | ---------------- | ----------------------------------------- |
-| sudoparent                               | fromparent, ofparent, asparent, parent, ofParent                      | Allows to obtain the targeter as if it was the parent casting the mechanic |
+| sudoparent                               | fromparent, ofparent, asparent, parent, ofparent                      | Allows to obtain the targeter as if it was the parent casting the mechanic |
 | sudoowner                                | fromowner, ofowner, asowner, owner, ofowner                      | Allows to obtain the targeter as if it was the owner casting the mechanic |
+| sudotrigger                                | fromtrigger, oftrigger, astrigger, trigger, oftrigger                      | Allows to obtain the targeter as if it was the trigger casting the mechanic |
 
 ## Location Targeters
 | Attribute                                | Shorthand        | Description                                                                                                      |
