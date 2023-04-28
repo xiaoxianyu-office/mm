@@ -237,6 +237,29 @@ Options:
   RepeatAllSkills: false
 ```
 
+#### ReviveHealth
+When the mob's death event gets cancelled (via a [Cancelevent](/skills/mechanics/cancelevent) mechanic [~onDeath](/Skills/Triggers#ondeath)) the one specified is the amount of health the mob's will be set to. If the value is `-1`, the mob will heal to its own max health value.
+```
+#This mob will always return to 50 health every time the death event is cancelled
+ExampleMob:
+  Type: COW
+  Health: 100
+  Options:
+    ReviveHealth: 50
+  Skills:
+  - cancelevent{sync=true} @self ~onDeath
+```
+```
+#This mob will always return to its maximum health (100) every time the death event is cancelled
+ExampleMob:
+  Type: COW
+  Health: 100  
+  Options:
+    ReviveHealth: -1
+  Skills:
+  - cancelevent{sync=true} @self ~onDeath
+```
+
 #### ShowHealth
 Displays the health of the mob through messages broadcast within a radius and formatting by `Mobs.ShowHealth.Radius` and `Mobs.ShowHealth.Formatting`, respectively, in `/plugins/MythicMobs/config.yml`
 Defaults to `false`.
