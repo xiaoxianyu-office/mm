@@ -158,6 +158,7 @@ are able to target locations as well.
 | [ToggleLever][]           | Toggles a lever at the target location                                                   |
 | [ToggleSitting][]         | Toggles the sitting state for cats, dogs, foxes, and parrots.               |
 | [TrackLocation][]         | Sets the mob's tracked location to the targeted location                    |
+| [UndoPaste][]             | Undoes a previously made paste                                              |
 | [Velocity][]              | Modifies the velocity of the target entity(s)                               |
 | [Weather][]               | Modifies the weather in the target world                                    |
 | [WolfSit][]               | Forces a targeted wolf to sit.                                              |
@@ -376,6 +377,7 @@ but not yet ready for use.
   [Throw]: /skills/mechanics/throw
   [ToggleLever]: /skills/mechanics/togglelever
   [ToggleSitting]: /skills/mechanics/togglesitting
+  [UndoPaste]: /skills/mechanics/undopaste
   [Velocity]: /skills/mechanics/velocity
   [Weather]: /skills/mechanics/weather
   [WolfSit]: /skills/mechanics/wolfsit
