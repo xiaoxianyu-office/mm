@@ -92,6 +92,7 @@ are able to target locations as well.
 | [Potion][]                | Applies a potion effect to the target                                                    |
 | [PotionClear][]           | Removes all potion effects from target entity                                            |
 | [Prison][]                | Imprisons the target inside a block                                                      |
+| [Propel][]                | Propels the caster towards the target                                                      |
 | [Pull][]                  | Pulls the target towards the mob                                                         |
 | [PushButton][]            | Pushes a button at the target location                                                   |
 | [RayTrace][]              | Traces a straight line to the target                                                     |
@@ -315,6 +316,7 @@ but not yet ready for use.
   [Potion]: /skills/mechanics/potion
   [PotionClear]: /skills/mechanics/potionclear
   [Prison]: /skills/mechanics/prison
+  [Propel]: /skills/mechanics/propel
   [Pull]: /skills/mechanics/pull
   [PushButton]: /skills/mechanics/pushbutton
   [Rally]: /skills/mechanics/rally
