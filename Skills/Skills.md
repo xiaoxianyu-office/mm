@@ -87,7 +87,7 @@ Going back to our previous example, lets say you want it to set the mob's target
     Skills:
     - ignite{ticks=100} @target
 
-Or perhaps you want it to set ALL players nearby on fire. Let's say within a 5 yard radius...
+Or perhaps you want it to set ALL players nearby on fire. Let's say within a 5 blocks radius...
 
     Skills:
     - ignite{ticks=100} @PlayersInRadius{radius=5}
