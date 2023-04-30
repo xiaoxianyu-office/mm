@@ -1,7 +1,7 @@
 Mechanic: Teleport
 ==================
 
-Teleports the caster to within [spread] yards of the targeted entity.
+Teleports the caster to the targeted location/entity. The end point of the teleportation will be within an area whose size depends on the `spreadh` and `spreadv` attributes.
 
 Attributes
 ----------
@@ -23,9 +23,11 @@ blocks.
 Examples
 --------
 
-This example would teleport the mob to within 5 yards of the targeted
+This example would teleport the mob to within 5 blocks of the targeted
 player, on the same vertical axis.
 
-    Warp:
-      Skills:
-      - teleport{spreadh=5;spreadv=0} @target
+```yaml
+Warp:
+  Skills:
+  - teleport{spreadh=5;spreadv=0} @target
+```
