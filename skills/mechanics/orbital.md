@@ -3,7 +3,7 @@ Mechanic: Orbital
 
 The Orbital skill fires a special type of
 [projectile](/skills/mechanics/projectile) that will orbit around the
-target and can also act as an [Aura](/skills/mechanics/aura). Like the
+target and can also act as an [Aura](/skills/mechanics/aura), inheriting all of its attributes. Like the
 projectile, it will trigger other skills on anyone that is hit by it
 during its orbit.  
 Much like projectile, it's great for creating complex skills, such as a
@@ -20,6 +20,7 @@ Attributes
 | onTick              | oT       | Meta-Skill executed every [interval] ticks at the orbital's origin location.                                                                                                    | None          |
 | onHit               | oH       | Meta-Skill executed when the projectile hits something. Targets hit are inherited by the meta-skill.                                                                              | None          |
 | onEnd               | oE       | Meta-Skill executed when the projectile ends.                                                                                                                                     | None          |
+| AuraName            | buffName, debuffName | Optional name, required to use associated mechanics & conditions that reference a specific aura.                                                                                                                                | None          |
 | Charges             | c        | If set, the orbital will stop after firing this many times.                                                                                                                       | 0             |
 | Duration            | d        | The max duration (in ticks) the orbital will persist.                                                                                                                             | 100           |
 | Interval            | i        | How often (in ticks) the orbital updates its position                                                                                                                             | 4             |
@@ -79,21 +80,48 @@ This example puts an icy-looking orbital shield around the mob when it
 is hit sometimes, that will last for 10 seconds or until it is triggered
 once:  
 **Mob File**  
-
-    Mob:
-      Type: SKELETON
-      Skills:
-      - skill{s=IceShield} @self ~onDamaged 0.2
-
+```yaml
+Mob:
+  Type: SKELETON
+  Skills:
+  - skill{s=IceShield} @self ~onDamaged 0.2
+```
 **Skills File**  
+```yaml
+IceShield:
+  Skills:
+  - orbital{onTick=IceShield-Tick;onHit=IceShield-Hit;points=20;interval=1;duration=200;charges=1}
+IceShield-Tick:
+  Skills:
+  - effect:particles{p=snowballpoof;amount=20;speed=0;hS=0.2;vS=0.2} @origin
+IceShield-Hit:
+  Skills:
+  - damage{a=10}
+  - potion{type=SLOW;duration=100;lvl=2}
+```
 
-    IceShield:
-      Skills:
-      - orbital{onTick=IceShield-Tick;onHit=IceShield-Hit;points=20;interval=1;duration=200;charges=1}
-    IceShield-Tick:
-      Skills:
-      - effect:particles{p=snowballpoof;amount=20;speed=0;hS=0.2;vS=0.2} @origin
-    IceShield-Hit:
-      Skills:
-      - damage{a=10}
-      - potion{type=SLOW;duration=100;lvl=2}
+##
+
+This example shows how the orbital can be removed via the [Auraremove](`auraremove`) mechanic.
+<br>The mob `ExampleMob` create the shield from the previous example once it gets damaged with a 20% chance, but unlike the previous example this time the orbital also has an auraName attribute. When the mob receives a REMOVESHIELD signal, he will both remove the orbital via the auraremove mechanic and the orbital's auraName while also sending a SHIELDREMOVED signal back to the trigger of the metaskill
+
+```yaml
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=IceShield} @self ~onDamaged 0.2
+  - skill{s=IceShield-Remove} @self ~onSignal:REMOVESHIELD
+```
+
+```yaml
+IceShield:
+  Skills:
+  - orbital{
+    auraName=IceShield;
+    onTick=IceShield-Tick;onHit=IceShield-Hit;points=20;interval=1;duration=200;charges=1}
+
+IceShield-Remove:
+  Skills:
+  - auraremove{aura=IceShield}
+  - signal{s=SHIELDREMOVED} @trigger
+```
