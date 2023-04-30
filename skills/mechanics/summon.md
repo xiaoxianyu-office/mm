@@ -14,7 +14,7 @@ Attributes
 | radius             | r       | The radius around the target within which the mobs will be summoned.                                                                         | 0             |
 | yRadius            | yr      | Overrides the Y component of radius.                                                                                                         | radius        |
 | yRadiusUpOnly      | yu      | (true/false) Whether the Y spread should only go upward, not downward.                                                                       | false         |
-| onSurface          | os      | (true/false) Whether the mobs should be spawned only on a solid block                                                                        | true          |
+| onSurface          | os      | (true/false) Whether the mobs should be spawned only on a solid block                                                                        | false          |
 | copyThreatTable    | ctt     | Whether the summoned mobs should copy the parent's threat table. Requires threat tables to be enabled on the summoned mob to function.       | false         |
 | inheritThreatTable | itt     | Whether the summoned mobs should share a threat table with the parent. Requires threat tables to be enabled on the summoned mob to function. |               |
 | inheritFaction     | if      | Whether the summoned mobs should have the same faction as the parent.                                                                        |               |
