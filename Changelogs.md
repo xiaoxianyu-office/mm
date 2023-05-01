@@ -1,3 +1,128 @@
+5.3.0 (dev builds)
+=====
+Highlights
+----------
+### Composite Conditions
+Added composite conditions. Conditions in a skill can now be grouped with parenthesis and combined with AND (&&) and OR (||) operators, and can also be nested for complex logic. The entire group of conditions will be evaluated together.
+```
+Conditions:
+- ((night || raining) && onBlock{material=LIME_CONCRETE}) true
+```
+
+Bug Fixes/Other
+---------------
+- Fixed & refactored templates
+
+5.2.6
+=====
+Bug Fixes/Other
+---------------
+- Fixed world scaling starting a level higher then intended
+- Fixed errors with lunge mechanic
+- Fixed non-despawning mobs forgetting their spawner
+- Fixed dropitem mechanic passing the caster as the trigger instead of the trigger
+- Fixed errors with NoDamageTicks
+- Fixed death messages on 1.19.4
+- Fixed world scaling bonuses starting at 1 instead of 0
+- Fixed villager trades missing enchants
+
+5.2.5
+=====
+General
+-------
+- Added 1.19.4 support
+
+Mechanics
+---------
+
+### NEW: StopUsingItem
+
+### FillChest
+- Add "shouldempty"/"empty" to fillChest to empty the chest before adding items
+
+### onDamaged
+- Allow placeholders in onDamaged aura damage mods
+
+### Paste
+- Added `blocksPerTick` option to paste mechanic
+
+Conditions
+----------
+### NEW: isBaby
+
+Triggers
+--------
+### NEW: onTrade
+
+Items
+-----
+Allow listing the operation on item attributes after the number.
+
+Supports number or names of operations.
+
+  Examples:
+  - `Damage: 20 ADD`
+  - `Damage: 40 2`
+  - `MovementSpeed: 200 MULTIPLY_BASE`
+
+API
+---
+- Added `MythicMobPreSpawnEvent` called before a mob is actually spawned at all.
+
+Compatibility
+-------------
+### CrashClaim
+- Added support for CrashClaim to inClaim, nearClaim conditions
+
+Bug Fixes/Other
+---------------
+- Make placeholders pass caster to papi if caster is a player and entity targets are not applicable
+- Fixes for parent/child targeters
+- Fixed raytrace fluidcollisionmode option not working
+- Fixed NoClassDefFoundError when dispensing a mob egg from a dispenser
+- Fixed yRadius, other issues with sphere shape in block targeters
+- Fixed async error in fillChest mechanic
+- Fixed NPE in OnDamaged mechanic introduced recently
+- Fixed mobs forgetting who their parents are after chunk reload closes #1077
+- Fixed non-despawning mobs healing on chunk reload
+- Fixed armorstand mobs dying twice from TNT because of a spigot bug
+- Fixed more placeholder issues with BlockMask effect
+- Fixed "java.lang.NoSuchFieldError: bukkitChunk" error
+- Fixed inconsistencies with MythicMobItemGenerateEvent
+- Fixed blockmask placeholder not updating
+
+5.2.3
+=====
+General
+-------
+- Added 1.19.3 support
+
+Bug Fixes/Other
+--------------
+- Added support for Crucible custom blocks everywhere in skills
+- Added offsets for SpawnLocationTargeter, CasterSpawnLocationTargeter, and TrackedLocationTargeter
+- Added bounce error catching to projectile mechanic for pineapple
+- Added placeholder support for blockmask effect material
+- Fixed item version NBT being applied even when system isn't used
+- Fixed runAIGoalSelector failing when using goals with options maybe
+- Fixed blockwave effect being sent to players in other worlds
+- Fixed a memory leak with placeholders and certain item options
+- Fixed item version NBT being applied even when system isn't used
+- Fixed runAIGoalSelector failing when using goals with options maybe
+- Fixed blockwave effect being sent to players in other worlds
+- Fixed NoSuchMethodError on regular spigot
+- Fixed a few issues with mob and item loading
+- Fixed plugin not loading if you have thousands and thousands of items
+- Fixed IllegalArgumentException in Chain mechanic
+- Fixed name condition not working in most cases
+- Fixing more possible obscure memory leak issues with placeholders
+- Fixed several issues with the EntitiesInCone targeter
+- Fixed async error in look mechanic closes
+- Fixed some bugs with holding and wearing conditions
+- Fixed positioning of mob and item bullets to be more accurate with projectile mechanic
+- Fixed error with item bullets on projectiles with zero velocity
+- Fixed certain options that allow lists to not split by commas in-between brackets
+
 5.2.0
 =====
 General
@@ -678,6 +803,7 @@ Bug Fixes/Other
 
 Older Changelogs
 ================
+-   [5.2.X Changelogs](/5.2.x_changelogs)
 -   [5.1.X Changelogs](/5.1.x_changelogs)
 -   [5.0.X Changelogs](/5.0.x_changelogs)
 -   [4.13.X Changelogs](/4.13.x_changelogs)
