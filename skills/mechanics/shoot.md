@@ -28,7 +28,7 @@ Attributes
 | pickup               |            | Can pickup the item. Projectile item will disappear 5 seconds after it hits something | false |
 | accuracy             | ac, a      | Accuracy of the projectile  | 1 |
 | knockback    | kb | knockback strength of the projectile | 0 |
-| piercelevel  | pl | Need Description                     | 0 | 
+| piercelevel  | pl | The amount of times the arrow can pierce through an entity | 0 | 
 
 
 Examples
