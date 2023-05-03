@@ -161,6 +161,7 @@ Conditions
 | [isMythicMob](/skills/conditions/ismythicmob)                                 | Entity   | Checks if the target is a MythicMob                                                         |
 | [isMonster](/skills/conditions/ismonster)                                     | Entity   | Checks if the target is a monster                                                           |
 | [isPlayer](/skills/conditions/isplayer)                                       | Entity   | Checks if the target is a player                                                            |
+| [isSaddled](/skills/conditions/issaddled)                                     | Entity   | Checks if the target entity is saddled                                                      |
 | [isSprinting](/skills/conditions/issprinting)                                 | Entity   | Checks if the target **Player** is sprinting                                                |
 | [ItemIsSimilar](/skills/conditions/itemissimilar)                             | Entity   | Checks that targeted player's inventory slot if it's similar to an item                     |
 | [ItemRecharging](/skills/conditions/itemrecharging)                           | Entity   | Checks if the target's weapon is recharging                                                 |
