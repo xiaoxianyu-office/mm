@@ -105,6 +105,7 @@ are able to target locations as well.
 | [RemoveOwner][]           | Removes the ownership of the target mob                                                  |
 | [RunAIGoalSelector][]     | Change the target's AIGoalSelectors                                                      |
 | [RunAITargetSelector][]   | Change the target's AITargetSelectors                                                    |
+| [Saddle][]                | Equips or remove a saddle on the target entity                                          |
 | [SendActionMessage][]     | Sends an Actionbar Message to the target player                                          |
 | [SendResourcePack][]      | Sends a Resource Pack to the target player                                               |
 | [SendTitleMessage][]      | Sends a Title/Subtitle Message to the target player                                      |
@@ -329,6 +330,7 @@ but not yet ready for use.
   [RemoveOwner]: /skills/mechanics/removeowner
   [RunAIGoalSelector]: /skills/mechanics/runaigoalselector
   [RunAITargetSelector]: /skills/mechanics/runaitargetselector
+  [Saddle]: /skills/mechanics/saddle
   [SendActionMessage]: /skills/mechanics/sendactionmessage
   [SendResourcePack]: /skills/mechanics/sendresourcepack
   [SendTitleMessage]: /skills/mechanics/sendtitlemessage
