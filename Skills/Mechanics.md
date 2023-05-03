@@ -205,13 +205,14 @@ by these will "inherit" the targets (if applicable).
 | [OnDeath][]             | Applies an [aura][] to the target that triggers a skill when they die                                                                                   |
 | [Orbital][]             | Applies an [aura][] that causes a projectile to orbit around the target                                                                                 |
 | [Projectile][]          | Fires a highly-customizable projectile towards the target                                                                                               |
-| [Shoot][]               | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                                               |
-| [Volley][]              | Shoots a volley of projectile-items at the target with various options                                                                                  |
-| [SudoSkill][]           | Makes the target execute a skill                                                                                                                        |
-| [Switch-Case][]         | Acts as a switch/case                                                                                                                                   |
 | [RandomSkill][]         | Executes a random skill from a list                                                                                                                     |
 | [SetSkillCooldown][]    | Sets the given metakill's cooldown to the given value                                                                                                   |
+| [Shoot][]               | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                                               |
+| [Slash][]               | Creates a highly-customizable slash pattern that can execute metaskills.                                                                               |
+| [SudoSkill][]           | Makes the target execute a skill                                                                                                                        |
+| [Switch-Case][]         | Acts as a switch/case                                                                                                                                   |
 | [Totem][]               | Creates a static "totem" at a location that can execute other skills                                                                                    |
+| [Volley][]              | Shoots a volley of projectile-items at the target with various options                                                                                  |
 | [VariableAdd][]         | Adds an amount to a numeric variable                                                                                                                    |
 | [VariableMath][]        | Performs math on a numeric variable                                                                                                                     |
 | [SetVariable][]         | Sets the value of a variable                                                                                                                            |
@@ -412,6 +413,7 @@ but not yet ready for use.
   [PlayBlockPlaceSound]: skills/mechanics/PlayBlockPlaceSound
   [PlayBlockStepSound]: skills/mechanics/PlayBlockStepSound
   [Shoot]: /skills/mechanics/shoot
+  [Slash]: /skills/mechanics/slash
   [Volley]: /skills/mechanics/volley
   [SudoSkill]: /skills/mechanics/sudoskill
   [RandomSkill]: /skills/mechanics/randomskill
