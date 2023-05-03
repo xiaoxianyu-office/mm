@@ -19,6 +19,7 @@
   * [Custom Kill Messages](Mobs/KillMessages)
   * [Threat Tables](Mobs/ThreatTables)
   * [Immunity Tables](Mobs/ImmunityTables)
+  * [Templates](Mobs/Templates)
   * [Extra: Disguises](Mobs/Disguises)
   * [Extra: ModelEngine](Model-Engine)<!--* [Templating](Config/Templating)-->
 ##### [Skills](Skills/Skills)
