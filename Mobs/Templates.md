@@ -129,17 +129,67 @@ flowchart TD
 
 But what about elements that are present on both the mob and its template?
 
-## Shared elements
+## Shared Elements
 When both the Mob and its Template share some elements, one of the following three things happens:
-  * The element of the template is overridden by the one in the Mob
+  * The element of the template is overridden by the one in the Mob. (**Overriden**)
     * Example: both `MonsterFaction_Base` and `ZombieBrute` have a `PROJECTILE` DamageModifier, so the one in `ZombieBrute` overrides the one in the Template, and is the one that is ultimately applied
-  * The element of the Template is added alongside the one of the Mob 
+  * The element of the Template is added alongside the one of the Mob. (**Partially Overriden**)
     * Example: Since the Mob has no `Faction` element, it will inherit the one in the Template, ultimately  being considered as part of the `Monsters` faction
     * Example: both `MonsterFaction_Base` and `ZombieBrute` have a DamageModifiers element, with the Template's having `PROJECTILE` and `ENTITY_ATTACK`, while the Mob has only `PROJECTILE`. Since no `ENTITY_ATTACK` DamageModifier is specified in the Mob, the Template's gets inherited, so in the end the `ZombieBrute` mob will take 75% of the damage it would normally take from the `ENTITY_ATTACK` damage source, despite not having that DamageModifier itself
-  * The elements of the Mob and of the Template are applied simultaneously, if the elements are part of a list
+  * The elements of the Mob and of the Template are applied simultaneously, if the elements are part of a list. (**Merged**)
     * Example: `Skills` and `KillMessages` are both a list of mechanics and messagges respectively, so you can add them to both the Template and the Mob and expect to see all of them to be present on the Mob
     * `AIGoalSelectors` and `AITargetSelectors` are, too, considered a list, so by adding more of them on the Mob, more Selectors are being added at the end of the list, essentially becoming other Selectors but with less importance than the ones in the Template, since Selectors that are placed lower on the list are followed only the one ones above them cannot be.
       * To clear the Selectors of the Template, just use the `clear` Selector
+
+To make this more understandable, the following is a list of all of the elements a Template may have and how the Mob will treat them if the Mob has them too
+
+| **Element** *(in the Template)*       | **How it is inherited** *(if the Mob has it too)*              |
+|---------------------------------------|----------------------------------------------------------------| 
+| Type                                  | Overriden                                                      |
+| Display                               | Overriden                                                      |
+| Health                                | Overriden                                                      |
+| Damage                                | Overriden                                                      |
+| Armor                                 | Overriden                                                      |
+| Bossbar                               | Overriden                                                      |
+| Faction                               | Overriden                                                      |
+| Mount                                 | Overriden                                                      |
+| Options                               | Partially Overriden (only the shared options are overriden)    |           
+| Modules                               | Partially Overriden (only the shared modules are overriden)    |
+| AIGoalSelectors                       | Merged*                                                        |
+| AITargetSelectors                     | Merged*                                                        |
+| Drops                                 | Merged                                                         |
+| DamageModifiers                       | Partially Overriden (only the shared modifiers are overriden)  |
+| Equipment                             | Partially Overriden (only equipment with the same slot is overriden)|
+| KillMessages                          | Merged                                                         |
+| LevelModifiers                        | Partially Overriden (only the shared modifiers are overriden)  |
+| Disguise                              | Overriden                                                      |
+| Skills                                | Merged                                                         |
+| Trades                                | Partially Overriden (only trades with the same number are overriden)|
+
+
+\* A special note must be made regarding the behavior of the AIGoalsSelector and the AITargetSelectors elements, as only stating that they are "merged" is a bit reductive. The selector of the Mob are, in fact, added to the end of the Template's. So, for instance, if the Template has a `clear`,`meleeattack` AIGoals and the Mob has a `randomstroll` one, the final mob will effectively have `clear`,`meleeattack`,`randomstroll` as its AIGoals.
+If one wishes to reset the Selectors from the Template, one can either use the [`Exclude`](#excluding-elements) element or use the `clear` Selector, as that will "delete" every Selector that came before it.
+
+## Excluding Elements
+It is possible to stop a Mob from inheriting unwanted elements from its Template using the following syntax
+```yaml
+  Exclude:
+  - Element1
+  - Element2
+  - {...}
+```
+
+So, for instance, if we wanted a mob to not inherit the Equipment, the AITargetSelectors and the Skills, we would be using
+
+```yaml
+ExampleMob:
+  Template: MobTemplate
+  Exclude:
+  - Equipment
+  - AITargetSelectors
+  - Skills
+```
+And the mob will now not inherit the specified elements.
 
 ## Chained Templates
 But why should we stop at only one Template? After all, Templates can have a Template, too! Let's revisit out example from earlier, but this time splitting it up a little bit more
@@ -258,3 +308,5 @@ flowchart TD
     A[MonsterFaction_Base] -->|Is Inherited by| B[MonsterFaction_MeleeEntity] --->|Is Inherited by| C[ZombieBrute]
     D[DiamondArmorSet]  --> |Is Inherited by| C[ZombieBrute]
 ```
+
+##
