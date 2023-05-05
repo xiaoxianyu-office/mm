@@ -191,6 +191,7 @@ Conditions
 | [Mounted](/skills/conditions/mounted)                                         | Entity   | If the target entity is riding a mount/vehicle                                              |
 | [Moving](/skills/conditions/moving)                                           | Entity   | If the target has a velocity greater than zero                                              |
 | [MythicMobType](/skills/conditions/mythicmobtype)                             | Entity   | Checks the MythicMob type of the target mob                                                 |
+| [MythicPack](/skills/conditions/mythicpack)                                   | Meta     | Checks for the presence of Pack                                                             |
 | [Name](/skills/conditions/name)                                               | Entity   | Checks against the entity's name                                                            |
 | [NearClaim](/skills/conditions/nearclaim)                                     | Location | If the target location is near any GriefPrevention claims                                   |
 | [Night](/skills/conditions/night)                                             | Location | If the time is night, from 14000 to 22000 in-game time                                      |
@@ -201,6 +202,8 @@ Conditions
 | [Outside](/skills/conditions/outside)                                         | Location | If the target has open sky above them                                                       |
 | [Owner](/skills/conditions/owner)                                             | Compare  | Checks if the target entity is the owner of the caster                                      |
 | [OwnerIsOnline](/skills/conditions/ownerisonline)                             | Entity   | Checks if the owner of the target mob is online, if the owner is a player                   |
+| [PackVersion](/skills/conditions/packversion)                                 | Meta     | Checks if a pack has a specified version                                                    |
+| [PackVersionGreater](/skills/conditions/packversiongreater)                   | Meta     | Checks if a pack has a version greater or equal the specified one                           |
 | [Pitch](/skills/conditions/pitch)                                             | Entity   | Checks if the pitch of the target entity is within a range                                  |
 | [PlayerKills](/skills/conditions/playerkills)                                 | Entity   | Matches how many players the target mob has killed                                          |
 | [PlayersInRadius](/skills/conditions/playersinradius)                         | Entity   | Checks how many players are in a radius                                                     |
