@@ -3,7 +3,7 @@
 ## Attributes
 | Attribute | Alias       | Description                                                        | Default |
 |-----------|-------------|--------------------------------------------------------------------|---------|
-| packid    | pack, id, p | The Pack id to check for                                           | none    |
+| packid    | pack, id, p | The Pack id to check for                                           |         |
 
 ## Examples
 ```yaml
