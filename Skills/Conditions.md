@@ -79,6 +79,14 @@ YourMagnificentSkill:
   TriggerConditions:
     - distance{d=1to10} true
 ```
+
+## Composite Conditions
+Conditions can also be grouped by parenthesis and evaluated via the **AND** (`&&`) and **OR** (`||`) boolean operators.
+```yaml
+  Conditions:
+  - ((night || raining) && onBlock{material=LIME_CONCRETE}) true
+```
+
 Condition Actions
 -----------------
 
