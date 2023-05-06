@@ -210,6 +210,7 @@ Possible filters include:
 -   vanilla
 -   villager
 -   watermobs
+-   owner
 -   More coming later...
 
 You can also turn off specific filters by just adding the option
