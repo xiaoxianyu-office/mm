@@ -1,3 +1,4 @@
+Set up custom villager trades. Example shown below:
 ```
 MerchantTest:
   Type: VILLAGER
