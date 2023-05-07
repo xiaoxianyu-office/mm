@@ -167,6 +167,7 @@ Conditions
 | [isLiving](/skills/conditions/isliving)                                       | Entity   | Checks if the target is a living entity                                                       |
 | [isLeashed](/skills/conditions/isleashed)                                     | Entity   | Checks if the target has been leashed                                                         |
 | [isMythicMob](/skills/conditions/ismythicmob)                                 | Entity   | Checks if the target is a MythicMob                                                           |
+| [isMoist](/skills/conditions/ismoist)                                         | Location | Checks if the target block of farmland is hydrated                                            |
 | [isMonster](/skills/conditions/ismonster)                                     | Entity   | Checks if the target is a monster                                                             |
 | [isPlayer](/skills/conditions/isplayer)                                       | Entity   | Checks if the target is a player                                                              |
 | [isSaddled](/skills/conditions/issaddled)                                     | Entity   | Checks if the target entity is saddled                                                        |
@@ -185,6 +186,7 @@ Conditions
 | [MobsInRadius](/skills/conditions/mobsinradius)                               | Location | Checks how many mobs are in a given radius                                                 |
 | [MobsInChunk](/skills/conditions/mobsinchunk)                                 | Location | Matches a range to how many mobs are in the target location's chunk                       |
 | [MobsInWorld](/skills/conditions/mobsinworld)                                 | Location | Matches a range to how many mobs are in the target world                                  |
+| [MoistureLevel](/skills/conditions/moisturelevel)                             | Location | Checks if the target block of farmland has the specified level of hydratation                 |
 | [MotionX](/skills/conditions/motionx)                                         | Entity   | Checks the X motion of the target entity against a range.                                    |
 | [MotionY](/skills/conditions/motiony)                                         | Entity   | Checks the Y motion of the target entity against a range.                                    |
 | [MotionZ](/skills/conditions/motionz)                                         | Entity   | If the target has a velocity greater than zero                                                |
