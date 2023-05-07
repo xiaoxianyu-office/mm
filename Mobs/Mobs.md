@@ -262,7 +262,6 @@ example_mob:
 #### Trades
 Customizes the villager trades.
 Villagers must have a profession and a profession level of 2 to be able to keep its custom trades.
-See [Trades](Mobs/Trades) for more information.
 
 ```yml
 MerchantTest:
