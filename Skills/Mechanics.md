@@ -205,6 +205,7 @@ by these will "inherit" the targets (if applicable).
 | [OnDeath][]             | Applies an [aura][] to the target that triggers a skill when they die                                                                                   |
 | [Orbital][]             | Applies an [aura][] that causes a projectile to orbit around the target                                                                                 |
 | [Projectile][]          | Fires a highly-customizable projectile towards the target                                                                                               |
+| [ProjectileVelocity][]  | Modifies the velocity of the calling Projectile or Missile                                                                                               |
 | [RandomSkill][]         | Executes a random skill from a list                                                                                                                     |
 | [SetSkillCooldown][]    | Sets the given metakill's cooldown to the given value                                                                                                   |
 | [Shoot][]               | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                                               |
@@ -387,6 +388,9 @@ but not yet ready for use.
   [Weather]: /skills/mechanics/weather
   [WolfSit]: /skills/mechanics/wolfsit
   [View the list of Effect Mechanics by clicking here]: /skills/effects/
+  
+  
+  <!-- METAMECHANICS -->
   [Skill]: /skills/mechanics/skill
   [VariableSkill]: /skills/mechanics/variableskill
   [Aura]: /skills/mechanics/aura
@@ -407,6 +411,7 @@ but not yet ready for use.
   [OnUse]: /skills/mechanics/onuse
   [Orbital]: /skills/mechanics/orbital
   [Projectile]: /skills/mechanics/projectile
+  [ProjectileVelocity]: /skills/mechanics/projectilevelocity
   [PlayBlockBreakSound]: skills/mechanics/PlayBlockBreakSound
   [PlayBlockFallSound]: skills/mechanics/PlayBlockFallSound
   [PlayBlockHitSound]: skills/mechanics/PlayBlockHitSound
