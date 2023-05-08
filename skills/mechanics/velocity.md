@@ -14,6 +14,7 @@ Attributes
 | velocityx | vx, x   | Velocity on the x-axis. Can be negative.                                | 1             |
 | velocityy | vy, y   | Velocity on the y-axis. Can be negative.                                | 1             |
 | velocityz | vz, z   | Velocity on the z-axis. Can be negative.                                | 1             |
+| relative  |         | If the change in velocity should be relative to the caster's facing direction. In this instance, the `x` axis becomes `forwards/backwards`, `y` becomes `up/down` and z becomes `left/right`| false     |
 
   
 
