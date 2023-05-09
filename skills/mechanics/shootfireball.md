@@ -2,6 +2,7 @@ Mechanic: Shoot Fireball
 ========================
 
 Shoots a fireball from the mob towards the target entity or location.
+**LARGE Griefs blocks.**
 
 Attributes
 ----------
