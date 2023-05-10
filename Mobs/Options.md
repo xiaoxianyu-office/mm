@@ -754,7 +754,7 @@ Mob:
 
       * Villager can be traded with.
       * Defaults to false.
-Check out [Trades](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Mobs/Trades)
+Check out [Trades](/Mobs/Mobs#trades)
 
 **Profession: \[profession\]**
 
