@@ -23,4 +23,4 @@ Causes the target entity to spin around for the given duration.
 
 When you set velocity to 0,this mob's direction will be locked.
 
-When a mob cast spin repeatedly,this mob will spining and moving up
+When a mob casts the spin mechanic repeatedly it will move upwards while spinning.
