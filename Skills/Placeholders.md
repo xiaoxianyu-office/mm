@@ -192,6 +192,18 @@ Special Placeholders
 | <random.#to#>               | Returns a random integer in the specified range                         |
 | <random.float.#to#>         | Returns a random float number in the specified range                    |
 
+
+## PlaceholderAPI Integration
+Other than being able to use PlaceholderAPI placeholders anywhere placeholder support is in place, MythicMobs introduces some new PAPI placeholders that can be used by third parties to fetch MythicMobs-related values.
+| **PAPI Placeholder**        | **Function**                                                            |
+|-----------------------------|-------------------------------------------------------------------------|
+| %mythic_var_someVar%        | Returns the value of the `someVar` variable that is set on the player   |
+| %mythic_var_world_someVar%  | Returns the value of the `someVar` variable that is set on the world    |
+| %mythic_var_global_someVar% | Returns the value of the `someVar` variable that is set on the server   |
+| %mythic_var_<playerName>_someVar% | Returns the value of the `someVar` variable that is set on the specified player, by their name |
+| %mythic_var_<UUID>_someVar% | Returns the value of the `someVar` variable that is set on the specified entity, by its UUID|
+
+
 Examples
 --------------------
 
