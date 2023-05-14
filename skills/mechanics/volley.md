@@ -10,7 +10,7 @@ mechanic.
 |-----------|---------|---------------------------------------------------|---------|
 | amount    | a       | The amount of projectiles                         | 10      |
 | source    | s       | The type of the volley. Can be REGULAR or RAIN    | REGULAR |
-| radius    | r       | The radius of the volley                          | 00      |
+| radius    | r       | The radius of the volley                          | 0       |
 | yoffset   | y       | The y offset of the target location of the projectiles | 0  |
 
 ## Examples
