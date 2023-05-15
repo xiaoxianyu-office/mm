@@ -1,24 +1,13 @@
-**Description:** If the time is dusk, from 14000 to 18000 in-game time.
+## Description
+Checks if the time in the world at the target location is dusk, from 14000 to 18000 in-game time.
 
----
 
-**Attributes:**
+## Attributes
+*This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| None      | None  | None        |
 
----
-
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - dusk true
 ```
-Conditions:
-- dusk true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
