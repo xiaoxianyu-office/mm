@@ -1,6 +1,6 @@
 ## Description
 This condition tests if material type present at the target location is the specified one.  
-Valid for any Bukkit material type: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html.
+Valid for any [Bukkit material type](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html).
 
 
 ## Attributes
