@@ -131,6 +131,7 @@ Conditions
 | [EnchantingExperience](/skills/conditions/EnchantingExperience)               | Entity   | Checks the target player's experience points                                               |
 | [EnchantingLevel](/skills/conditions/enchantingLevel)                         | Entity   | Checks the target player's experience level                                                |
 | [EnderDragonPhase](/skills/conditions/EnderDragonPhase)                       | Entity   | Checks if the ender dragon is in a phase or phases                                            |
+| [EntityItemIsSimilar](/skills/conditions/EntityItemIsSimilar)                 | Entity   | Tests the entity type of the target item entity                                           |
 | [EntityType](/skills/conditions/entitytype)                                   | Entity   | Tests the entity type of the target                                                       |
 | [Faction](/skills/conditions/faction)                                         | Entity   | Tests for the targets faction                                                                 |
 | [FallSpeed](/skills/conditions/fallspeed)                                     | Entity   | If the fall speed of the target is within the given range                                   |
