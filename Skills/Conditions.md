@@ -128,7 +128,8 @@ Conditions
 | [DistanceFromSpawn](/skills/conditions/distancefromspawn)                     | Location | Whether the distance from the world's spawn point to the target is within the given range   |
 | [DistanceFromTrackedLocation](/skills/conditions/distancefromtrackedlocation) | Location | Whether the distance from the tracked location to the target is within the given range      |
 | [Dusk](/skills/conditions/dusk)                                               | Location | If the time is dusk, from 14000 to 18000 in-game time.                                      |
-| [EnchantingLevel](/skills/conditions/enchantingLevel)                         | Entity   | Checks the entity experience level                                                         |
+| [EnchantingExperience](/skills/conditions/EnchantingExperience)               | Entity   | Checks the target player's experience points                                               |
+| [EnchantingLevel](/skills/conditions/enchantingLevel)                         | Entity   | Checks the target player's experience level                                                |
 | [EnderDragonPhase](/skills/conditions/EnderDragonPhase)                       | Entity   | Checks if the ender dragon is in a phase or phases                                            |
 | [EntityType](/skills/conditions/entitytype)                                   | Entity   | Tests the entity type of the target                                                       |
 | [Faction](/skills/conditions/faction)                                         | Entity   | Tests for the targets faction                                                                 |
