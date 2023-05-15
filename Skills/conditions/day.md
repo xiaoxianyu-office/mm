@@ -1,22 +1,13 @@
-**Description:** If the time is day, from 2000 to 10000 in-game time
+## Description
+Checks if the time in the world at the target location is day, from 2000 to 10000 in-game time.
 
-**Type:** Location
 
----
+## Attributes
+*This condition has no attributes*
 
-**Attributes:**
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| None      | None  | None        |
-
----
-
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - day true
 ```
-Conditions:
-- day true
-```
-
-
