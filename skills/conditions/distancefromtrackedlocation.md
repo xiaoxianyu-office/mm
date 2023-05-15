@@ -1,22 +1,23 @@
-**Description**: Checks if the distance between the entity and the tracked location is within the specified values
+## Description
+Checks if the distance between the entity and the tracked location is within the specified values
 
----
+
+## Attributes
+
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| distance  | d         | The values to check for. Can be a range.                             |         |
 
 
-**Attributes**
-
-| Attribute | Alias       | Description                                                                                     |
-|-----------|-------------|-------------------------------------------------------------------------------------------------|
-|     distance      |     d        |     The values to check for. Can be a range.         |
-
-Examples
----
+## Examples
 ```yml
 Conditions:
   - DistanceFromTrackedLocation{d=5} true
 ```
-
 ```yml
 Conditions:
   - DistanceFromTrackedLocation{d=2to10} true
 ```
+
+## Aliases
+- [x] distanceFromTL
