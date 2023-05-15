@@ -1,25 +1,17 @@
-**Description:** This condition tests if the target player is blocking with a shield. 
+## Description
+ This condition tests if the target player is blocking with a shield. 
 
----
 
-**Attributes:**
+## Attributes
+*This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| None      | None  | None        |
+## Examples
 
----
-
-**Examples:**
-
-```
+```yaml
 Conditions:
 - blocking{} true
 ```
 
----
+## Aliases
 
-**Extra Information:**
-
-- [x] Type: Entity
-- [x] Aliases: isblocking
+- [x] isblocking
