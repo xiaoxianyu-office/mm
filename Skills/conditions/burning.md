@@ -1,14 +1,17 @@
+## Description
 Checks if the target entity is burning
 
-**Aliases**: isburning, isonfire
-**Attributes**
 
-| Attribute | Alias | Description |
-| -- |-- | -- |
-| none | none | none |
+## Attributes
+*This condition has no attributes*
 
-**Examples**
+
+## Examples
 ```yaml
-TargetConditions:
-- isburning{} true
+  TargetConditions:
+  - isburning true
 ```
+
+## Aliases
+- [x] isburning
+- [x] isonfire
