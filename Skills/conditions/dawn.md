@@ -1,24 +1,13 @@
-**Description:** If the time is dawn, from 22000 to 2000 in-game time
+## Description
+Checks if the time in the world at the target location is dawn, from 22000 to 2000 in-game time.
 
----
 
-**Attributes:**
+## Attributes
+*This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| None      | None  | None        |
 
----
-
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - dawn true
 ```
-Conditions:
-- dawn true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
