@@ -1,22 +1,16 @@
-**Description:** checks the entity's experience level
+## Description
+Checks the target player's experience level
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute  | Alias | Description                          |
-| ---------- | ----- | -----------------------------------  |
-| level    | l     | range of amount of experience level to check for |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| level     | l         | Range of amount of experience level to check for                     | 0       |
 
----
 
-**Examples:**
-
+## Examples
+```yaml
+  TargetConditions:
+  - EnchantingLevel{l=<10} true
 ```
-TargetConditions:
-- EnchantingLevel{l=<10} true
-```
-
-**Extra Information:**
-
-- [x] Type: Entity
