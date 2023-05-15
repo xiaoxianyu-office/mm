@@ -1,29 +1,24 @@
-**Description:** checks the ender dragon phases
+## Description
+Checks the phase of the target Ender Dragon entity.  
+A list of valid phases can be found in the [Spigot Phase javadoc](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EnderDragon.Phase.html).
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute  | Alias  | Description                          |
-| ---------- | ------ | -----------------------------------  |
-| phases     | phase  | the ender dragon phases to check for |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| phase     | p         | A list of phases to match                                            |         |
 
----
 
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - enderdragonphase{phase=CIRCLING} true
 ```
-Conditions:
-- enderdragonphase{phase=CIRCLING} true
-```
-
-```
+```yaml
 Conditions:
 - enderdragonphase{phases=FLY_TO_PORTAL,LEAVE_PORTAL} true
 ```
 
-List of ender dragon phases: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EnderDragon.Phase.html
-
-**Extra Information:**
-
-- [x] Type: Entity
+## Aliases
+- [x] edragonPhase
