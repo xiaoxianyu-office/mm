@@ -1,18 +1,20 @@
-**Description:** Checks how many children the caster has.
+## Description
+Checks how many children the caster has.
 
-**Type:** Entity
 
----
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| amount    | a         | The amount of children to check for. Can accept ranged values.       | 1       |
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| amount    | a     | The amount of children to check for. |
 
----
 
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - children{a=1} true
 ```
-Conditions:
-- children{a=1} true
+```yaml
+  Conditions:
+  - children{a=>2} true
 ```
