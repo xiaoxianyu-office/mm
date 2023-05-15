@@ -1,27 +1,18 @@
-**Description:** This condition tests the material type present at the target location.
+## Description
+This condition tests if material type present at the target location is the specified one.  
+Valid for any Bukkit material type: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html.
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases | Description                  |
-| --------- | ------- | ---------------------------- |
-| types     | type, t | A list of materials or MMOItem's block name to check |
+| Attribute | Aliases                   | Description                                          | Default |
+|-----------|---------------------------|------------------------------------------------------|---------|
+| types     | type, t, material, mat, m | A list of materials or MMOItem's block name to check | DIRT    |
 
-Valid for any Bukkit material type.
-https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 
----
+## Examples
 
-**Examples:**
-
-```
+```yaml
 Conditions:
 - blocktype{type=dirt} true
 ```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
