@@ -1,24 +1,16 @@
-**Description:** checks for a range of damage the entity took
+## Description
+Checks for a range of damage the entity took, if the skilltree originated from a [onDamaged](/Skills/Triggers#ondamaged) trigger.
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute         | Alias | Description                  |
-| ----------------- | ----- | ---------------------------- |
-| damageAmount      | amount  | Range of damage to check for |
+| Attribute | Aliases      | Description                                                       | Default |
+|-----------|--------------|-------------------------------------------------------------------|---------|
+| damageAmount | amount, a | Range of damage to check for                                      | >0      |
 
----
 
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - damageamount{amount=>10} true
 ```
-Conditions:
-- damageamount{amount=>10} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
