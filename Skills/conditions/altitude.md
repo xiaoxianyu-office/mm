@@ -1,26 +1,20 @@
-**Description:** This condition tests how far above the ground the target entity is.
+## Description
+This condition tests how far above the ground the target entity is.
 
----
-
-**Attributes:**
+## Attributes
 
 | Attribute | Aliases        | Description                                             | Default |
 | --------- | -------------  | ------------------------------------------------------- | ------- |
 | height    | altitude, a, h | The height range to check                               |         |
-| maxHeight |                | Limits the maximum height this condition can checks for | 30      |
+| maxHeight | mH             | Limits the maximum height this condition can checks for | 30      |
 
----
 
-**Examples:**
+## Examples
 
 ```yaml
 Conditions:
 - altitude{h=3-5} true
 ```
 
----
-
-**Extra Information:**
-
-- [x] Type: Entity
-- [x] Aliases: heightfromsurface
+## Aliases
+- [x] heightfromsurface
