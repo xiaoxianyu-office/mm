@@ -1,24 +1,21 @@
-**Description:** If the fall speed of the target is within the given range
+## Description
+If the fall speed of the target is within the given range
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Alias | Description           |
-| --------- | ----- | --------------------- |
-| speed     | s     | The velocity to match |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| speed     | s         | The velocity to match                                                |         |
 
----
 
-**Examples:**
+## Examples
 
+```yaml
+  Conditions:
+  - fallspeed{s=>5} true
 ```
-Conditions:
-- fallspeed{s=>5} true
-```
 
----
 
-**Extra Information:**
-
-- [x] Type: Entity
+## Aliases
+- [x] fallingspeed
