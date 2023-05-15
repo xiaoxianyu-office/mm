@@ -1,26 +1,16 @@
-**Description:** Checks if the target is in a faction
+## Description
+Checks if the target entity is in the specified faction
 
-**Type:** Entity
 
----
+## Attributes
 
-**Attributes:**
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| faction   | f         | The faction to check for                                             |         |
 
-| Attribute    | Alias | Description              |
-| ------------ | ----- | ------------------------ |
-| faction      | None  | The faction to check for |
 
----
-
-**Examples:**
-
-```
+## Examples
+```yaml
 TargetConditions:
 - faction{faction=MyFaction} true
 ```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
