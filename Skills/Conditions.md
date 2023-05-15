@@ -123,6 +123,7 @@ Conditions
 | [DamageCause](/skills/conditions/DamageCause)                                 | Meta     | Checks the type of the damage cause                                                        |
 | [Dawn](/skills/conditions/dawn)                                               | Location | If the time is dawn, from 22000 to 2000 in-game time                                        |
 | [Day](/skills/conditions/day)                                                 | Location | If the time is day, from 2000 to 10000 in-game time                                         |
+| [Dimension](/skills/conditions/dimension)                                     | Location | If the target location is within a certain dimension                                          |
 | [Distance](/skills/conditions/distance)                                       | Compare  | Whether the distance between the caster and target is within the given range                |
 | [DistanceFromTrackedLocation](/skills/conditions/distancefromtrackedlocation) | Location | Whether the distance from the tracked location to the target is within the given range      |
 | [DistanceFromSpawn](/skills/conditions/distancefromspawn)                     | Location | Whether the distance from the world's spawn point to the target is within the given range   |
