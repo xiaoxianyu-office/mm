@@ -1,17 +1,14 @@
-**Description:** Tests the entity type of the target
----
-List of types can be found here:
-https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+## Description
+Tests if the entity type of the target is the specified one.  
+A list of valid entity types can be found on the [Spigot Javadocs](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html)
 
-**Attributes:**
+## Attributes
 
 | Attribute | Alias    | Description                     |
 | --------- | -------- | ------------------------------- |
 | type      | types, t | A list of entity types to match |
 
----
-
-**Examples:**
+## Examples
 
 ```
 Conditions:
@@ -28,8 +25,5 @@ TriggerConditions:
 - entitytype{t=PLAYER} true
 ```
 
----
-
-**Extra Information:**
-
-- [x] Type: Entity
+## Aliases
+- [x] mobtype
