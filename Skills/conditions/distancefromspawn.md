@@ -1,29 +1,20 @@
-**Description:** Whether the distance from the world's spawn point to the target is within the given range
+## Description
+Whether the distance from the world's spawn point to the target is within the given range
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Alias | Description           |
-| --------- | ----- | --------------------- |
-| distance  |   d   | The distance to match |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| distance  |   d       | The distance to match                                                |         |
 
----
 
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - distancefromspawn{d=<100} true
 ```
-Conditions:
-- distancefromspawn{d=<100} true
+```yaml
+  Conditions:
+  - distancefromspawn{d=>50} true
 ```
-
-```
-Conditions:
-- distancefromspawn{d=>50} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
