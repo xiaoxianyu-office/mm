@@ -1,25 +1,20 @@
-**Description:** This condition checks if the target entity is crouching or not.
+## Description
+This condition checks if the target player is crouching or not.
 
----
 
-**Attributes:**
+## Attributes
+*This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| None      | None  | None        |
 
----
-
-**Examples:**
-
-```
-Conditions:
-- crouching true
+## Examples
+```yaml
+  Conditions:
+  - crouching true
 ```
 
----
 
-**Extra Information:**
+## Aliases
 
-- [x] Type: Entity
-- [x] Aliases: iscrouching sneaking issneaking
+- [x] iscrouching
+- [x] sneaking
+- [x] issneaking
