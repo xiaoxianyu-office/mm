@@ -1,5 +1,5 @@
 ## Description
-Checks for a range of damage the entity took, if the skilltree originated from a [onDamaged](/Skills/Triggers#ondamaged) trigger.
+Checks for a range of damage the entity took, if the skilltree originated from a [onDamaged Trigger](/Skills/Triggers#ondamaged) or an [onDamaged Aura](/skills/mechanics/ondamaged).
 
 
 ## Attributes
