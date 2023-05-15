@@ -12,14 +12,14 @@ If no namespace is provided, it will default to `minecraft:`
 
 ## Examples
 
-```
+```yaml
 Conditions:
 - biome{b=minecraft:plains,river} true
 ```
 
 If using a custom biome (like from a datapack), you can define it with the namespaced key like this:
 
-```
+```yaml
 Conditions:
 - biome{b=far_end:void,far_end:warped_marsh} true
 ```
