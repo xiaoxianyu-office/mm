@@ -133,7 +133,7 @@ Conditions
 | [EnderDragonPhase](/skills/conditions/EnderDragonPhase)                       | Entity   | Checks if the ender dragon is in a phase or phases                                            |
 | [EntityItemIsSimilar](/skills/conditions/EntityItemIsSimilar)                 | Entity   | Tests if the target item entity is similar to another item                                   |
 | [EntityItemType](/skills/conditions/EntityItemType)                           | Entity   | Tests the type of the target item entity                                                  |
-| [EntityItemMaterial](/skills/conditions/EntityItemMaterial)                   | Entity   | Tests the material of the target item entity                                              |
+| [EntityMaterialType](/skills/conditions/EntityMaterialType)                   | Entity   | Tests the material of the target item entity                                              |
 | [EntityType](/skills/conditions/entitytype)                                   | Entity   | Tests the entity type of the target                                                       |
 | [Faction](/skills/conditions/faction)                                         | Entity   | Tests for the targets faction                                                                 |
 | [FallSpeed](/skills/conditions/fallspeed)                                     | Entity   | If the fall speed of the target is within the given range                                   |
