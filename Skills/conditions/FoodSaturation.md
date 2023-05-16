@@ -1,24 +1,19 @@
-**Description:** checks the food saturation amount of the target
+## Description
+Checks the food saturation amount of the target
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute  | Alias | Description                                     |
-| ---------- | ----- | ----------------------------------------------  |
-| amount     | a     | range of amount of food saturation to check for |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| amount    | a, food, f, saturation, s | Range of amount of food saturation to check for      | 0       |
 
----
 
-**Examples:**
-
-```
-TargetConditions:
-- FoodSaturation{a=<1} true
+## Examples
+```yaml
+  TargetConditions:
+  - FoodSaturation{a=<1} true
 ```
 
----
-
-**Extra Information:**
-
-- [x] Type: Entity
+## Aliases
+- [x] hungerSaturation
