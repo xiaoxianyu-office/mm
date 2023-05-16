@@ -1,21 +1,25 @@
-**Description:** Tests if the target has the given range of stacks from an aura
+## Description
+Tests if the target has the given range of stacks from an aura
 
-**Type:** Entity
 
----
+## Attributes
 
-**Attributes:**
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| auraName  | name, n, aura, buffname, buff, debuffname, debuff, b| The name of the aura to check for ||
+| stacks    | s         | The number/range of stacks to check for                              | 1       |
 
-| Attribute | Alias   | Description                             |
-| --------- | ------- | --------------------------------------- |
-| auraName  | name, n | The name of the aura to check for       |
-| stacks    | s       | The number/range of stacks to check for |
 
----
-
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - hasaurastacks{n=firedebuff;s=>3} true
 ```
-Conditions:
-- hasaurastacks{n=firedebuff;s=>3} true
-```
+
+
+## Aliases
+- [x] hasbuffstacks
+- [x] hasdebuffstacks
+- [x] aurastacks
+- [x] buffstacks
+- [x] debuffstacks
