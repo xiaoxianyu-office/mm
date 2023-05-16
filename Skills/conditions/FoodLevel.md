@@ -1,24 +1,22 @@
-**Description:** checks the food amount of the target
+## Description
+Checks the food amount of the target
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute  | Alias | Description                          |
-| ---------- | ----- | -----------------------------------  |
-| amount     | a     | range of amount of food to check for |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| amount    | a, food, f| Range of amount of food to check for                                 | 0       |
 
----
 
-**Examples:**
-
-```
-TargetConditions:
-- FoodLevel{a=<10} true
+## Examples
+```yaml
+  TargetConditions:
+  - FoodLevel{a=<10} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Type: Entity
+## Aliases
+- [x] hunger
+- [x] food
+- [x] hungerlevel
