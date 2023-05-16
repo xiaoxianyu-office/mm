@@ -26,10 +26,8 @@ Attributes
 | onendskill           | onend, oe  | The meta-skill to execute when the projectile misses and ends                             | None |
 | bounce               |            | Whether the projectile will bounce when it hits something                            | false |
 | pickup               |            | Can pickup the item.                                                        | false |
-| expiration           | duration, expire, e | How many ticks should the projectile exist for after it has landed before it gets removed                                                                                             
-| 100     |
-| accuracy             | ac, a      | Accuracy of the projectile                                                
-| 1 |
+| expiration           | duration, expire, e | How many ticks should the projectile exist for after it has landed before it gets removed                                                                  | 100     |
+| accuracy             | ac, a      | Accuracy of the projectile                                          | 1 |
 | knockback            | kb         | knockback strength of the projectile                                               | 0 |
 | piercelevel          | pl         | The amount of times the arrow can pierce through an entity                   | 0 | 
 | ignoreArmor          |            | Whether or not to ignore armor, but will still use enchantment modifiers when calculating total damage                                                                                 |     | 
