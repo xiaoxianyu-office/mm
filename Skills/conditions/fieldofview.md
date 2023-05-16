@@ -1,25 +1,22 @@
-**Description:** Tests if the target is within the given angle from where the caster is looking
+## Description
+Tests if the target is within the given angle from where the caster is looking
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Alias | Description                      |
-| --------- | ----- | -------------------------------- |
-| angle     | a     | The angle of the FOV to check in |
-| rotation  | r     | Rotates the FOV to check in      |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| angle     | a         | The angle of the FOV to check in                                     | 90      |
+| rotation  | r         | Rotates the FOV to check in                                          | 0       |
 
----
 
-**Examples:**
-
-```
+## Examples
+```yaml
 TargetConditions:
 - fieldofview{angle=90} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Type: Compare
+## Aliases
+- [x] infieldofview
+- [x] fov
