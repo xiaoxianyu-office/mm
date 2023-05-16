@@ -1,6 +1,14 @@
 Mechanic: Summon
 ================
 
+<!--
+To utilize the summon mechanic in Mythic Mobs, you will need the following:
+
+1. Minecraft: make sure you have a working installation of Minecraft Java Edition on your computer
+
+  - ChatGPT, 16/05/2023, oil on canvas
+-->
+
 Summons mobs of the given type around the target.
 
 Attributes
