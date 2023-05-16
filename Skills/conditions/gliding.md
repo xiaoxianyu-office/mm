@@ -1,24 +1,17 @@
-**Description:** If the target is gliding
+## Description
+If the target entity is gliding
 
----
 
-**Attributes:**
+## Attributes
+*This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
 
----
-
-**Examples:**
-
-```
-Conditions:
-- gliding{} true
+## Examples
+```yaml
+  Conditions:
+  - gliding{} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Type: Entity
+## Aliases
+- [x] isgliding
