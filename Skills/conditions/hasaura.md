@@ -1,24 +1,21 @@
-**Description:** Checks if the target entity has the given aura
+## Description
+Checks if the target entity has the given aura
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Alias   | Description                       |
-| --------- | ------- | --------------------------------- |
-| auraName  | name, n | The name of the aura to check for |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| auraName  | name, n, aura, buffname, buff, debuffname, debuff, b| The name of the aura to check for ||
 
----
 
-**Examples:**
-
-```
-Conditions:
-- hasaura{n=firedebuff} true
+## Examples
+```yaml
+  Conditions:
+  - hasaura{n=firedebuff} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Type: Entity
+## Aliases
+- [x] hasbuff
+- [x] hasdebuff
