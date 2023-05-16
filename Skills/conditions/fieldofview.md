@@ -12,8 +12,8 @@ Tests if the target is within the given angle from where the caster is looking
 
 ## Examples
 ```yaml
-TargetConditions:
-- fieldofview{angle=90} true
+  TargetConditions:
+  - fieldofview{angle=90} true
 ```
 
 
