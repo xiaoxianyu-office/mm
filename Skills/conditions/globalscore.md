@@ -1,26 +1,21 @@
-**Description:** Checks a global scoreboard value
+## Description
+Checks a global scoreboard value (the value associated with the fake player __GLOBAL__)
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases | Description        |
-| --------- | ----- | ------------------ |
-| objective | obj, o     | The objective      |
-| value     | val, v     | The value to match |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| objective | obj, o    | The objective                                                        |         |
+| value     | val, v    | The value to match                                                   |         |
 
----
 
-**Examples:**
-
-```
-Conditions:
-- globalscore{o=KillCount;value=5} true
+## Examples
+```yaml
+  Conditions:
+  - globalscore{o=KillCount;value=5} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Alias: scoreglobal
-- [x] Type: Entity
+## Aliases
+- [x] scoreglobal
