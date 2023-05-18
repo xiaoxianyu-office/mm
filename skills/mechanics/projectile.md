@@ -114,23 +114,23 @@ This example shoots a fast-moving ball of ice that damages and slows the
 first entity it hits:  
 **Mob File**  
 ```yaml
-    Mob:
-      Type: SKELETON
-      Skills:
-      - skill{s=IceBolt} @target ~onTimer:100
+Mob:
+  Type: SKELETON
+  Skills:
+  - skill{s=IceBolt} @target ~onTimer:100
 ```
 **Skills File**  
 ```yaml
-    IceBolt:
-      Skills:
-      - projectile{onTick=IceBolt-Tick;onHit=IceBolt-Hit;v=8;i=1;hR=1;vR=1;hnp=true}
-    IceBolt-Tick:
-      Skills:
-      - effect:particles{p=snowballpoof;amount=20;speed=0;hS=0.2;vS=0.2} @origin
-    IceBolt-Hit:
-      Skills:
-      - damage{a=10}
-      - potion{type=SLOW;duration=100;lvl=2}
+IceBolt:
+  Skills:
+  - projectile{onTick=IceBolt-Tick;onHit=IceBolt-Hit;v=8;i=1;hR=1;vR=1;hnp=true}
+IceBolt-Tick:
+  Skills:
+  - effect:particles{p=snowballpoof;amount=20;speed=0;hS=0.2;vS=0.2} @origin
+IceBolt-Hit:
+  Skills:
+  - damage{a=10}
+  - potion{type=SLOW;duration=100;lvl=2}
 ```
 hitConditions usage example:
 ```yaml
