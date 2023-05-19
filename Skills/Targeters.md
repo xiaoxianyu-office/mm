@@ -80,6 +80,8 @@ Location Targeters
 | @ObstructingBlock                        |                 | Tries to target blocks in front of the caster that are obstructing it                                                                                                                                                                              |
 | @TrackedLocation                         |                 | Targets the mob's tracked location                                                                                                                                                                                                                 |
 | @NearestStructure                        |                 | Targets the nearest structure's location                                                                                                                                                                                                           |
+| @[**VariableLocation**](/Skills/Targeters/VariableLocation){var=scope.name} | @varLocation    | Targets the location stored in the specified variable  |
+
 
 ### Multi-Location Targeters
 
