@@ -113,6 +113,7 @@ are able to target locations as well.
 | [SetAI][]                 | Disables/enables the AI of the target mob                                                |
 | [SetBlockType][]          | Change block type at target location                                                     |
 | [SetCollidable][]         | Sets if the target should have a collidable hitbox or not                                                     |
+| [SetDragonPodium][]       | Sets the position of the dragon's podium at the target location                                                     |
 | [SetGameMode][]           | Sets the Game Mode of the target player                                                  |
 | [SetGliding][]            | Makes the target glide if they have elytra                                               |
 | [SetGlobalScore][]        | Sets a scoreboard value on the fake player: \_\_GLOBAL\_\_                               |
@@ -341,6 +342,7 @@ but not yet ready for use.
   [SetAI]: /skills/mechanics/setai
   [SetBlockType]: /skills/mechanics/setblocktype
   [SetCollidable]: /skills/mechanics/setcollidable
+  [SetDragonPodium]: /skills/mechanics/SetDragonPodium
   [SetGameMode]: /skills/mechanics/setgamemode
   [SetGliding]: /skills/mechanics/setgliding
   [SetGlobalScore]: /skills/mechanics/setglobalscore
