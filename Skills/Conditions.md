@@ -177,6 +177,7 @@ Conditions
 | [isPlayer](/skills/conditions/isplayer)                                       | Entity   | Checks if the target is a player                                                              |
 | [isSaddled](/skills/conditions/issaddled)                                     | Entity   | Checks if the target entity is saddled                                                        |
 | [isSprinting](/skills/conditions/issprinting)                                 | Entity   | Checks if the target **Player** is sprinting                                                  |
+| [isTamed](/skills/conditions/IsTamed)                                         | Entity   | Checks if the target entity is tamed                                                          |
 | [ItemIsSimilar](/skills/conditions/itemissimilar)                             | Entity   | Checks that targeted player's inventory slot if it's similar to an item                     |
 | [ItemRecharging](/skills/conditions/itemrecharging)                           | Entity   | Checks if the target's weapon is recharging                                                   |
 | [LastDamageCause](/skills/conditions/lastdamagecause)                         | Entity   | Checks the target's last damage cause                                                      |
@@ -248,23 +249,23 @@ Conditions
 
 More Examples
 -------------
-
-    FlameShock:
-      Cooldown: 1
-      Conditions:
-      - targetwithin 15
-      - targetinlineofsight true
-      - incombat
-      - stance aggressive
-      - onblock GRASS
-      - offgcd
-      Skills:
-      - gcd{t=60}
-      - message{m="<mob.name> begins casting a spell"}
-      - potion{t=SLOW;d=60;l=7}
-      - delay 60
-      - message{m="<target.name> &ecombusts"}
-      - effect:particles{p=flame;a=20;hS=3;vS=1;s=0;y=2}
-      - potion{t=HARM;d=1;l=1}
-
+```yaml
+FlameShock:
+  Cooldown: 1
+  Conditions:
+  - targetwithin 15
+  - targetinlineofsight true
+  - incombat
+  - stance aggressive
+  - onblock GRASS
+  - offgcd
+  Skills:
+  - gcd{t=60}
+  - message{m="<mob.name> begins casting a spell"}
+  - potion{t=SLOW;d=60;l=7}
+  - delay 60
+  - message{m="<target.name> &ecombusts"}
+  - effect:particles{p=flame;a=20;hS=3;vS=1;s=0;y=2}
+  - potion{t=HARM;d=1;l=1}
+```
 [1] Not all conditions may be applicable everywhere.
