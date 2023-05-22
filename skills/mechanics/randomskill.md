@@ -10,7 +10,7 @@ Attributes
 
 | Attribute | Aliases | Description                                             | Default |
 |-----------|---------|---------------------------------------------------------|---------|
-| skills    |         | The list of skills to execute, must be separated by a , |         |
+| skills    |         | The list of skills to execute, must be separated by a `,` |         |
 | fallbackskill | fbskill, fbs | the metaskill to run if condition checks fail for all skills in the randomskill list |
 
 
