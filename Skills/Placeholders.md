@@ -97,7 +97,7 @@ These placeholders will return whatever attribute of the caster that is called. 
 | <caster.heldenchantlevel.#>        | Returns the enchant level of specified # enchant                  |
 | <caster.skill.\[skill_name\].cooldown> | Returns the current cooldown of the give skill as a float number |
 | <caster.raytrace>                  | Returns the name of the block being looked at by the caster (4.5 blocks of range) |
-
+| <caster.children.size>             | Returns the number of children this entity has                    |
 
 **Variable Placeholders**
 -----------------
@@ -118,7 +118,7 @@ These placeholders will return whatever variable has been called. For instance <
 
 **Target Placeholders**
 -----------------
-These placeholders will return whatever target selector has been used. For instance <target.name> + @NearestPlayer will return the name of the player closest to the casting mob.
+These placeholders will return whatever target selector has been used. For instance <target.name> + @NearestPlayer will return the name of the player closest to the casting mob. The following are only some of the placeholders that can have a `target` scope, and in general any placeholder that is also present in the [Caster Placeholder](#caster-placeholders) section will also work.
 
 | **Target Placeholders** | **Function**                                                      |
 |:-----------------------:|-------------------------------------------------------------------|
@@ -150,6 +150,7 @@ These placeholders will return whatever attribute of the entity that caused the 
     Skills:
     - message{m="<&b><caster.name><&r> was slain by <&a><trigger.name><&r>."} @PIR{r=20} ~onDeath
 
+The following are only some of the placeholders that can have a `trigger` scope, and in general any placeholder that is also present in the [Caster Placeholder](#caster-placeholders) section will also work.
 -----------------
 | Trigger Placeholders | Function                                                                               |
 |:--------------------:|----------------------------------------------------------------------------------------|
