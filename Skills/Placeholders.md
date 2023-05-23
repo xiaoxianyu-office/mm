@@ -151,6 +151,8 @@ These placeholders will return whatever attribute of the entity that caused the 
     - message{m="<&b><caster.name><&r> was slain by <&a><trigger.name><&r>."} @PIR{r=20} ~onDeath
 
 The following are only some of the placeholders that can have a `trigger` scope, and in general any placeholder that is also present in the [Caster Placeholder](#caster-placeholders) section will also work.
+
+
 -----------------
 | Trigger Placeholders | Function                                                                               |
 |:--------------------:|----------------------------------------------------------------------------------------|
