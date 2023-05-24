@@ -21,10 +21,10 @@ Notes:
 These tests were run using /mm test cast TestingBreakBlock
 
 1. 
-```
+```yaml
 TestingBreakBlock:
   Skills:
-  - breakblock{forcesync=true;doEffect=true;doDrops=true;useTool=true} @targetlocation
+  - breakblock{forcesync=true;doEffect=true;doDrops=true;useTool=true} @origin
 ```
 
 When a player calls this without a tool in there hand it does not drop a block or create the particle effects.
@@ -33,7 +33,7 @@ When a player calls this without a tool in there hand it does not drop a block o
 ```
 TestingBreakBlock:
   Skills:
-  - breakblock{forcesync=true;doEffect=true;doDrops=true;useTool=false} @targetlocation
+  - breakblock{forcesync=true;doEffect=true;doDrops=true;useTool=false} @origin
 ```
 
 When a player calls this without a tool in there hand it does drop the block, but does not create the particle effects. The same is true if setting doEffect to false. 
@@ -42,7 +42,7 @@ When a player calls this without a tool in there hand it does drop the block, bu
 ```
 TestingBreakBlock:
   Skills:
-  - breakblock{forcesync=true;doEffect=false;doDrops=true;useTool=true} @targetlocation
+  - breakblock{forcesync=true;doEffect=false;doDrops=true;useTool=true} @origin
 ```
 
 When a player calls this with a tool in their hand it drops the block and does not player the particle effects. 
@@ -51,7 +51,7 @@ When a player calls this with a tool in their hand it drops the block and does n
 ```
 TestingBreakBlock:
   Skills:
-  - breakblock{forcesync=true;doEffect=true;doDrops=false;useTool=true} @targetlocation
+  - breakblock{forcesync=true;doEffect=true;doDrops=false;useTool=true} @origin
 ```
 
 When a player calls this with a tool in their hand it does not drop a block, nor does it create the particle effects.
@@ -60,7 +60,7 @@ When a player calls this with a tool in their hand it does not drop a block, nor
 ```
 TestingBreakBlock:
   Skills:
-  - breakblock{forcesync=true;doEffect=true;doDrops=true;useTool=true} @targetlocation
+  - breakblock{forcesync=true;doEffect=true;doDrops=true;useTool=true} @origin
 ```
 
 When a player calls this with a tool in their hand it does drop a block, and does create the particle effects. 
@@ -72,7 +72,7 @@ Examples
 
 This example would break the block at location x:100,y:64,z:100 in the
 current world when right-clicked.
-
-      Skills:
-      - breakblock{forcesync=true} @location{c=100,64,100} ~onInteract
-      - ...
+```yaml
+Skills:
+  - breakblock{forcesync=true} @location{c=100,64,100} ~onInteract
+```
