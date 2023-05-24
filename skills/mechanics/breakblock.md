@@ -30,7 +30,7 @@ TestingBreakBlock:
 When a player calls this without a tool in there hand it does not drop a block or create the particle effects.
 
 2. 
-```
+```yaml
 TestingBreakBlock:
   Skills:
   - breakblock{forcesync=true;doEffect=true;doDrops=true;useTool=false} @origin
@@ -39,7 +39,7 @@ TestingBreakBlock:
 When a player calls this without a tool in there hand it does drop the block, but does not create the particle effects. The same is true if setting doEffect to false. 
 
 3.
-```
+```yaml
 TestingBreakBlock:
   Skills:
   - breakblock{forcesync=true;doEffect=false;doDrops=true;useTool=true} @origin
@@ -48,7 +48,7 @@ TestingBreakBlock:
 When a player calls this with a tool in their hand it drops the block and does not player the particle effects. 
 
 4.
-```
+```yaml
 TestingBreakBlock:
   Skills:
   - breakblock{forcesync=true;doEffect=true;doDrops=false;useTool=true} @origin
@@ -57,7 +57,7 @@ TestingBreakBlock:
 When a player calls this with a tool in their hand it does not drop a block, nor does it create the particle effects.
 
 5. 
-```
+```yaml
 TestingBreakBlock:
   Skills:
   - breakblock{forcesync=true;doEffect=true;doDrops=true;useTool=true} @origin
