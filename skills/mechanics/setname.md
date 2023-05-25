@@ -1,8 +1,7 @@
 Mechanic: setname
 =================
 
-Sets the display name of the target. May only work with mobs.
-
+Sets the display name of the caster. This will not work with players.
 Examples
 --------
 
