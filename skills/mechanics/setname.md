@@ -2,15 +2,16 @@ Mechanic: setname
 =================
 
 Sets the display name of the caster. This will not work with players.
+
 Examples
 --------
-
-      Skills:
-      - setname{name=newmobname} @self ~onDamaged 1
-
+```yaml
+Skills:
+  - setname{name=newmobname} @self ~onDamaged 1
+```
 Sets the name of the mob to "newmobname" when the mob is damaged.
 
-```
+```yaml
 MySkeleton:
   Type: Skeleton
   Display: 'Skeleton <caster.hp>/<caster.mhp><&heart>'
