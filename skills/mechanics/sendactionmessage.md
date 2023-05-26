@@ -27,3 +27,4 @@ Examples
     Skills:
     - actionmessage{m="<mob.name>&f is casting a spell!"} @PlayersInRadius{r=30}
     - actionmessage{m="&lHello! &cI'm &athe &9&lactionmessage-bar&r! &e:)"} @trigger ~onInteract
+    - am{m="<mob.name>&f is using the *skill alias!*"} @PlayersInRadius{r=30}
