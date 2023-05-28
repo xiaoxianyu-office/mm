@@ -1,4 +1,4 @@
-**Description:** Checks if the target entity is the captain of a pillager group.
+**Description:** Checks if the target entity is the captain of a pillager group. (5.1.4)+
 
 ---
 
