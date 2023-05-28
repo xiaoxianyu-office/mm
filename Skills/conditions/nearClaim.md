@@ -1,4 +1,4 @@
-**Description:** If the target location is near any GriefPrevention claims.
+**Description:** If the target location is near any GriefPrevention or CrashClaim (5.2.5) claims.
 
 ---
 
