@@ -1,11 +1,13 @@
-Mechanic: Disengage
-===================
+## Description
+Disengages from the target, by making the mob leap away from it
 
-Disengages the target
+## Attributes
+*This mechanic has no attributes*
 
-Examples
---------
 
-      Skills:
-      - disengage @self
-      - ...
+## Examples
+```yaml
+ExampleMob:
+  Skills:
+  - disengage @trigger ~onDamaged
+```
