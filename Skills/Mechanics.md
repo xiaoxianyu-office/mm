@@ -124,6 +124,8 @@ are able to target locations as well.
 | [SetMobColor][]           | Changes the color of the target if it is a colorable mob                                 |
 | [SetMobScore][]           | Sets a scoreboard value on the casting mob                                               |
 | [SetName][]               | Changes the target entity's name                                                         |
+| [SetRaiderPatrolBlock][]  | Sets the target raider to patrol a location                                                         |
+| [SetRaiderPatrolLeader][] | Sets the raider patrol leader                                                         |
 | [SetFaction][]            | Changes the target entity's faction                                                      |
 | [SetNoDamageTicks][]      | Sets the nodamageticks of the target                                                     |
 | [SetOwner][]              | Makes the target the owner of the casting mob                                            |
@@ -355,6 +357,8 @@ but not yet ready for use.
   [SetName]: /skills/mechanics/setname
   [SetNoDamageTicks]: /skills/mechanics/setnodamageticks
   [SetOwner]: /skills/mechanics/setowner
+  [SetRaiderPatrolBlock]: /skills/mechanics/setraiderpatrolblock
+  [SetRaiderPatrolLeader]: /skills/mechanics/setraiderpatrolleader
   [SetRotation]: /skills/mechanics/setrotation
   [SetTarget]: /skills/mechanics/settarget
   [SetTargetScore]: /skills/mechanics/settargetscore
