@@ -9,7 +9,7 @@ Sets the world's time. Depending on the attributes used, the change in time can 
 | personal  |           | Sets whether to change the global time or the player's client time   | false   |
 | relative  |           | Sets whether to keep the player's time synchronized to its world time with an offset                                                                                         | true    |
 
-### Mode
+#### Mode Attribute
 The different values the mode attribute can be all have different effects
 - **`ADD`** - Sets the current time of the world with an offset
 - **`SET`** - Sets the current time of the world
