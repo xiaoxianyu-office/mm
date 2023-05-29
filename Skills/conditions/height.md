@@ -11,6 +11,6 @@ Checks if the target's Y location is within a range
 
 ## Examples
 ```yaml
-Conditions:
-- height{h=<50} true
+  Conditions:
+  - height{h=<50} true
 ```
