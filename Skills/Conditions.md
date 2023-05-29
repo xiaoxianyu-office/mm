@@ -150,6 +150,7 @@ Conditions
 | [HasGravity](/skills/conditions/hasgravity)                                   | Entity   | Tests if the target mob has gravity                                                          |
 | [HasInventorySpace](/skills/conditions/hasinventoryspace)                     | Entity   | If the target has the given amount of empty inventory space                                   |
 | [HasItem](/skills/conditions/hasItem)                                         | Entity   | Tests if the target player has the given number of given material                            |
+| [HasOffhand](/skills/conditions/HasOffhand)                                   | Entity   | Checks if the target entity has something in the offhand                                      |
 | [HasOwner](/skills/conditions/hasowner)                                       | Entity   | Tests if the target mob has an owner                                                         |
 | [HasParent](/skills/conditions/hasparent)                                     | Entity   | Tests if the target mob has a parent                                                         |
 | [HasPassenger](/skills/conditions/hasPassenger)                               | Entity   | Checks if the target entity has a passenger                                                   |
