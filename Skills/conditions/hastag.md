@@ -1,29 +1,25 @@
-**Description:** Tests if the target has a scoreboard tag
+## Description
+Tests if the target has a scoreboard tag
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Alias   | Description          |
-| --------- | ------- | -------------------- |
-| tag       | t       | The tag to check for |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| tag       | t         | The tag to check for                                                 |         |
 
----
 
-**Examples:**
-
-```
-Conditions:
-- hastag{t=KilledBoss1} true
+## Examples
+```yaml
+  Conditions:
+  - hastag{t=KilledBoss1} true
 ```
 
+```yaml
+  TargetConditions:
+  - hastag{t=PuzzleRoom1Solved} true
 ```
-TargetConditions:
-- hastag{t=PuzzleRoom1Solved} true
-```
 
----
 
-**Extra Information:**
-
-- [x] Type: Entity
+## Aliases
+- [x] hasScoreboardTag
