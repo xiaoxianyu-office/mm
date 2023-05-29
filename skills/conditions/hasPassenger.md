@@ -1,20 +1,12 @@
+## Description
 Checks if the target entity has a passenger
 
-**Attributes**
+## Attributes
+*This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
 
-**Examples**
-
+## Examples
+```yaml
+  Conditions:
+  - hasPassenger{} true
 ```
-Conditions:
-- hasPassenger{} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
