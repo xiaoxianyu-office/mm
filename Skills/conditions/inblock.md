@@ -1,29 +1,20 @@
-**Description:** Checks the material at the target location
----
+## Description
+Checks the material at the target location. See the [Spigot Javadoc](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) for a list of valid materials
 
-**Attributes:**
 
-| Attribute | Alias     | Description               |
-| --------- | --------- | ------------------------- |
-| block     | blocks, b | A list of blocks to match |
+## Attributes
 
----
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| block     | blocks, b, material, mat, m | A list of blocks to match                          |         |
 
-Valid for any Bukkit material type.
 
-https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
-
----
-
-**Examples:**
-
-```
-Conditions:
-- inblock{b=WATER,LAVA} false
+## Examples
+```yaml
+  Conditions:
+  - inblock{b=WATER,LAVA} false
 ```
 
----
 
-**Extra Information:**
-
-- [x] Type: Entity
+## Aliases
+- [x] insideblock
