@@ -33,7 +33,7 @@ MidnightAura:
     ];
     onEnd=[
       - time{mode=RESET} @self
-    ]}
+    ]} @self
 ```
 
 ## Aliases
