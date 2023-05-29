@@ -1,30 +1,29 @@
-**Description:** This condition checks if the target player has a permission. 
+## Description
+This condition checks if the target player has a permission. 
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute  | Alias | Description |
-| ---------- | ----- | ----------- |
-| permission | p     | The permission to check for. |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| permission| p         | The permission to check for.                                         |         |
 
----
 
-**Examples:**
+## Examples
 
+```yaml
+  Conditions:
+  - haspermission{p=permission.node.here} true
 ```
-Conditions:
-- haspermission{p=permission.node.here} true
-
-TargetConditions:
-- haspermission{p=permission.node.here} true
-
-TriggerConditions:
-- haspermission{p=permission.node.here} true
+```yaml
+  TargetConditions:
+  - haspermission{p=permission.node.here} true
+```
+```yaml
+  TriggerConditions:
+  - haspermission{p=permission.node.here} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Type: Entity(Player)
+## Aliases
+- [x] permission
