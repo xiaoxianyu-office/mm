@@ -158,6 +158,7 @@ are able to target locations as well.
 | [Teleport][]              | Teleports to the target                                                                  |
 | [TeleportIn][]            | Teleports the target relative to the caster's yaw                                        |
 | [TeleportTo][]            | Teleports the target to a specified location                                             |
+| [Time][]                  | Changes the time                                                                                |
 | [Threat][]                | Modifies the mob's threat towards the target                                             |
 | [Throw][]                 | Throws the target entity                                                                 |
 | [ToggleLever][]           | Toggles a lever at the target location                                                   |
@@ -243,6 +244,7 @@ The following attributes are applicable to all mechanics.
 | fromorigin           | fo        | Whether to cast the mechanic from origin                                    | false   |
 | targetisorigin       |           | Whether to set the target of the mechanic to be the origin                  | false   |
 
+<!--
 Upcoming Mechanics
 ------------------
 
@@ -252,8 +254,7 @@ but not yet ready for use.
 
 | Mechanic           | Description                     |
 |--------------------|---------------------------------|
-| [Time][]           | Changes the time                |
-
+-->
 
   [here!]: /skills/skillparametersystem
   [Targeter]: /skills/targeters/
