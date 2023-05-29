@@ -1,5 +1,5 @@
 ## Description
-Checks if the target entity has some items in the offhand
+Checks if the target entity has something in the offhand
 
 
 ## Attributes
