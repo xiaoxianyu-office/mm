@@ -20,3 +20,9 @@ Drown, the Champion of Commands
 Bjjfam, the one that walks on his ear
 
 [He wanted to use a delay](https://discord.com/channels/213109157983813633/351864879545843715/1112870144520245328)
+
+##
+
+Lxlp, he just wanted to help people learn MythicMobs
+
+[He helps people with config issues](https://discord.com/channels/213109157983813633/351864879545843715/1107736769929150464)
