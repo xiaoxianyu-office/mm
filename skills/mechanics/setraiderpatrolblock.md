@@ -1,17 +1,21 @@
-Mechanic: setRaiderPatrolBlock (5.1.4)+
-======================
+## Description
 Sets the target raider to patrol the given location
 
-Attributes
-----------
 
-| Attribute | Aliases | Description                            | Default |
-|-----------|---------|----------------------------------------|---------|
-|           |         |                                        |         |
+## Attributes
 
-  
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| location  |block, l, b| A [Location Targeter], whose targeted location will be the specified one |     |                                       
 
-Examples
---------
 
-      - setRaiderPatrolBlock @targetlocation
+## Examples
+```yaml
+  Skills:
+  - setRaiderPatrolBlock{l=@TrackedLocation} @self
+```
+
+## Aliases
+- [x] setRaiderBlock
+
+[Location Targeter]: /Skills/Targeters#single-location-targeters
