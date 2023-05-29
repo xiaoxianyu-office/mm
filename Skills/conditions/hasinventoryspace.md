@@ -1,24 +1,13 @@
-**Description:** If the target has empty inventory space
+## Description
+If the target player has empty inventory space
 
----
 
-**Attributes:**
+## Attributes
+*This mechanic has no attributes*
 
-| Attribute | Alias   | Description |
-| --------- | ------- | ----------- |
-| none      | none    | none        |
 
----
-
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - hasinventoryspace{} true
 ```
-Conditions:
-- hasinventoryspace{} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
