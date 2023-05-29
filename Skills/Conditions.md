@@ -146,12 +146,13 @@ Conditions
 | [HasAura](/skills/conditions/hasaura)                                         | Entity   | Checks if the target entity has the given aura                                                |
 | [HasAuraStacks](/skills/conditions/hasaurastacks)                             | Entity   | Tests if the target has the given range of stacks from an aura                               |
 | [HasCurrency](/skills/conditions/hascurrency)                                 | Entity   | If the target has the given amount of vault currency                                          |
+| [HasEnchantment](/skills/conditions/HasEnchantment)                           | Entity   | Checks if the target entity's equipped item has an enchantment                                |
+| [HasGravity](/skills/conditions/hasgravity)                                   | Entity   | Tests if the target mob has gravity                                                          |
 | [HasInventorySpace](/skills/conditions/hasinventoryspace)                     | Entity   | If the target has the given amount of empty inventory space                                   |
 | [HasItem](/skills/conditions/hasItem)                                         | Entity   | Tests if the target player has the given number of given material                            |
 | [HasOwner](/skills/conditions/hasowner)                                       | Entity   | Tests if the target mob has an owner                                                         |
 | [HasParent](/skills/conditions/hasparent)                                     | Entity   | Tests if the target mob has a parent                                                         |
 | [HasPassenger](/skills/conditions/hasPassenger)                               | Entity   | Checks if the target entity has a passenger                                                   |
-| [HasGravity](/skills/conditions/hasgravity)                                   | Entity   | Tests if the target mob has gravity                                                          |
 | [HasPotionEffect](/skills/conditions/haspotioneffect)                         | Entity   | Tests if the target entity has a potion effect                                               |
 | [HasTag](/skills/conditions/hastag)                                           | Entity   | Tests if the target has a scoreboard tag                                                     |
 | [HasPermission](/skills/conditions/haspermission)                             | Entity   | Tests if the target player has a permission                                                  |
