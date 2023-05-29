@@ -16,3 +16,7 @@ Drown, the Champion of Commands
 [His epic, volume 2](https://discord.com/channels/213109157983813633/351864879545843715/1112076782041059390)  
 
 ##
+
+Bjjfam, the one that walks on his ear
+
+[He wanted to use a delay](https://discord.com/channels/213109157983813633/351864879545843715/1112870144520245328)
