@@ -154,9 +154,9 @@ Conditions
 | [HasOwner](/skills/conditions/hasowner)                                       | Entity   | Tests if the target mob has an owner                                                         |
 | [HasParent](/skills/conditions/hasparent)                                     | Entity   | Tests if the target mob has a parent                                                         |
 | [HasPassenger](/skills/conditions/hasPassenger)                               | Entity   | Checks if the target entity has a passenger                                                   |
+| [HasPermission](/skills/conditions/haspermission)                             | Entity   | Tests if the target player has a permission                                                  |
 | [HasPotionEffect](/skills/conditions/haspotioneffect)                         | Entity   | Tests if the target entity has a potion effect                                               |
 | [HasTag](/skills/conditions/hastag)                                           | Entity   | Tests if the target has a scoreboard tag                                                     |
-| [HasPermission](/skills/conditions/haspermission)                             | Entity   | Tests if the target player has a permission                                                  |
 | [Health](/skills/conditions/health)                                           | Entity   | Matches the target's health                                                                 |
 | [Height](/skills/conditions/height)                                           | Location | Checks if the target's Y location is within a range                                           |
 | [HeightAbove](/skills/conditions/heightabove)                                 | Location | Checks if the target's Y location is above a value                                            |
