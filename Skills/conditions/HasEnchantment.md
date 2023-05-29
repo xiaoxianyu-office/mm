@@ -1,5 +1,5 @@
 ## Description
-Tests if the target entity's equipped item has an enchantment. A list of valid enchantments can be found in the [Spigot Javadoc](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html).
+Checks if the target entity's equipped item has an enchantment. A list of valid enchantments can be found in the [Spigot Javadoc](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html).
 
 
 ## Attributes
