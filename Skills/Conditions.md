@@ -174,7 +174,7 @@ Conditions
 | [isMythicMob](/skills/conditions/ismythicmob)                                 | Entity   | Checks if the target is a MythicMob                                                           |
 | [isMoist](/skills/conditions/ismoist)                                         | Location | Checks if the target block of farmland is hydrated                                            |
 | [isMonster](/skills/conditions/ismonster)                                     | Entity   | Checks if the target is a monster                                                             |
-| [isPatrolLeader](/skills/conditions/ispatrolleader)                                     | Entity   | Checks if the target is the leader of a pillager patrol                                                             |
+| [isRaiderPatrolLeader](/skills/conditions/isRaiderPatrolLeader)               | Entity   | Checks if the target entity is the captain of a pillager group                                |
 | [isPlayer](/skills/conditions/isplayer)                                       | Entity   | Checks if the target is a player                                                              |
 | [isSaddled](/skills/conditions/issaddled)                                     | Entity   | Checks if the target entity is saddled                                                        |
 | [isSprinting](/skills/conditions/issprinting)                                 | Entity   | Checks if the target **Player** is sprinting                                                  |
