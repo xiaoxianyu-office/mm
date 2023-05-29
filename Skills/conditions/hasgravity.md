@@ -1,24 +1,14 @@
-**Description:** If the target has gravity
+## Description
+If the target has gravity
 
----
+## Attributes
+*This condition has no attributes*
 
-**Attributes:**
-
-| Attribute | Alias   | Description |
-| --------- | ------- | ----------- |
-| none      | none    | none        |
-
----
-
-**Examples:**
-
-```
+## Examples
+```yaml
 Conditions:
 - hasgravity true
 ```
 
----
-
-**Extra Information:**
-
-- [x] Type: Entity
+## Aliases
+- [x] gravity
