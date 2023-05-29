@@ -78,5 +78,9 @@ This particle type will replace the spawned particle with the selected entity. T
 ```
 
 ## Aliases
-- [x]
-- [x]
+- [x] effect:particle
+- [x] particles
+- [x] particle
+- [x] e:particles
+- [x] e:particle
+- [x] e:p
