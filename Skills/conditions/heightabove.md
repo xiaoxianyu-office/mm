@@ -1,24 +1,16 @@
-**Description:** Checks if the target's Y location is above a value
+## Description
+Checks if the target's Y location is above a value
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Alias   | Description                   |
-| --------- | ------- | ----------------------------- |
-| height    | h       | The height they must be above |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| height    | h         | The height they must be above                                        |         |
 
----
 
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - heightabove{h=50} true
 ```
-Conditions:
-- heightabove{h=50} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
