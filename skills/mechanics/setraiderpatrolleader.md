@@ -1,17 +1,20 @@
-Mechanic: setRaiderPatrolLeader (5.1.4)+
-======================
-Sets the raider patrol leader
+## Description
+Sets if the target raider should be a raider patrol leader or not
 
-Attributes
-----------
 
-| Attribute | Aliases | Description                            | Default |
-|-----------|---------|----------------------------------------|---------|
-|  leader   |         |   sets leader true or false            |   true  |
+## Attributes
 
-  
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+|  leader   | l, bool, b| Should the target raider be a leader                                 |   true  |
 
-Examples
---------
 
-      - setRaiderPatrolLeader{leader=true} @target
+## Examples
+```yaml
+  Skills:
+  - setRaiderPatrolLeader{leader=true} @target
+```
+
+
+## Aliases
+- [x] setRaiderLeader
