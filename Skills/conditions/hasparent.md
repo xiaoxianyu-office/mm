@@ -1,18 +1,13 @@
-**Description:** This condition checks if the target mob has a parent. 
+## Description
+This condition checks if the target mob has a parent. 
 
----
 
-**Attributes:**
+## Attributes
+*This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| None      | None  | None        |
 
----
-
-**Examples:**
-
-```
-Conditions:
-- hasparent true
+## Examples
+```yaml
+  Conditions:
+  - hasparent true
 ```
