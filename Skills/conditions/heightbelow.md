@@ -1,20 +1,16 @@
-**Description:** Checks if the target's Y location is below a given value
+## Description
+Checks if the target's Y location is below a given value
 
-**Type:** Location
 
----
+## Attributes
 
-**Attributes:**
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| height    | h         | The height they must be below                                        |         |
 
-| Attribute | Alias   | Description                   |
-| --------- | ------- | ----------------------------- |
-| height    | h       | The height they must be below |
 
----
-
-**Examples:**
-
-```
-Conditions:
-- heightbelow{h=50} true
+## Examples
+```yaml
+  Conditions:
+  - heightbelow{h=50} true
 ```
