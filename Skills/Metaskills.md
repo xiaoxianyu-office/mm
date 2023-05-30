@@ -120,7 +120,7 @@ The true core of a metaskill. It's the list of the mechanics that will be execut
 The skills are normally executed from the first on the list to the last one. If a [Meta Mechanic] is used, its mechanics will be executed before the mechanics of the original Metaskill resume execution. If a delay is present inside the called Metaskill, the mechanics of the original Metaskill resume execution, and the mechanics present in the called metaskill are executed after the delay
 
 ![](https://i.imgur.com/ZiHWeBQ.png)
-> In this image, an example of the above behavior is shown. if we execute `ExampleSkill_First`, the mechanics will be executed in the order their numeration, from mechanic1 to mechanic9, with a delay of 20 ticks between mechanic7, mechanic8 and mechanic9
+> In this image, an example of the above behavior is shown. If we execute `ExampleSkill_First`, the mechanics will be executed in the order of their numeration, from mechanic1 to mechanic9, with a delay of 20 ticks between mechanic7, mechanic8 and mechanic9
 
 
 # Skill Parameters [Premium Feature]
