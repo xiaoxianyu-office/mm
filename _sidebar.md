@@ -30,6 +30,7 @@
   * [Triggers](Skills/Triggers)
   * [Conditions](Skills/conditions)
     * [In-line conditions](Skills/conditions/in-linetargetconditions)
+  * [Metaskills](/Skills/Metaskills)
   * [Placeholders](Skills/Placeholders)
   * [Variables](Skills/Variables)
   * [Math](Skills/Math)
