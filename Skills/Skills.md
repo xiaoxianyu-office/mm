@@ -11,7 +11,7 @@ Skills are made up of several distinct parts:
 -   [Conditions]
 
 
-## Getting Started
+# Getting Started
 
 So what makes a skill?
 
@@ -173,45 +173,7 @@ Skills:
 - ignite{ticks=100} @target ~onAttack <50% 0.5
 ```
 
-
-## Skill Parameters (Premium Feature)
-
-Skill parameters are a new feature allowing you to more easily create generic skills and pass parameters to them from other skills. If that sounds confusing, here's an example!
-
-Currently most people have a lot similar damage skills that are just tweaked a bit for all their different mobs for slight variances in damage, but they do basically the same thing otherwise.
-
-**The old way of doing it:**
-```yaml
-#SKILL FILE
-ShadowDamage20:
-  Skills:
-  - damage{amount=20}
-  - some shadowy effect
-
-#MOB FILE
-Mob1:
-  Skills:
-  - skill{s=ShadowDamage20} ~onAttack
-```
-
-**With Skill Parameters, we can combine these all into a single skill! The new way:**
-```yaml
-#SKILL FILE
-ShadowDamage:
-  Skills:
-  - damage{amount=<skill.damage>}
-
-#MOB FILE
-Mob1:
-  Skills:
-  - skill{s=ShadowDamage;damage=20} ~onAttack
-```
-
-In the example above, the skill will still deal 20 damage to the target, we've just made the skill generic so that we can change the damage however we please on any mob.  
-The "skill parameter" system will pass __any__ options from the **skill/metaskill** mechanic (except options that are specific to it) down the skill tree where you can reference them later. If a later skill passes the same parameter, it will overwrite it. These can be used anywhere placeholders are supported.
-
-
-### Wrapping it all Up
+# Wrapping it all Up
 
 As you can see, while the original skill looked intimidating, breaking it down into pieces makes things much simpler.
 
