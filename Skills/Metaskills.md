@@ -38,7 +38,7 @@ internal_skillname:
 Please note that only the `internal_skillname` element is required. For instance, you could make a Metaskill with only skills, only a cooldown, or only some Conditions.
 
 In the following paragraphs it will be explained what every element in there does, and how to use it.
-There are also a couple of pertinent [Examples] if you want to see a more practical approach of this.
+There are also a couple of pertinent [Examples] if you want to see a more practical usage.
 
 # Breaking Down the Metaskills Configuration
 
@@ -103,12 +103,12 @@ The [Conditions] of the metaskill. Those conditions evaluates the caster of the 
 Depending on the [Condition Action] used in each condition, different behaviors can occur: read the relevant wiki page for more info
 
 
-## Target Conditions
+## TargetConditions
 The Target [Conditions] of the metaskill. Those conditions evaluates the inherited target of the metaskill, it being either an entity ot a location.
 
 Depending on the [Condition Action] used in each condition, different behaviors can occur: read the relevant wiki page for more info
 
-## Trigger Conditions
+## TriggerConditions
 The Trigger [Conditions] of the metaskill. Those conditions evaluates the entity that triggered the skilltree. This entity can also be targeted via the [@Trigger] targeter
 
 Depending on the [Condition Action] used in each condition, different behaviors can occur: read the relevant wiki page for more info
@@ -121,6 +121,44 @@ The skills are normally executed from the first on the list to the last one. If 
 
 ![](https://i.imgur.com/ZiHWeBQ.png)
 > In this image, an example of the above behavior is shown. if we execute `ExampleSkill_First`, the mechanics will be executed in the order their numeration, from mechanic1 to mechanic9, with a delay of 20 ticks between mechanic7, mechanic8 and mechanic9
+
+
+# Skill Parameters [Premium Feature]
+
+Skill parameters are a feature allowing you to more easily create generic skills and pass parameters to them from other skills. If that sounds confusing, here's an example!
+
+Currently most people have a lot similar damage skills that are just tweaked a bit for all their different mobs for slight variances in damage, but they do basically the same thing otherwise.
+
+**The old way of doing it:**
+```yaml
+#SKILL FILE
+ShadowDamage20:
+  Skills:
+  - damage{amount=20}
+  - some shadowy effect
+
+#MOB FILE
+Mob1:
+  Skills:
+  - skill{s=ShadowDamage20} ~onAttack
+```
+
+**With Skill Parameters, we can combine these all into a single skill! The new way:**
+```yaml
+#SKILL FILE
+ShadowDamage:
+  Skills:
+  - damage{amount=<skill.damage>}
+
+#MOB FILE
+Mob1:
+  Skills:
+  - skill{s=ShadowDamage;damage=20} ~onAttack
+```
+
+In the example above, the skill will still deal 20 damage to the target, we've just made the skill generic so that we can change the damage however we please on any mob.  
+The "skill parameter" system will pass __any__ options from the **skill/metaskill** mechanic (except options that are specific to it) down the skill tree where you can reference them later. If a later skill passes the same parameter, it will overwrite it. These can be used anywhere placeholders are supported.
+
 
 <!-- GENERIC -->
 [Skills]: /Skills/Skills
