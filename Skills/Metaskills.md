@@ -132,6 +132,159 @@ The skills are normally executed from the first on the list to the last one. If 
 > In this image, an example of the above behavior is shown. If we execute `ExampleSkill_First`, the mechanics will be executed in the order of their numeration, from mechanic1 to mechanic9, with a delay of 20 ticks between mechanic7, mechanic8 and mechanic9
 
 
+# Targeter Inheritance and Override
+A peculiarity of Metaskills is their ability to "remember" the targets that were passed to it by the [Meta Mechanic] that called it. This behavior can have many uses and applications.
+
+## Inheritance
+Mechanics inside the Metaskill that do not have a targeter of their own will then **Inherit** those targets, and target them.
+
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=ExampleSkill} @PIR{r=10} ~onInteract
+```
+```yaml
+#SKILL FILE
+ExampleSkill:
+  Skills:
+  - ignite
+```
+In this example, the `ignite` mechanic has no targeter, so it "inherits" the one that was used in the metaskill and target those entities instead, making it ignite all players in a 10 blocks radius.  
+
+
+## Override
+Meanwhile, if a targeter *is* specified inside a Metaskill, we say that the original targeter is **Overridden**, and the new targeter is used instead
+
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=ExampleSkill} @PIR{r=10} ~onInteract
+```
+```yaml
+#SKILL FILE
+ExampleSkill:
+  Skills:
+  - ignite
+  - message{m="Why are you so close?"} @NearestPlayer{r=1}
+```
+In this example, all players will still be ignited, but only the closest player to the mob in a one block radius will receive the message
+
+
+## Subsequent Metaskills Executions
+When you are calling a metaskill from another metaskill, it is still quite possible to not specify a targeter to it, and it will inherit the targets that the calling metaskill also inherited.
+
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=ExampleSkill} @PIR{r=10} ~onInteract
+```
+```yaml
+#SKILL FILE
+ExampleSkill:
+  Skills:
+  - skill{s=Example_Ignite}
+  - skill{s=Example_Message} @NearestPlayer{r=1}
+
+Example_Ignite:
+  Skills:
+  - ignite
+
+Example_Message:
+  Skills:
+  - message{m="Why are you so close?"}
+```
+By executing this skill, you will obtain the same results you obtained in the [previus example](Skills/Metaskills#override)
+
+
+## Targets Filtering
+Another great application of target inheritance is the possibility of filtering out the inherited targets across multiple metaskills, using the Metaskill's TargetConditions.
+
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=ExampleSkill_1} @PIR{r=10} ~onInteract
+```
+```yaml
+ExampleSkill_1:
+  Skills:
+  - message{m="Hello there!"}
+  - delay 1
+  - skill{s=ExampleSkill_2}
+
+ExampleSkill_2:
+  TargetConditions:
+  - distance{d=<5} true
+  Skills:
+  - message{m="...You are pretty close, aren't you?"}
+  - delay 1
+  - skill{s=ExampleSkill_3}
+
+ExampleSkill_3:
+  TargetConditions:
+  - distance{d=<1} true
+  Skills:
+  - message{m="AHHHHHH, GET AWAY FROM ME!"}
+  - throw{v=10;vy=2}
+```
+The above skill will show a message to all the players in a 10 blocks radius, then show another message to those, among them, that are closer than 5 blocks. After that, it will show a third message and push away every player closer than one block.
+
+
+And now, for a more counter-intuitive example:
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=ExampleSkill_1} @PIR{r=10} ~onInteract
+```
+```yaml
+ExampleSkill_1:
+  Skills:
+  - message{m="Hello there!"}
+  - delay 100
+  - skill{s=ExampleSkill_2}
+
+ExampleSkill_2:
+  TargetConditions:
+  - distance{d=>10} true
+  Skills:
+  - message{m="...You truly don't like me, don't you?"}
+  - delay 20
+  - message{m="Don't worry, it's fine."}
+  - delay 20
+  - message{m="I'm used to it."}
+  - delay 20
+  - message{m="T.T"}
+```
+In this instance, the mob will first send a message to every player in a 10 blocks radius, and then, 5 seconds later, it will send additional messages to those, among them, that have moved to be more than 10 blocks away in the meantime
+
+
+## Meta Targeters
+Another relevant topic is that of [Meta Targeter]s. Those are targeters that, simply put, will evaluate what the inherited targets are and, based on that, return other appropriate targets itself.
+
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=ExampleSkill} @PIR{r=10} ~onInteract
+```
+```yaml
+ExampleSkill:
+  Skills:
+  - effect:particles @Line{r=0.2}
+```
+The example above, for instance, will generate a line of particles between the caster and the players in a 10 blocks radius. Had the targeter not been `@PIR` but another one, the line would have been generated between the caster and the targeter used.
+
+
 # Skill Parameters [Premium Feature]
 
 Skill parameters are a feature allowing you to more easily create generic skills and pass parameters to them from other skills. If that sounds confusing, here's an example!
@@ -174,6 +327,7 @@ The "skill parameter" system will pass __any__ options from the **skill/metaskil
 [Meta Mechanic]: /Skills/Mechanics#advancedmeta-mechanics
 [Examples]: /examples/Common-Examples#skills
 [Skill]: /skills/mechanics/skill
+[Meta Targeter]: /Skills/Targeters#special-targeters
 
 <!-- INTERNAL SKILLNAME -->
 [Internal MobName]: /Mobs/Mobs#internal_name
