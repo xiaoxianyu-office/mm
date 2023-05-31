@@ -13,7 +13,7 @@ Table of Contents:
 
 # What is a Metaskill?
 A Metaskill is, in essence, a list of mechanics to execute once the metaskill is called via a [Meta Mechanic].  
-They are located in `../plugins/MythicMobs/Skills` inside `.yml` files.  
+**They are located in `../plugins/MythicMobs/Skills` inside `.yml` files**, just like their mobs counterpart.  
 
 The syntax of a Metaskill is the following:
 ```yaml
@@ -33,6 +33,15 @@ internal_skillname:
   Skills:
   - mechanic1
   - mechanic2
+```
+
+Once you have a metaskill configured, you can use a [Meta Mechanic], such as [Skill], to execute the Metaskill either from a mob or a metaskill:
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=internal_skillname} @self ~onInteract
 ```
 
 Please note that only the `internal_skillname` element is required. For instance, you could make a Metaskill with only skills, only a cooldown, or only some Conditions.
@@ -164,6 +173,7 @@ The "skill parameter" system will pass __any__ options from the **skill/metaskil
 [Skills]: /Skills/Skills
 [Meta Mechanic]: /Skills/Mechanics#advancedmeta-mechanics
 [Examples]: /examples/Common-Examples#skills
+[Skill]: /skills/mechanics/skill
 
 <!-- INTERNAL SKILLNAME -->
 [Internal MobName]: /Mobs/Mobs#internal_name
