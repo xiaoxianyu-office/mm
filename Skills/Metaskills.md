@@ -132,7 +132,7 @@ The skills are normally executed from the first on the list to the last one. If 
 > In this image, an example of the above behavior is shown. If we execute `ExampleSkill_First`, the mechanics will be executed in the order of their numeration, from mechanic1 to mechanic9, with a delay of 20 ticks between mechanic7, mechanic8 and mechanic9
 
 
-# Targeter Inheritance and Override
+# Targets Inheritance and Override
 A peculiarity of Metaskills is their ability to "remember" the targets that were passed to it by the [Meta Mechanic] that called it. This behavior can have many uses and applications.
 
 ## Inheritance
