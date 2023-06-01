@@ -1,4 +1,8 @@
-##
+# Honorable Mentions
+
+- [Message](https://discord.com/channels/213109157983813633/351864879545843715/1113800820782284821)
+
+# The Perpetrators
 
 Bill, the Pirate King
 
@@ -20,6 +24,12 @@ Drown, the Champion of Commands
 Bjjfam, the one that walks on his ear
 
 [He wanted to use a delay](https://discord.com/channels/213109157983813633/351864879545843715/1112870144520245328)
+
+# The Victims
+
+Rumi, he just wanted to not be pinged
+
+["Too scary to ping Rumi"](https://discord.com/channels/213109157983813633/351210793934651392/1109272411280506971)
 
 ##
 
