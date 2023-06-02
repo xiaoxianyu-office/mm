@@ -28,6 +28,8 @@
 
 ### Simple, the "programmer"
 
+![](https://cdn.discordapp.com/attachments/351864879545843715/1113985725587796049/image.png)
+
 - [I want a lightning](https://discord.com/channels/213109157983813633/351864879545843715/1113800820782284821)
 - [I want to drop items and send a message](https://discord.com/channels/213109157983813633/351864879545843715/1113978767103230022)
 
