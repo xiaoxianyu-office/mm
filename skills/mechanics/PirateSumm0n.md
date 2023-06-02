@@ -3,7 +3,7 @@
 
 # The Perpetrators
 
-Bill, the Pirate King
+### Bill, the Pirate King
 
 ![Bill](https://i.imgur.com/hJ7T92n.png)
 
