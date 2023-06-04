@@ -1,29 +1,16 @@
-Condition: isChild
-==================
+## Description
+Checks if the target is a child of the caster of the skill
 
-Checks if the target is a child of the caster
 
-**Attributes**
+## Attributes
+*This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
-
----
-
-Added in 4.12
-
----
-
-**Examples**
-
-```
-TargetConditions:
-- isChild{} true
+## Examples
+```yaml
+  TargetConditions:
+  - isChild{} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Type: Compare
+## Aliases
+- [x] child
