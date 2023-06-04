@@ -1,17 +1,13 @@
-**Description**: Checks if the target entity is leashed
+## Description
+Checks if the target entity is leashed
 
----
+
+## Attributes
+*This condition has no attributes*
 
 
-**Attributes**
-
-| Attribute | Alias       | Description                                                                                     | Default |
-|-----------|-------------|-------------------------------------------------------------------------------------------------|---------|
-|     none      |     none        |     none         |    none     |
-
-Examples
----
+## Examples
 ```yml
-TargetConditions:
+  TargetConditions:
   - isLeashed true
 ```
