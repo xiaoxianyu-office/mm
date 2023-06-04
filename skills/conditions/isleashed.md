@@ -3,7 +3,7 @@ Checks if the target entity is leashed
 
 
 ## Attributes
-*This condition has no attributes*
+>*This condition has no attributes*
 
 
 ## Examples
