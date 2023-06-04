@@ -174,8 +174,8 @@ Conditions
 | [IsCreeperPrimed](/skills/conditions/IsCreeperPrimed)                         | Entity   | Checks if the target creeper is primed to explode                                             |
 | [isFlying](/skills/conditions/isflying)                                       | Entity   | Checks if the target player is flying                                                         |
 | [isFrozen](/skills/conditions/isfrozen)                                       | Entity   | Checks if the target entity is frozen                                                         |
-| [isLiving](/skills/conditions/isliving)                                       | Entity   | Checks if the target is a living entity                                                       |
 | [isLeashed](/skills/conditions/isleashed)                                     | Entity   | Checks if the target has been leashed                                                         |
+| [isLiving](/skills/conditions/isliving)                                       | Entity   | Checks if the target is a living entity                                                       |
 | [isMythicMob](/skills/conditions/ismythicmob)                                 | Entity   | Checks if the target is a MythicMob                                                           |
 | [isMoist](/skills/conditions/ismoist)                                         | Location | Checks if the target block of farmland is hydrated                                            |
 | [isMonster](/skills/conditions/ismonster)                                     | Entity   | Checks if the target is a monster                                                             |
