@@ -1,18 +1,17 @@
-**Description**: Checks if the target entity is climbing. A player climbing a ladder or a spider climbing a wall both match the condition.
+## Description
+Checks if the target entity is climbing. A player climbing a ladder or a spider climbing a wall both match the condition.
 
----
+
+## Attributes
+*This condition has no attributes*
 
 
-**Attributes**
-
-| Attribute | Alias       | Description                                                                                     | Default |
-|-----------|-------------|-------------------------------------------------------------------------------------------------|---------|
-| none |  none | none |  none   |
-
-Examples
----
+## Examples
 ```yaml
-Conditions:
-- isClimbing true
-
+  Conditions:
+  - isClimbing true
 ```
+
+
+## Aliases
+- [x] climbing
