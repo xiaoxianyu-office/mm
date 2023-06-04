@@ -1,26 +1,13 @@
+## Description
 Checks if the target is a living entity
 
-**Attributes**
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
+## Attributes
+>*This condition has no attributes*
 
----
 
-Added in MM 4.12
-
----
-
-**Examples**
-
+## Examples
+```yaml
+  TargetConditions:
+  - isLiving{} true
 ```
-TargetConditions:
-- isLiving{} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
