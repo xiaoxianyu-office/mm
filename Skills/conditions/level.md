@@ -1,37 +1,31 @@
-**Description:** Checks the target MythicMob's level
+## Description
+Checks the target MythicMob's level
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Alias | Description              |
-| --------- | ----- | ------------------------ |
-| level     | l     | The level range to match |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| level     | l         | The level range to match                                             |         |
 
----
 
-**Examples:**
-
-```
-Conditions:
-- level{l=10} true
+## Examples
+```yaml
+  Conditions:
+  - level{l=10} true
 ```
 
-```
-Conditions:
-- level{l=>10} true
-```
-
-```
-Conditions:
-- level{l=1to10} true
+```yaml
+  Conditions:
+  - level{l=>10} true
 ```
 
-```
-Conditions:
-- level{l=<10} true
+```yaml
+  Conditions:
+  - level{l=1to10} true
 ```
 
-**Extra Information:**
-
-- [x] Type: Entity
+```yaml
+  Conditions:
+  - level{l=<10} true
+```
