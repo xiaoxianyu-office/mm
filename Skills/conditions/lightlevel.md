@@ -1,34 +1,26 @@
-**Description:** Tests the light level at the target location
+## Description
+Tests the light level at the target location
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Alias | Description              |
-| --------- | ----- | ------------------------ |
-| level     | l     | The level range to match |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| level     | l         | The level range to match                                             | 0       |
 
----
 
-**Examples:**
-
-```
-Conditions:
-- lightlevel{l=10} true
+## Examples
+```yaml
+  Conditions:
+  - lightlevel{l=10} true
 ```
 
-```
-Conditions:
-- lightlevel{l=>10} true
-```
-
-```
-Conditions:
-- lightlevel{l=1to10} true
+```yaml
+  Conditions:
+  - lightlevel{l=>10} true
 ```
 
----
-
-**Extra Information:**
-
-- [x] Type: Location
+```yaml
+  Conditions:
+  - lightlevel{l=1to10} true
+```
