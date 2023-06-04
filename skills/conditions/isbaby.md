@@ -1,17 +1,12 @@
-**Description**: Checks if the target entity is a baby (e.g. baby cow)
-
----
-
-**Attributes**
-
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
+## Description
+Checks if the target entity is a baby (e.g. baby cow)
 
 
-Examples
----
+## Attributes
+*This condition has no attributes*
+
+## Examples
 ```yaml
-TargetConditions:
-- isbaby{} true
+  TargetConditions:
+  - isbaby{} true
 ```
