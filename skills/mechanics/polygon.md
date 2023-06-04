@@ -22,7 +22,7 @@ The Polygon meta-mechanic can execute other skills in a polygon-shaped pattern. 
 | Roll           |             | The roll rotation                                       | 0             |
 | Radius         | r           | The hit radius                                          | 1             |
 | Rotation       | rot         | The rotation of the polygon, in the x,y,z format. Same as using pitch/yaw/roll                                                                           | 0,0,0         |
-| MatchCasterDirection | matchPlayerDirection, matchDirection, mcd, mpd, md, direction                    | Matches the direction of the polygon to the caster's facing direction                  | false         |
+| MatchCasterDirection | matchPlayerDirection, matchDirection, mcd, mpd, md, direction                    | Matches the direction of the polygon to the caster's facing direction                  | true         |
 | FromOrigin     |             | If the polygon should start in the origin of the metaskill | false      |
 | HitConditions  | conditions, cond, c, oC, hC | List of [Inline Conditions](/Skills/conditions/in-linetargetconditions) that an entity must met to be hit by the polygon mechanic          |               |
 
