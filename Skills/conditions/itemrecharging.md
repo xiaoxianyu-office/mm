@@ -1,24 +1,13 @@
-**Description:** Checks if the target's weapon is recharging
+## Description
+Checks if the weapon of the target entity is recharging
 
-**Type:** Entity
 
----
+## Attributes
+>*This condition has no attributes*
 
-**Attributes:**
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
-
----
-
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - itemrecharging true
 ```
-Conditions:
-- itemrecharging true
-```
-
-**Extra Information:**
-
-- [x] Type: Entity
