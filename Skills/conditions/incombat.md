@@ -1,24 +1,13 @@
-**Description:** If the target mob is considered in combat
+## Description
+If the target mob is considered in combat
 
----
 
-**Attributes:**
+## Attributes
+*This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
 
----
-
-**Examples:**
-
-```
+## Examples
+```yaml
 Conditions:
 - incombat true
 ```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
