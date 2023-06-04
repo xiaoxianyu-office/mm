@@ -1,8 +1,10 @@
 ## Description
 Checks if the entity is tamed.
 
+
 ## Attributes
-*This condition has no attributes*
+>*This condition has no attributes*
+
 
 ## Examples
 ```yaml
