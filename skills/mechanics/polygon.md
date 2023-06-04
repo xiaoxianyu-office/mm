@@ -10,7 +10,7 @@ The Polygon meta-mechanic can execute other skills in a polygon-shaped pattern. 
 | onHitEntitySkill | onHitEntity, ohe, oh | Meta-Skill executed when the polygon hits an entity. Only triggered once per entity inside the polygon area for every execution of the polygon mechanic |          |
 | Points         | p           | The amount of vertices of the polygon                   | 10            |
 | Duration       | d           | The amount of ticks the polygon should take to fully form. A value of 0 creates a polygon instantly                                                              | 0             |
-| DistanceBetween| distance, density, db, d | The distance between points in the polygon | 0.1           |
+| DistanceBetween| distance, density, db | The distance between points in the polygon    | 0.1           |
 | Scale          | size, s     | The scale of the polygon                                | 1             |
 | Skip           | star, sv    | The number of points to skip for star-like shapes       | 2             |
 | xOffset        | xo, x       | The offset on the X axis                                | 0             |
