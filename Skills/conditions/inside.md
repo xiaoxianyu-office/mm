@@ -7,7 +7,7 @@ Checks if the target has a block over their head
 
 
 ## Examples
-```
-Conditions:
-- inside true
+```yaml
+  Conditions:
+  - inside true
 ```
