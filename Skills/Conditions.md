@@ -176,9 +176,8 @@ Conditions
 | [isFrozen](/skills/conditions/isfrozen)                                       | Entity   | Checks if the target entity is frozen                                                         |
 | [isLeashed](/skills/conditions/isleashed)                                     | Entity   | Checks if the target has been leashed                                                         |
 | [isLiving](/skills/conditions/isliving)                                       | Entity   | Checks if the target is a living entity                                                       |
-| [isMythicMob](/skills/conditions/ismythicmob)                                 | Entity   | Checks if the target is a MythicMob                                                           |
-| [isMoist](/skills/conditions/ismoist)                                         | Location | Checks if the target block of farmland is hydrated                                            |
 | [isMonster](/skills/conditions/ismonster)                                     | Entity   | Checks if the target is a monster                                                             |
+| [isMythicMob](/skills/conditions/ismythicmob)                                 | Entity   | Checks if the target is a MythicMob                                                           |
 | [isPlayer](/skills/conditions/isplayer)                                       | Entity   | Checks if the target is a player                                                              |
 | [isRaiderPatrolLeader](/skills/conditions/isRaiderPatrolLeader)               | Entity   | Checks if the target entity is the captain of a pillager group                                |
 | [isSaddled](/skills/conditions/issaddled)                                     | Entity   | Checks if the target entity is saddled                                                        |
@@ -198,6 +197,7 @@ Conditions
 | [MobsInRadius](/skills/conditions/mobsinradius)                               | Location | Checks how many mobs are in a given radius                                                 |
 | [MobsInChunk](/skills/conditions/mobsinchunk)                                 | Location | Matches a range to how many mobs are in the target location's chunk                       |
 | [MobsInWorld](/skills/conditions/mobsinworld)                                 | Location | Matches a range to how many mobs are in the target world                                  |
+| [Moist](/skills/conditions/Moist)                                             | Location | Checks if the target block of farmland is hydrated                                            |
 | [MoistureLevel](/skills/conditions/moisturelevel)                             | Location | Checks if the target block of farmland has the specified level of hydratation                 |
 | [MotionX](/skills/conditions/motionx)                                         | Entity   | Checks the X motion of the target entity against a range.                                    |
 | [MotionY](/skills/conditions/motiony)                                         | Entity   | Checks the Y motion of the target entity against a range.                                    |
