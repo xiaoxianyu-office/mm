@@ -1,24 +1,13 @@
-**Description:** Checks if the target has a block over their head
+## Description
+Checks if the target has a block over their head
 
----
 
-**Attributes:**
+## Attributes
+*This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
 
----
-
-**Examples:**
-
+## Examples
 ```
 Conditions:
 - inside true
 ```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
