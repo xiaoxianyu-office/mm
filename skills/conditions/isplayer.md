@@ -1,24 +1,13 @@
+## Description
 Checks if the target is a player
 
-**Attributes**
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
+## Attributes
+>*This condition has no attributes*
 
----
 
-Added in MM 4.12
-
----
-
-**Examples**
-
+## Examples
+```yaml
+  TargetConditions:
+  - isPlayer{} true
 ```
-TargetConditions:
-- isPlayer{} true
-```
-
-**Extra Information:**
-
-- [x] Type: Entity
