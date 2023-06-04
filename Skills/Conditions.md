@@ -171,6 +171,7 @@ Conditions
 | [isCaster](/skills/conditions/iscaster)                                       | Entity   | Checks if the target is the caster                                                            |
 | [isChild](/skills/conditions/ischild)                                         | Entity   | Checks if the target is a child of the caster                                                 |
 | [isClimbing](/skills/conditions/isClimbing)                                   | Entity   | Checks if the target entity is climbing                                                       |
+| [IsCreeperPrimed](/skills/conditions/IsCreeperPrimed)                         | Entity   | Checks if the target creeper is primed to explode                                             |
 | [isFlying](/skills/conditions/isflying)                                       | Entity   | Checks if the target player is flying                                                         |
 | [isFrozen](/skills/conditions/isfrozen)                                       | Entity   | Checks if the target entity is frozen                                                         |
 | [isLiving](/skills/conditions/isliving)                                       | Entity   | Checks if the target is a living entity                                                       |
