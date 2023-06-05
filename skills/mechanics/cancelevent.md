@@ -31,6 +31,7 @@ Skill.yml:
     CancelDamageEvent:
       Skills:
       - CancelEvent
+      - message{m="&cYou cannot hurt this mob!"} @trigger
 
 Mob.yml:
 
@@ -38,3 +39,10 @@ Mob.yml:
       Type: villager
       Skills:
       - skill{s=CancelDamageEvent;sync=true} ~onDamaged
+
+Or to prevent a skeleton from shooting:
+
+    customskeleton:
+      Type: skeleton
+      Skills:
+      - cancelevent{sync=true} ~onShoot
