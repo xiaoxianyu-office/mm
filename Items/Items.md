@@ -44,6 +44,15 @@ example_item:
   Display: <green>An Example Item</green>
 ```
 
+#### Group
+Sets the group the item is in for `/mm items browse`.
+```yml
+example_item:
+  Id: leather_chestplate
+  Display: <green>An Example Item</green>
+  Group: 'Armor'
+```
+
 #### Lore
 Sets the lore of the item. You can generate a random number using `{min-max}`, `<random.#to#>`, or `<random.float.#to#>`.
 ```yml
