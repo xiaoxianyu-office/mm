@@ -36,6 +36,7 @@ are able to target locations as well.
 | [ConsumeSlot][]           | Remove an item from a specific slot of the player's inventory                            |
 | [Disengage][]             | Causes the caster to leap backwards away from the target entity                          |
 | [Disguise][]              | Changes the caster's disguise                                                            |
+| [DisguiseModify][]        | Modifies the caster's already applied disguise                                                            |
 | [DisguiseTarget][]        | Changes the target's disguise                                                            |
 | [Undisguise][]            | Remove the caster's disguise                                                             |
 | [Dismount][]              | Makes the caster dismount whatever they're riding                                        |
@@ -276,6 +277,7 @@ but not yet ready for use.
   [ConsumeSlot]: /skills/mechanics/consumeslot
   [Disengage]: /skills/mechanics/disengage
   [Disguise]: /skills/mechanics/disguise
+  [DisguiseModify]: /skills/mechanics/DisguiseModify
   [DisguiseTarget]: /skills/mechanics/disguisetarget
   [Undisguise]: /skills/mechanics/undisguise
   [Dismount]: /skills/mechanics/dismount
