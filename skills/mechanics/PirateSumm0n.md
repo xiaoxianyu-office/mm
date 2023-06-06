@@ -1,5 +1,6 @@
 # Honorable Mentions
 
+- [The text is not yellow](https://discord.com/channels/213109157983813633/351864879545843715/1115736631744417823)
 
 # The Perpetrators
 
