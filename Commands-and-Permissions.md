@@ -17,6 +17,7 @@ Item Commands
 -------------
 
 -    **/mm items** (alias: **/mm i**)  *Base for all item related commands.*
+-    **/mm items browse** *Opens a GUI displaying all the loaded Mythic Items.*
 -    **/mm items get [item_name] &lt;amount&gt;** *Gives yourself an item from the configured mob equipment.*
 -    **/mm items give [player] [item_name] &lt;amount&gt;**  *Gives a player an item from the configured mob equipment.*
 -    **/mm items give -s [player] [item_name] &lt;amount&gt;**  *Silently gives a player an item from the configured mob equipment.*
