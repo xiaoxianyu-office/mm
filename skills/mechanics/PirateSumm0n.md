@@ -41,6 +41,14 @@
 
 ##
 
+### Amy, she just help people fix configs and stuff
+
+[She is also not a developer](https://discord.com/channels/213109157983813633/351864879545843715/1115439061201588346)
+
+##
+
 ### Lxlp, he just wanted to help people learn MythicMobs
 
 [He helps people with config issues](https://discord.com/channels/213109157983813633/351864879545843715/1107736769929150464)
+
+##
