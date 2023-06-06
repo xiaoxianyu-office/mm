@@ -17,13 +17,13 @@ Item Commands
 -------------
 
 -    **/mm items** (alias: **/mm i**)  *Base for all item related commands.*
--    **/mm items browse** *Opens a GUI displaying all the loaded Mythic Items.*
 -    **/mm items get [item_name] &lt;amount&gt;** *Gives yourself an item from the configured mob equipment.*
 -    **/mm items give [player] [item_name] &lt;amount&gt;**  *Gives a player an item from the configured mob equipment.*
 -    **/mm items give -s [player] [item_name] &lt;amount&gt;**  *Silently gives a player an item from the configured mob equipment.*
 -    **/mm items give -d [player] [item_name] &lt;amount&gt;**  *Gives a player an item from the configured mob equipment, and drops the items in excess on the ground.*
 -    **/mm items list** * *Lists off all configured mob equipment.*
 -    **/mm item import &lt;itemName&gt; [fileName]** * *Imports held item to the Items folder. (File name defaults to &lt;itemName&gt;.yml)*
+-    **/mm items browse** *Opens a GUI displaying all the loaded Mythic Items.* (Premium Only)
 
 Mob Commands
 ------------
