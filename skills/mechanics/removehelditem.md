@@ -12,8 +12,8 @@ Removes the given amount from the target player's held item.
 ## Examples
 ```yaml
 ExampleSkill:
-    Skills:
-    - consumeHeldItem{amount=1} @trigger
+  Skills:
+  - consumeHeldItem{amount=1} @trigger
 ```
 
 
