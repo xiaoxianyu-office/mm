@@ -1,21 +1,22 @@
-Mechanic: RemoveHeldItem
-========================
+## Description
+Removes the given amount from the target player's held item. 
 
-Removes the given amount from the target's held item. This is an
-artifacts-only mechanic.
 
-Attributes
-----------
+## Attributes
 
-| Attribute | Aliases | Description | Default Value |
-|-----------|---------|-------------|---------------|
-| amount    | a       |             | 1             |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| amount    | a         | The amount to remove                                                 | 1       |
 
-Examples
---------
 
-      Skills:
-      - consumeHeldItem{amount=1} ~onUse
-      - ...
+## Examples
+```yaml
+ExampleSkill:
+    Skills:
+    - consumeHeldItem{amount=1} @trigger
+```
 
-If consumeHeldItem does not work for you, try using consumeUsedItem!
+
+## Aliases
+- [x] consumeHeldItem
+- [x] takeHeldItem
