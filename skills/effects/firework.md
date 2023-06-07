@@ -1,10 +1,8 @@
-Effect: Firework
-----
-
+## Description
 Creates a firework effect at the target.
 
-### Attributes
-----
+
+## Attributes
 
 | Attribute  | Aliases | Description | Default Value |
 | ------ | ------ | ------ | ------ |
@@ -15,14 +13,18 @@ Creates a firework effect at the target.
 | colors | c | The color of the firework explosion, in RGB or hex | 0,0,0 |
 | fadecolors | fc | The fade colors of the firework explosion, in RBG or hex | 0,0,0 |
 
-#### Firework Types
+### Firework Types
 - BALL
 - BALL_LARGE
 - BURST
 - CREEPER
 - STAR
 
-### Examples
-----
-    Skills:
-      - effect:firework{t=BALL;d=1;f=true;tr=true} @self ~onInteract
+### Firework Colors
+It has been reported that the firework will display the opposite color than the one specified in the "color" output. If your firework effect seems to be having this problem, try to invert the color attribute.
+
+## Examples
+```yaml
+  Skills:
+  - effect:firework{t=BALL;d=1;f=true;tr=true} @self ~onInteract
+```
