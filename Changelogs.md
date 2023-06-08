@@ -85,7 +85,7 @@ Conditions:
 ### NEW: [Moisturelevel](/skills/conditions/moisturelevel)
 ### NEW: [isTamed](/skills/conditions/istamed)
 ### onDeath
-- Paper Only: the event is not cancellable
+- Paper Only: the event is now cancellable
 - When the death event is cancelled, the mob will regain health in accordance with its ReviveHealth option
 
 
