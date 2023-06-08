@@ -1,7 +1,14 @@
-5.3.0 (dev builds)
+5.3.0
 =====
 Highlights
 ----------
+### Version support
+Dropped support for the following versions
+- 1.12
+- 1.17
+- 1.18.0
+- 1.19.0
+- 1.19.1
 ### Composite Conditions
 Added composite conditions. Conditions in a skill can now be grouped with parenthesis and combined with AND (&&) and OR (||) operators, and can also be nested for complex logic. The entire group of conditions will be evaluated together.
 ```
@@ -9,9 +16,125 @@ Conditions:
 - ((night || raining) && onBlock{material=LIME_CONCRETE}) true
 ```
 
+
+## Mob Options
+### NEW: [ReviveHealth](/wikis/Mobs/Options#revivehealth)
+### FollowRange
+- Allows the option to be 0
+
+## Templates
+- Templates have been fixed and refactored, and now a [Wiki Page](/wikis/Mobs/Templates) has been created to made you aware of their existance at all
+
+
+## Mechanics
+### NEW: [UndoPaste](/skills/mechanics/undopaste)
+### NEW: [Slash](/skills/mechanics/slash)
+### NEW: [Saddle](/skills/mechanics/saddle)
+### NEW: [ProjectileVelocity](/skills/mechanics/projectileVelocity)
+### NEW: [Polygon](/skills/mechanics/Polygon)
+### NEW: [SetDragonPodium](/skills/mechanics/SetDragonPodium)
+### NEW: [Time](/skills/mechanics/Attribute)
+### NEW: [Attribute](/skills/mechanics/time)
+### NEW: [AttributeModifier](/skills/mechanics/AttributeModifier)
+### FawePaste
+- added `id` attribute, to use in concert with UndoPaste
+- it now *truly* runs async
+### Lunge
+- fixed the vy attribute
+### ModifyProjectile 
+- added the `ADD` action
+### Shoot
+- fixed `pickup` attribute
+- added `expiration` attribute
+- added `amount` attribute
+## SetBlockType
+- added `physics` attribute
+## Velocity
+- added `relative` attribute
+## Aura
+- fixed `cancelOnChangeWorld` attribute
+- added placeholder support for auranames
+## OnBlockBreak 
+- added `dropitem` attribute
+- added `blocktype` attribute
+
+
+
+## Targeters
+### NEW: [Rectangle](/Skills/Targeters/Rectangle)
+### NEW: [BlockVein](/Skills/Targeters/BlockVein)
+## Global Targeter attributes
+- added `ofOwner`,`ofParent` and `ofTrigger` attributes. They will make the targeter be parsed by either the Owner, Parent or Trigger
+### EntitiesInCone
+- fixed it targeting items
+
+
+## Triggers
+### NEW: [onBucket](/Skills/Triggers#onbucket)
+
+
+## Conditions
+### NEW: [isMythicMob](/skills/conditions/ismythicmob)
+### NEW: [isSaddled](/skills/conditions/isSaddled)
+### NEW: [MythicPack](/skills/conditions/MythicPack)
+### NEW: [PackVersion](/skills/conditions/PackVersion)
+### NEW: [PackVersionIsGreater](/skills/conditions/PackVersionIsGreater)
+### NEW: [ServerNMS](/skills/conditions/ServerNMS)
+### NEW: [ServerVersion](/skills/conditions/ServerVersion)
+### NEW: [Moist](/skills/conditions/moist)
+### NEW: [Moisturelevel](/skills/conditions/moisturelevel)
+### NEW: [isTamed](/skills/conditions/istamed)
+### onDeath
+- Parer Only: the event is not cancellable
+- When the death event is cancelled, the mob will regain health in accordance with its ReviveHealth option
+
+
+## Items
+### NEW: [CanPlaceOn](/Items/Items#canplaceon) item configuration
+### NEW: [CanBreak](/Items/Items#canbreak) item configuration
+
+
+## Placeholders
+### NEW: Raycast placeholder
+- <caster.raycast>
+- <target.raycast>
+- <trigger.raycast>
+- <parent.raycast>
+### NEW: PlaceholderAPI supoort
+- %mythic_var_someVar%
+- %mythic_var_world_someVar%
+- %mythic_var_global_someVar%
+- %mythic_var_<playerName>_someVar%
+- %mythic_var_<uuid>_someVar%
+### NEW: <parent.l.pitch>
+### NEW: <parent.l.yaw>
+
+
 Bug Fixes/Other
 ---------------
-- Fixed & refactored templates
+- Now the plugins looks for WE schematics even in FAWE/WE folders
+- Fixed metaskills inline comments (`<#>`)
+- added the Icon element in the packinfo configuration
+- Fix for memory leak involving RandomFloat and RandomInt
+- Fix iterator error with the Bucket trigger
+- Added onHitBlockSkill for projectiles (projectile, missile, shoot...)
+- Added Placeholder support for Score and ScoreGlobal conditions
+- Fixes for raytracing
+- Several fixes for spawner loading
+- Fixed random number serialization
+- Refactored mmo plugin support
+- Added `Configuration.LoadExampleConfigs` (defaults to true) in config.yml
+- Fixed several issues with Damage mechanic
+- Rewrote projectiles to be packet based
+- Added error catching when trying to load an entity with a mob type that doesn't match
+- Fixed default stance when loading a mob from PDC
+- Fixed NPE with samefaction target filter
+- Improved tab completion for most commands
+- Implemented stat api support for mobs
+- Fixed blockmask error when MythicDungeons world unloads
+- Fixes for samefaction target filter closes
+- Fixed PreventMounts and PreventSplitting options
+- Added "TEXT" bulletType for projectiles
 
 5.2.6
 =====
@@ -25,6 +148,7 @@ Bug Fixes/Other
 - Fixed death messages on 1.19.4
 - Fixed world scaling bonuses starting at 1 instead of 0
 - Fixed villager trades missing enchants
+- Fixed ignore=samefaction target filter when used on players
 
 5.2.5
 =====
