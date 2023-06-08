@@ -23,6 +23,8 @@ are able to target locations as well.
 | [ActivateSpawner][]       | Activates a MythicMobs spawner at the targeted location                                  |
 | [AnimateArmorStand][]     | Animates an armorstand                                                                   |
 | [ArrowVolley][]           | Fires a volley of arrows                                                                 |
+| [Attribute][]             | Sets and attribute on the target entity, if attributable                                                                 |
+| [AttributeModifier][]     | Adds an attribute modifier to the attributable target                                                                 |
 | [AuraRemove][]            | Removes an aura from the target entity                                                   |
 | [BarCreate][]             | Creates a custom boss bar on the casting mob                                             |
 | [BarRemove][]             | Removes a custom boss bar on the casting mob                                             |
@@ -264,6 +266,8 @@ but not yet ready for use.
   [ActivateSpawner]: /skills/mechanics/activatespawner
   [AnimateArmorStand]: /skills/mechanics/animatearmorstand
   [ArrowVolley]: /skills/mechanics/arrowvolley
+  [Attribute]: /skills/mechanics/Attribute
+  [AttributeModifier]: /skills/mechanics/AttributeModifier
   [AuraRemove]: /skills/mechanics/auraremove
   [BarCreate]: /skills/mechanics/barcreate
   [BarSet]: /skills/mechanics/barset
