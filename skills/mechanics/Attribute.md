@@ -1,5 +1,5 @@
 ## Description
-Sets and attribute on the target entity, if attributable
+Sets the base value of the targeted entity's attribute
 
 
 ## Attributes
