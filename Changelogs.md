@@ -47,14 +47,14 @@ Conditions:
 - fixed `pickup` attribute
 - added `expiration` attribute
 - added `amount` attribute
-## SetBlockType
+### SetBlockType
 - added `physics` attribute
-## Velocity
+### Velocity
 - added `relative` attribute
-## Aura
+### Aura
 - fixed `cancelOnChangeWorld` attribute
 - added placeholder support for auranames
-## OnBlockBreak 
+### OnBlockBreak 
 - added `dropitem` attribute
 - added `blocktype` attribute
 
