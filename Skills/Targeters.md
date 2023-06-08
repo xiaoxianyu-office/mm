@@ -165,7 +165,7 @@ There are some common attributes that can be used in most of the Targeters, depe
 | Coordinatex                              | cx               | Sets the x axis coordinate                    |
 | Coordinatey                              | cy               | Sets the y axis coordinate                    |
 | Coordinatez                              | cz               | Sets the z axis coordinate                    |
-| BlockTypes                               | blocktype        | Only targets selected block types. Multiple blocks can be listed by separating them using a `,` |
+| BlockTypes                               | blocktype, bt   | Only targets selected block types. Multiple blocks can be listed by separating them using a `,`<br>You can add a `#` at the front of the type to indicate that the block only needs to match part of the type, add `@` to indicate that the block only needs to match the start of the type |
 | BlockIgnores                             | blockignore      | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` |
 | CoordinateYaw                            | cyaw             | Sets the yaw value                        |
 | CoordinatePitch                          | cpitch           | Sets the pitch value                        |
