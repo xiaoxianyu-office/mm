@@ -33,8 +33,8 @@ Conditions:
 ### NEW: [ProjectileVelocity](/skills/mechanics/projectileVelocity)
 ### NEW: [Polygon](/skills/mechanics/Polygon)
 ### NEW: [SetDragonPodium](/skills/mechanics/SetDragonPodium)
-### NEW: [Time](/skills/mechanics/Attribute)
-### NEW: [Attribute](/skills/mechanics/time)
+### NEW: [Time](/skills/mechanics/time)
+### NEW: [Attribute](/skills/mechanics/Attribute)
 ### NEW: [AttributeModifier](/skills/mechanics/AttributeModifier)
 ### FawePaste
 - added `id` attribute, to use in concert with UndoPaste
