@@ -1,5 +1,5 @@
 ## Description
-Sets the caster's attribute
+Sets and attribute on the target entity, if attributable
 
 
 ## Attributes
