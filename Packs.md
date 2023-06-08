@@ -9,6 +9,7 @@ When making a Pack, you might want to embed a bit more information into it, such
 Name: The name of the pack
 Version: 0.1.0
 Author: The name of the author
+Icon: the block to use as the icon of the pack
 URL: The link to your site, if any
 Description:
 - This is a list
