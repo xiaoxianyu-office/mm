@@ -100,7 +100,7 @@ Bullet types available are:
 -   **MYTHICITEM** - *projectile{bulletType=MYTHICITEM;material=MyMythicItem;...}*
 -   **MOB** - *projectile{bulletType=MOB;mob=SkeletonKing;...}*
 -   **TRACKING** - *projectile{bulletType=TRACKING;bulletmaterial=MyMythicItem;model=CustomModelData;...}*
--   **TEXT** - *projectile{bulletType=TEXT;bulletText="...";bulletBillboard=CENTER;...}*
+-   **TEXT** - *projectile{bulletType=TEXT;bulletText="...";bulletBillboard=CENTER;bulletscale=0.5;...}*
 
 Yes, that's right, you can even shoot projectiles made up of other
 Mythic mobs! Mobs shot with the projectile skill cannot be interacted
