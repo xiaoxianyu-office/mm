@@ -63,10 +63,10 @@ Conditions:
 ## Targeters
 ### NEW: [Rectangle](/Skills/Targeters/Rectangle)
 ### NEW: [BlockVein](/Skills/Targeters/BlockVein)
-## Global Targeter attributes
-- added `ofOwner`,`ofParent` and `ofTrigger` attributes. They will make the targeter be parsed by either the Owner, Parent or Trigger
 ### EntitiesInCone
 - fixed it targeting items
+### Global Targeter attributes
+- added `ofOwner`,`ofParent` and `ofTrigger` attributes. They will make the targeter be parsed by either the Owner, Parent or Trigger
 
 
 ## Triggers
