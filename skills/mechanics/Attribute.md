@@ -7,7 +7,7 @@ Sets the caster's attribute
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | attribute | attr      | The attribute to set                                            | GENERIC_LUCK |
-| amount    | amt, a    | The modifier of the attribute                                          | 0     |
+| amount    | amt, a    | The amount of the attribute                                          | 0     |
 | duration  | dur       | The duration of the attribute                                          | 0     |
 
 
