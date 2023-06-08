@@ -23,7 +23,7 @@ Conditions:
 - Allows the option to be 0
 
 ## Templates
-- Templates have been fixed and refactored, and now a [Wiki Page](/wikis/Mobs/Templates) has been created to made you aware of their existance at all
+- Templates have been fixed and refactored, and now a [Wiki Page](/Mobs/Templates) has been created to made you aware of their existance at all
 
 
 ## Mechanics
