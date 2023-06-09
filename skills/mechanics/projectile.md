@@ -51,7 +51,7 @@ Attributes
 | Bounce            |    | Should the projectile bounce. Bounce radius depends on the projectile's hitbox. **Premium Only** Mechanic                                   | false |
 | BounceVelocity    |    | Every time the projectile bounces, its velocity will be multiplied by this value. **Premium Only** Mechanic     | 0.9
 | hitConditions     |    | A list of conditions that a target must meet in order for the projectile to be able to hit it. **Premium Only** Mechanic  |  |
-  
+| bulletEnchanted   | enchanted | Makes the projectile enchanted. Works for armorstand/item display/item bullets | false |
 
 Special Notes
 -------------
