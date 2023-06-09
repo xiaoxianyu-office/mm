@@ -780,13 +780,13 @@ Check out [Trades](/Mobs/Mobs#trades)
       
 #### Zombies (all variants)
 
-**PreventJockeyMounts: \[true/false\] **
+**PreventJockeyMounts: \[true/false\]**
 
       * Sets whether the zombie will spawn as a jockey.
       * Only works for Zombies.
       * Defaults to false.
 
-**PreventTransformation: \[true/false\] **
+**PreventTransformation: \[true/false\]**
 
       * Sets whether zombies can be turned into pigmen/drowned.
       * Only works for Zombies.
