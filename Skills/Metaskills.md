@@ -1,4 +1,4 @@
-As seen in the [Skills] wiki page, itis possible to execute mechanics from a mob via the syntax
+As seen in the [Skills] wiki page, it is possible to execute mechanics from a mob via the syntax
 
 ```yaml
 - mechanic{argument=value} @[targeter] ~on[trigger] [health_modifier] [chance]
