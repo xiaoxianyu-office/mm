@@ -100,6 +100,7 @@ Bullet types available are:
 - **MYTHICITEM** - *projectile{bulletType=MYTHICITEM;material=MyMythicItem;...}*
 - **MOB** - *projectile{bulletType=MOB;mob=SkeletonKing;...}*
 - **TRACKING** - *projectile{bulletType=TRACKING;bulletmaterial=MyMythicItem;model=CustomModelData;...}*
+- **DISPLAY** - *projectile{bulletType=DISPLAY;...}* `same options as tracking/armorstand bullet`
 - **TEXT** - *projectile{bulletType=TEXT;bulletText="...";bulletBillboard=CENTER;bulletscale=1.0,1.0,1.0;backgroundColor=64,0,0,0;...}*
   - `backgroundColor` - this is expressed in argb format
 
