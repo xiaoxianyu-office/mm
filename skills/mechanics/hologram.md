@@ -6,13 +6,14 @@ Spawns a hologram at a target location.
 | Attributes | Alias |    Description   |     Default Value     |
 | ---------- | ----- | ---------------- | --------------------- |
 |    text    | t     | The text to show | Hologram Text Missing |
-|    stay    | time  | The duration of the hologram | 100 |
+|    stay    | time  | The duration of the hologram in ticks | 100 |
 
 **Example**:
+Creates a hologram above the mob which the mob gets right clicked, which displays for 100 ticks.
 -----------
 
     Skills:
-    - holo @selflocation{y=1.6} ~onInteract
+    - holo{text="Example Text";time=100} @selflocation{y=1.6} ~onInteract
 
 **Extra Information**:
 ---------------------
