@@ -1,210 +1,65 @@
-Mechanic: Missile
-=================
-
+## Description
 The missile skill is similar to the projectile skill. Missiles however
 are homing and will track down their targets. The available syntax is
 very similar to that of the projectile skill, too, but has some distinct
-differences. Missiles cannot be summoned as the "METEOR"-type and cannot
-hug the surface. However you can edit the inertia, add an onStart-skill
-and specify wether or not the missiles can only hit their targets.
+differences. **Missiles cannot be summoned as the "METEOR"-type and cannot
+hug the surface**.  
+However you can edit the inertia, add an onStart-skill and specify wether or not the missiles can only hit their targets.  
+Missiles can target both a location and an entity.
 
-**Added in 4.10**
 
-* Missiles can now target locations
-* Added targetYoffset to missile mechanic
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| Inertia   | in        | Sets the "turning-rate" of the missile. Lower values make the missile turn around faster. Use big numbers (10-100) when trying to make your missiles turn slowly.         | 1.5     |
+| onStart   | oS        | Meta-Skill executed when the projectile starts                       |         |
+| onTick    | oT        |Meta-Skill executed every \[interval\] ticks at the projectile's origin location|
+| onEnd     | oE        | Meta-Skill executed when the projectile ends                         |         |
+| onHit     | oH        | Meta-Skill executed when the projectile hits something. Targets hit are inherited by the meta-skill                                                                    |         |
+| Interval  | int, i    | How often (in ticks) the projectile update                           | 4       |
+| HorizontalRadius | hRadius, hR, r | The horizontal radius entities will be hit in around the projectile | 1.25 |
+|VerticalRadius | vRadius, vR | The vertical radius entities will be hit in around the projectile |Horizontal Radius |
+| MaxDuration | md      | The max duration (in ticks) the projectile will persist              | 100     |
+| MaxRange  | mr        | The maximum range (in blocks) the projectile will travel             | 40      |
+| Velocity  | v         | The velocity of the projectile                                       | 5       |
+| StartYOffset | syo    | Lets you offset where on the casting mob the projectile shoots from  | 1       |
+| StartFOffset | sfo    | How far in front of the mob the projectile starts                    | 1       |
+| TargetYOffset| tyo    | Lets you offset where on the target the projectile shoots at         | 1       |
+| HitPlayers   | hp     | If the missile should hit players                                    | true    |
+| HitNonPlayers| hnp    | If the missile should hit non player entities                        | false   |
+| HitTarget | ht        | If the missile should be able to hit its target                      | true    |
+| HitTargetOnly|        | If the missile should be able to hit **only** its target             | true    |
+| StopAtEntity | sE     | Whether the projectile will stop upon hitting a targetable entity    | true    |
+| StopAtBlock  | sB     | Whether the projectile will stop upon hitting an opaque block        | true    |
+| PowerAffectsRange |par| Whether a mob's [power level](/mythiccraft/MythicMobs/-/wikis/Mobs/Power) affects the projectile's range                                                                 | true    | 
+| PowerAffectsVelocity|pav| Whether a mob's [power level](/mythiccraft/MythicMobs/-/wikis/Mobs/Power) affects the projectile's velocity                                                              | true    | 
+| fromOrigin | fo       | Whether the missile should start from its origin                     | false   |
+| hitConditions |       | A list of conditions that a target must meet in order for the projectile to be able to hit it. See the [projectile](/mythiccraft/MythicMobs/-/wikis/skills/mechanics/projectile) mechanic for more info. **Premium Only** Mechanic                                                       |         |
 
-Attributes
-----------
-
-<table>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Aliases</th>
-<th>Description</th>
-<th>Default Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Inertia</td>
-<td>in</td>
-<td><br />
-Sets the "turning-rate" of the missile. Lower values make the missile turn around faster. Use big numbers (10-100) when trying to make your missiles turn slowly.</td>
-<td>1.5</td>
-</tr>
-<tr class="even">
-<td>onTick</td>
-<td>oT</td>
-<td>Meta-Skill executed every [interval] ticks at the projectile's origin location.</td>
-<td>None</td>
-</tr>
-<tr class="odd">
-<td>onHit</td>
-<td>oH</td>
-<td>Meta-Skill executed when the projectile hits something. Targets hit are inherited by the meta-skill.</td>
-<td>None</td>
-</tr>
-<tr class="even">
-<td>onEnd</td>
-<td>oE</td>
-<td>Meta-Skill executed when the projectile ends.</td>
-<td><br />
-None</td>
-</tr>
-<tr class="odd">
-<td>onStart</td>
-<td>oS</td>
-<td>Meta-Skill executed when the projectile starts.</td>
-<td>None</td>
-</tr>
-<tr class="even">
-<td>Interval</td>
-<td>i, int</td>
-<td>How often (in ticks) the projectile update</td>
-<td>4</td>
-</tr>
-<tr class="odd">
-<td>HorizontalRadius</td>
-<td>hRadius, hR, r</td>
-<td>The horizontal radius entities will be hit in around the projectile.</td>
-<td>1.25</td>
-</tr>
-<tr class="even">
-<td>VerticalRadius</td>
-<td>vRadius, vR</td>
-<td>The vertical radius entities will be hit in around the projectile.</td>
-<td>Horizontal Radius</td>
-</tr>
-<tr class="odd">
-<td>MaxDuration</td>
-<td>md</td>
-<td>The max duration (in ticks) the projectile will persist.</td>
-<td>100</td>
-</tr>
-<tr class="even">
-<td>MaxRange</td>
-<td>mr</td>
-<td>The maximum range (in blocks) the projectile will travel.</td>
-<td>40</td>
-</tr>
-<tr class="odd">
-<td>Velocity</td>
-<td>v</td>
-<td>The velocity of the projectile</td>
-<td>5</td>
-</tr>
-<tr class="even">
-<td>StartYOffset</td>
-<td>syo</td>
-<td>Start Y Offset - Lets you offset where on the casting mob the projectile shoots from.</td>
-<td>+1</td>
-</tr>
-<tr class="odd">
-<td>StartFOffset</td>
-<td>sfo</td>
-<td>Start Forward Offset - How far in front of the mob the projectile starts</td>
-<td>+1</td>
-</tr>
-<tr class="even">
-<td>TargetYOffset</td>
-<td>tyo</td>
-<td>Target Y Offset - Lets you offset where on the target the projectile shoots at.</td>
-<td>+1</td>
-</tr>
-<tr class="odd">
-<td>HitPlayers</td>
-<td>hp</td>
-<td></td>
-<td>true</td>
-</tr>
-<tr class="even">
-<td>HitNonPlayers</td>
-<td>hnp</td>
-<td></td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td>HitTarget</td>
-<td>ht</td>
-<td></td>
-<td>true</td>
-</tr>
-<tr class="even">
-<td>HitTargetOnly</td>
-<td></td>
-<td></td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td>StopAtEntity</td>
-<td>sE</td>
-<td>Whether the projectile will stop upon hitting a targetable entity.</td>
-<td>true</td>
-</tr>
-<tr class="even">
-<td>StopAtBlock</td>
-<td>sB</td>
-<td>Whether the projectile will stop upon hitting an opaque block.</td>
-<td>true</td>
-</tr>
-<tr class="odd">
-<td>HugSurface</td>
-<td>hs</td>
-<td>Whether or not the projectile should move along the ground.</td>
-<td>false</td>
-</tr>
-<tr class="even">
-<td>PowerAffectsRange</td>
-<td>par</td>
-<td>Whether a mob's <a href="Mobs/Power">power level</a> affects the projectile's range.</td>
-<td>true</td>
-</tr>
-<tr class="odd">
-<td>PowerAffectsVelocity</td>
-<td>pav</td>
-<td>Whether a mob's <a href="Mobs/Power">power level</a> affects the projectile's velocity.</td>
-<td>true</td>
-</tr>
-<tr class="even">
-<td>fromOrigin</td>
-<td>fo</td>
-<td>Whether the missile should start from its origin</td>
-<td>false</td>
-</tr>
-<tr class="odd">
-<td> hitConditions </td>
-<td> </td>
-<td> A list of conditions that a target must meet in order for the projectile to be able to hit it. See the <a href="/skills/mechanics/projectile">projectile</a> mechanic for more info. <b>Premium Only</b> Mechanic</td>
-<td> </td>
-</tr>
-</tbody>
-</table>
-
-Examples
---------
-
+## Examples
 This example shoots a missile that looks like a thin trail of flames
 with a high turning rate. It bursts into a powerful explosion upon
 hitting its target.
+```yaml
+# Mob File
+Mob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=Homer} @target ~onTimer:100
+```
+```yaml
+# Skills File
+Homer:
+  Skills:
+  - missile{ot=Homer_TICK;oh=Homer_HIT;v=4;i=1;hR=1;vR=1;in=0.75}
 
-    # Mob File
-    Mob:
-      Type: ZOMBIE
-      Skills:
-      - skill{s=Homer} @target ~onTimer:100
+Homer_TICK:
+  Skills:
+  - effect:particles{p=flame;a=1} @origin
 
-    # Skills File
-    Homer:
-      Skills:
-      - missile{ot=Homer_TICK;oh=Homer_HIT;v=4;i=1;hR=1;vR=1;in=0.75}
-
-    Homer_TICK:
-      Skills:
-      - effect:particles{p=flame;a=1} @origin
-
-    Homer_HIT:
-      Skills:
-      - effect:particles{p=lava;a=50;hS=1;vS=1}
-      - effect:sound{s=entity.generic.explode;v=1;p=0}
-      - damage{a=1337;i=false}
+Homer_HIT:
+  Skills:
+  - effect:particles{p=lava;a=50;hS=1;vS=1}
+  - effect:sound{s=entity.generic.explode;v=1;p=0}
+  - damage{a=1337;i=false}
+```
