@@ -10,7 +10,7 @@ Spawns a hologram at a target location.
 
 **Example**:
 -----------
-Creates a hologram above the mob which the mob gets right clicked, which displays for 100 ticks.
+Creates a hologram above the mob when the mob gets right clicked, which displays for 100 ticks.
 ```yaml
     Skills:
     - holo{text="Example Text";time=100} @selflocation{y=1.6} ~onInteract
