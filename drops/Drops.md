@@ -136,7 +136,7 @@ DropTable Options
 -   A modifier on the number of items dropped based on the killer's luck stat
 -   Can be set as a range, i.e. ```0.15to8```
 -   Works with Luck attribute, Luck-based enchants/curses, and Luck potion effects
--   Works like: ```amount = amount + (luck * bonus_luck\items)```
+-   Works like: ```amount = amount + (luck * bonus_luck_items)```
 -   Requires that ```TotalItems```, ```MinItems```, or ```MaxItems``` are set on the table
 
 
