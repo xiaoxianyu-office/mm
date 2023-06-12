@@ -1,15 +1,15 @@
-Description: Tests the difficulty scale at the target location.
+## Description
+Tests the difficulty scale at the target location.
  
-| Attribute | Aliases | Description |
-| --------- | ------- | ----------- |
-| difficulty | diff, d | The difficulty range to check |
- 
-Example
------
- 
-Conditions:
-- localdifficulty{d=>0}
+
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| difficulty| diff, d   | The difficulty range to check                                        |         |
 
  
-Extra Information:
-------------------
+## Examples
+```yaml
+  Conditions:
+  - localdifficulty{d=>0}
+```
