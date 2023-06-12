@@ -1,30 +1,25 @@
-**Description:** Checks the MythicMob type of the target mob
+## Description
+Checks the MythicMob type of the target mob
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases    | Description               |
-| --------- | -------- | ------------------------- |
-| type      | types, t | A list of MythicMob types |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| type      | types, t  | A list of MythicMob types to match                                   |         |
 
----
 
-**Examples:**
-
-```
-Conditions:
-- mythicmobtype{t=CoolZombie,IceZombie,SnowZombie} true
+## Examples
+```yaml
+  Conditions:
+  - mythicmobtype{t=CoolZombie,IceZombie,SnowZombie} true
 ```
 
+```yaml
+  TargetConditions:
+  - mythicmobtype{t=HotZombie,LavaZombie,FireZombie} true
 ```
-TargetConditions:
-- mythicmobtype{t=HotZombie,LavaZombie,FireZombie} true
-```
 
----
 
-**Extra Information:**
-
-- [x] Alias: mmtype
-- [x] Type: Entity
+## Aliases
+- [x] mmType
