@@ -1,5 +1,5 @@
 ## Description
-Matches a range to how many living entities are in the given radius around the caster
+Matches a range to how many living entities are in the given radius
 
 
 ## Attributes
