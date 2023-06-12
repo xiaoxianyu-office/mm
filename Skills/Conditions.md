@@ -195,9 +195,8 @@ Conditions
 | [LivingInRadius](/skills/conditions/LivingInRadius)                           | Location | Matches a range to how many living entities are in the given radius                       |
 | [LocalDifficulty](/skills/conditions/localdifficulty)                         | Location | Tests the difficulty scale at the target location                                         |
 | [LunarPhase](/skills/conditions/lunarphase)                                   | Location | Checks the target world's lunar phase                                                      |
-| [MobSize](/skills/skills/conditions/mobsize)                                  | Entity   | Checks the size of the target entity                                                       |
-| [MobsInRadius](/skills/conditions/mobsinradius)                               | Location | Checks how many mobs are in a given radius                                                 |
 | [MobsInChunk](/skills/conditions/mobsinchunk)                                 | Location | Matches a range to how many mobs are in the target location's chunk                       |
+| [MobsInRadius](/skills/conditions/mobsinradius)                               | Location | Checks how many mobs are in a given radius                                                 |
 | [MobsInWorld](/skills/conditions/mobsinworld)                                 | Location | Matches a range to how many mobs are in the target world                                  |
 | [Moist](/skills/conditions/Moist)                                             | Location | Checks if the target block of farmland is hydrated                                            |
 | [MoistureLevel](/skills/conditions/moisturelevel)                             | Location | Checks if the target block of farmland has the specified level of hydratation                 |
@@ -235,6 +234,7 @@ Conditions
 | [Score](/skills/conditions/score)                                             | Entity   | Checks a scoreboard value of the target entity                                           |
 | [ServerNmsVersion](/skills/conditions/servernmsversion)                       | Meta     | Checks if the server is running the specified minecraft NMS version.                          |
 | [ServerVersion](/skills/conditions/serverversion)                             | Meta     | Checks if the server is running the specified minecraft version.                              |
+| [Size](/skills/skills/conditions/Size)                                        | Entity   | Checks the size of the target entity                                                       |
 | [SkillOnCooldown](/skills/conditions/skilloncooldown)                         | Entity   | Checks if the given skill is in cooldown for the target                                       |
 | [Sprinting](/skills/conditions/Sprinting)                                     | Entity   | Checks if the target **Player** is sprinting                                                  |
 | [Stance](/skills/conditions/stance)                                           | Entity   | Checks the stance of the target mob                                                        |
