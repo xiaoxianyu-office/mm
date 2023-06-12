@@ -193,6 +193,7 @@ Conditions
 | [LineOfSight](/skills/conditions/lineofsight)                                 | Compare  | Tests if the target is within line of sight of the caster                                    |
 | [LineOfSightFromOrigin](/skills/conditions/lineofsightfromorigin)             | Compare  | Tests if the target is within line of sight of the caster                                    |
 | [LivingInRadius](/skills/conditions/LivingInRadius)                           | Location | Matches a range to how many living entities are in the given radius                       |
+| [LocalDifficulty](/skills/conditions/localdifficulty)                         | Location | Tests the difficulty scale at the target location                                         |
 | [LunarPhase](/skills/conditions/lunarphase)                                   | Location | Checks the target world's lunar phase                                                      |
 | [MobSize](/skills/skills/conditions/mobsize)                                  | Entity   | Checks the size of the target entity                                                       |
 | [MobsInRadius](/skills/conditions/mobsinradius)                               | Location | Checks how many mobs are in a given radius                                                 |
