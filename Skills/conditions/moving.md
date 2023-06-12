@@ -1,25 +1,20 @@
-**Description:** If the target has a velocity greater than zero
+## Description
+Checks ff the target has a velocity greater than zero
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| exact | e  |         |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| exact     | e         | If the check should be exact or approximated                         | true    |
 
----
 
-**Examples:**
-
-```
-Conditions:
-- moving{} true
+## Examples
+```yaml
+  Conditions:
+  - moving{} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Alias: ismoving
-- [x] Type: Entity
+## Aliases
+- [x] ismoving
