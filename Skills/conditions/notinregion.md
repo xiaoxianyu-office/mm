@@ -1,24 +1,16 @@
-**Description:** If the target location is not within the given WorldGuard region
+## Description
+Checks if the target location is **not** within the given WorldGuard region
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Alias | Description     |
-| --------- | ----- | --------------- |
-| region    | r, name, n     | the region name |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| region    | r, name, n| The region's name                                                    |         |
 
----
 
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - notinregion{r=BossZone} true
 ```
-Conditions:
-- notinregion{r=BossZone} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
