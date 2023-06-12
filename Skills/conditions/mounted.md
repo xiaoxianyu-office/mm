@@ -1,24 +1,13 @@
-**Description:** If the target entity is riding a mount/vehicle
+## Description
+Checks if the target entity is riding a mount/vehicle
 
----
 
-**Attributes:**
+## Attributes
+> *This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
 
----
-
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - mounted true
 ```
-Conditions:
-- mounted
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
