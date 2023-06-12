@@ -1,26 +1,19 @@
-**Description:** Checks the X motion of the target entity against a range.
+## Description
+Checks the X motion of the target entity against a range.
 
----
 
-**Attributes:**
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| velocity | v          | The velocity to check for                                            |         |
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| velocity | v  | The velocity to check for |
 
-Added in MM 4.13
-
----
-
-**Examples:**
-
-```
-None
+## Examples
+```yaml
+  Conditions:
+  - motionx{v=<1} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Alias: motx
-- [x] Type: Entity
+## Aliases
+- [x] motx
