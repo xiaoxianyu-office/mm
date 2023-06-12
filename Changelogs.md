@@ -36,6 +36,7 @@ Conditions:
 ### NEW: [Time](/skills/mechanics/time)
 ### NEW: [Attribute](/skills/mechanics/Attribute)
 ### NEW: [AttributeModifier](/skills/mechanics/AttributeModifier)
+### NEW: [AddTrade](/skills/mechanics/AddTrade)
 ### FawePaste
 - added `id` attribute, to use in concert with UndoPaste
 - it now *truly* runs async
@@ -135,6 +136,10 @@ Bug Fixes/Other
 - Fixes for samefaction target filter closes
 - Fixed PreventMounts and PreventSplitting options
 - Added "TEXT" bulletType for projectiles
+- Add "bulletEnchanted"/"enchanted" to all armorstand/item display/item bullets
+- Run blockIgnores/blockTypes filter before sorters for location targeters
+
+
 
 5.2.6
 =====
