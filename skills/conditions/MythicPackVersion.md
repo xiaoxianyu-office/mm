@@ -1,4 +1,6 @@
-**Description**: check if a [Pack](/wikis/Packs) with the specified id is present on the server with the specified version.
+## Description
+Check if a [Pack](/wikis/Packs) with the specified id is present on the server with the specified version.
+
 
 ## Attributes
 | Attribute | Alias       | Description                                                        | Default |
@@ -12,3 +14,8 @@
   Conditions:
   - packversion{p="ThePackId",v="1.2.3"} true
 ```
+
+
+## Aliases
+- [x] packversion
+- [x] packversionis
