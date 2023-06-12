@@ -21,6 +21,7 @@ are able to target locations as well.
 | Mechanic                  | Description                                                                              |
 |---------------------------|------------------------------------------------------------------------------------------|
 | [ActivateSpawner][]       | Activates a MythicMobs spawner at the targeted location                                  |
+| [AddTrade][]              | Changes the trades of a villager                                                          |
 | [AnimateArmorStand][]     | Animates an armorstand                                                                   |
 | [ArrowVolley][]           | Fires a volley of arrows                                                                 |
 | [Attribute][]             | Sets and attribute on the target entity, if attributable                                                                 |
@@ -264,6 +265,7 @@ but not yet ready for use.
   [here!]: /skills/skillparametersystem
   [Targeter]: /skills/targeters/
   [ActivateSpawner]: /skills/mechanics/activatespawner
+  [AddTrade]: /skills/mechanics/AddTrade
   [AnimateArmorStand]: /skills/mechanics/animatearmorstand
   [ArrowVolley]: /skills/mechanics/arrowvolley
   [Attribute]: /skills/mechanics/Attribute
