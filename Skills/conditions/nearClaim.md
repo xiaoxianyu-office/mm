@@ -1,22 +1,25 @@
-**Description:** If the target location is near any GriefPrevention or CrashClaim (5.2.5) claims.
+## Description
+Checks if the target location is near any claims of any supported plugins.  
 
----
+Supported Plugins:
 
-**Attributes:**
+- GriefPrevention
+- Lands
+- CrashClaim
 
-| Attribute | Aliases        | Description               | Default |
-| --------- | -------------  | ------------------------- | ------- |
-| radius | r | The given range to check | 16 |
 
-Example
-------
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| radius    | r         | The given range to check                                             | 16      |
 
+
+## Example
+```yaml
+  Conditions:
+  - nearclaim{r=20} false
 ```
-None
-```
 
-Extra Information
-----------
 
-- [x] Alias: nearclaims
-- [x] Type: Location
+## Aliases
+- [x] nearClaims
