@@ -1,23 +1,13 @@
-**Description:** If the time is night, from 14000 to 22000 in-game time
----
+## Description
+Checks if the time is night, from 14000 to 22000 in-game time
 
-**Attributes:**
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
+## Attributes
+> *This condition has no attributes*
 
----
 
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - night{} true
 ```
-Conditions:
-- night{} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
