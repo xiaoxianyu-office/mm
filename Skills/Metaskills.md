@@ -124,7 +124,28 @@ Depending on the [Condition Action] used in each condition, different behaviors 
 
 
 ## Skills
-The true core of a metaskill. It's the list of the mechanics that will be executed by the metaskill once triggered. Other [Meta Mechanic]s can be used in here, allowing the Metaskill to trigger other ones. Delays can also be used here, allowing the user to set a delay for every mechanic in the list after the delay mechanic is used.  
+The true core of a metaskill. It's the list of the mechanics that will be executed by the metaskill once triggered. Other [Meta Mechanic]s can be used in here, allowing the Metaskill to trigger other ones. 
+
+```yaml
+ExampleSkill:
+  Skills:
+  - message{m="Hello there!"}
+  - skill{s=ExampleSkill_2}
+
+ExampleSkill_2:
+  Skills:
+  - message{m="How are you doing?"}
+```
+
+Delays can also be used here, allowing the user to set a delay for every mechanic in the list after the delay mechanic is used.  
+
+```yaml
+ExampleSkill:
+  Skills:
+  - message{m="Message 1"}
+  - delay 20
+  - message{m="Message 2"}
+```
 
 The skills are normally executed from the first on the list to the last one. If a [Meta Mechanic] is used, its mechanics will be executed before the mechanics of the original Metaskill resume execution. If a delay is present inside the called Metaskill, the mechanics of the original Metaskill resume execution, and the mechanics present in the called metaskill are executed after the delay
 
