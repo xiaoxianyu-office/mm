@@ -1,23 +1,20 @@
-**Description:** Checks against the entity's name.
+## Description
+Checks against the name of the target entity
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| name | n | the given name to check | Ashijin |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| name      | n         | The name to check against                                            | Ashijin |
 
-Example
-------
 
+## Examples
+```yaml
+  Conditions:
+  - name{n=Ashijin}
 ```
-Conditions:
-- name{n=Ashijin}
-```
 
-Extra Information
-----------
 
-- [x] Alias: castername
-- [x] Type: Entity
+## Aliases
+- [x] castername
