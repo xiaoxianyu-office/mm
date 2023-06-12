@@ -36,6 +36,10 @@
 - [I want a lightning](https://discord.com/channels/213109157983813633/351864879545843715/1113800820782284821)
 - [I want to drop items and send a message](https://discord.com/channels/213109157983813633/351864879545843715/1113978767103230022)
 
+### Ultranite, he uses an old wiki
+
+- [The wiki was outdated last year so i am angry now](https://discord.com/channels/213109157983813633/351864879545843715/1117618134451507210)
+
 # The Victims
 
 ### Rumi, he just wanted to not be pinged
