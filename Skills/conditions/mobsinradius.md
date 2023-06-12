@@ -1,26 +1,17 @@
-**Description:** Checks how many mobs are in a given radius
+## Description
+Checks how many mobs are in a given radius
 
----
 
-**Attributes:**
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| types     | type, t   | The types of mobs to check for                                       |         |
+| amount    | a         | The range of mobs to check for                                       |         |
+| radius    | r         | The radius to check                                                  |         |
 
-| Attribute | Alias | Description                    |
-| --------- | ----- | ------------------------------ |
-| types     | type, t     | The types of mobs to check for |
-| amount    | a     | The range of mobs to check for |
-| radius    | r     | The radius to check            |
 
----
-
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - mobsInRadius{types=NewZombie;amount=5to10;radius=15}
 ```
-Conditions:
-- mobsInRadius{types=NewZombie;amount=5to10;radius=15}
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
