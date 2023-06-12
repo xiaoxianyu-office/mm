@@ -1,5 +1,5 @@
 ## Description
-Checks against the entity's size.  
+Checks the size of the target entity.  
 Valid entities: `Slime`, `Magmacube`, `Phantom`
 
 
