@@ -1,15 +1,13 @@
-**Description:** checks for the current lunar phase
+## Description
+Checks for the current lunar phase
 
----
 
-**Attributes:**
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| phases    | p, phase  | the lunar phase/s you want to check for. Can be a list.              | 0       |
 
-| Attribute  | Alias      | Description                             |
-| ---------- | ---------- | --------------------------------------- |
-| phases     | p, phase   | the lunar phase/s you want to check for |
-
----
-
+### Phase Attribute
 Please note that you **MUST** use the phase number. This chart is here to help you match the lunar phase to its number.
 
 |   Phase Name    | Phase Number |
@@ -23,21 +21,13 @@ Please note that you **MUST** use the phase number. This chart is here to help y
 | First Quarter   |       6      |
 | Waxing Gibbous  |       7      |
 
----
 
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - lunarphase{p=0} true
 ```
-Conditions:
-- lunarphase{p=0} true
+```yaml
+  Conditions:
+  - lunarphase{p=0,2,4,6} true
 ```
-```
-Conditions:
-- lunarphase{p=0,2,4,6} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
