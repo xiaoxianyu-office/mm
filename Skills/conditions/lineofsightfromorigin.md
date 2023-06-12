@@ -1,24 +1,17 @@
-**Description:** Tests if the target is within line of sight of the origin of the metaskill. In other words, it checks if the entity being compared can be seen, in any way or direction, from the origin of the metaskill.
+## Description
+Tests if the target is within line of sight of the origin of the metaskill. In other words, it checks if the entity being compared can be seen, in any way or direction, from the origin of the metaskill.
 
----
 
-**Attributes:**
+## Attributes
+> *This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
 
----
-
-**Examples:**
-
+## Examples
 ```yaml
-TargetConditions:
-- lineofsightfromorigin 
+  TargetConditions:
+  - lineofsightfromorigin 
 ```
 
----
 
-**Extra Information:**
-
-- [x] Type: Compare
+## Aliases
+- [x] inlineofsightfromorigin
