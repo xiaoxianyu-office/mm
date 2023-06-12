@@ -1,24 +1,16 @@
-**Description:** Tests if the target is within line of sight of the caster
+## Description
+Tests if the target is within line of sight of the caster
 
----
 
-**Attributes:**
+## Attributes
+> *This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
-
----
-
-**Examples:**
-
-```
-Conditions:
-- lineofsight
+## Examples
+```yaml
+  TargetConditions:
+  - lineofsight
 ```
 
----
 
-**Extra Information:**
-
-- [x] Type: Compare
+## Aliases
+- [x] inlineofsight
