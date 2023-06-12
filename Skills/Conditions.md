@@ -192,6 +192,7 @@ Conditions
 | [LightLevelFromBlocks](/skills/conditions/lightlevelfromblocks)               | Location | Tests the light level originating from light-emitting blocks at the target location       |
 | [LineOfSight](/skills/conditions/lineofsight)                                 | Compare  | Tests if the target is within line of sight of the caster                                    |
 | [LineOfSightFromOrigin](/skills/conditions/lineofsightfromorigin)             | Compare  | Tests if the target is within line of sight of the caster                                    |
+| [LivingInRadius](/skills/conditions/LivingInRadius)                           | Location | Matches a range to how many living entities are in the given radius                       |
 | [LunarPhase](/skills/conditions/lunarphase)                                   | Location | Checks the target world's lunar phase                                                      |
 | [MobSize](/skills/skills/conditions/mobsize)                                  | Entity   | Checks the size of the target entity                                                       |
 | [MobsInRadius](/skills/conditions/mobsinradius)                               | Location | Checks how many mobs are in a given radius                                                 |
