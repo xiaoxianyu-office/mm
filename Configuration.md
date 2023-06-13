@@ -3,7 +3,7 @@
 # http://www.mythiccraft.io
 #  
 Configuration:
-  Version: 5.0.3
+  Version: 5.2
   General:
     AllowMetrics: true
     CheckForUpdates: true
@@ -11,12 +11,12 @@ Configuration:
     DebugLevel: 0
     ErrorLogging: true
     Language: enUS
-    UseVolatileFeatures: true
     SendGiveItemFeedback: true
   Clock:
     ClockInterval: 1
     SaveInterval: 5
-    SpawnsInterval: 2 
+    SpawnsInterval: 2
+    RandomSpawningInterval: 1
     ScannerInterval: 10
     CleanupInterval: 600
   Components:
@@ -46,7 +46,7 @@ Configuration:
   Mobs:
     DespawnByDefault: true
     EnableAIModifiers: true
-    EnableTimerSkills: true 
+    EnableTimerSkills: true
     EnableThreatTables: true
     EnablePlayerFactions: true
     EnableLegacySkills: false
@@ -55,6 +55,7 @@ Configuration:
     Scaling:
       Default:
         Enabled: true
+        ScaleVanillaMobs: true
         PerBlocksFromSpawn: 250
       world2:
         Enabled: true
@@ -65,23 +66,18 @@ Configuration:
     BossBar:
       UpdateInterval: 20
     ScalingEquations:
-      Health: 'V * ((1.05)^(L-1))'
-      Damage: 'V * ((1.05)^(L-1))'
+      Health: V * ((1.05)^(L-1))
+      Damage: V * ((1.05)^(L-1))
     DefaultLevelModifiers:
       Health: 0.1
       Armor: 0
       Damage: 0
       KnockbackResistance: 0
       Power: 0
-    ShowHealth:
-      Radius: 25
-      Format: $mobname: $mobhp/$mobmaxhp
-    
   RandomSpawning:
     DisableVanillaSpawns: false
     GenerateSpawnPoints: false
-    MaxMobsPerChunk: 2
-    SpawnRadiusPerPlayer: 64
+    MaxMobsMultiplier: 1.0
     SpawnRadiusPerPlayerY: 32
     DespawnLazyRandomMobs: true
     MaxGenerationTime: 20
@@ -106,4 +102,5 @@ Configuration:
       Enabled: true
       ShowMoneyMessage: true
       MoneyMessageFormat: '&7You receive <drop.amount> currency for slaying <dropper.name>'
+
 ```
