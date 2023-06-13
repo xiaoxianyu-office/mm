@@ -289,7 +289,7 @@ In this instance, the mob will first send a message to every player in a 10 bloc
 
 
 ## Meta Targeters
-Another relevant topic is that of [Meta Targeter]s. Those are targeters that, simply put, will evaluate what the inherited targets are and, based on that, return other appropriate targets itself.
+Another relevant topic is that of [Meta Targeter]s. Those are targeters that, simply put, will evaluate what the inherited targets are and, based on that, return other appropriate targets themselves.
 
 ```yaml
 #MOB FILE
