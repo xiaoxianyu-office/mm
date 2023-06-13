@@ -2,6 +2,7 @@ Mechanic: Close Inventory
 =========================
 
 Will close the inventory of the target (must be a player to function).
+
 REQUIRES `forcesync=true`.
 
 Attributes
@@ -15,7 +16,7 @@ Attributes
 
 Examples
 --------
-
+```yaml
       Skills:
       - closeinventory{forcesync=true} @target ~onTimer:100
-      - ...
+```
