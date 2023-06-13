@@ -24,9 +24,10 @@ mob if it is possible based on the base velocity.
 
 Examples
 --------
-
+```yaml
     DeathGrip:
       Skills:
       - pull{velocity=10} @target
 
       - pull{v=6;to=true} @PIR{r=10}
+```
