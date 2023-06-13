@@ -11,6 +11,7 @@ If using threat tables, will increase threat to the threshold to change targets 
 
 Examples
 --------
-```
-- setTarget @trigger ~onInteract
+```yaml
+      Skills:
+      - setTarget @trigger ~onInteract
 ```
