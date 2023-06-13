@@ -1,6 +1,4 @@
-Mechanic: Projectile
-====================
-
+## Description
 The Projectile skill fires a meta-"projectile" that can be decorated
 using particle and sound effects.  
 It's great for creating complex, aesthetically pleasing skills, such as
@@ -8,20 +6,20 @@ shadow bolts, balls of ice, or even meteors.
 It has a lot of options(more than any other skill) and can be a bit of a
 nightmare to jump into without knowing what you're doing.  
 It will disappear after reached targeted entity or location.  
-Doesn't work on **Minecraft below 1.13**(excluding 1.13) which using **MythicMobs above 4.11**(excluding 4.11)
 
-Attributes
-----------
+It is of importance to note that other mechanics (such as [Missile](/skills/mechanics/missile)) are an "extension" of this mechanic, and can as such use a great deal of this mechanic's attributes. The attributes that those mechanics can use are listen in [Inheritable Attributes](/skills/mechanics/projectile#inheritable-attributes)
 
-| Attribute            | Aliases     | Description                                                                                                                                                                                             | Default Value     |
-|----------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| onStart               | oS          | Meta-Skill executed when the projectile starts at the projectile's origin location.                                                                                                                       | None              |
-| onTick               | oT          | Meta-Skill executed every [interval] ticks at the projectile's origin location.                                                                                                                       | None              |
-| onHit                | oH          | Meta-Skill executed when the projectile hits entities that allow be hit. Targets hit are inherited by the meta-skill.                                                                                                    | None              |
-| onEnd                | oE          | Meta-Skill executed when the projectile ends.                                                                                                                                                           | None              |
-| onBounce             |             | Meta-Skill executed when the projectile bounces. **Premium Only** Mechanic.                                                                                                                                                        | None              |
-| onHitBlockSkill      |onhitblock, ohb | Meta-Skill executed when the projectile hits a block.                                                                                                                                                        | None              |
-| Type                 |            | The "type" of projectile. Default projectiles are launched from the mob's location towards the target. METEOR type projectiles fall from the sky above the target.                                      | NORMAL            |
+
+## Attributes
+### Inheritable Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| OnStartSkill | onStart, oS | Meta-Skill executed when the projectile starts at the projectile's origin location.                                                                                      |         |
+| onTickSkill  | onTick, oT  | Meta-Skill executed every [interval] ticks at the projectile's origin location                                                                                       |         |
+| onHitSkill   | onHit, oH   | Meta-Skill executed when the projectile hits entities that allow be hit. Targets hit are inherited by the meta-skill.                                                   |         |
+| onEndSkill   | onEnd, oE   | Meta-Skill executed when the projectile ends.                   |         |
+| onBounceSkill| onBounce    |Meta-Skill executed when the projectile bounces. **Premium Only**.|        |
+| onHitBlockSkill |onHitBlock, ohb | Meta-Skill executed when the projectile hits a block.     |         |
 | Interval             | i           | How often (in ticks) the projectile updates its position                                                                                                                                                | 4                 |
 | HorizontalRadius     | hRadius, hR | The horizontal radius entities will be hit in around the projectile.                                                                                                                                    | 1.25              |
 | VerticalRadius       | vRadius, vR | The vertical radius entities will be hit in around the projectile.                                                                                                                                      | Horizontal Radius |
@@ -52,6 +50,10 @@ Attributes
 | BounceVelocity    |    | Every time the projectile bounces, its velocity will be multiplied by this value. **Premium Only** Mechanic     | 0.9
 | hitConditions     |    | A list of conditions that a target must meet in order for the projectile to be able to hit it. **Premium Only** Mechanic  |  |
 | bulletEnchanted   | enchanted | Makes the projectile enchanted. Works for armorstand/item display/item bullets | false |
+
+### Projectile-Specific Attributes
+| Type                 |            | The "type" of projectile. Default projectiles are launched from the mob's location towards the target. METEOR type projectiles fall from the sky above the target.                                      | NORMAL            |
+
 
 Special Notes
 -------------
