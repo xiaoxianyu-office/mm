@@ -7,12 +7,12 @@ Examples
 --------
 
 This mob would despawn 10 seconds after spawning:
-
+```yaml
       Skills:
       - remove{delay=200} @self ~onSpawn
-
+```
 This skill despawns the mob immediately when it is right clicked.
-
+```yaml
       Skills:
       - remove @self ~onInteract
-      - ...
+```
