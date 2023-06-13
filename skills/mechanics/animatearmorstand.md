@@ -23,7 +23,8 @@ Attributes
 
 Examples
 --------
-
+```yaml
     Skills:
     - animatearmorstand{d=10;leftarm=90,0,0;rightarm=270,0,0;ignoreempty=false}
     - ...
+```
