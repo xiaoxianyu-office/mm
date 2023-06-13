@@ -60,7 +60,7 @@ Only applicable to playerhead type items:
   - Use http://mcuuid.net/ to find the trimmed uuid of the player
   - This option also supports hashes. 
 For example:
-```
+```yaml
 Options:
   SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdlMGFhOTQzM2RiYTliNzU5MzJhMTFkYzk0ZDQwNmJkZTE5ZTg2MzUxNDIxNDkyYjNlZDM3OGM4ZTFhN2NjIn19fQ==
 ```
@@ -82,7 +82,7 @@ Dyeable Items
 * Added options for FIREWORK and FIREWORK_CHARGE items
 * For Colors and FadeColors, you can specify what colors you want using the format **RED,GREEN,BLUE**
 
-```
+```yaml
 Firework:
   Colors:
   - 255,0,255
@@ -95,7 +95,7 @@ Firework:
 
 Examples
 ========
-```
+```yaml
 ClothSlippers:
   Id: 301
   Data: 0
@@ -110,14 +110,14 @@ ClothSlippers:
     Color: 200,200,200
 ```
 Lots of possible options included:
-```
+```yaml
 TestHead:
   Id: 397
   Data: 3
   Options:
     Player: Rickyling
 ```
-```
+```yaml
 dat_item_though:
   Id: banner
   Data: 4
@@ -136,7 +136,7 @@ dat_item_though:
   - ARROW_FIRE:10
 ```
 An example of a firework rocket
-```
+```yaml
 FireworkGoBoom:
   Id: FIREWORK_ROCKET
   Display: 'Rocket'
