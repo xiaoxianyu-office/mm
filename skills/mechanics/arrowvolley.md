@@ -20,10 +20,10 @@ Note that spread values must be very high to be noticed!
 
 Examples
 --------
-
-      Skills:
-      - arrowvolley{a=20;s=25;v=10;f=50;rd=200} @Target
-
-This will fire 20 arrows, with a spread of 25, at a speed of 10,
+This example will fire 20 arrows, with a spread of 25, at a speed of 10,
 settings anything they impact on fire for 50 ticks (2.5 seconds), and
 then remove themselves after 200 ticks (10 seconds).
+```yaml
+      Skills:
+      - arrowvolley{a=20;s=25;v=10;f=50;rd=200} @Target
+```
