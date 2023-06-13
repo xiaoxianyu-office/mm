@@ -1,6 +1,6 @@
 Mechanic: Show Entity
 --------------------------
-Shows the hidden caster to the targeted players
+Shows the hidden caster to the targeted players.
 
 **Attributes**
 
@@ -10,6 +10,7 @@ Shows the hidden caster to the targeted players
 
 Examples
 --------
-```
-- showEntity{} @NearestPlayer{r=10}
+```yaml
+      Skills:
+      - showEntity{} @NearestPlayer{r=10}
 ```
