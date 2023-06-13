@@ -1,6 +1,6 @@
 Mechanic: Bone Meal
 --------------------------
-Applies a bone meal effect to the target blocks
+Applies a bone meal effect to the target blocks.
 
 **Attributes**
 
@@ -11,6 +11,7 @@ Applies a bone meal effect to the target blocks
 Examples
 --------
 
-```
-- bonemeal @selflocation{y=-1}
+```yaml
+      Skills:
+      - bonemeal @selflocation{y=-1}
 ```
