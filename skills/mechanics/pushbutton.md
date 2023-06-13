@@ -16,7 +16,8 @@ Attributes
 
 Examples
 --------
-
+```yaml
     HitSecretButton:
       Skills:
       - pushbutton{x=15;y=67;z=-213}
+```
