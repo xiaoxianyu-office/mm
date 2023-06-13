@@ -1,6 +1,6 @@
 Mechanic: Set Tongue Target
 --------------------------
-Sets the tongue target for a frog caster to the target entity
+Sets the tongue target for a frog caster to the target entity.
 
 **Attributes**
 
@@ -10,6 +10,7 @@ Sets the tongue target for a frog caster to the target entity
 
 Examples
 --------
-```
-- setTongueTarget @trigger ~onInteract
+```yaml
+      Skills:
+      - setTongueTarget @trigger ~onInteract
 ```
