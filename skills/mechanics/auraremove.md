@@ -19,7 +19,8 @@ You can now specify "ANY" to remove all auras from the target
 
 Examples
 --------
-
+```yaml
       Skills:
       - auraremove{aura=Ice;stacks=10} @self ~onTimer:200
       - ...
+```
