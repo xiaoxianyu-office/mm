@@ -1,24 +1,22 @@
-**Description:** Checks how many players are in a radius.
+## Description
+Checks how many players are in a radius.
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases        | Description               | Default |
-| --------- | -------------  | ------------------------- | ------- |
-| amount | a | the given range value to check | >0 |
-| radius | range, r | the given radius to check | 32 |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| amount    | a         | The given range value to check                                       | >0      |
+| radius    | range, r  | The given radius to check                                            | 32      |
 
-Example
-------
 
+## Examples
+```yaml
+  Conditions:
+  - playersinradius{a=>3;r=16}
 ```
-Conditions:
-- playersinradius{a=>3;r=16}
-```
 
-Extra Information
-----------
 
-- [x] Alias: pir, playerinradius
-- [x] Type: Location
+## Aliases
+- [x] pir
+- [x] playerInRadius
