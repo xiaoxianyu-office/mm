@@ -1,9 +1,13 @@
-**Description**: Checks is the server is running a specific minecraft version
+## Description
+Checks is the server is running a specific minecraft version
+
 
 ## Attributes
+
 | Attribute | Alias       | Description                                                        | Default |
 |-----------|-------------|--------------------------------------------------------------------|---------|
-| v         |             | The version to check for                                           |         |
+| version   | sv, v       | The version to check for                                           | 1.19.3  |
+
 
 ## Examples
 ```yaml
@@ -12,5 +16,5 @@
 ```
 
 ## Aliases
-  - [x] server
-  - [x] version
+- [x] server
+- [x] version
