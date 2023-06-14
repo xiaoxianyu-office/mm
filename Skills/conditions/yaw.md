@@ -1,29 +1,21 @@
-**Description:** Checks the yaw of the target entity against a range.
+## Description
+Checks the yaw of the target entity against a range.
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| yaw | y | The yaw to check for |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| yaw       | y         | The yaw to check for                                                 | 0       |
 
----
 
-**Examples:**
-
-```
+## Examples
+```yaml
   Conditions:
   - yaw{y=90to180} true
 ```
 
-```
+```yaml
   Conditions:
   - yaw{y=>0} true
 ```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
