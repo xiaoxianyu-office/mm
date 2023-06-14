@@ -15,7 +15,7 @@ This condition checks if the target entity is wearing the selected item.
 | ---- | ----- | ---- | ---- | ---- | ------- |  
 
 
-##Examples
+## Examples
 ```yaml
 Conditions:
   - wearing{slot=HAND;m=IRON_SWORD} true
@@ -26,4 +26,4 @@ Conditions:
 ## Aliases
 - [x] iswearing 
 - [x] wielding 
-- [x] iswielding  
+- [x] iswielding
