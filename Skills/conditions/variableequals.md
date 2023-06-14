@@ -15,12 +15,12 @@ A condition that checks the value of a [variable](/Skills/Variables).
 
 In this example, the target players would only hear growling from any number of nearby bears once every 10 minutes.
 
-```
+```yaml
 BearMob:
   Skills:
   - skill:BearGrowl @PlayersInRadius{r=40} ~onTimer:60
 ```
-```
+```yaml
 BearGrowl:
   TargetConditions:
   - variableEquals{var=target.heardbear;value="yes"} cancel
@@ -29,7 +29,7 @@ BearGrowl:
   - setvariable{var=target.heardbear;value="yes";duration=6000}
 ```
 In this example, the skill would only fire if the global variable “poison_storm” is set to true.
-```
+```yaml
 PoisonStormDamage:
   Conditions:
   - varEquals{var=global.poison_storm;value="yes"}
