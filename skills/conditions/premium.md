@@ -1,17 +1,17 @@
-**Description**: Checks if MythicMobs Premium is running on the server
+## Description
+Checks if MythicMobs Premium is running on the server
 
----
 
+## Attributes
+> *This condition has no attributes*
 
-**Attributes**
-
-| Attribute | Alias       | Description                                                                                     | Default |
-|-----------|-------------|-------------------------------------------------------------------------------------------------|---------|
-|     none      |     none        |     none         |    none     |
-
-Examples
----
+## Examples
 ```yml
-Conditions:
+  Conditions:
   - premium true
 ```
+
+
+## Aliases
+- [x] ispremium
+- [x] iscool
