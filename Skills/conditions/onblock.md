@@ -1,37 +1,22 @@
-**Description:** Matches the block the target entity is standing on
+## Description
+Matches the block the target entity is standing on.  
+A list of available materials can be found on the [Spigot Javadoc].(https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) 
 
-**Type:** Location
 
----
+## Attributes
 
-**Attributes:**
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| material  | m, type, block, b | A list of materials. The condition will match if one is found| STONE   |
 
-| Attribute | Alias | Description         |
-| --------- | ----- | ------------------- |
-| material  | m     | A list of materials |
 
----
-
-Valid for any Bukkit material type.
-
-https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
-
----
-
-**Examples:**
-
-```
-TargetConditions:
-- onblock{m=BEDROCK,OAK_LEAVES,ACACIA_FENCE} false
+## Examples
+```yaml
+  TargetConditions:
+  - onblock{m=BEDROCK,OAK_LEAVES,ACACIA_FENCE} false
 ```
 
+```yaml
+  TargetConditions:
+  - onblock{m=DIRT,STONE,GRAVEL} true
 ```
-TargetConditions:
-- onblock{m=DIRT,STONE,GRAVEL} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
