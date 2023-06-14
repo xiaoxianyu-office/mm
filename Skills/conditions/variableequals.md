@@ -1,18 +1,17 @@
-**Description:** A condition that checks the value of a [variable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Variables).
+## Description
+A condition that checks the value of a [variable](/Skills/Variables).
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| variable| name, n, var, key, k | The name of the variable. Can optionally be prefixed with scope|
-| value| val, v | The value that the variable must equal to return true. Must be applicable for type or the mechanic will fail. Should be surrounded in double-quotes if using spaces. Value can also include placeholders, even from PlaceholderAPI. |
-| scope| s| The [scope ](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Variables#variable-scopes)of the variable, e.g. where the variable will be located|
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| variable  | name, n, var, key, k | The name of the variable. Can optionally be prefixed with scope|    |
+| value| val, v | The value that the variable must equal to return true. Must be applicable for type or the mechanic will fail. Should be surrounded in double-quotes if using spaces. Value can also include placeholders, even from PlaceholderAPI.                                                        |         |
+| scope| s| The [scope](/Skills/Variables#variable-scopes)of the variable, e.g. where the variable is located                                                                                        |         |
 
----
 
-**Examples:**
+## Examples
 
 In this example, the target players would only hear growling from any number of nearby bears once every 10 minutes.
 
@@ -39,9 +38,8 @@ PoisonStormDamage:
   - damage{amount=1;ignorearmor=true}
 ```
 
----
 
-**Extra Information:**
-
-- [x] Aliases: variableeq, varequals, vareq
-- [x] Type: Skill
+## Aliases
+- [x] variableeq
+- [x] varequals
+- [x] vareq
