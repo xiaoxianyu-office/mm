@@ -1,22 +1,16 @@
-**Description:** Checks if the target entity is the owner of the caster. 
+## Description
+Checks if the target entity is the owner of the caster. 
 
-The mob's owner must be set using the Set Owner mechanic if it's not a wolf.
+- If the caster is a tamable mob, if will check if the target entity is the mob's "vanilla" owner
+- If the caster is not a tamable mob, then to match the target entity must have been set as the owner via the [SetOwner](/skills/mechanics/setowner) mechanic
 
-**Type:** Compare
 
----
+## Attributes
+> *This condition has no attributes*
 
-**Attributes:**
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
-
----
-
-**Examples:**
-
-```
-TargetConditions:
-- owner{} true
+## Examples:
+```yaml
+  TargetConditions:
+  - owner{} true
 ```
