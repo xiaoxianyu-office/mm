@@ -1,17 +1,16 @@
-**Description**: Checks if the given skill is in cooldown for the target
+## Description
+Checks if the given skill is in cooldown for the target entity
 
----
+
+## Attributes
+
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| skill     | s         | The metaskill to check                                               |         |
 
 
-**Attributes**
-
-| Attribute | Alias       | Description                                                                                     | Default |
-|-----------|-------------|-------------------------------------------------------------------------------------------------|---------|
-| skill |   | The metaskill to check |     |
-
-Examples
----
+## Examples
 ```yaml
-TargetConditions:
+  TargetConditions:
   - skillOnCooldown{skill=TestSkill}
 ```
