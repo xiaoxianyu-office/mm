@@ -1,25 +1,17 @@
-**Description:** If it's raining in the target world.
+## Description
+Checks if it's raining in the target world.
 
----
 
-**Attributes:**
+## Attributes
+> *This condition has no attributes*
 
-| Attribute | Alias        | Description               |
-| --------- | -------------  | ------------------------- |
-|  |  |  |
 
----
-
-**Examples:**
-
-```
+## Examples
+```yaml
   Conditions:
   - raining{} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Alias: inraining
-- [x] Type: Location
+## Aliases
+- [x] israining
