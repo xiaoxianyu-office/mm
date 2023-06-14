@@ -221,11 +221,11 @@ Conditions
 | [OwnerIsOnline](/skills/conditions/ownerisonline)                             | Entity   | Checks if the owner of the target mob is online, if the owner is a player                     |
 | [Pitch](/skills/conditions/pitch)                                             | Entity   | Checks if the pitch of the target entity is within a range                                    |
 | [PlayerKills](/skills/conditions/playerkills)                                 | Entity   | Matches how many players the target mob has killed                                          |
+| [PlayerNotWithin](/skills/conditions/playernotwithin)                         | Location | Checks if any players are within a radius of the target                                       |
+| [PlayerWithin](/skills/conditions/playerwithin)                               | Location | Checks if any players are within a radius of the target                                       |
 | [PlayersInRadius](/skills/conditions/playersinradius)                         | Entity   | Checks how many players are in a radius                                                    |
 | [PlayersOnline](/skills/conditions/playersonline)                             | Meta     | Matches the number of players online                                                        |
 | [PlayersInWorld](skills/conditions/playersinworld)                            | Meta     | Matches the number of players in the caster's world                                         |
-| [PlayerNotWithin](/skills/conditions/playernotwithin)                         | Location | Checks if any players are within a radius of the target                                       |
-| [PlayerWithin](/skills/conditions/playerwithin)                               | Location | Checks if any players are within a radius of the target                                       |
 | [Plugin](/skills/conditions/plugin)                                           | Meta     | Checks if the specified plugin is running on the server                                       |
 | [Premium](/skills/conditions/premium)                                         | Meta     | Checks if MythicMobs Premium is running on the server                                     |
 | [Raining](/skills/conditions/raining)                                         | Location | If it's raining in the target world                                                     |
