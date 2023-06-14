@@ -1,24 +1,13 @@
-**Description:** Checks if the owner of the target mob is online, if the owner is a player
+## Description
+Checks if the owner of the target mob is online
 
----
 
-**Attributes:**
+## Attributes
+> *This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
 
----
-
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - ownerisonline{} true
 ```
-Conditions:
-- ownerisonline{} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
