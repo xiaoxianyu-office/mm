@@ -1,16 +1,19 @@
-**Description:** If it's thundering in the target world.
+## Description
+Checks if it's thundering in the target world.
 
----
 
-**Examples:**
+## Attributes
+> *This condition has no attributes*
 
-```
+
+## Examples
+```yaml
   Conditions:
   - thundering{} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Type: Location
+## Aliases
+- [x] stormy
+- [x] isthundering
+- [x] isstormy
