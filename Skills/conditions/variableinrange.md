@@ -1,19 +1,17 @@
-**Description:** Checks if the given numeric variable is within a certain range.
+## Description
+Checks if the given numeric variable is within a certain range.
 
----
 
-**Attributes:**
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| variable  | name, n, var, key, k | Variable to match                                         |         |
+| value     | val, v, range, r     | A number range to match                                   |         | 
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| variable | name, n, var, key, k | Variable to match |
-| value| val, v| A number range to match|
 
----
+## Examples
 
-**Examples:**
-
-```
+```yaml
   Conditions:
   - variableInRange{var=caster.Cooldown;value=<0.01} cancel
   Skills:
@@ -21,9 +19,7 @@
   - message{m="&7Cooldown over!"}
 ```
 
----
 
-**Extra Information:**
-
-- [x] Aliases: varinrange, varrange
-- [x] Type: Skill
+## Aliases
+- [x] varinrange
+- [x] varrange
