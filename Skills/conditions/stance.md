@@ -1,25 +1,17 @@
-**Description:** Checks the stance of the target mob.
+## Description
+Checks the stance of the target mob.
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| stance| s | The stance to match. |
-| strict| str | Whether to match exactly. Defaults to false. |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| stance    | s         | The stance to match                                                  | DEFAULT |
+| strict    | str       | Whether to match exactly                                             | false   |
 
----
 
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - stance{s=CombatStance;str=true} true
 ```
-Conditions:
-- stance{s=CombatStance;str=true} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
