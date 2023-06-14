@@ -247,9 +247,9 @@ Conditions
 | [TargetNotWithin](/skills/conditions/targetnotwithin)                         | Entity   | Tests if the target's target is not within a certain distance                                |
 | [Targets](/skills/conditions/targets)                                         | Meta     | Tests if the number of inherited targets from the parent skilltree matches the given range.  |
 | [Thundering](/skills/conditions/thundering)                                   | Location | If it's thundering in the target world                                                  |
+| [VariableEquals](/skills/conditions/variableequals)                           | Meta     | Checks if the given variable has a particular value.                                          |
 | [VariableInRange](/skills/conditions/variableinrange)                         | Meta     | Checks if the given numeric variable is within a certain range.                               |
 | [VariableIsSet](/skills/conditions/variableisset)                             | Meta     | Checks if the given variable is set.                                                          |
-| [VariableEquals](/skills/conditions/variableequals)                           | Meta     | Checks if the given variable has a particular value.                                          |
 | [Wearing](/skills/conditions/wearing)                                         | Entity   | Tests what the target entity has equipped.                                                 |
 | [World](/skills/conditions/world)                                             | Location | Checks the name of the target world.                                                       |
 | [WorldTime](/skills/conditions/worldtime)                                     | Location | Matches a range against the target location's world's time.                               |
