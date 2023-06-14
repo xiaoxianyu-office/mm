@@ -1,25 +1,22 @@
-**Description:** Checks if the given [variable ](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Variables)is set.
+## Description
+Checks if the given [variable](/Skills/Variables)is set.
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases | Description |
-| --------- | ----- | ----------- |
-| variable  | name, n, var, key, k  | variable to match        |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| variable  | name, n, var, key, k  | variable to match                                        |         |
 
----
 
-**Examples:**
+## Examples
 
+```yaml
+  Conditions:
+  - variableisset{var=target.dazed} true
 ```
-Conditions:
-- variableisset{var=target.dazed} true
-```
 
----
 
-**Extra Information:**
-
-- [x] Aliases: varisset, varset
-- [x] Type: Skill
+## Aliases
+- [x] varisset
+- [x] varset
