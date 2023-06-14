@@ -1,9 +1,13 @@
-**Description**: Checks is the server is running a specific minecraft NMS version
+## Description
+Checks is the server is running a specific minecraft NMS version
+
 
 ## Attributes
+
 | Attribute | Alias       | Description                                                        | Default |
 |-----------|-------------|--------------------------------------------------------------------|---------|
-| v         |             | The version to check for                                           |         |
+| version   | sv, v       | The version to check for                                        | v1_19_R1_2 |
+
 
 ## Examples
 ```yaml
@@ -12,5 +16,5 @@
 ```
 
 ## Aliases
-  - [x] servernms
-  - [x] nmsversion
+- [x] servernms
+- [x] nmsversion
