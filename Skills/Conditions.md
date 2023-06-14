@@ -202,7 +202,7 @@ Conditions
 | [MoistureLevel](/skills/conditions/moisturelevel)                             | Location | Checks if the target block of farmland has the specified level of hydratation                 |
 | [MotionX](/skills/conditions/motionx)                                         | Entity   | Checks the X motion of the target entity against a range.                                    |
 | [MotionY](/skills/conditions/motiony)                                         | Entity   | Checks the Y motion of the target entity against a range.                                    |
-| [MotionZ](/skills/conditions/motionz)                                         | Entity   | If the target has a velocity greater than zero                                                |
+| [MotionZ](/skills/conditions/motionz)                                         | Entity   | Checks the Z motion of the target entity against a range.                                    |
 | [Mounted](/skills/conditions/mounted)                                         | Entity   | If the target entity is riding a mount/vehicle                                                |
 | [Moving](/skills/conditions/moving)                                           | Entity   | If the target has a velocity greater than zero                                                |
 | [MythicMobType](/skills/conditions/mythicmobtype)                             | Entity   | Checks the MythicMob type of the target mob                                                |
@@ -250,6 +250,7 @@ Conditions
 | [VariableEquals](/skills/conditions/variableequals)                           | Meta     | Checks if the given variable has a particular value.                                          |
 | [VariableInRange](/skills/conditions/variableinrange)                         | Meta     | Checks if the given numeric variable is within a certain range.                               |
 | [VariableIsSet](/skills/conditions/variableisset)                             | Meta     | Checks if the given variable is set.                                                          |
+| [Velocity](/skills/conditions/Velocity)                                       | Entity   | Checks the velocity of the target entity against a range.                                  |
 | [Wearing](/skills/conditions/wearing)                                         | Entity   | Tests what the target entity has equipped.                                                 |
 | [World](/skills/conditions/world)                                             | Location | Checks the name of the target world.                                                       |
 | [WorldTime](/skills/conditions/worldtime)                                     | Location | Matches a range against the target location's world's time.                               |
