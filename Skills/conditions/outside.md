@@ -1,24 +1,13 @@
-**Description:** If the target has open sky above them
+Description
+If the target has open sky above them
 
----
 
-**Attributes:**
+## Attributes
+> *This condition has no attributes*
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
 
----
-
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - outside{} true
 ```
-Conditions:
-- outside{} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
