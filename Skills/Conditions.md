@@ -224,8 +224,8 @@ Conditions
 | [PlayerNotWithin](/skills/conditions/playernotwithin)                         | Location | Checks if any players are within a radius of the target                                       |
 | [PlayerWithin](/skills/conditions/playerwithin)                               | Location | Checks if any players are within a radius of the target                                       |
 | [PlayersInRadius](/skills/conditions/playersinradius)                         | Entity   | Checks how many players are in a radius                                                    |
-| [PlayersOnline](/skills/conditions/playersonline)                             | Meta     | Matches the number of players online                                                        |
 | [PlayersInWorld](skills/conditions/playersinworld)                            | Meta     | Matches the number of players in the caster's world                                         |
+| [PlayersOnline](/skills/conditions/playersonline)                             | Meta     | Matches the number of players online                                                        |
 | [Plugin](/skills/conditions/plugin)                                           | Meta     | Checks if the specified plugin is running on the server                                       |
 | [Premium](/skills/conditions/premium)                                         | Meta     | Checks if MythicMobs Premium is running on the server                                     |
 | [Raining](/skills/conditions/raining)                                         | Location | If it's raining in the target world                                                     |
