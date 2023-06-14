@@ -1,17 +1,16 @@
-**Description**: Matches the number of players online
+## Description
+Matches the number of players online
 
----
+
+## Attributes
+
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| amount    | a         | The number of players to check for. Can be a range                   | 0       |
 
 
-**Attributes**
-
-| Attribute | Alias       | Description                                                                                     | Default |
-|-----------|-------------|-------------------------------------------------------------------------------------------------|---------|
-| amount |   | The number of players to check for. Can be a range |     |
-
-Examples
----
+## Examples
 ```yaml
-Conditions:
+  Conditions:
   - playersOnline{amount=>5}
 ```
