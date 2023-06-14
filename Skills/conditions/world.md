@@ -1,24 +1,16 @@
-**Description:** Checks the name of the target world.
+## Description
+Checks the name of the target world.
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| world| w| The world you wish to check for|
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| world     | w         | The world you wish to check for                               | tutorial_world |
 
----
 
-**Examples:**
-
-```
+## Examples
+```yaml
   Conditions:
   - world{w=tutorial_world} true
 ```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
