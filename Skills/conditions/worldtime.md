@@ -1,24 +1,16 @@
-**Description:** Matches a range against the target location's world's time.
+## Description
+Matches a range against the target location's world's time.
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| time| t| A range of time to check|
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| time      | t         | A range of time to check                                             | 0       |
 
----
 
-**Examples:**
-
-```
+## Examples
+```yaml
   Conditions:
   - worldtime{t=0to6000} true
 ```
-
----
-
-**Extra Information:**
-
-- [x] Type: Location
