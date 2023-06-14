@@ -1,24 +1,16 @@
-**Description:** Checks the difference in y value (height) between the target entity and the caster.
+## Description
+Checks the difference in y value (height) between the target entity and the caster.
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| yDiff|  | The y difference to check |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| difference| diff, d   | The y difference to check                                            |         |
 
----
 
-**Examples:**
-
-```
+## Examples
+```yaml
   TargetConditions:
   - yDiff{diff=>5} true
 ```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
