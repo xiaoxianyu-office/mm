@@ -1,25 +1,20 @@
-**Description:** If the target is within the given WorldGuard region.
+## Description
+Checks if the target is within the given WorldGuard region.
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| region| r, name, n | The region to check|
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| region    | r, name, n| The region to check                                                  |         |
 
----
 
-**Examples:**
-
-```
+## Examples
+```yaml
   Conditions:
   - region{r=someregion} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Alias: inregion
-- [x] Type: Location
+## Aliases
+- [x] inregion
