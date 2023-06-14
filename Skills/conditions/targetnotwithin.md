@@ -1,19 +1,16 @@
-**Description:** Tests if the target's target is not within a certain distance.
----
+## Description
+Tests if the target's target is not within a certain distance.
 
-**Attributes:**
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| distance | d | The distance to match |
+## Attributes
 
-As of July 4th 2022 this has been tested and seems to only be working from mobs, not from players! - tested by Rhikcyn with the guidance of Akim91
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| distance  | d         | Distance to check                                                    | 0       |
 
----
 
-**Examples:**
-
-```
+## Examples
+```yaml
   Conditions:
-  - targetnotwithin{d=5} true
+  - targetnotwithin{d=10} true
 ```
