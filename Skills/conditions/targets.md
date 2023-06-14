@@ -1,29 +1,21 @@
-**Description:** Tests if the number of inherited targets from the parent skilltree matches the given range.
+## Description
+Checks if the number of inherited targets from the parent skilltree matches the given range.
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| amount| a| Range of how many targets to check for|
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| amount    | a         | Range of how many targets to check for                               | >0      |
 
----
 
-**Examples:**
-
-```
+## Examples
+```yaml
   Conditions:
   - targets{a=>0} true
 ```
 
-```
+```yaml
   Conditions:
   - targets{a=0to5} true
 ```
-
----
-
-**Extra Information:**
-
-- [x] Type: Skill
