@@ -1,18 +1,16 @@
-**Description**: Matches if the target location is inside of a structure. Supports wildcards and structures from datapacks.
-
----
-
-
-**Attributes**
-
-| Attribute | Alias       | Description                                                                                     | Default |
-|-----------|-------------|-------------------------------------------------------------------------------------------------|---------|
-| structure |  s         | The structure to check for.|      |
+## Description
+Matches if the target location is inside of a structure. Supports wildcards and structures from datapacks.
 
 
-Examples
----
+## Attributes
+
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| structure | structures, s | The structure to check for. Can be a list.                       | village |
+
+
+## Examples
 ```yml
-Conditions:
+  Conditions:
   - structure{s=minecraft:desert_pyramid} true
 ```
