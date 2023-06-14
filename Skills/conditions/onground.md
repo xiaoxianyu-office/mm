@@ -1,27 +1,16 @@
-**Description:** If the target entity is standing on solid ground
+## Description
+If the target entity is standing on solid ground
 
-**Type:** Entity
+## Attributes
+> *This condition has no attributes*
 
----
 
-**Attributes:**
-
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-|       |   |        |
-
----
-
-**Examples:**
-
-```
-Conditions:
-- onground{} true
+## Examples
+```yaml
+  Conditions:
+  - onground{} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Alias: grounded
-- [x] Type: Location
+## Aliases
+- [x] grounded
