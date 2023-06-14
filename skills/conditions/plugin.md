@@ -1,17 +1,21 @@
-**Description**: Checks if the specified plugin is running on the server
+## Description
+Checks if the specified plugin is running on the server
 
----
+
+## Attributes
+
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| plugin    | pl, p     | The plugin to check for                                           | MythicMobs |
 
 
-**Attributes**
-
-| Attribute | Alias       | Description                                                                                     | Default |
-|-----------|-------------|-------------------------------------------------------------------------------------------------|---------|
-|     p      |                 |     The plugin to check for         |           |
-
-Examples
----
+## Examples
 ```yml
-Conditions:
-  - plugin{p=####} true
+  Conditions:
+  - plugin{p=ThePluginName} true
 ```
+
+
+## Aliases
+- [x] pluginexists
+- [x] hasplugin
