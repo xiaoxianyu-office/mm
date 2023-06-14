@@ -1,24 +1,17 @@
-**Description:** If the weather is sunny in the target world.
+## Description
+Checks if the weather is sunny in the target world.
 
----
 
-**Attributes:**
+## Attributes
+> *This condition has no attributes*
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-|  |  |  |
 
----
-
-**Examples:**
-
-```
+## Examples
+```yaml
   Conditions:
   - sunny{} true
 ```
 
----
 
-**Extra Information:**
-
-- [x] Type: Location
+## Aliases
+- [x] issunny
