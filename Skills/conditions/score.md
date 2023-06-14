@@ -1,26 +1,18 @@
-**Description:** Checks a scoreboard value of the target entity.
+## Description
+Checks a scoreboard value of the target entity.
 
----
 
-**Attributes:**
+## Attributes
 
-| Attribute | Aliases        | Description               |
-| --------- | -------------  | ------------------------- |
-| objective| o| The objective|
-| entry| e| The entry|
-| value| v| The value to match |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| objective | obj, o    | The objective                                                        |         |
+| entry     | ent, e    | The entry                                                            |         |
+| value     | val, v    | The value to match                                                   |         |
 
----
 
-**Examples:**
-
+## Examples
+```yaml
+  Conditions:
+  - score{o=PlayerKills;e=Akim91;v=10} true
 ```
-Conditions:
-- score{o=PlayerKills;e=Akim91;v=10} true
-```
-
----
-
-**Extra Information:**
-
-- [x] Type: Entity
