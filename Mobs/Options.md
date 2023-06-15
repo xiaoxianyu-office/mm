@@ -56,11 +56,10 @@ This option should be turned on if you're using a lot of mob spawners or entitie
 Defaults to `true`.
 
 Available values:
-- `true` - despawns the mob if there are no nearby players, on chunk unload. This option obeys the regular `/mm m kill` command.
-- `false` - similar to `persistent` but can be despawned. This option obeys the regular `/mm m kill` command.
-- `chunk` - despawns the mob when the chunk unloads. This option obeys the regular `/mm m kill` command.
-- `persistent` - the mob is persistent and doesn't despawn. To remove a persistent mob, you have to append `-p` to the kill command, 
-like so: `/mm m kill -p <type>`.
+- `true` - despawns the mob if there are no nearby players, on chunk unload.
+- `false` - similar to `persistent` but can be despawned.
+- `chunk` - despawns the mob when the chunk unloads.
+- `persistent` - the mob is persistent and doesn't despawn. To remove a persistent mob, you have to either use the kill command (`/mm m kill <type>`) or append the `-p` flag to the killall one (`/mm m killall -p`). More information on the subject can be found [here](/Commands-and-Permissions#mob-commands).
 ```yml
 Options:
   Despawn: true
