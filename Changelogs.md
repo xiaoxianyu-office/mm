@@ -27,6 +27,10 @@ Conditions:
 ### Tons of new Random Features
 - Lots of new random features and mechanics added by Pande. Go thank him!
 
+General
+-------
+- Improved tab completion for most commands
+
 Mobs
 ---------
 
@@ -36,7 +40,6 @@ Mobs
 
 ### Templates
 - Templates have been fixed and refactored, and now a [Wiki Page](/Mobs/Templates) has been created to made you aware of their existance at all
-
 
 Mechanics
 ----------
@@ -50,6 +53,22 @@ Mechanics
 ### NEW: [Attribute](/skills/mechanics/Attribute)
 ### NEW: [AttributeModifier](/skills/mechanics/AttributeModifier)
 ### NEW: [AddTrade](/skills/mechanics/AddTrade)
+
++ Add addTrade mechanic; aliases: setTrade, removeTrade, "replaceTrade
+
+Attributes:
+- action | mode | m - What to do <ADD>
+- slot | s | index - The slot to be selected for actions <0>
+- ingredient | item | ingredient1 | item1 | i | i1 - The first ingredient <STONE>
+- ingredient2 | item2 | i2 - The second ingredient <null>
+- result | r - The result item <STONE>
+- maxUses | uses | u - The uses of the trade <Max Int>
+- experienceReward | expReward | exp | dropExp - If the trade should drop experience <false>
+- priceMultiplier | multiplier - The multiplier for the price when the player has made the villager angry <0>
+- demand | d - The demand of the trade <1>
+- specialPrice | special - The special price for when the villager is friendly to the player (player reputation or hero of the village effect) <1>
+- ignoreDiscounts | discounts - If the discounts should be ignored <false>
+
 ### FawePaste
 - added `id` attribute, to use in concert with UndoPaste
 - it now *truly* runs async
@@ -57,6 +76,23 @@ Mechanics
 - fixed the vy attribute
 ### ModifyProjectile 
 - added the `ADD` action
+### Projectile
+
+- Added `DISPLAY` and `TEXT` bullet types
+  - Text Bullets: `- projectile{bullet=TEXT;bulletText="...";bulletBillboard=CENTER;backgroundColor=64,0,0,0}`
+
+- Allow 3D rotations for ArmorStand & Display projectiles:
+  - pitch - The pitch rotation <0>
+  - yaw - The yaw rotation <0>
+  - roll - The roll rotation <0>
+  - rotation | rot - The rotation of the polygon, in the x,y,z format <0,0,0> (compact form for pitch/yaw/roll)
+  - pitchSpeed|ps & yawSpeed|ys & rollSpeed|rs & rotationSpeed|rots, same as previous, but to add speed to the rotation
+
+- Added option `highAccuracyMode=[true/false]` - If true causes the projectile to use raytracing to determine if it will hit a block instead of regular checking, so that very fast projectiles wont clip through blocks.
+- Added option `requireLineOfSight=[true/false]` - If true the projectile will immediately hit anything blocking line-of-sight from the projectile's origin to its 'starting point' after options are applied
+- Added option `drawHitbox=true` - draws the entity-detection hitbox of the projectile around it in particles. Useful for making adjustments.
+- Add option `bulletEnchanted`/`enchanted` to all armorstand/item display/item bullets
+
 ### Shoot
 - fixed `pickup` attribute
 - added `expiration` attribute
@@ -74,20 +110,26 @@ Mechanics
 
 
 
-## Targeters
+Targeters
+---------
+- Added `ofOwner`,`ofParent` and `ofTrigger` attributes to all targeters. They will make the targeter be parsed by either the Owner, Parent or Trigger
+- Fixed `samefaction=false` target filter
+
 ### NEW: [Rectangle](/Skills/Targeters/Rectangle)
 ### NEW: [BlockVein](/Skills/Targeters/BlockVein)
 ### EntitiesInCone
 - fixed it targeting items
-### Global Targeter attributes
-- added `ofOwner`,`ofParent` and `ofTrigger` attributes. They will make the targeter be parsed by either the Owner, Parent or Trigger
 
-
-## Triggers
+Triggers
+--------
 ### NEW: [onBucket](/Skills/Triggers#onbucket)
 
+### onDeath
+- Paper Only: the event is now cancellable
+- When the death event is cancelled, the mob will regain health in accordance with its ReviveHealth option
 
-## Conditions
+Conditions
+----------
 ### NEW: [isMythicMob](/skills/conditions/ismythicmob)
 ### NEW: [isSaddled](/skills/conditions/isSaddled)
 ### NEW: [MythicPack](/skills/conditions/MythicPack)
@@ -98,17 +140,14 @@ Mechanics
 ### NEW: [Moist](/skills/conditions/moist)
 ### NEW: [Moisturelevel](/skills/conditions/moisturelevel)
 ### NEW: [isTamed](/skills/conditions/istamed)
-### onDeath
-- Paper Only: the event is now cancellable
-- When the death event is cancelled, the mob will regain health in accordance with its ReviveHealth option
 
-
-## Items
+Items
+-----
 ### NEW: [CanPlaceOn](/Items/Items#canplaceon) item configuration
 ### NEW: [CanBreak](/Items/Items#canbreak) item configuration
 
-
-## Placeholders
+Placeholders
+------------
 ### NEW: Raycast placeholder
 - <caster.raycast>
 - <target.raycast>
