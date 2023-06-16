@@ -1,3 +1,4 @@
+<!--
 # Honorable Mentions
 
 - [The text is not yellow](https://discord.com/channels/213109157983813633/351864879545843715/1115736631744417823)
@@ -59,3 +60,4 @@
 [He helps people with config issues](https://discord.com/channels/213109157983813633/351864879545843715/1107736769929150464)
 
 ##
+-->
