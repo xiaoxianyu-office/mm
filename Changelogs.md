@@ -1,14 +1,17 @@
-5.3.0
+5.3.0 (The Pande Update)
 =====
 Highlights
 ----------
 ### Version support
+Added support for 1.20.1
+
 Dropped support for the following versions
 - 1.12
 - 1.17
 - 1.18.0
 - 1.19.0
 - 1.19.1
+
 ### Composite Conditions
 Added composite conditions. Conditions in a skill can now be grouped with parenthesis and combined with AND (&&) and OR (||) operators, and can also be nested for complex logic. The entire group of conditions will be evaluated together.
 ```
@@ -16,6 +19,16 @@ Conditions:
 - ((night || raining) && onBlock{material=LIME_CONCRETE}) true
 ```
 
+### Projectiles
+- Added `DISPLAY` and `TEXT` bullets
+- Most bullets are now packet-based
+- Added lots of new projectile options and mechanics
+
+### Tons of new Random Features
+- Lots of new random features and mechanics added by Pande. Go thank him!
+
+Changes
+---------
 
 ## Mob Options
 ### NEW: [ReviveHealth](/wikis/Mobs/Options#revivehealth)
