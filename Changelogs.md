@@ -27,19 +27,19 @@ Conditions:
 ### Tons of new Random Features
 - Lots of new random features and mechanics added by Pande. Go thank him!
 
-Changes
+Mobs
 ---------
 
-## Mob Options
-### NEW: [ReviveHealth](/wikis/Mobs/Options#revivehealth)
-### FollowRange
-- Allows the option to be 0
+### New Attributes
+- Added [ReviveHealth](/wikis/Mobs/Options#revivehealth) option
+- FollowRange can now be zero
 
-## Templates
+### Templates
 - Templates have been fixed and refactored, and now a [Wiki Page](/Mobs/Templates) has been created to made you aware of their existance at all
 
 
-## Mechanics
+Mechanics
+----------
 ### NEW: [UndoPaste](/skills/mechanics/undopaste)
 ### NEW: [Slash](/skills/mechanics/slash)
 ### NEW: [Saddle](/skills/mechanics/saddle)
