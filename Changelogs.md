@@ -1,3 +1,7 @@
+5.3.1
+=====
+- Fixed loading issue on 1.18
+
 5.3.0 (The Pande Update)
 =====
 Highlights
