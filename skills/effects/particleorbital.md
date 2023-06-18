@@ -18,7 +18,7 @@ Options for regular particles are applicable.
 | radius | r  | The radius at which the particle orbits  | 4 |
 | points | p | How many points make up the circle | 20 |
 | ticks | t | How many ticks this will last | 100 |
-| interval | in,i  | Tick speed at which the particle moves (faster=slower) | 10     |
+| interval | in,i  | Tick speed at which the particle moves (faster tick rate=slower movement) | 10     |
 | rotationX | rotX,rX  | Rotates the orbit around the X axis | 0     |
 | rotationY | rotY,rY  | Rotates the orbit around the Y axis | 0     |
 | rotationZ | rotZ,rZ  | Rotates the orbit around the Z axis | 0     |
