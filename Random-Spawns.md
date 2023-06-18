@@ -42,7 +42,7 @@ A complete list of all available randomspawn options.
 ### Global Randomspawn Options
 
 **Example:**
-
+```yaml
     my_favorite_randomspawn:
       Action: ADD
       Type: cute_zombie
@@ -51,7 +51,10 @@ A complete list of all available randomspawn options.
       Priority: 10
       UseWorldScaling: false
       Worlds: my_overworld,my_overworld_nether
-
+      Biomes: JUNGLE,PLAINS
+      Conditions:
+      - day true
+```
 -   **Action: \[action\]**
     -   The spawning method to utilize, defaults to "ADD"
     -   Action: ADD
