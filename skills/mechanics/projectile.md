@@ -34,7 +34,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | SideOffset | soffset, so | The value of this attribute gets inherited by StartSideOffset and EndSideOffset if no value is specified for them                                                | 0       |  
 | StartSideOffset | ssoffset, sso | How far to the side of the mob the projectile starts      |sideoffset|
 | EndSideOffset | endoffset, esoffset, eso | How far to the side of the target location the projectile will end up                                                                                   |sideoffset|
-| startingdirection | startingdir, startdir, sdir | Start direction of the projectile         |          |
+| startingdirection | startingdir, startdir, sdir | Start direction of the projectile. For now, it only works if inherited by a missile mechanic                                                      |@Targeted|
 | HorizontalOffset | hO | Horizontal Offset will rotate the projectile's horizontal starting velocity around a 360-degree axis                                                                      | 0        |
 | VerticalOffset   | vO | Vertical Offset will rotate the projectile's vertical starting velocity around a 360-degree axis                                                                               | 0        |
 | Accuracy  | ac, a     | Determines the accuracy of the projectile                           | 1        |
