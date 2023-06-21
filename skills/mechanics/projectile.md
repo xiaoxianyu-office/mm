@@ -14,7 +14,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 ### Inheritable Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| OnStartSkill | onStart, oS | Meta-Skill executed when the projectile starts at the projectile's origin location.                                                                                      |         |
+| onStartSkill | onStart, oS | Meta-Skill executed when the projectile starts at the projectile's origin location.                                                                                      |         |
 | onTickSkill  | onTick, oT  | Meta-Skill executed every [interval] ticks at the projectile's origin location                                                                                       |         |
 | onHitSkill   | onHit, oH   | Meta-Skill executed when the projectile hits entities that allow be hit. Targets hit are inherited by the meta-skill.                                                   |         |
 | onEndSkill   | onEnd, oE   | Meta-Skill executed when the projectile ends.                   |         |
@@ -52,7 +52,8 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | ImmuneDelay | immune, id | Sets the immunity delay (when the target can be hit by the projectile again) | 2000  |
 | hitConditions | conditions, cond, c | A list of conditions that a target must meet in order for the projectile to be able to hit it. **Premium Only** Mechanic  |  |
 | fromorigin | fo       | Whether the projectile should start from the origin of the mechanic | false    |
-
+| requireLineOfSight | rlos, los | Whether the starting point must have line-of-sight to the origin.  Values can be `true`, `false`, `PLAYERS_ONLY`                                             | PLAYERS_ONLY |
+| drawHitbox |          | Draw the hitbox of the projectile, useful for debugging             | false    |
 
 ### Projectile-Specific Attributes
 | Attribute | Aliases   | Description                                                          | Default |
@@ -66,6 +67,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | HeightFromSurface| hfs| For NORMAL projectiles, how high above the surface the projectile should glide if HugSurface is set to TRUE. For METEOR projectiles, how high above the surface the projectile starts above the target.                                                                              | 0.5     |
 | MaxClimbHeight | mch  | The number of attempts the projectile will make to **increase** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 3       |
 | MaxDropHeight  | mdh  | The number of attempts the projectile will make to **decrease** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 10      |
+| highAccuracyMode | ham| Whether to use high-accuracy mode, which raytraces every tick to ensure the projectile cannot ever go anything. Values can be `true`, `false`, `PLAYERS_ONLY`         | PLAYERS_ONLY |
 
 
 ## Special Notes
@@ -210,6 +212,7 @@ Examples:
 | yawspeed  | ys        | The yaw rotation speed                                               | 0       |
 | rollspeed | rs        | The roll rotation speed                                              | 0       |
 | rotationspeed | rotspeed, rots | The rotation speed of the bullet, in the x,y,z format       | 0,0,0   |
+| hideFirstTick | hft   | Hides the item for the first tick                                    | false   |
 |bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
 | audience  |           | The [Audience][] of the bullet                                       | world   |
 
