@@ -98,6 +98,7 @@ Spawner Commands
 Utility Commands
 ----------------
 - **/mm test cast [skillname]** - Allows you to run a skill as if you were a mob.
+- **/mm test mechanic [line]** - Allows you to run a mechanic line as if you were a mob.
 -  **/mm i get [droptable]** - Allows you to get an item from a drop table as if you killed the mob dropping it.
 
 Signal Commands
