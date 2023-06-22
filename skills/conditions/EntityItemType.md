@@ -11,5 +11,5 @@ Tests the type of the targeted entity item
 ## Examples
 ```yaml
   TargetConditions:
-  - entityItemType{i=MyMythicItem,MyFantasticStick} true
+  - entityItemType{m=MyMythicItem,MyFantasticStick} true
 ```
