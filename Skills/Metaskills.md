@@ -19,7 +19,7 @@ The syntax of a Metaskill is the following:
 ```yaml
 internal_skillname:
   Cooldown: [seconds]
-  OnCooldownSkill: [the metaskill to execute if this on is on cooldown]
+  OnCooldownSkill: [the metaskill to execute if this one is on cooldown]
   CancelIfNoTargets: [true/false]
   Conditions:
   - condition1
