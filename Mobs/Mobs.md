@@ -83,6 +83,17 @@ example_mob:
   Armor: 25
 ```
 
+#### HealthBar
+Creates a basic health bar hologram. Requires "Holograms" or "HolographicDisplays" plugin.
+```yml
+example_mob:
+  Type: zombie
+  Display: HealthyBoi
+  HealthBar:
+    Enabled: true
+    Offset: 1.45
+```
+
 #### BossBar
 Defines and controls the health bar of the mob.
 Looks like the Ender Dragon's or the Wither's health bar, but is configurable in appearance.
