@@ -89,6 +89,7 @@ Creates a basic health bar hologram. Requires "Holograms" or "HolographicDisplay
 example_mob:
   Type: zombie
   Display: HealthyBoi
+  Health: 1000
   HealthBar:
     Enabled: true
     Offset: 1.45
