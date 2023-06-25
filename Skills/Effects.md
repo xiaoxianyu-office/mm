@@ -93,7 +93,7 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
 
   [skill mechanic]: /skills/mechanics/
   [Targeter]: /skills/targeters/
-  [Atom]:  /skill/seefects/atom
+  [Atom]:  /skills/effects/atom
   [Black Screen]: /skills/effects/blackscreen
   [Block Mask]: /skills/effects/blockmask
   [Block Unmask]: /skills/effects/blockunmask
