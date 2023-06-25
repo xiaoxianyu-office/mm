@@ -43,6 +43,7 @@ Of particular relevance is the `audience=@Targeter` attribute, that allows any e
 
 | Effect Mechanic      | Description                                                           |
 |----------------------|-----------------------------------------------------------------------|
+| [Atom][]             | Creates electron-esque orbitals.                       |
 | [Black Screen][]     | Blacks out the target's screen for the duration                       |
 | [Block Mask][]       | Temporarily masks a block as a different block                        |
 | [Block Unmask][]     | Unmasks blocks that have been masked                                  |
@@ -87,10 +88,12 @@ These effects require the plugin "EffectLib" to be installed to use.
 | [Atom][]            | Creates a representation of an atom around the target |
 | [Particle Vortex][] | Draws a "vortex" of particles around the target       |
 | [DNA][]             |                                                       |
+Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
 -->
 
   [skill mechanic]: /skills/mechanics/
   [Targeter]: /skills/targeters/
+  [Atom]:  /skill/seefects/atom
   [Black Screen]: /skills/effects/blackscreen
   [Block Mask]: /skills/effects/blockmask
   [Block Unmask]: /skills/effects/blockunmask
