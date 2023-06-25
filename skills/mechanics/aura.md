@@ -1,5 +1,6 @@
 Mechanic: Aura
 ==============
+Aliases: (Buff/Debuff)
 
 The Aura mechanic acts as a status effect on the target entity, and can
 trigger other skills over its duration. Auras allow you to create custom
