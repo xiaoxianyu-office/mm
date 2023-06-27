@@ -65,7 +65,7 @@ Spawner Commands
     -   See [Spawner Options Section](Spawners) for all the things that can be set here.
 -   **/mm s addcondition [spawner_name] [condition] [value]**
     -   Adds a spawner condition which determines whether a mob should spawn when it's timer is up.
-    -   See [Spawner Conditions](Databases/Spawners/Conditions) for conditions that can be applied here
+    -   See [Spawner Conditions](/Skills/conditions) for conditions that can be applied here
 -   **/mm s removecondition [spawner_name] [condition]**
     -   Removes a spawner condition.
     -   **/mm s removecondition Ruins_Skeleton1 outside**
