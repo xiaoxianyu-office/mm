@@ -137,6 +137,11 @@ Examples:
 [DISPLAY]: /skills/mechanics/projectile#display-bullet
 [TEXT]: /skills/mechanics/projectile#text-bullet
 
+### Universal Bullet Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| bulletforwardoffset | bulletfo, bulletoffset | The offset of the bullet                      | 2.5     |
+
 ### ARROW Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
@@ -172,6 +177,7 @@ Examples:
 | bulletspin | bspin    | The spin of the bullet                                               | 0       |
 | bulletmatchdirection | bmd | Should the bullet face where the projectile is facing           | false   |
 | bulletKillable | bk   | Allow other entities to damage the projectile bullet                 | false   |
+| bulletOffset| boffset | The offset of the bullet mob                                         | 1.35    | 
 
 ### TRACKING Bullet
 | Attribute | Aliases   | Description                                                          | Default |
