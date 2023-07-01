@@ -1,6 +1,83 @@
-5.3.1
+5.4.0 (Dev Builds)
 =====
+
+General
+-------
+- Added `/mm test mechanic [line]` command to test executing a skill line
+
+Mobs
+----
+Added new mobs types:
+- `BLOCK_DISPLAY`
+- `CAMEL`
+- `CHEST_BOAT`
+- `ITEM_DISPLAY`
+- `SNIFFER`
+- `TEXT_DISPLAY`
+
+Mechanics
+----------
+
+### NEW: SetTransformation
+- Transforms the target display entity
+```yml
+- transformation{action=set;transformation=translation;value=0,0,1} @self
+
+- transformation{action=set;transformation=right_rotation;value=0,0,0,1} @self ~onwhatever
+```
+Action valuees: SET, ADD, MULTIPLY, DIVIDE
+Transformation values: TRANSLATION, SCALE, RIGHT_ROTATION, LEFT_ROTATION
+
+### NEW: `setProjectileDirection`
+- Changes calling projectile's direction to the given target
+
+### Damage Mechanics
+- Added `ignoreShield`, `ignoreEffects`, `ignoreResistance`, `damagesHelmet`, and `noAnger` boolean options to damaging mechanics
+
+### Particle Effects
+- Added new particles: DRIPPING_CHERRY_LEAVES, FALLING_CHERRY_LEAVES, LANDING_CHERRY_LEAVES
+
+### Projectile Mechanics (Projectile, Missile, etc)
+- Added `tickInterpolation` option (defaults to 0)
+
+Setting tickInterpolation will interpolate that many points between each tick in a projectile and execute the onTick and onHit skills on those points as well, doing multiple 'ticks' in a single tick.
+
+This can be used to fill in the gaps with super-fast projectiles and also prevent entities from being skipped over by insanely fast projectiles.
+
+- Added `interactable=true`, `onInteractSkill` to projectiles (requires 1.19.4+), used to allow the player to hit the projectile similar to a ghast fireball.
+
+### Missile
+- Added `hugSurface` and `bounce` options to missile mechanic (and all other related options similar to the Projectile mechanic)
+
+### Lunge
+- Added `oldMath/old/o` attribute to determine if it should use the old wonky math (default: false)
+
+5.3.1+
+======
+
+General
+-------
+- Added bulletForwardOffset to projectile bullets, defaults to 2.5
+- Added `bulletOffset` option for bullets (defaults to 1.8)
+
+Bugs / Other
+------------
+- Added placeholder support to teleport mechanic
 - Fixed loading issue on 1.18
+- Fixed NPE in DamagingMechanics
+- Fixed passthrough damage not including modifier damage
+- Fixed error with strEquals condition when using caster placeholders closes #1185
+- Fixed blockType and blockIgnore targeter filters not working unless a limit is set closes #1182
+- Fixed ThreatTables targeting same-faction players
+- Fixed `setVariableLocation` mechanic not working with non-entity targets
+- Fixed nonsensical error in onDamaged aura
+- Fixed hugSurface projectiles being broken with highAccuracy enabled
+- Fixed blockmask being broken
+- Fixed placeholder support in score mechanic 
+- Fixed suicide mechanic not working with PassthroughDamage enabled
+- Fixed PassthroughDamage not working with certain damage types
+- Fixed several issues with asParent, asOwner, asTrigger target modifiers
+- Fixed memory leak with certain aura configurations
 
 5.3.0 (The Pande Update)
 =====
