@@ -24,7 +24,7 @@ are able to target locations as well.
 | [AddTrade][]              | Changes the trades of a villager                                                          |
 | [AnimateArmorStand][]     | Animates an armorstand                                                                   |
 | [ArrowVolley][]           | Fires a volley of arrows                                                                 |
-| [Attribute][]             | Sets and attribute on the target entity, if attributable                                                                 |
+| [Attribute][]             | Sets an attribute on the target entity, if attributable                                                                 |
 | [AttributeModifier][]     | Adds an attribute modifier to the attributable target                                                                 |
 | [AuraRemove][]            | Removes an aura from the target entity                                                   |
 | [BarCreate][]             | Creates a custom boss bar on the casting mob                                             |
