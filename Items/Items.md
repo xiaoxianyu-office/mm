@@ -44,14 +44,7 @@ example_item:
   Display: <green>An Example Item</green>
 ```
 
-#### Group
-Sets the group the item is in for `/mm items browse`.
-```yml
-example_item:
-  Id: leather_chestplate
-  Display: <green>An Example Item</green>
-  Group: 'Armor'
-```
+
 
 #### Lore
 Sets the lore of the item. You can generate a random number using `{min-max}`, `<random.#to#>`, or `<random.float.#to#>`.
@@ -80,6 +73,15 @@ example_item:
   Id: leather_chestplate
   Display: <green>An Example Item</green>
   Model: 12345
+```
+
+#### **Durability**:
+Sets the amount of durability to take off the item. The below example sets a Diamond Sword to have 1461 durability since by default it has 1561.
+```yml
+example_item:
+  Id: diamond_sword
+  Durability: 100
+  Display: <green>An Example Item</green>
 ```
 
 #### **Attributes**
@@ -112,24 +114,6 @@ example_item:
     AppendType: true
     Color: 255,0,0
 ```
-
-<!-- SEE ITEM OPTIONS
-#### **Durability**:
-Sets the durability of the item.
-```yml
-example_item:
-  Id: leather_chestplate
-  Data: 0
-  Display: <green>An Example Item</green>
-  Model: 12345
-  Attributes:
-    Chest:
-      Health: 25
-  Amount: 1
-  Options:
-    Color: 255,0,0
-```
--->
 
 #### **Enchantments**
 Any items can have any enchantments(s).
@@ -208,6 +192,15 @@ MyCoolStick:
   - grass_block
   - diamond_block
   - obsidian
+```
+
+#### Group
+Sets the group the item is in for `/mm items browse`.
+```yml
+example_item:
+  Id: leather_chestplate
+  Display: <green>An Example Item</green>
+  Group: 'Armor'
 ```
 
 ### **NBT**
