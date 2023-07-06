@@ -14,11 +14,12 @@ itself.
 | [onDamaged](#ondamaged)                | When the mob is damaged                                      |
 | [onSpawn](#onspawn)                    | When the mob spawns                                          |
 | [onDespawn](#ondespawn)                | When the mob is despawned                                    |
-| [onReady](#onready)                    | Triggered the first time a mob is spawned from a spawner     |
+| [onReady / onFirstSpawn](#onready)                    | Triggered the first time a mob is spawned from a spawner     |
 | [onLoad](#onload)                      | When the mob is loaded (spawning or loading after a restart) |
 | [onDeath](#ondeath)                    | When the mob dies                                            |
 | [onTimer:*#*](#ontimerticks)           | Every \# ticks (where \# is the interval in ticks)           |
 | [onInteract](#oninteract)              | When the mob is right-clicked                                |
+| [onPlayerDeath](#onplayerdeath)          | When a player dies for any reason                                  |
 | [onPlayerKill](#onplayerkill)          | When the mob kills a player                                  |
 | [onEnterCombat](#onentercombat)        | When the mob enters combat (requires threat tables be on)    |
 | [onDropCombat](#ondropcombat)          | When the mob leaves combat (requires threat tables be on)    |
@@ -208,6 +209,17 @@ EXAMPLE_MOB:
     - message{m=TIMER every 40 ticks (2 seconds)} @World ~onTimer:40
 ```
 
+#### ~onPlayerDeath
+Executes the skill when the mob kills a player.
+```yml
+EXAMPLE_MOB:
+  Type: CHICKEN
+  Skills:
+    # sends a message to all the players in the world
+    # when a player dies for any reason.
+    - message{m=A PLAYER DIED SOMEWHERE} @World ~onPlayerDeath
+```
+
 #### ~onPlayerKill
 Executes the skill when the mob kills a player.
 ```yml
@@ -378,6 +390,7 @@ EXAMPLE_MOB:
     # sends a message to all the players in the world
     # when the mob is about to spawn from a spawner
     - message{m=READY TO SPAWN FROM A SPAWNER} @World ~onReady
+    - message{m=READY TO SPAWN FROM A SPAWNER} @World ~onFirstSpawn
 ```
 
 #### ~onLoad
