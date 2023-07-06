@@ -106,6 +106,7 @@ These placeholders will return whatever variable has been called. For instance <
 | **Variable Placeholder**  | **Function**                                                            |     
 |:-------------------------:|-------------------------------------------------------------------------|
 |   <caster.var.\[name\]>   | Returns the value of the variable \[name\] on the caster.               |
+|   <caster.stat.STAT_NAME>   | Returns the value of the specified stat on the caster.               |
 |   <skill.var.\[name\]>    | Returns the value of the variable \[name\] on the current skill tree.   |
 | <skill.var.damage-amount> | Returns the amount of damage taken in the onDamaged trigger             |
 |  <skill.var.damage-type>  | Returns the type of damage taken as specified in a mechanic, aura, etc. |
