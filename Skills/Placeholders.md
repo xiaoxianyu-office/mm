@@ -141,6 +141,7 @@ These placeholders will return whatever target selector has been used. For insta
 |     <target.level>      | Returns the level of the target                                   |
 |   <target.block.type>   | Returns the block type of the target                              |
 |  <target.entity_type>   | Returns the entity type of the target                             |
+|  <target.itemstack_amount>   | Returns the amount of item entities on the ground                             |
 |   <target.raytrace>     | Returns the name of the block being looked at by the target (4.5 blocks of range) |
 
 **Trigger Placeholders**
