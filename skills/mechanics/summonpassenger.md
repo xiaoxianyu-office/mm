@@ -11,6 +11,6 @@ Summons a mob to mount the target. Will knock the current rider off if there is 
 ## Examples
 ```yaml
       Skills:
-      summonPassenger{type=MyZombie} @trigger
+      - summonPassenger{type=MyZombie} @trigger
 ```
 Will summon the mob "MyZombie" to ride the trigger.
