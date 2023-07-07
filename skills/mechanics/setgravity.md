@@ -17,4 +17,5 @@ Examples
 
       Skills:
       - setgravity{g=false} @self ~onSpawn
+      - setusegravity{g=false} @self ~onSpawn
       - ...
