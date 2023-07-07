@@ -20,6 +20,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | onEndSkill   | onEnd, oE   | Meta-Skill executed when the projectile ends.                   |         |
 | onBounceSkill| onBounce    |Meta-Skill executed when the projectile bounces. **Premium Only**.|        |
 | onHitBlockSkill |onHitBlock, ohb | Meta-Skill executed when the projectile hits a block.     |         |
+| onInteractSkill |onInteract| Meta-Skill executed when the projectile is interacted with.     |         |
 | BulletType   | bullet, b   | The type of the bullet. If set, additional attributes becomes available depending on the specified bullet type. A list of bullet types and associated attributes is available [below](/skills/mechanics/projectile#projectile-bullets)                                       | NONE    |
 | Interval  | int, i      | How often (in ticks) the projectile updates its position           | 1       |
 | HorizontalRadius | hRadius, hR, r | The horizontal radius entities will be hit in around the projectile.                                                                                                                                    | 1.25    |
@@ -44,6 +45,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | StopAtBlock  | sB     | Whether the projectile will stop upon hitting an opaque block       | true     |
 | PowerAffectsRange |pa | Whether a mob's [power level](/Mobs/Power) affects the projectile's range| true|
 | PowerAffectsVelocity | pav | Whether a mob's [power level](/Mobs/Power) affects the projectile's velocity.                                                                                     | true     |
+| Interactable |        | Whether the projectile is interactable                              | false    |
 | HitSelf   |           | Whether the projectile can hit the caster                           | false    |
 | HitPlayers | hp       | Whether the projectile can hit players                              | true     |
 | HitNonPlayers | hnp   | Whether the projectile can hit non player entities                  | false    |
