@@ -35,6 +35,14 @@ Missiles can target both a location and an entity.
 | PowerAffectsVelocity|pav| Whether a mob's [power level](/mythiccraft/MythicMobs/-/wikis/Mobs/Power) affects the projectile's velocity                                                              | true    | 
 | fromOrigin | fo       | Whether the missile should start from its origin                     | false   |
 | hitConditions |       | A list of conditions that a target must meet in order for the projectile to be able to hit it. See the [projectile](/mythiccraft/MythicMobs/-/wikis/skills/mechanics/projectile) mechanic for more info. **Premium Only** Mechanic                                                       |         |
+| Bounces   | bounce    | Should the projectile bounce. Bounce radius depends on the projectile's hitbox. **Premium Only**.                                                                              | false   |
+| BounceVelocity | bv   | Every time the projectile bounces, its velocity will be multiplied by this value. **Premium Only** .                                                                      | 0.9     |
+| HugSurface| hs        | Whether or not the projectile should move along the ground.          | false   |
+| HugLiquid | hugwater, huglava | when using hugSurface will also move on top of liquids       | false   |
+| HeightFromSurface| hfs| For NORMAL projectiles, how high above the surface the projectile should glide if HugSurface is set to TRUE. For METEOR projectiles, how high above the surface the projectile starts above the target.                                                                              | 0.5     |
+| MaxClimbHeight | mch  | The number of attempts the projectile will make to **increase** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 3       |
+| MaxDropHeight  | mdh  | The number of attempts the projectile will make to **decrease** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 10      |
+| highAccuracyMode | ham| Whether to use high-accuracy mode, which raytraces every tick to ensure the projectile cannot ever go anything. Values can be `true`, `false`, `PLAYERS_ONLY`         | PLAYERS_ONLY |
 
 ## Examples
 This example shoots a missile that looks like a thin trail of flames
