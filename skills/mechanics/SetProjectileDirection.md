@@ -1,5 +1,5 @@
 ## Description
-Sets the calling projectile's current direction to the given target
+Sets the calling projectile's movement direction to the given target
 
 
 ## Attributes
