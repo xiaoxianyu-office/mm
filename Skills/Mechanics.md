@@ -157,6 +157,7 @@ are able to target locations as well.
 | [StopUsingItem][]         | Stops the targeted entity from using an item                                             |
 | [Suicide][]               | Causes the caster to die                                                                 |
 | [Summon][]                | Summons other mobs at the target                                                         |
+| [SummonPassenger][]                | Summons a mob to ride the target.                                                         |
 | [Swap][]                  | Swaps locations with the target                                                          |
 | [AddTag][]                | Adds a scoreboard tag to the target                                                      |
 | [RemoveTag][]             | Removes a scoreboard tag from the target                                                 |
@@ -395,6 +396,7 @@ but not yet ready for use.
   [Stun]: /skills/mechanics/stun
   [Suicide]: /skills/mechanics/suicide
   [Summon]: /skills/mechanics/summon
+  [SummonPassenger]: /skills/mechanics/summonpassenger
   [AddTag]: /skills/mechanics/addtag
   [RemoveTag]: /skills/mechanics/removetag
   [TakeItem]: /skills/mechanics/takeitem
