@@ -1,17 +1,17 @@
-Mechanic: Block Physics
---------------------------
-Triggers a block physics update at the target location.
+## Description
+Force a block physics update at the target location
 
-**Attributes**
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
+## Attributes
+>*This mechanic has no attributes*
 
-Examples
---------
 
+## Examples
 ```yaml
-      Skills:
-      - blockphysics @selflocation{y=-1}
+  Skills:
+  - blockphysics @selflocation{y=-1}
 ```
+
+
+## Aliases
+- [x] bphysics
