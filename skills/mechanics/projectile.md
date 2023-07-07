@@ -142,7 +142,7 @@ Examples:
 ### Universal Bullet Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletforwardoffset | bulletfo, bulletoffset | The offset of the bullet                      | 2.5     |
+| bulletforwardoffset | bulletfo, bulletoffset | The offset of the bullet                      | 1.8     |
 
 ### ARROW Bullet
 | Attribute | Aliases   | Description                                                          | Default |
