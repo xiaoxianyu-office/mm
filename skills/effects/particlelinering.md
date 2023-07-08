@@ -1,24 +1,27 @@
 ## Description 
-Creates a particleline ring.
-
-A list of particle types can be found **[here](/skills/effects/particles/types)**. 
-
-[All of the spigot particle effects listed in the javadocs should be acceptable as well.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
+Creates a particleline ring.  
+This mechanic extends the [Particle effect](/skills/effects/particles), and can, as such, use any of its attributes.
 
 ## Attributes
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| StartYOffset  | syo         | The starting vertical offset                             | 0 |
-| TargetYOffset  | tyo         | The target vertical offset     | 0 |
-| DistanceBetween       | db      | The distance between particles                                                                                       | 1 |
-| FormOrigin    | fo  | Cast from origin?                                     | false |
-| RingPoints   | rp    | The number of points in the line ring                                 | 16 |
-| RingRadius   | rr        | The radius of the line ring                               | 0.5 |
-| maxdistance   | md        | The maximum distance for the helix              | 256 |
+| StartYOffset | syo, ystartoffset, ys | The starting vertical offset                          | 0       |
+| TargetYOffset | tyo, ytargetoffset, yt | The target vertical offset                          | 0       |
+| DistanceBetween | db  | The distance between particles                                       | 1       |
+| FromOrigin| fo        | Should the mechanic be casted from the origin of the metaskill       | false   |
+| RingPoints | rp       | The number of points in the line ring                                | 16      |
+| RingRadius | rr       | The radius of the line ring                                          | 0.5     |
+| maxdistance | md      | The maximum distance for the helix                                   | 256     |
 
 
 ## Examples
 ```yaml
-  Coming soon!
+  Skills:
+  - effect:particlelinering{p=flame;r=3;rr=1} @PIR{r=20;limit=1;sort=RANDOM}
 ```
+
+
+## Aliases
+- [x] particlelinering
+- [x] particleringline
