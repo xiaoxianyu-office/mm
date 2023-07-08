@@ -14,13 +14,15 @@ Attributes
 Examples
 ----
 This example would equip the casting mob with a diamond sword.
-
+```yaml
     EquipDiamondSword:
       Skills:
-      - equip{item=diamond_sword:0}
+      - equip{item=diamond_sword}
+```
 
 This example would equip the Skeleton King's crown as a helmet.
-
+```yaml
     EquipCrown:
       Skills:
-      - equip{item=KingsCrown:4}
+      - equip{item=KingsCrown}
+```
