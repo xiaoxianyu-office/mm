@@ -6,14 +6,14 @@ Table of contents:
 
 
 
-# Mobs
-## TODO
-# Skills
-## TODO
-# Items
-## TODO
-# Drops & DropTables
-## Multiple Drops
+## Mobs
+### TODO
+## Skills
+### TODO
+## Items
+### TODO
+## Drops & DropTables
+### Multiple Drops
 <details><summary>Let every player that took part in the fight receive a drop</summary>
 <br>
 This can be done by enabling the mob's [ThreatTable Module](/Mobs/ThreatTables) and by executing the following mechanic when the mob dies:  
