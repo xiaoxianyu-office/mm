@@ -191,7 +191,7 @@ Example_EquipmentDropTable:
   - NETHERITE_CHESTPLATE CHEST 1 0.05
 ```
 ```yaml
-# Mob config
+# Mob Config
 ExampleMob:
   Type: ZOMBIE
   Equipment:
