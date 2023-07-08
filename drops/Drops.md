@@ -1,15 +1,14 @@
-Drops and Drop Tables
-=====================
+# Drops and Drop Tables
 
 The Drops tag can be added to your custom mobs to allow them to drop items of your choice upon their death. There are three types of custom drops available in MythicMobs to distinguish between.
 
 You can make any number of files in the DropTables folder, and they can be named anything you like as long as the file ends in .yml.
 
-Drops
------
+
+# Drops
 
 Drops are the simplest way to implement custom drops.
-```
+```yaml
 internal_mobname:
   Type: <mobtype>
   Drops:
@@ -44,14 +43,13 @@ The chance for the specified item to be dropped.
 
 [For more about MMOItems, see here.](https://gitlab.com/phoenix-dvpmt/mmoitems/-/wikis/Item%20Drop%20Tables#adding-mmoitems-to-mythicmobs-drop-tables)
 
-**In-line Drops**
-------------------
+## In-line Drops
 
 For very basic equipment, you can add some inline item data so that you don't always have to create a mythic item. Options currently available in-line on builds below 4.12 include **name**, **data**, **amount**, **lore**, and **color**
 
 All of this inline item data can also be used in [Equipment:](/mobs/equipment)!
 
-```
+```yaml
  Drops:
  - leather_chestplate{name="Dark Leather";lore="&8A vest made of darkened leather";color=BLACK} 1 1
 ```
@@ -60,7 +58,7 @@ Options added in 4.12 are **model**, **enchants**, **potioneffects**, **skullOwn
 
 The below drops section will drop a Panda player head item that has 2 enchants on it, and will drop 3 pieces of diamond armor that all have names, lore, and enchantments on them!
 
-```
+```yaml
   Drops:
   - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY0NjNlNjRjZTI5NzY0ZGIzY2I0NjgwNmNlZTYwNmFmYzI0YmRmMGNlMTRiNjY2MGMyNzBhOTZjNzg3NDI2In19fQ==;enchants=WATER_WORKER:1,OXYGEN:3} 1 1
   - DIAMOND_CHESTPLATE{name="Panda<&sq>s Will";lore="A Panda must be vigilant";enchants=PROTECTION_ENVIRONMENTAL:4,DURABILITY:3,MENDING:1,THORNS:2} 1 1
@@ -69,22 +67,21 @@ The below drops section will drop a Panda player head item that has 2 enchants o
 ```
 
 
-Drop Tables
------------
+# Drop Tables
 
 Drop Tables are collections of multiple drops that can be assigned to mobs. Using them makes it easier to organize your drops in almost any case where your mobs are supposed to drop multiple items.
 
 Drop Tables are stored in their own respective configuration-files located in \/MythicMobs\/DropTables. They have the advantage of being able to utilize [Conditions](/Skills/conditions) and various other special options, and can be shared by multiple mobs without the need of duplicating it.
 
 Drop Tables can be nested - a Drop Table can contain multiple other Drop Tables.
-```
+```yaml
 internal_mobname:
   Type: <mobtype>
   Drops:
   - <internal_droptablename>
 ```
 The structure of a fully-configured drop table looks like this:
-```
+```yaml
 #Lets you specify exactly how many items will drop from this table
 internal_droptablename: 
   TotalItems: <amount>
@@ -105,8 +102,8 @@ internal_droptablename:
   - <item/exp/droptable> <amount> <chance>
   - ...
 ```
-DropTable Options
-=================
+
+## DropTable Options
 
 **TotalItems: \[number\]**
 
@@ -139,13 +136,11 @@ DropTable Options
 -   Works like: ```amount = amount + (luck * bonus_luck_items)```
 -   Requires that ```TotalItems```, ```MinItems```, or ```MaxItems``` are set on the table
 
-
-Examples
---------
+### Examples
 
 This mob will always drop a bunch of experience and some rotten flesh,
 but is also using a droptable which is described further below.
-```
+```yaml
 snow_loving_zombie:
   Type: zombie
   Health: 100
@@ -160,7 +155,7 @@ This example is a droptable that has a 5 % chance of dropping a custom
 sword, but only if the mob is killed in an "ICE\_PLAINS" biome and if a
 player is within 20 blocks.
 
-```
+```yaml
 rare_snowsword_droptable:
   Conditions:
   - inbiome ICE_PLAINS
@@ -170,7 +165,7 @@ rare_snowsword_droptable:
 ```
 In this example, the DropTable would drop 5 gold/diamonds if the player
 has no Luck, and 15-27 gold/diamonds if the player has a Luck V enchant.
-```
+```yaml
 LuckyDroptable:
   TotalItems: 5
   BonusLuckItems: 2to5
@@ -178,3 +173,30 @@ LuckyDroptable:
   - GOLD_NUGGET 1 1
   - DIAMOND 1 0.2
 ```
+
+
+## Equipment Droptables
+It is also possible to use droptables to configure equipment setups. This type of droptables can be used either directly in the [Equipment element](/Mobs/Mobs#equipment) of the mob or by using the [Equip mechanic](/skills/mechanics/equip).
+The syntax itself is similar to the one of a "normal" droptable, except, in this case, it's necessary to specify an equipment slot.
+
+### Examples
+```yaml
+# Droptable Config
+Example_EquipmentDropTable:
+  Drops:
+  - LEATHER_HELMET HELMET 1 1
+  - LEATHER_CHESTPLATE CHEST 1 1
+  - CHAINMAIL_CHESTPLATE CHEST 1 0.5
+  - DIAMOND_CHESTPLATE CHEST 1 0.1
+  - NETHERITE_CHESTPLATE CHEST 1 0.05
+```
+```yaml
+# Mob config
+ExampleMob:
+  Type: ZOMBIE
+  Equipment:
+  - Example_EquipmentDropTable
+```
+These configurations will allow `ExampleMob` to
+- always have a leather helmet
+- always have at least a leather chestplate, while having something more powerful if the chance is met
