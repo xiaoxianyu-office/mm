@@ -11,5 +11,5 @@ Tests the material of the targeted entity item
 ## Examples
 ```yaml
   TargetConditions:
-  - entityMaterialType{i=STONE,DIRT} true
+  - entityMaterialType{mat=STONE,DIRT} true
 ```
