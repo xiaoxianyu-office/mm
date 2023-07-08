@@ -1,6 +1,6 @@
 ## Description 
 Creates a particleline ring.  
-This mechanic extends the [Particle effect](/skills/effects/particles), and can, as such, use any of its attributes.
+This mechanic is an extension of the **[Particle effect](/skills/effects/particles)**, and can, as such, **use any of its attributes**.
 
 ## Attributes
 
