@@ -12,7 +12,7 @@ This mechanic is an extension of the **[Particle effect](/skills/effects/particl
 | FromOrigin| fo        | Should the mechanic be casted from the origin of the metaskill       | false   |
 | RingPoints | rp       | The number of points in the line ring                                | 16      |
 | RingRadius | rr       | The radius of the line ring                                          | 0.5     |
-| maxdistance | md      | The maximum distance for the helix                                   | 256     |
+| maxdistance | md      | The maximum distance for the line                                    | 256     |
 
 
 ## Examples
