@@ -34,6 +34,8 @@ Added in 4.12 (Premium Only!):
 | directional| d        | Does the particle use directional travel                             | false   | 
 | directionReversed| dr | Reverses the direction of the particles.                             | false   | 
 | direction | dir       | Specifies a vector for the particles to move towards.          | 0,0,0 (x,y,z) | 
+| fixedyaw  | yaw       | Sets the yaw of the effect                                           | -1111   |
+| fixedpitch| pitch     | Sets the pitch of the effect                                         | -1111   |
 
 #### Particle Colors
 
