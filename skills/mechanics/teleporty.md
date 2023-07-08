@@ -1,6 +1,6 @@
 ## Description
-Teleports the caster up or down.
-The skill will attempt to find a safe landing location and should generally avoid putting the mob inside of blocks.
+Teleports the caster up or down.  
+The skill will attempt to find a safe landing location and should generally avoid putting the mob inside of blocks.  
 No target is required for this mechanic, as the caster will always be the one that is teleported.
 
 ## Attributes
