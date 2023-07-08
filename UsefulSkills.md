@@ -8,8 +8,6 @@ Table of contents:
 
 # Mobs
 ## TODO
-- element 1
-- element 2
 # Skills
 ## TODO
 # Items
