@@ -30,8 +30,10 @@ are able to target locations as well.
 | [BarCreate][]             | Creates a custom boss bar on the casting mob                                             |
 | [BarRemove][]             | Removes a custom boss bar on the casting mob                                             |
 | [BarSet][]                | Modifies a custom boss bar on the casting mob                                            |
+| [BlockDestabilize][]              | Causes the targetted block(s) to fall |
 | [BlockPhysics][]              | Triggers a block physics update at the target location                                          |
 | [BoneMeal][]              | Applies a bone meal effect to the target blocks                                          |
+| [BossBorder][]            | Creates an inescapable border around the mob                                |
 | [BreakBlock][]            | Breaks the block at the target location                                                  |
 | [BreakBlockAndGiveItem][] | Breaks the block at the target location and gives an item/droptable                      |
 | [CloseInventory][]        | Closes the target player's inventory                                                     |
@@ -125,6 +127,7 @@ are able to target locations as well.
 | [SetGlobalScore][]        | Sets a scoreboard value on the fake player: \_\_GLOBAL\_\_                               |
 | [SetGravity][]            | Sets whether gravity affects the target entity                                           |
 | [SetHealth][]             | Sets the health of the target entity                                                     |
+| [SetLeashHolder][]              | Changes the holder of a mobs lead                                                          |
 | [SetLevel][]              | Changes the casting mob's level                                                          |
 | [SetMaxHealth][]          | Sets the max health of the target entity                                                 |
 | [SetMobColor][]           | Changes the color of the target if it is a colorable mob                                 |
@@ -164,6 +167,7 @@ are able to target locations as well.
 | [RemoveTag][]             | Removes a scoreboard tag from the target                                                 |
 | [TakeItem][]              | Removes an item from the targeted player's inventory                                     |
 | [Teleport][]              | Teleports to the target                                                                  |
+| [TeleportY][]              | Teleports to the target vertically                                                                 |
 | [TeleportIn][]            | Teleports the target relative to the caster's yaw                                        |
 | [TeleportTo][]            | Teleports the target to a specified location                                             |
 | [Time][]                  | Changes the time                                                                                |
@@ -278,8 +282,10 @@ but not yet ready for use.
   [BarCreate]: /skills/mechanics/barcreate
   [BarSet]: /skills/mechanics/barset
   [BarRemove]: /skills/mechanics/barremove
+  [BlockDestabilize]: /skills/mechanics/blockdestabilize
   [BlockPhysics]: /skills/mechanics/blockphysics
   [BoneMeal]: /skills/mechanics/bonemeal
+  [BossBorder]: /skills/mechanics/bossborder
   [BreakBlock]: /skills/mechanics/breakblock
   [BreakBlockAndGiveItem]: /skills/mechanics/breakBlockAndGiveItem
   [CloseInventory]: /skills/mechanics/closeinventory
@@ -367,6 +373,7 @@ but not yet ready for use.
   [SetGlobalScore]: /skills/mechanics/setglobalscore
   [SetGravity]: /skills/mechanics/setgravity
   [SetHealth]: /skills/mechanics/sethealth
+  [SetLeashHolder]: /skills/mechanics/setleashholder
   [SetLevel]: /skills/mechanics/setlevel
   [SetMaxHealth]: /skills/mechanics/setmaxhealth
   [SetMobColor]: /skills/mechanics/setmobcolor
@@ -403,6 +410,7 @@ but not yet ready for use.
   [RemoveTag]: /skills/mechanics/removetag
   [TakeItem]: /skills/mechanics/takeitem
   [Teleport]: /skills/mechanics/teleport
+  [TeleportY]: /skills/mechanics/teleporty
   [TeleportIn]: /skills/mechanics/teleportin
   [TeleportTo]: /skills/mechanics/teleportto
   [Threat]: /skills/mechanics/threat
