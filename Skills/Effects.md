@@ -61,7 +61,10 @@ Of particular relevance is the `audience=@Targeter` attribute, that allows any e
 | [Lightning][]        | Causes a fake lightning strike                                        |
 | [Particles][]        | Creates particle effects around the target                            |
 | [Particle Box][]     | Draws a box of particles around the target                            |
+| [Particle Equation][]    | Generates particles based on equations                        |
 | [Particle Line][]    | Draws a line of particle effects to the target                        |
+| [Particle Line Helix][]    | Draws a line based helix effect                        |
+| [Particle Line Ring][]    | Draws a particle ring connected by lines                        |
 | [Particle Orbital][] | Draws orbiting particle effects around the target                     |
 | [Particle Ring][]    | Draws a ring of particles around the target                           |
 | [Particle Sphere][]  | Draws a sphere of particles around the target                         |
@@ -74,6 +77,8 @@ Of particular relevance is the `audience=@Targeter` attribute, that allows any e
 | [Sound][]            | Plays a sound effect from both vanilla Minecraft and resource packs   |               
 | [Spin][]             | Causes the mob to spin                                                |
 | [StopSound][]        | Stops a sound effect from playing                                     |
+| [SummonAreaEffectCloud][]        | Summons a cloud of particles at the target                                     |
+| [ThunderLevel][]     | Creates a rainless storm for players client side (per Player)                           |
 | [TotemOfUndying][]     | Plays the effect of a player resurrecting                           |
 
 <!--
@@ -111,7 +116,10 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
   [Lightning]: /skills/effects/lightning
   [Particles]: /skills/effects/particles
   [Particle Box]: /skills/effects/particlebox
+  [Particle Equation]: /skills/effects/particleequation
   [Particle Line]: /skills/effects/particleline
+  [Particle Line Helix]: /skills/effects/particlelinehelix
+  [Particle Line Ring]: /skills/effects/particlelinering
   [Particle Orbital]: /skills/effects/particleorbital
   [Particle Ring]: /skills/effects/particlering
   [Particle Sphere]: /skills/effects/particlesphere
@@ -123,6 +131,8 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
   [Sound]: /skills/effects/sound
   [Spin]: /skills/effects/spin
   [StopSound]: /skills/effects/stopsound
+  [SummonAreaEffectCloud]: /skills/effects/summonareaeffectcloud
+  [ThunderLevel]: /skills/effects/thunderlevel
   [TotemOfUndying]: /skills/effects/totemOfUndying
   [Atom]: /skills/effects/atom
   [Particle Vortex]: /skills/effects/particlevortex
