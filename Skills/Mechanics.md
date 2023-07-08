@@ -129,6 +129,7 @@ are able to target locations as well.
 | [SetHealth][]             | Sets the health of the target entity                                                     |
 | [SetLeashHolder][]              | Changes the holder of a mobs lead                                                          |
 | [SetLevel][]              | Changes the casting mob's level                                                          |
+| [SetMaterialCooldown][]              | sets a cooldown for usable materials like ender pearls, chorus fruit, etc                                                          |
 | [SetMaxHealth][]          | Sets the max health of the target entity                                                 |
 | [SetMobColor][]           | Changes the color of the target if it is a colorable mob                                 |
 | [SetMobScore][]           | Sets a scoreboard value on the casting mob                                               |
@@ -375,6 +376,7 @@ but not yet ready for use.
   [SetHealth]: /skills/mechanics/sethealth
   [SetLeashHolder]: /skills/mechanics/setleashholder
   [SetLevel]: /skills/mechanics/setlevel
+  [SetMaterialCooldown]: /skills/mechanics/setmaterialcooldown
   [SetMaxHealth]: /skills/mechanics/setmaxhealth
   [SetMobColor]: /skills/mechanics/setmobcolor
   [SetMobScore]: /skills/mechanics/setmobscore
