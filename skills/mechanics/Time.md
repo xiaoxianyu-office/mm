@@ -1,6 +1,8 @@
 ## Description
 Sets the world's time. Depending on the attributes used, the change in time can be absolute or relative to the target player.
 
+Time mechanics must be synced to function. "sync=true;"
+
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
@@ -29,10 +31,10 @@ MidnightAura:
   Skills:
   - aura{auraName=midnight;i=1;ms=1;rd=true;
     onTick=[
-      - time{mode=SET;a=18000;personal=true;relative=false} @self
+      - time{mode=SET;a=18000;personal=true;relative=false;sync=true} @self
     ];
     onEnd=[
-      - time{mode=RESET} @self
+      - time{mode=RESET;sync=true} @self
     ]} @self
 ```
 
