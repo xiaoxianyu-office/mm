@@ -1,6 +1,5 @@
 ## Description
-Targets all the blocks in the targeted chunk
-
+Targets all blocks in a chunk relative to the inherited target(s)
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
