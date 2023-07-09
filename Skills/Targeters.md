@@ -50,7 +50,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @PlayersNearTargetLocation{r=#}      | @PNTL{r=#}        | Targets all players near targetlocation. Radius=5 by default.                                                    |
 | @Siblings                            |                   | Targets any mobs that share the same parent as the caster.                                                       |
 | @TargetedTarget                      | @Targeted         | Targets the inherited targets.                                                                                   |
-| @ItemsNearOrigin                     |                   | Targets item drops near the [origin](/skills/targeters/origin) of a meta-skill.                                                                                                                                                                            |
+| @**[ItemsNearOrigin][]**                                                                                                                                                                            |    | Targets item drops near the [origin](/skills/targeters/origin) of a meta-skill.                                                                                                                                                                            |
 | @**[ItemsInRadius][]**                                                                                                                                                                            | @IIR                                                                                                                                                                            | Targets all item drops in the given radius                                                                       |
 
 ### ThreatTable Targeters
@@ -262,6 +262,7 @@ Currently, sort can have the following values:
   [EntitiesInRing]: /Skills/Targeters/EntitiesInRing
   [EntitiesNearOrigin]: /Skills/Targeters/EntitiesNearOrigin
   [ItemsInRadius]: /Skills/Targeters/ItemsInRadius
+  [ItemsNearOrigin]: /Skills/Targeters/ItemsNearOrigin
 <!-- Single Location Targeters -->
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
   [Cone]: /Skills/Targeters/Cone
