@@ -91,7 +91,7 @@ These targeters only work if the mob has Threat Tables enabled.
 | @ForwardWall{f=5;y=0.0;width=1;height=1} |                 | Targets a cube 5 blocks infront of caster's facing direction with a yoffset. can target multiple blocks depending on the width and height values                                                                                                                                                                         |
 | @PlayerLocationsInRadius{r=#}                                                                          | @PLIR{r=#} | Targets all player locations in the given radius                                                                                    |
 | @Ring{radius=#;points=#;xRotation=#;yRotation=#;zRotation=#;xOffset=#;yOffset=#;zOffset=#}             |            | Target points to form a ring of locations                                                                                           |
-| @Cone{angle=#;points=#;range=#;rotation=#;yoffset=#}                                                   |            | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down) |
+| @**[Cone][]**                                                                                                                                                                            |    | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down)                                                                                                                          |
 | @EntitiesInCone{angle=#;range=#;rotation=#;}                                                           |            | Targets all entities within the cone                                                                                                |
 | @Sphere{radius=#;points=#;yoffset=#}                                                                   |            | Target points to form a sphere of locations                                                                                         |
 | @**[Rectangle][]**                                                                                          | @cube<br>@cuboid                                                                                          | Returns the # of points target locations that comprise a rectangle                                                                                                                                      |
@@ -257,6 +257,7 @@ Currently, sort can have the following values:
 <!-- Multi Entity Targeters -->
 <!-- Single Location Targeters -->
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
+  [Cone]: /Skills/Targeters/Cone
   [VariableLocation]: /Skills/Targeters/VariableLocation
 <!-- Multi Location Targeters -->
   [Rectangle]: /Skills/Targeters/Rectangle
