@@ -90,7 +90,7 @@ These targeters only work if the mob has Threat Tables enabled.
 
 | Targeter                                                                                               | Shorthand  | Description                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| @ForwardWall{f=5;y=0.0;width=1;height=1} |                 | Targets a cube 5 blocks infront of caster's facing direction with a yoffset. can target multiple blocks depending on the width and height values                                                                                                                                                                         |
+| @**[ForwardWall][]**                                                                                                                          |    | Targets a plane in front of the caster                                                                                                                          |
 | @PlayerLocationsInRadius{r=#}                                                                          | @PLIR{r=#} | Targets all player locations in the given radius                                                                                    |
 | @Ring{radius=#;points=#;xRotation=#;yRotation=#;zRotation=#;xOffset=#;yOffset=#;zOffset=#}             |            | Target points to form a ring of locations                                                                                           |
 | @**[Cone][]**                                                                                                                                                                            |    | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down)                                                                                                                          |
@@ -267,6 +267,7 @@ Currently, sort can have the following values:
   [Forward]: /Skills/Targeters/Forward
   [VariableLocation]: /Skills/Targeters/VariableLocation
 <!-- Multi Location Targeters -->
+  [ForwardWall]: /Skills/Targeters/ForwardWall
   [Rectangle]: /Skills/Targeters/Rectangle
 <!-- Special Targeters -->
   [BlocksInRadius]: /Skills/Targeters/BlocksInRadius
