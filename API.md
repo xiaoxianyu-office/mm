@@ -49,6 +49,13 @@ Examples
     // do something with mob             
     }
 ```
+```java
+    ActiveMob mythicMob = MythicBukkit.inst().getMobManager().getActiveMob(bukkitEntity.getUniqueId()).orElse(null);
+    if(mythicMob != null && mythicMob.getType().getInternalName().equals("SkeletalKnight")){
+    // do something with mob             
+    }
+```
+
 
 The MythicMobs API contains numerous events and helper classes to help
 you utilize our mobs, items, and skill systems.
