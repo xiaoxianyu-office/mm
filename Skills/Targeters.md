@@ -45,7 +45,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @PlayersInRing{min=#;max=#}          |                   | Target all players between the specified min and max radius.                                                     |
 | @PlayersNearOrigin{r=#}              |                   | Targets players near the [origin](/skills/targeters/origin) of a meta-skill.                                     |
 | @MobsNearOrigin{r=#;t=X}             |                   |                                                                                                                  |
-| @EntitiesNearOrigin{r=#}             | @ENO{r=#}         | Targets all entities near the [origin](/skills/targeters/origin) of a meta-skill                                                                                                                 |
+| @**[EntitiesNearOrigin][]**                                                                                                                                                                            | @ENO                                                                                                                                                                            | Targets all entities near the [origin](/skills/targeters/origin) of a meta-skill                                                                                                                                                                            |
 | @PlayersNearTargetLocation{r=#}      | @PNTL{r=#}        | Targets all players near targetlocation. Radius=5 by default.                                                    |
 | @Siblings                            |                   | Targets any mobs that share the same parent as the caster.                                                       |
 | @TargetedTarget                      | @Targeted         | Targets the inherited targets.                                                                                   |
@@ -82,7 +82,7 @@ These targeters only work if the mob has Threat Tables enabled.
 | @ObstructingBlock                        |                 | Tries to target blocks in front of the caster that are obstructing it                                                                                                                                                                              |
 | @TrackedLocation                         |                 | Targets the mob's tracked location                                                                                                                                                                                                                 |
 | @NearestStructure                        |                 | Targets the nearest structure's location                                                                                                                                                                                                           |
-| @**[VariableLocation][]**                | @varLocation    | Targets the location stored in the specified variable  |
+| @**[VariableLocation][]**                                                                                                                                                                            | @varLocation                                                                                                                                                                            | Targets the location stored in the specified variable                                                                                                                                                                            |
 
 
 ### Multi-Location Targeters
@@ -258,6 +258,7 @@ Currently, sort can have the following values:
 <!-- Multi Entity Targeters -->
   [EntitiesInRadius]: /Skills/Targeters/EntitiesInRadius
   [EntitiesInRing]: /Skills/Targeters/EntitiesInRing
+  [EntitiesNearOrigin]: /Skills/Targeters/EntitiesNearOrigin
 <!-- Single Location Targeters -->
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
   [Cone]: /Skills/Targeters/Cone
