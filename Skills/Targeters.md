@@ -23,6 +23,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @Mount                               |           | Targets the entity that the mob is currently riding                          |
 | @Parent                              |           | Targets the parent if mob was summoned by other mob.                         |
 | @**[Children][]**                                                                                                                          | @child<br>@summons                                                                                                                          | Targets any child entities summoned by the caster.                                                                                                                          |
+| @**[Father][]**                                                                                                                          | @dad<br>@daddy                                                                                                                          | Targets the father of the casting mob.                                                                                                                          |
 | @Passenger                           |           | Targets the rider of the mob.                                                |
 | @SpawnLocation                       |           | Targets the location the world's spawn.                                      |
 | @**[CasterSpawnLocation][]**                                                                                                                          |    | Targets the location the caster spawned at.                                                                                                                          |
@@ -255,6 +256,7 @@ Currently, sort can have the following values:
 <!-- LINKS -->
 <!-- Single Entity Targeters -->
   [Children]: /Skills/Targeters/Children
+  [Father]: /Skills/Targeters/Father
 <!-- Multi Entity Targeters -->
   [EntitiesInRadius]: /Skills/Targeters/EntitiesInRadius
   [EntitiesInRing]: /Skills/Targeters/EntitiesInRing
