@@ -85,6 +85,7 @@ are able to target locations as well.
 | [Message][]               | Sends a message to the target player(s)                                                  |
 | [ModifyGlobalScore][]     | Modifies a scoreboard value of the fake player: \_\_GLOBAL\_\_                           |
 | [ModifyTargetScore][]     | Modifies a scoreboard value of the target                                                |
+| [ModifyMobScore][]     | Modifies a scoreboard value of the casting mob                                                |
 | [ModifyScore][]           | Modifies the score of a dummy player                                                     |
 | [Mount][]                 | Summons a mob for the caster and mounts it                                               |
 | [MountMe][]               | Forces the targeted entity to mount the caster                                           |
@@ -337,6 +338,7 @@ but not yet ready for use.
   [Message]: /skills/mechanics/message
   [ModifyGlobalScore]: /skills/mechanics/modifyglobalscore
   [ModifyTargetScore]: /skills/mechanics/modifytargetscore
+  [ModifyMobScore]: /skills/mechanics/modifymobscore
   [ModifyScore]: /skills/mechanics/modifyscore
   [Mount]: /skills/mechanics/mount
   [MountMe]: /skills/mechanics/mountme
