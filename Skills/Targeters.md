@@ -22,10 +22,10 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @Owner                               |           | Targets the [owner](/skills/mechanics/setowner) of the mob                   |
 | @Mount                               |           | Targets the entity that the mob is currently riding                          |
 | @Parent                              |           | Targets the parent if mob was summoned by other mob.                         |
-| @Children                            |           | Targets any child entities summoned by the caster.                           |
+| @**[Children][]**                                                                                                                          | @child<br>@summons                                                                                                                          | Targets any child entities summoned by the caster.                                                                                                                          |
 | @Passenger                           |           | Targets the rider of the mob.                                                |
 | @SpawnLocation                       |           | Targets the location the world's spawn.                                      |
-| @**[CasterSpawnLocation][]**         |           | Targets the location the caster spawned at.                                  |
+| @**[CasterSpawnLocation][]**                                                                                                                          |    | Targets the location the caster spawned at.                                                                                                                          |
 | @PlayerByName{name="Ashijin"}        |           | Targets a specific player by name, supports placeholders. Added in 4.12      |
 | @UniqueIdentifier{u="<target.uuid>"} | @UUID     | Targets a specific entity by their UUID, supports placeholders. Added in 5.0 |
 | @Vehicle                             |           | Targets the Vehicle you are mounted on Added in 4.12                         |
@@ -252,9 +252,15 @@ Currently, sort can have the following values:
 
 
 <!-- LINKS -->
+<!-- Single Entity Targeters -->
+  [Children]: /Skills/Targeters/Children
+<!-- Multi Entity Targeters -->
+<!-- Single Location Targeters -->
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
   [VariableLocation]: /Skills/Targeters/VariableLocation
+<!-- Multi Location Targeters -->
   [Rectangle]: /Skills/Targeters/Rectangle
+<!-- Special Targeters -->
   [BlocksInRadius]: /Skills/Targeters/BlocksInRadius
   [BlocksInChunk]: /Skills/Targeters/BlocksInChunk
   [BlocksNearOrigin]: /Skills/Targeters/BlocksNearOrigin
