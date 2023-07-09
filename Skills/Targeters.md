@@ -38,7 +38,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @LivingInWorld                       | @EIW              | Targets all living entities in casters world                                                                     |
 | @PlayersInRadius{r=#}                | @PIR{r=#}         | Targets all players in the given radius                                                                          |
 | @MobsInRadius{r=#;types=X,X,X}       | @MIR{r=#;t=X,X,X} | Targets all mythicmobs or vanilla overrides of the given type in a radius                                                                   |
-| @LivingEntitiesInRadius{r=#}         | @EIR{r=#;t=X,X,X} | Targets all entities in the given radius. Can accept types (for specific entities), or no type (for ANY entity). |
+| @**[EntitiesInRadius][]**                                                                                                                                   | @livingEntitiesInRadius<br>@livingInRadius<br>@allInRadius<br>@EIR                                                                                                                          | Targets all entities in the given radius.                                                                                                                                   |
 | @PlayersInWorld                      | @World            | Targets all players in the current world.                                                                        |
 | @PlayersOnServer                     | @Server           | Targets all players in the server.                                                                               |
 | @PlayersInRing{min=#;max=#}          |                   | Target all players between the specified min and max radius.                                                     |
@@ -255,6 +255,7 @@ Currently, sort can have the following values:
 <!-- Single Entity Targeters -->
   [Children]: /Skills/Targeters/Children
 <!-- Multi Entity Targeters -->
+  [EntitiesInRadius]: /Skills/Targeters/EntitiesInRadius
 <!-- Single Location Targeters -->
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
   [Cone]: /Skills/Targeters/Cone
