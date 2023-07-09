@@ -10,7 +10,7 @@ Targets all blocks in a chunk relative to the inherited target(s)
 
 
 ## Examples
-Those metaskills will target every non air block in a 10 blocks radius around the trigger of the skilltree
+Those metaskills will target every non air block in the chunk where the trigger of the skilltree is located
 ```yaml
 ExampleSkill1:
   Skills:
