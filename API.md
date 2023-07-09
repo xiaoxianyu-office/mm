@@ -45,7 +45,7 @@ Examples
 
 ```java
     ActiveMob mythicMob = MythicBukkit.inst().getMobManager().getActiveMob(bukkitEntity.getUniqueId()).orElse(null);
-    if(mythicMob != null && mythicMob.getName().equals("SkeletalKnight")){
+    if(mythicMob != null && mythicMob.getMobType().equals("SkeletalKnight")){
     // do something with mob             
     }
 ```
