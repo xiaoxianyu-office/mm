@@ -1,5 +1,4 @@
-Targeters
-=========
+# Targeters
 
 Targeters are used to determine what a skill targets when it is fired.
 
@@ -7,8 +6,9 @@ While targeters are technically optional (as the default targeter will usually b
 
 When a targeter is used on the Skill mechanic, all of the skills inside of the meta-skill inherit the initial targeter. You can still overwrite the parent targeter for individual mechanics inside of the meta-skill by giving them their own targeter to use.
 
-Entity Targeters
-----------------
+[[_TOC_]]
+
+## Entity Targeters
 
 ### Single-Entity Targeters
 
@@ -25,7 +25,7 @@ Entity Targeters
 | @Children                            |           | Targets any child entities summoned by the caster.                           |
 | @Passenger                           |           | Targets the rider of the mob.                                                |
 | @SpawnLocation                       |           | Targets the location the world's spawn.                                      |
-| @CasterSpawnLocation                 |           | Targets the location the caster spawned at.                                  |
+| @**[CasterSpawnLocation][]**         |           | Targets the location the caster spawned at.                                  |
 | @PlayerByName{name="Ashijin"}        |           | Targets a specific player by name, supports placeholders. Added in 4.12      |
 | @UniqueIdentifier{u="<target.uuid>"} | @UUID     | Targets a specific entity by their UUID, supports placeholders. Added in 5.0 |
 | @Vehicle                             |           | Targets the Vehicle you are mounted on Added in 4.12                         |
@@ -62,8 +62,8 @@ These targeters only work if the mob has Threat Tables enabled.
 | @ThreatTablePlayers |           | Targets all players on the threat table                     |
 | @RTTL               |           | Targets the location of a random target on the threat table |
 
-Location Targeters
-------------------
+
+## Location Targeters
 
 ### Single-Location Targeters
 
@@ -81,7 +81,7 @@ Location Targeters
 | @ObstructingBlock                        |                 | Tries to target blocks in front of the caster that are obstructing it                                                                                                                                                                              |
 | @TrackedLocation                         |                 | Targets the mob's tracked location                                                                                                                                                                                                                 |
 | @NearestStructure                        |                 | Targets the nearest structure's location                                                                                                                                                                                                           |
-| @[**VariableLocation**](/Skills/Targeters/VariableLocation) | @varLocation    | Targets the location stored in the specified variable  |
+| @**[VariableLocation][]**                | @varLocation    | Targets the location stored in the specified variable  |
 
 
 ### Multi-Location Targeters
@@ -94,12 +94,12 @@ Location Targeters
 | @Cone{angle=#;points=#;range=#;rotation=#;yoffset=#}                                                   |            | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down) |
 | @EntitiesInCone{angle=#;range=#;rotation=#;}                                                           |            | Targets all entities within the cone                                                                                                |
 | @Sphere{radius=#;points=#;yoffset=#}                                                                   |            | Target points to form a sphere of locations                                                                                         |
-| @[**Rectangle**](/Skills/Targeters/Rectangle)                                                                                                     | @cube<br>@cuboid                                                                                          | Returns the # of points target locations that comprise a rectangle                                                                                                                                      |
+| @**[Rectangle][]**                                                                                          | @cube<br>@cuboid                                                                                          | Returns the # of points target locations that comprise a rectangle                                                                                                                                      |
 | @TargetedLocation                                                                                      |            | Targets the inherited target's location                                                                                            |
 | @RingAroundOrigin{radius=#;points=#;xRotation=#;yRotation=#;zRotation=#;xOffset=#;yOffset=#;zOffset=#} | @RAO       | Targets locations in a specified ring around the origin                                                                             |
 
-Special Targeters
------------------
+
+## Special Targeters
 
 | Targeter | Shorthand | Description                                                      |
 |----------|-----------|------------------------------------------------------------------|
@@ -107,20 +107,24 @@ Special Targeters
 
 The targeters below are called "meta-targeters". They target relative to an inherited targeter. For
 example:
-
-    Laser:
-      Mobtype: creeper
-      Display: 'Laser'
-      Health: 12
-      AITargetSelectors:
-      - 0 clear
-      - 1 players
-      Skills:
-      - skill{s=Laser} @target
-    Laser:
-      Skills:
-      - ignite @EntitiesInLine{r=1}
-
+```yaml
+# Mob file
+Laser:
+  Type: CREEPER
+  Display: 'Laser'
+  Health: 12
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Skills:
+  - skill{s=Laser} @target
+```
+```yaml
+# Skill file
+Laser:
+  Skills:
+  - ignite @EntitiesInLine{r=1}
+```
 In the example skill above, the "ignite" mechanic will target entities between the caster and the targeter specified in `- skill{s=Laser} @target`, i.e. a line between the caster and the caster's target.
 
 Some meta-targeters also allow the mechanic to be casted "fromOrigin". This will change the starting location of the meta-targeter to be @Origin rather than the caster, which can allow for some complex effects, particularly when used with Projectiles.
@@ -135,11 +139,11 @@ Some meta-targeters also allow the mechanic to be casted "fromOrigin". This will
 | @RandomLocationsNearOrigin{a=#;r=#;s=#;minr=#}                                           | @RLNO                                                           | Targets random locations near the origin of a skill.                                                                                                                                                            |
 | @FloorOfTargets                                                                          | @FOT                                                            | Targets the blocks underneath the inherited targets.                                                                                                                                                            |
 | @LocationsOfTargets                                                                      | @LOT                                                            | Targets the location of the inherited targets                                                                                                                                                                   |
-| @**[BlocksInRadius](/Skills/Targeters/BlocksInRadius)**                                                                               | @BIR         | Targets all blocks in a radius of the inherited targets.                                                                                                                                                        |
+| @**[BlocksInRadius][]**                                                                                                                          | @BIR                                                                                                                          | Targets all blocks in a radius of the inherited targets.                                                                                                                          |
 | @TargetBlock                                                                             |                                                                 | Targets the block you are looking at                                                                                                                                                                            |
-| @**[BlocksInChunk](/Skills/Targeters/BlocksInChunk)**                                                                                                 | @BIC         | Targets all blocks in a chunk relative to the inherited target.                                            |
-| @**[BlocksNearOrigin](/Skills/Targeters/BlocksNearOrigin)**                                                                 | @BNO         | Targets all blocks in a radius around the origin of the metaskill.                                                                                                                                                     |
-| @[**BlockVein**](/Skills/Targeters/BlockVein)                                         | @vein<br>@bv | Target all adjancent blocks that match the blocktype, starting from the origin of the skill.                                                                                                                                                     |
+| @**[BlocksInChunk][]**                                                                                                                          | @BIC                                                                                                                          | Targets all blocks in a chunk relative to the inherited target.                                            |
+| @**[BlocksNearOrigin][]**                                                                                                                          | @BNO                                                                                                                          | Targets all blocks in a radius around the origin of the metaskill.                                                                                                                                                     |
+| @**[BlockVein][]**                                                                                                                          | @vein<br>@bv                                                                                                                          | Target all adjancent blocks that match the blocktype, starting from the origin of the skill.                                                                                                                                                     |
 
 
 # Common Attributes
@@ -174,11 +178,9 @@ There are some common attributes that can be used in most of the Targeters, depe
 | ignoretranslucent                        | it               | Boolean value. If set to true, no translucent blocks will be targeted |
 
 
-Targeter Options
-================
+# Targeter Options
 
-Target Filters
---------------
+## Target Filters
 
 Target Filters allow you to filter out certain targets, and makes targeters a lot more flexible.
 
@@ -221,8 +223,7 @@ You can also turn off specific filters by just adding the option
 
 Note: As of MM 4.15 or MM 5.0, you can set the default target filters in MythicMobs/config.yml
 
-Target Limits
--------------
+## Target Limits
 
 All entity and location targeters also support target limits (as of v5.0.4). With this you can limit how many entities/locations are targeted, including the order in which they are selected.
 
@@ -248,3 +249,13 @@ Currently, sort can have the following values:
 - LOWEST_HEALTH
 - HIGHEST_THREAT
 - LOWEST_THREAT
+
+
+<!-- LINKS -->
+  [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
+  [VariableLocation]: /Skills/Targeters/VariableLocation
+  [Rectangle]: /Skills/Targeters/Rectangle
+  [BlocksInRadius]: /Skills/Targeters/BlocksInRadius
+  [BlocksInChunk]: /Skills/Targeters/BlocksInChunk
+  [BlocksNearOrigin]: /Skills/Targeters/BlocksNearOrigin
+  [BlockVein]: /Skills/Targeters/BlockVein
