@@ -82,7 +82,7 @@ These targeters only work if the mob has Threat Tables enabled.
 | @**[Location][]**                                                                                                                          |    | Targets the specified coordinates in the caster's world.                                                                                                                          |
 | @Origin{xoffset=0;yoffset=0;zoffset=0}   |                 | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile). |
 | @Spawner{s=SpawnerName}                  |                 | Targets the location of the specified spawner(s). The string can be the name of a spawner, or a a group of spawners (using g:groupname), and also accepts wildcards (Spawner* would target Spawner1,Spawner2,Spawner3,etc)                         |
-| @ObstructingBlock                        |                 | Tries to target blocks in front of the caster that are obstructing it                                                                                                                                                                              |
+| @**[ObstructingBlock][]**                                                                                                                          |    | Tries to target the block in front of the caster that is obstructing it                                                                                                                          |
 | @TrackedLocation                         |                 | Targets the mob's tracked location                                                                                                                                                                                                                 |
 | @**[NearestStructure][]**                                                                                                                          |    | Targets the nearest structure of the specified type within a radius in the caster's world                                                                                                                          |
 | @**[VariableLocation][]**                                                                                                                          | @varLocation                                                                                                                          | Targets the location stored in the specified variable                                                                                                                          |
@@ -278,6 +278,7 @@ Currently, sort can have the following values:
   [Forward]: /Skills/Targeters/Forward
   [Location]: /Skills/Targeters/Location
   [NearestStructure]: /Skills/Targeters/NearestStructure
+  [ObstructingBlock]: /Skills/Targeters/ObstructingBlock
   [VariableLocation]: /Skills/Targeters/VariableLocation
 <!-- Multi Location Targeters -->
   [Cone]: /Skills/Targeters/Cone
