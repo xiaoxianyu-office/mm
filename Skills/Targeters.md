@@ -17,7 +17,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @Self                                | @Caster   | Targets the caster of the skill                                              |
 | @Target                              | @T        | Targets the mob's target                                                     |
 | @Trigger                             |           | Targets the entity that triggered the skill                                  |
-| @NearestPlayer{r=#}                  |           | Targets the nearest player in radius. r=5 by default                         |
+| @**[NearestPlayer][]**                                                                                                                                                                            |    | Targets the nearest player in radius                                                                                                                                                                            |
 | @WolfOwner                           |           | Targets the owner of the wolf                                                |
 | @Owner                               |           | Targets the [owner](/skills/mechanics/setowner) of the mob                   |
 | @**[Mount][]**                                                                                                                                                                            | @Vehicle                                                                                                                                                                            | Targets the entity that the mob is currently riding                                                                                                                                                                            |
@@ -260,6 +260,7 @@ Currently, sort can have the following values:
   [Father]: /Skills/Targeters/Father
   [Mother]: /Skills/Targeters/Mother
   [Mount]: /Skills/Targeters/Mount
+  [NearestPlayer]: /Skills/Targeters/NearestPlayer
 <!-- Multi Entity Targeters -->
   [EntitiesInRadius]: /Skills/Targeters/EntitiesInRadius
   [EntitiesInRing]: /Skills/Targeters/EntitiesInRing
