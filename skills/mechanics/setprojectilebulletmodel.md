@@ -1,6 +1,6 @@
 Mechanic: SetProjectileBulletModel
 --------------------------
-Sets the given metakill's cooldown to the given value (in seconds)
+Sets the projectile's model number. (DISPLAY bullet types only)
 
 **Attributes**
 
