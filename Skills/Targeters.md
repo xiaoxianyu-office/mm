@@ -20,7 +20,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @NearestPlayer{r=#}                  |           | Targets the nearest player in radius. r=5 by default                         |
 | @WolfOwner                           |           | Targets the owner of the wolf                                                |
 | @Owner                               |           | Targets the [owner](/skills/mechanics/setowner) of the mob                   |
-| @Mount                               |           | Targets the entity that the mob is currently riding                          |
+| @**[Mount][]**                                                                                                                                                                            | @Vehicle                                                                                                                                                                            | Targets the entity that the mob is currently riding                                                                                                                                                                            |
 | @Parent                              |           | Targets the parent if mob was summoned by other mob.                         |
 | @**[Children][]**                                                                                                                          | @child<br>@summons                                                                                                                          | Targets any child entities summoned by the caster.                                                                                                                          |
 | @**[Father][]**                                                                                                                          | @dad<br>@daddy                                                                                                                          | Targets the father of the casting mob.                                                                                                                          |
@@ -259,6 +259,7 @@ Currently, sort can have the following values:
   [Children]: /Skills/Targeters/Children
   [Father]: /Skills/Targeters/Father
   [Mother]: /Skills/Targeters/Mother
+  [Mount]: /Skills/Targeters/Mount
 <!-- Multi Entity Targeters -->
   [EntitiesInRadius]: /Skills/Targeters/EntitiesInRadius
   [EntitiesInRing]: /Skills/Targeters/EntitiesInRing
