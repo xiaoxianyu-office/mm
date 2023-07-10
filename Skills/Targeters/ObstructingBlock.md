@@ -1,5 +1,5 @@
 ## Description
-Tries to target blocks in front of the caster that are obstructing it
+Tries to target the block in front of the caster that is obstructing it
 
 ## Attributes
 >*This targeter has no attributes*
