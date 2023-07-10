@@ -1,5 +1,5 @@
 ## Description
-Targets all MythicMobs or vanilla overrides of the given type(s) in a radius
+Targets all MythicMobs or vanilla overrides of the given type(s) in a radius around the caster
 
 
 ## Attributes
