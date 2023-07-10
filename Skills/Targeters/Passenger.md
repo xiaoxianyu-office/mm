@@ -1,5 +1,5 @@
 ## Description
-Targets the rider of the mob
+Targets the rider of the casting mob
 
 
 ## Attributes
