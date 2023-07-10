@@ -24,6 +24,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @Parent                              |           | Targets the parent if mob was summoned by other mob.                         |
 | @**[Children][]**                                                                                                                          | @child<br>@summons                                                                                                                          | Targets any child entities summoned by the caster.                                                                                                                          |
 | @**[Father][]**                                                                                                                          | @dad<br>@daddy                                                                                                                          | Targets the father of the casting mob.                                                                                                                          |
+| @**[Mother][]**                                                                                                                          | @mom<br>@mommy                                                                                                                          | Targets the mother of the casting mob.                                                                                                                          |
 | @Passenger                           |           | Targets the rider of the mob.                                                |
 | @SpawnLocation                       |           | Targets the location the world's spawn.                                      |
 | @**[CasterSpawnLocation][]**                                                                                                                          |    | Targets the location the caster spawned at.                                                                                                                          |
@@ -257,6 +258,7 @@ Currently, sort can have the following values:
 <!-- Single Entity Targeters -->
   [Children]: /Skills/Targeters/Children
   [Father]: /Skills/Targeters/Father
+  [Mother]: /Skills/Targeters/Mother
 <!-- Multi Entity Targeters -->
   [EntitiesInRadius]: /Skills/Targeters/EntitiesInRadius
   [EntitiesInRing]: /Skills/Targeters/EntitiesInRing
