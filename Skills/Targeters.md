@@ -26,8 +26,6 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @**[Father][]**                                                                                                                          | @dad<br>@daddy                                                                                                                          | Targets the father of the casting mob.                                                                                                                          |
 | @**[Mother][]**                                                                                                                          | @mom<br>@mommy                                                                                                                          | Targets the mother of the casting mob.                                                                                                                          |
 | @Passenger                           |           | Targets the rider of the mob.                                                |
-| @SpawnLocation                       |           | Targets the location the world's spawn.                                      |
-| @**[CasterSpawnLocation][]**                                                                                                                          |    | Targets the location the caster spawned at.                                                                                                                          |
 | @PlayerByName{name="Ashijin"}        |           | Targets a specific player by name, supports placeholders. Added in 4.12      |
 | @UniqueIdentifier{u="<target.uuid>"} | @UUID     | Targets a specific entity by their UUID, supports placeholders. Added in 5.0 |
 | @Vehicle                             |           | Targets the Vehicle you are mounted on Added in 4.12                         |
@@ -78,12 +76,14 @@ These targeters only work if the mob has Threat Tables enabled.
 | @ProjectileForward{f=1;rot=45}           |                 | Targets 1 block infront of the projectile offset by 45 degrees                                                                                                                                                                                     |
 | @TargetLocation{maxdistance=#}                          | @targetloc, @TL | Targets the mob's target's location                                                                                                                                                                                                                |
 | @TriggerLocation                         |                 | Targets the location of the entity that triggered the skill                                                                                                                                                                                        |
+| @SpawnLocation                       |           | Targets the location the world's spawn.                                      |
+| @**[CasterSpawnLocation][]**                                                                                                                          |    | Targets the location the caster spawned at.                                                                                                                          |
 | @**[Location][]**                                                                                                                          |    | Targets the specified coordinates in the caster's world.                                                                                                                          |
 | @Origin{xoffset=0;yoffset=0;zoffset=0}   |                 | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile). |
 | @Spawner{s=SpawnerName}                  |                 | Targets the location of the specified spawner(s). The string can be the name of a spawner, or a a group of spawners (using g:groupname), and also accepts wildcards (Spawner* would target Spawner1,Spawner2,Spawner3,etc)                         |
 | @ObstructingBlock                        |                 | Tries to target blocks in front of the caster that are obstructing it                                                                                                                                                                              |
 | @TrackedLocation                         |                 | Targets the mob's tracked location                                                                                                                                                                                                                 |
-| @NearestStructure                        |                 | Targets the nearest structure's location                                                                                                                                                                                                           |
+| @**[NearestStructure][]**                                                                                                                          |    | Targets the nearest structure of the specified type within a radius in the caster's world                                                                                                                          |
 | @**[VariableLocation][]**                                                                                                                          | @varLocation                                                                                                                          | Targets the location stored in the specified variable                                                                                                                          |
 
 
@@ -275,6 +275,7 @@ Currently, sort can have the following values:
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
   [Forward]: /Skills/Targeters/Forward
   [Location]: /Skills/Targeters/Location
+  [NearestStructure]: /Skills/Targeters/NearestStructure
   [VariableLocation]: /Skills/Targeters/VariableLocation
 <!-- Multi Location Targeters -->
   [Cone]: /Skills/Targeters/Cone
