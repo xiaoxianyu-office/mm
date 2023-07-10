@@ -141,6 +141,7 @@ are able to target locations as well.
 | [SetNoDamageTicks][]      | Sets the nodamageticks of the target                                                     |
 | [SetOwner][]              | Makes the target the owner of the casting mob                                            |
 | [SetProjectileDirection][]| Sets the calling projectile's movement direction to the given target                                            |
+| [SetProjectileBulletModel][]    | Sets the model of the projectile. (DISPLAY entities only)                                                                                                   |
 | [SetRotation][]           | Sets the rotation of the target                                                          |
 | [SetTarget][]             | Sets the caster's target                                                                 |
 | [SetTargetScore][]        | Sets the score of the target                                                             |
@@ -386,6 +387,7 @@ but not yet ready for use.
   [SetNoDamageTicks]: /skills/mechanics/setnodamageticks
   [SetOwner]: /skills/mechanics/setowner
   [SetProjectileDirection]: /skills/mechanics/SetProjectileDirection
+  [SetProjectileBulletModel]: /skills/mechanics/setprojectilebulletmodel
   [SetRaiderPatrolBlock]: /skills/mechanics/setraiderpatrolblock
   [SetRaiderPatrolLeader]: /skills/mechanics/setraiderpatrolleader
   [SetRotation]: /skills/mechanics/setrotation
