@@ -1,43 +1,38 @@
-Mechanic: SetOwner
-==================
+## Description
+Sets the "owner" attribute of the Mythic Mob to the given target. This is a special attribute used within MythicMobs, and different from the normal "vanilla" owner of a mob.  
+Does nothing if the caster is not a Mythic Mob, or the target is not a Player.  
+Works with the [@Owner Targeter](/Skills/Targeters/Owner), and the [Owner Condition](/skills/conditions/owner).  
 
-Added in MM 4.0.0
+If the casting mob is a `Wolf`,`Cat` or `Parrot`, then the mechanic will _also_ set their Vanilla Owner as the targeted player.
 
-Sets the "owner" attribute of the Mythic Mob to the given target. Does
-nothing if the caster is not a Mythic Mob. Works with the @Owner target,
-and the Owner target condition.
 
-Special Notes
--------------
+## Attributes
+>*This mechanic has no attributes*
 
-This is used in conjunction with the **owner condition** (see
-[Conditions](/skills/conditions/owner)) and
-@Owner targets.  
-This is NOT the same as a owner for a wolf or ocelot.
 
-Examples
---------
-
-    PetSheep:
-      Mobtype: sheep
-      Display: 'Pet'
-      Health: 20
-      Damage: 18
-      Skills:
-      - skill{s=SetOwner} @trigger ~onInteract
-      - skill{s=HealOwner} @PIR{R=10} ~onTimer:50
-     
+## Examples
+```yaml
+PetSheep:
+  Mobtype: sheep
+  Display: 'Pet'
+  Health: 20
+  Damage: 18
+  Skills:
+  - skill{s=SetOwner} @trigger ~onInteract
+  - skill{s=HealOwner} @PIR{R=10} ~onTimer:50
+```
 
 This skill would change the mob's owner to whoever right clicked it.
-
-    SetOwner:
-      Skills:
-      - setowner @trigger
-
+```yaml
+SetOwner:
+  Skills:
+  - setowner @trigger
+```
 This skill would only heal the owner of the mob
-
-    HealOwner:
-      TargetConditions:
-      - owner true
-     Skills:
-      - heal{a=10}
+```yaml
+HealOwner:
+  TargetConditions:
+  - owner true
+  Skills:
+   - heal{a=10}
+```
