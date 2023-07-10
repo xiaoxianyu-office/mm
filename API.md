@@ -60,7 +60,7 @@ Examples
 ```java
   Collection<ActiveMob> activeMobs = MythicBukkit.inst().getMobManager().getActiveMobs(am -> am.getMobType().equals("SkeletalKnight"));
 
-//or use the Streams api
+  //or use the Streams api
   Collection<ActiveMob> activeMobs = MythicBukkit.inst().getMobManager().getActiveMobs();
   Collection<ActiveMob> filteredMobs = activeMobs.stream().filter(activeMob -> activeMob.getMobType().equals("SkeletalKnight")).toList();
 ```
