@@ -1,7 +1,7 @@
 ## Description
 Sets the "Parent" of the casting MythicMob as the targeted entity.  
 The Parent can be either a Player or another MythicMob.
-
+Works with the [@Parent Targeter](/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Parent), and the [IsParent Condition](/mythiccraft/MythicMobs/-/wikis/skills/conditions/IsParent).
 
 ## Attributes
 >*This mechanic has no attributes*
