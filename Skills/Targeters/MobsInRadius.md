@@ -15,3 +15,7 @@ ExampleSkill:
   Skills:
   - ignite @MobsInRadius{r=10;types=IncredibleZombie,SpookyScarySkeleton}
 ```
+
+
+## Aliases
+- [x] MIR
