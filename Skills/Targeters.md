@@ -77,7 +77,7 @@ These targeters only work if the mob has Threat Tables enabled.
 | @ProjectileForward{f=1;rot=45}           |                 | Targets 1 block infront of the projectile offset by 45 degrees                                                                                                                                                                                     |
 | @TargetLocation{maxdistance=#}                          | @targetloc, @TL | Targets the mob's target's location                                                                                                                                                                                                                |
 | @TriggerLocation                         |                 | Targets the location of the entity that triggered the skill                                                                                                                                                                                        |
-| @Location{c=x,y,z,yaw,pitch}             |                 | The skill will target the coordinates specified.                                                                                                                                                                                                   |
+| @**[Location][]**                                                                                                                          |    | Targets the specified coordinates in the caster's world.                                                                                                                          |
 | @Origin{xoffset=0;yoffset=0;zoffset=0}   |                 | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile). |
 | @Spawner{s=SpawnerName}                  |                 | Targets the location of the specified spawner(s). The string can be the name of a spawner, or a a group of spawners (using g:groupname), and also accepts wildcards (Spawner* would target Spawner1,Spawner2,Spawner3,etc)                         |
 | @ObstructingBlock                        |                 | Tries to target blocks in front of the caster that are obstructing it                                                                                                                                                                              |
@@ -269,6 +269,7 @@ Currently, sort can have the following values:
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
   [Cone]: /Skills/Targeters/Cone
   [Forward]: /Skills/Targeters/Forward
+  [Location]: /Skills/Targeters/Location
   [VariableLocation]: /Skills/Targeters/VariableLocation
 <!-- Multi Location Targeters -->
   [ForwardWall]: /Skills/Targeters/ForwardWall
