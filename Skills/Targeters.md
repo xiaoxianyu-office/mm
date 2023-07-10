@@ -35,7 +35,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 
 | Targeter                             | Shorthand         | Description                                                                                                      |
 |--------------------------------------|-------------------|------------------------------------------------------------------------------------------------------------------|
-| @LivingInCone{a=90.0;r=16.0;rot=0.0} | @EIC{}            | Targets all living entities in cone with angle (a), length (r), and rotation (rot) relative to facing direction  |
+| @**[LivingInCone][]**                                                                                                                                                                            | @entitiesInCone<br>@livingEntitiesInCone<br>@LEIC<br>@EIC                                                                                                                                                                            | Targets all living entities in cone with a specified angle, length and rotation relative to facing direction                                                                                                                                                                            |
 | @LivingInWorld                       | @EIW              | Targets all living entities in casters world                                                                     |
 | @PlayersInRadius{r=#}                | @PIR{r=#}         | Targets all players in the given radius                                                                          |
 | @MobsInRadius{r=#;types=X,X,X}       | @MIR{r=#;t=X,X,X} | Targets all mythicmobs or vanilla overrides of the given type in a radius                                                                   |
@@ -263,6 +263,7 @@ Currently, sort can have the following values:
   [EntitiesNearOrigin]: /Skills/Targeters/EntitiesNearOrigin
   [ItemsInRadius]: /Skills/Targeters/ItemsInRadius
   [ItemsNearOrigin]: /Skills/Targeters/ItemsNearOrigin
+  [LivingInCone]: /Skills/Targeters/LivingInCone
 <!-- Single Location Targeters -->
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
   [Cone]: /Skills/Targeters/Cone
