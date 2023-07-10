@@ -1,5 +1,5 @@
 ## Description
-Targets the owner of the casting mob
+Targets the Owner of the casting mob
 
 
 ## Attributes
