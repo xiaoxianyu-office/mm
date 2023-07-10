@@ -7,7 +7,9 @@ Targets the Owner of the casting mob
 
 
 ## Examples
+This metaskill will send a message to the Owner of the casting mob
 ```yaml
+ExampleSkill:
   Skills:
   - message{m="Hello there!"} @Owner
 ```
