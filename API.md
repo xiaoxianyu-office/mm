@@ -56,6 +56,15 @@ Examples
     }
 ```
 
+### 3) Get a collection of ActiveMob with a filter/predicate
+```java
+  Collection<ActiveMob> activeMobs = MythicBukkit.inst().getMobManager().getActiveMobs(am -> am.getMobType().equals("SkeletalKnight"));
+
+//or use the Streams api
+  Collection<ActiveMob> activeMobs = MythicBukkit.inst().getMobManager().getActiveMobs();
+  Collection<ActiveMob> filteredMobs = activeMobs.stream().filter(activeMob -> activeMob.getMobType().equals("SkeletalKnight")).toList();
+```
+
 
 The MythicMobs API contains numerous events and helper classes to help
 you utilize our mobs, items, and skill systems.
