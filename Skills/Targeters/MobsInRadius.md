@@ -1,12 +1,12 @@
 ## Description
-Targets all MythicMobs or vanilla overrides of the given type in a radius
+Targets all MythicMobs or vanilla overrides of the given type(s) in a radius
 
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | radius    | r         | The radius of the targeter                                           | 5       |
-| types     | type, t   | The type(s) of the target MythicMobs. Can be a list.                 |         |
+| types     | type, t   | The type(s) of the target MythicMobs. Can be a list                  |         |
 
 
 ## Examples
