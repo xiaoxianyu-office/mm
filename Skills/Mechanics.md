@@ -140,6 +140,7 @@ are able to target locations as well.
 | [SetFaction][]            | Changes the target entity's faction                                                      |
 | [SetNoDamageTicks][]      | Sets the nodamageticks of the target                                                     |
 | [SetOwner][]              | Makes the target the owner of the casting mob                                            |
+| [SetParent][]             | Makes the target the parent of the casting mob                                            |
 | [SetProjectileDirection][]| Sets the calling projectile's movement direction to the given target                                            |
 | [SetProjectileBulletModel][]    | Sets the model of the projectile. (DISPLAY bullets only)                                                                                                   |
 | [SetRotation][]           | Sets the rotation of the target                                                          |
@@ -386,6 +387,7 @@ but not yet ready for use.
   [SetName]: /skills/mechanics/setname
   [SetNoDamageTicks]: /skills/mechanics/setnodamageticks
   [SetOwner]: /skills/mechanics/setowner
+  [SetParent]: /skills/mechanics/SetParent
   [SetProjectileDirection]: /skills/mechanics/SetProjectileDirection
   [SetProjectileBulletModel]: /skills/mechanics/setprojectilebulletmodel
   [SetRaiderPatrolBlock]: /skills/mechanics/setraiderpatrolblock
