@@ -1,5 +1,6 @@
 ## Description
-Targets the Owner of the casting mob
+Targets the Owner of the casting mob.  
+The Owner can be set via the [SetOwner](/mechanics/setowner) mechanic
 
 
 ## Attributes
