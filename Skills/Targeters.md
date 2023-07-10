@@ -25,7 +25,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @[Children][]                                                                                                                          | @child<br>@summons                                                                                                                          | Targets any child entities summoned by the caster.                                                                                                                          |
 | @[Father][]                                                                                                                          | @dad<br>@daddy                                                                                                                          | Targets the father of the casting mob.                                                                                                                          |
 | @[Mother][]                                                                                                                          | @mom<br>@mommy                                                                                                                          | Targets the mother of the casting mob.                                                                                                                          |
-| @Passenger                           |           | Targets the rider of the mob.                                                |
+| @[Passenger][]                                                                                                                          |    | Targets the rider of the casting mob.                                                                                                                          |
 | @PlayerByName{name="Ashijin"}        |           | Targets a specific player by name, supports placeholders. Added in 4.12      |
 | @UniqueIdentifier{u="<target.uuid>"} | @UUID     | Targets a specific entity by their UUID, supports placeholders. Added in 5.0 |
 | @Vehicle                             |           | Targets the Vehicle you are mounted on Added in 4.12                         |
@@ -264,6 +264,7 @@ Currently, sort can have the following values:
   [NearestPlayer]: /Skills/Targeters/NearestPlayer
   [Owner]: /Skills/Targeters/Owner
   [Parent]: /Skills/Targeters/Parent
+  [Passenger]: /Skills/Targeters/Passenger
 <!-- Multi Entity Targeters -->
   [EntitiesInRadius]: /Skills/Targeters/EntitiesInRadius
   [EntitiesInRing]: /Skills/Targeters/EntitiesInRing
