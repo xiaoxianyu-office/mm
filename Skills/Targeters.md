@@ -36,7 +36,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | Targeter                             | Shorthand         | Description                                                                                                      |
 |--------------------------------------|-------------------|------------------------------------------------------------------------------------------------------------------|
 | @**[LivingInCone][]**                                                                                                                                                                            | @entitiesInCone<br>@livingEntitiesInCone<br>@LEIC<br>@EIC                                                                                                                                                                            | Targets all living entities in cone with a specified angle, length and rotation relative to facing direction                                                                                                                                                                            |
-| @LivingInWorld                       | @EIW              | Targets all living entities in casters world                                                                     |
+| @**[LivingInWorld][]**                                                                                                                                                                            | @EIW                                                                                                                                                                            | Targets all living entities in the caster's world                                                                     |
 | @PlayersInRadius{r=#}                | @PIR{r=#}         | Targets all players in the given radius                                                                          |
 | @MobsInRadius{r=#;types=X,X,X}       | @MIR{r=#;t=X,X,X} | Targets all mythicmobs or vanilla overrides of the given type in a radius                                                                   |
 | @**[EntitiesInRadius][]**                                                                                                                                   | @livingEntitiesInRadius<br>@livingInRadius<br>@allInRadius<br>@EIR                                                                                                                          | Targets all entities in the given radius.                                                                                                                                   |
@@ -264,6 +264,7 @@ Currently, sort can have the following values:
   [ItemsInRadius]: /Skills/Targeters/ItemsInRadius
   [ItemsNearOrigin]: /Skills/Targeters/ItemsNearOrigin
   [LivingInCone]: /Skills/Targeters/LivingInCone
+  [LivingInWorld]: /Skills/Targeters/LivingInWorld
 <!-- Single Location Targeters -->
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
   [Cone]: /Skills/Targeters/Cone
