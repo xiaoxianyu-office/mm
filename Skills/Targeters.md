@@ -80,7 +80,7 @@ These targeters only work if the mob has Threat Tables enabled.
 | @SpawnLocation                       |           | Targets the location the world's spawn.                                      |
 | @**[CasterSpawnLocation][]**                                                                                                                          |    | Targets the location the caster spawned at.                                                                                                                          |
 | @**[Location][]**                                                                                                                          |    | Targets the specified coordinates in the caster's world.                                                                                                                          |
-| @Origin{xoffset=0;yoffset=0;zoffset=0}   |                 | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile). |
+| @**[Origin][]**                                                                                                                          | @source                                                                                                                          | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile).                                                                                                                          |
 | @Spawner{s=SpawnerName}                  |                 | Targets the location of the specified spawner(s). The string can be the name of a spawner, or a a group of spawners (using g:groupname), and also accepts wildcards (Spawner* would target Spawner1,Spawner2,Spawner3,etc)                         |
 | @**[ObstructingBlock][]**                                                                                                                          |    | Tries to target the block in front of the caster that is obstructing it                                                                                                                          |
 | @TrackedLocation                         |                 | Targets the mob's tracked location                                                                                                                                                                                                                 |
@@ -279,6 +279,7 @@ Currently, sort can have the following values:
   [Location]: /Skills/Targeters/Location
   [NearestStructure]: /Skills/Targeters/NearestStructure
   [ObstructingBlock]: /Skills/Targeters/ObstructingBlock
+  [Origin]: /Skills/Targeters/Origin
   [VariableLocation]: /Skills/Targeters/VariableLocation
 <!-- Multi Location Targeters -->
   [Cone]: /Skills/Targeters/Cone
