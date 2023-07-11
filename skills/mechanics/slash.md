@@ -30,14 +30,14 @@ The Slash meta-mechanic can execute other skills in a slash-shaped pattern. The 
 ```yaml
 ExampleSkill:
   Skills:
-  - slash{y=1.8;w=4;h=2;mpd=true;a=180;oP=[ e:p{p=CRIT} ];roll=<random.-45to45>}
+  - slash{y=1.8;w=4;h=2;mpd=true;a=180;oP=[ - effect:particles{p=CRIT} ];roll=<random.-45to45>}
 ```
 ```yaml
 SlashSword:
   Id: NETHERITE_SWORD
   Skills:
   - slash{y=1.8;w=4;h=40;mpd=true;a=45;radius=2;
-      oP=[ - e:p{p=SPARK} ];
+      oP=[ - effect:particles{p=SPARK} ];
       oH=[ - damage{a=2} ];
       roll=<random.-30to30>;fo=5;duration=5} @self ~onUse
 ```
