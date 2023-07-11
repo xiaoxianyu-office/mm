@@ -102,14 +102,9 @@ These targeters only work if the mob has Threat Tables enabled.
 | @RingAroundOrigin{radius=#;points=#;xRotation=#;yRotation=#;zRotation=#;xOffset=#;yOffset=#;zOffset=#} | @RAO       | Targets locations in a specified ring around the origin                                                                             |
 
 
-## Special Targeters
+## Meta Targeters
 
-| Targeter | Shorthand | Description                                                      |
-|----------|-----------|------------------------------------------------------------------|
-| @None    |           | Provides no target. (Useful for mechanics with no target input.) |
-
-The targeters below are called "meta-targeters". They target relative to an inherited targeter. For
-example:
+The targeters below are called "meta-targeters" (or "special targeters"). They target relative to an [inherited target](Metaskills#inheritance). For example:
 ```yaml
 # Mob file
 Laser:
@@ -132,12 +127,21 @@ In the example skill above, the "ignite" mechanic will target entities between t
 
 Some meta-targeters also allow the mechanic to be casted "fromOrigin". This will change the starting location of the meta-targeter to be @Origin rather than the caster, which can allow for some complex effects, particularly when used with Projectiles.
 
-| Targeter                                                                                 | Shorthand                                                       | Description                                                                                                                                                                                                     |
-|------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| @[Line][]                                                                                                                          |    | Targets locations between the mob and the inherited target.                                                                                                                                                     |
+
+### Meta-Entity Targeters
+
+| Targeter | Shorthand | Description                                                                     |
+|----------|-----------|---------------------------------------------------------------------------------|
 | @[LivingInLine][]                                                                                                                          | @entitiesInLine<br>@livingEntitiesInLine<br>@LEIL<br>@EIL                                                                                                                          | Targets any entities in a line between the inherited target and the casting mob.                                                                                                                          |
 | @[LivingNearTargetLocation][]                                                                                                                          | @LNTL<br>@ENTL<br>@ENT                                                                                                                          | Targets all living entities near the inherited target.                                                                                                                                                        |
 | @[PlayersNearTargetLocations][]                                                                                                                          | @playersNearTargetLocation<br>@PNTL                                                                                                                          | Targets all players near the inherited targets.                                                                                                                          |
+
+
+### Meta-Location Targeters
+
+| Targeter | Shorthand | Description                                                                     |
+|----------|-----------|---------------------------------------------------------------------------------|
+| @[Line][]                                                                                                                          |    | Targets locations between the mob and the inherited target.                                                                                                                                                     |
 | @RandomLocationsNearTargets                                                 | @RLNTE{a=#;r=#;s=#;minr=#}                                      | Targets random locations around the inherited target, where: a is the amount of locations, r is the radius around the inherited target, minr is the minimum radius, and s is the spacing between each location. |
 | @RandomLocationsNearOrigin{a=#;r=#;s=#;minr=#}                                           | @RLNO                                                           | Targets random locations near the origin of a skill.                                                                                                                                                            |
 | @[FloorOfTargets][]                                                                                                                          | @FOT<br>@floorsOfTarget                                                                                                                          | Targets the blocks underneath the inherited targets.                                                                                                                                                            |
@@ -147,6 +151,14 @@ Some meta-targeters also allow the mechanic to be casted "fromOrigin". This will
 | @[BlocksInChunk][]                                                                                                                          | @BIC                                                                                                                          | Targets all blocks in a chunk relative to the inherited target.                                            |
 | @[BlocksNearOrigin][]                                                                                                                          | @BNO                                                                                                                          | Targets all blocks in a radius around the origin of the metaskill.                                                                                                                                                     |
 | @[BlockVein][]                                                                                                                          | @vein<br>@bv                                                                                                                          | Target all adjancent blocks that match the blocktype, starting from the origin of the skill.                                                                                                                                                     |
+
+
+### None Targeter
+
+| Targeter | Shorthand | Description                                                      |
+|----------|-----------|------------------------------------------------------------------|
+| @None    |           | Provides no target. (Useful for mechanics with no target input.) |
+
 
 
 # Common Attributes
