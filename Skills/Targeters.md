@@ -43,7 +43,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @[EntitiesInRing][]                                                                                                                                   | @EIRR                                                                                                                          | Targets all entities in the given ring.                                                                                                                                   |
 | @PlayersInWorld                      | @World            | Targets all players in the current world.                                                                        |
 | @PlayersOnServer                     | @Server           | Targets all players in the server.                                                                               |
-| @PlayersInRing{min=#;max=#}          |                   | Target all players between the specified min and max radius.                                                     |
+| @[PlayersInRing][]                                                                                                                                   |    | Target all players between the specified min and max radius.                                                                                                                                   |
 | @PlayersNearOrigin{r=#}              |                   | Targets players near the [origin](/skills/targeters/origin) of a meta-skill.                                                                                                                                   |
 | @[MobsNearOrigin][]                                                                                                                                   |    | Targets all MythicMobs or vanilla overrides of the given type(s) in a radius around the origin                                                                                                                                   |
 | @[EntitiesNearOrigin][]                                                                                                                                                                            | @ENO                                                                                                                                                                            | Targets all entities near the [origin](/skills/targeters/origin) of a meta-skill                                                                                                                                                                            |
@@ -278,6 +278,7 @@ Currently, sort can have the following values:
   [MobsNearOrigin]: /Skills/Targeters/MobsNearOrigin
   [NotLivingNearOrigin]: /Skills/Targeters/NotLivingNearOrigin
   [PlayersInRadius]: /Skills/Targeters/PlayersInRadius
+  [PlayersInRing]: /Skills/Targeters/PlayersInRing
 <!-- Single Location Targeters -->
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
   [Forward]: /Skills/Targeters/Forward
