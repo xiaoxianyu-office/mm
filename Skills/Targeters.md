@@ -71,7 +71,7 @@ These targeters only work if the mob has Threat Tables enabled.
 | Targeter                                 | Shorthand       | Description                                                                                                                                                                                                                                        |
 |------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | @SelfLocation{y=0.0}                     |                 | Targets the caster's location an optional yoffset                                                                                                                                                                                                  |
-| @SelfEyeLocation                     |  @EyeDirection   | Targets the caster's eye location                                                                                                                                                                                                  |
+| @[SelfEyeLocation][]                                                                                                                          | @eyeDirection<br>@casterEyeLocation<br>@bossEyeLocation<br>@mobEyeLocation                                                                                                                          | Targets the caster's eye location                                                                                                                          |
 | @[Forward][]                                                                                                                          |   | Targets a location in front of caster's facing direction                                                                                                                          |
 | @[ProjectileForward][]                                                                                                                          |    | Targets a location in front of the casting projectile, relative to its direction                                                                                                                          |
 | @TargetLocation{maxdistance=#}                          | @targetloc, @TL | Targets the mob's target's location                                                                                                                                                                                                                |
@@ -302,6 +302,7 @@ Currently, sort can have the following values:
   [ObstructingBlock]: /Skills/Targeters/ObstructingBlock
   [Origin]: /Skills/Targeters/Origin
   [ProjectileForward]: /Skills/Targeters/ProjectileForward
+  [SelfEyeLocation]: /Skills/Targeters/SelfEyeLocation
   [VariableLocation]: /Skills/Targeters/VariableLocation
 <!-- Multi Location Targeters -->
   [Cone]: /Skills/Targeters/Cone
