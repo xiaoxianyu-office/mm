@@ -101,7 +101,7 @@ These targeters only work if the mob has Threat Tables enabled.
 | @TargetedLocation                                                                                      |            | Targets the inherited target's location                                                                                            |
 | @[RandomLocationsNearCaster][]                                                                                                                                                                            | @RLO<br>@randomLocationsOrigin<br>@RLNO                                                                                                                                                                            | Targets random locations near the origin of a skill.                                                                                                                                                                            |
 | @[RandomLocationsNearOrigin][]                                                                                                                                                                            | @RLO<br>@randomLocationsOrigin<br>@RLNO                                                                                                                                                                            | Targets random locations near the origin of a skill.                                                                                                                                                                            |
-| @RingAroundOrigin{radius=#;points=#;xRotation=#;yRotation=#;zRotation=#;xOffset=#;yOffset=#;zOffset=#} | @RAO       | Targets locations in a specified ring around the origin                                                                             |
+| @[RingAroundOrigin][]                                                                                                                                                                            | @ringOrigin<br>@RAO                                                                                                                                                                            | Targets locations in a specified ring around the origin.                                                                                                                                                                            |
 
 
 ## Meta Targeters
@@ -309,6 +309,7 @@ Currently, sort can have the following values:
   [RandomLocationsNearOrigin]: /Skills/Targeters/RandomLocationsNearOrigin
   [RandomLocationsNearCaster]: /Skills/Targeters/RandomLocationsNearCaster
   [Rectangle]: /Skills/Targeters/Rectangle
+  [RingAroundOrigin]: /Skills/Targeters/RingAroundOrigin
 <!-- Special Targeters -->
   [BlocksInRadius]: /Skills/Targeters/BlocksInRadius
   [BlocksInChunk]: /Skills/Targeters/BlocksInChunk
