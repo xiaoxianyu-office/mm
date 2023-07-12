@@ -93,7 +93,7 @@ These targeters only work if the mob has Threat Tables enabled.
 |--------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | @[ForwardWall][]                                                                                                                          |    | Targets a plane in front of the caster                                                                                                                          |
 | @PlayerLocationsInRadius{r=#}                                                                          | @PLIR{r=#} | Targets all player locations in the given radius                                                                                    |
-| @Ring{radius=#;points=#;xRotation=#;yRotation=#;zRotation=#;xOffset=#;yOffset=#;zOffset=#}             |            | Target points to form a ring of locations                                                                                           |
+| @[Ring][]                                                                                                                          |    | Target points to form a ring of locations                                                                                                                          |
 | @[Cone][]                                                                                                                                                                            |    | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down)                                                                                                                          |
 | @EntitiesInCone{angle=#;range=#;rotation=#;}                                                           |            | Targets all entities within the cone                                                                                                |
 | @Sphere{radius=#;points=#;yoffset=#}                                                                   |            | Target points to form a sphere of locations                                                                                         |
@@ -310,6 +310,7 @@ Currently, sort can have the following values:
   [RandomLocationsNearCaster]: /Skills/Targeters/RandomLocationsNearCaster
   [Rectangle]: /Skills/Targeters/Rectangle
   [RingAroundOrigin]: /Skills/Targeters/RingAroundOrigin
+  [Ring]: /Skills/Targeters/Ring
 <!-- Special Targeters -->
   [BlocksInRadius]: /Skills/Targeters/BlocksInRadius
   [BlocksInChunk]: /Skills/Targeters/BlocksInChunk
