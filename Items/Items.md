@@ -55,9 +55,9 @@ example_item:
   Lore:
     - <rainbow>This line is a rainbow</rainbow>
     - <red>This line should be red</red>
-    - 'Tis but a scratch
     - This is a random generated number > <random.-1to50>
     - <gradient:#5e4fa2:#f79459>A really nice gradient</gradient>
+    - There are some symbols, like <&sq>, that should never be put as is into a configuration. Use a placeholder!
 ```
 
 #### CustomModelData
