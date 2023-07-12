@@ -73,7 +73,7 @@ These targeters only work if the mob has Threat Tables enabled.
 | @SelfLocation{y=0.0}                     |                 | Targets the caster's location an optional yoffset                                                                                                                                                                                                  |
 | @SelfEyeLocation                     |  @EyeDirection   | Targets the caster's eye location                                                                                                                                                                                                  |
 | @[Forward][]                                                                                                                          |   | Targets a location in front of caster's facing direction                                                                                                                          |
-| @ProjectileForward{f=1;rot=45}           |                 | Targets 1 block infront of the projectile offset by 45 degrees                                                                                                                                                                                     |
+| @[ProjectileForward][]                                                                                                                          |    | Targets a location in front of the casting projectile, relative to its direction                                                                                                                          |
 | @TargetLocation{maxdistance=#}                          | @targetloc, @TL | Targets the mob's target's location                                                                                                                                                                                                                |
 | @TriggerLocation                         |                 | Targets the location of the entity that triggered the skill                                                                                                                                                                                        |
 | @SpawnLocation                       |           | Targets the location the world's spawn.                                      |
@@ -300,6 +300,7 @@ Currently, sort can have the following values:
   [NearestStructure]: /Skills/Targeters/NearestStructure
   [ObstructingBlock]: /Skills/Targeters/ObstructingBlock
   [Origin]: /Skills/Targeters/Origin
+  [ProjectileForward]: /Skills/Targeters/ProjectileForward
   [VariableLocation]: /Skills/Targeters/VariableLocation
 <!-- Multi Location Targeters -->
   [Cone]: /Skills/Targeters/Cone
