@@ -1,5 +1,5 @@
 ## Description
-Targets the location the casting player is looking at.
+Targets the location the casting player is looking at, or the locations of the mob's target
 
 > If the caster is not a player, then:
 > - If the caster is a MythicMob with an active ThreatTable, the location of the entity with the most Threat will be returned
