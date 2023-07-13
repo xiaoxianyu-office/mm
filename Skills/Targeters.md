@@ -14,7 +14,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 
 | Targeter                             | Shorthand | Description                                                                  |
 |--------------------------------------|-----------|------------------------------------------------------------------------------|
-| @Self                                | @Caster   | Targets the caster of the skill                                              |
+| @[Self][]                                                                                                                                                                            | @Caster<br>@Boss<br>@Mob                                                                                                                                                                            | Targets the caster of the mechanic                                                                                                                                                                            |
 | @Target                              | @T        | Targets the mob's target                                                     |
 | @Trigger                             |           | Targets the entity that triggered the skill                                  |
 | @[NearestPlayer][]                                                                                                                                                                            |    | Targets the nearest player in radius                                                                                                                                                                            |
@@ -278,6 +278,7 @@ Currently, sort can have the following values:
   [Parent]: /Skills/Targeters/Parent
   [Passenger]: /Skills/Targeters/Passenger
   [PlayerByName]: /Skills/Targeters/PlayerByName
+  [Self]: /Skills/Targeters/Self
 <!-- Multi Entity Targeters -->
   [EntitiesInRadius]: /Skills/Targeters/EntitiesInRadius
   [EntitiesInRing]: /Skills/Targeters/EntitiesInRing
