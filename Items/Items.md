@@ -264,6 +264,16 @@ another_example_item:
       somedenizentag: a_string
 ```
 
+#### Armor Trim NBT
+```yml
+another_example_item: 
+  Id: iron_chestplate
+  NBT: 
+    Trim: 
+      material: minecraft:iron
+      pattern: minecraft:shaper
+```
+
 ### **ItemVersion**
 ### **CRUCIBLE ONLY **
 Updates the item on MM reload when ItemVersion differs.
