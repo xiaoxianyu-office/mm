@@ -91,7 +91,7 @@ These targeters only work if the mob has Threat Tables enabled.
 | Targeter                                                                                               | Shorthand  | Description                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | @[ForwardWall][]                                                                                                                          |    | Targets a plane in front of the caster                                                                                                                          |
-| @PlayerLocationsInRadius{r=#}                                                                          | @PLIR{r=#} | Targets all player locations in the given radius                                                                                    |
+| @[PlayerLocationsInRadius][]                                                                                                                          | @PLIR                                                                                                                          | Targets all player locations in the given radius                                                                                    |
 | @[Ring][]                                                                                                                          |    | Target points to form a ring of locations                                                                                                                          |
 | @[Cone][]                                                                                                                                                                            |    | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down)                                                                                                                          |
 | @[Sphere][]                                                                                                                                                                            |    | Targets points in a sphere around the caster                                                                                                                                                                            |
@@ -290,6 +290,7 @@ Currently, sort can have the following values:
   [MobsInRadius]: /Skills/Targeters/MobsInRadius
   [MobsNearOrigin]: /Skills/Targeters/MobsNearOrigin
   [NotLivingNearOrigin]: /Skills/Targeters/NotLivingNearOrigin
+  [PlayerLocationsInRadius]: /Skills/Targeters/PlayerLocationsInRadius
   [PlayersInRadius]: /Skills/Targeters/PlayersInRadius
   [PlayersInRing]: /Skills/Targeters/PlayersInRing
   [PlayersInWorld]: /Skills/Targeters/PlayersInWorld
