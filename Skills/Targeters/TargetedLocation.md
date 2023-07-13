@@ -1,5 +1,5 @@
 ## Description
-Targets the location of the inherited targeted locations. Useful for [Targets Filtering](/Skills/Metaskills#targets-filtering) by using [Targeter Options](/Skills/Targeters#targeter-options).
+Targets the inherited targeted locations. Useful for [Targets Filtering](/Skills/Metaskills#targets-filtering) by using [Targeter Options](/Skills/Targeters#targeter-options).
 
 ## Attributes
 >*This targeter has no attributes*
