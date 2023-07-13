@@ -76,7 +76,7 @@ These targeters only work if the mob has Threat Tables enabled.
 | @[ProjectileForward][]                                                                                                                          |    | Targets a location in front of the casting projectile, relative to its direction                                                                                                                          |
 | @TargetLocation{maxdistance=#}                          | @targetloc, @TL | Targets the mob's target's location                                                                                                                                                                                                                |
 | @TriggerLocation                         |                 | Targets the location of the entity that triggered the skill                                                                                                                                                                                        |
-| @SpawnLocation                       |           | Targets the location the world's spawn.                                      |
+| @[SpawnLocation][]                                                                                                                          |    | Targets the world's spawn location.                                                                                                                          |
 | @[CasterSpawnLocation][]                                                                                                                          |    | Targets the location the caster spawned at.                                                                                                                          |
 | @[Location][]                                                                                                                          |    | Targets the specified coordinates in the caster's world.                                                                                                                          |
 | @[Origin][]                                                                                                                          | @source                                                                                                                          | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile).                                                                                                                          |
@@ -306,6 +306,7 @@ Currently, sort can have the following values:
   [ProjectileForward]: /Skills/Targeters/ProjectileForward
   [SelfEyeLocation]: /Skills/Targeters/SelfEyeLocation
   [SelfLocation]: /Skills/Targeters/SelfLocation
+  [SpawnLocation]: /Skills/Targeters/SpawnLocation
   [VariableLocation]: /Skills/Targeters/VariableLocation
 <!-- Multi Location Targeters -->
   [Cone]: /Skills/Targeters/Cone
