@@ -13,7 +13,7 @@ ExampleSkill1:
 
 ExampleSkill2:
   Skills:
-  - lightning @PlayerLocationsInRadius{}
+  - lightning @TargetedLocation{}
 ```
 
 
