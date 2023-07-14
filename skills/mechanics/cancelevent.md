@@ -20,7 +20,7 @@ Possible Triggers
 -   ~onInteract
 -   ~onCombat
 -   ~onTeleport
--   ~onShoot (Requires Crucible for a bow / crossbow)
+-   ~onShoot (Requires Crucible for a bow / crossbow if the caster is a player)
 -   ~onUse (Requires Crucible)
 -   ~onConsume (Requires Crucible)
 
