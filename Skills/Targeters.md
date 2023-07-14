@@ -28,7 +28,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @[Passenger][]                                                                                                                          |    | Targets the rider of the casting mob.                                                                                                                          |
 | @[PlayerByName][]                                                                                                                          | @specificplayer                                                                                                                          | Targets a specific player by name. Supports placeholders.                                                                                                                           |
 | @[UniqueIdentifier][]                                                                                                                          | @UUID                                                                                                                          | Targets a specific entity by their UUID, supports placeholders                                                                                                                          |
-| @Vehicle                             |           | Targets the Vehicle you are mounted on Added in 4.12                         |
+| @[Vehicle][]                                                                                                                          |    | Targets the caster's vehicle                                                                                                                          |
 
 
 ### Multi-Entity Targeters
@@ -285,6 +285,7 @@ Currently, sort can have the following values:
   [Target]: /Skills/Targeters/Target
   [Trigger]: /Skills/Targeters/Trigger
   [UniqueIdentifier]: /Skills/Targeters/UniqueIdentifier
+  [Vehicle]: /Skills/Targeters/Vehicle
 <!-- Multi Entity Targeters -->
   [EntitiesInRadius]: /Skills/Targeters/EntitiesInRadius
   [EntitiesInRing]: /Skills/Targeters/EntitiesInRing
