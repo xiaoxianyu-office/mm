@@ -19,7 +19,6 @@ itself.
 | [onDeath](#ondeath)                    | When the mob dies                                            |
 | [onTimer:*#*](#ontimerticks)           | Every \# ticks (where \# is the interval in ticks)           |
 | [onInteract](#oninteract)              | When the mob is right-clicked                                |
-| [onPlayerDeath](#onplayerdeath)          | When a player dies for any reason                                  |
 | [onPlayerKill](#onplayerkill)          | When the mob kills a player                                  |
 | [onEnterCombat](#onentercombat)        | When the mob enters combat (requires threat tables be on)    |
 | [onDropCombat](#ondropcombat)          | When the mob leaves combat (requires threat tables be on)    |
@@ -207,17 +206,6 @@ EXAMPLE_MOB:
     - message{m=TIMER every tick (0.05 seconds)} @World ~onTimer:1
     # sends a message to all the players in the world every 2 seconds
     - message{m=TIMER every 40 ticks (2 seconds)} @World ~onTimer:40
-```
-
-#### ~onPlayerDeath
-Executes the skill when the mob kills a player.
-```yml
-EXAMPLE_MOB:
-  Type: CHICKEN
-  Skills:
-    # sends a message to all the players in the world
-    # when a player dies for any reason.
-    - message{m=A PLAYER DIED SOMEWHERE} @World ~onPlayerDeath
 ```
 
 #### ~onPlayerKill
