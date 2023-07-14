@@ -16,7 +16,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 |----------|-----------|---------------------------------------------------------------------------------|
 | @[Self][]                                                                                                                                                                            | @Caster<br>@Boss<br>@Mob                                                                                                                                                                            | Targets the caster of the mechanic                                                                                                                                                                            |
 | @[Target][]                                                                                                                                                                            | @T                                                                                                                                                                            | Targets the caster's target                                                                                                                                                                            |
-| @Trigger                             |           | Targets the entity that triggered the skill                                  |
+| @[Trigger][]                                                                                                                                                                            |    | Targets the entity that triggered the skill                                                                                                                                                                            |
 | @[NearestPlayer][]                                                                                                                                                                            |    | Targets the nearest player in radius                                                                                                                                                                            |
 | @WolfOwner                           |           | Targets the owner of the wolf                                                |
 | @[Owner][]                                                                                                                          |    | Targets the [owner](/skills/mechanics/setowner) of the mob                                                                                                                          |
@@ -77,7 +77,7 @@ These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) ena
 | @[Forward][]                                                                                                                          |   | Targets a location in front of caster's facing direction                                                                                                                          |
 | @[ProjectileForward][]                                                                                                                          |    | Targets a location in front of the casting projectile, relative to its direction                                                                                                                          |
 | @[TargetLocation][]                                                                                                                          | @targetloc<br>@TL | Targets the caster's target's location                                                                                                                                                                                                                |
-| @TriggerLocation                         |                 | Targets the location of the entity that triggered the skill                                                                                                                                                                                        |
+| @[TriggerLocation][]                                                                                                                                                                            |    | Targets the location of the entity that triggered the skill                                                                                                                                                                            |
 | @[SpawnLocation][]                                                                                                                          |    | Targets the world's spawn location.                                                                                                                          |
 | @[CasterSpawnLocation][]                                                                                                                          |    | Targets the location the caster spawned at.                                                                                                                          |
 | @[Location][]                                                                                                                          |    | Targets the specified coordinates in the caster's world.                                                                                                                          |
@@ -283,6 +283,7 @@ Currently, sort can have the following values:
   [PlayerByName]: /Skills/Targeters/PlayerByName
   [Self]: /Skills/Targeters/Self
   [Target]: /Skills/Targeters/Target
+  [Trigger]: /Skills/Targeters/Trigger
 <!-- Multi Entity Targeters -->
   [EntitiesInRadius]: /Skills/Targeters/EntitiesInRadius
   [EntitiesInRing]: /Skills/Targeters/EntitiesInRing
@@ -321,6 +322,7 @@ Currently, sort can have the following values:
   [TargetBlock]: /Skills/Targeters/TargetBlock
   [TargetLocation]: /Skills/Targeters/TargetLocation
   [TrackedLocation]: /Skills/Targeters/TrackedLocation
+  [TriggerLocation]: /Skills/Targeters/TriggerLocation
 <!-- Multi Location Targeters -->
   [Cone]: /Skills/Targeters/Cone
   [ForwardWall]: /Skills/Targeters/ForwardWall
