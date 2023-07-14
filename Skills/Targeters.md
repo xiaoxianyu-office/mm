@@ -178,23 +178,22 @@ There are some common attributes that can be used in most of the Targeters, depe
 ## Location Targeters
 | Attribute                                | Shorthand        | Description                                                                                                      |
 | ---------------------------------------- | ---------------- | ----------------------------------------- |
-| Xoffset                                  | xo, x            | Centers the offset on the x axis           |
-| Yoffset                                  | yo, y            | Centers the offset on the y axis           |
-| Zoffset                                  | zo, z            | Centers the offset on the z axis           |
-| ForwardOffset                            | foffset, fo      | Centers forward and backward offset, based on the caster's viewing angle |
-| SideOffset                               | soffset, so      | Centers left and right offset, based on the caster's viewing angle |
-| Rotatex                                  | rotx             | Rotation on the x axis                    |
-| Rotatey                                  | roty             | Rotation on the y axis                    |
-| Rotatez                                  | rotz             | Rotation on the z axis                    |
-| Coordinatex                              | cx               | Sets the x axis coordinate                    |
-| Coordinatey                              | cy               | Sets the y axis coordinate                    |
-| Coordinatez                              | cz               | Sets the z axis coordinate                    |
-| BlockTypes                               | blocktype, bt   | Only targets selected block types. Multiple blocks can be listed by separating them using a `,`<br>You can add a `#` at the front of the type to indicate that the block only needs to match part of the type, add `@` to indicate that the block only needs to match the start of the type |
-| BlockIgnores                             | blockignore      | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` |
-| CoordinateYaw                            | cyaw             | Sets the yaw value                        |
-| CoordinatePitch                          | cpitch           | Sets the pitch value                        |
-| blockCentered                            |                  | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself |
-| ignoretranslucent                        | it               | Boolean value. If set to true, no translucent blocks will be targeted |
+| xoffset                                  | xo, x            | Centers the offset on the x axis           |
+| yoffset                                  | yo, y            | Centers the offset on the y axis           |
+| zoffset                                  | zo, z            | Centers the offset on the z axis           |
+| forwardOffset                            | foffset, fo      | Centers forward and backward offset, based on the caster's viewing angle |
+| sideOffset                               | soffset, so      | Centers left and right offset, based on the caster's viewing angle |
+| rotatex                                  | rotx             | Rotation on the x axis                    |
+| rotatey                                  | roty             | Rotation on the y axis                    |
+| rotatez                                  | rotz             | Rotation on the z axis                    |
+| coordinatex                              | cx               | Sets the x axis coordinate                    |
+| coordinatey                              | cy               | Sets the y axis coordinate                    |
+| coordinatez                              | cz               | Sets the z axis coordinate                    |
+| blocktypes                               | blocktype, bt   | Only targets selected block types. Multiple blocks can be listed by separating them using a `,`<br>You can add a `#` at the front of the type to indicate that the block only needs to match part of the type, add `@` to indicate that the block only needs to match the start of the type |
+| blockignores                             | blockignore      | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` |
+| coordinateyaw                            | cyaw             | Sets the yaw value                        |
+| coordinatepitch                          | cpitch           | Sets the pitch value                        |
+| blockcentered                            | centered         | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself |
 
 
 # Targeter Options
