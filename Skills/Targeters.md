@@ -12,8 +12,8 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 
 ### Single-Entity Targeters
 
-| Targeter                             | Shorthand | Description                                                                  |
-|--------------------------------------|-----------|------------------------------------------------------------------------------|
+| Targeter | Shorthand | Description                                                                     |
+|----------|-----------|---------------------------------------------------------------------------------|
 | @[Self][]                                                                                                                                                                            | @Caster<br>@Boss<br>@Mob                                                                                                                                                                            | Targets the caster of the mechanic                                                                                                                                                                            |
 | @[Target][]                                                                                                                                                                            | @T                                                                                                                                                                            | Targets the caster's target                                                                                                                                                                            |
 | @Trigger                             |           | Targets the entity that triggered the skill                                  |
@@ -30,10 +30,11 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @UniqueIdentifier{u="<target.uuid>"} | @UUID     | Targets a specific entity by their UUID, supports placeholders. Added in 5.0 |
 | @Vehicle                             |           | Targets the Vehicle you are mounted on Added in 4.12                         |
 
+
 ### Multi-Entity Targeters
 
-| Targeter                             | Shorthand         | Description                                                                                                      |
-|--------------------------------------|-------------------|------------------------------------------------------------------------------------------------------------------|
+| Targeter | Shorthand | Description                                                                     |
+|----------|-----------|---------------------------------------------------------------------------------|
 | @[LivingInCone][]                                                                                                                                                                            | @entitiesInCone<br>@livingEntitiesInCone<br>@LEIC<br>@EIC                                                                                                                                                                            | Targets all living entities in cone with a specified angle, length and rotation relative to facing direction                                                                                                                                                                            |
 | @[LivingInWorld][]                                                                                                                                                                            | @EIW                                                                                                                                                                            | Targets all living entities in the caster's world                                                                     |
 | @[NotLivingNearOrigin][]                                                                                                                                                                            | @nonLivingNearOrigin<br>@NLNO                                                                                                                                                                            | Targets all non living entities in a radius near the origin                                                                     |
@@ -51,24 +52,26 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @[ItemsNearOrigin][]                                                                                                                                                                            |    | Targets item drops near the [origin](/skills/targeters/origin) of a meta-skill.                                                                                                                                                                            |
 | @[ItemsInRadius][]                                                                                                                                                                            | @IIR                                                                                                                                                                            | Targets all item drops in the given radius                                                                       |
 
+
 ### ThreatTable Targeters
 
-These targeters only work if the mob has Threat Tables enabled.
+These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) enabled.
 
-| Targeter            | Shorthand | Description                                                 |
-|---------------------|-----------|-------------------------------------------------------------|
-| @RandomThreatTarget | @RTT      | Targets a random entity on the threat table                 |
-| @ThreatTable        | @TT       | Targets all entities on the threat table                    |
-| @ThreatTablePlayers |           | Targets all players on the threat table                     |
-| @RTTL               |           | Targets the location of a random target on the threat table |
+| Targeter | Shorthand | Description                                                                     |
+|----------|-----------|---------------------------------------------------------------------------------|
+| @[ThreatTable][]                                                                                                                          | @TT                                                                                                                          | Targets every entity on the casting mob's threat table                                                                                                                         |
+| @[ThreatTablePlayers][]                                                                                                                          |    | Targets all the players on the casting mob's threat table                                                                                                                          |
+| @[RandomThreatTarget][]                                                                                                                          | @RTT                                                                                                                          | Targets a random entity on the casting mob's threat table                                                                                                                          |
+| @[RandomThreatTargetLocation][]                                                                                                                          | @RTTL                                                                                                                          | Targets the location of a random entity on the casting mob's threat table                                                                                                                          |
+
 
 
 ## Location Targeters
 
 ### Single-Location Targeters
 
-| Targeter                                 | Shorthand       | Description                                                                                                                                                                                                                                        |
-|------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Targeter | Shorthand | Description                                                                     |
+|----------|-----------|---------------------------------------------------------------------------------|
 | @[SelfLocation][]                                                                                                                          | @casterLocation<br>@bossLocation<br>@mobLocation                                                                                                                          | Targets the caster's location                                                                                                                          |
 | @[SelfEyeLocation][]                                                                                                                          | @eyeDirection<br>@casterEyeLocation<br>@bossEyeLocation<br>@mobEyeLocation                                                                                                                          | Targets the caster's eye location                                                                                                                          |
 | @[Forward][]                                                                                                                          |   | Targets a location in front of caster's facing direction                                                                                                                          |
@@ -87,8 +90,8 @@ These targeters only work if the mob has Threat Tables enabled.
 
 ### Multi-Location Targeters
 
-| Targeter                                                                                               | Shorthand  | Description                                                                                                                         |
-|--------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Targeter | Shorthand | Description                                                                     |
+|----------|-----------|---------------------------------------------------------------------------------|
 | @[ForwardWall][]                                                                                                                          |    | Targets a plane in front of the caster                                                                                                                          |
 | @[PlayerLocationsInRadius][]                                                                                                                          | @PLIR                                                                                                                          | Targets all player locations in the given radius                                                                                    |
 | @[Ring][]                                                                                                                          |    | Target points to form a ring of locations                                                                                                                          |
@@ -99,6 +102,7 @@ These targeters only work if the mob has Threat Tables enabled.
 | @[RandomLocationsNearOrigin][]                                                                                                                                                                            | @RLO<br>@randomLocationsOrigin<br>@RLNO                                                                                                                                                                            | Targets random locations near the origin of a skill.                                                                                                                                                                            |
 | @[RingAroundOrigin][]                                                                                                                                                                            | @ringOrigin<br>@RAO                                                                                                                                                                            | Targets locations in a specified ring around the origin.                                                                                                                                                                            |
 | @[Spawners][]                                                                                                                          |    | Targets the location of the specified spawners.                                                                                                                          |
+
 
 
 ## Meta Targeters
@@ -297,6 +301,11 @@ Currently, sort can have the following values:
   [PlayersNearOrigin]: /Skills/Targeters/PlayersNearOrigin
   [PlayersOnServer]: /Skills/Targeters/PlayersOnServer
   [Siblings]: /Skills/Targeters/Siblings
+<!-- ThreatTable Targeters -->
+  [ThreatTable]: /Skills/Targeters/ThreatTable
+  [ThreatTablePlayers]: /Skills/Targeters/ThreatTablePlayers
+  [RandomThreatTarget]: /Skills/Targeters/RandomThreatTarget
+  [RandomThreatTargetLocation]: /Skills/Targeters/RandomThreatTargetLocation
 <!-- Single Location Targeters -->
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
   [Forward]: /Skills/Targeters/Forward
