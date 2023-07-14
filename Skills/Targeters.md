@@ -83,7 +83,7 @@ These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) ena
 | @[Location][]                                                                                                                          |    | Targets the specified coordinates in the caster's world.                                                                                                                          |
 | @[Origin][]                                                                                                                          | @source                                                                                                                          | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile).                                                                                                                          |
 | @[ObstructingBlock][]                                                                                                                          |    | Tries to target the block in front of the caster that is obstructing it                                                                                                                          |
-| @TrackedLocation                         |                 | Targets the mob's tracked location                                                                                                                                                                                                                 |
+| @[TrackedLocation][]                                                                                                                          |    | Targets the mob's tracked location                                                                                                                          |
 | @[NearestStructure][]                                                                                                                          |    | Targets the nearest structure of the specified type within a radius in the caster's world                                                                                                                          |
 | @[VariableLocation][]                                                                                                                          | @varLocation                                                                                                                          | Targets the location stored in the specified variable                                                                                                                          |
 
@@ -320,6 +320,7 @@ Currently, sort can have the following values:
   [VariableLocation]: /Skills/Targeters/VariableLocation
   [TargetBlock]: /Skills/Targeters/TargetBlock
   [TargetLocation]: /Skills/Targeters/TargetLocation
+  [TrackedLocation]: /Skills/Targeters/TrackedLocation
 <!-- Multi Location Targeters -->
   [Cone]: /Skills/Targeters/Cone
   [ForwardWall]: /Skills/Targeters/ForwardWall
