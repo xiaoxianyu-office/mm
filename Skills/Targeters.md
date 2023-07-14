@@ -27,7 +27,7 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @[Mother][]                                                                                                                          | @mom<br>@mommy                                                                                                                          | Targets the mother of the casting mob.                                                                                                                          |
 | @[Passenger][]                                                                                                                          |    | Targets the rider of the casting mob.                                                                                                                          |
 | @[PlayerByName][]                                                                                                                          | @specificplayer                                                                                                                          | Targets a specific player by name. Supports placeholders.                                                                                                                           |
-| @UniqueIdentifier{u="<target.uuid>"} | @UUID     | Targets a specific entity by their UUID, supports placeholders. Added in 5.0 |
+| @[UniqueIdentifier][]                                                                                                                          | @UUID                                                                                                                          | Targets a specific entity by their UUID, supports placeholders                                                                                                                          |
 | @Vehicle                             |           | Targets the Vehicle you are mounted on Added in 4.12                         |
 
 
@@ -284,6 +284,7 @@ Currently, sort can have the following values:
   [Self]: /Skills/Targeters/Self
   [Target]: /Skills/Targeters/Target
   [Trigger]: /Skills/Targeters/Trigger
+  [UniqueIdentifier]: /Skills/Targeters/UniqueIdentifier
 <!-- Multi Entity Targeters -->
   [EntitiesInRadius]: /Skills/Targeters/EntitiesInRadius
   [EntitiesInRing]: /Skills/Targeters/EntitiesInRing
