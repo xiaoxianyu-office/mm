@@ -29,7 +29,7 @@ This example would make the "Master" mob signal it's minions a radius of
 positions, upon being damaged.
 
 Mobfile:
-
+```yml
     Master:
       Type: zombie
       Skills:
@@ -39,9 +39,10 @@ Mobfile:
       Type: baby_zombie
       Skills:
       - skill{s=ShootAttacker} @NearestPlayer ~onSignal:ATTACK
-
+```
 Skillfile:
-
+```yml
     ShootAttacker:
       Skills:
       - shoot{t=arrow}
+```
