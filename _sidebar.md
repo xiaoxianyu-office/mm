@@ -21,6 +21,7 @@
   * [Immunity Tables](Mobs/ImmunityTables)
   * [Templates](Mobs/Templates)
   * [Extra: Disguises](Mobs/Disguises)
+  * [Extra: Vanilla Mobs](Vanilla-Mobs)
   * [Extra: ModelEngine](Model-Engine)<!--* [Templating](Config/Templating)-->
 ##### [Skills](Skills/Skills)
   * [Mechanics](Skills/Mechanics)<!--   * [In-line skill](Skills/inline-skills)-->
