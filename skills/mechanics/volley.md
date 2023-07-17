@@ -12,6 +12,7 @@ mechanic.
 | source    | s       | The type of the volley. Can be REGULAR or RAIN    | REGULAR |
 | radius    | r       | The radius of the volley                          | 0       |
 | yoffset   | y       | The y offset of the target location of the projectiles | 0  |
+| canPickup   | pickup  | Whether the arrows can be picked up by players             | true    |
 
 ## Examples
 ```yaml
