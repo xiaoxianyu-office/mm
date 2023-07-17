@@ -174,6 +174,7 @@ EXAMPLE_MOB:
 #### ~onExplode
 Executes the skill when the mob explodes. mobGriefing gamerule must be set to true for this to work.
 Generally, this trigger only works with creepers and TNTs since other mobs tend to not explode...
+Won't work if you have the mobGriefing gamerule set to false.
 ```yml
 EXAMPLE_MOB:
   Type: CREEPER
