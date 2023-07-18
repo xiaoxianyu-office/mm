@@ -51,7 +51,7 @@
   * [Random Spawns](Random-Spawns)
 
 ##### [Examples](examples/Common-Examples)
-##### [Useful Skills](/UsefulSkills)
+##### [Useful Tips](/UsefulTips)
 
 <hr>
 
