@@ -11,7 +11,8 @@ Table of contents:
 ### Overrides
 <details><summary>My PILLAGER override is not giving bad omen</summary>
 <br>
-This is a common issue. To fix this, consider adding the following skill to your PILLAGER mob override:
+This is a common issue. To fix this, consider adding the following skill to your PILLAGER mob override:  
+ 
 
 ```yaml
   Skills:
@@ -41,7 +42,7 @@ This is a common issue. To fix this, consider adding the following skill to your
 <details><summary>Let every player that took part in the fight receive a drop</summary>
 <br>
 This can be done by enabling the mob's [ThreatTable Module](/Mobs/ThreatTables) and by executing the following mechanic when the mob dies:  
-<br>
+ 
 
 ```yaml
   Skills:
@@ -54,6 +55,7 @@ In this manner, the mob will drop the droptable named `droptable_name` to every 
 <details><summary>Let only the X players who dealt the most damage receive a drop</summary>
 <br>
 This can be done by enabling the mob's [ThreatTable Module](/Mobs/ThreatTables) and by executing the following mechanic when the mob dies:  
+ 
 
 ```yaml
   Skills:
@@ -69,6 +71,7 @@ While this method is not necessarily precise (threat can decay, among other thin
 <details><summary>Let only the player who dealt the most damage receive a drop</summary>
 <br>
 This can be done by enabling the mob's [ThreatTable Module](/Mobs/ThreatTables) and by executing the following mechanic when the mob dies:  
+ 
 
 ```yaml
   Skills:
@@ -76,4 +79,16 @@ This can be done by enabling the mob's [ThreatTable Module](/Mobs/ThreatTables) 
 ```
 
 While this method is not necessarily precise (threat can decay, among other things) it's extremely simple to implement and the precision is in an acceptable range
+</details>
+
+<details><summary>Drop items to the last player that hit the mob</summary>
+<br>
+In this case, you will need to set a variable on the mob every time it is hit only if the trigger is a Player. Then, onDeath, you can use a UUID targeter to drop a specific item to whoever the variable is memorizing. This way, even if the mob dies for some other causes (Fire damage, Fall damage etc.), a player will always be selected for the drop, and is, as such, far more stable than dropping an item onDeath to the trigger.  
+ 
+
+```yaml
+  Skills:
+  - setvariable{var=caster.lastplayer;type=STRING;val=<trigger.uuid>} @self ~onDamaged ?~isPlayer
+  - dropitem{...} @UUID{u="<caster.var.lastplayer>"} ~ronDeath ?variableisset{var=caster.lastplayer}
+```
 </details>
