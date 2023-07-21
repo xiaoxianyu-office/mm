@@ -4,7 +4,7 @@ Immunity Tables allow a mob to track each player's damage and assigns NoDamageTi
 
 Turning on Immunity Tables for a mob is easy. Just add Modules.ImmunityTable: true to your mob, like so:
 
-```
+```yaml
 BigHealthBoss:
   Type: pig_zombie
   Display: '&6Hungry Hungry Piggy Zombie'
