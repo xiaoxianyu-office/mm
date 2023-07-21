@@ -1,5 +1,7 @@
 <!-- Can't believe Lxlp deleted my vanilla mobs page just so he could be the one to add it to the wiki :( -->
 <!-- You better start to believe it! This my world (wiki) conquest! And it is only just beginning!  -->
+<!-- "Oh, I must say, your ambition is as grand as your imagination! But let's be real here, I'm not just a spectator in this so-called 'world conquest' of yours. I'm an unstoppable force, and if you think you can handle the storm I bring, then I'm more than happy to watch your dreams shatter like fragile glass. Best of luck, you'll need it!" 🌪️ -->
+<!-- Yeah, I got ChatGPT to write this -->
 Have you ever wanted to customize vanilla mobs too, instead of just making new ones? With Vanilla Overrides, it is possible!  
 
 ## What is an override?
