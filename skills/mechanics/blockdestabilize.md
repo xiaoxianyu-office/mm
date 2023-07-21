@@ -8,5 +8,5 @@ Examples
 --------
 ```yml
 Skills:
-  - fallingBlock @BNO{r=5}
+  - blockdestabilize @BNO{r=5}
 ```
