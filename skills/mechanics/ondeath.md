@@ -8,7 +8,7 @@ Attributes
 
 | Attribute        | Aliases       | Description                                                | Default Value |
 |------------------|---------------|------------------------------------------------------------|---------------|
-| onDeathSkill    | od            | Skill to execute if the target jumps            | NONE |
+| onDeathSkill    | od            | Skill to execute if the target dies            | NONE |
 
 
 Examples
