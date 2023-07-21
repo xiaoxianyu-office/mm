@@ -1,7 +1,7 @@
 Mechanic: BlockDestabilize
 ============================
 
-Turns the target block into a falling block. Adding gravity to blocks..
+Turns the target block into a falling block. Adding gravity physics to blocks..
   
 
 Examples
