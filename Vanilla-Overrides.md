@@ -12,7 +12,6 @@ Apart from that, everything that works on a normal mythicmob can also be used in
 
 
 ## Examples
-
 ```yml
 ZOMBIE:
   Options:
