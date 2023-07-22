@@ -11,7 +11,3 @@ Targets the caster's mount
   Skills:
   - heal{a=10} @Mount
 ```
-
-
-## Aliases
-- [x] vehicle
