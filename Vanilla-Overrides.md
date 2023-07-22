@@ -7,6 +7,8 @@
 
 <!-- Foolish mortal! To think that a mere AI could overtake me! BLASPHEMOUS! You will be annihilated by your very own kind! LASER EYES, ATTACK! -->
 
+<!-- shut up -->
+
 Have you ever wanted to customize vanilla mobs too, instead of just making new ones? With Vanilla Overrides, it is possible!  
 
 ## What is an override?
