@@ -169,11 +169,23 @@ Some meta-targeters also allow the mechanic to be casted "fromOrigin". This will
 There are some common attributes that can be used in most of the Targeters, depending on the targeter's returned value
 
 ## All Targeters
+
+### Sudo Attributes
 | Attribute                                | Shorthand        | Description                                                                                                      |
 | ---------------------------------------- | ---------------- | ----------------------------------------- |
-| sudoparent                               | fromparent, ofparent, asparent, parent, ofparent                      | Allows to obtain the targeter as if it was the parent casting the mechanic |
-| sudoowner                                | fromowner, ofowner, asowner, owner, ofowner                      | Allows to obtain the targeter as if it was the owner casting the mechanic |
-| sudotrigger                                | fromtrigger, oftrigger, astrigger, trigger, oftrigger                      | Allows to obtain the targeter as if it was the trigger casting the mechanic |
+| sudoparent                               | fromparent, ofparent, asparent, parent, ofparent                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Parent][] of the casting entity executing the mechanic|
+| sudoowner                                | fromowner, ofowner, asowner, owner, ofowner                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Owner][] of the casting entity executing the mechanic |
+| sudotrigger                                | fromtrigger, oftrigger, astrigger, trigger, oftrigger                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Trigger][] of the skilltree executing the mechanic |
+
+In this example, [the mob will keep getting teleported in front of its owner](https://cdn.discordapp.com/attachments/523443579574681600/1101186712174088253/a.gif), since the `Forward` targeter is using the `sudoowner` attribute, and is, as such, getting parsed as if it was the owner of the casting mob executing the mechanic
+```yaml
+TestOwner:
+  Type: Wolf
+  Skills:
+  - setOwner @NearestPlayer{r=99} ~onSpawn
+  - tp @Forward{f=5;y=1;sudoowner=true} ~onTimer:1
+```
+
 
 ## Location Targeters
 | Attribute                                | Shorthand        | Description                                                                                                      |
