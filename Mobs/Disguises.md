@@ -77,11 +77,13 @@ SneakyDisguisingMob:
 Nameplates allow you to extend the nameplates of Player-disguise mobs, which are normally limited to 16 characters.
 To use this, simply have Holograms installed and then leave out the “Player” field in your disguise (skin is still required!).
 If you don't specify the player field, it will use the Display field instead using a custom nameplate.
+Additionally, mob names can be put on multiple lines with diacritics (\n)
+ 
 
 ```yml
 Monkey:
   Type: skeleton
-  Display: "this display name is too long for players normally"
+  Display: "this display name is too \n long for players normally"
   Disguise: player Steve setSkin Kurdie.png
 ```
 This feature requires LibsDisguises and the Holograms plugin: [https://www.spigotmc.org/resources/holograms.4924/](https://www.spigotmc.org/resources/holograms.4924/)
