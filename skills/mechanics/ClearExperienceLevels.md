@@ -1,5 +1,5 @@
 ## Description
-Clears experience levels for the target player
+Clears the experience levels for the targeted players
 
 
 ## Attributes
