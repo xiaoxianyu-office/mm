@@ -30,12 +30,15 @@ are able to target locations as well.
 | [BarCreate][]             | Creates a custom boss bar on the casting mob                                             |
 | [BarRemove][]             | Removes a custom boss bar on the casting mob                                             |
 | [BarSet][]                | Modifies a custom boss bar on the casting mob                                            |
-| [BlockDestabilize][]              | Causes the targetted block(s) to fall |
-| [BlockPhysics][]              | Triggers a block physics update at the target location                                          |
+| [BlockDestabilize][]      | Causes the targeted blocks to fall, as if affected by gravity                                                          |
+| [BlockPhysics][]          | Triggers a block physics update at the target location                                          |
 | [BoneMeal][]              | Applies a bone meal effect to the target blocks                                          |
 | [BossBorder][]            | Creates an inescapable border around the mob                                |
 | [BreakBlock][]            | Breaks the block at the target location                                                  |
 | [BreakBlockAndGiveItem][] | Breaks the block at the target location and gives an item/droptable                      |
+| [ClearExperienceLevels][] | Clears the experience levels for the targeted players                                                     |
+| [GiveExperienceLevels][]  | Gives experience levels to the targeted players                                                     |
+| [TakeExperienceLevels][]  | Takes experience levels to the targeted players                                                     |
 | [CloseInventory][]        | Closes the target player's inventory                                                     |
 | [Command][]               | Executes a command for each target                                                       |
 | [Consume][]               | Deals damage and restores health per target hit                                          |
@@ -292,6 +295,9 @@ but not yet ready for use.
   [BossBorder]: /skills/mechanics/bossborder
   [BreakBlock]: /skills/mechanics/breakblock
   [BreakBlockAndGiveItem]: /skills/mechanics/breakBlockAndGiveItem
+  [ClearExperienceLevels]: /skills/mechanics/ClearExperienceLevels
+  [GiveExperienceLevels]: /skills/mechanics/GiveExperienceLevels
+  [TakeExperienceLevels]: /skills/mechanics/TakeExperienceLevels
   [CloseInventory]: /skills/mechanics/closeinventory
   [Command]: /skills/mechanics/command
   [Consume]: /skills/mechanics/consume
