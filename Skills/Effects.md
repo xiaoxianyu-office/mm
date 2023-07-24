@@ -31,6 +31,7 @@ The audience types are:
 - `nonSelfWorld`/`nonSelf`: every player in the world other than the caster of the mechanic
 - `target`: the target of the mechanic
 - `world`: every player in the world
+- `tracked`: every player that is within render distance of the caster
 - `@Targeter`: every player that the targeter targets
 
 Of particular relevance is the `audience=@Targeter` attribute, that allows any entity targeter to be used as the audience of the effect
