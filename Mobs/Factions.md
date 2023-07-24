@@ -34,24 +34,24 @@ AI Goals, Targets, and Factions
     use test environments!**
 
 <!-- -->
-
-    DecayingSkeleton:
-      Mobtype: skeleton
-      Display: '&aa decaying skeleton'
-      Health: 15
-      Damage: 1
-      Faction: Undead
-      AIGoalSelectors:
-      - clear
-      - arrowattack
-      AITargetSelectors:
-      - clear
-      - players
-      Options:
-        FollowRange: 10
-        MovementSpeed: 0.2
-        PreventOtherDrops: true
-
+```yaml
+DecayingSkeleton:
+  Type: skeleton
+  Display: '&aa decaying skeleton'
+  Health: 15
+  Damage: 1
+  Faction: Undead
+  AIGoalSelectors:
+  - clear
+  - arrowattack
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    FollowRange: 10
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+```
 -   This example shows how the Skeleton AI generally works for
     attacking. (minus all the fluff, such as randomly walking around).
 
@@ -62,25 +62,27 @@ AI Goals, Targets, and Factions
         * As you see **clear** is always first, which in this case wipes the mobs AI so you have a clean slate to work with. This is important otherwise your AI may not function the way you would expect.
     * Now lets say we want the skeleton to attack other mobs instead and we want him to use a melee attack instead of a ranged attack. See below for how we accomplish this.
 
-    DecayingSkeleton:
-      Mobtype: skeleton
-      Display: '&aa decaying skeleton'
-      Health: 15
-      Damage: 1
-      Faction: Undead
-      AIGoalSelectors:
-      - clear
-      - meleeattack
-      AITargetSelectors:
-      - clear
-      - hurtbytarget
-      - otherfactionmonsters
-      Equipment:
-      - COS_WoodSword:0
-      Options:
-        FollowRange: 10
-        MovementSpeed: 0.2
-        PreventOtherDrops: true
+```yaml
+DecayingSkeleton:
+  Type: skeleton
+  Display: '&aa decaying skeleton'
+  Health: 15
+  Damage: 1
+  Faction: Undead
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  AITargetSelectors:
+  - clear
+  - hurtbytarget
+  - otherfactionmonsters
+  Equipment:
+  - COS_WoodSword HAND
+  Options:
+    FollowRange: 10
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+```
 
 -   The skeleton AI now is programmed to attack other mobs, and any mobs
     that attack it first. In addition, it will use the melee attack
@@ -115,22 +117,24 @@ Example 1: Guards attack nearby monsters
 
 <!-- -->
 
-    SummonedGuard1:
-      Mobtype: skeleton
-      Display: '&Ea town guard'
-      Health: 500
-      Damage: 5
-      Equipment:
-      - COS_StoneSword:0
-      Options:
-        Disguise: villager
-        Despawn: true
-        FollowRange: 5
-        AlwaysShowName: false
-        MovementSpeed: 0.35
-        PreventOtherDrops: true
-        KnockbackResistance: 1
-        PreventMobKillDrops: true
+```yaml
+SummonedGuard1:
+  Type: skeleton
+  Display: '&Ea town guard'
+  Health: 500
+  Damage: 5
+  Equipment:
+  - COS_StoneSword HAND
+  Options:
+    Despawn: true
+    FollowRange: 5
+    AlwaysShowName: false
+    MovementSpeed: 0.35
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    PreventMobKillDrops: true
+  Disguise: villager
+```
 
 -   So if we tie this mob to a mob spawner at our gates, he's going to
     go attack all of our players in the town so we need to make some
@@ -138,31 +142,33 @@ Example 1: Guards attack nearby monsters
 
 <!-- -->
 
-    SummonedGuard1:
-      Mobtype: skeleton
-      Display: '&Ea town guard'
-      Health: 500
-      Damage: 5
-      Equipment:
-      - COS_StoneSword:0
-      Faction: Guard
-      AIGoalSelectors:
-      - clear
-      - opendoors
-      - meleeattack
-      AITargetSelectors:
-      - clear
-      - hurtbytarget
-      - otherfactionmonsters
-      Options:
-        Disguise: villager
-        Despawn: true
-        FollowRange: 5
-        AlwaysShowName: false
-        MovementSpeed: 0.35
-        PreventOtherDrops: true
-        KnockbackResistance: 1
-        PreventMobKillDrops: true
+```yaml
+SummonedGuard1:
+  Type: skeleton
+  Display: '&Ea town guard'
+  Health: 500
+  Damage: 5
+  Equipment:
+  - COS_StoneSword HAND
+  Faction: Guard
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  AITargetSelectors:
+  - clear
+  - hurtbytarget
+  - otherfactionmonsters
+  Options:
+    Despawn: true
+    FollowRange: 5
+    AlwaysShowName: false
+    MovementSpeed: 0.35
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    PreventMobKillDrops: true
+  Disguise: Villager
+```
 
 -   Now the mob will target other factions containing monsters besides
     his own and will target anyone that hurts him (this will keep some
@@ -176,28 +182,30 @@ Example 1: Guards attack nearby monsters
 
 <!-- -->
 
-    DecayingSkeleton:
-      Mobtype: skeleton
-      Display: '&aa decaying skeleton'
-      Health: 15
-      Damage: 1
-      Faction: Undead
-      AIGoalSelectors:
-      - clear
-      - meleeattack
-      AITargetSelectors:
-      - clear
-      - hurtbytarget
-      - players
-      Equipment:
-      - COS_RawHead:4
-      - COS_WoodSword:0
-      Options:
-        Despawn: true
-        FollowRange: 10
-        AlwaysShowName: false
-        MovementSpeed: 0.2
-        PreventOtherDrops: true
+```yaml
+DecayingSkeleton:
+  Type: skeleton
+  Display: '&aa decaying skeleton'
+  Health: 15
+  Damage: 1
+  Faction: Undead
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  AITargetSelectors:
+  - clear
+  - hurtbytarget
+  - players
+  Equipment:
+  - COS_RawHead HEAD
+  - COS_WoodSword HAND
+  Options:
+    Despawn: true
+    FollowRange: 10
+    AlwaysShowName: false
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+```
 
 -   Our decaying skeleton is now in the Undead faction (different then
     the Guard faction) and so he will be attacked by the guard. Also, by
@@ -236,70 +244,72 @@ Example 2: Orcs and Goblins attack each other
 
 <!-- -->
 
-    OrcCenturion:
-      Mobtype: villagezombie
-      Display: '&aan orc centurion'
-      Health: 50
-      Damage: 4
-      Faction: Orcs
-      AIGoalSelectors:
-      - clear
-      - opendoors
-      - meleeattack
-      AITargetSelectors:
-      - clear
-      - hurtbytarget
-      - specificfactionmonsters Goblin
-      - players
-      Equipment:
-      - C_DeathfistSkullcap:4
-      - C_DeathfistTunic:3
-      - C_DeathfistLeggings:2
-      - C_DeathfistBoots:1
-      - COS_WoodSword:0
-      Options:
-        Despawn: true
-        FollowRange: 10
-        AlwaysShowName: false
-        MovementSpeed: 0.25
-        PreventOtherDrops: true
-        PreventItemPickup: true
-        KnockbackResistance: 0.25
-        PreventMobKillDrops: true
-        
-    GoblinBattlemaster:
-      Mobtype: zombie
-      Display: '&aa goblin battlemaster'
-      Health: 80
-      Damage: 4
-      Faction: Goblin
-      AIGoalSelectors:
-      - clear
-      - opendoors
-      - meleeattack
-      AITargetSelectors:
-      - clear
-      - hurtbytarget
-      - specificfactionmonsters Orcs
-      - players
-      Equipment:
-      - COS_BronzeHead:4
-      - COS_BronzeChest:3
-      - COS_BronzeLegs:2
-      - COS_BronzeFeet:1
-      - COS_WoodAxe:0
-      Skills:
-      - skill BashI ~onAttack >0 0.25
-      Options:
-        Despawn: true
-        FollowRange: 10
-        AlwaysShowName: false
-        MovementSpeed: 0.25
-        PreventOtherDrops: true
-        PreventItemPickup: true
-        KnockbackResistance: 0.4    
-        PreventMobKillDrops: true
-
+```yaml
+OrcCenturion:
+  Type: villagezombie
+  Display: '&aan orc centurion'
+  Health: 50
+  Damage: 4
+  Faction: Orcs
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  AITargetSelectors:
+  - clear
+  - hurtbytarget
+  - specificfactionmonsters Goblin
+  - players
+  Equipment:
+  - C_DeathfistSkullcap HEAD
+  - C_DeathfistTunic CHEST
+  - C_DeathfistLeggings LEGS
+  - C_DeathfistBoots FEET
+  - COS_WoodSword HAND
+  Options:
+    Despawn: true
+    FollowRange: 10
+    AlwaysShowName: false
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    KnockbackResistance: 0.25
+    PreventMobKillDrops: true
+```
+```yaml
+GoblinBattlemaster:
+  Type: zombie
+  Display: '&aa goblin battlemaster'
+  Health: 80
+  Damage: 4
+  Faction: Goblin
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  AITargetSelectors:
+  - clear
+  - hurtbytarget
+  - specificfactionmonsters Orcs
+  - players
+  Equipment:
+  - COS_BronzeHead HEAD
+  - COS_BronzeChest CHEST
+  - COS_BronzeLegs LEGS
+  - COS_BronzeFeet FEET
+  - COS_WoodAxe HAND
+  Skills:
+  - skill{s=BashI} ~onAttack >0 0.25
+  Options:
+    Despawn: true
+    FollowRange: 10
+    AlwaysShowName: false
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    KnockbackResistance: 0.4    
+    PreventMobKillDrops: true
+```
 -   So there are a few things we've configured here of note.
 
 <!-- -->
