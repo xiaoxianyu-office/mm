@@ -1,8 +1,10 @@
+## **WARNING: Once a spawner-configuration file has been loaded onto a running server, it can only be edited by ingame commands. If you want to edit an already loaded spawner-configuration file in a text-editor, you have to stop the server before you edit the file.**
+
 Spawners allow you to define specific points in your worlds at which your custom mob creations can spawn. They can be used with a variety of useful options such as; conditions, built-in timers, cooldowns, and warmups. 
 
 You can create spawners directly ingame by using [Commands](/commands and permissions) or by creating the a configuration file in the folder */MythicMobs/Spawners*. 
 
-**Note that once a spawner-configuration file has been loaded onto a running server, it can only be edited by ingame commands. If you want to edit an already loaded spawner-configuration file in a text-editor, you have to stop the server while you do so.**
+
 
 ### Pros of Spawners
 
