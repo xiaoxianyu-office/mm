@@ -1,7 +1,7 @@
 ### Modelengine Custom Models
 
 **ModelEngine is dependent on the plugin [ModelEngine](https://www.spigotmc.org/resources/conxeptworks-model-engine%E2%80%94ultimate-entity-model-manager-1-14-1-16-5.79477/)  
-and requires the use of a custom resource pack. [The most up to date documentation for ModelEngine can be found here](https://github.com/Ticxo/Model-Engine-Wiki).  
+and requires the use of a custom resource pack. [The most up to date documentation for ModelEngine can be found here](https://git.lumine.io/mythiccraft/modelengine/-/wikis/home).  
 They also have a [support discord](https://discord.gg/vbdyuac) should you need help with your models**
 
 *Modelengine has a free trial for a few special models so you can try before you buy, and there is a free test model on their wiki. You will have to make, or buy, your own models.*
@@ -34,7 +34,7 @@ https://github.com/Ticxo/Model-Engine-Wiki/wiki/Mechanics
 
 ### Example:
 
-```
+```yaml
 KindletronJR:
   Type: SILVERFISH
   Health: 20
@@ -51,7 +51,7 @@ KindletronJR:
 ```
 
 Alternatively, the following way of setting the model up is also available:
-```
+```yaml
 KindletronJR:
   Type: SILVERFISH
   Health: 20
