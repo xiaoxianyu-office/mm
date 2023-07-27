@@ -213,6 +213,10 @@ Examples:
 |bulletModel| model     | The CustomModelData of the material                                  | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
+|bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
+| bulletBillboarding | bulletBillboard | The billboarding for the display bullet               | FIXED   |
+| bulletbrightness | bulletbrightnessblock | The bullet's brightness                           | -1      |
+| bulletbrightnesssky | | The bullet's sky light brightness                           | bulletbrightness |
 | pitch     |           | The pitch rotation                                                   | 0       |
 | yaw       |           | The yaw rotation                                                     | 0       |
 | roll      |           | The roll rotation                                                    | 0       |
@@ -227,7 +231,6 @@ Examples:
 | tz        |           | The translation on the z axis                                        | 0       |
 | translation | pos, offset | The translations on the axes, in the x,y,z format                | 0,0,0   |
 | hideFirstTick | hft   | Hides the item for the first tick                                    | false   |
-|bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
 | audience  |           | The [Audience][] of the bullet                                       | world   |
 
 ### TEXT Bullet
