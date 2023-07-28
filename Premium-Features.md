@@ -4,7 +4,7 @@ Premium
 Premium](http://www.mythicmobs.net/index.php?account/upgrades) comes with numerous Premium-only perks, including: 
 
 -   Special Premium role in Discord
--   Access to the premium support channel and ticket system
+-   Access to the premium support channels
 -   Access to the latest version faster
 -   Access to development builds
 -   Access to premium-only mechanics, such as [raytracing](/skills/mechanics/raytrace) and [chain-missile](/skills/mechanics/chainmissile)!
