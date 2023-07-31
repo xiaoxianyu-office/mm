@@ -217,6 +217,7 @@ Examples:
 | bulletBillboarding | bulletBillboard | The billboarding for the display bullet               | FIXED   |
 | bulletbrightness | bulletbrightnessblock | The bullet's brightness                           | -1      |
 | bulletbrightnesssky | | The bullet's sky light brightness                           | bulletbrightness |
+| bulletCullingDistance | bulletViewDistance, bulletViewRange | The range in which the bullet will be visible                                                                                        | 50      |
 | pitch     |           | The pitch rotation                                                   | 0       |
 | yaw       |           | The yaw rotation                                                     | 0       |
 | roll      |           | The roll rotation                                                    | 0       |
@@ -240,6 +241,7 @@ Examples:
 | bulletBillboard | billboard | The [billboard type][] of the bullet                           | CENTER  |
 |bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
 | backgroundcolor | color | The Background color, in the ARGB format                          | 64,0,0,0 |
+| bulletCullingDistance | bulletViewDistance, bulletViewRange | The range in which the bullet will be visible                                                                                        | 50      |
 | audience  |           | The [Audience][] of the bullet                                       | world   |
 
 
