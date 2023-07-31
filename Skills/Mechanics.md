@@ -106,6 +106,7 @@ are able to target locations as well.
 | [Prison][]                | Imprisons the target inside a block                                                      |
 | [Propel][]                | Propels the caster towards the target                                                      |
 | [Pull][]                  | Pulls the target towards the mob                                                         |
+| [PushBlock][]             | Pushes the block at the target location in the given direction                                                          |
 | [PushButton][]            | Pushes a button at the target location                                                   |
 | [RayTrace][]              | Traces a straight line to the target                                                     |
 | [RayTraceTo][]            | Executes a skill with the result of a raytrace to the target location                    |
@@ -359,6 +360,7 @@ but not yet ready for use.
   [Prison]: /skills/mechanics/prison
   [Propel]: /skills/mechanics/propel
   [Pull]: /skills/mechanics/pull
+  [PushBlock]: /skills/mechanics/PushBlock
   [PushButton]: /skills/mechanics/pushbutton
   [Rally]: /skills/mechanics/rally
   [RandomMessage]: /skills/mechanics/randommessage
