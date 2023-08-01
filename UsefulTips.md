@@ -88,6 +88,6 @@ In this case, you will need to set a variable on the mob every time it is hit on
 ```yaml
   Skills:
   - setvariable{var=caster.lastplayer;type=STRING;val=<trigger.uuid>} @self ~onDamaged ?~isPlayer
-  - dropitem{...} @UUID{u="<caster.var.lastplayer>"} ~ronDeath ?variableisset{var=caster.lastplayer}
+  - dropitem{...} @UUID{u="<caster.var.lastplayer>"} ~onDeath ?variableisset{var=caster.lastplayer}
 ```
 </details>
