@@ -81,7 +81,7 @@ Options:
 ```
 
 #### HealOnReload
-Allows non-respawning mobs to heal once the chunk they are in gets reloaded. Defaults to `false`.
+Allows non-despawning mobs to heal once the chunk they are in gets reloaded. Defaults to `false`.
 ```yml
 Options:
   HealOnReload: false
