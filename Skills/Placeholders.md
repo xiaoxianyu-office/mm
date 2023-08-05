@@ -206,8 +206,8 @@ Other than being able to use PlaceholderAPI placeholders anywhere placeholder su
 | %mythic_var_someVar%        | Returns the value of the `someVar` variable that is set on the player   |
 | %mythic_var_world_someVar%  | Returns the value of the `someVar` variable that is set on the world    |
 | %mythic_var_global_someVar% | Returns the value of the `someVar` variable that is set on the server   |
-| %mythic_var_<playerName>_someVar% | Returns the value of the `someVar` variable that is set on the specified player, by their name |
-| %mythic_var_<UUID>_someVar% | Returns the value of the `someVar` variable that is set on the specified entity, by its UUID|
+| %mythic_var_\<playerName\>_someVar% | Returns the value of the `someVar` variable that is set on the specified player, by their name |
+| %mythic_var_\<UUID\>_someVar% | Returns the value of the `someVar` variable that is set on the specified entity, by its UUID|
 
 
 Examples
