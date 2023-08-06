@@ -41,6 +41,11 @@
 
 - [The wiki was outdated last year so i am angry now](https://discord.com/channels/213109157983813633/351864879545843715/1117618134451507210)
 
+
+### ThatUndeadPerson
+
+- [he wanted his butt wiped](https://discord.com/channels/213109157983813633/351864879545843715/1137874861499367545)
+
 # The Victims
 
 ### Rumi, he just wanted to not be pinged
