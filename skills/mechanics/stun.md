@@ -11,7 +11,7 @@ Attributes
 | duration            | d       | The duration (in ticks) the stun will last                                                                   |               |
 | stopai              | ai      | Removes entity AI while stunned                                                                              | false         |
 | gravity             | g       | Remove gravity from target when stunned (1.9+)                                                               | false         |
-| facing              | face, f | When true, entity cannot rotate or look around when stunned                                                 | false         |
+| facing              | face, f | When false, entity cannot rotate or look around when stunned                                                 | false         |
 | noknockback         | nokb, kb | When true, entity cannot be knocked back when stunned                                                 | false         |
 | CancelOnGiveDamage  | cogd    | Cancels the stun if the entity with the stun deals any damage to another entity.                             | false         |
 | CancelOnTakeDamage  | cotd    | Cancels the stun if entity with the stun takes any sort of damage.                                           | false         |
