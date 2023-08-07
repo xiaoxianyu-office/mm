@@ -226,7 +226,6 @@ Examples:
 | yawspeed  | ys        | The yaw rotation speed                                               | 0       |
 | rollspeed | rs        | The roll rotation speed                                              | 0       |
 | rotationspeed | rotspeed, rots | The rotation speed of the bullet, in the x,y,z format       | 0,0,0   |
-| rollspeed | rs        | The roll rotation speed                                              | 0       |
 | tx        |           | The translation on the x axis                                        | 0       |
 | ty        |           | The translation on the y axis                                        | 0       |
 | tz        |           | The translation on the z axis                                        | 0       |
