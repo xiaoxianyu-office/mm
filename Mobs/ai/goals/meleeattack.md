@@ -1,23 +1,18 @@
-Goal: meleeAttack
---------------
-
+## Description
 Causes the mob to move to and melee attack its target
 
-### Attributes
 
-| Attribute | Aliases | Description             | Default |
-|-----------|---------|-------------------------|:-------:|
-| speed     | s       | Movement speed modifier |    1    |
-
-
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| attackReach |         | The reach of the attack                                              |    4    |
 
 
-### Examples
-
+## Examples
 ```yaml
 ExampleMob:
-  Type: Skeleton
+  Type: ZOMBIE
   AIGoalSelectors:
     - clear
-    - meleeattack{speed=1}
+    - meleeattack{attackReach=6}
 ```
