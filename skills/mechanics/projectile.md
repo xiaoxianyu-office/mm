@@ -247,26 +247,6 @@ Examples:
 [Audience]: /Skills/Effects#audience
 [billboard type]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Display.Billboard.html
 
-<!--
-Bullet types available are:
-
-- **ARROW** - *projectile{bulletType=ARROW;arrowType=(NORMAL/SPECTRAL/TRIDENT);...}*
-- **BLOCK** - *projectile{bulletType=BLOCK;material=STONE;...}*
-- **ITEM** - *projectile{bulletType=ITEM;material=STONE;...}*
-- **MYTHICITEM** - *projectile{bulletType=MYTHICITEM;material=MyMythicItem;...}*
-- **MOB** - *projectile{bulletType=MOB;mob=SkeletonKing;...}*
-- **TRACKING** - *projectile{bulletType=TRACKING;bulletmaterial=MyMythicItem;model=CustomModelData;...}*
-- **DISPLAY** - *projectile{bulletType=DISPLAY;...}* `same options as tracking/armorstand bullet`
-- **TEXT** - *projectile{bulletType=TEXT;bulletText="...";bulletBillboard=CENTER;bulletscale=1.0,1.0,1.0;backgroundColor=64,0,0,0;...}*
-  - `backgroundColor` - this is expressed in argb format
-
-Yes, that's right, you can even shoot projectiles made up of other
-Mythic mobs! Mobs shot with the projectile skill cannot be interacted
-with, but will still use all their skills...
-
-You can also use the new **bulletSpin=#** option to give your bullets
-some spin.
--->
 
 ## Examples
 
