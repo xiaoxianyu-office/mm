@@ -9,6 +9,7 @@ It will disappear after reached targeted entity or location.
 
 It is of importance to note that other mechanics (such as [Missile](/skills/mechanics/missile)) are an "extension" of this mechanic, and can as such use a great deal of this mechanic's attributes. The attributes that those mechanics can use are listen in [Inheritable Attributes](/skills/mechanics/projectile#inheritable-attributes)
 
+[[_TOC_]]
 
 ## Attributes
 ### Inheritable Attributes
