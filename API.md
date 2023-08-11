@@ -9,7 +9,7 @@ JavaDocs for MythicMobs API can be found here:
 ## Repositories
 
 ### Maven
-```markup
+```xml
 <repository>
     <id>nexus</id>
     <name>Lumine Releases</name>
