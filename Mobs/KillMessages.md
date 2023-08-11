@@ -11,7 +11,7 @@ The syntax for adding Kill Messages is simple. You can even have multiple messag
       Health: 666
       KillMessages:
       - '<target.name> had their soul completely devoured'
-      - '<target.name><&sq>s soul was feasted upon by Soul Eater'
+      - '<target.name><&sq>s soul was feasted upon by <caster.name>'
       Skills:
       ...
 
