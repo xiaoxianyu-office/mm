@@ -5,25 +5,67 @@ JavaDocs for MythicMobs API can be found here:
 
 1.  <https://www.mythicmobs.net/javadocs/>
 
-Maven
------
+-------------------------
+## Repositories
 
-### Repository
+### Maven
+```markup
+<repository>
+    <id>nexus</id>
+    <name>Lumine Releases</name>
+    <url>https://mvn.lumine.io/repository/maven-public/</url>
+</repository>
+```
 
-    <repository>
-        <id>nexus</id>
-        <name>Lumine Releases</name>
-        <url>https://mvn.lumine.io/repository/maven-public/</url>
-    </repository>
+### Gradle (Groovy)
+```groovy
+repositories {
+    // ...
+    mavenCentral()
+    maven { url 'https://mvn.lumine.io/repository/maven-public/' }
+}
+```
 
-### Dependency
+### Gradle (Kotlin)
+```groovy
+repositories {
+    // ...
+    mavenCentral()
+    maven(url = "https://mvn.lumine.io/repository/maven-public/")
+}
+```
 
-    <dependency>
-        <groupId>io.lumine</groupId>
-        <artifactId>Mythic-Dist</artifactId>
-        <version>5.2.1</version>  
-        <scope>provided</scope>
-    </dependency>
+## Dependencies
+
+#### Release Version is 5.3.5
+#### Dev Builds Version is 5.4.0-SNAPSHOT
+
+### Maven
+```xml
+<dependency>
+    <groupId>io.lumine</groupId>
+    <artifactId>Mythic-Dist</artifactId>
+    <version>5.3.5</version>  
+    <scope>provided</scope>
+</dependency>
+```
+
+### Gradle (Groovy)
+```groovy
+dependencies {
+    //...
+    compileOnly 'io.lumine:Mythic-Dist:5.3.5'
+}
+```
+
+### Gradle (Kotlin)
+```groovy
+dependencies {
+    // ...
+    compileOnly("io.lumine:Mythic-Dist:5.3.5")
+}
+```
+--------------------------
 
 Examples
 --------
