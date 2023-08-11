@@ -18,14 +18,3 @@ The syntax for adding Kill Messages is simple. You can even have multiple messag
 It's that easy! Any player killed by the Soul Eater mob would have one of those two custom death messages displayed to the server. [Variables](/Skills/Placeholders) can also be used in the message, the important one being <target.name> for the name of the dead player.
 
 For more customization, you can also edit your config.yml file and change KillMessagePrefix. This allows you to put a simple prefix in front of all kill messages (variables do not work in the prefix, however).
-
-
-### Tricks
-
-You can use a solely empty line on the KillMessages field to deactive the mob's kill messages completely. Goes like this:
-
-    SilentUndead:
-      Type: zombie
-      Display: 'Silent Undead'
-      KillMessages:
-      - ''
