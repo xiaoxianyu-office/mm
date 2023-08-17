@@ -1,7 +1,9 @@
 Mechanic: Aura Remove
 =====================
 
-Removes an aura from the target.
+Removes an aura from the target.  
+You can decide if the aura executes its `onEnd` metaskill via the `DoEndSkillOnTerminate` attribute of the [Aura](/skills/mechanics/aura) mechanic.
+
 
 Attributes
 ----------
