@@ -144,6 +144,7 @@ These placeholders will return whatever target selector has been used. For insta
 |   <target.block.data>   | Returns the block data of the target block                             |
 |  <target.entity_type>   | Returns the entity type of the target                             |
 |  <target.item.type>     | Returns the type of the targeted item entity                      |
+|  <target.held.item>     | Returns the item held by the target                      |
 |  <target.itemstack_amount>   | Returns the amount of item entities on the ground                             |
 |   <target.raytrace>     | Returns the name of the block being looked at by the target (4.5 blocks of range) |
 
@@ -174,6 +175,7 @@ The following are only some of the placeholders that can have a `trigger` scope,
 |   <trigger.l.z.#>    | Returns the Z coordinate of the entity triggering the skill +- random number between # |
 |   <trigger.l.yaw>    | Returns the yaw of the trigger                                                         |
 |  <trigger.l.pitch>   | Returns the pitch of the trigger                                                       |
+|  <trigger.held.item>   | Returns the item held by the trigger                                                      |
 |   <trigger.raytrace>     | Returns the name of the block being looked at by the trigger (4.5 blocks of range) |
 
 
