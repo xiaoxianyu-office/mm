@@ -49,15 +49,16 @@ DamageModTest:
 ```
 These options can also be used in the "onDamaged" aura, using the `damageMods="FIRE 0.5"` attribute.
 
+### Damage Tags (5.4.0)
+```yaml
+- damage{amount=5;tags=WITCHCURSES}
+```
+This allows you to set any tag you want on this type of damage to be used with the [DamageTag](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/wikis/skills/conditions/damagetag) condition.
+
 ## Examples
 ```yaml
   Skills:
   - damage{amount=20;ignoreArmor=true} @target ~onTimer:20
-```
-```yaml
-# Damage tags (5.4.0)
-- damage{amount=5;tags=WITCHCURSES}
-This allows you to set any tag you want on this type of damage to be used with conditions.
 ```
 ```yaml
 FreezeBlast:
