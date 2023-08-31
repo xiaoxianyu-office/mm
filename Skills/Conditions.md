@@ -121,6 +121,7 @@ Conditions
 | [Cuboid](/skills/conditions/cuboid)                                           | Compare  | Whether the target is within the given cuboid between location1 x location2                 |
 | [DamageAmount](/skills/conditions/DamageAmount)                               | Meta     | Checks for a range of damage taken                                                           |
 | [DamageCause](/skills/conditions/DamageCause)                                 | Meta     | Checks the type of the damage cause                                                        |
+| [DamageTag](/skills/conditions/damagetag)                                 | Meta     | Checks the tags of the damage cause                                                        |
 | [Dawn](/skills/conditions/dawn)                                               | Location | If the time is dawn, from 22000 to 2000 in-game time                                        |
 | [Day](/skills/conditions/day)                                                 | Location | If the time is day, from 2000 to 10000 in-game time                                         |
 | [Dimension](/skills/conditions/dimension)                                     | Location | If the target location is within a certain dimension                                          |
