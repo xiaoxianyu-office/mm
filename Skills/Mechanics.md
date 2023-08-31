@@ -77,6 +77,7 @@ are able to target locations as well.
 | [Heal][]                  | Heals the target                                                                         |
 | [HealPercent][]           | Heals the target for a percentage of its max-health                                      |
 | [Hide][]                  | Hides the caster from the targeted player(s) for a set duration.                         |
+| [Hit][]                  | Simulates a physical hit from the mob. Takes melee damage and weapon damage into account.                         |
 | [Hologram][]              | Summons a hologram to the targeted location                                              |
 | [Ignite][]                | Sets the target on fire                                                                  |
 | [JSONMessage][]           | Sends a JSON-format message to the target player(s)                                      |
@@ -484,6 +485,7 @@ but not yet ready for use.
   [Swap]: /skills/mechanics/swap
   [Time]: /skills/mechanics/time
   [Hide]: /skills/mechanics/hide
+  [Hit]:  /skills/mechanics/hit 
   [TrackLocation]: /skills/mechanics/tracklocation
   [DisguiseAsBlock]: /skills/mechanics/disguiseasblock
   [GiveItemFromSlot]: /skills/mechanics/giveitemfromslot
