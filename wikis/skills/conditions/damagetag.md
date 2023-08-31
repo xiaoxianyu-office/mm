@@ -4,5 +4,6 @@ Checks for tags set in the [Damage](https://git.mythiccraft.io/mythiccraft/Mythi
 # Example
 ```yaml
 Conditions:
-- damageTag{tag=FIRE}
+- damageTag{tag=WITCHSPELL}
 ```
+The above will check damage for the tag "WITCHSPELL" these tags can be anything and are used like the scoreboard tags feature.
