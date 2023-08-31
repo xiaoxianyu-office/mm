@@ -1,7 +1,5 @@
-Mechanic: Hit
-====================
+## Description
 *Added in 5.4.0
-
 Simulates a physical hit from the mob. Takes melee stats into account (regular skill damage won't unless configured to specifically)
 This mechanic shares the same options as [BaseDamage](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/basedamage) mechanic
 
