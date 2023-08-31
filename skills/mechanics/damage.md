@@ -18,6 +18,7 @@ Damages the targeted entity.
 | damageshelmet| dh     | Whether or not the helmet should be damaged                          | false   |
 | ignoreeffects| ieff   | Whether or not effects should be ignored                             | false   |
 | ignoreresistance | ir | Whether or not resistance should be ignored                          | false   |
+| tags |  | Allows you to specify any number of arbitrary tags on any damage mechanics using tags=THIS,THAT etc. (5.4.0)                         | NONE   |
 
 ### DamageCause
 This attribute is only available in newer MM 5.0 builds.
@@ -34,7 +35,7 @@ As seen above, the damage mechanic offers the ability to set an "element" for th
 - damage{amount=10;element=ICE} @target ~onUse
 ```
 
-This element can buy named anything, and can be used in a mob's DamageModifiers to alter resistance to the damage type as needed:
+This element can be named anything, and can be used in a mob's DamageModifiers to alter resistance to the damage type as needed:
 ```yaml
 DamageModTest: 
   Type: COW 
@@ -53,9 +54,11 @@ These options can also be used in the "onDamaged" aura, using the `damageMods="F
   Skills:
   - damage{amount=20;ignoreArmor=true} @target ~onTimer:20
 ```
-
-This skill above does 20 damage (10 hearts), ignoring armor, to the
-mob's target every 1 second (20 ticks).
+```yaml
+# Damage tags (5.4.0)
+- damage{amount=5;tags=WITCHCURSES}
+This allows you to set any tag you want on this type of damage to be used with conditions.
+```
 ```yaml
 FreezeBlast:
   Skills:
