@@ -53,7 +53,7 @@ These options can also be used in the "onDamaged" aura, using the `damageMods="F
 ```yaml
 - damage{amount=5;tags=WITCHCURSES}
 ```
-This allows you to set any tag you want on this type of damage to be used with the [DamageTag](https:/git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/conditions/damagetag) condition.
+This allows you to set any tag you want on this type of damage to be used with the [DamageTag](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/conditions/damagetag) condition.
 
 ## Examples
 ```yaml
