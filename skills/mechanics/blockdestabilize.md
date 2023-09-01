@@ -1,12 +1,13 @@
-Mechanic: BlockDestabilize
-============================
+# Description
+Turns the blocks at the target location(s) into falling blocks, making them start to fall as if affected by gravity
 
-Turns the target block into a falling block. Adding gravity physics to blocks..
-  
 
-Examples
---------
+# Attributes
+>*This mechanic has no attributes*  
+
+
+#Examples
 ```yml
-Skills:
+  Skills:
   - blockdestabilize @BNO{r=5}
 ```
