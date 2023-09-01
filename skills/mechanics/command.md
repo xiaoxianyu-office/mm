@@ -59,6 +59,3 @@ ExampleMob:
 
 Tutorials
 ---------
-
--   [Villager trades using cmd-mechanics by
-    Krowerom](https://www.youtube.com/watch?v=p71bl_W3a4I&feature=youtu.be)
