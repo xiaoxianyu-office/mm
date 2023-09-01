@@ -1,14 +1,13 @@
-# Placeholders
-------------
-
 These are all of the placeholders and special characters you can use in
 skills and mechanics that use strings. There are some examples of usage at the bottom to get you started.
 
 __**Note:** Usage of many variables in skills are locked to the premium versions, excluding MMOCore, special characters, color codes, and `setvariable`__.
 
+
+[[_TOC_]]
+
 Special Characters
 ------------------
-
 | **Placeholder** | **Function**                      |
 |:---------------:|-----------------------------------|
 |      <&co>      | Returns a colon (:)               |
@@ -62,8 +61,10 @@ MessageSkill:
 ```
 MiniMessage also has a [web viewer](https://webui.adventure.kyori.net/) to see what your text will look like in game.
 
-Caster Placeholders
-------------------
+
+# Placeholders
+
+## Caster Placeholders
 These placeholders will return whatever attribute of the caster that is called. For instance `<caster.l.y.#>` will return the caster's Y location.
 
 |         Caster Placeholder         | Function                                                          |
@@ -99,8 +100,8 @@ These placeholders will return whatever attribute of the caster that is called. 
 | <caster.raytrace>                  | Returns the name of the block being looked at by the caster (4.5 blocks of range) |
 | <caster.children.size>             | Returns the number of children this entity has                    |
 
-**Variable Placeholders**
------------------
+
+## Variable Placeholders
 These placeholders will return whatever variable has been called. For instance <caster.var.\[name\]> will return the value of the caster's \[name\] variable.
 
 | **Variable Placeholder**  | **Function**                                                            |     
@@ -117,8 +118,7 @@ These placeholders will return whatever variable has been called. For instance <
 |      <skill.targets>      | Returns the amount of inherited targets                                 |
 | <skill.var.interval>      | Returns the interval value in mechanics using repeat & repeatInterval options|
 
-**Target Placeholders**
------------------
+## Target Placeholders
 These placeholders will return whatever target selector has been used. For instance <target.name> + @NearestPlayer will return the name of the player closest to the casting mob. The following are only some of the placeholders that can have a `target` scope, and in general any placeholder that is also present in the [Caster Placeholder](#caster-placeholders) section will also work.
 
 | **Target Placeholders** | **Function**                                                      |
@@ -148,8 +148,7 @@ These placeholders will return whatever target selector has been used. For insta
 |  <target.itemstack_amount>   | Returns the amount of item entities on the ground                             |
 |   <target.raytrace>     | Returns the name of the block being looked at by the target (4.5 blocks of range) |
 
-**Trigger Placeholders**
------------------
+## Trigger Placeholders
 These placeholders will return whatever attribute of the entity that caused the skill to happen. For instance `<trigger.name>` combined with an `~onDeath` trigger will return the name of the entity that killed the mob.
 
     Skills:
@@ -179,16 +178,14 @@ The following are only some of the placeholders that can have a `trigger` scope,
 |   <trigger.raytrace>     | Returns the name of the block being looked at by the trigger (4.5 blocks of range) |
 
 
-Misc Placeholders
------------------
+## Misc Placeholders
 
 |    **Placeholder**    | **Function**                                        |
 |:---------------------:|-----------------------------------------------------|
 |      <drops.xp>       | Returns the xp dropped via Heroes or SkillAPI mods  |
 |     <drops.money>     | Returns the money dropped through the vault plug-in |
 
-Special Placeholders
---------------------
+## Special Placeholders
 
 | **Placeholder**             | **Function**                                                            |
 |-----------------------------|-------------------------------------------------------------------------|
@@ -202,7 +199,7 @@ Special Placeholders
 | <random.float.#to#>         | Returns a random float number in the specified range                    |
 
 
-## PlaceholderAPI Integration
+# PlaceholderAPI Integration
 Other than being able to use PlaceholderAPI placeholders anywhere placeholder support is in place, MythicMobs introduces some new PAPI placeholders that can be used by third parties to fetch MythicMobs-related values.
 | **PAPI Placeholder**        | **Function**                                                            |
 |-----------------------------|-------------------------------------------------------------------------|
@@ -212,6 +209,31 @@ Other than being able to use PlaceholderAPI placeholders anywhere placeholder su
 | %mythic_var_\<playerName\>_someVar% | Returns the value of the `someVar` variable that is set on the specified player, by their name |
 | %mythic_var_\<UUID\>_someVar% | Returns the value of the `someVar` variable that is set on the specified entity, by its UUID|
 
+
+# Custom Placeholders
+It's possible to create custom placeholders in any Pack by creating a file named `placeholders.yml` in the pack directory. These can be static or you can define conditional placeholders - the first one that evaluates true will be chosen, or the `Default` if they're all false.
+
+Custom placeholders can be used via `<placeholder.{customname}>`, with _{customname}_ being the name of your custom placeholder.  
+
+```yaml
+TestPlaceholder: 'some value'
+
+TestConditionalPlaceholder:
+  Day:
+    Conditions:
+    - day
+    Value: day
+  Night:
+    Conditions:
+    - night
+    Value: night
+  Default: idk
+
+TestRandomPlaceholder:
+- red
+- green
+- blue
+```
 
 Examples
 --------------------
