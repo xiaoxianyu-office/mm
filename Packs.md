@@ -10,6 +10,7 @@ Name: The name of the pack
 Version: 0.1.0
 Author: The name of the author
 Icon: the block to use as the icon of the pack
+Model: 1 #(5.4.0 MM)
 URL: The link to your site, if any
 Description:
 - This is a list
