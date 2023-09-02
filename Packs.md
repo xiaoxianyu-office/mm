@@ -9,7 +9,9 @@ When making a Pack, you might want to embed a bit more information into it, such
 Name: The name of the pack
 Version: 0.1.0
 Author: The name of the author
-Icon: the block to use as the icon of the pack
+Icon:
+  Material: The bukkit name of the item you want to use
+  Model: The CustomModelData of the material
 Model: 1 #(5.4.0 MM)
 URL: The link to your site, if any
 Description:
