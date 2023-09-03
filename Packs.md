@@ -12,7 +12,6 @@ Author: The name of the author
 Icon:
   Material: The bukkit name of the item you want to use
   Model: The CustomModelData of the material
-Model: 1 #(5.4.0 MM)
 URL: The link to your site, if any
 Description:
 - This is a list
