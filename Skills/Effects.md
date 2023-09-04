@@ -44,16 +44,16 @@ Of particular relevance is the `audience=@Targeter` attribute, that allows any e
 
 | Effect Mechanic      | Description                                                           |
 |----------------------|-----------------------------------------------------------------------|
-| [Atom][]             | Creates electron-esque orbitals.                       |
+| [Atom][]             | Creates electron-esque orbitals.                                      |
 | [Black Screen][]     | Blacks out the target's screen for the duration                       |
 | [Block Mask][]       | Temporarily masks a block as a different block                        |
 | [Block Unmask][]     | Unmasks blocks that have been masked                                  |
 | [Block Wave][]       | Creates a wave of blocks at the target location                       |
 | [Bloody Screen][]    | Makes the target's screen glow red                                    |
 | [Ender][]            | Causes the "Ender" effect                                             |
-| [Ender Beam][]       | Creates the enderbeam effects at the target (similar to End Crystals)                           |
+| [Ender Beam][]       | Creates the enderbeam effects at the target (similar to End Crystals) |
 | [Explosion][]        | Causes an explosion effect                                            |
-| [Firework][]         | Causes a firework explosion (currently not working in most builds)                 |
+| [Firework][]         | Causes a firework explosion (currently not working in most builds)    |
 | [Flames][]           | Causes the Mob Spawner flame effect                                   |
 | [Geyser][]           | Creates a "geyser" of water or lava                                   |
 | [Glow][]             | Gives the target the glow effect with different colors (req. GlowAPI) |
@@ -62,10 +62,10 @@ Of particular relevance is the `audience=@Targeter` attribute, that allows any e
 | [Lightning][]        | Causes a fake lightning strike                                        |
 | [Particles][]        | Creates particle effects around the target                            |
 | [Particle Box][]     | Draws a box of particles around the target                            |
-| [Particle Equation][]    | Generates particles based on equations                        |
+| [Particle Equation][]    | Generates particles based on equations                            |
 | [Particle Line][]    | Draws a line of particle effects to the target                        |
-| [Particle Line Helix][]    | Draws a line based helix effect                        |
-| [Particle Line Ring][]    | Draws a particle ring connected by lines                        |
+| [Particle Line Helix][]    | Draws a line based helix effect                                 |
+| [Particle Line Ring][]    | Draws a particle ring connected by lines                         |
 | [Particle Orbital][] | Draws orbiting particle effects around the target                     |
 | [Particle Ring][]    | Draws a ring of particles around the target                           |
 | [Particle Sphere][]  | Draws a sphere of particles around the target                         |
@@ -78,9 +78,8 @@ Of particular relevance is the `audience=@Targeter` attribute, that allows any e
 | [Sound][]            | Plays a sound effect from both vanilla Minecraft and resource packs   |               
 | [Spin][]             | Causes the mob to spin                                                |
 | [StopSound][]        | Stops a sound effect from playing                                     |
-| [SummonAreaEffectCloud][]        | Summons a cloud of particles at the target                                     |
-| [ThunderLevel][]     | Creates a rainless storm for players client side (per Player)                           |
-| [TotemOfUndying][]     | Plays the effect of a player resurrecting                           |
+| [ThunderLevel][]     | Creates a rainless storm for players client side (per Player)         |
+| [TotemOfUndying][]   | Plays the effect of a player resurrecting                             |
 
 <!--
 ### EffectLib Effects
@@ -132,7 +131,6 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
   [Sound]: /skills/effects/sound
   [Spin]: /skills/effects/spin
   [StopSound]: /skills/effects/stopsound
-  [SummonAreaEffectCloud]: /skills/effects/summonareaeffectcloud
   [ThunderLevel]: /skills/effects/thunderlevel
   [TotemOfUndying]: /skills/effects/totemOfUndying
   [Atom]: /skills/effects/atom
