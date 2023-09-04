@@ -56,7 +56,6 @@ are able to target locations as well.
 | [Damage][]                | Damages the target for an amount                                                         |
 | [BaseDamage][]            | Damages the target for a percent of the mob's damage stat                                |
 | [DamagePercent][]         | Damages the target for a percent of their health                                         |
-| [DisguiseAsBlock][]       |                                                                                          |
 | [Decapitate][]            | Drops a player head item based on target                                                 |
 | [Doppleganger][]          | Copies the appearance of the target player                                               |
 | [DropItem][]              | Drops an item or droptable at the target location                                        |
@@ -170,7 +169,8 @@ are able to target locations as well.
 | [StopUsingItem][]         | Stops the targeted entity from using an item                                             |
 | [Suicide][]               | Causes the caster to die                                                                 |
 | [Summon][]                | Summons other mobs at the target                                                         |
-| [SummonPassenger][]                | Summons a mob to ride the target.                                                         |
+| [SummonAreaEffectCloud][] | Summons a cloud of particles at the target                                     |
+| [SummonPassenger][]       | Summons a mob to ride the target.                                                         |
 | [Swap][]                  | Swaps locations with the target                                                          |
 | [AddTag][]                | Adds a scoreboard tag to the target                                                      |
 | [RemoveTag][]             | Removes a scoreboard tag from the target                                                 |
@@ -329,14 +329,16 @@ but not yet ready for use.
   [FillChest]: /skills/mechanics/fillChest
   [Fly]: /skills/mechanics/fly
   [Freeze]: /skills/mechanics/freeze
-  [aura]: /skills/mechanics/aura
   [ForcePull]: /skills/mechanics/forcepull
   [Glow]: /skills/mechanics/glow
   [GiveItem]: /skills/mechanics/giveitem
+  [GiveItemFromSlot]: /skills/mechanics/giveitemfromslot
   [GiveItemFromTarget]: /skills/mechanics/giveitemfromtarget
   [GoTo]: /skills/mechanics/goto
   [Heal]: /skills/mechanics/heal
   [HealPercent]: /skills/mechanics/healpercent
+  [Hide]: /skills/mechanics/hide
+  [Hit]:  /skills/mechanics/hit 
   [Hologram]: /skills/mechanics/hologram
   [Ignite]: /skills/mechanics/ignite
   [JSONMessage]: /skills/mechanics/jsonmessage
@@ -355,6 +357,11 @@ but not yet ready for use.
   [MountTarget]: /skills/mechanics/mounttarget
   [Oxygen]: /skills/mechanics/oxygen
   [PickUpItem]: /skills/mechanics/pickupitem
+  [PlayBlockBreakSound]: skills/mechanics/PlayBlockBreakSound
+  [PlayBlockFallSound]: skills/mechanics/PlayBlockFallSound
+  [PlayBlockHitSound]: skills/mechanics/PlayBlockHitSound
+  [PlayBlockPlaceSound]: skills/mechanics/PlayBlockPlaceSound
+  [PlayBlockStepSound]: skills/mechanics/PlayBlockStepSound
   [PoseArmorStand]: /skills/mechanics/posearmorstand
   [Potion]: /skills/mechanics/potion
   [PotionClear]: /skills/mechanics/potionclear
@@ -382,6 +389,7 @@ but not yet ready for use.
   [SetBlockType]: /skills/mechanics/setblocktype
   [SetCollidable]: /skills/mechanics/setcollidable
   [SetDragonPodium]: /skills/mechanics/SetDragonPodium
+  [SetFaction]: /skills/mechanics/setFaction
   [SetGameMode]: /skills/mechanics/setgamemode
   [SetGliding]: /skills/mechanics/setgliding
   [SetGlobalScore]: /skills/mechanics/setglobalscore
@@ -409,6 +417,7 @@ but not yet ready for use.
   [SetSpeed]: /skills/mechanics/setspeed
   [SetStance]: /skills/mechanics/setstance
   [Shield]: /skills/mechanics/shield
+  [ShieldBreak]: /skills/mechanics/shieldbreak
   [ShieldPercent]: /skills/mechanics/shieldpercent
   [ShootFireball]: /skills/mechanics/shootfireball
   [ShootPotion]: /skills/mechanics/shootpotion
@@ -422,7 +431,9 @@ but not yet ready for use.
   [Stun]: /skills/mechanics/stun
   [Suicide]: /skills/mechanics/suicide
   [Summon]: /skills/mechanics/summon
+  [SummonAreaEffectCloud]: /skills/mechanics/summonareaeffectcloud
   [SummonPassenger]: /skills/mechanics/summonpassenger
+  [Swap]: /skills/mechanics/swap
   [AddTag]: /skills/mechanics/addtag
   [RemoveTag]: /skills/mechanics/removetag
   [TakeItem]: /skills/mechanics/takeitem
@@ -434,6 +445,7 @@ but not yet ready for use.
   [Throw]: /skills/mechanics/throw
   [ToggleLever]: /skills/mechanics/togglelever
   [ToggleSitting]: /skills/mechanics/togglesitting
+  [TrackLocation]: /skills/mechanics/tracklocation
   [UndoPaste]: /skills/mechanics/undopaste
   [Velocity]: /skills/mechanics/velocity
   [Weather]: /skills/mechanics/weather
@@ -445,6 +457,7 @@ but not yet ready for use.
   [Skill]: /skills/mechanics/skill
   [VariableSkill]: /skills/mechanics/variableskill
   [Aura]: /skills/mechanics/aura
+  [aura]: /skills/mechanics/aura
   [CancelEvent]: /skills/mechanics/cancelevent
   [Cast]: /skills/mechanics/cast
   [Chain]: /skills/mechanics/chain
@@ -464,11 +477,6 @@ but not yet ready for use.
   [Polygon]: /skills/mechanics/polygon
   [Projectile]: /skills/mechanics/projectile
   [ProjectileVelocity]: /skills/mechanics/projectilevelocity
-  [PlayBlockBreakSound]: skills/mechanics/PlayBlockBreakSound
-  [PlayBlockFallSound]: skills/mechanics/PlayBlockFallSound
-  [PlayBlockHitSound]: skills/mechanics/PlayBlockHitSound
-  [PlayBlockPlaceSound]: skills/mechanics/PlayBlockPlaceSound
-  [PlayBlockStepSound]: skills/mechanics/PlayBlockStepSound
   [Shoot]: /skills/mechanics/shoot
   [Slash]: /skills/mechanics/slash
   [Volley]: /skills/mechanics/volley
@@ -482,19 +490,11 @@ but not yet ready for use.
   [SetVariableLocation]: /skills/mechanics/setvariablelocation
   [VariableUnset]: /skills/mechanics/variableunset
   [VariableSubtract]: /skills/mechanics/variablesubtract
-  [Swap]: /skills/mechanics/swap
   [Time]: /skills/mechanics/time
-  [Hide]: /skills/mechanics/hide
-  [Hit]:  /skills/mechanics/hit 
-  [TrackLocation]: /skills/mechanics/tracklocation
-  [DisguiseAsBlock]: /skills/mechanics/disguiseasblock
-  [GiveItemFromSlot]: /skills/mechanics/giveitemfromslot
   [OnBlockBreak]: /skills/mechanics/onblockbreak
   [OnBlockPlace]: /skills/mechanics/onblockplace
   [OnSwing]: /skills/mechanics/onswing
   [OnInteract]: /skills/mechanics/oninteract
   [OnJump]: /skills/mechanics/onjump
   [OnDeath]: /skills/mechanics/ondeath
-  [ShieldBreak]: /skills/mechanics/shieldbreak
   [Switch-Case]: /skills/mechanics/switch-case
-  [SetFaction]: /skills/mechanics/setFaction
