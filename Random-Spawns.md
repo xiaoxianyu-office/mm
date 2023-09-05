@@ -171,10 +171,10 @@ RandomSpawning:
       Lava: 0
       Ground: 0
 ```
-Examples
+Tutorials
 --------
 
-In-depth tutorial on how to create random spawners: [Creating Random
+Quick start tutorial on how to create random spawners: [Creating Random
 Spawners](/tutorials/randomspawns)
 
 [1] 1 = 100 %, 0.5 = 50 % ...
