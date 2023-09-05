@@ -2,7 +2,7 @@ Step 1. Copy the example random spawns.
 
 Step 2. Decide if you want to REPLACE a mob spawn or ADD a new spawn.
 
-Step 3. If adding a new spawn point on top of vanilla spawns change every instance "MobType:" to "Type:" and use the ADD action
+Step 3. If adding a new spawn point on top of vanilla spawns change every instance of "MobType:" to "Type:" and use the ADD action
 
 Step 4. Change the "Type:" value to the internal name of your mob. (eg. Type: MyMob)
 
