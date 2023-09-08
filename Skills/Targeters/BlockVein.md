@@ -11,19 +11,19 @@ Target all adjancent blocks that match the blocktype, starting from the origin o
 
 ## Examples
 ```yaml
-# Vein mine whatever you mine
+# Vein mine whatever you mine (Crucible)
 VeinMinerPickaxe:
   Id: NETHERITE_PICKAXE
   Skills:
   - breakblock{origin=@TargetBlock} @Vein{bt=<caster.raycast>} ~onBlockBreak
 
-# Vein mine only certain ores
+# Vein mine only certain ores (Crucible)
 VeinMinerPickaxeOres:
   Id: DIAMOND_PICKAXE
   Skills:
   - breakblock{origin=@TargetBlock} @Vein{bt=REDSTONE_ORE, DEEPSLATE_REDSTONE_ORE} ~onBlockBreak
 
-# Vein mine all ores
+# Vein mine all ores (Crucible)
 VeinMinerPickaxeOres_V2:
   Id: DIAMOND_PICKAXE
   Skills:
