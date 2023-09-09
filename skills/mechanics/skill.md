@@ -1,12 +1,67 @@
-Mechanic: Skill
-===============
+## Description
 
-Executes another meta-skill, which must be located in
+Executes another [MetaSkill](/Skills/Metaskills), which must be located in
 */MythicMobs/Skills*. The executed skill will inherit any targets if no
 targeter is specified.
 
-Syntax
-------
+
+## Attributes
+
+| Attribute | Shorthand | Description                                                         | Default |
+|-----------|-----------|---------------------------------------------------------------------|---------|
+| skill     | s         | The metaskill to be executed                                        |         |
+| forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft  | false   |
+| branch    | b, fork, f| Whether the called metaskill's skilltree should branch off from the skilltree of the calling mechanic                                                                          | false   |
+
+
+### Branch Attribute
+Every time a skill is triggered from the mob file via a trigger, a `SkillTree` is generated. The `SkillTree` holds many informations, and among them there are the [Skill-Scoped Variables](/Skills/Variables#variable-scopes) and the [Skill Parameters](/Skills/Metaskills#skill-parameters-premium-feature) and their value.  
+
+This makes their value accessible from any mechanic or metaskill that is being called from the same skilltree they are in, but it also makes them **unique**: there can exist only one `Skill Scoped Variable` or one `Skill Parameter` with the same name in the `SkillTree`, and setting more than one will override the value.
+
+## 
+
+```yaml
+TestSkill_1:
+  Skills:
+  - setvariable{var=skill.sharedvalue;val=1}
+  - skill{s=TestSkill_2}
+  - skill{s=TestSkill_3}
+  - message{m="<skill.var.sharedvalue>"} @World
+
+TestSkill_2:
+  Skills:
+  - setvariable{var=skill.sharedvalue;val=2}
+
+TestSkill_3:
+  Skills:
+  - setvariable{var=skill.sharedvalue;val=3}
+```
+> In this instance you can see how this all works out: the value of the skill scoped variable is set on all called metaskills, but since the skilltree is only one, the value is overridden multiple times, until, at the end, the value "3" is returned
+
+## 
+
+The `branch` Attribute, meanwhile, makes this no longer true: if set to true on a skill mechanic, it makes the called metaskill have a brand new `SkillTree`, without it sharing any skill scoped variable or skill parameter
+
+```yaml
+TestSkill_1:
+  Skills:
+  - setvariable{var=skill.sharedvalue;val=1}
+  - skill{s=TestSkill_2}
+  - skill{s=TestSkill_3;branch=true}
+  - message{m="<skill.var.sharedvalue>"} @World
+
+TestSkill_2:
+  Skills:
+  - setvariable{var=skill.sharedvalue;val=2}
+
+TestSkill_3:
+  Skills:
+  - setvariable{var=skill.sharedvalue;val=3}
+```
+> This example pans out like the previous one, except for the line in which the TestSkill_3 MetaSkill is called: since the branch attribute is set to true, the variable is set on another skilltree, without the original one have "any knowledge" of it. So, the final value printed would be "2"
+
+## Examples
 ```yaml
   Skills:
   - skill{skill=AnotherSkill} @Target ~onAttack
@@ -17,55 +72,7 @@ Syntax
 The attribute "sync=true" will be inherited by any sub-skills and cannot
 be set to *false* later in a skill-tree.
 
-| Attribute | Shorthand | Description                                                         | Default |
-|-----------|-----------|---------------------------------------------------------------------|---------|
-| skill     | s         | The metaskill to be executed.                                       |         |
-| forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft. | false   |
-
-Cooldown
---------
-
-Skill configurations are capable of utilizing cooldown
-Add cooldown to your skills like this:
-
-```yaml
-internal_skillname:
-  Cooldown: <seconds>
-  Conditions:
-  - condition
-  - ...
-  Skills:
-  - mechanic{}
-  - ...
-
-```
-Note that this only applies for skill configurations that are saved as
-skill-files in */MythicMobs/Skills*. Cooldown can't be added to
-mechanics called directly in mob configuration files.
-
-OnCooldownSkill
----------------
-
-If the metaskill is triggered while on cooldown, this option allows for it to launch another metaskill instead
-
-```yaml
-internal_skillname:
-  Cooldown: <seconds>
-  OnCooldownSkill: internal_fallbackskill_name
-  Skills:
-  - mechanic{}
-  - ...
-
-internal_fallbackskill_name:
-  Skills:
-  - mechanic{}
-  - ...
-```
-
-Note that the skill you set as the value of OnCooldownSkill can itself have a OnCooldownSkill option.
-
-Examples
---------
+## 
 
 ```yaml
   Skills:
