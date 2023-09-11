@@ -13,7 +13,7 @@ mechanic](/skills/mechanics/setlevel).
 
 This page will only be covering the basics, a future guides/examples
 section may include more in-depth tutorials later on.
-
+```yaml
     Zombie:
       MobType: zombie
       Health: 100
@@ -26,7 +26,7 @@ section may include more in-depth tutorials later on.
       LevelModifiers:
         Health: 5
         Damage: 0.5
-
+```
 LevelModifiers
 --------------
 
@@ -49,7 +49,7 @@ World Scaling
 -------------
 
 Mob levels (for random-spawned mobs) can automatically be set by the plugin by specifying world scaling settings in the config.yml located in */MythicMobs*/. Setting it up is simple. By default the section for scaling in your config.yml should look something like this:
-
+```yaml
       Scaling:
         Default:
           Enabled: false
@@ -60,10 +60,10 @@ Mob levels (for random-spawned mobs) can automatically be set by the plugin by s
         world2_nether:
           Enabled: false
           PerBlocksFromSpawn: 150
-
+```
 The above examples shows different worlds with different levels of scaling. Using "world2" as an example, the levels for randomspawnmed mobs would look something like this:
 
--   Lvel 0 in the white area (0-249 blocks from spawn).
+-   Level 0 in the white area (0-249 blocks from spawn).
 -   Level 1 in the tan area (250-499 blocks distance).
 -   Level 2 in the yellow area (500-749 blocks distance).
 -   Level 3 in the orange area (750-999 blocks distance).
