@@ -239,6 +239,7 @@ Conditions
 | [ServerVersion](/skills/conditions/serverversion)                             | Meta     | Checks if the server is running the specified minecraft version.                              |
 | [Size](/skills/skills/conditions/Size)                                        | Entity   | Checks the size of the target entity                                                       |
 | [SkillOnCooldown](/skills/conditions/skilloncooldown)                         | Entity   | Checks if the given skill is in cooldown for the target                                       |
+| [SpawnReason](/skills/conditions/SpawnReason)                                 | Entity   | Checks against the spawn reason of the target                                          |
 | [Sprinting](/skills/conditions/Sprinting)                                     | Entity   | Checks if the target **Player** is sprinting                                                  |
 | [Stance](/skills/conditions/stance)                                           | Entity   | Checks the stance of the target mob                                                        |
 | [StringEquals](/skills/conditions/stringequals)                               | Meta     | Checks if value1 equals value2. Both values can use variables and placeholders.           |
