@@ -28,6 +28,11 @@ Conditions:
 - health{h=>10} true
 ```
 
+```yaml
+# Above 10 percent health
+Conditions:
+- health{h=>10%} true
+```
 
 ## Aliases
 - [x] hp
