@@ -1,9 +1,9 @@
 JavaDocs
 --------
 
-JavaDocs for MythicMobs API can be found here:
+JavaDocs for Mythic API can be found here:
 
-1.  <https://www.mythicmobs.net/javadocs/>
+1.  <https://www.mythiccraft.io/javadocs/mythic/>
 
 -------------------------
 ## Repositories
