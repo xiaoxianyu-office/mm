@@ -231,7 +231,7 @@
 
 | Description                 | Common Usage | Particle Size | Speed | Speed Effect |
 |-----------------------------|--------------|---------------|-------|--------------|
-| NA                          | NA           | NA            | NA    | NA           |
+| Transitions between two colors. Use `color1` and `color2` instead of `color`                          | NA           | NA            | NA    | NA           |
 
 
 **electric_spark**
