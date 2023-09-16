@@ -71,7 +71,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | HeightFromSurface| hfs| For NORMAL projectiles, how high above the surface the projectile should glide if HugSurface is set to TRUE. For METEOR projectiles, how high above the surface the projectile starts above the target.                                                                              | 0.5     |
 | MaxClimbHeight | mch  | The number of attempts the projectile will make to **increase** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 3       |
 | MaxDropHeight  | mdh  | The number of attempts the projectile will make to **decrease** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 10      |
-| highAccuracyMode | ham| Whether to use high-accuracy mode, which raytraces every tick to ensure the projectile cannot ever go anything. Values can be `true`, `false`, `PLAYERS_ONLY`         | PLAYERS_ONLY |
+| highAccuracyMode | ham| Whether to use high-accuracy mode, which raytraces every tick to ensure the projectile cannot ever go through anything. Values can be `true`, `false`, `PLAYERS_ONLY`         | PLAYERS_ONLY |
 
 
 ## Special Notes
