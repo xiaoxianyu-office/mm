@@ -10,7 +10,6 @@ Some Mechanics are able to target Entities, Locations, or both! Some
 don't target anything. You control what your skill targets using a
 [Targeter][].
 
-Learn about the new Skill Parameter system added in MM 4.12 [here!][]
 
 Mechanics
 ---------
@@ -23,6 +22,7 @@ are able to target locations as well.
 | [ActivateSpawner][]       | Activates a MythicMobs spawner at the targeted location                                  |
 | [AddTrade][]              | Changes the trades of a villager                                                          |
 | [AnimateArmorStand][]     | Animates an armorstand                                                                   |
+| [ArmAnimation][]     | Makes the caster swing their arm                                                                   |
 | [ArrowVolley][]           | Fires a volley of arrows                                                                 |
 | [Attribute][]             | Sets an attribute on the target entity, if attributable                                                                 |
 | [AttributeModifier][]     | Adds an attribute modifier to the attributable target                                                                 |
@@ -284,6 +284,7 @@ but not yet ready for use.
   [ActivateSpawner]: /skills/mechanics/activatespawner
   [AddTrade]: /skills/mechanics/AddTrade
   [AnimateArmorStand]: /skills/mechanics/animatearmorstand
+  [ArmAnimation]: /skills/mechanics/ArmAnimation
   [ArrowVolley]: /skills/mechanics/arrowvolley
   [Attribute]: /skills/mechanics/Attribute
   [AttributeModifier]: /skills/mechanics/AttributeModifier
