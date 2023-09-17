@@ -93,8 +93,6 @@ These placeholders will return whatever attribute of the caster that is called. 
 |       <caster.l.yaw>               | Returns the yaw of the caster                                     |
 |      <caster.l.pitch>              | Returns the pitch of the caster                                   |
 |       <caster.stance>              | Returns the current stance of the caster                          |
-|     <caster.owner.name>            | Returns the name of the wolf's owner                              |
-|     <caster.owner.uuid>            | Returns the uuid of the wolf's owner                              |
 | <caster.heldenchantlevel.#>        | Returns the enchant level of specified # enchant                  |
 | <caster.skill.\[skill_name\].cooldown> | Returns the current cooldown of the give skill as a float number |
 | <caster.raytrace>                  | Returns the name of the block being looked at by the caster (4.5 blocks of range) |
