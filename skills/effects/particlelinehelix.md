@@ -21,5 +21,6 @@ A list of particle types can be found **[here](/skills/effects/particles/types)*
 
 ## Examples
 ```yaml
-  Coming soon!
+- effect:particlelinehelix{Fo=true;db=0.4;hl=4;syo=1.8;p=scrape;hr=0.5;md=40} @targetlocation
 ```
+![Image](https://i.imgur.com/b812UFl.png)
