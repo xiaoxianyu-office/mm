@@ -1,28 +1,27 @@
-Mechanic: Aura Remove
-=====================
-
+## Description
 Removes an aura from the target.  
+
 You can decide if the aura executes its `onEnd` metaskill via the `DoEndSkillOnTerminate` attribute of the [Aura](/skills/mechanics/aura) mechanic.
 
 
-Attributes
-----------
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| aura      | buff, debuff, name, b, n | The name of the aura                                  | default |
+| stacks    | s                        | The amount of stacks                               | Max stacks |
 
-| Attribute | Aliases                  | Description          | Default Value |
-|-----------|--------------------------|----------------------|---------------|
-| aura      | buff, debuff, name, b, n | The name of the aura |               |
-| stacks    | s                        | The amount of stacks | Max stacks    |
+### Aura Attribute
+You can specify `ANY` as the value of the attribute in order to remove every aura on the target
 
-----------
 
-As of 4.12 MM:
-
-You can now specify "ANY" to remove all auras from the target
-
-Examples
---------
+## Examples
 ```yaml
-      Skills:
-      - auraremove{aura=Ice;stacks=10} @self ~onTimer:200
-      - ...
+  Skills:
+  - auraremove{aura=Ice;stacks=10} @self ~onTimer:200
 ```
+
+
+## Aliases
+- [x] removeaura
+- [x] removebuff
+- [x] removedebuff
