@@ -20,8 +20,8 @@ Makes an armor stand assume a pose over a specified time
 
 ## Examples
 ```yaml
-Skills:
-- animatearmorstand{d=10;leftarm=90,0,0;rightarm=270,0,0;ignoreempty=false}
+  Skills:
+  - animatearmorstand{d=10;leftarm=90,0,0;rightarm=270,0,0;ignoreempty=false}
 ```
 
 
