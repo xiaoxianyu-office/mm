@@ -1,16 +1,25 @@
-## Effect: Black Screen
-----
-Makes the player see with blindness.
+## Description
+Causes the player's screen to black out.  
 
-### Attributes
+> This creates an aura called `#blackScreen`, with an `interval` of 10, a maximum of 1 `stack` and the ability to refresh its original if an aura of the same name is applied again
 
-| Attribute | Aliases |	Description | Default Value |
-|--|--|--|--|
-|duration|d|The time (in ticks) that the effect is active|20|
 
-### Examples
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| duration  | d         | The duration of the effect                                           |         |
+| cancel    | c         | Whether the effect should be cancelled instead                       |
 
+
+## Examples
 Blinds players when the mob teleports
+```yaml
+BlackScreen:
+  Skils:
+  - blackscreen{d=2} @PlayersInRadius{r=100} ~onTeleport
+```
 
-    BlackScreen:
-      - blackscreen{d=2} @PlayersInRadius{r=100} ~onTeleport
+
+## Aliases
+- [x] effect:blackScreen
+- [x] e:blackScreen
