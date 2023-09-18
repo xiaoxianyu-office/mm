@@ -145,8 +145,6 @@ are able to target locations as well.
 | [SetNoDamageTicks][]      | Sets the nodamageticks of the target                                                     |
 | [SetOwner][]              | Makes the target the owner of the casting mob                                            |
 | [SetParent][]             | Makes the target the parent of the casting mob                                            |
-| [SetProjectileDirection][]| Sets the calling projectile's movement direction to the given target                                            |
-| [SetProjectileBulletModel][]    | Sets the model of the projectile. (DISPLAY bullets only)                                                                                                   |
 | [SetRotation][]           | Sets the rotation of the target                                                          |
 | [SetTarget][]             | Sets the caster's target                                                                 |
 | [SetTargetScore][]        | Sets the score of the target                                                             |
@@ -235,6 +233,8 @@ by these will "inherit" the targets (if applicable).
 | [ProjectileVelocity][]  | Modifies the velocity of the calling Projectile or Missile                                                                                               |
 | [RandomSkill][]         | Executes a random skill from a list                                                                                                                     |
 | [SetSkillCooldown][]    | Sets the given metakill's cooldown to the given value                                                                                                   |
+| [SetProjectileDirection][]| Sets the calling projectile's movement direction to the given target                                            |
+| [SetProjectileBulletModel][]    | Sets the model of the projectile. (DISPLAY bullets only)                                                                                                   |
 | [Shoot][]               | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                                               |
 | [Slash][]               | Creates a highly-customizable slash pattern that can execute metaskills.                                                                               |
 | [SudoSkill][]           | Makes the target execute a skill                                                                                                                        |
@@ -407,8 +407,6 @@ but not yet ready for use.
   [SetNoDamageTicks]: /skills/mechanics/setnodamageticks
   [SetOwner]: /skills/mechanics/setowner
   [SetParent]: /skills/mechanics/SetParent
-  [SetProjectileDirection]: /skills/mechanics/SetProjectileDirection
-  [SetProjectileBulletModel]: /skills/mechanics/setprojectilebulletmodel
   [SetRaiderPatrolBlock]: /skills/mechanics/setraiderpatrolblock
   [SetRaiderPatrolLeader]: /skills/mechanics/setraiderpatrolleader
   [SetRotation]: /skills/mechanics/setrotation
@@ -486,6 +484,8 @@ but not yet ready for use.
   [SudoSkill]: /skills/mechanics/sudoskill
   [RandomSkill]: /skills/mechanics/randomskill
   [SetSkillCooldown]: /skills/mechanics/setskillcooldown
+  [SetProjectileDirection]: /skills/mechanics/SetProjectileDirection
+  [SetProjectileBulletModel]: /skills/mechanics/setprojectilebulletmodel
   [Totem]: /skills/mechanics/totem
   [VariableAdd]: /skills/mechanics/variableadd
   [VariableMath]: /skills/mechanics/variablemath
