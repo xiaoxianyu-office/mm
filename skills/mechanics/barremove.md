@@ -1,20 +1,15 @@
-Mechanic: Bar Remove
-====================
+## Description
+Removes a custom boss bar on the casting mob (cannot be player).
 
-Removes a custom boss bar on the casting mob(cannot be player).
 
-Attributes
-----------
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| name      | n         | The name of the bossbar to remove                                    | infobar |
 
-| Attribute | Aliases | Description              | Default Value |
-|-----------|---------|--------------------------|---------------|
-| name      | n       | The name of the bossbar. | infobar       |
 
-  
-
-Examples
---------
-
-      Skills:
-      - barRemove{name="MyBossBar"} @self ~onInteract
-      - ...
+## Examples
+```yaml
+  Skills:
+  - barRemove{name="MyBossBar"} @self ~onInteract
+```
