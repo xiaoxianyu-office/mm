@@ -210,7 +210,8 @@ by these will "inherit" the targets (if applicable).
 | **[Skill][]**           | Executes a meta-skill. The butter for your bread.                                                                                                       |
 | **[VariableSkill][]**   | Executes a meta-skill. Supports placeholders.                                                                                                       |
 | [Aura][]                | Applies an aura to the targeted entity, allowing for skills to be run onStart/onTick/onEnd/Etc which all originate from the target.                     |
-| [CancelEvent][]         | Cancel the Event that triggered the current skill-tree. Only works for certain triggers.                                                                |
+| [CancelEvent][]         | Cancels the Event that triggered the current skill-tree. Only works for certain triggers.                                                                |
+| [CancelSkill][]         | Cancels the execution of the Metaskill when triggered.                                                                |
 | [Cast][]                | "Casts" a meta-skill using various advanced options.                                                                                                    |
 | [Chain][]               | Chains a skill between multiple targets that are near each other.                                                                                       |
 | [ChainMissile][]        | A missile that chains between entities. **Premium-Only** mechanic!                                                                                      |
@@ -460,6 +461,7 @@ but not yet ready for use.
   [Aura]: /skills/mechanics/aura
   [aura]: /skills/mechanics/aura
   [CancelEvent]: /skills/mechanics/cancelevent
+  [CancelSkill]: /skills/mechanics/CancelSkill
   [Cast]: /skills/mechanics/cast
   [Chain]: /skills/mechanics/chain
   [ChainMissile]: /skills/mechanics/chainmissile
