@@ -34,7 +34,8 @@ Mob Commands
 -    **/mm mobs info [mob_name]** *Displays lots of information about a Mythic Mob.*
 -    **/mm mobs list** *Displays a list of mobs loaded to the server.*
 -    **/mm mobs listactive** *Displays a list of currently spawned mobs, and the number of each.*
--    **/mm mobs kill [mob_name]** *Removes all Mythic Mobs with  the provided name.*
+-    **/mm mobs kill [mob_name]** *Removes all Mythic Mobs with the provided name.*
+-    **/mm mobs kill -f [faction]** *Removes all Mythic Mobs with the provided faction.**
 -    **/mm mobs killall** *Removes all active Mythic Mobs.*
 -    **/mm mobs killall -p** *Removes all persistent Mythic Mobs.*
 -    **/mm mobs spawn [mob_name]:&lt;level&gt; &lt;amount&gt; &lt;world,x,y,z,yaw,pitch&gt;** *Spawns mobs with the provided name.*
