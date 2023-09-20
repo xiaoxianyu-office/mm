@@ -30,7 +30,7 @@ To play an attack animation you have made, you would put this in the skills sect
 `- state{mid=kindletronjr;s=attack;} @self ~onAttack`
 
 For a full list of attributes and mechanics please visit the ModelEngine wiki:
-https://github.com/Ticxo/Model-Engine-Wiki/wiki/Mechanics
+https://git.mythiccraft.io/mythiccraft/modelengine/-/wikis/home
 
 ### Example:
 
