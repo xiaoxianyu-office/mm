@@ -240,7 +240,7 @@ Possible filters include:
 -   NPCs *(Citizens NPCs, ignored by default)*
 -   players
 -   samefaction *(mobs marked with the same faction type)*
--   spectators *(ignored by default)*
+-   spectator *(ignored by default)*
 -   vanilla
 -   villager
 -   watermobs
