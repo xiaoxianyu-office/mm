@@ -1,4 +1,3 @@
-Random Spawns
 ===================
 
 RandomSpawns give you complete control over how mobs are supposed to spawn in your worlds. You can fully customize where, how often, and how many mobs spawn, allowing for precise control over your mob spawns.
