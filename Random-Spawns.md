@@ -175,6 +175,6 @@ Tutorials
 --------
 
 Quick start tutorial on how to create random spawners: [Random
-Spawners Quick Start Guide](/tutorials/randomspawns)
+Spawners Quick Start Guide](/tutorials/Random-Spawns-quick-guide)
 
 [1] 1 = 100 %, 0.5 = 50 % ...
