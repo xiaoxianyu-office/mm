@@ -1,5 +1,3 @@
-# Targeters
-
 Targeters are used to determine what a skill targets when it is fired.
 
 While targeters are technically optional (as the default targeter will usually be @trigger), forgetting a targeter is probably one of the most common mistakes people who are new to MythicMobs make.
