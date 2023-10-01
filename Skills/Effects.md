@@ -48,13 +48,13 @@ Of particular relevance is the `audience=@Targeter` attribute, that allows any e
 | Effect Mechanic      | Description                                                           |
 |----------------------|-----------------------------------------------------------------------|
 | [Atom][]             | Creates electron-esque orbitals.                                      |
-| [Black Screen][]     | Blacks out the target's screen for the duration                       |
-| [Block Mask][]       | Temporarily masks a block as a different block                        |
-| [Block Unmask][]     | Unmasks blocks that have been masked                                  |
-| [Block Wave][]       | Creates a wave of blocks at the target location                       |
-| [Bloody Screen][]    | Makes the target's screen glow red                                    |
+| [BlackScreen][]     | Blacks out the target's screen for the duration                       |
+| [BlockMask][]       | Temporarily masks a block as a different block                        |
+| [BlockUnmask][]     | Unmasks blocks that have been masked                                  |
+| [BlockWave][]       | Creates a wave of blocks at the target location                       |
+| [BloodyScreen][]    | Makes the target's screen glow red                                    |
 | [Ender][]            | Causes the "Ender" effect                                             |
-| [Ender Beam][]       | Creates the enderbeam effects at the target (similar to End Crystals) |
+| [EnderBeam][]       | Creates the enderbeam effects at the target (similar to End Crystals) |
 | [Explosion][]        | Causes an explosion effect                                            |
 | [Firework][]         | Causes a firework explosion (currently not working in most builds)    |
 | [Flames][]           | Causes the Mob Spawner flame effect                                   |
@@ -64,16 +64,16 @@ Of particular relevance is the `audience=@Targeter` attribute, that allows any e
 | [Item Spray][]       | Sprays temporary items around the target                              |
 | [Lightning][]        | Causes a fake lightning strike                                        |
 | [Particles][]        | Creates particle effects around the target                            |
-| [Particle Box][]     | Draws a box of particles around the target                            |
-| [Particle Equation][]    | Generates particles based on equations                            |
-| [Particle Line][]    | Draws a line of particle effects to the target                        |
-| [Particle Line Helix][]    | Draws a line based helix effect                                 |
-| [Particle Line Ring][]    | Draws a particle ring connected by lines                         |
-| [Particle Orbital][] | Draws orbiting particle effects around the target                     |
-| [Particle Ring][]    | Draws a ring of particles around the target                           |
-| [Particle Sphere][]  | Draws a sphere of particles around the target                         |
-| [Particle Tornado][] | Draws a persistent "tornado" of particles at the target               |
-| [Play Animation][]   | Forces the entity to play an animation                                |
+| [ParticleBox][]     | Draws a box of particles around the target                            |
+| [ParticleEquation][]    | Generates particles based on equations                            |
+| [ParticleLine][]    | Draws a line of particle effects to the target                        |
+| [ParticleLine Helix][]    | Draws a line based helix effect                                 |
+| [ParticleLine Ring][]    | Draws a particle ring connected by lines                         |
+| [ParticleOrbital][] | Draws orbiting particle effects around the target                     |
+| [ParticleRing][]    | Draws a ring of particles around the target                           |
+| [ParticleSphere][]  | Draws a sphere of particles around the target                         |
+| [ParticleTornado][] | Draws a persistent "tornado" of particles at the target               |
+| [PlayAnimation][]   | Forces the entity to play an animation                                |
 | [Recoil][]           | Kicks the target's screen                                             |
 | [Skybox][]           | Alters the target's skybox                                            |
 | [Smoke][]            | Creates a puff of smoke                                               |
@@ -102,31 +102,31 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
   [skill mechanic]: /skills/mechanics/
   [Targeter]: /skills/targeters/
   [Atom]:  /skills/effects/atom
-  [Black Screen]: /skills/effects/blackscreen
-  [Block Mask]: /skills/effects/blockmask
-  [Block Unmask]: /skills/effects/blockunmask
-  [Block Wave]: /skills/effects/blockwave
-  [Bloody Screen]: /skills/effects/bloodyscreen
+  [BlackScreen]: /skills/effects/blackscreen
+  [BlockMask]: /skills/effects/blockmask
+  [BlockUnmask]: /skills/effects/blockunmask
+  [BlockWave]: /skills/effects/blockwave
+  [BloodyScreen]: /skills/effects/bloodyscreen
   [Ender]: /skills/effects/ender
-  [Ender Beam]: /skills/effects/enderbeam
+  [EnderBeam]: /skills/effects/enderbeam
   [Explosion]: /skills/effects/explosion
   [Firework]: /skills/effects/firework
   [Flames]: /skills/effects/flames
   [Geyser]: /skills/effects/geyser
   [Glow]: /skills/effects/glow
   [GuardianBeam]: /effects/guardianbeam
-  [Item Spray]: /skills/effects/itemspray
+  [ItemSpray]: /skills/effects/itemspray
   [Lightning]: /skills/effects/lightning
   [Particles]: /skills/effects/particles
-  [Particle Box]: /skills/effects/particlebox
-  [Particle Equation]: /skills/effects/particleequation
-  [Particle Line]: /skills/effects/particleline
-  [Particle Line Helix]: /skills/effects/particlelinehelix
-  [Particle Line Ring]: /skills/effects/particlelinering
-  [Particle Orbital]: /skills/effects/particleorbital
-  [Particle Ring]: /skills/effects/particlering
-  [Particle Sphere]: /skills/effects/particlesphere
-  [Particle Tornado]: /skills/effects/particletornado
+  [ParticleBox]: /skills/effects/particlebox
+  [ParticleEquation]: /skills/effects/particleequation
+  [ParticleLine]: /skills/effects/particleline
+  [ParticleLine Helix]: /skills/effects/particlelinehelix
+  [ParticleLine Ring]: /skills/effects/particlelinering
+  [ParticleOrbital]: /skills/effects/particleorbital
+  [ParticleRing]: /skills/effects/particlering
+  [ParticleSphere]: /skills/effects/particlesphere
+  [ParticleTornado]: /skills/effects/particletornado
   [Recoil]: /skills/effects/recoil
   [Skybox]: /skills/effects/skybox
   [Smoke]: /skills/effects/smoke
@@ -137,6 +137,6 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
   [ThunderLevel]: /skills/effects/thunderlevel
   [TotemOfUndying]: /skills/effects/totemOfUndying
   [Atom]: /skills/effects/atom
-  [Particle Vortex]: /skills/effects/particlevortex
+  [ParticleVortex]: /skills/effects/particlevortex
   [DNA]: /skills/effects/dna
-  [Play Animation]: /skills/effects/playanimation
+  [PlayAnimation]: /skills/effects/playanimation
