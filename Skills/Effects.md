@@ -1,6 +1,3 @@
-Skill Effects
--------------
-
 Skill Effects (or effect mechanics) are a special type of mechanic
 specifically designed to create special effects. These are called just
 like any other [skill mechanic][] in your mob's Skill List, or you can
@@ -9,8 +6,8 @@ add them to your own skills and even combine them.
 Most effects are able to target both Entities and Locations. You control
 what your effect targets using a [Targeter][].
 
-### Syntax
 
+## Syntax
 A lot of effects don't have any options. To call them, you just call the
 skill **effect:name**, for example:
 
@@ -22,6 +19,7 @@ skill **effect:name**, for example:
     - effect:ender @PlayersInRadius{r=20}
     - effect:particles{particle=reddust;color=#EE22CC;amount=10;speed=1;hS=0.15;vS=.15;audience=Target} @target
 ```
+
 
 ### Audience 
 Audience arguments can be used to display the effect only to a specific group of players, rather than the entire server, by using the `audience=<audience type>` attribute in an effect mechanic and specifying an audience type to use. This can be useful in preventing too many particles from being displayed to everyone unnecessarily, and can reduce client-side lag to some extent.
@@ -43,8 +41,7 @@ Of particular relevance is the `audience=@Targeter` attribute, that allows any e
     - effect:particles{particle=reddust;y=2;audience=@Owner} @self
 ```
 
-### Effects
-
+## Effects
 | Effect Mechanic      | Description                                                           |
 |----------------------|-----------------------------------------------------------------------|
 | [Atom][]             | Creates electron-esque orbitals.                                      |
@@ -61,7 +58,7 @@ Of particular relevance is the `audience=@Targeter` attribute, that allows any e
 | [Geyser][]           | Creates a "geyser" of water or lava                                   |
 | [Glow][]             | Gives the target the glow effect with different colors (req. GlowAPI) |
 | [GuardianBeam][]     | Draw a guardian beam between the origin and the target                |
-| [Item Spray][]       | Sprays temporary items around the target                              |
+| [ItemSpray][]       | Sprays temporary items around the target                              |
 | [Lightning][]        | Causes a fake lightning strike                                        |
 | [Particles][]        | Creates particle effects around the target                            |
 | [ParticleBox][]     | Draws a box of particles around the target                            |
