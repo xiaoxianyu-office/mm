@@ -138,7 +138,7 @@ are able to target locations as well.
 | [SetMaxHealth][]          | Sets the max health of the target entity                                                 |
 | [SetMobColor][]           | Changes the color of the target if it is a colorable mob                                 |
 | [SetMobScore][]           | Sets a scoreboard value on the casting mob                                               |
-| [SetName][]               | Changes the target entity's name                                                         |
+| [SetName][]               | Changes the caster entity's name                                                         |
 | [SetRaiderPatrolBlock][]  | Sets the target raider to patrol a location                                                         |
 | [SetRaiderPatrolLeader][] | Sets the raider patrol leader                                                         |
 | [SetFaction][]            | Changes the target entity's faction                                                      |
