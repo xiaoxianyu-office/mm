@@ -7,7 +7,13 @@ Dummy:
     PreventSunburn: true
 ```
 
-## Universal options
+##
+- [Universal Options](Mobs/Options#universal-options)
+- [Group Specific Options](Mobs/Options#group-specific-options)
+- [Mob Specific Options](Mobs/Options#mob-specific-options)
+##
+
+# Universal options
 
 These options are universal and will work regardless of the mob type.
 
@@ -238,7 +244,7 @@ Options:
 
 #### ReviveHealth
 When the mob's death event gets cancelled (via a [Cancelevent](/skills/mechanics/cancelevent) mechanic [~onDeath](/Skills/Triggers#ondeath)) the one specified is the amount of health the mob's will be set to. If the value is `-1`, the mob will heal to its own max health value.
-```
+```yaml
 #This mob will always return to 50 health every time the death event is cancelled
 ExampleMob:
   Type: COW
@@ -248,7 +254,7 @@ ExampleMob:
   Skills:
   - cancelevent{sync=true} @self ~onDeath
 ```
-```
+```yaml
 #This mob will always return to its maximum health (100) every time the death event is cancelled
 ExampleMob:
   Type: COW
@@ -275,7 +281,139 @@ Options:
   Silent: false
 ```
 
+
 ------------------------------------------------------------------------
+
+# Group specific options
+
+## Breedable mobs
+
+#### Age
+The age of the mob. Use `-1` for Baby and `1` for Adults.
+Usable on any mob that can age. For example: Sheep, Pigs, Cows...
+Use very low negative numbers to mess with the mobs model (not supported).
+May not be working properly under some situations.
+Defaults to `1`.
+```yml
+Options:
+  Age: -1
+```
+
+#### AgeLock
+Whether the mobs age should be locked in place.
+Useful for keeping a baby mob from growing up over time.
+This is required if you want Age option to work over time.
+Defaults to `false`.
+```yml
+Options:
+  AgeLock: true
+```
+
+#### Adult
+Sets adult status of mob.
+Use if `Age` does not work.
+```yml
+Options:
+  Adult: true
+```
+
+#### Baby
+Sets baby/adult status of mob.
+Use if `Age` does not work.
+```yml
+Options:
+  Baby: true
+```
+
+## Colorable Mobs
+
+Used for Horses, Llamas, TraderLlamas, Parrots, Sheeps, Shulkers, TropicalFishes and Wolves
+### Color
+Sets the color of the mob (wool color of sheep or the collar color of wolves)
+The value can be any of this [Colors](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/DyeColor.html)
+Defaults to `WHITE`.
+```yml
+Options:
+  Color: RED
+```
+
+
+## Neutral Entities
+
+Used for wolves and zombie pigmen, for instance.
+
+#### Angry
+Whether the mob will spawn angry or not.
+> Note: Due to a Bukkit/Spigot bug wolves can not be spawned angry with this option.
+> Use AIGoalSelectors and AITargetSelectors if you want to spawn angry wolves.
+Defaults to `false`.
+```yaml
+Options:
+  Angry: true
+```
+
+## Slimes & Magma Cubes
+
+#### PreventSlimeSplit
+Prevents slimes and magmacubes from splitting.
+Default to `false`.
+```yaml
+Options:
+  PreventSlimeSplit: true
+```
+
+## Entities with variable size
+
+#### Size
+Sets the size of slimes, magma cubes, and phantoms.
+Can get VERY big and get exponentially larger with each increase.
+Extremely high size will cause server lag and possibly crashes.
+Default to `1to8` (Phantoms is `1`)
+```yaml
+Options:
+  Size: 10
+```
+
+
+## Raiders
+
+#### CanJoinRaid
+Whether the entity can join a raid.
+Defaults to `true`.
+```yaml
+Options:
+  CanJoinRaid: false
+```
+
+#### PatrolLeader
+Whether the entity is the leader of a patrol.
+Defaults to `false`.
+```yaml
+Options:
+  PatrolLeader: true
+```
+
+#### PatrolSpawnPoint
+Defaults to `false`.
+```yaml
+Options:
+  PatrolSpawnPoint: true
+```
+
+
+## Tameable Mobs
+
+#### Tameable
+Whether players are able to tame the mob. Used for wolves, cats and horses.
+Defaults to `false`.
+```yaml
+Options:
+  Tameable: true
+```
+
+
+------------------------------------------------------------------------
+
 
 ## Mob specific options
 
@@ -458,7 +596,7 @@ Mob:
     RightLeg: 20,25,0
 ```
 
-#### Bees
+### Bees
 
 **Anger: \[number\]**
 
@@ -476,7 +614,7 @@ Mob:
       * Whether the bee has stung an entity.
       * Defaults to false.
 
-#### Cat
+### Cat
 
 **CatType: \[type\]**
 
@@ -488,7 +626,7 @@ Mob:
      * Sets the color of the cat's collar.
      * Available colors are: BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
 
-#### Chicken
+### Chicken
 
 **Jockey: \[true/false\]**
 
@@ -496,7 +634,7 @@ Mob:
       * Doesn't really do anything, but it's nice to have options.
       * Defaults to false.
 
-#### Creepers
+### Creepers
 
 **ExplosionRadius: \[number\]**
 
@@ -518,7 +656,7 @@ Mob:
       * Prevents creepers from dying upon exploding. Set `mobGriefing` gamerule to true for this option to work.
       * Defaults to false.
 
-#### Enderman
+### Enderman
 
 **PreventTeleport: \[true/false\]**
 
@@ -529,14 +667,14 @@ Mob:
 
       * Sets the block that the Enderman is carrying.
 
-#### Experience_orb
+### Experience_orb
 
 **Experience: \[Number\]**
 
       * Sets the amount of experience give by the experience orb mob.
       * Defaults to 1
 
-#### Falling Blocks
+### Falling Blocks
 
 **Block: \[Material type\]**
 
@@ -558,7 +696,7 @@ Mob:
       * Damages entities on impact.
       * Defaults to true
 
-#### Fox
+### Fox
 
 **FoxType: \[Entity type\]**
 
@@ -566,13 +704,13 @@ Mob:
       * Can be RED or SNOW
       * Defaults to RED
 
-#### Frog
+### Frog
 **Type: \[Entity type\]**
 
       * Determines the type of the Frog
       * Can be WARM, COLD or TEMPERATE
 
-#### Hoglin
+### Hoglin
 
 **ImmuneToZombification: \[true/false\]**
 
@@ -584,7 +722,7 @@ Mob:
       * Whether the hoglin is able to be hunted by piglins.
       * Defaults to true
 
-#### Horses, Donkeys, and Mules
+### Horses, Donkeys, and Mules
 
 **HorseArmor: \[armor\_type\]**
 
@@ -624,14 +762,14 @@ Mob:
       * Defaults to HORSE
       * Removed in MC 1.11+, use [[databases/mobs/types|mob type]] instead.
 
-#### Iron Golem
+### Iron Golem
 
 **PlayerCreated: \[true/false\]**
 
       * Acts as if the player built the mob.
       * Defaults to false.
 
-#### Panda
+### Panda
 
 **MainGene: \[Gene Type\]**
 
@@ -645,7 +783,7 @@ Mob:
       * Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN
       * Defaults to NORMAL
 
-#### Piglin
+### Piglin
 
 **AbleToHunt: \[true/false\]**
 
@@ -657,21 +795,21 @@ Mob:
       * Whether or not the piglin is immune to being zombified
       * Defaults to false
 
-#### Piglin Brutes
+### Piglin Brutes
 
 **ImmuneToZombification: \[true/false\]**
 
       * Whether or not the piglin is immune to being zombified
       * Defaults to false
 
-#### Pigs
+### Pigs
 
 **Saddled: \[true/false\]**
 
       * Wether or not the pig spawns with a saddle.
       * Defaults to false
 
-#### Rabbits
+### Rabbits
 
 **RabbitType: \[rabbit\_type\]**
 
@@ -687,21 +825,21 @@ Mob:
 
       * Sets the rabbit as the Killer Bunny.
 
-#### Sheep
+### Sheep
 
 **Sheared: \[true/false\]**
 
       * Sheep is already sheared.
       * Defaults to false.
 
-#### Silverfish
+### Silverfish
 
 **PreventBlockInfection: \[true/false\]**
 
       * Prevent silverfish from infecting blocks.
       * Defaults to true.
 
-#### Snow Golem
+### Snow Golem
 
 **Derp: \[true/false\]**
 
@@ -713,7 +851,7 @@ Mob:
       * Prevent snowmen from creating snow.
       * Defaults to false.
 
-#### TNT
+### TNT
 
 **FuseTicks: \[number\]**
 
@@ -730,7 +868,7 @@ Mob:
       * Wether the explosion is capable of starting fires
       * Defaults to false
 
-#### Tropical Fish
+### Tropical Fish
 
 **Pattern: \[type\]**
 
@@ -747,7 +885,7 @@ Mob:
       * Sets the secondary color of the fish
       * Color can be BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
 
-#### Villagers
+### Villagers
 
 **HasTrades: \[true/false\]**
 
@@ -777,7 +915,7 @@ Check out [Trades](/Mobs/Mobs#trades)
       * Level 1 villagers might switch professions. If you want a villager to hold its profession, give them a level of 2 or higher.
       * Required if setting villager professions.
       
-#### Zombies (all variants)
+### Zombies (all variants)
 
 **PreventJockeyMounts: \[true/false\]**
 
@@ -798,80 +936,10 @@ Check out [Trades](/Mobs/Mobs#trades)
       * Only works for Zombies.
       * Defaults to 0.
 
-#### Zombie Villagers
+### Zombie Villagers
 
 **Profession: \[type\]**
 
       * Sets the type of the villager the zombie should represent.
       * This option will also make the zombie turn into the respective villager type when being cured using potions.
       * Can be `ARMORER, BUTCHER, CARTOGRAPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, NONE, SHEPHERD, TOOLSMITH, WEAPONSMITH.`
-
-------------------------------------------------------------------------
-
-### Group specific options
-
-#### Breedable mobs
-
-**Age: \[number\]**
-
-      * -1 for Baby. 1 for Adults
-      * What the age of the mob will be.
-      * Usable on any mob that can age. For example: Sheep, Pigs, Cows...
-      * Defaults to 1.
-      * Use very low negative numbers to mess with the mobs model (not supported)
-      * May not be working properly
-
-**AgeLock: \[true/false\]**
-
-      * Whether the mobs age should be locked in place.
-      * Useful for keeping a baby mob from growing up over time.
-      * Defaults to false
-      * This is required if you want Age option to work
-
-**Baby: \[true/false\]**
-
-      * Sets baby/adult status of mob.
-      * Use if **Age: [number]** does not work.
-
-#### Colorable Mobs
-
-Used for sheep and wolves.
-
-**Color: \[number\]**
-
-      * Sets the wool color of sheep or the collar color of wolves
-      * **The string is the name of the color you want. Ex: Color: RED**
-      * [[http://minecraft.gamepedia.com/Wool|http://minecraft.gamepedia.com/Wool]]
-
-#### Neutral mobs
-
-Used for wolves and zombie pigmen.
-
-**Angry: \[true/false\]**
-
-      * Whether the mob will spawn angry or not.
-      * **Note: Due to a Bukkit/Spigot bug wolves can not be spawned angry with this option.**
-      * **Use AIGoalSelectors and AITargetSelectors if you want to spawn angry wolves.**
-
-#### Slimes & Magma Cubes
-
-**PreventSlimeSplit: \[true/false\]**
-
-      * Prevents slimes and magmacubes from splitting.
-      * Default to false
-
-**Size: \[number\]**
-
-      * Sets the size of slimes, magma cubes, and phantoms.
-      * Can get VERY big and get exponentially larger with each increase.
-      * Extremely high size will cause server lag and possibly crashes.
-      * Default to 1to8(Phantoms is 1)
-
-#### Tameable Mobs
-
-**Tameable: \[true/false\]**
-
-      * Allows players to tame the mobs. Used for wolves, cats and horses.
-      * Defaults to false.
-
-------------------------------------------------------------------------
