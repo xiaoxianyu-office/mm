@@ -1,6 +1,15 @@
 5.4.0 (Dev Builds)
 =====
 
+Highlights
+----------
+### Version support
+Added support for 1.20.2
+
+### Stat System
+
+### Holograms
+
 General
 -------
 - Added `/mm test mechanic [line]` command to test executing a skill line
@@ -51,6 +60,9 @@ This can be used to fill in the gaps with super-fast projectiles and also preven
 
 ### Lunge
 - Added `oldMath/old/o` attribute to determine if it should use the old wonky math (default: false)
+
+Bugs / Other
+------------
 
 5.3.1+
 ======
