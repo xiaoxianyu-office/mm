@@ -1,0 +1,168 @@
+All available display entity options. All of these options go under the `DisplayOptions` sections, like so:
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+```
+## Base Options
+These options are available for all display entity types.
+
+#### ViewRange
+The maximum view range/distance. [When the distance is more than `viewRange x entityDistanceScaling x 64`, the entity is not rendered](https://minecraft.wiki/w/Display#Entity_data). Defaults to `1`.
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    ViewRange: 1
+```
+
+#### Width
+The display width. Defaults to `0`.
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    Width: 0
+```
+
+#### Height
+The display height. Defaults to `0`.
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    Height: 0
+```
+
+#### ShadowRadius
+The display's shadow radius. Defaults to `0`.
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    ShadowRadius: 0
+```
+
+#### ShadowStrength
+The opacity of the display entity's shadow. Defaults to `1`.
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    ShadowStrength: 1
+```
+
+#### Billboard
+Controls where the display entity pivots when rendered to the player. Defaults to `FIXED`.\
+Available constraints:
+
+| Billboard  | Description                       |
+|------------|-----------------------------------|
+| FIXED      | No rotation                       |
+| CENTER     | Pivots around the center point    |
+| HORIZONTAL | Pivots around the horizontal axis |
+| VERTICAL   | Pivots around the vertical axis   |
+
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    Billboard: FIXED
+```
+
+#### InterpolationDelay
+Set the delay before starting interpolation. Defaults to `0`.
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    InterpolationDelay: 0
+```
+
+#### InterpolationDuration
+Set the interpolation duration in ticks. Defaults to `0`.
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    InterpolationDuration: 0
+```
+
+#### ColorOverride
+Set the glow border color. If `0`, it uses the color of the team the display team is in. Defaults to `0`.\
+**Formats**: `a,r,g,b` or an integer equivalent. 
+Here are sites that you can use: [color-hex](https://www.color-hex.com/), [arg-int-calculator](https://argb-int-calculator.netlify.app/) 
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    ColorOverride: 0
+```
+
+### Brightness
+Both blocklight and skylight must be set to brightness. Values must be in range of `0` to `15`.
+
+#### BlockLight & SkyLight
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    BlockLight: 0
+    SkyLight: 0
+```
+
+### Transormations
+#### Translation
+Set the display entity translation. Defaults to `0,0,0`.
+**Format**: x,y,z
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    Translation: 0,0,0
+```
+
+#### Scale
+Set the scale of the display entity. Scales the model centered on the origin. Defaults to `1,1,1`.
+**Format**: x,y,z
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    Scale: 1,1,1
+```
+
+#### LeftRotation
+Set the left rotation using [quaternion](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation). Defaults to `0,0,0,1` (no rotation).
+**Format**: x,y,z,w
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    LeftRotation: 0,0,0,1
+```
+
+#### RightRotation
+Set the right rotation using [quaternion](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation). Defaults to `0,0,0,1` (no rotation).
+**Format**: x,y,z,w
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    RightRotation: 0,0,0,1
+```

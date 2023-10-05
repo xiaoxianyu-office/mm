@@ -35,7 +35,7 @@ another_mob:
 ```
 
 #### Display
-Sets the display name of the mob.
+Set the display name of the mob.
 This option supports color codes and [placeholders].
 **The mob's name will not change or update on its own, you have to use [setname] mechanic to change or update it.**
 ```yml
@@ -131,6 +131,16 @@ The mob will automatically ride on the defined mount when it spawns.
 another_example:
   Type: chicken
   Mount: example_mo
+```
+
+#### Display Options
+Set the display entity options.
+A list of available display options can be found in the [Display Options](Mobs/DisplayOptions) page
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
 ```
 
 #### Options
