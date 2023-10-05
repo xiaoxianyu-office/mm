@@ -233,7 +233,9 @@ cool_display:
 ```
 
 #### DefaultBackground
-Sets whether to render using the default text background color (same as in chat), overriding `BackgroundColor`. Defaults to `false`.
+Set whether to render using the default text background color (same as in chat),
+overriding the [BackgroundColor](#BackgroundColor) option.
+Defaults to `false`.
 ```yml
 cool_display:
   Type: text_display
