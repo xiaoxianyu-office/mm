@@ -9,6 +9,7 @@
 ##### [Packs](Packs)
 ##### [Mobs](Mobs/Mobs)
   * [Mob Options](Mobs/Options)
+  * [Display Options](Mobs/DisplayOptions)
   * [Mob Levels](Mobs/Levels)
   * [Mob Factions](Mobs/Factions)
   * [Power Scaling](Mobs/Power)
