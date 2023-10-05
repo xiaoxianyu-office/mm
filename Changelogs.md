@@ -6,9 +6,22 @@ Highlights
 ### Version support
 Added support for 1.20.2
 
+### Projectile Bullets
+- Added DISPLAY and TEXT bullet types
+
+- Item Display Bullet Type: Add "tx", "ty" and "tz" (t from translation) to offset the visual position of the bullet, also "translation"("pos", "offset") to set all the values at the same time in the x,y,z format
+
+- Added `bulletBrightness`, and `bulletBrightnessBlock` + `bulletBrightnessSky` for some reason to Display bullets
+- Added `bulletBillboard` to Display bullets
+
 ### Stat System
 
 ### Holograms
+
+- Made it so mob names can be multi-line using nameplates feature on 1.19.4+ using `\n` for newlines
+
+### Spawners
+- Major spawners rewrite - see spawners section
 
 General
 -------
@@ -24,6 +37,9 @@ Added new mobs types:
 - `SNIFFER`
 - `TEXT_DISPLAY`
 
+### AI
+- Added `radius` option to `LookAtPlayers` goal
+
 Mechanics
 ----------
 
@@ -37,17 +53,34 @@ Mechanics
 Action valuees: SET, ADD, MULTIPLY, DIVIDE
 Transformation values: TRANSLATION, SCALE, RIGHT_ROTATION, LEFT_ROTATION
 
+### NEW: ClearExperienceLevels
+
+### NEW: pushBlock
+- Pushes the targeted block in the given direction. Follows the same rules as pistons.
+- Direction can be either cardinal direction or a location targeter. If given a targeter, the block will be pushed once towards that location
+- Mechanic also supports `onPush` and `onFail` skills which will fire at the block's location
+
+Mechanic follows piston rules and will push other connected slime blocks as well, but only if they're adjacent or in front of the block - it cannot push connected blocks _behind_ the pushed block.
+
 ### NEW: `setProjectileDirection`
 - Changes calling projectile's direction to the given target
 
+### NEW: `setProjectileBulletModel
+- Added `setProjectileBulletModel{model=X}` mechanic, can be called by a projectile to change the bullet's item's model ID (only works with DISPLAY bullets)
+
+### ArrowVolley
+- Add "pickup"/"canPickup" attribute, defaults to true
+
 ### Damage Mechanics
-- Added `ignoreShield`, `ignoreEffects`, `ignoreResistance`, `damagesHelmet`, and `noAnger` boolean options to damaging mechanics
+- Added `powerAffectsDamage`, `ignoreShield`, `ignoreEffects`, `ignoreResistance`, `damagesHelmet`, and `noAnger` boolean options to damaging mechanics
 
 ### Particle Effects
 - Added new particles: DRIPPING_CHERRY_LEAVES, FALLING_CHERRY_LEAVES, LANDING_CHERRY_LEAVES
+- Added `startSideOffset` placeholder support to particle effect mechanic
 
 ### Projectile Mechanics (Projectile, Missile, etc)
 - Added `tickInterpolation` option (defaults to 0)
+- Changed mob bullet's Y offset option to bulletYOffset
 
 Setting tickInterpolation will interpolate that many points between each tick in a projectile and execute the onTick and onHit skills on those points as well, doing multiple 'ticks' in a single tick.
 
@@ -61,8 +94,132 @@ This can be used to fill in the gaps with super-fast projectiles and also preven
 ### Lunge
 - Added `oldMath/old/o` attribute to determine if it should use the old wonky math (default: false)
 
+### Orbital
+- Added `hugSurface` to orbitals
+
+### PotionClear
+- Added `type`/`types` attribute to `potionClear` mechanic
+
+### Volley
+- Add "pickup"/"canPickup" attribute, defaults to true
+
+Conditions
+----------
+
+### NEW: directionalVelocity
+
+Added `directionalVelocity` condition, which checks if the target has a velocity matching the given parameters.
+
+Options:
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| x | The X velocity (a range) | null (not checked) |
+| absx | Use the absolute value of the X velocity | false |
+| y | The Y velocity (a range) | null (not checked) |
+| absy | Use the absolute value of the Y velocity | false |
+| z | The Z velocity (a range) | null (not checked) |
+| absz | Use the absolute value of the Z velocity | true if relative=true, otherwise false |
+| relative | If true, X is calculated as forward/backward and Z is side-to-side | false |
+
+If the X, Y, or Z velocity is not specified, that component of the velocity is not checked. The 'absx', 'absy', and 'absz' options determine whether the absolute value of the corresponding velocity is used in the check. If 'relative' is true, the velocities are considered relative to the entity's orientation.
+
+Audiences
+---------
+- Added TRACKED audience, which are the players that are rendering the caster on their client
+
+Placeholders
+------------
+
+### General
+- Added `<caster.stat.STAT_NAME>` placeholders
+- Added `<target.block.data>` - returns the block data of a block
+- Added `<target.item.type>` placeholder
+
+### NEW: Custom Placeholders
+
+Added custom placeholders file to make it easier to configure static/reusable and even conditional values.
+
+Each pack can now have a `placeholders.yml` in the base pack directory that contains any number of placeholders.
+
+These can be static or you can define conditional placeholders - the first one that evaluates true will be chosen, or the Default if they're all false.
+
+An example placeholders.yml might look like this:
+```
+TestPlaceholder: 'some value'
+TestConditionalPlaceholder:
+  Day:
+    Conditions:
+    - day
+    Value: day
+  Night:
+    Conditions:
+    - night
+    Value: night
+  Default: idk
+
+Added ability to define random placeholders that will just choose a random line from a list in the `placeholders.yml` file
+```
+TestRandomPlaceholder:
+- red
+- green
+- blue
+  ```
+
+Stats
+-----
+
+
+Spawners
+--------
+- Rewrote spawner saving/loading
+- Rewrote spawner positioning algorithm
+- Added SpawnConditions to spawners that target the position it's trying to spawn a mob
+- Regular conditions continue to function as "Activation Conditions" e.g. does the spawner even try
+- Added tab completion to a lot of the spawner commands
+- Fixed various spawner related bugs
+- Made some API changes for 5.5, which will add a GUI editor for spawners
+
 Bugs / Other
 ------------
+- Fixed NoSuchMethodError in CrouchingCondition
+- Fixed spawner config field for spawn conditions to actually be SpawnConditions
+- Fixed loading error on 1.16
+- Fixed remove attribute on SetLeashHolder mechanic
+- Fixed @targetlocation targeting block location instead of actual location when hitting maxDistance for players
+- Fixed projectiles with no hitboxes being broken
+- Fixed default values for PlayersInRingTargeter
+- Fixed ClassNotFoundException on mohist
+- Fixed `preventImmunity` option to DamageMechanics
+- Fixed/removed vehicle alias from the mount targeter
+- Fixed spawner addcondition command not saving conditions after a restart
+- Fixed issues with removing spawner conditions
+- Fixed `<target.block.type>` placeholder ||maybe||
+- Fixed sudoskill to use the new centralized player profiles for consistency
+- Fixed ConcurrentModificationException with spawners saving during shutdown
+- Fixed NPE when loading mob type with no display name
+- Fixed case where `Despawn: false` mobs from a spawner would despawn anyway
+- Fixed blockmask with variables again
+- Fixed PhatLoots support not taking looting enchants into account
+- Fixed ConcurrentModificationException with spawners when plugin is shutting down
+- Fixed various issues with threat tables
+- Fixed several saving issues when cloning a spawner
+- Fixed looting issue with phatloot support
+- Fixed various bugs with holograms and packet bullet culling
+- Fixed custom nameplates not appearing for new players that join the server
+- Fixed projectile velocity with text bullets
+- Fixes to prevent spawner saving corruption
+- Fix radius option on speak mechanic
+- Fixed crashes involving mob bullets and orbitals
+- 
+- Added `bulletCullingDistance` option to display and text bullets
+- Added `attackReachModifier` option to MeleeAttackGoal (defaults to 4)
+- 
+- 
+- 
+
+
+
 
 5.3.1+
 ======
