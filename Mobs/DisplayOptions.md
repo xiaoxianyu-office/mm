@@ -5,6 +5,9 @@ cool_display:
   DisplayOptions:
     Block: grass_block
 ```
+Table Of Contents:
+[[_TOC_]]
+
 # Base Options
 These options are available for all display entity types.
 
@@ -122,7 +125,7 @@ cool_display:
     SkyLight: 0
 ```
 
-### Transormations
+### Transformations
 #### Translation
 Set the display entity translation. Defaults to `0,0,0`.
 **Format**: x,y,z
