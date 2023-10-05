@@ -300,5 +300,5 @@ cool_display:
   Type: text_display
   DisplayOptions:
     Text: Give This Poor Dude A Text To Display
-    SeeThrough: 1073741824
+    SeeThrough: false
 ```
