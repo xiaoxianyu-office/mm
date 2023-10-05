@@ -37,23 +37,23 @@ Options:
 Sets the permanent invisibility effect on the mob; no need to apply invisibility potion with `~onSpawn` trigger.
 Defaults to `false`.
 ```yml
-Options:
-  Invisible: true
+  Options:
+    Invisible: true
 ```
 
 #### Collidable
 Whether the mob has collisions. Collisions in Minecraft are bidirectional, so this would need to be set to `false` on both
 the entity colliders to ensure that no collisions takes place but will also stop the player from pushing the mob. Defaults to `true`.
 ```yml
-Options:
-  Collidable: true
+  Options:
+    Collidable: true
 ```
 
 #### DigOutOfGround
 Teleports the mob two blocks up if it takes `SUFFOCATION` damage. Defaults to `false`.
 ```yml
-Options:
-  DigOutOfGround: false
+  Options:
+    DigOutOfGround: false
 ```
 
 #### Despawn
@@ -67,30 +67,30 @@ Available values:
 - `chunk` - despawns the mob when the chunk unloads.
 - `persistent` - the mob is persistent and doesn't despawn. To remove a persistent mob, you have to either use the kill command (`/mm m kill <type>`) or append the `-p` flag to the killall one (`/mm m killall -p`). More information on the subject can be found [here](/Commands-and-Permissions#mob-commands).
 ```yml
-Options:
-  Despawn: true
+  Options:
+    Despawn: true
 ```
 
 #### FollowRange
 The range in blocks within which a mob will target to attack or track an entity.
 Defaults to vanilla follow range - `32`.
 ```yml
-Options:
-  FollowRange: 32
+  Options:
+    FollowRange: 32
 ```
 
 #### Glowing
 Sets whether the mob is permanently glowing. Defaults to `false`.
 ```yml
-Options:
-  Glowing: false
+  Options:
+    Glowing: false
 ```
 
 #### HealOnReload
 Allows non-despawning mobs to heal once the chunk they are in gets reloaded. Defaults to `false`.
 ```yml
-Options:
-  HealOnReload: false
+  Options:
+    HealOnReload: false
 ```
 
 
@@ -98,24 +98,24 @@ Options:
 Makes the mob completely invincible to all types of damage. This option cannot be changed by command skills.
 Defaults to `false`.
 ```yml
-Options:
-  Invincible: false
+  Options:
+    Invincible: false
 ```
 
 #### Interactable
 Sets whether the mob can be interacted with. If the mob is an armor stand, it will deny any interaction with the equipments.
 Defaults to `false`.
 ```yml
-Options:
-  Interactable: false
+  Options:
+    Interactable: false
 ```
 
 #### LockPitch
 Keeps the mob's head from looking up/down. Requires [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/).
 Defaults to `false`.
 ```yml
-Options:
-  LockPitch: false
+  Options:
+    LockPitch: false
 ```
 
 #### KnockbackResistance
@@ -123,8 +123,8 @@ A percentage of knockback resisted from attacks. This option can be anywhere bet
 But a mob with 100% knockback resistance can still be knocked back by a bow's enchantment: `ARROW_KNOCKBACK` (punch enchantment).
 For true knockback resistance, see the [velocity](/Skills/mechanics/velocity) mechanic page. Defaults to `0`.
 ```yml
-Options:
-  KnockbackResistance: 0.5
+  Options:
+    KnockbackResistance: 0.5
 ```
 
 #### MaxCombatDistance
@@ -132,16 +132,16 @@ Prevents players that are a number of blocks away from damaging the mob.
 Setting this option to a number less than the distance of a certain mob skill or attack will ensure that the mob can damage the player and will not be as easy to exploit.
 Defaults to `256`.
 ```yml
-Options:
-  MaxCombatDistance: 256 
+  Options:
+    MaxCombatDistance: 256 
 ```
 
 #### MovementSpeed
 The movement speed of the mob.
 Most mobs has a default move speed of `0.2` and any value higher than `1` tends to make a mob difficult or impossible to fight.
 ```yml
-Options:
-  MovementSpeed: 0.2
+  Options:
+    MovementSpeed: 0.2
 ```
 
 #### NoAI
@@ -149,8 +149,8 @@ Whether the mob should have AI. This option overrides any AI goals specified in 
 As opposed to AIGoalSelectors, this will work on entities that have hardcoded AI. And if this is set to `true`, the mob will never cast any skills.
 Defaults to `false`.
 ```yml
-Options:
-  NoAI: false
+  Options:
+    NoAI: false
 ```
 
 #### NoDamageTicks
@@ -158,88 +158,88 @@ Defines how long in ticks the mob is invulnerable after taking damage.
 If [ImmunityTables](/Mobs/ImmunityTables) is enabled for the mob, then `NoDamageTicks` will be per player instead of global.
 Defaults to `10`.
 ```yml
-Options:
-  NoDamageTicks: 20
+  Options:
+    NoDamageTicks: 20
 ```
 
 #### NoGravity
 Whether the mob should not have gravity. If set to `true`, the mob **CANNOT** have the [velocity](/Skills/mechanics/velocity) mechanic used on it.
 Defaults to `false`.
 ```yml
-Options:
-  NoGravity: false
+  Options:
+    NoGravity: false
 ```
 
 #### PassthroughDamage
 Causes all damage taken to be redirected to the mob's parent, if one exists. A mob's parent is the entity that initially summoned the mob.
 Defaults to `false`.
 ```yml
-Options:
-  PassthroughDamage: false
+  Options:
+    PassthroughDamage: false
 ```
 
 #### PreventItemPickup
 Prevent mobs from picking up items;
 Defaults to `true`.
 ```yml
-Options:
-  PreventItemPickup: false
+  Options:
+    PreventItemPickup: false
 ```
 
 #### PreventLeashing
 Whether to prevent a leash from being placed on the mob.
 Defaults to `true`.
 ```yml
-Options:
-  PreventLeashing: false
+  Options:
+    PreventLeashing: false
 ```
 
 #### PreventMobKillDrops
 Prevents a MythicMob's target from dropping loot.
 Defaults to `false`.
 ```yml
-Options:
-  PreventMobKillDrops: false
+  Options:
+    PreventMobKillDrops: false
 ```
 
 #### PreventOtherDrops
 Prevents the mob from dropping its vanilla loot table.
 Defaults to `false`.
 ```yml
-Options:
-  PreventOtherDrops: false
+  Options:
+    PreventOtherDrops: false
 ```
 
 #### PreventRandomEquipment
 Prevents the mob from spawning with random equipment.
 Defaults to `false`.
 ```yml
-Options:
-  PreventRandomEquipment: false
+  Options:
+    PreventRandomEquipment: false
 ```
 
 #### PreventRenaming
 Prevents the mob from being renamed using a nametag.
 Defaults to `true`.
 ```yml
-Options:
-  PreventRenaming: false
+  Options:
+    PreventRenaming: false
 ```
 
 #### PreventSunburn
 Prevents the mob from burning in the sun.
 Defaults to `false`.
 ```yml
-Options:
-  PreventSunburn: false
+  Options:
+    PreventSunburn: false
 ```
 
 #### RepeatAllSkills
 Whether to repeat HP based skills if a mob heals back above the health threshold.
 Defaults to `false`.
 ```yml
-Options:
-  RepeatAllSkills: false
+  Options:
+    RepeatAllSkills: false
 ```
 
 #### ReviveHealth
@@ -269,16 +269,16 @@ ExampleMob:
 Displays the health of the mob through messages broadcast within a radius and formatting by `Mobs.ShowHealth.Radius` and `Mobs.ShowHealth.Formatting`, respectively, in `/plugins/MythicMobs/config.yml`
 Defaults to `false`.
 ```yml
-Options:
-  ShowHealth: false
+  Options:
+    ShowHealth: false
 ```
 
 #### Silent
 Whether a mob should use vanilla sound effects.
 Defaults to `false`. 
 ```yml
-Options:
-  Silent: false
+  Options:
+    Silent: false
 ```
 
 
@@ -295,8 +295,8 @@ Use very low negative numbers to mess with the mobs model (not supported).
 May not be working properly under some situations.
 Defaults to `1`.
 ```yml
-Options:
-  Age: -1
+  Options:
+    Age: -1
 ```
 
 #### AgeLock
@@ -305,24 +305,24 @@ Useful for keeping a baby mob from growing up over time.
 This is required if you want Age option to work over time.
 Defaults to `false`.
 ```yml
-Options:
-  AgeLock: true
+  Options:
+    AgeLock: true
 ```
 
 #### Adult
 Sets adult status of mob.
 Use if `Age` does not work.
 ```yml
-Options:
-  Adult: true
+  Options:
+    Adult: true
 ```
 
 #### Baby
 Sets baby/adult status of mob.
 Use if `Age` does not work.
 ```yml
-Options:
-  Baby: true
+  Options:
+    Baby: true
 ```
 
 ## Colorable Mobs
@@ -333,8 +333,8 @@ Sets the color of the mob (wool color of sheep or the collar color of wolves)
 The value can be any of this [Colors](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/DyeColor.html)
 Defaults to `WHITE`.
 ```yml
-Options:
-  Color: RED
+  Options:
+    Color: RED
 ```
 
 
@@ -348,8 +348,8 @@ Whether the mob will spawn angry or not.
 > Use AIGoalSelectors and AITargetSelectors if you want to spawn angry wolves.
 Defaults to `false`.
 ```yaml
-Options:
-  Angry: true
+  Options:
+    Angry: true
 ```
 
 ## Slimes & Magma Cubes
@@ -358,8 +358,8 @@ Options:
 Prevents slimes and magmacubes from splitting.
 Default to `false`.
 ```yaml
-Options:
-  PreventSlimeSplit: true
+  Options:
+    PreventSlimeSplit: true
 ```
 
 ## Entities with variable size
@@ -370,8 +370,8 @@ Can get VERY big and get exponentially larger with each increase.
 Extremely high size will cause server lag and possibly crashes.
 Default to `1to8` (Phantoms is `1`)
 ```yaml
-Options:
-  Size: 10
+  Options:
+    Size: 10
 ```
 
 
@@ -381,23 +381,23 @@ Options:
 Whether the entity can join a raid.
 Defaults to `true`.
 ```yaml
-Options:
-  CanJoinRaid: false
+  Options:
+    CanJoinRaid: false
 ```
 
 #### PatrolLeader
 Whether the entity is the leader of a patrol.
 Defaults to `false`.
 ```yaml
-Options:
-  PatrolLeader: true
+  Options:
+    PatrolLeader: true
 ```
 
 #### PatrolSpawnPoint
 Defaults to `false`.
 ```yaml
-Options:
-  PatrolSpawnPoint: true
+  Options:
+    PatrolSpawnPoint: true
 ```
 
 
@@ -407,8 +407,8 @@ Options:
 Whether players are able to tame the mob. Used for wolves, cats and horses.
 Defaults to `false`.
 ```yaml
-Options:
-  Tameable: true
+  Options:
+    Tameable: true
 ```
 
 
@@ -422,7 +422,7 @@ different mob type.
 
 ### Armor Stands
 
-#### CanMove: \[true/false\]**
+#### CanMove
 Sets whether an armor stand can move. Defaults to `true` and requires PaperSpigot
 ```yml
 Dummy:
@@ -455,7 +455,7 @@ Sets whether an armor stand has a baseplate. Defaults to `true`
 Dummy:
   Type: ARMOR_STAND
   Options:
-    HasBasePlate: true
+    HasBasePlate: false
 ```
 
 #### HasGravity
@@ -598,33 +598,49 @@ Mob:
 
 ### Bees
 
-**Anger: \[number\]**
+#### Anger
+Sets the time in ticks until bee anger ends.
+If set to 0 the bee will not be angry.
+Defaults to `0`.
+```yaml
+  Options:
+    Anger: 200
+```
 
-      * Sets the time in ticks until bee anger ends.
-      * If set to 0 the bee will not be angry.
-      * Defaults to 0.
+#### HasNectar
+Whether the bee is carrying pollen.
+Defaults to `false`.
+```yaml
+  Options:
+    HasNectar: true
+```
 
-**HasNectar: \[true/false\]**
 
-      * Whether the bee is carrying pollen.
-      * Defaults to false.
-
-**HasStung: \[true/false\]**
-
-      * Whether the bee has stung an entity.
-      * Defaults to false.
+#### HasStung
+Whether the bee has stung an entity.
+Defaults to false.
+```yaml
+  Options:
+    HasStung: true
+```
 
 ### Cat
 
-**CatType: \[type\]**
+#### CatType
+Sets the type of cat
+Types can be ALL_BLACK, BLACK, BRITISH_SHORTHAIR, CALICO, PERSIAN, JELLIE, RAGDOLL, RED, SIAMESE, TABBY or WHITE.
+```yaml
+  Options:
+    CatType: BLACK
+```
 
-     * Sets the type of cat
-     * Types can be ALL_BLACK, BLACK, BRITISH_SHORTHAIR, CALICO, PERSIAN, JELLIE, RAGDOLL, RED, SIAMESE, TABBY or WHITE.
-
-**CollarColor: \[color\]**
-
-     * Sets the color of the cat's collar.
-     * Available colors are: BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
+#### CollarColor
+Sets the color of the cat's collar.
+Available colors are: BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
+```yaml
+  Options:
+    CollarColor: GREEN
+```
 
 ### Chicken
 
