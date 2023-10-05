@@ -1,5 +1,4 @@
-Introduction
-------------
+## Introduction
 
 Conditions are used to determine whether or not an action may execute.
 
@@ -13,8 +12,8 @@ When applying multiple conditions, all of them must be met in order for the skil
 
 To see how to use the premium only in-line conditions, [click here!](/skills/conditions/in-linetargetconditions)
 
-Usage
------
+
+## Usage
 
 ### Types
 
@@ -32,19 +31,19 @@ Conditions can also be used in three different places within a meta skill:
 3. TriggerConditions: Conditions in this section check the conditions of the entity that triggered the skill.
 
 ### Examples
-```
-Conditions:
-- globalscore{objective=Test;v=>10}
+```yaml
+  Conditions:
+  - globalscore{objective=Test;v=>10}
 ```
 In the example above, the globalscore condition will check the caster's global score.
-```
-TargetConditions:
+```yaml
+  TargetConditions:
   - globalscore{objective=Test;v=>10}
 ```
 The example above uses the exact same condition, but here the globalscore condition will check the inherited target's global score. Since globalscore is an entity condition, it will only work if an entity is targeted.
 
 **Format**:
-```
+```yaml
 SkillName:
   Conditions:
     - condition [variable]
@@ -57,7 +56,7 @@ SkillName:
 
 These new "actions" control how the skill acts when a condition is met
 or not met. Here are some examples:
-```
+```yaml
 YourAwesomeSkill:
   Conditions:
     - day required
@@ -70,7 +69,7 @@ YourAwesomeSkill:
 ```
 **Ranged Values:**  
 Ranged values use either the format **#to#** or **#-#**. You must use "to" instead of "-" if you want to use negative numbers in the range. For:
-```
+```yaml
 YourMagnificentSkill:
   Conditions:
     - altitude{a=1-5}
@@ -80,15 +79,8 @@ YourMagnificentSkill:
     - distance{d=1to10} true
 ```
 
-## Composite Conditions
-Conditions can also be grouped by parenthesis and evaluated via the **AND** (`&&`) and **OR** (`||`) boolean operators.
-```yaml
-  Conditions:
-  - ((night || raining) && onBlock{material=LIME_CONCRETE}) true
-```
 
-Condition Actions
------------------
+## Condition Actions
 
 Condition Actions allow you to do additional things based off of conditions. The default condition action is **true**
 
@@ -100,6 +92,19 @@ Condition Actions allow you to do additional things based off of conditions. The
 | **cast [skill]**           | Casts an additional skill if the condition is met.                         |
 | **castinstead [skill]**    | Casts a different skill instead if the condition is met.                   |
 | **orElseCast [skill]**     | Casts a different skill instead if the condition is not met. (4.12 MM)     |
+
+
+## Composite Conditions
+Conditions can also be grouped by parenthesis and evaluated via the **AND** (`&&`) and **OR** (`||`) boolean operators.
+Conditions used this way can still have a condition action.
+```yaml
+  Conditions:
+  - ((day false || raining true) && onBlock{material=LIME_CONCRETE}) true
+```
+> The condition is met when it's either raining or not daytime, and, in addition to that, only when the caster is on a LIME_CONCRETE block  
+
+> The day and raining have their condition action declared, while onBlock uses the default one, `true`
+
 
 Conditions
 ----------
