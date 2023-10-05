@@ -1,4 +1,4 @@
-5.4.0 (Dev Builds)
+5.4.0
 =====
 
 Highlights
@@ -12,20 +12,21 @@ Added support for 1.20.2
 - Added `damageTag` condition, checks if the damage that triggered the skill has the given tag
 - Changed element damage attribute to just apply a damage tag
 
-### Projectile Bullets
+### Projectile Upgrades
+- Projectile Tick-Interpolation
 - Added DISPLAY and TEXT bullet types
-
 - Item Display Bullet Type: Add "tx", "ty" and "tz" (t from translation) to offset the visual position of the bullet, also "translation"("pos", "offset") to set all the values at the same time in the x,y,z format
-
 - Added `bulletBrightness`, and `bulletBrightnessBlock` + `bulletBrightnessSky` for some reason to Display bullets
 - Added `bulletBillboard` to Display bullets
 - Added `bulletForwardOffset` to mob bullets
 - Added `bulletCullingDistance` option to display and text bullets
 
 ### Stat System
+- Added the Stat system - see stats page in manual
 
 ### Holograms
-
+- Added our own hologram system
+- All hologram-related features no longer require a 3rd party hologram plugin
 - Made it so mob names can be multi-line using nameplates feature on 1.19.4+ using `\n` for newlines
 
 ### Spawners
@@ -94,8 +95,17 @@ Mechanic follows piston rules and will push other connected slime blocks as well
 ### NEW: `setProjectileDirection`
 - Changes calling projectile's direction to the given target
 
-### NEW: `setProjectileBulletModel
+### NEW: `setProjectileBulletModel`
 - Added `setProjectileBulletModel{model=X}` mechanic, can be called by a projectile to change the bullet's item's model ID (only works with DISPLAY bullets)
+
+### NEW: `StatAura`
+- Applies a stat modifier to the target as an aura. 
+
+Example:
+```
+- stataura{stat=PARRY_CHANCE;type=ADDITIVE;value=0.5;duration=200} @self ~onDamaged
+```
+- would increase the caster's parry chance stat by 50% for 10 seconds when damaged
 
 ### ArrowVolley
 - Add "pickup"/"canPickup" attribute, defaults to true
@@ -216,10 +226,6 @@ TestRandomPlaceholder:
 - green
 - blue
   ```
-
-Stats
------
-
 
 Spawners
 --------
