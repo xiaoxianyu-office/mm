@@ -4,15 +4,15 @@ With Threat Tables enabled, mobs will keep track of how much damage each player 
 
 Threat Tables come with several built-in features to make the mob's targeting intelligent, and use rules found in common MMORPGs. Players gain threat by dealing damage, and will lose threat if they kite the boss, stay outside of the boss' MaxCombatRange, or stay out of line of sight for long periods of time. Players will also drop threat if they leave the world or log off.
 
-Mobs will only switch targets if another player passes 110% threat over the current target.
+Mobs will only switch targets if another player passes `110%` threat over the current target.
 
-Note that activated threat tables will “override” the [AI target selectors](/Mobs/Custom-AI#ai-target-selectors) you specified for the mob. A mob with activated threat tables will attempt to attack any entity that deals damage to it - even if such entites are not listed in the AI target selectors or even if the AI target selector list for the mob has been swiped clean and the mob doesn't naturally attack anything or anyone.
+>Note that activating threat tables will slightly change the [AI target selectors](/Mobs/Custom-AI#ai-target-selectors) you specified for the mob. A mob with activated threat tables will attempt to attack any entity that deals damage to it - even if such entites are not listed in the AI target selectors or even if the AI target selector list for the mob has been swiped clean and the mob doesn't naturally attack anything or anyone.
 
-**Enabling Threat Tables**
+## Enabling Threat Tables
 
 Turning on Threat Tables for a mob is easy. Just add Modules.ThreatTable: true to your mob, like this:
 
-```
+```yaml
 BigScaryBoss:
   Type: zombie
   Display: '&6Zombie'
@@ -23,7 +23,7 @@ BigScaryBoss:
 
 That's it!
 
-**Manipulating Threat Levels**
+## Manipulating Threat Levels
 
 If a mob has threat tables enabled, it will always target the entity with the highest threat level on its own threat table. This process is fully automated and based on which entity does how much damage to the mob. Naturally, the entity (usually a player) dealing the most damage, will gain the most threat and become the target of the mob.
 
