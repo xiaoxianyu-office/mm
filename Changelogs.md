@@ -6,6 +6,12 @@ Highlights
 ### Version support
 Added support for 1.20.2
 
+### Damage
+- Added support for multi-type damage
+- Added DamageTags, allowing you to specify any number of arbitrary tags on any damage mechanics using tags=THIS,THAT e.g. `- damage{amount=5;tags=FIRE}`
+- Added `damageTag` condition, checks if the damage that triggered the skill has the given tag
+- Changed element damage attribute to just apply a damage tag
+
 ### Projectile Bullets
 - Added DISPLAY and TEXT bullet types
 
@@ -13,6 +19,8 @@ Added support for 1.20.2
 
 - Added `bulletBrightness`, and `bulletBrightnessBlock` + `bulletBrightnessSky` for some reason to Display bullets
 - Added `bulletBillboard` to Display bullets
+- Added `bulletForwardOffset` to mob bullets
+- Added `bulletCullingDistance` option to display and text bullets
 
 ### Stat System
 
@@ -26,9 +34,13 @@ Added support for 1.20.2
 General
 -------
 - Added `/mm test mechanic [line]` command to test executing a skill line
+- Allow CustomModelData in `packinfo.yml`
+- Upgraded the item editor with a bunch of new buttons
 
 Mobs
 ----
+- Added support for mobs having players as parents
+
 Added new mobs types:
 - `BLOCK_DISPLAY`
 - `CAMEL`
@@ -39,9 +51,26 @@ Added new mobs types:
 
 ### AI
 - Added `radius` option to `LookAtPlayers` goal
+- Added `attackReachModifier` option to MeleeAttackGoal (defaults to 4)
 
 Mechanics
 ----------
+
+### NEW: Cancel
+- Cancels the current skill tree
+
+```yml
+SomeSkill:
+ Skills:
+ - message{m="hello"} @server
+ - cancel ?isMonster #cancels the rest of the skill from executing
+ - message{m="bye"} @server
+```
+
+### NEW: Hit
+- Simulates a physical hit from the caster using their damage attribute, held weapon, etc
+- Same options as `baseDamage` mechanic
+- Takes melee stats into account (regular skill damage won't unless configured to specifically)
 
 ### NEW: SetTransformation
 - Transforms the target display entity
@@ -100,15 +129,28 @@ This can be used to fill in the gaps with super-fast projectiles and also preven
 ### PotionClear
 - Added `type`/`types` attribute to `potionClear` mechanic
 
+### Switch
+- Allow to run MetaSkills & Code Refactor
+
+### Rally
+- Rewrote Rally mechanic. Added `conditions` option to rally, and all attributes are now optional.
+
 ### Volley
 - Add "pickup"/"canPickup" attribute, defaults to true
 
 Conditions
 ----------
 
+### NEW: DamageTag
+
+Added damageTag condition, checks if the damage that triggered the skill has the given tag
+
+`- damageTag{tag=FIRE}`
+
 ### NEW: directionalVelocity
 
-Added `directionalVelocity` condition, which checks if the target has a velocity matching the given parameters.
+- Added `directionalVelocity` condition, which checks if the target has a velocity matching the given parameters.
+- Added side, forward and vertical aliases to DirectionalVelocityCondition
 
 Options:
 
@@ -124,6 +166,14 @@ Options:
 
 If the X, Y, or Z velocity is not specified, that component of the velocity is not checked. The 'absx', 'absy', and 'absz' options determine whether the absolute value of the corresponding velocity is used in the check. If 'relative' is true, the velocities are considered relative to the entity's orientation.
 
+### NEW: MaterialOnCooldown
+`materialIsOnCooldown` condition, aliases `materialCooldown`, `matCooldown` 
+arguments `material` / `mat` / `m`, defaults to enderpearl
+
+true if material type is on cooldown for the player, false otherwise
+
+### NEW: SpawnReason
+
 Audiences
 ---------
 - Added TRACKED audience, which are the players that are rendering the caster on their client
@@ -135,6 +185,7 @@ Placeholders
 - Added `<caster.stat.STAT_NAME>` placeholders
 - Added `<target.block.data>` - returns the block data of a block
 - Added `<target.item.type>` placeholder
+- Added placeholder support for variable name in all variable mechanics
 
 ### NEW: Custom Placeholders
 
@@ -182,6 +233,10 @@ Spawners
 
 Bugs / Other
 ------------
+- Added placeholder support to a bunch of new things
+- Updated some of the default configuration files to be more up to date
+- Refactor some skill tree stuff
+- Merge ExtendedDamageMetadata into DamageMetadata
 - Fixed NoSuchMethodError in CrouchingCondition
 - Fixed spawner config field for spawn conditions to actually be SpawnConditions
 - Fixed loading error on 1.16
@@ -211,14 +266,46 @@ Bugs / Other
 - Fixes to prevent spawner saving corruption
 - Fix radius option on speak mechanic
 - Fixed crashes involving mob bullets and orbitals
-- 
-- Added `bulletCullingDistance` option to display and text bullets
-- Added `attackReachModifier` option to MeleeAttackGoal (defaults to 4)
-- 
-- 
-- 
-
-
+- Fixed an issue with DisplayTransformationMechanic
+- Fixed `DisplayOptions.Block` for block_display entities
+- Fixed non-string Crucible NBT placeholders not returning their value
+- Fixed NPE in PlaceholderStringImpl
+- Fixed Multi-Templates to be read on the correct order (Left to Right)
+- Fixed onAttack and onDamaged executing with power=0 instead of power=1
+- Fixed bugs with arrow bullets
+- Fixed offset option not working on speech bubbles
+- Fixed SetRotation just completely borked
+- Fixed DamageModifiers and HealthBars being broken on recent versions
+- Fixed Display bullet orientation on 1.20+
+- Fixed inconsistencies with ProjectileVelocity mechanic when relative=true
+- Fixed `config.yml` not generating on new servers
+- Fixed and tested variable saving for all the different scopes
+- Fixed variable duration not calculating expiration time properly
+- Fixed bullets and several other errors on the orbital mechanic closes #1310
+- Fixed fov condition's rotation attribute not working closes #1298
+- Fixed tadpoles closes #1304
+- Fixed some errors with damage calculation closes #1295
+- Fixed NPE when using an mmoitem in a holding condition closes #1291
+- Fixed various issues with DamageModifiers
+- Fixed NPE in PotionClear mechanic
+- Fixed weird inconsistency with zombified piglin vanilla overrides
+- Fixed intersection error with projectile bouncing
+- Fixed itemSpray items being able to be picked up by hoppers
+- Fixed @FloorOfTargets meta-targeter not working with location targets
+- Fixed NPE in Rally mechanic
+- Fixed `KillMessagePrefix: ''` not disabling the kill message prefix
+- Fixed the "-p" flag for the killall command
+- Fixed NPE in listactive command
+- Fixed NearbyAudience checking for targets that might be in different worlds
+- Fixed `CAST` condition action executing multiple times
+- Fixed `zombified_piglin` not recognized as a valid mob type closes #1319
+- Fixed SwitchMechanic not working for some conditions
+- Fixed HasOffhandCondition to check for other living targets instead of only players
+- Fixed EjectPassengerMechanic being called async
+- Fixed particles to use nearby audience by default instead of world, reducing RX
+- Fixed `relative` option in VelocityMechanic. Now acts similar to projectileVelocity.
+- Fixed KillCommand not removing non-living mythicmobs
+- Fixed raytrace mechanics running async from auras
 
 
 5.3.1+
