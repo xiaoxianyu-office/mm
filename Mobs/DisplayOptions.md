@@ -6,6 +6,7 @@ cool_display:
     Block: grass_block
 ```
 Table Of Contents:
+
 [[_TOC_]]
 
 # Base Options
