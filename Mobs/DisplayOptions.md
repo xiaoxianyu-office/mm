@@ -5,7 +5,7 @@ cool_display:
   DisplayOptions:
     Block: grass_block
 ```
-## Base Options
+# Base Options
 These options are available for all display entity types.
 
 #### ViewRange
@@ -165,4 +165,138 @@ cool_display:
   DisplayOptions:
     Block: grass_block
     RightRotation: 0,0,0,1
+```
+
+# Block Display
+This display type only has one special option.
+#### Block
+The block state to use.
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: bell[facing=north]
+```
+
+# Item Display
+
+#### Item
+The item to use. Supports mythic items.
+```yml
+cool_display:
+  Type: item_display
+  DisplayOptions:
+    Item: stick
+```
+
+#### Transform
+The model transform applied to the item. Supports mythic items. Defaults to `NONE`.
+
+|          Types          |
+|:-----------------------:|
+|  FIRSTPERSON_LEFTHAND   |
+|  FIRSTPERSON_RIGHTHAND  |
+|          FIXED          |
+|         GROUND          |
+|           GUI           |
+|          HEAD           |
+|          NONE           |
+|  THIRDPERSON_LEFTHAND   |
+|  THIRDPERSON_RIGHTHAND  |
+
+```yml
+cool_display:
+  Type: item_display
+  DisplayOptions:
+    Item: stick
+    Transform: NONE
+```
+
+# Text Display
+#### Text
+Set the text to show. Defaults to `Give This Poor Dude A Text To Display`.
+```yml
+cool_display:
+  Type: text_display
+  DisplayOptions:
+    Text: Give This Poor Dude A Text To Display
+```
+
+#### Opacity
+Set the text opacity, ranging from `0` to `255`. Defaults to `255`.
+```yml
+cool_display:
+  Type: text_display
+  DisplayOptions:
+    Text: Give This Poor Dude A Text To Display
+    Opacity: 255
+```
+
+#### DefaultBackground
+Sets whether to render using the default text background color (same as in chat), overriding `BackgroundColor`. Defaults to `false`.
+```yml
+cool_display:
+  Type: text_display
+  DisplayOptions:
+    Text: Give This Poor Dude A Text To Display
+    DefaultBackground: false
+```
+
+#### BackgroundColor
+Set the text background color.
+Defaults to `1073741824`.\
+**Formats**: `a,r,g,b` or an integer equivalent.
+```yml
+cool_display:
+  Type: text_display
+  DisplayOptions:
+    Text: Give This Poor Dude A Text To Display
+    BackgroundColor: 1073741824
+```
+
+#### Alignment
+Set the text alignment. Defaults to `CENTER`.
+
+| Types  | Description         |
+|:------:|---------------------|
+| CENTER | Center aligned text |
+|  LEFT  | Left aligned text   |
+| RIGHT  | Right aligned text  |
+
+```yml
+cool_display:
+  Type: text_display
+  DisplayOptions:
+    Text: Give This Poor Dude A Text To Display
+    Alignment: CENTER
+```
+
+#### LineWidth
+The maximum line width used to split lines. Can also use `\n` characters to split to another line. Defaults to `200`.
+```yml
+cool_display:
+  Type: text_display
+  DisplayOptions:
+    Text: Give This Poor Dude A Text To Display
+    LineWidth: 200
+```
+
+#### Shadowed
+Set whether the text should be displayed with a shadow. Defaults to `false`.
+```yml
+cool_display:
+  Type: text_display
+  DisplayOptions:
+    Text: Give This Poor Dude A Text To Display
+    Shadowed: false
+```
+
+#### SeeThrough
+Set whether the text should be visible through blocks. Defaults to `false`
+```yml
+cool_display:
+  Type: text_display
+  DisplayOptions:
+    Text: Give This Poor Dude A Text To Display
+    SeeThrough: 1073741824
 ```
