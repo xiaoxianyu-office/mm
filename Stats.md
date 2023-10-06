@@ -73,6 +73,20 @@ A list of options only available if the specified type is used in the stat
 | Setter               | The tooltip to show for setter modifiers                                        |
 | Rounding             | The amount of numbers after the point in the value of the stat                  |
 
+```yml
+EXAMPLE_STAT:
+  Enabled: true
+  AlwaysActive: false
+  Type: STATIC
+  FormulaKey: 'SPD'
+  Tooltips:
+    Additive: '+<value> Speed'
+    Multiply: '+<value>% Speed'
+    Compound: 'x<value>% Speed'
+    Static: `Force <value> <display>`
+    Rounding: 2
+```
+
 # Modifiers
 Modifiers can be used to adjust stats after their base value is defined.
 | Modifier             |Description                                                                      |
