@@ -1,80 +1,83 @@
 # Introduction
 
-Stats are values that affect all kinds of mechanics across Players, Mobs, Items, Skills, and more. The Stats system can be complicated but learning them is worth the trouble for the powerful things you can do with them, such as combat changes, technical utilities, and game design elements.  
+Stats are values that affect all kinds of mechanics across Players, Mobs, Items, Skills, and more.
+While Stats system can be complicated to learn at first, its versatility will enable you to do very advanced things, such as combat changes, technical utilities, and the creation of new game design elements.  
 
-Stats are defined in the file `stats.yml`. This file can exist in the root directory of MythicMobs (`/plugins/MythicMobs/`) or in a Pack folder. (`/plugins/MythicMobs/Packs/CoolPack`)
-
-# Configuring a Mob with Stats:
-
-It's important to be aware that players get all of their base stat values from the `stats.yml` file, while mobs get only some of their base values from the `stats.yml` file.
-
-This example features `Some_Mob` and three configured stats: `CRITICAL_STRIKE_CHANCE` as configured in the `Stats:` section, but also its `Health` and `Damage`.
-The Health and Damage stat types are natively handled in the typical format of a mob's configuration. Other stats that are configured on the mob are: `ATTACK_DAMAGE`, `ATTACK_SPEED`, and `MOVEMENT_SPEED`.
-```yml
-Some_Mob:
-  Health: 50
-  Damage: 10
-  Stats:
-  - CRITICAL_STRIKE_CHANCE 0.2
-```
+Stats are defined in the`stats.yml` file. This file can exist in the root directory of MythicMobs (`/plugins/MythicMobs/`) or in a [Pack](MythicMobs/-/wikis/Packs) folder.
 
 
-# Custom Stat Types:
-|Type|Description|
-|-|-|
-|STATIC | a static value, does nothing. but can be referenced with placeholders |
-|DAMAGE_BONUS | this stat adds a flat amount of bonus damage. |
-|DAMAGE_MODIFIER | modifies the damage using a formula |
-|PROC | a chance to execute skills |
+# Custom Stat Options
+Options that can be used in the Stat in order to better customize it
 
-# Custom Stat Type Options
+| Option               |Description                                                                      |
+|----------------------|---------------------------------------------------------------------------------|
+| Type                 | The [Type](Stats#custom-stat-types) of the stat                                 |
+| MinValue             | Minimum value for the stat                                                      |
+| MaxValue             | Max value for the stat                                                          |
+| Triggers             | What triggers the stat effect. Usually just ATTACK or DAMAGED                   |
+| ParentStats          | A list of other stats that this stat relies on                                  |
+| Formula              | A formula for the base value if this stat has parent stats                      |
+| FormulaKey           | A key you can use in formulas, when this stat is the parent of another          |
+| BaseValue            | A static base value if it doesn't have parents                                  |
+| ExecutionPoint       | For stats that modify a trigger, can be `PRE` or `POST`. determines whether the stat is evaluated before or after any mechanics |
+
+## Custom Stat Types:
+The values that the `Type` Option can be set to
+| Type                 |Description                                                                      |
+|----------------------|---------------------------------------------------------------------------------|
+| `STATIC`             | A static value. Does nothing on its own, but can be referenced via placeholders |
+| `DAMAGE_BONUS`       | This stat adds a flat amount of bonus damage                                    |
+| `DAMAGE_MODIFIER`    | Modifies the damage using a formula                                             |
+| `PROC`               | A chance to execute skills                                                      | 
+
+## Specific Type Options
+A list of options only available if the specified type is used in the stat
 
 ### DAMAGE_MODIFIER
 
-|Type|Description|
-|-|-|
-|DamageType|specify a custom damage type|
-|Conditions|specify conditions which can affect the Modifier|
-|DamageFormula|define a formula for how the damage is modified. See [HERE](#FIRE_RESISTANCE) for an example of this.|
+| Option               |Description                                                                      |
+|----------------------|---------------------------------------------------------------------------------|
+| DamageType           | Specify a custom damage type                                                    |
+| Conditions           | Specify conditions which can affect the Modifier                                |
+| DamageFormula        | Define a formula for how the damage is modified. See [HERE](#FIRE_RESISTANCE) for an example of this |
 
 ### DAMAGE_BONUS
 
-|Type|Description|
-|-|-|
-|DamageType|specify a custom damage type|
+| Option               |Description                                                                      |
+|----------------------|---------------------------------------------------------------------------------|
+| DamageType           | Specify a custom damage type                                                    |
 
-### All Stat Types
-|Type|Description|
-|-|-|
-| MinValue | Minimum value for the stat|
-| MaxValue | Max value for the stat|
-| Triggers | what triggers the stat effect, usually just ATTACK or DAMAGED|
-| FormulaKey | a key you can use in formulas when this stat is the parent of another|
-| ParentStats | a list of other stats that this stat relies on|
-| Formula | a formula for the base value if this stat has parent stats|
-| BaseValue | a static base value if it doesn't have parents|
-| ExecutionPoint | for stats that modify a trigger, can be PRE or POST. determines whether the stat is evaluated before or after any mechanics |
 
 
 
 # Modifiers
 Modifiers can be used to adjust stats after their base value is defined.
-|Modifier|Description|
-|-|-|
-|ADDITIVE|Adds to the base value of a stat|
-|ADDITIVE_MULTIPLIER|adds a multiplier the base value of a stat|
-|COMPOUND_MULTIPLIER|multiplies the base value of a stat, then adds it to the base value.|
-|SETTER|Overrides all modifiers and base values, and forces the stat to be what is defined.|
+| Modifier             |Description                                                                      |
+|----------------------|---------------------------------------------------------------------------------|
+| `ADDITIVE`           | Adds to the base value of a stat                                                |
+| `ADDITIVE_MULTIPLIER`| Adds a multiplier the base value of a stat                                      |
+| `COMPOUND_MULTIPLIER`| Multiplies the base value of a stat, then adds it to the base value             |
+| `SETTER`             | Overrides all modifiers and base values, and forces the stat to be what is defined                |
 
-Note that stat modifiers can be applied to/by mobs, players, items, enchants, and auras.  For example, an item may add to or multiply its wielder's attack speed, while an attack may temporarily apply a COMPOUND MULTIPLIER to half a target's attack speed.
+Note that stat modifiers can be applied to and by mobs, players, items, enchants, and auras. For example, an item may add to or multiply its wielder's attack speed, while an attack may temporarily apply a COMPOUND MULTIPLIER to half a target's attack speed.
 
 <!--
 TODO: define mechanics that can manipulate modifiers
 -->
-The `ADDITIVE` modifiers are straightforward, they add to the base stat.
-The `ADDITIVE_MULTIPLIER`s all pool together (i.e. additive multipliers of 2 and 3 becoming a multiplier of 5, NOT 6) to then multiply the base stat after additives.
-Finally, the `COMPOUND_MULTIPLIER`multiplies all the ADDITIVE results afterwards - this is a great place for debuffs to apply, since it would typically be calculated after additive stat additions and multipliers.
 
+##
+
+#### `ADDITIVE`
+The `ADDITIVE` modifiers are straightforward: they add to the base stat.
+#### `ADDITIVE_MULTIPLIER`
+The `ADDITIVE_MULTIPLIER` multiply the value of the base stat by the specified value.  
+They all pool together (i.e. additive multipliers of 2 and 3 becoming a multiplier of 5, NOT 6) to then multiply the base stat after additives.
+#### `COMPOUND_MULTIPLIER`
+Finally, the `COMPOUND_MULTIPLIER` multiplies all the ADDITIVE results afterwards - this is a great place for debuffs to apply, since it would typically be calculated after additive stat additions and multipliers.
+
+##
+
+## Application 
 The two `ADDITIVE_MULTIPLIER` and `COMPOUND_MULTIPLIER` modifiers can be easy to mix up; however, this example should make it a bit more clear:
 
 Lets say you have these modifiers:
@@ -96,15 +99,12 @@ Lets say you have these modifiers:
 Regular multipliers are additive, and compound multipliers are multiplicative. You can think of it as "+10%" for Additive Multipliers  vs. "x10%" for Compound Multipliers.
 
 
-
-# Examples
-
-## Built-In Stats
+# Built-In Stats
 
 These stats are inherently supported by MythicMobs, and can be configured in the `stats.yml` file in the plugin's root directory (`/plugins/MythicMobs/`) or inside Pack folders. (`/plugins/MythicMobs/Packs/CoolPack/`)
 The player inherits the `BaseValue` of these stats, while Mobs are granted them in the `Stats:` sub-section of their config.
 
- #### `ACCURACY`
+#### `ACCURACY`
 Chance for an attack to land damage. Reduces opponent's [DODGE_CHANCE](#dodge_chance).
 ```yml
 ACCURACY:
@@ -117,7 +117,7 @@ ACCURACY:
     Compound: 'x<value> Accuracy'
   BaseValue: 0
 ```
- #### `ATTACK_DAMAGE`
+#### `ATTACK_DAMAGE`
 Base Damage Output
 ```yml
 ATTACK_DAMAGE:
@@ -130,7 +130,7 @@ ATTACK_DAMAGE:
     Compound: 'x<value> Damage'
   BaseValue: 1
 ```
- #### `ATTACK_SPEED`
+#### `ATTACK_SPEED`
 Attack cooldown frequency. Typically only used for Players.
 ```yml
 ATTACK_SPEED:
@@ -143,7 +143,7 @@ ATTACK_SPEED:
     Compound: 'x<value> Attack Speed'
   BaseValue: 4.0
 ```
- #### `BONUS_DAMAGE`
+#### `BONUS_DAMAGE`
 Additional Modifier for dealing extra damage
 ```yml
 BONUS_DAMAGE:
@@ -156,8 +156,8 @@ BONUS_DAMAGE:
     Compound: 'x<value> Bonus Damage'
   BaseValue: 0
 ```
- #### `CRITICAL_STRIKE_CHANCE`
- Chance to land a Critical Strike (Chance-based Crit)
+#### `CRITICAL_STRIKE_CHANCE`
+Chance to land a Critical Strike (Chance-based Crit)
 ```yml
 CRITICAL_STRIKE_CHANCE:
   Enabled: false
@@ -172,8 +172,8 @@ CRITICAL_STRIKE_CHANCE:
   Skills:
   - particles{p=crit;a=50;hS=1;y=1;s=1} @trigger
 ```
- #### `CRITICAL_STRIKE_DAMAGE`
- Damage dealt via Critical Strike
+#### `CRITICAL_STRIKE_DAMAGE`
+Damage dealt via Critical Strike
 ```yml
 CRITICAL_STRIKE_DAMAGE:
   Enabled: false
@@ -185,8 +185,8 @@ CRITICAL_STRIKE_DAMAGE:
     Compound: 'x<value> Critical Damage'
   BaseValue: 1
 ```
- #### `CRITICAL_STRIKE_RESILIENCE`
- Resistance to Critical Strike
+#### `CRITICAL_STRIKE_RESILIENCE`
+Resistance to Critical Strike
 ```yml
 CRITICAL_STRIKE_RESILIENCE:
   Enabled: false
@@ -198,8 +198,8 @@ CRITICAL_STRIKE_RESILIENCE:
     Compound: 'x<value> Resilience'
   BaseValue: 0
 ```
- #### `DAMAGE_REDUCTION`
- Generic damage reduction
+#### `DAMAGE_REDUCTION`
+Generic damage reduction
 ```yml
 DAMAGE_REDUCTION:
   Enabled: false
@@ -211,8 +211,8 @@ DAMAGE_REDUCTION:
     Compound: 'x<value> Damage Reduction'
   BaseValue: 0
 ```
- #### `DEFENSE`
- Defense
+#### `DEFENSE`
+Defense
 ```yml
 DEFENSE:
   Enabled: false
@@ -238,7 +238,7 @@ DODGE_CHANCE:
   BaseValue: 0
   Skills: []
 ```
- #### `EXPERTISE`
+#### `EXPERTISE`
 Affects and lowers the [PARRY_CHANCE](#parry_chance) of the opponent.
 ```yml
 EXPERTISE:
@@ -251,8 +251,8 @@ EXPERTISE:
     Compound: 'x<value> Expertise'
   BaseValue: 0
 ```
- #### `HEALTH`
- Health values
+#### `HEALTH`
+Health values
 ```yml
 HEALTH:
   Enabled: false
@@ -265,8 +265,8 @@ HEALTH:
   BaseValue: 20
   MinValue: 1
 ```
- #### `HEALTH_REGENERATION`
- Rate of Health Regeneration
+#### `HEALTH_REGENERATION`
+Rate of Health Regeneration
 ```yml
 HEALTH_REGENERATION:
   Enabled: false
@@ -281,8 +281,8 @@ HEALTH_REGENERATION:
   MinValue: 0
   Frequency: 60
 ```
- #### `LIFESTEAL_CHANCE`
- Chance for damage dealt to heal the attacker
+#### `LIFESTEAL_CHANCE`
+Chance for damage dealt to heal the attacker
 ```yml
 LIFESTEAL_CHANCE:
   Enabled: false
@@ -294,8 +294,8 @@ LIFESTEAL_CHANCE:
     Compound: 'x<value> Lifesteal Chance'
   BaseValue: 0
 ```
- #### `LIFESTEAL_POWER`
- How much healing LifeSteal does.
+#### `LIFESTEAL_POWER`
+How much healing LifeSteal does.
 ```yml
 LIFESTEAL_POWER:
   Enabled: true
@@ -307,8 +307,8 @@ LIFESTEAL_POWER:
     Compound: 'x<value> Lifesteal Power'
   BaseValue: 0.1
 ```
- #### `MOVEMENT_SPEED`
- Movement Speed.
+#### `MOVEMENT_SPEED`
+Movement Speed.
 ```yml
 MOVEMENT_SPEED:
   Enabled: false
@@ -323,8 +323,8 @@ MOVEMENT_SPEED:
   Formula: '0.2 + (0.2 / (1 + e^(-0.005 * (SPD - 1000))))'
 
 ```
- #### `PARRY_CHANCE`
- Chance to mitigate and reflect damage from sources that melee you from the front.
+#### `PARRY_CHANCE`
+Chance to mitigate and reflect damage from sources that melee you from the front.
 ```yml
 PARRY_CHANCE:
   Enabled: false
@@ -347,8 +347,8 @@ PARRY_CHANCE:
   Skills: []
 
 ```
- #### `PARRY_POWER`
- How much damage is mitigated by Parry.
+#### `PARRY_POWER`
+How much damage is mitigated by Parry.
 ```yml
 PARRY_POWER:
   Enabled: false
@@ -361,8 +361,8 @@ PARRY_POWER:
     Compound: 'x<value> Parry Power'
 
 ```
- #### `PARRY_COUNTERATTACK`
- How much damage is returned to the opponent when parrying.
+#### `PARRY_COUNTERATTACK`
+How much damage is returned to the opponent when parrying.
 ```yml
 PARRY_COUNTERATTACK:
   Enabled: false
@@ -375,6 +375,23 @@ PARRY_COUNTERATTACK:
     Compound: 'x<value> Parry Counterattack'
 
 ```
+
+# Configuring a Mob with Stats:
+
+It's important to be aware that players get all of their base stat values from the `stats.yml` file, while mobs get only some of their base values from the `stats.yml` file.
+
+This example features `Some_Mob` and three configured stats: `CRITICAL_STRIKE_CHANCE` as configured in the `Stats:` section, but also its `Health` and `Damage`.
+The Health and Damage stat types are natively handled in the typical format of a mob's configuration. Other stats that are configured on the mob are: `ATTACK_DAMAGE`, `ATTACK_SPEED`, and `MOVEMENT_SPEED`.
+```yml
+Some_Mob:
+  Health: 50
+  Damage: 10
+  Stats:
+  - CRITICAL_STRIKE_CHANCE 0.2
+```
+
+
+# Examples
 
 ## Example Custom Stats
 
