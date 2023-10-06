@@ -5,13 +5,27 @@ While Stats system can be complicated to learn at first, its versatility will en
 
 Stats are defined in the`stats.yml` file. This file can exist in the root directory of MythicMobs (`/plugins/MythicMobs/`) or in a [Pack](MythicMobs/-/wikis/Packs) folder.
 
+- [Custom Stat Options](#custom-stat-options)
+  - [Custom Stat Types](#custom-stat-types)
+  - [Specific Type Options](#specific-type-options)
+- [Modifiers](#modifiers)
+- [Built In Stats](#built-in-stats)
+- [Implementations with Configurations](#implementations-with-configurations)
+  - [Mobs](#Mobs)
+- [Examples](#Examples)
+  - [Example Custom Stats](#example-custom-stats)
 
 # Custom Stat Options
 Options that can be used in the Stat in order to better customize it
 
 | Option               |Description                                                                      |
 |----------------------|---------------------------------------------------------------------------------|
+| Enabled              | If the stat is currently enabled                                                |
+| AlwaysActive         | If the stat is forcefully applied to every registry of every entity             |
 | Type                 | The [Type](Stats#custom-stat-types) of the stat                                 |
+| Display              | The name with which the stat is displayed                                       |
+| Tooltips             | How the stat is shown on items. Depends on the Modifier used                    |
+| Priority             | The priority with which the stat will take effect, compared to others           |
 | MinValue             | Minimum value for the stat                                                      |
 | MaxValue             | Max value for the stat                                                          |
 | Triggers             | What triggers the stat effect. Usually just ATTACK or DAMAGED                   |
@@ -21,7 +35,7 @@ Options that can be used in the Stat in order to better customize it
 | BaseValue            | A static base value if it doesn't have parents                                  |
 | ExecutionPoint       | For stats that modify a trigger, can be `PRE` or `POST`. determines whether the stat is evaluated before or after any mechanics |
 
-## Custom Stat Types:
+## Custom Stat Types
 The values that the `Type` Option can be set to
 | Type                 |Description                                                                      |
 |----------------------|---------------------------------------------------------------------------------|
@@ -376,10 +390,11 @@ PARRY_COUNTERATTACK:
 
 ```
 
-# Configuring a Mob with Stats:
+# Implementations with Configurations
 
-It's important to be aware that players get all of their base stat values from the `stats.yml` file, while mobs get only some of their base values from the `stats.yml` file.
+It's important to be aware that players get all of their base stat values from the `stats.yml` file, while mobs get only some of their base values from the `stats.yml` file: if another value is specified as one of their stats, that is applied.
 
+## Mobs
 This example features `Some_Mob` and three configured stats: `CRITICAL_STRIKE_CHANCE` as configured in the `Stats:` section, but also its `Health` and `Damage`.
 The Health and Damage stat types are natively handled in the typical format of a mob's configuration. Other stats that are configured on the mob are: `ATTACK_DAMAGE`, `ATTACK_SPEED`, and `MOVEMENT_SPEED`.
 ```yml
