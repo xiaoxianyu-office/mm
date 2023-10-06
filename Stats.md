@@ -1,15 +1,15 @@
 # Introduction
 
-Stats are values that affect all kinds of mechanisms, are for Players, Mobs, Items, Skills, etc and can be used for combat, utility, or any case you can think of. Stats can be complicated but learning them is worth the trouble for the powerful things you can do with them.  
+Stats are values that affect all kinds of mechanics across Players, Mobs, Items, Skills, and more. The Stats system can be complicated but learning them is worth the trouble for the powerful things you can do with them, such as combat changes, technical utilities, and game design elements.  
 
-Stats are defined in the file `stats.yml`. This file can exist in the root directory of MythicMobs `(Plugins/MythicMobs)` or in a Pack folder. `(Plugins/MythicMobs/Packs/CoolPack)`
+Stats are defined in the file `stats.yml`. This file can exist in the root directory of MythicMobs (`/plugins/MythicMobs/`) or in a Pack folder. (`/plugins/MythicMobs/Packs/CoolPack`)
 
 # Configuring a Mob with Stats:
 
-It's important to be aware that players get their base value from the `stats.yml` file, while mobs get only some of their base values from the `stats.yml` file.
+It's important to be aware that players get all of their base stat values from the `stats.yml` file, while mobs get only some of their base values from the `stats.yml` file.
 
-
-In this example, you will see that there are 3 stats here actually, Health and Damage are also stats, and natively handled in the typical format of a mob's configuration.
+This example features `Some_Mob` and three configured stats: `CRITICAL_STRIKE_CHANCE` as configured in the `Stats:` section, but also its `Health` and `Damage`.
+The Health and Damage stat types are natively handled in the typical format of a mob's configuration. Other stats that are configured on the mob are: `ATTACK_DAMAGE`, `ATTACK_SPEED`, and `MOVEMENT_SPEED`.
 ```yml
 Some_Mob:
   Health: 50
@@ -17,8 +17,6 @@ Some_Mob:
   Stats:
   - CRITICAL_STRIKE_CHANCE 0.2
 ```
-
-Other stats that work this way are: `ATTACK_DAMAGE`, `ATTACK_SPEED`, `HEALTH`, and `MOVEMENT_SPEED`.
 
 
 # Custom Stat Types:
@@ -68,29 +66,34 @@ Modifiers can be used to adjust stats after their base value is defined.
 |COMPOUND_MULTIPLIER|multiplies the base value of a stat, then adds it to the base value.|
 |SETTER|Overrides all modifiers and base values, and forces the stat to be what is defined.|
 
-Note that stat modifiers can be applied to/by mobs, players, items, enchants, and auras.
+Note that stat modifiers can be applied to/by mobs, players, items, enchants, and auras.  For example, an item may add to or multiply its wielder's attack speed, while an attack may temporarily apply a COMPOUND MULTIPLIER to half a target's attack speed.
 
 <!--
 TODO: define mechanics that can manipulate modifiers
 -->
+The `ADDITIVE` modifiers are straightforward, they add to the base stat.
+The `ADDITIVE_MULTIPLIER`s all pool together (i.e. additive multipliers of 2 and 3 becoming a multiplier of 5, NOT 6) to then multiply the base stat after additives.
+Finally, the `COMPOUND_MULTIPLIER`multiplies all the ADDITIVE results afterwards - this is a great place for debuffs to apply, since it would typically be calculated after additive stat additions and multipliers.
 
-In the case of `ADDITIVE_MULTIPLIER` and `COMPOUND_MULTIPLIER`, the difference is easy to misunderstand; However, this example should make it a bit more clear:
+The two `ADDITIVE_MULTIPLIER` and `COMPOUND_MULTIPLIER` modifiers can be easy to mix up; however, this example should make it a bit more clear:
 
-lets say you have these modifiers:
+Lets say you have these modifiers:
  ``` rb
+  8 base value
   10 additive
+  2 additive
   5 multiply
   3 multiply
-  2 compound
-  base value of 0
+  2 compound   (effectively x2)
+  0.4 compound (effectively -60%)
 ```
-the resulting math MythicMobs would calculate this is as follows:
-
+...the resulting math MythicMobs would calculate this is as follows:
 ```rb
-10 * (5 + 3) * 2 = 160
-```
+(8 + 10 + 2) * (5 + 3) * (2 * 0.4) = 128
 
-This shows how regular multipliers are additive, and compound multipliers are multiplicative. you can think of it as "+10%" vs. "x10%"
+(base + additive + additive) * (additive_multiplier + additive_multiplier) * (compound_multiplier * compound_multiplier) = final stat
+```
+Regular multipliers are additive, and compound multipliers are multiplicative. You can think of it as "+10%" for Additive Multipliers  vs. "x10%" for Compound Multipliers.
 
 
 
@@ -98,7 +101,8 @@ This shows how regular multipliers are additive, and compound multipliers are mu
 
 ## Built-In Stats
 
-These stats are inherently supported by MythicMobs.
+These stats are inherently supported by MythicMobs, and can be configured in the `stats.yml` file in the plugin's root directory (`/plugins/MythicMobs/`) or inside Pack folders. (`/plugins/MythicMobs/Packs/CoolPack/`)
+The player inherits the `BaseValue` of these stats, while Mobs are granted them in the `Stats:` sub-section of their config.
 
  #### `ACCURACY`
 Chance for an attack to land damage. Reduces opponent's [DODGE_CHANCE](#dodge_chance).
@@ -478,7 +482,7 @@ DAMAGE_SHARP:
 
 ```
 #### `FIRE_RESISTANCE`
-Resistance to the FIRE, FIRE_TICK [DamageCause](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/conditions/DamageCause).
+Configured to grant resistance to the FIRE, FIRE_TICK [DamageCause](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/conditions/DamageCause).
 ```yml
 FIRE_RESISTANCE:
   Enabled: false
@@ -500,7 +504,7 @@ FIRE_RESISTANCE:
 
 ```
 #### `SPEED`
-Is used in the [MOVEMENT_SPEED](#movement_speed) stat calculation to affect speed with a formula.
+May be used in the [MOVEMENT_SPEED](#movement_speed) stat calculation to affect speed with a formula.
 ```yml
 SPEED:
   Enabled: true
