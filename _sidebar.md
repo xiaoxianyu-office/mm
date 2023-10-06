@@ -51,6 +51,8 @@
   * [Spawners](Spawners)
   * [Random Spawns](Random-Spawns)
 
+##### [Stats](Stats)
+
 ##### [Examples](examples/Common-Examples)
 ##### [Useful Tips](/UsefulTips)
 
