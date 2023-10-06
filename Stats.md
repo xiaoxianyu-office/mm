@@ -8,6 +8,7 @@ Stats are defined in the`stats.yml` file. This file can exist in the root direct
 - [Custom Stat Options](#custom-stat-options)
   - [Custom Stat Types](#custom-stat-types)
   - [Specific Type Options](#specific-type-options)
+  - [Tooltips Formatting](#tooltips-formatting)
 - [Modifiers](#modifiers)
 - [Built In Stats](#built-in-stats)
 - [Implementations with Configurations](#implementations-with-configurations)
@@ -28,12 +29,13 @@ Options that can be used in the Stat in order to better customize it
 | Priority             | The priority with which the stat will take effect, compared to others           |
 | MinValue             | Minimum value for the stat                                                      |
 | MaxValue             | Max value for the stat                                                          |
-| Triggers             | What triggers the stat effect. Usually just ATTACK or DAMAGED                   |
+| Triggers             | What triggers the stat effect. Can be any MythicMobs trigger, minus the "on" bit. (For instance: to use `onAttack`, one needs to write `ATTACK` as a trigger)                              |
 | ParentStats          | A list of other stats that this stat relies on                                  |
 | Formula              | A formula for the base value if this stat has parent stats                      |
 | FormulaKey           | A key you can use in formulas, when this stat is the parent of another          |
 | BaseValue            | A static base value if it doesn't have parents                                  |
 | ExecutionPoint       | For stats that modify a trigger, can be `PRE` or `POST`. determines whether the stat is evaluated before or after any mechanics |
+| Skills               | The skills that get executed when the stat is activated                         |
 
 ## Custom Stat Types
 The values that the `Type` Option can be set to
@@ -62,7 +64,14 @@ A list of options only available if the specified type is used in the stat
 | DamageType           | Specify a custom damage type                                                    |
 
 
-
+## Tooltips Formatting
+| Formatting           |Description                                                                      |
+|----------------------|---------------------------------------------------------------------------------|
+| Additive             | The tooltip to show for additive modifiers                                      |
+| Multiply             | The tooltip to show for multiply modifiers                                      |
+| Compound             | The tooltip to show for compound modifiers                                      |
+| Setter               | The tooltip to show for setter modifiers                                        |
+| Rounding             | The amount of numbers after the point in the value of the stat                  |
 
 # Modifiers
 Modifiers can be used to adjust stats after their base value is defined.
