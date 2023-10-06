@@ -1,4 +1,4 @@
-# Stats
+# Introduction
 
 Stats are values that affect all kinds of mechanisms, are for Players, Mobs, Items, Skills, etc and can be used for combat, utility, or any case you can think of. Stats can be complicated but learning them is worth the trouble for the powerful things you can do with them.  
 
