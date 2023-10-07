@@ -144,7 +144,6 @@ The player inherits the `BaseValue` of these stats; Mobs also inherit them as de
 
 |Stat                                                         |Description                                                                                       |
 |-------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-|[ACCURACY](#accuracy)                                        |Chance for an attack to land damage. Reduces opponent's [DODGE_CHANCE](#dodge_chance).            |
 |[ATTACK_DAMAGE](#attack_damage)                              |Base Damage Output                                                                                |
 |[ATTACK_SPEED](#attack_speed)                                |Attack cooldown frequency. Typically only used for Players.                                       |
 |[BONUS_DAMAGE](#bonus_damage)                                |Additional Modifier for dealing extra damage                                                      |
@@ -153,26 +152,28 @@ The player inherits the `BaseValue` of these stats; Mobs also inherit them as de
 |[CRITICAL_STRIKE_RESILIENCE](#critical_strike_resilience)    |Resistance to Critical Strike                                                                     |
 |[DAMAGE_REDUCTION](#damage_reduction)                        |Generic damage reduction                                                                          |
 |[DEFENSE](#defense)                                          |Defense                                                                                           |
-|[DODGE_CHANCE](#dodge_chance)                                |Chance for an attack to fail when attempting to damage. Reduces opponent's [ACCURACY](#accuracy). |
-|[EXPERTISE](#expertise)                                      |Affects and lowers the [PARRY_CHANCE](#parry_chance) of the opponent.                             |
+|[DODGE_CHANCE](#dodge_chance)                                |Chance for an attack to fail when attempting to damage. Reduces opponent's [DODGE_NEGATION](#dodge_negation). |
+|[DODGE_NEGATION](#dodge_negation)                                        |Chance for an attack to land damage. Reduces opponent's [DODGE_CHANCE](#dodge_chance).            |
 |[HEALTH](#health)                                            |Health values                                                                                     |
 |[HEALTH_REGENERATION](#health_regeneration)                  |Rate of Health Regeneration                                                                       |
 |[LIFESTEAL_CHANCE](#lifesteal_chance)                        |Chance for damage dealt to heal the attacker                                                      |
 |[LIFESTEAL_POWER](#lifesteal_power)                          |How much healing LifeSteal does.                                                                  |
 |[MOVEMENT_SPEED](#movement_speed)                            |Movement Speed.                                                                                   |
 |[PARRY_CHANCE](#parry_chance)                                |Chance to mitigate and reflect damage from sources that melee you from the front.                 |
-|[PARRY_POWER](#parry_power)                                  |How much damage is mitigated by Parry.                                                            |
 |[PARRY_COUNTERATTACK](#parry_counterattack)                  |How much damage is returned to the opponent when parrying.                                        |
+|[PARRY_POWER](#parry_power)                                  |How much damage is mitigated by Parry.                                                            |
+|[PARRY_NEGATION](#parry_negation)                                      |Affects and lowers the [PARRY_CHANCE](#parry_chance) of the opponent.                             |
 
 
 # Built-in Stats Breakdown
 
 This is a detailed breakdown of the built-in stats provided by MythicMobs. For custom stats, see [Custom Stat Examples](#example-custom-stats).
 
-#### `ACCURACY`
+#### `DODGE_NEGATION`
 Chance for an attack to land damage. Reduces opponent's [DODGE_CHANCE](#dodge_chance).
+As shown below, the displayed name and lore elements of a stat can be customized, such as 'Accuracy' instead of 'Dodge Negation'
 ```yml
-ACCURACY:
+DODGE_NEGATION:
   Enabled: false
   AlwaysActive: false
   Display: 'Accuracy'
@@ -303,19 +304,6 @@ DODGE_CHANCE:
   BaseValue: 0
   Skills: []
 ```
-#### `EXPERTISE`
-Affects and lowers the [PARRY_CHANCE](#parry_chance) of the opponent.
-```yml
-EXPERTISE:
-  Enabled: false
-  AlwaysActive: false
-  Display: 'Expertise'
-  Tooltips:
-    Additive: '+<value> Expertise'
-    Multiply: '+<value> Expertise'
-    Compound: 'x<value> Expertise'
-  BaseValue: 0
-```
 #### `HEALTH`
 Health values
 ```yml
@@ -386,7 +374,6 @@ MOVEMENT_SPEED:
   ParentStats:
   - SPEED
   Formula: '0.2 + (0.2 / (1 + e^(-0.005 * (SPD - 1000))))'
-
 ```
 #### `PARRY_CHANCE`
 Chance to mitigate and reflect damage from sources that melee you from the front.
@@ -410,21 +397,6 @@ PARRY_CHANCE:
     - DIAMOND_SWORD
     - NETHERITE_SWORD
   Skills: []
-
-```
-#### `PARRY_POWER`
-How much damage is mitigated by Parry.
-```yml
-PARRY_POWER:
-  Enabled: false
-  AlwaysActive: false
-  Display: 'Parry Power'
-  BaseValue: 0.5
-  Tooltips:
-    Additive: '+<value> Parry Power'
-    Multiply: '+<value> Parry Power'
-    Compound: 'x<value> Parry Power'
-
 ```
 #### `PARRY_COUNTERATTACK`
 How much damage is returned to the opponent when parrying.
@@ -438,7 +410,33 @@ PARRY_COUNTERATTACK:
     Additive: '+<value> Parry Counterattack'
     Multiply: '+<value> Parry Counterattack'
     Compound: 'x<value> Parry Counterattack'
-
+```
+#### `PARRY_NEGATION`
+Affects and lowers the [PARRY_CHANCE](#parry_chance) of the opponent.
+As shown below, the displayed name and lore elements of a stat can be customized, such as 'Expertise' instead of 'Parry Negation'
+```yml
+PARRY_NEGATION:
+  Enabled: false
+  AlwaysActive: false
+  Display: 'Expertise'
+  Tooltips:
+    Additive: '+<value> Expertise'
+    Multiply: '+<value> Expertise'
+    Compound: 'x<value> Expertise'
+  BaseValue: 0
+```
+#### `PARRY_POWER`
+How much damage is mitigated by Parry.
+```yml
+PARRY_POWER:
+  Enabled: false
+  AlwaysActive: false
+  Display: 'Parry Power'
+  BaseValue: 0.5
+  Tooltips:
+    Additive: '+<value> Parry Power'
+    Multiply: '+<value> Parry Power'
+    Compound: 'x<value> Parry Power'
 ```
 
 # Implementations with Configurations
