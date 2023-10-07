@@ -21,6 +21,7 @@ After having done that, the configured mob will override any vanilla entity whos
 
 Apart from that, everything that works on a normal mythicmob can also be used in a Vanilla Override, so you can have, for instance, overrides with Disguises, with custom Damage Modifiers or with Skills!
 
+By aware, though, that not all Mobs will become Vanilla Overrides: **mobs spawned via breeding of other mobs will not become overrides!**
 
 ## Examples
 ```yml
