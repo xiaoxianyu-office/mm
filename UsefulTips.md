@@ -9,6 +9,7 @@ Table of contents:
 - Always read the wiki page of what you are using in depth
 - Always keep your plugins updated
 - Make sure you are on a supported version. You can check that by doing `/mm version`
+- Using ChatGPT to get configurations is a *truly* bad idea. Don't do that. Ever.
 
 ## Mobs
 
