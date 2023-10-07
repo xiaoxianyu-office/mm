@@ -89,11 +89,11 @@ EXAMPLE_STAT:
 
 # Modifiers
 Modifiers can be used to adjust stats after their base value is defined.
-| Modifier             |Description                                                                      |
-|----------------------|---------------------------------------------------------------------------------|
-| `ADDITIVE`           | Adds to the base value of a stat                                                |
-| `ADDITIVE_MULTIPLIER`| Adds a multiplier the base value of a stat                                      |
-| `COMPOUND_MULTIPLIER`| Multiplies the base value of a stat, then adds it to the base value             |
+| Modifier             |Description                                                                                        |
+|----------------------|---------------------------------------------------------------------------------------------------|
+| `ADDITIVE`           | Adds to the base value of a stat                                                                  |
+| `ADDITIVE_MULTIPLIER`| Adds a multiplier the base value of a stat                                                        |
+| `COMPOUND_MULTIPLIER`| Multiplies the base value of a stat, then adds it to the base value                               |
 | `SETTER`             | Overrides all modifiers and base values, and forces the stat to be what is defined                |
 
 Note that stat modifiers can be applied to and by mobs, players, items, enchants, and auras. For example, an item may add to or multiply its wielder's attack speed, while an attack may temporarily apply a COMPOUND MULTIPLIER to half a target's attack speed.
@@ -140,6 +140,34 @@ Regular multipliers are additive, and compound multipliers are multiplicative. Y
 
 These stats are inherently supported by MythicMobs, and can be configured in the `stats.yml` file in the plugin's root directory (`/plugins/MythicMobs/`) or inside Pack folders. (`/plugins/MythicMobs/Packs/CoolPack/`)
 The player inherits the `BaseValue` of these stats, while Mobs are granted them in the `Stats:` sub-section of their config.
+
+
+|Stat                                                         |Description                                                                                       |
+|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+|[ACCURACY](#accuracy)                                        |Chance for an attack to land damage. Reduces opponent's [DODGE_CHANCE](#dodge_chance).            |
+|[ATTACK_DAMAGE](#attack_damage)                              |Base Damage Output                                                                                |
+|[ATTACK_SPEED](#attack_speed)                                |Attack cooldown frequency. Typically only used for Players.                                       |
+|[BONUS_DAMAGE](#bonus_damage)                                |Additional Modifier for dealing extra damage                                                      |
+|[CRITICAL_STRIKE_CHANCE](#critical_strike_chance)            |Chance to land a Critical Strike (Chance-based Crit)                                              |
+|[CRITICAL_STRIKE_DAMAGE](#critical_strike_damage)            |Damage dealt via Critical Strike                                                                  |
+|[CRITICAL_STRIKE_RESILIENCE](#critical_strike_resilience)    |Resistance to Critical Strike                                                                     |
+|[DAMAGE_REDUCTION](#damage_reduction)                        |Generic damage reduction                                                                          |
+|[DEFENSE](#defense)                                          |Defense                                                                                           |
+|[DODGE_CHANCE](#dodge_chance)                                |Chance for an attack to fail when attempting to damage. Reduces opponent's [ACCURACY](#accuracy). |
+|[EXPERTISE](#expertise)                                      |Affects and lowers the [PARRY_CHANCE](#parry_chance) of the opponent.                             |
+|[HEALTH](#health)                                            |Health values                                                                                     |
+|[HEALTH_REGENERATION](#health_regeneration)                  |Rate of Health Regeneration                                                                       |
+|[LIFESTEAL_CHANCE](#lifesteal_chance)                        |Chance for damage dealt to heal the attacker                                                      |
+|[LIFESTEAL_POWER](#lifesteal_power)                          |How much healing LifeSteal does.                                                                  |
+|[MOVEMENT_SPEED](#movement_speed)                            |Movement Speed.                                                                                   |
+|[PARRY_CHANCE](#parry_chance)                                |Chance to mitigate and reflect damage from sources that melee you from the front.                 |
+|[PARRY_POWER](#parry_power)                                  |How much damage is mitigated by Parry.                                                            |
+|[PARRY_COUNTERATTACK](#parry_counterattack)                  |How much damage is returned to the opponent when parrying.                                        |
+
+
+# Built-in Stats Breakdown
+
+This is a detailed breakdown of the built-in stats provided by MythicMobs. For custom stats, see [Custom Stat Examples](#example-custom-stats).
 
 #### `ACCURACY`
 Chance for an attack to land damage. Reduces opponent's [DODGE_CHANCE](#dodge_chance).
