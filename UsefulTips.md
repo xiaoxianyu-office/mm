@@ -4,7 +4,11 @@ Table of contents:
 
 [[_TOC_]]
 
-
+## General Rules
+- NEVER test ANYTHING while in creative mode
+- Always read the wiki page of what you are using in depth
+- Always keep your plugins updated
+- Make sure you are on a supported version. You can check that by doing `/mm version`
 
 ## Mobs
 
@@ -29,6 +33,10 @@ This is a common issue. To fix this, consider adding the following skill to your
 
 ## Skills
 
+### Chat Messagges
+<details><summary>I want to warn every player that a mob has spawned</summary>
+The [Placeholders wiki page](/Skills/Placeholders#examples) contains one such example.
+</details>
 
 
 ## Items
@@ -90,4 +98,13 @@ In this case, you will need to set a variable on the mob every time it is hit on
   - setvariable{var=caster.lastplayer;type=STRING;val=<trigger.uuid>} @self ~onDamaged ?~isPlayer
   - dropitem{...} @UUID{u="<caster.var.lastplayer>"} ~onDeath ?variableisset{var=caster.lastplayer}
 ```
+</details>
+
+
+## Spawning
+
+### Random Spawns
+<details><summary>Mobs with the ADD spawn action are not spawning</summary>
+You must have enabled `GenerateSpawnPoints` in the plugin's config file.
+You must not be in creative or spectator mode.
 </details>
