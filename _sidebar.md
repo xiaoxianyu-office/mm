@@ -52,9 +52,9 @@
   * [Random Spawns](Random-Spawns)
 
 ##### [Stats](Stats)
-  * [Custom Stat Options](Stats/custom-stat-options)
-  * [Modifiers](Stats/modifiers)
-  * [Built in Stats](Stats/built-in-stats)
+  * [Custom Stat Options](Stats#custom-stat-options)
+  * [Modifiers](Stats#modifiers)
+  * [Built in Stats](Stats#built-in-stats)
 
 ##### [Examples](examples/Common-Examples)
 ##### [Useful Tips](/UsefulTips)
