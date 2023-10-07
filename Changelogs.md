@@ -22,7 +22,7 @@ Added support for 1.20.2
 - Added `bulletCullingDistance` option to display and text bullets
 
 ### Stat System
-- Added the Stat system - see stats page in manual
+- Added the [Stat System](/Stats)
 
 ### Holograms
 - Added our own hologram system
