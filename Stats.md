@@ -110,7 +110,7 @@ The `ADDITIVE` modifiers are straightforward: they add to the base stat.
 The `ADDITIVE_MULTIPLIER` multiply the value of the base stat by the specified value.  
 They all pool together (i.e. additive multipliers of 2 and 3 becoming a multiplier of 5, NOT 6) to then multiply the base stat after additives.
 #### `COMPOUND_MULTIPLIER`
-Finally, the `COMPOUND_MULTIPLIER` multiplies all the ADDITIVE results afterwards - this is a great place for debuffs to apply, since it would typically be calculated after additive stat additions and multipliers.
+Finally, the `COMPOUND_MULTIPLIER` multiplies all the ADDITIVE results afterwards - this is a great place for to apply effect changes such as debuffs, since they would typically be calculated after additive stat additions and multipliers.
 
 ##
 
@@ -139,7 +139,7 @@ Regular multipliers are additive, and compound multipliers are multiplicative. Y
 # Built-In Stats
 
 These stats are inherently supported by MythicMobs, and can be configured in the `stats.yml` file in the plugin's root directory (`/plugins/MythicMobs/`) or inside Pack folders. (`/plugins/MythicMobs/Packs/CoolPack/`)
-The player inherits the `BaseValue` of these stats, while Mobs are granted them in the `Stats:` sub-section of their config.
+The player inherits the `BaseValue` of these stats; Mobs also inherit them as defaults, unless overrides are specified in the `Stats:` sub-section of their config.
 
 
 |Stat                                                         |Description                                                                                       |
