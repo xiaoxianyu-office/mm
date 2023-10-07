@@ -6,6 +6,8 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 
 [[_TOC_]]
 
+# Targeters
+
 ## Entity Targeters
 
 ### Single-Entity Targeters
