@@ -152,7 +152,7 @@ The player inherits the `BaseValue` of these stats; Mobs also inherit them as de
 |[CRITICAL_STRIKE_RESILIENCE](#critical_strike_resilience)    |Resistance to Critical Strike                                                                     |
 |[DAMAGE_REDUCTION](#damage_reduction)                        |Generic damage reduction                                                                          |
 |[DEFENSE](#defense)                                          |Defense                                                                                           |
-|[DODGE_CHANCE](#dodge_chance)                                |Chance for an attack to fail when attempting to damage. Reduces opponent's [DODGE_NEGATION](#dodge_negation). |
+|[DODGE_CHANCE](#dodge_chance)                                |Chance for an attack to fail when attempting to damage. Reduced by opponent's [DODGE_NEGATION](#dodge_negation). |
 |[DODGE_NEGATION](#dodge_negation)                                        |Chance for an attack to land damage. Reduces opponent's [DODGE_CHANCE](#dodge_chance).            |
 |[HEALTH](#health)                                            |Health values                                                                                     |
 |[HEALTH_REGENERATION](#health_regeneration)                  |Rate of Health Regeneration                                                                       |
@@ -162,7 +162,7 @@ The player inherits the `BaseValue` of these stats; Mobs also inherit them as de
 |[PARRY_CHANCE](#parry_chance)                                |Chance to mitigate and reflect damage from sources that melee you from the front.                 |
 |[PARRY_COUNTERATTACK](#parry_counterattack)                  |How much damage is returned to the opponent when parrying.                                        |
 |[PARRY_POWER](#parry_power)                                  |How much damage is mitigated by Parry.                                                            |
-|[PARRY_NEGATION](#parry_negation)                                      |Affects and lowers the [PARRY_CHANCE](#parry_chance) of the opponent.                             |
+|[PARRY_NEGATION](#parry_negation)                                      |Affects and lowers the [PARRY_CHANCE](#parry_chance) of the opponent. Reduced by opponent's [PARRY_NEGATION](#parry_negation). |
 
 
 # Built-in Stats Breakdown
