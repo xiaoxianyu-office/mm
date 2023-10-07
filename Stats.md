@@ -153,16 +153,16 @@ The player inherits the `BaseValue` of these stats; Mobs also inherit them as de
 |[DAMAGE_REDUCTION](#damage_reduction)                        |Generic damage reduction                                                                          |
 |[DEFENSE](#defense)                                          |Defense                                                                                           |
 |[DODGE_CHANCE](#dodge_chance)                                |Chance for an attack to fail when attempting to damage. Reduced by opponent's [DODGE_NEGATION](#dodge_negation). |
-|[DODGE_NEGATION](#dodge_negation)                                        |Chance for an attack to land damage. Reduces opponent's [DODGE_CHANCE](#dodge_chance).            |
+|[DODGE_NEGATION](#dodge_negation)                                        |Reduces opponent's [DODGE_CHANCE](#dodge_chance).            |
 |[HEALTH](#health)                                            |Health values                                                                                     |
 |[HEALTH_REGENERATION](#health_regeneration)                  |Rate of Health Regeneration                                                                       |
 |[LIFESTEAL_CHANCE](#lifesteal_chance)                        |Chance for damage dealt to heal the attacker                                                      |
 |[LIFESTEAL_POWER](#lifesteal_power)                          |How much healing LifeSteal does.                                                                  |
 |[MOVEMENT_SPEED](#movement_speed)                            |Movement Speed.                                                                                   |
-|[PARRY_CHANCE](#parry_chance)                                |Chance to mitigate and reflect damage from sources that melee you from the front.                 |
+|[PARRY_CHANCE](#parry_chance)                                |Chance to mitigate and reflect damage from sources that melee you from the front. Reduced by opponent's [PARRY_NEGATION](#parry_negation). |
 |[PARRY_COUNTERATTACK](#parry_counterattack)                  |How much damage is returned to the opponent when parrying.                                        |
 |[PARRY_POWER](#parry_power)                                  |How much damage is mitigated by Parry.                                                            |
-|[PARRY_NEGATION](#parry_negation)                                      |Affects and lowers the [PARRY_CHANCE](#parry_chance) of the opponent. Reduced by opponent's [PARRY_NEGATION](#parry_negation). |
+|[PARRY_NEGATION](#parry_negation)                                      |Reduces the [PARRY_CHANCE](#parry_chance) of the opponent. |
 
 
 # Built-in Stats Breakdown
