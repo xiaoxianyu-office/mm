@@ -114,7 +114,7 @@ Finally, the `COMPOUND_MULTIPLIER` multiplies all the ADDITIVE results afterward
 
 ##
 
-## Application 
+## Stat Calculation 
 The two `ADDITIVE_MULTIPLIER` and `COMPOUND_MULTIPLIER` modifiers can be easy to mix up; however, this example should make it a bit more clear:
 
 Lets say you have these modifiers:
