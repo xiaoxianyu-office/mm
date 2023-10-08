@@ -29,8 +29,7 @@ Options that can be used in the Stat in order to better customize it
 | Priority             | The priority with which the stat will take effect, compared to others           |
 | MinValue             | Minimum value for the stat                                                      |
 | MaxValue             | Max value for the stat                                                          |
-| Triggers             | What triggers the stat effect. Can be any MythicMobs trigger, minus the "on" bit. (For instance: to use `onAttack`, one needs to write `ATTACK` as a trigger)
-As of launch, only damaging triggers are available; keep an eye on dev builds for expanded functionality.|
+| Triggers             | What triggers the stat effect. Can be any MythicMobs trigger, minus the "on" bit. (For instance: to use `onAttack`, one needs to write `ATTACK` as a trigger)              As of launch, only damaging triggers are available; keep an eye on dev builds for expanded functionality.|
 | ParentStats          | A list of other stats that this stat relies on                                  |
 | Formula              | A formula for the base value if this stat has parent stats                      |
 | FormulaKey           | A key you can use in formulas, when this stat is the parent of another          |
