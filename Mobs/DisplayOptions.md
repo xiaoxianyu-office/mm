@@ -114,7 +114,7 @@ cool_display:
 ```
 
 ### Brightness
-Both blocklight and skylight must be set to brightness. Values must be in range of `0` to `15`.
+Both blocklight and skylight must be set to override brightness. Values must be in range of `0` to `15`.
 
 #### BlockLight & SkyLight
 ```yml
