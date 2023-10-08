@@ -268,6 +268,15 @@ The following attributes are applicable to all mechanics.
 | targetcreative |      | Whether to target creative players                                   | false   |
 | splitPower     | powersplit | Whether to split the power between targets                     | false |
 
+### Examples
+```yaml
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - message{m="This message will only be shown once every 5 seconds!";cooldown=5} @trigger ~onInteract
+  - message{m="This one 5 times in a row over 2 seconds!";repeat=4;repeatInterval=10} @trigger ~onInteract
+```
+
 <!--
 Upcoming Mechanics
 ------------------
