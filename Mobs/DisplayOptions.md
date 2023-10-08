@@ -194,7 +194,7 @@ cool_display:
 ```
 
 #### Transform
-The model transform applied to the item. Supports mythic items. Defaults to `NONE`.
+The model transform applied to the item. Defaults to `NONE`.
 
 |          Types          |
 |:-----------------------:|
