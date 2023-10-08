@@ -114,7 +114,8 @@ These placeholders will return whatever variable has been called. For instance <
 | <skill.var.aura-duration> | Returns the duration of the aura.                                       |
 |  <skill.var.aura-stacks>  | Returns the amount of stacks the aura has.                              |
 |      <skill.targets>      | Returns the amount of inherited targets                                 |
-| <skill.var.interval>      | Returns the interval value in mechanics using repeat & repeatInterval options|
+| <skill.var.interval>      | Returns the interval value in mechanics using `repeat` & `repeatInterval` attributes                  |
+| <skill.var.itr>           | Returns the current iterationin mechanics using `repeat` & `repeatInterval` attributes                  |
 
 ## Target Placeholders
 These placeholders will return whatever target selector has been used. For instance <target.name> + @NearestPlayer will return the name of the player closest to the casting mob. The following are only some of the placeholders that can have a `target` scope, and in general any placeholder that is also present in the [Caster Placeholder](#caster-placeholders) section will also work.
