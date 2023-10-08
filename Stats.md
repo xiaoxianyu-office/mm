@@ -83,7 +83,7 @@ EXAMPLE_STAT:
     Additive: '+<value> Speed'
     Multiply: '+<value>% Speed'
     Compound: 'x<value>% Speed'
-    Static: `Force <value> <display>`
+    Static: 'Force <value> <display>'
     Rounding: 2
 ```
 
@@ -172,6 +172,10 @@ This is a detailed breakdown of the built-in stats provided by MythicMobs. For c
 #### `DODGE_NEGATION`
 Chance for an attack to land damage. Reduces opponent's [DODGE_CHANCE](#dodge_chance).
 As shown below, the displayed name and lore elements of a stat can be customized, such as 'Accuracy' instead of 'Dodge Negation'
+
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 DODGE_NEGATION:
   Enabled: false
@@ -183,8 +187,15 @@ DODGE_NEGATION:
     Compound: 'x<value> Accuracy'
   BaseValue: 0
 ```
+
+</details>
+
+##
 #### `ATTACK_DAMAGE`
 Base Damage Output
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 ATTACK_DAMAGE:
   Enabled: true
@@ -196,8 +207,15 @@ ATTACK_DAMAGE:
     Compound: 'x<value> Damage'
   BaseValue: 1
 ```
+
+</details>
+
+##
 #### `ATTACK_SPEED`
 Attack cooldown frequency. Typically only used for Players.
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 ATTACK_SPEED:
   Enabled: true
@@ -209,8 +227,15 @@ ATTACK_SPEED:
     Compound: 'x<value> Attack Speed'
   BaseValue: 4.0
 ```
+
+</details>
+
+##
 #### `BONUS_DAMAGE`
 Additional Modifier for dealing extra damage
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 BONUS_DAMAGE:
   Enabled: false
@@ -222,8 +247,15 @@ BONUS_DAMAGE:
     Compound: 'x<value> Bonus Damage'
   BaseValue: 0
 ```
+
+</details>
+
+##
 #### `CRITICAL_STRIKE_CHANCE`
 Chance to land a Critical Strike (Chance-based Crit)
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 CRITICAL_STRIKE_CHANCE:
   Enabled: false
@@ -238,8 +270,15 @@ CRITICAL_STRIKE_CHANCE:
   Skills:
   - particles{p=crit;a=50;hS=1;y=1;s=1} @trigger
 ```
+
+</details>
+
+##
 #### `CRITICAL_STRIKE_DAMAGE`
 Damage dealt via Critical Strike
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 CRITICAL_STRIKE_DAMAGE:
   Enabled: false
@@ -251,8 +290,15 @@ CRITICAL_STRIKE_DAMAGE:
     Compound: 'x<value> Critical Damage'
   BaseValue: 1
 ```
+
+</details>
+
+##
 #### `CRITICAL_STRIKE_RESILIENCE`
 Resistance to Critical Strike
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 CRITICAL_STRIKE_RESILIENCE:
   Enabled: false
@@ -264,8 +310,15 @@ CRITICAL_STRIKE_RESILIENCE:
     Compound: 'x<value> Resilience'
   BaseValue: 0
 ```
+
+</details>
+
+##
 #### `DAMAGE_REDUCTION`
 Generic damage reduction
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 DAMAGE_REDUCTION:
   Enabled: false
@@ -277,8 +330,15 @@ DAMAGE_REDUCTION:
     Compound: 'x<value> Damage Reduction'
   BaseValue: 0
 ```
+
+</details>
+
+##
 #### `DEFENSE`
 Defense
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 DEFENSE:
   Enabled: false
@@ -290,8 +350,15 @@ DEFENSE:
     Compound: 'x<value> Defense'
   BaseValue: 0
 ```
+
+</details>
+
+##
  #### `DODGE_CHANCE`
  Chance for an attack to fail when attempting to damage. Reduces opponent's [ACCURACY](#accuracy).
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 DODGE_CHANCE:
   Enabled: false
@@ -304,8 +371,15 @@ DODGE_CHANCE:
   BaseValue: 0
   Skills: []
 ```
+
+</details>
+
+##
 #### `HEALTH`
 Health values
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 HEALTH:
   Enabled: false
@@ -318,8 +392,15 @@ HEALTH:
   BaseValue: 20
   MinValue: 1
 ```
+
+</details>
+
+##
 #### `HEALTH_REGENERATION`
 Rate of Health Regeneration
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 HEALTH_REGENERATION:
   Enabled: false
@@ -334,8 +415,15 @@ HEALTH_REGENERATION:
   MinValue: 0
   Frequency: 60
 ```
+
+</details>
+
+##
 #### `LIFESTEAL_CHANCE`
 Chance for damage dealt to heal the attacker
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 LIFESTEAL_CHANCE:
   Enabled: false
@@ -347,8 +435,15 @@ LIFESTEAL_CHANCE:
     Compound: 'x<value> Lifesteal Chance'
   BaseValue: 0
 ```
+
+</details>
+
+##
 #### `LIFESTEAL_POWER`
 How much healing LifeSteal does.
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 LIFESTEAL_POWER:
   Enabled: true
@@ -360,8 +455,15 @@ LIFESTEAL_POWER:
     Compound: 'x<value> Lifesteal Power'
   BaseValue: 0.1
 ```
+
+</details>
+
+##
 #### `MOVEMENT_SPEED`
 Movement Speed.
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 MOVEMENT_SPEED:
   Enabled: false
@@ -375,8 +477,15 @@ MOVEMENT_SPEED:
   - SPEED
   Formula: '0.2 + (0.2 / (1 + e^(-0.005 * (SPD - 1000))))'
 ```
+
+</details>
+
+##
 #### `PARRY_CHANCE`
 Chance to mitigate and reflect damage from sources that melee you from the front.
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 PARRY_CHANCE:
   Enabled: false
@@ -398,8 +507,15 @@ PARRY_CHANCE:
     - NETHERITE_SWORD
   Skills: []
 ```
+
+</details>
+
+##
 #### `PARRY_COUNTERATTACK`
 How much damage is returned to the opponent when parrying.
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 PARRY_COUNTERATTACK:
   Enabled: false
@@ -411,9 +527,16 @@ PARRY_COUNTERATTACK:
     Multiply: '+<value> Parry Counterattack'
     Compound: 'x<value> Parry Counterattack'
 ```
+
+</details>
+
+##
 #### `PARRY_NEGATION`
 Affects and lowers the [PARRY_CHANCE](#parry_chance) of the opponent.
 As shown below, the displayed name and lore elements of a stat can be customized, such as 'Expertise' instead of 'Parry Negation'
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 PARRY_NEGATION:
   Enabled: false
@@ -425,8 +548,15 @@ PARRY_NEGATION:
     Compound: 'x<value> Expertise'
   BaseValue: 0
 ```
+
+</details>
+
+##
 #### `PARRY_POWER`
 How much damage is mitigated by Parry.
+<details><summary>Configuration</summary>
+<br>
+
 ```yml
 PARRY_POWER:
   Enabled: false
@@ -439,6 +569,9 @@ PARRY_POWER:
     Compound: 'x<value> Parry Power'
 ```
 
+</details>
+
+##
 # Implementations with Configurations
 
 It's important to be aware that players get all of their base stat values from the `stats.yml` file, while mobs get only some of their base values from the `stats.yml` file: if another value is specified as one of their stats, that is applied.
