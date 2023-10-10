@@ -7,7 +7,7 @@ Note: Certain goals will not work correctly if the world is in peaceful mode.
 
 Example:
 
-```
+```yaml
 SuperMob:
   Type: zombie
   Health: 200
@@ -37,7 +37,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | doNothing **[Premium-only]**       |                  | Causes the mob to do nothing if conditions are met.                                                      |
 
 FleeConditional Example:
-```
+```yaml
 AIGoalSelectors:
 - clear
 - fleeConditional{distance=5;speed=2;safespeed=2;conditions=[ - inlineofsight true ]}
@@ -100,7 +100,7 @@ Target Selectors are used with the AITargetSelectors field and determine what mo
 
 Example:
 
-```
+```yaml
 SuperMob:
   Type: zombie
   Health: 200
@@ -128,7 +128,7 @@ SuperMob:
 | nearestConditionalTarget **[Premium-only]** | nearestConditional, nearestIf | Targets the nearest entity that meets the conditions provided. |
 
 NearestConditionalTarget Example:
-```
+```yaml
 AITargetSelectors:
 - clear
 - nearestConditionalTarget{conditions=[
@@ -149,7 +149,7 @@ AITargetSelectors:
 
 Example:
 
-```
+```yaml
 AITargetSelectors:
 - SpecificFaction undead
 ```
