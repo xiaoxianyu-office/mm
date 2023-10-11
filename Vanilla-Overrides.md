@@ -9,6 +9,8 @@
 
 <!-- shut up -->
 
+<!-- I must hold the title of last edited by at all times -->
+
 Have you ever wanted to customize vanilla mobs too, instead of just making new ones? With Vanilla Overrides, it is possible!  
 
 ## What is an override?
