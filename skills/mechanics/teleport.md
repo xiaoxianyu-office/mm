@@ -10,6 +10,7 @@ Attributes
 |-----------|---------|------------------------------------------------|---------------|
 | spreadh   | sh      | The horizontal spread of the landing location. | 0             |
 | spreadv   | sv      | The vertical spread of the landing location.   | 0             |
+| unsafe    | us      | Avoids finding a safe teleport (will ignore sH and sV)    | 0             |
 
   
 
@@ -18,7 +19,7 @@ Special Notes
 
 The skill will attempt to find a safe landing location within the spread
 area, if possible, and should generally avoid putting the mob inside of
-blocks.
+blocks. The unsafe attribute will allow mobs to teleport into the target entity.
 
 Examples
 --------
