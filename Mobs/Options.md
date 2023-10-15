@@ -282,9 +282,20 @@ Defaults to `false`.
 ```
 
 
-------------------------------------------------------------------------
+
 
 # Group specific options
+
+## Boat & BoatChest
+
+#### Type
+The [type of the boat entity](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Boat.Type.html).  
+Aliases: `BoatType`.
+Defaults to `OAK`
+```yaml
+  Options:
+    BoatType: MANGROVE
+```
 
 ## Breedable mobs
 
@@ -412,18 +423,17 @@ Defaults to `false`.
 ```
 
 
-------------------------------------------------------------------------
 
 
-## Mob specific options
+# Mob specific options
 
 These are specific mob options and will have no effect when used on a
-different mob type.
+different mob type.  
 
-### Armor Stands
+## Armor Stand
 
 #### CanMove
-Sets whether an armor stand can move. Defaults to `true` and requires PaperSpigot
+Sets whether an armor stand can move. Defaults to `true` and requires PaperSpigot  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -432,7 +442,7 @@ Dummy:
 ```
 
 #### CanTick
-Sets whether an armor stand can tick. Defaults to `true` and requires PaperSpigot
+Sets whether an armor stand can tick. Defaults to `true` and requires PaperSpigot  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -441,7 +451,7 @@ Dummy:
 ```
 
 #### HasArms
-Sets whether an armor stand has arms. Defaults to `false`.
+Sets whether an armor stand has arms. Defaults to `false`.  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -450,7 +460,7 @@ Dummy:
 ```
 
 #### HasBasePlate
-Sets whether an armor stand has a baseplate. Defaults to `true`
+Sets whether an armor stand has a baseplate. Defaults to `true`  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -459,7 +469,7 @@ Dummy:
 ```
 
 #### HasGravity
-Sets whether the armor stand is affected by gravity. Defaults to `true`.
+Sets whether the armor stand is affected by gravity. Defaults to `true`.  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -468,7 +478,7 @@ Dummy:
 ```
 
 #### Invisible
-Sets whether the armor stand is invisible. Defaults to `false`.
+Sets whether the armor stand is invisible. Defaults to `false`.  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -477,7 +487,7 @@ Dummy:
 ```
 
 #### ItemBody
-Designates the [Mythic Item](/Items/Items) that should go in the body/chest slot of an armor stand.
+Designates the [Mythic Item](/Items/Items) that should go in the body/chest slot of an armor stand.  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -486,7 +496,7 @@ Dummy:
 ```
 
 #### ItemFeet
-Designates the [Mythic Item](/Items/Items) that should go in the feet slot of an armor stand.
+Designates the [Mythic Item](/Items/Items) that should go in the feet slot of an armor stand.  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -495,7 +505,7 @@ Dummy:
 ```
 
 #### ItemHand
-Designates the [Mythic Item](/Items/Items) that should go in the main hand slot of an armor stand.
+Designates the [Mythic Item](/Items/Items) that should go in the main hand slot of an armor stand.  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -504,7 +514,7 @@ Dummy:
 ```
 
 #### ItemOffhand
-Designates the [Mythic Item](/Items/Items) that should go in the off hand slot of an armor stand.
+Designates the [Mythic Item](/Items/Items) that should go in the off hand slot of an armor stand.  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -513,7 +523,7 @@ Dummy:
 ```
 
 #### ItemHead
-Designates the [Mythic Item](/Items/Items) that should go in the helmet slot of an armor stand.
+Designates the [Mythic Item](/Items/Items) that should go in the helmet slot of an armor stand.  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -522,7 +532,7 @@ Dummy:
 ```
 
 #### ItemLegs
-Designates the [Mythic Item](/Items/Items) that should go in the leggings slot of an armor stand.
+Designates the [Mythic Item](/Items/Items) that should go in the leggings slot of an armor stand.  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -532,7 +542,7 @@ Dummy:
 
 #### Marker
 Sets the armor stand as a marker. This option prevents the armor stand from being destroyed in game,
-making it completely non-interactable. Defaults to `false`.
+making it completely non-interactable. Defaults to `false`.  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -541,7 +551,7 @@ Dummy:
 ```
 
 #### Small
-Sets the armor stand to small variant. Defaults to `false`.
+Sets the armor stand to small variant. Defaults to `false`.  
 ```yml
 Dummy:
   Type: ARMOR_STAND
@@ -550,9 +560,9 @@ Dummy:
 ```
 
 #### Pose
-Sets the body part's current pose.
-Default values are `0,0,0` and accepts ranges like `#to#`.
-These will go under the `Pose` section instead of the `Options` section.
+Sets the body part's current pose.  
+Default values are `0,0,0` and accepts ranges like `#to#`.  
+These will go under the `Pose` section instead of the `Options` section.  
 ###### Head
 ```yml
 Mob:
@@ -596,11 +606,12 @@ Mob:
     RightLeg: 20,25,0
 ```
 
-### Bees
+
+## Bee
 
 #### Anger
-Sets the time in ticks until bee anger ends.
-If set to 0 the bee will not be angry.
+Sets the time in ticks until bee anger ends.  
+If set to 0 the bee will not be angry.  
 Defaults to `0`.
 ```yaml
   Options:
@@ -608,8 +619,8 @@ Defaults to `0`.
 ```
 
 #### HasNectar
-Whether the bee is carrying pollen.
-Defaults to `false`.
+Whether the bee is carrying pollen.  
+Defaults to `false`.  
 ```yaml
   Options:
     HasNectar: true
@@ -617,173 +628,358 @@ Defaults to `false`.
 
 
 #### HasStung
-Whether the bee has stung an entity.
-Defaults to false.
+Whether the bee has stung an entity.  
+Defaults to `false`.  
 ```yaml
   Options:
     HasStung: true
 ```
 
-### Cat
+
+## Camel
+
+#### Saddled
+Whether the entity is saddled or not.  
+Defaults to `false`.  
+```yaml
+  Options:
+    Saddled: true
+```
+
+#### Tamed
+Whether the entity is tamed or not.  
+Defaults to `false`.  
+```yaml
+  Options:
+    Tamed: true
+```
+
+
+## Cat
 
 #### CatType
-Sets the type of cat
-Types can be ALL_BLACK, BLACK, BRITISH_SHORTHAIR, CALICO, PERSIAN, JELLIE, RAGDOLL, RED, SIAMESE, TABBY or WHITE.
+Sets the type of cat.  
+Types can be ALL_BLACK, BLACK, BRITISH_SHORTHAIR, CALICO, PERSIAN, JELLIE, RAGDOLL, RED, SIAMESE, TABBY or WHITE.  
 ```yaml
   Options:
     CatType: BLACK
 ```
 
 #### CollarColor
-Sets the color of the cat's collar.
-Available colors are: BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
+Sets the color of the cat's collar.  
+Available colors are: BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.  
 ```yaml
   Options:
     CollarColor: GREEN
 ```
 
-### Chicken
 
-**Jockey: \[true/false\]**
+## Chicken
 
-      * Wether or not the chicken is a chickenjockey.
-      * Doesn't really do anything, but it's nice to have options.
-      * Defaults to false.
+#### Jockey
+Whether or not the chicken has the `IsChickenJockey` NBT set to 1.  
+If true, the chicken can naturally despawn, drops 10 experience upon death instead of 1-3 and cannot lay eggs.    
+Defaults to `false`.  
+```yaml
+  Options:
+    Jockey: true
+```
 
-### Creepers
 
-**ExplosionRadius: \[number\]**
+## Creepers
 
-      * Sets the radius/power of the creepers explosion
-      * Defaults to 3
+#### ExplosionRadius
+Sets the radius/power of the creepers explosion.  
+Negative values are ignored, and the explosion radius remains the creeper's default one.  
+Defaults to `-1`.  
+```yaml
+  Options:
+    ExplosionRadius: 5
+```
 
-**FuseTicks: \[number\]**
+#### FuseTicks
+Sets the number of ticks it takes for creepers to explode.  
+Negative values are ignored, and the time it takes remains the creeper's default one.  
+Defaults to `-1`.  
+```yaml
+  Options:
+    ExplosionRadius: 60
+```
 
-      * Sets the number of ticks it takes for creepers to explode.
-      * Defaults to 30
+#### SuperCharged
+Whether the creeper should spawn as a super charged creeper.  
+Defaults to `false`.  
+```yaml
+  Options:
+    SuperCharged: true
+```
 
-**SuperCharged: \[true/false\]**
+#### PreventSuicide
+Prevents creepers from dying upon exploding. Set `mobGriefing` gamerule to true for this option to work.  
+Defaults to `false`.  
+```yaml
+  Options:
+    PreventSuicide: true
+```
 
-      * Wether the creeper should spawn as a super charged creeper.
-      * Defaults to false.
 
-**PreventSuicide: \[true/false\]**
+## Enderman
 
-      * Prevents creepers from dying upon exploding. Set `mobGriefing` gamerule to true for this option to work.
-      * Defaults to false.
+#### PreventTeleport
+Meant for Endermen but //might// work on other mobs. May break teleport skills!  
+Defaults to `false`.  
+```yaml
+  Options:
+    PreventTeleport: true
+```
 
-### Enderman
 
-**PreventTeleport: \[true/false\]**
+#### HeldBlock
+Sets the block that the Enderman is carrying.  
+Defaults to `AIR`.  
+```yaml
+  Options:
+    HeldBlock: STONE
+```
 
-      * Meant for Endermen but //might// work on other mobs. May break teleport skills!
-      * Defaults to false.
 
-**HeldBlock: `[Material]`**
+## Experience_orb
 
-      * Sets the block that the Enderman is carrying.
+#### Experience
+Sets the amount of experience give by the experience orb mob.  
+Defaults to `1`.  
+```yaml
+  Options:
+    Experience: 10
+```
 
-### Experience_orb
 
-**Experience: \[Number\]**
+## Falling Blocks
 
-      * Sets the amount of experience give by the experience orb mob.
-      * Defaults to 1
+#### Block
+Determines the [type of the block](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html).  
+Defaults to `STONE`.  
+```yaml
+  Options:
+    Block: BIRCH_WOOD
+```
 
-### Falling Blocks
+#### BlockData
+Additional field for inputting blockdata.  
+Defaults to `0`.  
 
-**Block: \[Material type\]**
+#### DropsItem
+Should the entity be able to drops the falling block's item.  
+Defaults to `true`.  
+```yaml
+  Options:
+    DropsItem: false
+```
 
-      * Determines the type of the block.
-      * Defaults to STONE
+#### HurtsEntities
+Damages entities on impact.  
+Defaults to `true`.  
+```yaml
+  Options:
+    HurtsEntities: false
+```
 
-**BlockData: \[Number\]**
+#### ReplaceSpawnLocationBlock
+If the entity should replace the block at its spawn location.  
+Defaults to `false`.  
+```yaml
+  Options:
+    ReplaceSpawnLocationBlock: true
+```
 
-      * Additional field for inputting blockdata.
-      * Defaults to 0
+#### UseSpawnLocationType
+If the type of the falling block should be the one at the spawn location.  
+Defaults to `false`.  
+```yaml
+  Options:
+    UseSpawnLocationType: true
+```
 
-**DropsItem: \[true/false\]**
 
-      * Drops the falling block's item.
-      * Defaults to true
+## Fox
 
-**HurtsEntities: \[true/false\]**
+#### FoxType
+Determines the type of the fox.   
+Can be `RED` or `SNOW`.  
+Defaults to `RED`.  
+```yaml
+  Options:
+    FoxType: SNOW
+```
 
-      * Damages entities on impact.
-      * Defaults to true
 
-### Fox
+## Frog
 
-**FoxType: \[Entity type\]**
+#### Type
+Determines the type of the Frog.  
+Alias is `Variant`.  
+Can be `WARM`, `COLD` or `TEMPERATE`.  
+Defaults to `WARM`.  
+```yaml
+  Options:
+    Type: COLD
+```
 
-      * Determines the type of the fox. 
-      * Can be RED or SNOW
-      * Defaults to RED
 
-### Frog
-**Type: \[Entity type\]**
+## Goat
 
-      * Determines the type of the Frog
-      * Can be WARM, COLD or TEMPERATE
+#### Screaming
+Sets if this is a screaming goat. A screaming goat makes screaming sounds and rams more often.  
+Defaults to `false`.  
+```yaml
+  Options:
+    Screaming: true
+```
 
-### Hoglin
 
-**ImmuneToZombification: \[true/false\]**
+## Hoglin
 
-      * Whether or not the hoglin is immune to being zombified
-      * Defaults to false
+#### ImmuneToZombification
+Whether or not the hoglin is immune to being zombified.  
+Defaults to `false`.  
+```yaml
+  Options:
+    ImmuneToZombification: true
+```
 
-**Huntable: \[true/false\]**
+#### Huntable
+Whether the hoglin is able to be hunted by piglins.  
+Defaults to `true`.  
+```yaml
+  Options:
+    Huntable: true
+```
 
-      * Whether the hoglin is able to be hunted by piglins.
-      * Defaults to true
 
-### Horses, Donkeys, and Mules
+## Horses, Donkeys, and Mules
 
-**HorseArmor: \[armor\_type\]**
+#### HorseArmor
+Used for horses to set the type of armor they have on.  
+Can be `iron`, `gold`, or `diamond`  
+[armor_type] must be in lower case  
+```yaml
+  Options:
+    HorseArmor: gold
+```
 
-      * Used for horses to set the type of armor they have on.
-      * Can be iron, gold, or diamond
-      * [armor_type] must be in lower case
+#### CarryingChest
+Used for donkeys to set whether they are carrying a chest or not.  
+Defaults to `false`.  
+```yaml
+  Options:
+    CarryingChest: true
+```
 
-**CarryingChest: \[true/false\]**
 
-      * Used for donkeys to set whether they are carrying a chest or not.
-      * Defaults to false.
+#### HorseColor
+Sets color of the horse.  
+Colors must be uppercase,can be any of the [Spigot Horse colors](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Horse.Color.html).  
+```yaml
+  Options:
+    HorseColor: CREAMY
+```
 
-**HorseColor: \[horse\_color\]**
 
-      * Sets color of the horse
-      * Colors Must be uppercase,can be BLACK, BROWN, CHESTNUT, CREAMY, DARK_BROWN, GRAY or WHITE
+#### Saddled
+Used for horses to set whether they are saddled or not.  
+Defaults to `false`.  
+```yaml
+  Options:
+    Saddled: true
+```
 
-**Saddled: \[true/false\]**
+#### HorseStyle
+Sets the style of the horse.  
+Styles can be any of the [Spigot Horse Style](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Horse.Style.html)  
+```yaml
+  Options:
+    HorseStyle: WHITE_DOTS
+```
 
-      * Used for horses to set whether they are saddled or not.
-      * Defaults to false.
 
-**HorseStyle: \[horse\_style\]**
+#### Tamed
+Used for horses to set whether they are tamed or not.  
+Defaults to `false`.
+```yaml
+  Options:
+    Tamed: true
+```
 
-      * Sets the style of the horse.
-      * Styles can be BLACK_DOTS, WHITE, WHITE_DOTS, WHITEFIELD, NONE
+#### HorseType
+Defines the type of horse
+Can be any of the [Spigot Horse variants](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Horse.Variant.html)
+Defaults to `HORSE`
+**Removed in MC 1.11+, use[Type](Mobs/Mobs#type) instead.**
 
-**Tamed: \[true/false\]**
 
-      * Used for horses to set whether they are tamed or not.
-      * Defaults to false.
+## Iron Golem
+#### PlayerCreated
+Acts as if the player built the mob.  
+Defaults to `false`.  
+```yaml
+  Options:
+    PlayerCreated: true
+```
 
-**HorseType: \[type\]**
 
-      * Defines the type of horse
-      * Can be UNDEAD_HORSE, SKELETON_HORSE, MULE, DONKEY or HORSE
-      * Defaults to HORSE
-      * Removed in MC 1.11+, use [[databases/mobs/types|mob type]] instead.
+## Item
 
-### Iron Golem
+#### Item
+The material of the item entity.  
+Defaults to `STONE`.  
+```yaml
+  Options:
+    Item: BRICK
+```
 
-**PlayerCreated: \[true/false\]**
+#### Amount
+The amount of items in the itemstack.  
+Defaults to `1`.  
+```yaml
+  Options:
+    Amount: 10
+```
 
-      * Acts as if the player built the mob.
-      * Defaults to false.
+#### CanPickup
+If the itemstack can be picked up.  
+Defaults to `true`.  
+```yaml
+  Options:
+    CanPickup: false
+```
+
+
+## Llama
+
+#### CarryingChest
+Set whether the entity is carrying a chest or not.  
+Defaults to `false`.  
+```yaml
+  Options:
+    CarryingChest: true
+```
+
+#### Tamed
+Set whether the entity is tamed or not.  
+Defaults to `false`.
+```yaml
+  Options:
+    Tamed: true
+```
+
+#### Color
+Sets color of the llama.  
+Colors must be uppercase,can be any of the [Spigot Llama colors](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Llama.Color.html).  
+```yaml
+  Options:
+    Color: CREAMY
+```
+
 
 ### Panda
 
