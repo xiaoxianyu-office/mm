@@ -12,8 +12,8 @@ Stats are defined in the`stats.yml` file. This file can exist in the root direct
 - [Modifiers](#modifiers)
 - [Built In Stats](#built-in-stats)
 - [Implementations with Configurations](#implementations-with-configurations)
-  - [Mobs](#Mobs)
-  - [Items](#Items)
+  - [Mobs](#mobs)
+  - [Items](#items)
 - [Examples](#Examples)
   - [Example Custom Stats](#example-custom-stats)
 
