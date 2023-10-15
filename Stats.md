@@ -13,6 +13,7 @@ Stats are defined in the`stats.yml` file. This file can exist in the root direct
 - [Built In Stats](#built-in-stats)
 - [Implementations with Configurations](#implementations-with-configurations)
   - [Mobs](#Mobs)
+  - [Items](#Items)
 - [Examples](#Examples)
   - [Example Custom Stats](#example-custom-stats)
 
@@ -587,6 +588,16 @@ Some_Mob:
   - CRITICAL_STRIKE_CHANCE 0.2
 ```
 
+## Items
+```yaml
+ExampleItem:
+  Id: BLAZE_ROD
+  Display: 'Test'
+  Stats:
+  - CRITICAL_STRIKE_CHANCE 0.5 ADDITIVE
+  - CRITICAL_STRIKE_DAMAGE 2.0 ADDITIVE
+  - HEALTH 20to30 ADDITIVE
+```
 
 # Examples
 
