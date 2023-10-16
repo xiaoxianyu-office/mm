@@ -1,6 +1,3 @@
-**In-line Conditions**
-=============================================
-
 # TargetConditions
 **In-Line TargetConditions are Premium Only!**
 
