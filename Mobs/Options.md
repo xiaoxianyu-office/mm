@@ -981,104 +981,172 @@ Colors must be uppercase,can be any of the [Spigot Llama colors](https://hub.spi
 ```
 
 
-### Panda
+## Panda
 
-**MainGene: \[Gene Type\]**
+#### MainGene
+Sets the main [gene](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Panda.Gene.html) that the panda can pass on to its offspring.  
+Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN.  
+Defaults to `NORMAL`.  
+```yaml
+  Options:
+    MainGene: LAZY
+```
 
-      * Sets the main gene that the panda can pass on to it's offspring.
-      * Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN
-      * Defaults to NORMAL
 
-**HiddenGene: \[Gene Type\]**
+#### HiddenGene
+Sets the hidden [gene](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Panda.Gene.html) that the panda can pass on to its offspring.  
+Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN.  
+Defaults to `NORMAL`.  
+```yaml
+  Options:
+    HiddenGene: WORRIED
+```
 
-      * Sets the hidden gene that the panda can pass on to it's offspring.
-      * Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN
-      * Defaults to NORMAL
 
-### Piglin
+## Parrot
 
-**AbleToHunt: \[true/false\]**
+#### Variant
+The [variant](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Parrot.Variant.html) of the parrot.  
+```yaml
+  Options:
+    Variant: GRAY
+```
 
-      * Whether or not the piglin is able to hunt
-      * Defaults to false
 
-**ImmuneToZombification: \[true/false\]**
+## Pig
 
-      * Whether or not the piglin is immune to being zombified
-      * Defaults to false
+#### Saddled
+If the pig is saddled.  
+Defaults to `false`.
+```yaml
+  Options:
+    Saddled: true
+```
 
-### Piglin Brutes
 
-**ImmuneToZombification: \[true/false\]**
 
-      * Whether or not the piglin is immune to being zombified
-      * Defaults to false
+## Piglin
 
-### Pigs
+#### AbleToHunt
+Whether or not the piglin is able to hunt.  
+Defaults to `true`.  
+```yaml
+  Options:
+    AbleToHunt: false
+```
 
-**Saddled: \[true/false\]**
 
-      * Wether or not the pig spawns with a saddle.
-      * Defaults to false
+#### ImmuneToZombification
+Whether or not the piglin is immune to being zombified.  
+Defaults to `true`.  
+```yaml
+  Options:
+    ImmuneToZombification: false
+```
 
-### Rabbits
 
-**RabbitType: \[rabbit\_type\]**
+## Piglin Brute
 
-      * Sets type of rabbit
-      * Types can be BLACK, BLACK_AND_WHITE, BROWN, GOLD, SALT_AND_PEPPER, THE_KILLER_BUNNY or WHITE
+#### ImmuneToZombification
+Whether or not the piglin is immune to being zombified.  
+Defaults to `true`.  
+```yaml
+  Options:
+    ImmuneToZombification: false
+```
 
-**Baby: \[true/false\]**
 
-      * Not sure why this exists.
-      * Defaults to false.
+## Rabbit
 
-**IsKillerBunny: \[true/false\]**
+#### IsKillerBunny
+Alias: `Angry`.  
+Sets the rabbit as the Killer Bunny.  
+Defaults to `false`.
+```yaml
+  Options:
+    IsKillerBunny: true
+```
 
-      * Sets the rabbit as the Killer Bunny.
 
-### Sheep
+#### RabbitType
+Sets the [type](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Rabbit.Type.html) of rabbit.  
+Types can be BLACK, BLACK_AND_WHITE, BROWN, GOLD, SALT_AND_PEPPER, THE_KILLER_BUNNY or WHITE
+```yaml
+  Options:
+    RabbitType: SALT_AND_PEPPER
+```
 
-**Sheared: \[true/false\]**
 
-      * Sheep is already sheared.
-      * Defaults to false.
+## Sheep
 
-### Silverfish
+#### Sheared
+Whether the Sheep is already sheared.  
+Defaults to `false`.  
+```yaml
+  Options:
+    Sheared: true
+```
 
-**PreventBlockInfection: \[true/false\]**
 
-      * Prevent silverfish from infecting blocks.
-      * Defaults to true.
+## Silverfish
+
+#### PreventBlockInfection
+Prevent silverfish from infecting blocks.  
+Defaults to `false`.
+```yaml
+  Options:
+    PreventBlockInfection: true
+```
+
 
 ### Snow Golem
 
-**Derp: \[true/false\]**
+## Derp
+Whether the Snow Golem has its pumpkin already sheared.  
+Defaults to `false`.
+```yaml
+  Options:
+    Derp: true
+```
 
-      * Snow Golem is already sheared pumpkin
-      * Defaults to false.
 
-**PreventSnowFormation: \[true/false\]**
+#### PreventSnowFormation
+Prevent the Snow Golem from creating snow.  
+Defaults to `false`.  
+```yaml
+  Options:
+    PreventSnowFormation: true
+```
 
-      * Prevent snowmen from creating snow.
-      * Defaults to false.
 
-### TNT
+## TNT
 
-**FuseTicks: \[number\]**
+#### FuseTicks
+How long the TNT takes to explode.  
+Defaults to `-1` (instantly).
+```yaml
+  Options:
+    FuseTicks: 100
+```
 
-      * How long the TNT takes to explode
-      * Defaults to -1 (instantly)
 
-**ExplosionYield: \[number\]**
+#### ExplosionYield
+Determines the strength of the explosion.  
+Defaults to `-1` (none).
+```yaml
+  Options:
+    ExplosionYield: 2
+```
 
-      * Determines the strength of the explosion
-      * Defaults to -1 (none)
 
-**Incendiary: \[true/false\]**
+#### Incendiary
+Whether the explosion is capable of starting fires.  
+Defaults to `false`.
+```yaml
+  Options:
+    Incendiary: true
+```
 
-      * Wether the explosion is capable of starting fires
-      * Defaults to false
 
 ### Tropical Fish
 
