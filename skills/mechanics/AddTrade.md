@@ -13,6 +13,7 @@ The villager will become a nitwit if it doesn't have any profession assigned whe
 | result    | r         | The result item of the trade                                         | STONE   |
 | maxUses   | uses, u   | The uses of the trade                                                |<Max Int>|
 | experienceReward | expReward, exp, dropExp | If the trade should drop experience             | false   |
+| villExp |  | How much experience is awarded for the trade             | 0   |
 | priceMultiplier|multiplier|The multiplier for the price when the player has made the villager angry |0 |
 | demand    | d         | The demand of the trade                                              | 1       |
 | specialPrice | special| The special price for when the villager is friendly to the player (player reputation or hero of the village effect)                                                      | 1       |
