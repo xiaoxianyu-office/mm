@@ -45,7 +45,7 @@ TestingBreakBlock:
   - breakblock{forcesync=true;doEffect=false;doDrops=true;useTool=true} @origin
 ```
 
-When a player calls this with a tool in their hand it drops the block and does not player the particle effects. 
+When a player calls this with a tool in their hand it drops the block and does not play the particle effects. 
 
 4.
 ```yaml
