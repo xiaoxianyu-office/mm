@@ -1,6 +1,3 @@
-Mob Levels
-==========
-
 Mob levels are a useful function for adding levels to your mob, which allow for several useful features.
 
 For example, you can have the mob's damage and health scale up as their level increases, or you can have them drop more items depending on what their level is (see _BonusLevelItems_ in [Droptable Options](/Items/Drops#droptable-options)).
@@ -11,24 +8,22 @@ Mob levels can also be influenced by world scaling (see below), [Random
 Spawners](/Random%20Spawns) or the [SetLevel
 mechanic](/skills/mechanics/setlevel).
 
-This page will only be covering the basics, a future guides/examples
-section may include more in-depth tutorials later on.
 ```yaml
-    Zombie:
-      MobType: zombie
-      Health: 100
-      Damage: 10
-      Display: '&5Zombie Lvl - <caster.level>'
-      Options:
-        MovementSpeed: 0.3
-      Drops:
-      - myDroptable
-      LevelModifiers:
-        Health: 5
-        Damage: 0.5
+Zombie:
+  Type: zombie
+  Health: 100
+  Damage: 10
+  Display: '&5Zombie Lvl - <caster.level>'
+  Options:
+    MovementSpeed: 0.3
+  Drops:
+  - myDroptable
+  LevelModifiers:
+    Health: 5
+    Damage: 0.5
 ```
-LevelModifiers
---------------
+
+# LevelModifiers
 
 These options, put under the LevelModifiers section, will increase the
 mobs respective stats by the given numbers per level. These stats will
@@ -36,17 +31,17 @@ be added on top of their base stats.
 
 Level modifiers may not work if you didn't specify base values
 for the affected attributes in the mob configuration.
+```yaml
+  LevelModifiers:
+    Health: [number]
+    Damage: [number]
+    KnockbackResistance: [number]
+    Power: [number]
+    Armor: [number]
+    MovementSpeed: [number]
+```
 
-      * **Health: [number]**
-      * **Damage: [number] ((The damage value will never influence the damage dealt by potions (witches) or arrows (skeletons) ))**
-      * **KnockbackResistance: [number]**
-      * [Power](/Mobs/Power)**: [number]**
-      * **Armor: [number]**
-      * **MovementSpeed: [number]**
-      * **AttackSpeed: [number]**
-
-World Scaling
--------------
+# World Scaling
 
 Mob levels (for random-spawned mobs) can automatically be set by the plugin by specifying world scaling settings in the config.yml located in */MythicMobs*/. Setting it up is simple. By default the section for scaling in your config.yml should look something like this:
 ```yaml
