@@ -53,6 +53,7 @@ Mob levels (for random-spawned mobs) can automatically be set by the plugin by s
       Scaling:
         Default:
           Enabled: false
+          ScaleVanillaMobs: false
           PerBlocksFromSpawn: 500
         world2:
           Enabled: false
@@ -74,4 +75,4 @@ The above examples shows different worlds with different levels of scaling. Usin
 
 These options will automatically be applied to all mobs that are summoned into the game using MythicMobs' [Random Spawning](/[[databases/spawners/randomspawners). You can use the **UseWorldScaling: \[true/false\]** option on your randomspawn configurations to control whether mobs are supposed to be affected by world scaling.
 
-Note that world scaling options will never affect mobs in *VanillaMobs.yml* located in */MythicMobs/Mobs*. Vanilla overrides cannot be affected by world scaling at all. It will only work on custom mobs created in their own configuration files.
+> Note that world scaling options will never affect [Vanilla Overrides](Vanilla-Overrides) unless the `ScaleVanillaMobs` option for that world is set to `true`.
