@@ -35,7 +35,7 @@ another_mob:
 ```
 
 #### Display
-Set the display name of the mob.
+Sets the display name of the mob.
 This option supports color codes and [placeholders].
 **The mob's name will not change or update on its own, you have to use [setname] mechanic to change or update it.**
 ```yml
@@ -134,7 +134,7 @@ another_example:
 ```
 
 #### Display Options
-Set the display entity options.
+Sets the display entity options.
 A list of available display options can be found in the [Display Options](Mobs/DisplayOptions) page
 ```yml
 cool_display:
@@ -280,6 +280,18 @@ example_mob:
   Skills:
     - swap{} @trigger ~onInteract
 ```
+
+#### Nameplate
+Forces the usage of Mythic nameplates on the mob, if the `Enabled: true` option is used.  
+This makes display names like `Display: "Hello\nWorld!"` be displayed on two separate lines.
+```yaml
+ExampleMob:
+  Type: PIG
+  Display: "Hello\nWorld!
+  Nameplate:
+    Enabled: true
+```
+
 
 #### Trades
 Customizes the villager trades.
