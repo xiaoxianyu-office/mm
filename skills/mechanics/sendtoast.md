@@ -1,11 +1,11 @@
-Mechanic: Send Toast
 ====================
+
+## Description:
 
 Displays a "toast" message to all targeted players. Does nothing if the
 target is not a player.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description                                                                         | Default Value  |
 |-----------|---------|-------------------------------------------------------------------------------------|----------------|
@@ -14,11 +14,10 @@ Attributes
 | message   | msg,m   | The message to send. Must be in double-quotes.                                      | NONE           |
 | frame     | f       | The type of toast to send. MUST BE LOWERCASE. Options are: challenge, task or goal. | challenge      |
 
-  
+## Examples:
 
-Examples
---------
-
-      Skills:
-      - sendtoast{icon=DIAMOND; iconnbt={CustomModelData:1};message="Kill a boss!";frame=challenge} @PlayersInRadius{r=10}
-      - ...
+```yaml
+Skills:
+  - sendtoast{icon=DIAMOND; iconnbt={CustomModelData:1};message="Kill a boss!";frame=challenge} @PlayersInRadius{r=10}
+  - ...
+```
