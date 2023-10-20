@@ -19,7 +19,7 @@ the same thing.
 
 This skill would give the casting mob the tag "Test".
 ```yaml
-TagSkill
+TagSkill:
   Skills:
     - addtag{t=Test} @self
 ```
