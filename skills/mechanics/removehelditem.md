@@ -1,17 +1,19 @@
 ==============
 
-## Description
+## Description:
+
 Removes the given amount from the target player's held item. 
 
 
-## Attributes
+## Attributes:
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount    | a         | The amount to remove                                                 | 1       |
 
 
-## Examples
+## Examples:
+
 ```yaml
 ExampleSkill:
   Skills:
@@ -19,6 +21,7 @@ ExampleSkill:
 ```
 
 
-## Aliases
+## Aliases:
+
 - [x] consumeHeldItem
 - [x] takeHeldItem
