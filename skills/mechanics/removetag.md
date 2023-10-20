@@ -19,7 +19,7 @@ Examples:
 
 This skill would give the casting mob the tag "Test".
 ```yaml
-TagSkill
+TagSkill:
   Skills:
     - removetag{t=Test} @self
 ```
