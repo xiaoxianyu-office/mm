@@ -12,7 +12,7 @@ Sets the tongue target for a frog caster to the target entity.
 
 ## Examples:
 
-Sets the frog's tongue to the trigger trigger when right clicked
+Sets the frog's tongue to the trigger trigger when right clicked.
 ```yaml
 MyLovingFrog:
   Type: FROG
