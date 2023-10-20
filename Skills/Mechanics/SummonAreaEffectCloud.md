@@ -29,7 +29,7 @@ A list of particle types can be found **[here](/skills/effects/particles/types)*
 
 ```yaml
   Skills:
-  - summonareaeffectcloud{d=600;r=20;rrot=1} @self
+    - summonareaeffectcloud{d=600;r=20;rrot=1} @self
 ```
 
 ## Aliases:
