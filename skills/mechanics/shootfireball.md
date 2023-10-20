@@ -1,11 +1,12 @@
-Mechanic: Shoot Fireball
 ========================
+
+
+## Description:
 
 Shoots a fireball from the mob towards the target entity or location.
 **Caution** the large version of this fireball can grief blocks.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute     | Aliases   | Description                                                                    | Default Value |
 |---------------|-----------|--------------------------------------------------------------------------------|---------------|
@@ -17,19 +18,16 @@ Attributes
 | playsound     | ps        | Whether or not to play the fireball launching sound when it is created         | false         |
 | type          | t          | SMALL/LARGE/DRAGON Added in MM 4.11 | SMALL |
 
-  
-
-Examples
---------
+## Examples:
 
 This example would shoot a barrage of 3 fast-moving fireballs at the
 target.
 ```yaml
-    FireballBarrage:
-      Skills:
-      - shootfireball{y=1;v=4} @target
-      - delay 10
-      - shootfireball{y=1;v=4} @target
-      - delay 10
-      - shootfireball{y=1;v=4} @target
+FireballBarrage:
+  Skills:
+    - shootfireball{y=1;v=4} @target
+    - delay 10
+    - shootfireball{y=1;v=4} @target
+    - delay 10
+    - shootfireball{y=1;v=4} @target
 ```
