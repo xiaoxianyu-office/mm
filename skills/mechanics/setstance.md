@@ -1,11 +1,11 @@
-Mechanic: SetStance
 ===================
+
+## Description:
 
 Sets the "stance" attribute of the target Mythic Mob to the given
 string. Does nothing if the target is not a Mythic Mob.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description                   | Default Value |
 |-----------|---------|-------------------------------|---------------|
@@ -13,8 +13,7 @@ Attributes
 
   
 
-Special Notes
--------------
+### Special Notes
 
 This is used in conjunction with the **stance condition** (see
 [Conditions](/conditions/start)) to create different stances or phases
@@ -23,20 +22,21 @@ match the current stance loosely, meaning if you set the stance to
 "angry fiery explosive" the stance condition will be true for "stance
 fiery".
 
-Examples
---------
+## Examples:
 
 This skill would change the caster's phase to "bowphase"
-
-    StanceChangeSkill
-      Skills:
-      - setstance{stance=bowphase} @self
+```yaml
+StanceChangeSkill
+  Skills:
+    - setstance{stance=bowphase} @self
+```
 
 This skill would only be usable when the caster had the stance
 "bowphase"
-
-    AnotherSkill:
-      Conditions:
-      - stance bowphase
-     Skills:
-      - ...some bow skills
+```yaml
+AnotherSkill:
+  Conditions:
+    - stance bowphase
+  Skills:
+    - ...some bow skills
+```
