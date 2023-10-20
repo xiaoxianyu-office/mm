@@ -1,4 +1,3 @@
-Mechanic: Mount
 ===============
 
 Causes the casting mob to summon a specified MythicMob and mount it.
@@ -24,7 +23,8 @@ Examples
 
 This example would summon a Mythic Mob of the type "UndeadMount" and
 make the caster mount it.
-
-      CallSkeletalHorse:
-        Skills:
-        - mount{type=UndeadMount}
+```yaml
+CallSkeletalHorse:
+  Skills:
+    - mount{type=UndeadMount}
+```
