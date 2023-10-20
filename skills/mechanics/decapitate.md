@@ -1,4 +1,3 @@
-Mechanic: Decapitate
 --------------------
 
 Drops a copy of the target players head. Doesn't do anything if used
@@ -11,6 +10,7 @@ None!
 ### Examples
 
 Drops the head of the person who clicked on the mob.
-
-    Skills:
-    - decapitate @trigger ~onInteract
+```yaml
+Skills:
+  - decapitate @trigger ~onInteract
+```
