@@ -1,4 +1,3 @@
-Mechanic: Message
 =================
 
 Sends a chat message to the target, if the target is a player. [Color
@@ -27,6 +26,7 @@ Audience attribute was added in 4.12. possible audience options are: caster, tar
 
 Examples
 --------
-
-      Skills:
-      - message{m="<mob.name>&f<&co> Hahaha! You will all die!"} @PlayersInRadius{r=30}
+```yaml
+ Skills:
+   - message{m="<mob.name>&f<&co> Hahaha! You will all die!"} @PlayersInRadius{r=30}
+```
