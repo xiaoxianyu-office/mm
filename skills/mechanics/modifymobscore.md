@@ -1,6 +1,6 @@
 ===========================
 
-Modifies the scoreboard-objective value of the fake casting mob.
+Modifies the scoreboard-objective value of the casting mob.
 
 A list of possible operations for the action-syntax:
 
