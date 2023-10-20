@@ -1,21 +1,21 @@
-Mechanic: Set Mob Color
 =======================
+
+## Description:
 
 Changes the target color, can only be applied to colorable mobs such as
 shulkers or sheeps.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description    | Default Value |
 |-----------|---------|----------------|---------------|
 | color     | c       | The color name |               |
 
-  
 
-Examples
---------
-
-      Skills:
-      - setcolor{color=blue} @self ~onSpawn
-      - ...
+## Examples:
+Sets the color of colorable mobs to blue when it spawns.
+```yaml
+Skills:
+  - setcolor{color=blue} @self ~onSpawn
+  - ...
+```
