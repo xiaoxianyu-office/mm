@@ -1,10 +1,9 @@
-Mechanic: PoseArmorStand
 ========================
 
+## Description:
 Moves the extremities of an armorstand, the value is in radians.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description | Default Value |
 |-----------|---------|-------------|---------------|
@@ -17,9 +16,9 @@ Attributes
 
   
 
-Examples
---------
-
-      Skills:
-      - posearmorstand{head=45,0,0} @self ~onSpawn
-      - ...
+## Examples:
+```yaml
+Skills:
+  - posearmorstand{head=45,0,0} @self ~onSpawn
+  - ...
+```
