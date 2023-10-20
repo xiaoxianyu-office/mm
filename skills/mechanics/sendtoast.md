@@ -1,5 +1,7 @@
 ====================
 
+![](https://i.imgflip.com/640jqd.jpg)
+
 ## Description:
 
 Displays a "toast" message to all targeted players. Does nothing if the
@@ -18,6 +20,6 @@ target is not a player.
 
 ```yaml
 Skills:
-  - sendtoast{icon=DIAMOND; iconnbt={CustomModelData:1};message="Kill a boss!";frame=challenge} @PlayersInRadius{r=10}
+  - sendtoast{icon=DIAMOND; iconnbt={CustomModelData:1};message="Kill Amomgus!";frame=challenge} @PlayersInRadius{r=10}
   - ...
 ```
