@@ -1,22 +1,23 @@
-Mechanic: togglesitting
 =======================
 
-**Aliases:** sit
 
 Toggles the sitting state for cats, dogs, foxes, and parrots.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases   | Description                        | Default Value |
 |-----------|-----------|------------------------------------|---------------|
 | setSitting | state    | Sets the sitting state             | false         |
 
-Examples
---------
+## Examples
+
+Makes the wolf sit when right clicked.
 ```
 Dog:
   Type: Wolf
   Skills:
   - sit{state=true} @Self ~onInteract
 ```
+
+## Aliases: 
+[x] sit
