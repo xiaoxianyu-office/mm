@@ -1,13 +1,16 @@
-Mechanic: TrackLocation
 =================
 
-*Aliases*: settrackedlocation, stl
 
+## Description:
 Sets the mob's tracked location to the targeted location
 
 
-Examples
---------
+## Examples:
+```yaml
+Skills:
+  - tracklocation @targetlocation
+```
 
-      Skills:
-      - tracklocation @targetlocation
+## Aliases: 
+[x] settrackedlocation
+[x] stl
