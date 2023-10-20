@@ -1,4 +1,3 @@
-Mechanic: Heal
 ==============
 
 Heals the targeted entity for the specified value. Can also "overheal"
@@ -14,16 +13,16 @@ Attributes
 
 Examples
 --------
-
-      Skills:
-      - heal{amount=20} @self ~onDamaged 0.2
-
+```yaml
+Skills:
+  - heal{amount=20} @self ~onDamaged 0.2
+```
 Heals the casting mob for 20 health (10 hearts) when it is damaged. (20%
 chance)
-
-      Skills:
-      - heal{amount=20;overheal=true} @self ~onDamaged 0.2
-
+```yaml
+Skills:
+  - heal{amount=20;overheal=true} @self ~onDamaged 0.2
+```
 Heals the casting mob for 20 health (10 hearts) when it is damaged. (20%
 chance)
 
