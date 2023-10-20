@@ -1,4 +1,3 @@
-Mechanic: Glow
 ==============
 
 Makes the target entity glow (using the Glowing potion effect.)
@@ -18,8 +17,8 @@ Attributes
 
 Examples
 --------
-
-      Skills:
-      - effect:glow{color=RED;duration=1000}
-
+```yaml
+Skills:
+  - effect:glow{color=RED;duration=1000}
+```
 Makes the target glow red for 1000 ticks (50 seconds).
