@@ -1,4 +1,3 @@
-Mechanic: BaseDamage
 ====================
 
 Damages the target entity for a percentage of the mob's damage stat.
