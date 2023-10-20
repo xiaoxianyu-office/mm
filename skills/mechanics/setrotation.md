@@ -1,10 +1,10 @@
-Mechanic: Set Rotation
 ======================
+
+## Description:
 
 Changes the rotation of the target (only works on non-player entities).
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description                                      | Default Value |
 |-----------|---------|--------------------------------------------------|---------------|
@@ -13,10 +13,10 @@ Attributes
 | pitch     |         | The new pitch                                    | 0             |
 
   
+## Examples:
 
-Examples
---------
-
-      Skills:
-      - setrotation{relative=true;pitch=-45}
-      - ...
+```yaml
+Skills:
+  - setrotation{relative=true;pitch=-45}
+  - ...
+```
