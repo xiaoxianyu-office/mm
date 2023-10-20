@@ -1,4 +1,3 @@
-Mechanic: Freeze 
 ================
 
 Sets the ticks frozen in powdered snow. Freeze ticks are capped at 140 ticks for players. (requires 1.17)
