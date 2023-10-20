@@ -1,15 +1,17 @@
-## Mechanic: Propel
+================
+
+## Description:
 Propels the caster of the mechanic towards the target.
 
 
-## Attributes
+## Attributes:
 
 | Attribute      | Aliases         | Description                                        | Default Value |
 |----------------|-----------------|----------------------------------------------------|---------------|
 | velocity       | magnitude, v    | The velocity at which the mob will be propelled.   | 1             |
 
 
-## Examples
+## Examples:
 ```yaml
 ExampleMob:
   Type: ZOMBIE
