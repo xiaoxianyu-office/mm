@@ -1,7 +1,8 @@
-Mechanic: Signal
 ================
 
 *Added in version 2.2.1*
+
+## Description:
 
 Sends a signal to the specified targeter. Won't do anything when
 targeted at players. The signal can be composed of any string. The
@@ -12,8 +13,7 @@ The signal can either be matched by comparing directly behind the
 trigger (~onSignal:*ping*) or by the new
 [lastsignal-condition](http://www.mythicmobs.net/manual/doku.php/conditions/start).
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description        | Default Value |
 |-----------|---------|--------------------|---------------|
@@ -21,28 +21,28 @@ Attributes
 
   
 
-Examples
---------
+## Examples:
 
 This example would make the "Master" mob signal it's minions a radius of
 20 blocks to shoot an arrow the nearest players, relative to the minions
 positions, upon being damaged.
 
-Mobfile:
-```yml
-    Master:
-      Type: zombie
-      Skills:
-      - summon{m=Minion} @self ~onSpawn
-      - signal{s=ATTACK} @MobsInRadius{r=10;t=Minion} ~onDamaged
-    Minion:
-      Type: baby_zombie
-      Skills:
-      - skill{s=ShootAttacker} @NearestPlayer ~onSignal:ATTACK
+```yaml
+# Mob file:
+Master:
+  Type: zombie
+  Skills:
+    - summon{m=Minion} @self ~onSpawn
+    - signal{s=ATTACK} @MobsInRadius{r=10;t=Minion} ~onDamaged
+Minion:
+  Type: baby_zombie
+  Skills:
+    - skill{s=ShootAttacker} @NearestPlayer ~onSignal:ATTACK
 ```
-Skillfile:
-```yml
-    ShootAttacker:
-      Skills:
-      - shoot{t=arrow}
+
+```yaml
+# Skill file:
+ShootAttacker:
+  Skills:
+    - shoot{t=arrow}
 ```
