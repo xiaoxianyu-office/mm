@@ -19,6 +19,6 @@ Moves the extremities of an armorstand, the value is in radians.
 ## Examples:
 ```yaml
 Skills:
-  - posearmorstand{head=45,0,0} @self ~onSpawn
+  - posearmorstand{head=0.78,0,0} @self ~onSpawn
   - ...
 ```
