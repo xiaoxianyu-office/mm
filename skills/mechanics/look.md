@@ -1,4 +1,3 @@
-Mechanic: Look
 --------------
 
 Causes the entity to look at it's target. Can be used to make cool
@@ -14,11 +13,11 @@ Attributes
 
 Examples
 --------
-
-    CreepyStare:
-      Skills:
-      - look{headOnly=true;immediately=true} @Target
-
+```yaml
+CreepyStare:
+  Skills:
+    - look{headOnly=true;immediately=true} @Target
+```
 The skill above causes the mob to immediately force it's head to face
 the target immediately. Giving it a creepy effect as only the head will
 stare for a short bit before the body catches up and turns around as
