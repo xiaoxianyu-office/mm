@@ -8,6 +8,7 @@ Gives the target player an amount of oxygen.
 
 **Examples**
 
-```
-- oxygen{amount=10}
+```yaml
+Skills:
+  - oxygen{amount=10}
 ```
