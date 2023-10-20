@@ -14,7 +14,7 @@ A list of available targets can be found [here](/Mobs/Custom-AI#ai-target-select
 
 ## Examples:
 ```yaml
-TargetPossibleThreats::
+TargetPossibleThreats:
   Skills:
     - runaitargetselector{target=clear}
     - runaitargetselector{target=players}
