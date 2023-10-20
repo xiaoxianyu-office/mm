@@ -1,11 +1,11 @@
-Mechanic: Send Title
 ====================
+
+## Description:
 
 Displays a "title" and/or "subtitle" message to all targeted players.
 Does nothing if the target is not a player.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description                                            | Default Value |
 |-----------|---------|--------------------------------------------------------|---------------|
@@ -15,11 +15,10 @@ Attributes
 | fadeIn    | fi      | The fade-in time for the title (in ticks)              | 1             |
 | fadeOut   | fo      | The fade-out time for the title (in ticks)             | 1             |
 
-  
+## Examples:
 
-Examples
---------
-
-      Skills:
-      - sendtitle{title="Beware!";subtitle="A dangerous spell is being cast!";d=20} @PlayersInRadius{r=10}
-      - ...
+```yaml
+Skills:
+  - sendtitle{title="Beware!";subtitle="A dangerous spell is being cast!";d=20} @PlayersInRadius{r=10}
+  - ...
+```
