@@ -1,10 +1,13 @@
-Mechanic: Shoot Shulker Bullet
 ================================
 
-Shoots a shulker bullet at the target entity, giving them levitation on hit.
+*Added in 4.12 MM*
 
-Attributes
-----------
+## Description:
+
+Shoots a shulker bullet at the target entity, giving them levitation on hit.
+*Requires a target entity. Does not work well with location targeters.*
+
+## Attributes:
 
 | Attribute | Aliases | Description                                  | Default Value |
 |-----------|---------|----------------------------------------------|---------------|
@@ -13,22 +16,12 @@ Attributes
 | onHit     | oH      | the skill this mechanic calls when it hits the target | NONE |
 | onEnd     | oE      | the skill this mechanic calls when it ends   | NONE          |
 
-------------
 
-Notes:
-
-Added in 4.12 MM
-
-This skill seems to require an entity for a target. Tried using @forward{f=30;y=0} and it did not spawn the shulker bullet. 
-
-------------
-
-Examples
---------
+## Examples:
 
 This example would shoot a shulker bullet with some smaller white reddust particles in the onTick and onEnd. It would also damage the target for 5 damage when it hits them.
 
-```
+```yaml
 TestingShootShulkerBullet:
   Skills:
   - ShootShulkerBullet{oT=TSSB_oT;oH=TSSB_oH;oE=TSSB_oE;i=1} @target
