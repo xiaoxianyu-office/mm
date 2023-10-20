@@ -1,12 +1,13 @@
-Mechanic: StopUsingItem
---------------------------
+=================
+
+## Description:
 
 Stops the targeted living entity from using an item, i.e. blocking with a shield.
 
-Note: If you want to do some sort of cooldown, try using this mechanic in an aura.
+*If you want to do some sort of cooldown, try using this mechanic in an aura.*
 
-Examples
---------
+## Examples:
+
 ```yaml
 Skills:
   #basic example
