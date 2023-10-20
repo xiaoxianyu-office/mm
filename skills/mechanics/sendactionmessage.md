@@ -1,7 +1,8 @@
-Mechanic: ActionMessage
 =======================
 
 ![](http://fs5.directupload.net/images/160306/zswobuo8.jpg)
+
+## Description:
 
 Sends a message to the target player's action bar.
 
@@ -14,17 +15,17 @@ post it in the bugs/suggestion-subforum!
 Note: Versions 2.3.0 onwards- The @trigger targeter is buggy for
 ~onAttack and ~onDamaged. Don't report it as a bug, we know.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description                                        | Default |
 |-----------|---------|----------------------------------------------------|---------|
 | message   | m       | The message to send. Must be surrounded by quotes. |         |
 
-Examples
---------
+## Examples:
 
-    Skills:
-    - actionmessage{m="<mob.name>&f is casting a spell!"} @PlayersInRadius{r=30}
-    - actionmessage{m="&lHello! &cI'm &athe &9&lactionmessage-bar&r! &e:)"} @trigger ~onInteract
-    - am{m="<mob.name>&f is using the *skill alias!*"} @PlayersInRadius{r=30}
+```yaml
+Skills:
+  - actionmessage{m="<mob.name>&f is casting a spell!"} @PlayersInRadius{r=30}
+  - actionmessage{m="&lHello! &cI'm &athe &9&lactionmessage-bar&r! &e:)"} @trigger ~onInteract
+  - am{m="<mob.name>&f is using the *skill alias!*"} @PlayersInRadius{r=30}
+```
