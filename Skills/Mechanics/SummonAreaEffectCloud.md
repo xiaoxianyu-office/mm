@@ -1,7 +1,10 @@
-## Description 
+=====================
+
+## Description:
+
 Creates a cloud of particles around the target location
 
-## Attributes
+## Attributes:
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
@@ -15,19 +18,19 @@ Creates a cloud of particles around the target location
 | radiusreductiononuse | rrou | The radius reduction for the cloud on use                      | 0       |
 | radiusreductionontick | rrot | The radius reduction for the cloud per tick                   | 0       |
 
-### Particle Attribute
+### Particle Attribute:
 
 A list of particle types can be found **[here](/skills/effects/particles/types)**. 
 
 [All of the spigot particle effects listed in the javadocs should be acceptable as well.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
 
 
-## Examples
+## Examples:
+
 ```yaml
   Skills:
   - summonareaeffectcloud{d=600;r=20;rrot=1} @self
 ```
 
-
-## Aliases
+## Aliases:
 - [x] summonCloud
