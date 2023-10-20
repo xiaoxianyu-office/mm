@@ -1,4 +1,3 @@
-Mechanic: HealPercent
 =====================
 
 Heals the target entity for a percentage of its max-health. Like the
@@ -19,8 +18,8 @@ Examples
 
 This will make the casting mob heal for 20% of its health each time it
 gets to attack.
-
-      Skills:
-      - healpercent{m=0.2} @self ~onAttack
-
+```yaml
+Skills:
+  - healpercent{m=0.2} @self ~onAttack
+```
 [1] 1 = 100 %, 0.5 = 50 % and so on...
