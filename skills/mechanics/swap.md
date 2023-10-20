@@ -1,10 +1,10 @@
-**Description:** swaps the caster and targets locations
+==============
 
-**Type:** Entity
+## Description:
 
----
+Swaps the caster and targets locations
 
-**Attributes:**
+## Attributes:
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
@@ -12,8 +12,9 @@
 
 ---
 
-**Examples:**
+## Examples:
 
-```
+Caster swaps places with the target.
+```yaml
 - swap @target
 ```
