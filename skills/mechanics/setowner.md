@@ -35,7 +35,7 @@ SetOwner:
   Skills:
   - setowner @trigger
 ```
-This skill would only heal the owner of the mob
+This skill would only heal the owner of the mob.
 ```yaml
 HealOwner:
   TargetConditions:
