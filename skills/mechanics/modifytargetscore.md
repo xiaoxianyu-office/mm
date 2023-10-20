@@ -1,4 +1,3 @@
-Mechanic: ModifyTargetScore
 ===========================
 
 *Added in version 2.3*
@@ -29,8 +28,8 @@ Examples
 
 This example will track how often and whom damaged
 the casting mob in battle.
-
-      Skills:
-      - modifytargetscore{objective=damagescore;action=add;value=1} @trigger ~onDamaged
-
+```yaml
+Skills:
+  - modifytargetscore{objective=damagescore;action=add;value=1} @trigger ~onDamaged
+```
 [1] shorthand for "Modular Division"
