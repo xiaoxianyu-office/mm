@@ -1,6 +1,8 @@
 =======================
 
 
+## Description:
+
 Toggles the sitting state for cats, dogs, foxes, and parrots.
 
 ## Attributes:
