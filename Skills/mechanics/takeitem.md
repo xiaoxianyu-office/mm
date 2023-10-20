@@ -1,11 +1,10 @@
-Mechanic: TakeItem
 =================
-*Aliases*: take, itemtake, takeitems
+
+## Description:
 
 Removes an item from the target
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases        | Description                      | Default |
 |-----------|----------------|----------------------------------|---------|
@@ -13,12 +12,14 @@ Attributes
 | amount    | a              | The amount to remove             | 1       |
 
 
-Examples
---------
+## Examples:
 
 Would remove a stack of dirt from the nearest player's inventory
-```yml
+```yaml
 Skills:
   - takeitem{i=DIRT;a=64} @NearestPlayer{r=10}
 ```
-      
+## Aliases: 
+[x] take 
+[x] itemtake
+[x] takeitems
