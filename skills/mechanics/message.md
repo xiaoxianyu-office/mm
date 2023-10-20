@@ -28,5 +28,5 @@ Examples
 --------
 ```yaml
  Skills:
-   - message{m="<mob.name>&f<&co> Hahaha! You will all die!"} @PlayersInRadius{r=30}
+   - message{m="<caster.name>&f<&co> Hahaha! You will all die!"} @PlayersInRadius{r=30}
 ```
