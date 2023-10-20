@@ -1,4 +1,3 @@
-Mechanic: Fill Chest
 ===================
 
 Fills a chest with a list of items, or a [droptable](Items/Drops#drop-tables)
@@ -19,11 +18,12 @@ Examples
 --------
 
 Example of filling a chest with specific items.
-
-      Skills:
-      - fillchest{i=diamond_sword,diamond} @Location{x=#;y=#;z=#} ~onDeath
-
+```yaml
+Skills:
+  - fillchest{i=diamond_sword,diamond} @Location{x=#;y=#;z=#} ~onDeath
+```
 Example of filling a chest with a droptable.
-
-      Skills:
-      - fillchest{i=SkeletonKingDrops} @Location{x=#;y=#;z=#} ~onSpawn
+```yaml
+Skills:
+  - fillchest{i=SkeletonKingDrops} @Location{x=#;y=#;z=#} ~onSpawn
+```
