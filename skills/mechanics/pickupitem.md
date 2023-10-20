@@ -1,4 +1,3 @@
-Mechanic: Pick Up Item
 -----------------
 
 Pick up the targeted item, if the caster is a player.
@@ -12,6 +11,7 @@ Attributes
 
 Examples
 --------
-```
-- pickupitem @ItemsInRadius{r=10}
+```yaml
+Skills:
+  - pickupitem @ItemsInRadius{r=10}
 ```
