@@ -3,7 +3,7 @@
 ## Description:
 Clears all potion effects from the target entity
 
-**Attributes**
+## Attributes:
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
@@ -11,7 +11,7 @@ Clears all potion effects from the target entity
 
 Not providing a type will clear all effects.
 
-**Examples**
+## Examples:
 
 ```yaml
 - potionclear{type=FIRE_RESISTANCE} @target
