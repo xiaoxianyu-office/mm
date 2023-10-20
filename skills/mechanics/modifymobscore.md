@@ -1,4 +1,3 @@
-Mechanic: ModifyMobScore
 ===========================
 
 Modifies the scoreboard-objective value of the fake casting mob.
@@ -25,11 +24,12 @@ Attributes
 Examples
 ----
 ```yaml
-    - modifymobscore
-        {
-        objective=someobjective;
-        action=multiply;
-        v=2
-        } ~onAttack
+Skills:
+  - modifymobscore
+      {
+      objective=someobjective;
+      action=multiply;
+      v=2
+      } ~onAttack
 ```
 [1] shorthand for "Modular Division"
