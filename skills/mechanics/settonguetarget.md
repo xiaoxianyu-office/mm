@@ -1,16 +1,21 @@
-Mechanic: Set Tongue Target
---------------------------
+==============
+
+## Description:
+
 Sets the tongue target for a frog caster to the target entity.
 
-**Attributes**
+## Attributes:
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
 | none      | none  | none        |
 
-Examples
---------
+## Examples:
+
+Sets the frog's tongue to the trigger trigger when right clicked
 ```yaml
-      Skills:
-      - setTongueTarget @trigger ~onInteract
+MyLovingFrog:
+  Type: FROG
+  Skills:
+    - setTongueTarget @trigger ~onInteract
 ```
