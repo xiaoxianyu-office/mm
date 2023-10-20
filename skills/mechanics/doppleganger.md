@@ -1,4 +1,3 @@
-Mechanic: Doppleganger
 ======================
 
 Copies the appearance of the target player. Does nothing if the target
@@ -11,8 +10,9 @@ installed to enable disguise-functionality.
 
 Examples
 --------
-
-    Ditto:
-      Type: SKELETON
-      Skills:
-      - doppleganger @NearestPlayer ~onSpawn
+```yaml
+Ditto:
+  Type: SKELETON
+  Skills:
+  - doppleganger @NearestPlayer ~onSpawn
+```
