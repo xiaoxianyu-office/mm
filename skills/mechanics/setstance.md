@@ -26,7 +26,7 @@ fiery".
 
 This skill would change the caster's phase to "bowphase"
 ```yaml
-StanceChangeSkill
+StanceChangeSkill:
   Skills:
     - setstance{stance=bowphase} @self
 ```
