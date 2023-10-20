@@ -1,7 +1,9 @@
-**Description**:  
+====================
+
+## Description:  
 Plays the target block's placement sound. Requires Paper.
 
-**Attributes**:
+## Attributes:
 | Attribute | Alias | Description | Default Value |
 | --------- | ----- | ----------- | ------------- |
 | pitch | p | The pitch of the sound. Can be between 0.01 and 2.0 | 1.0 |
@@ -13,10 +15,10 @@ The formula for this is `v * 16 = max volume distance`. For example if you use â
 
 **Example**:
 -----------
-
-    Skills:
-    - blockplacesound @targetlocation
-
+```yaml
+Skills:
+  - blockplacesound @targetlocation
+```
 **Extra Information**:
 ----------------------
 
