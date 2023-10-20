@@ -1,4 +1,3 @@
-Mechanic: Drop Item
 ===================
 
 Drops a set of items or optionally a
@@ -15,15 +14,15 @@ Attributes
 
 Examples
 --------
-
 Example of dropping specific items.
-
-      Skills:
-      - dropitem{i=diamond_sword,diamond} @self ~onDeath
-      - ...
-
+```yaml
+Skills:
+  - dropitem{i=diamond_sword,diamond} @self ~onDeath
+  - ...
+```
 Example of dropping items from a DropTable.
-
-      Skills:
-      - dropitem{i=SkeletonKingDrops} @self ~onSpawn
-      - ...
+```yaml
+Skills:
+  - dropitem{i=SkeletonKingDrops} @self ~onSpawn
+  - ...
+```
