@@ -1,20 +1,21 @@
-Mechanic: Set AI
 ================
+
+## Description:
 
 Toggles the target AI
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description                  | Default Value |
 |-----------|---------|------------------------------|---------------|
 | ai        |         | Sets the new mob AI, boolean |               |
 
-  
+## Examples:
 
-Examples
---------
-
-      Skills:
-      - setAI{ai=false} @self ~onSpawn
-      - ...
+```yaml
+TemporaryAISwitcher:
+  Skills:
+    - setAI{ai=false} @self
+    - delay 100
+    - setAI{ai=true} @self
+```
