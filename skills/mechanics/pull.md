@@ -12,14 +12,14 @@ increasing based on the distance of targets from the caster.
 
   
 
-## Special Notes
+## Special Notes:
 
 Targets are pulled much faster based on their distance from the caster.
 The defined velocity is a "base" velocity, and the skill scales the
 velocity based on distance to attempt to pull the entity directly to the
 mob if it is possible based on the base velocity.
 
-## Examples
+## Examples:
 Pulls the target and then all players within 10 blocks to the casting mob.
 ```yaml
     DeathGrip:
