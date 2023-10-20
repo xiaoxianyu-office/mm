@@ -1,10 +1,13 @@
-Mechanic: Stun
 ==============
+
+## Descritpion:
 
 Holds the target in place temporarily.
 
-Attributes
-----------
+*This mechanic can cause Spigot to kick the player (PlayerName moved
+wrongly!)*
+
+## Attributes:
 
 | Attribute           | Aliases | Description                                                                                                  | Default Value |
 |---------------------|---------|--------------------------------------------------------------------------------------------------------------|---------------|
@@ -21,19 +24,12 @@ Attributes
 | CancelOnSkillUse    | cosu    | Cancels the stun if the entity that is stunned uses another skill while the stun is active.                  | false         |
 | CancelOnQuit        | coq     | Cancels the stun if the entity with the stun logs out. (Only really applies to players)                      | true          |
 
-  
 
-Special Notes
--------------
-
-This mechanic can cause Spigot to kick the player (PlayerName moved
-wrongly!)
-
-Examples
---------
+## Examples:
 
 Stuns the target for 3 seconds, target cannot rotate.
-
-    Freeze:
-      Skills:
-      - stun{d=60;f=true} @target
+```yaml
+Freeze:
+  Skills:
+    - stun{d=60;f=true} @target
+```
