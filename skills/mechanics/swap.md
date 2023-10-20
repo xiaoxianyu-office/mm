@@ -16,5 +16,6 @@ Swaps the caster and targets locations
 
 Caster swaps places with the target.
 ```yaml
-- swap @target
+Skills:
+  - swap @target
 ```
