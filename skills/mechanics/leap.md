@@ -1,4 +1,3 @@
-Mechanic: Leap
 ==============
 
 Causes the mob to leap through the air at the target. Leap calculates a
