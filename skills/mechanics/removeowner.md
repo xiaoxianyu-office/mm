@@ -1,11 +1,13 @@
-Mechanic: RemoveOwner
 =====================
+
+## Description:
 
 Removes the wolf's owner
 
-Examples
---------
+## Examples:
 
-      Skills:
-      - removeowner @MIR{t=MythicWolf} ~onInteract
-      - ...
+```yaml
+Skills:
+  - removeowner @MIR{t=MythicWolf} ~onInteract
+  - ...
+```
