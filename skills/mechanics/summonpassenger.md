@@ -12,7 +12,7 @@ Summons a mob to mount the caster. Will knock the current rider off if there is 
 ## Examples:
 ```yaml
   Skills:
-  - summonPassenger{type=MyZombie}
+    - summonPassenger{type=MyZombie}
 ```
 Will summon the mob "MyZombie" to ride the caster of the mechanic.
 
