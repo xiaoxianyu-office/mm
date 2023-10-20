@@ -1,4 +1,4 @@
---------------
+==============
 
 Causes the entity to look at it's target. Can be used to make cool
 effects or creepy ones depending on how creative you get with it.
