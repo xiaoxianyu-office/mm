@@ -1,10 +1,11 @@
-Mechanic: TeleportTo
 ====================
+
+
+## Description:
 
 Will teleport the targeted entity or entities to the specified location.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute             | Aliases   | Description                                                                   | Default Value |
 |-----------------------|-----------|-------------------------------------------------------------------------------|---------------|
@@ -15,11 +16,11 @@ Attributes
 | relative                 | r        | Whether the location is relative or directional                | false              |
 | targetasorigin                | tao         | Will use the target's location as the origin instead of the caster |  false             |
 
-Examples
---------
+## Examples:
 
 Will teleport all players in a radius of 50 blocks around the casting
 mob to the specified location:
-
-    Skills:
-    - teleportto{location=190,64,200} @PIR{r=50}
+```yaml
+Skills:
+  - teleportto{location=190,64,200} @PIR{r=50}
+```
