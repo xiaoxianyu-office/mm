@@ -1,8 +1,12 @@
-## Description
+=================
+
+## Description:
+
 Rallies nearby mobs of the given types to focus-attack the given target.
 
 
-## Attributes
+## Attributes:
+
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | types     | type, t   | A list of mob types to rally. The list can include both Mythic Mob types and regular Entity types                                                                           |         |
@@ -12,7 +16,8 @@ Rallies nearby mobs of the given types to focus-attack the given target.
 | rallyconditions | conditions, cond, c | A list of conditions that the entities must pass in order to be rallied                                                                                        |         |
   
 
-## Examples
+## Examples:
+
 This example would cause all mobs of the type "Guard" or "Knight" within
 30 blocks, that don't already have a target, to attack the whatever or
 whoever triggered this skill.
@@ -24,5 +29,5 @@ CallForHelp:
 ```
 
 
-## Aliases
+## Aliases:
 - [x] callforhelp
