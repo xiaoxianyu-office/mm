@@ -12,5 +12,5 @@ Gives the target player an amount of oxygen.
 
 ```yaml
 Skills:
-  - oxygen{amount=10}
+  - oxygen{amount=10} @trigger ~onInteract
 ```
