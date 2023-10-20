@@ -9,7 +9,7 @@ Toggles the sitting state for cats, dogs, foxes, and parrots.
 |-----------|-----------|------------------------------------|---------------|
 | setSitting | state    | Sets the sitting state             | false         |
 
-## Examples
+## Examples:
 
 Makes the wolf sit when right clicked.
 ```
