@@ -44,9 +44,11 @@ Skills:
 Here's an example of how to make use of hover-events:  
   
 <img src="http://fs5.directupload.net/images/160309/7irfoune.jpg" width="500" height="30" alt="http://fs5.directupload.net/images/160309/7irfoune.jpg" />
+
 ```yaml
 Skills:
   - jsonmessage{m="[{'text':'&7With me, you can create hover events','hoverEvent':{'action':'show_text','value':{'text':'&aI am a hover event :)'}}}]"} @trigger ~onInteract
+
 ```
 ------------------------------------------------------------------------
 
