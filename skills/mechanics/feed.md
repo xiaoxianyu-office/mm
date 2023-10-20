@@ -1,4 +1,3 @@
-Mechanic: Feed
 --------------
 
 Feeds the targeted player.  
@@ -22,6 +21,7 @@ Allows for negative values to decrease food!
 ### Examples
 
 This skill feeds the player 10 hunger (or 5 drumsticks).
-
-    Skills:
-    - feed{amount=10} @trigger ~onInteract
+```yaml
+Skills:
+  - feed{amount=10} @trigger ~onInteract
+```
