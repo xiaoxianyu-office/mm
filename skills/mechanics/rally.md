@@ -24,7 +24,7 @@ whoever triggered this skill.
 ```yaml
 CallForHelp:
   Skills:
-  - message{m="<mob.name><&co> Guards! Help me!"} @PlayersInRadius{r=30}
+  - message{m="<caster.name><&co> Guards! Help me!"} @PlayersInRadius{r=30}
   - rally{types=Guard,Knight;radius=30;ot=false} @Trigger
 ```
 
