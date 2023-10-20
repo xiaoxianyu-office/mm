@@ -1,4 +1,3 @@
-Mechanic: MountTarget
 =====================
 
 Causes the mob to "mount" the specified targeter as though they were a
@@ -9,6 +8,7 @@ when riding things. That's not a MythicMobs bug sadly.
 
 Examples
 --------
-
-      Skills:
-      - mounttarget @trigger ~onDamaged
+```yaml
+Skills:
+  - mounttarget @trigger ~onDamaged
+```
