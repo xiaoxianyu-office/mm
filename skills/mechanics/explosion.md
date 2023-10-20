@@ -1,4 +1,3 @@
-Mechanic: Explosion
 ===================
 
 Creates an explosion at the target entity or location.
@@ -17,7 +16,8 @@ Attributes
 
 Examples
 --------
-
-    ExplosiveBlast:
-      Skills:
-      - explosion{yield=4} @target
+```yaml
+ExplosiveBlast:
+  Skills:
+  - explosion{yield=4} @target
+```
