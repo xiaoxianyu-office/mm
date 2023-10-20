@@ -1,11 +1,12 @@
-Mechanic: Threat
 ================
+
+
+## Description:
 
 Modifies the mob's threat value towards the target. Requires the mob
 have Threat Tables enabled in order to have any effect.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description                                               | Default |
 |-----------|---------|-----------------------------------------------------------|---------|
@@ -14,12 +15,12 @@ Attributes
 
 Set/reset/forcetop modes do not require the “amount=” field  
 
-Examples
---------
+## Examples:
 
 This example will set the nearest player's threat level to a very high
 amount.
-
-    Fixate:
-      Skills:
-      - threat{amount=10000} @NearestPlayer ~onSpawn
+```yaml
+Fixate:
+  Skills:
+    - threat{amount=10000} @NearestPlayer ~onSpawn
+```
