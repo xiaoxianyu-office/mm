@@ -1,4 +1,3 @@
-Mechanic: Give Item
 ===================
 
 Gives an item to the target. Supports Droptables.
@@ -23,7 +22,8 @@ fakeLooting was added in 4.12 MM and it makes the item being given show up on th
 
 Examples
 --------
-
-    Skills:
-    - giveitem{i=diamond_sword} @PIR{r=20} ~onSpawn
-    - ...
+```yaml
+Skills:
+  - giveitem{i=diamond_sword} @PIR{r=20} ~onSpawn
+  - ...
+```
