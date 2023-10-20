@@ -14,5 +14,5 @@ Sets the immunity ticks on the target. This should be delayed if used immediatel
 
 Gives the caster invincibility after it attacks.
 ```yaml
-- setNoDamageTicks{ticks=0;delay=1} @trigger ~onAttack
+- setNoDamageTicks{ticks=0;delay=1} @self ~onAttack
 ```
