@@ -1,4 +1,3 @@
-Mechanic: Jump
 ==============
 
 Causes the mob to jump with the given velocity. Using the velocity
@@ -16,7 +15,8 @@ Attributes
 
 Examples
 --------
-
-    SuperJump:
-      Skills:
-      - jump{velocity=20}
+```yaml
+SuperJump:
+  Skills:
+    - jump{velocity=20}
+```
