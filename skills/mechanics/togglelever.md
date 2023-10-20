@@ -1,14 +1,13 @@
-Mechanic: Toggle Lever
-----------------------
+=============
 
+
+## Description:
 Toggles a lever on and off at the supplied coordinates.
 
-**Note:**  
 The lever will switch back to the starting position after a set amount
 of time. (Defaulting to 20 ticks/1 second).
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description                                                 | Default Value |
 |-----------|---------|-------------------------------------------------------------|---------------|
@@ -18,10 +17,11 @@ Attributes
 | z         |         | The Z coordinate of the button.                             | 0             |
 
   
+## Examples:
 
-Examples
---------
-
-    OpenSecretDoor:
-      Skills:
-      - togglelever{duration=600;x=15;y=67;z=-213}
+Toggles a lever placed at the given coordinates.
+```yaml
+OpenSecretDoor:
+  Skills:
+    - togglelever{duration=600;x=15;y=67;z=-213}
+```
