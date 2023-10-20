@@ -1,4 +1,3 @@
-Mechanic: ConsumeSlot
 =================
 
 Removes an item from a specific slot of the player's inventory.
