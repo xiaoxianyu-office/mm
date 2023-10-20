@@ -22,7 +22,7 @@ poison or land mines.
 
 Inherits attributes from [Projectile](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/projectile)
 
-> `stopAtEntity` gets default to `true`
+> `stopAtEntity` gets default to `false`
 
 ## Examples:
 
