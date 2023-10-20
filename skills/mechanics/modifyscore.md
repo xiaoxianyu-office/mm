@@ -1,4 +1,3 @@
-Mechanic: ModifyScore
 =====================
 
 *Added in version 2.3*
@@ -33,10 +32,10 @@ This example will add one to the score of a player
 named "Bob" for the objective "TestScore", even if that player doesn't
 exist on the server.  
 It will create the objective if it does not currently exist.
-
-      Skills:
-      - modifyscore{o=TestScore;e=Bob;a=add;v=1} ~onInteract 
-
+```yaml
+Skills:
+  - modifyscore{o=TestScore;e=Bob;a=add;v=1} ~onInteract 
+```
 ![](https://i.imgur.com/0HKvAUM.png)
 
 [1] shorthand for "Modular Division"
