@@ -1,4 +1,3 @@
-Mechanic: ModifyGlobalScore
 ===========================
 
 Modifies the scoreboard-objective value of the fake player \_\_GLOBAL\_\_.
@@ -25,12 +24,12 @@ Attributes
   
 Examples
 ----
-
-    - modifyglobalscore
-        {
-        objective=someobjective;
-        action=multiply;
-        v=2
-        } ~onAttack
-
+```yaml
+- modifyglobalscore
+    {
+    objective=someobjective;
+    action=multiply;
+    v=2
+    } ~onAttack
+```
 [1] shorthand for "Modular Division"
