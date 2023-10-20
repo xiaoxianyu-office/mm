@@ -1,4 +1,3 @@
-Mechanic: Potion
 ================
 
 Applies a potion effect to the target entity, which is usually
@@ -28,10 +27,10 @@ Examples
 
 This example skill-configuration will strongly slow down the target for
 10 seconds (200 ticks) and deal 5 hearts of damage to it.
-
-    Cripple:
-      Skills:
-      - potion{type=SLOW;duration=200;level=4}
-      - damage{amount=10}
-
+```yaml
+Cripple:
+  Skills:
+    - potion{type=SLOW;duration=200;level=4}
+    - damage{amount=10}
+```
 [1] 20 ticks = 1 second
