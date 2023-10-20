@@ -1,4 +1,3 @@
-Mechanic: EjectPassenger
 ========================
 
 Ejects any passengers that are currently riding the mob. This is a
@@ -7,6 +6,7 @@ have any attributes nor options.
 
 Examples
 --------
-
-      Skills:
-      - ejectpassenger ~onDamaged
+```yaml
+Skills:
+  - ejectpassenger ~onDamaged
+```
