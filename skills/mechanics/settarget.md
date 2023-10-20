@@ -14,6 +14,6 @@ If using threat tables, will increase threat to the threshold to change targets 
 ## Examples:
 sets the casters target to the targeter when right clicked.
 ```yaml
-      Skills:
-      - setTarget @trigger ~onInteract
+Skills:
+  - setTarget @trigger ~onInteract
 ```
