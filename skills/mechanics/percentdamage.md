@@ -1,4 +1,3 @@
-Mechanic: Damage Percent
 ========================
 
 Deals damage equal to a percent of the player's max health, where 1 is
@@ -19,8 +18,8 @@ Attributes
 
 Examples
 --------
-
-      Skills:
-      - damagepercent{percent=0.5}
-
+```yaml
+Skills:
+  - damagepercent{percent=0.5}
+```
 Hurts the target for half (50%) of its max health.
