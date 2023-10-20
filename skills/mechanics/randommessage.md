@@ -15,12 +15,12 @@ The special character # will cause this skill to fail.
 ## Examples:
 ```yaml
 Skills:
- - randommessage{
-     m=
-     "message 1",
-     "message 2",
-     "message 3";
-     } @PIR{r=20} ~onInteract
+  - randommessage{
+      m=
+      "message 1",
+      "message 2",
+      "message 3";
+      } @PIR{r=20} ~onInteract
 
 Skills:
   - randommessage{m="one test","not a test","test";} @PIR{r=20} ~onInteract
