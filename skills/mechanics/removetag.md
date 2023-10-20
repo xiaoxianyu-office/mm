@@ -1,5 +1,6 @@
-Mechanic: RemoveTag
 ===================
+
+## Description:
 
 Removes a scoreboard tag from the target.
 
@@ -8,28 +9,25 @@ This is used in conjunction with the **hastag condition** (see
 "/scoreboard players tag &lt;player name&gt; remove [Tag Name] " to do
 the same thing.
 
-Attributes
-----------
+Attributes:
 
 | Attribute | Aliases | Description                | Default Value |
 |-----------|---------|----------------------------|---------------|
 | tag       | t       | The string-name of the tag | default       |
 
-  
-
-Examples
---------
+Examples:
 
 This skill would give the casting mob the tag "Test".
-
-    TagSkill
-      Skills:
-      - removetag{t=Test} @self
-
+```yaml
+TagSkill
+  Skills:
+    - removetag{t=Test} @self
+```
 This skill would only run on the mob if it had the tag, "Test".
-
-    TagTest:
-      Conditions:
-      - hastag{t=Test}
-     Skills:
-      - suicide @self
+```yaml
+TagTest:
+  Conditions:
+    - hastag{t=Test}
+  Skills:
+    - suicide @self
+```
