@@ -1,11 +1,12 @@
-Mechanic: Shoot Potion
 ======================
+
+
+## Description:
 
 Throws a potion at the targeted entity or location, causing the splash
 potion effect of the given type to all entities hit.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute    | Aliases        | Description                                                     | Default |
 |--------------|----------------|-----------------------------------------------------------------|---------|
@@ -16,11 +17,11 @@ Attributes
 | hasParticles | particles or p | Whether not to show the status effect particles. (4.6+)         | true    |
 | hasIcon      | icon or i      | Whether not to show the status effect icon. (4.6+)              | true    |
 
-  
+## Examples:
 
-Examples
---------
-
-    ThrownCripplingPotion:
-      Skills:
-      - shootpotion{type=SLOW;duration=200;level=4;velocity=5} @target
+Throws a potion at the target that slows them down.
+```yaml
+ThrownCripplingPotion:
+  Skills:
+    - shootpotion{type=SLOW;duration=200;level=4;velocity=5} @target
+```
