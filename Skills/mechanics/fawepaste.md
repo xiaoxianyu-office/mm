@@ -1,4 +1,3 @@
-Mechanic: fawePaste
 ===============
 
 Pastes a Schematic using the FAWE Plugin found here: [FAWE](https://www.spigotmc.org/resources/fast-async-worldedit.13932/)
