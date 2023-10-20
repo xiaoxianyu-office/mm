@@ -1,4 +1,3 @@
-Mechanic: Hide
 ===================
 
 Hides the caster from the targeted players for a set duration.
