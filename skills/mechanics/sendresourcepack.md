@@ -1,10 +1,10 @@
-Mechanic: Send Resource Pack
 ============================
+
+## Description:
 
 Sends a resource pack to the targeted player.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description                                          | Default Value |
 |-----------|---------|------------------------------------------------------|---------------|
@@ -12,13 +12,12 @@ Attributes
 | hash      | h       | The hash for the resource pack (not currently used). | mythicmobs    |
 
   
+## Examples:
 
-Examples
---------
-
-*Note: the hash provided in this example is just a demonstration, do not
+*The hash provided in this example is just a demonstration, do not
 use it in your skill.*
-
-      Skills:
-      - sendresourcepack{url="https://yourresourcepackurlhere";hash="cf23df2207d99a74fbe169e3eba035e633b65d94"} @PIR{r=15} ~onSpawn
+```yaml
+Skills:
+  - sendresourcepack{url="https://yourresourcepackurlhere";hash="cf23df2207d99a74fbe169e3eba035e633b65d94"} @PIR{r=15} ~onSpawn
       - ...
+```
