@@ -1,10 +1,9 @@
-Mechanic: Push Button
----------------------
+===============
 
+## Description:
 Pushes a button at the supplied coordinates.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases| Description                                | Default Value |
 |-----------|--------|--------------------------------------------|---------------|
@@ -12,12 +11,9 @@ Attributes
 | y         |        | The Y coordinate of the button.            | 0             |
 | z         |        | The Z coordinate of the button.            | 0             |
 
-  
-
-Examples
---------
+## Examples:
 ```yaml
-    HitSecretButton:
-      Skills:
-      - pushbutton{x=15;y=67;z=-213}
+HitSecretButton:
+  Skills:
+  - pushbutton{x=15;y=67;z=-213}
 ```
