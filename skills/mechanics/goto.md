@@ -1,4 +1,3 @@
-Mechanic: GoTo
 ============================
 
 Causes the mob to pathfind to a location.
