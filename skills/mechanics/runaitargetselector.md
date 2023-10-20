@@ -1,7 +1,6 @@
-Mechanic: RunAITargetSelector
 =============================
 
-**Aliases**: aitarget
+## Description:
 
 Change target pathfindergoals. It is not possible to use every goal on
 every entity. To change the ai of an entity, you need to use clear
@@ -13,13 +12,14 @@ to the end of the already existing goals of the entity.
 
 A list of available targets can be found [here](/Mobs/Custom-AI#ai-target-selectors)
 
-Example
--------
+## Examples:
+```yaml
+TargetPossibleThreats::
+  Skills:
+    - runaitargetselector{target=clear}
+    - runaitargetselector{target=players}
+    - runaitargetselector{target=monsters}
+```
+## Aliases: 
 
-Skill.yml:
-
-    ChangePatchfinderGoalExample:
-      Skills:
-      - runaitargetselector{target=clear}
-      - runaitargetselector{target=players}
-      - runaitargetselector{target=monsters}
+[x] aitarget
