@@ -18,8 +18,11 @@ poison or land mines.
 | Attribute        | Aliases     | Description                                                                                     | Default Value     |
 |------------------|-------------|-------------------------------------------------------------------------------------------------|-------------------|
 | Charges          | ch, c       | Determines how many times the totem can hit something before disappearing.                      | 0                 |
+| YOffset | yo | How high off the target the totem will spawn. | +1 |
 
 Inherits attributes from [Projectile](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/projectile)
+
+> `stopAtEntity` gets default to `true`
 
 ## Examples:
 
