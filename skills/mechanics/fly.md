@@ -1,4 +1,3 @@
-Mechanic: Fly Aura
 ==================
 
 Makes the player fly, similar to the /fly command. Can use any aura
@@ -15,6 +14,7 @@ Attributes
 
 Examples
 --------
-
-      Skills:
-      - fly{duration=100} @trigger ~onInteract
+```yaml
+Skills:
+  - fly{duration=100} @trigger ~onInteract
+```
