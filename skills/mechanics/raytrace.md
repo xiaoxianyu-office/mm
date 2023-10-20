@@ -1,10 +1,10 @@
-Mechanic: Raytrace
----------------------
+=================
+
+## Description: 
 
 Traces a ray to the target. **[PREMIUM ONLY]**
  
-Attributes
-----------
+## Attributes:
 
 | Attribute            | Aliases               | Description                                                                                                                                              | Default Value |
 |----------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
@@ -21,10 +21,10 @@ Attributes
 | raytraceConditions   | rc, rcon, rconditions | Conditions applied to the raytraced target                                                                                                               | NONE          |
 | headshotmultiplier   | hsmultiplier, hsm     | headshot power multiplier                                                                                                                                | 1             |
 
-Examples
---------
+## Examples:
 
-```
+```yaml
+MyRaytraceSkill:
   - raytrace{
       entitySkill=[
         - damage{amount=20}
