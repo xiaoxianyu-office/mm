@@ -1,4 +1,3 @@
-Mechanic: Lunge
 ===============
 
 Applies forward directional velocity to the target.
@@ -16,5 +15,7 @@ Attributes
 
 Examples
 --------
-
-    - lunge{velocity=15;velocityY=5} @Self
+```yaml
+Skills:    
+  - lunge{velocity=15;velocityY=5} @Self
+```
