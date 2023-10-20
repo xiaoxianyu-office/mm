@@ -1,6 +1,6 @@
-Mechanic: SetMobScore
 =====================
 
+## Description:
 *Added in version 2.3*
 
 Modifies the a scoreboard-objective value of the casting mob. The skill
@@ -8,8 +8,7 @@ is a no-target skill and will always affect the casting mob's score.
 Works exactly like the ModifyMobScore-mechanic, but is only capable of
 performing the **set**-action.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description                                                                                                                      | Default |
 |-----------|---------|----------------------------------------------------------------------------------------------------------------------------------|---------|
@@ -17,7 +16,10 @@ Attributes
 | value     | v       | The value to perform the operation with                                                                                          |         |
 
   
-Examples 
-----
-
-*soon!*
+## Examples:
+This will set the mob score to Zero on the objective "MyScore"
+```yaml
+ResetMyMobScore:
+  Skills:
+    - setmobscore{o=MyScore;v=0}
+```
