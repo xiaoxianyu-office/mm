@@ -1,14 +1,13 @@
-Mechanic: SetTargetScore
 ========================
-
 *Added in version 2.3*
+
+## Description:
 
 Modifies the a scoreboard-objective value of the specified targeter(s).
 Works exactly like the ModifyTargetScore-mechanic, but is only capeable
 of performing the **set**-action.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases | Description                                                                                                                      | Default |
 |-----------|---------|----------------------------------------------------------------------------------------------------------------------------------|---------|
@@ -16,15 +15,15 @@ Attributes
 | value     | v       | The value to perform the operation with                                                                                          |         |
 
   
-Examples
-----
+## Examples:
 
 This example will track how often and whom damaged
 the casting mob in battle.
-
-      Skills:
-      - settargetscore
-          {
-          objective=damagescore;
-          value=1
-          } @trigger ~onDamaged
+```yaml
+Skills:
+  - settargetscore
+      {
+      objective=damagescore;
+      value=1
+      } @trigger ~onDamaged
+```
