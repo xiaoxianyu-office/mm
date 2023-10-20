@@ -1,4 +1,3 @@
-Mechanic: Force Pull
 ====================
 
 Teleports all targeted entities to a location within &lt;spread&gt;
@@ -19,7 +18,8 @@ Examples
 
 This example would teleport all entities within 30 blocks to a random
 location within 5 blocks of the boss.
-
-    ForceGrip:
-      Skills:
-      - forcepull{spread=5} @EntitiesInRadius{r=30}
+```yaml
+ForceGrip:
+  Skills:
+  - forcepull{spread=5} @EntitiesInRadius{r=30}
+```
