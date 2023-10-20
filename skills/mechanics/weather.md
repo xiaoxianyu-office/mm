@@ -1,10 +1,10 @@
-Mechanic: Weather
 =================
+
+## Description:
 
 Changes the weather in the casting mob's world.
 
-Attributes
-----------
+## Attributes:
 
 | Attribute | Aliases   | Description                                               | Default |
 |-----------|-----------|-----------------------------------------------------------|---------|
@@ -20,12 +20,11 @@ Aliases for weather types:
 | **Rainy**  | rain           |
 | **Stormy** | storm, thunder |
 
-Examples
---------
+
+## Examples:
 
 Causes a storm for 10 minutes when the mob spawns.
-
-      Skills:
-      - weather{type=storm;duration=6000} ~onSpawn
-
-[1] ????
+```yaml
+Skills:
+  - weather{type=storm;duration=6000} ~onSpawn
+```
