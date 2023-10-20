@@ -1,14 +1,15 @@
-## Description
+=================
+
+## Description:
 Summons a mob to mount the caster. Will knock the current rider off if there is one.
 
 
-## Attributes
+## Attributes:
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | passenger | p. rider, r, type, t | The type of the mob to set as the passenger               |         |
-
   
-## Examples
+## Examples:
 ```yaml
   Skills:
   - summonPassenger{type=MyZombie}
@@ -16,7 +17,7 @@ Summons a mob to mount the caster. Will knock the current rider off if there is 
 Will summon the mob "MyZombie" to ride the caster of the mechanic.
 
 
-## Aliases
+## Aliases:
 - [x] passenger
 - [x] summonRider
 - [x] rider
