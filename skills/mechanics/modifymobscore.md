@@ -1,6 +1,7 @@
 ===========================
 
 Modifies the scoreboard-objective value of the casting mob.
+Does not support targeters.
 
 A list of possible operations for the action-syntax:
 
