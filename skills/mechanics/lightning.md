@@ -1,4 +1,3 @@
-Mechanic: Lightning
 ===================
 
 Causes a lightning strike at the target entity or location, dealing
@@ -18,15 +17,16 @@ Examples
 --------
 
 This example will summon a lightning bolt to the designated targeters.
-
-    StaticSheep:
-      Type: SHEEP
-      Skills:
-      - lightning @EntitiesInRadius{r=10} ~onTimer:100
-
+```yaml
+StaticSheep:
+  Type: SHEEP
+  Skills:
+    - lightning @EntitiesInRadius{r=10} ~onTimer:100
+```
 This example will summon a lightning bolt to the designated targeters and deal 6 damage.
-
-    StaticSheep:
-      Type: SHEEP
-      Skills:
-      - lightning{d=6} @EntitiesInRadius{r=10} ~onTimer:100
+```yaml
+StaticSheep:
+  Type: SHEEP
+  Skills:
+    - lightning{d=6} @EntitiesInRadius{r=10} ~onTimer:100
+```
