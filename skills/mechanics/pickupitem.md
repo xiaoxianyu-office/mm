@@ -1,4 +1,4 @@
------------------
+==================
 
 Pick up the targeted item, if the caster is a player.
 
