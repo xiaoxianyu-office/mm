@@ -5,6 +5,7 @@
 ## Description:
 
 Shoots a shulker bullet at the target entity, giving them levitation on hit.
+
 *Requires a target entity. Does not work well with location targeters.*
 
 ## Attributes:
