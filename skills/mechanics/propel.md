@@ -12,6 +12,7 @@ Propels the caster of the mechanic towards the target.
 
 
 ## Examples:
+Propels the caster towards the damager if they are over 6 blocks away.
 ```yaml
 ExampleMob:
   Type: ZOMBIE
