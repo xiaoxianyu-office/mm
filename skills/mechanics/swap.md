@@ -1,21 +1,14 @@
-==============
-
-## Description:
-
+## Description
 Swaps the caster and targets locations
 
-## Attributes:
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
+## Attributes
+> *This mechanic has no attributes*
 
----
 
-## Examples:
-
-Caster swaps places with the target.
+## Examples
+The caster of the swap mechanic will change places with the target.
 ```yaml
-Skills:
+  Skills:
   - swap @target
 ```
