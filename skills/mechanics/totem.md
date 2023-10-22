@@ -1,7 +1,4 @@
-============
-
-## Description:
-
+## Description
 The totem mechanic places an invisible "totem", similar to the
 [projectile](/skills/mechanics/projectile) mechanic, except that it
 doesn't move. Much like projectiles, you can use onTick skills to create
@@ -12,26 +9,25 @@ their defined radius until their charges or duration run out. They're
 useful for creating ground effects with particles, such as clouds of
 poison or land mines.
 
-## Attributes:
 
-
-| Attribute        | Aliases     | Description                                                                                     | Default Value     |
-|------------------|-------------|-------------------------------------------------------------------------------------------------|-------------------|
-| Charges          | ch, c       | Determines how many times the totem can hit something before disappearing.                      | 0                 |
-| YOffset | yo | How high off the target the totem will spawn. | +1 |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| Charges   | ch, c     | Determines how many times the totem can hit something before disappearing | 0  |
+| YOffset   | yo        | How high off the target the totem will spawn                          | 1      |
 
 Inherits attributes from [Projectile](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/projectile)
 
 > `stopAtEntity` gets default to `false`
 
-## Examples:
 
+## Examples
 ```yaml
 MyFirstTotem:
   Skills:
-    - totem{ch=1;i=1;md=8;onTick=MFT_TICK} @self
+  - totem{ch=1;i=1;md=8;onTick=MFT_TICK} @self
 
 MFT_TICK:
   Skills:
-    - damage{a=3}
+  - damage{a=3}
 ```
