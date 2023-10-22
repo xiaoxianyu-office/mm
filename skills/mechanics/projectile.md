@@ -180,7 +180,8 @@ Examples:
 | bulletspin | bspin    | The spin of the bullet                                               | 0       |
 | bulletmatchdirection | bmd | Should the bullet face where the projectile is facing           | false   |
 | bulletKillable | bk   | Allow other entities to damage the projectile bullet                 | false   |
-| bulletOffset| boffset | The offset of the bullet mob                                         | 1.35    | 
+| bulletYOffset| byo | The Y offset of the bullet mob                                          | 1.35    | 
+| bulletForwardOffset| bfo| The forward offset of the bullet mob                               | 1.35    | 
 
 ### TRACKING Bullet
 | Attribute | Aliases   | Description                                                          | Default |
