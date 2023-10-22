@@ -1,33 +1,31 @@
-================
-
-## Description:
-
+## Description
 Adds a scoreboard tag to the target.
 
 This is used in conjunction with the **hastag condition** (see
 [Conditions](/conditions/start)). You can also use the vanilla command
-"/scoreboard players tag &lt;player name&gt; add [Tag Name] " to do
+`/scoreboard players tag <player name> add [Tag Name]` to do
 the same thing.
 
-## Attributes:
 
-| Attribute | Aliases | Description                | Default Value |
-|-----------|---------|----------------------------|---------------|
-| tag       | t       | The string-name of the tag | default       |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| tag       | t         | The string-name of the tag                                           | default |
 
-## Examples:
 
+## Examples
 This skill would give the casting mob the tag "Test".
 ```yaml
 TagSkill:
   Skills:
-    - addtag{t=Test} @self
+  - addtag{t=Test} @self
 ```
+##
 This skill would only run on the mob if it had the tag, "Test".
 ```yaml
 TagTest:
   Conditions:
-    - hastag{t=Test}
+  - hastag{t=Test}
   Skills:
-    - suicide @self
+  - suicide @self
 ```
