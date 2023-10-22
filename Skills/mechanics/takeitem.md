@@ -1,25 +1,23 @@
-=================
-
-## Description:
-
-Removes an item from the target
-
-## Attributes:
-
-| Attribute | Aliases        | Description                      | Default |
-|-----------|----------------|----------------------------------|---------|
-| item      | material, m, i | The item, or material, to remove | DIRT    |
-| amount    | a              | The amount to remove             | 1       |
+## Description
+Removes the specified amount of an item from the target player's inventory
 
 
-## Examples:
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| item      | material, m, i | The item, or material, to remove                                | DIRT    |
+| amount    | a              | The amount to remove                                            | 1       |
 
+
+
+## Examples
 Would remove a stack of dirt from the nearest player's inventory
 ```yaml
-Skills:
+  Skills:
   - takeitem{i=DIRT;a=64} @NearestPlayer{r=10}
 ```
-## Aliases: 
-[x] take 
-[x] itemtake
-[x] takeitems
+
+## Aliases 
+- [x] take 
+- [x] itemtake
+- [x] takeitems
