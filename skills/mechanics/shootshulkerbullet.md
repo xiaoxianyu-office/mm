@@ -1,25 +1,19 @@
-================================
-
-*Added in 4.12 MM*
-
-## Description:
-
+## Description
 Shoots a shulker bullet at the target entity, giving them levitation on hit.
 
-*Requires a target entity. Does not work well with location targeters.*
-
-## Attributes:
-
-| Attribute | Aliases | Description                                  | Default Value |
-|-----------|---------|----------------------------------------------|---------------|
-| interval  | i       | how often in ticks this mechanic updates     | 4             |
-| onTick    | oT      | the skill this mechanic calls each interval  | NONE          |
-| onHit     | oH      | the skill this mechanic calls when it hits the target | NONE |
-| onEnd     | oE      | the skill this mechanic calls when it ends   | NONE          |
+> Requires a target entity. Does not work well with location targeters
 
 
-## Examples:
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| interval  | i         | how often in ticks this mechanic updates                             | 4       |
+| onTick    | oT        | the skill this mechanic calls each interval                          | NONE    |
+| onHit     | oH        | the skill this mechanic calls when it hits the target                | NONE    |
+| onEnd     | oE        | the skill this mechanic calls when it ends                           | NONE    |
 
+
+## Examples
 This example would shoot a shulker bullet with some smaller white reddust particles in the onTick and onEnd. It would also damage the target for 5 damage when it hits them.
 
 ```yaml
