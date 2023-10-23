@@ -10,8 +10,8 @@ Toggles the sitting state for cats, dogs, foxes, and parrots.
 
 ## Examples
 Makes the wolf sit when right clicked.
-```
-Dog:
+```yaml
+ExampleDog:
   Type: Wolf
   Skills:
   - sit{state=true} @Self ~onInteract
