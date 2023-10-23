@@ -1,17 +1,13 @@
-==================
-
+## Description
 Pick up the targeted item, if the caster is a player.
 
-Attributes
-----------
 
-| Attribute        | Aliases | Description                           | Default |
-|------------------|---------|---------------------------------------|---------|
-| none             | none    | none                                  | none    |
+## Attributes
+> *This mechanic has no attributes*
 
-Examples
---------
+
+## Examples
 ```yaml
-Skills:
+  Skills:
   - pickupitem @ItemsInRadius{r=10}
 ```
