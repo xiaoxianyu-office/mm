@@ -33,7 +33,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | closedoors                         | restrictopendoor | Not sure what this one does                                                                              |
 | randomlookaround                   | lookaround       | The mob will randomly look around                                                                        |
 | [gotospawnlocation](/Mobs/ai/goals/gotospawn)                  | gotospawn        | Mob will pathfind to the its spawn location                                                              |
-| fleeConditional **[Premium-only]** | fleeIf           | Causes the mob to flee based on provided conditions. Safe speed is required for distanes greater than 5. |
+| fleeConditional(/Mobs/ai/goals/fleeconditional) **[Premium-only]** | fleeIf           | Causes the mob to flee based on provided conditions. Safe speed is required for distanes greater than 5. |
 | doNothing **[Premium-only]**       |                  | Causes the mob to do nothing if conditions are met.                                                      |
 
 FleeConditional Example:
@@ -49,24 +49,24 @@ AIGoalSelectors:
 |-------------------------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | avoidcreepers                       |                  | Causes the mob to avoid Creepers                                                                                                                                   |
 | avoidskeletons                      |                  | Causes the mob to avoid Skeletons                                                                                                                                  |
-| avoidzombies                        |                  | Causes the mob to avoid Zombies                                                                                                                                    |
-| fleesun                             |                  | The mob will hide in the shade when the sun it out                                                                                                                 |
+| avoidzombies                        |                  | Causes the mob to avoid Zombies                                                                                                                                    |                                                                                                                |
 | [meleeattack](/Mobs/ai/goals/meleeattack) |            | Causes the mob to move to and melee-attack its target                                                                                                              |
 | movetowardstarget                   |                  | Causes the mob to move towards its target                                                                                                                          |
 | randomstroll                        |                  | The mob will randomly walk around                                                                                                                                  |
 | restrictsun                         |                  | In theory this will keep the mob from entering sunlight                                                                                                            |
-| fleeplayers                         | runfromplayers   | Causes the mob to avoid Players                                                                                                                                    |
-| fleegolems                          | runfromgolems    | Causes the mob to avoid Iron Golems                                                                                                                                |
-| fleevillagers                       | runfromvillagers | Causes the mob to avoid villagers                                                                                                                                  |
-| fleewolf                            | runfromwolves    | Causes the mob to avoid wolves                                                                                                                                     |
-| fleefaction                         | runfromfaction   | Causes the mob to avoid entities in a given faction                                                                                                                |
+| [fleeplayers](/Mobs/ai/goals/fleeplayers) | runfromplayers   | Causes the mob to avoid Players                                                                                                                                    |
+| [fleegolems](/Mobs/ai/goals/fleegolems)  | runfromgolems    | Causes the mob to avoid Iron Golems                                                                                                                                |
+| [fleevillagers](/Mobs/ai/goals/fleevillagers) | runfromvillagers | Causes the mob to avoid villagers                                                                                                                                  |
+| [fleewolf](/Mobs/ai/goals/fleewolf)  | runfromwolves    | Causes the mob to avoid wolves                                                                                                                                     |
+| [fleefaction](/Mobs/ai/goals/fleefaction)  | runfromfaction   | Causes the mob to avoid entities in a given faction
+| [fleesun](/Mobs/ai/goals/fleesun)   |                  | The mob will hide in the shade when the sun it out                                                                                                                 |
 | spiderattack                        |                  | Uses the attack a spider would (doesn't seem any different from a meleeattack)                                                                                     |
-| leapattarget                        |                  | Makes the mob leap at its target                                                                                                                                   |
+| [leapattarget](/Mobs/ai/goals/leapattarget)   |                  | Makes the mob leap at its target                                                                                                                                   |
 | moveindoors                         |                  |                                                                                                                                                                    |
-| movethroughvillage                  |                  |                                                                                                                                                                    |
+| [movethroughvillage](/Mobs/ai/goals/movethroughvillager)  |                  |                                                                                                                                                                    |
 | [movetoblock](/Mobs/ai/goals/movetoblock)|             | Makes the mob go towards a specific type of block                                                                                                     |
-| movetolava                          |                  | Makes the mob move towards lava                 |
-| movetowater                         |                  | Makes the mob move towards water               |
+| [movetolava](/Mobs/ai/goals/movetowater)  |                  | Makes the mob move towards lava                 |
+| [movetowater](/Mobs/ai/goals/movetolava)  |                  | Makes the mob move towards water               |
 | movetowardsrestriction              |                  |                                                                                                                                                                    |
 | patrol x1,y1,z1;x2,y2,z2;x3,y3,z3;… | patrolroute      | Makes the mob patrol between the specified locations                                                                                                               |
 | gotolocation x,y,z                  | goto             | Makes the mob go to the specified location(Notice Followrange must more than the distance between location and mob)                                                |
@@ -75,11 +75,17 @@ AIGoalSelectors:
 | panicWhenOnFire                     | panic            | Run around panicking when on fire and look for water                                                                                                               |
 | randomFly                           |                  | Fly around randomly                                                                                                                                                |
 
+**Animals Only**
+
+| AI Goal      | Aliases        | Description                                   |
+|--------------|----------------|-----------------------------------------------|
+| [breed](/Mobs/ai/goals/breed) |  | Make a creeper want to explode on its target. |
+
 **Creepers Only**
 
 | AI Goal      | Aliases        | Description                                   |
 |--------------|----------------|-----------------------------------------------|
-| creeperswell | creeperexplode | Make a creeper want to explode on its target. |
+| creeperswell | creeperexplode | Causes the mob to be able to breed with other mobs. |
 
 **Ranged Entities Only**
 
@@ -125,7 +131,7 @@ SuperMob:
 | players                                     |                               | Targets players.                                               |
 | villagers                                   |                               | Targets villagers.                                             |
 | golems                                      |                               | Targets Golems.                                                |
-| nearestConditionalTarget **[Premium-only]** | nearestConditional, nearestIf | Targets the nearest entity that meets the conditions provided. |
+| [nearestConditionalTarget](/Mobs/ai/targets/nearestconditionaltarget) **[Premium-only]** | nearestConditional, nearestIf | Targets the nearest entity that meets the conditions provided. |
 
 NearestConditionalTarget Example:
 ```yaml
@@ -144,8 +150,8 @@ AITargetSelectors:
 | OtherFaction                           | Targets ANY entities that are in a different faction.  |
 | OtherFactionMonsters                   | Targets any monsters that are in a different faction.  |
 | OtherFactionVillagers                  | Targets any villagers that are in a different faction. |
-| SpecificFaction [faction_name]         | Targets any entities that are in the given faction.    |
-| SpecificFactionMonsters [faction_name] | Targets any monsters that are in the given faction.    |
+| [SpecificFaction](/Mobs/ai/targets/specificfaction) [faction_name]         | Targets any entities that are in the given faction.    |
+| [SpecificFactionMonsters](/Mobs/ai/targets/specificfactionmonsters) [faction_name] | Targets any monsters that are in the given faction.    |
 
 Example:
 
