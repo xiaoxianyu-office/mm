@@ -1,5 +1,4 @@
-================
-
+## Description
 Applies a potion effect to the target entity, which is usually
 frequently used on custom mob creations and a quite powerful tool; as it
 allows for countless interesting applications. See the [spigot javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) for a complete list of available potion
@@ -10,9 +9,8 @@ the exception of the armorstand mobtype which has it's own attribute for
 indefinite invisibility. Extremely high modifier-levels may have obscure
 effects.
 
-Attributes
-----------
 
+## Attributes
 | Attribute    | Aliases        | Description                                                                               | Default |
 |--------------|----------------|-------------------------------------------------------------------------------------------|---------|
 | type         | t              | The type of [potion effect](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) to apply.                           |         |
@@ -22,15 +20,14 @@ Attributes
 | hasParticles | particles or p | Whether not to show the status effect particles. (4.6+)                                   | true    |
 | hasIcon      | icon or i      | Whether not to show the status effect icon. (4.6+)                                        | true    |
 
-Examples
---------
 
+## Examples
 This example skill-configuration will strongly slow down the target for
 10 seconds (200 ticks) and deal 5 hearts of damage to it.
 ```yaml
 Cripple:
   Skills:
-    - potion{type=SLOW;duration=200;level=4}
-    - damage{amount=10}
+  - potion{type=SLOW;duration=200;level=4}
+  - damage{amount=10}
 ```
-[1] 20 ticks = 1 second
+> 20 ticks = 1 second
