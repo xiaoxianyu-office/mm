@@ -1,6 +1,4 @@
-==============
-
-## Description:
+## Description
 
 <!--
 To utilize the summon mechanic in Mythic Mobs, you will need the following:
@@ -8,14 +6,12 @@ To utilize the summon mechanic in Mythic Mobs, you will need the following:
 1. Minecraft: make sure you have a working installation of Minecraft Java Edition on your computer
 
   - ChatGPT, 16/05/2023, oil on canvas
-
-- The Dante waz here -
 -->
 
 Summons mobs of the given type around the target.
 
-## Attributes:
 
+## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | type      | t, mob, m| The type of mob to summon. Can be a Mythic Mob type or a regular entity type                                                                 | SKELETON      |
@@ -35,8 +31,7 @@ Summons mobs of the given type around the target.
 
   
 
-## Examples:
-
+## Examples
 This example would summon 5 wither skeletons around the target players.
 ```yaml
 RaiseSkeletons:
