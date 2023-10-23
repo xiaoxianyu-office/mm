@@ -1,20 +1,16 @@
-=====================
-
-
-## Description:
-
+## Description
 Sets whether gravity affects the target entity.
 
-## Attributes:
 
-| Attribute | Aliases | Description                                     | Default Value |
-|-----------|---------|-------------------------------------------------|---------------|
-| gravity   | g       | Sets whether the entity uses gravity (boolean). | true          |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| gravity   | g         | Sets whether the entity uses gravity (boolean)                       | true    |
 
   
-## Examples:
+## Examples
 ```yaml
-Skills:
+  Skills:
   - setgravity{g=false} @self ~onSpawn
   - setusegravity{g=false} @self ~onSpawn
   - ...
