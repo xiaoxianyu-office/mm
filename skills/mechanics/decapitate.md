@@ -1,16 +1,14 @@
---------------------
-
-Drops a copy of the target players head. Doesn't do anything if used
+## Description
+Drops a copy of the target players' head. Does nothing when used
 against a non-player entity.
 
-### Attributes
+## Attributes
+> *This mechanic has no attributes*
 
-None!
 
-### Examples
-
+## Examples
 Drops the head of the person who clicked on the mob.
 ```yaml
-Skills:
+  Skills:
   - decapitate @trigger ~onInteract
 ```
