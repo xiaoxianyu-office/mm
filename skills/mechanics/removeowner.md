@@ -1,13 +1,14 @@
-=====================
-
-## Description:
-
+## Description
 Removes the wolf's owner
 
-## Examples:
 
+## Attributes
+> *This mechanic has no attributes*
+
+
+## Examples
 ```yaml
-Skills:
+  Skills:
   - removeowner @MIR{t=MythicWolf} ~onInteract
   - ...
 ```
