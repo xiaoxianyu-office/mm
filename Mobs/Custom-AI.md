@@ -28,7 +28,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | breakdoors                         |                  | Causes the mob to break down doors it runs into                                                          |
 | eatgrass                           |                  | Makes the mob occasionally… eat grass                                                                    |
 | float                              | swim             | Makes the mob swim in water/not sink                                                                     |
-| lookatplayers                      |                  | The mob will look at nearby players                                                                      |
+| [lookatplayers](/Mobs/ai/goals/lookatplayers)                      |                  | The mob will look at nearby players                                                                      |
 | opendoors                          | opendoor         | The mob will open doors it runs into and close the door behind it                                        |
 | closedoors                         | restrictopendoor | Not sure what this one does                                                                              |
 | randomlookaround                   | lookaround       | The mob will randomly look around                                                                        |
