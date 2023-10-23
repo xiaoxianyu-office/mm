@@ -3,13 +3,13 @@ Checks if the target **Player** is sprinting
 
 
 ## Attributes
->*This condition has no attributes*
+> *This condition has no attributes*
 
 
 ## Examples
 ```yaml
   TargetConditions:
-  - sprinting{} true
+  - sprinting true
 ```
 
 
