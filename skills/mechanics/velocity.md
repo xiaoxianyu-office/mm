@@ -22,7 +22,7 @@ is moved by other sources.
 internal_mobname:
   Type: Zombie
   Skills:
-    - velocity{m=set;x=0;y=0;z=0} @self ~onDamaged
+  - velocity{m=set;x=0;y=0;z=0} @self ~onDamaged
 ```
 ##
 While the example above works most of the time, the bow's ARROW_KNOCKBACK enchantment will still manage to move them. This can be prevented by doing a slight modification to the mechanic, as shown below.
@@ -30,5 +30,5 @@ While the example above works most of the time, the bow's ARROW_KNOCKBACK enchan
 internal_mobname:
   Type: Zombie
   Skills:
-    - velocity{m=set;x=0;y=0;z=0;delay=1} @self ~onDamaged
+  - velocity{m=set;x=0;y=0;z=0;delay=1} @self ~onDamaged
 ```
