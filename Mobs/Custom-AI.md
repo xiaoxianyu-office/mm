@@ -79,13 +79,13 @@ AIGoalSelectors:
 
 | AI Goal      | Aliases        | Description                                   |
 |--------------|----------------|-----------------------------------------------|
-| [breed](/Mobs/ai/goals/breed) |  | Make a creeper want to explode on its target. |
+| [breed](/Mobs/ai/goals/breed) |  | Causes the mob to be able to breed with other mobs. |
 
 **Creepers Only**
 
 | AI Goal      | Aliases        | Description                                   |
 |--------------|----------------|-----------------------------------------------|
-| creeperswell | creeperexplode | Causes the mob to be able to breed with other mobs. |
+| creeperswell | creeperexplode | Make a creeper want to explode on its target. |
 
 **Ranged Entities Only**
 
