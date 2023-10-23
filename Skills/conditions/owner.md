@@ -12,5 +12,5 @@ Checks if the target entity is the owner of the caster.
 ## Examples:
 ```yaml
   TargetConditions:
-  - owner{} true
+  - owner true
 ```
