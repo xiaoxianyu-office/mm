@@ -1,20 +1,16 @@
-==================
-
+## Description
 Makes the player fly, similar to the /fly command. Can use any aura
 attribute.
 
-Attributes
-----------
 
-| Attribute | Aliases | Description          | Default Value |
-|-----------|---------|----------------------|---------------|
-| duration  | d       | Duration of the aura | 200           |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| duration  | d         | Duration of the aura                                                 | 200     |
 
   
-
-Examples
---------
+## Examples
 ```yaml
-Skills:
+  Skills:
   - fly{duration=100} @trigger ~onInteract
 ```
