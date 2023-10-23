@@ -1,11 +1,13 @@
-===============
-
+## Description
 Undoes a previous paste done via the [fawePaste] mechanic, based on its id or on the schematic used
 
-| Attribute | Aliases | Description                                                   | Default Value |
-|-----------|---------|---------------------------------------------------------------|---------------|
-| schematic |  s       | The schematic that needs to be undone. Only necessary if no id can be provided | |
-| pasteID   | pid, id  | The id of the paste that needs to be undone                  |               |
+
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| schematic |  s        |The schematic that needs to be undone. Only necessary if no id can be provided| |
+| pasteID   | pid, id   | The id of the paste that needs to be undone                          |         |
+
 
 ## Examples
 ```yaml
