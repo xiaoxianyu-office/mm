@@ -15,7 +15,7 @@ Would cause the mob to target entities holding Iron Ingots.
 ```yaml
 ExampleMob:
   Type: ZOMBIE
-  AIGoalSelectors:
+  AITargetSelectors:
     - clear
     - movetowardsconditional{mr=true;ms=true;conditions=[ - holding{m=IRON_INGOT} true ]}
 ```
