@@ -23,7 +23,7 @@ A list of possible operations for the action-syntax:
 This example will track how often and whom damaged
 the casting mob in battle.
 ```yaml
-Skills:
+  Skills:
   - modifytargetscore{objective=damagescore;action=add;value=1} @trigger ~onDamaged
 ```
 
