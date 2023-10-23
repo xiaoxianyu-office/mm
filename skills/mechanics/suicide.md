@@ -1,16 +1,14 @@
-=================
-
-## Description:
-
+## Description
 Instantly kills the mob. This is a no-target mechanic and will only
-affect the casting mob. It doesn't have any attributes nor options.
+affect the casting mob.  
+This won't work on a few non-mob entities like boats or armor stands! For them, the use of [Remove](skills/mechanics/remove) is advised!
 
-This won't work on a few non-mob entities like boats or armor stands!
+## Attributes
+> *This mechanic has no attributes*
 
-## Examples:
-
+## Examples
 10% Chance to kill the casting mob when damaged.
 ```yaml
-Skills:
+  Skills:
   - suicide ~onDamaged 0.1
 ```
