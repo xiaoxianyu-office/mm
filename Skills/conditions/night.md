@@ -9,5 +9,5 @@ Checks if the time is night, from 14000 to 22000 in-game time
 ## Examples
 ```yaml
   Conditions:
-  - night{} true
+  - night true
 ```
