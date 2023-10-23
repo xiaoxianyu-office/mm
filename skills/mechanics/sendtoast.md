@@ -15,6 +15,6 @@ target is not a player.
 ## Examples
 ```yaml
   Skills:
-  - sendtoast{icon=DIAMOND; iconnbt={CustomModelData:1};message="Kill Amomgus!";frame=challenge} @PlayersInRadius{r=10}
+  - sendtoast{icon=DIAMOND;iconnbt={CustomModelData:1};message="This is a Toat!";frame=challenge} @PlayersInRadius{r=10}
   - ...
 ```
