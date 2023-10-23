@@ -50,7 +50,7 @@ IgnitionDamage:
   - varEquals{var=skill.do_ignite;value="yes"}
   Skills:
   - ignite{ticks=20}
-  - effects:particles{}
+  - effects:particles
 ```
 
 ##
