@@ -1,7 +1,4 @@
-===============
-
-## Description:
-
+## Description
 Makes the caster speak using chat and speech bubbles. Supports
 Holograms.
 
@@ -11,8 +8,8 @@ Holograms.
 * Now supports hover text in the format **`<hover:show_text:'hover text??'>hover over me!</hover>`**
 * Now supports clickable text in the format **`<click:run_command:/say hello>click me!</click>`**
 
-## Attributes:
 
+## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | offset    | o         | The y offset for the hologram.                                       | 0.6     |
@@ -26,8 +23,15 @@ Holograms.
 | audience  |           | The [Audience](/Skills/Effects#audience) of the mechanic             | tracked |
   
 
-## Examples:
+## Examples
 ```yaml
   Skills:
-  - speak{offset=0.6f;radius=30;maxlinelength=22;lineprefix="&5";message=" I just spawned!";chatprefix=<caster.name>&f<&co>;duration=200} @self ~onSpawn
+  - speak{
+    offset=0.6f;
+    radius=30;
+    maxlinelength=22;
+    lineprefix="&5";
+    message=" I just spawned!";
+    chatprefix=<caster.name>&f<&co>;
+    duration=200} @self ~onSpawn
 ```
