@@ -3,7 +3,6 @@ Checks ff the target has a velocity greater than zero
 
 
 ## Attributes
-
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | exact     | e         | If the check should be exact or approximated                         | true    |
@@ -12,7 +11,7 @@ Checks ff the target has a velocity greater than zero
 ## Examples
 ```yaml
   Conditions:
-  - moving{} true
+  - moving true
 ```
 
 
