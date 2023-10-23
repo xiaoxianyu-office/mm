@@ -16,6 +16,6 @@ performing the **set**-action.
 This will set the mob score to Zero on the objective "MyScore"
 ```yaml
 ResetMyMobScore:
-    Skills:
-    - setmobscore{o=MyScore;v=0}
+  Skills:
+  - setmobscore{o=MyScore;v=0}
 ```
