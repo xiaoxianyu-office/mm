@@ -278,7 +278,7 @@ See [Skills](Skills/Skills) to get started on making your own skills.
 example_mob:
   Type: zombie
   Skills:
-    - swap{} @trigger ~onInteract
+    - swap @trigger ~onInteract
 ```
 
 #### Nameplate
