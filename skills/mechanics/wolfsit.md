@@ -1,17 +1,14 @@
-=============
-
-## Description:
-
+## Description
 Sets the sitting state of the target wolf.
 
-## Attributes:
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| state     |       | The state the wolf is in. True = sitting and False = standing |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| state     |           | The state the wolf is in. True = sitting and False = standing        |         |
 
-## Examples:
 
+## Examples
 ```yaml
 # Standing
 - wolfSit{state=false} @self ~onInteract
