@@ -1,19 +1,15 @@
-================
-
-## Description:
-
+## Description
 Sets the mob's target to the target entity.
 If using threat tables, will increase threat to the threshold to change targets for the targeted entity.
 
-## Attributes:
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
+## Attributes
+> *This mechanic has no attributes*
 
-## Examples:
-sets the casters target to the targeter when right clicked.
+
+## Examples
+Sets the caster's target to the trigger when right clicked.
 ```yaml
-Skills:
+  Skills:
   - setTarget @trigger ~onInteract
 ```
