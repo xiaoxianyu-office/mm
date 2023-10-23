@@ -9,7 +9,7 @@ Checks if it's thundering in the target world.
 ## Examples
 ```yaml
   Conditions:
-  - thundering{} true
+  - thundering true
 ```
 
 
