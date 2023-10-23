@@ -9,7 +9,7 @@ Checks if it's raining in the target world.
 ## Examples
 ```yaml
   Conditions:
-  - raining{} true
+  - raining true
 ```
 
 
