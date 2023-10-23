@@ -1,11 +1,9 @@
-==================
-
-## Description:
+## Description
 Sets the world's time. Depending on the attributes used, the change in time can be absolute or relative to the target player.
 
 Time mechanics must be synced to function. "sync=true;"
 
-## Attributes:
+## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | mode      | m         | The mode used in the time mechanic. Can be ADD/SET/RESET             | ADD     |
@@ -19,7 +17,7 @@ The different values the mode attribute can be all have different effects
 - **`SET`** - Sets the current time of the world
 - **`RESET`** - Re-syncs the target's world time with the server world time, if it is not already synced
 
-## Examples:
+## Examples
 ```yaml
 # Mob File
 ExampleMob:
