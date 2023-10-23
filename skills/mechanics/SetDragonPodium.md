@@ -1,17 +1,14 @@
-=================
-
-## Description:
-
+## Description
 Sets the position of the dragon's podium (aka the point the dragon circles around) at the target location. paper 1.18.2+ only.
 
-## Attributes:
 
-*This mechanic has no attributes*
+## Attributes
+> *This mechanic has no attributes*
 
-## Example:
 
+## Example
 ```yaml
-Skills:
+  Skills:
   - setDragonPodium @Location{c=125,50,-521}
 ```
 
