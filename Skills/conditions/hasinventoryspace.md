@@ -3,11 +3,11 @@ If the target player has empty inventory space
 
 
 ## Attributes
-*This mechanic has no attributes*
+> *This condition has no attributes*
 
 
 ## Examples
 ```yaml
   Conditions:
-  - hasinventoryspace{} true
+  - hasinventoryspace true
 ```
