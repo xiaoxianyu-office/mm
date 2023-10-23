@@ -3,11 +3,11 @@ Checks if the evaluated entity is a monster
 
 
 ## Attributes
->*This condition has no attributes*
+> *This condition has no attributes*
 
 
 ## Examples
 ```yaml
   TargetConditions:
-  - isMonster{} true
+  - isMonster true
 ```
