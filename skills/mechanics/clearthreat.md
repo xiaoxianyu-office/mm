@@ -1,20 +1,13 @@
+## Description
 Makes a mob clear its threat table. Removes all entities from the threat table completely.
 
-**Attributes**
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
+## Attributes
+> *This mechanic has no attributes*
 
----
 
-Added in MM 4.12
-
----
-
-**Examples**
-
-```
-Skills:
-- clearThreat{} @self
+## Examples
+```yaml
+  Skills:
+  - clearThreat @self
 ```
