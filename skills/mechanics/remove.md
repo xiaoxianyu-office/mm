@@ -1,17 +1,17 @@
-================
-
-## Description:
+## Description
 Removes the targeted entity from existence. Does not work on players.
 
-## Examples:
+## Attributes
+> *This mechanic has no attributes*
 
+## Examples
 This mob would despawn 10 seconds after spawning:
 ```yaml
-Skills:
+  Skills:
   - remove{delay=200} @self ~onSpawn
 ```
 This skill despawns the mob immediately when it is right clicked.
 ```yaml
-Skills:
+  Skills:
   - remove @self ~onInteract
 ```
