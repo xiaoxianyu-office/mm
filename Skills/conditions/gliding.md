@@ -3,13 +3,13 @@ If the target entity is gliding
 
 
 ## Attributes
-*This condition has no attributes*
+> *This condition has no attributes*
 
 
 ## Examples
 ```yaml
   Conditions:
-  - gliding{} true
+  - gliding true
 ```
 
 
