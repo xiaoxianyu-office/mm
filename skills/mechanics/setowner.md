@@ -1,7 +1,4 @@
-===============
-
-## Description:
-
+## Description
 Sets the "owner" attribute of the Mythic Mob to the given target. This is a special attribute used within MythicMobs, and different from the normal "vanilla" owner of a mob.  
 Does nothing if the caster is not a Mythic Mob, or the target is not a Player.  
 Works with the [@Owner Targeter](/Skills/Targeters/Owner), and the [Owner Condition](/skills/conditions/owner).  
@@ -11,13 +8,11 @@ If the casting mob is a `Wolf`,`Cat` or `Parrot`, then the mechanic will _also_ 
 A mob will never attack its Owner, even if specified otherwise.
 
 
-## Attributes:
+## Attributes
+> *This mechanic has no attributes*
 
->*This mechanic has no attributes*
 
-
-## Examples:
-
+## Examples
 ```yaml
 PetSheep:
   Mobtype: sheep
