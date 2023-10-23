@@ -8,8 +8,8 @@ This condition tests if the target player is blocking with a shield.
 
 ## Examples
 ```yaml
-Conditions:
-- blocking true
+  Conditions:
+  - blocking true
 ```
 
 
