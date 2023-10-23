@@ -1,10 +1,13 @@
-=================
-
+## Description
 Makes the target mount the caster mob.
 
-Examples
---------
+
+## Attributes
+> *This mechanic has no attributes*
+
+
+## Examples
 ```yaml
-Skills:
+  Skills:
   - mountme @trigger ~onDamaged
 ```
