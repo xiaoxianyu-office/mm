@@ -9,7 +9,7 @@ Checks if the weather is sunny in the target world.
 ## Examples
 ```yaml
   Conditions:
-  - sunny{} true
+  - sunny true
 ```
 
 
