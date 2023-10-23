@@ -1,6 +1,7 @@
 ## Description
 If the target entity is standing on solid ground
 
+
 ## Attributes
 > *This condition has no attributes*
 
@@ -8,7 +9,7 @@ If the target entity is standing on solid ground
 ## Examples
 ```yaml
   Conditions:
-  - onground{} true
+  - onground true
 ```
 
 
