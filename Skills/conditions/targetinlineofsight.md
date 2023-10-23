@@ -9,5 +9,5 @@ Tests if the target entity has line of sight to their target
 ## Examples
 ```yaml
   Conditions:
-  - targetinlineofsight{} true
+  - targetinlineofsight true
 ```
