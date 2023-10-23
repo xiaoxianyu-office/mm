@@ -1,19 +1,17 @@
-==================
-
-## Description:
+## Description
 Shows the hidden caster to the targeted players.
 
 
-## Attributes:
+## Attributes
 > *This mechanic has  no attributes*
 
 
-## Examples:
+## Examples
 ```yaml
   Skills:
   - showEntity{} @NearestPlayer{r=10}
 ```
 
 
-## Aliases:
+## Aliases
 - [x] showplayer
