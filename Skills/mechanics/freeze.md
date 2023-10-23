@@ -1,18 +1,14 @@
-================
-
+## Description
 Sets the ticks frozen in powdered snow. Freeze ticks are capped at 140 ticks for players. (requires 1.17)
 
-Attributes
-----------
 
-| Attribute | Aliases | Description                   | Default |
-|-----------|---------|-------------------------------|---------|
-| ticks     | t       | Ticks frozen in powdered snow | 60      |
-
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| ticks     | t         | Ticks frozen in powdered snow | 60      |
 
 
-Examples
---------
+## Examples
 Freezes the entity that the mob using this skill is attacking for 100
 ticks (5 seconds).
 ```yaml
