@@ -1,14 +1,11 @@
-==============
-
-## Descritpion:
-
+## Descritpion
 Holds the target in place temporarily.
 
-*This mechanic can cause Spigot to kick the player (PlayerName moved
-wrongly!)*
+> This mechanic can cause Spigot to kick the player (PlayerName moved
+wrongly!)
 
-## Attributes:
 
+## Attributes
 | Attribute           | Aliases | Description                                                                                                  | Default Value |
 |---------------------|---------|--------------------------------------------------------------------------------------------------------------|---------------|
 | duration            | d       | The duration (in ticks) the stun will last                                                                   |               |
@@ -25,11 +22,10 @@ wrongly!)*
 | CancelOnQuit        | coq     | Cancels the stun if the entity with the stun logs out. (Only really applies to players)                      | true          |
 
 
-## Examples:
-
+## Examples
 Stuns the target for 3 seconds, target cannot rotate.
 ```yaml
-Freeze:
+ExampleSkill:
   Skills:
-    - stun{d=60;f=true} @target
+  - stun{d=60;f=true} @target
 ```
