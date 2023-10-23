@@ -9,5 +9,5 @@ If the target has open sky above them
 ## Examples
 ```yaml
   Conditions:
-  - outside{} true
+  - outside true
 ```
