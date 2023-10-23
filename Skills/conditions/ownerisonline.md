@@ -9,5 +9,5 @@ Checks if the owner of the target mob is online
 ## Examples
 ```yaml
   Conditions:
-  - ownerisonline{} true
+  - ownerisonline true
 ```
