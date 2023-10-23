@@ -1,18 +1,14 @@
-=======================
-
-
-## Description:
-
+## Description
 Toggles the sitting state for cats, dogs, foxes, and parrots.
 
-## Attributes:
 
-| Attribute | Aliases   | Description                        | Default Value |
-|-----------|-----------|------------------------------------|---------------|
-| setSitting | state    | Sets the sitting state             | false         |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| setSitting| state     | Sets the sitting state                                               | false   |
 
-## Examples:
 
+## Examples
 Makes the wolf sit when right clicked.
 ```
 Dog:
@@ -22,4 +18,4 @@ Dog:
 ```
 
 ## Aliases: 
-[x] sit
+- [x] sit
