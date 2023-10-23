@@ -22,5 +22,5 @@ MySkeleton:
   Display: 'Skeleton <caster.hp>/<caster.mhp><&heart>'
   Skills:
   - setname{name=<caster.name>;delay=2} @self ~onDamaged
-  - setname{name=<caster.name>;delay=2} @self ~onTimer:10 ?incombat{}
+  - setname{name=<caster.name>;delay=2} @self ~onTimer:10 ?incombat
 ```
