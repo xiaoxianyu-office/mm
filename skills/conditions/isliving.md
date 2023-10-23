@@ -9,5 +9,5 @@ Checks if the target is a living entity
 ## Examples
 ```yaml
   TargetConditions:
-  - isLiving{} true
+  - isLiving true
 ```
