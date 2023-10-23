@@ -1,7 +1,4 @@
-===========================
-
-## Description:
-
+## Description
 Change pathfindergoals. It is not possible to use every goal on every
 entity. To change the ai of an entity, you need to use clear first.
 After that you can use the runaigoalselector and add the goals you need.
@@ -13,16 +10,22 @@ existing goals of the entity.
 A list of AI Goals can be found
 [here](/Mobs/Custom-AI#ai-goal-selectors)
 
-## Examples:
 
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| goal      |           | The ai goal selector you want to append                              |         |
+
+
+## Examples
 ```yaml
 TimeToFlee:
   ChangePatchfinderGoalExample:
     Skills:
-      - runaigoalselector{goal=clear}
-      - runaigoalselector{goal=fleesun}
-      - runaigoalselector{goal=randomstroll}
+    - runaigoalselector{goal=clear}
+    - runaigoalselector{goal=fleesun}
+    - runaigoalselector{goal=randomstroll}
 ```
 
-## Aliases:
-[x] aigoal
+## Aliases
+- [x] aigoal
