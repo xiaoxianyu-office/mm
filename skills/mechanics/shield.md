@@ -1,24 +1,19 @@
-================
-
-## Description:
-
+## Description
 Adds absorption hearts. Having maxShield as a greater value than amount
 is recommended.  
-Doesn't work on **Minecraft below 1.13**(excluding 1.13).
 
-## Attributes:
 
-| Attribute | Aliases           | Description | Default Value  |
-|-----------|-------------------|-------------|----------------|
-| amount    | a                 |             | 1              |
-| maxabsorb | maxshield, ma, ms |             | Amount's value |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| amount    | a         | The amount of the shield to give                                     | 1       |
+| maxabsorb | maxshield, ma, ms | The maximum value the shield on the entity should be| `Amount's value` |
 
   
-## Examples:
-
+## Examples
 Gives absorption hearts to caster.
 ```yaml
-Skills:
+  Skills:
   - shield{amount=50;maxShield=100} @self ~onSpawn
   - ...
 ```
