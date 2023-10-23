@@ -1,18 +1,15 @@
-===============
-
-## Description:
-
+## Description
 Throws all targets away from the mob (or origin).
 
-## Attributes:
 
-| Attribute | Aliases | Description                                           | Default Value |
-|-----------|---------|-------------------------------------------------------|---------------|
-| velocity  | v       | The horizontal velocity at which the entity is throw. | 1             |
-| velocityY | vy      | The vertical velocity at which the entity is thrown   | 1             |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| velocity  | v         | The horizontal velocity at which the entity is throw                 | 1       |
+| velocityY | vy        | The vertical velocity at which the entity is thrown                  | 1       |
 
-## Examples:
 
+## Examples
 In this example the mob will create an explosion effect around them that
 inflicts 10 damage (5 hearts) to players within a radius of 5 blocks and
 will knock them back. Giving the illusion of a powerful explosion.
@@ -23,7 +20,7 @@ GroundSlam:
   - damage{amount=10} @PlayersInRadius{r=5}
   - throw{velocity=15;velocityY=5} @PlayersInRadius{r=5}
 ```
-
+##
 This complex example shows how the throw mechanic can be used in
 conjunction with other mechanics to make quite amazing effects. The
 caster unleashes a powerful shockwave that deals 50 damage (25 hearts)
