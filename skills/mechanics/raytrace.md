@@ -1,18 +1,15 @@
-=================
-
-## Description: 
-
+## Description
 Traces a ray to the target. **[PREMIUM ONLY]**
- 
-## Attributes:
 
-| Attribute            | Aliases               | Description                                                                                                                                              | Default Value |
-|----------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| entityskill          | eskill, es            | meta-skill to use when the ray hits an entity                                                                                                            |               |
-| locationskill        | lskill, ls            | meta-skill to use when the ray hits a location                                                                                                           |               |
-| headshotskill        | hskill, hs            | meta-skill to use when it's a headshot                                                                                                                   |               |
-| maxdistance          | distance, md, d       | max distance to trace                                                                                                                                    | 50            |
-| raywidth             | rw, w                 | Width of the ray traced                                                                                                                                  | 0.2           |      |
+ 
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| entityskill   | eskill, es | meta-skill to use when the ray hits an entity                   |         |
+| locationskill | lskill, ls | meta-skill to use when the ray hits a location                  |         |
+| headshotskill | hskill, hs | meta-skill to use when it's a headshot                          |         |
+| maxdistance   | distance, md, d | max distance to trace                                      | 50      |
+| raywidth      | rw, w      | Width of the ray traced                                         | 0.2     | 
 | ignorepassableblocks | ignorepassable, ip    | ignores collision of passable blocks                                                                                                                     | true          |
 | fluidcollisionmode   | fcm                   | [Determines the collision behaviour when fluids get hit during ray tracing](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FluidCollisionMode.html) | NEVER         |
 | accuracy             | ac, a                 | spread of the traced ray                                                                                                                                 | 1             |
@@ -21,10 +18,11 @@ Traces a ray to the target. **[PREMIUM ONLY]**
 | raytraceConditions   | rc, rcon, rconditions | Conditions applied to the raytraced target                                                                                                               | NONE          |
 | headshotmultiplier   | hsmultiplier, hsm     | headshot power multiplier                                                                                                                                | 1             |
 
-## Examples:
 
+## Examples
 ```yaml
 MyRaytraceSkill:
+  Skills:
   - raytrace{
       entitySkill=[
         - damage{amount=20}
