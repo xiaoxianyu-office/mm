@@ -1,18 +1,14 @@
-==============
-
-## Description:
-
+## Description
 Allows to either equip or remove a saddle on the target entity.
 
-## Attributes:
 
+## Attributes
 | Attribute      | Aliases         | Description                                        | Default Value |
 |----------------|-----------------|----------------------------------------------------|---------------|
 | take           | t               | If the saddle should be taken away.                | false         |
 
 
-## Examples:
-
+## Examples
 ```yaml
 ExampleSkill:
   Skills:
