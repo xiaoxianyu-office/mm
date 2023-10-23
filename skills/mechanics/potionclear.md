@@ -13,5 +13,5 @@ Clears all potion effects from the target entity
   Skills:
   - potionclear{type=FIRE_RESISTANCE} @target
   - potionclear{type=FIRE_RESISTANCE,SPEED} @self
-  - potionclear{} @self
+  - potionclear @self
 ```
