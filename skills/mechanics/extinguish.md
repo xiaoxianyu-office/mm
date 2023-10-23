@@ -1,13 +1,13 @@
+## Description
 Removes any fire ticks from the target entity
 
-**Attributes**
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
+## Attributes
+> *This mechanic has no attributes*
 
-**Examples**
 
+## Examples
 ```yaml
-- extinguish{delay=2} @self ~onDamaged
+  Skills:
+  - extinguish{delay=2} @self ~onDamaged
 ```
