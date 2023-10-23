@@ -11,7 +11,7 @@ As a brief summary, Mythic allows you to:
 
 -   **Mob Skills**:  
     Give mobs custom skills through the use of a powerful Yaml scripting system, with access to 
-    conditions, targeters, and triggers to control exactly when and where the skills will trigger.
+    conditions, targeters[,](/Tutorial-Temp) and triggers to control exactly when and where the skills will trigger.
 
 <!-- -->
 
