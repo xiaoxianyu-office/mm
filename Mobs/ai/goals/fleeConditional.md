@@ -9,6 +9,7 @@ Causes the mob to flee based on provided conditions.
 | distance | d        | The distance for mobs to be from the mob itself |    4    |
 | speed | s        | The speed at which to flee |    1.2    |
 | safespeed | ss        | The speed at which to flee once a safe distance (50 blocks) away |    1    |
+| conditions |         | The conditions to use |        |
 
 ## Examples
 ```yaml
