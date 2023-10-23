@@ -1,20 +1,20 @@
-================
-
-## Description:
+## Description
 Sets the display name of the caster. This will not work with players.
 
-## Attributes:
+
+## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | name      | n         | The name to set                                                      |         |
 
-## Examples:
+
+## Examples
 Sets the name of the mob to "newmobname" when the mob is damaged.
 ```yaml
 Skills:
   - setname{name=newmobname} @self ~onDamaged 1
 ```
-
+##
 This will set the name of the mob to the name it has in its Display: option when it is damaged and every 10 ticks when it is in combat. This is an example of how to make your mob update any placeholders in its name. In this example we are doing it to update the <caster.hp> placeholder.
 ```yaml
 MySkeleton:
