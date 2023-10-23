@@ -1,21 +1,19 @@
-================
-
-## Description:
-
+## Description
 Toggles the target AI
 
-## Attributes:
 
-| Attribute | Aliases | Description                  | Default Value |
-|-----------|---------|------------------------------|---------------|
-| ai        |         | Sets the new mob AI, boolean |               |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| ai        |           | Sets the new mob AI. `true` enables it, `false` disables it          |         |
 
-## Examples:
 
+## Examples
+This example will turn off the ai of the mob for 5 seconds
 ```yaml
 TemporaryAISwitcher:
   Skills:
-    - setAI{ai=false} @self
-    - delay 100
-    - setAI{ai=true} @self
+  - setAI{ai=false} @self
+  - delay 100
+  - setAI{ai=true} @self
 ```
