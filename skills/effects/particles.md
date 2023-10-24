@@ -53,7 +53,7 @@ This particle type will replace the spawned particle with the selected entity. T
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | useEyeLocation | uel  | (true/false) Whether to base the particles on the entity's eyes      | false   |
 | forwardOffset | startfoffset, sfo | The forward-offset from the targeted entity,doesn'n work when set directional to true                                                                            | 0       |
-| sideOffset| so | The side-offset from the targeted entity,doesn'n work when set directional to true | 0|
+| sideOffset| soffset, sso | The side-offset from the targeted entity,doesn'n work when set directional to true | 0 |
 
 ### Dust_color_transition-Specific Attributes
 
