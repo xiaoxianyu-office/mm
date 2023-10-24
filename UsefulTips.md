@@ -89,6 +89,58 @@ This can be done by enabling the mob's [ThreatTable Module](/Mobs/ThreatTables) 
 While this method is not necessarily precise (threat can decay, among other things) it's extremely simple to implement and the precision is in an acceptable range
 </details>
 
+
+
+<details><summary>Let the top X players who dealt the most damage receive specific drops</summary>
+<br>
+This can be done by enabling the mob's [ThreatTable Module](/Mobs/ThreatTables) and by executing the following mechanic when the mob dies:  
+
+```yaml
+  Skills:
+  - skill{s=[
+    - skill{s=[
+      - dropitem{i=droptable_name_1}
+      - threat{mode=reset}
+      ]} @ThreatTablePlayers{limit=1;sort=HIGHEST_THREAT}
+    - skill{s=[
+      - dropitem{i=droptable_name_2}
+      - threat{mode=reset}
+      ]} @ThreatTablePlayers{limit=1;sort=HIGHEST_THREAT}
+    - skill{s=[
+      - dropitem{i=droptable_name_3}
+      - threat{mode=reset}
+      ]} @ThreatTablePlayers{limit=1;sort=HIGHEST_THREAT}
+    ]} ~onDeath
+```
+
+This way, the droptable `droptable_name_1` will be dropped to the player that dealt the most damage, `droptable_name_2` to the one that dealt the second most damage and so on.
+
+This happens because every time the inline skill
+```yaml
+    - skill{s=[
+      - dropitem{i=droptable_name_1}
+      - threat{mode=reset}
+      ]} @ThreatTablePlayers{limit=1;sort=HIGHEST_THREAT}
+```
+is called, a droptable is given to the top threat, and then the threat against that target is removed, making the "next in line" to be considered the top threat holder.  
+So, in order to drop something specific to the drop 10 instead of the top 3, you just have to repeat that segment over and over.
+
+If you have MythicMobs Premium, something like the following becomes possible
+```yaml
+  Skills:
+  - skill{s=[
+    - skill{s=[
+      - dropitem{i=droptable_name_<skill.var.itr>}
+      - threat{mode=reset}
+      ]} @ThreatTablePlayers{limit=1;sort=HIGHEST_THREAT}
+    ];repeat=X;repeatInterval=1} ~onDeath
+```
+would also work, with X being the number of players you want to give the reward with minus one (so for top 10, X would be 9) and each player is given a droptable named `droptable_name_Y`, where Y is their place in the "leaderboard" (so first place would receive droptable_name_1, second place droptable_name_2 and so on)
+
+</details>
+
+
+
 <details><summary>Drop items to the last player that hit the mob</summary>
 <br>
 In this case, you will need to set a variable on the mob every time it is hit only if the trigger is a Player. Then, onDeath, you can use a UUID targeter to drop a specific item to whoever the variable is memorizing. This way, even if the mob dies for some other causes (Fire damage, Fall damage etc.), a player will always be selected for the drop, and is, as such, far more stable than dropping an item onDeath to the trigger.  
