@@ -1,12 +1,25 @@
-Commands
-========
+## Commands
 
 Mythic Mobs has a simple command structure that can be accessed by typing **/mythicmobs**. Typing that will display a menu with all available commands, and each level of commands will provide menus or information about what you can do. All command parameters surrounded by []'s are required, while &lt;&gt;'s are optional.
 
-As a general note, a command can be made **silent** by using the **`-s`** flag before the first argument. A silent command will not give any chat feedback.
+## Flags
+Some commands can have a set of flags before their first argument, changing how the command behaves.
 
-General Commands
-----------------
+| Flag | Description            | Affected Commands                      | Example                       |
+| ---- | -----------------------|--------------------------------------- | ----------------------------- |
+| -s                                                                                                              | Silent commands will not give any chat feedback                                                                                                              | `mm mobs spawn`<br>`mm item give`<br>`mm test cast`<br>`mm test mechanic`                                                                                                             |`/mm test cast -s [metaskill]`                                                                                                              |
+| -p <playername>                                                                                                              | Use this flag to make the command execute at a given player                                                                                                              | `mm mobs spawn`                                                                                                             |`/mm m s -p <player> [mobname]`                                                                                                              |
+| -t                                                                                                              | Executes the command at the target location                                                                                                              | `mm mobs spawn`                                                                                                             |`/mm m s -t [mobname]`                                                                                                              |
+| -n                                                                                                             | Fakes the mob as being spawned naturally (`NATURAL` spawn reason, as opposed to `COMMAND`)                                                                                                              | `mm mobs spawn`                                                                                                            |`/mm m s -n [mobname]`                                                                                                              |
+| -p                                                                                                              | If the command should kill the mob that perfectly matches the name provided, instead of every mob whose name contains the string                                                                                                              | `mm mobs killall`                                                                                                              | `/mm m killall -p [mobname]`                                                                                                              |
+| -f                                                                                                              | If all the mobs that matches the specified faction should be killed                                                                                                              | `mm mobs kill`                                                                                                             |`/mm m kill -f [factionname]`                                                                                                              |
+| -d                                                                                                              | Should the item drop if the inventory if full                                                                                                              | `mm item give`                                                                                                              | `/mm i give -d [itemname]`                                                                                                              |
+
+<!--
+As a general note, a command can be made **silent** by using the **`-s`** flag before the first argument. A silent command will not give any chat feedback.
+-->
+
+## General Commands
 
 -    **/mm** (alias: **/mythicmobs**) *Base command for the plugin. Displays all other commands.*
 -    **/mm debug [level]** (alias: **/mm d [level]** *Sets the plugin's debug level. 0 = OFF.*
