@@ -33,15 +33,8 @@ This zombie would attack players, and walk around randomly when not targeting an
 | closedoors                         | restrictopendoor | Not sure what this one does                                                                              |
 | randomlookaround                   | lookaround       | The mob will randomly look around                                                                        |
 | [gotospawnlocation](/Mobs/ai/goals/gotospawn)                  | gotospawn        | Mob will pathfind to the its spawn location                                                              |
-| fleeConditional(/Mobs/ai/goals/fleeconditional) **[Premium-only]** | fleeIf           | Causes the mob to flee based on provided conditions. Safe speed is required for distanes greater than 5. |
-| doNothing **[Premium-only]**       |                  | Causes the mob to do nothing if conditions are met.                                                      |
-
-FleeConditional Example:
-```yaml
-AIGoalSelectors:
-- clear
-- fleeConditional{distance=5;speed=2;safespeed=2;conditions=[ - inlineofsight true ]}
-```
+| [fleeConditional](/Mobs/ai/goals/fleeconditional)<br>**[Premium-only]** | fleeIf           | Causes the mob to flee based on provided conditions. Safe speed is required for distanes greater than 5. |
+| doNothing<br>**[Premium-only]**       |                  | Causes the mob to do nothing if conditions are met.                                                      |
 
 **Creatures Only**
 
@@ -131,19 +124,9 @@ SuperMob:
 | players                                     |                               | Targets players.                                               |
 | villagers                                   |                               | Targets villagers.                                             |
 | golems                                      |                               | Targets Golems.                                                |
-| [nearestConditionalTarget](/Mobs/ai/targets/nearestconditionaltarget) **[Premium-only]** | nearestConditional, nearestIf | Targets the nearest entity that meets the conditions provided. |
+| [nearestConditionalTarget](/Mobs/ai/targets/nearestconditionaltarget)<br>**[Premium-only]** | nearestConditional, nearestIf | Targets the nearest entity that meets the conditions provided. |
 
-NearestConditionalTarget Example:
-```yaml
-AITargetSelectors:
-- clear
-- nearestConditionalTarget{conditions=[
-    - entitytype PLAYER true
-    - hasaura{aura=marked_for_death} true
-  ]}
-```
-
-**All Creatures(Faction Support)**
+**All Creatures ([Faction](Mobs/Factions) Support)**
 
 | AI Goal                                | Description                                            |
 |----------------------------------------|--------------------------------------------------------|
@@ -152,15 +135,6 @@ AITargetSelectors:
 | OtherFactionVillagers                  | Targets any villagers that are in a different faction. |
 | [SpecificFaction](/Mobs/ai/targets/specificfaction) [faction_name]         | Targets any entities that are in the given faction.    |
 | [SpecificFactionMonsters](/Mobs/ai/targets/specificfactionmonsters) [faction_name] | Targets any monsters that are in the given faction.    |
-
-Example:
-
-```yaml
-AITargetSelectors:
-- SpecificFaction undead
-```
-
-This will force a mob to attack mobs only in the “undead” faction.
 
 **Tameable Creatures**
 
