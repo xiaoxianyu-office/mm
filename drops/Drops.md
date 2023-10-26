@@ -158,8 +158,8 @@ player is within 20 blocks.
 ```yaml
 rare_snowsword_droptable:
   Conditions:
-  - inbiome ICE_PLAINS
-  - playerwithin 20
+  - biome{b=ICE_PLAINS}
+  - playerwithin{d=20}
   Drops:
   - snowsword 1 0.05
 ```
