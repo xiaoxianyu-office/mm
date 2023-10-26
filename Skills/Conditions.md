@@ -126,7 +126,7 @@ Conditions
 | [Cuboid](/skills/conditions/cuboid)                                           | Compare  | Whether the target is within the given cuboid between location1 x location2                 |
 | [DamageAmount](/skills/conditions/DamageAmount)                               | Meta     | Checks for a range of damage taken                                                           |
 | [DamageCause](/skills/conditions/DamageCause)                                 | Meta     | Checks the type of the damage cause                                                        |
-| [DamageTag](/skills/conditions/damagetag)                                 | Meta     | Checks the tags of the damage cause                                                        |
+| [DamageTag](/skills/conditions/damagetag)                                     | Meta     | Checks the tags of the damage cause                                                        |
 | [Dawn](/skills/conditions/dawn)                                               | Location | If the time is dawn, from 22000 to 2000 in-game time                                        |
 | [Day](/skills/conditions/day)                                                 | Location | If the time is day, from 2000 to 10000 in-game time                                         |
 | [Dimension](/skills/conditions/dimension)                                     | Location | If the target location is within a certain dimension                                          |
@@ -153,6 +153,7 @@ Conditions
 | [HasAI](/skills/conditions/hasai)                                             | Entity   | Checks if the target entity has its AI enabled                                                |
 | [HasAura](/skills/conditions/hasaura)                                         | Entity   | Checks if the target entity has the given aura                                                |
 | [HasAuraStacks](/skills/conditions/hasaurastacks)                             | Entity   | Tests if the target has the given range of stacks from an aura                               |
+| [HasAuraType](/skills/conditions/HasAuraType)                                 | Entity   | Checks if the target entity has the given aura type                                           |
 | [HasCurrency](/skills/conditions/hascurrency)                                 | Entity   | If the target has the given amount of vault currency                                          |
 | [HasEnchantment](/skills/conditions/HasEnchantment)                           | Entity   | Checks if the target entity's equipped item has an enchantment                                |
 | [HasGravity](/skills/conditions/hasgravity)                                   | Entity   | Tests if the target mob has gravity                                                          |
@@ -203,7 +204,7 @@ Conditions
 | [LivingInRadius](/skills/conditions/LivingInRadius)                           | Location | Matches a range to how many living entities are in the given radius                       |
 | [LocalDifficulty](/skills/conditions/localdifficulty)                         | Location | Tests the difficulty scale at the target location                                         |
 | [LunarPhase](/skills/conditions/lunarphase)                                   | Location | Checks the target world's lunar phase                                                      |
-| [MaterialIsOnCooldown](/skills/conditions/MaterialIsOnCooldown)               | Entity   | Checks if the target player's specified material is on cooldown                                    |
+| [MaterialIsOnCooldown](/skills/conditions/MaterialIsOnCooldown)               | Entity   | Checks if the target player's specified material is on cooldown                               |
 | [MobsInChunk](/skills/conditions/mobsinchunk)                                 | Location | Matches a range to how many mobs are in the target location's chunk                       |
 | [MobsInRadius](/skills/conditions/mobsinradius)                               | Location | Checks how many mobs are in a given radius                                                 |
 | [MobsInWorld](/skills/conditions/mobsinworld)                                 | Location | Matches a range to how many mobs are in the target world                                  |
@@ -260,7 +261,7 @@ Conditions
 | [VariableEquals](/skills/conditions/variableequals)                           | Meta     | Checks if the given variable has a particular value.                                          |
 | [VariableInRange](/skills/conditions/variableinrange)                         | Meta     | Checks if the given numeric variable is within a certain range.                               |
 | [VariableIsSet](/skills/conditions/variableisset)                             | Meta     | Checks if the given variable is set.                                                          |
-| [VehicleIsDead](/skills/conditions/vehicleisdead)                             | Entity     | Checks if the casters mounted vehicle is dead.                                                          |
+| [VehicleIsDead](/skills/conditions/vehicleisdead)                             | Entity   | Checks if the casters mounted vehicle is dead.                                                |
 | [Velocity](/skills/conditions/Velocity)                                       | Entity   | Checks the velocity of the target entity against a range.                                  |
 | [Wearing](/skills/conditions/wearing)                                         | Entity   | Tests what the target entity has equipped.                                                 |
 | [World](/skills/conditions/world)                                             | Location | Checks the name of the target world.                                                       |
