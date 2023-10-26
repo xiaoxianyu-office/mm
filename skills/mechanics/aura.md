@@ -13,7 +13,7 @@ duration and can also be used in other mechanics and conditions.
 | onTickSkill  | onTick, ot  | Meta-Skill executed every [interval] ticks on the affected entity|        |
 | onEndSkill   | onEnd, oe   | Meta-Skill executed when the aura ends                          |         |
 | ShowBarTimer | bartimer, bt| If set, the aura will display a bar for caster during it        | false   |
-| auragroup | auratype  | The group of the aura. It's similar to its name                      |         |
+| auratype  | auragroup | The type of the aura. It's similar to its name                       |         |
 | Charges   | c         | If set, the aura will fade when it hits zero charges. Modifiable by other mechanics.                                                                                     | 0       |
 | Duration  | ticks, t, d, time, t | The max duration (in ticks) the aura will persist.        | 200     |
 | Interval  | i         | How often (in ticks) the aura fires its onTick skill                 | 1       |
