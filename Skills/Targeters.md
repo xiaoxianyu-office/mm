@@ -28,6 +28,8 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 | @[PlayerByName][]                                                                                                                          | @specificplayer                                                                                                                          | Targets a specific player by name. Supports placeholders.                                                                                                                           |
 | @[UniqueIdentifier][]                                                                                                                          | @UUID                                                                                                                          | Targets a specific entity by their UUID, supports placeholders                                                                                                                          |
 | @[Vehicle][]                                                                                                                          |    | Targets the caster's vehicle                                                                                                                          |
+| @[InteractionLastAttacker][]                                                                                                                          | @lastAttacker                                                                                                                          | Targets the last entity that attacked the casting `INTERACTION` entity                                                                                                                         |
+| @[InteractionLastInteract][]                                                                                                                          | @lastInteract                                                                                                                          | Targets the last entity that interacted with the casting `INTERACTION` entity                                                                                                                         |
 
 
 ### Multi-Entity Targeters
@@ -283,6 +285,8 @@ Currently, sort can have the following values:
 
 <!-- LINKS -->
 <!-- Single Entity Targeters -->
+  [InteractionLastAttacker]: /Skills/Targeters/InteractionLastAttacker
+  [InteractionLastInteract]: /Skills/Targeters/InteractionLastInteract
   [Father]: /Skills/Targeters/Father
   [Mother]: /Skills/Targeters/Mother
   [Mount]: /Skills/Targeters/Mount
