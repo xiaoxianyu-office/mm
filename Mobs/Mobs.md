@@ -62,7 +62,7 @@ example_mob:
 ```
 
 #### Damage
-Set the base value of the mob's melee attack damage attribute.
+Sets the base value of the mob's melee attack damage attribute.
 1 damage equals to 0.5 hearts, so a mob with 6 damage will deal 3 full hearts of damage.
 This attribute will never affect damage done by ranged attacks, like arrows or potions.
 Whenever the mob is holding or wearing an item with attribute modifiers will also affect the mob's melee damage.
@@ -74,7 +74,7 @@ example_mob:
 ```
 
 #### Armor
-Set the base value of the mob's armor attribute. 
+Sets the base value of the mob's armor attribute. 
 Minecraft caps the max armor value to 30.
 Whenever the mob is holding or wearing an item with attribute modifiers will also affect the total armor.
 ```yml
@@ -126,7 +126,7 @@ example_mob:
 ```
 
 #### Mount
-Set the mount of your mob. 
+Sets the mount of your mob. 
 Must be another MythicMob.
 The mob will automatically ride on the defined mount when it spawns.
 ```yml
@@ -136,7 +136,7 @@ another_example:
 ```
 
 #### Display Options
-Set the display entity options.
+Sets the display entity options.
 A list of available display options can be found in the [Display Options](Mobs/DisplayOptions) page
 ```yml
 cool_display:
