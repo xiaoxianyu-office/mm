@@ -132,9 +132,10 @@ are able to target locations as well.
 | [SetGlobalScore][]        | Sets a scoreboard value on the fake player: \_\_GLOBAL\_\_                               |
 | [SetGravity][]            | Sets whether gravity affects the target entity                                           |
 | [SetHealth][]             | Sets the health of the target entity                                                     |
-| [SetLeashHolder][]              | Changes the holder of a mobs lead                                                          |
+| [SetInteractionSize][]    | Sets the size of the target `INTERACTION` entity.                                                     |
+| [SetLeashHolder][]        | Changes the holder of a mobs lead                                                          |
 | [SetLevel][]              | Changes the casting mob's level                                                          |
-| [SetMaterialCooldown][]              | sets a cooldown for usable materials like ender pearls, chorus fruit, etc                                                          |
+| [SetMaterialCooldown][]   | sets a cooldown for usable materials like ender pearls, chorus fruit, etc                                                          |
 | [SetMaxHealth][]          | Sets the max health of the target entity                                                 |
 | [SetMobColor][]           | Changes the color of the target if it is a colorable mob                                 |
 | [SetMobScore][]           | Sets a scoreboard value on the casting mob                                               |
@@ -406,6 +407,7 @@ but not yet ready for use.
   [SetGlobalScore]: /skills/mechanics/setglobalscore
   [SetGravity]: /skills/mechanics/setgravity
   [SetHealth]: /skills/mechanics/sethealth
+  [SetInteractionSize]: /skills/mechanics/SetInteractionSize
   [SetLeashHolder]: /skills/mechanics/setleashholder
   [SetLevel]: /skills/mechanics/setlevel
   [SetMaterialCooldown]: /skills/mechanics/setmaterialcooldown
