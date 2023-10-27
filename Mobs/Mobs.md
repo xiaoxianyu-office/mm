@@ -62,7 +62,7 @@ example_mob:
 ```
 
 #### Damage
-Sets the base value of the mob's attack damage attribute.
+Set the base value of the mob's melee attack damage attribute.
 1 damage equals to 0.5 hearts, so a mob with 6 damage will deal 3 full hearts of damage.
 This attribute will never affect damage done by ranged attacks, like arrows or potions.
 Whenever the mob is holding or wearing an item with attribute modifiers will also affect the mob's melee damage.
@@ -74,7 +74,8 @@ example_mob:
 ```
 
 #### Armor
-Sets the base value of the mob's armor attribute. Minecraft caps the max armor value to 30.
+Set the base value of the mob's armor attribute. 
+Minecraft caps the max armor value to 30.
 Whenever the mob is holding or wearing an item with attribute modifiers will also affect the total armor.
 ```yml
 example_mob:
@@ -116,7 +117,7 @@ example_mob:
 
 #### Faction
 Sets the mob's faction, which can be used for advanced [Custom AI] configurations or [targeter filtering].
-Must be alphanumeric and is case-sensitive.
+Faction is case-sensitive, so be careful when using faction conditions.
 ```yml
 example_mob:
   Type: zombie
@@ -125,7 +126,8 @@ example_mob:
 ```
 
 #### Mount
-Sets the mount of your mob, must be another MythicMob.
+Set the mount of your mob. 
+Must be another MythicMob.
 The mob will automatically ride on the defined mount when it spawns.
 ```yml
 another_example:
@@ -134,7 +136,7 @@ another_example:
 ```
 
 #### Display Options
-Sets the display entity options.
+Set the display entity options.
 A list of available display options can be found in the [Display Options](Mobs/DisplayOptions) page
 ```yml
 cool_display:
@@ -212,7 +214,7 @@ example_mob:
 ```
 
 #### DamageModifiers
-Modifies how much damage the mob will take from different damage causes.
+Modify how much damage the mob will take from different damage causes.
 For example, DamageModifiers can be used to make the mob immune to melee attacks, but weak to ranged attacks.
 See [Damage Modifiers](Mobs/DamageModifiers) for more information.
 ```yml
@@ -325,7 +327,7 @@ MerchantTest:
 Examples
 -----------------------------
 
-More mobs examples can be found in the [Examples](examples/Common-Examples#mobs) section.
+More mob examples can be found in the [Examples](examples/Common-Examples#mobs) section.
 <!--  ONLY NEED TO LINK USERS TO EXAMPLES SECTION
 Please keep in mind that you in no way have to use all of these mob
 options and that this is an advanced example designed to show the
