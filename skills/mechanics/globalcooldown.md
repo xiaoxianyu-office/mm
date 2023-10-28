@@ -1,9 +1,8 @@
-Mechanic: GlobalCooldown
-========================
+## Description
 
-The "GCD" or "Global Cooldown" skill lets you set a mob's global
-cooldown, used in conjunction with the "offgcd" condition if you want a
-mob's abilities to have a global, over-all shared cooldown.
+The Global Cooldown skill lets you set a mob's global
+cooldown, used in conjunction with the [offgcd](skills/conditions/offgcd) condition if you want a
+mob's abilities to have a global, over-all shared cooldown. This can be useful for allowing a mob to only use a single skill at a time rather than multiple by giving the cooldown to each skill the mob uses.
 
 Attributes
 ----------
@@ -18,12 +17,12 @@ Examples
 --------
 
 This skill would trigger a Global Cooldown of 40 ticks, during which the
-skill and all other skills using the "offgcd" condition would not be
+skill and all other skills using the [offgcd](skills/conditions/offgcd) condition would not be
 usable.
-
-      IceBolt:
-        Conditions:
-        - offgcd
-        - targetinlineofsight
-        Skills:
-        - gcd{ticks=40}
+```yaml
+IceBolt:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=40}
+```
