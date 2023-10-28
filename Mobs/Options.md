@@ -423,6 +423,38 @@ Defaults to `false`.
 ```
 
 
+## Zombies (all variants)
+
+#### PreventJockeyMounts
+Sets whether the zombie will be prevented from spawning as a jockey.  
+Only works for Zombies.  
+Defaults to `false`.  
+```yaml
+  Options:
+    PreventJockeyMounts: true
+```
+
+
+#### PreventTransformation
+Sets whether zombies should be prevented from being turned into pigmen/drowned.  
+Only works for Zombies.  
+Defaults to `true`.  
+```yaml
+  Options:
+    PreventTransformation: false
+```
+
+
+#### ReinforcementsChance
+Chance for zombies to spawn reinforcements on taking damage.  
+Should be a number between 0 and 1 (0% and 100% chance).  
+Only works for Zombies.  
+Defaults to `0`.  
+```yaml
+  Options:
+    ReinforcementsChance: 0.38
+```
+
 
 
 # Mob specific options
@@ -1148,78 +1180,79 @@ Defaults to `false`.
 ```
 
 
-### Tropical Fish
+## Tropical Fish
 
-**Pattern: \[type\]**
+#### Pattern
+Sets the [Shape/Pattern](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/TropicalFish.Pattern.html) of the fish.  
+```yaml
+  Options:
+    Pattern: GLITTER
+```
 
-      * Sets the shape of the fish
-      * Types can be BETTY, BLOCKFISH, BRINELY, CLAYFISH, DASHER, FLOPPER, GLITTER, KOB, SNOOPER, SPOTTY, STRIPEY, or SUNSTREAK.
 
-**BodyColor: \[color\]**
+#### BodyColor
+Sets the [Primary Color](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html) of the fish.  
+```yaml
+  Options:
+    BodyColor: GRAY
+```
 
-      * Sets the primary color of the fish
-      * Color can be BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
 
-**PatternColor: \[color\]**
+## PatternColor
+Sets the [Secondary Color](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html) of the fish
+```yaml
+  Options:
+    BodyColor: LIME
+```
 
-      * Sets the secondary color of the fish
-      * Color can be BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
 
-### Villagers
+## Villagers
 
-**HasTrades: \[true/false\]**
+#### HasTrades
+Whether the villager can be traded with.  
+Defaults to `false`.  
+> Check out [Trades](/Mobs/Mobs#trades)
+```yaml
+  Options:
+    HasTrades: true
+```
 
-      * Villager can be traded with.
-      * Defaults to false.
-Check out [Trades](/Mobs/Mobs#trades)
 
-**Profession: \[profession\]**
+#### Profession
+Specifies the [Profession](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Villager.Profession.html) of the villager.  
+Villagers without this option will roll a random profession on their initial spawn.  
+```yaml
+  Options:
+    Profession: MASON
+```
 
-      * Specifies the profession of the villager type mob.
-      * Can be ARMORER, BUTCHER, CARTOGRAPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, NONE, SHEPHERD, TOOLSMITH, WEAPONSMITH.
-      * Villagers without this option will roll a random profession on their initial spawn.
-      * Examples:
-        Profession: MASON
 
-**Type: \[type\]**
+#### Type
+Represents [Villager type](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Villager.Type.html), usually corresponding to what biome they spawn in.  
+Defaults to PLAINS.  
+```yaml
+  Options:
+    Type: DESERT
+```
 
-      * Represents Villager type, usually corresponding to what biome they spawn in.
-      * Can be DESERT, JUNGLE, PLAINS, SAVANNA, SNOW, SWAMP, TAIGA.
-      * Defaults to PLAINS.
-      * Examples:
-        Type: PLAINS
 
-**Level: \[level\]**
+#### Level
+Villager profession level, levels 1 - 5.  
+Level 1 villagers might switch professions. If you want a villager to hold its profession, give them a level of 2 or higher.  
+Required if setting villager professions.  
+```yaml
+  Options:
+    Level: 3
+```
 
-      * Villager profession level, levels 1 - 5.
-      * Level 1 villagers might switch professions. If you want a villager to hold its profession, give them a level of 2 or higher.
-      * Required if setting villager professions.
-      
-### Zombies (all variants)
 
-**PreventJockeyMounts: \[true/false\]**
+## Zombie Villagers
 
-      * Sets whether the zombie will spawn as a jockey.
-      * Only works for Zombies.
-      * Defaults to false.
-
-**PreventTransformation: \[true/false\]**
-
-      * Sets whether zombies can be turned into pigmen/drowned.
-      * Only works for Zombies.
-      * Defaults to true.
-
-**ReinforcementsChance: \[number\]**
-
-      * Chance for zombies to spawn reinforcements on taking damage.
-      * Should be a number between 0 and 1 (0% and 100% chance)
-      * Only works for Zombies.
-      * Defaults to 0.
-
-### Zombie Villagers
-
-**Profession: \[type\]**
-
-      * Sets the type of the villager the zombie should represent.
-      * This option will also make the zombie turn into the respective villager type when being cured using potions.
-      * Can be `ARMORER, BUTCHER, CARTOGRAPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, NONE, SHEPHERD, TOOLSMITH, WEAPONSMITH.`
+#### Profession
+Specifies the [Profession](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Villager.Profession.html) of the zombie villager.  
+This option will also make the zombie turn into the respective villager type when being cured using potions.  
+Defaults to `FARMER`.  
+```yaml
+  Options:
+    Profession: MASON
+```
