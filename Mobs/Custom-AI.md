@@ -33,7 +33,6 @@ This zombie would attack players, and walk around randomly when not targeting an
 | closedoors                         | restrictopendoor | Not sure what this one does                                                                              |
 | randomlookaround                   | lookaround       | The mob will randomly look around                                                                        |
 | [gotospawnlocation](/Mobs/ai/goals/gotospawn)                  | gotospawn        | Mob will pathfind to the its spawn location                                                              |
-| [fleeConditional](/Mobs/ai/goals/fleeconditional)<br>**[Premium-only]** | fleeIf           | Causes the mob to flee based on provided conditions. Safe speed is required for distanes greater than 5. |
 | doNothing<br>**[Premium-only]**       |                  | Causes the mob to do nothing if conditions are met.                                                      |
 
 **Creatures Only**
@@ -53,6 +52,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [fleewolf](/Mobs/ai/goals/fleewolf)  | runfromwolves    | Causes the mob to avoid wolves                                                                                                                                     |
 | [fleefaction](/Mobs/ai/goals/fleefaction)  | runfromfaction   | Causes the mob to avoid entities in a given faction
 | [fleesun](/Mobs/ai/goals/fleesun)   |                  | The mob will hide in the shade when the sun it out                                                                                                                 |
+| [fleeConditional](/Mobs/ai/goals/fleeconditional)<br>**[Premium-only]** | fleeIf           | Causes the mob to flee based on provided conditions. Safe speed is required for distanes greater than 5. |
 | spiderattack                        |                  | Uses the attack a spider would (doesn't seem any different from a meleeattack)                                                                                     |
 | [leapattarget](/Mobs/ai/goals/leapattarget)   |                  | Makes the mob leap at its target                                                                                                                                   |
 | moveindoors                         |                  |                                                                                                                                                                    |
@@ -61,6 +61,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [movetolava](/Mobs/ai/goals/movetowater)  |                  | Makes the mob move towards lava                 |
 | [movetowater](/Mobs/ai/goals/movetolava)  |                  | Makes the mob move towards water               |
 | movetowardsrestriction              |                  |                                                                                                                                                                    |
+| [MoveTowardsConditional](/Mobs/ai/goals/movetowardsconditional)<br>**[Premium-only]** |            | Causes the mob to move towards a target based on provided conditions. |
 | patrol x1,y1,z1;x2,y2,z2;x3,y3,z3;… | patrolroute      | Makes the mob patrol between the specified locations                                                                                                               |
 | gotolocation x,y,z                  | goto             | Makes the mob go to the specified location(Notice Followrange must more than the distance between location and mob)                                                |
 | gotoowner #                         |                  | Makes the mob move towards its owner when beyond a certain distance (defaults to 5 blocks,Notice Followrange must more than the distance between location and mob) |
