@@ -5,7 +5,7 @@ Changes the rotation of the target (only works on non-player entities).
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| relative  |           | If the change is relative to the target, boolean                     |         |
+| relative  |           | If the change is relative to the target, boolean                     | false   |
 | yaw       |           | The new yaw                                                          | 0       |
 | pitch     |           | The new pitch                                                        | 0       |
 
