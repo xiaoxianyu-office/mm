@@ -16,9 +16,8 @@ poison or land mines.
 | Charges   | ch, c     | Determines how many times the totem can hit something before disappearing | 0  |
 | YOffset   | yo        | How high off the target the totem will spawn                          | 1      |
 
-Inherits attributes from [Projectile](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/projectile)
-
-> `stopAtEntity` gets default to `false`
+> Inherits attributes from [Projectile](skills/mechanics/projectile)
+>> `stopAtEntity` gets defaulted to `false`
 
 
 ## Examples
@@ -29,5 +28,5 @@ MyFirstTotem:
 
 MFT_TICK:
   Skills:
-  - damage{a=3}
+  - damage{a=3} @ENO{r=5}
 ```
