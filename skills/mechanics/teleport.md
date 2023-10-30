@@ -11,7 +11,7 @@ blocks. The unsafe attribute will allow mobs to teleport into the target entity.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | spreadh   | sh        | The horizontal spread of the landing location.                       | 0       |
 | spreadv   | sv        | The vertical spread of the landing location.                         | 0       |
-| unsafe    | us        | Avoids finding a safe teleport (will ignore sH and sV)               | 0       |
+| unsafe    | us        | Avoids finding a safe teleport (will ignore sH and sV)               | false   |
 
 
 ## Examples
