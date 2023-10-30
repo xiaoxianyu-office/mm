@@ -52,7 +52,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [fleewolf](/Mobs/ai/goals/fleewolf)  | runfromwolves    | Causes the mob to avoid wolves                                                                                                                                     |
 | [fleefaction](/Mobs/ai/goals/fleefaction)  | runfromfaction   | Causes the mob to avoid entities in a given faction
 | [fleesun](/Mobs/ai/goals/fleesun)   |                  | The mob will hide in the shade when the sun it out                                                                                                                 |
-| [fleeConditional](/Mobs/ai/goals/fleeconditional)<br>**[Premium-only]** | fleeIf           | Causes the mob to flee based on provided conditions. Safe speed is required for distanes greater than 5. |
+| [fleeConditional](/Mobs/ai/goals/fleeconditional)<br>**[Premium-only]** | fleeIf           | Causes the mob to flee based on provided conditions. Safe speed is required for distances greater than 5. |
 | spiderattack                        |                  | Uses the attack a spider would (doesn't seem any different from a meleeattack)                                                                                     |
 | [leapattarget](/Mobs/ai/goals/leapattarget)   |                  | Makes the mob leap at its target                                                                                                                                   |
 | moveindoors                         |                  |                                                                                                                                                                    |
