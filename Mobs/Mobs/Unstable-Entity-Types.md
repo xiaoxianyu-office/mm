@@ -1,4 +1,4 @@
-While a great deal of mob types can be used in MythicMobs, each one of them can have its quirks, and it is needed for every configurator to be aware of those quirks in order to minimize the damage they might cause or, in general, to better use the mob type.  
+While a great deal of entity types can be used in MythicMobs, each one of them can have its quirks, and it is needed for every configurator to be aware of those quirks in order to minimize the damage they might cause or, in general, to better use the entity.  
 
 The following is a list of every quirk that has been currently discovered. The more mainstream and obvious problems will not be covered at this time, and only the niche ones will be treated. If you discover any other, let us know on our [Discord](https://discord.com/invite/K3tqXfT)
 
@@ -69,7 +69,7 @@ Has an hardcoded ai.
 Has an hardcoded aggro priority
 
 ### PUFFERFISH
-Has very unique interactions and behavior that may cause problems.
+Has very unique interactions and behaviors that may cause problems.
 
 ### RABBIT
 Gets aggroed by other neutral mobs, such as foxes.
