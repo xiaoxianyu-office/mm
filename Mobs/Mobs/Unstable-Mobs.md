@@ -7,56 +7,71 @@ The following is a list of every discovered quirk that has been currently discov
 ## All Zombies
 Can spawn as leaders, having several times the amount of configured health.  
 
-## ARMOR_STAND
+### ARMOR_STAND
 Does not get targeted by default by multi entity targeters, and a [specific filter](Skills/Targeters#target-filters) must be used.  
 
-## AXOLOTL
+### AXOLOTL
 Can be Bucketed. Defend against this by using a [onBucket](Skills/Triggers#onbucket) trigger
 
-## BEE
+### BEE
 When allowed to randomfly, it will enter placed beehives and pollinate flowers.  
 No definitive answer exists, apart from clearing its AI and building a new one.  
 
-## BLAZE
+### BLAZE
 Can be damaged by water, snowballs and the like. Use a [Damage Modifier](Mobs/DamageModifiers) in order to prevent this.  
 
-## CAT
+### CAT
 Scares Creepers and Phantoms away
 
-## CHICKEN
+### CHICKEN
 Can lay eggs and is hunted by other animals.  
 For the "egg problem", use the [Jockey Option](Mobs/Options#jockey).  
 
-## COW
+### COW
 Can me milked.  
 
-## ENDER_DRAGON
+### ENDER_DRAGON
 Has an hardcoded ai.
 
-## ENDERMAN 
+### ENDERMAN 
 Avoids projectiles and is damaged by water.
 
-## ENDERMITE
+### ENDERMITE
 Aggroes Endermen.  
 
-## Fox 
+### Fox 
 Have a unique attack pattern, can be useful but also problematic.
 
-## GHAST
+### GHAST
 Can be one-shotted by a fireball.
 
-## GIANT
+### GIANT
 Has an hardcoded ai.
 
-## IRON_GOLEM
+### IRON_GOLEM
 Can be healed via the use of iron ingots and get aggroed by default by most hostile mobs.
 
-## PARROT
+### MAGMA_CUBE
+Has an hardcoded ai.
+
+### PARROT
 Can be one-shotted by a cookie.
 <!-- Hello Toro! -->
 
-## PHANTOM
+### PHANTOM
 Has an hardcoded ai.
 
-## PIGLIN
+### PIGLIN
 Has an hardcoded aggro priority
+
+### PUFFERFISH
+Has very unique interactions and behavior that may cause problems.
+
+### RABBIT
+Gets aggroed by other neutral mobs, such as foxes.
+
+### SLIME
+Has an hardcoded ai.
+
+### WARDEN
+Has an hardcoded aggro system.
