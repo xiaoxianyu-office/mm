@@ -4,9 +4,14 @@ The following is a list of every discovered quirk that has been currently discov
 
 [[_TOC_]]
 
-## All Zombies
+## Mobs by Group
+### All Zombies
 Can spawn as leaders, having several times the amount of configured health.  
 
+### All passive animals
+Could get aggroed by other entities.
+
+## Specific Mobs
 ### ARMOR_STAND
 Does not get targeted by default by multi entity targeters, and a [specific filter](Skills/Targeters#target-filters) must be used.  
 
@@ -39,7 +44,7 @@ Avoids projectiles and is damaged by water.
 ### ENDERMITE
 Aggroes Endermen.  
 
-### Fox 
+### FOX
 Have a unique attack pattern, can be useful but also problematic.
 
 ### GHAST
