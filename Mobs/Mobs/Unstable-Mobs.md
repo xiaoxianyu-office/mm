@@ -1,6 +1,6 @@
-While a great deal of mob types can be used in MythicMobs, each one of them can have its quirks, and it is needed for every configurator to be aware of those quirks in order to minimize the damage they might cause.  
+While a great deal of mob types can be used in MythicMobs, each one of them can have its quirks, and it is needed for every configurator to be aware of those quirks in order to minimize the damage they might cause or, in general, to better use the mob type.  
 
-The following is a list of every discovered quirk that has been currently discovered. The more mainstream and discoverable problems will not be covered at this time, and only the niche ones will be treated. If you discover any other, let us know on our [Discord](https://discord.com/invite/K3tqXfT)
+The following is a list of every quirk that has been currently discovered. The more mainstream and obvious problems will not be covered at this time, and only the niche ones will be treated. If you discover any other, let us know on our [Discord](https://discord.com/invite/K3tqXfT)
 
 [[_TOC_]]
 
@@ -45,7 +45,7 @@ Avoids projectiles and is damaged by water.
 Aggroes Endermen.  
 
 ### FOX
-Have a unique attack pattern, can be useful but also problematic.
+Has an unique attack pattern, can be useful but also problematic.
 
 ### GHAST
 Can be one-shotted by a fireball.
@@ -61,7 +61,6 @@ Has an hardcoded ai.
 
 ### PARROT
 Can be one-shotted by a cookie.
-<!-- Hello Toro! -->
 
 ### PHANTOM
 Has an hardcoded ai.
