@@ -45,7 +45,6 @@
   * [Firework](/Items/Firework)<!--* [Templating](Config/Templating)-->
 
 ##### [Drops & DropTables](drops/Drops)
-  * [Drop Types](drops/DropTypes)
 
 ##### Spawning
   * [Spawners](Spawners)
