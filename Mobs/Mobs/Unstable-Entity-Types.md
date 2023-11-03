@@ -74,7 +74,7 @@ Has very unique interactions and behaviors that may cause problems.
 ### RABBIT
 Gets aggroed by other neutral mobs, such as foxes.
 
-## SKELETON
+### SKELETON
 Gets aggroed by wolves
 
 ### SLIME
@@ -82,3 +82,6 @@ Has an hardcoded ai.
 
 ### WARDEN
 Has an hardcoded aggro system.
+
+### WOLF
+Can be healed via the use of specific items
