@@ -74,6 +74,9 @@ Has very unique interactions and behaviors that may cause problems.
 ### RABBIT
 Gets aggroed by other neutral mobs, such as foxes.
 
+## SKELETON
+Gets aggroed by wolves
+
 ### SLIME
 Has an hardcoded ai.
 
