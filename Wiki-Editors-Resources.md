@@ -10,16 +10,20 @@ In each page you will find further descriptions as  comments inside the page mar
 So, if a resource is on the wiki itself, please do use this method.
 
 
-
 ## Example Pages
-
 - [Mechanic Wiki Page](Wiki-Editors-Resources/ExampleMechanic)
-- [Targeter Wiki Page](Wiki-Editors-Resources/ExampleMechanic "Use the same syntax as the Mechanic one")
-- [Condition Wiki Page](Wiki-Editors-Resources/ExampleMechanic "Use the same syntax as the Mechanic one")
+- [Targeter Wiki Page](Wiki-Editors-Resources/ExampleMechanic "Uses the same syntax as the Mechanic one")
+- [Condition Wiki Page](Wiki-Editors-Resources/ExampleMechanic "Uses the same syntax as the Mechanic one")
 
 
 ## Quick Copy-Pastes
 ```
+## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
+```
+```
+## Aliases
+- [x] alias1
+- [x] alias2
 ```
