@@ -80,7 +80,7 @@ Gets aggroed by wolves
 ### SLIME
 Has an hardcoded ai.
 
-## VEX
+### VEX
 Has an hardcoded ai.
 
 ### WARDEN
