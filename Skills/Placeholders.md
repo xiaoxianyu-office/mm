@@ -104,17 +104,18 @@ These placeholders will return whatever variable has been called. For instance <
 
 | **Variable Placeholder**  | **Function**                                                            |     
 |:-------------------------:|-------------------------------------------------------------------------|
-|   <caster.var.\[name\]>   | Returns the value of the variable \[name\] on the caster.               |
-|   <caster.stat.STAT_NAME>   | Returns the value of the specified stat on the caster.               |
-|   <skill.var.\[name\]>    | Returns the value of the variable \[name\] on the current skill tree.   |
+| <caster.var.\[name\]>     | Returns the value of the variable \[name\] on the caster.               |
+| <caster.stat.STAT_NAME>   | Returns the value of the specified stat on the caster.               |
+| <skill.var.\[name\]>      | Returns the value of the variable \[name\] on the current skill tree.   |
 | <skill.var.damage-amount> | Returns the amount of damage taken in the onDamaged trigger             |
-|  <skill.var.damage-type>  | Returns the type of damage taken as specified in a mechanic, aura, etc. |
-|   <skill.var.aura-name>   | Returns the name of the aura as specified in an aura.                   |
-|   <skill.var.aura-type>   | Returns the type of the aura as specified in an aura.                   |
+| <skill.var.damage-type>   | Returns the type of damage taken as specified in a mechanic, aura, etc. |
+| <skill.var.aura-name>     | Returns the name of the aura as specified in an aura.                   |
+| <skill.var.aura-type>     | Returns the type of the aura as specified in an aura.                   |
 | <skill.var.aura-charges>  | Returns the amount of charges the aura has left.                        |
 | <skill.var.aura-duration> | Returns the duration of the aura.                                       |
-|  <skill.var.aura-stacks>  | Returns the amount of stacks the aura has.                              |
-|      <skill.targets>      | Returns the amount of inherited targets                                 |
+| <skill.var.aura-stacks>   | Returns the amount of stacks the aura has.                              |
+| <skill.var.input>         | Returns the chat input of the holder of a onChat aura.                  |
+| <skill.targets>           | Returns the amount of inherited targets                                 |
 | <skill.var.interval>      | Returns the interval value in mechanics using `repeat` & `repeatInterval` attributes                  |
 | <skill.var.itr>           | Returns the current iterationin mechanics using `repeat` & `repeatInterval` attributes                  |
 
