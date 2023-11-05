@@ -224,6 +224,7 @@ by these will "inherit" the targets (if applicable).
 | [OnShoot][]             | Applies an [aura][] to the target that triggers skills when they shoot a bow                                                                            |
 | [OnBlockBreak][]        | Applies an [aura][] to the target that triggers skills when they break a block                                                                          |
 | [OnBlockPlace][]        | Applies an [aura][] to the target that triggers skills when they place a block                                                                          |
+| [OnChat][]              | Applies an [aura][] to the target that triggers skills when they chat                                                                          |
 | [OnSwing][]             | Applies an [aura][] to the target that triggers skills when they swing / left click                                                                     |
 | [OnInteract][]          | Applies an [aura][] to the target that triggers skills when they interact / right click while holding a block or looking at an outlined block (NOT AIR) |
 | [OnJump][]              | Applies an [aura][] to the target that triggers a skill when they jump (PAPER ONLY MECHANIC)                                                            |
@@ -507,6 +508,7 @@ but not yet ready for use.
   [Time]: /skills/mechanics/time
   [OnBlockBreak]: /skills/mechanics/onblockbreak
   [OnBlockPlace]: /skills/mechanics/onblockplace
+  [OnChat]: /skills/mechanics/OnChat
   [OnSwing]: /skills/mechanics/onswing
   [OnInteract]: /skills/mechanics/oninteract
   [OnJump]: /skills/mechanics/onjump
