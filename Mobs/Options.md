@@ -949,7 +949,7 @@ Defaults to `HORSE`
 **Removed in MC 1.11+, use[Type](Mobs/Mobs#type) instead.**
 
 
-## Iron Golem
+## IronGolem
 #### PlayerCreated
 Acts as if the player built the mob.  
 Defaults to `false`.  
@@ -1010,6 +1010,16 @@ Colors must be uppercase,can be any of the [Spigot Llama colors](https://hub.spi
 ```yaml
   Options:
     Color: CREAMY
+```
+
+
+## MinecartChest
+
+#### ChestContents
+The [droptable] that will be put inside the chest.  
+```yaml
+  Options:
+    ChestContents: example_droptable
 ```
 
 
@@ -1256,3 +1266,6 @@ Defaults to `FARMER`.
   Options:
     Profession: MASON
 ```
+
+
+[droptable]: drops/Drops#drop-tables
