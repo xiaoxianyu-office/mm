@@ -40,4 +40,4 @@ SlashSword:
       oP=[ - effect:particles{p=SPARK} ];
       oH=[ - damage{a=2} ];
       roll=<random.-30to30>;fo=5;duration=5} @self ~onUse
-```
+```Note: Uses Premium <random> placeholder to give visual roll variance
