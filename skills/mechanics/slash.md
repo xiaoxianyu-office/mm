@@ -39,6 +39,7 @@ SlashSword:
   - slash{y=1.8;w=4;h=40;mpd=true;a=45;radius=2;
       oP=[ - effect:particles{p=SPARK} ];
       oH=[ - damage{a=2} ];
-      roll=<random.-30to30>;fo=5;duration=5} @self ~onUse
+      roll=<random.-30to30>;
+      fo=5;duration=5} @self ~onUse
 ```
-Note: Uses Premium <random> placeholder to give visual roll variance
+Note: `<random.-30to30>` used in this example is a [Premium Feature](Premium-Features) used here to apply random tilting to the slash effect.
