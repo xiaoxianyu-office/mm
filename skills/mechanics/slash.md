@@ -42,4 +42,5 @@ SlashSword:
       roll=<random.-30to30>;
       fo=5;duration=5} @self ~onUse
 ```
-Note: `<random.-30to30>` used in this example is a [Premium Feature](Premium-Features) used here to apply random tilting to the slash effect.
+Note: `<random.-30to30>` used in this SlashSword example is a [Premium Feature](Premium-Features) used here to apply random tilting to the slash effect.
+Note: Applying Skills to an item directly requires [Crucible](https://mythiccraft.io/index.php?resources/crucible-create-unbelievable-mythic-items.2/)
