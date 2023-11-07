@@ -11,6 +11,9 @@ Can spawn as leaders, having several times the amount of configured health.
 ### All passive animals
 Could get aggroed by other entities.
 
+### Most bosses
+Have an hardcoded ai or some other hardcoded features.
+
 ## Specific Mobs
 ### ARMOR_STAND
 Does not get targeted by default by multi entity targeters, and a [specific filter](Skills/Targeters#target-filters) must be used.  
@@ -85,6 +88,9 @@ Has an hardcoded ai.
 
 ### WARDEN
 Has an hardcoded aggro system.
+
+### WITHER
+Has an hardcoded ai.
 
 ### WOLF
 Can be healed via the use of specific items
