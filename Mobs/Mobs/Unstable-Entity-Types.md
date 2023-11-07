@@ -88,3 +88,4 @@ Has an hardcoded aggro system.
 
 ### WOLF
 Can be healed via the use of specific items
+Once it becomes "Tamed", the health resets.
