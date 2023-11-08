@@ -22,13 +22,13 @@ A more in-depth explanation of what the attributes does, how it does it, what va
 
 
 ## Examples
-A description of the example below
+A description of the example below.
 ```yaml
   Skills:
   - examplemechanic{attribute1=value1} @targeter
 ```
 ## <!-- Use ## to separate different examples -->
-Another examples
+Another example:
 ```yaml
   Skills:
   - examplemechanic{attribute1=value1;attribute2=value2} @targeter
