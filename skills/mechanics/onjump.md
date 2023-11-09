@@ -1,22 +1,17 @@
-\***This Mechanic Requires Paper! It will not work on regular Spigot!**\*
-
 ## Description
 Applies an aura to the target that triggers a skill when they jump.
 
-Attributes
-----------
-
-| Attribute        | Aliases       | Description                                                | Default Value |
-|------------------|---------------|------------------------------------------------------------|---------------|
-| onJump     | oJ            | Skill to execute if the target jumps            | NONE |
-| cancelevent | cE           | cancel the event when it is triggered           | false |
+> **This is a [Paper-Only] mechanic!**
 
 
-Examples
---------
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| onJump    | oJ        | The Metaskill to execute if the target jumps                         |         |
+| cancelevent | cE      | Whether to cancel the event when it is triggered                     | false   |
 
-Simple 1: 
 
+## Examples
 Apply an onJump aura to yourself. Whenever you jump it will put level 1 slow falling on you for 1 second.
 ```yaml
 ApplyAura:
@@ -27,8 +22,7 @@ SlowFalling:
   Skills:
   - potion{t=SLOW_FALLING;d=20;l=0;hasParticles=false} @self
 ```
-Simple 2:
-
+##
 Apply an onJump aura to yourself. Whenever you jump teleport to the closest entity within 40 blocks and kill them.
 ```yaml
 ApplyAura:
@@ -45,8 +39,7 @@ Murder:
   - delay 1
   - damage{a=1000-2000;cause=thorns}
 ```
-Intermediate:
-
+##
 Apply an onJump aura to yourself. Whenever you jump, jump higher into the air, then stop mid air and shoot projectiles at every entities within 30 blocks of you repeatedly. 
 ```yaml
 ApplyAura:
@@ -76,3 +69,5 @@ Fireball_oH:
   Skills:
   - damage{a=5-15;cause=magic}
 ```
+
+[Paper-Only]: https://papermc.io/downloads/all
