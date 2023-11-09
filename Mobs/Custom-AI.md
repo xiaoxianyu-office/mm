@@ -1,6 +1,6 @@
-**AI Goal Selectors**
----
+[[_TOC_]]
 
+# AI Goal Selectors
 Goal Selectors are used with the AIGoalSelectors field and determine what mobs want to “do”. Certain custom goals might not work if they're not included in the base AI of the mob you're creating. For example, a zombie won't be able to use the AI goal “EatGrass” because a zombie would never use that goal in the first place. Feel free to experiment to figure out what does and doesn't work!
 
 Note: Certain goals will not work correctly if the world is in peaceful mode.
@@ -20,8 +20,7 @@ SuperMob:
 
 This zombie would attack players, and walk around randomly when not targeting an enemy.
 
-**All Mobs**
-
+## All Mobs
 | AI Goal                            | Aliases          | Description                                                                                              |
 |------------------------------------|------------------|----------------------------------------------------------------------------------------------------------|
 | clear                              | reset            | Removes the AI from the mob                                                                              |
@@ -35,8 +34,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [gotospawnlocation](/Mobs/ai/goals/gotospawn)                  | gotospawn        | Mob will pathfind to its spawn location                                                              |
 | doNothing<br>**[Premium-only]**       |                  | Causes the mob to do nothing if conditions are met.                                                      |
 
-**Creatures Only**
-
+## Creatures Only
 | AI Goal                             | Aliases          | Description                                                                                                                                                        |
 |-------------------------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | avoidcreepers                       |                  | Causes the mob to avoid Creepers                                                                                                                                   |
@@ -69,33 +67,29 @@ This zombie would attack players, and walk around randomly when not targeting an
 | panicWhenOnFire                     | panic            | Run around panicking when on fire and look for water                                                                                                               |
 | randomFly                           |                  | Fly around randomly                                                                                                                                                |
 
-**Animals Only**
-
+## Animals Only
 | AI Goal      | Aliases        | Description                                   |
 |--------------|----------------|-----------------------------------------------|
 | [breed](/Mobs/ai/goals/breed) |  | Causes the mob to be able to breed with other mobs. |
 
-**Creepers Only**
-
+## Creepers Only
 | AI Goal      | Aliases        | Description                                   |
 |--------------|----------------|-----------------------------------------------|
 | creeperswell | creeperexplode | Make a creeper want to explode on its target. |
 
-**Ranged Entities Only**
-
+## Ranged Entities Only
 | AI Goal                                    | Aliases             | Description                      |
 |--------------------------------------------|---------------------|----------------------------------|
 | [rangedattack](/Mobs/ai/goals/arrowattack) | arrowattack         | A basic ranged/projectile attack |
 | [bowattack](/Mobs/ai/goals/bowattack)      | bowshoot, bowmaster | An advanced bow attack.          |
 
-**Piglins and Pillagers Only**
-
+## Piglins and Pillagers Only
 | AI Goal                                         | Aliases | Description            |
 |-------------------------------------------------|---------|------------------------|
 | [crossbowAttack](/Mobs/ai/goals/crossbowattack) |         | attack with a crossbow |
 
-**AI Target Selectors**
----
+
+# AI Target Selectors
 Target Selectors are used with the AITargetSelectors field and determine what mobs try to target.
 
 Example:
@@ -115,8 +109,7 @@ SuperMob:
   - golems
 ```
 
-**All Creatures**
-
+## All Creatures
 | AI Goal                                     | Aliases                       | Description                                                    |
 |---------------------------------------------|-------------------------------|----------------------------------------------------------------|
 | clear                                       |                               | Special Option. Clears all of the mob's AI.                    |
@@ -127,8 +120,7 @@ SuperMob:
 | golems                                      |                               | Targets Golems.                                                |
 | [nearestConditionalTarget](/Mobs/ai/targets/nearestconditionaltarget)<br>**[Premium-only]** | nearestConditional, nearestIf | Targets the nearest entity that meets the conditions provided. |
 
-**All Creatures ([Faction](Mobs/Factions) Support)**
-
+## All Creatures ([Faction](Mobs/Factions) Support)
 | AI Goal                                | Description                                            |
 |----------------------------------------|--------------------------------------------------------|
 | OtherFaction                           | Targets ANY entities that are in a different faction.  |
@@ -137,8 +129,7 @@ SuperMob:
 | [SpecificFaction](/Mobs/ai/targets/specificfaction) [faction_name]         | Targets any entities that are in the given faction.    |
 | [SpecificFactionMonsters](/Mobs/ai/targets/specificfactionmonsters) [faction_name] | Targets any monsters that are in the given faction.    |
 
-**Tameable Creatures**
-
+## Tameable Creatures
 | AI Goal       | Description                               |
 |---------------|-------------------------------------------|
 | ownerattacker | Targets whatever attacks the mob's owner. |
