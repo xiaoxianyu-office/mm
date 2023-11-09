@@ -1,3 +1,7 @@
+> This is a Paper-Only mechanic!
+
+> This is a Premium-Only mechanic!
+
 ## Description
 The description of the mechanic: what it does, how it does it, and possible notes.
 
