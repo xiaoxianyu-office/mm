@@ -27,3 +27,19 @@ So, if a resource is on the wiki itself, please do use this method.
 - [x] alias1
 - [x] alias2
 ```
+```
+> **This is a [Paper-Only] mechanic!**
+
+> **This is a [Premium-Only] mechanic!**
+
+**<[Premium-Only]>**
+```
+```
+[metaskill]: Skills/Metaskills
+[mechanic]: Skills/Mechanics
+[targeter]: Skills/Targeters
+[trigger]: Skills/Triggers
+[condition]: Skills/Conditions
+[Paper-Only]: https://papermc.io/downloads/all
+[Premium-Only]: Premium-Features
+```
