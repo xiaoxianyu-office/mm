@@ -111,7 +111,7 @@ These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) ena
 
 ## Meta Targeters
 
-The targeters below are called "meta-targeters" (or "special targeters"). They target relative to an [inherited target](Metaskills#inheritance). For example:
+Meta Targeters targets relative to an [inherited target](Metaskills#inheritance). For example:
 ```yaml
 # Mob file
 Laser:
@@ -132,7 +132,7 @@ Laser:
 ```
 In the example skill above, the "ignite" mechanic will target entities between the caster and the targeter specified in `- skill{s=Laser} @target`, i.e. a line between the caster and the caster's target.
 
-Some meta-targeters also allow the mechanic to be casted "fromOrigin". This will change the starting location of the meta-targeter to be @Origin rather than the caster, which can allow for some complex effects, particularly when used with Projectiles.
+Some meta targeters also allow the mechanic to be casted "fromOrigin". This will change the starting location of the meta-targeter to be @Origin rather than the caster, which can allow for some complex effects, particularly when used with Projectiles.
 
 
 ### Meta-Entity Targeters
@@ -159,12 +159,12 @@ Some meta-targeters also allow the mechanic to be casted "fromOrigin". This will
 | @[BlockVein][]                                                                                                                          | @vein<br>@bv                                                                                                                          | Target all adjancent blocks that match the blocktype, starting from the origin of the skill.                                                                                                                                                     |
 
 
-### None Targeter
+## Special Targeters
 
-| Targeter | Shorthand | Description                                                      |
-|----------|-----------|------------------------------------------------------------------|
-| @None    |           | Provides no target. (Useful for mechanics with no target input.) |
-
+| Targeter | Shorthand | Description                                                                     |
+|----------|-----------|---------------------------------------------------------------------------------|
+| @None    |           | Provides no target. (Useful for mechanics with no target input.)                |
+| @[Region]|           | Special targeter to target a region. Only works with specific mechanics         |
 
 
 # Common Attributes
@@ -174,7 +174,7 @@ There are some common attributes that can be used in most of the Targeters, depe
 
 ### Sudo Attributes
 | Attribute                                | Shorthand        | Description                                                                                                      |
-| ---------------------------------------- | ---------------- | ----------------------------------------- |
+| ---------------------------------------- | ---------------- | ----------------------------------------- 
 | sudoparent                               | fromparent, ofparent, asparent, parent, ofparent                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Parent][] of the casting entity executing the mechanic|
 | sudoowner                                | fromowner, ofowner, asowner, owner, ofowner                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Owner][] of the casting entity executing the mechanic |
 | sudotrigger                                | fromtrigger, oftrigger, astrigger, trigger, oftrigger                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Trigger][] of the skilltree executing the mechanic |
@@ -365,3 +365,5 @@ Currently, sort can have the following values:
   [RandomLocationsNearTargets]: /Skills/Targeters/RandomLocationsNearTargets
   [TargetedLocation]: /Skills/Targeters/TargetedLocation
   [TargetedTarget]: /Skills/Targeters/TargetedTarget
+<!-- Special Targeters -->
+  [Region]: /Skills/Targeters/Region
