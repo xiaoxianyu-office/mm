@@ -1,9 +1,9 @@
-> This is a Paper-Only mechanic!
-
-> This is a Premium-Only mechanic!
-
 ## Description
 The description of the mechanic: what it does, how it does it, and possible notes.
+
+> **This is a [Paper-Only] mechanic!**
+
+> **This is a [Premium-Only] mechanic!**
 
 
 ## Attributes
@@ -12,7 +12,7 @@ The description of the mechanic: what it does, how it does it, and possible note
 | attribute1| alias1, alias2| The description of what the attributes does                 | default value|
 | attribute2| alias3    | The description of what the attributes does                     | default value|
 | attribute3|           | The description of what the attributes does                     | default value|
-
+| attribute4|           |The description of what the attributes does **<[Premium-Only]>**|default value|
 <!-- Optional, if an inheritance is in place -->
 > This mechanic inherits every attribute of the [ExampleMechanic2](Wiki-Editors-Resources/ExampleMechanic2) mechanic
 >> The `attribute4` attribute is defaulted at `0`
@@ -42,3 +42,6 @@ Another example:
 ## Aliases
 - [x] mechanic_alias_1
 - [x] mechanic_alias_2
+
+[Paper-Only]: https://papermc.io/downloads/all
+[Premium-Only]: Premium-Features
