@@ -9,6 +9,9 @@ Special targeter to target a region. Only works with specific mechanics
 | max       |           | The location of the second point                                     | 0,0,0   |
 | world     |           | The world the region is in                                    | `<caster.l.w>` |
 
+### Min and Max attributes
+The returned region will be the one contained between those two points
+
 
 ## Examples
 ```yaml
