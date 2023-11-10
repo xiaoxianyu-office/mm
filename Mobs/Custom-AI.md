@@ -56,8 +56,8 @@ This zombie would attack players, and walk around randomly when not targeting an
 | moveindoors                         |                  |                                                                                                                                                                    |
 | [movethroughvillage](/Mobs/ai/goals/movethroughvillager)  |                  |                                                                                                                                                                    |
 | [movetoblock](/Mobs/ai/goals/movetoblock)|             | Makes the mob go towards a specific type of block                                                                                                     |
-| [movetolava](/Mobs/ai/goals/movetowater)  |                  | Makes the mob move towards lava                 |
-| [movetowater](/Mobs/ai/goals/movetolava)  |                  | Makes the mob move towards water               |
+| [movetolava](/Mobs/ai/goals/movetolava)  |                  | Makes the mob move towards lava                 |
+| [movetowater](/Mobs/ai/goals/movetowater)  |                  | Makes the mob move towards water               |
 | movetowardsrestriction              |                  |                                                                                                                                                                    |
 | [MoveTowardsConditional](/Mobs/ai/goals/movetowardsconditional)<br>**[Premium-only]** |            | Causes the mob to move towards a target based on provided conditions. |
 | patrol x1,y1,z1;x2,y2,z2;x3,y3,z3;… | patrolroute      | Makes the mob patrol between the specified locations                                                                                                               |
