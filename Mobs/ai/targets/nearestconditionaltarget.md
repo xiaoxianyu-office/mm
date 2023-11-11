@@ -17,5 +17,5 @@ ExampleMob:
   Type: ZOMBIE
   AITargetSelectors:
     - clear
-    - movetowardsconditional{mr=true;ms=true;conditions=[ - holding{m=IRON_INGOT} true ]}
+    - nearestconditionaltarget{mr=true;ms=true;conditions=[ - holding{m=IRON_INGOT} true ]}
 ```
