@@ -110,7 +110,7 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
   [Firework]: /skills/effects/firework
   [Flames]: /skills/effects/flames
   [Geyser]: /skills/effects/geyser
-  [Glow]: /skills/effects/glow
+  [Glow]: /skills/mechanics/glow
   [GuardianBeam]: /effects/guardianbeam
   [ItemSpray]: /skills/effects/itemspray
   [Lightning]: /skills/effects/lightning
