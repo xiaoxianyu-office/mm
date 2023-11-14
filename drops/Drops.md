@@ -1,5 +1,3 @@
-# Drops and Drop Tables
-
 The Drops tag can be added to your custom mobs to allow them to drop items of your choice upon their death. There are three types of custom drops available in MythicMobs to distinguish between.
 
 You can make any number of files in the DropTables folder, and they can be named anything you like as long as the file ends in .yml.
@@ -17,17 +15,22 @@ internal_mobname:
   - ...
 ```
 
-**&lt;item/exp/droptable&gt;**  
+### <item/exp/droptable>
 Can be either an item from MythicMobs, a vanilla item, exp, a drop table or an item/experience for a supported plugin.
 
-**&lt;amount&gt;**  
-The amount of items to be dropped. Can be a number range, for example: ```1-3```.
+### amount
+The amount of items to be dropped.  
 
-**&lt;chance&gt;**  
+Can be a number range, for example: `1-3` or `1to3`.  
+In this case, the number of dropped items will never be smaller than the leftmost number and never be **equal or greater** to the rightmost number
+> Writing `1to3` will drop at least 1 item and at most 2 items
+
+### chance
 The chance for the specified item to be dropped.
   - Must be a number between 0 and 1 
   - **Note:** allows percentage chances. (10% instead of 0.1).
 
+## Special Drops
 | **Special Drops**           | **Explanation**                                          | **Example**                             |
 |-----------------------------|----------------------------------------------------------|-----------------------------------------|
 | **champions-exp**           | Will drop experience points for the plugin *Champions*.  |                                         |
