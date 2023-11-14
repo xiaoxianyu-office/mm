@@ -169,6 +169,7 @@ are able to target locations as well.
 | [Suicide][]               | Causes the caster to die                                                                 |
 | [Summon][]                | Summons other mobs at the target                                                         |
 | [SummonAreaEffectCloud][] | Summons a cloud of particles at the target                                     |
+| [SummonFallingBlock][]    | Summons a falling block                                                                          |
 | [SummonPassenger][]       | Summons a mob to ride the target.                                                         |
 | [Swap][]                  | Swaps locations with the target                                                          |
 | [AddTag][]                | Adds a scoreboard tag to the target                                                      |
@@ -444,6 +445,7 @@ but not yet ready for use.
   [Suicide]: /skills/mechanics/suicide
   [Summon]: /skills/mechanics/summon
   [SummonAreaEffectCloud]: /skills/mechanics/summonareaeffectcloud
+  [SummonFallingBlock]: /skills/mechanics/SummonFallingBlock
   [SummonPassenger]: /skills/mechanics/summonpassenger
   [Swap]: /skills/mechanics/swap
   [AddTag]: /skills/mechanics/addtag
