@@ -242,6 +242,7 @@ by these will "inherit" the targets (if applicable).
 | [Slash][]               | Creates a highly-customizable slash pattern that can execute metaskills.                                                                               |
 | [SudoSkill][]           | Makes the target execute a skill                                                                                                                        |
 | [Switch-Case][]         | Acts as a switch/case                                                                                                                                   |
+| [StatAura]              | Applies an aura to the target that applies a specific stat to them                                                                                                                                   |
 | [Totem][]               | Creates a static "totem" at a location that can execute other skills                                                                                    |
 | [Volley][]              | Shoots a volley of projectile-items at the target with various options                                                                                  |
 | [VariableAdd][]         | Adds an amount to a numeric variable                                                                                                                    |
@@ -500,6 +501,7 @@ but not yet ready for use.
   [SetSkillCooldown]: /skills/mechanics/setskillcooldown
   [SetProjectileDirection]: /skills/mechanics/SetProjectileDirection
   [SetProjectileBulletModel]: /skills/mechanics/setprojectilebulletmodel
+  [StatAura]: skills/mechanics/StatAura
   [Totem]: /skills/mechanics/totem
   [VariableAdd]: /skills/mechanics/variableadd
   [VariableMath]: /skills/mechanics/variablemath
