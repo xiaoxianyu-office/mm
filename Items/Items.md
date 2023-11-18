@@ -274,10 +274,26 @@ another_example_item:
       pattern: minecraft:shaper
 ```
 
+### Firework
+Sets several firework or firework_charge items.
+See [firework](/Items/Firework) for a break-down for each of its options.
+```yml
+example_item:
+  Id: firework
+  Firework:
+  Colors:
+    - 255,0,255
+    - 0,0,0
+  FadeColors:
+    - 200,0,0
+  Flicker: true
+  Trail: true
+```
+
 ### **ItemVersion**
 ### **CRUCIBLE ONLY **
 Updates the item on MM reload when ItemVersion differs.
-This allows you to update items when MM reloads by changing the ItemVersion. If you haven't reset your config.yml in a while, then this feature requires the following to be added to the config.yml:
+This allows you to update items when MM reloads by changing the ItemVersion. If you haven't reset your config.yml in a while, then this feature requires the following to be added to the MythicCrucible config.yml:
 
 ```yml
 ItemUpdating:
@@ -305,21 +321,6 @@ yet_another_example_item:
 The second sword will replace the first sword with the updated lore whenever a player interacts with it in their inventory.
 
 
-### Firework
-Sets several firework or firework_charge items.
-See [firework](/Items/Firework) for a break-down for each of its options.
-```yml
-example_item:
-  Id: firework
-  Firework:
-  Colors:
-    - 255,0,255
-    - 0,0,0
-  FadeColors:
-    - 200,0,0
-  Flicker: true
-  Trail: true
-```
 Examples
 --------
 
