@@ -291,7 +291,7 @@ This makes display names like `Display: "Hello\nWorld!"` be displayed on two sep
 ```yaml
 ExampleMob:
   Type: PIG
-  Display: "Hello\nWorld!
+  Display: "Hello\nWorld!"
   Nameplate:
     Enabled: true
 ```
