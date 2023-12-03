@@ -23,11 +23,6 @@ A list of possible operations for the action-syntax:
 ## Examples
 ```yaml
   Skills:
-  - modifyglobalscore
-    {
-    objective=someobjective;
-    action=multiply;
-    v=2
-    } ~onAttack
+  - modifyglobalscore{objective=someobjective;action=multiply;v=2} ~onAttack
 ```
 [^mod]: shorthand for "Modular Division"
