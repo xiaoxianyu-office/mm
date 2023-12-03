@@ -5,6 +5,11 @@ General
 -------
 - Added `General.CancelDamageIfZero` config option, defaults to true (current behavior)
 
+### Pins System
+- Allows locations to quickly be saved in a `pins.yml` file (located in any pack folder)
+- Added `/mm pins create [pack] [name]` command to save your current location as a pin
+- Added `@Pin{pin=name}` targeter
+- Added `inPinRegion{pin1=X;pin2=Y}` condition
 
 Mobs
 ----
@@ -50,6 +55,9 @@ Mechanics
 ### `ModifyProjectile`
 - Added `YOFFSET` trait, usable with orbitals
 
+### `PickupItem`
+- Added `onPickup` (alias `then`) option to the `pickupItem` mechanic to execute a mechanic after an item is picked up
+
 ### Speak
 - Allow `\n` to force a newline in speech
 
@@ -60,25 +68,40 @@ Conditions
 
 Example: Check if there are 10 lit furnaces facing north or south within 10 blocks: `blockTypeInRadius{r=10;a=>9;types=minecraft:furnace[lit=true,facing=north],minecraft:furnace[lit=true,facing=south]}`
 
+### NEW: `inPinRegion` 
+- Whether the target location is inside a region created between 2 pins
+- `inPinRegion{pin1=x;pin2=Y}`
+
+### NEW: `itemType`
+- Used when targeting item entities, such as with the ` ItemsInRadius` targeter
+
 ### NEW: `triggerBlockType`
 - Used with block-related triggers such as ~onBlockBreak
 
 ### NEW: `triggerItemType`
-- Used with item-related triggers suchas ~onItemPickup
+- Used with item-related triggers such as ~onItemPickup
 
 ### MobsInRadius
 - Allow condition to check for vanilla mobs also
 
 Targeters
 ---------
-### NEW: @InteractionLastAttacker
+### NEW: `@InteractionLastAttacker`
 - Targets the last person that punched an interaction entity
 
-### NEW: InteractionLastInteract
+### NEW: `@InteractionLastInteract`
 - Targets the last person that interacted with an interaction entity
+
+### NEW: `@Pin`
+- Targets a pinned location defined in a pack's pins.yml
+- `@Pin{pin=X}`
 
 ### Ring
 - Added `relative=true` option to make the ring rotate with the facing of the caster
+
+Placeholders
+------------
+- Added `<item.amount>` placeholder usable with item-related triggers
 
 Items
 -------
