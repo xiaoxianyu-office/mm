@@ -1,3 +1,141 @@
+5.4.5
+=====
+
+General
+-------
+- Added `General.CancelDamageIfZero` config option, defaults to true (current behavior)
+
+
+Mobs
+----
+Added new available mythic entity types:
+- EXPERIENCE_BOTTLE
+- INTERACTION
+- ITEM_DISPLAY
+- MINECART
+- MINECART_CHEST
+
+Added Tamed option for cats
+
+Mechanics
+----------
+### NEW: `onChat`
+- An aura that intercepts the target's next chat message
+- Executes a skill after the message is intercepted and passes `<skill.var.input>` as the input
+
+```
+- onChat{then=[
+    - message{m="Entered <skill.var.input>"}
+]}
+```
+
+### NEW: `setFlying`
+- `setFlying{flying=true}`
+
+### NEW: `setInteractionSize`
+- `setInteractionSize{height=X;width=Y}`
+
+### NEW: `summonFallingBlock`
+- `summonFallingBlock{material=SAND}`
+
+### Auras
+- Added `<skill.var.aura-duration-millis>` placeholder
+
+### `Glow`
+- No longer requires GlowAPI on 1.18+ (thanks to Phil)
+
+### `Orbital`
+- Added `reversed=true` option to reverse the direction
+
+### `ModifyProjectile`
+- Added `YOFFSET` trait, usable with orbitals
+
+### Speak
+- Allow `\n` to force a newline in speech
+
+Conditions
+----------
+### NEW: `blockTypeInRadius`
+- Allows you to check if there are a number of blocks within a certain radius
+
+Example: Check if there are 10 lit furnaces facing north or south within 10 blocks: `blockTypeInRadius{r=10;a=>9;types=minecraft:furnace[lit=true,facing=north],minecraft:furnace[lit=true,facing=south]}`
+
+### NEW: `triggerBlockType`
+- Used with block-related triggers such as ~onBlockBreak
+
+### NEW: `triggerItemType`
+- Used with item-related triggers suchas ~onItemPickup
+
+### MobsInRadius
+- Allow condition to check for vanilla mobs also
+
+Targeters
+---------
+### NEW: @InteractionLastAttacker
+- Targets the last person that punched an interaction entity
+
+### NEW: InteractionLastInteract
+- Targets the last person that interacted with an interaction entity
+
+### Ring
+- Added `relative=true` option to make the ring rotate with the facing of the caster
+
+Items
+-------
+- Added support for armor trims using `Options.Trim: material.pattern`
+- Added `Author`, `Title`, and `Pages` options for written books
+
+API
+---
+- Added `MythicPreReloadEvent` - fires before the reload operation begins
+
+Bugs / Other
+------------
+- Added placeholder support to several missing places
+- Fixed problems with display bullet view range
+- Fixed various issues with display bullets in 1.20.2
+- Fixed an issue with ItemSpray effect
+- Fixed `PIG_ZOMBIE` alias not working
+- Fixed NPE with stats when mobs spawn
+- Fixed item mechanics/conditions only checking for mmoitems type
+- Fixed Mythic not handling EntityDamageByEntityEvent subclasses
+- Fixed an NPE in the `mm m info` command
+- Fixed shield colors not applying correctly
+- Fixed some issues with VAULT provider
+- Fixed several bugs with the speak mechanic
+- Fixed `hit` mechanic multiplier not applying to secondary damage types
+- Fixed bugs with takeItem mechanic
+- Fixed undoPaste requiring a target
+- Fixed incompatibilities with armorstand furniture closes #1396
+- Fixed error with damagers in different worlds closes #1383
+- Fixed NPE in ModifyScoreMechanic closes #1387
+- Fixed UnsupportedOperationException in MobListener closes #1395
+- Fixed some issues with Options.PreventCrafting and Options.PreventAnvil
+- Fixed IllegalStateException in SetHealthMechanic
+- Fixed title message options so they're now optional
+- Fixed no such element in location targeter.
+- Fixed NPE with PreventAnvil set to true.
+- Fixed `hit` mechanic not working with onAttack mechanic
+- Fixed `CRITICAL_STRIKE` stat not applying to bonus damage types
+- Fixed villager trades being broken and some other related issues
+- Fixed onAttack firing when event has been cancelled
+- Fixed condition actions not working with TriggerConditions
+- Fixed several errors with targeter audiences
+- Fixed NPE with FlyingSpeed attribute
+- Fixed bugs with custom player heads
+- Fixed placeholders for mob type in `summon` mechanic 
+- Add placeholder support to `distance` condition
+- Fixed some villager trade bugs
+- Fixed `targetSelf=true` not working with `@EntitiesInRadius` targeter 
+- Fixed loading bug with triggerItemType condition
+- Fixed potential loading issue with takeItem mechanic
+- Fixed NPE when handling EntityMetadata packet
+- Fixed hit mechanic not triggering onAttack 
+- Fixed onDamaged mechanics firing even if event was cancelled
+- Fixed Laser effect on 1.20.2 
+- Fixed NPE in Mob bullet 
+- Fixed some range issues with some packet bullets
+
 5.4.0
 =====
 
