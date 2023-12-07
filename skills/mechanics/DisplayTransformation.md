@@ -15,7 +15,8 @@ Sets the targeted display entity's transformations
 ExampleDisplayEntity:
   Type: block_display
   Skills:
-  - displaytransformation{action=set;transformation=translation;value=0,0,1} @self ~onDamaged
+  # sets the translation transform to `0,0,1` after 10 seconds the entity spawns
+  - displaytransformation{action=set;transformation=translation;value=0,0,1;delay=200} @self ~onSpawn
 ```
 
 
