@@ -1,3 +1,32 @@
+5.5.1
+=====
+
+General
+-------
+- Added preliminary 1.20.3 support (not complete, may have version-related bugs)
+- Allow broadcast command to parse placeholders
+- Added `fromOrigin=true` option to `throw` mechanic
+- Change setting default for cancelling zero-damage damage events to false
+
+Conditions
+----------
+### NEW: `isUsingSpyglass`
+### Health
+- Added `includeAbsorption` option to `health` condition
+### Yaw
+- Added `clamp` option to yaw condition to clamp yaw to 0-360, defaults to true
+
+Bugs / Other
+------------
+- Changed damage trigger listeners to skip zero-damage subclassed events to fix issues with other plugins that use it for PvP checks
+- Fixed hasItem condition not detecting custom items added via API
+- Fixed NPE in projectiles happening during world unload
+- Fixed auras `cancelOnTakeDamage` option not applying to block damage
+- Fixed projectile origin facing yaw=0 when `requireLineOfSight=true` 
+- Fixed issue where summoning multiple projectiles using fromOrigin=true causes them to stack on top of each other in a line
+- Fixed HideFlag to use 127 on versions before 1.20 for backwards compatibility
+- Fixed imported items not generating correctly closes #1389
+
 5.5.0
 =====
 
@@ -501,200 +530,6 @@ Bugs / Other
 - Fixed PassthroughDamage not working with certain damage types
 - Fixed several issues with asParent, asOwner, asTrigger target modifiers
 - Fixed memory leak with certain aura configurations
-
-5.3.0 (The Pande Update)
-=====
-Highlights
-----------
-### Version support
-Added support for 1.20.1
-
-Dropped support for the following versions
-- 1.12
-- 1.17
-- 1.18.0
-- 1.19.0
-- 1.19.1
-
-### Composite Conditions
-Added composite conditions. Conditions in a skill can now be grouped with parenthesis and combined with AND (&&) and OR (||) operators, and can also be nested for complex logic. The entire group of conditions will be evaluated together.
-```
-Conditions:
-- ((night || raining) && onBlock{material=LIME_CONCRETE}) true
-```
-
-### Projectiles
-- Added `DISPLAY` and `TEXT` bullets
-- Most bullets are now packet-based
-- Added lots of new projectile options and mechanics
-
-### Tons of new Random Features
-- Lots of new random features and mechanics added by Pande. Go thank him!
-
-General
--------
-- Improved tab completion for most commands
-
-Mobs
----------
-
-### New Attributes
-- Added [ReviveHealth](/wikis/Mobs/Options#revivehealth) option
-- FollowRange can now be zero
-
-### Templates
-- Templates have been fixed and refactored, and now a [Wiki Page](/Mobs/Templates) has been created to made you aware of their existance at all
-
-Mechanics
-----------
-### NEW: [UndoPaste](/skills/mechanics/undopaste)
-### NEW: [Slash](/skills/mechanics/slash)
-### NEW: [Saddle](/skills/mechanics/saddle)
-### NEW: [ProjectileVelocity](/skills/mechanics/projectileVelocity)
-### NEW: [Polygon](/skills/mechanics/Polygon)
-### NEW: [SetDragonPodium](/skills/mechanics/SetDragonPodium)
-### NEW: [Time](/skills/mechanics/time)
-### NEW: [Attribute](/skills/mechanics/Attribute)
-### NEW: [AttributeModifier](/skills/mechanics/AttributeModifier)
-### NEW: [AddTrade](/skills/mechanics/AddTrade)
-
-+ Add addTrade mechanic; aliases: setTrade, removeTrade, "replaceTrade
-
-Attributes:
-- action | mode | m - What to do <ADD>
-- slot | s | index - The slot to be selected for actions <0>
-- ingredient | item | ingredient1 | item1 | i | i1 - The first ingredient <STONE>
-- ingredient2 | item2 | i2 - The second ingredient <null>
-- result | r - The result item <STONE>
-- maxUses | uses | u - The uses of the trade <Max Int>
-- experienceReward | expReward | exp | dropExp - If the trade should drop experience <false>
-- priceMultiplier | multiplier - The multiplier for the price when the player has made the villager angry <0>
-- demand | d - The demand of the trade <1>
-- specialPrice | special - The special price for when the villager is friendly to the player (player reputation or hero of the village effect) <1>
-- ignoreDiscounts | discounts - If the discounts should be ignored <false>
-
-### FawePaste
-- added `id` attribute, to use in concert with UndoPaste
-- it now *truly* runs async
-### Lunge
-- fixed the vy attribute
-### ModifyProjectile 
-- added the `ADD` action
-### Projectile
-
-- Added `DISPLAY` and `TEXT` bullet types
-  - Text Bullets: `- projectile{bullet=TEXT;bulletText="...";bulletBillboard=CENTER;backgroundColor=64,0,0,0}`
-
-- Allow 3D rotations for ArmorStand & Display projectiles:
-  - pitch - The pitch rotation <0>
-  - yaw - The yaw rotation <0>
-  - roll - The roll rotation <0>
-  - rotation | rot - The rotation of the polygon, in the x,y,z format <0,0,0> (compact form for pitch/yaw/roll)
-  - pitchSpeed|ps & yawSpeed|ys & rollSpeed|rs & rotationSpeed|rots, same as previous, but to add speed to the rotation
-
-- Added option `highAccuracyMode=[true/false]` - If true causes the projectile to use raytracing to determine if it will hit a block instead of regular checking, so that very fast projectiles wont clip through blocks.
-- Added option `requireLineOfSight=[true/false]` - If true the projectile will immediately hit anything blocking line-of-sight from the projectile's origin to its 'starting point' after options are applied
-- Added option `drawHitbox=true` - draws the entity-detection hitbox of the projectile around it in particles. Useful for making adjustments.
-- Add option `bulletEnchanted`/`enchanted` to all armorstand/item display/item bullets
-
-### Shoot
-- fixed `pickup` attribute
-- added `expiration` attribute
-- added `amount` attribute
-### SetBlockType
-- added `physics` attribute
-### Velocity
-- added `relative` attribute
-### Aura
-- fixed `cancelOnChangeWorld` attribute
-- added placeholder support for auranames
-### OnBlockBreak 
-- added `dropitem` attribute
-- added `blocktype` attribute
-
-
-
-Targeters
----------
-- Added `ofOwner`,`ofParent` and `ofTrigger` attributes to all targeters. They will make the targeter be parsed by either the Owner, Parent or Trigger
-- Fixed `samefaction=false` target filter
-
-### NEW: [Rectangle](/Skills/Targeters/Rectangle)
-### NEW: [BlockVein](/Skills/Targeters/BlockVein)
-### EntitiesInCone
-- fixed it targeting items
-
-Triggers
---------
-### NEW: [onBucket](/Skills/Triggers#onbucket)
-
-### onDeath
-- Paper Only: the event is now cancellable
-- When the death event is cancelled, the mob will regain health in accordance with its ReviveHealth option
-
-Conditions
-----------
-### NEW: [isMythicMob](/skills/conditions/ismythicmob)
-### NEW: [isSaddled](/skills/conditions/isSaddled)
-### NEW: [MythicPack](/skills/conditions/MythicPack)
-### NEW: [PackVersion](/skills/conditions/PackVersion)
-### NEW: [PackVersionGreater](/skills/conditions/PackVersionGreater)
-### NEW: [ServerNMS](/skills/conditions/servernmsversion)
-### NEW: [ServerVersion](/skills/conditions/ServerVersion)
-### NEW: [Moist](/skills/conditions/moist)
-### NEW: [Moisturelevel](/skills/conditions/moisturelevel)
-### NEW: [isTamed](/skills/conditions/istamed)
-
-Items
------
-### NEW: [CanPlaceOn](/Items/Items#canplaceon) item configuration
-### NEW: [CanBreak](/Items/Items#canbreak) item configuration
-
-Placeholders
-------------
-### NEW: Raycast placeholder
-- <caster.raycast>
-- <target.raycast>
-- <trigger.raycast>
-- <parent.raycast>
-### NEW: PlaceholderAPI supoort
-- %mythic_var_someVar%
-- %mythic_var_world_someVar%
-- %mythic_var_global_someVar%
-- %mythic_var_<playerName>_someVar%
-- %mythic_var_<uuid>_someVar%
-### NEW: <parent.l.pitch>
-### NEW: <parent.l.yaw>
-
-
-Bug Fixes/Other
----------------
-- Now the plugins looks for WE schematics even in FAWE/WE folders
-- Fixed metaskills inline comments (`<#>`)
-- added the Icon element in the packinfo configuration
-- Fix for memory leak involving RandomFloat and RandomInt
-- Fix iterator error with the Bucket trigger
-- Added onHitBlockSkill for projectiles (projectile, missile, shoot...)
-- Added Placeholder support for Score and ScoreGlobal conditions
-- Fixes for raytracing
-- Several fixes for spawner loading
-- Fixed random number serialization
-- Refactored mmo plugin support
-- Added `Configuration.LoadExampleConfigs` (defaults to true) in config.yml
-- Fixed several issues with Damage mechanic
-- Rewrote projectiles to be packet based
-- Added error catching when trying to load an entity with a mob type that doesn't match
-- Fixed default stance when loading a mob from PDC
-- Fixed NPE with samefaction target filter
-- Improved tab completion for most commands
-- Implemented stat api support for mobs
-- Fixed blockmask error when MythicDungeons world unloads
-- Fixes for samefaction target filter closes
-- Fixed PreventMounts and PreventSplitting options
-- Added "TEXT" bulletType for projectiles
-- Add "bulletEnchanted"/"enchanted" to all armorstand/item display/item bullets
-- Run blockIgnores/blockTypes filter before sorters for location targeters
-
 
 Older Changelogs
 ================
