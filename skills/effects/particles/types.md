@@ -709,7 +709,7 @@
 | llama spit                | NA           | NA            | NA    | NA           |
 
 
-**spore_blossom**
+**spore_blossom_air**
 ---
 ![image](https://imgur.com/Y6SqFZ7.gif)
 
