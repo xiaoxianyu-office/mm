@@ -5,7 +5,7 @@ Toggles the target AI
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| ai        |           | Sets the new mob AI. `true` enables it, `false` disables it          |         |
+| ai        | state, value | Sets the new mob AI. `true` enables it, `false` disables it       | false   |
 
 
 ## Examples
@@ -17,3 +17,7 @@ TemporaryAISwitcher:
   - delay 100
   - setAI{ai=true} @self
 ```
+
+
+## Aliases
+- [x] ai
