@@ -26,6 +26,7 @@ duration and can also be used in other mechanics and conditions.
 | CancelOnGiveDamage | cogd    | Cancels the aura if the entity with the aura deals any damage to another entity                                                                                         | false   |
 | CancelOnTakeDamage | cotd    | Cancels the aura if entity with the aura takes any sort of damage|false|
 | CancelOnDeath      | cod     | Cancels the aura if the entity with the aura dies             | true    |
+| CancelOnCasterDeath| cocd    | Cancels the aura if the caster of the aura dies               | false   |
 | CancelOnTeleport   | cot     | Cancels the aura if the entity with the aura teleports at all, whether by another mechanic or server command                                                             |         |
 | CancelOnChangeWorld | cocw    | Cancels the aura if the entity with the aura changes worlds. (Most times applies to players)                                                                            | false   |
 | CancelOnSkillUse    | cosu    | Cancels the aura if the entity with the aura uses another skill while the aura is active                                                                             | false   |
