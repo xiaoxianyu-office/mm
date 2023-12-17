@@ -192,6 +192,7 @@ Conditions
 | [isRaiderPatrolLeader](/skills/conditions/isRaiderPatrolLeader)               | Entity   | Checks if the target entity is the captain of a pillager group                                |
 | [isSaddled](/skills/conditions/issaddled)                                     | Entity   | Checks if the target entity is saddled                                                        |
 | [isTamed](/skills/conditions/IsTamed)                                         | Entity   | Checks if the target entity is tamed                                                          |
+| [IsUsingSpyglass](/skills/conditions/IsUsingSpyglass)                         | Entity   | Checks if the target player is using a spyglass                                               |
 | [ItemIsSimilar](/skills/conditions/itemissimilar)                             | Entity   | Checks that targeted player's inventory slot if it's similar to an item                     |
 | [ItemRecharging](/skills/conditions/itemrecharging)                           | Entity   | Checks if the target's weapon is recharging                                                   |
 | [LastDamageCause](/skills/conditions/lastdamagecause)                         | Entity   | Checks the target's last damage cause                                                      |
