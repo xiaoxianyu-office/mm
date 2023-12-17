@@ -954,6 +954,32 @@ Defaults to `HORSE`
 **Removed in MC 1.11+, use[Type](Mobs/Mobs#type) instead.**
 
 
+## Interaction
+#### Height
+The Height of the Interaction entity.  
+Defaults to `1`.  
+```yaml
+  Options:
+    Height: 2
+```
+
+#### Width
+The Width of the Interaction entity.  
+Defaults to the value of the `Height` option.  
+```yaml
+  Options:
+    Width: 3
+```
+
+#### Responsive
+If the Interaction entity is responsive.  
+Defaults to `true`.  
+```yaml
+  Options:
+    Responsive: false
+```
+
+
 ## IronGolem
 #### PlayerCreated
 Acts as if the player built the mob.  
