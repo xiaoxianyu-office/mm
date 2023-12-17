@@ -1,9 +1,10 @@
 ## Description
-Makes the target entity glow (using the Glowing potion effect.)  
+Makes the target entity glow (using the Glowing potion effect.).  
+This mechanic is also an [aura].
 
 Can have a color specified.  
 
-Can have an [audience]
+Can have an [audience].  
 
 > **[Glow
 Api](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)** is required for minecraft versions below 1.18
@@ -16,6 +17,11 @@ Api](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)** is requir
 | duration  | d         | How long the effect will last                                        | 100     |
 | audience  |           | The [audience] of the glow effect                                    | nearby  |
 
+> This mechanic inherits every attribute of the [Aura] mechanic  
+>> - The `auraname` attribute is defaulted at `#glowing`  
+>> - The `charges` attribute is defaulted at `1`  
+>> - The `maxStacks` attribute is defaulted at `1`  
+>> - The `mergeAll` attribute is defaulted at `true`  
 
 ## Examples
 Makes the target glow red for 1000 ticks (50 seconds).
@@ -34,3 +40,4 @@ Makes the target glow red for 1000 ticks (50 seconds).
 <!-- LINKS -->
 [audience]: Skills/Effects#audience
 [color]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+[aura]: skills/mechanics/aura
