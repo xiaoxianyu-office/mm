@@ -7,7 +7,7 @@ Matches the target's health
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | health    | h, amount, a | The health range to check for                                     | 0       |
-
+| includeabsorption | ia | Whether any absorption-related health should be factor into the calculation | false |
 
 ## Examples
 
