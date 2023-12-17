@@ -281,7 +281,12 @@ Defaults to `false`.
     Silent: false
 ```
 
-
+#### UseThreatTable
+Whether the mob should have [Threat Tables](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Mobs/ThreatTables) enabled
+```yaml
+  Options:
+    UseThreatTable: true
+```
 
 
 # Group specific options
