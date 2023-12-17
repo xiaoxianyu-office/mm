@@ -7,7 +7,7 @@ Checks the yaw of the target entity against a range.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | yaw       | y         | The yaw to check for                                                 | 0       |
-
+| clamp     | c         | Whether to clamp yaw to a value in a 0-360 range                     | true    |
 
 ## Examples
 ```yaml
