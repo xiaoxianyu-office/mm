@@ -14,5 +14,5 @@ ExampleMob:
   Type: COW
   AIGoalSelectors:
     - clear
-    - breed{r=2}
+    - breed{s=2}
 ```
