@@ -32,7 +32,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | closedoors                         | restrictopendoor | Not sure what this one does                                                                              |
 | randomlookaround                   | lookaround       | The mob will randomly look around                                                                        |
 | [gotospawnlocation](/Mobs/ai/goals/gotospawn)                  | gotospawn        | Mob will pathfind to its spawn location                                                              |
-| doNothing<br>**[Premium-only]**       |                  | Causes the mob to do nothing if conditions are met.                                                      |
+| [doNothing](/Mobs/ai/goals/doNothing)<br>**[Premium-only]**       |                  | Causes the mob to do nothing if conditions are met.                                                      |
 
 ## Creatures Only
 | AI Goal                             | Aliases          | Description                                                                                                                                                        |
