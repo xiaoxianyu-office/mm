@@ -9,7 +9,7 @@ fakeLooting was added in 4.12 MM and it makes the item being given show up on th
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | i         | The item material (supports for MythicMobs' [Items](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Items) and [Droptables](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/Drops#drop-tables))                |         |
+| item      | i         | The item material (supports for MythicMobs' [Items](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Items) and [Droptables](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/Drops#drop-tables)) You can specify an amount by putting a space and a number after the item name                |         |
 | fakeLooting | fl      | Plays the pickup-item animation from the origin                      | false   |
 
 
@@ -17,5 +17,11 @@ fakeLooting was added in 4.12 MM and it makes the item being given show up on th
 ```yaml
   Skills:
   - giveitem{i=diamond_sword} @PIR{r=20} ~onSpawn
+  - ...
+```
+The below example would give the players 6 cookies.
+```yaml
+  Skills:
+  - giveitem{i=cookie 6} @PIR{r=20} ~onSpawn
   - ...
 ```
