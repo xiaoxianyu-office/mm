@@ -1,20 +1,14 @@
-
-**Aliases**: `effect:playanimation`, `e:playanimation`
-
-**Description:**
-
+## Description
 Forces the entity to play an animation
 
-Attributes
----------
+## Attributes
 
 | Attribute | Aliases | Description | Value |
 |-----------|---------|-------------|-------|
 | animation | a, effect, e | The animation to play | 1 |
 | audience  | | The audience of the effect | world |
 
-Animations
-----------
+## Animations
 |ID|	Animation|
 |-------|--------|
 |0|	Swing main arm|
@@ -24,9 +18,14 @@ Animations
 |4|	Critical effect|
 |5|	Magic critical effect|
 
-
-**Examples:**
-
+## Examples
+Causes the caster to swing their arm.
+```yaml
+SwingSkill:
+  Skills:
+  - playanimation{a=0;audience=World} @Self
 ```
-- playanimation{a=1;audience=World} @Self
-```
+
+## Aliases
+- [X] effect:playanimation
+- [X] e:playanimation
