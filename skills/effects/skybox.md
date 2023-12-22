@@ -1,5 +1,5 @@
 ## Description
-Changes the skybox of the target.
+Changes the skybox for the target players.
 
 
 ## Attributes
@@ -20,3 +20,8 @@ Makes every player in a 20 blocks radius see the "rainy" skybox
   Skills:
   - skybox{s=1} @PIR{r=20}
 ```
+
+## Aliases
+- [x] effect:skybox
+- [x] skybox
+- [x] e:skybox
