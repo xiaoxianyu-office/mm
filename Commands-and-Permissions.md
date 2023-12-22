@@ -111,6 +111,10 @@ Spawner Commands
     -   Undoes the previous cut operation and puts them back where they were.
     -   Will only work if you have not yet cut a new group of spawners.
 
+Pins Commands
+-------------
+Check the [Pins wiki page](Pins#commands)
+
 Utility Commands
 ----------------
 - **/mm test cast [skillname]** - Allows you to run a skill as if you were a mob.
