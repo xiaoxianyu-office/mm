@@ -196,6 +196,7 @@ Conditions
 | [IsUsingSpyglass](/skills/conditions/IsUsingSpyglass)                         | Entity   | Checks if the target player is using a spyglass                                               |
 | [ItemIsSimilar](/skills/conditions/itemissimilar)                             | Entity   | Checks that targeted player's inventory slot if it's similar to an item                     |
 | [ItemRecharging](/skills/conditions/itemrecharging)                           | Entity   | Checks if the target's weapon is recharging                                                   |
+| [ItemType](/skills/conditions/ItemType)                                       | Meta     | Checks against the material of the item that triggered the skill                       |
 | [LastDamageCause](/skills/conditions/lastdamagecause)                         | Entity   | Checks the target's last damage cause                                                      |
 | [LastSignal](/skills/conditions/lastsignal)                                   | Entity   | Matches the last signal received by the target mob                                          |
 | [Level](/skills/conditions/level)                                             | Entity   | Checks the target MythicMob's level                                                        |
