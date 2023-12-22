@@ -710,6 +710,14 @@ Available colors are: BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_G
     CollarColor: GREEN
 ```
 
+#### Tamed
+Whether the entity is tamed or not.  
+Defaults to `false`.  
+```yaml
+  Options:
+    Tamed: true
+```
+
 
 ## Chicken
 
