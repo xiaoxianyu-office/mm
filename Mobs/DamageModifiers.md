@@ -1,4 +1,4 @@
-**Damage Modifiers**
+## Damage Modifiers
 
 Damage Modifiers are an attribute you can add to your MythicMobs to increase or decrease the damage they receive from various sources.
 
@@ -8,7 +8,7 @@ Damage Modifiers are completely optional, you only need to add the ones you want
 
 See the [spigot javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html) for a complete list of available damage types.
 
-**Options**
+## Options
 
 | Modifier            | Explanation                                                        |
 | ------------------- | ------------------------------------------------------------------ |
@@ -45,14 +45,14 @@ See the [spigot javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ev
 
 
 
-**Examples**
+## Examples
 
 NOTE: A modifier of 1 will cause the mob to take normal damage from that source. A number higher than 1 will multiply the damage it takes by that amount. A number lower than 1 will reduce the damage it takes by that amount. And 0 will make the mob immune to that damage source.
 A negative value will cause the mob to heal from that type of damage. Note that this doesn't work if the mob is naturally immune to that damage, E.g. Iron Golems with FALL, Blazes with FIRE, FIRE_TICK, or LAVA. Etc.
 
 In this first example our Armored Zombie mob is just a basic MythicMob with nothing added to it.
 
-```
+```yaml
 ArmoredZombie:
   Mobtype: zombie
   Display: '&aArmored Zombie'
@@ -62,7 +62,7 @@ ArmoredZombie:
 
 But, if we add the DamageModifiers attribute to him we can start messing around with his weaknesses and resistances. In this example we are going to make it so melee and projectile attacks only do 75% of their normal damage to our Armored Zombie.
 
-```
+```yaml
 ArmoredZombie:
   Mobtype: zombie
   Display: '&aArmored Zombie'
@@ -75,7 +75,7 @@ ArmoredZombie:
 
 Alright, we have our damage resistant zombie now. Any melee and projectile damage it receives will be reduced by 25% (This includes from players and other mobs.) but now he seems a little overpowered, so, lets give him a weakness to go along with it.
 
-```
+```yaml
 ArmoredZombie:
   Mobtype: zombie
   Display: '&aArmored Zombie'
@@ -89,10 +89,10 @@ ArmoredZombie:
 
 Our little Armored Zombie is still well protected against projectile and melee attacks, but we have given him a weakness to magic (splash health potions) to compensate.
 
-——————-
+
 Our second example is a fire elemental, not only does this mob not take damage from burning, it also heals health when standing in fire, and regains even more health when in lava. Note: This DOES NOT work on Nether mobs as they don't take damage from fire at all, preventing them from having their fire and lava damage modified.
 
-```
+```yaml
 FireElemental:
   Mobtype: zombie
   Display: '&cFire Elemental'
