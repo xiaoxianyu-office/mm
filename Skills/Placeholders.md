@@ -199,7 +199,7 @@ The following are only some of the placeholders that can have a `trigger` scope,
 | <score.objective.dummyname> | Returns the score of "dummyname" (fake player) from "objective"         |
 | <random.#to#>               | Returns a random integer in the specified range                         |
 | <random.float.#to#>         | Returns a random float number in the specified range                    |
-
+| <item.amount>               | Returns the amount of the item that triggered the skill                 |
 
 # PlaceholderAPI Integration
 Other than being able to use PlaceholderAPI placeholders anywhere placeholder support is in place, MythicMobs introduces some new PAPI placeholders that can be used by third parties to fetch MythicMobs-related values.
