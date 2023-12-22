@@ -1,5 +1,5 @@
 ## Description
-Checks if the target entity is within a region delimited by two [pins].
+Checks if the target location is within a region delimited by two [pins].
 
 
 ## Attributes
