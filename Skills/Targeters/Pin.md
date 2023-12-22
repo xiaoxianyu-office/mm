@@ -13,3 +13,7 @@ Targets the position of a [Pin].
   Skills:
   - teleport @Pin{p=mypin}
 ```
+
+
+<!-- LINKS -->
+[pin]: Pins
