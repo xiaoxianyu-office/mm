@@ -1,6 +1,7 @@
 ## Description
 Targets locations in a specified ring around the caster
 
+
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
@@ -12,6 +13,8 @@ Targets locations in a specified ring around the caster
 | offsetx   | offx, ox  | The offset of the ring on the x axis                                 | 0       |
 | offsety   | offy, oy  | The offset of the ring on the y axis                                 | 0       |
 | offsetz   | offz, oz  | The offset of the ring on the z axis                                 | 0       |
+| relative  |           | Whether the Ring's orientation should be relative to the caster's    | false   |
+
 
 ## Examples
 ```yaml
