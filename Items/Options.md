@@ -7,94 +7,147 @@ example_item:
     SomeOption: value
 ```
 
-Universal Options
------------------
-
+# Universal Options
 These options are applicable to all items:
 
-**Repairable: \[true/false\]**
-
-  - Sets the repair cost of the item to maximum, making it completely uneditable in anvils and/or enchantment tables.
-  - Will override the RepairCost option.
-  - Defaults to false.
-
-**RepairCost: \[number\]**
-
-  - Sets the repair cost of the item.
-
-**Unbreakable: \[true/false\]**
-
-  - Sets the unbreakable tag on the item.
-  - Items with this set to true will not lose durability.
-
-**HideFlags: \[true/false\]**
-
-  - Hides all the item flags, making things like enchants not visible in the item's lore (please note however that the item will still have an enchanted glow).
-
-**PreventStacking: \[true/false\]**
-
-  - Prevents the item from stacking to similar items.
-
-**Model: \[number\]**
-
-  - Sets the custom model data ID for the item
-
-Playerheads
------------
-
-Only applicable to playerhead type items:
-
-**Player: \[name\]**
-
-  - Sets the texture of the player head.
-  - [name] must be the IGN of the target player.
-  - Player heads must use data value 3 for this to work.
-  - Examples:
-    - Player: Herobrine
-
-**SkinTexture: \[url\]**
-
-  - Also sets the texture of the player head, but instead uses a SkinURL.
-  - Player heads must use data value 3 for this to work.
-  - Type into browser: https://sessionserver.mojang.com/session/minecraft/profile/trimmeduuidofplayerhere
-  - Use http://mcuuid.net/ to find the trimmed uuid of the player
-  - This option also supports hashes. 
-For example:
+#### Repairable
+Sets the repair cost of the item to maximum, making it completely uneditable in anvils and/or enchantment tables.  
+Will override the RepairCost option.  
+Defaults to `false`.
 ```yaml
-Options:
-  SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdlMGFhOTQzM2RiYTliNzU5MzJhMTFkYzk0ZDQwNmJkZTE5ZTg2MzUxNDIxNDkyYjNlZDM3OGM4ZTFhN2NjIn19fQ==
-```
-Dyeable Items
--------------
+  Options:
+    Repairable: false
+```  
 
-**Color: \[R,G,B\] OR \[DyeColor\]**
-
--   Dyes the armor piece to a color according to Red, Green, Blue
-    settings. 0-255
--   Alternately can use a predefined color. Found
-    [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html).
--   Can pick colors using the Paint program on Windows. Open it up then choose "Edit Colors" to get your RGB value
--   Only usable on leather armor type and banners.
-
-**Fireworks**
---------------------
-
-* Added options for FIREWORK and FIREWORK_CHARGE items
-* For Colors and FadeColors, you can specify what colors you want using the format **RED,GREEN,BLUE**
-
+#### RepairCost
+Sets the repair cost of the item.  
+If set to less than 0, the vanilla one will be used.  
+Defaults to `-1`.  
 ```yaml
-Firework:
-  Colors:
-  - 255,0,255
-  - 0,0,0
-  FadeColors:
-  - 200,0,0
-  Flicker: true
-  Trail: true
+  Options:
+    RepairCost: 10
 ```
 
-Examples
-========
+#### Unbreakable
+Sets the unbreakable tag on the item.  
+Items with this set to true will not lose durability.  
+Defaults to `false`.  
+```yaml
+  Options:
+    Unbreakable: true
+```
+
+#### HideFlags
+Hides all the item flags, making things like enchants not visible in the item's lore (please note however that the item will still have an enchanted glow).  
+Defaults to `false`.  
+```yaml
+  Options:
+    HideFlags: true
+```
+
+#### PreventStacking
+Prevents the item from stacking to similar items.  
+Defaults to `false`.  
+```yaml
+  Options:
+    PreventStacking: true
+```
+
+#### Model
+Sets the custom model data ID for the item.  
+Defaults to `0`.
+```yaml
+  Options:
+    Model: true
+```
+
+
+# Playerheads
+Only applicable to playerhead type items
+
+#### Player
+Sets the texture of the player head.  
+The value must be the IGN of the target player.  
+Player heads must use data value 3 for this to work.  
+```yaml
+  Options:
+    Player: Herobrine
+```
+
+#### SkinTexture
+Also sets the texture of the player head, but instead uses a SkinURL.  
+> - Type into browser: https://sessionserver.mojang.com/session/minecraft/profile/trimmeduuidofplayerhere.  
+> - Use http://mcuuid.net/ to find the trimmed uuid of the player.  
+
+Player heads must use data value 3 for this to work.  
+This option also supports hashes.  
+```yaml
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdlMGFhOTQzM2RiYTliNzU5MzJhMTFkYzk0ZDQwNmJkZTE5ZTg2MzUxNDIxNDkyYjNlZDM3OGM4ZTFhN2NjIn19fQ==
+```
+
+
+# Dyeable Items
+
+#### Color
+Dyes the armor piece to a color according to RGB settings. 0-255.  
+Alternately can use a predefined color. Found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html).  
+Can pick colors using the Paint program on Windows. Open it up then choose "Edit Colors" to get your RGB value.  
+Only usable on leather armor type, banners, shields and such.
+```yaml
+  Options:
+    Color: RED
+```
+```yaml
+  Options:
+    Color: 102,102,153
+```
+
+
+# Fireworks
+Options for the FIREWORK and FIREWORK_CHARGE items  
+For Colors and FadeColors, you can specify what colors you want using the format **RED,GREEN,BLUE**  
+
+```yaml
+  Firework:
+    Colors:
+    - 255,0,255
+    - 0,0,0
+    FadeColors:
+    - 200,0,0
+    Flicker: true
+    Trail: true
+```
+
+
+# Books
+Options for book items
+
+#### Title
+The title of the book.  
+Defaults to `Unknown`.  
+```yaml
+  Title: <green>How to make YouTube Videos
+```
+
+#### Author
+The author of the book.  
+Defaults to `Unknown`.  
+```yaml
+  Author: CarsonJF
+```
+
+#### Pages
+A list, with each entry being a page of the book.  
+```yaml
+  Pages:
+  - "Page 1"
+  - "Page 2\n\nwith some other lines"
+  - "Page 3"
+```
+
+
+# Examples
 ```yaml
 ClothSlippers:
   Id: 301
