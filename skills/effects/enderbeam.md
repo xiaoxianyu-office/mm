@@ -1,26 +1,20 @@
-**Description:** 
+## Description
+Summons an Ender Crystal which shoots a beam towards the target.
 
-Creates the effect of an Ender Crystal towards the target.
+**Warning: This effect creates an Ender Crystal which can be exploded and cause block damage.**
 
----
-
-**Attributes:**
+## Attributes
 
 | Attribute | Alias  | Description                                       | Default Value |
 | --------- | ------ | ------------------------------------------------- | ------------- |
 | duration  | d      | The time (in ticks) that the effect is active     | 60            |
 | yoffset   | y, yo  | 	The default vertical offset from the casting mob | 0             |
 
----
 
-  **Note**
-  
-  The enderbeam skill also creates an ender crystal at the mobs position.
+## Examples
 
-**Examples:**
-
-This creates an enderbeam effect at the mobs target for 5 seconds, and is offset by 2 blocks from the casting mob.
-
-```
-- effect:enderbeam{d=100;y=2} @target
+```yaml
+EnderBeamSkill:
+  Skills:
+  - effect:enderbeam{d=100;y=2} @target
 ```
