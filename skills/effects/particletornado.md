@@ -1,10 +1,8 @@
-**Description:** 
+## Description
+Creates a tornado styled particle effect.
 
-Before using this effect on live servers, make sure you know and understand exactly how it works. This effect in itself is already quite resource intensive and bad configurations of it can easily lead to extensive server lag and or crashes. Only use this effect if you're already experienced with using MythicMobs.
-
----
-
-**Attributes:**
+## Attributes
+This effect extends the general [Particle Effect](/skills/effects/particles) and uses all attributes from it.
 
 | Attribute        | Alias | Description                                                   | Default Value | Recommended Value |
 | ---------------- | ----- | ------------------------------------------------------------- | ------------- | ----------------- |
@@ -23,10 +21,9 @@ Before using this effect on live servers, make sure you know and understand exac
 | cloudpspeed      | cps   | Speed of the playing of the cloud particles                   | 2             | default           |
 | cloudyoffset     | cyo   | Y Offsetting of the entire tornado. (1 + your desired height) | 1.8           | 2                 |
 
----
-
-**Examples:**
-
-```
-- effect:particletornado{p=flame;cp=largeexplode;mr=1;h=3;i=4;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @self ~onTimer:100
+## Examples
+```yaml
+ExplodingTornado:
+  Skills:
+  - effect:particletornado{p=flame;cp=largeexplode;mr=1;h=3;i=4;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @self ~onTimer:100
 ```
