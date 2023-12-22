@@ -35,11 +35,15 @@ So, if a resource is on the wiki itself, please do use this method.
 **<[Premium-Only]>**
 ```
 ```
+<!-- LINKS -->
 [metaskill]: Skills/Metaskills
 [mechanic]: Skills/Mechanics
 [targeter]: Skills/Targeters
 [trigger]: Skills/Triggers
 [condition]: Skills/Conditions
+
 [Paper-Only]: https://papermc.io/downloads/all
 [Premium-Only]: Premium-Features
+
+[material]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
 ```
