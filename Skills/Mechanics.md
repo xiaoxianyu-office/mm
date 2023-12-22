@@ -143,7 +143,7 @@ are able to target locations as well.
 | [SetRaiderPatrolBlock][]  | Sets the target raider to patrol a location                                                         |
 | [SetRaiderPatrolLeader][] | Sets the raider patrol leader                                                         |
 | [SetFaction][]            | Changes the target entity's faction                                                      |
-| [SetFaction][]            | Sets whether the target player is flying                                                      |
+| [SetFlying][]            | Sets whether the target player is flying                                                      |
 | [SetNoDamageTicks][]      | Sets the nodamageticks of the target                                                     |
 | [SetOwner][]              | Makes the target the owner of the casting mob                                            |
 | [SetParent][]             | Makes the target the parent of the casting mob                                            |
