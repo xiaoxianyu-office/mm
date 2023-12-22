@@ -1,17 +1,11 @@
-Effect: ParticleOrbital
-----
-
+## Description
 Creates a particle orbital effect, where the particle will orbit around the targeted entity or location.
 
 A list of particle types can be found [here](/skills/effects/particles/types).
 
-### Attributes
-----
+## Attributes
 
-#### Particle Attributes
-Options for regular particles are applicable.
-
-#### General Attributes
+This effect extends the general [Particle Effect](/skills/effects/particles) and uses all attributes from it.
 
 | Attribute  | Aliases | Description | Default Value |
 | ------ | ------ | ------ | ------ |
@@ -30,7 +24,9 @@ Options for regular particles are applicable.
 | angularVelocityZ | avz,vz  | Modifies the angular velocity around the Z axis | 0   |
 | reversed | reverse | Makes the particles orbit backwards | false |
 
-Example
--------
-
-    - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=flame} @self ~onSpawn
+## Examples
+```yaml
+OrbitalParticleSkill:
+  Skills:
+  - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=flame} @self ~onSpawn
+```
