@@ -22,3 +22,9 @@ EndermanAttack:
   Skills:
   - sound{s=entity.enderman.scream} @self
 ```
+The below example plays a sound from your resource pack. A good guide on adding custom sounds can be found [here](https://mcmodels.net/how-to-tutorials/resource-pack-tutorials/how-to-add-custom-sounds-to-resource-pack/).
+```yaml
+BossSoundEffect:
+  Skills:
+  - sound{s=yoursound:example.sound.name_1} @self
+```
