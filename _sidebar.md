@@ -7,6 +7,7 @@
 ##### [Compatible Plugins](Compatible-Plugins)
 ##### [API Information](API)
 ##### [Packs](Packs)
+* [Pins](Pins)
 ##### [Mobs](Mobs/Mobs)
   * [Mob Options](Mobs/Options)
     * [Display Options](Mobs/DisplayOptions)
