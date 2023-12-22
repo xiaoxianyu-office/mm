@@ -7,7 +7,7 @@ Holograms.
 * Now supports **`<rainbow>text</rainbow>`**
 * Now supports hover text in the format **`<hover:show_text:'hover text??'>hover over me!</hover>`**
 * Now supports clickable text in the format **`<click:run_command:/say hello>click me!</click>`**
-
+* You can force a new line in the hologram by using `\n`
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
