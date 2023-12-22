@@ -1,11 +1,14 @@
-**Description:** 
+## Description
 
-Creates the ender effect at the location of the targeter.
+Plays the effect of an eye of ender breaking at the location of the targeter.
 
----
+## Attributes
+> *This mechanic has no attributes*
 
-**Examples:**
+## Examples
 
-```
-- effect:ender @self ~onTimer:20
+```yaml
+EnderSkill:
+  Skills:
+  - effect:ender @self ~onTimer:20
 ```
