@@ -1,10 +1,7 @@
-**Description:** 
-
+## Description
 Kicks the target's screen to simulate recoil.
 
----
-
-**Attributes:**
+## Attributes
 
 | Attribute        | Alias | Description                                                   | Default Values |
 | ---------------- | ----- | ------------------------------------------------------------- | -------------- |
@@ -14,9 +11,11 @@ Kicks the target's screen to simulate recoil.
 
 Negative numbers on pitch will recoil upwards, whilst positive will recoil downwards. If you set the values to the same number it will always go the same distance: `pitch=-1to-1`
 
-**Examples:**
+## Examples
 
-```
-- recoil{r=1;pitch=-1to-1} @self ~onAttack
-- recoil{r=4;pitch=10to-10} @self ~onAttack
+```yaml
+ScreenShakeSkill:
+  Skills:
+  - recoil{r=1;pitch=-1to-1} @self ~onAttack
+  - recoil{r=4;pitch=10to-10} @self ~onAttack
 ```
