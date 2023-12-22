@@ -175,6 +175,7 @@ Conditions
 | [InBlock](/skills/conditions/inblock)                                         | Location | Checks the material at the target location                                                 |
 | [inClaim](/skills/conditions/inClaim)                                         | Location | Checks if the target location is inside a claim                                               |
 | [InCombat](/skills/conditions/incombat)                                       | Entity   | Checks if the target mob is considered in combat                                              |
+| [InPinRegion](/skills/conditions/InPinRegion)                                 | Location | Checks if the target location is within a region delimited by two pins                        |
 | [IsInSurvivalMode](/skills/conditions/IsInSurvivalMode)                       | Entity   | Checks if the target player is in survival mode                                               |
 | [Inside](/skills/conditions/inside)                                           | Location | Checks if the target has a block over their head                                              |
 | [isBaby](/skills/conditions/isbaby)                                           | Entity   | Checks if the target entity is a baby                                                         |
