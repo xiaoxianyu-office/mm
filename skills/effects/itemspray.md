@@ -19,7 +19,7 @@ Unless otherwise specified with the `allowpickup` option, those items will be pa
 
 ## Examples
 
-```
+```yaml
 - effect:itemspray{item=iron_sword;amount=20;velocity=5;d=100} @self
 ```
 
