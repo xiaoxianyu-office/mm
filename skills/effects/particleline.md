@@ -1,12 +1,9 @@
-**Description:** 
-
+## Description
 Creates a line of particles from the caster to the targeted entity or location. Extension of the [Particle Effect](/skills/effects/particles).
 
 A list of particle types can be found [here](/skills/effects/particles/types).
 
----
-
-**Attributes:**
+## Attributes
 
 This effect extends the general [Particle Effect](/skills/effects/particles) and uses all attributes from it.
 
@@ -26,12 +23,12 @@ Particle attributes are “per point” in this effect, so keeping 'amount' low 
 | zigzagOffset    | zzo      | Offset of each zigzag                               | 0.2           |
 | maxdistance     |          | The maximum distance the line can reach             | 256           |
 
----
 
-**Examples:**
-
+## Examples
 Example would draw a beam of fire from the origin to the target.
 
-```
-- effect:particleline{particle=flame;amount=1;fromOrigin=true} @target
+```yaml
+FlameParticleLine:
+  Skills:
+  - effect:particleline{particle=flame;amount=1;fromOrigin=true} @target
 ```
