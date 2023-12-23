@@ -9,7 +9,6 @@ Damages the targeted entity.
 | ignoreArmor | ia, i   | Whether or not to ignore armor, but will still use enchantment modifiers when calculating total damage                                                                       | false   |
 | preventknockback | pkb, pk | Whether or not to prevent knockback                             | false   |
 | preventimmunity  | pi      | Whether or not to ignore immunities                             | false   |
-| element   | e, damagetype, type | Sets the type of damage to be inflicted                    |         |
 | damagecause | dc, cause | Sets the damage cause for this damage mechanic.<br/> (This option is only available for 1.17+)                                                                     | entity_attack |
 | ignoreenchantments |ignoreenchants, ie  | Whether or not to ignore enchantments when calculating total damage.<br>(This option is only available for 1.19+) | false         |
 | noanger   | na        | Whether or not to generate anger when damaging the entity            | false   |
@@ -18,16 +17,18 @@ Damages the targeted entity.
 | damageshelmet| dh     | Whether or not the helmet should be damaged                          | false   |
 | ignoreeffects| ieff   | Whether or not effects should be ignored                             | false   |
 | ignoreresistance | ir | Whether or not resistance should be ignored                          | false   |
-| tags |  | Allows you to specify any number of arbitrary tags on any damage mechanics using tags=THIS,THAT etc. (5.4.0)                         | NONE   |
+| poweraffectsdamage | paw | Should the skill's power affect the damage inflicted              | true    |
+| tags         | tag    | Allows you to specify any number of arbitrary tags for the damage mechanic using `tags=THIS,THAT`                                                                               |         |
+| element   | e, damagetype, type | *Become one of the Tags*                                   |         |
 
-### DamageCause
+### DamageCause Attribute
 This attribute is only available in newer MM 5.0 builds.
 All available damage causes can be found on [spigot javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html)
 
 Note: Only `entity_attack`, `entity_sweep_attack`, `thorns`, `sonic_boom`, `entity_explosion`, and `projectile` will return an entity damager, 
 meaning that `<trigger.name>` will not return "Unknown".
 
-### Elements
+### Element Attribute
 As seen above, the damage mechanic offers the ability to set an "element" for the damage, like so:
 
 ```yaml
@@ -49,11 +50,14 @@ DamageModTest:
 ```
 These options can also be used in the "onDamaged" aura, using the `damageMods="FIRE 0.5"` attribute.
 
-### Damage Tags (5.4.0)
+### Tags Attribute
 ```yaml
-- damage{amount=5;tags=WITCHCURSES}
+- damage{amount=5;tags=WITCHCURSE,FIRE}
 ```
-This allows you to set any tag you want on this type of damage to be used with the [DamageTag](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/conditions/damagetag) condition.
+This allows you to set any tag you want on this type of damage to be used with the [DamageTag](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/conditions/damagetag) condition.  
+
+Tags are arbitrary, and can thus have any name, as long as that does not contain invalid characters.  
+You can set an indefinite number of tags for each damage mechanic. 
 
 ## Examples
 ```yaml
