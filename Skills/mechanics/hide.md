@@ -11,10 +11,10 @@ This mechanic is also an [aura].
 | duration  | d         | The given duration                                                   | 0       |
 
 > This mechanic inherits every attribute of the [Aura] mechanic  
->> - The `auraname` attribute is defaulted at `#hiding`  
->> - The `charges` attribute is defaulted at `1`  
->> - The `maxStacks` attribute is defaulted at `1`  
->> - The `mergeAll` attribute is defaulted at `true`  
+>> - The `auraname` attribute is **defaulted** at `#hiding`
+>> - The `charges` attribute is **set** at `1`  
+>> - The `maxStacks` attribute is **set** at `1`  
+>> - The `mergeAll` attribute is **set** at `true`  
 
 
 ## Examples
