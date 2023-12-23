@@ -18,10 +18,10 @@ Api](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)** is requir
 | audience  |           | The [audience] of the glow effect                                    | nearby  |
 
 > This mechanic inherits every attribute of the [Aura] mechanic  
->> - The `auraname` attribute is defaulted at `#glowing`  
->> - The `charges` attribute is defaulted at `1`  
->> - The `maxStacks` attribute is defaulted at `1`  
->> - The `mergeAll` attribute is defaulted at `true`  
+>> - The `auraname` attribute is **defaulted** at `#glowing`
+>> - The `charges` attribute is **set** at `1`  
+>> - The `maxStacks` attribute is **set** at `1`  
+>> - The `mergeAll` attribute is **set** at `true`  
 
 ## Examples
 Makes the target glow red for 1000 ticks (50 seconds).
