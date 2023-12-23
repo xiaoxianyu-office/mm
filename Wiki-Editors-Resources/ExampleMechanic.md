@@ -15,7 +15,8 @@ The description of the mechanic: what it does, how it does it, and possible note
 | attribute4|           |The description of what the attributes does **<[Premium-Only]>**|default value|
 <!-- Optional, if an inheritance is in place -->
 > This mechanic inherits every attribute of the [ExampleMechanic2](Wiki-Editors-Resources/ExampleMechanic2) mechanic
->> The `attribute4` attribute is defaulted at `0`
+>> The `attribute4` attribute is **defaulted** at `0`
+>> The `attribute5` attribute is **set** at `0`
 <!-- If inherited attributes have their default value changed> -->
 
 <!-- If the mechanic does not have any attributes-->
