@@ -1,16 +1,15 @@
 ## Description
-Damages the target entity for a percentage of the mob's damage stat.
+Damages the target entity for a percentage of the mob's damage.  
+Inherits every attribute of the [Damage](skills/mechanics/damage) mechanic.  
 
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | multiplier       | m       | The percentage of damage to deal                                | 1       |
-| ignoreArmor      | ia      | Whether or not to ignore armor                                  | false   |
-| preventknockback | pkb, pk | Whether or not to prevent knockback                             | false   |
-| preventimmunity  | pi      | Whether or not to ignore immunities                             | false   |
+> This mechanic inherits every attribute of the [Damage](skills/mechanics/damage) mechanic
+>> - The `amout` attribute is ignored
 
-  
 
 ## Examples
 This example will make the mob deal 150% of its original damage to its
@@ -23,4 +22,9 @@ AMob:
   Skills:
   - basedamage{m=1.5} @target ~onDamaged
 ```
-> 1 = 100%, 0.5 = 50% and so-on
+
+
+## Aliases
+- [x] bd
+- [x] weaponDamage
+- [x] wd
