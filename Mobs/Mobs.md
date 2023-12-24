@@ -297,6 +297,23 @@ ExampleMob:
 ```
 
 
+#### Variables
+Instead of using a lot of `setvariable` mechanics `~onSpawn`, you can make a mob spawn with already set [variables](Skills/Variables) via the use the of Variables mob field.
+
+```yaml
+VariableZombie:
+     Type: ZOMBIE
+     Variables:
+       SomeVariable: something
+       AnIntVariable: int/2
+       AFloatVariable: float/420.69
+```
+> The above example would set
+> - a `SomeVariable` variable of type `STRING` and of value `something`
+> - a `AnIntVariable` variable of type `INTEGER` and of value `2`
+> - a `AFloatVariable` variable of type `FLOAT` and of value `420.69`
+
+
 #### Trades
 Customizes the villager trades.
 Villagers must have a profession and a profession level of 2 to be able to keep its custom trades.
