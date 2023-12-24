@@ -6,12 +6,14 @@ This mechanic shares the same options as the [BaseDamage](https://git.mythiccraf
 ## Attributes
 | Attribute        | Aliases | Description                         | Default |
 |------------------|---------|-------------------------------------|---------|
-| multiplier       | m       | The percentage of damage to deal    | 1   |
-| ignoreArmor      | ia      | Whether or not to ignore armor      | false   |
-| preventknockback | pkb, pk | Whether or not to prevent knockback | false   |
-| preventimmunity  | pi      | Whether or not to ignore immunities | false   |
+| multiplier       | m       | The percentage of damage to deal    | 1       |
 
-  
+> This mechanic inherits every attribute of the [Damage](skills/mechanics/damage) mechanic
+>> - The `amout` attribute is ignored
+>> - The `triggerSkills` attribute is **defaulted** at `true`
+>> - The `damagecause` attribute is **set** at `ENTITY_ATTACK`
+>> - The `tags` attribute will always have a `melee` tag.
+
 
 ## Examples
 This example will make the mob deal 150% of its configured melee damage to its
@@ -23,7 +25,6 @@ HitMob:
   Skills:
     - hit{m=1.5;ia=true} @target ~onDamaged
 ```
-[1] 1 = 100%, 0.5 = 50% and so-on
 
 
 ## Aliases
