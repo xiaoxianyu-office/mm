@@ -34,6 +34,7 @@ itself.
 | [onTrade](#ontrade)                    | When the Villager completes a trade. Requires Paper          |
 | [onChangeWorld](#onchangeworld)        | When the mob changes world                                   |
 | [onBucket](#onbucket)                  | When the cow is milked or an entity is bucketed (axolotl etc.)             |
+| [onSkillDamage](#onskilldamage)        | When the mob deals damage to other entities via a mechanic   |
 
 <!--
 ADD THIS TRIGGER BACK WHEN IT WORKS
@@ -414,4 +415,14 @@ ANormalCow:
     - sound{s=entity.creeper.primed}
     - explosion{yield=5;delay=30}
     ];cd=2} @self ~onMilk
+```
+
+#### ~onSkillDamage
+Executes the skill when the mob deals damage to other entities via a mechanic.
+```yaml
+ExampleMob:
+  Type: 
+  Skills:
+  - damage @PIR{r=10} ~onTimer:20
+  - message{m="Get damaged! MUHAHAHA"} @trigger ~onSkillDamage
 ```
