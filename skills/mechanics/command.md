@@ -32,8 +32,6 @@ read the syntax you supplied.
   Skills:
   - command{c="give <target.name> gold_ingot 20"} @trigger ~onInteract
   - command{c="minecraft:tp <target.name> <mob.uuid>"} @self ~onDamaged
-  - command{c="minecraft:summon Zombie ~ ~ ~ <&lc>NoAI:true,CustomName:<&dq>Summoned Zombie<&dq><&rc>"}
-  - command{c="minecraft:summon Zombie ~ ~ ~ {NoAI:true,CustomName:<&dq>Summoned Zombie<&dq>}"}
   - command{c="say HELLO <target.name>";asTarget=true;asOp=true} @NearestPlayer{r=10}
 ```
 
