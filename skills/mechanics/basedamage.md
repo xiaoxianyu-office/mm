@@ -8,7 +8,7 @@ Inherits every attribute of the [Damage](skills/mechanics/damage) mechanic.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | multiplier       | m       | The percentage of damage to deal                                | 1       |
 > This mechanic inherits every attribute of the [Damage](skills/mechanics/damage) mechanic
->> - The `amout` attribute is ignored
+>> The `amout` attribute is ignored
 
 
 ## Examples
