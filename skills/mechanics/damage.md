@@ -20,6 +20,7 @@ Damages the targeted entity.
 | poweraffectsdamage | paw | Should the skill's power affect the damage inflicted              | true    |
 | tags         | tag    | Allows you to specify any number of arbitrary tags for the damage mechanic using `tags=THIS,THAT`                                                                               |         |
 | element   | e, damagetype, type | *Become one of the Tags*                                   |         |
+| triggerSkills | ts    | Whether the damage mechanic should also be able to trigger `onAttack` related triggers       | false  |
 
 ### DamageCause Attribute
 This attribute is only available in newer MM 5.0 builds.
