@@ -231,7 +231,16 @@ Prevents the mob from burning in the sun.
 Defaults to `false`.
 ```yml
   Options:
-    PreventSunburn: false
+    PreventSunburn: true
+```
+
+#### PreventVanillaDamage
+Cancels every instance of the mob dealing "regular" vanilla damage, canceling it.  
+Skills that triggers onAttack will still be executed.  
+Defaults to `false`.
+```yml
+  Options:
+    PreventVanillaDamage: true
 ```
 
 #### RepeatAllSkills
