@@ -38,15 +38,15 @@ read the syntax you supplied.
 ### Invalid command-skills
 
 The below example(s) won't work because certain symbols haven't been
-substituted with message variables.
+substituted with message variables.  
 ```yaml
   Skills:
   - command{c="minecraft:summon Zombie ~ ~ ~ {NoAI:true,CustomName:"Summoned Zombie"}"}
 ```
+> In this specific case, the `~` symbol is a problem: while normally, in vanilla, it would just mean "the position of the one that is executing the command", this is not possible with this specific setup, as it is the console that is executing the command, and as such there is no "position" that can be used. A way to fix this would have been to use the `<caster.l.x>`,`<caster.l.y>` and `<caster.l.z>` placeholders
 
-##
 
-### **Making a player execute a command**
+### Making a player execute a command
 This example will execute the "say" commands for the player that interacted with the mob
 ```yaml
 ExampleMob:
