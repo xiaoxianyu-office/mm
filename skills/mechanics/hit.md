@@ -1,13 +1,12 @@
 ## Description
-Simulates a physical hit from the mob. Takes melee stats into account (regular skill damage won't unless configured to specifically)
-This mechanic shares the same options as the [BaseDamage](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/basedamage) mechanic
+Simulates a physical hit from the mob. Takes melee stats and attribute modifiers into account.  
+Inherits every attribute of the [Damage](skills/mechanics/damage) mechanic.  
 
 
 ## Attributes
 | Attribute        | Aliases | Description                         | Default |
 |------------------|---------|-------------------------------------|---------|
 | multiplier       | m       | The percentage of damage to deal    | 1       |
-
 > This mechanic inherits every attribute of the [Damage](skills/mechanics/damage) mechanic
 >> - The `amout` attribute is ignored
 >> - The `triggerSkills` attribute is **defaulted** at `true`
