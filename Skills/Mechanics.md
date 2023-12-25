@@ -76,7 +76,7 @@ are able to target locations as well.
 | [Heal][]                  | Heals the target                                                                         |
 | [HealPercent][]           | Heals the target for a percentage of its max-health                                      |
 | [Hide][]                  | Hides the caster from the targeted player(s) for a set duration.                         |
-| [Hit][]                  | Simulates a physical hit from the mob. Takes melee damage and weapon damage into account.                         |
+| [Hit][]                   | Simulates a physical hit from the mob.                                                  |
 | [Hologram][]              | Summons a hologram to the targeted location                                              |
 | [Ignite][]                | Sets the target on fire                                                                  |
 | [JSONMessage][]           | Sends a JSON-format message to the target player(s)                                      |
@@ -86,9 +86,10 @@ are able to target locations as well.
 | [Look][]                  | Causes the caster to look at the target                                                  |
 | [Lunge][]                 | Causes the caster to lunge forward at the target                                         |
 | [Message][]               | Sends a message to the target player(s)                                                  |
+| [ModifyDamage][]          | Modifies the damage event that triggered the skill                                                         |
 | [ModifyGlobalScore][]     | Modifies a scoreboard value of the fake player: \_\_GLOBAL\_\_                           |
 | [ModifyTargetScore][]     | Modifies a scoreboard value of the target                                                |
-| [ModifyMobScore][]     | Modifies a scoreboard value of the casting mob                                                |
+| [ModifyMobScore][]        | Modifies a scoreboard value of the casting mob                                                |
 | [ModifyScore][]           | Modifies the score of a dummy player                                                     |
 | [Mount][]                 | Summons a mob for the caster and mounts it                                               |
 | [MountMe][]               | Forces the targeted entity to mount the caster                                           |
@@ -365,6 +366,7 @@ but not yet ready for use.
   [Look]: /skills/mechanics/look
   [Lunge]: /skills/mechanics/lunge
   [Message]: /skills/mechanics/message
+  [ModifyDamage]: /skills/mechanics/ModifyDamage
   [ModifyGlobalScore]: /skills/mechanics/modifyglobalscore
   [ModifyTargetScore]: /skills/mechanics/modifytargetscore
   [ModifyMobScore]: /skills/mechanics/modifymobscore
