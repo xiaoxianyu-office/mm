@@ -136,7 +136,7 @@ are able to target locations as well.
 | [SetInteractionSize][]    | Sets the size of the target `INTERACTION` entity.                                                     |
 | [SetLeashHolder][]        | Changes the holder of a mobs lead                                                          |
 | [SetLevel][]              | Changes the casting mob's level                                                          |
-| [SetMaterialCooldown][]   | sets a cooldown for usable materials like ender pearls, chorus fruit, etc                                                          |
+| [SetMaterialCooldown][]   | Sets a cooldown for usable materials like ender pearls, chorus fruit, etc                                                          |
 | [SetMaxHealth][]          | Sets the max health of the target entity                                                 |
 | [SetMobColor][]           | Changes the color of the target if it is a colorable mob                                 |
 | [SetMobScore][]           | Sets a scoreboard value on the casting mob                                               |
@@ -144,7 +144,7 @@ are able to target locations as well.
 | [SetRaiderPatrolBlock][]  | Sets the target raider to patrol a location                                                         |
 | [SetRaiderPatrolLeader][] | Sets the raider patrol leader                                                         |
 | [SetFaction][]            | Changes the target entity's faction                                                      |
-| [SetFlying][]            | Sets whether the target player is flying                                                      |
+| [SetFlying][]             | Sets whether the target player is flying                                                      |
 | [SetNoDamageTicks][]      | Sets the nodamageticks of the target                                                     |
 | [SetOwner][]              | Makes the target the owner of the casting mob                                            |
 | [SetParent][]             | Makes the target the parent of the casting mob                                            |
