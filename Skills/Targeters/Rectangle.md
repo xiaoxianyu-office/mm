@@ -11,7 +11,7 @@ Returns the # of points target locations that comprise a rectangle. Depending on
 | xOffset        |          | The offset of the rectangle on the **x** axis              |         |
 | yOffset        |          | The offset of the rectangle on the **y** axis              |         |
 | zOffset        |          | The offset of the rectangle on the **z** axis              |         |
-| points         | p        | Amount of points per cube 'line'                           |         |
+| points         | p, density, d | Amount of points per cube 'line'                      |         |
 | filled         | fill, f  | If the rectangle should be filled                          |         |
 | outline        | edge, onlyEdge, e, onlyOutline, o | If only the outline should be drawn |       |
 | rotation       | r        | The 3D rotation of the rectangle                           |         |
