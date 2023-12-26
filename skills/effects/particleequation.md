@@ -1,3 +1,6 @@
+# DISCLAIMER
+**This mechanic is a Work In Progress. As such, it is not yet functional, examples for it are not available, and is not intended to be used.**
+
 ## Description 
 Generates a particle effect based on an equation.  
 This mechanic is an extension of the **[Particle effect](/skills/effects/particles)**, and can, as such, **use any of its attributes**.
