@@ -7,6 +7,7 @@ Inherits every attribute of the [Damage](skills/mechanics/damage) mechanic.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | multiplier       | m       | The percentage of damage to deal                                | 1       |
+| useAttribute | attribute, attr | Whether the damage should use the real entity's attack attribute, instead of its raw base damage                                                                 | false   | 
 > This mechanic inherits every attribute of the [Damage](skills/mechanics/damage) mechanic
 >> The `amout` attribute is ignored
 
