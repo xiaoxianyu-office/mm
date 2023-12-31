@@ -15,7 +15,7 @@ Causes the player's screen to black out.
 Blinds players when the mob teleports
 ```yaml
 BlackScreen:
-  Skils:
+  Skills:
   - blackscreen{d=2} @PlayersInRadius{r=100} ~onTeleport
 ```
 
