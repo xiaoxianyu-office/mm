@@ -189,6 +189,7 @@ Conditions
 | [isLiving](/skills/conditions/isliving)                                       | Entity   | Checks if the target is a living entity                                                       |
 | [isMonster](/skills/conditions/ismonster)                                     | Entity   | Checks if the target is a monster                                                             |
 | [isMythicMob](/skills/conditions/ismythicmob)                                 | Entity   | Checks if the target is a MythicMob                                                           |
+| [IsParentAlive](/skills/conditions/IsParentAlive)                             | Entity   | Checks if the parent of the target entity is still alive                                      |
 | [IsParent](/skills/conditions/IsParent)                                       | Compare  | Checks if the target entity is the parent of the caster                                       |
 | [isPlayer](/skills/conditions/isplayer)                                       | Entity   | Checks if the target is a player                                                              |
 | [isRaiderPatrolLeader](/skills/conditions/isRaiderPatrolLeader)               | Entity   | Checks if the target entity is the captain of a pillager group                                |
