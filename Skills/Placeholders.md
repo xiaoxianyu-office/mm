@@ -220,6 +220,10 @@ Other than being able to use PlaceholderAPI placeholders anywhere placeholder su
 | %mythic_var_global_someVar% | Returns the value of the `someVar` variable that is set on the server   |
 | %mythic_var_\<playerName\>_someVar% | Returns the value of the `someVar` variable that is set on the specified player, by their name |
 | %mythic_var_\<UUID\>_someVar% | Returns the value of the `someVar` variable that is set on the specified entity, by its UUID|
+| %mythic_spawner_[name]_cooldown% | Returns the cooldown of the spawner called `name`                  |
+| %mythic_spawner_[name]_cooldownleft% | Returns the remaining cooldown of the spawner called `name`    |
+| %mythic_spawner_[name]_warmup% | Returns the warmup of the spawner called `name`                      |
+| %mythic_spawner_[name]_warmupleft% | Returns the remaining warmup of the spawner called `name`        |
 
 
 # Custom Placeholders
