@@ -125,6 +125,7 @@ are able to target locations as well.
 | [SendTitleMessage][]      | Sends a Title/Subtitle Message to the target player                                      |
 | [SendToast][]             | Sends an achievement toast to the target player                                          |
 | [SetAI][]                 | Disables/enables the AI of the target mob                                                |
+| [SetBlockOpen][]          | Sets the target block's open state                                                |
 | [SetBlockType][]          | Change block type at target location                                                     |
 | [SetCollidable][]         | Sets if the target should have a collidable hitbox or not                                                     |
 | [SetDragonPodium][]       | Sets the position of the dragon's podium at the target location                                                     |
@@ -405,6 +406,7 @@ but not yet ready for use.
   [SendTitleMessage]: /skills/mechanics/sendtitlemessage
   [SendToast]: /skills/mechanics/sendtoast
   [SetAI]: /skills/mechanics/setai
+  [SetBlockOpen]: /skills/mechanics/SetBlockOpen
   [SetBlockType]: /skills/mechanics/setblocktype
   [SetCollidable]: /skills/mechanics/setcollidable
   [SetDragonPodium]: /skills/mechanics/SetDragonPodium
