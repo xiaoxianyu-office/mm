@@ -235,6 +235,7 @@ by these will "inherit" the targets (if applicable).
 | [OnJump][]              | Applies an [aura][] to the target that triggers a skill when they jump (PAPER ONLY MECHANIC)                                                            |
 | [OnDeath][]             | Applies an [aura][] to the target that triggers a skill when they die                                                                                   |
 | [Orbital][]             | Applies an [aura][] that causes a projectile to orbit around the target                                                                                 |
+| [FollowPath][]          | Applies an [aura][] that causes the mob to follow a path                                                                                 |
 | [Polygon][]             | Creates a highly-customizable polygon-shaped pattern that can execute metaskills.                                                                                                                |
 | [Projectile][]          | Fires a highly-customizable projectile towards the target                                                                                               |
 | [ProjectileVelocity][]  | Modifies the velocity of the calling Projectile or Missile                                                                                               |
@@ -498,6 +499,7 @@ but not yet ready for use.
   [OnSwing]: /skills/mechanics/onswing
   [OnUse]: /skills/mechanics/onuse
   [Orbital]: /skills/mechanics/orbital
+  [FollowPath]: /skills/mechanics/FollowPath
   [Polygon]: /skills/mechanics/polygon
   [Projectile]: /skills/mechanics/projectile
   [ProjectileVelocity]: /skills/mechanics/projectilevelocity
