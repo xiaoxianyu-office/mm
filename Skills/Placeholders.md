@@ -183,11 +183,23 @@ The following are only some of the placeholders that can have a `trigger` scope,
 ## Misc Placeholders
 
 |    **Placeholder**    | **Function**                                        |
-|:---------------------:|-----------------------------------------------------|
-|      <drops.xp>       | Returns the xp dropped via Heroes or SkillAPI mods  |
-|     <drops.money>     | Returns the money dropped through the vault plug-in |
+|-----------------------|-----------------------------------------------------|
+| <drops.xp>                  | Returns the xp dropped via Heroes or SkillAPI mods                      |
+| <drops.money>               | Returns the money dropped through the vault plug-in                     |
+| <random.#to#>               | Returns a random integer in the specified range                         |
+| <random.float.#to#>         | Returns a random float number in the specified range                    |
 
-## Special Placeholders
+
+## Item Placeholders
+
+| **Placeholder**             | **Function**                                                            |
+|-----------------------------|-------------------------------------------------------------------------|
+| <item.amount>               | Returns the amount of the item that triggered the skill                 |
+| <mythicitem.[item].material>| Returns the material of the specified mythic item                       |
+| <mythicitem.[item].model>   | Returns the custommodeldata of the specified mythic item                |
+| <mythicitem.[item].display> | Returns the display name of the specified mythic item                   |
+
+## Score Placeholders
 
 | **Placeholder**             | **Function**                                                            |
 |-----------------------------|-------------------------------------------------------------------------|
@@ -197,9 +209,7 @@ The following are only some of the placeholders that can have a `trigger` scope,
 | <global.score.objective>    | Returns the score of fake player: \_\_GLOBAL\_\_ score from "objective" |
 | <score.objective.player>    | Returns the score of the defined player from "objective"                |
 | <score.objective.dummyname> | Returns the score of "dummyname" (fake player) from "objective"         |
-| <random.#to#>               | Returns a random integer in the specified range                         |
-| <random.float.#to#>         | Returns a random float number in the specified range                    |
-| <item.amount>               | Returns the amount of the item that triggered the skill                 |
+
 
 # PlaceholderAPI Integration
 Other than being able to use PlaceholderAPI placeholders anywhere placeholder support is in place, MythicMobs introduces some new PAPI placeholders that can be used by third parties to fetch MythicMobs-related values.
