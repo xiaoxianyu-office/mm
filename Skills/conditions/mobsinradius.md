@@ -11,7 +11,15 @@ Checks how many mobs are in a given radius
 
 
 ## Examples
+
+### Single type
 ```yaml
   Conditions:
   - mobsInRadius{types=NewZombie;amount=5to10;radius=15}
+```
+
+### Multiple types
+```yaml
+  Conditions:
+  - mobsInRadius{types=NewZombie,NewSkeleton,NewSpider;amount=5to10;radius=15}
 ```
