@@ -283,6 +283,12 @@ Currently, sort can have the following values:
 - HIGHEST_THREAT
 - LOWEST_THREAT
 
+# Additional Targeters
+
+- [ModelEngine 4](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/MythicMobs/Targeters)
+- [ModelEngine Legacy](https://git.lumine.io/mythiccraft/modelengine/-/wikis/Targeters)
+- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Targeters)
+- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Targeters)
 
 <!-- LINKS -->
 <!-- Single Entity Targeters -->
