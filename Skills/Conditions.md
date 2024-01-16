@@ -298,3 +298,11 @@ FlameShock:
   - potion{t=HARM;d=1;l=1}
 ```
 [1] Not all conditions may be applicable everywhere.
+
+# Additional Conditions
+Conditions added by addon plugins.
+
+- [ModelEngine 4](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/MythicMobs/Conditions)
+- [ModelEngine Legacy](https://git.lumine.io/mythiccraft/modelengine/-/wikis/Conditions)
+- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions)
+- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Conditions)
