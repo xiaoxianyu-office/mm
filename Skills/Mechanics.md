@@ -286,6 +286,14 @@ ExampleMob:
   - message{m="This one 5 times in a row over 2 seconds!";repeat=4;repeatInterval=10} @trigger ~onInteract
 ```
 
+# Additional Mechanics
+Mechanics added by addon plugins.
+
+- [ModelEngine 4](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/MythicMobs/Model-Mechanics)
+- [ModelEngine Legacy](https://git.lumine.io/mythiccraft/modelengine/-/wikis/Mechanics:-Model)
+- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics)
+- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Mechanics)
+
 <!--
 Upcoming Mechanics
 ------------------
