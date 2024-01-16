@@ -426,3 +426,8 @@ ExampleMob:
   - damage @PIR{r=10} ~onTimer:20
   - message{m="Get damaged! MUHAHAHA"} @trigger ~onSkillDamage
 ```
+
+# Additional Triggers
+
+- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers)
+- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Triggers)
