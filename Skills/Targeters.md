@@ -284,6 +284,7 @@ Currently, sort can have the following values:
 - LOWEST_THREAT
 
 # Additional Targeters
+Targeters added by addon plugins.
 
 - [ModelEngine 4](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/MythicMobs/Targeters)
 - [ModelEngine Legacy](https://git.lumine.io/mythiccraft/modelengine/-/wikis/Targeters)
