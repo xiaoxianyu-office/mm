@@ -428,6 +428,7 @@ ExampleMob:
 ```
 
 # Additional Triggers
+Triggers added by addon plugins.
 
 - [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers)
 - [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Triggers)
