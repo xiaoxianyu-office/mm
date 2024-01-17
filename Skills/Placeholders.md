@@ -61,6 +61,11 @@ MessageSkill:
 ```
 MiniMessage also has a [web viewer](https://webui.adventure.kyori.net/) to see what your text will look like in game.
 
+# Additional Placeholders
+Links to placeholders added by addon plugins. Any placeholders from these links will not work without that plugin installed.
+
+- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Placeholders)
+- [MCPets](https://mcpets.gitbook.io/mcpets/tutorials/mythicmobs-features#placeholders)
 
 # Placeholders
 
