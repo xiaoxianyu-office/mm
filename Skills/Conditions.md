@@ -105,9 +105,16 @@ Conditions used this way can still have a condition action.
 
 > The day and raining have their condition action declared, while onBlock uses the default one, `true`
 
+# Additional Conditions
+Links to conditions added by addon plugins. Any conditions from these links will not work without that plugin installed.
 
-Conditions
-----------
+- [ModelEngine 4](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/MythicMobs/Conditions)
+- [ModelEngine Legacy](https://git.lumine.io/mythiccraft/modelengine/-/wikis/Conditions)
+- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions)
+- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Conditions)
+- [MCPets](https://mcpets.gitbook.io/mcpets/tutorials/mythicmobs-features#conditions)
+
+# Conditions
 
 | Condition                                                                     | Type     | Description                                                                                 |
 |-------------------------------------------------------------------------------|----------|----------------------------------------------------------------------------------------------|
@@ -298,11 +305,3 @@ FlameShock:
   - potion{t=HARM;d=1;l=1}
 ```
 [1] Not all conditions may be applicable everywhere.
-
-# Additional Conditions
-Conditions added by addon plugins.
-
-- [ModelEngine 4](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/MythicMobs/Conditions)
-- [ModelEngine Legacy](https://git.lumine.io/mythiccraft/modelengine/-/wikis/Conditions)
-- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions)
-- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Conditions)
