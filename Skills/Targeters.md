@@ -6,6 +6,15 @@ When a targeter is used on the Skill mechanic, all of the skills inside of the m
 
 [[_TOC_]]
 
+# Additional Targeters
+Links to targeters added by addon plugins. Any targeters from these links will not work without that plugin installed.
+
+- [ModelEngine 4](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/MythicMobs/Targeters)
+- [ModelEngine Legacy](https://git.lumine.io/mythiccraft/modelengine/-/wikis/Targeters)
+- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Targeters)
+- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Targeters)
+- [MCPets](https://mcpets.gitbook.io/mcpets/tutorials/mythicmobs-features#targeters)
+
 # Targeters
 
 ## Entity Targeters
@@ -283,13 +292,7 @@ Currently, sort can have the following values:
 - HIGHEST_THREAT
 - LOWEST_THREAT
 
-# Additional Targeters
-Targeters added by addon plugins.
 
-- [ModelEngine 4](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/MythicMobs/Targeters)
-- [ModelEngine Legacy](https://git.lumine.io/mythiccraft/modelengine/-/wikis/Targeters)
-- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Targeters)
-- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Targeters)
 
 <!-- LINKS -->
 <!-- Single Entity Targeters -->
