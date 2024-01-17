@@ -10,9 +10,16 @@ Some Mechanics are able to target Entities, Locations, or both! Some
 don't target anything. You control what your skill targets using a
 [Targeter][].
 
+# Additional Mechanics
+Links to mechanics added by addon plugins. Any mechanics from these links will not work without that plugin installed.
 
-Mechanics
----------
+- [ModelEngine 4](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/MythicMobs/Model-Mechanics)
+- [ModelEngine Legacy](https://git.lumine.io/mythiccraft/modelengine/-/wikis/Mechanics:-Model)
+- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics)
+- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Mechanics)
+- [MCPets](https://mcpets.gitbook.io/mcpets/tutorials/mythicmobs-features#mechanics)
+
+# Mechanics
 
 These skills usually target entities (players or other mobs), but some
 are able to target locations as well.
@@ -286,13 +293,7 @@ ExampleMob:
   - message{m="This one 5 times in a row over 2 seconds!";repeat=4;repeatInterval=10} @trigger ~onInteract
 ```
 
-# Additional Mechanics
-Mechanics added by addon plugins.
 
-- [ModelEngine 4](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/MythicMobs/Model-Mechanics)
-- [ModelEngine Legacy](https://git.lumine.io/mythiccraft/modelengine/-/wikis/Mechanics:-Model)
-- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics)
-- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Mechanics)
 
 <!--
 Upcoming Mechanics
