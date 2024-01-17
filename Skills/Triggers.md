@@ -5,6 +5,13 @@ mobs skill configuration section.
 IN THEM.**</u> Triggers can only be used *to activate* the meta-skill
 itself.
 
+# Additional Triggers
+Links to triggers added by addon plugins. Any triggers from these links will not work without that plugin installed.
+
+- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers)
+- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Triggers)
+
+# Triggers 
 **Table of all available triggers:**
 
 | Trigger                                | When it fires...                                             |
@@ -426,9 +433,3 @@ ExampleMob:
   - damage @PIR{r=10} ~onTimer:20
   - message{m="Get damaged! MUHAHAHA"} @trigger ~onSkillDamage
 ```
-
-# Additional Triggers
-Triggers added by addon plugins.
-
-- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers)
-- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Triggers)
