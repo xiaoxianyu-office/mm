@@ -216,6 +216,7 @@ Examples:
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
 |bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
+| bulletyoffset | byoffset, byo | The y offset of the bullet                                   | 0.2     |
 | bulletBillboarding | bulletBillboard | The billboarding for the display bullet               | FIXED   |
 | bulletbrightness | bulletbrightnessblock | The bullet's brightness                           | -1      |
 | bulletbrightnesssky | | The bullet's sky light brightness                           | bulletbrightness |
@@ -241,6 +242,8 @@ Examples:
 | bulletText| text      | The text of the bullet                                               | *       |
 | bulletBillboard | billboard | The [billboard type][] of the bullet                           | CENTER  |
 |bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
+| bulletyoffset | byoffset, byo | The y offset of the bullet                                   | 0       |
+| bulletforwardoffset | bulletfo, bulletoffset, bfo | The forward offset of the bullet         | 1.8     |
 | backgroundcolor | color | The Background color, in the ARGB format                          | 64,0,0,0 |
 | bulletCullingDistance | bulletViewDistance, bulletViewRange | The range in which the bullet will be visible                                                                                        | 50      |
 | audience  |           | The [Audience][] of the bullet                                       | world   |
