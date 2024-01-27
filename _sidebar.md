@@ -45,7 +45,9 @@
   * [Banner Layers](Items/Banner-Layers)
   * [Firework](/Items/Firework)<!--* [Templating](Config/Templating)-->
 
-##### [Drops & DropTables](drops/Drops)
+##### Drops & DropTables
+  * [Drops](drops/Drops)
+  * [DropTables](drops/DropTables)
 
 ##### Spawning
   * [Spawners](Spawners)
