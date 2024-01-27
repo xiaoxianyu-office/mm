@@ -2,6 +2,8 @@ Drop Tables are collections of multiple drops that can be assigned to mobs. Usin
 
 Drop Tables are stored in their own respective configuration-files located in \/MythicMobs\/DropTables. They have the advantage of being able to utilize [Conditions](/Skills/conditions) and various other special options, and can be shared by multiple mobs without the need of duplicating it.
 
+You can make any number of files in the DropTables folder, and they can be named anything you like as long as the file ends in `.yml`.
+
 Drop Tables can be nested - a Drop Table can contain multiple other Drop Tables.
 ```yaml
 internal_mobname:
