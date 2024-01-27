@@ -86,7 +86,6 @@ These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) ena
 | @[SelfLocation][]                                                                                                                          | @casterLocation<br>@bossLocation<br>@mobLocation                                                                                                                          | Targets the caster's location                                                                                                                          |
 | @[SelfEyeLocation][]                                                                                                                          | @eyeDirection<br>@casterEyeLocation<br>@bossEyeLocation<br>@mobEyeLocation                                                                                                                          | Targets the caster's eye location                                                                                                                          |
 | @[Forward][]                                                                                                                          |   | Targets a location in front of caster's facing direction                                                                                                                          |
-| @[Pin][]                                                                                                                          |    | Targets the location of a [pin](Pins).                                                                                                                          |
 | @[ProjectileForward][]                                                                                                                          |    | Targets a location in front of the casting projectile, relative to its direction                                                                                                                          |
 | @[TargetLocation][]                                                                                                                          | @targetloc<br>@TL | Targets the caster's target's location                                                                                                                                                                                                                |
 | @[TriggerLocation][]                                                                                                                                                                            |    | Targets the location of the entity that triggered the skill                                                                                                                                                                            |
@@ -107,6 +106,7 @@ These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) ena
 |----------|-----------|---------------------------------------------------------------------------------|
 | @[ForwardWall][]                                                                                                                          |    | Targets a plane in front of the caster                                                                                                                          |
 | @[PlayerLocationsInRadius][]                                                                                                                          | @PLIR                                                                                                                          | Targets all player locations in the given radius                                                                                    |
+| @[Pin][]                                                                                                                          |    | Targets the location(s) of a [pin](Pins).                                                                                                                          |
 | @[Ring][]                                                                                                                          |    | Target points to form a ring of locations                                                                                                                          |
 | @[Cone][]                                                                                                                                                                            |    | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down)                                                                                                                          |
 | @[Sphere][]                                                                                                                                                                            |    | Targets points in a sphere around the caster                                                                                                                                                                            |
@@ -343,7 +343,6 @@ Currently, sort can have the following values:
   [NearestStructure]: /Skills/Targeters/NearestStructure
   [ObstructingBlock]: /Skills/Targeters/ObstructingBlock
   [Origin]: /Skills/Targeters/Origin
-  [Pin]: /Skills/Targeters/Pin
   [ProjectileForward]: /Skills/Targeters/ProjectileForward
   [SelfEyeLocation]: /Skills/Targeters/SelfEyeLocation
   [SelfLocation]: /Skills/Targeters/SelfLocation
@@ -357,6 +356,7 @@ Currently, sort can have the following values:
   [BlocksNearOrigin]: /Skills/Targeters/BlocksNearOrigin
   [Cone]: /Skills/Targeters/Cone
   [ForwardWall]: /Skills/Targeters/ForwardWall
+  [Pin]: /Skills/Targeters/Pin
   [RandomLocationsNearOrigin]: /Skills/Targeters/RandomLocationsNearOrigin
   [RandomLocationsNearCaster]: /Skills/Targeters/RandomLocationsNearCaster
   [Rectangle]: /Skills/Targeters/Rectangle
