@@ -1,5 +1,6 @@
 ## Description
-Targets the position of a [Pin].
+Targets the location of a [Pin].
+If the Pin is a Multi-Pin made via a Pin Wand, this targets all of the associated locations.  
 
 
 ## Attributes
