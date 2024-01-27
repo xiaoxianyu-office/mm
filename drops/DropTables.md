@@ -1,0 +1,131 @@
+Drop Tables are collections of multiple drops that can be assigned to mobs. Using them makes it easier to organize your drops in almost any case where your mobs are supposed to drop multiple items.
+
+Drop Tables are stored in their own respective configuration-files located in \/MythicMobs\/DropTables. They have the advantage of being able to utilize [Conditions](/Skills/conditions) and various other special options, and can be shared by multiple mobs without the need of duplicating it.
+
+Drop Tables can be nested - a Drop Table can contain multiple other Drop Tables.
+```yaml
+internal_mobname:
+  Type: <mobtype>
+  Drops:
+  - <internal_droptablename>
+```
+The structure of a fully-configured drop table looks like this:
+```yaml
+#Lets you specify exactly how many items will drop from this table
+internal_droptablename: 
+  TotalItems: <amount>
+  MinItems: <amount> #defaults to TotalItems' value
+  MaxItems: <amount> #defaults to TotalItems' value
+  BonusLuckItems: <multiplier>
+  BonusLevelItems: <multiplier>
+#Conditions of the dropper
+  Conditions:
+  - condition 1
+  - condition 2
+  - ...
+#Conditions of the person that triggered the drop (i.e. the killer of the mob)
+  TriggerConditions:
+  - condition 1
+  - ...
+  Drops:
+  - <item/exp/droptable> <amount> <chance>
+  - ...
+```
+
+## DropTable Options
+
+**TotalItems: \[number\]**
+
+-   Defines exactly how many items the table will drop
+-   Setting this causes item chances to be calculated as weights
+
+**MaxItems: \[number\]**
+
+-   Defines a maximum number of items that will drop
+-   If only this is set, drops will run down the list unless the maximum number of items is reached
+
+**MinItems: \[number\]**
+
+-   Defines a minimum number of items that will drop
+-   If only this is set, drops will run down the list until the minimum items is reached
+-   If you enable **both** ```MinItems``` and ```MaxItems```, the chances for each table entry will become *weights* instead.
+
+**BonusLevelItems: \[number\]/\[range\]**
+
+-   A modifier on the number of items dropped based on the mob's level
+-   Can be set as a range,`i.e. ```0.2to0.5```
+-   Works like:```amount = amount + (mob_level * bonus_level_items)```
+-   Requires that```TotalItems```, ```MinItems```, or ```MaxItems``` are set on the table
+
+**BonusLuckItems: \[number\]/\[range\]**
+
+-   A modifier on the number of items dropped based on the killer's luck stat
+-   Can be set as a range, i.e. ```0.15to8```
+-   Works with Luck attribute, Luck-based enchants/curses, and Luck potion effects
+-   Works like: ```amount = amount + (luck * bonus_luck_items)```
+-   Requires that ```TotalItems```, ```MinItems```, or ```MaxItems``` are set on the table
+
+### Examples
+
+This mob will always drop a bunch of experience and some rotten flesh,
+but is also using a droptable which is described further below.
+```yaml
+snow_loving_zombie:
+  Type: zombie
+  Health: 100
+  Equipment:
+  - snowsword:0
+  Drops:
+  - exp 75-125 1
+  - rare_snowsword_droptable
+```
+
+This example is a droptable that has a 5 % chance of dropping a custom
+sword, but only if the mob is killed in an "ICE\_PLAINS" biome and if a
+player is within 20 blocks.
+
+```yaml
+rare_snowsword_droptable:
+  Conditions:
+  - biome{b=ICE_PLAINS}
+  - playerwithin{d=20}
+  Drops:
+  - snowsword 1 0.05
+```
+In this example, the DropTable would drop 5 gold/diamonds if the player
+has no Luck, and 15-27 gold/diamonds if the player has a Luck V enchant.
+```yaml
+LuckyDroptable:
+  TotalItems: 5
+  BonusLuckItems: 2to5
+  Drops:
+  - GOLD_NUGGET 1 1
+  - DIAMOND 1 0.2
+```
+
+
+## Equipment Droptables
+It is also possible to use droptables to configure equipment setups. This type of droptables can be used either directly in the [Equipment element](/Mobs/Mobs#equipment) of the mob or by using the [Equip mechanic](/skills/mechanics/equip).
+The syntax itself is similar to the one of a "normal" droptable, except, in this case, it's necessary to specify an equipment slot.
+
+### Examples
+```yaml
+# Droptable Config
+Example_EquipmentDropTable:
+  Drops:
+  - LEATHER_HELMET HELMET 1 1
+  - LEATHER_CHESTPLATE CHEST 1 1
+  - CHAINMAIL_CHESTPLATE CHEST 1 0.5
+  - DIAMOND_CHESTPLATE CHEST 1 0.1
+  - NETHERITE_CHESTPLATE CHEST 1 0.05
+```
+```yaml
+# Mob Config
+ExampleMob:
+  Type: ZOMBIE
+  Equipment:
+  - Example_EquipmentDropTable
+```
+These configurations will allow `ExampleMob` to
+- always have a leather helmet
+- always have at least a leather chestplate, while having something more powerful if the chance is met
