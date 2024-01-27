@@ -682,6 +682,15 @@ Defaults to `false`.
 ```
 
 
+#### PreventStingerLoss
+Whether to prevent the bee from losing its stinger once it hits an entity.  
+Defaults to `false`.  
+```yaml
+  Options:
+    PreventStingerLoss: true
+```
+
+
 ## Camel
 
 #### Saddled
