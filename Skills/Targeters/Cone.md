@@ -1,5 +1,5 @@
 ## Description
-Targets random points in a cone in front of the caster. 
+Targets random points in a cone in front of the caster.  
 Note: Cone is fixed on the y-axis, and cannot be rotated up or down
 
 
