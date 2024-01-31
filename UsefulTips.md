@@ -34,7 +34,7 @@ This is a common issue. To fix this, consider adding the following skill to your
 
 ## Skills
 
-### Chat Messagges
+### Chat Messages
 <details><summary>I want to warn every player that a mob has spawned</summary>
 The [Placeholders wiki page](/Skills/Placeholders#examples) contains one such example.
 </details>
