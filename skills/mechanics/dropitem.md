@@ -1,6 +1,6 @@
 ## Description
 Drops a set of items or optionally a
-[DropTable](/databases/drops/overview).
+[DropTable](/drops/DropTables).
 
 
 ## Attributes
