@@ -229,7 +229,7 @@ EXAMPLE_MOB:
 ```
 
 #### ~onEnterCombat
-Executes the skill when the mob enters combat. **REQUIRES [ThreatTables](/Mobs/ThreatTables) to be enabled**
+Executes the skill when the mob enters combat. **REQUIRES [ThreatTables] to be enabled**
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -242,7 +242,7 @@ EXAMPLE_MOB:
 ```
 
 #### ~onDropCombat
-Executes the skill when the mob drops combat. **REQUIRES [ThreatTables](/Mobs/ThreatTables) to be enabled**
+Executes the skill when the mob drops combat. **REQUIRES [ThreatTables] to be enabled**
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -433,3 +433,7 @@ ExampleMob:
   - damage @PIR{r=10} ~onTimer:20
   - message{m="Get damaged! MUHAHAHA"} @trigger ~onSkillDamage
 ```
+
+
+<!-- LINKS -->
+[ThreatTables]: Mobs/ThreatTables
