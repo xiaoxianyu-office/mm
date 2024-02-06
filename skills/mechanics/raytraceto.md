@@ -19,7 +19,7 @@ Traces a ray to the target, like the [Raytrace](skills/mechanics/raytraceto) mec
 ```yaml
 MyRaytraceToSkill:
   Skills:
-  - raytrace{
+  - raytraceto{
       entitySkill=[
         - damage{amount=20}
       ];
