@@ -217,7 +217,7 @@ Examples:
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
 |bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
 | bulletyoffset | byoffset, byo | The y offset of the bullet                                   | 0.2     |
-| bulletBillboarding | bulletBillboard | The billboarding for the display bullet               | FIXED   |
+| bulletBillboarding | bulletBillboard | The [billboard type] of the bullet                    | FIXED   |
 | bulletbrightness | bulletbrightnessblock | The bullet's brightness                           | -1      |
 | bulletbrightnesssky | | The bullet's sky light brightness                           | bulletbrightness |
 | bulletCullingDistance | bulletViewDistance, bulletViewRange | The range in which the bullet will be visible                                                                                        | 50      |
@@ -240,7 +240,7 @@ Examples:
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletText| text      | The text of the bullet                                               | *       |
-| bulletBillboard | billboard | The [billboard type][] of the bullet                           | CENTER  |
+| bulletBillboard | billboard | The [billboard type] of the bullet                             | CENTER  |
 |bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
 | bulletyoffset | byoffset, byo | The y offset of the bullet                                   | 0       |
 | bulletforwardoffset | bulletfo, bulletoffset, bfo | The forward offset of the bullet         | 1.8     |
