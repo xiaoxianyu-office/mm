@@ -5,14 +5,13 @@ Modifies the projectile, missile, or orbital that activated the mechanic.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| trait     | t         | The trait to modify:<br>`INERTIA`, `GRAVITY`, `POWER`, `VELOCITY`, `RADIUS` and `YOFFSET`                                                                                   | `VELOCITY` |
+| trait     | t         | The trait to modify:<br>`INERTIA`, `POWER`, `VELOCITY`, `RADIUS` and `YOFFSET`                                                                                   | `VELOCITY` |
 | action    | a         | The action to perform for modifying the projectile trait:<br>`ADD`, `SET`, `MULTIPLY`                                                                                  | `MULTIPLY` |
 | value     |v          | The value to use for the modification                             | 0          |
 
 ### Trait Attribute
 The possible values are:
 - `INERTIA` - The inertia of the [missile].
-- `GRAVITY` - The gravity of the [projectile], [missile]
 - `POWER` - The power of the [projectile], [missile], [orbital]
 - `VELOCITY` - The power of the [projectile], [missile]
 - `RADIUS` - The power of the [orbital]
