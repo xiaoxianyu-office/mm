@@ -1,11 +1,15 @@
 5.6.0
 =====
 
-Highlights / General
---------------------
+Highlights
+----------
 - Rewrote config files. Old settings should automatically migrate and are now located in a new `configs` folder
 - Added new `Fancy` Drops Per-Player Loot Drops
 - Glow effects no longer requires GlowAPI
+- Mob Egg improvements
+
+General
+-------
 - Improved output of getCoordinates utility command
 
 Configs
@@ -23,6 +27,14 @@ Mobs
 ----
 - Added `Variables` field to mobs for pre-set variables available to skills
 - Added `Nameplate.Mounted: false` option for MEG mobs
+- Mob eggs are now fully configurable in `config-mobs.yml` and the display/lore can be overridden on a per-mob basis
+```
+SomeMob:
+  Egg:
+    Display: '<caster.name> EGG'
+    Lore:
+    - 'im a testing egg'
+```
 
 Mechanics
 ---------
@@ -73,12 +85,12 @@ Targeters
 
 Placeholders
 ------------
+- Added various `caster.target.` placeholders to act on the target of the caster
 - `<trigger.item.amount>` placeholder added
 
 Mob Drops
 ---------
 - Added various new drop options
-
 
 RandomSpawning
 --------------
@@ -87,12 +99,13 @@ RandomSpawning
 API
 ---
 - Added PlayerLevelProvider
+- Added `MythicMobEggEvent` for when an egg is used
 
 Bugs / Other
 ------------
 - Allowed placeholders in `radius` and `minRadius` attributes in `@RandomLocationsNearTargets` targeter
-- Fixed jigsaw structures not working with structure condition (closes #1464)
-- Fixed NPE in GoToParent goal (closes #1454)
+- Fixed jigsaw structures not working with structure condition
+- Fixed NPE in GoToParent goal
 - Fixed onDamaged mechanic not working with custom damage types or multi-type damage
 - Fixed per-player loot vfx not moving with the loot with fancy drops
 - Fixed some backwards compatibility issues with the placeholder refactor
@@ -123,7 +136,20 @@ Bugs / Other
 - Fixed StatAura not giving stats for additional stacks
 - Fixed bug in stat displays and keys
 - Fixed custom MM nameplates trying to apply to MEG modeled mobs instead of vanilla mobs
-
+- Fixed caster spawn targeter mutating location
+- Fixed villager trade 2nd item using 1st count
+- Fixed metadata not syncing between subhitbox and parent on MEG mobs
+- Fixed projectiles not hitting MEG OBBs
+- Fixed look mech pitch and yaw being swapped
+- Fixed BlockLight and SkyLight properties
+- Fixed event firing before bullets are set
+- Fixed guardian beam issues
+- Fixed @self targeter sometimes requiring targetself=true which is unintuitive
+- Fixed PreventOtherDrops not affecting equipped items closes #1474
+- Fixed `<<` for ranges not working with nested placeholders
+- Fixed `@playersNearTargetLocations` meta-targeter not working with base entity targets
+- Fixed NPE with incorrectly configured mob bullets closes #1481
+- Fixed attack speed stat throwing an error on mobs that don't support attack speed closes #1484
 
 5.5.1
 =====
