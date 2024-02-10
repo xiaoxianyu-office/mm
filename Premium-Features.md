@@ -21,7 +21,7 @@ Premium](http://www.mythicmobs.net/index.php?account/upgrades) comes with numero
 -   Ability to use `origin=@targeter` in any mechanic
 -   Much more!
 
-Any new things unlocked with MythicMobs Premium can also be used in compatible Mythic plugins, such as Crucible, Enchants, MMOItems, MMOCore, and more!
+Any new things unlocked with MythicMobs Premium can also be used in compatible Mythic plugins, such as Crucible, RPG, Enchants, Achievements, Dungeons, and more!
 
 More premium-only features will continue to be added as time goes on.  You can upgrade your account to Premium [by clicking here](http://www.mythicmobs.net/index.php?account/upgrades).
 
