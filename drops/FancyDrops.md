@@ -109,6 +109,19 @@ Other than the options written above, you can also determine specific behaviors 
 | brightness | bright, b | The brightness of the hologram                                      | 0       |
 | pickupskills | ps     | The metaskill executed when the drop is picked up                            | |
 
+### Example
+```yaml
+  Drops:
+  - amber_1{itemglow=GOLD;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - adamantium_ore{itemglow=WHITE;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - amethyst_1{itemglow=YELLOW;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - andesite_bricks{itemglow=LIGHT_PURPLE;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - bananarang{itemglow=RED;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - augment_sword_midas_6{itemglow=AQUA;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - blue_stained_tiles{itemglow=GREEN;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - black_stained_tiles{itemglow=BLUE;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - bismuth_2{itemglow=DARK_RED;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21} 1 1
+```
 
 <!-- LINKS -->
 [billboarding]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Display.Billboard.html
