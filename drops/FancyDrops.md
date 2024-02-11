@@ -8,7 +8,7 @@ This is an additional field on the mob config, `DropOptions`, that allows you to
 ```yaml
   DropOptions:
     DropMethod: FANCY
-    DoClientSideDropsByDefault: false
+    ClientSideDrops: false
     HologramMessage:
     - ...
     - ...
@@ -29,11 +29,11 @@ So, in essence, this must be set to `FANCY` in order for the rest of the page to
 ```
 
 
-### DoClientSideDropsByDefault
+### ClientSideDrops
 Whether drops should be seen per-player, in a client side manner. In essence, with this enabled, every player will only be able to see the loot that they themselves gained.
 ```yaml
   DropOptions:
-    DoClientSideDropsByDefault: false
+    ClientSideDrops: false
 ```
 
 
