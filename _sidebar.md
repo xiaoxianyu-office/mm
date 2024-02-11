@@ -48,6 +48,7 @@
 ##### Drops & DropTables
   * [Drops](drops/Drops)
   * [DropTables](drops/DropTables)
+  * [FancyDrops](drops/FancyDrops)
 
 ##### Spawning
   * [Spawners](Spawners)
