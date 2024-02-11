@@ -1,32 +1,38 @@
 The Drops tag can be added to your custom mobs to allow them to drop items of your choice upon their death. There are three types of custom drops available in MythicMobs to distinguish between.
 
+
+[[_TOC_]]
+
+
 Drops are the simplest way to implement custom drops.
+
+## Drops Configuration
 ```yaml
 internal_mobname:
   Type: <mobtype>
   Drops:
-  - <item/exp/droptable/cmd> <amount> <chance>
-  - <item/exp/droptable/cmd> <amount> <chance>
+  - <drop> <amount> <chance>
+  - <drop> <amount> <chance>
   - ...
 ```
 
-### <item/exp/droptable>
-Can be either an item from MythicMobs, a vanilla item, exp, a drop table or an item/experience for a supported plugin.
+### Drop
+Can be either an item from MythicMobs, a vanilla item, exp, a drop table or an item/experience for a supported plugin. The list of available [Drop Types](Drops#drop-types) is displayed below
 
-### amount
+### Amount
 The amount of items to be dropped.  
 
 Can be a number range, for example: `1-3` or `1to3`.  
 In this case, the number of dropped items will never be smaller than the leftmost number and never be **equal or greater** to the rightmost number
 > Writing `1to3` will drop at least 1 item and at most 2 items
 
-### chance
+### Chance
 The chance for the specified item to be dropped.
   - Must be a number between 0 and 1 
   - **Note:** allows percentage chances. (10% instead of 0.1).
 
-## Special Drops
-| **Special Drops**           | **Explanation**                                          | **Example**                             |
+## Drop Types
+| **Type**                    | **Explanation**                                          | **Example**                             |
 |-----------------------------|----------------------------------------------------------|-----------------------------------------|
 | **champions-exp**           | Will drop experience points for the plugin *Champions*.  |                                         |
 | **skillapi-exp**            | Will drop experience points for the plugin *SkillAPI*.   |                                         |
@@ -54,8 +60,7 @@ YourMob:
 ```
 ## In-line Drops
 
-For very basic equipment, you can add some inline item data so that you don't always have to create a mythic item. Options currently available in-line on builds below 4.12 include **name**, **data**, **amount**, **lore**, and **color**
-
+For very basic equipment, you can add some inline item data so that you don't always have to create a mythic item.
 All of this inline item data can also be used in [Equipment:](/mobs/equipment)!
 
 ```yaml
@@ -63,8 +68,21 @@ All of this inline item data can also be used in [Equipment:](/mobs/equipment)!
  - leather_chestplate{name="Dark Leather";lore="&8A vest made of darkened leather";color=BLACK} 1 1
 ```
 
-Options added in 4.12 are **model**, **enchants**, **potioneffects**, **skullOwner**, and **skulltexture**.
+### Available inline attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| name      | display, n, d | The display name of the item                                     |         |
+| data      |           | The "Data" of the item, to not be confused with CustomModelData      | 0       |
+| model     |           | The CustomModelData of the item                                      | 0       |
+| amount    | a         | The amount of the item                                               | 1       |
+| lore      | l         | The lore of the item                                                 |         |
+| enchantments | enchants, ench, e | A list of enchantments of the item                        |         |
+| potioneffects | peffects, potion, pe | A list of potion effects of the item, if a potion     |         |
+| color     | c, potioncolor, pcolor, pc | The color of the item, if a potion                  |         |
+| skullowner |          | The owner of the item, if a skull                                    |         |
+| skulltexture |        | The SkinURL of the texture of the item, if a skull                   |         |
 
+### Example
 The below drops section will drop a Panda player head item that has 2 enchants on it, and will drop 3 pieces of diamond armor that all have names, lore, and enchantments on them!
 
 ```yaml
