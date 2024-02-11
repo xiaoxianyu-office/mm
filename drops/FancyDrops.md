@@ -72,7 +72,7 @@ What the message send to the players when the mob dies should say. Is able to us
     - '<#E57A00>4th Place »<#E57A00> <4.name> - <4.damage>'
     - '<#E57A00>5th Place »<#E57A00> <5.name> - <5.damage>'
     - ''
-    - '<#F2B600>Your rank: #<player.rank> - <player.damage< (<pity> Pity)'
+    - '<#F2B600>Your rank: #<player.rank> - <player.damage> (<pity> Pity)'
     - '<#F28800>===================================='
 ```
 > If there is no player at a specified rank (for instance, if a mob was killed by less than 5 players) then the line where the placeholder is used will not be shown
