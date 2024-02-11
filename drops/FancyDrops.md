@@ -43,15 +43,15 @@ What the hologram that spawns when the mob dies should say. Is able to use speci
   DropOptions:
     HologramMessage:
     - '<#FF9B00>========================'
-    - '%mob.name% - %mob.hp%HP'
+    - '<mob.name> - <mob.hp>HP'
     - ''
-    - '<#FFA300>1st Place | %1.name% | %1.damage%'
-    - '<#D1FFFF>2nd Place | %2.name% | %2.damage%'
-    - '<#D1FFFF>3rd Place | %3.name% | %3.damage%'
-    - '<#E57A00>4th Place | %4.name% | %4.damage%'
-    - '<#E57A00>5th Place | %5.name% | %5.damage%'
+    - '<#FFA300>1st Place | <1.name> | <1.damage>'
+    - '<#D1FFFF>2nd Place | <2.name> | <2.damage>'
+    - '<#D1FFFF>3rd Place | <3.name> | <3.damage>'
+    - '<#E57A00>4th Place | <4.name> | <4.damage>'
+    - '<#E57A00>5th Place | <5.name> | <5.damage>'
     - ''
-    - 'Your rank: #%player.rank% | %player.damage%'
+    - 'Your rank: #<player.rank> | <player.damage>'
     - '<#FF9B00>========================'
 ```
 > If there is no player at a specified rank (for instance, if a mob was killed by less than 5 players) then the line where the placeholder is used will not be shown
@@ -64,15 +64,15 @@ What the message send to the players when the mob dies should say. Is able to us
     ChatMessage:
     - '<#F28800>===================================='
     - '<#FFA300>BOSS DEFEATED!'
-    - '<#F2B600>%mob.name%'
+    - '<#F2B600><mob.name>'
     - ''
-    - '<#ffe259>1st Place »<#ffe259> %1.name% - %1.damage%'
-    - '<#D1FFFF>2nd Place »<#D1FFFF> %2.name% - %2.damage%'
-    - '<#D1FFFF>3rd Place »<#D1FFFF> %3.name% - %3.damage%'
-    - '<#E57A00>4th Place »<#E57A00> %4.name% - %4.damage%'
-    - '<#E57A00>5th Place »<#E57A00> %5.name% - %5.damage%'
+    - '<#ffe259>1st Place »<#ffe259> <1.name> - <1.damage>'
+    - '<#D1FFFF>2nd Place »<#D1FFFF> <2.name> - <2.damage>'
+    - '<#D1FFFF>3rd Place »<#D1FFFF> <3.name> - <3.damage>'
+    - '<#E57A00>4th Place »<#E57A00> <4.name> - <4.damage>'
+    - '<#E57A00>5th Place »<#E57A00> <5.name> - <5.damage>'
     - ''
-    - '<#F2B600>Your rank: #%player.rank% - %player.damage% (%pity% Pity)'
+    - '<#F2B600>Your rank: #<player.rank> - <player.damage< (<pity> Pity)'
     - '<#F28800>===================================='
 ```
 > If there is no player at a specified rank (for instance, if a mob was killed by less than 5 players) then the line where the placeholder is used will not be shown
