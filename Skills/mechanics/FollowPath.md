@@ -11,7 +11,7 @@ This mechanic is also an [aura].
 | tolerance |           | The minimum distance the mob must be from each point in order to having "reached" it                                                                                   | 1.5     |
 | speed     | s         | The speed multiplier of the movement                                 | 1       |
 > This mechanic inherits every attribute of the [Aura] mechanic  
->> - The `auraname` attribute is **defaulted** at `#pathing`
+>> - The `auraname` attribute is **set** at `#pathing`
 >> - The `duration` attribute is **defaulted** at `2147483647`
 >> - The `charges` attribute is **set** at `1`  
 >> - The `maxStacks` attribute is **set** at `1`  
