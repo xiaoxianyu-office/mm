@@ -77,7 +77,7 @@ NPC_Steve:
 
 With the model mechanic the attributes are
 - `m=SteveModel` This is where the name of your model goes, for example we have `plugins/ModelEngine/Blueprints/SteveModel.bbmodel`
-- `n=name` This is the name of our nametag bone we created.
+- `n=name` This is the name of our [nametag bone](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/Modeling/Bone-Behaviors#nametag) we created.
 
 # Step 4 - Spawning the NPC
 
