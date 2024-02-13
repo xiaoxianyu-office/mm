@@ -15,6 +15,8 @@ This page is divided into 3 sub-categories:
 
 [Passive Mobs](examples/Mob-Examples#passive-mobs)
 
+[Npcs](Guides/Making-an-NPC)
+
 ---
 
 ### Items:
