@@ -11,6 +11,7 @@ This is an additional field on the mob config, `DropOptions`, that allows you to
   DropOptions:
     DropMethod: FANCY
     ClientSideDrops: false
+    HologramTimeout: 6000
     HologramMessage:
     - ...
     - ...
@@ -24,7 +25,8 @@ Can be one of two values:
 - `VANILLA`, which keeps all of the "normal" drop behaviors  
 - `FANCY`, which enables damage tracking, scoreboards and more advanced drop effects. Drops can also be rolled for every participant instead of only once if the relevant config is set to allow it.
 
-So, in essence, this must be set to `FANCY` in order for the rest of the page to work
+So, in essence, this must be set to `FANCY` in order for the rest of the page to work  
+Defaults to `VANILLA`  
 ```yaml
   DropOptions:
     DropMethod: FANCY
@@ -36,6 +38,15 @@ Whether drops should be seen per-player, in a client side manner. In essence, wi
 ```yaml
   DropOptions:
     ClientSideDrops: false
+```
+
+
+### HologramTimeout
+The amount of time after which the hologram that spawns when the mob dies should disappear  
+Defaults to `6000`  
+```yaml
+  DropOptions:
+    HologramTimeout: 6000
 ```
 
 
