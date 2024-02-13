@@ -13,7 +13,6 @@ NPC_Steve:
   Display: 'Steve'
   Disguise: Player Steve setDynamicName true
   Options:
-    Silent: true
     AlwaysShowName: true
     Collidable: false
     Despawn: persistent
@@ -65,7 +64,6 @@ NPC_Steve:
   Type: ARMOR_STAND
   Display: 'Steve'
   Options:
-    Silent: true
     AlwaysShowName: true
     Collidable: false
     Despawn: persistent
