@@ -1,5 +1,7 @@
 Have you ever thought that drops were a bit *too* plain? Did you want them to sparkle a bit more? Do not worry then: this page documents how that can be done!
 
+But remember! Fancy Drops are only available for **Mythic or Vanilla items**!
+
 [[_TOC_]]
 
 ## Drop Options
