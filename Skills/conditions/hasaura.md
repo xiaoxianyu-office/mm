@@ -6,7 +6,7 @@ Checks if the target entity has the given aura
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| auraName  | name, aura, buffname, buff, debuffname, debuff, b| The name of the aura to check for ||
+| auraName  | name, n, aura, buffname, buff, debuffname, debuff, b| The name of the aura to check for   ||
 
 
 ## Examples
