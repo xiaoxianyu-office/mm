@@ -7,6 +7,7 @@ Inherits every attribute of the [Damage](skills/mechanics/damage) mechanic.
 | Attribute        | Aliases | Description                         | Default |
 |------------------|---------|-------------------------------------|---------|
 | multiplier       | m       | The percentage of damage to deal    | 1       |
+| forcedDamage     | fd, forced | If this attribute is set, the one specified will be the amount of flat damage that will be inflicted, without consideration for attribute modifiers and similar other modifiers |
 > This mechanic inherits every attribute of the [Damage](skills/mechanics/damage) mechanic
 >> - The `amout` attribute is ignored
 >> - The `triggerSkills` attribute is **defaulted** at `true`
