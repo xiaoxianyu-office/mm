@@ -294,6 +294,9 @@ ExampleMob:
   Display: "Hello\nWorld!"
   Nameplate:
     Enabled: true
+    
+    # If set, forces the nameplate to work with modeled entities from the ModelEngine plugin
+    Mounted: true
 ```
 
 
