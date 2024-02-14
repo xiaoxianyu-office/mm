@@ -238,6 +238,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [OffGCD](/skills/conditions/offgcd)                                           | Entity   | Checks if the target mob has an active Global Cooldown                                        |
 | [OnBlock](/skills/conditions/onblock)                                         | Location | Matches the block the target entity is standing on                                          |
 | [OnGround](/skills/conditions/onground)                                       | Entity   | If the target entity is standing on solid ground                                              |
+| [OriginLocation](/skills/conditions/OriginLocation)                           | Meta     | Checks if the origin is at a given location                                                   |
 | [Outside](/skills/conditions/outside)                                         | Location | If the target has open sky above them                                                         |
 | [Owner](/skills/conditions/owner)                                             | Compare  | Checks if the target entity is the owner of the caster                                        |
 | [OwnerIsOnline](/skills/conditions/ownerisonline)                             | Entity   | Checks if the owner of the target mob is online, if the owner is a player                     |
