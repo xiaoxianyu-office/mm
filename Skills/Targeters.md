@@ -202,8 +202,8 @@ TestOwner:
 | Attribute                                | Shorthand        | Description                                                                                                      |
 | ---------------------------------------- | ---------------- | ----------------------------------------- |
 | useboundingbox                           | bb               | If the targeter is performing a distance check, this option allows it to check against the bounding box of the target instead of the center of its hitbox |
-| unique                                   | u                | Whether a single entity should be targeted only one time. Mostly done for MEG entities |
-| nomegbb                                  | nmb              | Whether MEG hitboxes should be filtered out |
+| unique                                   | u                | The maximum number of times an entity can be targeted. Defaults to 1, disable with 0. This is mostly used for meg models with multiple hitboxes |
+| nomegbb                                  | nmb              | Whether MEG sub hitboxes should be filtered out |
 
 ## Location Targeters
 | Attribute                                | Shorthand        | Description                                                                                                      |
