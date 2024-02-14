@@ -198,6 +198,12 @@ TestOwner:
   - tp @Forward{f=5;y=1;sudoowner=true} ~onTimer:1
 ```
 
+## Entity Targeters
+| Attribute                                | Shorthand        | Description                                                                                                      |
+| ---------------------------------------- | ---------------- | ----------------------------------------- |
+| useboundingbox                           | bb               | If the targeter is performing a distance check, this option allows it to check against the bounding box of the target instead of the center of its hitbox |
+| unique                                   | u                | Whether a single entity should be targeted only one time. Mostly done for MEG entities |
+| nomegbb                                  | nmb              | Whether MEG hitboxes should be filtered out |
 
 ## Location Targeters
 | Attribute                                | Shorthand        | Description                                                                                                      |
