@@ -183,7 +183,9 @@ The following are only some of the placeholders that can have a `trigger` scope,
 |  <trigger.l.pitch>   | Returns the pitch of the trigger                                                       |
 |  <trigger.held.item>   | Returns the item held by the trigger                                                      |
 |   <trigger.raytrace>     | Returns the name of the block being looked at by the trigger (4.5 blocks of range) |
-
+| <trigger.item.amount> | Returns the amount of the item the trigger is holding                                            |
+| <trigger.item.type> | Returns the type of the item the trigger is holding                                            |
+| <trigger.item.model> | Returns the model of the item the trigger is holding                                            |
 
 ## Misc Placeholders
 
