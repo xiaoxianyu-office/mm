@@ -10,7 +10,19 @@ This is an additional field on the mob config, `DropOptions`, that allows you to
 ```yaml
   DropOptions:
     DropMethod: FANCY
+    ShowDeathChatMessage: false
+    ShowDeathHologram: false
+    PerPlayerDrops: false
     ClientSideDrops: false
+    Lootsplosion: false
+    HologramItemNames: false
+    ItemGlowByDefault: false
+    ItemBeamByDefault: false
+    ItemVFXByDefault: false
+    ItemVFX:
+      Material: STONE
+      Model: 0
+    RequiredDamagePercent: 1
     HologramTimeout: 6000
     HologramMessage:
     - ...
@@ -33,11 +45,95 @@ Defaults to `VANILLA`
 ```
 
 
+### ShowDeathChatMessage
+Whether to show the death chat message to the players.  
+Defaults to `false`.  
+```yaml
+  DropOptions:
+    ShowDeathChatMessage: true
+```
+
+
+### ShowDeathHologram
+Whether to show the death hologram to the players.  
+Defaults to `false`.  
+```yaml
+  DropOptions:
+    ShowDeathHologram: true
+```
+
+
+### PerPlayerDrops
+Whether to calculate the drops of the mob separately for each player involved. Essentially, the drops will be rolled one time for each player.  
+```yaml
+  DropOptions:
+    PerPlayerDrops: true
+```
+
+
 ### ClientSideDrops
 Whether drops should be seen per-player, in a client side manner. In essence, with this enabled, every player will only be able to see the loot that they themselves gained.
 ```yaml
   DropOptions:
     ClientSideDrops: false
+```
+
+
+### Lootsplosion
+Whether the drops should do a lootsplosion effect by default.  
+```yaml
+  DropOptions:
+    Lootsplosion: true
+```
+
+
+### HologramItemNames
+Whether the items should have a hologram name to display them by default.  
+```yaml
+  DropOptions:
+    HologramItemNames: true
+```
+
+
+### ItemGlowByDefault
+Whether items should go by default.  
+```yaml
+  DropOptions:
+    ItemGlowByDefault: true
+```
+
+
+### ItemBeamByDefault
+Whether items should have a beam by default.  
+```yaml
+  DropOptions:
+    ItemBeamByDefault: true
+```
+
+
+### ItemVFXByDefault
+Whether items should have a vfx by default.  
+```yaml
+  DropOptions:
+    ItemVFXByDefault: true
+```
+
+
+### ItemVFX
+Options regarding the default VFX of the items
+```yaml
+  DropOptions:
+    ItemVFX:
+      Material: STONE # The default material of the vfx
+      Model: 0 # The default model of the vfx
+```
+
+
+### RequiredDamagePercent
+The required amount of damage to inflict on the mob, quantified as percent of its health, in order for the drops to be generated for the specific player.  
+```yaml
+  DropOptions:
+    RequiredDamagePercent: 1
 ```
 
 
