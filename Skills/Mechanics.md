@@ -256,6 +256,7 @@ by these will "inherit" the targets (if applicable).
 | [Switch-Case][]         | Acts as a switch/case                                                                                                                                   |
 | [StatAura]              | Applies an aura to the target that applies a specific stat to them                                                                                                                                   |
 | [Totem][]               | Creates a static "totem" at a location that can execute other skills                                                                                    |
+| [Terminatable][]        | Creates an [aura] that cancels the execution of its onStart metaskill is some conditions are met        |
 | [Volley][]              | Shoots a volley of projectile-items at the target with various options                                                                                  |
 | [VariableAdd][]         | Adds an amount to a numeric variable                                                                                                                    |
 | [VariableMath][]        | Performs math on a numeric variable                                                                                                                     |
@@ -476,6 +477,7 @@ but not yet ready for use.
   [TeleportTo]: /skills/mechanics/teleportto
   [Threat]: /skills/mechanics/threat
   [Throw]: /skills/mechanics/throw
+  [Time]: /skills/mechanics/time
   [ToggleLever]: /skills/mechanics/togglelever
   [ToggleSitting]: /skills/mechanics/togglesitting
   [TrackLocation]: /skills/mechanics/tracklocation
@@ -528,7 +530,7 @@ but not yet ready for use.
   [SetVariableLocation]: /skills/mechanics/setvariablelocation
   [VariableUnset]: /skills/mechanics/variableunset
   [VariableSubtract]: /skills/mechanics/variablesubtract
-  [Time]: /skills/mechanics/time
+  [Terminatable]: /skills/mechanics/terminatable
   [OnBlockBreak]: /skills/mechanics/onblockbreak
   [OnBlockPlace]: /skills/mechanics/onblockplace
   [OnChat]: /skills/mechanics/OnChat
