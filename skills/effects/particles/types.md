@@ -9,22 +9,29 @@
 | NA                          | NA           | NA            | NA    | NA           |
 
 
-**block_crack-\[material\]**
+**block_crack**
 ---
-![block_crack-\[material\]](https://imgur.com/bHpnok7.gif)
+![block_crack](https://imgur.com/bHpnok7.gif)
 
 | Description                            | Common Usage | Particle Size | Speed   | Speed Effect | 1.12 Name              |
 |----------------------------------------|--------------|---------------|---------|--------------|------------------------|
 | Animates the block choose being broken | Varies       | Small         | Average | No effect    | blockcrack_[id]_[data] |
 
+```yaml
+  - effect:particles{particle=block_crack;material=COBBLESTONE}
+```
 
-**block_dust-\[material\]**
+**block_dust**
 ---
-![block_crack-\[material\]](https://imgur.com/oHIBddK.gif)
+![block_crack](https://imgur.com/oHIBddK.gif)
 
 | Description                 | Common Usage | Particle Size | Speed | Speed Effect |
 |-----------------------------|--------------|---------------|-------|--------------|
 | NA                          | NA           | NA            | NA    | NA           |
+
+```yaml
+  - effect:particles{particle=block_dust;material=COBBLESTONE}
+```
 
 
 **block_marker-barrier**
@@ -37,13 +44,16 @@
 | Doesn't seem to do much | NA           | NA            | NA    | NA           |
 
 
-**block_marker-\[material\]**
+**block_marker**
 ---
-![block_marker-\[material\]](https://imgur.com/CZuqh66.gif)
+![block_marker](https://imgur.com/CZuqh66.gif)
 
 | Description                 | Common Usage | Particle Size | Speed | Speed Effect |
 |-----------------------------|--------------|---------------|-------|--------------|
 | NA                          | NA           | NA            | NA    | NA           |
+```yaml
+  - effect:particles{particle=block_marker;material=COBBLESTONE}
+```
 
 
 **bubble**
