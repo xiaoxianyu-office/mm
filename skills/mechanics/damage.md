@@ -8,11 +8,11 @@ Damages the targeted entity.
 | amount    | a         | The amount of damage to deal                                         | 1       |
 | ignoreArmor | ia, i   | Whether or not to ignore armor, but will still use enchantment modifiers when calculating total damage                                                                       | false   |
 | preventknockback | pkb, pk | Whether or not to prevent knockback                             | false   |
-| preventimmunity  | pi      | Whether or not to ignore immunities                             | false   |
+| preventimmunity  | pi      | Whether or not to prevent the [damage immunity ticks] on the target by setting them to 0 after the damage is inflicted                                                | false   |
 | damagecause | dc, cause | Sets the damage cause for this damage mechanic.<br/> (This option is only available for 1.17+)                                                                     | entity_attack |
 | ignoreenchantments |ignoreenchants, ie  | Whether or not to ignore enchantments when calculating total damage.<br>(This option is only available for 1.19+) | false         |
 | noanger   | na        | Whether or not to generate anger when damaging the entity            | false   |
-| ignoreinvulnerability | ignoreinvulnerable, ii | Whether or not to ignore invulnerability    | false   |
+| ignoreinvulnerability | ignoreinvulnerable, ii | Whether or not to ignore the [damage immunity ticks] on the target by setting them to 0 before the damage is inflicted                                 | false   |
 | ignoreshield | is     | Whether or not to ignore the shield blocking on the target           | false   |
 | damageshelmet| dh     | Whether or not the helmet should be damaged                          | false   |
 | ignoreeffects| ieff   | Whether or not effects should be ignored                             | false   |
@@ -21,6 +21,8 @@ Damages the targeted entity.
 | tags         | tag    | Allows you to specify any number of arbitrary tags for the damage mechanic using `tags=THIS,THAT`                                                                               |         |
 | element   | e, damagetype, type | *Become one of the Tags*                                   |         |
 | triggerSkills | ts    | Whether the damage mechanic should also be able to trigger `onAttack` related triggers       | false  |
+
+[damage immunity ticks]: skills/mechanics/setnodamageticks
 
 ### DamageCause Attribute
 This attribute is only available in newer MM 5.0 builds.
