@@ -55,6 +55,7 @@ Added projectile bullets to Orbital in MM 4.11. See how to use them on the [proj
 | maxclimbheight   | mch     | The number of attempts the projectile will make to **increase** its y-location by 1 before terminating itself, when the projectiles is "hugging" either a block or a liquid| 3 |
 | maxdropheight | mdh        | The number of attempts the projectile will make to **decrease** its y-location by 1 before terminating itself, when the projectiles is "hugging" either a block or a liquid| 10|
 | bullettype    | bullet, b  | The [Projectile Bullet Type](skills/mechanics/projectile#projectile-bullets). Also makes the orbital inherits every related attribute                               | NONE   |
+| castAsOrbital | cao        | Whether the metaskills should be casted by the orbital itself rather than from the caster, as Projectiles do                                                              | false  |
 
 > This mechanic inherits every attribute of the [Aura](/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) mechanic
   
