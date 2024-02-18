@@ -5,6 +5,7 @@ The description of the mechanic: what it does, how it does it, and possible note
 
 > **This is a [Premium-Only] mechanic!**
 
+> **This is a no-target mechanic, and the affected entity will always be the caster**
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
