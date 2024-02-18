@@ -10,6 +10,7 @@ existing goals of the entity.
 A list of AI Goals can be found
 [here](/Mobs/Custom-AI#ai-goal-selectors)
 
+> **This is a no-target mechanic, and the affected entity will always be the caster**
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
