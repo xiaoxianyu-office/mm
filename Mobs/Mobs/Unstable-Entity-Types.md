@@ -51,6 +51,7 @@ Aggroes Endermen.
 Has an unique attack pattern, can be useful but also problematic.
 
 ### GHAST
+Has an hardcoded ai.
 Can be one-shotted by a fireball.
 
 ### GIANT
