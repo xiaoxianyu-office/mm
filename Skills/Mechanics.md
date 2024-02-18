@@ -124,8 +124,8 @@ are able to target locations as well.
 | [Remove][]                | Removes the target mob                                                                   |
 | [RemoveHeldItem][]        | Removes some of the item the target player is holding                                    |
 | [RemoveOwner][]           | Removes the ownership of the target mob                                                  |
-| [RunAIGoalSelector][]     | Change the target's AIGoalSelectors                                                      |
-| [RunAITargetSelector][]   | Change the target's AITargetSelectors                                                    |
+| [RunAIGoalSelector][]     | Change the caster's [AIGoalSelectors]                                                      |
+| [RunAITargetSelector][]   | Change the caster's [AITargetSelectors]                                                    |
 | [Saddle][]                | Equips or remove a saddle on the target entity                                          |
 | [SendActionMessage][]     | Sends an Actionbar Message to the target player                                          |
 | [SendResourcePack][]      | Sends a Resource Pack to the target player                                               |
@@ -308,8 +308,11 @@ but not yet ready for use.
 |--------------------|---------------------------------|
 -->
 
+  [AIGoalSelectors]: Mobs/Custom-AI#ai-goal-selectors
+  [AITargetSelectors]: Mobs/Custom-AI#ai-target-selectors
   [here!]: /skills/skillparametersystem
   [Targeter]: /skills/targeters/
+
   [ActivateSpawner]: /skills/mechanics/activatespawner
   [AddTrade]: /skills/mechanics/AddTrade
   [AnimateArmorStand]: /skills/mechanics/animatearmorstand
