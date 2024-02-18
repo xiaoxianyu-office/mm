@@ -38,6 +38,9 @@ For the "egg problem", use the [Jockey Option](Mobs/Options#jockey).
 ### COW
 Can me milked.  
 
+### DROWNED
+By default, it does not attack its target in the day. A [custom ai](Mobs/Custom-AI) must be set up in order to remove this behavior
+
 ### ENDER_DRAGON
 Has an hardcoded ai.
 
@@ -71,6 +74,9 @@ Has an hardcoded ai.
 
 ### PIGLIN
 Has an hardcoded aggro priority
+
+### PILLAGER
+If, for any reason, a pillager loses his target while holding a charged crossbow, then it will freeze
 
 ### PUFFERFISH
 Has very unique interactions and behaviors that may cause problems.
