@@ -9,6 +9,7 @@ to the end of the already existing goals of the entity.
 
 A list of available targets can be found [here](/Mobs/Custom-AI#ai-target-selectors)
 
+> **This is a no-target mechanic, and the affected entity will always be the caster**
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
