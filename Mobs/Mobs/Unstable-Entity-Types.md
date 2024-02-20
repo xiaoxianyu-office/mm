@@ -50,7 +50,7 @@ For the "egg problem", use the [Jockey Option](Mobs/Options#jockey).
 Can me milked.  
 
 ### DROWNED
-By default, it does not attack its target in the day. A [custom ai](Mobs/Custom-AI) must be set up in order to remove this behavior
+By default, it does not attack its target in the day if they are not in a water block. A [custom ai](Mobs/Custom-AI) must be set up in order to remove this behavior
 
 ### ENDER_DRAGON
 Has an hardcoded ai.
