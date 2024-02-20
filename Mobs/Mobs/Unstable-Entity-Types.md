@@ -18,6 +18,13 @@ This can be handled by intercepting the event [~onBreed](Skills/Triggers#onbreed
 ### Most bosses
 Have an hardcoded ai or some other hardcoded features.
 
+### Entities damaged by water
+Affected entities include Enderman, Snowman and Blaze.  
+The damage type in those instances if of the `DROWNING` type, and can thus be fully prevented by using a negative value for it as a [DamageModifier](Mobs/DamageModifiers) or by using the following skill
+```yaml
+   - cancelevent{sync=true} ~ondamaged ?damagecause{c=drowning}
+```
+
 ## Specific Mobs
 ### ARMOR_STAND
 Does not get targeted by default by multi entity targeters, and a [specific filter](Skills/Targeters#target-filters) must be used.  
