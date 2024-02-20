@@ -11,6 +11,10 @@ Can spawn as leaders, having several times the amount of configured health.
 ### All passive animals
 Could get aggroed by other entities.
 
+### All breedable animals
+They can usually be fed by some item and, subsequently, try to breed.  
+This can be handled by intercepting the event [~onBreed](Skills/Triggers#onbreed) (and then either cancelling it or some other mechanic) or completely prevented by using the [Age](Mobs/Options#age) option
+
 ### Most bosses
 Have an hardcoded ai or some other hardcoded features.
 
