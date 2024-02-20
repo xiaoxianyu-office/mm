@@ -119,7 +119,7 @@ Defaults to `false`.
 ```
 
 #### KnockbackResistance
-A percentage of knockback resisted from attacks. This option can be anywhere between `0` and `1`.
+A percentage of knockback resisted from attacks. This option can be anywhere between `0` and `1`. 
 But a mob with 100% knockback resistance can still be knocked back by a bow's enchantment: `ARROW_KNOCKBACK` (punch enchantment).
 For true knockback resistance, see the [velocity](/Skills/mechanics/velocity) mechanic page. Defaults to `0`.
 ```yml
@@ -314,11 +314,13 @@ Defaults to `OAK`
 ## Breedable mobs
 
 #### Age
-The age of the mob. Use `-1` for Baby and `1` for Adults.
-Usable on any mob that can age. For example: Sheep, Pigs, Cows...
-Use very low negative numbers to mess with the mobs model (not supported).
-May not be working properly under some situations.
-Defaults to `1`.
+The age of the mob. Use `-1` for Baby and `1` for Adults.  
+Usable on any mob that can age. For example: Sheep, Pigs, Cows...  
+When above 0, represents the number of ticks before this mob can breed again.  
+Equivalent to the `Age` NBT.  
+Use very low negative numbers to mess with the mobs model (not supported).  
+May not be working properly under some situations.  
+Defaults to `1`.  
 ```yml
   Options:
     Age: -1
