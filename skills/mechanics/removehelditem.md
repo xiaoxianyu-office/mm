@@ -1,6 +1,7 @@
 ## Description
-Removes the given amount from the target player's held item. 
+Removes the given amount from the casting player's held item. 
 
+> **This is a no-target mechanic, and the affected entity will always be the caster**
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
