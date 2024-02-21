@@ -37,6 +37,7 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onTeleport](#onteleport)              | When the mob teleports (typically only used for endermen)    |
 | [onSignal:*[signal]*](#onsignalsignal) | When the mob receives a signal                               |
 | [onShoot](#onshoot)                    | When the mob fires a projectile                              |
+| [onBowHit](#onbowhit)                  | When the mob's fired projectile hits an entity               |
 | [onTame](#ontame)                      | When the mob gets tamed                                      |
 | [onBreed](#onbreed)                    | When the mob breeds with another mob.                        |
 | [onTrade](#ontrade)                    | When the Villager completes a trade. Requires Paper          |
