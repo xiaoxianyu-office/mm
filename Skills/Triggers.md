@@ -5,15 +5,16 @@ mobs skill configuration section.
 IN THEM.**</u> Triggers can only be used *to activate* the meta-skill
 itself.
 
+
 # Additional Triggers
 Links to triggers added by addon plugins. Any triggers from these links will not work without that plugin installed.
 
 - [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers)
 - [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Triggers)
 
+
 # Triggers 
 **Table of all available triggers:**
-
 | Trigger                                | When it fires...                                             |
 |----------------------------------------|--------------------------------------------------------------|
 | onCombat                               | Default                                                      |
@@ -49,9 +50,7 @@ ADD THIS TRIGGER BACK WHEN IT WORKS
 | onKill                       | When something kills a mob                                   |
 -->
 
-Using Triggers
---------------
-
+## Using Triggers
 Triggers are defined in the skill section of the mob configuration and
 must use a tilde (~) in front of them. In the case of the Timer, a time
 in ticks is also required.
@@ -71,9 +70,7 @@ In this example the mob will also set its target on fire when
 melee-attacking, will use a "FireShield" skill when taking damage, and
 will use the "AOEFire" skill every 300 ticks, or every 15 seconds.
 
-Not using Triggers...
----------------------
-
+## Not using Triggers...
 Skill triggers give far more flexibility in determining exactly when a
 skill should go off. It is **highly** recommended that you trigger all
 your skills using advanced triggers as opposed to the old, legacy
@@ -85,7 +82,6 @@ trigger which will execute when these events occur:
 - When the mob spawns
 - When the mob dies
 
-<!-- -->
 ```yml
 SkeletalWarrior:
   Mobtype: skeleton
@@ -96,8 +92,8 @@ SkeletalWarrior:
 In this instance the Bash skill is triggered when the mob deals or takes
 damage when it is between 10% and 90% health.
 
-The @trigger Targeter
----------------------
+
+# The @trigger Targeter
 
 You may have noticed there is an `@trigger` targeter in the examples
 shown above, and listed in the [targeters](/Skills/Targeters) section. The `@trigger` will target the
@@ -106,10 +102,10 @@ that mob has an ~onDamaged skill, it will target that player.
 If a signal is being sent to a mob, it will target the mob that sent
 the signal, and so on.
 
-All Available Triggers
-----------------------
+# All Available Triggers
 #### ~onSpawn
-Executes the skill when the mob spawns. This does not have `@trigger`.
+Executes the skill when the mob spawns.  
+> There is no associated [@trigger]
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -120,8 +116,9 @@ EXAMPLE_MOB:
 ```
 
 #### ~onDeath
-Executes the skill when the mob dies. The entity that killed the mob is the `@trigger`.<br>
-If the server is a Paper one, it is possible to cancel the death event as long as the cancelevent mechanic is synched. The health that the mob has after this is based on what is specified in the `ReviveHealth` Option.
+Executes the skill when the mob dies.  
+If the server is a Paper one, it is possible to cancel the death event as long as the cancelevent mechanic is synched. The health that the mob has after this is based on what is specified in the `ReviveHealth` Option.  
+> The associated [@trigger] is the entity that killed the caster
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -146,7 +143,7 @@ ImmortalCow:
 ```
 #### ~onAttack
 Executes the skill when the mob attacks an entity.
-The `@trigger` is the entity that took damage from the attack.
+> The associated [@trigger] is the entity that was attacked
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -158,7 +155,8 @@ EXAMPLE_MOB:
 ```
 
 #### ~onDamaged
-Executes the skill when the mob takes damage. The `@trigger` is the attacker.
+Executes the skill when the mob takes damage.
+> The associated [@trigger] is the entity that dealt the damage
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -170,6 +168,7 @@ EXAMPLE_MOB:
 
 #### ~onDespawn
 Executes the skill when the mob despawns.
+> The associated [@trigger] is the caster itself
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -180,9 +179,10 @@ EXAMPLE_MOB:
 ```
 
 #### ~onExplode
-Executes the skill when the mob explodes. mobGriefing gamerule must be set to true for this to work.
-Generally, this trigger only works with creepers and TNTs since other mobs tend to not explode...
-Won't work if you have the mobGriefing gamerule set to false.
+Executes the skill when the mob explodes.  
+`mobGriefing` gamerule must be set to true for this to work.  
+Generally, this trigger only works with creepers and TNTs since other mobs tend to not explode...  
+> There is no associated [@trigger]
 ```yml
 EXAMPLE_MOB:
   Type: CREEPER
@@ -193,7 +193,8 @@ EXAMPLE_MOB:
 ```
 
 #### ~onTeleport
-Executes the skill when the mob teleports.
+Executes the skill when the mob teleports.  
+> There is no associated [@trigger]
 ```yml
 EXAMPLE_MOB:
   Type: ENDERMAN
@@ -205,8 +206,10 @@ EXAMPLE_MOB:
 
 #### ~onTimer:[tick(s)]
 Executes the skill every *n<sup>th</sup>* ticks. Ticks can't be zero and 20 ticks is equal to 1 second.
-**Care must be taken when using this trigger as it can lead to server/client performance issues.**
-**i.e. large amounts of particle effects can cause client lag, or can kick the client from the server**
+> Care must be taken when using this trigger as it can lead to server/client performance issues!
+>i.e. large amounts of particle effects can cause client lag, or can kick the client from the server
+
+> There is no associated [@trigger].
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -218,7 +221,8 @@ EXAMPLE_MOB:
 ```
 
 #### ~onPlayerKill
-Executes the skill when the mob kills a player.
+Executes the skill when the mob kills a player.  
+> The associated [@trigger] is the player that has been killed
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -229,7 +233,8 @@ EXAMPLE_MOB:
 ```
 
 #### ~onEnterCombat
-Executes the skill when the mob enters combat. **REQUIRES [ThreatTables] to be enabled**
+Executes the skill when the mob enters combat. **REQUIRES [ThreatTables] to be enabled**  
+> The associated [@trigger] is the entity that made the caster enter combat
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -242,7 +247,8 @@ EXAMPLE_MOB:
 ```
 
 #### ~onDropCombat
-Executes the skill when the mob drops combat. **REQUIRES [ThreatTables] to be enabled**
+Executes the skill when the mob drops combat. **REQUIRES [ThreatTables] to be enabled**  
+> There is no associated [@trigger]
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -268,7 +274,8 @@ EXAMPLE_MOB:
 ```
 
 #### ~onInteract
-Executes the skill when a player interacts with, or *right-clicks*, the mob.
+Executes the skill when a player interacts with, or *right-clicks*, the mob.  
+> The associated [@trigger] is the player that interacted with the caster
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -279,8 +286,9 @@ EXAMPLE_MOB:
 ```
 
 #### ~onSignal:[signal]
-Executes the skill when the mob receives a signal from the [signal](/Skills/mechanics/signal) mechanic.
-A signal must be alphanumeric.
+Executes the skill when the mob receives a signal from the [signal](/Skills/mechanics/signal) mechanic.  
+A signal must be alphanumeric.  
+> The associated [@trigger] is the entity that sent the signal
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -312,7 +320,8 @@ DUMMY_MOB:
 
 #### ~onShoot
 Executes the skill when the mob shoots a projectile.
-For example, skeletons with bows will shoot arrows; ghasts, blazes, or ender dragon will shoot some type of fireball.
+For example, skeletons with bows will shoot arrows; ghasts, blazes, or ender dragon will shoot some type of fireball.  
+> The associated [@trigger] is the caster
 ```yml
 EXAMPLE_MOB:
   Type: SKELETON
@@ -322,9 +331,22 @@ EXAMPLE_MOB:
     - message{m=I SHOT AN ARROW} @World ~onShoot
 ```
 
+#### ~onBowHit
+Executes a skill when the mob's projectile hits an entity.
+> The associated [@trigger] is the entity that has been hit
+```yaml
+NotYourAverageSkeleton:
+  Type: SKELETON
+  Equipment:
+    - BOW HAND
+  Skills:
+  - modifyDamage{a=3;modifier=MULTIPLY;sync=true} ~onBowHit
+```
+
 #### ~onBreed
 Executes the skill when the mob breeds with another mob.
-This trigger has `@Father` and `@Mother` targeters.
+> This trigger has `@Father` and `@Mother` targeters.
+> The associated [@trigger] is the player that made the caster breed
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -335,7 +357,8 @@ EXAMPLE_MOB:
 ```
 
 #### ~onTame
-Executes the skill when the player tames the mob.
+Executes the skill when the player tames the mob.  
+> The associated [@trigger] is the player that tamed the mob
 ```yml
 EXAMPLE_MOB:
   Type: WOLF
@@ -346,7 +369,8 @@ EXAMPLE_MOB:
 ```
 
 #### ~onCreeperCharge
-Executes the skill when the mob, must be a creeper, is charged.
+Executes the skill when the casting creeper is charged.  
+> The associated [@trigger] is the caster itself
 ```yml
 EXAMPLE_MOB:
   Type: CREEPER
@@ -357,7 +381,8 @@ EXAMPLE_MOB:
 ```
 
 #### ~onPrime
-Executes the skill when the mob, must be a creeper, is primed
+Executes the skill when the mob, must be a creeper, is primed (i.e. via the use of a flint and steel).  
+> The associated [@trigger] is the caster itself
 ```yml
 EXAMPLE_MOB:
   Type: CREEPER
@@ -368,7 +393,8 @@ EXAMPLE_MOB:
 ```
 
 #### ~onTrade
-Executes the skill when the villager trades with a player.
+Executes the skill when the villager trades with a player.  
+> The associated [@trigger] is the player that traded with the villager
 ```yml
 EXAMPLE_MOB:
   Type: VILLAGER
@@ -412,7 +438,8 @@ WorldJumper:
 ```
 
 #### ~onBucket 
-Executes the skill when the cow is milked or when an entity is stored in a bucket (axolotl and the other bucketable ones).
+Executes the skill when the cow is milked or when an entity is stored in a bucket (axolotl and the other bucketable ones).  
+> The associated [@trigger] is the caster itself
 ```yaml
 ANormalCow:
   Type: Cow
@@ -425,7 +452,8 @@ ANormalCow:
 ```
 
 #### ~onSkillDamage
-Executes the skill when the mob deals damage to other entities via a mechanic.
+Executes the skill when the mob deals damage to other entities via a mechanic.  
+> The associated [@trigger] is the entity that was damaged
 ```yaml
 ExampleMob:
   Type: 
@@ -437,3 +465,4 @@ ExampleMob:
 
 <!-- LINKS -->
 [ThreatTables]: Mobs/ThreatTables
+[@trigger]: Skills/Targeters/Trigger
