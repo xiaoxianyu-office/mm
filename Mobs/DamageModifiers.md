@@ -2,8 +2,10 @@
 
 Damage Modifiers are an attribute you can add to your MythicMobs to increase or decrease the damage they receive from various sources.  
 
-When an entity takes damage, the value of that damage will be multiplied by the relevant damage modifier, if set. For instance, if an entity takes damage by a `ENTITY_ATTACK` type of damage and of amount `10`, if that damage modifier is set to `2` the caster would be dealt a damage of `20`.  
-**If the Damage Modifier is a negative amount, the associated damage event will be cancelled and the caster would be healed** by the amount of the original damage multiplied by the absolute value of the damage modifier. For instance, if an entity takes damage by a `PROJECTILE` type of damage and of amount `10`, if that damage modifier is set to `-2` the event that caused it would be cancelled and the caster would be healed by an amount of `20`
+Let's say an entity takes damage by a `ENTITY_ATTACK` type of damage and of amount `10`. Depending on the value of its associated DamageModifier, different things will happen:
+- `A value > 0`: The amount of the damage would be multiplied by the value itself. If the value was `2`, the damage would be doubled. If it was `0.5`, it will be halved.
+- `A value of 0`: The damage event will not cause any damage, but would still play the damage animation
+- `A value < 0`: the associated damage event will be cancelled and the caster would be healed by the amount of the original damage multiplied by the absolute value of the damage modifier. If the value was `-2`, the caster would be healed by `20` hit points. If it was `-0.1`, it would be healed by `1` hit point. 
 
 Some of these won't work on certain mobs under normal circumstances (e.g. SUICIDE, as no mob naturally suicides).  
 Damage Modifiers are completely optional, you only need to add the ones you want to use.  
