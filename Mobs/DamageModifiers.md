@@ -1,10 +1,12 @@
 ## Damage Modifiers
 
-Damage Modifiers are an attribute you can add to your MythicMobs to increase or decrease the damage they receive from various sources.
+Damage Modifiers are an attribute you can add to your MythicMobs to increase or decrease the damage they receive from various sources.  
 
-Some of these won't work on certain mobs under normal circumstances (e.g. SUICIDE, as no mob naturally suicides).
+When an entity takes damage, the value of that damage will be multiplied by the relevant damage modifier, if set. For instance, if an entity takes damage by a `ENTITY_ATTACK` type of damage and of amount `10`, if that damage modifier is set to `2` the caster would be dealt a damage of `20`.  
+**If the Damage Modifier is a negative amount, the associated damage event will be cancelled and the caster would be healed** by the amount of the original damage multiplied by the absolute value of the damage modifier. For instance, if an entity takes damage by a `PROJECTILE` type of damage and of amount `10`, if that damage modifier is set to `-2` the event that caused it would be cancelled and the caster would be healed by an amount of `20`
 
-Damage Modifiers are completely optional, you only need to add the ones you want to use.
+Some of these won't work on certain mobs under normal circumstances (e.g. SUICIDE, as no mob naturally suicides).  
+Damage Modifiers are completely optional, you only need to add the ones you want to use.  
 
 See the [spigot javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html) for a complete list of available damage types.
 
