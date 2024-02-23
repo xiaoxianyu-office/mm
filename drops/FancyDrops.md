@@ -65,6 +65,7 @@ Defaults to `false`.
 
 ### PerPlayerDrops
 Whether to calculate the drops of the mob separately for each player involved. Essentially, the drops will be rolled one time for each player.  
+> **This is a [Paper-Only] feature!**
 ```yaml
   DropOptions:
     PerPlayerDrops: true
@@ -234,3 +235,4 @@ Other than the options written above, you can also determine specific behaviors 
 
 <!-- LINKS -->
 [billboarding]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Display.Billboard.html
+[Paper-Only]: https://papermc.io/downloads/all
