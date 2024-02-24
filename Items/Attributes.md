@@ -1,8 +1,9 @@
 The attributes section for items made with MythicMobs handles the Minecraft attribute system.
 It makes it possible to apply different attributes given to the entity wearing/using the item depending on the slot.
 
-Format
-------
+[[_TOC_]]
+
+## Format
 ```yml
 Item:
   Id: item_id
@@ -11,8 +12,30 @@ Item:
       [Attribute]: [value] <operation> 
 ```
 
-Attributes
-----------
+
+## Slots
+| Slot     | Description                                                               |
+|----------|---------------------------------------------------------------------------|
+| All      | Will apply the given attributes to all slots.                             |
+| MainHand | Attributes will only apply if item is being held in the main hand.        |
+| OffHand  | Attributes will only apply if item is being held in the off hand.         |
+| Head     | Attributes will only apply if item is being worn on the head slot.        |
+| Chest    | Attributes will only apply if item is being worn on the chest/torso slot. |
+| Legs     | Attributes will only apply if item is being worn on the legs slot.        |
+| Feet     | Attributes will only apply if item is being worn on the feet slot.        |
+
+
+## Operations
+| Operation     | Aliases            | Description                                                                                       |
+|---------------|--------------------|---------------------------------------------------------------------------------------------------|
+| ADD           | 0, ADD_NUMBER      | Adds or subtracts the specified value to the base value.                                          |
+| MULTIPLY_BASE | 1, ADD_SCALAR      | Multiplies the base value with the sum of all the modifier's amount.                              |
+| MULTIPLY      | 2, MULTIPLY_SCALAR | Similar to `MULTIPLY_BASE` but multiplies all the modifier's amount instead of adding all of them |
+
+[*See MC wiki on how the game calculates the value for all modifiers*](https://minecraft.fandom.com/wiki/Attribute#Modifiers)
+
+
+## Attributes
 These are all the available attributes that can be put on the item.
 You can use general placeholders like `<random.#to#>` or `<random.float.#to#>`.
 
@@ -102,32 +125,8 @@ custom_item:
       MovementSpeed: -0.2 MULTIPLY_BASE
 ```
 
-Slots
------
-| Slot     | Description                                                               |
-|----------|---------------------------------------------------------------------------|
-| All      | Will apply the given attributes to all slots.                             |
-| MainHand | Attributes will only apply if item is being held in the main hand.        |
-| OffHand  | Attributes will only apply if item is being held in the off hand.         |
-| Head     | Attributes will only apply if item is being worn on the head slot.        |
-| Chest    | Attributes will only apply if item is being worn on the chest/torso slot. |
-| Legs     | Attributes will only apply if item is being worn on the legs slot.        |
-| Feet     | Attributes will only apply if item is being worn on the feet slot.        |
 
-Operations
-----------
-
-| Operation     | Aliases            | Description                                                                                       |
-|---------------|--------------------|---------------------------------------------------------------------------------------------------|
-| ADD           | 0, ADD_NUMBER      | Adds or subtracts the specified value to the base value.                                          |
-| MULTIPLY_BASE | 1, ADD_SCALAR      | Multiplies the base value with the sum of all the modifier's amount.                              |
-| MULTIPLY      | 2, MULTIPLY_SCALAR | Similar to `MULTIPLY_BASE` but multiplies all the modifier's amount instead of adding all of them |
-
-[*See MC wiki on how the game calculates the value for all modifiers*](https://minecraft.fandom.com/wiki/Attribute#Modifiers)
-
-Examples
-========
-
+## Examples
 This example item will grant +10 luck when the item is held in the main
 hand, but will grant +7 luck and +2 extra damage if the item is held in
 the offhand slot:
