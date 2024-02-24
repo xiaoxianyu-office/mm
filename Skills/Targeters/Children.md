@@ -1,5 +1,6 @@
 ## Description
-Targets any child entities summoned by the caster
+Targets any child entities summoned by the caster.  
+Does not work for a player caster.  
 
 
 ## Attributes
