@@ -1,3 +1,41 @@
+5.7.0 (Dev Builds)
+=====
+- Added new HEARING ability to mobs enabled by `Hearing.Enabled: true`. Requires 1.20+
+- Added `~onHear` trigger that responds to hearing sounds
+
+5.6.1
+=====
+- Added various new config options for items and drops
+- Added more tab completion to commands
+- Added all the new fancy drop effects for vanilla items
+- Added all the new fancy drop effects for MMOItems items
+- Added placeholder support to variable keys
+- Added some API stuff for item updating
+- Added more debugging information when a LibsDisguises disguise throws an error
+- Added placeholder support to @Pin targeter
+- Added way to use the trigger's stats in DamageModifier stats
+- Added Parent stats and capabilities for DamageModifier stat types
+- Added `stopCondition` to projectiles
+- Added `castasorbital` to orbital
+- Rewrote part of spawner saving
+- Fixed spawner files not deleting
+- Fixed ConcurrentModificationException that could rarely occur when copying spawners
+- Fixed spawner files not deleting
+- Fixed plugin not loading on regular spigot - per-player drops require paper
+- Fixed fancy drop effects causing items added thru the api to not roll amounts closes #1502
+- Fixed mechanics still firing if a death event has been cancelled (does not...
+- Fixed recursive issue with cancelevent
+- Fixed some spawner command bugs
+- Fixed some loading bugs introduced with the change to default lowercase folder names
+- Fixed spawner copying not copying the spawner's group
+- Fixed `<caster.score.>` placeholder?
+- Fixed exit aura spelling`
+- Fixed complex stat initialization with formulas and ordering problems
+- Allow placeholder on projectile vertical radius
+- Fixed vector rotation calculation
+- Fixed NPE in ActiveInfo utility command
+
+
 5.6.0
 =====
 
