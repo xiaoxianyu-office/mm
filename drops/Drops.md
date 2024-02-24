@@ -61,26 +61,12 @@ YourMob:
 ## In-line Drops
 
 For very basic equipment, you can add some inline item data so that you don't always have to create a mythic item.
-All of this inline item data can also be used in [Equipment:](/mobs/equipment)!
+You can use all the item data from [Inline Item Configurations](Mobs/Equipment#in-line-items)!
 
 ```yaml
  Drops:
  - leather_chestplate{name="Dark Leather";lore="&8A vest made of darkened leather";color=BLACK} 1 1
 ```
-
-### Available inline attributes
-| Attribute | Aliases   | Description                                                          | Default |
-|-----------|-----------|----------------------------------------------------------------------|---------|
-| name      | display, n, d | The display name of the item                                     |         |
-| data      |           | The "Data" of the item, to not be confused with CustomModelData      | 0       |
-| model     |           | The CustomModelData of the item                                      | 0       |
-| amount    | a         | The amount of the item                                               | 1       |
-| lore      | l         | The lore of the item                                                 |         |
-| enchantments | enchants, ench, e | A list of enchantments of the item                        |         |
-| potioneffects | peffects, potion, pe | A list of potion effects of the item, if a potion     |         |
-| color     | c, potioncolor, pcolor, pc | The color of the item, if a potion                  |         |
-| skullowner |          | The owner of the item, if a skull                                    |         |
-| skulltexture |        | The SkinURL of the texture of the item, if a skull                   |         |
 
 ### Example
 The below drops section will drop a Panda player head item that has 2 enchants on it, and will drop 3 pieces of diamond armor that all have names, lore, and enchantments on them!
