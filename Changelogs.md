@@ -20,7 +20,6 @@
 - Rewrote part of spawner saving
 - Fixed spawner files not deleting
 - Fixed ConcurrentModificationException that could rarely occur when copying spawners
-- Fixed spawner files not deleting
 - Fixed plugin not loading on regular spigot - per-player drops require paper
 - Fixed fancy drop effects causing items added thru the api to not roll amounts closes #1502
 - Fixed mechanics still firing if a death event has been cancelled (does not...
