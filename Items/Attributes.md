@@ -25,6 +25,18 @@ Item:
 | Feet     | Attributes will only apply if item is being worn on the feet slot.        |
 
 
+## Value
+You can input both absolute or relative values:
+- To input an absolute value, simply write it out
+```yaml
+      Damage: 10 ADD
+```
+- To input a relative value, use a % symbol after it
+```yaml
+      Damage: 10% ADD
+```
+
+
 ## Operations
 | Operation     | Aliases            | Description                                                                                       |
 |---------------|--------------------|---------------------------------------------------------------------------------------------------|
