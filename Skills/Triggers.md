@@ -44,6 +44,7 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onChangeWorld](#onchangeworld)        | When the mob changes world                                   |
 | [onBucket](#onbucket)                  | When the cow is milked or an entity is bucketed (axolotl etc.)             |
 | [onSkillDamage](#onskilldamage)        | When the mob deals damage to other entities via a mechanic   |
+| [onHear](#onhear)                      | When the mob hears a sound, [if enabled](Mobs/Mobs#hearing)  |
 
 <!--
 ADD THIS TRIGGER BACK WHEN IT WORKS
@@ -463,7 +464,23 @@ ExampleMob:
   - message{m="Get damaged! MUHAHAHA"} @trigger ~onSkillDamage
 ```
 
+#### ~onHear
+Executes the skill when the mob hears a sound, [if this feature has been enabled](Mobs/Mobs#hearing).  
+The `<skill.var.volume>`[placeholder](Skills/Placeholders#variable-placeholders) can be used in the triggered skill to return a float value between 1 and 15 representing the intensity of the sound (1=quiet footstep, 15=explosion).  
+> The associated [@trigger] is the entity that generated the sound  
+
+> The associated [@origin] is the location where the sound was generated  
+```yaml
+ICanHearYou:
+  Type: ZOMBIE
+  Hearing:
+    Enabled: true
+  Skills:
+  - message{m="I can hear you <trigger.name>! <skill.var.volume>? Way too loud!"} @trigger
+```
+
 
 <!-- LINKS -->
 [ThreatTables]: Mobs/ThreatTables
 [@trigger]: Skills/Targeters/Trigger
+[@origin]: Skills/Targeters/Origin
