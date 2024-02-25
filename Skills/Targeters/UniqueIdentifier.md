@@ -1,5 +1,5 @@
 ## Description
-Targets a specific entity by their UUID. Can be a placeholder.
+Targets a specific player by their UUID. Can be a placeholder.
 
 
 ## Attributes
@@ -9,7 +9,7 @@ Targets a specific entity by their UUID. Can be a placeholder.
 
 
 ## Examples
-The following mob will remeber the uuid of the entity that first hit it after it spawned, and will continue to ignite them every 10 seconds after that
+The following mob will remeber the uuid of the player that first hit it after it spawned, and will continue to ignite them every 10 seconds after that
 ```yaml
 VengefulMob:
   Type: ZOMBIE
