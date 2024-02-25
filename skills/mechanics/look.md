@@ -7,6 +7,7 @@ effects or creepy ones depending on how creative you get with it.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | headOnly  |           | Only the mob's head is facing the target                             | true    |
+| force     |           | Forces the mob to look at the target (even works with no AI)         | true    |
 | immediately |         | Immediately causes the mob to turn towards the target with no turning animation. | false         |
 
 
