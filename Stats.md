@@ -32,6 +32,7 @@ Options that can be used in the Stat in order to better customize it
 | MaxValue             | Max value for the stat                                                          |
 | Triggers             | What triggers the stat effect. Can be any MythicMobs trigger, minus the "on" bit. <br />(For instance: to use `onAttack`, one needs to write `ATTACK` as a trigger) <br />As of v.5.4.0, only damaging triggers are available; keep an eye on dev builds for expanded functionality.|
 | ParentStats          | A list of other stats that this stat relies on                                  |
+| TriggerStats         | A list of stats that the triggering entity may have and their FormulaKey, separated by a space. The FormulaKey can then be used in other Formulas to fetch its value from the trigger's. [Here is an example](#ice_damage) |
 | Formula              | A formula for the base value if this stat has parent stats                      |
 | FormulaKey           | A key you can use in formulas, when this stat is the parent of another          |
 | BaseValue            | A static base value if it doesn't have parents                                  |
@@ -740,4 +741,31 @@ SPEED:
     Additive: '+<value> Speed'
     Multiply: '+<value>% Speed'
     Compound: 'x<value>% Speed'
+```
+#### `ICE_DAMAGE`
+Here is a more complex example that also involves TriggerStats
+```yaml
+ICE_DAMAGE:
+  Enabled: true
+  Type: DAMAGE_MODIFIER
+  Priority: 50
+  Triggers:
+    - ATTACK
+  ExecutionPoint: PRE
+  Display: '&f֍'
+  DamageType: ALL
+  BaseValue: 0
+  TriggerStats:
+  - LIGHTNING_DEFENSE LD
+  - AIR_DEFENSE AD
+  - EARTH_DEFENSE ED
+  - FIRE_DEFENSE FD
+  - AETHER_DEFENSE AE
+  - VOID_DEFENSE VD
+  DamageFormula: '1 + d * ( LD + AD - ED - FD + 0.5 * ( AE - VD ) ) / 100'
+  Formatting:
+    Rounding: 2
+    Additive: '&a+<value>'
+    Multiply: '&a+<value>%'
+    Compound: '&ax<value>%'
 ```
