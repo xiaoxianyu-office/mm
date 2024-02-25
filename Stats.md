@@ -54,7 +54,7 @@ A list of options only available if the specified type is used in the stat
 
 | Option               |Description                                                                      |
 |----------------------|---------------------------------------------------------------------------------|
-| DamageType           | Specify a custom damage type                                                    |
+| DamageType           | Specify a custom damage type. Use `ALL` to modify the final total damage of the skill                  |
 | Conditions           | Specify conditions which can affect the Modifier                                |
 | DamageFormula        | Define a formula for how the damage is modified. See [HERE](#FIRE_RESISTANCE) for an example of this |
 
