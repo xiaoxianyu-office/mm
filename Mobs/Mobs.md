@@ -11,8 +11,7 @@ Table Of Contents:
 
 [[_TOC_]]
 
-Breaking Down The Mob Configuration
--------------------------
+## Breaking Down The Mob Configuration
 
 #### Internal_Name
 This string will be how your mob will be referenced internally in MythicMobs and can be any name you like.
@@ -297,6 +296,19 @@ ExampleMob:
     
     # If set, forces the nameplate to work with modeled entities from the ModelEngine plugin
     Mounted: true
+```
+
+
+#### Hearing
+Allows the mob to "hear" sounds like a warden would.  
+Turning this on enables the new [~onHear](Skills/Triggers#onhear) trigger.  
+```yaml
+ICanHearYou:
+  Type: ZOMBIE
+  Hearing:
+    Enabled: true
+  Skills:
+  - message{m="I can hear you <trigger.name>! <skill.var.volume>? Way too loud!"} @trigger
 ```
 
 
