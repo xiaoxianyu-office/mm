@@ -159,6 +159,12 @@ EXAMPLE_MOB:
 #### ~onDamaged
 Executes the skill when the mob takes damage.
 > The associated [@trigger] is the entity that dealt the damage
+
+| [Implemented Placeholders]     |
+|--------------------------------|
+| `<skill.var.damage-amount>`    |
+| `<skill.var.damage-type>`      |
+
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -467,9 +473,16 @@ ExampleMob:
 #### ~onHear
 Executes the skill when the mob hears a sound, [if this feature has been enabled](Mobs/Mobs#hearing).  
 The `<skill.var.volume>`[placeholder](Skills/Placeholders#variable-placeholders) can be used in the triggered skill to return a float value between 1 and 15 representing the intensity of the sound (1=quiet footstep, 15=explosion).  
+
 > The associated [@trigger] is the entity that generated the sound  
 
 > The associated [@origin] is the location where the sound was generated  
+
+| [Implemented Placeholders]     |
+|--------------------------------|
+| `<skill.var.volume>`           |
+| `<skill.var.sound-type>`       |
+
 ```yaml
 ICanHearYou:
   Type: ZOMBIE
@@ -484,3 +497,4 @@ ICanHearYou:
 [ThreatTables]: Mobs/ThreatTables
 [@trigger]: Skills/Targeters/Trigger
 [@origin]: Skills/Targeters/Origin
+[Implemented Placeholders]: Skills/Placeholders#variable-placeholders
