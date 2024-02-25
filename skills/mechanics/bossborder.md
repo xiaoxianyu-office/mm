@@ -1,20 +1,20 @@
-Mechanic: BossBorder
-============================
+## Description
+Traps the the target player within a border around the caster.
 
-Traps the player within a border around the caster.
 
-Attributes
-----------
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| radius    | r         | The radius of the border                                             | 32      |
 
-| Attribute     | Aliases | Description                                                                   | Default Value |
-|---------------|---------|-------------------------------------------------------------------------------|---------------|
-| Range | r       | The border radius                                                   | 1             |
 
-  
-
-Examples
---------
+## Examples
 ```yml
-Skills:
-  - bossBorder{r=40}
+  Skills:
+  - bossBorder{r=40} @NearestPlayer{r=30}
 ```
+
+
+## Aliases
+- [x] effect:bossBorder
+- [x] e:bossBorder
