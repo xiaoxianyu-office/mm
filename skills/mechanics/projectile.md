@@ -192,10 +192,10 @@ Examples:
 |bulletModel| model     | The CustomModelData of the material                                  | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
-| pitch     |           | The pitch rotation                                                   | 0       |
-| yaw       |           | The yaw rotation                                                     | 0       |
-| roll      |           | The roll rotation                                                    | 0       |
-| rotation  | rot       | The rotation of the bullet, in the x,y,z format                      | 0,0,0   |
+| pitch     |           | The pitch rotation, in radians                                       | 0       |
+| yaw       |           | The yaw rotation, in radians                                         | 0       |
+| roll      |           | The roll rotation, in radians                                        | 0       |
+| rotation  | rot       | The rotation of the bullet in radians, in the x,y,z format           | 0,0,0   |
 | pitchspeed| ps        | The pitch rotation speed                                             | 0       |
 | yawspeed  | ys        | The yaw rotation speed                                               | 0       |
 | rollspeed | rs        | The roll rotation speed                                              | 0       |
@@ -223,10 +223,10 @@ Examples:
 | bulletbrightness | bulletbrightnessblock | The bullet's brightness                           | -1      |
 | bulletbrightnesssky | | The bullet's sky light brightness                           | bulletbrightness |
 | bulletCullingDistance | bulletViewDistance, bulletViewRange | The range in which the bullet will be visible                                                                                        | 50      |
-| pitch     |           | The pitch rotation (in radians)                                      | 0       |
-| yaw       |           | The yaw rotation (in radians)                                        | 0       |
-| roll      |           | The roll rotation (in radians)                                       | 0       |
-| rotation  | rot       | The rotation of the bullet, in the x,y,z format (in radians)         | 0,0,0   |
+| pitch     |           | The pitch rotation, in radians                                       | 0       |
+| yaw       |           | The yaw rotation, in radians                                         | 0       |
+| roll      |           | The roll rotation, in radians                                        | 0       |
+| rotation  | rot       | The rotation of the bullet in radians, in the x,y,z format           | 0,0,0   |
 | pitchspeed| ps        | The pitch rotation speed                                             | 0       |
 | yawspeed  | ys        | The yaw rotation speed                                               | 0       |
 | rollspeed | rs        | The roll rotation speed                                              | 0       |
