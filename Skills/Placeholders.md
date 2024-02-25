@@ -110,7 +110,7 @@ These placeholders will return whatever variable has been called. For instance <
 | **Variable Placeholder**  | **Function**                                                            |     
 |:-------------------------:|-------------------------------------------------------------------------|
 | <caster.var.\[name\]>     | Returns the value of the variable \[name\] on the caster.               |
-| <caster.stat.STAT_NAME>   | Returns the value of the specified stat on the caster.               |
+| <caster.stat.STAT_NAME>   | Returns the value of the specified stat on the caster.                  |
 | <skill.var.\[name\]>      | Returns the value of the variable \[name\] on the current skill tree.   |
 | <skill.var.damage-amount> | Returns the amount of damage taken in the onDamaged trigger             |
 | <skill.var.damage-type>   | Returns the type of damage taken as specified in a mechanic, aura, etc. |
@@ -123,7 +123,8 @@ These placeholders will return whatever variable has been called. For instance <
 | <skill.var.input>         | Returns the chat input of the holder of a onChat aura.                  |
 | <skill.targets>           | Returns the amount of inherited targets                                 |
 | <skill.var.interval>      | Returns the interval value in mechanics using `repeat` & `repeatInterval` attributes                  |
-| <skill.var.itr>           | Returns the current iterationin mechanics using `repeat` & `repeatInterval` attributes                  |
+| <skill.var.itr>           | Returns the current iteration in mechanics using `repeat` & `repeatInterval` attributes                  |
+| <skill.var.volume>        | Returns the volume of the generated sound, if the mechanic was triggered by a [~onHear](Skills/Triggers#onhear) trigger |
 
 ## Target Placeholders
 These placeholders will return whatever target selector has been used. For instance <target.name> + @NearestPlayer will return the name of the player closest to the casting mob. The following are only some of the placeholders that can have a `target` scope, and in general any placeholder that is also present in the [Caster Placeholder](#caster-placeholders) section will also work.
@@ -148,12 +149,12 @@ These placeholders will return whatever target selector has been used. For insta
 |    <target.l.pitch>     | Returns the pitch of the target                                   |
 |     <target.level>      | Returns the level of the target                                   |
 |   <target.block.type>   | Returns the block type of the target                              |
-|   <target.block.data>   | Returns the block data of the target block                             |
+|   <target.block.data>   | Returns the block data of the target block                        |
 |  <target.entity_type>   | Returns the entity type of the target                             |
 |  <target.item.type>     | Returns the type of the targeted item entity                      |
-|  <target.held.item>     | Returns the item held by the target                      |
-|  <target.itemstack_amount>   | Returns the amount of item entities on the ground                             |
-|   <target.raytrace>     | Returns the name of the block being looked at by the target (4.5 blocks of range) |
+|  <target.held.item>     | Returns the item held by the target                               |
+|  <target.itemstack_amount>   | Returns the amount of item entities on the ground            |
+|   <target.raytrace>     | Returns the name of the block being looked at by the target (4.5 blocks of range)                    |
 
 ## Trigger Placeholders
 These placeholders will return whatever attribute of the entity that caused the skill to happen. For instance `<trigger.name>` combined with an `~onDeath` trigger will return the name of the entity that killed the mob.
