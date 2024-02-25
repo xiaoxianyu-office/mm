@@ -1,11 +1,12 @@
 ## Description
-Causes the casting mob to summon a specified MythicMob and mount it.
+Causes the casting mob to summon a specified MythicMob and mount it. The caster will be set as both the [owner](Skills/Targeters/Owner) and the [parent](Skills/Targeters/Parent) of the summoned mob.
 
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | type      | t         | The type of MythicMob to summon                                      |         |
+| stack     | s         | If the summoned mob should stack atop existing mounted entities      | false   |
 
 ### Type Attribute
 The MythicMob defines in type must be a valid MythicMob type (and is
@@ -21,3 +22,7 @@ CallSkeletalHorse:
   Skills:
   - mount{type=UndeadMount}
 ```
+
+
+## Aliases
+- [x] vehicle
