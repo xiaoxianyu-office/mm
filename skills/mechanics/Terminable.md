@@ -53,6 +53,7 @@ Then the `ExampleSkill` and the subsequently called `SecondarySkill` metaskill w
 - [x] stoppable
 - [x] cancelable
 - [x] exit
+- [x] terminatable
 
 
 <!-- LINKS -->
