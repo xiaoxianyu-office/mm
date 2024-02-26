@@ -1,14 +1,25 @@
 ## Description
-Modifies the mob's threat value towards the target. Requires the mob
-have Threat Tables enabled in order to have any effect.
+Modifies the mob's threat value towards the target. Requires the casting mob
+have [Threat Tables](Mobs/ThreatTables) enabled in order to have any effect.
+
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount    | a         | The amount of threat to give the target. Can be negative.            | 1       |
-| mode      | m         | Add / Remove / Multiply / Divide / Set / Reset / Forcetop            | Add     |
+| mode      | m         | The [mode](#mode-attribute) of the operation                         | add     |
 
-Set/reset/forcetop modes do not require the “amount=” field  
+
+### Mode Attribute
+| Mode      | Aliases   | Description                                                                    |
+|-----------|-----------|--------------------------------------------------------------------------------|
+| add       |           | Adds `amount` threat to the target entity                                      |
+| remove    |           | Removes `amount` threat from the target entity                                 |
+| multiply  |           | Multiplies the threat against the target entity by `amount`                    |
+| divide    |           | Divides the threat against the target entity by `amount`                       |
+| set       |           | Sets the threat against the target entity to `amount`                          |
+| reset     | delete    | Remove all threat from the target entity                                       |
+| forcetop  | force, top, topthreat, taunt | Gives the target enough threat to be moved to the top of the threat list |
 
 
 ## Examples
@@ -19,3 +30,8 @@ Fixate:
   Skills:
   - threat{amount=10000} @NearestPlayer ~onSpawn
 ```
+
+
+## Aliases
+- [x] threatchange
+- [x] threatmod
