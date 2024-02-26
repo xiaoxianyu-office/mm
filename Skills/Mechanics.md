@@ -186,8 +186,9 @@ are able to target locations as well.
 | [AddTag][]                | Adds a scoreboard tag to the target                                                      |
 | [RemoveTag][]             | Removes a scoreboard tag from the target                                                 |
 | [TakeItem][]              | Removes an item from the targeted player's inventory                                     |
+| [Taunt][]                 | Modifies the threat level that the caster holds with the target entities                                     |
 | [Teleport][]              | Teleports to the target                                                                  |
-| [TeleportY][]              | Teleports to the target vertically                                                                 |
+| [TeleportY][]             | Teleports to the target vertically                                                                 |
 | [TeleportIn][]            | Teleports the target relative to the caster's yaw                                        |
 | [TeleportTo][]            | Teleports the target to a specified location                                             |
 | [Time][]                  | Changes the time                                                                                |
@@ -474,6 +475,7 @@ but not yet ready for use.
   [AddTag]: /skills/mechanics/addtag
   [RemoveTag]: /skills/mechanics/removetag
   [TakeItem]: /skills/mechanics/takeitem
+  [Taunt]: /skills/mechanics/Taunt
   [Teleport]: /skills/mechanics/teleport
   [TeleportY]: /skills/mechanics/teleporty
   [TeleportIn]: /skills/mechanics/teleportin
