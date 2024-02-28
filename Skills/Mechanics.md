@@ -1,6 +1,3 @@
-Skill Mechanics
-===============
-
 Skill Mechanics (or base skills) are simple skills that are built into
 MythicMobs. You can call these basic skills by themselves in your mob's
 Skill List, or you can create your own meta-skill by combining these
@@ -9,6 +6,10 @@ mechanics together.
 Some Mechanics are able to target Entities, Locations, or both! Some
 don't target anything. You control what your skill targets using a
 [Targeter][].
+
+
+[[_TOC_]]
+
 
 # Additional Mechanics
 Links to mechanics added by addon plugins. Any mechanics from these links will not work without that plugin installed.
@@ -19,17 +20,16 @@ Links to mechanics added by addon plugins. Any mechanics from these links will n
 - [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Mechanics)
 - [MCPets](https://mcpets.gitbook.io/mcpets/tutorials/mythicmobs-features#mechanics)
 
-# Mechanics
 
+# Mechanics
 These skills usually target entities (players or other mobs), but some
 are able to target locations as well.
-
 | Mechanic                  | Description                                                                              |
 |---------------------------|------------------------------------------------------------------------------------------|
 | [ActivateSpawner][]       | Activates a MythicMobs spawner at the targeted location                                  |
 | [AddTrade][]              | Changes the trades of a villager                                                          |
 | [AnimateArmorStand][]     | Animates an armorstand                                                                   |
-| [ArmAnimation][]     | Makes the caster swing their arm                                                                   |
+| [ArmAnimation][]          | Makes the caster swing their arm                                                                   |
 | [ArrowVolley][]           | Fires a volley of arrows                                                                 |
 | [Attribute][]             | Sets an attribute on the target entity, if attributable                                                                 |
 | [AttributeModifier][]     | Adds an attribute modifier to the attributable target                                                                 |
@@ -202,16 +202,16 @@ are able to target locations as well.
 | [Weather][]               | Modifies the weather in the target world                                    |
 | [WolfSit][]               | Forces a targeted wolf to sit.                                              |
 
-Effect Mechanics
-----------------
+
+## Effect Mechanics
 
 Effects are mechanics that add special effects to your skills. They have
 their own page!
 
 [View the list of Effect Mechanics by clicking here][]
 
-Advanced/Meta Mechanics
------------------------
+
+## Meta Mechanics
 
 These skill mechanics have special advanced functions, and most are used
 to call other skills. If you specify a target, all other skills called
@@ -266,8 +266,8 @@ by these will "inherit" the targets (if applicable).
 | [VariableUnset][]       | Unsets the variable                                                                                                                                     |
 | [VariableSubtract][]    | Subtracts an amount from a numeric variable                                                                                                             |
 
-Universal Attributes
---------------------
+
+# Universal Attributes
 
 The following attributes are applicable to all mechanics.
 
@@ -281,12 +281,13 @@ The following attributes are applicable to all mechanics.
 | origin **[PREMIUM]** ||Change the origin to whatever targeter is supplied. `origin=@Forward{f=10}` |   |
 | forcesync | sync      | Forces the execution type to be SYNC                                 | false   |
 | power     |           | [Power](/mobs/Power) multiplier                                      | 1       |
-| fromorigin | fo       | Whether to cast the mechanic from origin                             | false   |
+| fromorigin | fo, sourceisorigin, castfromorigin | Whether to cast the mechanic from origin   | false   |
 | targetisorigin |      | Whether to set the target of the mechanic to be the origin           | false   |
 | targetcreative |      | Whether to target creative players                                   | false   |
-| splitPower     | powersplit | Whether to split the power between targets                     | false |
+| splitPower| powersplit, powersplitbetweentargets | Whether to split the power between targets| false   |
+| faulty    |           | Whether the mechanic should use the old vector formula               | true    |
 
-### Examples
+# Examples
 ```yaml
 ExampleMob:
   Type: ZOMBIE
