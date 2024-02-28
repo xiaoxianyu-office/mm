@@ -36,11 +36,11 @@ The chance for the specified item to be dropped.
 |-----------------------------|----------------------------------------------------------|-----------------------------------------|
 | [mythicmob](drops/DropTypes/MythicMob) | Will drop a MythicMob                         |                |
 | **champions-exp**           | Will drop experience points for the plugin `Champions`.  |                                         |
-| **skillapi-exp**            | Will drop experience points for the plugin `SkillAPI`.   |                                         |
+| [skillapi-exp](drops/DropTypes/SkillAPIExp) | Will drop experience points for the plugin `SkillAPI` |                                         |
 | **heroesexp**               | Will drop experience points for the plugin `Heroes`.     |                                         |
 | [mcmmo-exp](drops/DropTypes/McMMOExp) | Will drop experience points for the plugin `MCMMO`. | -` mcmmo-exp 69`                       |
 | **exp**                     | Will drop regular Minecraft experience points.           | `- exp 420`                                         |
-| **money**                   | Will drop money for the plugin `Vault`.                  | `- money 1500`                                        |
+| [money](drops/DropTypes/Money) | Will drop money for the plugin `Vault`.               | `- money 1500`                                        |
 | **mythicdrop &lt;item&gt;** | Will drop an &lt;item&gt; from the plugin `MythicDrops`. | `- mythicdrop CoolSword 1`                                        |
 | [phatloot](drops/DropTypes/PhaLoot) | Will drop an &item from the plugin `PhatLoot`.    | `- phatloot LootTableName 1`                                        |
 | [command](drops/DropTypes/Command) | Will run a command in console.                    | `- cmd{c="warp <trigger.name> spawn"} 1`  |
