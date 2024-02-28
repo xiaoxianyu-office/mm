@@ -19,4 +19,4 @@ When dropped, a command is executed only once by the console, regardless of the 
 
 
 ## Aliases
-- [x] CMD
+- [x] cmd
