@@ -17,3 +17,8 @@ Will drop an an from the plugin `PhatLoot`.
   Drops:
   - phatloot{t=LootTableName} 1
 ```
+
+
+## Aliases
+- [x] platloots
+- [x] pl
