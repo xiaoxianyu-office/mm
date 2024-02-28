@@ -42,7 +42,7 @@ The chance for the specified item to be dropped.
 | **money**                   | Will drop money for the plugin *Vault*.                  | `- money 1500`                                        |
 | **mythicdrop &lt;item&gt;** | Will drop an &lt;item&gt; from the plugin *MythicDrops*. | `- mythicdrop CoolSword 1`                                        |
 | **phatloot &lt;item&gt;**   | Will drop an &lt;item&gt; from the plugin *PhatLoot*.    | `- phatloot LootTableName 1`                                        |
-| **cmd**                     | Will run a command in console. Use <trigger.name> as a placeholder for the player who killed the mob.                            | `- cmd{c="warp <trigger.name> spawn"} 1`  |
+| [command](drops/DropTypes/Command) | Will run a command in console.                    | `- cmd{c="warp <trigger.name> spawn"} 1`  |
 | **mmoitems**                | Drops a mmoitems item                                    | `- mmoitems{type=SWORD;id=CUTLASS} 1 1` |
 | **nothing**                 | Will drop nothing. Can help while creating weighted droptables| `- nothing`                                        |
 
