@@ -192,10 +192,10 @@ The following are only some of the placeholders that can have a `trigger` scope,
 
 ## Misc Placeholders
 
-|    **Placeholder**    | **Function**                                        |
-|-----------------------|-----------------------------------------------------|
-| <drop.amount>               | Returns the amount dropped in a command type drop                       |
-| <drops.xp>                  | Returns the xp dropped via Heroes or SkillAPI mods                      |
+|    **Placeholder**          | **Function**                                                            |
+|-----------------------------|-------------------------------------------------------------------------|
+| <drop.amount>               | Returns the amount dropped while used in specific drop types            |
+| <drops.xp>                  | Returns the xp dropped via specific drop types                          |
 | <drops.money>               | Returns the money dropped through the vault plug-in                     |
 | <random.#to#>               | Returns a random integer in the specified range                         |
 | <random.float.#to#>         | Returns a random float number in the specified range                    |
