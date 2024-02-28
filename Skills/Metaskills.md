@@ -345,7 +345,7 @@ The "skill parameter" system will pass __any__ options from the **skill/metaskil
 
 <!-- GENERIC -->
 [Skills]: /Skills/Skills
-[Meta Mechanic]: /Skills/Mechanics#advancedmeta-mechanics
+[Meta Mechanic]: /Skills/Mechanics#meta-mechanics
 [Examples]: /examples/Common-Examples#skills
 [Skill]: /skills/mechanics/skill
 [Meta Targeter]: /Skills/Targeters#special-targeters
