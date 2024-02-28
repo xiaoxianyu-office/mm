@@ -1,5 +1,7 @@
 ## Description
-When dropped, a command is executed only once by the console, regardless of the amount specified. A `<drop.amount>` [placeholder](Skills/Placeholders#misc-placeholders) can instead be used to fetch the original amount
+When dropped, a command is executed only once by the console, regardless of the amount specified.  
+You can use caster-scoped and trigger-scoped placeholders to fetch information from the mob that dropped the command and the entity that killed it respectively.  
+A `<drop.amount>` [placeholder](Skills/Placeholders#misc-placeholders) can instead be used to fetch the original amount.
 
 
 ## Attributes
