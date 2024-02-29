@@ -8,6 +8,7 @@
 ##### [API Information](API)
 ##### [Packs](Packs)
 * [Pins](Pins)
+
 ##### [Mobs](Mobs/Mobs)
   * [Mob Options](Mobs/Options)
     * [Display Options](Mobs/DisplayOptions)
@@ -25,6 +26,7 @@
   * [Vanilla Overrides](Vanilla-Overrides)
   * [Extra: Disguises](Mobs/Disguises)
   * [Extra: ModelEngine](Model-Engine)<!--* [Templating](Config/Templating)-->
+
 ##### [Skills](Skills/Skills)
   * [Mechanics](Skills/Mechanics)<!--   * [In-line skill](Skills/inline-skills)-->
   * [Effects](Skills/Effects)
@@ -36,7 +38,7 @@
   * [Metaskills](/Skills/Metaskills)
   * [Placeholders](Skills/Placeholders)
   * [Variables](Skills/Variables)
-  * [Math](Skills/Math)
+
 ##### [Items](Items/Items)
   * [Options](Items/Options)
   * [Attributes](Items/Attributes)
@@ -58,6 +60,13 @@
   * [Custom Stat Options](Stats#custom-stat-options)
   * [Modifiers](Stats#modifiers)
   * [Built in Stats](Stats#built-in-stats)
+
+#### Technical
+  * [Math](Skills/Math)
+  * Operations
+    * [Attribute Operations](Items/Attributes#operations)
+    * [Stats Modifiers](Stats#modifiers)
+  * [Particles Types](skills/effects/particles/types)
 
 ##### [Examples](examples/Common-Examples)
 ##### [Useful Tips](/UsefulTips)
