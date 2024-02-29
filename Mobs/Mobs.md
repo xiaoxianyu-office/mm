@@ -22,7 +22,7 @@ example_name:
 
 #### Type
 This field determines which entity type your creation will be based upon.
-A complete list of available [entity types] can be found on spigot javadocs.\
+A complete list of available [entity types] can be found on spigot javadocs, while [here](Mobs/Types) you can find a list of types that are explicitly implemented.
 > Several mob options for new entity types that Minecraft adds to the base game will not function until Mythic adds support for said entity types  
 
 > Some entity types can have negative, hard-to-discover quirks. It is advised that you refer to the [unstable entity types](Mobs/Mobs/Unstable-Entity-Types) page in order to form a better opinion on what entity you should be using for your current endeavor 
