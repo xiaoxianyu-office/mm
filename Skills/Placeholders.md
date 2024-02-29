@@ -11,19 +11,19 @@ __**Note:** Usage of many variables in skills are locked to the premium versions
 |:---------------:|----------------------------------------------------------------------------|---------|
 |      <&co>      | Returns a colon                                                            | `:`     |
 |      <&sq>      | Returns an apostrophe                                                      | `'`     |
-|      <&da>      | Returns a dash (-)                                                         | `-`     |
-|      <&bs>      | Returns a backslash (\\)                                                   | `\`     |
-|      <&fs>      | Returns a forward slash (/)                                                | `/`     |
+|      <&da>      | Returns a dash                                                             | `-`     |
+|      <&bs>      | Returns a backslash                                                        | `\`     |
+|      <&fs>      | Returns a forward slash                                                    | `/`     |
 |      <&sp>      | Returns a space                                                            | ` `     |
-|      <&cm>      | Returns a comma (,)                                                        | `,`     |
-|      <&sc>      | Returns a semicolon (;)                                                    | `;`     |
-|      <&eq>      | Returns an equals symbol \[=\]                                             | `=`     |
-|      <&dq>      | Returns double quotes (")                                                  | `"`     |
-|      <&rb>      | Returns a right bracket (\])                                               | `]`     |
-|      <&lb>      | Returns a left bracket (\[)                                                | `[`     |
-|      <&rc>      | Returns a right curly bracket (})                                          | `}`     |
-|      <&lc>      | Returns a left curly bracket ({)                                           | `{`     |
-|      <&nm>      | Returns a number sign (#)                                                  | `#`     |
+|      <&cm>      | Returns a comma                                                            | `,`     |
+|      <&sc>      | Returns a semicolon                                                        | `;`     |
+|      <&eq>      | Returns an equals symbol                                                   | `=`     |
+|      <&dq>      | Returns double quotes                                                      | `"`     |
+|      <&rb>      | Returns a right bracket                                                    | `]`     |
+|      <&lb>      | Returns a left bracket                                                     | `[`     |
+|      <&rc>      | Returns a right curly bracket                                              | `}`     |
+|      <&lc>      | Returns a left curly bracket                                               | `{`     |
+|      <&nm>      | Returns a number sign                                                      | `#`     |
 |      <&nl>      | Forces a new line                                                          |  <br>   |
 |    <&heart>     | Returns a heart                                                            | `❤`    |
 |    <&skull>     | Returns a skull and bones                                                  | `☠`    |
