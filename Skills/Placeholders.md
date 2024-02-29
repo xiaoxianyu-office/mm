@@ -6,32 +6,29 @@ __**Note:** Usage of many variables in skills are locked to the premium versions
 
 [[_TOC_]]
 
-Special Characters
-------------------
-| **Placeholder** | **Function**                      |
-|:---------------:|-----------------------------------|
-|      <&co>      | Returns a colon (:)               |
-|      <&sq>      | Returns an apostrophe (')         |
-|      <&da>      | Returns a dash (-)                |
-|      <&bs>      | Returns a backslash (\\)          |
-|      <&fs>      | Returns a forward slash (/)       |
-|      <&sp>      | Returns a space                   |
-|      <&cm>      | Returns a comma (,)               |
-|      <&sc>      | Returns a semicolon (;)           |
-|      <&eq>      | Returns an equals symbol \[=\]    |
-|      <&ss>      | Returns a section symbol (ยง)     |
-|      <&dq>      | Returns double quotes (")         |
-|      <&rb>      | Returns a right bracket (\])      |
-|      <&lb>      | Returns a left bracket (\[)       |
-|      <&rc>      | Returns a right curly bracket (}) |
-|      <&lc>      | Returns a left curly bracket ({)  |
-|      <&nm>      | Returns a number sign (#)         |
-|      <&nl>      | Forces a new line                 |
-|    <&heart>     | Returns a heart                   |
-|    <&skull>     | Returns a skull and bones         |
+# Special Characters
+| **Placeholder** | **Function**                                                               | Symbol  |
+|:---------------:|----------------------------------------------------------------------------|---------|
+|      <&co>      | Returns a colon                                                            | `:`     |
+|      <&sq>      | Returns an apostrophe                                                      | `'`     |
+|      <&da>      | Returns a dash (-)                                                         | `-`     |
+|      <&bs>      | Returns a backslash (\\)                                                   | `\`     |
+|      <&fs>      | Returns a forward slash (/)                                                | `/`     |
+|      <&sp>      | Returns a space                                                            | ` `     |
+|      <&cm>      | Returns a comma (,)                                                        | `,`     |
+|      <&sc>      | Returns a semicolon (;)                                                    | `;`     |
+|      <&eq>      | Returns an equals symbol \[=\]                                             | `=`     |
+|      <&dq>      | Returns double quotes (")                                                  | `"`     |
+|      <&rb>      | Returns a right bracket (\])                                               | `]`     |
+|      <&lb>      | Returns a left bracket (\[)                                                | `[`     |
+|      <&rc>      | Returns a right curly bracket (})                                          | `}`     |
+|      <&lc>      | Returns a left curly bracket ({)                                           | `{`     |
+|      <&nm>      | Returns a number sign (#)                                                  | `#`     |
+|      <&nl>      | Forces a new line                                                          |  <br>   |
+|    <&heart>     | Returns a heart                                                            | `❤`    |
+|    <&skull>     | Returns a skull and bones                                                  | `☠`    |
 
-Color Codes
------------
+# Color Codes
 These color codes work anywhere in mob- and skill-files. They will even
 properly format tellraw-commands used in command skills! 
 
@@ -51,7 +48,7 @@ Legacy color codes:
 |    &9    |    Blue     |    &O    |     Italic     |
 |    &A    |    Green    |    &R    |     Reset      |
 
-As of MM 5.0.1+, it's recommended that you use [MiniMessage tags](https://docs.adventure.kyori.net/minimessage/format.html#standard-tags) for text styling and text decorations.
+It's recommended that you use [MiniMessage tags](https://docs.adventure.kyori.net/minimessage/format.html#standard-tags) for text styling and text decorations.
 Here's an example using MiniMessage tags:
 ```yml
 MessageSkill:
