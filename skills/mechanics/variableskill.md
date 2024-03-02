@@ -1,20 +1,19 @@
-Mechanic: VariableSkill
-===============
-
-Executes another meta-skill like the [Skill mechanic](skills/mechanics/skill), but allows for placeholders inside the skill name
-
-
+## Description
+Executes another meta-skill like the [Skill mechanic](skills/mechanics/skill), but allows for placeholders inside the skill attribute.  
 The attribute "sync=true" will be inherited by any sub-skills and cannot
-be set to *false* later in a skill-tree.
+be set to *false* later in a skill-tree.  
 
+
+## Attributes
 | Attribute | Shorthand | Description                                                         | Default |
 |-----------|-----------|---------------------------------------------------------------------|---------|
-| skill     | s         | The metaskill to be executed. Accepts [Placeholders](Skills/Placeholders). |  |
-| forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft. | false   |
+| skill     | s         | The metaskill to be executed. Accepts [Placeholders](Skills/Placeholders)  |  |
+| forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft  | false   |
+| branch    | b, fork, f| Whether the called metaskill's skilltree should [branch](skills/mechanics/skill#branch-attribute) off from the skilltree of the calling mechanic      | false   |
+| executeafterdeath | continueafterdeath | Whether the metaskill should be able to be called after the caster's death                                                                                | false   |
 
 
-Examples
---------
+## Examples
 ```yaml
 ExampleSkill:
   Skills:
@@ -32,7 +31,7 @@ ExampleSkill_3:
 ```
 In the example, the `ExampleSkill` metaskill, once triggered, will execute a skill whose name is composed of `ExampleSkill_` and a randomly generated number between 1 and 3.
 
-#
+##
 
 ```yaml
 Example_StanceSkill:
@@ -41,7 +40,7 @@ Example_StanceSkill:
 ```
 In this example, the VariableSkill is being used to quickly create some stance-based skills without the need to use any stance conditions and the like
 
-#
+##
 
 ```yaml
 Example_VariablePlaceholder:
@@ -49,3 +48,8 @@ Example_VariablePlaceholder:
   - vskill{s=Fireball_<skill.var.fireballtype>} @self
 ```
 In this example, the VariableSkill mechanic will execute a metaskill whose name depends on some skill-scoped variables that has been set earlier on
+
+
+## Aliases
+- [x] metavariableskill
+- [x] vskill
