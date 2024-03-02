@@ -1,4 +1,4 @@
-**The most up to date version of this list is always going to be in the spigot javadocs located [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)**
+**The most up to date version of this list is always going to be in the spigot Javadoc located [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)**
 
 **ash**
 ---
