@@ -12,6 +12,7 @@ targeter is specified.
 | skill     | s         | The metaskill to be executed                                        |         |
 | forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft  | false   |
 | branch    | b, fork, f| Whether the called metaskill's skilltree should branch off from the skilltree of the calling mechanic                                                                          | false   |
+| executeafterdeath | continueafterdeath | Whether the metaskill should be able to be called after the caster's death                                                                                | false   |
 
 
 ### Branch Attribute
@@ -86,3 +87,8 @@ be set to *false* later in a skill-tree.
       sync=true
       }
 ```
+
+
+## Aliases
+- [x] metaskill
+- [x] meta
