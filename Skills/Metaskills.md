@@ -306,6 +306,51 @@ ExampleSkill:
 The example above, for instance, will generate a line of particles between the caster and the players in a 10 blocks radius. Had the targeter not been `@PIR` but another one, the line would have been generated between the caster and the targeter used.
 
 
+# Inline Metaskills
+Metaskills can also be written with a specific inline syntax, without the need to create another Metaskill entirely.  
+
+Metaskills written this way lose the access to all the fields a normal one has (Conditions, OnCooldownSkill etc.) and different methods are needed to obtain similar results to them (using the `cooldown` [universal attribute] instead of the Cooldown field).  
+
+Mechanics inside a Inline Metaskill cannot be commented out in a ordinary way in order to disable them, as that would cause the whole Metaskill to stop working. Characters such as `<#>` or `<&nm>` must be used before the mechanic in order to obtain the same effect.  
+
+The Inline Metaskill syntax can be used everywhere a normal Metaskill internal name would be expected inside of Metamechanics.  
+
+## Examples
+```yaml
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=[
+    - message{m="Feeling cold? Don't you worry!"}
+    - delay 40
+    - ignite
+    ]} @trigger ~onInteract
+```
+> In this example you can see both the syntax to write a inline metaskill and some of the features of a normal Metaskill (target inheritance, use of delays) being used
+##
+```yaml
+  Skills:
+  - skill{s=[
+    - message{m="Hello there! A pleasure to meet you!"}
+    - setvariable{var=skill.examplename;type=STRING;val=<target.name>}
+    - skill{s=[
+      - message{m="OHI, OHI! WHO IS THAT GUY OVER THERE NAMED <skill.var.examplename>?!?"}
+      ]} @Owner
+    ]} @target
+```
+> In this example you can see how Inline Metaskills can be nested and how they share the same skilltree, enabling them to use skill scoped variables
+##
+```yaml
+  Skills:
+  - skill{branch=true;s=[
+    - message{m="1"}
+    <#>- message{m="2"}
+    - message{m="3"}
+    ];executeafterdeath=true} @trigger
+```
+> In this example you can see how to comment out a mechanic from a Inline Metaskill, and how normal attributes can be normally used in the calling Metamechanic
+
+
 # Skill Parameters [Premium Feature]
 
 Skill parameters are a feature allowing you to more easily create generic skills and pass parameters to them from other skills. If that sounds confusing, here's an example!
