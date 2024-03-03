@@ -5,7 +5,8 @@ Works with the [@Owner Targeter](/Skills/Targeters/Owner), and the [Owner Condit
 
 If the casting mob is a `Wolf`,`Cat` or `Parrot`, then the mechanic will _also_ set their Vanilla Owner as the targeted player.  
 
-A mob will never attack its Owner, even if specified otherwise.
+
+While an Owner is set, a mob will never attack or target it, even if specified otherwise. A mob will still retain any aggro it had against the owner before it was set as such.
 
 
 ## Attributes
