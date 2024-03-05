@@ -53,15 +53,6 @@ Defaults to `false`.
     PreventStacking: true
 ```
 
-#### Model
-Sets the custom model data ID for the item.  
-Defaults to `0`.
-```yaml
-  Options:
-    Model: true
-```
-
-
 # Playerheads
 Only applicable to playerhead type items
 
