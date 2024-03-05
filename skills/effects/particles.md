@@ -16,7 +16,7 @@ Added in 4.12 (Premium Only!):
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| particle  | p         | The particle type to use. See list here.                             | reddust |
+| particle  | p         | The particle type to use. See list **[here](/skills/effects/particles/types)**.                             | reddust |
 | material  | m         | Block or Item to use with block_crack or item_crack respectively     |
 | mob       | m, t      | The entity to spawn as the particle. Cannot be the original entity. **Premium Only**.                                                                                        |         |
 | amount    | count, a  | The number of particles to create                                    | 10      |
