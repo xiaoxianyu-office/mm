@@ -3,8 +3,8 @@ Summons an Ender Crystal which shoots a beam towards the target.
 
 **Warning: This effect creates an Ender Crystal which can be exploded and cause block damage.**
 
-## Attributes
 
+## Attributes
 | Attribute | Alias  | Description                                       | Default Value |
 | --------- | ------ | ------------------------------------------------- | ------------- |
 | duration  | d      | The time (in ticks) that the effect is active     | 60            |
@@ -12,9 +12,12 @@ Summons an Ender Crystal which shoots a beam towards the target.
 
 
 ## Examples
-
 ```yaml
 EnderBeamSkill:
   Skills:
   - effect:enderbeam{d=100;y=2} @target
 ```
+
+
+## Aliases
+- [x] effect:enderbeam
