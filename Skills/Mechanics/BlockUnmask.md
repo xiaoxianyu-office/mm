@@ -9,11 +9,11 @@ The blockunmask effect is used to revert blockchanges made by the blockmask effe
 | shape     | s         | The shape of the effect. `Sphere`/`Cube`                             | SPHERE  |
 
 
-
 ## Examples
 Will forcibly reverse all effects created by the blockmask effect in the specified radius.
-```
-- effect:blockunmask{r=30}
+```yaml
+  Skills:
+  - effect:blockunmask{r=30}
 ```
 
 
