@@ -5,18 +5,12 @@ A list of particle types can be found **[here](/skills/effects/particles/types)*
 
 [All of the spigot particle effects listed in the javadocs should be acceptable as well.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
 
-Added in 4.12 (Premium Only!):
-* Added special type particle=mob on all particle effects
-* You can then specify a MythicMob using mob=\[type\]
-* This is a hacky way for you to use mobs as "particles" in effects using no-tick ArmorStands wearing models or using font characters. You can use things other than ArmorStands if you want, but we don't recommend it for performance.
 
 ## Attributes
-
 ### General Attributes
-
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| particle  | p         | The particle type to use. See list **[here](/skills/effects/particles/types)**.                             | reddust |
+| particle  | p         | The [particle type] to use.                                          | reddust |
 | material  | m         | Block or Item to use with block_crack or item_crack respectively     |
 | mob       | m, t      | The entity to spawn as the particle. Cannot be the original entity. **Premium Only**.                                                                                        |         |
 | amount    | count, a  | The number of particles to create                                    | 10      |
@@ -38,17 +32,15 @@ Added in 4.12 (Premium Only!):
 | fixedpitch| pitch     | Sets the pitch of the effect                                         | -1111   |
 
 #### Particle Colors
-
 As of MythicMobs version 2.3, some particles effects (mobSpell, mobSpellAmbient, and reddust) can be colored by using an additional “color=hexcode” argument. Hexcodes for coloring particles can be found here: [Hex Colors](http://www.color-hex.com/) From MM Version 2.5.0+ and Minecraft version 1.10 onwards, fallingdust also may use the color option.
 ```yaml
   - effect:particles{p=reddust;color=#FF00FF}
 ```
-#### Mob-Type Particles \[**Premium Only**\]
 
+#### Mob-Type Particles \[**Premium Only**\]
 This particle type will replace the spawned particle with the selected entity. The entity will act as a normal one, being able to attack, be hit, activate skills and so on. The entity will have no parent/owner relationship with the caster.
 
 ### Entity-Only Attributes
-
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | useEyeLocation | uel  | (true/false) Whether to base the particles on the entity's eyes      | false   |
@@ -56,11 +48,11 @@ This particle type will replace the spawned particle with the selected entity. T
 | sideOffset| soffset, sso | The side-offset from the targeted entity,doesn'n work when set directional to true | 0 |
 
 ### Dust_color_transition-Specific Attributes
-
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | color1    |           | The color the particles starts as                                    |         |
 | color2    |           | The color the particles transitions to                               |         |
+
 
 ## Examples
 ```yaml
@@ -86,3 +78,7 @@ This particle type will replace the spawned particle with the selected entity. T
 - [x] e:particles
 - [x] e:particle
 - [x] e:p
+
+
+<!-- LINKS -->
+[particle type]: /skills/effects/particles/types
