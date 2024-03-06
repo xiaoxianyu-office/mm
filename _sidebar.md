@@ -67,6 +67,7 @@
     * [Attribute Operations](Items/Attributes#operations)
     * [Stats Modifiers](Stats#modifiers)
   * [Particles Types](skills/effects/particles/types)
+  * [Audience](/Skills/Audience)
 
 ##### [Examples](examples/Common-Examples)
 ##### [Useful Tips](/UsefulTips)
