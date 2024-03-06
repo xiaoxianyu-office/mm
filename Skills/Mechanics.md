@@ -37,6 +37,7 @@ are able to target locations as well.
 | [BarCreate][]             | Creates a custom boss bar on the casting mob                                             |
 | [BarRemove][]             | Removes a custom boss bar on the casting mob                                             |
 | [BarSet][]                | Modifies a custom boss bar on the casting mob                                            |
+| [Blackscreen][]           | Blacks out the target's screen for the duration                             |
 | [BlockDestabilize][]      | Causes the targeted blocks to fall, as if affected by gravity                                                          |
 | [BlockPhysics][]          | Triggers a block physics update at the target location                                          |
 | [BoneMeal][]              | Applies a bone meal effect to the target blocks                                          |
@@ -102,6 +103,8 @@ are able to target locations as well.
 | [MountMe][]               | Forces the targeted entity to mount the caster                                           |
 | [MountTarget][]           | Mounts the target                                                                        |
 | [Oxygen][]                | Gives oxygen to a player target                                                          |
+| [Particle][]              | Creates particle effects at the target                                      |
+| [Atom][]                  | Creates some particles in the shape of an atom                              |
 | [PickUpItem][]            | Pick up the targeted item                                                                |
 | [PlayBlockBreakSound][]   | Plays a block breaking sound                                                             |
 | [PlayBlockFallSound][]    | Plays a block falling sound                                                              |
@@ -326,6 +329,7 @@ but not yet ready for use.
   [BarCreate]: /skills/mechanics/barcreate
   [BarSet]: /skills/mechanics/barset
   [BarRemove]: /skills/mechanics/barremove
+  [Blackscreen]: /skills/mechanics/Blackscreen
   [BlockDestabilize]: /skills/mechanics/blockdestabilize
   [BlockPhysics]: /skills/mechanics/blockphysics
   [BoneMeal]: /skills/mechanics/bonemeal
@@ -392,6 +396,8 @@ but not yet ready for use.
   [MountMe]: /skills/mechanics/mountme
   [MountTarget]: /skills/mechanics/mounttarget
   [Oxygen]: /skills/mechanics/oxygen
+  [Particle]: /skills/mechanics/Particle
+  [Atom]: /skills/mechanics/Atom
   [PickUpItem]: /skills/mechanics/pickupitem
   [PlayBlockBreakSound]: skills/mechanics/PlayBlockBreakSound
   [PlayBlockFallSound]: skills/mechanics/PlayBlockFallSound
