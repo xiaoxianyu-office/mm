@@ -1,14 +1,17 @@
 ## Description
 Causes the player's screen to black out.  
 
-> This creates an aura called `#blackScreen`, with an `interval` of 10, a maximum of 1 `stack` and the ability to refresh its original if an aura of the same name is applied again
-
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | duration  | d         | The duration of the effect                                           |         |
-| cancel    | c         | Whether the effect should be cancelled instead                       |
+| cancel    | c         | Whether the effect should be cancelled instead                       |         |
+> This mechanic inherits every attribute of the [Aura] mechanic  
+>> - The `auraname` attribute is **set** at `#blackScreen`
+>> - The `maxStacks` attribute is **set** at `1`  
+>> - The `refreshDuration` attribute is **set** at `true`  
+>> - The `interval` attribute is **set** at `10`  
 
 
 ## Examples
@@ -23,3 +26,7 @@ BlackScreen:
 ## Aliases
 - [x] effect:blackScreen
 - [x] e:blackScreen
+
+
+<!-- LINKS -->
+[aura]: /skills/mechanics/aura
