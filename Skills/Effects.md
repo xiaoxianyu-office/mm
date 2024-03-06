@@ -7,6 +7,9 @@ Most effects are able to target both Entities and Locations. You control
 what your effect targets using a [Targeter][].
 
 
+# THIS PAGE IS CURRENTLY BEING MOVED OVER TO THE MECHANICS ONE, SOME LINKS MAY BECOME TEMPORARILY BROKEN DURING THIS PROCESS
+
+
 ## Syntax
 A lot of effects don't have any options. To call them, you just call the
 skill **effect:name**, for example:
@@ -98,10 +101,10 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
 
   [skill mechanic]: /skills/mechanics/
   [Targeter]: /skills/targeters/
-  [Atom]:  /skills/effects/atom
-  [BlackScreen]: /skills/effects/blackscreen
-  [BlockMask]: /skills/effects/blockmask
-  [BlockUnmask]: /skills/effects/blockunmask
+  [Atom]:  /skills/mechanics/atom
+  [BlackScreen]: /skills/mechanics/blackscreen
+  [BlockMask]: /skills/mechanics/blockmask
+  [BlockUnmask]: /skills/mechanics/blockunmask
   [BlockWave]: /skills/effects/blockwave
   [BloodyScreen]: /skills/effects/bloodyscreen
   [Ender]: /skills/effects/ender
@@ -114,7 +117,7 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
   [GuardianBeam]: /effects/guardianbeam
   [ItemSpray]: /skills/effects/itemspray
   [Lightning]: /skills/effects/lightning
-  [Particles]: /skills/effects/particles
+  [Particles]: /skills/mechanics/particle
   [ParticleBox]: /skills/effects/particlebox
   [ParticleEquation]: /skills/effects/particleequation
   [ParticleLine]: /skills/effects/particleline
@@ -133,7 +136,7 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
   [StopSound]: /skills/effects/stopsound
   [ThunderLevel]: /skills/effects/thunderlevel
   [TotemOfUndying]: /skills/effects/totemOfUndying
-  [Atom]: /skills/effects/atom
+  [Atom]: /skills/mechanics/atom
   [ParticleVortex]: /skills/effects/particlevortex
   [DNA]: /skills/effects/dna
   [PlayAnimation]: /skills/effects/playanimation
