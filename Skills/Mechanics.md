@@ -37,8 +37,10 @@ are able to target locations as well.
 | [BarCreate][]             | Creates a custom boss bar on the casting mob                                             |
 | [BarRemove][]             | Removes a custom boss bar on the casting mob                                             |
 | [BarSet][]                | Modifies a custom boss bar on the casting mob                                            |
-| [Blackscreen][]           | Blacks out the target's screen for the duration                             |
+| [BlackScreen][]           | Blacks out the target's screen for the duration                             |
 | [BlockDestabilize][]      | Causes the targeted blocks to fall, as if affected by gravity                                                          |
+| [BlockMask][]             | Temporarily masks a block as a different block                              |
+| [BlockUnmask][]           | Unmasks blocks that have been masked                                        |
 | [BlockPhysics][]          | Triggers a block physics update at the target location                                          |
 | [BoneMeal][]              | Applies a bone meal effect to the target blocks                                          |
 | [BossBorder][]            | Creates an inescapable border around the mob                                |
@@ -331,6 +333,8 @@ but not yet ready for use.
   [BarRemove]: /skills/mechanics/barremove
   [Blackscreen]: /skills/mechanics/Blackscreen
   [BlockDestabilize]: /skills/mechanics/blockdestabilize
+  [BlockMask]: /skills/mechanics/BlockMask
+  [BlockUnmask]: /skills/mechanics/BlockUnmask
   [BlockPhysics]: /skills/mechanics/blockphysics
   [BoneMeal]: /skills/mechanics/bonemeal
   [BossBorder]: /skills/mechanics/bossborder
