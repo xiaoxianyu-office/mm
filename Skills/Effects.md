@@ -105,10 +105,10 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
   [BlackScreen]: /skills/mechanics/blackscreen
   [BlockMask]: /skills/mechanics/blockmask
   [BlockUnmask]: /skills/mechanics/blockunmask
-  [BlockWave]: /skills/effects/blockwave
-  [BloodyScreen]: /skills/effects/bloodyscreen
-  [Ender]: /skills/effects/ender
-  [EnderBeam]: /skills/effects/enderbeam
+  [BlockWave]: /skills/mechanics/blockwave
+  [BloodyScreen]: /skills/mechanics/bloodyscreen
+  [Ender]: /skills/mechanics/ender
+  [EnderBeam]: /skills/mechanics/enderbeam
   [Explosion]: /skills/effects/explosion
   [Firework]: /skills/effects/firework
   [Flames]: /skills/effects/flames
