@@ -188,7 +188,6 @@ The following are only some of the placeholders that can have a `trigger` scope,
 | <trigger.item.model> | Returns the model of the item the trigger is holding                                            |
 
 ## Misc Placeholders
-
 |    **Placeholder**          | **Function**                                                            |
 |-----------------------------|-------------------------------------------------------------------------|
 | <drop.amount>               | Returns the amount dropped while used in specific drop types            |
@@ -199,7 +198,6 @@ The following are only some of the placeholders that can have a `trigger` scope,
 
 
 ## Item Placeholders
-
 | **Placeholder**             | **Function**                                                            |
 |-----------------------------|-------------------------------------------------------------------------|
 | <item.amount>               | Returns the amount of the item that triggered the skill                 |
@@ -208,7 +206,6 @@ The following are only some of the placeholders that can have a `trigger` scope,
 | <mythicitem.[item].display> | Returns the display name of the specified mythic item                   |
 
 ## Score Placeholders
-
 | **Placeholder**             | **Function**                                                            |
 |-----------------------------|-------------------------------------------------------------------------|
 | <caster.score.objective>    | Returns the score of the caster from "objective"                        |
@@ -217,6 +214,19 @@ The following are only some of the placeholders that can have a `trigger` scope,
 | <global.score.objective>    | Returns the score of fake player: \_\_GLOBAL\_\_ score from "objective" |
 | <score.objective.player>    | Returns the score of the defined player from "objective"                |
 | <score.objective.dummyname> | Returns the score of "dummyname" (fake player) from "objective"         |
+
+
+# Placeholder Attributes
+Some placeholders can use a set of attributes to further define the output they will give
+
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| rounding  | round, r  | The rounding of the returned float value                             | 2       |
+
+```yaml
+  Skills:
+  - message{m="<target.hp{round=2}>"} @self
+```
 
 
 # PlaceholderAPI Integration
@@ -258,6 +268,7 @@ TestRandomPlaceholder:
 - green
 - blue
 ```
+
 
 # Examples
 **This will make a mob send a teal message to all players in a radius of 20 blocks around in itself, stating what entity killed it in green.**
