@@ -42,6 +42,8 @@ are able to target locations as well.
 | [BlockMask][]             | Temporarily masks a block as a different block                              |
 | [BlockUnmask][]           | Unmasks blocks that have been masked                                        |
 | [BlockPhysics][]          | Triggers a block physics update at the target location                                          |
+| [BlockWave][]             | Creates a wave of blocks at the target location                             |
+| [BloodyScreen][]          | Makes the target's screen glow red                                          |
 | [BoneMeal][]              | Applies a bone meal effect to the target blocks                                          |
 | [BossBorder][]            | Creates an inescapable border around the mob                                |
 | [BreakBlock][]            | Breaks the block at the target location                                                  |
@@ -70,6 +72,8 @@ are able to target locations as well.
 | [Doppleganger][]          | Copies the appearance of the target player                                               |
 | [DropItem][]              | Drops an item or droptable at the target location                                        |
 | [EjectPassenger][]        | Ejects anything riding the caster                                                        |
+| [Ender][]                 | Causes the "Ender" effect                                                   |
+| [EnderBeam][]             | Creates a EnderCrystal's beam effect to the target                          |
 | [Equip][]                 | Causes the casting mob to equip an item                                                  |
 | [Explosion][]             | Causes an explosion                                                                      |
 | [Extinguish][]            | Removes fire ticks from the target entity                                                |
@@ -208,14 +212,6 @@ are able to target locations as well.
 | [WolfSit][]               | Forces a targeted wolf to sit.                                              |
 
 
-## Effect Mechanics
-
-Effects are mechanics that add special effects to your skills. They have
-their own page!
-
-[View the list of Effect Mechanics by clicking here][]
-
-
 ## Meta Mechanics
 
 These skill mechanics have special advanced functions, and most are used
@@ -336,6 +332,8 @@ but not yet ready for use.
   [BlockMask]: /skills/mechanics/BlockMask
   [BlockUnmask]: /skills/mechanics/BlockUnmask
   [BlockPhysics]: /skills/mechanics/blockphysics
+  [BlockWave]: /skills/mechanics/BlockWave
+  [BloodyScreen]: /skills/mechanics/BloodyScreen
   [BoneMeal]: /skills/mechanics/bonemeal
   [BossBorder]: /skills/mechanics/bossborder
   [BreakBlock]: /skills/mechanics/breakblock
@@ -364,6 +362,8 @@ but not yet ready for use.
   [Doppleganger]: /skills/mechanics/doppleganger
   [DropItem]: /skills/mechanics/dropitem
   [EjectPassenger]: /skills/mechanics/ejectpassenger
+  [Ender]: /skills/mechanics/Ender
+  [EnderBeam]: /skills/mechanics/EnderBeam
   [Equip]: /skills/mechanics/equip
   [Explosion]: /skills/mechanics/explosion
   [Extinguish]: /skills/mechanics/extinguish
