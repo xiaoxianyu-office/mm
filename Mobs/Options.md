@@ -768,7 +768,7 @@ Negative values are ignored, and the time it takes remains the creeper's default
 Defaults to `-1`.  
 ```yaml
   Options:
-    ExplosionRadius: 60
+    FuseTicks: 60
 ```
 
 #### SuperCharged
