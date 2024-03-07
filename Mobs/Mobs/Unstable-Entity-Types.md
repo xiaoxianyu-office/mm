@@ -47,7 +47,7 @@ Can lay eggs and is hunted by other animals.
 For the "egg problem", use the [Jockey Option](Mobs/Options#jockey).  
 
 ### COW
-Can me milked.  
+Can be milked.  
 
 ### DROWNED
 By default, it does not attack its target in the day if they are not in a water block. A [custom ai](Mobs/Custom-AI) must be set up in order to remove this behavior
