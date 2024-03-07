@@ -16,7 +16,7 @@ Sets the base value of the targeted entity's [attribute][]
 ExampleMob:
   Type: ZOMBIE
   Skills:
-  - attribute{attribute=GENERICK_LUCK;a=2;duration=1200} @trigger ~onDeath
+  - attribute{attribute=GENERIC_LUCK;a=2;duration=1200} @trigger ~onDeath
 ```
 
 
