@@ -16,7 +16,7 @@ Adds an attribute modifier to the attributable target
 ExampleMob:
   Type: ZOMBIE
   Skills:
-  - attributeModifier{attribute=GENERICK_LUCK;a=2;dur=1200;op=ADD_NUMBER} @trigger ~onDeath
+  - attributeModifier{attribute=GENERIC_LUCK;a=2;dur=1200;op=ADD_NUMBER} @trigger ~onDeath
 ```
 
 <!-- LINKS -->
