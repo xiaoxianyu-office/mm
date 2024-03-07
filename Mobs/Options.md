@@ -34,7 +34,7 @@ Options:
 -->
 
 #### VisibleByDefault
-Sets whether the mob is visible by default when the spawns or when the mob gets loaded.
+Sets whether the mob is visible by default when the mobs spawns or when the mob gets loaded.
 Defaults to `true`.
 ```yml
   Options:
