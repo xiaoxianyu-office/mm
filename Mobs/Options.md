@@ -33,6 +33,14 @@ Options:
       * Defaults to vanilla attack speed for the respective mobs. (Doesn't do anything.)
 -->
 
+#### VisibleByDefault
+Sets whether the mob is visible by default when the spawns or when the mob gets loaded.
+Defaults to `true`.
+```yml
+  Options:
+    VisibleByDefault: true
+```
+
 #### Invisible
 Sets the permanent invisibility effect on the mob; no need to apply invisibility potion with `~onSpawn` trigger.
 Defaults to `false`.
