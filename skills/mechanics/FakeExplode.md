@@ -10,7 +10,7 @@ Creates an explosion effect at the specified target. Will play the sound and the
 ```yaml
 ExplosionSkill:
   Skills:
-  - effect:explosion @self
+  - fakeexplode @self
 ```
 
 ## Aliases
