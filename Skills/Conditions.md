@@ -141,6 +141,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [Dimension](/skills/conditions/dimension)                                     | Location | If the target location is within a certain dimension                                          |
 | [DirectionVelocity](/skills/conditions/directionalvelocity)                   | Entity | If the target has a velocity matching the given parameters                                    |
 | [Distance](/skills/conditions/distance)                                       | Compare  | Whether the distance between the caster and target is within the given range                |
+| [DistanceFromPin](/skills/conditions/DistanceFromPin)                         | Location | Checks if the target is within a certain distance of a specified pin                          |
 | [DistanceFromSpawn](/skills/conditions/distancefromspawn)                     | Location | Whether the distance from the world's spawn point to the target is within the given range   |
 | [DistanceFromTrackedLocation](/skills/conditions/distancefromtrackedlocation) | Location | Whether the distance from the tracked location to the target is within the given range      |
 | [Dusk](/skills/conditions/dusk)                                               | Location | If the time is dusk, from 14000 to 18000 in-game time.                                      |
