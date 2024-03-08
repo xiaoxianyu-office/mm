@@ -124,6 +124,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [BlockType](/skills/conditions/blocktype)                                     | Location | Tests the material type present at the target location                                    |
 | [BlockTypeInRadius](/skills/conditions/BlockTypeInRadius)                     | Location | Checks against the amount of specified blocks in a radius around the target location   |
 | [Blocking](/skills/conditions/blocking)                                       | Entity   | Tests if the targeted player is blocking with a shield                                       |
+| [BoundingBoxesOverlap](/skills/conditions/BoundingBoxesOverlap)               | Compare  | Checks if the caster's BoundingBox overlaps with the target's                                 |
 | [BowTension](/skills/conditions/bowtension)                                   | Meta     | Checks the bow tension of when an entity shoots from a bow                                 |
 | [Burning](/skills/conditions/burning)                                         | Entity   | Whether or not the target entity is on fire                                                |
 | [Chance](skills/conditions/chance)                                            | Meta     | The chance that the metaskill has to be executed                                           |
