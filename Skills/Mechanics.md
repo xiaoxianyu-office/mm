@@ -279,7 +279,7 @@ The following attributes are applicable to all mechanics.
 | repeat    |           | How many times the mechanic should be repeated                       | 0       |
 | repeatInterval | repeatI | How many ticks must elapse between repetitions                    | 0       |
 | targetInterval | targetI | How many ticks must elapse between target selection               | 0       |
-| origin **[PREMIUM]** ||Change the origin to whatever targeter is supplied. `origin=@Forward{f=10}` |   |
+| origin **[PREMIUM]** || Change the origin to whatever targeter is supplied. Does not work if more than one target is parsed. `origin=@Forward{f=10}` |   |
 | forcesync | sync      | Forces the execution type to be SYNC                                 | false   |
 | power     |           | [Power](/mobs/Power) multiplier                                      | 1       |
 | fromorigin | fo, sourceisorigin, castfromorigin | Whether to cast the mechanic from origin   | false   |
