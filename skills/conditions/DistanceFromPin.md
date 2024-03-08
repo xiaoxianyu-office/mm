@@ -1,5 +1,5 @@
 ## Description
-Checks if the target is within a certain distance of a specified pin
+Checks if the target is within a certain distance of a specified [pin]
 
 
 ## Attributes
@@ -14,3 +14,7 @@ Checks if the target is within a certain distance of a specified pin
   Conditions:
   - distanceFromPin{pin=example_pin;d=>10} true
 ```
+
+
+<!-- LINKS -->
+[pin]: Pins
