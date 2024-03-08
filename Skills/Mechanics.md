@@ -76,6 +76,7 @@ are able to target locations as well.
 | [EnderBeam][]             | Creates a EnderCrystal's beam effect to the target                          |
 | [Equip][]                 | Causes the casting mob to equip an item                                                  |
 | [Explosion][]             | Causes an explosion                                                                      |
+| [FakeExplosion][]         | Causes a fake explosion                                                                      |
 | [Extinguish][]            | Removes fire ticks from the target entity                                                |
 | [FawePaste][]             | Pastes a Schematic using FAWE (Fast Async World Edit)                                    |
 | [Feed][]                  | Feeds the target player                                                                  |
@@ -97,6 +98,7 @@ are able to target locations as well.
 | [Jump][]                  | Causes the caster to jump                                                                |
 | [Leap][]                  | Causes the caster to leap towards the target                                             |
 | [Lightning][]             | Strikes lightning at the target                                                          |
+| [FakeLightning][]         | Strikes a fake lightning at the target                                                          |
 | [Look][]                  | Causes the caster to look at the target                                                  |
 | [Lunge][]                 | Causes the caster to lunge forward at the target                                         |
 | [Message][]               | Sends a message to the target player(s)                                                  |
@@ -366,6 +368,7 @@ but not yet ready for use.
   [EnderBeam]: /skills/mechanics/EnderBeam
   [Equip]: /skills/mechanics/equip
   [Explosion]: /skills/mechanics/explosion
+  [FakeExplosion]: /skills/mechanics/FakeExplosion
   [Extinguish]: /skills/mechanics/extinguish
   [FawePaste]: /skills/mechanics/fawepaste
   [Feed]: /skills/mechanics/feed
@@ -388,6 +391,7 @@ but not yet ready for use.
   [Jump]: /skills/mechanics/jump
   [Leap]: /skills/mechanics/leap
   [Lightning]: /skills/mechanics/lightning
+  [FakeLightning]: /skills/mechanics/FakeLightning
   [Look]: /skills/mechanics/look
   [Lunge]: /skills/mechanics/lunge
   [Message]: /skills/mechanics/message
