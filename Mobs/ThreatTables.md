@@ -22,6 +22,7 @@ BigScaryBoss:
 ```
 
 You can also enable Threat Tables using the [Mob Options section](/Mobs/Options#usethreattable)
+
 That's it!
 
 ## Manipulating Threat Levels
