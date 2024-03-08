@@ -26,6 +26,7 @@ Summons mobs of the given type around the target.
 | copyThreatTable | ctt | Whether the summoned mobs should copy the parent's threat table. Requires threat tables to be enabled on the summoned mob to function.                                   | false   |
 | inheritThreatTable | itt     | Whether the summoned mobs should share a threat table with the parent. Requires threat tables to be enabled on the summoned mob to function.                          | false   |
 | inheritFaction | if   | Whether the summoned mobs should have the same faction as the parent | true    |
+| inheritdespawn | inheritdespawnoption, ido | Whether the summoned mob should inherit the caster's [Despawn Option](/Mobs/Options#despawn)                                                        | false   |
 | summonerIsOwner | sio | Whether to set the summoner as the owner of the mob.                 | true    |
 | summonerIsParent | sip| Whether to set the summoner as the parent of the mob.                | true    |
 
