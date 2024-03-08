@@ -109,14 +109,14 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
   [BloodyScreen]: /skills/mechanics/bloodyscreen
   [Ender]: /skills/mechanics/ender
   [EnderBeam]: /skills/mechanics/enderbeam
-  [Explosion]: /skills/effects/explosion
+  [Explosion]: /skills/mechanics/FakeExplosion
   [Firework]: /skills/effects/firework
   [Flames]: /skills/effects/flames
   [Geyser]: /skills/effects/geyser
   [Glow]: /skills/mechanics/glow
   [GuardianBeam]: /effects/guardianbeam
   [ItemSpray]: /skills/effects/itemspray
-  [Lightning]: /skills/effects/lightning
+  [Lightning]: /skills/mechanics/FakeLightning
   [Particles]: /skills/mechanics/particle
   [ParticleBox]: /skills/effects/particlebox
   [ParticleEquation]: /skills/effects/particleequation
