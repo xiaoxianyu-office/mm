@@ -20,6 +20,7 @@ Creates a particle orbital effect, where the particle will orbit around the targ
 | angularVelocityZ | avz, vz | Modifies the angular velocity around the Z axis                 | 0       |
 | rotate    |           | Whether the particles should rotate. Defaults to true if one of the angularvelocity attributes is greater than 0                                                   |         |
 | reversed  | reverse   | Whether the particles should orbit in the opposite direction         | false   |
+> This mechanic inherits every attribute of the [Particle](skills/mechanics/particle) mechanic
 
 
 ## Examples
