@@ -1,26 +1,32 @@
 ## Description 
 Creates a particle line helix effect at the targeted entity or location.
 
-A list of particle types can be found **[here](/skills/effects/particles/types)**. 
-
-[All of the spigot particle effects listed in the javadocs should be acceptable as well.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
 
 ## Attributes
-
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| StartYOffset  | syo         | The starting vertical offset                             | 0 |
-| TargetYOffset  | tyo         | The target vertical offset     | 0 |
-| DistanceBetween       | db      | The distance between particles                                                                                       | 1 |
-| FromOrigin    | fo  | Cast from origin?                                     | false |
-| HelixLength   | hl    | The length of the helix effect                                 | 2 |
-| HelixRadius   | hr        | The radius of the helix                               | 1 |
-| HelixRotation   | rot | The rotation of the helix                           | 0 |
-| maxdistance   | md        | The maximum distance for the helix              | 256 |
+| distanceBetween | db  | The distance between each point in the line                          | 0.25    |
+| startYOffset    | syo, ystartoffset, ys| Offset Y location of the starting point of the line | 0       |
+| targetYOffset   | tyo, ytargetoffset, yt | Offset Y location of the target point of the line | 0       |
+| fromOrigin      | fo  | Whether to draw the line from the [@origin] instead                  | false   |
+| helixlength     | hl  | The length of the helix effect                                       | 2       |
+| helixradius     | hr  | The radius of the helix effect                                       | 1       |
+| helixrotation   | rot | The rotation of the helix effect                                     | 0       |
+| maxdistance     | md  | The maximum distance the line can reach                              | 256     |
+> This mechanic inherits every attribute of the [Particle](skills/mechanics/particle) mechanic
+>> The particles are generated “per point” in this mechanic, so keeping `amount` low is recommended.
 
 
 ## Examples
 ```yaml
-- effect:particlelinehelix{Fo=true;db=0.4;hl=4;syo=1.8;p=scrape;hr=0.5;md=40} @targetlocation
+  Skills:
+  - particlelinehelix{Fo=true;db=0.4;hl=4;syo=1.8;p=scrape;hr=0.5;md=40} @targetlocation
 ```
+<details><summary>Resulting effect</summary>
 ![Image](https://i.imgur.com/b812UFl.png)
+</details>
+
+
+## Aliases
+- [x] effect:particlelinehelix
+- [x] particlehelixline
