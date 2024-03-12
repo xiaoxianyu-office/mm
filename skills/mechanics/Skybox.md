@@ -21,7 +21,7 @@ Makes every player in a 20 blocks radius see the "rainy" skybox
   - skybox{s=1} @PIR{r=20}
 ```
 
+
 ## Aliases
 - [x] effect:skybox
-- [x] skybox
 - [x] e:skybox
