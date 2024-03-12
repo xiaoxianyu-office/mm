@@ -125,7 +125,8 @@ are able to target locations as well.
 | [ParticleOrbital][]       | Draws orbiting particle effects around the target                                                                |
 | [ParticleRing][]          | Draws a ring of particles around the target                                                                |
 | [ParticleSphere][]        | Draws a sphere of particles around the target                                                               |
-| [ParticleTornado][]       | Draws a persistent "tornado" of particles at the target                                                                |
+| [ParticleTornado][]       | Draws a persistent "tornado" of particles at the target                     |
+| [Atom][]                  | Creates some particles in the shape of an atom                              |
 | [PickUpItem][]            | Pick up the targeted item                                                                |
 | [PlayBlockBreakSound][]   | Plays a block breaking sound                                                             |
 | [PlayBlockFallSound][]    | Plays a block falling sound                                                              |
