@@ -5,9 +5,9 @@ Creates a particle line helix effect at the targeted entity or location.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| distanceBetween | db  | The distance between each point in the line                          | 0.25    |
-| startYOffset    | syo, ystartoffset, ys| Offset Y location of the starting point of the line | 0       |
-| targetYOffset   | tyo, ytargetoffset, yt | Offset Y location of the target point of the line | 0       |
+| distanceBetween | db  | The distance between each point                                      | 0.25    |
+| startYOffset    | syo, ystartoffset, ys| Offset Y location of the starting point             | 0       |
+| targetYOffset   | tyo, ytargetoffset, yt | Offset Y location of the target point             | 0       |
 | fromOrigin      | fo  | Whether to draw the line from the [@origin] instead                  | false   |
 | helixlength     | hl  | The length of the helix effect                                       | 2       |
 | helixradius     | hr  | The radius of the helix effect                                       | 1       |
@@ -30,3 +30,7 @@ Creates a particle line helix effect at the targeted entity or location.
 ## Aliases
 - [x] effect:particlelinehelix
 - [x] particlehelixline
+
+
+<!-- LINKS -->
+[@origin]: skills/targeters/origin
