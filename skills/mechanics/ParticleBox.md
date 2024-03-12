@@ -1,19 +1,23 @@
 ## Description
-Creates a box of particles at the targeted entity or location. Extension of the [Particle Effect](/skills/effects/particles).
+Creates a box of particles at the targeted entity or location. 
 
-A list of particle types can be found [here](/skills/effects/particles/types).
 
 ## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| radius    | r         | The radius of the box to draw                                        | 5       |
+> This mechanic inherits every attribute of the [Particle](skills/mechanics/particle) mechanic
 
-This effect extends the general [Particle Effect](/skills/effects/particles) and uses all attributes from it.
-
-| Attribute | Alias | Description                   | Default Value |
-| --------- | ----- | ----------------------------- | ------------- |
-| radius    | r     | The radius of the box to draw | 5             |
 
 ## Examples
 ```yaml
 ParticleCube:
   Skills:
-  - effect:particlebox{particle=flame;amount=200;radius=5} @self
+  - particlebox{particle=flame;amount=200;radius=5} @self
 ```
+
+
+## Aliases
+- [x] effect:particlebox
+- [x] e:pb
+- [x] pb
