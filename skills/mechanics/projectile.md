@@ -251,10 +251,6 @@ Examples:
 | audience  |           | The [Audience][] of the bullet                                       | world   |
 
 
-[Audience]: /Skills/Effects#audience
-[billboard type]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Display.Billboard.html
-
-
 ## Examples
 
 This example shoots a fast-moving ball of ice that damages and slows the
@@ -283,3 +279,8 @@ hitConditions usage example:
 ```yaml
   - projectile{hitConditions=[  - isMonster true  - isFrozen false ]}
 ```
+
+
+<!-- LINKS -->
+[Audience]: Skills/Audience
+[billboard type]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Display.Billboard.html
