@@ -5,7 +5,6 @@ conditions. The MythicMob skill system is quite intuitive once you get used to i
 Skills are made up of several distinct parts:
 
 -   [Mechanics]
--   [Effects]
 -   [Targeters]
 -   [Triggers]
 -   [Conditions]
@@ -181,7 +180,6 @@ Once you get the hang of using individual base-skills, you can use Meta-Skills t
 
   [Crucible]: https://git.mythiccraft.io/mythiccraft/mythiccrucible
   [Mechanics]: /Skills/Mechanics/
-  [Effects]: /Skills/Effects/
   [Targeters]: /Skills/Targeters/
   [Triggers]: /Skills/Triggers/
   [Conditions]: /Skills/conditions/
