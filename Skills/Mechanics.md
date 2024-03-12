@@ -81,19 +81,24 @@ are able to target locations as well.
 | [FawePaste][]             | Pastes a Schematic using FAWE (Fast Async World Edit)                                    |
 | [Feed][]                  | Feeds the target player                                                                  |
 | [FillChest][]             | Fills a chest with items, or a droptable                                                 |
+| [Firework][]              | Creates a firework effect at the target                                             |
+| [Flames][]                | Creates the flames effect at the location of the targeter                               |
 | [Fly][]                   | Applies an [aura][] that allows the targeted player to fly                               |
 | [ForcePull][]             | Teleports the target to the caster                                                       |
 | [Freeze][]                | Freezes the target for the given number of ticks using the Powdered Snow freezing effect |
+| [Geyser][]                | Creates a "geyser" of water or lava                                                                   |
 | [Glow][]                  | Makes the target glow                                                                    |
 | [GiveItem][]              | Gives an item to the target                                                              |
 | [GiveItemFromSlot][]      | Gives an item to the target from the item in the given slot of caster                    |
 | [GoTo][]                  | Move toward the location of the targeter (entity or location)                            |
+| [GuardianBeam][]          | Draws a guardian beam between the origin and the target                                                                  |
 | [Heal][]                  | Heals the target                                                                         |
 | [HealPercent][]           | Heals the target for a percentage of its max-health                                      |
 | [Hide][]                  | Hides the caster from the targeted player(s) for a set duration.                         |
 | [Hit][]                   | Simulates a physical hit from the mob.                                                  |
 | [Hologram][]              | Summons a hologram to the targeted location                                              |
 | [Ignite][]                | Sets the target on fire                                                                  |
+| [ItemSpray][]             | Causes an explosion of temporary items at the target location                                                             |
 | [JSONMessage][]           | Sends a JSON-format message to the target player(s)                                      |
 | [Jump][]                  | Causes the caster to jump                                                                |
 | [Leap][]                  | Causes the caster to leap towards the target                                             |
@@ -111,8 +116,16 @@ are able to target locations as well.
 | [MountMe][]               | Forces the targeted entity to mount the caster                                           |
 | [MountTarget][]           | Mounts the target                                                                        |
 | [Oxygen][]                | Gives oxygen to a player target                                                          |
-| [Particle][]              | Creates particle effects at the target                                      |
-| [Atom][]                  | Creates some particles in the shape of an atom                              |
+| [Particle][]              | Creates particle effects around the target                                                                |
+| [ParticleBox][]           | Draws a box of particles around the target                                                                |
+| [ParticleEquation][]      | Generates particles based on equations                                                                |
+| [ParticleLine][]          | Draws a line of particle effects to the target                                                                |
+| [ParticleLineHelix][]     | Draws a line based helix effect                                                                |
+| [ParticleLineRing][]      | Draws a particle ring connected by lines                                                                |
+| [ParticleOrbital][]       | Draws orbiting particle effects around the target                                                                |
+| [ParticleRing][]          | Draws a ring of particles around the target                                                                |
+| [ParticleSphere][]        | Draws a sphere of particles around the target                                                               |
+| [ParticleTornado][]       | Draws a persistent "tornado" of particles at the target                                                                |
 | [PickUpItem][]            | Pick up the targeted item                                                                |
 | [PlayBlockBreakSound][]   | Plays a block breaking sound                                                             |
 | [PlayBlockFallSound][]    | Plays a block falling sound                                                              |
@@ -373,20 +386,25 @@ but not yet ready for use.
   [FawePaste]: /skills/mechanics/fawepaste
   [Feed]: /skills/mechanics/feed
   [FillChest]: /skills/mechanics/fillChest
+  [Firework]: /skills/mechanics/firework
+  [Flames]: /skills/mechanics/flames
   [Fly]: /skills/mechanics/fly
   [Freeze]: /skills/mechanics/freeze
   [ForcePull]: /skills/mechanics/forcepull
+  [Geyser]: /skills/mechanics/geyser
   [Glow]: /skills/mechanics/glow
   [GiveItem]: /skills/mechanics/giveitem
   [GiveItemFromSlot]: /skills/mechanics/giveitemfromslot
   [GiveItemFromTarget]: /skills/mechanics/giveitemfromtarget
   [GoTo]: /skills/mechanics/goto
+  [GuardianBeam]: /skills/mechanics/guardianbeam
   [Heal]: /skills/mechanics/heal
   [HealPercent]: /skills/mechanics/healpercent
   [Hide]: /skills/mechanics/hide
   [Hit]:  /skills/mechanics/hit 
   [Hologram]: /skills/mechanics/hologram
   [Ignite]: /skills/mechanics/ignite
+  [ItemSpray]: /skills/mechanics/itemspray
   [JSONMessage]: /skills/mechanics/jsonmessage
   [Jump]: /skills/mechanics/jump
   [Leap]: /skills/mechanics/leap
@@ -405,6 +423,15 @@ but not yet ready for use.
   [MountTarget]: /skills/mechanics/mounttarget
   [Oxygen]: /skills/mechanics/oxygen
   [Particle]: /skills/mechanics/Particle
+  [ParticleBox]: /skills/mechanics/ParticleBox
+  [ParticleEquation]: /skills/mechanics/ParticleEquation
+  [ParticleLine]: /skills/mechanics/ParticleLine
+  [ParticleLineHelix]: /skills/mechanics/ParticleLineHelix
+  [ParticleLineRing]: /skills/mechanics/ParticleLineRing
+  [ParticleOrbital]: /skills/mechanics/ParticleOrbital
+  [ParticleRing]: /skills/mechanics/ParticleRing
+  [ParticleSphere]: /skills/mechanics/ParticleSphere
+  [ParticleTornado]: /skills/mechanics/ParticleTornado
   [Atom]: /skills/mechanics/Atom
   [PickUpItem]: /skills/mechanics/pickupitem
   [PlayBlockBreakSound]: skills/mechanics/PlayBlockBreakSound
