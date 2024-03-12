@@ -1,5 +1,5 @@
 ## Description 
-Creates and orbiting Atom effect at the location.            
+Creates an orbiting Atom effect at the location.            
 
 
 ## Attributes
