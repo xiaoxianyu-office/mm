@@ -128,6 +128,7 @@ are able to target locations as well.
 | [ParticleTornado][]       | Draws a persistent "tornado" of particles at the target                     |
 | [Atom][]                  | Creates some particles in the shape of an atom                              |
 | [PickUpItem][]            | Pick up the targeted item                                                                |
+| [PlayAnimation][]         | Forces the entity to play an animation                                      |
 | [PlayBlockBreakSound][]   | Plays a block breaking sound                                                             |
 | [PlayBlockFallSound][]    | Plays a block falling sound                                                              |
 | [PlayBlockHitSound][]     | Plays a block hit sound                                                                  |
@@ -145,6 +146,7 @@ are able to target locations as well.
 | [RayTraceTo][]            | Executes a skill with the result of a raytrace to the target location                    |
 | [Rally][]                 | Causes other nearby mobs to attack the target                                            |
 | [RandomMessage][]         | Sends a random message to the target player                                              |
+| [Recoil][]                | Kicks the target's screen in order to simulate a recoil                     |
 | [Remount][]               | Remounts the mob the caster originally spawned riding, if it is still alive              |
 | [Remove][]                | Removes the target mob                                                                   |
 | [RemoveHeldItem][]        | Removes some of the item the target player is holding                                    |
@@ -198,7 +200,13 @@ are able to target locations as well.
 | [ShootShulkerBullet][]    | Shoots a shulker bullet at the target entity                                             |
 | [ShowEntity][]            | Shows the hidden caster to the targeted players                                          |
 | [Signal][]                | Sends a signal to a mob                                                                  |
+| [Skybox][]                | Alters the target player's skybox                                           |
+| [Smoke][]                 | Creates a puff of smoke                                                     |
+| [SmokeSwirl][]            | Creates a persistent "swirl" of smoke                                       |
+| [Sound][]                 | Plays a sound effect from both vanilla Minecraft and resource packs         |
+| [StopSound][]             | Stops a sound effect from playing                                           |
 | [Speak][]                 | Causes the mob to speak in chat, with options for speech bubbles                         |
+| [Spin][]                  | Causes the target to spin                                                   |
 | [Spring][]                | Creates a temporary spring of liquid at the target                                       |
 | [Stun][]                  | Stuns the target entity                                                                  |
 | [StopUsingItem][]         | Stops the targeted entity from using an item                                             |
@@ -219,8 +227,10 @@ are able to target locations as well.
 | [Time][]                  | Changes the time                                                                                |
 | [Threat][]                | Modifies the mob's threat towards the target                                             |
 | [Throw][]                 | Throws the target entity                                                                 |
+| [ThunderLevel][]          | Creates a client-side, per-player rainless storm                            |
 | [ToggleLever][]           | Toggles a lever at the target location                                                   |
 | [ToggleSitting][]         | Toggles the sitting state for cats, dogs, foxes, and parrots.               |
+| [TotemOfUndying][]        | Plays the effect of a player resurrecting                                   |
 | [TrackLocation][]         | Sets the mob's tracked location to the targeted location                    |
 | [UndoPaste][]             | Undoes a previously made paste                                              |
 | [Velocity][]              | Modifies the velocity of the target entity(s)                               |
@@ -435,6 +445,7 @@ but not yet ready for use.
   [ParticleTornado]: /skills/mechanics/ParticleTornado
   [Atom]: /skills/mechanics/Atom
   [PickUpItem]: /skills/mechanics/pickupitem
+  [PlayAnimation]: /skills/mechanics/PlayAnimation
   [PlayBlockBreakSound]: skills/mechanics/PlayBlockBreakSound
   [PlayBlockFallSound]: skills/mechanics/PlayBlockFallSound
   [PlayBlockHitSound]: skills/mechanics/PlayBlockHitSound
@@ -450,8 +461,7 @@ but not yet ready for use.
   [PushButton]: /skills/mechanics/pushbutton
   [Rally]: /skills/mechanics/rally
   [RandomMessage]: /skills/mechanics/randommessage
-  [RayTrace]: /skills/mechanics/raytrace
-  [RayTraceTo]: /skills/mechanics/raytraceto
+  [Recoil]: /skills/mechanics/Recoil
   [Remount]: /skills/mechanics/remount
   [Remove]: /skills/mechanics/remove
   [RemoveHeldItem]: /skills/mechanics/removehelditem
@@ -505,7 +515,13 @@ but not yet ready for use.
   [ShootShulkerBullet]: /skills/mechanics/shootshulkerbullet
   [ShowEntity]: /skills/mechanics/showentity
   [Signal]: /skills/mechanics/signal
+  [Skybox]: /skills/mechanics/Skybox
+  [Smoke]: /skills/mechanics/Smoke
+  [SmokeSwirl]: /skills/mechanics/SmokeSwirl
+  [Sound]: /skills/mechanics/Sound
+  [StopSound]: /skills/mechanics/StopSound
   [Speak]: /skills/mechanics/speak
+  [Spin]: /skills/mechanics/Spin
   [Spring]: /skills/mechanics/spring
   [StopUsingItem]: /skills/mechanics/stopusingitem
   [Stun]: /skills/mechanics/stun
@@ -525,15 +541,16 @@ but not yet ready for use.
   [TeleportTo]: /skills/mechanics/teleportto
   [Threat]: /skills/mechanics/threat
   [Throw]: /skills/mechanics/throw
+  [ThunderLevel]: /skills/mechanics/ThunderLevel
   [Time]: /skills/mechanics/time
   [ToggleLever]: /skills/mechanics/togglelever
   [ToggleSitting]: /skills/mechanics/togglesitting
+  [TotemOfUndying]: /skills/mechanics/TotemOfUndying
   [TrackLocation]: /skills/mechanics/tracklocation
   [UndoPaste]: /skills/mechanics/undopaste
   [Velocity]: /skills/mechanics/velocity
   [Weather]: /skills/mechanics/weather
   [WolfSit]: /skills/mechanics/wolfsit
-  [View the list of Effect Mechanics by clicking here]: /skills/effects/
   
   
   <!-- METAMECHANICS -->
@@ -562,6 +579,8 @@ but not yet ready for use.
   [Polygon]: /skills/mechanics/polygon
   [Projectile]: /skills/mechanics/projectile
   [ProjectileVelocity]: /skills/mechanics/projectilevelocity
+  [RayTrace]: /skills/mechanics/raytrace
+  [RayTraceTo]: /skills/mechanics/raytraceto
   [Shoot]: /skills/mechanics/shoot
   [Slash]: /skills/mechanics/slash
   [Volley]: /skills/mechanics/volley
