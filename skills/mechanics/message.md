@@ -14,7 +14,7 @@ codes](/databases/misc/colorcodes) and
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | message   | msg,m     | The message to send                                                  | None    |
-| audience  |           | the [Audience](Skills/Effects#audience) of the message               |         |
+| audience  |           | the [audience] of the message                                        |         |
 
 
 ## Examples
@@ -22,3 +22,7 @@ codes](/databases/misc/colorcodes) and
    Skills:
    - message{m="<caster.name>&f<&co> Hahaha! You will all die!"} @PlayersInRadius{r=30}
 ```
+
+
+<!-- LINKS -->
+[audience]: Skills/Audience
