@@ -1,3 +1,4 @@
+<!--
 Skill Effects (or effect mechanics) are a special type of mechanic
 specifically designed to create special effects. These are called just
 like any other [skill mechanic][] in your mob's Skill List, or you can
@@ -84,20 +85,6 @@ Of particular relevance is the `audience=@Targeter` attribute, that allows any e
 | [ThunderLevel][]     | Creates a rainless storm for players client side (per Player)         |
 | [TotemOfUndying][]   | Plays the effect of a player resurrecting                             |
 
-<!--
-### EffectLib Effects
-
-These effects require the plugin "EffectLib" to be installed to use.
-
-**Note: EffectLib was dropped in MM ver 4.11, so the below effects no longer work.**
-
-| Effect Mechanic     | Description                                           |
-|---------------------|-------------------------------------------------------|
-| [Atom][]            | Creates a representation of an atom around the target |
-| [Particle Vortex][] | Draws a "vortex" of particles around the target       |
-| [DNA][]             |                                                       |
-Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
--->
 
   [skill mechanic]: /skills/mechanics/
   [Targeter]: /skills/targeters/
@@ -140,3 +127,4 @@ Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
   [ParticleVortex]: /skills/effects/particlevortex
   [DNA]: /skills/effects/dna
   [PlayAnimation]: /skills/effects/playanimation
+-->
