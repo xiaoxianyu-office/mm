@@ -42,6 +42,7 @@ So, if a resource is on the wiki itself, please do use this method.
 [trigger]: Skills/Triggers
 [condition]: Skills/Conditions
 [origin]: Skills/Targeters/Origin
+[audience]: Skills/Audience
 
 [Paper-Only]: https://papermc.io/downloads/all
 [Premium-Only]: Premium-Features
