@@ -20,7 +20,7 @@ Holograms.
 | chatprefix| cp       | The prefix for the chat message                                       | &lt;caster.name&gt;&f&lt;&co&gt;  |
 | duration  | d, t      | The amount of time the hologram will be displayed for.               | MESSAGE LENGTH * 4  |
 | sendchatmessage | chatmessage, chat | Whether the message shows up in chat                   | true    |
-| audience  |           | The [Audience](/Skills/Effects#audience) of the mechanic             | tracked |
+| audience  |           | The [Audience] of the mechanic                                       | tracked |
   
 
 ## Examples
@@ -35,3 +35,7 @@ Holograms.
     chatprefix=<caster.name>&f<&co>;
     duration=200} @self ~onSpawn
 ```
+
+
+<!-- LINKS -->
+[audience]: Skills/Audience
