@@ -638,7 +638,7 @@ Mob:
 Mob:
   Type: armor_stand
   Pose:
-    Body: 0to360,0,0
+    LeftArm: 0to360,0,0
 ```
 ###### RightArm
 ```yml
