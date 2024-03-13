@@ -2,7 +2,7 @@ Basic Potion of Flight
 --------------
 * A simple potion with an enchantment glint that when consumed grants flight to the consumer for 1 minute.
 
-For info on how the "basicflypot" skill is used, check [here](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Consumable-Skills#drink-flight-potion-skill).
+For info on how the "basicflypot" skill is used, check [here](/examples/Consumable-Skills#drink-flight-potion-skill).
 
 ```yaml
 basicflypot:
