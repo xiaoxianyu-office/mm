@@ -15,6 +15,7 @@ So, if a resource is on the wiki itself, please do use this method.
 - [Targeter Wiki Page](Wiki-Editors-Resources/ExampleMechanic "Uses the same syntax as the Mechanic one")
 - [Condition Wiki Page](Wiki-Editors-Resources/ExampleMechanic "Uses the same syntax as the Mechanic one")
 
+## [Test Page](Wiki-Editors-Resources/Test-Page)
 
 ## Quick Copy-Pastes
 ```
