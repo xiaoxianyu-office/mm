@@ -87,9 +87,9 @@ are able to target locations as well.
 | [ForcePull][]             | Teleports the target to the caster                                                       |
 | [Freeze][]                | Freezes the target for the given number of ticks using the Powdered Snow freezing effect |
 | [Geyser][]                | Creates a "geyser" of water or lava                                                                   |
-| [Glow][]                  | Makes the target glow                                                                    |
 | [GiveItem][]              | Gives an item to the target                                                              |
 | [GiveItemFromSlot][]      | Gives an item to the target from the item in the given slot of caster                    |
+| [Glow][]                  | Makes the target glow                                                                    |
 | [GoTo][]                  | Move toward the location of the targeter (entity or location)                            |
 | [GuardianBeam][]          | Draws a guardian beam between the origin and the target                                                                  |
 | [Heal][]                  | Heals the target                                                                         |
@@ -187,6 +187,7 @@ are able to target locations as well.
 | [SetRotation][]           | Sets the rotation of the target                                                          |
 | [SetTarget][]             | Sets the caster's target                                                                 |
 | [SetTargetScore][]        | Sets the score of the target                                                             |
+| [SetTextDisplay][]        | Sets the text component of target Text Display entity                       |
 | [SetTongueTarget][]       | Sets the tongue target for a frog caster to the target entity                            |
 | [SetScore][]              | Sets the scoreboard value of a dummy player                                              |
 | [SetSpeed][]              | Sets the target entity's speed attribute                                                 |
@@ -502,6 +503,7 @@ but not yet ready for use.
   [SetRotation]: /skills/mechanics/setrotation
   [SetTarget]: /skills/mechanics/settarget
   [SetTargetScore]: /skills/mechanics/settargetscore
+  [SetTextDisplay]: /skills/mechanics/SetTextDisplay
   [SetTongueTarget]: /skills/mechanics/settonguetarget
   [SetScore]: /skills/mechanics/setscore
   [SetSpeed]: /skills/mechanics/setspeed
