@@ -9,6 +9,7 @@ This mechanic is also an [aura].
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | duration  | d         | The given duration                                                   | 0       |
+| permanent | perma     | Whether the entity should be hidden permanently, even across server restarts. This will make the mechanic ignore any [aura]-related option and the `duration` attribute      | false   | 
 
 > This mechanic inherits every attribute of the [Aura] mechanic  
 >> - The `auraname` attribute is **defaulted** at `#hiding`
@@ -35,6 +36,7 @@ CUSTOM_ITEM:
 
 ## Aliases
 - [x] hideFromPlayers
+- [x] hideFromPlayer
 
 
 <!-- LINKS -->
