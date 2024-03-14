@@ -259,7 +259,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [Score](/skills/conditions/score)                                             | Entity   | Checks a scoreboard value of the target entity                                           |
 | [ServerNmsVersion](/skills/conditions/servernmsversion)                       | Meta     | Checks if the server is running the specified minecraft NMS version.                          |
 | [ServerVersion](/skills/conditions/serverversion)                             | Meta     | Checks if the server is running the specified minecraft version.                              |
-| [Size](/skills/skills/conditions/Size)                                        | Entity   | Checks the size of the target entity                                                       |
+| [Size](/skills/conditions/Size)                                               | Entity   | Checks the size of the target entity                                                       |
 | [SkillOnCooldown](/skills/conditions/skilloncooldown)                         | Entity   | Checks if the given skill is in cooldown for the target                                       |
 | [SpawnReason](/skills/conditions/SpawnReason)                                 | Entity   | Checks against the spawn reason of the target                                          |
 | [Sprinting](/skills/conditions/Sprinting)                                     | Entity   | Checks if the target **Player** is sprinting                                                  |
