@@ -1,5 +1,5 @@
 ## Description
-Plays a sound from either the vanilla game or a resource pack at the targeted entity or location. A good list of sounds can be found [here](https://minecraft.wiki/w/Sounds.json#sound_events). Use the “sound event” column.
+Plays a sound from either the vanilla game or a resource pack at the targeted entity or location. An extensive list of sounds can be found [here](https://misode.github.io/sounds/). Using multiple sounds stacked together can give the impression of an entirely new sound.
 
 
 ## Attributes
