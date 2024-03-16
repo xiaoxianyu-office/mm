@@ -37,15 +37,15 @@ repositories {
 
 ## Dependencies
 
-#### Release Version is 5.3.5
-#### Dev Builds Version is 5.4.0-SNAPSHOT
+#### Release Version is 5.6.1
+#### Dev Builds Version is 5.6.2-SNAPSHOT
 
 ### Maven
 ```xml
 <dependency>
     <groupId>io.lumine</groupId>
     <artifactId>Mythic-Dist</artifactId>
-    <version>5.3.5</version>  
+    <version>5.6.1</version>  
     <scope>provided</scope>
 </dependency>
 ```
@@ -54,7 +54,7 @@ repositories {
 ```groovy
 dependencies {
     //...
-    compileOnly 'io.lumine:Mythic-Dist:5.3.5'
+    compileOnly 'io.lumine:Mythic-Dist:5.6.1'
 }
 ```
 
@@ -62,7 +62,7 @@ dependencies {
 ```groovy
 dependencies {
     // ...
-    compileOnly("io.lumine:Mythic-Dist:5.3.5")
+    compileOnly("io.lumine:Mythic-Dist:5.6.1")
 }
 ```
 --------------------------
