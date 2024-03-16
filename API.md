@@ -82,13 +82,22 @@ if(mob != null){
 }
 ```
 
-### Check if a bukkit entity is a MythicMob
+### Check if a Bukkit Entity is a MythicMob
 ```java
 Entity bukkitEntity = ...;
 boolean isMythicMob = MythicBukkit.inst().getMobManager().isMythicMob(bukkitEntity);
 if(isMythicMob){
     // ...             
 }
+```
+
+### Get ActiveMob instance from Bukkit Entity
+```java
+Entity bukkitEntity = ...;
+Optional<ActiveMob> optActiveMob = MythicBukkit.inst().getMobManager().getActiveMob(bukkitEntity.getUniqueId());
+optActiveMob.ifPresent(activeMob -> {
+    //...
+}).orElse(() -> /* ... */);
 ```
 
 ### Get a collection of ActiveMobs using a predicate
