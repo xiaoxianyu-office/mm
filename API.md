@@ -8,7 +8,7 @@ JavaDocs for Mythic API can be found here:
 -------------------------
 ## Repositories
 
-### Maven
+#### Maven
 ```xml
 <repository>
     <id>nexus</id>
@@ -16,8 +16,7 @@ JavaDocs for Mythic API can be found here:
     <url>https://mvn.lumine.io/repository/maven-public/</url>
 </repository>
 ```
-
-### Gradle (Groovy)
+#### Gradle (Groovy)
 ```groovy
 repositories {
     // ...
@@ -25,9 +24,8 @@ repositories {
     maven { url 'https://mvn.lumine.io/repository/maven-public/' }
 }
 ```
-
-### Gradle (Kotlin)
-```groovy
+#### Gradle (Kotlin)
+```kotlin
 repositories {
     // ...
     mavenCentral()
@@ -36,78 +34,33 @@ repositories {
 ```
 
 ## Dependencies
-
-#### Release Version is 5.3.5
-#### Dev Builds Version is 5.4.0-SNAPSHOT
-
-### Maven
+#### Maven
 ```xml
 <dependency>
     <groupId>io.lumine</groupId>
     <artifactId>Mythic-Dist</artifactId>
-    <version>5.3.5</version>  
+    <version>5.6.1</version>  
     <scope>provided</scope>
 </dependency>
 ```
-
-### Gradle (Groovy)
+#### Gradle (Groovy)
 ```groovy
 dependencies {
     //...
-    compileOnly 'io.lumine:Mythic-Dist:5.3.5'
+    compileOnly 'io.lumine:Mythic-Dist:5.6.1'
 }
 ```
-
-### Gradle (Kotlin)
-```groovy
+#### Gradle (Kotlin)
+```kotlin
 dependencies {
     // ...
-    compileOnly("io.lumine:Mythic-Dist:5.3.5")
+    compileOnly("io.lumine:Mythic-Dist:5.6.1")
 }
 ```
 --------------------------
 
 Examples
 --------
-### 1) Spawning a MythicMob
-
-```java
-    MythicMob mob = MythicBukkit.inst().getMobManager().getMythicMob("SkeletalKnight").orElse(null);
-    Location spawnLocation = player.getLocation();
-    if(mob != null){
-        // spawns mob            
-        ActiveMob knight = mob.spawn(BukkitAdapter.adapt(spawnLocation),1);
-        
-        // get mob as bukkit entity
-        Entity entity = knight.getEntity().getBukkitEntity();
-    }
-```
-
-### 2) Check BukkitEntity for MythicMob
-
-```java
-    ActiveMob mythicMob = MythicBukkit.inst().getMobManager().getActiveMob(bukkitEntity.getUniqueId()).orElse(null);
-    if(mythicMob != null && mythicMob.getMobType().equals("SkeletalKnight")){
-    // do something with mob             
-    }
-```
-```java
-    ActiveMob mythicMob = MythicBukkit.inst().getMobManager().getActiveMob(bukkitEntity.getUniqueId()).orElse(null);
-    if(mythicMob != null && mythicMob.getType().getInternalName().equals("SkeletalKnight")){
-    // do something with mob             
-    }
-```
-
-### 3) Get a collection of ActiveMob with a filter/predicate
-```java
-  Collection<ActiveMob> activeMobs = MythicBukkit.inst().getMobManager().getActiveMobs(am -> am.getMobType().equals("SkeletalKnight"));
-
-  //or use the Streams api
-  Collection<ActiveMob> activeMobs = MythicBukkit.inst().getMobManager().getActiveMobs();
-  Collection<ActiveMob> filteredMobs = activeMobs.stream().filter(activeMob -> activeMob.getMobType().equals("SkeletalKnight")).toList();
-```
-
-
 The MythicMobs API contains numerous events and helper classes to help
 you utilize our mobs, items, and skill systems.
 
@@ -115,12 +68,39 @@ Some examples to help you get started can be found here:
 
 1.  [MythicMobs API Examples Repo](https://github.com/xikage/MythicMobs-API-Examples)
 
+### Spawning a MythicMob
+
+```java
+MythicMob mob = MythicBukkit.inst().getMobManager().getMythicMob("SkeletalKnight").orElse(null);
+Location spawnLocation = player.getLocation();
+if(mob != null){
+    // spawns mob            
+    ActiveMob knight = mob.spawn(BukkitAdapter.adapt(spawnLocation),1);
+    
+    // get mob as bukkit entity
+    Entity entity = knight.getEntity().getBukkitEntity();
+}
+```
+
+### Check if a bukkit entity is a MythicMob
+```java
+Entity bukkitEntity = ...;
+boolean isMythicMob = MythicBukkit.inst().getMobManager().isMythicMob(bukkitEntity);
+if(isMythicMob){
+    // ...             
+}
+```
+
+### Get a collection of ActiveMobs using a predicate
+```java
+Collection<ActiveMob> activeMobs = MythicBukkit.inst().getMobManager().getActiveMobs(am -> am.getMobType().equals("SkeletalKnight"));
+```
+<!--
 Events
 ------
 
 |                                                                  |                                                |
 |------------------------------------------------------------------|------------------------------------------------|
-| &lt; 100% 30% &gt;                                               |                                                |
 | Event                                                            | Description                                    |
 | [MythicReloadedEvent](/api/events/MythicReloadedEvent)           | Called when the plugin is reloaded             |
 | [MythicMobSpawnEvent](/api/events/MythicMobSpawnEvent)           | Called when a MythicMob spawns                 |
@@ -131,3 +111,4 @@ Events
 | [MythicDropLoadEvent](/api/events/MythicDropLoadEvent)           | Called when a custom drop is loaded            |
 | [MythicMechanicLoadEvent](/api/events/MythicMechanicLoadEvent)   | Called when a custom mechanic is loaded        |
 | [MythicTargeterLoadEvent](/api/events/MythicTargeterLoadEvent)   | Called when a custom targeter is loaded        |
+-->
