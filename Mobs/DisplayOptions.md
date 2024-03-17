@@ -81,6 +81,15 @@ cool_display:
     Billboard: FIXED
 ```
 
+#### TeleportDuration
+Set the teleport duration in ticks. Defaults to `0`.
+```yml
+cool_display:
+  Type: block_display
+  DisplayOptions:
+    Block: grass_block
+    TeleportDuration: 0
+```
 #### InterpolationDelay
 Set the delay before starting interpolation. Defaults to `0`.
 ```yml
