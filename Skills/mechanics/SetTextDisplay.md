@@ -5,7 +5,7 @@ Sets the text component of target Text Display entity
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| text      | t         | The new text to be set                                               |         |
+| text      | t         | The text to use. If not set, the mechanic will remove the text from the entity instead                                                                                        |         |
 
 
 ## Examples
