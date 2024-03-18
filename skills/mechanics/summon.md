@@ -15,6 +15,7 @@ Summons mobs of the given type around the target.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | type      | t, mob, m| The type of mob to summon. Can be a Mythic Mob type or a regular entity type                                                                 | SKELETON      |
+| onSummon  | onsummonskill, then | The [metaskill] to execute on the summoned mobs            |         |
 | amount    | a         | The number of mobs to summon.                                        | 1       |
 | level     | l         | The level of the mob being summoned                                  | 0       |
 | radius    | r, noise, n| The radius around the target within which the mobs will be summoned | 0       |
@@ -29,7 +30,6 @@ Summons mobs of the given type around the target.
 | inheritdespawn | inheritdespawnoption, ido | Whether the summoned mob should inherit the caster's [Despawn Option](/Mobs/Options#despawn)                                                        | false   |
 | summonerIsOwner | sio | Whether to set the summoner as the owner of the mob.                 | true    |
 | summonerIsParent | sip| Whether to set the summoner as the parent of the mob.                | true    |
-
   
 
 ## Examples
@@ -39,3 +39,7 @@ RaiseSkeletons:
   Skills:
   - summon{type=WITHER_SKELETON;amount=5;radius=4} @PIR{r=20}
 ```
+
+
+<!-- LINKS -->
+[metaskill]: /Skills/Metaskills
