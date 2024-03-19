@@ -1,4 +1,4 @@
-# [THIS PAGE HAS BEEB MOVED!](/Skills/Mechanics)
+# [THIS PAGE HAS BEEN MOVED!](/Skills/Mechanics)
 
 Effects mechanics are now part of the Mechanics wiki page!
 
