@@ -6,30 +6,21 @@ Can have a color specified.
 
 Can have an [audience].  
 
-> **[Glow
-Api](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)** is required for minecraft versions below 1.18
-
+> **[Glow API](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)** is required for minecraft version 1.16.
 
 ## Valid Colors
 
-|    COLORS    |
-|--------------|
-| BLACK        |
-| DARK_BLUE    |
-| DARK_GREEN   |
-| DARK_AQUA    |
-| DARK_RED     |
-| DARK_PURPLE  |
-| GOLD         |
-| GRAY         |
-| DARK_GRAY    |
-| BLUE         |
-| GREEN        |
-| AQUA         |
-| RED          |
-| LIGHT_PURPLE |
-| YELLOW       |
-| WHITE        |
+|    VALID     |   COLORS     |
+|:------------:|:------------:|
+| BLACK        | DARK_GRAY    |
+| DARK_BLUE    | BLUE         |
+| DARK_GREEN   | GREEN        |
+| DARK_AQUA    | AQUA         |
+| DARK_RED     | LIGHT_PURPLE |
+| DARK_PURPLE  | YELLOW       | 
+| GOLD         | WHITE        |
+| GRAY         |              |
+
 
 
 ## Attributes
@@ -39,11 +30,11 @@ Api](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)** is requir
 | duration  | d         | How long the effect will last                                        | 100     |
 | audience  |           | The [audience] of the glow effect                                    | nearby  |
 
-> This mechanic inherits every attribute of the [Aura] mechanic  
+> This mechanic inherits every attribute of the [Aura] mechanic 
 >> - The `auraname` attribute is **defaulted** at `#glowing`
->> - The `charges` attribute is **set** at `1`  
->> - The `maxStacks` attribute is **set** at `1`  
->> - The `mergeAll` attribute is **set** at `true`  
+>> - The `charges` attribute is **set** at `1` and cannot be modified.  
+>> - The `maxStacks` attribute is **set** at `1` and cannot be modified.  
+>> - The `mergeAll` attribute is **set** at `true` and cannot be modified.  
 
 ## Examples
 Makes the target glow red for 1000 ticks (50 seconds).
@@ -52,12 +43,10 @@ Makes the target glow red for 1000 ticks (50 seconds).
   - effect:glow{color=RED;duration=1000}
 ```
 
-
 ## Aliases
 - [x] effect:glow
 - [x] e:glow
 - [x] glow
-
 
 <!-- LINKS -->
 [audience]: Skills/Audience
