@@ -10,6 +10,28 @@ Can have an [audience].
 Api](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)** is required for minecraft versions below 1.18
 
 
+## Valid Colors
+
+|    COLORS    |
+|--------------|
+| BLACK        |
+| DARK_BLUE    |
+| DARK_GREEN   |
+| DARK_AQUA    |
+| DARK_RED     |
+| DARK_PURPLE  |
+| GOLD         |
+| GRAY         |
+| DARK_GRAY    |
+| BLUE         |
+| GREEN        |
+| AQUA         |
+| RED          |
+| LIGHT_PURPLE |
+| YELLOW       |
+| WHITE        |
+
+
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
@@ -39,5 +61,5 @@ Makes the target glow red for 1000 ticks (50 seconds).
 
 <!-- LINKS -->
 [audience]: Skills/Audience
-[color]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+[color]: #valid-colors
 [aura]: skills/mechanics/aura
