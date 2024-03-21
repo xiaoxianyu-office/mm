@@ -19,7 +19,7 @@ Can have an [audience].
 | DARK_RED     | LIGHT_PURPLE |
 | DARK_PURPLE  | YELLOW       | 
 | GOLD         | WHITE        |
-| GRAY         |              |
+| GRAY         | RED          |
 
 
 
