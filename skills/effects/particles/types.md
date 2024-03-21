@@ -34,16 +34,6 @@
 ```
 
 
-**block_marker-barrier**
----
-![barrier](https://imgur.com/jvdhVvr.gif)
-![barrier](uploads/wiki_images/Particle_barrier.png)
-
-| Description                 | Common Usage | Particle Size | Speed | Speed Effect |
-|-----------------------------|--------------|---------------|-------|--------------|
-| Doesn't seem to do much | NA           | NA            | NA    | NA           |
-
-
 **block_marker**
 ---
 ![block_marker](https://imgur.com/CZuqh66.gif)
