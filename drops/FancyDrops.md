@@ -97,7 +97,7 @@ Whether the items should have a hologram name to display them by default.
 
 
 ### ItemGlowByDefault
-Whether items should go by default.  
+Whether items should glow by default.  
 Using this option seems to add an NBT to the dropped items that makes them unstackable with other items not obtained this way.  
 ```yaml
   DropOptions:
