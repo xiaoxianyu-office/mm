@@ -98,7 +98,7 @@ These placeholders will return whatever attribute of the caster that is called. 
 | <caster.stat.STAT_NAME>            | Returns the value of the specified stat on the caster             |
 | <caster.heldenchantlevel.#>        | Returns the enchant level of specified # enchant                  |
 | <caster.skill.\[skill_name\].cooldown> | Returns the current cooldown of the give skill as a float number |
-| <caster.raytrace>                  | Returns the name of the block being looked at by the caster (4.5 blocks of range) |
+| <caster.raytrace.#>                | Returns the name of the block being looked at by the caster if within # range, if # is specified. If only <caster.raytrace> is used, then the range defaults to `4.5`. If no block is found, `AIR` is returned.|
 | <caster.children.size>             | Returns the number of children this entity has                    |
 
 
@@ -153,18 +153,20 @@ These placeholders will return whatever target selector has been used. For insta
 |  <target.item.type>     | Returns the type of the targeted item entity                      |
 |  <target.held.item>     | Returns the item held by the target                               |
 |  <target.itemstack_amount>   | Returns the amount of item entities on the ground            |
-|   <target.raytrace>     | Returns the name of the block being looked at by the target (4.5 blocks of range)                    |
+| <target.stat.STAT_NAME> | Returns the value of the specified stat on the target             |
+| <target.raytrace.#>     | Returns the name of the block being looked at by the target if within # range, if # is specified. If only <target.raytrace> is used, then the range defaults to `4.5`. If no block is found, `AIR` is returned.|
 
 ## Trigger Placeholders
 These placeholders will return whatever attribute of the entity that caused the skill to happen. For instance `<trigger.name>` combined with an `~onDeath` trigger will return the name of the entity that killed the mob.
 
+```yaml
     Skills:
     - message{m="<&b><caster.name><&r> was slain by <&a><trigger.name><&r>."} @PIR{r=20} ~onDeath
+```
 
 The following are only some of the placeholders that can have a `trigger` scope, and in general any placeholder that is also present in the [Caster Placeholder](#caster-placeholders) section will also work.
 
 
------------------
 | Trigger Placeholders | Function                                                                               |
 |:--------------------:|----------------------------------------------------------------------------------------|
 |    <trigger.uuid>    | Returns the UUID of the entity triggering the skill                                    |
@@ -186,6 +188,9 @@ The following are only some of the placeholders that can have a `trigger` scope,
 | <trigger.item.amount> | Returns the amount of the item the trigger is holding                                            |
 | <trigger.item.type> | Returns the type of the item the trigger is holding                                            |
 | <trigger.item.model> | Returns the model of the item the trigger is holding                                            |
+| <trigger.stat.STAT_NAME> | Returns the value of the specified stat on the trigger                       |
+| <trigger.raytrace.#>                | Returns the name of the block being looked at by the trigger if within # range, if # is specified. If only <trigger.raytrace> is used, then the range defaults to `4.5`. If no block is found, `AIR` is returned.|
+
 
 ## Misc Placeholders
 |    **Placeholder**          | **Function**                                                            |
