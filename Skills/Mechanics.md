@@ -104,6 +104,7 @@ are able to target locations as well.
 | [Leap][]                  | Causes the caster to leap towards the target                                             |
 | [Lightning][]             | Strikes lightning at the target                                                          |
 | [FakeLightning][]         | Strikes a fake lightning at the target                                                          |
+| [Log][]                   | Logs a message to console.                                                  |
 | [Look][]                  | Causes the caster to look at the target                                                  |
 | [Lunge][]                 | Causes the caster to lunge forward at the target                                         |
 | [Message][]               | Sends a message to the target player(s)                                                  |
@@ -422,6 +423,7 @@ but not yet ready for use.
   [Leap]: /skills/mechanics/leap
   [Lightning]: /skills/mechanics/lightning
   [FakeLightning]: /skills/mechanics/FakeLightning
+  [Log]: /skills/mechanics/Log
   [Look]: /skills/mechanics/look
   [Lunge]: /skills/mechanics/lunge
   [Message]: /skills/mechanics/message
