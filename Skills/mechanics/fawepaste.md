@@ -26,4 +26,6 @@ If the schematic defined in the mechanic is not found inside mm's `Schematics` f
 ```
 
 
-  [undoPaste]: /Skills/mechanics/undopaste
+<!-- LINKS -->
+[Premium-Only]: Premium-Features
+[undoPaste]: /Skills/mechanics/undopaste
