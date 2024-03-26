@@ -4,6 +4,7 @@ Pastes a Schematic using the FAWE Plugin found here: [FAWE](https://www.spigotmc
 You must create a `Schematics` folder in your MythicMob directory and put the schematics you will use inside that folder.<br>
 If the schematic defined in the mechanic is not found inside mm's `Schematics` folder, FAWE's and WE's will be then checked for its presence
 
+> **This is a [Premium-Only] mechanic!**
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
