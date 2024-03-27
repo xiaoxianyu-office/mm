@@ -1,3 +1,7 @@
+# [THIS PAGE HAS BEEN MOVED!](/Skills/Mechanics)
+
+Effects mechanics are now part of the Mechanics wiki page!
+
 <!--
 Skill Effects (or effect mechanics) are a special type of mechanic
 specifically designed to create special effects. These are called just

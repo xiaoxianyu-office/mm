@@ -35,6 +35,7 @@ For the skills we are using a cancelevent onDamaged to stop the mob from taking 
 You can add messages or commands to your NPC using the [Message](/Skills/mechanics/message) and [Command](/Skills/mechanics/command) mechanics. For this guide we will be using @trigger and onInteract which will show the message or run the command for a user who right clicks the NPC. When you are testing make sure you're in SURVIVAL mode as creative mode players wont be targetable.
 
 ### Message
+This example will send a message to the player when they right click the NPC. We are adding the [Universal Attribute](Skills/Mechanics#universal-attributes) `cd=3` which will give it a cooldown of 3 seconds between clicks.
 ```yaml
   Skills:
   - cancelevent{sync=true} @self ~onDamaged
