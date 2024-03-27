@@ -3,7 +3,7 @@
 ##### [Premium Features](Premium-Features)
 ##### [Commands and Permissions](Commands-and-Permissions)
 ##### [FAQ / Common Issues](FAQ)
-##### [Troubleshooting](/Troubleshooting/Troubleshooting.md)
+##### [Troubleshooting](/Troubleshooting/Troubleshooting)
 ##### [Mythic Add-ons](Add-ons)
 ##### [Compatible Plugins](Compatible-Plugins)
 ##### [API Information](API)
