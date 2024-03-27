@@ -1,5 +1,5 @@
 ##### [Home](home)
-##### [Changelogs](Changelogs)
+##### [Changelogs](/changelogs/Changelogs)
 ##### [Premium Features](Premium-Features)
 ##### [Commands and Permissions](Commands-and-Permissions)
 ##### [FAQ / Common Issues](FAQ)
