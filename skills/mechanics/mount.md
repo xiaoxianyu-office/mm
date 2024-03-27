@@ -1,5 +1,5 @@
 ## Description
-Causes the casting mob to summon a specified MythicMob and mount it. The caster will be set as both the [owner](Skills/Targeters/Owner) and the [parent](Skills/Targeters/Parent) of the summoned mob.
+Causes the casting mob to summon a specified MythicMob and mount it. The caster will be set as both the [owner](/Skills/Targeters/Owner) and the [parent](/Skills/Targeters/Parent) of the summoned mob.
 
 
 ## Attributes

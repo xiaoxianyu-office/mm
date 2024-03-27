@@ -7,7 +7,7 @@ Creates a ring of particles around the targeted entity or location.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | points    | pts       | The number of points to draw representing the ring                   | 8       |
 | radius    | r         | The radius of the ring around the target                             | 10      |
-> This mechanic inherits every attribute of the [Particle](skills/mechanics/particle) mechanic
+> This mechanic inherits every attribute of the [Particle](/skills/mechanics/particle) mechanic
 >> The particles are generated “per point” in this mechanic, so keeping `amount` low is recommended.
 
 

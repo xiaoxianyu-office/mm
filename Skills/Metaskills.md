@@ -220,7 +220,7 @@ Example_Message:
   Skills:
   - message{m="Why are you so close?"}
 ```
-By executing this skill, you will obtain the same results you obtained in the [previus example](Skills/Metaskills#override)
+By executing this skill, you will obtain the same results you obtained in the [previus example](/Skills/Metaskills#override)
 
 
 ## Targets Filtering

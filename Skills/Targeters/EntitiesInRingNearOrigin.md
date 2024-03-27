@@ -19,5 +19,5 @@ Inherits all attributes from [EntitiesInRing]
 
 
 <!-- LINKS -->
-[origin]: Skills/Targeters/Origin
-[EntitiesInRing]: Skills/Targeters/EntitiesInRing
+[origin]: /Skills/Targeters/Origin
+[EntitiesInRing]: /Skills/Targeters/EntitiesInRing

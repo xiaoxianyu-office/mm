@@ -38,4 +38,4 @@ Holograms.
 
 
 <!-- LINKS -->
-[audience]: Skills/Audience
+[audience]: /Skills/Audience

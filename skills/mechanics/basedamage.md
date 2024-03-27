@@ -1,6 +1,6 @@
 ## Description
 Damages the target entity for a percentage of the mob's damage.  
-Inherits every attribute of the [Damage](skills/mechanics/damage) mechanic.  
+Inherits every attribute of the [Damage](/skills/mechanics/damage) mechanic.  
 
 
 ## Attributes
@@ -8,7 +8,7 @@ Inherits every attribute of the [Damage](skills/mechanics/damage) mechanic.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | multiplier       | m       | The percentage of damage to deal                                | 1       |
 | useAttribute | attribute, attr | Whether the damage should use the real entity's attack attribute, instead of its raw base damage                                                                 | false   | 
-> This mechanic inherits every attribute of the [Damage](skills/mechanics/damage) mechanic
+> This mechanic inherits every attribute of the [Damage](/skills/mechanics/damage) mechanic
 >> The `amout` attribute is ignored
 
 

@@ -1,6 +1,6 @@
 ## Description
 Simulates a physical hit from the mob. Takes melee stats and attribute modifiers into account.  
-Inherits every attribute of the [Damage](skills/mechanics/damage) mechanic.  
+Inherits every attribute of the [Damage](/skills/mechanics/damage) mechanic.  
 
 
 ## Attributes
@@ -8,7 +8,7 @@ Inherits every attribute of the [Damage](skills/mechanics/damage) mechanic.
 |------------------|---------|-------------------------------------|---------|
 | multiplier       | m       | The percentage of damage to deal    | 1       |
 | forcedDamage     | fd, forced | If this attribute is set, the one specified will be the amount of flat damage that will be inflicted, without consideration for attribute modifiers and similar other modifiers |
-> This mechanic inherits every attribute of the [Damage](skills/mechanics/damage) mechanic
+> This mechanic inherits every attribute of the [Damage](/skills/mechanics/damage) mechanic
 >> - The `amout` attribute is ignored
 >> - The `triggerSkills` attribute is **defaulted** at `true`
 >> - The `damagecause` attribute is **set** at `ENTITY_ATTACK`

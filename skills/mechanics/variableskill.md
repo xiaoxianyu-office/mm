@@ -1,5 +1,5 @@
 ## Description
-Executes another meta-skill like the [Skill mechanic](skills/mechanics/skill), but allows for placeholders inside the skill attribute.  
+Executes another meta-skill like the [Skill mechanic](/skills/mechanics/skill), but allows for placeholders inside the skill attribute.  
 The attribute "sync=true" will be inherited by any sub-skills and cannot
 be set to *false* later in a skill-tree.  
 
@@ -7,9 +7,9 @@ be set to *false* later in a skill-tree.
 ## Attributes
 | Attribute | Shorthand | Description                                                         | Default |
 |-----------|-----------|---------------------------------------------------------------------|---------|
-| skill     | s         | The metaskill to be executed. Accepts [Placeholders](Skills/Placeholders)  |  |
+| skill     | s         | The metaskill to be executed. Accepts [Placeholders](/Skills/Placeholders)  |  |
 | forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft  | false   |
-| branch    | b, fork, f| Whether the called metaskill's skilltree should [branch](skills/mechanics/skill#branch-attribute) off from the skilltree of the calling mechanic      | false   |
+| branch    | b, fork, f| Whether the called metaskill's skilltree should [branch](/skills/mechanics/skill#branch-attribute) off from the skilltree of the calling mechanic      | false   |
 | executeafterdeath | continueafterdeath | Whether the metaskill should be able to be called after the caster's death                                                                                | false   |
 
 

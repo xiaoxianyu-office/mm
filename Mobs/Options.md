@@ -8,9 +8,9 @@ Dummy:
 ```
 
 ##
-- [Universal Options](Mobs/Options#universal-options)
-- [Group Specific Options](Mobs/Options#group-specific-options)
-- [Mob Specific Options](Mobs/Options#mob-specific-options)
+- [Universal Options](/Mobs/Options#universal-options)
+- [Group Specific Options](/Mobs/Options#group-specific-options)
+- [Mob Specific Options](/Mobs/Options#mob-specific-options)
 ##
 
 # Universal options
@@ -987,7 +987,7 @@ Defaults to `false`.
 Defines the type of horse
 Can be any of the [Spigot Horse variants](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Horse.Variant.html)
 Defaults to `HORSE`
-**Removed in MC 1.11+, use[Type](Mobs/Mobs#type) instead.**
+**Removed in MC 1.11+, use[Type](/Mobs/Mobs#type) instead.**
 
 
 ## Interaction
@@ -1335,4 +1335,4 @@ Defaults to `FARMER`.
 ```
 
 
-[droptable]: drops/Drops#drop-tables
+[droptable]: /drops/Drops#drop-tables

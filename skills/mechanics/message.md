@@ -25,4 +25,4 @@ codes](/databases/misc/colorcodes) and
 
 
 <!-- LINKS -->
-[audience]: Skills/Audience
+[audience]:/Skills/Audience

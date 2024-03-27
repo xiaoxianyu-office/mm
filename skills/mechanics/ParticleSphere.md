@@ -6,7 +6,7 @@ Creates a sphere of particles at the targeted entity or location.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | radius    | r         | The radius of the sphere to draw                                     | 0       |
-> This mechanic inherits every attribute of the [Particle](skills/mechanics/particle) mechanic
+> This mechanic inherits every attribute of the [Particle](/skills/mechanics/particle) mechanic
 
 
 ## Examples

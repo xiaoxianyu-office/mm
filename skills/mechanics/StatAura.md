@@ -26,6 +26,6 @@ The following aura will double the critical strike chance of the caster for 5 se
 
 
 <!-- LINKS -->
-[aura]: skills/mechanics/aura
+[aura]: /skills/mechanics/aura
 [stat]: Stats
 [stat modifier]: Stats#modifiers

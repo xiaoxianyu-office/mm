@@ -13,7 +13,7 @@ Creates a line of particles from the caster to the targeted entity or location.
 | zigzags         | zzs | Amount of zigzags when using the zigzag option                       | 10      |
 | zigzagOffset    | zzo | Offset of each zigzag                                                | 0.2     |
 | maxdistance     | md  | The maximum distance the line can reach                             | 256      |
-> This mechanic inherits every attribute of the [Particle](skills/mechanics/particle) mechanic
+> This mechanic inherits every attribute of the [Particle](/skills/mechanics/particle) mechanic
 >> The particles are generated “per point” in this mechanic, so keeping `amount` low is recommended.
 
 
@@ -32,4 +32,4 @@ FlameParticleLine:
 
 
 <!-- LINKS -->
-[@origin]: skills/targeters/origin
+[@origin]: /skills/targeters/origin

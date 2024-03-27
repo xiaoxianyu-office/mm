@@ -127,7 +127,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [BoundingBoxesOverlap](/skills/conditions/BoundingBoxesOverlap)               | Compare  | Checks if the caster's BoundingBox overlaps with the target's                                 |
 | [BowTension](/skills/conditions/bowtension)                                   | Meta     | Checks the bow tension of when an entity shoots from a bow                                 |
 | [Burning](/skills/conditions/burning)                                         | Entity   | Whether or not the target entity is on fire                                                |
-| [Chance](skills/conditions/chance)                                            | Meta     | The chance that the metaskill has to be executed                                           |
+| [Chance](/skills/conditions/chance)                                           | Meta     | The chance that the metaskill has to be executed                                           |
 | [Charged](/skills/conditions/charged)                                         | Entity   | Checks if the target creeper is charged                                                       |
 | [Children](/skills/conditions/children)                                       | Entity   | Tests how many children the caster has                                                    |
 | [Color](/skills/conditions/color)                                             | Entity   | Tests the entity's colors                                                                 |
@@ -249,7 +249,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [PlayerNotWithin](/skills/conditions/playernotwithin)                         | Location | Checks if any players are within a radius of the target                                       |
 | [PlayerWithin](/skills/conditions/playerwithin)                               | Location | Checks if any players are within a radius of the target                                       |
 | [PlayersInRadius](/skills/conditions/playersinradius)                         | Entity   | Checks how many players are in a radius                                                    |
-| [PlayersInWorld](skills/conditions/playersinworld)                            | Meta     | Matches the number of players in the caster's world                                         |
+| [PlayersInWorld](/skills/conditions/playersinworld)                            | Meta     | Matches the number of players in the caster's world                                         |
 | [PlayersOnline](/skills/conditions/playersonline)                             | Meta     | Matches the number of players online                                                        |
 | [Plugin](/skills/conditions/plugin)                                           | Meta     | Checks if the specified plugin is running on the server                                       |
 | [Premium](/skills/conditions/premium)                                         | Meta     | Checks if MythicMobs Premium is running on the server                                     |

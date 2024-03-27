@@ -13,7 +13,7 @@ Creates a particle line helix effect at the targeted entity or location.
 | helixradius     | hr  | The radius of the helix effect                                       | 1       |
 | helixrotation   | rot | The rotation of the helix effect                                     | 0       |
 | maxdistance     | md  | The maximum distance the line can reach                              | 256     |
-> This mechanic inherits every attribute of the [Particle](skills/mechanics/particle) mechanic
+> This mechanic inherits every attribute of the [Particle](/skills/mechanics/particle) mechanic
 >> The particles are generated “per point” in this mechanic, so keeping `amount` low is recommended.
 
 
@@ -33,4 +33,4 @@ Creates a particle line helix effect at the targeted entity or location.
 
 
 <!-- LINKS -->
-[@origin]: skills/targeters/origin
+[@origin]: /skills/targeters/origin

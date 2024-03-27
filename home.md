@@ -97,7 +97,7 @@ Setup
   [1]: youtube>_YQUS3sDbI0
   [Configuration]: Configuration
   [Commands]: Commands-and-Permissions
-  [Examples]: examples/Common-Examples
+  [Examples]: /examples/Common-Examples
   [FAQ's]: FAQ
   [Permissions]: Commands-and-Permissions#permissions
   [Videos]: Videos

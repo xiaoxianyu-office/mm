@@ -22,10 +22,10 @@ example_name:
 
 #### Type
 This field determines which entity type your creation will be based upon.
-A complete list of available [entity types] can be found on spigot javadocs, while [here](Mobs/Types) you can find a list of types that are explicitly implemented.
+A complete list of available [entity types] can be found on spigot javadocs, while [here](/Mobs/Types) you can find a list of types that are explicitly implemented.
 > Several mob options for new entity types that Minecraft adds to the base game will not function until Mythic adds support for said entity types  
 
-> Some entity types can have negative, hard-to-discover quirks. It is advised that you refer to the [unstable entity types](Mobs/Mobs/Unstable-Entity-Types) page in order to form a better opinion on what entity you should be using for your current endeavor 
+> Some entity types can have negative, hard-to-discover quirks. It is advised that you refer to the [unstable entity types](/Mobs/Mobs/Unstable-Entity-Types) page in order to form a better opinion on what entity you should be using for your current endeavor 
 ```yml
 example_mob:
   Type: zombie
@@ -100,7 +100,7 @@ example_mob:
 #### BossBar
 Defines and controls the health bar of the mob.
 Looks like the Ender Dragon's or the Wither's health bar, but is configurable in appearance.
-See [BossBar](Mobs/BossBar)
+See [BossBar](/Mobs/BossBar)
 ```yml
 example_mob:
   Type: zombie
@@ -138,7 +138,7 @@ another_example:
 
 #### Display Options
 Sets the display entity options.
-A list of available display options can be found in the [Display Options](Mobs/DisplayOptions) page
+A list of available display options can be found in the [Display Options](/Mobs/DisplayOptions) page
 ```yml
 cool_display:
   Type: block_display
@@ -149,7 +149,7 @@ cool_display:
 #### Options
 This is a special field which comes with numerous sub-options, like determining if the mob should despawn,
 setting knockback resistance, follow range, movement speed and many more.
-A list of available mob options can be found in the [Mob Options](Mobs/Options) page
+A list of available mob options can be found in the [Mob Options](/Mobs/Options) page
 ```yml
 slow_persistent_mob:
   Type: husk
@@ -203,7 +203,7 @@ neutral_mob:
 #### Drops
 Add or completely modify the mob loot drops.
 Can be vanilla items, mythic items, experience points, cross-plugin items (if supported), or even custom drop tables with their own condition system.
-See [Drops & DropTables](drops/Drops) for more information.
+See [Drops & DropTables](/drops/Drops) for more information.
 ```yml
 example_mob:
   Type: zombie
@@ -217,7 +217,7 @@ example_mob:
 #### DamageModifiers
 Modify how much damage the mob will take from different damage causes.
 For example, DamageModifiers can be used to make the mob immune to melee attacks, but weak to ranged attacks.
-See [Damage Modifiers](Mobs/DamageModifiers) for more information.
+See [Damage Modifiers](/Mobs/DamageModifiers) for more information.
 ```yml
 example_mob:
   Type: zombie
@@ -228,7 +228,7 @@ example_mob:
 
 #### Equipment
 Equips the mob with vanilla items or mythic items when it first spawns.
-See [Equipment](Mobs/Equipment) for more information.
+See [Equipment](/Mobs/Equipment) for more information.
 ```yml
 example_mob:
   Type: zombie
@@ -251,7 +251,7 @@ example_mob:
 ```
 
 #### LevelModifiers
-MythicMobs can have [levels](Mobs/Levels) and this field is used to determine which kinds of statistics they should gain on when their levels change.
+MythicMobs can have [levels](/Mobs/Levels) and this field is used to determine which kinds of statistics they should gain on when their levels change.
 ```yml
 example_mob:
   Type: zombie
@@ -264,7 +264,7 @@ example_mob:
 #### Disguise
 Changes the appearance of the mob to be like other entity types.
 Requires the plugin [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81/) to be installed and functioning on your server.
-See [Add-on: Disguises](Mobs/Disguises) for more information.
+See [Add-on: Disguises](/Mobs/Disguises) for more information.
 ```yml
 #This mob acts like a zombie but looks like a chicken
 example_mob:
@@ -275,7 +275,7 @@ example_mob:
 #### Skills
 Skills are an integral feature of Mythic. All mobs are able to have skills of various types that can be triggered under different circumstances with varying
 conditions. The Mythic skill system is quite intuitive once you get used to it, and can be used to create anything from simple mobs to incredibly complex bosses.
-See [Skills](Skills/Skills) to get started on making your own skills.
+See [Skills](/Skills/Skills) to get started on making your own skills.
 ```yml
 #swaps locations with the player that right-clicked the mob
 example_mob:
@@ -301,7 +301,7 @@ ExampleMob:
 
 #### Hearing
 Allows the mob to "hear" sounds like a warden would.  
-Turning this on enables the new [~onHear](Skills/Triggers#onhear) trigger.  
+Turning this on enables the new [~onHear](/Skills/Triggers#onhear) trigger.  
 ```yaml
 ICanHearYou:
   Type: ZOMBIE
@@ -313,7 +313,7 @@ ICanHearYou:
 
 
 #### Variables
-Instead of using a lot of `setvariable` mechanics `~onSpawn`, you can make a mob spawn with already set [variables](Skills/Variables) via the use the of Variables mob field.
+Instead of using a lot of `setvariable` mechanics `~onSpawn`, you can make a mob spawn with already set [variables](/Skills/Variables) via the use the of Variables mob field.
 
 ```yaml
 VariableZombie:
@@ -361,7 +361,7 @@ MerchantTest:
 Examples
 -----------------------------
 
-More mob examples can be found in the [Examples](examples/Common-Examples#mobs) section.
+More mob examples can be found in the [Examples](/examples/Common-Examples#mobs) section.
 <!--  ONLY NEED TO LINK USERS TO EXAMPLES SECTION
 Please keep in mind that you in no way have to use all of these mob
 options and that this is an advanced example designed to show the
@@ -420,12 +420,12 @@ mob-type. After that it's completely up to you.
 ```
 -->
 [entity types]: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
-[setname]: Skills/mechanics/setname
-[placeholders]: Skills/Placeholders
-[targeter filtering]: Skills/Targeters#targeter-options
-[Custom AI]: Mobs/Custom-AI
-[Threat Tables]: Mobs/ThreatTables
-[Immunity Tables]: Mobs/ImmunityTables
+[setname]: /Skills/mechanics/setname
+[placeholders]: /Skills/Placeholders
+[targeter filtering]: /Skills/Targeters#targeter-options
+[Custom AI]: /Mobs/Custom-AI
+[Threat Tables]: /Mobs/ThreatTables
+[Immunity Tables]: /Mobs/ImmunityTables
 [AI goals]: /Mobs/Custom-AI#ai-goal-selectors
 [AI targets]: /Mobs/Custom-AI#ai-target-selectors
-[kill messages]: Mobs/KillMessages
+[kill messages]: /Mobs/KillMessages

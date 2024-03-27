@@ -10,7 +10,7 @@ No single mechanics can be used straight: they have to be in a [Metaskill]!
 | setcasterastrigger | cat |Sets the trigger of the called metaskill to the caster of this mechanic|false|
 | target    | t         | Sets the inherited targets of the called metaskill to the specified ones |     |
 
-> This mechanic inherits every attribute of the [Skill](skills/mechanics/skill) mechanic
+> This mechanic inherits every attribute of the [Skill](/skills/mechanics/skill) mechanic
 
 ### SetCasterAsTrigger Attribute
 If `setcasterastrigger` is `true`, the trigger of the skill will be set to
@@ -54,4 +54,4 @@ ExampleTargetSkill:
 ## Aliases
 - [x] sudo
 
-[Metaskill]: Skills/Metaskills
+[Metaskill]: /Skills/Metaskills

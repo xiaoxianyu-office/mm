@@ -23,7 +23,7 @@ NPC_Steve:
 - `NPC_Steve` This is what you'll use to spawn your NPC. /mm m spawn NPC_Steve
 - `Type: ARMOR_STAND` You can use whatever you like but we'll be using armor stand since it has no AI, no sound etc.
 - `Display: 'Steve'` This is what will appear above your NPC's head.
-- `Disguise: Player Steve setDynamicName true` This is what makes our NPC look like a player. You can replace "Steve" with whatever player name you want. You must keep the setDynamicName as true so the NPC can use the Display setting. For more information about using custom skins [read here](Mobs/Disguises)
+- `Disguise: Player Steve setDynamicName true` This is what makes our NPC look like a player. You can replace "Steve" with whatever player name you want. You must keep the setDynamicName as true so the NPC can use the Display setting. For more information about using custom skins [read here](/Mobs/Disguises)
 - `AlwaysShowName: true` This makes the nameplate show above your NPC.
 - `Collidable: false` This stops the NPC from being pushed around.
 - `Despawn: persistent` This will keep your NPC spawned on reloads, restarts and chunk unloads.
@@ -32,7 +32,7 @@ For the skills we are using a cancelevent onDamaged to stop the mob from taking 
 
 # Step 2 - Adding messages and commands
 
-You can add messages or commands to your NPC using the [Message](Skills/mechanics/message) and [Command](Skills/mechanics/command) mechanics. For this guide we will be using @trigger and onInteract which will show the message or run the command for a user who right clicks the NPC. When you are testing make sure you're in SURVIVAL mode as creative mode players wont be targetable.
+You can add messages or commands to your NPC using the [Message](/Skills/mechanics/message) and [Command](/Skills/mechanics/command) mechanics. For this guide we will be using @trigger and onInteract which will show the message or run the command for a user who right clicks the NPC. When you are testing make sure you're in SURVIVAL mode as creative mode players wont be targetable.
 
 ### Message
 ```yaml

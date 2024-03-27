@@ -1,6 +1,6 @@
 ## Description
 Modifies the mob's threat value towards the target. Requires the casting mob
-have [Threat Tables](Mobs/ThreatTables) enabled in order to have any effect.
+have [Threat Tables](/Mobs/ThreatTables) enabled in order to have any effect.
 
 
 ## Attributes

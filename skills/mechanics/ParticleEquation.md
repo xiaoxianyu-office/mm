@@ -14,7 +14,7 @@ Generates a particle effect based on an equation.
 | boundz    | bz        | The maximum width of the generated particles on the z axis           | 1       |
 | boundy    | by        | The maximum height of the generated particles on the y axis          | 1       |
 | resolution | res      | The resolution of the equation                                       | 0.1     |
-> This mechanic inherits every attribute of the [Particle](skills/mechanics/particle) mechanic
+> This mechanic inherits every attribute of the [Particle](/skills/mechanics/particle) mechanic
 
 
 ## Aliases

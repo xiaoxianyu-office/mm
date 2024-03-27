@@ -13,44 +13,44 @@ Could get aggroed by other entities.
 
 ### All breedable animals
 They can usually be fed by some item and, subsequently, try to breed.  
-This can be handled by intercepting the event [~onBreed](Skills/Triggers#onbreed) (and then either cancelling it or some other mechanic) or completely prevented by using the [Age](Mobs/Options#age) option
+This can be handled by intercepting the event [~onBreed](/Skills/Triggers#onbreed) (and then either cancelling it or some other mechanic) or completely prevented by using the [Age](/Mobs/Options#age) option
 
 ### Most bosses
 Have an hardcoded ai or some other hardcoded features.
 
 ### Entities damaged by water
 Affected entities include Enderman, Snowman and Blaze.  
-The damage type in those instances if of the `DROWNING` type, and can thus be fully prevented by using a negative value for it as a [DamageModifier](Mobs/DamageModifiers) or by using the following skill
+The damage type in those instances if of the `DROWNING` type, and can thus be fully prevented by using a negative value for it as a [DamageModifier](/Mobs/DamageModifiers) or by using the following skill
 ```yaml
    - cancelevent{sync=true} ~ondamaged ?damagecause{c=drowning}
 ```
 
 ## Specific Mobs
 ### ARMOR_STAND
-Does not get targeted by default by multi entity targeters, and a [specific filter](Skills/Targeters#target-filters) must be used.  
+Does not get targeted by default by multi entity targeters, and a [specific filter](/Skills/Targeters#target-filters) must be used.  
 
 ### AXOLOTL
-Can be Bucketed. Defend against this by using a [onBucket](Skills/Triggers#onbucket) trigger
+Can be Bucketed. Defend against this by using a [onBucket](/Skills/Triggers#onbucket) trigger
 
 ### BEE
 When allowed to randomfly, it will enter placed beehives and pollinate flowers.  
 No definitive answer exists, apart from clearing its AI and building a new one.  
 
 ### BLAZE
-Can be damaged by water, snowballs and the like. Use a [Damage Modifier](Mobs/DamageModifiers) in order to prevent this.  
+Can be damaged by water, snowballs and the like. Use a [Damage Modifier](/Mobs/DamageModifiers) in order to prevent this.  
 
 ### CAT
 Scares Creepers and Phantoms away
 
 ### CHICKEN
 Can lay eggs and is hunted by other animals.  
-For the "egg problem", use the [Jockey Option](Mobs/Options#jockey).  
+For the "egg problem", use the [Jockey Option](/Mobs/Options#jockey).  
 
 ### COW
 Can be milked.  
 
 ### DROWNED
-By default, it does not attack its target in the day if they are not in a water block. A [custom ai](Mobs/Custom-AI) must be set up in order to remove this behavior
+By default, it does not attack its target in the day if they are not in a water block. A [custom ai](/Mobs/Custom-AI) must be set up in order to remove this behavior
 
 ### ENDER_DRAGON
 Has an hardcoded ai.

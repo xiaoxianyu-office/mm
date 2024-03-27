@@ -338,8 +338,8 @@ but not yet ready for use.
 |--------------------|---------------------------------|
 -->
 
-  [AIGoalSelectors]: Mobs/Custom-AI#ai-goal-selectors
-  [AITargetSelectors]: Mobs/Custom-AI#ai-target-selectors
+  [AIGoalSelectors]: /Mobs/Custom-AI#ai-goal-selectors
+  [AITargetSelectors]: /Mobs/Custom-AI#ai-target-selectors
   [here!]: /skills/skillparametersystem
   [Targeter]: /skills/targeters/
 
@@ -447,11 +447,11 @@ but not yet ready for use.
   [Atom]: /skills/mechanics/Atom
   [PickUpItem]: /skills/mechanics/pickupitem
   [PlayAnimation]: /skills/mechanics/PlayAnimation
-  [PlayBlockBreakSound]: skills/mechanics/PlayBlockBreakSound
-  [PlayBlockFallSound]: skills/mechanics/PlayBlockFallSound
-  [PlayBlockHitSound]: skills/mechanics/PlayBlockHitSound
-  [PlayBlockPlaceSound]: skills/mechanics/PlayBlockPlaceSound
-  [PlayBlockStepSound]: skills/mechanics/PlayBlockStepSound
+  [PlayBlockBreakSound]: /skills/mechanics/PlayBlockBreakSound
+  [PlayBlockFallSound]: /skills/mechanics/PlayBlockFallSound
+  [PlayBlockHitSound]: /skills/mechanics/PlayBlockHitSound
+  [PlayBlockPlaceSound]: /skills/mechanics/PlayBlockPlaceSound
+  [PlayBlockStepSound]: /skills/mechanics/PlayBlockStepSound
   [PoseArmorStand]: /skills/mechanics/posearmorstand
   [Potion]: /skills/mechanics/potion
   [PotionClear]: /skills/mechanics/potionclear
@@ -591,7 +591,7 @@ but not yet ready for use.
   [SetSkillCooldown]: /skills/mechanics/setskillcooldown
   [SetProjectileDirection]: /skills/mechanics/SetProjectileDirection
   [SetProjectileBulletModel]: /skills/mechanics/setprojectilebulletmodel
-  [StatAura]: skills/mechanics/StatAura
+  [StatAura]: /skills/mechanics/StatAura
   [Totem]: /skills/mechanics/totem
   [VariableAdd]: /skills/mechanics/variableadd
   [VariableMath]: /skills/mechanics/variablemath

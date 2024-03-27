@@ -16,7 +16,7 @@ poison or land mines.
 | Charges   | ch, c     | Determines how many times the totem can hit something before disappearing | 0  |
 | YOffset   | yo        | How high off the target the totem will spawn                          | 1      |
 
-> Inherits attributes from [Projectile](skills/mechanics/projectile)
+> Inherits attributes from [Projectile](/skills/mechanics/projectile)
 >> `stopAtEntity` gets **defaulted** to `false`
 
 

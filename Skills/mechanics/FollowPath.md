@@ -36,6 +36,6 @@ This mechanic is also an [aura].
 
 
 <!-- LINKS -->
-[aura]: skills/mechanics/aura
-[metaskill]: Skills/Metaskills
-[targeters]: Skills/Targeters
+[aura]: /skills/mechanics/aura
+[metaskill]: /Skills/Metaskills
+[targeters]: /Skills/Targeters

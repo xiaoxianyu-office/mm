@@ -22,7 +22,7 @@ Damages the targeted entity.
 | element   | e, damagetype, type | *Become one of the Tags*                                   |         |
 | triggerSkills | ts    | Whether the damage mechanic should also be able to trigger `onAttack` related triggers       | false  |
 
-[damage immunity ticks]: skills/mechanics/setnodamageticks
+[damage immunity ticks]: /skills/mechanics/setnodamageticks
 
 ### DamageCause Attribute
 This attribute is only available in newer MM 5.0 builds.
@@ -57,7 +57,7 @@ These options can also be used in the "onDamaged" aura, using the `damageMods="F
 ```yaml
 - damage{amount=5;tags=WITCHCURSE,FIRE}
 ```
-This allows you to set any tag you want on this type of damage to be used with the [DamageTag](skills/conditions/damagetag) condition.  
+This allows you to set any tag you want on this type of damage to be used with the [DamageTag](/skills/conditions/damagetag) condition.  
 
 Tags are arbitrary, and can thus have any name, as long as that does not contain invalid characters.  
 You can set an indefinite number of tags for each damage mechanic. 

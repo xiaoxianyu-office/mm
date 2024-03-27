@@ -21,4 +21,4 @@ Checks against the item material type that triggered the skill. Only works with 
 
 <!-- LINKS -->
 [materials]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
-[triggers]: Skills/Triggers
+[triggers]: /Skills/Triggers

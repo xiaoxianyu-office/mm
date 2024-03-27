@@ -9,34 +9,34 @@ This page is divided into 3 sub-categories:
 
 ### Mobs:
 
-[Hostile Mobs](examples/Mob-Examples#hostile-mobs)
+[Hostile Mobs](/examples/Mob-Examples#hostile-mobs)
 
-[Neutral Mobs](examples/Mob-Examples#neutral-mobs)
+[Neutral Mobs](/examples/Mob-Examples#neutral-mobs)
 
-[Passive Mobs](examples/Mob-Examples#passive-mobs)
+[Passive Mobs](/examples/Mob-Examples#passive-mobs)
 
-[Npcs](Guides/Making-an-NPC)
+[Npcs](/Guides/Making-an-NPC)
 
 ---
 
 ### Items:
-[Foods](examples/Foods)
+[Foods](/examples/Foods)
 
-[Potions](examples/Potions)
+[Potions](/examples/Potions)
 
 In Progress:
 
-~~[Armors](examples/Armors)~~
+~~[Armors](/examples/Armors)~~
 
-~~[Tools](examples/Tools)~~
+~~[Tools](/examples/Tools)~~
 
-~~[Weapons](examples/Weapons)~~
+~~[Weapons](/examples/Weapons)~~
 
 
 ---
 
 ### Skills:
 
-[Damage Spells](examples/DamageSpells)
+[Damage Spells](/examples/DamageSpells)
 
-[Consumable Skills](examples/Consumable-Skills)
+[Consumable Skills](/examples/Consumable-Skills)

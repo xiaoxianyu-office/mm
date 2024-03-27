@@ -20,4 +20,4 @@ Checks if the [origin] is at a given location
 
 
 <!-- LINKS -->
-[origin]: Skills/Targeters/Origin
+[origin]: /Skills/Targeters/Origin

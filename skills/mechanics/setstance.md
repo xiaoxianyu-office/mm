@@ -2,7 +2,7 @@
 Sets the "stance" attribute of the target Mythic Mob to the given
 string. Does nothing if the target is not a Mythic Mob.  
 
-This can be used in conjunction with the [Stance condition](skills/conditions/stance) to create different stances or phases
+This can be used in conjunction with the [Stance condition](/skills/conditions/stance) to create different stances or phases
 for a mob, where they use different abilities.  
 The stance condition will match the current stance loosely, meaning if you set the stance to
 "angry fiery explosive" the stance condition will be true for the stance

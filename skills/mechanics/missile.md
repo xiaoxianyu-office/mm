@@ -1,5 +1,5 @@
 ## Description
-The missile mechanic is similar to the projectile mechanic and can use any of the [Projectile's Inheritable Attributes](skills/mechanics/projectile#inheritable-attributes).  
+The missile mechanic is similar to the projectile mechanic and can use any of the [Projectile's Inheritable Attributes](/skills/mechanics/projectile#inheritable-attributes).  
 Missiles however are homing and will track down their targets.
 Missiles can target both a location and an entity.
 
@@ -17,7 +17,7 @@ Missiles can target both a location and an entity.
 | MaxDropHeight  | mdh  | The number of attempts the projectile will make to **decrease** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 10      |
 | highAccuracyMode | ham| Whether to use high-accuracy mode, which raytraces every tick to ensure the projectile cannot ever go through anything. Values can be `true`, `false`, `PLAYERS_ONLY`         | PLAYERS_ONLY |
 
-> This mechanic inherits every inheritable attribute of the [Projectile](skills/mechanics/projectile#inheritable-attributes) mechanic
+> This mechanic inherits every inheritable attribute of the [Projectile](/skills/mechanics/projectile#inheritable-attributes) mechanic
 
 ## Examples
 This example shoots a missile that looks like a thin trail of flames

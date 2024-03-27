@@ -12,7 +12,7 @@ Creates a particleline ring.
 | ringpoints | rp       | The number of points in the line ring                                | 16      |
 | ringradius | rr       | The radius of the line ring                                          | 0.5     |
 | maxdistance     | md  | The maximum distance the line can reach                              | 256     |
-> This mechanic inherits every attribute of the [Particle](skills/mechanics/particle) mechanic
+> This mechanic inherits every attribute of the [Particle](/skills/mechanics/particle) mechanic
 
 
 ## Examples
@@ -28,4 +28,4 @@ Creates a particleline ring.
 
 
 <!-- LINKS -->
-[@origin]: skills/targeters/origin
+[@origin]: /skills/targeters/origin

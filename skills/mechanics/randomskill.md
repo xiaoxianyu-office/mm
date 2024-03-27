@@ -1,6 +1,6 @@
 ## Description
 Executes a random skill from the list of supplied
-[skills](skills/mechanics/skill). Will ignore any skills that are on
+[skills](/skills/mechanics/skill). Will ignore any skills that are on
 cooldown. There is no limit to how much skills can be added.
 
 ## Attributes

@@ -38,6 +38,6 @@ Makes the target glow red for 1000 ticks (50 seconds).
 
 
 <!-- LINKS -->
-[audience]: Skills/Audience
+[audience]: /Skills/Audience
 [color]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
-[aura]: skills/mechanics/aura
+[aura]: /skills/mechanics/aura

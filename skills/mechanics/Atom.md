@@ -32,4 +32,4 @@ Creates an orbiting Atom effect at the location.
 
 
 <!-- LINKS -->
-[particle]: skills/effects/particles/types
+[particle]: /skills/effects/particles/types

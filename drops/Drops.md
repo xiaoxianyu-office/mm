@@ -34,16 +34,16 @@ The chance for the specified item to be dropped.
 ## Drop Types
 | **Type**                    | **Explanation**                                          | **Example**                             |
 |-----------------------------|----------------------------------------------------------|-----------------------------------------|
-| [mythicmob](drops/DropTypes/MythicMob) | Will drop a MythicMob                         |                |
+| [mythicmob](/drops/DropTypes/MythicMob)| Will drop a MythicMob                         |                |
 | **champions-exp**           | Will drop experience points for the plugin `Champions`.  |                                         |
-| [skillapi-exp](drops/DropTypes/SkillAPIExp) | Will drop experience points for the plugin `SkillAPI` |                                         |
+| [skillapi-exp](/drops/DropTypes/SkillAPIExp)| Will drop experience points for the plugin `SkillAPI` |                                         |
 | **heroesexp**               | Will drop experience points for the plugin `Heroes`.     |                                         |
-| [mcmmo-exp](drops/DropTypes/McMMOExp) | Will drop experience points for the plugin `MCMMO`. | -` mcmmo-exp 69`                       |
+| [mcmmo-exp](/drops/DropTypes/McMMOExp)| Will drop experience points for the plugin `MCMMO`. | -` mcmmo-exp 69`                       |
 | **exp**                     | Will drop regular Minecraft experience points.           | `- exp 420`                                         |
-| [money](drops/DropTypes/Money) | Will drop money for the plugin `Vault`.               | `- money 1500`                                        |
+| [money](/drops/DropTypes/Money)| Will drop money for the plugin `Vault`.               | `- money 1500`                                        |
 | **mythicdrop &lt;item&gt;** | Will drop an &lt;item&gt; from the plugin `MythicDrops`. | `- mythicdrop CoolSword 1`                                        |
-| [phatloot](drops/DropTypes/PhaLoot) | Will drop an &item from the plugin `PhatLoot`.    | `- phatloot LootTableName 1`                                        |
-| [command](drops/DropTypes/Command) | Will run a command in console.                    | `- cmd{c="warp <trigger.name> spawn"} 1`  |
+| [phatloot](/drops/DropTypes/PhaLoot)| Will drop an &item from the plugin `PhatLoot`.    | `- phatloot LootTableName 1`                                        |
+| [command](/drops/DropTypes/Command)| Will run a command in console.                    | `- cmd{c="warp <trigger.name> spawn"} 1`  |
 | [mmoitems](https://gitlab.com/phoenix-dvpmt/mmoitems/-/wikis/Item%20Drop%20Tables#adding-mmoitems-to-mythicmobs-drop-tables)    | Drops a `mmoitems` item                                    | `- mmoitems{type=SWORD;id=CUTLASS} 1 1` |
 | **nothing**                 | Will drop nothing. Can help while creating weighted droptables | `- nothing`                                        |
 
@@ -61,7 +61,7 @@ YourMob:
 ## In-line Drops
 
 For very basic equipment, you can add some inline item data so that you don't always have to create a mythic item.
-You can use all the item data from [Inline Item Configurations](Mobs/Equipment#in-line-items)!
+You can use all the item data from [Inline Item Configurations](/Mobs/Equipment#in-line-items)!
 
 ```yaml
  Drops:

@@ -40,4 +40,4 @@ CUSTOM_ITEM:
 
 
 <!-- LINKS -->
-[aura]: skills/mechanics/aura
+[aura]: /skills/mechanics/aura

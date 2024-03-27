@@ -1,5 +1,5 @@
 ## Description
-Targets the last entity that attacked the caster, if the caster is of the `INTERACTION` [Type](Mobs/Mobs#type).
+Targets the last entity that attacked the caster, if the caster is of the `INTERACTION` [Type](/Mobs/Mobs#type).
 
 
 ## Attributes

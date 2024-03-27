@@ -32,6 +32,6 @@ ExampleSkill2:
 - [x] chatprompt
 
 
-[metaskill]: Skills/Metaskills
-[aura]: skills/mechanics/aura
-[skill-scoped variable]: Skills/Variables
+[metaskill]: /Skills/Metaskills
+[aura]: /skills/mechanics/aura
+[skill-scoped variable]: /Skills/Variables

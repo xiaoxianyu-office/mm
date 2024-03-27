@@ -21,4 +21,4 @@ ExampleMob:
 
 <!-- LINKS -->
 [attribute]: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/Attribute.html
-[operation]: Items/Attributes#operations
+[operation]: /Items/Attributes#operations

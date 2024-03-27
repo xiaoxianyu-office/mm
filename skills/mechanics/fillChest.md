@@ -1,5 +1,5 @@
 ## Description
-Fills a chest with a list of items, or a [droptable](Items/Drops#drop-tables)
+Fills a chest with a list of items, or a [droptable](/Items/Drops#drop-tables)
 
 
 ## Attributes
