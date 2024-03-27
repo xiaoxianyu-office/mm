@@ -2,25 +2,7 @@
 Makes the target entity glow (using the Glowing potion effect.).  
 This mechanic is also an [aura].
 
-Can have a color specified.  
-
-Can have an [audience].  
-
 > **[Glow API](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)** is required for minecraft version 1.16.
-
-## Valid Colors
-
-|    VALID     |   COLORS     |
-|:------------:|:------------:|
-| BLACK        | DARK_GRAY    |
-| DARK_BLUE    | BLUE         |
-| DARK_GREEN   | GREEN        |
-| DARK_AQUA    | AQUA         |
-| DARK_RED     | LIGHT_PURPLE |
-| DARK_PURPLE  | YELLOW       | 
-| GOLD         | WHITE        |
-| GRAY         | RED          |
-
 
 
 ## Attributes
@@ -36,6 +18,19 @@ Can have an [audience].
 >> - The `maxStacks` attribute is **set** at `1` and cannot be modified.  
 >> - The `mergeAll` attribute is **set** at `true` and cannot be modified.  
 
+### Color Attribute
+|    VALID     |   COLORS     |
+|:------------:|:------------:|
+| BLACK        | DARK_GRAY    |
+| DARK_BLUE    | BLUE         |
+| DARK_GREEN   | GREEN        |
+| DARK_AQUA    | AQUA         |
+| DARK_RED     | LIGHT_PURPLE |
+| DARK_PURPLE  | YELLOW       | 
+| GOLD         | WHITE        |
+| GRAY         | RED          |
+
+
 ## Examples
 Makes the target glow red for 1000 ticks (50 seconds).
 ```yaml
@@ -49,6 +44,6 @@ Makes the target glow red for 1000 ticks (50 seconds).
 - [x] glow
 
 <!-- LINKS -->
-[audience]: Skills/Audience
+[audience]: /Skills/Audience
 [color]: #valid-colors
-[aura]: skills/mechanics/aura
+[aura]: /skills/mechanics/aura
