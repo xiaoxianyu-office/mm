@@ -8,7 +8,7 @@ This mechanic must be synched, meaning that either the mechanic or the initial s
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount    | a         | The amount of the operation                                          | 1       |
 | damagetype| type, dt, t | The type of the damage to evaluate                                 | ALL     |
-| action    | mod, m    | The [modifier](Stats#modifiers) to use                               | ADDITIVE|
+| action    | mod, m    | The [modifier](/Items/Attributes#operations) to use                  | ADDITIVE|
 
 
 ## Examples
