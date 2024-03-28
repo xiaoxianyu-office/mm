@@ -12,8 +12,6 @@ ModelEngine allows anyone with BlockBench to quickly and easily create their own
 
 It is generally advised to use the `PreventOtherDrops` and `silent` mob options to avoid weird drops or noises coming from your ModelEngine Monster
 
-Here is an example of a custom ModelEngine mob in vanilla minecraft
-
 <!-- ![image](uploads/5862ab1f31634ae0211a3c226d834540/image.png) -->
 ![image](uploads/934d66a2973c6e2cabce6d87cc0033db/left.png)
 
