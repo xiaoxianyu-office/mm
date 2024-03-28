@@ -1,6 +1,6 @@
 ## Description
 Hides the caster from the targeted players for a set duration.  
-A duration of `0` will permanently hide the caster.  
+
 Only works for MC 1.18+.  
 This mechanic is also an [aura].  
 
