@@ -1,11 +1,12 @@
 ## Description
-Sets the projectile's model number. (DISPLAY bullet types only)
+Sets the CustomModelData on the current projectile's bullet. (DISPLAY bullet types only)
 
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| model     |           | The model to set the projectile to                                   |         |
+| value     |v, model, m| The model to set the projectile to                                   | 0       |
+
 
 ## Examples
 This example would set the projectile bullet model number to 1234.
