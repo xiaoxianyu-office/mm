@@ -9,6 +9,9 @@ Following these steps will help you get a decent understanding of what things ar
 - [Step 4: Essential Commands](/Guides/Step-4:-Essential-Commands)
 - [Step 5: Extra Notes](/Guides/Step-5:-Extra-Notes)
 
+### Extras
+- [Extra: Wiki Tips](/Guides/Extra:-Wiki-Tips)
+
 # Guides
 This list contains all the current guides. 
 | Guide                  | Description                                                                              |
