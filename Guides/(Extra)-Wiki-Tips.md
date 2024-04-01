@@ -1,0 +1,4 @@
+The Wiki is a big and scary place, but it is home to all the information you can need. Here are a few tips that can make navigating the wiki much easier!
+
+# Searching
+Using the search bar located at the top of the page can sometimes be less than reliable, but it is an option. A more ideal approach is identifying which section you need and pressing `ctrl+f` on your keyboard to search through that page. For example, heading to the [Mechanics](/Skills/Mechanics) page presents you with a long list of every mechanic. Using `ctrl+f` you can simply search "Message" and it will take you to the Message mechanic. The same process can be applied to each category, Mechanics, Triggers, Targeters and so on.
