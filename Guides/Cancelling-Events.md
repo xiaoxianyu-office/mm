@@ -68,5 +68,9 @@ You may want to cancel the death event so you can create a custom death with fan
 DeathSkill:
   Skills:
   - cancelevent
-  - 
-PAGE UNFINISHED. MORE TO COME
+  - delay 10
+  - fakeexplosion @self
+  - particlesphere{particle=flame;amount=200;radius=5;repeat=5;repeatinterval=5} @self
+  - delay 20
+  - remove @self
+```
