@@ -17,9 +17,9 @@ Following these steps will help you get a decent understanding of what things ar
 This list contains all the current guides. 
 | Guide                  | Description                                                                              |
 |---------------------------|------------------------------------------------------------------------------------------|
-| [Making an NPC](/Guides/Making-An-NPC)       | How to create a non-moving static NPC                                  |
-| [Cancelling Events](/Guides/Cancelling-Events)              | Completely removing default behaviour of mobs and replacing them with your own custom skills |
-| [Health Displays](/Guides/Health-Displays)     | Displaying a mobs health to the player in various ways
+| [Cancelling Events](/Guides/Cancelling-Events) | Completely removing default behaviour of mobs and replacing them with your own custom skills |
+| [Health Displays](/Guides/Health-Displays) | Displaying a mobs health to the player in various ways |
+| [Making an NPC](/Guides/Making-An-NPC) | How to create a non-moving static NPC
 
 <!---
 # Other Guides
