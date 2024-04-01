@@ -18,9 +18,9 @@ This list contains all the current guides.
 | Guide                  | Description                                                                              |
 |---------------------------|------------------------------------------------------------------------------------------|
 | [Making an NPC](/Guides/Making-An-NPC)       | How to create a non-moving static NPC                                  |
-<!--| [Advanced RandomSpawns](/Guides/Advanced-Randomspawns)              | Setting up RandomSpawns with multiple conditions and limits |
+| [Cancelling Events](/Guides/Cancelling-Events)              | Completely removing default behaviour of mobs and replacing them with your own custom skills |
 | [Using Templates](/Guides/Using-Templates)     | How to effectively use Templates
---!>
+
 <!---
 # Other Guides
 These links are for guides relating to other Mythic plugins.
