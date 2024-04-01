@@ -1,28 +1,21 @@
-Mechanic: Delay
-===============
+Causes the current skill or mechanic to be delayed by X ticks.
 
-Causes the current skill list to be delayed by X ticks.
+Delay can also be used as an attribute directly inside of mechanics by adding `delay=TICKS`, see example below.
 
-Delay can also be used as syntax directly inside other skills by adding
-"delay=TICKS", see example below.
+Skill-delay and Attribute-delay do not function the same manner.
 
-Skill-delay and Syntax-delay do not function the same manner.
+# Examples
 
-Examples
---------
+```yaml
+Skills:
+  - ignite{ticks=60}
+  - delay 60
+  - explode
+```
 
-      Skills:
-      - ignite{ticks=60}
-      - delay 60
-      - explode
-
-Also possible:
-
-      Skills:
-      - ignite{ticks=60;delay=80}
-      - explode{delay=80}
-
-or:
-
-      Skills:
-      - skill{skill=exampleskill;delay=200}
+This is an example of using the delay universal attribute. It will work inside any mechanic and will delay it from happening by the specified amount of ticks.
+```yaml
+Skills:
+  - skill{skill=exampleskill;delay=200}
+  - explode{delay=80}
+```
