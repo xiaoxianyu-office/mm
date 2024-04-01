@@ -3,11 +3,11 @@ This page is full of detailed guides and tutorials to help you get to grips with
 # Getting Started
 Following these steps will help you get a decent understanding of what things are and how to use them together.
 
-- [Step 1: Understanding the different terms](/Guides/Getting-Started-Step-1)
-- [Step 2: Locating where files and code should go](/Guides/Getting-Started-Step-2)
-- [Step 3: Creating your first mob](/Guides/Getting-Started-Step-3)
-- [Step 4: Essential Commands](/Guides/Getting-Started-Step-4)
-- [Step 5: Extra Notes](/Guides/Getting-Started-Step-5)
+- [Step 1: Understanding the different terms](/Guides/Step-1:-Understanding-the-different-terms)
+- [Step 2: Locating where files and code should go](/Guides/Step-2:-Files-And-Directories)
+- [Step 3: Creating your first mob](/Guides/Step-3:-Creating-Your-First-Mob)
+- [Step 4: Essential Commands](/Guides/Step-4:-Essential-Commands)
+- [Step 5: Extra Notes](/Guides/Step-5:-Extra-Notes)
 
 # Guides
 This list contains all the current guides. 
