@@ -141,7 +141,20 @@ Mechanics:
 - [damage](/mechanics/damage) Dealing 5 damage directly to all players within 5 blocks of the mob, ignoring their armor
 - [throw](/mechanics/throw) Throwing the players with velocity and Y velocity
 - [fakeexplosion](/mechanics/FakeExplosion) Causing an explosion effect which does no damage and doesn't break blocks.
-
+```yaml
+SmashAttack:
+  Cooldown: 8
+  Conditions:
+  - targetwithin{d=25}
+  Skills:
+  - message{cooldown=30;m="<mob.name><&co> Hahahah! I will crush you, fool!"} @PlayersInRadius{r=40}
+  - teleport @target
+  - sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
+  - delay 10
+  - damage{amount=5;ignorearmor=true} @PlayersInRadius{r=5}
+  - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
+  - fakeexplosion @Self
+```
 # Items File
 `/plugins/MythicMobs/Items/SkeletonKing.yml`
 
