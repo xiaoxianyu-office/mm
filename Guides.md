@@ -21,6 +21,6 @@ This list contains all the current guides.
 # Other Guides
 These links are for guides relating to other Mythic plugins.
 
-- [MythicCrucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Guides)
-- [MythicEnchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Guides)
+- [MythicCrucible](/../../../mythiccrucible/-/wikis/Guides)
+- [MythicEnchantments](/../../../mythicenchants/-/wikis/Guides)
 --!>
