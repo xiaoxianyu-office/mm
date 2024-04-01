@@ -146,9 +146,10 @@ Mechanics:
 `/plugins/MythicMobs/Items/SkeletonKing.yml`
 
 Now we will create the items our mob needs for its armor and weapon.
-<!---
-I am too tired I must sleep zzzzz I will finish tomorrow <3
----!>
 
 # Drops File
 `/plugins/MythicMobs/DropTables/SkeletonKing.yml`
+
+<!---
+I am too tired I must sleep zzzzz I will finish tomorrow <3
+---!>
