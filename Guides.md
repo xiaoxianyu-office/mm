@@ -19,7 +19,7 @@ This list contains all the current guides.
 |---------------------------|------------------------------------------------------------------------------------------|
 | [Making an NPC](/Guides/Making-An-NPC)       | How to create a non-moving static NPC                                  |
 | [Cancelling Events](/Guides/Cancelling-Events)              | Completely removing default behaviour of mobs and replacing them with your own custom skills |
-| [Using Templates](/Guides/Using-Templates)     | How to effectively use Templates
+| [Health Displays](/Guides/Health-Displays)     | Displaying a mobs health to the player in various ways
 
 <!---
 # Other Guides
