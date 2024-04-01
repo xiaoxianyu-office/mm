@@ -1,11 +1,10 @@
 ## Description
 Gives money to players.  
 This mechanic needs the Vault plugin and an economy plugin installed to
-work.  
-It also requires Vault being enabled in the plugin's Configurations file
+work and Vault must be enabled in the MythicMobs `config-general.yml` file
 ```yaml
-        Vault:
-          Enabled: true
+    Vault:
+      Enabled: true
 ```
 
 ## Attributes
@@ -17,8 +16,8 @@ It also requires Vault being enabled in the plugin's Configurations file
 
 ## Examples
 ```yaml
-      Skills:
-      - currencygive{amount=20} @pir{r=20} ~onSpawn 0.2
+  Skills:
+  - currencygive{amount=20} @pir{r=20} ~onSpawn 0.2
 ```
 If executed all players in radius of 20 blocks around the spawned mob
 will receive 20 money by a chance of 20%
