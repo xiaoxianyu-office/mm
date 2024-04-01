@@ -25,28 +25,3 @@ SkeletonKing:
   Skills:
   - setname{n=<caster.name>;delay=2} @self ~onDamaged
 ```
-
-### Health Bar
-This is a more complicated process but the same basic premise. In this basic example we will setup a [Metaskill](/Skills/Metaskills) which sets the mobs name depending on the mobs health using health modifiers, and we are setting the starting bar when the mob spawns
-```yaml
-SkeletonKing:
-  Type: WITHER_SKELETON
-  Skills:
-  - skill{s=HealthBar} @self ~onDamaged
-  - setname{n="&8[&a||||||||||&8]"} @self ~onSpawn
-```
-
-```yaml
-HealthBar:
-  Skills:
-  - setname{n="&8[&a||||||||||&8]"} @self =91%-100%
-  - setname{n="&8[&a|||||||||&7|&8]"} @self =81%-90%
-  - setname{n="&8[&a||||||||&7||&8]"} @self =71%-80%
-  - setname{n="&8[&a|||||||&7|||&8]"} @self =61%-70%
-  - setname{n="&8[&a||||||&7||||&8]"} @self =51%-60%
-  - setname{n="&8[&a|||||&7|||||&8]"} @self =41%-50%
-  - setname{n="&8[&a||||&7||||||&8]"} @self =31%-40%
-  - setname{n="&8[&a|||&7|||||||&8]"} @self =21%-30%
-  - setname{n="&8[&a||&7||||||||&8]"} @self =11%-20%
-  - setname{n="&8[&a|&7|||||||||&8]"} @self =0%-10%
-```
