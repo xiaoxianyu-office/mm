@@ -14,10 +14,10 @@ don't target anything. You control what your skill targets using a
 # Additional Mechanics
 Links to mechanics added by addon plugins. Any mechanics from these links will not work without that plugin installed.
 
-- [ModelEngine 4](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/MythicMobs/Model-Mechanics)
-- [ModelEngine Legacy](https://git.lumine.io/mythiccraft/modelengine/-/wikis/Mechanics:-Model)
-- [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics)
-- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Mechanics)
+- [ModelEngine 4](/../../../model-engine-4/-/wikis/MythicMobs/Model-Mechanics)
+- [ModelEngine Legacy](/../../../modelengine>/-/wikis/Mechanics:-Model)
+- [Mythic Crucible](/../../../mythiccrucible/-/wikis/Skills/Mechanics)
+- [Mythic Enchantments](/../../../mythicenchants/-/wikis/Skills/Mechanics)
 - [MCPets](https://mcpets.gitbook.io/mcpets/tutorials/mythicmobs-features#mechanics)
 
 
