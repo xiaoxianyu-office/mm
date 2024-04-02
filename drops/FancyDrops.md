@@ -195,7 +195,7 @@ Other than the options written above, you can also determine specific behaviors 
 
 ```yaml
   Drops:
-  - amber_1{itemglow=GOLD;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - amber_1{itemglow=true;itemglowcolor=GOLD;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
 ```
 
 | Attribute | Aliases   | Description                                                          | Default |
@@ -223,15 +223,15 @@ Other than the options written above, you can also determine specific behaviors 
 ### Example
 ```yaml
   Drops:
-  - amber_1{itemglow=GOLD;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
-  - adamantium_ore{itemglow=WHITE;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
-  - amethyst_1{itemglow=YELLOW;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
-  - andesite_bricks{itemglow=LIGHT_PURPLE;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
-  - bananarang{itemglow=RED;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
-  - augment_sword_midas_6{itemglow=AQUA;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
-  - blue_stained_tiles{itemglow=GREEN;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
-  - black_stained_tiles{itemglow=BLUE;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
-  - bismuth_2{itemglow=DARK_RED;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21} 1 1
+  - amber_1{itemglow=true;itemglowcolor=GOLD;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - adamantium_ore{itemglow=true;itemglowcolor=WHITE;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - amethyst_1{itemglow=true;itemglowcolor=YELLOW;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - andesite_bricks{itemglow=true;itemglowcolor=LIGHT_PURPLE;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - bananarang{itemglow=true;itemglowcolor=RED;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - augment_sword_midas_6{itemglow=true;itemglowcolor=AQUA;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - blue_stained_tiles{itemglow=true;itemglowcolor=GREEN;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - black_stained_tiles{itemglow=true;itemglowcolor=BLUE;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
+  - bismuth_2{itemglow=true;itemglowcolor=DARK_RED;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21} 1 1
 ```
 
 <!-- LINKS -->
