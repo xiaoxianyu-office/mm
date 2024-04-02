@@ -10,8 +10,8 @@ Following these steps will help you get a decent understanding of what things ar
 - [Step 5: Extra Notes](/Guides/(Step-5)-Extra-Notes)
 
 ### Extras
-- [Extra: Wiki Tips](/Guides/Extra:-Wiki-Tips)
-- [Extra: Text Editors](/Guides/Extra:-Text-Editors)
+- [Extra: Wiki Tips](/Guides/(Extra)-Wiki-Tips)
+- [Extra: Text Editors](/Guides/(Extra)-Text-Editors)
 
 # Guides
 This list contains all the current guides. 
