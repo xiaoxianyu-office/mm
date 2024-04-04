@@ -167,7 +167,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [HasCurrency](/skills/conditions/hascurrency)                                 | Entity   | If the target has the given amount of vault currency                                          |
 | [HasEnchantment](/skills/conditions/HasEnchantment)                           | Entity   | Checks if the target entity's equipped item has an enchantment                                |
 | [HasGravity](/skills/conditions/hasgravity)                                   | Entity   | Tests if the target mob has gravity                                                          |
-| [HasInventorySpace](/skills/conditions/hasinventoryspace)                     | Entity   | If the target has the given amount of empty inventory space                                   |
+| [HasInventorySpace](/skills/conditions/hasinventoryspace)                     | Entity   | Checks if the target player has empty inventory space                                         |
 | [HasItem](/skills/conditions/hasItem)                                         | Entity   | Tests if the target player has the given number of given material                            |
 | [HasOffhand](/skills/conditions/HasOffhand)                                   | Entity   | Checks if the target entity has something in the offhand                                      |
 | [HasOwner](/skills/conditions/hasowner)                                       | Entity   | Tests if the target mob has an owner                                                         |
