@@ -35,3 +35,11 @@ Skills:
     7331
     }
 ```
+Random Skills can be done fully In-Line too!
+```yaml
+Skills:
+- randomskillskill{skills=
+    [- message{m="&7Pleasant afternoon we're having!"} @trigger],
+    [- message{m="&7A nice sunny afternoon."} @trigger],
+    [- message{m="&7Good Afternoon <trigger.name>! Good to see you!"} @trigger]} @trigger
+```
