@@ -18,10 +18,10 @@
 - If all of the above fails, ask for help over our [discord]
 
 ### REPLACE Action
-- Check the world difficulty: **regardless of what mob type you are spawning**, it shouldn't be peaceful! This action can only replace hostile entities!
+- Check the world difficulty: it shouldn't be peaceful! 
 - Make sure the world can spawn monsters naturally (For instace, by making sure that the `doMobSpawning` gamerule is set to `true` and other such things).
 - Check region([World Guard](https://dev.bukkit.org/projects/worldguard), [Grief Defender](https://www.spigotmc.org/resources/1-12-2-1-20-4-griefdefender-claim-plugin-grief-prevention-protection.68900/) and so on) [flags](https://worldguard.enginehub.org/en/latest/regions/flags/#mobs-fire-and-explosions) to see if the region has any [flag which blocks mob spawning](https://worldguard.enginehub.org/en/latest/regions/flags/#mobs-fire-and-explosions)
-- You should know that, since the Replace action will only replace hostile mobs, you must make sure that those mobs can spawn first, according to theirs vanilla Natural generation conditions.
+
 
 <!-- LINKS -->
 [discord]: https://www.mythiccraft.io/discord
