@@ -59,7 +59,7 @@ Skills are a fundamental feature of MythicMobs, they allow you to combine multip
 ## Items
 [Items Wiki](/Items/Items)
 
-MythicMobs has the ability to create basic custom items which can be used by mobs or given to players. You can exapnd upon these items if you have the [MythicCrucible](https://mythiccraft.io/index.php?resources/crucible-custom-items-armor-furniture-blocks-more.2/) addon plugin.
+MythicMobs has the ability to create basic custom items which can be used by mobs or given to players. You can expand upon these items if you have the [MythicCrucible](https://mythiccraft.io/index.php?resources/crucible-custom-items-armor-furniture-blocks-more.2/) addon plugin.
 
 ## RandomSpawns
 [RandomSpawns Wiki](/Random-Spawns)
