@@ -7,6 +7,7 @@ Throws all targets away from the mob (or origin).
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | velocity  | v         | The horizontal velocity at which the entity is throw                 | 1       |
 | velocityY | vy        | The vertical velocity at which the entity is thrown                  | 1       |
+| fromOrigin | fo | Sets whether to throw the entity from the origin | false |
 
 
 ## Examples
