@@ -17,10 +17,8 @@ Negative numbers on pitch will recoil upwards, whilst positive will recoil downw
 
 ## Examples
 ```yaml
-ScreenShakeSkill:
   Skills:
-  - recoil{r=1;pitch=-1to-1} @self ~onAttack
-  - recoil{r=4;pitch=10to-10} @self ~onAttack
+  - recoil{r=1;pitch=-1to-1} @self
 ```
 
 
