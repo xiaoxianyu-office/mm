@@ -18,3 +18,4 @@ Logs a message to console directly. For debugging or preservation purposes.
 ## Aliases
 - [x] console
 - [x] print
+- [x] printf
