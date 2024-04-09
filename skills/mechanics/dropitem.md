@@ -7,6 +7,7 @@ Drops a set of items or optionally a
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | items     | i       | Items to drop. Can be a comma-separated list of items, or a DropTable. You can specify an amount by putting a space and a number after the item name. | NONE    |
+| naturally | natural, n | Whether the items should be dropped naturally                       | true    |
 
 
 ## Examples
