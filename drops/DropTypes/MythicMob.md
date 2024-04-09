@@ -7,7 +7,7 @@ When dropped, some specified MythicMobs are spawned
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | type      | t, mob, m| The type of mob to summon. Can be a Mythic Mob type or a regular entity type                                                                 | SKELETON      |
 | amount    | a         | The number of mobs to summon.                                        | 1       |
-| level     | l         | The level of the mob being summoned                                  | 0       |
+| level     | lvl, l    | The level of the mob being summoned                                  | 0       |
 | radius    | r, noise, n| The radius around the target within which the mobs will be summoned | 0       |
 | yRadius   | yr, ynoise, yn| Overrides the Y component of radius.                             | radius  |
 | yRadiusUpOnly | yradiusonlyup, yruo, yu| Whether the Y spread should only go upward, not downward.                                                                                      | false   |
