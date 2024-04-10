@@ -22,3 +22,7 @@ something. Can use any aura attribute
 
 ## Aliases
 - [x] onhit
+
+
+<!-- LINKS -->
+[metaskill]: /Skills/Metaskills
