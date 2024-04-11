@@ -71,7 +71,7 @@ Defaults to `true`.
 
 Available values:
 - `true` - despawns the mob if there are no nearby players, on chunk unload.
-- `false` - similar to `persistent` but can be despawned.
+- `false` - despawns the mob only on server restart.
 - `chunk` - despawns the mob when the chunk unloads.
 - `persistent` - the mob is persistent and doesn't despawn. To remove a persistent mob, you have to either use the kill command (`/mm m kill <type>`) or append the `-p` flag to the killall one (`/mm m killall -p`). More information on the subject can be found [here](/Commands-and-Permissions#mob-commands).
 ```yml
