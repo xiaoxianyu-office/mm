@@ -5,11 +5,10 @@ The audience types are:
 - `nonSelfWorld`/`nonSelf`: every player in the world other than the caster of the mechanic
 - `target`: the target of the mechanic
 - `world`: every player in the world
-- `nearby`/`nearbyplayers`: every nearby player
-- `tracked`: every player who's clients can render the caster
+- `tracked`/`trackedplayers`/`nearby`/`nearbyplayers`: every player whose client can render the caster
 - `@Targeter`: every player that the targeter targets
 
-> The default value is `nearby`
+> The default value is `tracked`
 
 Of particular relevance is the `audience=@Targeter` attribute, that allows any entity targeter to be used as the audience of the effect
 ```yaml
