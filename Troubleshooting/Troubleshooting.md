@@ -8,7 +8,11 @@ Never test in creative for whatever reason. It will break most things. Test in s
 Spigot by default limits the max health of mobs to 2048. You can change this limit in your `spigot.yml` file by changing `maxHealth` to a higher number.
 
 ## Specific Features
+### MythicMobs
 - [RandomSpawns](./RandomSpawns)
+
+### ModelEngine
+- [Model Vanishes On Restart](./Model-Vanish-On-Restart)
 
 <!-- LINKS -->
 [discord]: https://www.mythiccraft.io/discord
