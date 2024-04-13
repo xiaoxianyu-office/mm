@@ -12,7 +12,7 @@ Spigot by default limits the max health of mobs to 2048. You can change this lim
 - [RandomSpawns](./RandomSpawns)
 
 ### ModelEngine
-- [Model Vanishes On Restart](./Model-Vanish-On-Restart)
+- [ModelEngine Model Vanishes](./ModelEngine-Model-Vanishes)
 
 <!-- LINKS -->
 [discord]: https://www.mythiccraft.io/discord
