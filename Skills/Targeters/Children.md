@@ -1,6 +1,6 @@
 ## Description
 Targets any child entities summoned by the caster.  
-Does not work for a player caster.  
+Works for player casters, if the [summon] mechanic was used and the `summonerIsOwner` attribute was set to `true`.
 
 
 ## Attributes
@@ -17,3 +17,7 @@ Does not work for a player caster.
 ## Aliases
 - [x] child
 - [x] summons
+
+
+<!-- LINKS -->
+[summon]: /skills/mechanics/summon
