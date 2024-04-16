@@ -69,6 +69,7 @@
     * [Stats Modifiers](/Stats#modifiers)
   * [Particles Types](/skills/effects/particles/types)
   * [Audience](/Skills/Audience)
+  * [Equipment Slots](/Skills/EquipSlot)
 
 ##### [Examples](/examples/Common-Examples)
 ##### [Useful Tips](/UsefulTips)
