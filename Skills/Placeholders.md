@@ -124,6 +124,7 @@ Some of these variables are only generated and available under some special circ
 | <skill.var.itr>                                                                                         | Using the `repeat` and `repeatInterval` [universal attributes]                                          | Returns the current iteration                                                                           |
 | <skill.var.volume>                                                                                      | [~onHear] trigger                                                                                       | Returns a float value between 1 and 15 representing the intensity of the sound                          |
 | <skill.var.sound-type>                                                                                  | [~onHear] trigger                                                                                       | Returns the type of the sound                                                                           |
+| <skill.var.hit-block-type>                                                                                  | [raytrace] mechanic                                                                                     | Returns the block that was hit, or AIR if none                                                          |
 
 ## Target Placeholders
 These placeholders will return whatever target selector has been used. For instance <target.name> + @NearestPlayer will return the name of the player closest to the casting mob. The following are only some of the placeholders that can have a `target` scope, and in general any placeholder that is also present in the [Caster Placeholder](#caster-placeholders) section will also work.
@@ -316,5 +317,7 @@ ZOMBIE:
 [~onDamaged]: /Skills/Triggers#ondamaged
 [onChat]: /skills/mechanics/onChat
 [aura]: /skills/mechanics/aura
+[raytrace]: /skills/mechanics/raytrace
+[raytraceto]: /skills/mechanics/raytraceto
 [onDamaged]: /skills/mechanics/onDamaged
 [universal attributes]: /Skills/Mechanics#universal-attributes
