@@ -1,7 +1,13 @@
 ## Description
-Traces a ray to the target. **[PREMIUM ONLY]**
+Traces a ray to the target.
 
- 
+> **This is a [Premium-Only] mechanic!**
+
+| [Implemented Placeholders]     |
+|--------------------------------|
+| `<skill.var.hit-block-type>`   |
+
+
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
@@ -37,3 +43,8 @@ MyRaytraceSkill:
         - samefaction false
       ]} @targetlocation ~onUse
 ```
+
+
+<!-- LINKS -->
+[Premium-Only]: Premium-Features
+[Implemented Placeholders]: /Skills/Placeholders#variable-placeholders
