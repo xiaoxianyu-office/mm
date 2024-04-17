@@ -48,4 +48,6 @@ So, if a resource is on the wiki itself, please do use this method.
 [Premium-Only]: Premium-Features
 
 [material]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+[Implemented Placeholders]: /Skills/Placeholders#variable-placeholders
 ```
