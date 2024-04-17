@@ -7,6 +7,11 @@ The description of the mechanic: what it does, how it does it, and possible note
 
 > **This is a no-target mechanic, and the affected entity will always be the caster**
 
+| [Implemented Placeholders]     |
+|--------------------------------|
+| `<skill.var.example1>`         |
+| `<skill.var.example2>`         |
+
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
@@ -46,5 +51,7 @@ Another example:
 - [x] mechanic_alias_1
 - [x] mechanic_alias_2
 
+<!-- LINKS -->
 [Paper-Only]: https://papermc.io/downloads/all
 [Premium-Only]: Premium-Features
+[Implemented Placeholders]: /Skills/Placeholders#variable-placeholders
