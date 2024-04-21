@@ -9,34 +9,24 @@ General
 
 Mechanics
 ---------
-
 ### NEW: `Log`
 `- log{message="Debug to console with variables <caster.var.test>"}`
-
 ### NEW: `SetTextDisplay`
 - `setTextDisplay{text="text here"} @Target`
-
 ### NEW: `Taunt`
 - Sets the caster's threat to 110% of the current target's target and forces them to attack the caster. Requires threat tables.
 
 Conditions
 ----------
-
 ### NEW: `boundingBoxesOverlap`
-
 ### NEW: `distanceFromPin`
 - `distanceFromPin{pin=X;distance=<5}`
 
 Targeters
 ---------
-
 ### NEW: `@BlocksInPinRegion`
-
-### NEW: `
-
 ### NEW: `@TrackedPlayers`
 - Targets players that are within render distance of and currently rendering the mob
-
 ### Pin
 - Added `random=true` option, if targeting a multi-pin it will target a random one instead of all of them.
 
