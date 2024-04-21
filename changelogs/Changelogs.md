@@ -1,7 +1,7 @@
 5.7.0 (Dev Builds)
 =====
 - Added new HEARING ability to mobs enabled by `Hearing.Enabled: true`. Requires 1.20+
-- Added `~onHear` trigger that responds to hearing sounds
+- Added [`~onHear`](/Mobs/Mobs#hearing) trigger that responds to hearing sounds
 
 General
 -------
