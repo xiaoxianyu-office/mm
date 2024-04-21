@@ -3,6 +3,92 @@
 - Added new HEARING ability to mobs enabled by `Hearing.Enabled: true`. Requires 1.20+
 - Added `~onHear` trigger that responds to hearing sounds
 
+General
+-------
+- Added particles: white_smoke, dust_plume, gust, gust_emitter, gust_dust, and trial_spawner_detection
+
+Mechanics
+---------
+
+### NEW: `Log`
+`- log{message="Debug to console with variables <caster.var.test>"}`
+
+### NEW: `SetTextDisplay`
+- `setTextDisplay{text="text here"} @Target`
+
+### NEW: `Taunt`
+- Sets the caster's threat to 110% of the current target's target and forces them to attack the caster. Requires threat tables.
+
+Conditions
+----------
+
+### NEW: `boundingBoxesOverlap`
+
+### NEW: `distanceFromPin`
+- `distanceFromPin{pin=X;distance=<5}`
+
+Targeters
+---------
+
+### NEW: `@BlocksInPinRegion`
+
+### NEW: `
+
+### NEW: `@TrackedPlayers`
+- Targets players that are within render distance of and currently rendering the mob
+
+### Pin
+- Added `random=true` option, if targeting a multi-pin it will target a random one instead of all of them.
+
+5.6.2
+=====
+
+Random Spawning
+---------------
+- Rewrote the random spawning generator and added some new config options
+- Added `ReplaceObeysCap` to random spawning, defaulting to false.
+
+Bugs / Other
+------------
+- Added `onSummon` (alias `then`) attribute to `summon` mechanic, if specified will run the skill on the summoned mob after it's summoned.
+- Added `<caster/target/trigger.raytrace.#>` placeholder
+- Added `<target/trigger.stat.STAT_NAME>` placeholder
+- Added `DisplayOptions.TeleportDuration` option
+- Added `Options.VisibleByDefault`
+- Added `executeAfterDeath=true` option to `skill` and `vskill` mechanics
+- Added `fakelightning` and `fakeexplosion` aliases for those effect mechanics
+- Added `fromOrigin` to fireball mechanic
+- Added `inheritDespawnOption` option to summon mechanic
+- Added placeholder support to `limit` targeter option
+- Added placeholder support to WEPasteSchematicMechanic `x/y/z` offsets and `rotation` options
+- Added sub-hitbox deep active mob parent search
+- Attempt to catch errors in command mech to prevent npc breakage
+- Changed `permanent` option in hide mechanic to `ignoreAuraOptions`
+- Fixed spawner data sometimes getting wiped during reloads
+- Fixed GlowEffect auras not merging correctly
+- Fixed GlowEffect NPE
+- Fixed IllegalArgumentException in cluster spawning generator
+- Fixed NPE in Fireball mechanic closes #1561
+- Fixed NPE with invalid skill parameters
+- Fixed NPE with new random spawn generator
+- Fixed NPEs in GlowManager
+- Fixed NoSuchMethodError when spawning mobs
+- Fixed StackOverflowError caused by mob recursively damaging itself closes #1546
+- Fixed block light and sky light display options
+- Fixed error with EnderDragonAlive condition used with random spawns closes #1539
+- Fixed extremely rare race condition with mobs despawning the same tick they die
+- Fixed IllegalArgumentException in cluster spawning generator
+- Fixed mobs with no display name set having a display name
+- Fixed non-mob entities throwing an error with PreventOtherDrops
+- Fixed pin wand being able to break blocks
+- Fixed potion clear mechanic not clearing all potion effects when not providing any type.
+- Fixed some bugs with the Biomes field in random spawners closes #1558
+- Fixed some more issues with multi-hitbox support
+- Fixed `repeat=X` not working if repeatInterval is 0 closes #1555
+- Fixed scope.raytrace placeholders
+- Fixed bugs with rally mechanic
+- Removed a cancelDamage alias
+
 5.6.1
 =====
 - Added various new config options for items and drops
