@@ -1,11 +1,11 @@
 What is Mythic?
 -------------------
 
-Mythic[ ](/Wiki-Editors-Resources/Wiki-Editors-Resources) allows server owners to fully modify all attributes of any non-player entity on your server, and even allows for the creation of your own custom mobs and bosses!
+Mythic[ ](/Wiki-Editors-Resources/Wiki-Editors-Resources) allows server owners to fully modify all attributes of any non-player entity on your server, and even allows for the creation of your own custom complex systems!
 
-It gives you full control over how mobs behave, from simply increasing their HP and damage to giving mobs a vast arsenal of new abilities with a powerful yet simple scripting system. Your custom mobs can replace vanilla mobs, be spawned randomly using a vast array of spawn conditions, or you can set up custom mob spawners that activate under certain conditions or by commands.
+Above all, this plugin gives developers full control over how mobs behave, from simply increasing their HP and damage to giving mobs a vast arsenal of new abilities with a powerful yet simple scripting system. Your custom mobs can replace vanilla mobs, be spawned randomly using a vast array of spawn conditions, or you can set up custom mob spawners that activate under certain conditions or by commands.
 
-You can finally create that ultimate boss you've always dreamed of crushing your players with. It is an absolute essential for almost every server.
+Looking to make the ultimate boss? We've got you covered. Just want to make simple mobs for your RPG? MythicMobs is your plugin. Wherever your server lies, from complex MMOs to friendly SMPS and fast-paced minigames, your imagination is the limit.
 
 As a brief summary, Mythic allows you to:
 
@@ -43,8 +43,7 @@ As a brief summary, Mythic allows you to:
 <!-- -->
 
 -   **Spawning Control**:  
-    Set your custom mobs and bosses up to spawn randomly in different areas of the world, based on any 
-    number of conditions you can specify. You can replace natural spawns completely!
+    Set your custom mobs and bosses up to spawn randomly in different areas of the world, based on an extensive list of conditions you can specify. You can replace natural vanilla spawns completely!
 
 <!-- -->
 
@@ -78,13 +77,13 @@ As a brief summary, Mythic allows you to:
 <!-- -->
 
 -   **Plugin Compatibility**:  
-    Integration with a wide variety of popular plugins!
+    Integration with a wide variety of popular plugins, including ModelEngine!
 
 <!-- -->
 
 -   *With many more features too extensive to list here!*
 
-Setup
+Getting Started
 -----
 
 <!--   [Configuration] -->
@@ -92,6 +91,7 @@ Setup
 -   [Permissions]
 -   [FAQ's]
 -   [Examples]
+-   [Included Starter Mobs]
 <!--   [Videos] -->
 
   [1]: youtube>_YQUS3sDbI0
@@ -101,18 +101,18 @@ Setup
   [FAQ's]: FAQ
   [Permissions]: Commands-and-Permissions#permissions
   [Videos]: Videos
+  [Included Starter Mobs]: starter-mobs
 
 Help & Questions
 ----------------
 
-TLDR:
+Need more help?
 
 -   [Discord Server](https://www.mythiccraft.io/discord)
--   Official Server: **play.theloungemc.com**
 
-Mythic is a complex plugin that can be confusing to start out with due to the incredible number of features and the immense amount of customization you can do.
+Mythic can a dauntingly complex plugin that might be confusing to start out with due to the sheer scope of what it can accomplish.
 
-To get the most out of it, make sure you join the huge, active MythicMobs community to get help and support, either on our Discord Server or Forums, where you can ask questions, get ideas, and more, directly from the developers, as well as countless other server owners!
+To get the most out of it, make sure to join the massive, active MythicMobs community to get help and support, either on our Discord Server or Forums, where you can ask questions, get ideas, and more, directly from the developers, as well as countless other server owners!
 
 Development Builds
 ------------------
@@ -121,11 +121,9 @@ Development builds are available to premium users, and can be found here:
 
 <https://mythiccraft.io/index.php?pages/official-mythicmobs-dev/>
 
-Please note that development builds have untested features, and while I
-do not believe they will damage your server in any way, I can make no
-guarantees about it. They could potentially alter and/or break your
+Please note that development builds have untested features, and while made with the intent of stability, as with any beta there are no guarantees. They could potentially alter and/or break your
 previous MythicMobs configurations and may contain bugs and unfinished
-features. Please make sure you read changelogs fully.
+features. Please make sure you read changelogs *in full*.
 
 <hr>
 
