@@ -27,5 +27,5 @@ Stuns the target for 3 seconds, target cannot rotate.
 ```yaml
 ExampleSkill:
   Skills:
-  - stun{d=60;f=true} @target
+  - stun{d=60;f=false} @target
 ```
