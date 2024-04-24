@@ -19,7 +19,7 @@ Damages the targeted entity.
 | ignoreresistance | ir | Whether or not resistance should be ignored                          | false   |
 | poweraffectsdamage | paw | Should the skill's power affect the damage inflicted              | true    |
 | tags         | tag    | Allows you to specify any number of arbitrary tags for the damage mechanic using `tags=THIS,THAT`                                                                               |         |
-| element   | e, damagetype, type | *Become one of the Tags*                                   |         |
+| damagetype| element, e| *Becomes one of the Tags*                                            |         |
 | triggerSkills | ts    | Whether the damage mechanic should also be able to trigger `onAttack` related triggers       | false  |
 
 [damage immunity ticks]: /skills/mechanics/setnodamageticks
