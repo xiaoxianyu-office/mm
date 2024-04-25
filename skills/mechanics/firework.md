@@ -20,10 +20,6 @@ The type attribute's value can be one of the following
 - `CREEPER`
 - `STAR`
 
-### Colors Attribute
-It has been reported that the firework will display the opposite color than the one specified in the "color" output. If your firework effect seems to be having this problem, try to invert the color attribute.
-
-
 ## Examples
 ```yaml
   Skills:
