@@ -4,7 +4,7 @@ Using a few basic tricks you can use MythicMobs to create highly versatile NPC's
 
 The first step is simply making your mob file, this can be anywhere, for this example we'll make a NPC subfolder.
 
-Using the below mob as a base, we can make a simple NPC that just stands still. We are using LibsDisguises to make the mob look like a player.
+Using the below mob as a base, we can make a simple NPC that just stands still. We are using [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81/) to make the mob look like a player.
 
 `plugins/MythicMobs/Mobs/NPC/Steve.yml`
 ```yaml
