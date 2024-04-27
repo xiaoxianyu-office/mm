@@ -5,7 +5,8 @@ The audience types are:
 - `nonSelfWorld`/`nonSelf`: every player in the world other than the caster of the mechanic
 - `target`: the target of the mechanic
 - `world`: every player in the world
-- `tracked`/`trackedplayers`/`nearby`/`nearbyplayers`: every player whose client can render the caster
+- `tracked`/`trackedplayers`/: every player whose client can render the caster
+- `nearby`/`nearbyplayers`: every nearby player
 - `@Targeter`: every player that the targeter targets
 
 > The default value is `tracked`
