@@ -66,14 +66,19 @@ Teleports the mob two blocks up if it takes `SUFFOCATION` damage. Defaults to `f
 
 #### Despawn
 Determines how the mob will despawn.
-This option should be turned on if you're using a lot of mob spawners or entities will overwhelm your server.
-Defaults to `true`.
+This option should be turned on if you're using a lot of mob spawners or entities will overwhelm your server, or the entity you are making requires some special behavior regarding its despawn policy (Npcs, Bosses etc.)  
+Defaults to `true`. 
 
-Available values:
-- `true` - despawns the mob if there are no nearby players, on chunk unload.
-- `false` - despawns the mob only on server restart.
-- `chunk` - despawns the mob when the chunk unloads.
-- `persistent` - the mob is persistent and doesn't despawn. To remove a persistent mob, you have to either use the kill command (`/mm m kill <type>`) or append the `-p` flag to the killall one (`/mm m killall -p`). More information on the subject can be found [here](/Commands-and-Permissions#mob-commands).
+| Mode            | Aliases                | Description                                                 |
+|-----------------|------------------------|-------------------------------------------------------------|
+| NORMAL          | TRUE, YES                                                                             | - Despawns if no players are nearby<br>- Despawns if the server is restarted<br>- Despawns if the chunk is unloaded<br>- Is killed by normal mythicmobs kill commands                                            |
+| CHUNK           |                                                                                       | - Despawns if the server is restarted<br>- Despawns if the chunk is unloaded<br>- Is killed by normal mythicmobs kill commands                                                                                 |
+| NEVER           | FALSE, NO                                                                             | - Is killed by normal mythicmobs kill commands |
+| PERSISTENT      |                         |                                                            |
+| NPC             |                                                                                       | - Despawns if the server is restarted<br>- Despawns if the chunk is unloaded                           |
+
+> For the PERSISTENT despawn mode: to remove a persistent mob, you have to either use the kill command (`/mm m kill <type>`) or append the `-p` flag to the killall one (`/mm m killall -p`). More information on the subject can be found [here](/Commands-and-Permissions#mob-commands).
+
 ```yml
   Options:
     Despawn: true
