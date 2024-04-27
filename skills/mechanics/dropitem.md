@@ -8,7 +8,7 @@ Drops a set of items or optionally a
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | items     | i       | Items to drop. Can be a comma-separated list of items, or a DropTable. You can specify an amount by putting a space and a number after the item name. | NONE    |
 | naturally | natural, n | Whether the items should be dropped naturally                       | true    |
-
+| onDropSkill | onDrop, then | [Metaskill] to be execute when the item drops. Inherits the dropped item entity as the target(s) |
 
 ## Examples
 Example of dropping specific items.
@@ -30,3 +30,6 @@ Example of dropping items from a DropTable.
   - dropitem{i=SkeletonKingDrops} @self ~onSpawn
   - ...
 ```
+
+<!-- LINKS -->
+[metaskill]: /Skills/Metaskills
