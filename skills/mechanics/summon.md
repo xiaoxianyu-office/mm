@@ -18,6 +18,8 @@ Summons mobs of the given type around the target.
 | onSummon  | onsummonskill, then | The [metaskill] to execute on the summoned mobs            |         |
 | amount    | a         | The number of mobs to summon.                                        | 1       |
 | level     | l         | The level of the mob being summoned                                  | 0       |
+| yaw       |           | The yaw of the summoned entities. If not set, will inherit the caster's |      |
+| pitch     |           | The pitch of the summoned entities. If not set, will inherit the caster's |    |
 | radius    | r, noise, n| The radius around the target within which the mobs will be summoned | 0       |
 | yRadius   | yr, ynoise, yn| Overrides the Y component of radius.                             | radius  |
 | yRadiusUpOnly | yradiusonlyup, yruo, yu| Whether the Y spread should only go upward, not downward.                                                                                      | false   |
