@@ -78,4 +78,4 @@ Please note: Spawner files CANNOT be edited while the server is running, you mus
 
 Variables are a handy system used for storing information. You can then use the information in various other places such as placeholders in mechanics and conditions.
 
-**[>> Step 2](/Guides/Step-2:-Files-And-Directories)**
+**[>> Step 2](/Guides/(Step-2)-Files-And-Directories)**
