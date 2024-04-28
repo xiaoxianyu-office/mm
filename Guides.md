@@ -21,6 +21,7 @@ This list contains all the current guides.
 | [Health Displays](/Guides/Health-Displays) | Displaying a mobs health to the player in various ways |
 | [Making an NPC](/Guides/Making-An-NPC) | How to create a non-moving static NPC
 | [Spawn Message](/Guides/Spawn-Message) | Announcing to the server that your mob has spawned
+| [Your First Random Spawn](/Guides/Your-First-Random-Spawn) | Making your mob spawn randomly in the world
 
 <!---
 # Other Guides
