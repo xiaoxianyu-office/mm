@@ -35,3 +35,5 @@ With this command you can place blocks and obtain a list of coordinates you can 
 ### List All Entities
 `mm utilities listallentities <radius/mobtype>`  
 Allows you to list all entities, enabling you to filter them by the distance or their type
+
+**[>> Step 5](/Guides/(Step-5)-Extra-Notes)**
