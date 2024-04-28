@@ -19,6 +19,7 @@ This list contains all the current guides.
 |---------------------------|------------------------------------------------------------------------------------------|
 | [Cancelling Events](/Guides/Cancelling-Events) | Completely removing default behaviour of mobs and replacing them with your own custom skills |
 | [Health Displays](/Guides/Health-Displays) | Displaying a mobs health to the player in various ways |
+| [Limited Use Skills](/Guides/Limited-Use-Skills) | Limiting how many times a mob can use a skill |
 | [Making an NPC](/Guides/Making-An-NPC) | How to create a non-moving static NPC
 | [Spawn Message](/Guides/Spawn-Message) | Announcing to the server that your mob has spawned
 | [Your First Random Spawn](/Guides/Your-First-Random-Spawn) | Making your mob spawn randomly in the world
