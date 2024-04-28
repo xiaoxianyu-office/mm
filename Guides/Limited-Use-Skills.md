@@ -14,7 +14,7 @@ FireballSkill:
   - setvariable{var=caster.fireballs;val=<caster.var.fireballs|0>+1}
   - <Your skills mechanics go here>
 ```
-In this example, we are adding a value of "1" to the variable each time the skill is run, setting it to 1 if the variable did not exist at all via [variable fallbacks](/Skills/Variables#variable-fallback), then we run our mechanics as we normally would
+In this example, we are adding a value of "1" to the variable each time the skill is run, setting it to 1 if the variable does not exist at all via [variable fallbacks](/Skills/Variables#variable-fallback), then we run our mechanics as we normally would.
 
 Our skill has the [VariableEquals](/skills/conditions/variableequals) condition set which means that once the variable reaches 7, the condition will prevent the skill from running.
 
