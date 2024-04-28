@@ -1,3 +1,5 @@
+**Difficulty: Beginner**
+
 Using a few basic tricks you can use MythicMobs to create highly versatile NPC's. The basic idea is to create a mob that has no AI/movement and doesn't despawn. We can then attach various mechanics and skills to our NPC mob such as messages, commands, or any skill you can think of.
 
 # Step 1 - Basic NPC
