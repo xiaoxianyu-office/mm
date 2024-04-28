@@ -91,6 +91,7 @@ Getting Started
 -   [Permissions]
 -   [FAQ's]
 -   [Examples]
+-   [Guides](/Guides)
 -   [Included Starter Mobs]
 <!--   [Videos] -->
 
