@@ -1,3 +1,5 @@
+**Difficulty: Beginner**
+
 Most mob types have their own default way of doing things built into Minecraft, many of these actions can be blocked using the [CancelEvent](/skills/mechanics/cancelevent) mechanic, allowing you to replace a vanilla action with a custom one!
 
 A common example is cancelling a mobs attack with ~onAttack and replacing it with your own attack skill instead.
