@@ -1,3 +1,5 @@
+**Difficulty: Beginner**
+
 You may want to display your mobs health to players who are fighting it, there are a few different ways of doing this and this guide will go over them!
 
 # Boss Bars
