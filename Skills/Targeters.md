@@ -118,6 +118,7 @@ These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) ena
 | @[BlocksNearOrigin][]                                                                                                                          | @BNO                                                                                                                          | Targets all blocks in a radius around the origin of the metaskill.                                                                                                                                                     |
 | @[RingAroundOrigin][]                                                                                                                                                                            | @ringOrigin<br>@RAO                                                                                                                                                                            | Targets locations in a specified ring around the origin.                                                                                                                                                                            |
 | @[Spawners][]                                                                                                                          |    | Targets the location of the specified spawners.                                                                                                                          |
+| @[BlocksInPinRegion][]                                                                                                                                                                            |    | Targets the blocks in a region delimited by two pins                                                                                                                                                                            |
 
 
 
@@ -364,6 +365,7 @@ Currently, sort can have the following values:
   [TrackedLocation]: /Skills/Targeters/TrackedLocation
   [TriggerLocation]: /Skills/Targeters/TriggerLocation
 <!-- Multi Location Targeters -->
+  [BlocksInPinRegion]: /Skills/Targeters/BlocksInPinRegion
   [BlocksNearOrigin]: /Skills/Targeters/BlocksNearOrigin
   [Cone]: /Skills/Targeters/Cone
   [ForwardWall]: /Skills/Targeters/ForwardWall
