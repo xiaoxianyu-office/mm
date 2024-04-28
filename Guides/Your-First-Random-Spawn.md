@@ -1,3 +1,5 @@
+**Difficulty: Beginner**
+
 The [Random Spawns](/Random-Spawns) system allows you to make your custom MythicMobs spawn in your worlds, at random! You can fine tune these spawns using many options and conditions, to make them spawn however you want them to!
 
 There are 2 actions you can use when creating your spawn, ADD and REPLACE. Using replace will make MythicMobs overwrite vanilla mob spawns, this means there will be less vanilla mobs spawning, and you will have less control over it. Add on the other hand, generates spawn points along side vanilla spawn points, meaning it doesnt affect vanilla spawns, and you have more control. 
