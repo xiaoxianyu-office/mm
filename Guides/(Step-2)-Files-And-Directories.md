@@ -9,4 +9,4 @@ Valid Examples of file paths:
 - /plugins/MythicMobs/Mobs/Skeletons/King.yml
 - /plugins/MythicMobs/Packs/Skeletons/Mobs/King.yml
 
-
+**[>> Step 3](/Guides/(Step-3)-Creating-Your-First-Mob)**
