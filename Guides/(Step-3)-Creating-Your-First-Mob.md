@@ -257,3 +257,5 @@ RandomSkeletonKing:
   - night true
   - entitytype{t=SKELETON}
 ```
+
+**[>> Step 4](/Guides/(Step-4)-Essential-Commands)**
