@@ -14,7 +14,7 @@ Premium](http://www.mythicmobs.net/index.php?account/upgrades) comes with numero
     - Most skills 
     - Item attributes
     - Drop table amounts        
--   Ability to use [Skill Parameters](/skills/skillparametersystem)
+-   Ability to use [Skill Parameters](/skills/Metaskills#skill-parameters-premium-feature)
 -   Ability to use [In-Line Target Conditions](/skills/conditions/in-linetargetconditions)
 -   Ability to use on hit conditions & bounce in [projectile skills](/skills/mechanics/projectile)
 -   Ability to use conditional [AI goals/targeters](/Mobs/Custom-AI)
