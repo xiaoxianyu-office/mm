@@ -14,3 +14,5 @@ If you have found something which appears to be a bug with the plugin rather tha
 You can join the MythicMobs Discord to gain access to the support chat where we can help you troubleshoot any issues you may come across or point you in the right direction for creating what you want. While we are always happy to help, we would appreciate it if you have tried to do it yourself, rather than just asking us to do it for you.
 
 https://discord.com/invite/K3tqXfT
+
+**[>> Guides](/Guides#guides)**
