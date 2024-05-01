@@ -9,7 +9,7 @@ flowchart LR
     A(Mechanic 1) --> B(Mechanic 2)
     B --> C[Delay 0]
     B ---> D(Other mechanics this tick)
-    C ----> F(Mechanic 4)
+    C ----> F(Mechanic 3)
 ```
 
 ### Example
@@ -28,7 +28,9 @@ Skill2:
   Skills:
   - setvariable{var=test;val=1}
 ```
-
+> Executing the ExampleMechanic will output
+>> - `UNDEFINED` if no delay 0 is used
+>> - `1` otherwise
 
 ## Multiple Delays
 This behavior works with multiple delays too: each time a new `delay 0` is executed, the subsequent mechanics are pushed a the back of the execution line *again*
@@ -38,10 +40,10 @@ flowchart LR
     A(Mechanic 1) --> B(Mechanic 2)
     B --> C[Delay 0]
     B ---> D(Other mechanics this tick)
-    C ----> F(Mechanic 4)
+    C ----> F(Mechanic 3)
     F --> G(Delay 0)
     F ---> H(Other mechanics this tick)
-    G ----> L(Mechanic 6)
+    G ----> L(Mechanic 4)
 ```
 
 
@@ -68,6 +70,10 @@ SkillMessage:
   - delay 0
   - message{m="<skill.var.test>"}
 ```
+> Executing the ExampleMechanic will output
+>> - `UNDEFINED` if no `delay 0` is used inside of SkillMessage
+>> - `1` if only one delay 0 is used inside of SkillMessage
+>> - `2` if all delays are used inside of SkillMessage
 
 
 <!-- LINKS -->
