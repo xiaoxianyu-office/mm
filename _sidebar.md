@@ -70,7 +70,7 @@
   * [Particles Types](/skills/effects/particles/types)
   * [Audience](/Skills/Audience)
   * [Equipment Slots](/Skills/EquipSlot)
-
+  * [Intratick Scheduling](/Skills/Intratick-Scheduling)
 ##### [Examples](/examples/Common-Examples)
 ##### [Useful Tips](/UsefulTips)
 
