@@ -71,7 +71,7 @@ SkillMessage:
   - message{m="<skill.var.test>"}
 ```
 > Executing the ExampleMechanic will output
->> - `UNDEFINED` if no `delay 0` is used inside of SkillMessage
+>> - `UNDEFINED` if no delay 0 is used inside of SkillMessage
 >> - `1` if only one delay 0 is used inside of SkillMessage
 >> - `2` if all delays are used inside of SkillMessage
 
