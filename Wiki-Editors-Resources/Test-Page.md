@@ -49,33 +49,6 @@ The following is a list of the implemented particles, associated with their Data
 # Particles
 
 
-# TEST 1
-|   |   |   |   |
-|:-:|:-:|:-:|:-:|
-| Ash | Block Crack
-| <a href="/skills/mechanics/Particle/Particle-Types/Ash"><img src="https://imgur.com/ggCYoIB.gif"></a>       | <a href="/skills/mechanics/Particle/Particle-Types/BlockCrack"><img src="https://imgur.com/bHpnok7.gif"></a>                                                                                                      |
-|---------------------|---------------------|---------------------|---------------------|
-| Ash | Block Crack
-| <a href="/skills/mechanics/Particle/Particle-Types/Ash"><img src="https://imgur.com/ggCYoIB.gif"></a>       | <a href="/skills/mechanics/Particle/Particle-Types/BlockCrack"><img src="https://imgur.com/bHpnok7.gif"></a>                                                                                                      |
-
-
-# TEST 2
-|   |   |   |   |
-|:-:|:-:|:-:|:-:|
-| Ash | Block Crack
-| <a href="/skills/mechanics/Particle/Particle-Types/Ash"><img src="https://imgur.com/ggCYoIB.gif"></a>       | <a href="/skills/mechanics/Particle/Particle-Types/BlockCrack"><img src="https://imgur.com/bHpnok7.gif"></a>                                                                                                      |
-##
-|   |   |   |   |
-|:-:|:-:|:-:|:-:|
-| Ash | Block Crack
-| <a href="/skills/mechanics/Particle/Particle-Types/Ash"><img src="https://imgur.com/ggCYoIB.gif"></a>       | <a href="/skills/mechanics/Particle/Particle-Types/BlockCrack"><img src="https://imgur.com/bHpnok7.gif"></a>                                                                                                      |
-
-
-# TEST 3
-| Ash | Block Crack |   |   |
-|:---:|:-----------:|:-:|:-:|
-| <a href="/skills/mechanics/Particle/Particle-Types/Ash"><img src="https://imgur.com/ggCYoIB.gif"></a>       | <a href="/skills/mechanics/Particle/Particle-Types/BlockCrack"><img src="https://imgur.com/bHpnok7.gif"></a>                                                                                                      |
-
 | Ash | Block Crack |   |   |
 |:---:|:-----------:|:-:|:-:|
 | <a href="/skills/mechanics/Particle/Particle-Types/Ash"><img src="https://imgur.com/ggCYoIB.gif"></a>       | <a href="/skills/mechanics/Particle/Particle-Types/BlockCrack"><img src="https://imgur.com/bHpnok7.gif"></a>                                                                                                      |
