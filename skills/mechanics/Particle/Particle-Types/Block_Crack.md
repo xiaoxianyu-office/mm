@@ -5,6 +5,12 @@
 > This particle has a [BlockData] Datatype, and inherits all of its attributes
 
 
+## Examples
+```yaml
+  Skills:
+  - particle{p=block_crack}
+```
+
 ## Aliases
 - [x] block
 - [x] blockcrack
