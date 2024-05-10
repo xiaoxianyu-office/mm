@@ -1,5 +1,5 @@
 ## Particle
-![img](/Skills/Mechanics/Particle/Particle-Types/images/ASH.gif)
+![img](/Skills/Mechanics/Particle/Particle-Types/images/COMPOSTER.gif)
 
 
 ## Attributes
@@ -10,9 +10,9 @@
 ## Examples
 ```yaml
   Skills:
-  - particle{p=ash}
+  - particle{p=composter}
 ```
 
 
 ## Aliases
-- [x] ash
+- [x] composter

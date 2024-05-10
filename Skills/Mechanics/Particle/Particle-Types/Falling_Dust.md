@@ -1,5 +1,5 @@
 ## Particle
-![img](/Skills/Mechanics/Particle/Particle-Types/images/BLOCK_CRACK.gif)
+![img](/Skills/Mechanics/Particle/Particle-Types/images/FALLING_DUST.gif)
 
 
 ## Attributes
@@ -13,10 +13,10 @@
 ## Examples
 ```yaml
   Skills:
-  - particle{p=block_crack;material=STONE}
+  - particle{p=falling_dust;material=STONE}
 ```
 
 
 ## Aliases
-- [x] block
-- [x] blockcrack
+- [x] falling_dust
+- [x] fallingDust

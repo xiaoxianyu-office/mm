@@ -1,5 +1,5 @@
 ## Particle
-![img](/Skills/Mechanics/Particle/Particle-Types/images/ASH.gif)
+![img](/Skills/Mechanics/Particle/Particle-Types/images/SPELL.gif)
 
 
 ## Attributes
@@ -10,9 +10,9 @@
 ## Examples
 ```yaml
   Skills:
-  - particle{p=ash}
+  - particle{p=spell}
 ```
 
 
 ## Aliases
-- [x] ash
+- [x] effect

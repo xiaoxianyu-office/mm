@@ -1,5 +1,5 @@
 ## Particle
-![img](/Skills/Mechanics/Particle/Particle-Types/images/ASH.gif)
+![img](/Skills/Mechanics/Particle/Particle-Types/images/EGG_CRACK.gif)
 
 
 ## Attributes
@@ -10,9 +10,9 @@
 ## Examples
 ```yaml
   Skills:
-  - particle{p=ash}
+  - particle{p=egg_crack}
 ```
 
 
 ## Aliases
-- [x] ash
+- [x] eggcrack

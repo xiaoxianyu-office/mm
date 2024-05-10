@@ -1,5 +1,5 @@
 ## Particle
-![img](/Skills/Mechanics/Particle/Particle-Types/images/BLOCK_CRACK.gif)
+![img](/Skills/Mechanics/Particle/Particle-Types/images/BLOCK_MARKER.gif)
 
 
 ## Attributes
@@ -13,10 +13,9 @@
 ## Examples
 ```yaml
   Skills:
-  - particle{p=block_crack;material=STONE}
+  - particle{p=block_marker;material=STONE}
 ```
 
 
 ## Aliases
-- [x] block
-- [x] blockcrack
+- [x] blockmarker
