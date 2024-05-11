@@ -18,7 +18,7 @@ Creates a cloud of particles around the target location
 
 ### Particle Attribute
 
-A list of particle types can be found **[here](/skills/effects/particles/types)**. 
+A list of particle types can be found **[here](/Skills/Mechanics/Particle/Particle-Types)**. 
 
 [All of the spigot particle effects listed in the javadocs should be acceptable as well.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
 

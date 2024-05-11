@@ -67,7 +67,7 @@
   * Operations
     * [Attribute Operations](/Items/Attributes#operations)
     * [Stats Modifiers](/Stats#modifiers)
-  * [Particles Types](/skills/effects/particles/types)
+  * [Particles Types](/Skills/Mechanics/Particle/Particle-Types)
   * [Audience](/Skills/Audience)
   * [Equipment Slots](/Skills/EquipSlot)
   * [Intratick Scheduling](/Skills/Intratick-Scheduling)
