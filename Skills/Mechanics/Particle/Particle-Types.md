@@ -158,5 +158,5 @@ The following is a list of the implemented particles, associated with their Data
 
 | [White_Smoke](/Skills/Mechanics/Particle/Particle-Types/White_Smoke) |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|
-| <a href="/Skills/Mechanics/Particle/Particle-Types/White_Smoke"><img src="https://placehold.jp/150x150.png"></a> |
+| <a href="/Skills/Mechanics/Particle/Particle-Types/White_Smoke"><img src="https://placehold.jp/150x150.png"></a> | | | |
 
