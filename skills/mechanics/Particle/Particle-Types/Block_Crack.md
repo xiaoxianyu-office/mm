@@ -6,7 +6,7 @@
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | material | m | The material the blockdata particle will be based on | STONE |
-> This particle has a [Blockdata](/Skills/Mechanics/Particle/Particle-Types#Blockdata) Datatype, and inherits all of its attributes
+> This particle has a [Blockdata](/Skills/Mechanics/Particle/Particle-Types#blockdata) Datatype, and inherits all of its attributes
 
 
 

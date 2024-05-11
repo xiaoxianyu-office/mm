@@ -7,7 +7,7 @@
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | color | c | The color of the particle | #FF0000 |
 | size |  | The size of the particle | 1 |
-> This particle has a [Dustoptions](/Skills/Mechanics/Particle/Particle-Types#Dustoptions) Datatype, and inherits all of its attributes
+> This particle has a [Dustoptions](/Skills/Mechanics/Particle/Particle-Types#dustoptions) Datatype, and inherits all of its attributes
 
 
 
