@@ -156,7 +156,7 @@ The following is a list of the implemented particles, associated with their Data
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|
 | <a href="/Skills/Mechanics/Particle/Particle-Types/Water_Wake"><img src="/Skills/Mechanics/Particle/Particle-Types/images/WATER_WAKE.gif"></a> |<a href="/Skills/Mechanics/Particle/Particle-Types/Wax_Off"><img src="/Skills/Mechanics/Particle/Particle-Types/images/WAX_OFF.gif"></a> |<a href="/Skills/Mechanics/Particle/Particle-Types/Wax_On"><img src="/Skills/Mechanics/Particle/Particle-Types/images/WAX_ON.gif"></a> |<a href="/Skills/Mechanics/Particle/Particle-Types/White_Ash"><img src="/Skills/Mechanics/Particle/Particle-Types/images/WHITE_ASH.gif"></a> |
 
-| [White_Smoke](/Skills/Mechanics/Particle/Particle-Types/White_Smoke) |
+| [White_Smoke](/Skills/Mechanics/Particle/Particle-Types/White_Smoke) | | | |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|
 | <a href="/Skills/Mechanics/Particle/Particle-Types/White_Smoke"><img src="https://placehold.jp/150x150.png"></a> | | | |
 
