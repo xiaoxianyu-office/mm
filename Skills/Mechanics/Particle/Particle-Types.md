@@ -4,42 +4,42 @@ The following is a list of the implemented particles, associated with their Data
 
 
 - [DataTypes](#DataTypes)
-  - [Itemstack](#Itemstack)
-  - [Blockdata](#Blockdata)
-  - [Materialdata](#Materialdata)
-  - [Dustoptions](#Dustoptions)
-  - [Dusttransition](#Dusttransition)
+  - [ItemStack](#ItemStack)
+  - [BlockData](#BlockData)
+  - [MaterialData](#MaterialData)
+  - [DustOptions](#DustOptions)
+  - [DustTransition](#DustTransition)
 - [Particles](#Particles)
 
 
 # DataTypes
 
-## Itemstack
+## ItemStack
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | material | m | The material the itemstack particle will be based on | STONE |
 
 
-## Blockdata
+## BlockData
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | material | m | The material the blockdata particle will be based on | STONE |
 
 
-## Materialdata
+## MaterialData
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | material | m | The material the materialdata particle will be based on | STONE |
 
 
-## Dustoptions
+## DustOptions
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | color | c | The color of the particle | #FF0000 |
 | size |  | The size of the particle | 1 |
 
 
-## Dusttransition
+## DustTransition
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | color | c, color1, c1, fromcolor, fc | The color the particles starts as | #FF0000 |
