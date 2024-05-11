@@ -19,7 +19,7 @@ A list of particle types can be found **[here](/Skills/Mechanics/Particle/Partic
 | vSpread   | vs, yspread, ys| The spread of the particles on the y axis. Overwrites `spread`  | spread  |
 | xSpread   | xs        | The spread of the particles on the x axis. Overwrites `hSpread` on that axis       | hSpread |
 | zSpread   | zs        | The spread of the particles on the z axis. Overwrites `hSpread` on that axis                            | hSpread |
-| speed     | s         | The “speed” of the particles                                         | 0       |
+| speed     | s         | The “speed” of the particles. If a particle has a [DataType](/Skills/Mechanics/Particle/Particle-Types#datatypes), this attribute will behave inconsistently. | 0    |
 | yOffset   | y         | The Y offset of the particles from the target                        | 0       |
 | viewDistance | vd     | The distance the particles are rendered                              | 128     |
 | size      |           | The size of the particles displayed                                  | 1       |
@@ -46,13 +46,6 @@ This particle type will replace the spawned particle with the selected entity. T
 | useEyeLocation | uel  | (true/false) Whether to base the particles on the entity's eyes      | false   |
 | forwardOffset | startfoffset, sfo | The forward-offset from the targeted entity,doesn'n work when set directional to true                                                                            | 0       |
 | sideOffset| soffset, sso | The side-offset from the targeted entity,doesn'n work when set directional to true | 0 |
-
-### Dust_color_transition-Specific Attributes
-| Attribute | Aliases   | Description                                                          | Default |
-|-----------|-----------|----------------------------------------------------------------------|---------|
-| color1    |           | The color the particles starts as                                    |         |
-| color2    |           | The color the particles transitions to                               |         |
-
 
 ## Examples
 ```yaml
