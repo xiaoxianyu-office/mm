@@ -7,7 +7,7 @@ the mob to more than its maximum health.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount     | a        | The amount to heal the target                                        | 1       |
-| overheal* | oh        | Whether or not to apply overhealing as additional MaxHealth          | false   |
+| overheal  | oh        | Whether or not to apply overhealing as additional MaxHealth          | false   |
 
 
 ## Examples
