@@ -22,16 +22,17 @@ Whether the name-tag is always displayed.
 Equivalent to the NBT-tag `CustomNameVisible`.
 Defaults to `false`.
 ```yml
-Options:
+  Options:
   AlwaysShowName: false
 ```
 
-<!--
-**AttackSpeed: \[number\]**
-
-      * Sets the attack speed of the mob.
-      * Defaults to vanilla attack speed for the respective mobs. (Doesn't do anything.)
--->
+#### AttackSpeed:
+The attack speed of the mob  
+Defaults to vanilla attack speed of the respective mobs
+```yaml
+  Options:
+    AttackSpeed: 1
+```
 
 #### VisibleByDefault
 Sets whether the mob is visible by default when the mobs spawns or when the mob gets loaded.
@@ -285,6 +286,15 @@ ExampleMob:
     ReviveHealth: -1
   Skills:
   - cancelevent{sync=true} @self ~onDeath
+```
+
+#### Scale
+The scale of the mob.  
+If set to -1, the option is ignored.  
+Defaults to `-1`.  
+```yaml
+  Options:
+    Scale: 2
 ```
 
 #### ShowHealth
