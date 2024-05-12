@@ -1,5 +1,5 @@
 ## Particle
-![img](/Skills/Mechanics/Particle/Particle-Types/images/https://placehold.co/150x150?text=Missing+Image.gif)
+![img](https://placehold.co/150x150?text=Missing+Image)
 
 
 ## Attributes
