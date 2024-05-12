@@ -75,6 +75,7 @@ are able to target locations as well.
 | [Ender][]                 | Causes the "Ender" effect                                                   |
 | [EnderBeam][]             | Creates a EnderCrystal's beam effect to the target                          |
 | [Equip][]                 | Causes the casting mob to equip an item                                                  |
+| [EquipCopy][]             | Causes the caster to equip a copy of the target's equipment                                                  |
 | [Explosion][]             | Causes an explosion                                                                      |
 | [FakeExplosion][]         | Causes a fake explosion                                                                      |
 | [Extinguish][]            | Removes fire ticks from the target entity                                                |
@@ -393,6 +394,7 @@ but not yet ready for use.
   [Ender]: /skills/mechanics/Ender
   [EnderBeam]: /skills/mechanics/EnderBeam
   [Equip]: /skills/mechanics/equip
+  [EquipCopy]: /skills/mechanics/equipcopy
   [Explosion]: /skills/mechanics/explosion
   [FakeExplosion]: /skills/mechanics/FakeExplosion
   [Extinguish]: /skills/mechanics/extinguish
