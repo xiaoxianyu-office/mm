@@ -15,4 +15,4 @@
 
 
 ## Aliases
-- [x] skulksoul
+- [x] sculk_soul

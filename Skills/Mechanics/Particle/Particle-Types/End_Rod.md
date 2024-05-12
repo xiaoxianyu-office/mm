@@ -16,4 +16,4 @@
 
 ## Aliases
 - [x] end_rod
-- [x] endRod
+- [x] endrod

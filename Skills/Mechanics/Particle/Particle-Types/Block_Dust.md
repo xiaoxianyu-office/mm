@@ -15,5 +15,7 @@
 
 
 ## Aliases
+- [x] block_dust
 - [x] dust
+- [x] block_dust
 - [x] blockdust

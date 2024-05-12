@@ -15,5 +15,5 @@
 
 
 ## Aliases
-- [x] drippingdripstonelava
-- [x] droppingdripstonelava
+- [x] dripping_dripstone_lava
+- [x] dropping_dripstone_lava

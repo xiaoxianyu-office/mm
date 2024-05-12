@@ -15,4 +15,4 @@
 
 
 ## Aliases
-- [x] eggcrack
+- [x] egg_crack

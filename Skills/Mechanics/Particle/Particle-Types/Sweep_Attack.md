@@ -16,4 +16,4 @@
 
 ## Aliases
 - [x] sweep_attack
-- [x] sweepAttack
+- [x] sweepattack

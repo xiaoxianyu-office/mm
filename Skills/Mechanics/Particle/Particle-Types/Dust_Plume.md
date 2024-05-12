@@ -11,4 +11,4 @@
 
 
 ## Aliases
-- [x] dustplume
+- [x] dust_plume

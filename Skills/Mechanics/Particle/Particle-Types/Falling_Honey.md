@@ -15,4 +15,5 @@
 
 
 ## Aliases
+- [x] falling_honey
 - [x] fallinghoney

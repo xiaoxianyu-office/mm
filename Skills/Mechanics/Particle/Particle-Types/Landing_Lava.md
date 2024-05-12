@@ -15,5 +15,5 @@
 
 
 ## Aliases
-- [x] landinglava
 - [x] landing_lava
+- [x] landinglava

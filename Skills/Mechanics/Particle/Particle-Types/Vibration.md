@@ -14,3 +14,5 @@
 ```
 
 
+## Aliases
+- [x] vibration

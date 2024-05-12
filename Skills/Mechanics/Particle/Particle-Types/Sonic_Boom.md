@@ -15,4 +15,4 @@
 
 
 ## Aliases
-- [x] sonicboom
+- [x] sonic_boom

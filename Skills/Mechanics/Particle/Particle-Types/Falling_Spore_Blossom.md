@@ -15,4 +15,4 @@
 
 
 ## Aliases
-- [x] fallingsporeblossom
+- [x] falling_spore_blossom

@@ -15,4 +15,4 @@
 
 
 ## Aliases
-- [x] cherryleaves
+- [x] cherry_leaves

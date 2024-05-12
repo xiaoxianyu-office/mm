@@ -15,5 +15,5 @@
 
 
 ## Aliases
-- [x] drippingdripstonewater
-- [x] droppingdripstonewater
+- [x] dripping_dripstone_water
+- [x] dropping_dripstone_water

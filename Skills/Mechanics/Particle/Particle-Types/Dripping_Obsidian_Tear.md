@@ -15,5 +15,6 @@
 
 
 ## Aliases
+- [x] dripping_obsidian_tear
 - [x] dropping_obsidian_tear
 - [x] drippingobsidiantear

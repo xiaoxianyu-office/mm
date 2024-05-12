@@ -15,4 +15,5 @@
 
 
 ## Aliases
+- [x] falling_nectar
 - [x] fallingnectar

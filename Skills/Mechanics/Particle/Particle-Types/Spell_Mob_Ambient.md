@@ -16,4 +16,4 @@
 
 ## Aliases
 - [x] ambient_entity_effect
-- [x] mobSpellAmbient
+- [x] mob_spell_ambient

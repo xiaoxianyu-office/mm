@@ -15,4 +15,5 @@
 
 
 ## Aliases
+- [x] dripping_honey
 - [x] drippinghoney

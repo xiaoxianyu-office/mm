@@ -17,4 +17,4 @@
 
 
 ## Aliases
-- [x] sculkchargepop
+- [x] sculk_charge_pop

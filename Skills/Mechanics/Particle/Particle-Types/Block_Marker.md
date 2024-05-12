@@ -18,4 +18,4 @@
 
 
 ## Aliases
-- [x] blockmarker
+- [x] block_marker

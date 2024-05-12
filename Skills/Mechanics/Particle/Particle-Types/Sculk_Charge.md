@@ -13,4 +13,4 @@
 
 
 ## Aliases
-- [x] sculkcharge
+- [x] sculk_charge

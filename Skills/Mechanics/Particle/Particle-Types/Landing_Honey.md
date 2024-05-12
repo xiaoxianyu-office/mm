@@ -15,4 +15,5 @@
 
 
 ## Aliases
+- [x] landing_honey
 - [x] landinghoney

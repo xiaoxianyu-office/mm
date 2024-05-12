@@ -10,3 +10,5 @@
 ```
 
 
+## Aliases
+- [x] gust

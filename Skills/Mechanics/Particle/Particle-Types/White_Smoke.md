@@ -11,4 +11,4 @@
 
 
 ## Aliases
-- [x] whitesmoke
+- [x] white_smoke

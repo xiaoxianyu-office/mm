@@ -14,3 +14,5 @@
 ```
 
 
+## Aliases
+- [x] white_ash

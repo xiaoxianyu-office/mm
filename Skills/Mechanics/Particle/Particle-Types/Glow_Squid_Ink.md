@@ -15,6 +15,7 @@
 
 
 ## Aliases
+- [x] glow_squid_ink
 - [x] glowingink
 - [x] glowink
 - [x] glowsquid

@@ -16,4 +16,4 @@
 
 ## Aliases
 - [x] damage_indicator
-- [x] damageIndicator
+- [x] damageindicator

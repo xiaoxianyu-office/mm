@@ -11,4 +11,4 @@
 
 
 ## Aliases
-- [x] trialspawnerdetection
+- [x] trial_spawner_detection

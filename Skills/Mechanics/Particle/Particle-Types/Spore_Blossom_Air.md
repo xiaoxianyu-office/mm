@@ -15,4 +15,4 @@
 
 
 ## Aliases
-- [x] sporeblossomair
+- [x] spore_blossom_air

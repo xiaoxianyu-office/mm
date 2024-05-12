@@ -15,5 +15,5 @@
 
 
 ## Aliases
-- [x] fallingwater
 - [x] falling_water
+- [x] fallingwater

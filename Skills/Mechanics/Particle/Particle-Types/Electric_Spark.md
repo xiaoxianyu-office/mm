@@ -15,5 +15,6 @@
 
 
 ## Aliases
+- [x] electric_spark
 - [x] electricspark
 - [x] spark

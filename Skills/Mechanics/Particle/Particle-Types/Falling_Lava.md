@@ -15,5 +15,5 @@
 
 
 ## Aliases
-- [x] fallinglava
 - [x] falling_lava
+- [x] fallinglava
