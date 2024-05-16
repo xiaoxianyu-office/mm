@@ -1,5 +1,4 @@
-Mechanic: Shoot
-===============
+## Description
 
 Shoots an arrow or item-projectile at the targeted entity or location
 that deals damage. The shoot-mechanic has been significantly changed in
@@ -8,9 +7,7 @@ additions.
 
 Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4.11
 
-Attributes
-----------
-
+## Attributes
 | Attribute            | Aliases    | Description                                                                               | Default |
 |----------------------|------------|-------------------------------------------------------------------------------------------|---------|
 | type                 | t          | Type of projectile to shoot. Can be "arrow", "snowball", "egg", "enderpearl", or "potion" added "trident", "splash_potion", and "lingering_potion" in MM 4.11 | arrow   |
@@ -38,17 +35,17 @@ Attributes
 | damageCause          |            | Sets the damage cause for this damage mechanic ([Extra info](/skills/mechanics/damage#damagecause))                                                                        |     | 
 
 
-Examples
---------
-
-    ArrowBarrage:
-      Skills:
-      - shoot{type=ARROW;velocity=5;damage=10}
-      - delay 10
-      - shoot{type=ARROW;velocity=5;damage=10}
-      - delay 10
-      - shoot{type=ARROW;velocity=5;damage=10}
-      - delay 10
-      - shoot{type=ARROW;velocity=5;damage=10}
-      - delay 10
-      - shoot{type=ARROW;velocity=5;damage=10}
+## Examples
+```yaml
+ArrowBarrage:
+  Skills:
+  - shoot{type=ARROW;velocity=5;damage=10}
+  - delay 10
+  - shoot{type=ARROW;velocity=5;damage=10}
+  - delay 10
+  - shoot{type=ARROW;velocity=5;damage=10}
+  - delay 10
+  - shoot{type=ARROW;velocity=5;damage=10}
+  - delay 10
+  - shoot{type=ARROW;velocity=5;damage=10}
+```
