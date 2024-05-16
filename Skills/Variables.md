@@ -79,8 +79,8 @@ Variables can also be nested indefinitely: if this is done, the innermost variab
 
 ```yaml
   Skills:
-    - setvariable{var=caster.hello;type=STRING;val=example_name}
-    - setvariable{var=caster.example_name;type=STRING;val=Hello There!}
+    - setvariable{var=caster.hello;type=STRING;val=example_name} @self
+    - setvariable{var=caster.example_name;type=STRING;val=Hello There!} @self
     - message{m="<caster.var.<caster.var.hello>>"} @PIR{r=10}
 ```
 > In this example, the message would spell "Hello there!"
