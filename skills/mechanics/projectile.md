@@ -122,6 +122,7 @@ These work with the projectile, missile, and orbital mechanics.
 | [TRACKING][]| ARMOR_STAND, ARMORSTAND, PSTAND | The bullet will be an item, but its rotation will be adjusted depending on the projectile's direction                                                         |
 | [REALTRACKING][] | RTRACKING, REAL_ARMOR_STAND, REALARMORSTAND, STAND | As above, but a real armor stand will also be spawned instead of a packet |
 | [DISPLAY][] |              | The projectile will be a display entity                                   |
+| [ME][]      |              | The projectile will be a [ModelEngine] model                              |
 | [TEXT][]    |              | The projectile will display a line of text                                |
 
 Examples:
@@ -141,6 +142,8 @@ Examples:
 [REALTRACKING]: /skills/mechanics/projectile#realtracking-bullet
 [DISPLAY]: /skills/mechanics/projectile#display-bullet
 [TEXT]: /skills/mechanics/projectile#text-bullet
+[ME]: /skills/mechanics/projectile#me-bullet
+[ModelEngine]: /../../../model-engine-4/-/wikis
 
 ### Universal Bullet Attributes
 | Attribute | Aliases   | Description                                                          | Default |
@@ -238,18 +241,12 @@ Examples:
 | hideFirstTick | hft   | Hides the item for the first tick                                    | false   |
 | audience  |           | The [Audience][] of the bullet                                       | world   |
 
-## ME Bullet
+### ME Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletModel | model   | The MEG model to use for the bullet                                  |         |
 | bulletcolor |         | The tint of the bullet's model                                       |         |
 | bulletEnchanted | enchanted | Whether the bullet's model should be enchanted                 | false   | 
-
-### SMALLBLOCK Bullet
-| Attribute | Aliases   | Description                                                          | Default |
-|-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
-| audience  |           | The [Audience][] of the bullet                                       | world   |
 
 ### TEXT Bullet
 | Attribute | Aliases   | Description                                                          | Default |
