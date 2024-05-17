@@ -238,6 +238,19 @@ Examples:
 | hideFirstTick | hft   | Hides the item for the first tick                                    | false   |
 | audience  |           | The [Audience][] of the bullet                                       | world   |
 
+## ME Bullet
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| bulletModel | model   | The MEG model to use for the bullet                                  |         |
+| bulletcolor |         | The tint of the bullet's model                                       |         |
+| bulletEnchanted | enchanted | Whether the bullet's model should be enchanted                 | false   | 
+
+### SMALLBLOCK Bullet
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
+| audience  |           | The [Audience][] of the bullet                                       | world   |
+
 ### TEXT Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
