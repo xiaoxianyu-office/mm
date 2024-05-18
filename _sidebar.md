@@ -2,12 +2,15 @@
 ##### [Changelogs](/changelogs/Changelogs)
 ##### [Premium Features](Premium-Features)
 ##### [Commands and Permissions](Commands-and-Permissions)
-##### [FAQ / Common Issues](FAQ)
-##### [Guides](/Guides)
-##### [Troubleshooting](/Troubleshooting/Troubleshooting)
 ##### [Mythic Add-ons](Add-ons)
 ##### [Compatible Plugins](Compatible-Plugins)
 ##### [API Information](API)
+
+##### [Guides](/Guides)
+* [Troubleshooting](/Troubleshooting/Troubleshooting)
+* [FAQ / Common Issues](FAQ)
+* [Examples](/examples/Common-Examples)
+
 ##### [Packs](Packs)
 * [Pins](Pins)
 
@@ -71,8 +74,6 @@
   * [Audience](/Skills/Audience)
   * [Equipment Slots](/Skills/EquipSlot)
   * [Intratick Scheduling](/Skills/Intratick-Scheduling)
-##### [Examples](/examples/Common-Examples)
-##### [Useful Tips](/UsefulTips)
 
 <hr>
 
