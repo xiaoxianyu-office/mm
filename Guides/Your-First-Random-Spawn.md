@@ -35,7 +35,7 @@ In this basic example, we are making our mob `SkeletonKing` spawn with a 10% cha
 
 We can go further and specify the biomes our mobs spawn in too! We can do this with the Biomes option. We can add just 1 or a list of multiple biomes.
 
-Biomes uses the [Spigot Biome Names[(https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Biome.html)
+Biomes uses the [Spigot Biome Names](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Biome.html)
 ```yaml
 SkeletonKingSpawn:
   Action: ADD
