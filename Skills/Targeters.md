@@ -124,7 +124,7 @@ These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) ena
 
 ## Meta Targeters
 
-Meta Targeters targets relative to an [inherited target](Metaskills#inheritance). For example:
+Meta Targeters targets relative to an [inherited target](/Skills/Metaskills#inheritance). For example:
 ```yaml
 # Mob file
 Laser:
