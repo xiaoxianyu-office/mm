@@ -9,7 +9,7 @@ Inherits every attribute of the [Damage](/skills/mechanics/damage) mechanic.
 | multiplier       | m       | The percentage of damage to deal    | 1       |
 | forcedDamage     | fd, forced | If this attribute is set, the one specified will be the amount of flat damage that will be inflicted, without consideration for attribute modifiers and similar other modifiers |
 > This mechanic inherits every attribute of the [Damage](/skills/mechanics/damage) mechanic
->> - The `amout` attribute is ignored
+>> - The `amount` attribute is ignored
 >> - The `triggerSkills` attribute is **defaulted** at `true`
 >> - The `damagecause` attribute is **set** at `ENTITY_ATTACK`
 >> - The `tags` attribute will always have a `melee` tag.
