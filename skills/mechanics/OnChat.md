@@ -26,7 +26,19 @@ ExampleSkill2:
   - message{m="SILENCE!"} @trigger
   - ignite @trigger
 ```
+This below example uses the [StringEquals](/skills/conditions/stringequals) condition to check what the player typed! The message mechanic will only appear if the player typed `QueenOfAnts is a noob`.
+```yaml
+YourMob:
+  Type: ZOMBIE
+  Skills:
+  - onChat{onChat=ChatSkill;d=1000} @trigger ~onInteract
 
+ChatSkill:
+  Conditions:
+  - stringequals{val1="<skill.var.input>";val2="QueenOfAnts is a noob"} true
+  Skills:
+  - message{m=She is indeed!} @trigger
+```
 
 ## Aliases
 - [x] chatprompt
