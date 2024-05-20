@@ -7,6 +7,7 @@ Adds an attribute modifier to the attributable target
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | attribute | attr      | The [attribute]                                                 | GENERIC_LUCK |
 | operation | op        | The [operation] to perform                                        | ADD_NUMBER |
+| name      | modifierName | The name of the modifier                                    | <caster.uuid> |
 | amount    | amt, a    | The modifier of the attribute                                          | 0     |
 | duration  | dur       | The duration of the attribute                                          | 0     |
 
