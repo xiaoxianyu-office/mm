@@ -2,8 +2,10 @@ Triggers are used to determine how a skill is triggered from within the
 mobs skill configuration section.
 
 <u>**TRIGGERS CANNOT BE USED IN META-SKILLS AND SHOULD NOT BE INCLUDED
-IN THEM.**</u> Triggers can only be used *to activate* the meta-skill
-itself.
+IN THEM.**</u> 
+
+Triggers can only be used *to activate* the meta-skill
+itself (in the mob's configuration file).
 
 
 # Additional Triggers
