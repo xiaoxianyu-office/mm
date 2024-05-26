@@ -7,6 +7,7 @@ IN THEM.**</u>
 Triggers can only be used *to activate* the meta-skill
 itself (in the mob's configuration file).
 
+> Each trigger starts with a `on` string. That string is **case sensitive**, so make sure to write it correctly or the trigger will not work
 
 # Additional Triggers
 Links to triggers added by addon plugins. Any triggers from these links will not work without that plugin installed.
@@ -24,7 +25,7 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onDamaged](#ondamaged)                | When the mob is damaged                                      |
 | [onSpawn](#onspawn)                    | When the mob spawns                                          |
 | [onDespawn](#ondespawn)                | When the mob is despawned                                    |
-| [onReady / onFirstSpawn](#onready)                    | Triggered the first time a mob is spawned from a spawner     |
+| [onReady / onFirstSpawn](#onready)     | Triggered the first time a mob is spawned from a spawner     |
 | [onLoad](#onload)                      | When the mob is loaded (spawning or loading after a restart) |
 | [onDeath](#ondeath)                    | When the mob dies                                            |
 | [onTimer:*#*](#ontimerticks)           | Every \# ticks (where \# is the interval in ticks)           |
@@ -44,7 +45,7 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onBreed](#onbreed)                    | When the mob breeds with another mob.                        |
 | [onTrade](#ontrade)                    | When the Villager completes a trade. Requires Paper          |
 | [onChangeWorld](#onchangeworld)        | When the mob changes world                                   |
-| [onBucket](#onbucket)                  | When the cow is milked or an entity is bucketed (axolotl etc.)             |
+| [onBucket](#onbucket)                  |When the cow is milked or an entity is bucketed (axolotl etc.)|
 | [onSkillDamage](#onskilldamage)        | When the mob deals damage to other entities via a mechanic   |
 | [onHear](#onhear)                      | When the mob hears a sound, [if enabled](/Mobs/Mobs#hearing) |
 
