@@ -18,7 +18,7 @@ Negative numbers on pitch will recoil upwards, whilst positive will recoil downw
 ## Examples
 ```yaml
   Skills:
-  - recoil{r=1;pitch=-1to-1} @self
+  - recoil{r=1;pitch=-1to1} @self
 ```
 
 
