@@ -38,7 +38,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | EndSideOffset | endoffset, esoffset, eso | How far to the side of the target location the projectile will end up                                                                                   |sideoffset|
 | startingdirection | startingdir, startdir, sdir | Start direction of the projectile. For now, it only works if inherited by a missile mechanic                                                      |@Targeted|
 | HorizontalOffset | hO | Horizontal Offset will rotate the projectile's horizontal starting velocity around a 360-degree axis                                                                      | 0        |
-| VerticalOffset   | vO | Vertical Offset will rotate the projectile's vertical starting velocity around a 360-degree axis                                                                               | 0        |
+| VerticalOffset   | vO | Vertical Offset will add a [slope](https://en.wikipedia.org/wiki/Grade_(slope)) to the projectile's starting direction. To give it a specific angle, you can use [this image](https://en.wikipedia.org/wiki/Grade_(slope)#/media/File:Slope_quadrant.svg) as reference: the value you need will be the number shown in red divided by 100 (so if you want 40°, you will need to input 83.9/100 = `0.839`)| 0        |
 | Accuracy  | ac, a     | Determines the accuracy of the projectile                           | 1        |
 | HorizontalNoise | hn  | The randomness of the projectile in horizontal direction            |(1-ac)*45 |
 | VerticalNoise   | vn  | The randomness of the projectile in the vertical direction          |(1-ac)*4.5|
