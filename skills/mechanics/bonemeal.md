@@ -1,17 +1,15 @@
-Mechanic: Bone Meal
---------------------------
+## Description
 Applies a bone meal effect to the target blocks.
 
-**Attributes**
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| blockFace | bf, face, f | The [block face](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockFace.html) to apply bonemeal to | UP     |
 
-Examples
---------
 
+## Examples
 ```yaml
-      Skills:
-      - bonemeal @selflocation{y=-1}
+  Skills:
+  - bonemeal @selflocation
 ```
