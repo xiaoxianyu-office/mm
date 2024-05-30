@@ -222,7 +222,8 @@ TestOwner:
 | coordinatex                              | cx               | Sets the x axis coordinate                    |
 | coordinatey                              | cy               | Sets the y axis coordinate                    |
 | coordinatez                              | cz               | Sets the z axis coordinate                    |
-| blocktypes                               | blocktype, bt   | Only targets selected block types. Multiple blocks can be listed by separating them using a `,`<br>You can add a `#` at the front of the type to indicate that the block only needs to match part of the type, add `@` to indicate that the block only needs to match the start of the type |
+| length                                   |                  | Multiplied the direction vector by the specified value                            |
+| blocktypes                               | blocktype, bt    | Only targets selected block types. Multiple blocks can be listed by separating them using a `,`<br>You can add a `#` at the front of the type to indicate that the block only needs to match part of the type, add `@` to indicate that the block only needs to match the start of the type |
 | blockignores                             | blockignore      | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` |
 | coordinateyaw                            | cyaw             | Sets the yaw value                        |
 | coordinatepitch                          | cpitch           | Sets the pitch value                        |
