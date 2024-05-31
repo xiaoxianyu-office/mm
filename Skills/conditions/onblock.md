@@ -1,6 +1,6 @@
 ## Description
 Matches the block the target entity is standing on.  
-A list of available materials can be found on the [Spigot Javadoc].(https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) 
+A list of available materials can be found on the [Spigot Javadoc](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) 
 
 
 ## Attributes
