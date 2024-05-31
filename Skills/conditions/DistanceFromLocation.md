@@ -1,5 +1,5 @@
 ## Description
-Checks if the target is within a certain distance of a specified location
+Whether the distance between the target and a specified location is within a certain range
 
 
 ## Attributes
