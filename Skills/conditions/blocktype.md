@@ -7,7 +7,7 @@ Valid for any [Bukkit material type](https://hub.spigotmc.org/javadocs/spigot/or
 
 | Attribute | Aliases                   | Description                                          | Default |
 |-----------|---------------------------|------------------------------------------------------|---------|
-| types     | type, t, material, mat, m | A list of materials or MMOItem's block name to check | DIRT    |
+| types     | type, t, material, mat, m, block, b | A list of materials or MMOItem's block name to check | DIRT    |
 
 
 ## Examples
