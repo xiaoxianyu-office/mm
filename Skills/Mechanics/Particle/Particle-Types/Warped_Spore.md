@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -15,7 +15,8 @@
 
 
 ## Aliases
-- [x] warped_spore
 - [x] warped_spores
 - [x] warpedspore
 - [x] warpedspores
+
+

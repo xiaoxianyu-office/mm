@@ -3,17 +3,19 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
 ## Examples
 ```yaml
   Skills:
-  - particle{p=spell_mob_ambient}
+  - particle{p=ambient_entity_effect}
 ```
 
 
 ## Aliases
 - [x] ambient_entity_effect
 - [x] mob_spell_ambient
+
+

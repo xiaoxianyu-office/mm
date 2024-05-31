@@ -3,18 +3,23 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
 ## Examples
 ```yaml
   Skills:
-  - particle{p=rain}
+  - particle{p=water_drop}
 ```
 
 
 ## Aliases
 - [x] water_drop
-- [x] rain
 - [x] droplet
+
+
+> This particle has a different name in versions before 1.20.5  
+> - [x] water_drop
+
+

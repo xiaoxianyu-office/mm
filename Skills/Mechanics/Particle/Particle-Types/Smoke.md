@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -16,4 +16,9 @@
 
 ## Aliases
 - [x] smoke_normal
-- [x] smoke
+
+
+> This particle has a different name in versions before 1.20.5  
+> - [x] smoke_normal
+
+

@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -16,5 +16,10 @@
 
 ## Aliases
 - [x] drip_lava
-- [x] dripping_lava
 - [x] driplava
+
+
+> This particle has a different name in versions before 1.20.5  
+> - [x] drip_lava
+
+

@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -18,3 +18,9 @@
 - [x] enchantment_table
 - [x] enchantmenttable
 - [x] enchantingtable
+
+
+> This particle has a different name in versions before 1.20.5  
+> - [x] enchantment_table
+
+

@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -15,6 +15,7 @@
 
 
 ## Aliases
-- [x] electric_spark
 - [x] electricspark
 - [x] spark
+
+

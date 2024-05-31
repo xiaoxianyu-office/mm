@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -16,5 +16,10 @@
 
 ## Aliases
 - [x] villager_angry
-- [x] angry_villager
 - [x] angryvillager
+
+
+> This particle has a different name in versions before 1.20.5  
+> - [x] villager_angry
+
+

@@ -1,9 +1,9 @@
 ## Particle
-![img](https://placehold.co/150x150?text=Missing+Image)
+![img](/Skills/Mechanics/Particle/Particle-Types/images/FIREWORK.gif)
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -15,5 +15,12 @@
 
 
 ## Aliases
+- [x] fireworks
 - [x] fireworks_spark
 - [x] fireworksspark
+
+
+> This particle has a different name in versions before 1.20.5  
+> - [x] fireworks_spark
+
+

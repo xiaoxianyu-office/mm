@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -17,3 +17,9 @@
 ## Aliases
 - [x] town_aura
 - [x] townaura
+
+
+> This particle has a different name in versions before 1.20.5  
+> - [x] town_aura
+
+

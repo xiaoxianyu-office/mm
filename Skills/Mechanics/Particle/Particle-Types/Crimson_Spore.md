@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -15,7 +15,8 @@
 
 
 ## Aliases
-- [x] crimson_spore
 - [x] crimson_spores
 - [x] crimsonspore
 - [x] crimsonspores
+
+

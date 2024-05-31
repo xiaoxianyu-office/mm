@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -12,5 +12,7 @@
   Skills:
   - particle{p=gust_emitter_small}
 ```
+
+
 
 

@@ -3,17 +3,22 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
 ## Examples
 ```yaml
   Skills:
-  - particle{p=totem_of_undying}
+  - particle{p=totem}
 ```
 
 
 ## Aliases
 - [x] totem
-- [x] totem_of_undying
+
+
+> This particle has a different name in versions before 1.20.5  
+> - [x] totem
+
+

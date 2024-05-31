@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -15,6 +15,7 @@
 
 
 ## Aliases
-- [x] bubble_column_up
 - [x] bubblecolumn
 - [x] bubble_column
+
+

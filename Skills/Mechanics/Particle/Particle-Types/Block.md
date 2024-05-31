@@ -13,11 +13,16 @@
 ## Examples
 ```yaml
   Skills:
-  - particle{p=block;material=STONE}
+  - particle{p=block_crack;material=STONE}
 ```
 
 
 ## Aliases
 - [x] block_crack
-- [x] block_crack
 - [x] blockcrack
+
+
+> This particle has a different name in versions before 1.20.5  
+> - [x] block_crack
+
+

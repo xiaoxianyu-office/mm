@@ -1,5 +1,5 @@
 ## Particle
-![img](https://placehold.co/150x150?text=Missing+Image)
+![img](/Skills/Mechanics/Particle/Particle-Types/images/DUST.gif)
 
 
 ## Attributes
@@ -19,6 +19,12 @@
 
 
 ## Aliases
-- [x] dust
 - [x] red_dust
 - [x] reddust
+- [x] redstone
+
+
+> This particle has a different name in versions before 1.20.5  
+> - [x] redstone
+
+

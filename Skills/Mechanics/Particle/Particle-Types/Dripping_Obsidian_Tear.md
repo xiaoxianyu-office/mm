@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -15,6 +15,7 @@
 
 
 ## Aliases
-- [x] dripping_obsidian_tear
 - [x] dropping_obsidian_tear
 - [x] drippingobsidiantear
+
+

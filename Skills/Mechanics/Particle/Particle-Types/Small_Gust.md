@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -12,5 +12,9 @@
   Skills:
   - particle{p=small_gust}
 ```
+
+
+## Aliases
+- [x] gust_small
 
 

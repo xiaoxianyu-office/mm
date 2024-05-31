@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -15,8 +15,9 @@
 
 
 ## Aliases
-- [x] campfire_cosy_smoke
 - [x] campfire_cosy
 - [x] campfire_cozy_smoke
 - [x] campfire_cozy
 - [x] campfire
+
+

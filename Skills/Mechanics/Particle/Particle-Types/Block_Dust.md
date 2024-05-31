@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -15,7 +15,7 @@
 
 
 ## Aliases
-- [x] block_dust
 - [x] dust
-- [x] block_dust
 - [x] blockdust
+
+

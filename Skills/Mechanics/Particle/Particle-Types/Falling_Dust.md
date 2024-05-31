@@ -18,5 +18,6 @@
 
 
 ## Aliases
-- [x] falling_dust
 - [x] fallingdust
+
+

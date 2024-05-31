@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -18,3 +18,9 @@
 - [x] explosion_huge
 - [x] hugeexplode
 - [x] hugeexplosion
+
+
+> This particle has a different name in versions before 1.20.5  
+> - [x] explosion_huge
+
+

@@ -20,5 +20,10 @@
 ## Aliases
 - [x] item_crack
 - [x] icon_crack
-- [x] item_crack
 - [x] itemcrack
+
+
+> This particle has a different name in versions before 1.20.5  
+> - [x] item_crack
+
+

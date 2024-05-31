@@ -3,7 +3,7 @@
 
 
 ## Attributes
- > This particle has no attributes
+> This particle has no attributes
 
 
 
@@ -15,5 +15,6 @@
 
 
 ## Aliases
-- [x] dripping_dripstone_lava
 - [x] dropping_dripstone_lava
+
+

@@ -20,6 +20,7 @@
 
 
 ## Aliases
-- [x] dust_color_transition
 - [x] dustcolortransition
 - [x] dustcolor
+
+
