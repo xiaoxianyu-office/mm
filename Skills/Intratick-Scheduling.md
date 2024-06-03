@@ -1,5 +1,8 @@
 The [delay] mechanic can be used to apply a delay not only *between* ticks, but also inside of the same tick via a `delay 0` mechanic. 
 
+# DISCLAIMER
+This is not an intended mechanic. It's just a happy accident that, somehow, consistently works. Do not expect this to be cutting edge, as, again, this is more of a convenient bug
+
 ## Single Delay
 
 You have to imagine each mechanic as a series of instructions that are executed orderly. In this scenario, using a `delay 0` mechanic allows you to "schedule" the subsequent mechanics to be executed *after* every other non delayed mechanic that tick.
