@@ -3,7 +3,7 @@ Teleports the caster to the specified Y coordinate.
 No target is required for this mechanic, as the caster will always be the one that is teleported.  
 
 
-## Attributes:
+## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | y         |           | Where to teleport on the Y axis                                      | 0       |
