@@ -26,6 +26,15 @@ The base material to use for your item, it can be any valid material that's list
 example_item:
   Id: leather_chestplate
 ```
+
+#### Template
+Items can use [Templating](/Mobs/Templates) like mobs, while referencing other items.  
+Only one template can be used at a time.  
+```yaml
+MyItem:
+  Template: MyOtherItem
+```
+
 <!-- 
 #### **Data**
 Used to specify the *used up* durability points on items.
@@ -43,8 +52,6 @@ example_item:
   Id: leather_chestplate
   Display: <green>An Example Item</green>
 ```
-
-
 
 #### Lore
 Sets the lore of the item. You can generate a random number using `{min-max}`, `<random.#to#>`, or `<random.float.#to#>`.
@@ -75,7 +82,7 @@ example_item:
   Model: 12345
 ```
 
-#### **Durability**:
+#### Durability
 Sets the amount of durability to take off the item. The below example sets a Diamond Sword to have 1461 durability since by default it has 1561.
 ```yml
 example_item:
