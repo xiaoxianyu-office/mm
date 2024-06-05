@@ -91,7 +91,7 @@ example_item:
   Display: <green>An Example Item</green>
 ```
 
-#### **Attributes**
+#### Attributes
 Special field that allows the addition of item attributes to certain armor slots. See [Item Attributes](/Items/Attributes).
 ```yml
 example_item:
@@ -102,7 +102,7 @@ example_item:
       Health: 25
 ```
 
-#### **Amount**
+#### Amount
 Sets the default amount of items to give when this item is being called by the plugin.
 ```yml
 example_item:
@@ -111,7 +111,7 @@ example_item:
   Amount: 1
 ```
 
-#### **Options**
+#### Options
 A special field that comes with numerous sub-options. See [Item Options](/Items/Options).
 ```yml
 example_item:
@@ -122,7 +122,7 @@ example_item:
     Color: 255,0,0
 ```
 
-#### **Enchantments**
+#### Enchantments
 Any items can have any enchantments(s).
 A list of available enchantments can be found [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html).
 See also [enchantments](/items/Enchantments) page on how to configure item enchantments.
@@ -137,7 +137,7 @@ example_item:
     - THORNS:3
 ```
 
-#### **Hide**
+#### Hide
 Special field that allows to hide specific things from the item tooltip.
 All possible flags can be found [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html)
 ```yml
@@ -156,7 +156,7 @@ example_item:
     - ENCHANTS
 ```
 
-#### **PotionEffects**
+#### PotionEffects
 Sets the potion effects of the item. These effects won't do anything if the [base item](#id) is not a `potion`, `splash_potion`, `lingering_potion`, or `tipped_arrow`.
 See [Potions](/Items/Potions).
 ```yml
@@ -169,7 +169,7 @@ example_item:
     - CONFUSION 100 2
 ```
 
-#### **BannerLayers**
+#### BannerLayers
 Sets the banner layers of a banner or a shield.
 See [Banner Layers](/Items/Banner-Layers).
 ```yml
@@ -181,7 +181,7 @@ example_item:
     - WHITE STRIPE_CENTER
 ```
 
-#### **CanPlaceOn**
+#### CanPlaceOn
 Sets what blocks this item can be placed on, if the player is in adventure mode.
 ```yaml
 MyCoolAnvil:
@@ -190,7 +190,7 @@ MyCoolAnvil:
   - diamond_block
 ```
 
-#### **CanBreak**
+#### CanBreak
 Sets what blocks this item can break, if the player is in adventure mode.
 ```yaml
 MyCoolStick:
@@ -210,7 +210,7 @@ example_item:
   Group: 'Armor'
 ```
 
-### **NBT**
+#### NBT
 Sets what NBT tags to put on your items.
 This allows cross-over with a lot of other plugins, or just for storing custom information.
 
@@ -281,7 +281,7 @@ another_example_item:
       pattern: minecraft:shaper
 ```
 
-### Firework
+#### Firework
 Sets several firework or firework_charge items.
 See [firework](/Items/Firework) for a break-down for each of its options.
 ```yml
@@ -297,6 +297,18 @@ example_item:
   Trail: true
 ```
 
+#### Books
+Set of options for books
+```yaml
+SomeBook:
+  Id: WRITTEN_BOOK
+  Title: <green>How to make YouTube Videos
+  Author: CarsonJF
+  Pages:
+  - "Page 1"
+  - "Page 2\n\nwith some other lines"
+  - "Page 3"
+```
 
 ## Examples
 More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
