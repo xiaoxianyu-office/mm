@@ -288,16 +288,16 @@ See [firework](/Items/Firework) for a break-down for each of its options.
 example_item:
   Id: firework
   Firework:
-  Colors:
+    Colors:
     - 255,0,255
     - 0,0,0
-  FadeColors:
+    FadeColors:
     - 200,0,0
-  Flicker: true
-  Trail: true
+    Flicker: true
+    Trail: true
 ```
 
-#### Books
+#### Book
 Set of options for books
 ```yaml
 SomeBook:
