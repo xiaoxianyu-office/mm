@@ -1,5 +1,5 @@
 ## Description
-Teleports to caster to the specified Y coordinate.  
+Teleports the caster to the specified Y coordinate.  
 No target is required for this mechanic, as the caster will always be the one that is teleported.  
 
 
