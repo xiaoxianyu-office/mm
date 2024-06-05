@@ -224,7 +224,7 @@ are able to target locations as well.
 | [TakeItem][]              | Removes an item from the targeted player's inventory                                     |
 | [Taunt][]                 | Modifies the threat level that the caster holds with the target entities                                     |
 | [Teleport][]              | Teleports to the target                                                                  |
-| [TeleportY][]             | Teleports to the target vertically                                                                 |
+| [TeleportY][]             | Teleports the caster vertically                                                                 |
 | [TeleportIn][]            | Teleports the target relative to the caster's yaw                                        |
 | [TeleportTo][]            | Teleports the target to a specified location                                             |
 | [Time][]                  | Changes the time                                                                                |
