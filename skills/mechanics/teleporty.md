@@ -1,17 +1,16 @@
 ## Description
-Teleports the caster up or down.  
-The skill will attempt to find a safe landing location and should generally avoid putting the mob inside of blocks.  
-No target is required for this mechanic, as the caster will always be the one that is teleported.
+Teleports to caster to the specified Y coordinate.  
+No target is required for this mechanic, as the caster will always be the one that is teleported.  
 
 
 ## Attributes:
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| y         |           | The distance to teleport on the y axis                               | 0       |
+| y         |           | Where to teleport on the Y axis                                      | 0       |
 
 
 ## Examples
-This example would teleport the caster 5 blocks up.
+This example would teleport the caster at its coordinates, but with Y with a value of 5.
 ```yaml
 WarpY:
   Skills:
