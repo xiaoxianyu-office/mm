@@ -5,13 +5,13 @@ Checks the experience points that the target player has.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| level     | l         | The experience points to check for. Accepts ranges.                  | 0       |
+| level     | l         | Checks against the experience points missing to reach the next level, in a range from 0 to 1. 0 is "no progress" and 1 is "next level". Accepts ranges.                         | 0       |
 
 
 ## Examples
 ```yaml
   TargetConditions:
-  - enchantingExperience{l=>100} true
+  - enchantingExperience{l=>0.2} true
 ```
 
 ## Aliases
