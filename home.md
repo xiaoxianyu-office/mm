@@ -93,6 +93,10 @@ Getting Started
 -   [Examples]
 -   [Guides](/Guides)
 -   [Included Starter Mobs]
+
+
+[![](http://img.youtube.com/vi/3rZtjFyLp3I/0.jpg)](http://www.youtube.com/watch?v=3rZtjFyLp3I "[MythicMobs Tutorial ①] Basic knowledge: How to install and run MythicMobs")
+
 <!--   [Videos] -->
 
   [1]: youtube>_YQUS3sDbI0
