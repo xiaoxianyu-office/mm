@@ -24,10 +24,8 @@ This list contains all the current guides.
 | [Spawn Message](/Guides/Spawn-Message) | Announcing to the server that your mob has spawned
 | [Your First Random Spawn](/Guides/Your-First-Random-Spawn) | Making your mob spawn randomly in the world
 
-<!---
+
 # Other Guides
 These links are for guides relating to other Mythic plugins.
 
 - [MythicCrucible](/../../../mythiccrucible/-/wikis/Guides)
-- [MythicEnchantments](/../../../mythicenchants/-/wikis/Guides)
---!>
