@@ -14,7 +14,7 @@
   - (Below MM 5.6.1): the config file is located at: `/MythicMobs/config.yml`
   - (MM 5.6.1 or above) the config file is located at: `/MythicMobs/config/config-spawning.yml`
 - Make sure you have enabled `GeneraSpawnPoints` in the config file, or else the ADD action will not work
-- Make sure you are not in survival or adventure mode, as other gamemodes will not work
+- Make sure you are in survival or adventure mode, as other gamemodes will not work
 - If all of the above fails, ask for help over our [discord]
 
 ### REPLACE Action
