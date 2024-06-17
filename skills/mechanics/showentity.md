@@ -1,5 +1,5 @@
 ## Description
-Shows the hidden caster to the targeted players.
+Shows the caster, if hidden via the use of the [hide] mechanic, to the targeted players.
 
 
 ## Attributes
@@ -15,3 +15,7 @@ Shows the hidden caster to the targeted players.
 
 ## Aliases
 - [x] showplayer
+
+
+<!-- LINKS -->
+[hide]: /skills/mechanics/hide
