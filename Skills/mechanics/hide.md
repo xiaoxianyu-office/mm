@@ -1,8 +1,7 @@
 ## Description
 Hides the caster from the targeted players for a set duration.  
 
-Only works for MC 1.18+.  
-This mechanic is also an [aura].  
+> The hidden entity can then be shown via the used of the [showentity] mechanic.  
 
 
 ## Attributes
@@ -41,3 +40,4 @@ CUSTOM_ITEM:
 
 <!-- LINKS -->
 [aura]: /skills/mechanics/aura
+[showentity]: /skills/mechanics/showentity
