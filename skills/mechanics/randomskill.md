@@ -6,7 +6,7 @@ cooldown. There is no limit to how much skills can be added.
 ## Attributes
 | Attribute | Aliases | Description                                             | Default |
 |-----------|---------|---------------------------------------------------------|---------|
-| skills    |         | The list of skills to execute, must be separated by a `,` |         |
+| skills    | s        | The list of skills to execute, must be separated by a `,` |         |
 | fallbackskill | fbskill, fbs | the metaskill to run if condition checks fail for all skills in the randomskill list |
 
 ## Weight
