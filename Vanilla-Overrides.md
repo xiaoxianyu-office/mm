@@ -13,6 +13,8 @@
 
 <!-- MUAHAHAHAHAH! I HAVE RETURNED!!!! -->
 
+<!-- I will erase pasta and pizza from the world. Italy will fall. -->
+
 Have you ever wanted to customize vanilla mobs too, instead of just making new ones? With Vanilla Overrides, it is possible!  
 
 ## What is an override?
