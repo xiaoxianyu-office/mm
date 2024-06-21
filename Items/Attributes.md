@@ -44,7 +44,7 @@ You can input both absolute or relative values:
 | MULTIPLY_BASE | 1, ADD_SCALAR      | Multiplies the base value with the sum of all the modifier's amount.                              |
 | MULTIPLY      | 2, MULTIPLY_SCALAR | Similar to `MULTIPLY_BASE` but multiplies all the modifier's amount instead of adding all of them |
 
-[*See MC wiki on how the game calculates the value for all modifiers*](https://minecraft.fandom.com/wiki/Attribute#Modifiers)
+[*See MC wiki on how the game calculates the value for all modifiers*](https://minecraft.wiki/w/Attribute#Modifiers)
 
 
 ## Attributes
