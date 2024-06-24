@@ -81,8 +81,7 @@ be set to *false* later in a skill-tree.
   - skill{s=ice_bolt;sync=true} @Target ~onTimer:100
   - skill{sync=true;s=flamethrower} @TargetLocation ~onTimer:200
   - skill:Onemechainc @Target ~onDamaged
-  - skill
-      {
+  - skill{
       skill=leafs;
       sync=true
       }
