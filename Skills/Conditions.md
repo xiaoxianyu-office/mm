@@ -218,6 +218,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [LineOfSightFromOrigin](/skills/conditions/lineofsightfromorigin)             | Compare  | Tests if the target is within line of sight of the caster                                    |
 | [LivingInRadius](/skills/conditions/LivingInRadius)                           | Location | Matches a range to how many living entities are in the given radius                       |
 | [LocalDifficulty](/skills/conditions/localdifficulty)                         | Location | Tests the difficulty scale at the target location                                         |
+| [LookingAt](/Skills/Conditions/LookingAt)                                     | Entity   | Checks if the player is looking at something                                                  |
 | [LunarPhase](/skills/conditions/lunarphase)                                   | Location | Checks the target world's lunar phase                                                      |
 | [MaterialIsOnCooldown](/skills/conditions/MaterialIsOnCooldown)               | Entity   | Checks if the target player's specified material is on cooldown                               |
 | [MobsInChunk](/skills/conditions/mobsinchunk)                                 | Location | Matches a range to how many mobs are in the target location's chunk                       |
