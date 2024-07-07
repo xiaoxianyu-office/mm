@@ -1,6 +1,6 @@
 ## Description
 Modifies the damage event that triggered the skill.  
-This mechanic must be synched, meaning that either the mechanic or the initial skill calling it must be run with the `sync=true` attribute
+This mechanic must be synced, meaning that either the mechanic or the initial skill calling it must be run with the `sync=true` attribute.
 
 
 ## Attributes
