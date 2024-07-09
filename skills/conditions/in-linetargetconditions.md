@@ -1,6 +1,9 @@
 In-Line conditions can be used on individual mechanics and targeters to save you from having to create an entire metaskill for more basic things and to give you more flexibility inside existing metaskills. You can use standard Conditions to check against the caster, TriggerCondtions to check against the trigger, and TargetConditions to check against the target.
 
 In-Line conditions can be used in mob files, skills files and if you have Crucible, they can be used in item files too.
+
+[[_TOC_]]
+
 # Conditions
 
 These conditions will check against the caster itself, they go at the end of a mechanic line and begin with `?`. In the below example the message will only be sent if it is currently raining.
