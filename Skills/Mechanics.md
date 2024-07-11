@@ -305,7 +305,7 @@ The following attributes are applicable to all mechanics.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | cooldown  | cd        | In seconds. Allows for decimal values.                               | 0       |
 | delay     |           | Delays the execution of the mechanic by a set number of ticks.       | 0       |
-| repeat    |           | How many times the mechanic should be repeated                       | 0       |
+| repeat    |           | How many times the mechanic should be repeated. If repeatInterval is set to `0`, this becomes the number of executions rather than repetitions                                  | 0       |
 | repeatInterval | repeatI | How many ticks must elapse between repetitions                    | 0       |
 | targetInterval | targetI | How many ticks must elapse between target selection               | 0       |
 | origin **[PREMIUM]** || Change the origin to whatever targeter is supplied. Does not work if more than one target is parsed. `origin=@Forward{f=10}` |   |
