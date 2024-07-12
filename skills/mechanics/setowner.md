@@ -22,20 +22,24 @@ PetSheep:
   Damage: 18
   Skills:
   - skill{s=SetOwner} @trigger ~onInteract
-  - skill{s=HealOwner} @PIR{R=10} ~onTimer:50
+  - skill{s=HealOwner} @Owner ~onTimer:50
 ```
 
-This skill would change the mob's owner to whoever right clicked it.
 ```yaml
 SetOwner:
   Skills:
-  - setowner @trigger
+  - setowner
+  - message{m=You are now the owner of this mob!}
 ```
-This skill would only heal the owner of the mob.
+> This skill would change the mob's owner to whoever right clicked it.
+##
 ```yaml
 HealOwner:
+  Cooldown: 10
   TargetConditions:
-  - owner true
+  - health{h<20} true
   Skills:
    - heal{a=10}
+   - message{m=<3}
 ```
+> This skill would only heal the owner of the mob once every 10 seconds and only if they have less than 20 points of health left
