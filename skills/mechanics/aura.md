@@ -8,7 +8,7 @@ duration and can also be used in other mechanics and conditions.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| auraName  | buffname, debuffname | Optional name, required to use associated mechanics & conditions that reference a specific aura                                                                      |         |
+| auraName  | buffname, debuffname | Optional name, required to use associated mechanics & conditions that reference a specific aura. Given a random UUID if not defined.                            |         |
 | onStartSkill | onStart, os | Meta-Skill executed when the aura first starts                  |         |
 | onTickSkill  | onTick, ot  | Meta-Skill executed every [interval] ticks on the affected entity|        |
 | onEndSkill   | onEnd, oe   | Meta-Skill executed when the aura ends                          |         |
