@@ -19,8 +19,8 @@ duration and can also be used in other mechanics and conditions.
 | Interval  | i         | How often (in ticks) the aura fires its onTick skill                 | 1       |
 | maxStacks | ms        | How many times the aura stacks on the same targeted entity if applied multiple times                                                                                          | 1       |
 | refreshDuration | rd  | Makes the aura's duration refresh to the amount defined in the mechanic should the entity have the same aura applied to it again                                              | true    |
-| mergeSameCaster | msc, mc | Merges all of the same auras applied by one entity to another into one aura (Prevents a mob from being able to stack an aura multiple times on the same entity)            |         |
-| mergeAll        | ma  | Merges all of the same auras applied by any and all entities to another into one aura (Prevents multiple mobs from being able to stack an aura multiple times on the same entity)| false  |
+| mergeSameCaster | msc, mc | Merges all auras of the same name applied by one entity to another into one aura (Prevents a mob from being able to stack an aura multiple times on the same entity)            |         |
+| mergeAll        | ma  | Merges all auras of the same name applied by any and all entities to another into one aura (Prevents multiple mobs from being able to stack an aura multiple times on the same entity)| false  |
 | overwriteSameCaster | osc, oc | When applied, stops all of the same auras applied on the target by the same caster and replaces them with the new aura                                                | false   |
 | overwriteAll    | overwrite, ow | When applied, stops all of the same auras applied on the target and replaces them with the new aura                                                                | false   |
 | CancelOnGiveDamage | cogd    | Cancels the aura if the entity with the aura deals any damage to another entity                                                                                         | false   |
