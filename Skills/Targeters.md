@@ -4,6 +4,8 @@ While targeters are technically optional (as the default targeter will usually b
 
 When a targeter is used on the Skill mechanic, all of the skills inside of the meta-skill inherit the initial targeter. You can still overwrite the parent targeter for individual mechanics inside of the meta-skill by giving them their own targeter to use.
 
+If entity targets are passed to a location-based mechanic, it will use the entity's location.
+
 [[_TOC_]]
 
 # Additional Targeters
