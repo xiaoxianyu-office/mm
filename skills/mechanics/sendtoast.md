@@ -1,6 +1,7 @@
 ## Description
-Displays a "toast" message to all targeted players. Does nothing if the
-target is not a player.
+Displays an advancement-like "toast" message to all targeted players. Can only affect targeted players, has no effect on non-player targets.
+
+The header of the toast is set by the frame type, such as `challenge` being titled `Challenge Complete!`.
 
 
 ## Attributes
@@ -15,6 +16,6 @@ target is not a player.
 ## Examples
 ```yaml
   Skills:
-  - sendtoast{icon=DIAMOND;iconnbt={CustomModelData:1};message="This is a Toat!";frame=challenge} @PlayersInRadius{r=10}
+  - sendtoast{icon=DIAMOND;iconnbt={CustomModelData:1};message="This is a Toast!";frame=challenge} @PlayersInRadius{r=10}
   - ...
 ```
