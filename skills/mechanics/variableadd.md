@@ -6,7 +6,7 @@ scope. Only works with numeric variable types.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| var       | name, key | The scope and name of the varibale                                   |         |
+| var       | name, key | The scope and name of the variable                                   |         |
 | amount    | a, value, val, v  | The amount to add                                            | 1       |
 
 
