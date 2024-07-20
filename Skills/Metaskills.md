@@ -184,7 +184,8 @@ The behavior of this execution is very specific:
 
 So, in essence, the above example is the equivalent of
 
-```example2:
+```yaml
+example2:
   Skills:
   - skill{s=example1}
   - message{m="test2 - <skill.var.test>"} @self
