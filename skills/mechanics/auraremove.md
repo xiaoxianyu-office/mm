@@ -7,7 +7,7 @@ You can decide if the aura executes its `onEnd` metaskill via the `DoEndSkillOnT
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| aura      | buff, debuff, name, b, n | The name of the aura                                  | default |
+| auraName  | aura, b, buff, buffname, debuff, debuffname, n, name | The name of the aura      | default |
 | stacks    | s                        | The amount of stacks                               | Max stacks |
 
 ### Aura Attribute
