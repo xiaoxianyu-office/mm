@@ -164,6 +164,7 @@ are able to target locations as well.
 | [SetAI][]                 | Disables/enables the AI of the target mob                                                |
 | [SetBlockOpen][]          | Sets the target block's open state                                                |
 | [SetBlockType][]          | Change block type at target location                                                     |
+| [SetChunkForceLoaded][]   | Sets the force-loaded status of a location's chunk                                                     |
 | [SetCollidable][]         | Sets if the target should have a collidable hitbox or not                                                     |
 | [SetDragonPodium][]       | Sets the position of the dragon's podium at the target location                                                     |
 | [SetGameMode][]           | Sets the Game Mode of the target player                                                  |
@@ -483,6 +484,7 @@ but not yet ready for use.
   [SetAI]: /skills/mechanics/setai
   [SetBlockOpen]: /skills/mechanics/SetBlockOpen
   [SetBlockType]: /skills/mechanics/setblocktype
+  [SetChunkForceLoaded]: /skills/mechanics/SetChunkForceLoaded
   [SetCollidable]: /skills/mechanics/setcollidable
   [SetDragonPodium]: /skills/mechanics/SetDragonPodium
   [SetFaction]: /skills/mechanics/setFaction
