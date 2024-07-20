@@ -239,6 +239,8 @@ Examples:
 | tz        |           | The translation on the z axis                                        | 0       |
 | translation | pos, offset | The translations on the axes, in the x,y,z format                | 0,0,0   |
 | hideFirstTick | hft   | Hides the item for the first tick                                    | false   |
+| bulletCullingHeight | cullHeight | The bullet's display culling height                       | 0.0     |
+| bulletCullingWidth | cullWidth | The bullet's display culling width                          | 0.0     |
 | audience  |           | The [Audience][] of the bullet                                       | world   |
 
 ### ME Bullet
@@ -258,6 +260,8 @@ Examples:
 | bulletforwardoffset | bulletfo, bulletoffset, bfo | The forward offset of the bullet         | 1.8     |
 | backgroundcolor | color | The Background color, in the ARGB format                          | 64,0,0,0 |
 | bulletCullingDistance | bulletViewDistance, bulletViewRange | The range in which the bullet will be visible                                                                                        | 50      |
+| bulletCullingHeight | cullHeight | The bullet's display culling height                       | 0.0     |
+| bulletCullingWidth | cullWidth | The bullet's display culling width                          | 0.0     |
 | audience  |           | The [Audience][] of the bullet                                       | world   |
 
 
