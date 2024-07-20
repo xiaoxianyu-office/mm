@@ -169,6 +169,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [FieldOfView](/skills/conditions/fieldofview)                                 | Compare  | Tests if the target is within the given angle from where the caster is looking               |
 | [FoodLevel](/skills/conditions/FoodLevel)                                     | Entity   | Checks if the target has food within the range                                                |
 | [FoodSaturation](/skills/conditions/FoodSaturation)                           | Entity   | Checks if the target has food within the range                                                |
+| [Gamemode](/skills/conditions/Gamemode)                                       | Entity   | Checks if the target player's gamemode is the specified one                                   |
 | [Gliding](/skills/conditions/gliding)                                         | Entity   | If the target is gliding                                                                      |
 | [GlobalScore](/skills/conditions/globalscore)                                 | Entity   | Checks a global scoreboard value                                                         |
 | [HasAI](/skills/conditions/hasai)                                             | Entity   | Checks if the target entity has its AI enabled                                                |
