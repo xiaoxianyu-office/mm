@@ -121,6 +121,7 @@ These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) ena
 | @[RingAroundOrigin][]                                                                                                                                                                            | @ringOrigin<br>@RAO                                                                                                                                                                            | Targets locations in a specified ring around the origin.                                                                                                                                                                            |
 | @[Spawners][]                                                                                                                          |    | Targets the location of the specified spawners.                                                                                                                          |
 | @[BlocksInPinRegion][]                                                                                                                                                                            |    | Targets the blocks in a region delimited by two pins                                                                                                                                                                            |
+| @[ChunksInWERegion][]                                                                                                                          |    | Targets the 0,0 chunk corners of the chunks in a specified WorldGuard region                                                                                                                          |
 
 
 
@@ -370,6 +371,7 @@ Currently, sort can have the following values:
 <!-- Multi Location Targeters -->
   [BlocksInPinRegion]: /Skills/Targeters/BlocksInPinRegion
   [BlocksNearOrigin]: /Skills/Targeters/BlocksNearOrigin
+  [ChunksInWERegion]: /Skills/Targeters/ChunksInWERegion
   [Cone]: /Skills/Targeters/Cone
   [ForwardWall]: /Skills/Targeters/ForwardWall
   [Pin]: /Skills/Targeters/Pin
