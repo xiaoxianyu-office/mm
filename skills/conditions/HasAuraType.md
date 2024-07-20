@@ -5,7 +5,7 @@ Checks if the target entity has the given aura type
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type      | group, name, g, t, n | The aura type to check for                                |         |
+| auragroup | auratype, group, type, t, g | The aura type to check for                         |         |
 
 
 ## Examples
