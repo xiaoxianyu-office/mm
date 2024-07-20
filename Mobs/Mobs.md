@@ -293,7 +293,13 @@ ExampleMob:
   Display: "Hello\nWorld!"
   Nameplate:
     Enabled: true
+
+    # The Offset of the nameplate
+    Offset: 1.8 
     
+    # The Scale of the nameplate
+    Scale: 2
+
     # If set, forces the nameplate to work with modeled entities from the ModelEngine plugin
     Mounted: true
 ```
