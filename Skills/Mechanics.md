@@ -117,6 +117,7 @@ are able to target locations as well.
 | [Mount][]                 | Summons a mob for the caster and mounts it                                               |
 | [MountMe][]               | Forces the targeted entity to mount the caster                                           |
 | [MountTarget][]           | Mounts the target                                                                        |
+| [OpenTrades][]            | Opens the trades of the casting villager to the target player               |
 | [Oxygen][]                | Gives oxygen to a player target                                                          |
 | [Particle][]              | Creates particle effects around the target                                                                |
 | [ParticleBox][]           | Draws a box of particles around the target                                                                |
@@ -437,6 +438,7 @@ but not yet ready for use.
   [Mount]: /skills/mechanics/mount
   [MountMe]: /skills/mechanics/mountme
   [MountTarget]: /skills/mechanics/mounttarget
+  [OpenTrades]: /skills/mechanics/OpenTrades
   [Oxygen]: /skills/mechanics/oxygen
   [Particle]: /skills/mechanics/Particle
   [ParticleBox]: /skills/mechanics/ParticleBox
