@@ -12,7 +12,6 @@
 * [Examples](/examples/Common-Examples)
 
 ##### [Packs](Packs)
-* [Pins](Pins)
 
 ##### [Mobs](/Mobs/Mobs)
   * [Mob Options](/Mobs/Options)
@@ -74,6 +73,9 @@
   * [Audience](/Skills/Audience)
   * [Equipment Slots](/Skills/EquipSlot)
   * [Intratick Scheduling](/Skills/Intratick-Scheduling)
+
+##### Other
+* [Pins](Pins)
 
 <hr>
 
