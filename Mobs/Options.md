@@ -975,7 +975,7 @@ Colors must be uppercase,can be any of the [Spigot Horse colors](https://hub.spi
 
 #### Saddled
 Used for horses to set whether they are saddled or not.  
-Defaults to `false`.  
+Defaults to `true` if [HorseArmor](#horsearmor) is set, or `false` otherwise
 ```yaml
   Options:
     Saddled: true
