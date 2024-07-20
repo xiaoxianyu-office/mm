@@ -102,6 +102,7 @@ These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) ena
 | @[TrackedLocation][]                                                                                                                          |    | Targets the mob's tracked location                                                                                                                          |
 | @[NearestStructure][]                                                                                                                          |    | Targets the nearest structure of the specified type within a radius in the caster's world                                                                                                                          |
 | @[VariableLocation][]                                                                                                                          | @varLocation                                                                                                                          | Targets the location stored in the specified variable                                                                                                                          |
+| @[HighestBlock][]                                                                                                                          |    | Targets the highest block at the skill origin                                                      |
 
 
 ### Multi-Location Targeters
@@ -121,7 +122,7 @@ These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) ena
 | @[RingAroundOrigin][]                                                                                                                                                                            | @ringOrigin<br>@RAO                                                                                                                                                                            | Targets locations in a specified ring around the origin.                                                                                                                                                                            |
 | @[Spawners][]                                                                                                                          |    | Targets the location of the specified spawners.                                                                                                                          |
 | @[BlocksInPinRegion][]                                                                                                                                                                            |    | Targets the blocks in a region delimited by two pins                                                                                                                                                                            |
-| @[ChunksInWERegion][]                                                                                                                          |    | Targets the 0,0 chunk corners of the chunks in a specified WorldGuard region                                                                                                                          |
+| @[ChunksInWERegion][]                                                                                                                          | @chunksInWGRegion                                                                                       | Targets the 0,0 chunk corners of the chunks in a specified WorldGuard region                                                                                                                          |
 
 
 
@@ -355,6 +356,7 @@ Currently, sort can have the following values:
 <!-- Single Location Targeters -->
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
   [Forward]: /Skills/Targeters/Forward
+  [HighestBlock]: /Skills/Targeters/HighestBlock
   [Location]: /Skills/Targeters/Location
   [NearestStructure]: /Skills/Targeters/NearestStructure
   [ObstructingBlock]: /Skills/Targeters/ObstructingBlock
