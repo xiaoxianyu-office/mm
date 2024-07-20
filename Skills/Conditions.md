@@ -105,6 +105,16 @@ Conditions used this way can still have a condition action.
 
 > The day and raining have their condition action declared, while onBlock uses the default one, `true`
 
+
+## Universal Attributes
+Every condition shares and can use the following attributes
+
+| Attribute     | Aliases    | Description                                                               |
+|---------------|------------|---------------------------------------------------------------------------|
+| onFailSkill   | onFail     | The Metaskill to call if this condition does not check                    |
+| onPassSkill   | onPass     | The Metaskill to call if this condition does check                        |
+
+
 # Additional Conditions
 Links to conditions added by addon plugins. Any conditions from these links will not work without that plugin installed.
 
