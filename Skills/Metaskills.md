@@ -18,8 +18,6 @@ A Metaskill is, in essence, a list of mechanics to execute once the metaskill is
 The syntax of a Metaskill is the following:
 ```yaml
 internal_skillname:
-  Cooldown: [seconds]
-  OnCooldownSkill: [the metaskill to execute if this one is on cooldown]
   CancelIfNoTargets: [true/false]
   Conditions:
   - condition1
@@ -30,6 +28,10 @@ internal_skillname:
   TriggerConditions:
   - condition5
   - condition6
+  FailedConditionsSkill: [the metaskill to executed if the conditions did not check]
+  Cooldown: [seconds]
+  OnCooldownSkill: [the metaskill to execute if this one is on cooldown]
+  Skill: [an additional metaskill to execute asynchronously from this one]
   Skills:
   - mechanic1
   - mechanic2
@@ -57,6 +59,53 @@ It's the string that will identify the metaskill inside mythicmobs, exactly how 
 A valid Internal SkillName must be unique (aka, there cannot exists two skills that shares the skillname) and not containt any space character.
 
 If you want to execute a specific metaskill in any way, you will have to use its Internal SkillName in some way
+
+
+## CancelIfNoTargets
+If the metaskill should cancel its execution if no eligible targets are provided to it.  
+Defaults to `true`.
+
+
+## Conditions
+The [Conditions] of the metaskill. Those conditions evaluates the caster of the metaskill.
+
+Depending on the [Condition Action] used in each condition, different behaviors can occur: read the relevant wiki page for more info
+
+
+## TargetConditions
+The Target [Conditions] of the metaskill. Those conditions evaluates the inherited target of the metaskill, it being either an entity ot a location.
+
+Depending on the [Condition Action] used in each condition, different behaviors can occur: read the relevant wiki page for more info
+
+
+## TriggerConditions
+The Trigger [Conditions] of the metaskill. Those conditions evaluates the entity that triggered the skilltree. This entity can also be targeted via the [@Trigger] targeter
+
+Depending on the [Condition Action] used in each condition, different behaviors can occur: read the relevant wiki page for more info
+
+
+## FailedConditionsSkill
+> Alias: `OnFailSkill`
+The Metaskill to be executed if the conditions do not check
+```yaml
+ExampleSkill:
+  Conditions:
+  - day true
+  OnFailSkill: ExampleSkill2
+
+ExampleSkill2:
+  Skills:
+  - message{m="So, well, it appears it's not daytime then."} @World
+```
+Or, alternatively, this is also possible
+```yaml
+ExampleSkill:
+  Conditions:
+  - day true
+  OnFailSkill:
+  - message{m="Oh my, it still isn't daytime?"} @World
+  - message{m="That's quite the problem!"} @World
+```
 
 
 ## Cooldown
@@ -98,29 +147,52 @@ ThirdSkill:
   Skills:
   - command{c="say Third"}
 ```
-Casting FirstSkill normally would result in "First" being written in chat. Executing it again while still on cooldown would write "Second" in chat, and executing it another time while both FirstSkill and SecondSkill are on cooldown would result in "Third" being written in chat
+Casting FirstSkill normally would result in "First" being written in chat. Executing it again while still on cooldown would write "Second" in chat, and executing it another time while both FirstSkill and SecondSkill are on cooldown would result in "Third" being written in chat.  
+
+You can also define a list of mechanics to be executed instead of another metaskill
+```yaml
+  OnCooldownSkills:
+  - s{s=entity.village.no}
+  - e:p{p=VILLAGER_ANGRY;y=1.5}
+```
 
 
-## CancelIfNoTargets
-If the metaskill should cancel its execution if no eligible targets are provided to it.  
-Defaults to `true`.
+## Skill
+To not be confused with [Skills](#skills). This option allows the metaskill to execute the mechanics of another metaskill once triggered.  
+```yaml
+example1:
+  Conditions:
+  - night true
+  Skills:
+  - setvariable{var=skill.test;val=0} @self
+  - message{m=1} @self
+  - message{m=2} @self
+  - delay 20
+  - message{m=3} @self
 
+example2:
+  Skill: example1
+  Skills:
+  - message{m="test2 - <skill.var.test>"} @self
+  - message{m=4} @self
+```
 
-## Conditions
-The [Conditions] of the metaskill. Those conditions evaluates the caster of the metaskill.
+The behavior of this execution is very specific:
+- The other metaskill's mechanics are executed before that of the current metaskill's [Skills](#skills)
+- The other metaskill's conditions and cooldown are ignored, if present
+- Every mechanic is executed in the same skilltree, but the delays used in one do not affect the timings of the other, like if the two metaskills were called in the following manner
 
-Depending on the [Condition Action] used in each condition, different behaviors can occur: read the relevant wiki page for more info
+So, in essence, the above example is the equivalent of
 
+```example2:
+  Skills:
+  - skill{s=example1}
+  - message{m="test2 - <skill.var.test>"} @self
+  - message{m=4} @self
+```
 
-## TargetConditions
-The Target [Conditions] of the metaskill. Those conditions evaluates the inherited target of the metaskill, it being either an entity ot a location.
+With the only difference being the disregard of example1's cooldown and conditions
 
-Depending on the [Condition Action] used in each condition, different behaviors can occur: read the relevant wiki page for more info
-
-## TriggerConditions
-The Trigger [Conditions] of the metaskill. Those conditions evaluates the entity that triggered the skilltree. This entity can also be targeted via the [@Trigger] targeter
-
-Depending on the [Condition Action] used in each condition, different behaviors can occur: read the relevant wiki page for more info
 
 
 ## Skills
