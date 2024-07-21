@@ -248,6 +248,14 @@ Defaults to `false`.
     PreventSunburn: true
 ```
 
+#### PreventTransformation
+Sets whether the mob should be prevented from being turned into other entities.  
+Defaults to `true`.  
+```yaml
+  Options:
+    PreventTransformation: false
+```
+
 #### PreventVanillaDamage
 Cancels every instance of the mob dealing "regular" vanilla damage, canceling it.  
 Skills that triggers onAttack will still be executed.  
@@ -473,14 +481,12 @@ Defaults to `false`.
     PreventJockeyMounts: true
 ```
 
-
-#### PreventTransformation
-Sets whether zombies should be prevented from being turned into pigmen/drowned.  
-Only works for Zombies.  
-Defaults to `true`.  
+#### PreventConversion
+Prevents the Zombie from being converted into other types of zombies.  
+Defaults to `false`.
 ```yaml
   Options:
-    PreventTransformation: false
+    PreventConversion: true
 ```
 
 
@@ -1220,6 +1226,17 @@ Defaults to `false`.
 ```yaml
   Options:
     PreventBlockInfection: true
+```
+
+
+## Skeleton
+
+#### PreventConversion
+Prevents the Skeleton from being converted into other types of skeletons.  
+Defaults to `false`.
+```yaml
+  Options:
+    PreventConversion: true
 ```
 
 
