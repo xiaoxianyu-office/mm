@@ -26,7 +26,7 @@ Defaults to `false`.
   AlwaysShowName: false
 ```
 
-#### AttackSpeed:
+#### AttackSpeed
 The attack speed of the mob  
 Defaults to vanilla attack speed of the respective mobs
 ```yaml
@@ -1140,6 +1140,14 @@ The [variant](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Parrot.
 ```yaml
   Options:
     Variant: GRAY
+```
+
+#### FlyingSpeed
+The flying speed of the parrot.  
+Defaults to `-1` (The option is not applied)
+```yml
+  Options:
+    FlyingSpeed: 0.2
 ```
 
 
