@@ -1,34 +1,139 @@
-5.7.0 (Dev Builds)
-=====
+[[_TOC_]]
+
+# 5.7.0 (Dev Builds)
+
+## General
+- Added 1.20.5, 1.20.6 and 1.21 support
+- Dropped support for 1.16.4, 1.18.2, 1.19.1, 1.19.2, and 1.19.3.
+- Various options on mobs and skills that take an item can now accept a droptable and will use a random item from it, such as the Item mob type.
+
+## Mobs
+- Added support for new entity types: `Armadillo`, `Bogged`, and `Breeze`.
 - Added new HEARING ability to mobs enabled by `Hearing.Enabled: true`. Requires 1.20+
 - Added [`~onHear`](/Mobs/Mobs#hearing) trigger that responds to hearing sounds
+- Added `Options.PreventConversion` to zombies and skeletons.
+- Changed variables defined directly on the mob default to always saving.
 
-General
--------
-- Added particles: white_smoke, dust_plume, gust, gust_emitter, gust_dust, and trial_spawner_detection
+## Skills
+### Mechanics
+- Added particles: `white_smoke`, `dust_plume`, `gust`, `gust_emitter`, `gust_dust`, and `trial_spawner_detection`
+- Particle `mobSpellAmbient` was removed by Mojang in 1.21
+- Allow `command` and `message` mechanics to target locations for the purpose of location-based placeholders.
+- Renamed `setItemDisplay` mechanic to `setDisplayEntityItem` to clarify purpose and avoid naming conflicts.
 
-Mechanics
----------
-### NEW: `Log`
-`- log{message="Debug to console with variables <caster.var.test>"}`
-### NEW: `SetTextDisplay`
+#### NEW: `Log`
+- `log{message="Debug to console with variables <caster.var.test>"}`
+
+#### NEW: `SetTextDisplay`
 - `setTextDisplay{text="text here"} @Target`
-### NEW: `Taunt`
+
+#### NEW: `Taunt`
 - Sets the caster's threat to 110% of the current target's target and forces them to attack the caster. Requires threat tables.
 
-Conditions
-----------
-### NEW: `boundingBoxesOverlap`
-### NEW: `distanceFromPin`
+#### NEW: `openTrades`
+- `openTrades (openTrade, trade)` mechanic to open a merchant menu to the targeted player.
+- Added `realTrade/real` attribute - determines if the player trades with the actual villager or not (ie drop trade xp, etc.).
+
+#### NEW: `setChunkForceLoaded`
+- Sets the target location's chunk to be force-loaded
+
+#### DropItem
+- Added `then=` skill to the dropItem mechanic that targets the dropped item entities.
+
+### Conditions
+- Added `onPass[Skill]` & `onFail[Skill]` for conditions.
+
+#### NEW: `boundingBoxesOverlap`
+
+#### NEW: `distanceFromPin`
 - `distanceFromPin{pin=X;distance=<5}`
 
-Targeters
----------
-### NEW: `@BlocksInPinRegion`
-### NEW: `@TrackedPlayers`
+#### NEW: `distanceFromLocation`
+- `distanceFromLocation` condition. Values `x`,`y`,`z`,`distance/d`, and optional `world` (default to players current world if no world name provided).
+
+### Targeters
+#### NEW: `@BlocksInPinRegion`
+
+#### NEW: `@HighestBlock`
+- Targets the highest location at the origin position.
+
+#### NEW: `@TrackedPlayers`
 - Targets players that are within render distance of and currently rendering the mob
-### Pin
+
+#### NEW: `@ChunksinWERegion`
+- Added `@ChunksinWERegion{region=X}` targeter.
+
+#### Pin
 - Added `random=true` option, if targeting a multi-pin it will target a random one instead of all of them.
+
+### Placeholders
+- Added `PlaceholderBoolean` which will evaluate to true if a variable is 'true' or '1', otherwise false.
+- Added rounding support to `random.float` placeholder by using syntax `<random.float.1to5{round=2}>`
+
+API
+----
+- Refactored EquipSlots to allow for custom slots.
+- Various API improvements for MythicRPG.
+- Added methods for dumping item component data.
+
+Bugs / Other
+------------
+- Improved world isLoaded check.
+- Removed `type` alias for `damageType` in damage mechanics to fix some conflicts.
+- Removed adventure shading, switched to using native adventure with spigot libraries loader.
+- Removed redundant old version checks.
+- Fixed bugs with rounding in stat tooltips in some cases.
+- Fixed y out of range error with random spawning.
+- Fixed setName mechanic not updating properly when using custom nameplates.
+- Fixed NPE in papi variable placeholders.
+- Fixed several NPEs when trying to resolve player variables before a player has finished loading in.
+- Fixed several more bugs with placeholder rounding.
+- Fixed attribute slots not working on some versions.
+- Fixed colors not working in stat formatting.
+- Fixed async error with threat table targeters.
+- Fixed NoSuchElementException leading to server crash with random spawning on 1.21.
+- Fixed NPE in dumpNBTData method on 1.21.
+- Fixed `Spawners.DisableCommandSaving` logic being backwards.
+- Fixed yaw and pitch attributes not saving on spawners.
+- Fixed spawners not saving.
+- Fixed a bunch of broken targeters.
+- Fixed NPE in VariableManager.
+- Fixed attack speed stat (hopefully).
+- Fixed spread not working on teleport mechanic with entity targets.
+- Fixed bug with item display entities.
+- Fixed backwards compatibility with potions.
+- Fixed Armor and Attack Speed not being able to be set to 0.
+- Fixed errors related to EntityManager.
+- Fixed a bunch of spam errors about registering entities.
+- Fixed NPE with mob eggs that have no display name.
+- Fixed piglin brutes being broken for vanilla overrides.
+- Fixed some other vanilla override issues with babies.
+- Fixed totem_of_undying particle.
+- Fixed a bunch of particle bugs.
+- Fixed default potion level being 2 instead of 1.
+- Fixed fireworks loading colors with RBG instead of RGB.
+- Fixed onDamaged aura not working with skill damage, probably.
+- Fixed ClassCastException with compatibility mode.
+- Fixed NPE with `targetInterval` mechanic option.
+- Fixed spread not working on teleport mechanic with entity targets.
+- Fixed summon mechanic mobs inheriting caster's yaw in certain situations.
+- Fixed `hasPotionEffect` condition on 1.21.
+- Fixed custom attribute registration on 1.21+.
+- Fixed async error with threat table targeters.
+- Fixed NoSuchElementException leading to server crash with random spawning on 1.21.
+- Fixed custom attribute registration on 1.21+.
+- Fixed y out of range error with random spawning.
+- Fixed summon mechanic mobs inheriting caster's yaw in certain situations.
+- Fixed piglin brutes being broken for vanilla overrides.
+- Fixed some other vanilla override issues with babies.
+- Fixed default potion level being 2 instead of 1.
+- Fixed fireworks loading colors with RBG instead of RGB.
+- Fixed onDamaged aura not working with skill damage, probably.
+- Fixed summon mechanic mobs inheriting caster's yaw in certain situations.
+- Fixed `hasPotionEffect` condition on 1.21.
+- Fixed custom attribute registration on 1.21+.
+- Fixed spread not working on teleport mechanic with entity targets.
+- Fixed `setName` mechanic not updating properly when using custom nameplates.
 
 5.6.2
 =====
