@@ -1,6 +1,6 @@
 [[_TOC_]]
 
-# 5.7.0 (Dev Builds)
+# 5.7.0
 
 ## General
 - Added 1.20.5, 1.20.6 and 1.21 support
