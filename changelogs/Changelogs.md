@@ -371,6 +371,8 @@ Bugs / Other
 
 Older Changelogs
 ================
+-   [5.7.X Changelogs](/changelogs/5.7.x_changelogs)
+-   [5.6.X Changelogs](/changelogs/5.6.x_changelogs)
 -   [5.5.X Changelogs](/changelogs/5.5.x_changelogs)
 -   [5.4.X Changelogs](/changelogs/5.4.x_changelogs)
 -   [5.3.X Changelogs](/changelogs/5.3.x_changelogs)
