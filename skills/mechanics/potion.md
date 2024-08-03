@@ -15,7 +15,7 @@ effects.
 |--------------|----------------|-------------------------------------------------------------------------------------------|---------|
 | type         | t              | The type of [potion effect](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) to apply.                           |         |
 | duration     | d              | The duration of the effect in ticks [1].                                                  | 100     |
-| level        | 0              | The modifier-level of the potion effect. The real level is level's value +1. | 1       |
+| level        | lvl, l         | The modifier-level of the potion effect. The real level is level's value +1. | 0       |
 | force        |                | Whether not to override the current potion effect or not. (4.0+)                          | false   |
 | hasParticles | particles or p | Whether not to show the status effect particles. (4.6+)                                   | true    |
 | hasIcon      | icon or i      | Whether not to show the status effect icon. (4.6+)                                        | true    |
