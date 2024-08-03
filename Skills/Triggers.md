@@ -26,7 +26,7 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onSpawn](#onspawn)                    | When the mob spawns                                          |
 | [onDespawn](#ondespawn)                | When the mob is despawned                                    |
 | [onReady / onFirstSpawn](#onready)     | Triggered the first time a mob is spawned from a spawner     |
-| [onLoad](#onload)                      | When the mob is loaded (spawning or loading after a restart) |
+| [onLoad](#onload)                      | when the mob is loaded after a server restart                  |
 | [onDeath](#ondeath)                    | When the mob dies                                            |
 | [onTimer:*#*](#ontimerticks)           | Every \# ticks (where \# is the interval in ticks)           |
 | [onInteract](#oninteract)              | When the mob is right-clicked                                |
