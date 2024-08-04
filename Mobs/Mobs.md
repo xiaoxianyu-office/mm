@@ -86,7 +86,7 @@ example_mob:
 ```
 
 #### HealthBar
-Creates a basic health bar hologram. Requires "Holograms" or "HolographicDisplays" plugin.
+Creates a basic health bar hologram above the mob, once the mob has been damaged.
 ```yml
 example_mob:
   Type: zombie
