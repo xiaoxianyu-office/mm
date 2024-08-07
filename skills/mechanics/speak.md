@@ -2,12 +2,6 @@
 Makes the caster speak using chat and speech bubbles. Supports
 Holograms.
 
-* Now allow hex colors in the format **`<#FFFFFF>`**
-* Now supports gradients in the format **`<gradient:#color1:#color2>text</gradient>`**
-* Now supports **`<rainbow>text</rainbow>`**
-* Now supports hover text in the format **`<hover:show_text:'hover text??'>hover over me!</hover>`**
-* Now supports clickable text in the format **`<click:run_command:/say hello>click me!</click>`**
-* You can force a new line in the hologram by using `\n`
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
@@ -17,11 +11,18 @@ Holograms.
 | maxlinelength | ll, mll, ml | The maximum length of the hologram                             | 22      |
 | lineprefix| lp        | The prefix for the hologram.                                         | &f      |
 | message   | m         | The message to be displayed (affects both hologram and chat)         |         |
-| chatprefix| cp       | The prefix for the chat message                                       | &lt;caster.name&gt;&f&lt;&co&gt;  |
-| duration  | d, t      | The amount of time the hologram will be displayed for.               | MESSAGE LENGTH * 4  |
+| chatprefix| cp        | The prefix for the chat message            | &lt;caster.name&gt;&f&lt;&co&gt;  |
+| duration  | d, ticks, time, t | The amount of time the hologram will be displayed for.               | MESSAGE LENGTH * 4  |
 | sendchatmessage | chatmessage, chat | Whether the message shows up in chat                   | true    |
 | audience  |           | The [Audience] of the mechanic                                       | tracked |
-  
+
+> This mechanic inherits every attribute of the [Aura] mechanic  
+>> - The `auraname` attribute is **set** at `#speaking`
+>> - The `charges` attribute is **set** at `1`  
+>> - The `maxStacks` attribute is **set** at `1`  
+>> - The `mergeSameCaster` attribute is **set** at `false`  
+>> - The `overwriteCaster` attribute is **set** at `true`  
+>> - The `refreshDuration ` attribute is **set** at `false`  
 
 ## Examples
 ```yaml
