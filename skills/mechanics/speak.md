@@ -40,3 +40,4 @@ Holograms.
 
 <!-- LINKS -->
 [audience]: /Skills/Audience
+[aura]: /skills/mechanics/aura
