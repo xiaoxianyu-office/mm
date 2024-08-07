@@ -1,6 +1,7 @@
 ## Description
 Makes the caster speak using chat and speech bubbles. Supports
-Holograms.
+Holograms.  
+You can force a new line in the hologram by using `\n`
 
 
 ## Attributes
