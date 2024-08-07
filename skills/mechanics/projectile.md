@@ -122,8 +122,10 @@ These work with the projectile, missile, and orbital mechanics.
 | [TRACKING][]| ARMOR_STAND, ARMORSTAND, PSTAND | The bullet will be an item, but its rotation will be adjusted depending on the projectile's direction                                                         |
 | [REALTRACKING][] | RTRACKING, REAL_ARMOR_STAND, REALARMORSTAND, STAND | As above, but a real armor stand will also be spawned instead of a packet |
 | [DISPLAY][] |              | The projectile will be a display entity                                   |
-| [ME][]      |              | The projectile will be a [ModelEngine] model                              |
 | [TEXT][]    |              | The projectile will display a line of text                                |
+<!--
+| [ME][]      |              | The projectile will be a [ModelEngine] model                              |
+-->
 
 Examples:
 ```yaml
@@ -243,12 +245,14 @@ Examples:
 | bulletCullingWidth | cullWidth | The bullet's display culling width                          | 0.0     |
 | audience  |           | The [Audience][] of the bullet                                       | world   |
 
+<!--
 ### ME Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletModel | model   | The MEG model to use for the bullet                                  |         |
 | bulletcolor |         | The tint of the bullet's model                                       |         |
 | bulletEnchanted | enchanted | Whether the bullet's model should be enchanted                 | false   | 
+-->
 
 ### TEXT Bullet
 | Attribute | Aliases   | Description                                                          | Default |
