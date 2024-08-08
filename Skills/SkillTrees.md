@@ -16,6 +16,8 @@ stateDiagram-v2
                     Caster
                     Targers
                     Trigger
+                    Origin
+                    SkillParameters
                 }
                 state Mechanics {
                     Mechanic1 Mechanic2 Mechanic3
