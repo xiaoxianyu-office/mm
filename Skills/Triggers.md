@@ -26,7 +26,8 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onSpawn](#onspawn)                    | When the mob spawns                                          |
 | [onDespawn](#ondespawn)                | When the mob is despawned                                    |
 | [onReady / onFirstSpawn](#onready)     | Triggered the first time a mob is spawned from a spawner     |
-| [onLoad](#onload)                      | when the mob is loaded after a server restart                  |
+| [onLoad](#onload)                      | When the mob is loaded after a server restart                |
+| [onSpawnOrLoad](#onspawnorload)        | When the mob either [spawns](#onspawn) or [loads](#onload)   |
 | [onDeath](#ondeath)                    | When the mob dies                                            |
 | [onTimer:*#*](#ontimerticks)           | Every \# ticks (where \# is the interval in ticks)           |
 | [onInteract](#oninteract)              | When the mob is right-clicked                                |
@@ -437,6 +438,18 @@ EXAMPLE_MOB:
     # when the mob is loaded after a server restart
     - message{m=LOADED} @World ~onLoad
 ```
+
+#### ~onSpawnOrLoad
+Executes the skill when either [~onSpawn](#onspawn) or [~onLoad](#onload) would trigger.
+```yml
+EXAMPLE_MOB:
+  Type: VILLAGER
+  Skills:
+    # sends a message to all the players in the world
+    # when the mob spawns or when the mob is loaded after a server restart
+    - message{m=SPAWNED! Or was i loaded?} @World ~onSpawnOrLoad
+```
+
 
 #### ~onChangeWorld
 Executes the skill when the mob changes world.
