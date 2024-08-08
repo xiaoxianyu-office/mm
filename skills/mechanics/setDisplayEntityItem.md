@@ -13,9 +13,5 @@ Sets the item component of Item Display entities
 ExampleMob:
   Type: ITEM_DISPLAY
   Skills:
-  - setItemDisplay{i=MyMythicItem} @self ~onSpawn
+  - setDisplayEntityItem{i=MyMythicItem} @self ~onSpawn
 ```
-
-
-## Aliases
-- [x] setItem
