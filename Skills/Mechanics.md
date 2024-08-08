@@ -173,7 +173,7 @@ are able to target locations as well.
 | [SetGravity][]            | Sets whether gravity affects the target entity                                           |
 | [SetHealth][]             | Sets the health of the target entity                                                     |
 | [SetInteractionSize][]    | Sets the size of the target `INTERACTION` entity.                                                     |
-| [SetItemDisplay][]        | Sets the item component of `ITEM_DISPLAY` entities.                                                     |
+| [setDisplayEntityItem][]  | Sets the item component of `ITEM_DISPLAY` entities.                                                     |
 | [SetLeashHolder][]        | Changes the holder of a mobs lead                                                          |
 | [SetLevel][]              | Changes the casting mob's level                                                          |
 | [SetMaterialCooldown][]   | Sets a cooldown for usable materials like ender pearls, chorus fruit, etc                                                          |
@@ -496,7 +496,7 @@ but not yet ready for use.
   [SetGravity]: /skills/mechanics/setgravity
   [SetHealth]: /skills/mechanics/sethealth
   [SetInteractionSize]: /skills/mechanics/SetInteractionSize
-  [SetItemDisplay]: /skills/mechanics/SetItemDisplay
+  [setDisplayEntityItem]: /skills/mechanics/setDisplayEntityItem
   [SetLeashHolder]: /skills/mechanics/setleashholder
   [SetLevel]: /skills/mechanics/setlevel
   [SetMaterialCooldown]: /skills/mechanics/setmaterialcooldown
