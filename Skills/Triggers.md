@@ -329,11 +329,15 @@ DUMMY_MOB:
     - message{m=MOO...?} @World ~onSignal
 ```
 
-
 #### ~onShoot
 Executes the skill when the mob shoots a projectile.
 For example, skeletons with bows will shoot arrows; ghasts, blazes, or ender dragon will shoot some type of fireball.  
 > The associated [@trigger] is the caster
+
+| [Implemented Placeholders]     |
+|--------------------------------|
+| `<skill.var.bow-tension>`      |
+
 ```yml
 EXAMPLE_MOB:
   Type: SKELETON
