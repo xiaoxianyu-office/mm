@@ -2,6 +2,8 @@
 
 # 5.7.0
 
+**`Note: 1.21 support was a huge upgrade and there may still be bugs. Please make sure to report any bugs you find by opening an Issue or by letting us know in the `mythic-121-testing` channel in Discord`**
+
 ## General
 - Added 1.20.5, 1.20.6 and 1.21 support
 - Dropped support for 1.16.4, 1.18.2, 1.19.1, 1.19.2, and 1.19.3.
@@ -134,6 +136,15 @@ Bugs / Other
 - Fixed custom attribute registration on 1.21+.
 - Fixed spread not working on teleport mechanic with entity targets.
 - Fixed `setName` mechanic not updating properly when using custom nameplates.
+- Fixed `consumeSlotItem` mechanic not removing items with 0 amount
+- Fixed MythicMobItemGenerateEvent#setItemStack
+- Fixed damage modifiers and defensive stats not working in some cases when the final damage is zero
+- Fixed mob data not always saving on server shutdown
+- Fixed meleeAttack AI goal causing zombies to stutter or freeze sometimes
+- Fixed persistent entities not loading correctly after chunk load due to papermc bug
+- Fixed error preventing plugin from loading on Arclight
+- Fixed config error causing plugin to require a restart after first install
+
 
 5.6.2
 =====
