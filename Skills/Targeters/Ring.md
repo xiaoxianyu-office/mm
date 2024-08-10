@@ -1,5 +1,7 @@
 ## Description
-Targets locations in a specified ring around the caster
+Targets locations in a specified ring around the caster.
+
+Rotations are in radians, such as 90 degrees of axis rotation being `1.57`.
 
 
 ## Attributes
