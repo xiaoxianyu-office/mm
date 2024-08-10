@@ -57,7 +57,7 @@ internal_droptablename:
 **BonusLevelItems: \[number\]/\[range\]**
 
 -   A modifier on the number of drops generated based on the mob's level
--   Can be set as a range,`i.e. ```0.2to0.5```
+-   Can be set as a range, i.e. ```0.2to0.5```
 -   Works like:```amount = amount + (mob_level * bonus_level_items)```
 -   Requires that```TotalItems```, ```MinItems```, or ```MaxItems``` are set on the table
 
