@@ -18,7 +18,7 @@ Will teleport all players in a radius of 50 blocks around the casting
 mob to the specified location:
 ```yaml
   Skills:
-  - teleportto{location=190,64,200} @PIR{r=50}
+  - teleportto{location=190,64,200;world=world_nether} @PIR{r=50}
 ```
 ##
 Teleports all of the players in a radius of 50 blocks to a locations that is 10 blocks above the caster of the mechanic
