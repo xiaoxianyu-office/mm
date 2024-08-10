@@ -1,5 +1,7 @@
 ## Description
-Targets locations in a specified ring around the origin
+Targets locations in a specified ring around the origin.
+
+Rotations are in radians, such as 90 degrees of axis rotation being `1.57`.
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
