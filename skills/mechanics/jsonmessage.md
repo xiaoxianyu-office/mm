@@ -2,7 +2,7 @@
 Sends a json-format chat message to the target player(s). JSON-messages
 are capeable of hover-events, click events and some other perks that are
 unavailable in the other message mechanics. They also support [color
-codes](/databases/misc/colorcodes) and [message
+codes](https://htmlcolorcodes.com/bukkit-color-codes/) and [message
 variables](/skills/stringvariables).
 
 The format of JSON-messages is a little more advanced than your everyday
