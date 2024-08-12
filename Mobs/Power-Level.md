@@ -4,7 +4,7 @@ Skill Power is an attribute available to all skills that increases the
 potency of skills. Base attributes set in the mob configuration will not
 be affected by power levels. It is primarily used as a way to increase
 skill power with a mob's level, and can only be applied using [Level
-Modifiers](/databases/mobs/levels). Some mechanics have certain
+Modifiers](/Mobs/Levels). Some mechanics have certain
 attributes that can be multiplied by power levels.
 
 Future builds will allow you to define a scaling factor on it. In
