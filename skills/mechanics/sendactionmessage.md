@@ -1,7 +1,7 @@
 ## Description
 Sends a message to the target player's action bar.
 
-[Color codes](https://htmlcolorcodes.com/bukkit-color-codes/) and
+[Color codes](/Skills/Placeholders#color-codes) and
 [Variables](/Skills/Variables) are compatible with the action
 message bar. Some targeters might not work properly with this mechanic.
 If you happen to find a targeter that doesn't work, please be sure to
