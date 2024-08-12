@@ -2,7 +2,7 @@ The Equipment section in a mob config defines what kind of equipment the mob wil
 
 If the PreventOtherDrops option is not enabled, then the mob will naturally drop all of its equipped items on death.
 
-If you want your mob to not wear any equipment, you can use the option "PreventRandomEquipment". See [Mob Options](/databases/mobs/options). An alternative to using that option is to equip your mob with *dummy items*, such as AIR.
+If you want your mob to not wear any equipment, you can use the option "PreventRandomEquipment". See [Mob Options](/Mobs/Options). An alternative to using that option is to equip your mob with *dummy items*, such as AIR.
 
 Equipment slots can also accept [droptables](/drops/DropTables#equipment-droptables), allowing for the creation of "sets" where a random item is selected from the set. For example, a droptable can be created that contains every vanilla helmet, which can then be used on the mob in the equipment tab to select one random helmet to wear.
 
