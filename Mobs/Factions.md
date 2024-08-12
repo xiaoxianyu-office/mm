@@ -93,8 +93,7 @@ DecayingSkeleton:
         * The **AIGoalSelectors** section now has the **meleeattack** goal which says to attack using melee. It should be noted that you must equip the skeleton with a sword now so he can use the melee attack since you can't melee with a bow equipped (the skeletons default weapon) This would not be required however for a zombie.
         * The **AITargetSelectors** section now has the **players** target removed so the skeleton will not actively engage players. Instead it has the **otherfactionmonsters** target, which tells it that it should attack any monsters that are not in its own faction (in this case Undead). There is also **hurtbytarget** selector with a priority of 1 which says that if any other entities attacks the skeleton first (such as a player) then it will retaliate. This target selector is a common one that should be set as a higher priority so that mobs don't end up being exploitable. Without this here, the player could kill the skeleton without it attacking back which generally is not wanted.
 
--   For a list of all the target and goal selectors please see [Mob AI
-    Goals](Databases/Mobs/Aigoals)
+-   For a list of all the target and goal selectors please see [Mob's Custom AI](/Mobs/Custom-AI)
 
 <!-- -->
 
