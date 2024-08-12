@@ -68,6 +68,6 @@ The above examples shows different worlds with different levels of scaling. Usin
 
 ![](http://fs5.directupload.net/images/160317/ebnd74rs.jpg)
 
-These options will automatically be applied to all mobs that are summoned into the game using MythicMobs' [Random Spawning](/[[databases/spawners/randomspawners). You can use the **UseWorldScaling: \[true/false\]** option on your randomspawn configurations to control whether mobs are supposed to be affected by world scaling.
+These options will automatically be applied to all mobs that are summoned into the game using MythicMobs' [Random Spawning](Random-Spawns). You can use the **UseWorldScaling: \[true/false\]** option on your randomspawn configurations to control whether mobs are supposed to be affected by world scaling.
 
 > Note that world scaling options will never affect [Vanilla Overrides](Vanilla-Overrides) unless the `ScaleVanillaMobs` option for that world is set to `true`.
