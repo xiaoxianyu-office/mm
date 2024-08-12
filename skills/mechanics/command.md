@@ -1,9 +1,7 @@
 ## Description
 Executes a command for each target supplied.
 
-Color codes and variables are allowed. For a list of color codes look
-[here](/databases/misc/colorcodes). Variables can be found
-[here](/skills/stringvariables).
+[Color codes](/Skills/Placeholders#color-codes) and [variables](/Skills/Variables) are allowed.  
 
 The command specified will not function correctly if it contains double
 quotes " or curly brackets {} and must be substitued with their
