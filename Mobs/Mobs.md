@@ -164,8 +164,8 @@ This field allows you to enable or disable modules, like [Threat Tables] and/or 
 example_mob:
   Type: husk
   Modules:
-    ThreatTables: false
-    ImmunityTables: false
+    ThreatTable: false
+    ImmunityTable: false
 ```
 
 #### AIGoalSelectors
