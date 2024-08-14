@@ -154,7 +154,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [DistanceFromLocation](/skills/conditions/DistanceFromLocation)               | Entity   | Whether the distance between the target and a specified location is within a certain range  |
 | [DistanceFromPin](/skills/conditions/DistanceFromPin)                         | Location | Checks if the target is within a certain distance of a specified pin                          |
 | [DistanceFromSpawn](/skills/conditions/distancefromspawn)                     | Location | Whether the distance from the world's spawn point to the target is within the given range   |
-| [DistanceFromTrackedLocation](/skills/conditions/distancefromtrackedlocation) | Location | Whether the distance from the tracked location to the target is within the given range      |
+| [DistanceFromTrackedLocation](/skills/conditions/distancefromtrackedlocation) | Location | Whether the distance from the tracked location to the caster is within the given range      |
 | [Dusk](/skills/conditions/dusk)                                               | Location | If the time is dusk, from 14000 to 18000 in-game time.                                      |
 | [EnchantingExperience](/skills/conditions/EnchantingExperience)               | Entity   | Checks the target player's experience points                                               |
 | [EnchantingLevel](/skills/conditions/enchantingLevel)                         | Entity   | Checks the target player's experience level                                                |
