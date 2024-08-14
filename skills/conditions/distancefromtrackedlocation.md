@@ -1,5 +1,5 @@
 ## Description
-Checks if the distance between the entity and the tracked location is within the specified values
+Checks if the distance between the caster and its tracked location is within the specified values
 
 
 ## Attributes
