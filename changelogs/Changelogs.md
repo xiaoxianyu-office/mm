@@ -1,5 +1,9 @@
 [[_TOC_]]
 
+# 5.7.1
+## General
+- Added 1.21.1 support
+
 # 5.7.0
 
 **`Note: 1.21 support was a huge upgrade and there may still be bugs. Please make sure to report any bugs you find by opening an Issue or by letting us know in the `mythic-121-testing` channel in Discord`**
