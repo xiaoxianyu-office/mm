@@ -30,23 +30,32 @@ stateDiagram-v2
 
 ## Skill Scoped Variables
 
-Since they exist in the skilltree itself, skill-scoped variables can be accessed by any [metaskill] in the skilltree from the moment they are created, regardless of which [metaskill] created them
+Since they exist in the skilltree itself, skill-scoped variables can be accessed and modified by any [metaskill] in the skilltree from the moment they are created, regardless of which [metaskill] created them
 
+## Event Data
+The skilltree always knows which event triggered it, and allows the [cancelevent](/Skills/Mechanics/cancelevent) mechanic to be used in any of the metaskill it calls in order to cancel it, as long as this occurs in a synched manner
 
 ## MetaSkills
-Each [Metaskill] that is being called in the SkillTree has their own set of data regarding who the caster, target and trigger is:
-- The Target is whoever has been targeted or inherited when calling the [Metaskill], and inside the metaskill itself it is the Inherited Target(s)
-```yaml
-  Skills:
-  - skill{s=ExampleSkill} @PIR{r=10} ~onInteract
-```
-> The ExampleSkill metaskill that is being executed will have every player in a 10 blocks radius as the inherited target.
-
-- The Trigger is first set as the entity that triggered the SkillTree initially. Each time a new metaskill is called, it inherits the trigger of the calling metaskill, unless it has been overridden by the [sudoskill]'s mechanic `casterastrigger` attribute, in which case the trigger from that metaskill forth will become the caster of the sudoskill mechanic
-
+Each [Metaskill] that is being called in the SkillTree has its own set of data regarding different elements.
+Normally, the value of those elements is copied over from the calling metaskill unless overridden.  
+Those elements are:
+- `Caster`: The entity casting the metaskill.
+  - Can be changed via the use of the [sudoskill] mechanic
+- `Target`: It is the [Inherited Target](/Skills/Metaskills#inheritance) of the metaskill
+- `Trigger`: Is first set as the entity that triggered the SkillTree initially, and one can fetch this entity via the [@trigger] targeter or other similar targeters. Depending on the [~Trigger] used, a [@trigger] may not exist.
+  - The `Trigger` can be changed via the use of the [sudoskill] mechanic's `casterastrigger` attribute, which will make the called metaskill have, as the  `Trigger`, the `Caster` of the original metaskill 
+- `Origin`: It's the [@origin] of the metaskill. By default, it is the position of the `Caster`.
+  - Can be set via the `origin` [universal attribute]
+  - It is automatically set in mechanics such as [projectile](/Skills/Mechanics/Projectile)
+- `Skill Parameters`: The [Skill Parameters] of the metaskill. Please note that, contrary to [Skill Scoped Variables](#skill-scoped-variables), they do not exist on the skilltree itself. 
 
 
 <!-- LINKS -->
 [metaskill]: /Skills/Metaskills
 [metaskills]: /Skills/Metaskills
 [variables]: /Skills/Variables
+[sudoskill]: /Skills/Mechanics/SudoSkill
+[~Trigger]: /Skills/Triggers
+[@trigger]: /Skills/Targeters/Trigger
+[universal attribute]: /Skills/Mechanics#universal-attributes
+[Skill Parameters]: /Skills/Metaskills#skill-parameters-premium-feature
