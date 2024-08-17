@@ -7,6 +7,8 @@ This is not an intended mechanic. It's just a happy accident that, somehow, cons
 
 You have to imagine each mechanic as a series of instructions that are executed orderly. In this scenario, using a `delay 0` mechanic allows you to "schedule" the subsequent mechanics to be executed *after* every other non delayed mechanic that tick.
 
+While i have extensively tested this behavior after discovering it before documenting it, it's still very possible that new applications or game-breaking behaviors are still present. If you have any information useful to further expand this page and, by proxy, the knowledge available to every other MythicMobs user, let me know: [Lxlp's Discord Profile](https://discord.com/users/353257382811533322)
+
 ```mermaid
 flowchart LR
     A(Mechanic 1) --> B(Mechanic 2)
