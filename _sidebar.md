@@ -73,6 +73,7 @@
   * [Audience](/Skills/Audience)
   * [Equipment Slots](/Skills/EquipSlot)
   * [Intratick Scheduling](/Skills/Intratick-Scheduling)
+  * [Dynamic Metaskills](/Skills/Dynamic-Metaskills)
 
 ##### Other
 * [Pins](Pins)
