@@ -2,6 +2,8 @@ SkillTrees are an implicit feature of Mythic and, while they cannot directly inv
 
 SkillTrees are **created each time a mechanic is fired by a trigger**, and it is the place where skill scoped [variables] are stored and inside which [metaskills] exist
 
+[[_TOC_]]
+
 # SkillTree Structure
 
 ```mermaid
@@ -39,15 +41,21 @@ The skilltree always knows which event triggered it, and allows the [cancelevent
 Each [Metaskill] that is being called in the SkillTree has its own set of data regarding different elements.
 Normally, the value of those elements is copied over from the calling metaskill unless overridden.  
 Those elements are:
-- `Caster`: The entity casting the metaskill.
+### `Caster`
+The entity casting the metaskill.
   - Can be changed via the use of the [sudoskill] mechanic
-- `Target`: It is the [Inherited Target](/Skills/Metaskills#inheritance) of the metaskill
-- `Trigger`: Is first set as the entity that triggered the SkillTree initially, and one can fetch this entity via the [@trigger] targeter or other similar targeters. Depending on the [~Trigger] used, a [@trigger] may not exist.
+### `Target`
+It is the [Inherited Target](/Skills/Metaskills#inheritance) of the metaskill
+
+### `Trigger`
+Is first set as the entity that triggered the SkillTree initially, and one can fetch this entity via the [@trigger] targeter or other similar targeters. Depending on the [~Trigger] used, a [@trigger] may not exist.
   - The `Trigger` can be changed via the use of the [sudoskill] mechanic's `casterastrigger` attribute, which will make the called metaskill have, as the  `Trigger`, the `Caster` of the original metaskill 
-- `Origin`: It's the [@origin] of the metaskill. By default, it is the position of the `Caster`.
+### `Origin`
+It's the [@origin] of the metaskill. By default, it is the position of the `Caster`.
   - Can be set via the `origin` [universal attribute]
   - It is automatically set in mechanics such as [projectile](/Skills/Mechanics/Projectile)
-- `Skill Parameters`: The [Skill Parameters] of the metaskill. Please note that, contrary to [Skill Scoped Variables](#skill-scoped-variables), they do not exist on the skilltree itself. 
+### `Skill Parameters`
+The [Skill Parameters] of the metaskill. Please note that, contrary to [Skill Scoped Variables](#skill-scoped-variables), they do not exist on the skilltree itself. 
 
 
 <!-- LINKS -->
@@ -57,5 +65,6 @@ Those elements are:
 [sudoskill]: /Skills/Mechanics/SudoSkill
 [~Trigger]: /Skills/Triggers
 [@trigger]: /Skills/Targeters/Trigger
+[@origin]: /Skills/Targeters/Origin
 [universal attribute]: /Skills/Mechanics#universal-attributes
 [Skill Parameters]: /Skills/Metaskills#skill-parameters-premium-feature
