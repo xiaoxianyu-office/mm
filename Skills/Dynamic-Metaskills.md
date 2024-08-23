@@ -16,8 +16,8 @@ Since this is pretty much uncharted territory, if you have any information usefu
 
 ## How does this works?
 Basically, it all boils down to two things:
-- The usage of the [variableskill mechanic](/skills/mechanics/variableskill)
-- The existence of [inline metaskills]: /Skills/Metaskills#inline-metaskills
+- The usage of the [variableskill mechanic]
+- The existence of [inline metaskills]
 
 By combining those two things, it is now possible to do something like this
 ```yaml
@@ -37,7 +37,7 @@ Testmob:
       - vskill{s=<skill.var.testskill>}
       - vskill{s=
         [
-          - e:p{p=<skill.var.temp>} @selflocation{y=2}
+          - particle{p=<skill.var.temp>} @selflocation{y=2}
         ]} @self
     ]} @self ~onInteract
 ```
@@ -65,17 +65,18 @@ Testmob:
       - vskill{s=<skill.var.testskill2>}
       - vskill{s=
         [
-          - e:p{p=<skill.var.temp>} @selflocation{y=2}
+          - particle{p=<skill.var.temp>} @selflocation{y=2}
         ]} @self
     ]} @self ~onInteract
 ```
 
+
 # Bypassing Placeholder Support Limits
 Not every attribute of every mechanic, condition or targeter has support for placeholders. This is often a limiting factor for a lot of advanced projects. But not anymore!  
 Let's look at the examples above: at the time of writing the particle mechanic does not have placeholder support for its particle attribute, and yet that works when used with the methods described here. How come?
-By using the setvariable mechanic to write the particle mechanic one can delegate the job of parsing the value of the attribute to the setvariable mechanic, which *has* placeholder support for the value attribute. The resulting string can then be executed via the variableskill mechanic.
+That is because the vskill mechanic itself is parsing the value of that placeholder *before* anything else is executed, and when the particle mechanic is called everything has already been parsed for it 
 
-One must then note that this operation is not exclusive to mechanic's attribute: you can literally use placeholders for *every single character* of the string that is being built, and as long as the result after parsing can then be considered a proper inline metaskill it will work!
+One must then note that this operation is not exclusive to mechanic's attribute: you can literally use placeholders for *every single character* of the string that is being built, and, as long as the result after parsing can then be considered a proper inline metaskill, it will work!
 
 
 # Storing Dynamic Metaskills
@@ -84,3 +85,4 @@ As you already saw, the newly made metaskill is being stored inside a variable. 
 <!-- LINKS -->
 [variableskill mechanic]: /skills/mechanics/variableskill
 [variableskill]: /skills/mechanics/variableskill
+[inline metaskills]: /Skills/Metaskills#inline-metaskills
