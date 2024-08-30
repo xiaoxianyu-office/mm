@@ -9,12 +9,14 @@ But with Dynamic Metaskills this you are now able to:
 - bypass missing placeholder support in mechanics/inline conditions
 - store entire metaskills into variables or NBTs, enabling you to dynamically call them later
 
+[[_TOC_]]
+
 # DISCLAIMER
 This is not an intended mechanic. It's just a happy accident that, somehow, consistently works. Do not expect this to be cutting edge, as, again, this is more of a convenient bug.
 
 Since this is pretty much uncharted territory, if you have any information useful to further expand this page and, by proxy, the knowledge available to every other MythicMobs user, let me know: [Lxlp's Discord Profile](https://discord.com/users/353257382811533322)
 
-## How does this works?
+# How does this work?
 Basically, it all boils down to two things:
 - The usage of the [variableskill mechanic]
 - The existence of [inline metaskills]
@@ -43,7 +45,7 @@ Testmob:
 ```
 ![2024-08-17_17.54.14](uploads/81ec8a247b38cc3eba7daca275b46b03/2024-08-17_17.54.14.png)
 
-## What is happening?
+# What is happening?
 The variableskill mechanic is a very interesting one: it executes the metaskill it finds in its `skill` attribute after parsing its content. While this is normally used only to execute metaskills whose name can depend on specifics of the mob or environment at the moment of the execution (making it very useful for templating) this also has an unexpected effect when combined with inline metaskills: as long as it's written as a inline metaskill, you can make the variableskill mechanic parse anything and expect it to get executed
 
 
@@ -81,6 +83,11 @@ One must then note that this operation is not exclusive to mechanic's attribute:
 
 # Storing Dynamic Metaskills
 As you already saw, the newly made metaskill is being stored inside a variable. The variable can have any scope you deem fit, persist for as long as you want and have all the other cool stuff variables have. You can also store these skills inside NBTs, making items of your making being able to have completely custom skills for them
+
+
+# Limitations
+Since this is not a planned feature, its implementations do have some problems.
+- Usage of other "skill" mechanics inline: when using "skill", "sudoskills" or other such skill mechanics directly inline will result in a console error, without the mechanic being executed. To solve this, it is necessary to continue using the vskill mechanic in place of these other ones. For the skill mechanic a simple replace will work, but to use a sudoskill you will need to make a vskill mechanic call a metaskill that executes said sudoskill mechanic itself (examples coming soon)
 
 <!-- LINKS -->
 [variableskill mechanic]: /skills/mechanics/variableskill
