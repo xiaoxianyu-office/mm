@@ -143,11 +143,12 @@ A complete list of all available randomspawn options.
     -   **PositionType: LAND**
 
 <!-- -->
-
+<!--
 -   **Cooldown: \[number\]**
     -   The interval, in seconds, that must elapse between the spawning of two mobs by this same RandomSpawn
     -   Added in MythicMobs 5.2.0
     -   **Cooldown: 60**
+-->
 
 ### Extra Options in config.yml
 
