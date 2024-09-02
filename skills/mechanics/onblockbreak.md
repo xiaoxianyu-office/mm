@@ -6,11 +6,12 @@ Applies an aura to the target that triggers a skill when they break a block
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onBlockBreak| oB      | Skill to execute if the target breaks a block                        |         |
-| cancelEvent | cE      | Whether or not to cancel the event that triggered the aura           | false   |
+| onBreakSkill | onBreak, oB | Skill to execute if the target breaks a block                   |         |
+| cancelEvent | cancel, cE   | Whether or not to cancel the event that triggered the aura      | false   |
 | dropitem  | drop, allowDrop | If the broken item should be dropped or not                    |         |
 | blockType | blocktypes, bt, t, material, materials, mat, m, blocks, block, b| What blocks should trigger this aura                                                                                      |         |
-  
+
+> This mechanic inherits every attribute of the [aura] mechanic
 
 ## Examples
 
@@ -51,3 +52,11 @@ AreaMining2:
   Skills:
   - onBlockBreak{d=99999;bt=#TORCH,#LIGHT;oB=[ addVar{var=caster.lightsBroken;a=1} ]}
 ```
+
+
+## Aliases
+- [x] onbreakblock
+
+
+<!-- LINKS -->
+[aura]: /skills/mechanics/aura
