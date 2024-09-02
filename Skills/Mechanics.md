@@ -91,6 +91,7 @@ are able to target locations as well.
 | [GiveItem][]              | Gives an item to the target                                                              |
 | [GiveItemFromSlot][]      | Gives an item to the target from the item in the given slot of caster                    |
 | [Glow][]                  | Makes the target glow                                                                    |
+| [GoatRam][]               | Causes the casting goat mob to ram the targeted entity                            |
 | [GoTo][]                  | Move toward the location of the targeter (entity or location)                            |
 | [GuardianBeam][]          | Draws a guardian beam between the origin and the target                                                                  |
 | [Heal][]                  | Heals the target                                                                         |
@@ -414,6 +415,7 @@ but not yet ready for use.
   [GiveItem]: /skills/mechanics/giveitem
   [GiveItemFromSlot]: /skills/mechanics/giveitemfromslot
   [GiveItemFromTarget]: /skills/mechanics/giveitemfromtarget
+  [GoatRam]: /skills/mechanics/GoatRam
   [GoTo]: /skills/mechanics/goto
   [GuardianBeam]: /skills/mechanics/guardianbeam
   [Heal]: /skills/mechanics/heal
