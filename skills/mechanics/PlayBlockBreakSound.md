@@ -1,5 +1,7 @@
 ## Description
-Plays the target block's breaking sound. Requires Paper.
+Plays the target block's breaking sound.
+
+> **This is a [Paper-Only] mechanic!**
 
 
 ## Attributes
@@ -23,3 +25,7 @@ The formula for this is `v * 16 = max volume distance`. For example if you use â
 
 ## Aliases
 - [x] blockbreaksound
+
+
+<!-- LINKS -->
+[Paper-Only]: https://papermc.io/downloads/all
