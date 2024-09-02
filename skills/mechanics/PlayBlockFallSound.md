@@ -1,6 +1,7 @@
 ## Description
 Plays the target block's falling sound.  
-Requires Paper.
+
+> **This is a [Paper-Only] mechanic!**
 
 
 ## Attributes
@@ -24,3 +25,7 @@ The formula for this is `v * 16 = max volume distance`. For example if you use â
 
 ## Aliases
 - [x] blockfallsound
+
+
+<!-- LINKS -->
+[Paper-Only]: https://papermc.io/downloads/all
