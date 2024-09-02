@@ -11,7 +11,9 @@ something. Can use any aura attribute
 | damageAdd | add, a    | An optional static increase to the original hit's damage             | 0       |
 | damageMultiplier | multiplier, m | An optional multiplier to the original hit's damage       | 1       |
 | modDamageType | damagetype | The type of the damage inflicted                                |         |
-  
+
+> This mechanic inherits every attribute of the [aura] mechanic
+
 
 ## Examples
 ```yaml
@@ -26,3 +28,4 @@ something. Can use any aura attribute
 
 <!-- LINKS -->
 [metaskill]: /Skills/Metaskills
+[aura]: /skills/mechanics/aura
