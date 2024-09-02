@@ -189,6 +189,10 @@ There are some common attributes that can be used in most of the Targeters, depe
 
 ## All Targeters
 
+| Attribute                                | Shorthand        | Description                                                                                                      |
+| ---------------------------------------- | ---------------- | ----------------------------------------- 
+| targetconditions                         | conditions, cond, c | [Inline Target Conditions](/Skills/Inline-Conditions#targetconditions) |
+
 ### Sudo Attributes
 | Attribute                                | Shorthand        | Description                                                                                                      |
 | ---------------------------------------- | ---------------- | ----------------------------------------- 
@@ -248,11 +252,14 @@ They are used with two options (available on ANY entity-targeter):
 
 For example, to make a targeter that will ignore any players or non-hostile mobs, you'd use this:
 
-    damage{a=20} @EntitiesInRadius{r=10;ignore=players,animals}
-
+```yaml
+  - damage{a=20} @EntitiesInRadius{r=10;ignore=players,animals}
+```
 To make a targeter ONLY target players, you'd do something like this:
 
-    skill{s=ASkill} @EntitiesInRadius{r=5;target=players}
+```yaml
+  - skill{s=ASkill} @EntitiesInRadius{r=5;target=players}
+```
 
 Possible filters include:
 
