@@ -72,6 +72,7 @@
   * [Particles Types](/Skills/Mechanics/Particle/Particle-Types)
   * [Audience](/Skills/Audience)
   * [Equipment Slots](/Skills/EquipSlot)
+  * [SkillTree](/Skills/SkillTrees)
   * [Intratick Scheduling](/Skills/Intratick-Scheduling)
   * [Dynamic Metaskills](/Skills/Dynamic-Metaskills)
 
