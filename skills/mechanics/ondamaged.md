@@ -2,6 +2,10 @@
 Applies an aura to the target that triggers a skill when they take
 damage. Can use any aura attribute
 
+| [Implemented Placeholders]     |
+|--------------------------------|
+| `<skill.var.damage-amount>`    |
+| `<skill.var.damage-type>`      |
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
@@ -14,6 +18,8 @@ damage. Can use any aura attribute
 | deflectProjectiles | deflect, reflect | Whether projectiles should be deflected               | false  |
 | deflectconditions | dconditions | If `deflectProjectiles` is enabled, it will have to follow the specified set of conditions to work | |
 
+> This mechanic inherits every attribute of the [aura] mechanic
+
 
 ## Examples
 ```yaml
@@ -25,3 +31,8 @@ damage. Can use any aura attribute
       ];
       damageMods="FIRE 0.5, MAGIC 0.3, CUSTOM <caster.var.customresistance>"} @self ~onInteract
 ```
+
+
+<!-- LINKS -->
+[aura]: /skills/mechanics/aura
+[Implemented Placeholders]: /Skills/Placeholders#variable-placeholders
