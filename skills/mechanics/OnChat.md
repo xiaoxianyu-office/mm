@@ -1,6 +1,9 @@
 ## Description
 Applies an [aura] on the target player that triggers a [metaskill] when they type a chat message
 
+| [Implemented Placeholders]     |
+|--------------------------------|
+| `<skill.var.input>`            |
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
@@ -44,6 +47,8 @@ ChatSkill:
 - [x] chatprompt
 
 
+<!-- LINKS -->
 [metaskill]: /Skills/Metaskills
 [aura]: /skills/mechanics/aura
 [skill-scoped variable]: /Skills/Variables
+[Implemented Placeholders]: /Skills/Placeholders#variable-placeholders
