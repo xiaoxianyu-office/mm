@@ -1,4 +1,4 @@
-SkillTrees are an implicit feature of Mythic and, while they cannot directly invoked like [Metaskills] or otherfeatures, play just as an important of a role.  
+SkillTrees are an implicit feature of Mythic and, while they cannot be directly invoked like [Metaskills] or other features, play just as important a role.  
 
 SkillTrees are **created each time a mechanic is fired by a trigger**, and it is the place where skill scoped [variables] are stored and inside which [metaskills] exist
 
