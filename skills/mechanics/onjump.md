@@ -1,5 +1,5 @@
 ## Description
-Applies an aura to the target that triggers a skill when they jump.
+Applies an [aura] to the target that triggers a skill when they jump.
 
 > **This is a [Paper-Only] mechanic!**
 
@@ -7,9 +7,9 @@ Applies an aura to the target that triggers a skill when they jump.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onJump    | oJ        | The Metaskill to execute if the target jumps                         |         |
+| onJump    | oJ, onjumpskill | The Metaskill to execute if the target jumps                   |         |
 | cancelevent | cE      | Whether to cancel the event when it is triggered                     | false   |
-
+> This mechanic inherits every attribute of the [aura] mechanic
 
 ## Examples
 Apply an onJump aura to yourself. Whenever you jump it will put level 1 slow falling on you for 1 second.
@@ -70,4 +70,6 @@ Fireball_oH:
   - damage{a=5-15;cause=magic}
 ```
 
+<!-- LINKS -->
 [Paper-Only]: https://papermc.io/downloads/all
+[aura]: /skills/mechanics/aura
