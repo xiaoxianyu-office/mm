@@ -1,6 +1,7 @@
 ## Description  
 Plays the target block's step sound (The sound played when an entity walks on it).  
-Requires Paper.
+
+> **This is a [Paper-Only] mechanic!**
 
 
 ## Attributes
@@ -23,3 +24,7 @@ The formula for this is `v * 16 = max volume distance`. For example if you use â
 
 ## Aliases
 - [x] blockstepsound
+
+
+<!-- LINKS -->
+[Paper-Only]: https://papermc.io/downloads/all
