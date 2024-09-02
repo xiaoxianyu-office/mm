@@ -28,7 +28,7 @@ The Slash meta-mechanic can execute other skills in a slash-shaped pattern. The 
 | MatchCasterDirection | matchPlayerDirection, matchDirection, mcd, mpd, md, direction                    | Matches the direction of the slash to the caster's facing direction                    | true          |
 | directionTowardsTarget | dtt | If the yaw/pitch should be calculated to aim to the target | false      |
 | FromOrigin     |             | If the slash should start in the origin of the metaskill | false        |
-| HitConditions  | conditions, cond, c, oC, hC | List of [Inline Conditions](/Skills/conditions/in-linetargetconditions) that an entity must met to be hit by the slash mechanic            |               |
+| HitConditions  | conditions, cond, c, oC, hC | List of [Inline Conditions](/Skills/Inline-Conditions) that an entity must met to be hit by the slash mechanic            |               |
 
 ## Examples
 This is a basic example of how a slash mechanic might look like once implemented

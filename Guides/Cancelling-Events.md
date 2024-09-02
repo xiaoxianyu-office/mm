@@ -43,7 +43,7 @@ Making the mob invincible using this method is very straight forward, just add t
 
 `- cancelevent{sync=true} @self ~onDamaged`
 
-You can add to this using conditions, so that your mob is only invincible in certain scenarios, this example will make the mob invincible as long as the player attacks it with a diamond sword. This example uses an [In-Line Trigger Condition](/Skills/conditions/in-linetargetconditions#conditions-triggerconditions)
+You can add to this using conditions, so that your mob is only invincible in certain scenarios, this example will make the mob invincible as long as the player attacks it with a diamond sword. This example uses an [In-Line Trigger Condition](/Skills/Inline-Conditions#conditions-triggerconditions)
 
 `- cancelevent{sync=true} @self ~onDamaged ?~holding{m=DIAMOND_SWORD}`
 

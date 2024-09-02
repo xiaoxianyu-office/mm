@@ -37,7 +37,7 @@
     * [Filters](/Skills/Targeters#target-filters)
   * [Triggers](/Skills/Triggers)
   * [Conditions](/Skills/conditions)
-    * [In-line conditions](/Skills/conditions/in-linetargetconditions)
+    * [In-line conditions](/Skills/Inline-Conditions)
   * [Metaskills](/Skills/Metaskills)
   * [Placeholders](/Skills/Placeholders)
   * [Variables](/Skills/Variables)
