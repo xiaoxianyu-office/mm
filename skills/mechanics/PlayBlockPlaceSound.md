@@ -1,5 +1,7 @@
 ## Description
-Plays the target block's placement sound. Requires Paper.
+Plays the target block's placement sound.
+
+> **This is a [Paper-Only] mechanic!**
 
 
 ## Attributes
@@ -22,3 +24,7 @@ The formula for this is `v * 16 = max volume distance`. For example if you use â
 
 ## Aliases
 - [x] blockplacesound
+
+
+<!-- LINKS -->
+[Paper-Only]: https://papermc.io/downloads/all
