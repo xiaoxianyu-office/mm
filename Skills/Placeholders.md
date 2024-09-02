@@ -74,6 +74,8 @@ These placeholders will return whatever attribute of the caster that is called. 
 |       <caster.damage>              | Returns the caster's Attack_Damage attribute value                |
 |      <caster.display>              | Returns the caster's displayed name                               |
 |      <caster.mythic_type>          | Returns the caster's internal mob type                            |
+|      <caster.type>                 |Returns the internal id of a MythicMob or the entity name otherwise|
+|      <caster.type.name>           |Returns the display name of a MythicMob or the entity name otherwise|
 |        <caster.uuid>               | Returns the UUID of the caster                                    |
 |       <caster.level>               | Returns the level of the caster                                   |
 |        <caster.name>               | Returns the name of the caster                                    |
