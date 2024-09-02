@@ -4,6 +4,14 @@ trigger other skills over its duration. Auras allow you to create custom
 status effects (i.e. buffs and debuffs) that are tracked for their
 duration and can also be used in other mechanics and conditions.  
 
+| [Implemented Placeholders]         |
+|------------------------------------|
+| `<skill.var.aura-name>`            |
+| `<skill.var.aura-type>`            |
+| `<skill.var.aura-charges>`         |
+| `<skill.var.aura-duration>`        |
+| `<skill.var.aura-duration-millis>` |
+| `<skill.var.aura-stacks>`          |
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
@@ -73,3 +81,7 @@ deal regular damage as the multiplier would not trigger either.
 ## Aliases
 - [x] buffname
 - [x] debuffname
+
+
+<!-- LINKS -->
+[Implemented Placeholders]: /Skills/Placeholders#variable-placeholders
