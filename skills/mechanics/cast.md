@@ -40,11 +40,31 @@ myCoolMob:
           onTick=FrostBlast-Tick;
           onInterrupted=FrostBlast-Interrupted;
           onNoTargets=FrostBlast-NoTargets;
-          cancelOnMove=true;
           showCastBar=true
         } @target ~onTimer:100
 ```
+```yaml
+# This will be cast once the duration has elapsed
+FrostBlast-Cast:
+  Skills:
+  - damage{a=20}
+  - message{m="MUHAHA, TAKE THAT!"}
 
+# This will be cast while the main casting is still in progress
+FrostBlast-Tick:
+  Skills:
+  - particle{p=end_rod;a=4;hs=1;vs=1} @selflocation{y=1}
+
+# This will be cast if the aura is somehow removed
+FrostBlast-Interrupted:
+  Skills:
+  - message{m="Tsk, you got me!"}
+
+# This will be cast if the original target for the aura no longer exist
+FrostBlast-NoTargets:
+  Skills:
+  - message{m="...Where has everyone gone to?"} @World
+```
 
 <!-- LINKS -->
 [aura]: /skills/mechanics/aura
