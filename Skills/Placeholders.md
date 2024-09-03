@@ -112,8 +112,9 @@ Some of these variables are only generated and available under some special circ
 |:-------------------------:|---------------------------------|------------------------------------------|
 | <\[scope\].var.\[name\]>                                                                                |    | Returns the value of the variable \[name\] on the selected [scope](/Skills/Variables#variable-scopes)                                                                                                   |
 | <skill.var.\[name\]>                                                                                    |    | Returns the value of the variable \[name\] on the current skill tree                               |
-| <skill.var.damage-amount>                                                                               | [~onDamaged] trigger <br> [onDamaged] mechanic                                                          | Returns the amount of damage taken                                                                      |
-| <skill.var.damage-type>                                                                                 | [~onDamaged] trigger <br> [onDamaged] mechanic                                                          | Returns the type of damage taken                                                                        |
+| <skill.var.damage-amount>                                                                               | [~onDamaged] trigger <br> [~onAttack] trigger <br> [~onBowHit] trigger <br> [onDamaged] mechanic <br> [onAttack] mechanic                                                                                       | Returns the amount of damage taken or done                                                                      |
+| <skill.var.damage-type>                                                                                 | [~onDamaged] trigger <br> [~onAttack] trigger <br> [~onBowHit] trigger <br> [onDamaged] mechanic <br> [onAttack] mechanic                                                                                                                     | Returns the type of damage taken or done, if any                                                                        |
+| <skill.var.damage-cause>                                                                                 | [~onDamaged] trigger <br> [~onAttack] trigger <br> [~onBowHit] trigger <br> [onDamaged] mechanic <br> [onAttack] mechanic                                                                                                                  | Returns the cause of damage taken/done                                                                        |
 | <skill.var.aura-name>                                                                                   | Every [aura] mechanic                                                                                   | Returns the name of the aura                                                                            |
 | <skill.var.aura-type>                                                                                   | Every [aura] mechanic                                                                                   | Returns the type of the aura                                                                            |
 | <skill.var.aura-charges>                                                                                | Every [aura] mechanic                                                                                   | Returns the amount of charges the aura has left                                                         |
@@ -318,10 +319,13 @@ ZOMBIE:
 <!-- LINKS -->
 [~onHear]: /Skills/Triggers#onhear
 [~onDamaged]: /Skills/Triggers#ondamaged
+[~onAttack]: /Skills/Triggers#onattack
+[~onBowHit]: /Skills/Triggers#onbowhit
 [~onShoot]: /Skills/Triggers#onshoot
 [onChat]: /skills/mechanics/onChat
 [aura]: /skills/mechanics/aura
 [raytrace]: /skills/mechanics/raytrace
 [raytraceto]: /skills/mechanics/raytraceto
 [onDamaged]: /skills/mechanics/onDamaged
+[onAttack]: /skills/mechanics/onAttack
 [universal attributes]: /Skills/Mechanics#universal-attributes
