@@ -150,6 +150,13 @@ ImmortalCow:
 #### ~onAttack
 Executes the skill when the mob attacks an entity.
 > The associated [@trigger] is the entity that was attacked
+
+| [Implemented Placeholders]     |
+|--------------------------------|
+| `<skill.var.damage-amount>`    |
+| `<skill.var.damage-type>`      |
+| `<skill.var.damage-cause>`     |
+
 ```yml
 EXAMPLE_MOB:
   Type: CHICKEN
@@ -168,6 +175,7 @@ Executes the skill when the mob takes damage.
 |--------------------------------|
 | `<skill.var.damage-amount>`    |
 | `<skill.var.damage-type>`      |
+| `<skill.var.damage-cause>`     |
 
 ```yml
 EXAMPLE_MOB:
@@ -350,6 +358,13 @@ EXAMPLE_MOB:
 #### ~onBowHit
 Executes a skill when the mob's projectile hits an entity.
 > The associated [@trigger] is the entity that has been hit
+
+| [Implemented Placeholders]     |
+|--------------------------------|
+| `<skill.var.damage-amount>`    |
+| `<skill.var.damage-type>`      |
+| `<skill.var.damage-cause>`     |
+
 ```yaml
 NotYourAverageSkeleton:
   Type: SKELETON
