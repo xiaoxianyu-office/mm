@@ -35,3 +35,4 @@ something. Can use any aura attribute
 <!-- LINKS -->
 [metaskill]: /Skills/Metaskills
 [aura]: /skills/mechanics/aura
+[Implemented Placeholders]: /Skills/Placeholders#variable-placeholders
