@@ -52,3 +52,5 @@ ExampleMob:
   Skills:
   - command{c="say <target.name>";asTarget=true;asOp=true} @trigger ~onInteract
 ```
+## Aliases
+- [x] cmd
