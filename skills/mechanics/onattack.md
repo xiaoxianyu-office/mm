@@ -2,6 +2,12 @@
 Applies an aura to the target that triggers a skill when they damage
 something. Can use any aura attribute
 
+| [Implemented Placeholders]     |
+|--------------------------------|
+| `<skill.var.damage-amount>`    |
+| `<skill.var.damage-type>`      |
+| `<skill.var.damage-cause>`     |
+
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
