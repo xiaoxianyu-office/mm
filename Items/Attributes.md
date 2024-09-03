@@ -49,11 +49,11 @@ You can input both absolute or relative values:
 
 ## Attributes
 These are all the available attributes that can be put on the item.
-You can use general placeholders like `<random.#to#>` or `<random.float.#to#>`.
+You can use general placeholders like `<random.#to#>` or `<random.float.#to#>`.  
+You can find out more about these attributes by looking at [The Minecraft Wiki page regarding them](https://minecraft.wiki/w/Attribute#Attributes)
 
 ### AttackSpeed
 Determines the recharge rate of a fully charged attack.
-
 ```yml
 custom_item:
   Id: stick
@@ -137,6 +137,106 @@ custom_item:
       MovementSpeed: -0.2 MULTIPLY_BASE
 ```
 
+### MaxAbsorption
+The maximum absorption of this mob.  
+Determines the highest health they may gain by the Absorption effect
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      MaxAbsorption: 1 ADD
+```
+
+### Scale
+The multiplier of the size of an entity
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      Scale: 2 ADD
+```
+
+### StepHeight‌
+The maximum number of blocks that an entity can step up without jumping. Sneaking only prevents drops from heights that are higher than this attribute.[5] This only happens if the height that the player is above a block is equal or less than the attribute  
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      StepHeight‌: 2 ADD
+```
+
+### JumpHeight
+The height an entity can jump, similar to the Jump Boost effect
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      JumpHeight: 2 ADD
+```
+
+### BlockInteractionRange
+The block interaction range for players in blocks
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      BlockInteractionRange: 2 ADD
+```
+
+### EntityInteractionRange
+The entity interaction range for players in blocks
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      EntityInteractionRange: 2 ADD
+```
+
+### BlockBreakSpeed
+The speed the player can break blocks as a multiplier
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      BlockBreakSpeed: 2 ADD
+```
+
+### Gravity
+The gravity affecting an entity in blocks per tick squared
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      Gravity: 2 ADD
+```
+
+### SafeFallDistance
+The number of blocks an entity can fall before fall damage starts to be accumulated. Also the minimum amount of blocks the entity has to fall to make fallling particles and sounds
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      Gravity: 2 ADD
+```
+
+### FallDamageMultiplier‌
+The amount of fall damage an entity takes as a multiplier
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      FallDamageMultiplier‌: 2 ADD
+```
 
 ## Examples
 This example item will grant +10 luck when the item is held in the main
