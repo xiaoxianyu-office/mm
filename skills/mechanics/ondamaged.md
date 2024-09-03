@@ -6,6 +6,7 @@ damage. Can use any aura attribute
 |--------------------------------|
 | `<skill.var.damage-amount>`    |
 | `<skill.var.damage-type>`      |
+| `<skill.var.damage-cause>`     |
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
