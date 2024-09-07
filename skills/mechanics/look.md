@@ -6,9 +6,10 @@ effects or creepy ones depending on how creative you get with it.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| headOnly  |           | Only the mob's head is facing the target                             | true    |
-| force     |           | Forces the mob to look at the target (even works with no AI)         | true    |
-| immediately |         | Immediately causes the mob to turn towards the target with no turning animation. | false         |
+| headOnly  | ho        | Only the mob's head is facing the target                             | false   |
+| force     | f         | Forces the mob to look at the target (even works with no AI)         | false   |
+| forcepaper | fp       | Whether to use Paper's method to force the mob to look at the target | false   |
+| immediately | immediate, i | Immediately causes the mob to turn towards the target with no turning animation. | true   |
 
 
 ## Examples
