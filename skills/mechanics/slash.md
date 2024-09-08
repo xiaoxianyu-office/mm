@@ -43,7 +43,7 @@ If you have [Crucible] installed, then the following is an example on how you ca
 SlashSword:
   Id: NETHERITE_SWORD
   Skills:
-  - slash{y=1.8;w=4;h=40;mpd=true;a=45;radius=2;roll=-30to30;fo=5;duration=5;
+  - slash{y=1.8;w=4;h=4;mpd=true;a=45;radius=2;roll=-30to30;fo=5;duration=5;
       oP=[ - effect:particles{p=SPARK} ];
       oH=[ - damage{a=2} ]
       } @self ~onUse
