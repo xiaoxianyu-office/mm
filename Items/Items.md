@@ -313,5 +313,26 @@ SomeBook:
   - "Page 3"
 ```
 
+#### Food
+```yaml
+NetheritePops:
+  Material: NETHERITE_SCRAP
+  Display: 'Delicious Scraps'
+  Food:
+    Nutrition: 2
+    Saturation: 2
+    EatSeconds: 2
+    CanAlwaysEat: true
+    Effects:
+    - regeneration{duration=60}
+```
+| Effects Attributes | Aliases | Description                                                   | Default |
+|--------------------|---------|---------------------------------------------------------------|---------|
+| duration           | d       | The duration of the effect                                    | 60      |
+| level              | l       | the level of the effect. The actual level will be this one +1 | 0       |
+| ambientparticles   | ambient, a | Whether ambient particles should be present                | false   |
+| hasparticles       | particles, p | Whether particles should be present                      | true    |
+| hasicon            | icon, i | Whether the effect icon should be displayed                   | true    |
+
 ## Examples
 More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
