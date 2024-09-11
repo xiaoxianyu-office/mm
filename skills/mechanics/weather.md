@@ -1,24 +1,21 @@
-=================
-
-## Description:
+## Description
 
 Changes the weather in the casting mob's world.
 
-## Attributes:
+## Attributes
 
 | Attribute | Aliases   | Description                                               | Default |
 |-----------|-----------|-----------------------------------------------------------|---------|
-| type      | sunny [1] | The type of weather. Can be "sunny", "rainy", or "stormy" | sunny   |
+| type      | sunny     | The type of weather. Can be "sunny", "rainy", or "stormy" | sunny   |
 | duration  |           | How long (in ticks) the weather will be forced to last    | 500     |
 
-  
-Aliases for weather types:  
-|**Sunny**| sun, clear|
+#### Weather Types
 
-|            |                |
-|------------|----------------|
-| **Rainy**  | rain           |
-| **Stormy** | storm, thunder |
+|  Type      | Aliases          |
+|------------|------------------|
+| **Sunny**  | sun, clear       |
+| **Rainy**  | rain             |
+| **Stormy** | storm, thunder   |
 
 
 ## Examples:
