@@ -87,7 +87,35 @@ As you already saw, the newly made metaskill is being stored inside a variable. 
 
 # Limitations
 Since this is not a planned feature, its implementations do have some problems.
-- Usage of other "skill" mechanics inline: when using "skill", "sudoskills" or other such skill mechanics directly inline will result in a console error, without the mechanic being executed. To solve this, it is necessary to continue using the vskill mechanic in place of these other ones. For the skill mechanic a simple replace will work, but to use a sudoskill you will need to make a vskill mechanic call a metaskill that executes said sudoskill mechanic itself (examples coming soon)
+- Usage of other "skill" mechanics inline: when using "skill", "sudoskills" or other such skill mechanics directly inline will result in a console error, without the mechanic being executed. To solve this, it is necessary to continue using the vskill mechanic in place of these other ones. For the skill mechanic a simple replace will work, but to use a sudoskill you will need to make a vskill mechanic call a metaskill that executes said sudoskill mechanic itself
+```yaml
+ExampleWorkaround:
+  Skills:
+  - vskill{s=
+    [
+      - vskill{s=YourOtherMetaskill}
+      - vskill{s=SudoskillWrapper;run=TheMetaskillToBeSudoed}
+    ]}
+
+SudoskillWrapper:
+  Skills:
+  - sudoskill{s=
+    [
+    - vskill{s=<skill.run>}
+    ]} 
+
+AnotherWorkaround:
+  Skills:
+  - vskill{s=
+    [
+      - vskill{s=YourOtherMetaskill}
+      - vskill{s=SudoskillWrapper;run=
+        [
+        - message{m=<caster.name>} @World
+        ]}
+    ]}
+
+```
 
 <!-- LINKS -->
 [variableskill mechanic]: /skills/mechanics/variableskill
