@@ -79,7 +79,7 @@ Depending on the [Condition Action] used in each condition, different behaviors 
 
 
 ## TriggerConditions
-The Trigger [Conditions] of the metaskill. Those conditions evaluates the entity that triggered the skilltree. This entity can also be targeted via the [@Trigger] targeter
+The Trigger [Conditions] of the metaskill. Those conditions evaluates the entity that triggered the [skilltree]. This entity can also be targeted via the [@Trigger] targeter
 
 Depending on the [Condition Action] used in each condition, different behaviors can occur: read the relevant wiki page for more info
 
@@ -180,7 +180,7 @@ example2:
 The behavior of this execution is very specific:
 - The other metaskill's mechanics are executed before that of the current metaskill's [Skills](#skills)
 - The other metaskill's conditions and cooldown are ignored, if present
-- Every mechanic is executed in the same skilltree, but the delays used in one do not affect the timings of the other, like if the two metaskills were called in the following manner
+- Every mechanic is executed in the same [Skilltree]
 
 So, in essence, the above example is the equivalent of
 
@@ -411,7 +411,7 @@ ExampleMob:
       ]} @Owner
     ]} @target
 ```
-> In this example you can see how Inline Metaskills can be nested and how they share the same skilltree, enabling them to use skill scoped variables
+> In this example you can see how Inline Metaskills can be nested and how they share the same [skilltree], enabling them to use skill scoped variables
 ##
 ```yaml
   Skills:
@@ -467,6 +467,7 @@ The "skill parameter" system will pass __any__ options from the **skill/metaskil
 [Examples]: /examples/Common-Examples#skills
 [Skill]: /skills/mechanics/skill
 [Meta Targeter]: /Skills/Targeters#special-targeters
+[Skilltree]: /Skills/SkillTrees
 
 <!-- INTERNAL SKILLNAME -->
 [Internal MobName]: /Mobs/Mobs#internal_name
