@@ -20,6 +20,7 @@ Bukkit material/block names can be acquired ingame. Simply hold the block you wa
 | noair     | na        | Mask no air blocks only                                              | true    |
 | onlyair   | oa        | Mask air blocks only                                                 | false   |
 | audience  |           | The [audience] of the effect                                         | nearby  |
+| occluding | o, oc, occ| If onlyair is used, target transparent blocks as well                | true    |
 
 ### Duration Attribute
 there are 20 ticks in 1 second, and setting duration to 0 will have an infinite duration. 
