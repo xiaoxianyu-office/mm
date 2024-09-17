@@ -7,6 +7,7 @@ The following is a list of the implemented particles, associated with their Data
   - [ItemStack](#ItemStack)
   - [BlockData](#BlockData)
   - [MaterialData](#MaterialData)
+  - [Color](#Color)
   - [DustOptions](#DustOptions)
   - [DustTransition](#DustTransition)
 - [Particles](#Particles)
@@ -30,6 +31,12 @@ The following is a list of the implemented particles, associated with their Data
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | material | m | The material the materialdata particle will be based on | STONE |
+
+
+## Color
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| color | c | The color of the particle | #FF0000 |
 
 
 ## DustOptions
