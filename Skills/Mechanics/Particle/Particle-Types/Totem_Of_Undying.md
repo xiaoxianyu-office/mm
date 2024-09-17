@@ -10,7 +10,7 @@
 ## Examples
 ```yaml
   Skills:
-  - particle{p=totem}
+  - particle{p=totem_of_undying}
 ```
 
 
