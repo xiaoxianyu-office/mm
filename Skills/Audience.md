@@ -6,7 +6,7 @@ The audience types are:
 - `target`: the target of the mechanic
 - `world`: every player in the world
 - `tracked`/`trackedplayers`/: every player whose client can render the caster
-- `nearby`/`nearbyplayers`: every nearby player
+- `nearby`/`nearbyplayers`: every nearby player (closer than `65536` blocks)
 - `@Targeter`: every player that the targeter targets
 
 > The default value is `tracked`
