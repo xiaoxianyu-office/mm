@@ -75,7 +75,7 @@ Defaults to `true`.
 | NORMAL          | TRUE, YES                                                                             | - Despawns if no players are nearby<br>- Despawns if the server is restarted<br>- Despawns if the chunk is unloaded<br>- Is killed by normal mythicmobs kill commands                                            |
 | CHUNK           |                                                                                       | - Despawns if the server is restarted<br>- Despawns if the chunk is unloaded<br>- Is killed by normal mythicmobs kill commands                                                                                 |
 | NEVER           | FALSE, NO                                                                             | - Is killed by normal mythicmobs kill commands |
-| PERSISTENT      |                         |                                                            |
+| PERSISTENT      |                         |  - Saves the mob in the world file once a chunk unloads.<br>- Persists across server reboots.<br>- Persistent mobs do not fire skills in unloaded chunks.                                                         |
 | NPC             |                                                                                       | - Despawns if the server is restarted<br>- Despawns if the chunk is unloaded                           |
 
 > For the PERSISTENT despawn mode: to remove a persistent mob, you have to either use the kill command (`/mm m kill <type>`) or append the `-p` flag to the killall one (`/mm m killall -p`). More information on the subject can be found [here](/Commands-and-Permissions#mob-commands).
