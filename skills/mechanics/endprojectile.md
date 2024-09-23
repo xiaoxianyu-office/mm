@@ -1,18 +1,16 @@
-Mechanic: End Projectile
---------------------------
+## Description
 Terminates the projectile this mechanic has been called from, activating its onEnd skill in the process.
 
-**Attributes**
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none      | none  | none        |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| conditions| condition, cond, con | The conditions to check before terminating the projectile |         |
 
-Examples
---------
+##Examples
 
 **Mob file**
-```
+```yaml
 Mob:
   Type: HUSK
   Skills:
@@ -21,7 +19,7 @@ Mob:
 ```
 
 **Skill file**
-```
+```yaml
 ExplodingProjectile:
   Skills:
   - projectile{onTick=ExplodingProjectile_Tick;onEnd=ExplodingProjectile_End;v=4;i=1;hp=false;sb=false;se=false;d=200}
@@ -37,3 +35,11 @@ ExplodingProjectile_End:
   - throw{fromorigin=true} @EntitiesNearOrigin{r=5}
   - effect:explosion @origin
 ```
+
+
+## Aliases
+- [x] terminateProjectile
+- [x] terminateproj
+- [x] endproj
+- [x] stopprojectile
+- [x] stopproj
