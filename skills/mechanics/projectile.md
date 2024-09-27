@@ -123,9 +123,7 @@ These work with the projectile, missile, and orbital mechanics.
 | [REALTRACKING][] | RTRACKING, REAL_ARMOR_STAND, REALARMORSTAND, STAND | As above, but a real armor stand will also be spawned instead of a packet |
 | [DISPLAY][] |              | The projectile will be a display entity                                   |
 | [TEXT][]    |              | The projectile will display a line of text                                |
-<!--
-| [ME][]      |              | The projectile will be a [ModelEngine] model                              |
--->
+| [ME][]      | MEG, MODELENGINE | The projectile will be a [ModelEngine] model                          |
 
 Examples:
 ```yaml
@@ -245,14 +243,15 @@ Examples:
 | bulletCullingWidth | cullWidth | The bullet's display culling width                          | 0.0     |
 | audience  |           | The [Audience][] of the bullet                                       | world   |
 
-<!--
 ### ME Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletModel | model   | The MEG model to use for the bullet                                  |         |
 | bulletcolor |         | The tint of the bullet's model                                       |         |
+| bulletscale |         | The scale of the bullet                                              | 1       |
 | bulletEnchanted | enchanted | Whether the bullet's model should be enchanted                 | false   | 
--->
+| bulletGlowing | glowing | Whether the bullet's model should be glowing                       | false   |
+| bulletglowcolor |     | The glow color of the bullet, if `bulletGlowing` is set to true      |         |
 
 ### TEXT Bullet
 | Attribute | Aliases   | Description                                                          | Default |
