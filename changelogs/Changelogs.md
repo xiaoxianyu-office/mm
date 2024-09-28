@@ -1,5 +1,66 @@
 [[_TOC_]]
 
+# 5.8.0 (Dev Builds)
+## Items
+- Added Food components for items, enabling the creation of edible items:
+  ```yaml
+  NetheritePops:
+    Material: NETHERITE_SCRAP
+    Display: 'Delicious Scraps'
+    Food:
+      Nutrition: 2
+      Saturation: 2
+      EatSeconds: 2
+      CanAlwaysEat: true
+      Effects:
+      - regeneration{duration=60}```
+
+# 5.7.2
+## General
+- Added `ThreadPoolSize` option in `config-general.yml` to limit the number of async threads used by Mythic. Defaults to -1 (no limit).
+- Added `toggleTimer` utility command.
+- Added `-p` option to `spawner create` and `spawner move` commands, to create/move at the player's location.
+
+## Mechanics
+### Projectiles
+- Upgraded MEG bullet type for projectiles.
+- Added bullet-related options for MEG projectiles: `bulletScale`, `bulletColor`, `bulletGlowing`, `bulletGlowColor`.
+### Variables
+- Added `DOUBLE` variable type.
+
+## Targeters
+- Added `usePitch=true` option to `@EntitiesInCone` targeter.
+
+## Random Spawners
+- Allow placeholders in random spawner levels.
+
+## Placeholders
+Added <caster.type> and <caster.type.name> placeholders.
+
+## Bugs / Other
+- Added some new features to the `CustomComponentRegistry` API.
+- Moved data tags for items to use PDC instead of NBT, fixing issues with Spigot deserialization on 1.21.
+- Fixed a loading issue with parent stats.
+- Fixed StackOverflowError that could occur with stats.
+- Fixed broken parent placeholders.
+- Fixed a calculation error in EntitiesInCone for range.
+- Fixed missing caster placeholders and added c. aliases.
+- Fixed entity_effect/mobSpell particle issues.
+- Fixed NPE in BukkitItemStack.
+- Fixed NPE in auras.
+- Fixed NPE when signaling mobs from console.
+- Fixed skill parameters not being passed to skills called by condition actions.
+- Fixed empty lines in drop ChatMessages not showing up.
+- Fixed a memory leak caused by usages of entity metadata.
+- Fixed a bug with onSpawnOrLoad event not firing.
+- Fixed error spam with particles introduced in previous builds.
+- Fixed plugin not loading on 1.19.4.
+- Fixed invalid particle data causing issues.
+- Fixed y out-of-bounds error for max world height calculations.
+- Fixed an issue with threat tables where NPE and calculation errors were occurring.
+- Fixed the setName mechanic looping issue by changing <caster.name> to <caster.type.name>.
+- Fixed issues with lootsplosions causing items to not stack.
+
 # 5.7.1
 ## General
 - Added 1.21.1 support
