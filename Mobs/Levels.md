@@ -43,21 +43,34 @@ for the affected attributes in the mob configuration.
 
 # World Scaling
 
-Mob levels (for random-spawned mobs) can automatically be set by the plugin by specifying world scaling settings in the config.yml located in */MythicMobs*/. Setting it up is simple. By default the section for scaling in your config.yml should look something like this:
+Mob levels (for random-spawned mobs) can automatically be set by the plugin by specifying world scaling settings located in `/MythicMobs/config/config-mobs.yml`. Setting it up is simple. By default the section for scaling in your config-mobs.yml should look something like this:
 ```yaml
-      Scaling:
-        Default:
-          Enabled: false
-          ScaleVanillaMobs: false
-          PerBlocksFromSpawn: 500
-        world2:
-          Enabled: false
-          PerBlocksFromSpawn: 250
-        world2_nether:
-          Enabled: false
-          PerBlocksFromSpawn: 150
+  MobLeveling:
+    # Used to scale a mob's attributes as they level up
+    ScalingEquations:
+      Health: V * ((1.05)^(L-1))
+      Damage: V * ((1.05)^(L-1))
+    # Alternate legacy method of scaling mobs attributes
+    DefaultLevelModifiers:
+      Health: 0.1
+      Armor: 0
+      Damage: 0
+      KnockbackResistance: 0
+      Power: 0
+    # Per-world scaling options
+    WorldScaling:
+      Default:
+        Enabled: true
+        ScaleVanillaMobs: true
+        PerBlocksFromSpawn: 250
+      world2:
+        Enabled: true
+        PerBlocksFromSpawn: 250
+      world2_nether:
+        Enabled: false
+        PerBlocksFromSpawn: 100
 ```
-The above examples shows different worlds with different levels of scaling. Using "world2" as an example, the levels for randomspawnmed mobs would look something like this:
+The above examples shows different worlds with different levels of scaling. Using "world2" as an example, the levels for randomspawned mobs would look something like this:
 
 -   Level 0 in the white area (0-249 blocks from spawn).
 -   Level 1 in the tan area (250-499 blocks distance).
