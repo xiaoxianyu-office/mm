@@ -159,7 +159,9 @@ cool_display:
 ```
 
 #### LeftRotation
-Set the left rotation using [quaternion](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation). Defaults to `0,0,0,1` (no rotation).
+Set the left rotation using [quaternions](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation) if 4 values are provided (x,y,z,w).  
+Uses eular if 3 are provided (x,y,z).  
+Defaults to `0,0,0,1` (no rotation).  
 **Format**: x,y,z,w
 ```yml
 cool_display:
@@ -170,7 +172,9 @@ cool_display:
 ```
 
 #### RightRotation
-Set the right rotation using [quaternion](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation). Defaults to `0,0,0,1` (no rotation).
+Set the left rotation using [quaternions](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation) if 4 values are provided (x,y,z,w).  
+Uses eular if 3 are provided (x,y,z).  
+Defaults to `0,0,0,1` (no rotation).  
 **Format**: x,y,z,w
 ```yml
 cool_display:
