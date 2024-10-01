@@ -8,8 +8,10 @@ This mechanic is also an [aura].
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | path      | p         | A list of either coordinates in the format `(x,y,z)` or [targeters]  |         |
 | onGoalSkill| onGoal, og, then | The [metaskill] to execute when the last point is reached    |         |
-| tolerance |           | The minimum distance the mob must be from each point in order to having "reached" it                                                                                   | 1.5     |
+| tolerance |           | The minimum distance the mob must be from each point in order to having "reached" it                                                                                   | 2       |
 | speed     | s         | The speed multiplier of the movement                                 | 1       |
+| timeoutdistance | td, maxdistance, md | If set, if the distance between the mob and the next point is greater than this value, it will be immediately teleported to the next point                   |         |
+| timeouttime | tt      | If set, if the mob has not reached the next point in less than this allotted time, it will be teleported to the next point                                                  |         |
 > This mechanic inherits every attribute of the [Aura] mechanic  
 >> - The `auraname` attribute is **set** at `#pathing`
 >> - The `duration` attribute is **defaulted** at `2147483647`
