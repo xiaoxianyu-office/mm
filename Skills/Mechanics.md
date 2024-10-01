@@ -109,6 +109,7 @@ are able to target locations as well.
 | [Log][]                   | Logs a message to console.                                                  |
 | [Look][]                  | Causes the caster to look at the target                                                  |
 | [Lunge][]                 | Causes the caster to lunge forward at the target                                         |
+| [MatchRotation][]         | Sets the caster's yaw and pitch to the same value of the target's           |
 | [Message][]               | Sends a message to the target player(s)                                                  |
 | [ModifyDamage][]          | Modifies the damage event that triggered the skill                                                         |
 | [ModifyGlobalScore][]     | Modifies a scoreboard value of the fake player: \_\_GLOBAL\_\_                           |
@@ -433,6 +434,7 @@ but not yet ready for use.
   [Log]: /skills/mechanics/Log
   [Look]: /skills/mechanics/look
   [Lunge]: /skills/mechanics/lunge
+  [MatchRotation]: /skills/mechanics/MatchRotation
   [Message]: /skills/mechanics/message
   [ModifyDamage]: /skills/mechanics/ModifyDamage
   [ModifyGlobalScore]: /skills/mechanics/modifyglobalscore
