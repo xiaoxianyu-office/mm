@@ -189,6 +189,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [HasPotionEffect](/skills/conditions/haspotioneffect)                         | Entity   | Tests if the target entity has a potion effect                                               |
 | [HasTag](/skills/conditions/hastag)                                           | Entity   | Tests if the target has a scoreboard tag                                                     |
 | [Health](/skills/conditions/health)                                           | Entity   | Matches the target's health                                                                 |
+| [HealthPercent](/skills/conditions/HealthPercent)                             | Entity   | Matches the target's health percentage or multiplier                                        |
 | [Height](/skills/conditions/height)                                           | Location | Checks if the target's Y location is within a range                                           |
 | [HeightAbove](/skills/conditions/heightabove)                                 | Location | Checks if the target's Y location is above a value                                            |
 | [HeightBelow](/skills/conditions/heightbelow)                                 | Location | Checks if the target's Y location is below a given value                                      |
