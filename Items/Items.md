@@ -283,6 +283,13 @@ another_example_item:
       material: minecraft:iron
       pattern: minecraft:shaper
 ```
+```yaml
+# 1.21+
+Trim_1_21:
+  Id: IRON_CHESTPLATE
+  Options:
+    Trim: amethyst.shaper
+```
 
 #### Firework
 Sets several firework or firework_charge items.
