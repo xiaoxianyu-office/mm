@@ -11,6 +11,7 @@ Targets the specified coordinates in the caster's world
 | z         |           | If `location` is not set, it's the z coordinate of the target location | 0     |
 | yaw       |           | If `location` is not set, it's the yaw of the target location         | 0      |
 | pitch     |           | If `location` is not set, it's the pitch of the target location       | 0      |
+| world     | w         | The world to target. If not set, it will target the caster's world    |        |
 
 
 ## Examples
