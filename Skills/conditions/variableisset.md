@@ -1,5 +1,5 @@
 ## Description
-Checks if the given [variable](/Skills/Variables)is set.
+Checks if the given [variable](/Skills/Variables) is set.
 
 
 ## Attributes
