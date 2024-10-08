@@ -8,8 +8,8 @@ Syntax
 internal_itemname:
   Id: <material>
   Enchantments:
-  - <enchantment>:<level>
-  - <enchantment>:<level>
+  - <enchantment> <level>
+  - <enchantment> <level>
   - ...
 ```
 **\<enchantment>**  
@@ -29,8 +29,8 @@ Example
 lethal_pickaxe:
   Id: diamond_pickaxe
   Enchantments:
-  - DAMAGE_ALL:3
-  - KNOCKBACK:1
+  - DAMAGE_ALL 3
+  - KNOCKBACK 1
 ```
 
 <!--
