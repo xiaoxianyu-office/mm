@@ -64,20 +64,20 @@
   * [Modifiers](/Stats#modifiers)
   * [Built in Stats](/Stats#built-in-stats)
 
+##### Other
+  * [Particles Types](/Skills/Mechanics/Particle/Particle-Types)
+  * [Audience](/Skills/Audience)
+  * [Equipment Slots](/Skills/EquipSlot)
+  * [Pins](Pins)
+
 ##### Technical
   * [Math](/Skills/Math)
   * Operations
     * [Attribute Operations](/Items/Attributes#operations)
     * [Stats Modifiers](/Stats#modifiers)
-  * [Particles Types](/Skills/Mechanics/Particle/Particle-Types)
-  * [Audience](/Skills/Audience)
-  * [Equipment Slots](/Skills/EquipSlot)
   * [SkillTree](/Skills/SkillTrees)
   * [Intratick Scheduling](/Skills/Intratick-Scheduling)
   * [Dynamic Metaskills](/Skills/Dynamic-Metaskills)
-
-##### Other
-* [Pins](Pins)
 
 <hr>
 
