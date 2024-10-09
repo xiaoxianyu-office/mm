@@ -6,7 +6,7 @@ Equips the mob with an item. Uses the exact same syntax as the
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | items, equipment, equip, e | The item config string to run on the mob.           |         |
+| item      | items, i, equipment, equip, e | The item config string to run on the mob.           |      |
 
 
 ## Examples
