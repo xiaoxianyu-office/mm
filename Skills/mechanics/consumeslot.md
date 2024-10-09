@@ -21,3 +21,7 @@ Would remove whatever item is in the HAND equipment slot the nearest player's in
   Skills:
   - consumeslot{slot=HAND;amount=1} @NearestPlayer{r=10}
 ```
+
+
+## Aliases
+- [x] consumeslotitem
