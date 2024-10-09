@@ -46,6 +46,7 @@ are able to target locations as well.
 | [BloodyScreen][]          | Makes the target's screen glow red                                          |
 | [BoneMeal][]              | Applies a bone meal effect to the target blocks                                          |
 | [BossBorder][]            | Creates an inescapable border around the mob                                |
+| [Bouncy][]                | Applies an [aura] to the target that makes it bouncy                                |
 | [BreakBlock][]            | Breaks the block at the target location                                                  |
 | [BreakBlockAndGiveItem][] | Breaks the block at the target location and gives an item/droptable                      |
 | [ClearExperience][]       | Clears the experience for the targeted players                                                     |
@@ -371,6 +372,7 @@ but not yet ready for use.
   [BloodyScreen]: /skills/mechanics/BloodyScreen
   [BoneMeal]: /skills/mechanics/bonemeal
   [BossBorder]: /skills/mechanics/bossborder
+  [Bouncy]: /skills/mechanics/Bouncy
   [BreakBlock]: /skills/mechanics/breakblock
   [BreakBlockAndGiveItem]: /skills/mechanics/breakBlockAndGiveItem
   [ClearExperience]: /skills/mechanics/ClearExperience
