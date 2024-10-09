@@ -64,3 +64,7 @@ TestingBreakBlock:
 ```
 
 When a player calls this with a tool in their hand it does drop a block, and does create the particle effects.
+
+
+## Aliases
+- [x] blockBreak
