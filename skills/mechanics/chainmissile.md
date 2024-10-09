@@ -1,31 +1,26 @@
-A missile that chains between entities. This is a **Premium-Only** mechanic!
+## Description
+Shoots a chaining homing missile at the target  
 
----
+> **This is a [Premium-Only] mechanic!**
 
-This mechanic inherits all attributes from the [missile](/skills/mechanics/missile) and [projectile](/skills/mechanics/projectile) mechanics.
 
-**Attributes**
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| bounces   | b         | How many times the chain should bounce                               | 2       |
+| bounceradius | bouncerange, radius, range, r | How far the skill will bounce to a new target | 5       |
+| returnToCaster | return, rtc | If the missile should return to the caster | false | 
+| bounceConditions | conditions, cond, c | The conditions for the skill to bounce, similar to the [chain](/skills/mechanics/chain) mechanic |  | 
+> This mechanic inherits every attribute of the [Missile](Skills/Mechanics/Missile) mechanic
 
-| Attribute | Alias | Description | Default Value |
-| --------- | ----- | ----------- | ------------- |
-| bounces   | b     | How many times the chain should bounce | 2 |
-| radius    | r     | How far the skill will bounce to a new target | 5 |
-| returnToCaster | rtc | If the missile should return to the caster | false | 
-| bounceConditions | | The conditions for the skill to bounce, similar to the [chain](/skills/mechanics/chain) mechanic | NONE | 
 
----
-
-Added in MM 4.12
-
----
-
-**Examples**
-
-```
+## Examples**
+```yaml
 ## Mob.yml ##
 Skills:
 - skill{s=ChainMissile} @target ~onTimer:200
-
+```
+```yaml
 ## Skills.yml ##
 ChainMissile:
   Skills:
@@ -37,3 +32,11 @@ CM_oH:
   Skills:
   - damage{a=1;pkb=true}
 ```
+
+
+## Aliases
+- [x] cmi
+
+
+<!-- LINKS -->
+[Premium-Only]: Premium-Features
