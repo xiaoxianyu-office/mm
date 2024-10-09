@@ -19,3 +19,7 @@ ExplosiveBlast:
   Skills:
   - explosion{yield=4} @target
 ```
+
+
+## Aliases
+- [x] explode
