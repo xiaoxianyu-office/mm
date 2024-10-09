@@ -1,24 +1,22 @@
-Mechanic: Undisguise
-====================
-
-![](https://giant.gfycat.com/WideeyedExcellentArgusfish.gif)  
-  
+## Description
 Removes the mob's active disguise, if it has one.  
-This skill requires Libs' Disguises and ProtocolLib be installed to
-enable Disguise functionality.
+This skill requires Libs' Disguises to be installed to enable Disguise functionality.
 
-See [Add-On: Disguises](/addons/disguises/start) for how to apply and
-use disguises.
+See [Extra: Disguises](/Mobs/Disguises) for how to apply and use disguises.
 
-Attributes
-----------
+> **This is a no-target mechanic, and the affected entity will always be the caster**
 
-None!
+## Attributes
+> *This mechanic has no attributes*
 
-Examples
---------
 
-Undisguise the mob when it is right clicked.
+## Examples
+```yaml
+  Skills:
+  - undisguise ~onInteract
+```
+> Undisguise the mob when it is right clicked.
 
-      Skills:
-      - undisguise ~onInteract
+
+## Aliases
+- [x] disguiseRemove
