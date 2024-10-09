@@ -1,9 +1,9 @@
-## Mechanic: Polygon
+## Description
 The Polygon meta-mechanic can execute other skills in a polygon-shaped pattern. The exact number of vertices, the scale, the duration and other such elements of the polygon itself can be tweaked via the attributes below.
 
 ## Attributes
-| Attribute      | Aliases     | Description                                             | Default Value |
-|----------------|-------------|---------------------------------------------------------|:-------------:|
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
 | onPointSkill   | onPoint, oP | Meta-Skill executed at every vertex                     |               |
 | onStarSkill    | onStar, oS  | Meta-Skill executed at the "start of the "star" of the polygon, aka the figure formed inside of the polygon by tweaking the "skip" parameter                     |               |
 | onEdgeSkill    | onEdge, oE  | Meta-Skill executed on the segments that connects the vertices|         |
