@@ -2,6 +2,7 @@
 Drops a copy of the target players' head. Does nothing when used
 against a non-player entity.
 
+
 ## Attributes
 > *This mechanic has no attributes*
 
@@ -12,3 +13,7 @@ Drops the head of the person who clicked on the mob.
   Skills:
   - decapitate @trigger ~onInteract
 ```
+
+
+## Aliases
+- [x] dropHead
