@@ -8,7 +8,7 @@ Breaks the block at a target location and gives item(s). This mechanic will also
 | dodrops   | drops, d  | Whether or not to drop the block/s | true          |
 | doeffect  | effect, e | Whether or not to play the break block particles (?) | true |
 | usetool   | tool, t   | Whether or not to use the tool in the players hands (?) | true |
-| doFakeLooting | doFakeLooting, fl | Plays the pickup-item animation from the origin | false |
+| doFakeLooting | fakeLooting, fl | Plays the pickup-item animation from the origin | false |
 | items | item, i | An array of item materials, or droptables. | |
 
 
