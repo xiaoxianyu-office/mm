@@ -21,3 +21,7 @@ work and Vault must be enabled in the MythicMobs `config-general.yml` file
 ```
 If executed all players in radius of 20 blocks around the spawned mob
 will receive 20 money by a chance of 20%
+
+
+## Aliases
+- [x] giveCurrency
