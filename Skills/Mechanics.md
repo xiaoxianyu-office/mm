@@ -48,6 +48,7 @@ are able to target locations as well.
 | [BossBorder][]            | Creates an inescapable border around the mob                                |
 | [BreakBlock][]            | Breaks the block at the target location                                                  |
 | [BreakBlockAndGiveItem][] | Breaks the block at the target location and gives an item/droptable                      |
+| [ClearExperience][]       | Clears the experience for the targeted players                                                     |
 | [ClearExperienceLevels][] | Clears the experience levels for the targeted players                                                     |
 | [GiveExperienceLevels][]  | Gives experience levels to the targeted players                                                     |
 | [TakeExperienceLevels][]  | Takes experience levels to the targeted players                                                     |
@@ -372,6 +373,7 @@ but not yet ready for use.
   [BossBorder]: /skills/mechanics/bossborder
   [BreakBlock]: /skills/mechanics/breakblock
   [BreakBlockAndGiveItem]: /skills/mechanics/breakBlockAndGiveItem
+  [ClearExperience]: /skills/mechanics/ClearExperience
   [ClearExperienceLevels]: /skills/mechanics/ClearExperienceLevels
   [GiveExperienceLevels]: /skills/mechanics/GiveExperienceLevels
   [TakeExperienceLevels]: /skills/mechanics/TakeExperienceLevels
