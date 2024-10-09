@@ -1,6 +1,4 @@
-Mechanic: Chain
-===============
-
+## Description
 Chain allows you to make skills that bounce between targets, like a
 "chain lightning" type skill.
 
@@ -15,9 +13,8 @@ in the skill and the inherited target of onBounce will be the next
 entity it is bouncing to, so fromOrigin is your friend for making
 effects!
 
-Attributes
-----------
 
+## Attributes
 | Attribute        | Aliases    | Description                                                                 | Default |
 |------------------|------------|-----------------------------------------------------------------------------|---------|
 | onBounce         | ob         | The skill that bounces between targets                                      |         |
@@ -28,27 +25,26 @@ Attributes
 | hitTarget        | ht         | Whether the chain should do the initial from the caster to the first target | true    |
 | hitPlayers       | hp         | Whether the chain should bounce to players                                  | true    |
 | hitNonPlayers    | hnp        | Whether the chain should bounce to non-players                              | false   |
-| bounceConditions | conditions | Conditions applied to the bounce target                                     | NONE    |
+| bounceConditions | conditions, cond, c | Conditions applied to the bounce target                                     | NONE    |
 
-  
 
-Examples
---------
-
-    Skills:
-      - chain{
-          bounces=5;
-          bounceRadius=10;
-          bounceDelay=1;
-          hitSelf=false;
-          hitPlayers=true; 
-          hitNonPlayers=true;
-          hitTarget=true;
-          onBounce=[
-            - effect:particleline{p=flame;fromOrigin=true}
-          ];
-          bounceConditions=[
-            - inlineofsight
-            - hasaura{aura=damageResist} false
-          ];
-        } @target ~onTimer:20
+## Examples
+```yaml
+Skills:
+- chain{
+    bounces=5;
+    bounceRadius=10;
+    bounceDelay=1;
+    hitSelf=false;
+    hitPlayers=true; 
+    hitNonPlayers=true;
+    hitTarget=true;
+    onBounce=[
+      - effect:particleline{p=flame;fromOrigin=true}
+    ];
+    bounceConditions=[
+      - inlineofsight
+      - hasaura{aura=damageResist} false
+    ];
+  } @target ~onTimer:20
+```
