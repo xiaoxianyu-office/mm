@@ -14,11 +14,13 @@ Every [pack] now allows for a `pins.yml` file. This file can contain a list of l
 
 ## Targeters
 - [@Pin](/Skills/Targeters/Pin)
+- [@BlocksInPinRegion](/Skills/Targeters/BlocksInPinRegion)
 
 
 ## Conditions
-- [inPinRegion](/Skills/Conditions/InPinRegion)
 - [DistanceFromPin](/skills/conditions/DistanceFromPin)
+- [inPinRegion](/Skills/Conditions/InPinRegion)
+- [OriginDistanceFromPin](/Skills/Conditions/OriginDistanceFromPin)
 
 <!-- LINKS -->
 [pack]: Packs
