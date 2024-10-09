@@ -31,5 +31,12 @@ Example of dropping items from a DropTable.
   - ...
 ```
 
+
+## Aliases
+- [x] drop
+- [x] dropitems
+- [x] itemdrop
+
+
 <!-- LINKS -->
 [metaskill]: /Skills/Metaskills
