@@ -79,8 +79,8 @@ deal regular damage as the multiplier would not trigger either.
 
 
 ## Aliases
-- [x] buffname
-- [x] debuffname
+- [x] buff
+- [x] debuff
 
 
 <!-- LINKS -->
