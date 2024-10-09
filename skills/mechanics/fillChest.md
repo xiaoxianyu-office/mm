@@ -22,3 +22,9 @@ Example of filling a chest with a droptable.
   Skills:
   - fillchest{i=SkeletonKingDrops} @Location{x=#;y=#;z=#} ~onSpawn
 ```
+
+
+## Aliases
+- [x] populateChest
+- [x] fillContainer
+- [x] populateContainer
