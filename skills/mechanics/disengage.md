@@ -1,8 +1,12 @@
 ## Description
-Disengages from the target, by making the mob leap away from it
+Causes the caster to leap backwards away from the target entity
+
 
 ## Attributes
-*This mechanic has no attributes*
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| velocity  | v, magnitude | The velocity of the leap                                          | 1       |
+| velocityy | yvelocity, vy, yv | The y component of the velocity of the leap                  | 0.01337 |
 
 
 ## Examples
