@@ -2,8 +2,8 @@
 The Slash meta-mechanic can execute other skills in a slash-shaped pattern. The exact shape, size, location, rotation and other such elements of the slash itself can be tweaked via the attributes below.
 
 ## Attributes
-| Attribute      | Aliases     | Description                                             | Default Value |
-|----------------|-------------|---------------------------------------------------------|:-------------:|
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
 | onStartSkill   | onStart, oS | Meta-Skill executed at the start of the slash           |               |
 | onEndSkill     | onEnd, oE   | Meta-Skill executed at the end of the slash             |               |
 | onPointSkill   | onPoint, oP | Meta-Skill executed at every point of the slash         |               |
