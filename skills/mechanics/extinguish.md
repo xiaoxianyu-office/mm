@@ -11,3 +11,7 @@ Removes any fire ticks from the target entity
   Skills:
   - extinguish{delay=2} @self ~onDamaged
 ```
+
+
+## Aliases
+- [x] removefire
