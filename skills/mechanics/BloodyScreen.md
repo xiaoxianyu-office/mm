@@ -4,10 +4,10 @@ Players must enable Fancy Graphics to see the effect.
 
 
 ## Attributes
-| Attribute | Alias  | Description                                   | Default Value |
-| --------- | ------ | --------------------------------------------- | ------------- |
-| duration  | d      | The time (in ticks) that the effect is active | 20            |
-| cancel    | c      | If true, it stops any existing redscreen      | false         |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| duration  | d         | The time (in ticks) that the effect is active                        | 20      |
+| cancel    | c         | If true, it stops any existing redscreen                             | false   |
 
 
 ## Examples
