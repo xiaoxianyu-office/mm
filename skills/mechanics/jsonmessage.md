@@ -21,7 +21,7 @@ subforums unless you're certain that your syntax is correct.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| message   | m         | The json-message to send. Must be surrounded by double-quotes        |         |
+| message   | m, msg    | The json-message to send. Must be surrounded by double-quotes        |         |
 
   
 ## Examples
@@ -58,3 +58,9 @@ mechanic, if the player clicks on the click-event.
 Skills:
   - jsonmessage{m="[{'text':'&7&nAlso click events! :)','clickEvent':{'action':'run_command','value':'/mm signal <mob.uuid> <signal>'}}]"} @trigger ~onInteract
 ```
+
+
+## Aliases
+- [x] messagejson
+- [x] jmsg
+- [x] jm
