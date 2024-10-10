@@ -9,8 +9,8 @@ fakeLooting was added in 4.12 MM and it makes the item being given show up on th
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | i         | The item material (supports for MythicMobs' [Items](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Items) and [Droptables](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/Drops#drop-tables)) You can specify an amount by putting a space and a number after the item name                |         |
-| fakeLooting | fl      | Plays the pickup-item animation from the origin                      | false   |
+| item      | items, i, type, t, material, mat, m | The item material (supports for MythicMobs' [Items](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Items) and [Droptables](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/Drops#drop-tables)) You can specify an amount by putting a space and a number after the item name                |         |
+| fakeLooting | dofakelooting, fl | Plays the pickup-item animation from the origin            | false   |
 
 
 ## Examples
@@ -25,3 +25,9 @@ The below example would give the players 6 cookies.
   - giveitem{i=cookie 6} @PIR{r=20} ~onSpawn
   - ...
 ```
+
+
+## Aliases
+- [x] give
+- [x] giveitems
+- [x] itemgive
