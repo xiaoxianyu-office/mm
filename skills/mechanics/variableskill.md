@@ -5,12 +5,12 @@ be set to *false* later in a skill-tree.
 
 
 ## Attributes
-| Attribute | Shorthand | Description                                                         | Default |
-|-----------|-----------|---------------------------------------------------------------------|---------|
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
 | skill     | s         | The metaskill to be executed. Accepts [Placeholders](/Skills/Placeholders)  |  |
-| forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft  | false   |
+| forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft   | false   |
 | branch    | b, fork, f| Whether the called metaskill's skilltree should [branch](/skills/mechanics/skill#branch-attribute) off from the skilltree of the calling mechanic      | false   |
-| executeafterdeath | continueafterdeath | Whether the metaskill should be able to be called after the caster's death                                                                                | false   |
+| executeafterdeath | continueafterdeath | Whether the metaskill should be able to be called after the caster's death                                                                                 | false   |
 
 
 ## Examples
