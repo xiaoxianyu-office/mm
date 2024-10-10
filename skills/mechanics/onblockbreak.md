@@ -9,7 +9,7 @@ Applies an aura to the target that triggers a skill when they break a block
 | onBreakSkill | onBreak, oB | Skill to execute if the target breaks a block                   |         |
 | cancelEvent | cancel, cE   | Whether or not to cancel the event that triggered the aura      | false   |
 | dropitem  | drop, allowDrop | If the broken item should be dropped or not                    |         |
-| blockType | blocktypes, bt, t, material, materials, mat, m, blocks, block, b| What blocks should trigger this aura                                                                                      |         |
+| blocktypes | bt, t, material, materials, m, blocks, block, b| What blocks should trigger this aura                                                                                      |         |
 
 > This mechanic inherits every attribute of the [aura] mechanic
 
