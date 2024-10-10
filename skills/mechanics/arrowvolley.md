@@ -5,16 +5,16 @@ configurable properties.
 
 
 ## Attributes
-| Attribute   | Aliases | Description                                                | Default |
-|-------------|---------|------------------------------------------------------------|---------|
-| amount      | a       | The number of arrows in the volley                         | 20      |
-| spread      | s       | How spread out the arrows are                              | 45      |
-| velocity    | v       | The velocity of the arrows                                 | 20      |
-| fireTicks   | f       | The duration hit entities will burn for in ticks           | 0       |
-| removeDelay | rd      | The time the arrows will stay before disappearing in ticks | 200     |
-| canPickup   | pickup  | Whether the arrows can be picked up by players             | true    |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| amount    | arrows, a | The number of arrows in the volley                                   | 20      |
+| spread    | s         | How spread out the arrows are                                        | 45      |
+| velocity  | v         | The velocity of the arrows                                           | 20      |
+| fireTicks | ft, f     | The duration hit entities will burn for in ticks                     | 0       |
+| removeDelay | rd, r   | The time the arrows will stay before disappearing in ticks           | 200     |
+| canPickup | pickup    | Whether the arrows can be picked up by players                       | true    |
   
-Note that spread values must be very high to be noticed!
+> Spread values must be very high to be noticed!
 
 ## Examples
 
