@@ -7,7 +7,7 @@ the block (with exception of Bedrock). REQUIRES `forcesync=true`.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | doDrops   | drops, d  | Whether or not to drop the block/s                                   | true    |
-| doEffect  | efffect, e| Whether or not to play the break block particles                     | true    |
+| doEffect  | effect, e | Whether or not to play the break block particles                     | true    |
 | useTool   | tool, t   | Whether or not to use the tool in the players hands                  | true    |
 
 
