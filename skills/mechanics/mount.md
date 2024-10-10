@@ -5,7 +5,7 @@ Causes the casting mob to summon a specified MythicMob and mount it. The caster 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type      | t         | The type of MythicMob to summon                                      |         |
+| type      | t, mob, m | The type of MythicMob to summon                                      |         |
 | stack     | s         | If the summoned mob should stack atop existing mounted entities      | false   |
 
 ### Type Attribute
