@@ -30,4 +30,10 @@ A list of possible operations for the action-syntax:
       v=2
       } ~onAttack
 ```
+
+
+## Aliases
+- [x] mms
+
+
 [^mod]: shorthand for "Modular Division"
