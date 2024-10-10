@@ -49,5 +49,9 @@ XRay2:
 ```
 
 
+## Aliases
+- [x] onplaceblock
+
+
 <!-- LINKS -->
 [aura]: /skills/mechanics/aura
