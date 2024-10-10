@@ -6,7 +6,7 @@ Fills a chest with a list of items, or a [droptable](/Items/Drops#drop-tables)
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | items     | i         | Items to fill a chest with. Can be a comma-separated list of items, or a DropTable                                                                                      | NONE    |
-| shouldStack |         | Should the given items stack if possible. true/false                 |         |
+| shouldStack | stack   | Should the given items stack if possible. true/false                 |         |
 | shouldempty | empty   | Should the container be emptied before the items are added. true/false |       |
 
 
