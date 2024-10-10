@@ -27,4 +27,9 @@ the casting mob in battle.
   - modifytargetscore{objective=damagescore;action=add;value=1} @trigger ~onDamaged
 ```
 
+
+## Aliases
+- [x] mts
+
+
 [^mod]: shorthand for "Modular Division"
