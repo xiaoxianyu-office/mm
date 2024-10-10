@@ -25,4 +25,10 @@ A list of possible operations for the action-syntax:
   Skills:
   - modifyglobalscore{objective=someobjective;action=multiply;v=2} ~onAttack
 ```
+
+
+## Aliases
+- [x] mgs
+
+
 [^mod]: shorthand for "Modular Division"
