@@ -16,7 +16,7 @@ Added projectile bullets to Orbital in MM 4.11. See how to use them on the [proj
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | onStart   | oS        | Meta-Skill executed when the orbital first starts                    |         |
 | onTick    | oT        | Meta-Skill executed every [interval] ticks at the orbital's origin location |  |
-| onHit     | oH        | Meta-Skill executed when the projectile hits something. Targets hit are inherited by the meta-skill                                                                    |         |
+| onHit     | oH, onhitskill | Meta-Skill executed when the projectile hits something. Targets hit are inherited by the meta-skill                                                                    |         |
 | onEnd     | oE        | Meta-Skill executed when the projectile ends                         |         |
 | auraName  | buffName, debuffName | Optional name, required to use associated mechanics & conditions that reference a specific aura, and to make the aura be able to stack                               |         |
 | charges   | c         | If set, the orbital will stop after firing this many times           |         |
@@ -28,12 +28,12 @@ Added projectile bullets to Orbital in MM 4.11. See how to use them on the [proj
 | points    | p         | How many "points" that comprise the circle that makes up the orbit. More points will make the circle more defined, but will also increase the time it takes to complete an orbit  | 32   |
 | startingpoint | sp    | The starting step of the orbital aura                                | 0       |
 | tickinterpolation | interpolation, ti | Interpolates additional points between each tick of the projectile, running onTick multiple times                                                      | 0       |
-| xRotation | rotx, rx  | Rotates the orbital along the X axis. Rotation is done in radians, i.e. `3.14` is half a rotation, `6.28` is a full rotation                                                  | 0       |
-| yRotation | roty, ry  | Rotates the orbital along the Y axis. Rotation is done in radians, i.e. 3.14 is half a rotation, 6.28 is a full rotation                                                       | 0       |
-| zRotation | rotz, rz  | Rotates the orbital along the Z axis. Rotation is done in radians, i.e. 3.14 is half a rotation, 6.28 is a full rotation                                                       | 0       |
-| xOffset   | ox        | Offsets the orbital along the X axis of the target                   | 0       |
-| yOffset   | oy        | Offsets the orbital along the Y axis of the target                   | 0       |
-| zOffset   | oz        | Offsets the orbital along the Z axis of the target                   | 0       |
+| rotationx | rotx, rx  | Rotates the orbital along the X axis. Rotation is done in radians, i.e. `3.14` is half a rotation, `6.28` is a full rotation                                                  | 0       |
+| rotationy | roty, ry  | Rotates the orbital along the Y axis. Rotation is done in radians, i.e. 3.14 is half a rotation, 6.28 is a full rotation                                                       | 0       |
+| rotationz | rotz, rz  | Rotates the orbital along the Z axis. Rotation is done in radians, i.e. 3.14 is half a rotation, 6.28 is a full rotation                                                       | 0       |
+| offsetx   | ox, offx  | Offsets the orbital along the X axis of the target                   | 0       |
+| offsety   | oy, offy  | Offsets the orbital along the Y axis of the target                   | 0       |
+| offsetz   | oz, offz  | Offsets the orbital along the Z axis of the target                   | 0       |
 | angularVelocityX | avx, vx | Modifies the angular velocity of the orbital on the X axis      | 0       |
 | angularVelocityY | avy, vy | Modifies the angular velocity of the orbital on the Y axis      | 0       |
 | angularVelocityZ | avz, vz | Modifies the angular velocity of the orbital on the Z axis      | 0       |
@@ -51,7 +51,7 @@ Added projectile bullets to Orbital in MM 4.11. See how to use them on the [proj
 | cancelOnQuit     | coq     | Whether end after caster quit                                   | true    |
 | hugsurface       | hs      | Whether or not the orbital should move along the ground         | false   |
 | hugliquid        | hugwater, huglava | Whether using `hugSurface` will also make the orbital move on top of liquids                                                                                     | false   |
-| heightfromsurface | hsf    | How high above the surface the orbital should glide if `HugSurface` is set to `true`                                                                                      | 0.5     |
+| heightfromsurface | hfs    | How high above the surface the orbital should glide if `HugSurface` is set to `true`                                                                                      | 0.5     |
 | maxclimbheight   | mch     | The number of attempts the projectile will make to **increase** its y-location by 1 before terminating itself, when the projectiles is "hugging" either a block or a liquid| 3 |
 | maxdropheight | mdh        | The number of attempts the projectile will make to **decrease** its y-location by 1 before terminating itself, when the projectiles is "hugging" either a block or a liquid| 10|
 | bullettype    | bullet, b  | The [Projectile Bullet Type](/skills/mechanics/projectile#projectile-bullets). Also makes the orbital inherits every related attribute                               | NONE   |
