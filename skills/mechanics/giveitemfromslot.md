@@ -11,15 +11,9 @@ fakeLooting was added in 4.12 and it makes the item being given show up on the s
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| slot        | s       | The caster's slot                                                    | None    |
-| fakeLooting | fl      | plays the pickup-item animation from the origin                      | false   |
+| slot        | s       | The caster's [slot](/Skills/EquipSlot)                               |         |
+| fakeLooting | fl      | Plays the pickup-item animation from the origin                      | false   |
 
-### Slot Attribute
-
-Valid slots are
-
-| HEAD | CHEST | LEGS | FEET | HAND | OFFHAND |       
-| ---- | ----- | ---- | ---- | ---- | ------- |    
 
 
 ## Examples
@@ -28,3 +22,7 @@ Give caster's main hand item to all players on the server, and plays the pickup 
   Skills:
   - giveitemfromslot{slot=HAND;fakelooting=true} @server ~onTimer:10
 ```
+
+
+## Aliases
+- [x] givefromslot
