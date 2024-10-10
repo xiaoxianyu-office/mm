@@ -12,7 +12,7 @@ fakeLooting was added in 4.12 and it makes the item being given show up on the s
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | slot        | s       | The caster's [slot](/Skills/EquipSlot)                               |         |
-| fakeLooting | fl      | Plays the pickup-item animation from the origin                      | false   |
+| fakeLooting | fl, dofakelooting | Plays the pickup-item animation from the origin            | false   |
 
 
 
