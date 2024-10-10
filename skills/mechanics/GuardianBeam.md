@@ -23,7 +23,7 @@ Guardian_Beam:
 
 
 ## Aliases
-- [X] effect:guardianbeam
-- [X] effect:beam
-- [X] e:guardianbeam
-- [X] e:beam
+- [x] effect:guardianbeam
+- [x] effect:beam
+- [x] e:guardianbeam
+- [x] e:beam
