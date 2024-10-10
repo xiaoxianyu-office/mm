@@ -17,7 +17,7 @@ effects!
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onBounce  | ob        | The skill that bounces between targets                               |         |
+| onBounce  | ob, m, meta, onbounceskill, ontick, ontickskill, ot, s, skill | The skill that bounces between targets                                                                                |         |
 | bounces   | b         | How many times the chain should bounce                               | 2       |
 | delay     | d, bd, bouncedelay, i, interval | The delay between bounces                      | 1       |
 | radius    | r, bounceradius, bouncerange, range | How far the skill will bounce to a new target | 5    |
