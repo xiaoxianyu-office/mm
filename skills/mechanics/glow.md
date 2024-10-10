@@ -9,6 +9,7 @@ This mechanic is also an [aura].
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | color     | c         | The [color] with which the entity will glow                          | white   |
+| auraname  | buffname, debuffname | The name of the aura                                     | #glowing |
 | duration  | d         | How long the effect will last                                        | 100     |
 | audience  |           | The [audience] of the glow effect                                    | nearby  |
 
