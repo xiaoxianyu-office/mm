@@ -7,7 +7,7 @@ blocks of the casting mob.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | spread    | s         | How spread out players will be from the casting mob                  | 0       |
-| vspread   | vs        | Lets you override the vertical spread value                          | spread  |
+| vspread   | spreadv, vs| Lets you override the vertical spread value                         | spread  |
 
 
 ## Examples
