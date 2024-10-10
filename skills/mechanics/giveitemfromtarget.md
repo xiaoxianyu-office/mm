@@ -1,26 +1,24 @@
-Mechanic: Give Item From Target
-===============================
-
+## Description
 Gives the caster an item while playing the pickup-item animation from the target entity or location when fakelooting is set to true.
 
 Gives the caster an item from the target entity or location when fakelooting is set to false.
 
-Attributes
-----------
 
-| Attribute   | Aliases | Description       | Default Value |
-|-------------|---------|-------------------|---------------|
-| item        | i       | The item material (supports for mythicmobs item) | None |
-| amount      | a       | The amount given  | 1             |
-| fakeLooting |         | plays the pickup-item animation from the target | false |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| item      | items, i  | The item material (supports for mythicmobs item)                     |         |
+| fakeLooting | dofakelooting, fl | plays the pickup-item animation from the target            | true    |
 
-------------
 
-This mechanic was added in 4.12 MM
+## Examples
+```yaml
+  Skills:
+  - giveitem{i=diamond_sword;a=1} @PIR{r=20} ~onSpawn
+```
 
-Examples
---------
 
-    Skills:
-    - giveitem{i=diamond_sword;a=1} @PIR{r=20} ~onSpawn
-    - ...
+## Aliases
+- [x] givefromtarget
+- [x] giveitemsfromtarget
+- [x] itemgivefromtarget
