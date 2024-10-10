@@ -8,6 +8,7 @@ the mob to more than its maximum health.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount     | a        | The amount to heal the target                                        | 1       |
 | overheal  | oh        | Whether or not to apply overhealing as additional MaxHealth          | false   |
+| maxoverheal | maxabsorb, maxshield, mo, ma, ms | The maximum amount of overhealing that can be applied | 1 |
 
 
 ## Examples
@@ -30,3 +31,7 @@ now have 40 health. 20/20 + 20 = 40/20
 
 The same mob with 17 health will gain 17 health on top of its maximum of
 20. 17/20 + 20 = 37/20
+
+
+## Aliases
+- [x] h
