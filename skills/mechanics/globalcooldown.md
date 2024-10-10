@@ -6,8 +6,8 @@ mob's abilities to have a global, over-all shared cooldown. This can be useful f
 > This is a no-target mechanic, and the affected entity will always be the caster
 
 ## Attributes
-| Attribute | Aliases | Description                   | Default Value |
-|-----------|---------|-------------------------------|---------------|
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
 | ticks     | t       | How many ticks to set the GCD | 20            |
 
   
@@ -26,3 +26,5 @@ IceBolt:
 
 ## Aliases
 - [x] gcd
+- [x] setgcd
+- [x] setglobalcooldown
