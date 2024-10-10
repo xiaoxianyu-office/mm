@@ -8,8 +8,8 @@ Note that the blockwave effect will never actually change any blocks in the worl
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | material  | mat, m    | The [material] used for the blockwave                                |         |
-| radius    | r         | The radius of the blockwave effect                                   | 2       |
-| radiusy   | n         | The y radius of the blockwave effect                                 |`radius` |
+| radius    | r,        | The radius of the blockwave effect                                   | 2       |
+| radiusy   | ry        | The y radius of the blockwave effect                                 |`radius` |
 | duration  | d         | Duration of the effect in ticks                                      | 15      |
 | shape     | s         | The shape of the effect (Sphere/Cube)                                | sphere  |
 | velocity  | v         | The speed of the effect                                              | 0.2     |
