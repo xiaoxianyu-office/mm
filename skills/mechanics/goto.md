@@ -16,3 +16,8 @@ Causes the mob to pathfind to a location.
   - goto{speedModifier=1;sh=5;sv=5} @owner
   - goto{speedModifier=1;sh=5;sv=5} @location{c=100,65,100}
 ```
+
+
+## Aliases
+- [x] pathto
+- [x] navigateto
