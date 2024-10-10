@@ -7,8 +7,8 @@ Note that the blockwave effect will never actually change any blocks in the worl
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| material  | mat, m    | The [material] used for the blockwave                                |         |
-| radius    | r,        | The radius of the blockwave effect                                   | 2       |
+| material  | m         | The [material] used for the blockwave                                |         |
+| radius    | r         | The radius of the blockwave effect                                   | 2       |
 | radiusy   | ry        | The y radius of the blockwave effect                                 |`radius` |
 | duration  | d         | Duration of the effect in ticks                                      | 15      |
 | shape     | s         | The shape of the effect (Sphere/Cube)                                | sphere  |
