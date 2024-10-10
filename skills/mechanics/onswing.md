@@ -48,5 +48,9 @@ Fireball_oH:
 ```
 
 
+## Aliases
+- [x] onleftclick
+
+
 <!-- LINKS -->
 [aura]: /skills/mechanics/aura
