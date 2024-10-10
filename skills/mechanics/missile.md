@@ -7,7 +7,7 @@ Missiles can target both a location and an entity.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| Inertia   | in        | Sets the "turning-rate" of the missile. Lower values make the missile turn around faster. Use big numbers (10-100) when trying to make your missiles turn slowly.         | 1.5     |
+| Inertia   | in, intertia | Sets the "turning-rate" of the missile. Lower values make the missile turn around faster. Use big numbers (10-100) when trying to make your missiles turn slowly.         | 1.5     |
 | Bounces   | bounce    | Should the projectile bounce. Bounce radius depends on the projectile's hitbox. **Premium Only**.                                                                              | false   |
 | BounceVelocity | bv   | Every time the projectile bounces, its velocity will be multiplied by this value. **Premium Only** .                                                                      | 0.9     |
 | HugSurface| hs        | Whether or not the projectile should move along the ground.          | false   |
@@ -16,8 +16,11 @@ Missiles can target both a location and an entity.
 | MaxClimbHeight | mch  | The number of attempts the projectile will make to **increase** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 3       |
 | MaxDropHeight  | mdh  | The number of attempts the projectile will make to **decrease** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 10      |
 | highAccuracyMode | ham| Whether to use high-accuracy mode, which raytraces every tick to ensure the projectile cannot ever go through anything. Values can be `true`, `false`, `PLAYERS_ONLY`         | PLAYERS_ONLY |
+| hitnonplayers | hnp   | Whether the missile should hit non player entities                   | true    |
 
 > This mechanic inherits every inheritable attribute of the [Projectile](/skills/mechanics/projectile#inheritable-attributes) mechanic
+>> - The `hitnonplayers ` attribute is **defaulted** at `true`
+
 
 ## Examples
 This example shoots a missile that looks like a thin trail of flames
@@ -46,3 +49,7 @@ Homer_HIT:
   - effect:sound{s=entity.generic.explode;v=1;p=0}
   - damage{a=1337;i=false}
 ```
+
+
+## Aliases
+- [x] mi
