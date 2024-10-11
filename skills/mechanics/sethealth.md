@@ -19,4 +19,4 @@ right-click the mob.
 
 
 ## Aliases
-- [x] seth
+- [x] sethp
