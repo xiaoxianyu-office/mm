@@ -1,5 +1,5 @@
 ## Description
-Removes the wolf's owner
+Removes the caster's Mythic and Vanilla owner
 
 
 ## Attributes
@@ -12,3 +12,7 @@ Removes the wolf's owner
   - removeowner @MIR{t=MythicWolf} ~onInteract
   - ...
 ```
+
+
+## Aliases
+- [x] clearowner
