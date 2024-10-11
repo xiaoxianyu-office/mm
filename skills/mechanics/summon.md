@@ -32,7 +32,7 @@ Summons mobs of the given type around the target.
 | inheritdespawn | inheritdespawnoption, ido | Whether the summoned mob should inherit the caster's [Despawn Option](/Mobs/Options#despawn)                                                        | false   |
 | summonerIsOwner | sio | Whether to set the summoner as the owner of the mob.                 | true    |
 | summonerIsParent | sip| Whether to set the summoner as the parent of the mob.                | true    |
-  
+
 
 ## Examples
 This example would summon 5 wither skeletons around the target players.
@@ -41,6 +41,12 @@ RaiseSkeletons:
   Skills:
   - summon{type=WITHER_SKELETON;amount=5;radius=4} @PIR{r=20}
 ```
+
+
+## Aliases
+- [x] spawnmobs
+- [x] spawnmob
+- [x] piratesummon
 
 
 <!-- LINKS -->
