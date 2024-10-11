@@ -13,3 +13,7 @@ Sets the leash holder of the caster to the targeted entity
   Skills:
   - setleashholder @NearestPlayer
 ```
+
+
+## Aliases
+- [x] setleasher
