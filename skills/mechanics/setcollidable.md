@@ -4,9 +4,9 @@ Sets if the target of the mechanic should have a collidable hitbox or not.
 
 
 ## Attributes
-| Attribute      | Aliases         | Description                                        | Default Value |
-|----------------|-----------------|----------------------------------------------------|---------------|
-| collidable     | state, value, c | Sets if the mob is collidable or not               | false         |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| collidable | state, value, c | Sets if the mob is collidable or not                          | false   |
 
 
 ## Examples
