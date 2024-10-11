@@ -1,5 +1,5 @@
 ## Description
-Makes the target entity glow (using the Glowing potion effect.).  
+Makes the target entity glow (like with the Glowing potion effect).  
 This mechanic is also an [aura].
 
 > **[Glow API](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)** is required for minecraft version 1.16.
