@@ -7,10 +7,15 @@ Shoots a shulker bullet at the target entity, giving them levitation on hit.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| interval  | i         | how often in ticks this mechanic updates                             | 4       |
-| onTick    | oT        | the skill this mechanic calls each interval                          | NONE    |
-| onHit     | oH        | the skill this mechanic calls when it hits the target                | NONE    |
-| onEnd     | oE        | the skill this mechanic calls when it ends                           | NONE    |
+| type      | t         | The type of the bullet                                               | arrow   |
+| damage    | d         | The damage of the bullet                                             | 5       |
+| bounce    |           | Whether the bullet should bounce                                     | false   |
+| interval  | int, i    | how often in ticks this mechanic updates                             | 4       |
+| onTick    | oT, m, meta, ontickskill, s, skill | the skill this mechanic calls each interval |         |
+| onHit     | oH, onhitskill | the skill this mechanic calls when it hits the target           |         |
+| onEnd     | oE, onendskill | the skill this mechanic calls when it ends                      |         |
+| startyoffset | syo    | The starting y offset of the bullet                                  | 0       |
+| forwardoffset | startfoffset, sfo | The forward offset of the bullet                         | 0       |
 
 
 ## Examples
@@ -31,3 +36,7 @@ TSSB_oE:
   Skills:
   - particlesphere{particle=reddust;color=#ffffff;size=0.66;a=30;r=1;hs=0;vs=0;s=0;y=0} @origin
 ```
+
+
+## Aliases
+- [x] shootshulker
