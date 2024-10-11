@@ -23,4 +23,11 @@ ExampleMob:
   - undoPaste{id=lab.schem} @self ~onDamaged
 ```
 
+
+## Aliases
+- [x] undoschem
+- [x] undoschematic
+
+
+<!-- LINKS -->
 [fawePaste]: /Skills/mechanics/fawepaste/
