@@ -19,7 +19,7 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 | hspread              | hs         | The horizontal hit radius of the projectile                                               | 0       |
 | poweraffectsvelocity | pav        | Whether the mobs power level should affect the velocity of the projectile                 | true    |
 | interval             | int, i     | How often per second the projectile creates a tick-event                                  | 4       |
-| ontickskill          | ontick, ot | The meta-skill to execute on each tick/interval of the projectile                         | None |
+| ontickskill | ontick, ot, m, meta, s, skill | The meta-skill to execute on each tick/interval of the projectile                         | None |
 | onhitskill           | onhit, oh  | The meta-skill to execute when the projectile hits its target                             | None |
 | onendskill           | onend, oe  | The meta-skill to execute when the projectile misses and ends                             | None |
 | bounce               |            | Whether the projectile will bounce when it hits something                            | false |
@@ -41,10 +41,27 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 | adjustvelocity | av   | If the caster is a player, adjusts the velocity and direction as if the player was shooting it themselves | true  |
 | calculatefiringangle | cfa        | If this is set and the projectile has `gravity`, the projectile will  trace an arc in the air before landing at the target location                                  | false   | 
 | verticalnoise  | vn  | The vertical noise (randomness) of the shot projectile | ((1-`accuracy`)*45)/10 |
-| horizontalnoise | hs  | The horizontal noise (randomness) of the shot projectile   | (1-`accuracy`)*45 |         
+| horizontalnoise | hn  | The horizontal noise (randomness) of the shot projectile   | (1-`accuracy`)*45 |         
+
+
+### Potion Type Attributes
+These attributes apply if the projectile is of `type` `POTION`
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
 | potiontype     | ptype, effect, pt, pe | The type of the potion applied to the projectile, if POTION | SLOW |
 | potionduration | pduration, pd | The duration of the potion effect                           | 100     |
+| force          | overwrite, ow, override, or | Whether to override the effect on the target if already applied    | false  |
+| potioncolor | pc      | The color of the potion                                              | #FFFFFF |
+| hasParticles | particles | Whether not to show the status effect particles.               | true    |
+| hasIcon   | icon  | Whether not to show the status effect icon.                          | true    |
+| ambientparticles | ambient  | Whether to show ambient particles.                           | false   |
 
+
+### Trident Type Attributes
+These attributes apply if the projectile is of `type` `TRIDENT`
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| tridentitem | titem, ti | The trident item                                                   |         |
 
 ## Examples
 ```yaml
