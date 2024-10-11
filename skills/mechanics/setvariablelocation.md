@@ -7,6 +7,7 @@ Sets a value of type string. The value will depend on the location passed to the
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | value     | val, v, a, amount | The target location                                          | @self   |
+> This mechanic inherits every *inheritable* attribute of the [SetVariable](skills/mechanics/setvariable) mechanic
 
 
 ## Examples
