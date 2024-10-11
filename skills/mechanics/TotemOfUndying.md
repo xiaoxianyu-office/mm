@@ -18,10 +18,10 @@ PlayTotemEffect:
 
 
 ## Aliases
-- [X] totemresurrection
+- [x] totemresurrection
 - [x] effect:totemresurrection
 - [x] e:totemresurrection
 - [x] totemresurrectioneffect
-- [X] totemundying
+- [x] totemofundying
 - [x] e:totemofundying
-- [X] totemeffect
+- [x] totemeffect
