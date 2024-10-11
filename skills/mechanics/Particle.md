@@ -11,7 +11,6 @@ A list of particle types can be found **[here](/Skills/Mechanics/Particle/Partic
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | particle  | p         | The [particle type] to use.                                          | reddust |
-| material  | m         | Block or Item to use with block_crack or item_crack respectively     |
 | mob       | m, t      | The entity to spawn as the particle. Cannot be the original entity. **Premium Only**.                                                                                        |         |
 | amount    | count, a  | The number of particles to create                                    | 10      |
 | spread    | offset    | The vertical spread of the particles                                 | 0       |
@@ -22,8 +21,6 @@ A list of particle types can be found **[here](/Skills/Mechanics/Particle/Partic
 | speed     | s         | The “speed” of the particles. If a particle has a [DataType](/Skills/Mechanics/Particle/Particle-Types#datatypes), this attribute will behave inconsistently. | 0    |
 | yOffset   | y         | The Y offset of the particles from the target                        | 0       |
 | viewDistance | vd     | The distance the particles are rendered                              | 128     |
-| size      |           | The size of the particles displayed                                  | 1       |
-| color     | c         | [(1)](/wikis/skills/effects/particles "only works on colorable particle types like “reddust”")[(2)](/wikis/skills/effects/particles "color must be provided in hex-code") The color of the particle                                                                                   |         |
 | fromorigin| fo        | Should the particles be generated from the origin of the mechanic    | false   |
 | directional| d        | Does the particle use directional travel                             | false   | 
 | directionReversed| dr | Reverses the direction of the particles.                             | false   | 
@@ -31,11 +28,8 @@ A list of particle types can be found **[here](/Skills/Mechanics/Particle/Partic
 | fixedyaw  | yaw       | Sets the yaw of the effect                                           | -1111   |
 | fixedpitch| pitch     | Sets the pitch of the effect                                         | -1111   |
 
-#### Particle Colors
-As of MythicMobs version 2.3, some particles effects (mobSpell, mobSpellAmbient, and reddust) can be colored by using an additional “color=hexcode” argument. Hexcodes for coloring particles can be found here: [Hex Colors](http://www.color-hex.com/) From MM Version 2.5.0+ and Minecraft version 1.10 onwards, fallingdust also may use the color option.
-```yaml
-  - effect:particles{p=reddust;color=#FF00FF}
-```
+#### Extra Attributes
+Depending on the specific [particle type] used, extra attributes will become available to use inside particle-related mechanics too. you can find more by accessing the specific particle's page from the [particle types wiki page]
 
 #### Mob-Type Particles \[**Premium Only**\]
 This particle type will replace the spawned particle with the selected entity. The entity will act as a normal one, being able to attack, be hit, activate skills and so on. The entity will have no parent/owner relationship with the caster.
@@ -75,3 +69,4 @@ This particle type will replace the spawned particle with the selected entity. T
 
 <!-- LINKS -->
 [particle type]: /Skills/Mechanics/Particle/Particle-Types
+[particle types wiki page]: /Skills/Mechanics/Particle/Particle-Types
