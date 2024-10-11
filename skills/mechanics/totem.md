@@ -15,9 +15,8 @@ poison or land mines.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | Charges   | ch, c     | Determines how many times the totem can hit something before disappearing | 0  |
 | YOffset   | yo        | How high off the target the totem will spawn                          | 1      |
-
+| stopatentity | se     | Whether the totem should terminate upon hitting an entity             | false  |
 > Inherits attributes from [Projectile](/skills/mechanics/projectile)
->> `stopAtEntity` gets **defaulted** to `false`
 
 
 ## Examples
@@ -30,3 +29,8 @@ MFT_TICK:
   Skills:
   - damage{a=3} @ENO{r=5}
 ```
+
+
+## Aliases
+- [x] toteme
+- [x] t
