@@ -11,3 +11,7 @@ Makes a mob clear its threat table. Removes all entities from the threat table c
   Skills:
   - clearThreat @self
 ```
+
+
+## Aliases
+- [x] threatclear
