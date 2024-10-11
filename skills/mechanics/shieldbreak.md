@@ -14,3 +14,7 @@ If the player is blocking, this would break the block and put the shield on cool
   Skills:
   - shieldbreak{duration=200} @target
 ```
+
+
+## Aliases
+- [x] disableshield
