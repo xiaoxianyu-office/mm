@@ -22,3 +22,9 @@ SkullBarrage:
   - delay 10
   - shootskull{y=1;v=4} @target
 ```
+
+
+## Aliases
+- [x] shootwitherskull
+- [x] skull
+- [x] witherskull
