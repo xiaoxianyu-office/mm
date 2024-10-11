@@ -9,6 +9,7 @@ post it in the bugs/suggestion-subforum!
 
 ![](http://fs5.directupload.net/images/160306/zswobuo8.jpg)
 
+
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
@@ -22,5 +23,8 @@ post it in the bugs/suggestion-subforum!
   - actionmessage{m="&lHello! &cI'm &athe &9&lactionmessage-bar&r! &e:)"} @trigger
   - am{m="<caster.name>&f is using the *skill alias!*"} @PlayersInRadius{r=30}
 ```
+
+
 ## Aliases
 - [x] am
+- [x] actionmessage
