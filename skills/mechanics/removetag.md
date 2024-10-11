@@ -20,3 +20,8 @@ UntagSkill:
   Skills:
   - removetag{t=Test} @self
 ```
+
+
+## Aliases
+- [x] removescoreboardtag
+- [x] tagremove
