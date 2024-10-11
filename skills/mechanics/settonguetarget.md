@@ -14,3 +14,7 @@ MyLovingFrog:
   Skills:
   - setTongueTarget @EIR{r=5;limit=1;sort=NEAREST} ~onInteract
 ```
+
+
+## Aliases
+- [x] tonguetarget
