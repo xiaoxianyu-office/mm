@@ -30,3 +30,7 @@ SetButton:
  Skills:
  - setblock{m=JUNGLE_BUTTON[facing=east,face=floor]} @targetlocation
 ```
+
+
+## Aliases
+- [x] setblock
