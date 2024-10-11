@@ -19,3 +19,7 @@ Flood:
   Skills:
   - spring{d=100} @target
 ```
+
+
+## Aliases
+- [x] water
