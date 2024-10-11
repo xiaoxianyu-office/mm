@@ -29,6 +29,6 @@ SwingSkill:
 
 
 ## Aliases
-- [X] effect:playanimation
-- [X] e:playanimation
+- [x] effect:playanimation
+- [x] e:playanimation
 - [x] playarmanimation
