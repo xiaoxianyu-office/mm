@@ -13,7 +13,7 @@ post it in the bugs/suggestion-subforum!
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| message   | m         | The message to send. Must be surrounded by quotes                    |         |
+| message   | m, msg    | The message to send. Must be surrounded by quotes                    |         |
 
 
 ## Examples
