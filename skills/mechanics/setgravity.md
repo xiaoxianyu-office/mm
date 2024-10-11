@@ -5,7 +5,7 @@ Sets whether gravity affects the target entity.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| gravity   | g         | Sets whether the entity uses gravity (boolean)                       | true    |
+| gravity   | g, b, bool, u, use | Sets whether the entity uses gravity                        | true    |
 
   
 ## Examples
@@ -15,3 +15,7 @@ Sets whether gravity affects the target entity.
   - setusegravity{g=false} @self ~onSpawn
   - ...
 ```
+
+
+## Aliases
+- [x] setusegravity
