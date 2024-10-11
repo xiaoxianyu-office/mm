@@ -16,3 +16,7 @@ Sets the color of colorable mobs to blue when it spawns.
   - setcolor{color=blue} @self ~onSpawn
   - ...
 ```
+
+
+## Aliases
+- [x] setcolor
