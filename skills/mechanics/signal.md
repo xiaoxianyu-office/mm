@@ -39,3 +39,7 @@ ShootAttacker:
   Skills:
   - shoot{t=arrow}
 ```
+
+
+## Aliases
+- [x] sendsignal
