@@ -11,8 +11,18 @@ Traces a ray to the target, like the [Raytrace](/skills/mechanics/raytrace) mech
 | useeyelocation | uel  | If they ray should start from the eye location of the caster         | false   |
 | forwardoffset| startfoffset, sfo | The forward offset of the starting point of the ray       | 0       |
 | sideoffset| soffset, sso | The side offset of the starting point of the ray                  | 0       |
-
-> This mechanic also uses all [Attributes of the Raytrace Mechanic](/skills/mechanics/raytrace#attributes)
+| entityskill   | eskill, es | meta-skill to use when the ray hits an entity                   |         |
+| locationskill | lskill, ls | meta-skill to use when the ray hits a location                  |         |
+| headshotskill | hsskill, hs | meta-skill to use when it's a headshot                         |         |
+| maxdistance   | distance, md, d | max distance to trace                                      | 50      |
+| raywidth      | rw, w      | Width of the ray traced                                         | 0.2     | 
+| ignorepassableblocks | ignorepassable, ip    | ignores collision of passable blocks                                                                                                                     | true          |
+| fluidcollisionmode   | fcm                   | [Determines the collision behaviour when fluids get hit during ray tracing](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FluidCollisionMode.html) | NEVER         |
+| accuracy             | ac, a                 | spread of the traced ray                                                                                                                                 | 1             |
+| verticalnoise        | vn                    | vertical spread of the ray                                                                                                                               | 0             |
+| horizontalnoise      | hn                    | horizontal spread of the ray                                                                                                                             | 0             |
+| raytraceConditions   | rc, rcond, rconditions| Conditions applied to the raytraced target                                                                                                               | NONE          |
+| headshotmultiplier   | hsmultipler, hsm     | headshot power multiplier                                                                                                                                | 1             |
 
 
 ## Examples
