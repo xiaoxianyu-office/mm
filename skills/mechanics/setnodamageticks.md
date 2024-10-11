@@ -5,7 +5,7 @@ Sets the immunity ticks on the target. This should be delayed if used immediatel
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| ticks     |           | the nodamageticks to set                                             |         |
+| ticks     | d, duration, t | The NoDamageTicks to set (for how many ticks the mobs will be invulnerable under normal circumstances) | 0 |
 
 
 ## Examples
@@ -14,3 +14,7 @@ Gives the caster invincibility after it attacks.
   Skills:
   - setNoDamageTicks{ticks=0;delay=1} @self ~onAttack
 ```
+
+
+## Aliases
+- [x] setimmunityticks
