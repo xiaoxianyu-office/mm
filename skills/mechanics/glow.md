@@ -4,6 +4,7 @@ This mechanic is also an [aura].
 
 > **[Glow API](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)** is required for minecraft version 1.16.
 
+> Please note that this mechanic is not actually giving the *glowing* effect in any form: it will just *look* like it. If you want to check against the presence of this mechanic, you must check against the presence of the applied aura (an [hasaura](/skills/conditions/hasaura) condition con do the trick, for instance)
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
