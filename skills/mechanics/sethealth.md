@@ -16,3 +16,7 @@ right-click the mob.
   - sethealth{a=6} @trigger ~onInteract
   - ...
 ```
+
+
+## Aliases
+- [x] seth
