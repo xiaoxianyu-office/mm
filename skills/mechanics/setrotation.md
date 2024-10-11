@@ -5,9 +5,9 @@ Changes the rotation of the target (only works on non-player entities).
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| relative  |           | If the change is relative to the target, boolean                     | false   |
-| yaw       |           | The new yaw                                                          | 0       |
-| pitch     |           | The new pitch                                                        | 0       |
+| relative  | r, rel    | If the change is relative to the target, boolean                     | false   |
+| yaw       | y         | The new yaw                                                          | 0       |
+| pitch     | p         | The new pitch                                                        | 0       |
 
 
 ## Examples
@@ -16,3 +16,7 @@ Changes the rotation of the target (only works on non-player entities).
   - setrotation{relative=true;pitch=-45}
   - ...
 ```
+
+
+## Aliases
+- [x] setrot
