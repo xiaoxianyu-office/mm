@@ -13,3 +13,7 @@ Sets the caster's target to the trigger when right clicked.
   Skills:
   - setTarget @trigger ~onInteract
 ```
+
+
+## Aliases
+- [x] target
