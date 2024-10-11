@@ -5,7 +5,7 @@ Sets or changes the target mob's faction.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| faction   |           | The name of the faction to apply to the mob                          | NONE    |
+| faction   | f         | The name of the faction to apply to the mob                          |         |
 
 
 ## Examples
