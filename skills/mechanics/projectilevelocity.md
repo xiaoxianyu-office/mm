@@ -5,13 +5,13 @@ Modifies the velocity of the calling [Projectile](/skills/mechanics/projectile) 
 
 ## Attributes
 
-| Attribute | Aliases | Description                                                             | Default Value |
-|-----------|---------|-------------------------------------------------------------------------|---------------|
-| mode      | m       | The operation to perform. Can be SET, ADD, REMOVE, DIVIDE, or MULTIPLY. | SET           |
-| velocityx | vx, x   | Velocity on the x-axis. Can be negative.                                | 1             |
-| velocityy | vy, y   | Velocity on the y-axis. Can be negative.                                | 1             |
-| velocityz | vz, z   | Velocity on the z-axis. Can be negative.                                | 1             |
-| relative  |         | If the change in velocity should be relative to the projectile's facing direction. In this instance, the `z` axis becomes `forward/backward`, `y` becomes `up/down` and `x` becomes `left/right`| true     |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| mode      | m         | The operation to perform. Can be SET, ADD, REMOVE, DIVIDE, or MULTIPLY. | SET  |
+| velocityx | vx, x     | Velocity on the x-axis. Can be negative.                             | 1       |
+| velocityy | vy, y     | Velocity on the y-axis. Can be negative.                             | 1       |
+| velocityz | vz, z     | Velocity on the z-axis. Can be negative.                             | 1       |
+| relative  |           | If the change in velocity should be relative to the projectile's facing direction. In this instance, the `z` axis becomes `forward/backward`, `y` becomes `up/down` and `x` becomes `left/right`| true     |
 
 
 ## Examples
@@ -22,3 +22,7 @@ Projectile-onTick:
   Skills:
   - projectilevelocity{mode=ADD;vz=0.3}
 ```
+
+
+## Aliases
+- [x] pvelocity
