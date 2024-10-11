@@ -5,7 +5,7 @@ Removes the specified amount of an item from the target player's inventory
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | material, m, i | The item, or material, to remove                                | DIRT    |
+| item      | material, m, i, mat, mi, mythicitem, t, type | The item, or material, to remove  | DIRT    |
 | amount    | a              | The amount to remove                                            | 1       |
 | exact     | e         | Whether the name of the item should match exactly to the specified one | true  |
 
