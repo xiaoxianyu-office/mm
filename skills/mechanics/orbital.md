@@ -57,7 +57,7 @@ Added projectile bullets to Orbital in MM 4.11. See how to use them on the [proj
 | bullettype    | bullet, b  | The [Projectile Bullet Type](/skills/mechanics/projectile#projectile-bullets). Also makes the orbital inherits every related attribute                               | NONE   |
 | castAsOrbital | cao        | Whether the metaskills should be casted by the orbital itself rather than from the caster, as Projectiles do                                                              | false  |
 
-> This mechanic inherits every attribute of the [Aura](/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) mechanic
+> This mechanic inherits every attribute of the [Aura](/skills/mechanics/aura) mechanic
   
 
 ### onStart Attribute
