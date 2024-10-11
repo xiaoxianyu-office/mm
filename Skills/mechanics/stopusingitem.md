@@ -16,3 +16,7 @@ Skills:
   # with an aura to prevent the player from using a shield
   - aura{onTick=[ - stopusingitem ?isBlocking ];duration=500} @NearestPlayer
 ```
+
+
+## Aliases
+- [x] releaseitem
