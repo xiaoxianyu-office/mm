@@ -11,7 +11,7 @@ Creates a cloud of particles around the target location
 | potionduration | pd   | The duration of the potion effect                                    | 100     |
 | level     | lvl, l    | The level of the potion effect                                       | 1       |
 | duration  | d, cloudduration | The duration of the particle cloud                            | 200     |
-| durationreductiononuse  | drou         | The duration reduction for the cloud on use         | 0       |
+| durationreudctiononuse | drou         | The duration reduction for the cloud on use          | 0       |
 | radius    | r         | The radius of the cloud                                              | 2       | 
 | radiusreductiononuse | rrou | The radius reduction for the cloud on use                      | 0       |
 | radiusreductionontick | rrot | The radius reduction for the cloud per tick                   | 0       |
