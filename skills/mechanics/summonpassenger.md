@@ -5,8 +5,8 @@ Summons a mob to mount the caster. Will knock the current rider off if there is 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| passenger | p. rider, r, type, t | The type of the mob to set as the passenger               |         |
-| stack | s | Sets whether to mount the summoned entity to the current passenger of the caster | false |
+| passenger | p, rider, r, type, t | The type of the mob to set as the passenger               |         |
+| stack | s | Sets whether to mount the summoned entity to the current passenger of the caster | false   |
 
 
 ## Examples
