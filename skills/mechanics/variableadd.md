@@ -6,8 +6,8 @@ scope. Only works with numeric variable types.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| var       | name, key | The scope and name of the variable                                   |         |
 | amount    | a, value, val, v  | The amount to add                                            | 1       |
+> This mechanic inherits every *inheritable* attribute of the [SetVariable](skills/mechanics/setvariable) mechanic
 
 
 ## Examples
