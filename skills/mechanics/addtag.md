@@ -29,3 +29,8 @@ TagTest:
   Skills:
   - suicide @self
 ```
+
+
+## Aliases
+- [x] addscoreboardtag
+- [x] tagadd
