@@ -19,3 +19,7 @@ ResetMyMobScore:
   Skills:
   - setmobscore{o=MyScore;v=0}
 ```
+
+
+## Aliases
+- [x] sms
