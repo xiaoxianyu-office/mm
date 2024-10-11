@@ -13,7 +13,7 @@ Traces a ray to the target.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | entityskill   | eskill, es | meta-skill to use when the ray hits an entity                   |         |
 | locationskill | lskill, ls | meta-skill to use when the ray hits a location                  |         |
-| headshotskill | hskill, hs | meta-skill to use when it's a headshot                          |         |
+| headshotskill | hsskill, hs | meta-skill to use when it's a headshot                         |         |
 | maxdistance   | distance, md, d | max distance to trace                                      | 50      |
 | raywidth      | rw, w      | Width of the ray traced                                         | 0.2     | 
 | ignorepassableblocks | ignorepassable, ip    | ignores collision of passable blocks                                                                                                                     | true          |
@@ -21,8 +21,8 @@ Traces a ray to the target.
 | accuracy             | ac, a                 | spread of the traced ray                                                                                                                                 | 1             |
 | verticalnoise        | vn                    | vertical spread of the ray                                                                                                                               | 0             |
 | horizontalnoise      | hn                    | horizontal spread of the ray                                                                                                                             | 0             |
-| raytraceConditions   | rc, rcon, rconditions | Conditions applied to the raytraced target                                                                                                               | NONE          |
-| headshotmultiplier   | hsmultiplier, hsm     | headshot power multiplier                                                                                                                                | 1             |
+| raytraceConditions   | rc, rcond, rconditions| Conditions applied to the raytraced target                                                                                                               | NONE          |
+| headshotmultiplier   | hsmultipler, hsm     | headshot power multiplier                                                                                                                                | 1             |
 
 
 ## Examples
