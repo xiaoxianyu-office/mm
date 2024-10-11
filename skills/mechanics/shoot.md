@@ -7,11 +7,12 @@ additions.
 
 Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4.11
 
+
 ## Attributes
-| Attribute            | Aliases    | Description                                                                               | Default |
-|----------------------|------------|-------------------------------------------------------------------------------------------|---------|
-| type                 | t          | Type of projectile to shoot. Can be "arrow", "snowball", "egg", "enderpearl", or "potion" added "trident", "splash_potion", and "lingering_potion" in MM 4.11 | arrow   |
-| damage               | d          | How much damage the projectile will cause                                                 | 5       |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| type      | t         | Type of projectile to shoot. Can be "arrow", "snowball", "egg", "enderpearl", or "potion" added "trident", "splash_potion", and "lingering_potion" in MM 4.11 | arrow   |
+| damage               | d, amount  | How much damage the projectile will cause                                                 | 5       |
 | velocity             | v          | The velocity of the projectile                                                            | 1       |
 | maxDistance          | md         | The maximum distance the projectile will travel                                           | 64      |
 | vspread              | vs         | The vertical hit radius of the projectile                                                 | 0       |
@@ -33,6 +34,16 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 | ignoreenchants       |            | Whether or not to ignore enchantments when calculating total damage. This option is only available for 1.19+)                                                                     |     |
 | damageType           |            | Sets the type of damage to be inflicted ([Extra info](/skills/mechanics/damage#elements))                                      |     | 
 | damageCause          |            | Sets the damage cause for this damage mechanic ([Extra info](/skills/mechanics/damage#damagecause))                                                                        |     | 
+| verticaloffset       | vo         | The vertical offset of the shot projectile               | 0       |
+| horizontaloffset     | ho         | The horizontal offset of the shot projectile             | 0       |
+| gravity   | g         | Whether the projectile should be affected by gravity                 | true    |
+| startyoffset | syo    | The starting y offset of the projectile                              | 0       |
+| adjustvelocity | av   | If the caster is a player, adjusts the velocity and direction as if the player was shooting it themselves | true  |
+| calculatefiringangle | cfa        | If this is set and the projectile has `gravity`, the projectile will  trace an arc in the air before landing at the target location                                  | false   | 
+| verticalnoise  | vn  | The vertical noise (randomness) of the shot projectile | ((1-`accuracy`)*45)/10 |
+| horizontalnoise | hs  | The horizontal noise (randomness) of the shot projectile   | (1-`accuracy`)*45 |         
+| potiontype     | ptype, effect, pt, pe | The type of the potion applied to the projectile, if POTION | SLOW |
+| potionduration | pduration, pd | The duration of the potion effect                           | 100     |
 
 
 ## Examples
@@ -49,3 +60,7 @@ ArrowBarrage:
   - delay 10
   - shoot{type=ARROW;velocity=5;damage=10}
 ```
+
+
+## Aliases
+- [x] shootprojetile
