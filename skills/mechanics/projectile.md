@@ -298,6 +298,10 @@ hitConditions usage example:
 ```
 
 
+## Aliases
+- [x] p
+
+
 <!-- LINKS -->
 [Audience]: /Skills/Audience
 [billboard type]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Display.Billboard.html
