@@ -19,3 +19,10 @@ The header of the toast is set by the frame type, such as `challenge` being titl
   - sendtoast{icon=DIAMOND;iconnbt={CustomModelData:1};message="This is a Toast!";frame=challenge} @PlayersInRadius{r=10}
   - ...
 ```
+
+
+## Aliases
+- [x] toastmessage
+- [x] toastmsg
+- [x] advmessage
+- [x] advancementmessage
