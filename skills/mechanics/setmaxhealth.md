@@ -28,3 +28,7 @@ interacted with, instead of the new health being 5/5 it would become
   - setmaxhealth{amount=5;mode=SCALE} @self ~onInteract
   - ...
 ```
+
+
+## Aliases
+- [x] setmaxhp
