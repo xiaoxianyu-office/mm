@@ -23,6 +23,7 @@ StanceChangeSkill:
   - setstance{stance=bowphase} @self
 ```
 
+
 This skill would only be usable when the caster had the stance
 "bowphase"
 ```yaml
@@ -32,3 +33,7 @@ AnotherSkill:
   Skills:
   - ...some bow skills
 ```
+
+
+## Aliases
+- [x] stance
