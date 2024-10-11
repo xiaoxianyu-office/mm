@@ -27,6 +27,7 @@ A list of particle types can be found **[here](/Skills/Mechanics/Particle/Partic
 | direction | dir       | Specifies a vector for the particles to move towards.          | 0,0,0 (x,y,z) | 
 | fixedyaw  | yaw       | Sets the yaw of the effect                                           | -1111   |
 | fixedpitch| pitch     | Sets the pitch of the effect                                         | -1111   |
+| audience  |           | The [audience] of the particle effect                                | nearby  |
 
 #### Extra Attributes
 Depending on the specific [particle type] used, extra attributes will become available to use inside particle-related mechanics too. you can find more by accessing the specific particle's page from the [particle types wiki page]
@@ -39,7 +40,7 @@ This particle type will replace the spawned particle with the selected entity. T
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | useEyeLocation | uel  | (true/false) Whether to base the particles on the entity's eyes      | false   |
 | forwardOffset | startfoffset, sfo | The forward-offset from the targeted entity,doesn'n work when set directional to true                                                                            | 0       |
-| sideOffset| soffset, sso | The side-offset from the targeted entity,doesn'n work when set directional to true | 0 |
+| sideOffset| soffset, sso | The side-offset from the targeted entity, doesn'n work when set directional to true | 0 |
 
 ## Examples
 ```yaml
@@ -59,6 +60,7 @@ This particle type will replace the spawned particle with the selected entity. T
 ```
 
 ## Aliases
+- [x] effect:particles
 - [x] effect:particle
 - [x] particles
 - [x] particle
