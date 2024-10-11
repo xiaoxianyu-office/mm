@@ -6,7 +6,7 @@ location.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| yield     | y         | The yield (power) of the skull's explosion.                          | 1       |
+| yield     | strength, y, s | The yield (power) of the skull's explosion.                     | 1       |
 | playsound | ps        | Whether or not to play the skull launching sound when it is created  | false   |
 
 
