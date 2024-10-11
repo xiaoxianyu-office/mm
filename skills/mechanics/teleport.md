@@ -9,7 +9,7 @@ blocks. The unsafe attribute will allow mobs to teleport into the target entity.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| spreadh   | sh        | The horizontal spread of the landing location.                       | 0       |
+| spreadh   | sh, r, radius | The horizontal spread of the landing location.                   | 0       |
 | spreadv   | sv        | The vertical spread of the landing location.                         | 0       |
 | preservepitch | pp    | Whether the pitch value should be carried over                       | true    |
 | preserveyaw | py      | Whether the yaw value should be carried over                         | true    |
