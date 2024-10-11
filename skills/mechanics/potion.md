@@ -11,14 +11,15 @@ effects.
 
 
 ## Attributes
-| Attribute    | Aliases        | Description                                                                               | Default |
-|--------------|----------------|-------------------------------------------------------------------------------------------|---------|
-| type         | t              | The type of [potion effect](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) to apply.                           |         |
-| duration     | d              | The duration of the effect in ticks [1].                                                  | 100     |
-| level        | lvl, l         | The modifier-level of the potion effect. The real level is level's value +1. | 0       |
-| force        |                | Whether not to override the current potion effect or not. (4.0+)                          | false   |
-| hasParticles | particles or p | Whether not to show the status effect particles. (4.6+)                                   | true    |
-| hasIcon      | icon or i      | Whether not to show the status effect icon. (4.6+)                                        | true    |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| type      | t, effect | The type of [potion effect](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) to apply.   | SLOW    |
+| duration  | d         | The duration of the effect in ticks [1].                             | 100     |
+| level     | lvl, l    | The modifier-level of the potion effect. The real level is level's value +1.| 0|
+| force     | overwrite, ow, override, or | Whether not to override the current potion effect or not. | false |
+| hasParticles | particles, p | Whether not to show the status effect particles.               | true    |
+| hasIcon   | icon,  i  | Whether not to show the status effect icon.                          | true    |
+| ambientparticles | ambient, a | Whether to show ambient particles.                           | false   |
 
 
 ## Examples
