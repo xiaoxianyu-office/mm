@@ -3,9 +3,9 @@ Allows to either equip or remove a saddle on the target entity.
 
 
 ## Attributes
-| Attribute      | Aliases         | Description                                        | Default Value |
-|----------------|-----------------|----------------------------------------------------|---------------|
-| take           | t               | If the saddle should be taken away.                | false         |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| take      | t, remove, r | Whether the saddle should be taken away instead                   | false   |
 
 
 ## Examples
@@ -35,3 +35,8 @@ ExampleMob:
     ]
     } @self ~onInteract
 ```
+
+
+## Aliases
+- [x] setsaddle
+- [x] givesaddle
