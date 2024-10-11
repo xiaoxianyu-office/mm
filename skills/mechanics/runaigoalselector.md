@@ -16,7 +16,7 @@ More complex goals, such as a patrol with locations, may need to be inputted as 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| goal      |           | The ai goal selector you want to append                              |         |
+| goal      | aigoalselector, g, goalselector, s, string, t, target | The ai goal selector you want to append      |         |
 
 
 ## Examples
@@ -32,3 +32,4 @@ TimeToFlee:
 
 ## Aliases
 - [x] aigoal
+- [x] aigoals
