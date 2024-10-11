@@ -21,3 +21,7 @@ the casting mob in battle.
       value=1
       } @trigger ~onDamaged
 ```
+
+
+## Aliases
+- [x] sts
