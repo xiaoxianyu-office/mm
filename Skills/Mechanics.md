@@ -163,7 +163,7 @@ are able to target locations as well.
 | [Saddle][]                | Equips or remove a saddle on the target entity                                          |
 | [SendActionMessage][]     | Sends an Actionbar Message to the target player                                          |
 | [SendResourcePack][]      | Sends a Resource Pack to the target player                                               |
-| [SendTitleMessage][]      | Sends a Title/Subtitle Message to the target player                                      |
+| [SendTitle][]             | Sends a Title/Subtitle Message to the target player                                      |
 | [SendToast][]             | Sends an achievement toast to the target player                                          |
 | [SetAI][]                 | Disables/enables the AI of the target mob                                                |
 | [SetBlockOpen][]          | Sets the target block's open state                                                |
@@ -488,7 +488,7 @@ but not yet ready for use.
   [Saddle]: /skills/mechanics/saddle
   [SendActionMessage]: /skills/mechanics/sendactionmessage
   [SendResourcePack]: /skills/mechanics/sendresourcepack
-  [SendTitleMessage]: /skills/mechanics/sendtitlemessage
+  [SendTitle]: /Skills/Mechanics/SendTitle
   [SendToast]: /skills/mechanics/sendtoast
   [SetAI]: /skills/mechanics/setai
   [SetBlockOpen]: /skills/mechanics/SetBlockOpen
