@@ -7,11 +7,11 @@ You can force a new line in the hologram by using `\n`
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| offset    | o         | The y offset for the hologram.                                       | 0.6     |
+| offset    | o, yo, yoffset | The y offset for the hologram.                                  | 0.6     |
 | radius    | r         | The radius of entities which will see the chat message               | 12      |
-| maxlinelength | ll, mll, ml | The maximum length of the hologram                             | 22      |
+| maxlinelength | ll, mll, ml, linelength | The maximum length of the hologram                 | 22      |
 | lineprefix| lp        | The prefix for the hologram.                                         | &f      |
-| message   | m         | The message to be displayed (affects both hologram and chat)         |         |
+| message   | m, msg    | The message to be displayed (affects both hologram and chat)         |         |
 | chatprefix| cp        | The prefix for the chat message            | &lt;caster.name&gt;&f&lt;&co&gt;  |
 | duration  | d, ticks, time, t | The amount of time the hologram will be displayed for.               | MESSAGE LENGTH * 4  |
 | sendchatmessage | chatmessage, chat | Whether the message shows up in chat                   | true    |
@@ -37,6 +37,10 @@ You can force a new line in the hologram by using `\n`
     chatprefix=<caster.name>&f<&co>;
     duration=200} @self ~onSpawn
 ```
+
+
+## Aliases
+- [x] speech
 
 
 <!-- LINKS -->
