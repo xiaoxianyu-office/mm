@@ -18,6 +18,7 @@ Generates a particle effect based on an equation.
 
 
 ## Aliases
+- [x] effect:particleequation
 - [x] effect:particleeq
 - [x] particleequation
 - [x] particleeq
