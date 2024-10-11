@@ -22,3 +22,6 @@ SetSomeScore:
       v=2
       }
 ```
+
+## Aliases
+- [x] sgs
