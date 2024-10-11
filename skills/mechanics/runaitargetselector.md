@@ -11,10 +11,12 @@ A list of available targets can be found [here](/Mobs/Custom-AI#ai-target-select
 
 > **This is a no-target mechanic, and the affected entity will always be the caster**
 
+
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| target    |           | The target selector you want to append                               |         |
+| target    | aitargetselector, s, string, targetselector | The target selector you want to append                               |         |
+
 
 ## Examples
 ```yaml
@@ -24,6 +26,7 @@ TargetPossibleThreats:
   - runaitargetselector{target=players}
   - runaitargetselector{target=monsters}
 ```
+
 
 ## Aliases
 - [x] aitarget
