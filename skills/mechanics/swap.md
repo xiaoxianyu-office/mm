@@ -12,3 +12,7 @@ The caster of the swap mechanic will change places with the target.
   Skills:
   - swap @target
 ```
+
+
+## Aliases
+- [x] tpswap
