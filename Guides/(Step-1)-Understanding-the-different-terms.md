@@ -40,15 +40,38 @@ Triggers tell your mobs when to activate their mechanics and abilities. Triggers
 
 `- giveitem{i=DIAMOND;cd=10} @NearestPlayer ~onTimer:20`
 
-## Attributes
-Attributes are the information you can pass to a mechanic to customize how it works. In this example `cd=10` and `i=DIAMOND` are the attribute, telling the mechanic the item to give and to have a cooldown of 10 seconds. Attributes are seperated by a `;` symbol and must have a `=` before what you set.
-
-`- giveitem{i=DIAMOND;cd=10} @NearestPlayer ~onTimer:20`
 
 ## Conditions
 [Conditions Wiki](/Skills/Conditions)
 
 Conditions allow you to limit how things are executed. You can do inline conditions or use the conditions section wherever you are using them.
+
+
+## Attributes
+Attributes are the information you can pass to a mechanic/targeter/trigger/condition to customize how it works. In this example `cd=10` and `i=DIAMOND` are the attribute, telling the mechanic the item to give and to have a cooldown of 10 seconds. Attributes are seperated by a `;` symbol and must have a `=` before what you set.
+
+`- giveitem{i=DIAMOND;cd=10} @NearestPlayer ~onTimer:20`
+
+<details><summary>Attributes Table</summary>
+In each mechanic wiki page you will see a table with all the usable attributes written on it (if any) and related information.  
+For example:
+
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| attribute1| alias1, alias2| The description of what the attributes does                 | default value|
+| attribute2| alias3    | The description of what the attributes does                     | default value|
+| attribute3|           | The description of what the attributes does                     | default value|
+
+Is telling you that the mechanic has 3 different attributes: `attribute1`, `attribute2` and `attribute2`. Each attribute has an associate description of what it does and a "default value" that will be applied to it if none is explicitly specified. Some attributes also have "aliases", that are just different names you can use to set the same attribute.  
+</details>
+
+<details><summary>Attributes Inheritance</summary>
+Sometime you will see something *like* this written in the Attributes section:
+
+> This mechanic inherits every *inheritable* attribute of the [Damage](/Skills/Mechanics/Damage) mechanic
+
+And it means that, in addition to the attributes on the wiki page itself, the ones in the indicated mechanic are also used unless "non-inheritable". For instance, the Damage mechanic used for an example has a single attribute that cannot be inherited (`amount`), while all others are used
+</details>
 
 
 ## MetaSkills
@@ -77,5 +100,10 @@ Please note: Spawner files CANNOT be edited while the server is running, you mus
 [Variables Wiki](/Skills/Variables)
 
 Variables are a handy system used for storing information. You can then use the information in various other places such as placeholders in mechanics and conditions.
+
+## Placeholders
+[Placeholders Wiki](/Skills/Placeholders)
+
+Placeholders are used to display/fetch information from an entity, a location or a MetaSkill. For instance, the `<caster.hp>` placeholder can be used to fetch the amount of hp for the casting entity
 
 **[>> Step 2](/Guides/(Step-2)-Files-And-Directories)**
