@@ -1,11 +1,18 @@
 ## Description
 
-Damages the targeted entity.
+Damages the targeted entity.  
+
 
 ## Attributes
+
+### Non-Inheritable Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount    | a         | The amount of damage to deal                                         | 1       |
+
+### Inheritable Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
 | ignoreArmor | ia, i   | Whether or not to ignore armor, but will still use enchantment modifiers when calculating total damage                                                                       | false   |
 | preventknockback | pkb, pk | Whether or not to prevent knockback                             | false   |
 | preventimmunity  | pi      | Whether or not to prevent the [damage immunity ticks] on the target by setting them to 0 after the damage is inflicted                                                | false   |
@@ -23,6 +30,7 @@ Damages the targeted entity.
 | triggerSkills | ts    | Whether the damage mechanic should also be able to trigger `onAttack` related triggers       | false  |
 
 [damage immunity ticks]: /skills/mechanics/setnodamageticks
+
 
 ### DamageCause Attribute
 This attribute is only available in newer MM 5.0 builds.
