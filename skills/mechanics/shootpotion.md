@@ -10,8 +10,8 @@ potion effect of the given type to all entities hit.
 | duration  | d         | The duration of the effect, in ticks                                 | 100     |
 | level     | l         | The level of the potion effect                                       | 1       |
 | velocity  | v         | The velocity of the thrown potion                                    | 1       |
-| hasParticles | particles or p | Whether not to show the status effect particles              | true    |
-| hasIcon   | icon or i      | Whether not to show the status effect icon                      | true    |
+| hasParticles | particles, p | Whether not to show the status effect particles                | true    |
+| hasIcon   | icon, i      | Whether not to show the status effect icon                        | true    |
 
 
 ## Examples
