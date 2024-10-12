@@ -16,7 +16,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | onStartSkill | onStart, oS | Meta-Skill executed when the projectile starts at the projectile's origin location.                                                                                      |         |
-| onTickSkill  | onTick, oT  | Meta-Skill executed every [interval] ticks at the projectile's origin location                                                                                       |         |
+| onTickSkill  | onTick, oT, m, meta, s, skill | Meta-Skill executed every [interval] ticks at the projectile's origin location                                                                                       |         |
 | onHitSkill   | onHit, oH   | Meta-Skill executed when the projectile hits entities that are allowed be hit. Targets hit are inherited by the meta-skill.                                              |         |
 | onEndSkill   | onEnd, oE   | Meta-Skill executed when the projectile ends.                   |         |
 | onBounceSkill| onBounce    |Meta-Skill executed when the projectile bounces. **Premium Only**.|        |
@@ -32,7 +32,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | DeathDelay| death, dd | Delays the removal of project bullets when the projectile is terminated | 2    |
 | StartYOffset | syo    | Lets you offset where on the casting mob the projectile shoots from. | 1       |
 | StartFOffset | forwardoffset, sfo |  How far in front of the mob the projectile starts       | 1       |
-| TargetYOffset | tyo   | Lets you offset where on the target the projectile shoots at.        | 0       |
+| TargetYOffset | tyo, targety | Lets you offset where on the target the projectile shoots at. | 0       |
 | SideOffset | soffset, so | The value of this attribute gets inherited by StartSideOffset and EndSideOffset if no value is specified for them                                                | 0       |  
 | StartSideOffset | ssoffset, sso | How far to the side of the mob the projectile starts      |sideoffset|
 | EndSideOffset | endoffset, esoffset, eso | How far to the side of the target location the projectile will end up                                                                                   |sideoffset|
@@ -44,7 +44,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | VerticalNoise   | vn  | The randomness of the projectile in the vertical direction          |(1-ac)*4.5|
 | StopAtEntity | sE     | Whether the projectile will stop upon hitting a targetable entity   | true     |
 | StopAtBlock  | sB     | Whether the projectile will stop upon hitting an opaque block       | true     |
-| PowerAffectsRange |pa | Whether a mob's [power level](/Mobs/Power) affects the projectile's range| true|
+| PowerAffectsRange | par | Whether a mob's [power level](/Mobs/Power) affects the projectile's range| true|
 | PowerAffectsVelocity | pav | Whether a mob's [power level](/Mobs/Power) affects the projectile's velocity.                                                                                     | true     |
 | Interactable |        | Whether the projectile is interactable                              | false    |
 | HitSelf   |           | Whether the projectile can hit the caster                           | false    |
@@ -56,7 +56,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | hitConditions | conditions, cond, c | A list of conditions that a target must meet in order for the projectile to be able to hit it. **Premium Only** Mechanic  |  |
 | stopconditions | stpcond | A list of conditions that a target must meet in order for the projectile to end when hitting them                                                                         | null     |
 | fromorigin | fo       | Whether the projectile should start from the origin of the mechanic | false    |
-| requireLineOfSight | rlos, los | Whether the starting point must have line-of-sight to the origin.  Values can be `true`, `false`, `PLAYERS_ONLY`                                             | PLAYERS_ONLY |
+| requireLineOfSight | rlos, los, requirelos | Whether the starting point must have line-of-sight to the origin.  Values can be `true`, `false`, `PLAYERS_ONLY`                                             | PLAYERS_ONLY |
 | drawHitbox |          | Draw the hitbox of the projectile, useful for debugging             | false    |
 | tickinterpolation | interpolation, ti | Interpolates the specified amount of additional points between each tick of the projectile. The onTick and onHit skills will be applied there as well. Useful to fill in the gaps with super-fast projectiles and also prevent entities from being "skipped over"      | 0        |
 | shareSubHitboxCooldown | shcd | Whether all meg sub hitboxes should share the same immune delay with its base entity | true | 
