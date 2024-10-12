@@ -8,6 +8,7 @@ is not currently raining, but only if fire spread is enabled.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | damage    | d         | The amount of damage the strike will deal                            | 0.01337 |
+> This mechanic inherits every *inheritable* attribute of the [Damage](/Skills/Mechanics/Damage) mechanic
 
   
 ## Examples
