@@ -48,7 +48,7 @@ Conditions allow you to limit how things are executed. You can do inline conditi
 
 
 ## Attributes
-Attributes are the information you can pass to a mechanic/targeter/trigger/condition to customize how it works. In this example `cd=10` and `i=DIAMOND` are the attribute, telling the mechanic the item to give and to have a cooldown of 10 seconds. Attributes are seperated by a `;` symbol and must have a `=` before what you set.
+Attributes are the information you can pass to a mechanic/targeter/condition to customize how it works. In this example `cd=10` and `i=DIAMOND` are the attribute, telling the mechanic the item to give and to have a cooldown of 10 seconds. Attributes are seperated by a `;` symbol and must have a `=` before what you set.
 
 `- giveitem{i=DIAMOND;cd=10} @NearestPlayer ~onTimer:20`
 
