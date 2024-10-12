@@ -12,7 +12,7 @@ If the schematic defined in the mechanic is not found inside mm's `Schematics` f
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | schematic | s         | Which schematic to load                                              |         |
 | pasteID   | pid, id   | The paste's id. Can be used to undo the paste via the [undoPaste] mechanic |   |
-| pasteAir  | air, a    | Should air be pasted?                                                |         |
+| pasteAir  | air, a    | Should air be pasted?                                                | false   |
 | xOffset   | x, xo     | The X offset of pasting the Schematic from the target                | 0       |
 | yOffset   | y, yo     | The Y offset of pasting the Schematic from the target                | 0       |
 | zOffset   | z, zo     | The Z offset of pasting the Schematic from the target                | 0       |
