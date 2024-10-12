@@ -10,15 +10,13 @@ This mechanic is also an [aura].
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | color     | c         | The [color] with which the entity will glow                          | white   |
-| auraname  | buffname, debuffname | The name of the aura                                     | #glowing |
-| duration  | d         | How long the effect will last                                        | 100     |
 | audience  |           | The [audience] of the glow effect                                    | nearby  |
-
 > This mechanic inherits every attribute of the [Aura] mechanic 
 >> - The `auraname` attribute is **defaulted** at `#glowing`
 >> - The `charges` attribute is **set** at `1` and cannot be modified.  
 >> - The `maxStacks` attribute is **set** at `1` and cannot be modified.  
 >> - The `mergeAll` attribute is **set** at `true` and cannot be modified.  
+
 
 ### Color Attribute
 |    VALID     |   COLORS     |
