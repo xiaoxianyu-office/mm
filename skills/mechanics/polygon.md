@@ -8,7 +8,7 @@ The Polygon meta-mechanic can execute other skills in a polygon-shaped pattern. 
 | onStarSkill    | onStar, oS  | Meta-Skill executed at the "start of the "star" of the polygon, aka the figure formed inside of the polygon by tweaking the "skip" parameter                     |               |
 | onEdgeSkill    | onEdge, oE  | Meta-Skill executed on the segments that connects the vertices|         |
 | onHitEntitySkill | onHitEntity, ohe, oh | Meta-Skill executed when the polygon hits an entity. Only triggered once per entity inside the polygon area for every execution of the polygon mechanic |          |
-| Points         | p           | The amount of vertices of the polygon                   | 10            |
+| Points         | p           | The amount of vertices of the polygon                   | 32            |
 | Duration       | d           | The amount of ticks the polygon should take to fully form. A value of 0 creates a polygon instantly                                                              | 0             |
 | DistanceBetween| distance, density, db | The distance between points in the polygon    | 0.1           |
 | Scale          | size, s     | The scale of the polygon                                | 1             |
