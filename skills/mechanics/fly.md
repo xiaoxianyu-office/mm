@@ -4,9 +4,7 @@ attribute.
 
 
 ## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
-|-----------|-----------|----------------------------------------------------------------------|---------|
-| duration  | d         | Duration of the aura                                                 | 200     |
+> This mechanic inherits every *inheritable* attribute of the [Aura](/Skills/Mechanics/Aura) mechanic
 
   
 ## Examples
