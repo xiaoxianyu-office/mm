@@ -28,12 +28,6 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 | accuracy             | ac, a      | Accuracy of the projectile                                          | 1 |
 | knockback            | kb         | knockback strength of the projectile                                               | 0 |
 | piercelevel          | pl         | The amount of times the arrow can pierce through an entity                   | 0 | 
-| ignoreArmor          |            | Whether or not to ignore armor, but will still use enchantment modifiers when calculating total damage                                                                                 |     | 
-| preventImmunity      |            | Whether or not to ignore immunities                                        |     | 
-| preventKnockback     |            | Whether or not to prevent knockback                                         |     |
-| ignoreenchants       |            | Whether or not to ignore enchantments when calculating total damage. This option is only available for 1.19+)                                                                     |     |
-| damageType           |            | Sets the type of damage to be inflicted ([Extra info](/skills/mechanics/damage#elements))                                      |     | 
-| damageCause          |            | Sets the damage cause for this damage mechanic ([Extra info](/skills/mechanics/damage#damagecause))                                                                        |     | 
 | verticaloffset       | vo         | The vertical offset of the shot projectile               | 0       |
 | horizontaloffset     | ho         | The horizontal offset of the shot projectile             | 0       |
 | gravity   | g         | Whether the projectile should be affected by gravity                 | true    |
@@ -42,6 +36,7 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 | calculatefiringangle | cfa        | If this is set and the projectile has `gravity`, the projectile will  trace an arc in the air before landing at the target location                                  | false   | 
 | verticalnoise  | vn  | The vertical noise (randomness) of the shot projectile | ((1-`accuracy`)*45)/10 |
 | horizontalnoise | hn  | The horizontal noise (randomness) of the shot projectile   | (1-`accuracy`)*45 |         
+> This mechanic inherits every *inheritable* attribute of the [Damage](/Skills/Mechanics/Damage) mechanic
 
 
 ### Potion Type Attributes
