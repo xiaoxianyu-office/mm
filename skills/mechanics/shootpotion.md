@@ -7,7 +7,7 @@ potion effect of the given type to all entities hit.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | type      | t         | The type of [potion effect](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) to apply    |         |
-| duratio   | d         | The duration of the effect, in ticks                                 | 100     |
+| duration  | d         | The duration of the effect, in ticks                                 | 100     |
 | level     | l         | The level of the potion effect                                       | 1       |
 | velocity  | v         | The velocity of the thrown potion                                    | 1       |
 | hasParticles | particles or p | Whether not to show the status effect particles              | true    |
