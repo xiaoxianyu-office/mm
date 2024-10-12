@@ -24,7 +24,7 @@ Damages the targeted entity.
 | damageshelmet| dh     | Whether or not the helmet should be damaged                          | false   |
 | ignoreeffects| ieff   | Whether or not effects should be ignored                             | false   |
 | ignoreresistance | ir | Whether or not resistance should be ignored                          | false   |
-| poweraffectsdamage | paw | Should the skill's power affect the damage inflicted              | true    |
+| poweraffectsdamage | pad | Should the skill's power affect the damage inflicted              | true    |
 | tags         | tag    | Allows you to specify any number of arbitrary tags for the damage mechanic using `tags=THIS,THAT`                                                                               |         |
 | damagetype| element, e| *Becomes one of the Tags*                                            |         |
 | triggerSkills | ts    | Whether the damage mechanic should also be able to trigger `onAttack` related triggers       | false  |
