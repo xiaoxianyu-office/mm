@@ -9,6 +9,7 @@ This mechanic is also an [aura].
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
+| auraname  | buffname, debuffname | The name of the aura                                      | #glowing|
 | color     | c         | The [color] with which the entity will glow                          | white   |
 | audience  |           | The [audience] of the glow effect                                    | nearby  |
 > This mechanic inherits every attribute of the [Aura] mechanic 
