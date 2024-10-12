@@ -11,7 +11,7 @@ placeholders to store data.
 | variable  | name, n, var, key, k | The name of the variable. Can optionally be prefixed with `scope` | |
 | scope     | s         | The [scope](/skills/variables#variable_scopes) of the variable, e.g. where the variable will be located                                                                       | SKILL   |
 | save      |           | Whether the variable should save between reloads, reboots and disconnects. Does not apply to SKILL-scoped variables                                                            | false   |
-| duration  | d         | How long (in ticks) the variable should last. Does not apply to SKILL-scoped variables                                                                                      | Infinite|
+| duration  | d, e, expire | How long (in ticks) the variable should last. Does not apply to SKILL-scoped variables                                                                                      | Infinite|
 
 ### Non-Inheritable Attributes
 | Attribute | Aliases   | Description                                                          | Default |
