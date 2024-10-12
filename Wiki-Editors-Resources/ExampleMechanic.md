@@ -22,7 +22,7 @@ The description of the mechanic: what it does, how it does it, and possible note
 <!-- Optional, if an inheritance is in place -->
 > This mechanic inherits every *inheritable* attribute of the [ExampleMechanic2](/Skills/Mechanics/ExampleMechanic2) mechanic
 >> - The `attribute4` attribute is **defaulted** at `0`
->> - The `attribute5` attribute is **set** at `0`
+>> - The `attribute5` attribute is **set** at `0` and cannot be modified
 <!-- If inherited attributes have their default value changed -->
 <!-- Use a list only if more than one element is present -->
 
