@@ -14,14 +14,8 @@ Added projectile bullets to Orbital in MM 4.11. See how to use them on the [proj
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onStart   | oS        | Meta-Skill executed when the orbital first starts                    |         |
-| onTick    | oT        | Meta-Skill executed every [interval] ticks at the orbital's origin location |  |
 | onHit     | oH, onhitskill | Meta-Skill executed when the projectile hits something. Targets hit are inherited by the meta-skill                                                                    |         |
-| onEnd     | oE        | Meta-Skill executed when the projectile ends                         |         |
 | auraName  | buffName, debuffName | Optional name, required to use associated mechanics & conditions that reference a specific aura, and to make the aura be able to stack                               |         |
-| charges   | c         | If set, the orbital will stop after firing this many times           |         |
-| duration  | d         | The max duration (in ticks) the orbital will persist                 | 100     |
-| interval  | i         | How often (in ticks) the orbital updates its position                | 1       |
 | radius    | r         | The radius of the orbit around the target                            | 4       |
 | hitRadius | hr        | The radius around the orbital in which targets can be hit            | 1       |
 | verticalHitRadius | vhr, vr | The y component of the hitradius                           | `hitradius` |                                                                                                                       
@@ -42,13 +36,6 @@ Added projectile bullets to Orbital in MM 4.11. See how to use them on the [proj
 | hitPlayers       | hp | Whether can hit players                                              | true    |
 | hitNonPlayers    | hnp| Whether can hit non players                                          | false   |
 | hitSelf          | hs | Whether can hit caster                                               | false   |
-| cancelOnGiveDamage | cogd  | Whether end after given damage to other entities                | false   |
-| cancelOnTakeDamage | cotd  | Whether end after taken damage from other entities              | false   |
-| cancelOnDeath    | cod| Whether end after caster death                                       | true    |
-| cancelOnTeleport | cot| Whether end after caster teleported                                  | false   |
-| cancelOnChangeWorld | cocw | Whether end after caster join other world                       | false   |
-| cancelOnSkillUse | cosu    | Whether end after caster spell a skill                          | false   |
-| cancelOnQuit     | coq     | Whether end after caster quit                                   | true    |
 | hugsurface       | hs      | Whether or not the orbital should move along the ground         | false   |
 | hugliquid        | hugwater, huglava | Whether using `hugSurface` will also make the orbital move on top of liquids                                                                                     | false   |
 | heightfromsurface | hfs    | How high above the surface the orbital should glide if `HugSurface` is set to `true`                                                                                      | 0.5     |
