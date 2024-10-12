@@ -14,8 +14,8 @@ A list of particle types can be found **[here](/Skills/Mechanics/Particle/Partic
 | mob       | m, t      | The entity to spawn as the particle. Cannot be the original entity. **Premium Only**.                                                                                        |         |
 | amount    | count, a  | The number of particles to create                                    | 10      |
 | spread    | offset    | The vertical spread of the particles                                 | 0       |
-| hSpread   | hs        | The horizontal spread of the particles                               | 0       |
-| vSpread   | vs, yspread, ys| The spread of the particles on the y axis. Overwrites `spread`  | spread  |
+| hSpread   | hs        | The horizontal spread of the particles                               | `spread`|
+| vSpread   | vs, yspread, ys| The spread of the particles on the y axis. Overwrites `spread`  | `spread`|
 | xSpread   | xs        | The spread of the particles on the x axis. Overwrites `hSpread` on that axis       | hSpread |
 | zSpread   | zs        | The spread of the particles on the z axis. Overwrites `hSpread` on that axis                            | hSpread |
 | speed     | s         | The “speed” of the particles. If a particle has a [DataType](/Skills/Mechanics/Particle/Particle-Types#datatypes), this attribute will behave inconsistently. | 0    |
