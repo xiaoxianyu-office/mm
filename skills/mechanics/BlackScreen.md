@@ -3,11 +3,7 @@ Causes the player's screen to black out.
 
 
 ## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
-|-----------|-----------|----------------------------------------------------------------------|---------|
-| duration  | d         | The duration of the effect                                           |         |
-| cancel    | c         | Whether the effect should be cancelled instead                       |         |
-> This mechanic inherits every attribute of the [Aura] mechanic  
+> This mechanic inherits every attribute of the [Aura](/Skills/Mechanics/Aura) mechanic
 >> - The `auraname` attribute is **set** at `#blackScreen`
 >> - The `maxStacks` attribute is **set** at `1`  
 >> - The `refreshDuration` attribute is **set** at `true`  
@@ -26,7 +22,3 @@ BlackScreen:
 ## Aliases
 - [x] effect:blackScreen
 - [x] e:blackScreen
-
-
-<!-- LINKS -->
-[aura]: /skills/mechanics/aura
