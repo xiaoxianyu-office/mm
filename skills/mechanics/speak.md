@@ -7,7 +7,7 @@ You can force a new line in the hologram by using `\n`
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| offset    | o, yo, yoffset | The y offset for the hologram.                                  | 0.6     |
+| offset    | o, yo, yoffset | The y offset for the hologram.                                  | 1       |
 | radius    | r         | The radius of entities which will see the chat message               | 12      |
 | maxlinelength | ll, mll, ml, linelength | The maximum length of the hologram                 | 22      |
 | lineprefix| lp        | The prefix for the hologram.                                         | &f      |
