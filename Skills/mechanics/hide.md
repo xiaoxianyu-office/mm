@@ -7,7 +7,6 @@ Hides the caster from the targeted players for a set duration.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| duration  | d         | The given duration                                                   | 0       |
 | auraname  | buffname, debuffname | The name of the aura                                      | #hiding |
 | ignoreAuraOptions| iao, permanent, perma | This will make the mechanic ignore any [aura]-related option and the `duration` attribute      | false   | 
 
