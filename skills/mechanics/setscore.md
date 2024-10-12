@@ -5,11 +5,8 @@ only capable of performing the **set**-action.
 
 
 ## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
-|-----------|-----------|----------------------------------------------------------------------|---------|
-| objective | obj, o  | Specifies the scoreboard objectiv to be changed. If the objective doesn't exist it will automatically be created by the mechanic                                                  |         |
-| value    | v       | The value to perform the operation with                                 |         |
-| name, entry | n, e    | The name of the fake player                                          | dummy   |
+> This mechanic inherits every *inheritable* attribute of the [ModifyScore](/Skills/Mechanics/modifyscore) mechanic
+>> - The `action` attribute is **set** at `SET` and cannot be modified
 
   
 ## Examples
