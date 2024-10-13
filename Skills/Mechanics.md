@@ -69,7 +69,7 @@ are able to target locations as well.
 | [CurrencyTake][]          | Take money from a player. Requires Vault and a currency plugin                           |
 | [Damage][]                | Damages the target for an amount                                                         |
 | [BaseDamage][]            | Damages the target for a percent of the mob's damage stat                                |
-| [DamagePercent][]         | Damages the target for a percent of their health                                         |
+| [PercentDamage][]         | Damages the target for a percent of their health                                         |
 | [Decapitate][]            | Drops a player head item based on target                                                 |
 | [Doppleganger][]          | Copies the appearance of the target player                                               |
 | [DropItem][]              | Drops an item or droptable at the target location                                        |
@@ -92,6 +92,7 @@ are able to target locations as well.
 | [Geyser][]                | Creates a "geyser" of water or lava                                                                   |
 | [GiveItem][]              | Gives an item to the target                                                              |
 | [GiveItemFromSlot][]      | Gives an item to the target from the item in the given slot of caster                    |
+| [GiveItemFromTarget][]    | Gives the caster an item while playing the pickup-item animation from the target entity or location   |
 | [Glow][]                  | Makes the target glow                                                                    |
 | [GoatRam][]               | Causes the casting goat mob to ram the targeted entity                            |
 | [GoTo][]                  | Move toward the location of the targeter (entity or location)                            |
@@ -293,7 +294,7 @@ by these will "inherit" the targets (if applicable).
 | [Slash][]               | Creates a highly-customizable slash pattern that can execute metaskills.                                                                               |
 | [SudoSkill][]           | Makes the target execute a skill                                                                                                                        |
 | [Switch][]              | Acts as a switch/case                                                                                                                                   |
-| [StatAura]              | Applies an aura to the target that applies a specific stat to them                                                                                                                                   |
+| [StatAura][]            | Applies an aura to the target that applies a specific stat to them                                                                                                                                   |
 | [Totem][]               | Creates a static "totem" at a location that can execute other skills                                                                                    |
 | [Terminable][]          | Creates an [aura] that cancels the execution of its onStart metaskill is some conditions are met        |
 | [Volley][]              | Shoots a volley of projectile-items at the target with various options                                                                                  |
@@ -398,7 +399,7 @@ but not yet ready for use.
   [CurrencyTake]: /skills/mechanics/currencytake
   [Damage]: /skills/mechanics/damage
   [BaseDamage]: /skills/mechanics/basedamage
-  [DamagePercent]: /skills/mechanics/percentdamage
+  [PercentDamage]: /skills/mechanics/percentdamage
   [Decapitate]: /skills/mechanics/decapitate
   [Doppleganger]: /skills/mechanics/doppleganger
   [DropItem]: /skills/mechanics/dropitem
@@ -629,4 +630,4 @@ but not yet ready for use.
   [OnInteract]: /skills/mechanics/oninteract
   [OnJump]: /skills/mechanics/onjump
   [OnDeath]: /skills/mechanics/ondeath
-  [Switch]: /skills/mechanics/Switch
+  [Switch]: /skills/mechanics/Switchs
