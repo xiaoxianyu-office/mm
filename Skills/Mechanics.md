@@ -292,7 +292,7 @@ by these will "inherit" the targets (if applicable).
 | [Shoot][]               | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                                               |
 | [Slash][]               | Creates a highly-customizable slash pattern that can execute metaskills.                                                                               |
 | [SudoSkill][]           | Makes the target execute a skill                                                                                                                        |
-| [Switch-Case][]         | Acts as a switch/case                                                                                                                                   |
+| [Switch][]              | Acts as a switch/case                                                                                                                                   |
 | [StatAura]              | Applies an aura to the target that applies a specific stat to them                                                                                                                                   |
 | [Totem][]               | Creates a static "totem" at a location that can execute other skills                                                                                    |
 | [Terminable][]          | Creates an [aura] that cancels the execution of its onStart metaskill is some conditions are met        |
@@ -629,4 +629,4 @@ but not yet ready for use.
   [OnInteract]: /skills/mechanics/oninteract
   [OnJump]: /skills/mechanics/onjump
   [OnDeath]: /skills/mechanics/ondeath
-  [Switch-Case]: /skills/mechanics/switch-case
+  [Switch]: /skills/mechanics/Switch
