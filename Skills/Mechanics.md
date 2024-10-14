@@ -322,7 +322,6 @@ The following attributes are applicable to all mechanics.
 | repeatInterval | repeatI | How many ticks must elapse between repetitions                    | 0       |
 | targetInterval | targetI | How many ticks must elapse between target selection               | 0       |
 | origin | | *[PREMIUM]** Change the origin to whatever targeter is supplied. Does not work if more than one target is parsed. `origin=@Forward{f=10}` |   |
-| forcesync | sync      | Forces the execution type to be SYNC                                 | false   |
 | power     |           | [Power](/mobs/Power) multiplier                                      | 1       |
 | fromorigin | fo, sourceisorigin, castfromorigin | Whether to cast the mechanic from origin   | false   |
 | targetisorigin |      | Whether to set the target of the mechanic to be the origin           | false   |
@@ -330,6 +329,7 @@ The following attributes are applicable to all mechanics.
 | splitPower| powersplit, powersplitbetweentargets | Whether to split the power between targets| false   |
 | faulty    |           | Whether the mechanic should use the old vector formula               | true    |
 | chance    |           | The chance of the mechanic executing. For instance, 0.1 is a 10% chance | 1    |
+| forcesync | sync      | Whether to force the mechanic to be run synchroniously with the main Minecraft thread. This *generally* worsens performances (albeit usually in a non-perceptible fashion), but **some mechanics needs this to be set to true** *(for instance, the [cancelevent] mechanic, since an event cannot be cancelled if the mechanics comes in "late" and the event has already happened)*             | false   |
 
 
 # Examples
