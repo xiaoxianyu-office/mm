@@ -76,6 +76,10 @@ are able to target locations as well.
 | [EjectPassenger][]        | Ejects anything riding the caster                                                        |
 | [Ender][]                 | Causes the "Ender" effect                                                   |
 | [EnderBeam][]             | Creates a EnderCrystal's beam effect to the target                          |
+| [EnderDragonResetCrystals][] | Generates the EnderDragon crystals                                                   |
+| [EnderDragonSetPhase][]   | Sets the EnderDragon phase                                                   |
+| [EnderDragonSetRespawnPhase][] | Sets the EnderDragon respawn phase                                                   |
+| [EnderDragonSpawnPortal][] | Generates the portal of the EnderDragon battle                                                   |
 | [Equip][]                 | Causes the casting mob to equip an item                                                  |
 | [EquipCopy][]             | Causes the caster to equip a copy of the target's equipment                                                  |
 | [Explosion][]             | Causes an explosion                                                                      |
@@ -406,6 +410,10 @@ but not yet ready for use.
   [EjectPassenger]: /skills/mechanics/ejectpassenger
   [Ender]: /skills/mechanics/Ender
   [EnderBeam]: /skills/mechanics/EnderBeam
+  [EnderDragonResetCrystals]: /Skills/Mechanics/EnderDragonResetCrystals
+  [EnderDragonSetPhase]: /Skills/Mechanics/EnderDragonSetPhase
+  [EnderDragonSetRespawnPhase]: /Skills/Mechanics/EnderDragonSetRespawnPhase
+  [EnderDragonSpawnPortal]: /Skills/Mechanics/EnderDragonSpawnPortal
   [Equip]: /skills/mechanics/equip
   [EquipCopy]: /skills/mechanics/equipcopy
   [Explosion]: /skills/mechanics/explosion
