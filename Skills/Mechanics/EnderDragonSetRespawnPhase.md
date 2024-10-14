@@ -29,4 +29,4 @@ The most up to date list can be found in the [javadoc](https://hub.spigotmc.org/
 
 
 ## Aliases
-- [x] `setEnderDragonRespawnPhase`
+- [x] setEnderDragonRespawnPhase
