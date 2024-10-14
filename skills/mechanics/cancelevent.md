@@ -3,14 +3,14 @@
 Cancel the Event that triggered the skill. This mechanic has several
 important requirements in order to execute properly:
 
--   **The mechanic or initial skill must be run with sync=true. Example: -
-    skill{s=CancelEventSkill;sync=true} ~onDamaged**
+-   **The mechanic or initial skill must be run with sync=true.**
+> Example: -
+    skill{s=CancelEventSkill;sync=true} ~onDamaged
 -   No delays allowed.
--   Not all triggers support it. 
--   Other mechanics within that skill can still be triggered.
+-   Not all triggers are associated with events that can be cancelled. 
+-   Other mechanics that listens to the same trigger will still be triggered even if the event is ultimately cancelled.
 
 ### Compatible Triggers
-
 -   ~onAttack
 -   ~onBucket
 -   ~onDamaged
@@ -22,6 +22,12 @@ important requirements in order to execute properly:
 -   ~onShoot (Requires Crucible for a bow / crossbow if the caster is a player)
 -   ~onUse (Requires Crucible)
 -   ~onConsume (Requires Crucible)
+
+> This is not a complete list, and other triggers may work too, the ones listed here are just the confirmed ones
+
+## Attributes
+> *This mechanic has no attributes*
+
 
 ## Examples
 
