@@ -84,6 +84,8 @@ One must then note that this operation is not exclusive to mechanic's attribute:
 # Storing Dynamic Metaskills
 As you already saw, the newly made metaskill is being stored inside a variable. The variable can have any scope you deem fit, persist for as long as you want and have all the other cool stuff variables have. You can also store these skills inside NBTs, making items of your making being able to have completely custom skills for them
 
+> Please note that storing this type of data inside NBTs can be dangerous if the players in your server have some degree of control over their items. For instance, in a server with creative mode enabled, a player could fetch items from their saved ones with custom NBTs in them and execute arbitrary code at will
+
 
 # Limitations
 Since this is not a planned feature, its implementations do have some problems.
