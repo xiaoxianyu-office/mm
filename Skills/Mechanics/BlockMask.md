@@ -5,7 +5,7 @@ Note that the blockmask effect will never actually change any blocks in the worl
 
 The material attribute accepts as valid values the [Bukkit name](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html) that is relative to it.
 
-Bukkit material/block names can be acquired ingame. Simply hold the block you want to use for the effect in your hand and then use the command “/itemdb”. This command will output the bukkit-material info along with some other info, including the data value of the block. This command should work on any bukkit/spigot server.
+Bukkit material/block names can be acquired in-game. Simply hold the block you want to use for the effect in your hand and then use the command “/itemdb”. This command will output the bukkit-material info along with some other info, including the data value of the block. This command should work on any bukkit/spigot server.
 
 
 ## Attributes
