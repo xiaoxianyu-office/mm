@@ -1,5 +1,5 @@
 ## Description
-Generate the portal of the EnderDragon battle
+Generates the portal of the EnderDragon battle
 
 
 ## Attributes
