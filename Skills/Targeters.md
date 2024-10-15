@@ -189,16 +189,16 @@ There are some common attributes that can be used in most of the Targeters, depe
 
 ## All Targeters
 
-| Attribute                                | Shorthand        | Description                                                                                                      |
-| ---------------------------------------- | ---------------- | ----------------------------------------- 
-| targetconditions                         | conditions, cond, c | [Inline Target Conditions](/Skills/Inline-Conditions#targetconditions) |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| targetconditions                         | conditions, cond, c | [Inline Target Conditions](/Skills/Inline-Conditions#targetconditions) | |
 
 ### Sudo Attributes
-| Attribute                                | Shorthand        | Description                                                                                                      |
-| ---------------------------------------- | ---------------- | ----------------------------------------- 
-| sudoparent                               | fromparent, ofparent, asparent, parent, ofparent                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Parent][] of the casting entity executing the mechanic|
-| sudoowner                                | fromowner, ofowner, asowner, owner, ofowner                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Owner][] of the casting entity executing the mechanic |
-| sudotrigger                                | fromtrigger, oftrigger, astrigger, trigger, oftrigger                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Trigger][] of the skilltree executing the mechanic |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| sudoparent                               | fromparent, ofparent, asparent, parent, ofparent                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Parent][] of the casting entity executing the mechanic | |
+| sudoowner                                | fromowner, ofowner, asowner, owner, ofowner                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Owner][] of the casting entity executing the mechanic | |
+| sudotrigger                                | fromtrigger, oftrigger, astrigger, trigger, oftrigger                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Trigger][] of the skilltree executing the mechanic | |
 
 In this example, [the mob will keep getting teleported in front of its owner](https://cdn.discordapp.com/attachments/523443579574681600/1101186712174088253/a.gif), since the `Forward` targeter is using the `sudoowner` attribute, and is, as such, getting parsed as if it was the owner of the casting mob executing the mechanic
 ```yaml
@@ -210,33 +210,33 @@ TestOwner:
 ```
 
 ## Entity Targeters
-| Attribute                                | Shorthand        | Description                                                                                                      |
-| ---------------------------------------- | ---------------- | ----------------------------------------- |
-| useboundingbox                           | bb               | If the targeter is performing a distance check, this option allows it to check against the bounding box of the target instead of the center of its hitbox |
-| unique                                   | u                | The maximum number of times an entity can be targeted. Defaults to 1, disable with 0. This is mostly used for meg models with multiple hitboxes |
-| nomegbb                                  | nmb              | Whether MEG sub hitboxes should be filtered out |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| useboundingbox                           | bb               | If the targeter is performing a distance check, this option allows it to check against the bounding box of the target instead of the center of its hitbox | |
+| unique                                   | u                | The maximum number of times an entity can be targeted. Defaults to 1, disable with 0. This is mostly used for meg models with multiple hitboxes | |
+| nomegbb                                  | nmb              | Whether MEG sub hitboxes should be filtered out | |
 
 ## Location Targeters
-| Attribute                                | Shorthand        | Description                                                                                                      |
-| ---------------------------------------- | ---------------- | ----------------------------------------- |
-| xoffset                                  | xo, x            | Centers the offset on the x axis           |
-| yoffset                                  | yo, y            | Centers the offset on the y axis           |
-| zoffset                                  | zo, z            | Centers the offset on the z axis           |
-| forwardOffset                            | foffset, fo      | Centers forward and backward offset, based on the caster's viewing angle |
-| sideOffset                               | soffset, so      | Centers left and right offset, based on the caster's viewing angle |
-| rotatex                                  | rotx             | Rotation on the x axis                    |
-| rotatey                                  | roty             | Rotation on the y axis                    |
-| rotatez                                  | rotz             | Rotation on the z axis                    |
-| coordinatex                              | cx               | Sets the x axis coordinate                    |
-| coordinatey                              | cy               | Sets the y axis coordinate                    |
-| coordinatez                              | cz               | Sets the z axis coordinate                    |
-| length                                   |                  | Multiplied the direction vector by the specified value                            |
-| blocktypes                               | blocktype, bt    | Only targets selected block types. Multiple blocks can be listed by separating them using a `,`<br>You can add a `#` at the front of the type to indicate that the block only needs to match part of the type, add `@` to indicate that the block only needs to match the start of the type |
-| blockignores                             | blockignore      | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` |
-| coordinateyaw                            | cyaw             | Sets the yaw value                        |
-| coordinatepitch                          | cpitch           | Sets the pitch value                        |
-| blockcentered                            | centered         | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself |
-| faulty    |           | Whether the mechanic should use the old vector formula. Defaults to true        |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| xoffset                                  | xo, x            | Centers the offset on the x axis           | |
+| yoffset                                  | yo, y            | Centers the offset on the y axis           | |
+| zoffset                                  | zo, z            | Centers the offset on the z axis           | |
+| forwardOffset                            | foffset, fo      | Centers forward and backward offset, based on the caster's viewing angle | |
+| sideOffset                               | soffset, so      | Centers left and right offset, based on the caster's viewing angle | |
+| rotatex                                  | rotx             | Rotation on the x axis                    | |
+| rotatey                                  | roty             | Rotation on the y axis                    | |
+| rotatez                                  | rotz             | Rotation on the z axis                    | |
+| coordinatex                              | cx               | Sets the x axis coordinate                    | |
+| coordinatey                              | cy               | Sets the y axis coordinate                    | |
+| coordinatez                              | cz               | Sets the z axis coordinate                    | |
+| length                                   |                  | Multiplied the direction vector by the specified value                            | |
+| blocktypes                               | blocktype, bt    | Only targets selected block types. Multiple blocks can be listed by separating them using a `,`<br>You can add a `#` at the front of the type to indicate that the block only needs to match part of the type, add `@` to indicate that the block only needs to match the start of the type | |
+| blockignores                             | blockignore      | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` | |
+| coordinateyaw                            | cyaw             | Sets the yaw value                        | |
+| coordinatepitch                          | cpitch           | Sets the pitch value                        | |
+| blockcentered                            | centered         | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself | |
+| faulty    |           | Whether the mechanic should use the old vector formula. Defaults to true        | |
 
 
 # Targeter Options
