@@ -148,7 +148,8 @@ Examples:
 ### Universal Bullet Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletforwardoffset | bulletfo, bulletoffset | The offset of the bullet                      | 1.8     |
+| bulletforwardoffset | bulletfo, bulletoffset, bfo | The offset of the bullet                 | 1.8     |
+| bulletYOffset | byo   | The Y offset of the bullet                                           | 0       | 
 
 ### ARROW Bullet
 | Attribute | Aliases   | Description                                                          | Default |
@@ -174,7 +175,7 @@ Examples:
 | bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
 |bulletModel| model     | The CustomModelData of the material                                  | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
-| bulletmatchdirection | bmd | Should the bullet face where the projectile is facing           | false   |
+| bulletmatchdirection | bmd, bulletsmall | Should the bullet face where the projectile is facing | false |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
 | audience  |           | The [Audience][] of the bullet                                       | world   |
 
@@ -216,7 +217,7 @@ Examples:
 ### DISPLAY Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
+| bulletmaterial | material, mat, bulletitem | The material of the bullet                      | STONE   |
 |bulletModel| model     | The CustomModelData of the material                                  | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
@@ -242,6 +243,7 @@ Examples:
 | bulletCullingHeight | cullHeight | The bullet's display culling height                       | 0.0     |
 | bulletCullingWidth | cullWidth | The bullet's display culling width                          | 0.0     |
 | audience  |           | The [Audience][] of the bullet                                       | world   |
+| bulletgen | generation, bulletgeneration | If MythicCrucible is installed, the generation option for the bullet item |
 
 ### ME Bullet
 | Attribute | Aliases   | Description                                                          | Default |
