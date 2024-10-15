@@ -22,12 +22,15 @@ A list of particle types can be found **[here](/Skills/Mechanics/Particle/Partic
 | yOffset   | y         | The Y offset of the particles from the target                        | 0       |
 | viewDistance | vd     | The distance the particles are rendered                              | 128     |
 | fromorigin| fo        | Should the particles be generated from the origin of the mechanic    | false   |
-| directional| d        | Does the particle use directional travel                             | false   | 
+| directional| d        | Does the particle use directional travel. The [particle type] used must not have additional data (extra attributes)                                                             | false   | 
 | directionReversed| dr | Reverses the direction of the particles.                             | false   | 
 | direction | dir       | Specifies a vector for the particles to move towards.          | 0,0,0 (x,y,z) | 
 | fixedyaw  | yaw       | Sets the yaw of the effect                                           | -1111   |
 | fixedpitch| pitch     | Sets the pitch of the effect                                         | -1111   |
 | audience  |           | The [audience] of the particle effect                                | nearby  |
+| color     | c         | The color of the particle, if supported                              |        |
+| exactoffsets | eo     | Changes the formula with which random spawn locations for the particles are computed | false |
+
 
 #### Extra Attributes
 Depending on the specific [particle type] used, extra attributes will become available to use inside particle-related mechanics too. you can find more by accessing the specific particle's page from the [particle types wiki page]
