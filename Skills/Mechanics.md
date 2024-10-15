@@ -190,6 +190,7 @@ are able to target locations as well.
 | [SetMobColor][]           | Changes the color of the target if it is a colorable mob                                 |
 | [SetMobScore][]           | Sets a scoreboard value on the casting mob                                               |
 | [SetName][]               | Changes the caster entity's name                                                         |
+| [setRaiderCanJoinRaid][]  | Sets if the target raider entity can join a raid or not                                                         |
 | [SetRaiderPatrolBlock][]  | Sets the target raider to patrol a location                                                         |
 | [SetRaiderPatrolLeader][] | Sets the raider patrol leader                                                         |
 | [SetFaction][]            | Changes the target entity's faction                                                      |
@@ -528,6 +529,7 @@ but not yet ready for use.
   [SetOwner]: /skills/mechanics/setowner
   [SetParent]: /skills/mechanics/SetParent
   [SetPitch]: /skills/mechanics/SetPitch
+  [setRaiderCanJoinRaid]: /Skills/Mechanics/setRaiderCanJoinRaid
   [SetRaiderPatrolBlock]: /skills/mechanics/setraiderpatrolblock
   [SetRaiderPatrolLeader]: /skills/mechanics/setraiderpatrolleader
   [SetRotation]: /skills/mechanics/setrotation
