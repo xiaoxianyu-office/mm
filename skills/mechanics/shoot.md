@@ -17,6 +17,7 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 | maxDistance | md      | The maximum distance the projectile will travel                      | 64      |
 | poweraffectsvelocity | pav | Whether the mobs power level should affect the velocity of the projectile                 | true    |
 | interval  | int, i    | How often per second the projectile creates a tick-event             | 4       |
+| item      |           | The item being shot. Only applicable to some projectile types        |         |
 | ontickskill | ontick, ot, m, meta, s, skill | The meta-skill to execute on each tick/interval of the projectile | None |
 | onhitskill | onhit, oh| The meta-skill to execute when the projectile hits its target        |         |
 | onendskill | onend, oe| The meta-skill to execute when the projectile misses and ends        |         |
