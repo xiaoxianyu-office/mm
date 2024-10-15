@@ -11,23 +11,21 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type      | t         | Type of projectile to shoot. Can be "arrow", "snowball", "egg", "enderpearl", or "potion" added "trident", "splash_potion", and "lingering_potion" in MM 4.11 | arrow   |
-| damage               | d, amount  | How much damage the projectile will cause                                                 | 5       |
-| velocity             | v          | The velocity of the projectile                                                            | 1       |
-| maxDistance          | md         | The maximum distance the projectile will travel                                           | 64      |
-| vspread              | vs         | The vertical hit radius of the projectile                                                 | 0       |
-| hspread              | hs         | The horizontal hit radius of the projectile                                               | 0       |
-| poweraffectsvelocity | pav        | Whether the mobs power level should affect the velocity of the projectile                 | true    |
-| interval             | int, i     | How often per second the projectile creates a tick-event                                  | 4       |
-| ontickskill | ontick, ot, m, meta, s, skill | The meta-skill to execute on each tick/interval of the projectile                         | None |
-| onhitskill           | onhit, oh  | The meta-skill to execute when the projectile hits its target                             | None |
-| onendskill           | onend, oe  | The meta-skill to execute when the projectile misses and ends                             | None |
-| bounce               |            | Whether the projectile will bounce when it hits something                            | false |
-| pickup               |            | Can pickup the item.                                                        | false |
-| expiration           | duration, expire, e | How many ticks should the projectile exist for after it has landed before it gets removed                                                                  | 100     |
-| accuracy             | ac, a      | Accuracy of the projectile                                          | 1 |
-| knockback            | kb         | knockback strength of the projectile                                               | 0 |
-| piercelevel          | pl         | The amount of times the arrow can pierce through an entity                   | 0 | 
+| type      | t         | Type of projectile to shoot.                                         | arrow   |
+| damage    | d, amount | How much damage the projectile will cause                            | 5       |
+| velocity  | v         | The velocity of the projectile                                       | 1       |
+| maxDistance | md      | The maximum distance the projectile will travel                      | 64      |
+| poweraffectsvelocity | pav | Whether the mobs power level should affect the velocity of the projectile                 | true    |
+| interval  | int, i    | How often per second the projectile creates a tick-event             | 4       |
+| ontickskill | ontick, ot, m, meta, s, skill | The meta-skill to execute on each tick/interval of the projectile | None |
+| onhitskill | onhit, oh| The meta-skill to execute when the projectile hits its target        |         |
+| onendskill | onend, oe| The meta-skill to execute when the projectile misses and ends        |         |
+| bounce    |           | Whether the projectile will bounce when it hits something            | false   |
+| pickup    |           | Can pickup the item.                                                 | false   |
+| expiration | duration, expire, e | How many ticks should the projectile exist for after it has landed before it gets removed                                                                         | 100     |
+| accuracy  | ac, a     | Accuracy of the projectile                                           | 1       |
+| knockback | kb        | knockback strength of the projectile                                 | 0       |
+| piercelevel | pl      | The amount of times the arrow can pierce through an entity           | 0       | 
 | verticaloffset       | vo         | The vertical offset of the shot projectile               | 0       |
 | horizontaloffset     | ho         | The horizontal offset of the shot projectile             | 0       |
 | gravity   | g         | Whether the projectile should be affected by gravity                 | true    |
@@ -38,8 +36,21 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 | horizontalnoise | hn  | The horizontal noise (randomness) of the shot projectile   | (1-`accuracy`)*45 |         
 > This mechanic inherits every *inheritable* attribute of the [Damage](/Skills/Mechanics/Damage) mechanic
 
+### Type Attribute
+The types for the projectile can be
+| Type            | Aliases        |
+|-----------------|----------------|
+| `ARROW`         |                |
+| `SNOWBALL`      |                |
+| `EGG`           |                |
+| `ENDERPEARL`    |                |
+| `POTION`        | `SPLASH_POTION`|
+| `LINGERING_POTION` |             |
+| `ITEM`          |                |
+| `BLOCK`         | `FALLING_BLOCK`|
+| `TRIDENT`       |                |
 
-### Potion Type Attributes
+#### Potion Type Attributes
 These attributes apply if the projectile is of `type` `POTION`
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
@@ -52,7 +63,7 @@ These attributes apply if the projectile is of `type` `POTION`
 | ambientparticles | ambient  | Whether to show ambient particles.                           | false   |
 
 
-### Trident Type Attributes
+#### Trident Type Attributes
 These attributes apply if the projectile is of `type` `TRIDENT`
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
