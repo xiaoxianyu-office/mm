@@ -18,7 +18,7 @@ If the schematic defined in the mechanic is not found inside mm's `Schematics` f
 | zOffset   | z, zo     | The Z offset of pasting the Schematic from the target                | 0       |
 | rotation  | rot, r    | the rotation of the pasted schematic, in degrees                     | 0       |
 | center    | c         | Whether or not to center the schematic                               | true    |
-| chestDropTable | chests,cdt | Which MythicMob Drop Tables to supply the chests within the Schematic with
+| chestDropTable | chests,cdt | Which MythicMob Drop Tables to supply the chests within the Schematic with |
 | trapchestDropTable | trapchests, tcdt | Which MythicMob Drop Tables to supply the Trapped Chests within the Schematic with                                                                      |         |
 | blocksPerTick  | bpt  | The number of blocks that are placed every tick. If 0, all of the blocks will be pasted in a single tick | 0       |
 | duration  | d         | If greater than 0, will undo the paste operation after that amount of ticks has elapsed | 0 |
