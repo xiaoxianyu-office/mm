@@ -198,6 +198,7 @@ are able to target locations as well.
 | [SetNoDamageTicks][]      | Sets the nodamageticks of the target                                                     |
 | [SetOwner][]              | Makes the target the owner of the casting mob                                            |
 | [SetParent][]             | Makes the target the parent of the casting mob                                            |
+| [SetPathfindingMalus][]   | Sets the pathfinding malus of a mob for given terrain types                                            |
 | [SetPitch][]              | Sets the head pitch of the target entity                                            |
 | [SetRotation][]           | Sets the rotation of the target                                                          |
 | [SetTarget][]             | Sets the caster's target                                                                 |
@@ -528,6 +529,7 @@ but not yet ready for use.
   [SetNoDamageTicks]: /skills/mechanics/setnodamageticks
   [SetOwner]: /skills/mechanics/setowner
   [SetParent]: /skills/mechanics/SetParent
+  [SetPathfindingMalus]: /skills/mechanics/SetPathfindingMalus
   [SetPitch]: /skills/mechanics/SetPitch
   [setRaiderCanJoinRaid]: /Skills/Mechanics/setRaiderCanJoinRaid
   [SetRaiderPatrolBlock]: /skills/mechanics/setraiderpatrolblock
