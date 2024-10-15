@@ -1,4 +1,4 @@
-# Mechanic: Velocity
+## Description
 
 Modifies the velocity of the calling [Projectile](/skills/mechanics/projectile) or [Missile](/skills/mechanics/missile). In this context, it works the same as the [Velocity](/skills/mechanics/velocity) mechanic.
 
