@@ -1,12 +1,16 @@
-Mechanic: Dismount
-==================
-
+## Description
 Causes the mob to jump off of its mount, if it is mounted on anything.
-Otherwise, does nothing. It's a no-target mechanic and doesn't have any
-attributes or options.
+Otherwise, does nothing. 
 
-Examples
---------
+> **This is a no-target mechanic, and the affected entity will always be the caster**
 
-      Skills:
-      - dismount ~onDamaged
+
+## Attributes
+> *This mechanic has no attributes*
+
+
+## Examples
+```yaml
+  Skills:
+  - dismount ~onDamaged
+```
