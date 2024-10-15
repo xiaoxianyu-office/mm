@@ -1,8 +1,7 @@
-## Descritpion
+## Description
 Holds the target in place temporarily.
 
-> This mechanic can cause Spigot to kick the player (PlayerName moved
-wrongly!)
+> This mechanic can cause Spigot to kick the player (`PlayerName moved wrongly!`)
 
 
 ## Attributes
@@ -16,6 +15,7 @@ wrongly!)
 >> - The `interval` attribute is **set** at `1`
 
 > Remember to use the aura's `duration` attribute to set a duration for the stun
+
 
 ## Examples
 Stuns the target for 3 seconds, target cannot rotate.
