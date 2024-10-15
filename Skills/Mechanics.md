@@ -246,6 +246,7 @@ are able to target locations as well.
 | [Throw][]                 | Throws the target entity                                                                 |
 | [ThunderLevel][]          | Creates a client-side, per-player rainless storm                            |
 | [ToggleLever][]           | Toggles a lever at the target location                                                   |
+| [TogglePiston][]          | Toggles a piston at the target location                                     |
 | [ToggleSitting][]         | Toggles the sitting state for cats, dogs, foxes, and parrots.               |
 | [TotemOfUndying][]        | Plays the effect of a player resurrecting                                   |
 | [TrackLocation][]         | Sets the mob's tracked location to the targeted location                    |
@@ -580,6 +581,7 @@ but not yet ready for use.
   [ThunderLevel]: /skills/mechanics/ThunderLevel
   [Time]: /skills/mechanics/time
   [ToggleLever]: /skills/mechanics/togglelever
+  [TogglePiston]: /skills/mechanics/TogglePiston
   [ToggleSitting]: /skills/mechanics/togglesitting
   [TotemOfUndying]: /skills/mechanics/TotemOfUndying
   [TrackLocation]: /skills/mechanics/tracklocation
