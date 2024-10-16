@@ -4,7 +4,7 @@ Target all adjancent blocks that match the blocktype, starting from the origin o
 ### Attributes
 
 | Attribute      | Aliases         | Description                                            | Default |
-|----------------|-----------------|--------------------------------------------------------|:-------:|
+|----------------|-----------------|--------------------------------------------------------|---------|
 | blocktypes     | blocktype, bt, t, material, materials, mat, m, blocks, block, b                        | Blocks to add to the vein. Can be a list.                                                 | STONE   |
 | limit          | max, l, m       | Limit of the number of blocks added to the vein.       | 10      |
 | originMustMatch| match           | Should the targeted blocks match the one at the origin of the metaskill                                                                                   | true    |
@@ -29,3 +29,8 @@ VeinMinerPickaxeOres_V2:
   Skills:
   - breakblock{origin=@TargetBlock} @Vein{bt=#_ORE} ~onBlockBreak
 ```
+
+
+## Aliases
+- [x] vein
+- [x] bv
