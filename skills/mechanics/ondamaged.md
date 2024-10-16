@@ -8,6 +8,7 @@ damage. Can use any aura attribute
 | `<skill.var.damage-type>`      |
 | `<skill.var.damage-cause>`     |
 
+
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
@@ -18,6 +19,7 @@ damage. Can use any aura attribute
 | damagemodifiers | damagemods, damagemod | Allows the aura to apply damage modifiers. Also accepts a list, as shown in the example. Placeholders can be used as the modifier's amount (**Premium only**). |   |
 | deflectProjectiles | deflect, reflect | Whether projectiles should be deflected               | false  |
 | deflectconditions | dconditions | If `deflectProjectiles` is enabled, it will have to follow the specified set of conditions to work | |
+| modDamageType | damagetype | The type of the damage that must be received in order to trigger the onHit metaskill |         |
 
 > This mechanic inherits every attribute of the [aura] mechanic
 
