@@ -93,8 +93,9 @@ This zombie would attack players, and walk around randomly when not targeting an
 # AI Target Selectors
 Target Selectors are used with the AITargetSelectors field and determine what mobs try to target.
 
-Example:
+> If the mob has AITargets but not AIGoal that allows them to act based on their target, they will *still* be considered to have valid targets chosen according to the AITargets used (so, for instance, a @target targeter can be used and so on)
 
+Example
 ```yaml
 SuperMob:
   Type: zombie
