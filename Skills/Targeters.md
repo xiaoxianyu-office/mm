@@ -209,15 +209,15 @@ TestOwner:
   - tp @Forward{f=5;y=1;sudoowner=true} ~onTimer:1
 ```
 
-## Entity Targeters
-| Attribute | Aliases   | Description                                                          | Default |
+## Common Entity Targeters Attributes
+| Attribute <!-- ETA --> | Aliases   | Description                                             | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | useboundingbox                           | bb               | If the targeter is performing a distance check, this option allows it to check against the bounding box of the target instead of the center of its hitbox | |
 | unique                                   | u                | The maximum number of times an entity can be targeted. Defaults to 1, disable with 0. This is mostly used for meg models with multiple hitboxes | |
 | nomegbb                                  | nmb              | Whether MEG sub hitboxes should be filtered out | |
 
-## Location Targeters
-| Attribute | Aliases   | Description                                                          | Default |
+## Common Location Targeters Attributes
+| Attribute <!-- LTA -->| Aliases   | Description                                              | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | xoffset                                  | xo, x            | Centers the offset on the x axis           | |
 | yoffset                                  | yo, y            | Centers the offset on the y axis           | |
