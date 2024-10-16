@@ -2,14 +2,14 @@
 Tests if the entity type of the target is the specified one.  
 A list of valid entity types can be found on the [Spigot Javadocs](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html).
 
-## Attributes
 
-| Attribute | Alias    | Description                     |
-| --------- | -------- | ------------------------------- |
-| type      | types, t | A list of entity types to match |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| type      | types, t  | A list of entity types to match                                      |         |
+
 
 ## Examples
-
 ```yaml
 Conditions:
 - entitytype{t=ZOMBIE} true
