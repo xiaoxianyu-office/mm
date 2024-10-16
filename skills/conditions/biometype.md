@@ -2,16 +2,15 @@
 Tests if the target is within the given list of biome types
 
 
-## Attributes
 
-| Attribute | Alias | Description                       | Default |
-|-----------|-------|-----------------------------------|---------|
-| type      | t     | A list of biomes to check         | ocean   |
-| exact     | e     | Whether to match the type exactly | true    |
+## Attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| type      | t         | A list of biomes to check                                            | ocean   |
+| exact     | e         | Whether to match the type exactly                                    | true    |
 
 
 ## Examples
-
 ```yaml
 Conditions:
 - biometype{t=jungle,ocean,extreme_hills} true
