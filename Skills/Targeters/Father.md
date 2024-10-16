@@ -15,4 +15,4 @@ Targets the father of the casting mob
 
 ## Aliases
 - [x] dad
-- [x] daddy <!-- UwU -->
+- [x] daddy
