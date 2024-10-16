@@ -16,7 +16,7 @@ something. Can use any aura attribute
 | cancelEvent | cE, canceldamage, cd | Whether or not to cancel the event that triggered the aura  | false   |
 | damageAdd | add, a    | An optional static increase to the original hit's damage             | 0       |
 | damageMultiplier | multiplier, m | An optional multiplier to the original hit's damage       | 1       |
-| modDamageType | damagetype | The type of the damage inflicted                                |         |
+| modDamageType | damagetype | The [type](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html) of the damage inflicted                                |         |
 
 > This mechanic inherits every attribute of the [aura] mechanic
 
