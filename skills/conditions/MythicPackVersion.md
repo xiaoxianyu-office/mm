@@ -3,8 +3,8 @@ Check if a [Pack](/wikis/Packs) with the specified id is present on the server w
 
 
 ## Attributes
-| Attribute | Alias       | Description                                                        | Default |
-|-----------|-------------|--------------------------------------------------------------------|---------|
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
 | packid    | pack, id, p | The Pack id to check for                                           |         |
 | packversion | packV, version, v | The version to check for                                   |         |
 
