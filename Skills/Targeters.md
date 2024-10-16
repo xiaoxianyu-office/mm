@@ -247,7 +247,7 @@ Target Filters allow you to filter out certain targets, and makes targeters a lo
 
 They are used with two attributes (available on ANY entity-targeter):
 
-| Attribute | Aliases   | Description                                                          | Default |
+| Attribute <!-- ETA --> | Aliases   | Description                                             | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | target    |           | The entity types to target                                           |         |
 | ignore    |           | The entity types to not target                                       |         |
@@ -335,10 +335,19 @@ All entity and location targeters also support target limits (as of v5.0.4). Wit
 
 This is done with the attributes:
 
-| Attribute | Aliases   | Description                                                          | Default |
+| Attribute <!-- ETA --> | Aliases   | Description                                           | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | sort      | sortby    | How to sort the targeted entities/locations                          |         |
 | limit     |           | The limit to the targeted entities/locations after the sort is applied|        |
+
+<!-- 
+
+| Attribute LTA | Aliases   | Description                                           | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| sort      | sortby    | How to sort the targeted entities/locations                          |         |
+| limit     |           | The limit to the targeted entities/locations after the sort is applied|        |
+
+-->
 
 Lets say you want your ability to only target the 2 nearest players within 30 blocks. To do this, you'd simply set the limit 2 to and sort by nearest:
 
