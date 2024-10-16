@@ -5,8 +5,9 @@ Checks if the given numeric variable is within a certain range.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| variable  | name, n, var, key, k | Variable to match                                         |         |
+| variable  | name, n, var, key, k | Variable to match, optionally prefixed by a scope         |         |
 | value     | val, v, range, r     | A number range to match                                   |         | 
+| scope     | s         | The [scope](/Skills/Variables#variable-scopes)of the variable, e.g. where the variable is located                                                                            |         |
 
 
 ## Examples
