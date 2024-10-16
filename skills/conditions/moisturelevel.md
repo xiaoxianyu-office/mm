@@ -23,4 +23,5 @@ Examples
 ```
 
 ## Aliases
-  - [x] moistureness
+- [x] moistureness
+- [x] moistness
