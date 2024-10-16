@@ -3,10 +3,9 @@ Checks if the target is holding a given material
 
 
 ## Attributes
-
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| material  | m, type, t| A material, MythicItem or MMOItems internal id to check for                    |         |
+| material  | m, type, t, type, t | A material, MythicItem or MMOItems internal id to check for |        |
 
 
 ## Examples
