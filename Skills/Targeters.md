@@ -308,7 +308,7 @@ Possible filters include:
 
 ### Specific Filters
 You can also specifically set whether to target a specific type of entity or not by using the attributes below. The effects of these attributes override the effects of the more generic target/ignore attributes for the specific entity type the attribute handles
-| Attribute | Aliases   | Description                                                          | Default |
+| Attribute <!-- ETA --> | Aliases   | Description                                             | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | targetself|           | Whether to target the caster of the mechanic                         |         |
 | targetplayers|        | Whether to target players                                            |         |
