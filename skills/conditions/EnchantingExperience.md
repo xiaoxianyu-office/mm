@@ -5,7 +5,7 @@ Checks the experience points that the target player has.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| level     | l         | Checks against the experience points missing to reach the next level, in a range from 0 to 1. 0 is "no progress" and 1 is "next level". Accepts ranges.                         | 0       |
+| level     | l, amount, a | Checks against the experience points missing to reach the next level, in a range from 0 to 1. 0 is "no progress" and 1 is "next level". Accepts ranges.                   | 0       |
 
 
 ## Examples
