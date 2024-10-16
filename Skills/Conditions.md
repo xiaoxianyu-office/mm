@@ -84,15 +84,53 @@ YourMagnificentSkill:
 
 Condition Actions allow you to do additional things based off of conditions. The default condition action is **true**
 
-| Action                     | Description                                                                |
-|----------------------------|----------------------------------------------------------------------------|
-| **required** (or **true**) | The condition is required for the skill to run.                            |
-| **cancel** (or **false**)  | The skill will not run if this condition is met.                           | **Level** | |
-| **power [multiplier]**     | Modifies the skill's power (e.i. power 2.0 would double the skill's power) |
-| **cast [skill]**           | Casts an additional skill if the condition is met.                         |
-| **castinstead [skill]**    | Casts a different skill instead if the condition is met.                   |
-| **orElseCast [skill]**     | Casts a different skill instead if the condition is not met. (4.12 MM)     |
+| Action         | Description                                                                           |
+|----------------|---------------------------------------------------------------------------------------|
+| `true`         | The skill will run if this condition is met                                           |
+| `false`        | The skill will *not* run if this condition is met                                     |
+| `power` [multiplier] | Multiplies the skill's power by the value of `multiplier` (e.i. power 2.0 would double the skill's power) |
+| `cast` [skill] | Casts an additional skill if the condition is met, without having effect on the execution of original skill |
+| `castinstead` [skill] | Casts a different skill instead if the condition is met                        |
+| `orElseCast` [skill] | Casts a different skill instead if the condition is not met                     |
 
+<!--
+| `level`        |                                                                                       |
+-->
+
+```yaml
+  Conditions:
+  - day true
+  Skills:
+  - message{m="It's day!"} @self
+```
+> Will run only if it's day in the caster's world  
+
+```yaml
+  Conditions:
+  - day false
+  Skills:
+  - message{m="It's *not* day!"} @self
+```
+> Will run only if it's *not* day in the caster's world  
+> The opposite behavior of `true`  
+
+```yaml
+ExampleSkill:
+  Conditions:
+  - day true
+  - sunny orElseCast OtherSkill
+  Skills:
+  - message{m="It's day and sunny!"} @self
+
+OtherSkill:
+  Skills:
+  - message{m="It's day and not sunny!"} @self
+```
+> If a condition line is not met *(the condition is met and the condition action if false or vice versa)* [no more conditions will be checked](https://en.wikipedia.org/wiki/Short-circuit_evaluation)  
+> So even if OtherSkill is executed because of the `sunny` condition we can be sure that the `day` condition is also met, or else no skill would have run at all because  
+> `day true`  
+> is checked before  
+> `sunny orElseCast OtherSkill`  
 
 ## Composite Conditions
 Conditions can also be grouped by parenthesis and evaluated via the **AND** (`&&`) and **OR** (`||`) boolean operators.
