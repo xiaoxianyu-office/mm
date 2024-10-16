@@ -13,4 +13,4 @@ Checks if the target block of farmland is hydrated.
 ```
 
 ## Aliases
-- [x] moist
+- [x] ismoist
