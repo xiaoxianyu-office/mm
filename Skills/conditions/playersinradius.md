@@ -7,7 +7,8 @@ Checks how many players are in a radius.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount    | a         | The given range value to check                                       | >0      |
-| radius    | range, r  | The given radius to check                                            | 32      |
+| radius    | range, r, distance  | The given radius to check                                  | 32      |
+| ignorespectator | is  | Whether players in spectator mode should be ignored                  | true    |
 
 
 ## Examples
