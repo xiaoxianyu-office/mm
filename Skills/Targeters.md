@@ -245,10 +245,13 @@ TestOwner:
 
 Target Filters allow you to filter out certain targets, and makes targeters a lot more flexible.
 
-They are used with two options (available on ANY entity-targeter):
+They are used with two attributes (available on ANY entity-targeter):
 
--   ignore=X
--   target=X
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| target    |           | The entity types to target                                           |         |
+| ignore    |           | The entity types to not target                                       |         |
+
 
 For example, to make a targeter that will ignore any players or non-hostile mobs, you'd use this:
 
@@ -261,40 +264,81 @@ To make a targeter ONLY target players, you'd do something like this:
   - skill{s=ASkill} @EntitiesInRadius{r=5;target=players}
 ```
 
+> You can set the default target filters in MythicMobs/config/config-skills.yml
+
+
 Possible filters include:
 
--   self
--   animals *(non-hostile mobs)*
--   armorstands/armor_stands
--   creative *(ignored by default)*
--   creatures *(any type of sentient entity)*
--   flyingmobs
--   marker
--   monsters *(hostile mobs)*
--   NPCs *(Citizens NPCs, ignored by default)*
--   players
--   samefaction *(mobs marked with the same faction type)*
--   spectator *(ignored by default)*
--   vanilla
--   villager
--   watermobs
--   owner
--   More coming later...
+#### Target Attribute
+| Target Filter| Aliases| Description                                                                   |
+|-----------|-----------|--------------------------------------------------------------------------------|
+| ground    |         | Whether to target ground entities. Will ignore flying and water entities if used |
+| water     |         | Whether to target water entities. Will ignore flying and ground entities if used |
+| flying    |         | Whether to target flying entities. Will ignore ground and water entities if used |
+| self      | caster    | Whether the caster of the mechanic can be targetd                              |
+| player    |           | Whether players can be targeted                                                |
+| creative  |           | Whether creative mode players can be targeted                                  |
+| spectator |           | Whether spectator mode players can be targeted                                 |
+| armorstand| armor_stand | Whether armor stands can be targeted                                         |
+| marker    |           | Whether markers can be targeted                                                |
+| npc       |           | Whether Citizens NPCs can be targeted                                          |
+| animal    |           | Whether animals can be targeted                                                |
+| creature  |           | Whether creatures can be targeted                                              |
+| monster   |           | Whether monsters can be targeted                                               |
+| villager  |           | Whether villagers can be targeted                                              |
 
-You can also turn off specific filters by just adding the option
-**targetXXXXX** replacing XXXXX with the filter name, e.g.
-**targetPlayers=false** or **targetcreative=true**
+> If neither `ground`, `water` and `flying` are used and the default filters do not include any of them, then `Players`, `ArmorStands`, `Markers`, `Creative`, `Spectator`, `CitizensNPCs`, `Animals`, `Creatures`, `Monsters` and `Villagers` will also be ignored
 
-Note: As of MM 4.15 or MM 5.0, you can set the default target filters in MythicMobs/config.yml
+#### Ignore Attribute
+| Ignore Filter | Aliases   | Description                                                                |
+|-----------|-----------|--------------------------------------------------------------------------------|
+| player    |           | Whether players shouldn't be targetd                                           |
+| creative  |           | Whether creative mode players shouldn't be targeted                            |
+| spectator |           | Whether spectator mode players shouldn't be targeted                           |
+| armorstand| armor_stand | Whether armor stands shouldn't be targeted                                   |
+| marker    |           | Whether markers shouldn't be targeted                                          |
+| npc       |           | Whether Citizens NPCs shouldn't be targeted                                    |
+| animal    |           | Whether animals shouldn't be targeted                                          |
+| creature  |           | Whether creatures shouldn't be targeted                                        |
+| monster   |           | Whether monsters shouldn't be targeted                                         |
+| villager  |           | Whether villagers shouldn't be targeted                                        |
+| faction   |           | Whether entities in the same faction shouldn't be targeted                     |
+| owner     |           | Whether the caster's owner shouldn't be targeted                               |
+| vanilla   |           | Whether vanilla entities shouldn't be targeted                                 |
+
+### Specific Filters
+You can also specifically set whether to target a specific type of entity or not by using the attributes below. The effects of these attributes override the effects of the more generic target/ignore attributes for the specific entity type the attribute handles
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| targetself|           | Whether to target the caster of the mechanic                         |         |
+| targetplayers|        | Whether to target players                                            |         |
+| targetcreative|       | Whether to target players in creative mode                           |         |
+| targetspectator|      | Whether to target players in spectator mode                          |         |
+| targetarmorstands|    | Whether to target armor stands                                       |         |
+| targetmarkers|        | Whether to target markers                                            |         |
+| targetnpcs|           | Whether to target Citizens NPCs                                      |         |
+| targetanimals|        | Whether to target animals                                            |         |
+| targetcreatures|      | Whether to target creatures                                          |         |
+| targetsamefaction|    | Whether to target entities of the same faction                       |         |
+| targetowner|          | Whether to target the caster's owner                                 |         |
+| targetvanilla| targetnonmythic | Whether to target non-Mythic entities                       |         |
+| targetvillagers|      | Whether to target villagers                                          |         |
+
+```yaml
+  - damage{a=20} @EntitiesInRadius{r=10;targetplayers=true;targetsamefaction=true;targetowner=false}
+```
+> Use this to explicitly target players and entities in the same faction alongside any other valid target there may be, while also not targeting the owner of the caster
 
 ## Target Limits
 
 All entity and location targeters also support target limits (as of v5.0.4). With this you can limit how many entities/locations are targeted, including the order in which they are selected.
 
-This is done with the options:
+This is done with the attributes:
 
--   limit=#
--   sort=X
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| sort      | sortby    | How to sort the targeted entities/locations                          |         |
+| limit     |           | The limit to the targeted entities/locations after the sort is applied|        |
 
 Lets say you want your ability to only target the 2 nearest players within 30 blocks. To do this, you'd simply set the limit 2 to and sort by nearest:
 
