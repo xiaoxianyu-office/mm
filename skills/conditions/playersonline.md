@@ -14,3 +14,8 @@ Matches the number of players online
   Conditions:
   - playersOnline{amount=>5}
 ```
+
+
+## Aliases
+- [x] onlineplayercount
+- [x] onlineplayers
