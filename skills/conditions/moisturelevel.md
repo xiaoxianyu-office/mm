@@ -9,10 +9,10 @@ Checks if the target block of farmland has the specified level of hydratation.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| l         |           | The level of hydratation to check for                                |         |
+| l         | moistness, m | The level of hydratation to check for                             |         |
 
-Examples
----
+
+## Examples
 ```yml
   TargetConditions:
   - moisturelevel{l=3} true
