@@ -7,9 +7,9 @@ Checks if the target block of farmland has the specified level of hydratation.
 
 
 ## Attributes
-| Attribute | Alias       | Description                                                        | Default |
-|-----------|-------------|--------------------------------------------------------------------|---------|
-| l         |             | The level of hydratation to check for                              |         |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| l         |           | The level of hydratation to check for                                |         |
 
 Examples
 ---
