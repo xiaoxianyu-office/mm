@@ -5,11 +5,11 @@ A condition that checks checks if the target has a velocity matching the given p
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| x         |           | The X velocity. Can be a range. Isn't checked by the condition if not set  |   |
+| x         | s, side   | The X velocity. Can be a range. Isn't checked by the condition if not set  |   |
 | absx      | ax, abss, as | Whether to use only the absolute values for the X velocity        | `relative`'s value|
 | y         | up, down, vertical, v | The Y velocity. Can be a range. Isn't checked by the condition if not set |   |
 | absy      | ay        | Whether to use only the absolute values for the Y velocity           |  false  |
-| z         |           | The Z velocity. Can be a range. Isn't checked by the condition if not set  |   |
+| z         | f, forward| The Z velocity. Can be a range. Isn't checked by the condition if not set  |   |
 | absz      | az, absf, af | Whether to use only the absolute values for the Z velocity        |  false  |
 | relative  | rel | Whether the check should be relative to the entity's orientation and not to the world axis. If true, X is forward/backward and Z is side-to-side                                     |  false  |
 
