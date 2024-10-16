@@ -18,5 +18,6 @@ Targets random points in a ring around the caster
 
 ## Examples
 ```yaml
+  Skills:
   - particle @randomRingPoint{r=4;p=20;a=10}
 ```
