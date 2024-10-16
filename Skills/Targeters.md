@@ -335,14 +335,14 @@ All entity and location targeters also support target limits (as of v5.0.4). Wit
 
 This is done with the attributes:
 
-| Attribute <!-- ETA --> | Aliases   | Description                                           | Default |
+| Attribute <!-- ETA --> | Aliases   | Description                                             | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | sort      | sortby    | How to sort the targeted entities/locations                          |         |
 | limit     |           | The limit to the targeted entities/locations after the sort is applied|        |
 
 <!-- 
 
-| Attribute LTA | Aliases   | Description                                           | Default |
+| Attribute LTA | Aliases   | Description                                                      | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | sort      | sortby    | How to sort the targeted entities/locations                          |         |
 | limit     |           | The limit to the targeted entities/locations after the sort is applied|        |
@@ -367,6 +367,13 @@ Currently, sort can have the following values:
 - HIGHEST_THREAT
 - LOWEST_THREAT
 
+
+<!--
+Unused Attributes
+| Attribute <!-- ETA --> | Aliases   | Description                                             | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| ignoretype |          |                                                                      |         |
+-->
 
 
 <!-- LINKS -->
