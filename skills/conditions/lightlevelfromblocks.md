@@ -3,7 +3,6 @@ Tests the light level originating from light-emitting blocks at the target locat
 
 
 ## Attributes
-
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | level     | l         | The light level range to match                                       | 0       |
@@ -24,3 +23,6 @@ Tests the light level originating from light-emitting blocks at the target locat
   Conditions:
   - lightlevelfromblocks{l=1to10} true
 ```
+
+## Aliases
+- [x] blocklightlevel
