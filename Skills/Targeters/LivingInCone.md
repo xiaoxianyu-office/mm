@@ -9,6 +9,8 @@ Targets all living entities in cone with a specified angle, length and rotation 
 | range     | r         | The length of the cone                                               | 16      |
 | rotation  | rot       | The rotation of the cone                                             | 0       |
 | usepitch  | pitch, p  | Whether to generate the cone also depending on the caster's pitch    | false   |
+| yoffset   | yo        | The y offset to be added to the generated cone's location            | 0       |
+
 
 ## Examples
 ```yaml
