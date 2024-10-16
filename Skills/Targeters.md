@@ -232,7 +232,7 @@ TestOwner:
 | coordinatez                              | cz               | Sets the z axis coordinate                    | |
 | length                                   |                  | Multiplied the direction vector by the specified value                            | |
 | blocktypes                               | blocktype, bt    | Only targets selected block types. Multiple blocks can be listed by separating them using a `,`<br>You can add a `#` at the front of the type to indicate that the block only needs to match part of the type, add `@` to indicate that the block only needs to match the start of the type | |
-| blockignores                             | blockignore      | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` | |
+| blockignores                             | blockignore, bi  | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` | |
 | coordinateyaw                            | cyaw             | Sets the yaw value                        | |
 | coordinatepitch                          | cpitch           | Sets the pitch value                        | |
 | blockcentered                            | centered         | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself | |
