@@ -3,10 +3,9 @@ Checks is the server is running a specific minecraft NMS version
 
 
 ## Attributes
-
-| Attribute | Alias       | Description                                                        | Default |
-|-----------|-------------|--------------------------------------------------------------------|---------|
-| version   | sv, v       | The version to check for                                        | v1_19_R1_2 |
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| version   | sv, v     | The version to check for                                        | v1_19_R1_2 |
 
 
 ## Examples
@@ -14,6 +13,7 @@ Checks is the server is running a specific minecraft NMS version
   Conditions:
   - nmsversion{v="v1_19_R1"}
 ```
+
 
 ## Aliases
 - [x] servernms
