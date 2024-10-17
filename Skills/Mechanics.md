@@ -644,4 +644,4 @@ but not yet ready for use.
   [OnInteract]: /skills/mechanics/oninteract
   [OnJump]: /skills/mechanics/onjump
   [OnDeath]: /skills/mechanics/ondeath
-  [Switch]: /skills/mechanics/Switchs
+  [Switch]: /skills/mechanics/Switch
