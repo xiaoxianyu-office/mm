@@ -131,9 +131,9 @@ But what about elements that are present on both the mob and its template?
 
 ## Shared Elements
 When both the Mob and its Template share some elements, one of the following three things happens:
-  * The element of the template is overridden by the one in the Mob. (**Overriden**)
+  * The element of the template is overridden by the one in the Mob. (**Overridden**)
     * Example: both `MonsterFaction_Base` and `ZombieBrute` have a `PROJECTILE` DamageModifier, so the one in `ZombieBrute` overrides the one in the Template, and is the one that is ultimately applied
-  * The element of the Template is added alongside the one of the Mob. (**Partially Overriden**)
+  * The element of the Template is added alongside the one of the Mob. (**Partially Overridden**)
     * Example: Since the Mob has no `Faction` element, it will inherit the one in the Template, ultimately  being considered as part of the `Monsters` faction
     * Example: both `MonsterFaction_Base` and `ZombieBrute` have a DamageModifiers element, with the Template's having `PROJECTILE` and `ENTITY_ATTACK`, while the Mob has only `PROJECTILE`. Since no `ENTITY_ATTACK` DamageModifier is specified in the Mob, the Template's gets inherited, so in the end the `ZombieBrute` mob will take 75% of the damage it would normally take from the `ENTITY_ATTACK` damage source, despite not having that DamageModifier itself
   * The elements of the Mob and of the Template are applied simultaneously, if the elements are part of a list. (**Merged**)
@@ -145,26 +145,26 @@ To make this more understandable, the following is a list of all of the elements
 
 | **Element** *(in the Template)*       | **How it is inherited** *(if the Mob has it too)*              |
 |---------------------------------------|----------------------------------------------------------------| 
-| Type                                  | Overriden                                                      |
-| Display                               | Overriden                                                      |
-| Health                                | Overriden                                                      |
-| Damage                                | Overriden                                                      |
-| Armor                                 | Overriden                                                      |
-| Bossbar                               | Overriden                                                      |
-| Faction                               | Overriden                                                      |
-| Mount                                 | Overriden                                                      |
-| Options                               | Partially Overriden (only the shared options are overriden)    |           
-| Modules                               | Partially Overriden (only the shared modules are overriden)    |
+| Type                                  | Overridden                                                     |
+| Display                               | Overridden                                                     |
+| Health                                | Overridden                                                     |
+| Damage                                | Overridden                                                     |
+| Armor                                 | Overridden                                                     |
+| Bossbar                               | Overridden                                                     |
+| Faction                               | Overridden                                                     |
+| Mount                                 | Overridden                                                     |
+| Options                               | Partially Overridden (only the shared options are overridden)  |           
+| Modules                               | Partially Overridden (only the shared modules are overridden)  |
 | AIGoalSelectors                       | Merged*                                                        |
 | AITargetSelectors                     | Merged*                                                        |
 | Drops                                 | Merged                                                         |
-| DamageModifiers                       | Partially Overriden (only the shared modifiers are overriden)  |
-| Equipment                             | Partially Overriden (only equipment with the same slot is overriden)|
+| DamageModifiers                       | Partially Overridden (only the shared modifiers are overridden)|
+| Equipment                             | Partially Overridden (only equipment with the same slot is overridden)|
 | KillMessages                          | Merged                                                         |
-| LevelModifiers                        | Partially Overriden (only the shared modifiers are overriden)  |
-| Disguise                              | Overriden                                                      |
+| LevelModifiers                        | Partially Overridden (only the shared modifiers are overridden)|
+| Disguise                              | Overridden                                                     |
 | Skills                                | Merged                                                         |
-| Trades                                | Partially Overriden (only trades with the same number are overriden)|
+| Trades                                | Partially Overridden (only trades with the same number are overridden)|
 
 
 \* A special note must be made regarding the behavior of the AIGoalsSelector and the AITargetSelectors elements, as only stating that they are "merged" is a bit reductive. The selector of the Mob are, in fact, added to the end of the Template's. So, for instance, if the Template has a `clear`,`meleeattack` AIGoals and the Mob has a `randomstroll` one, the final mob will effectively have `clear`,`meleeattack`,`randomstroll` as its AIGoals.
