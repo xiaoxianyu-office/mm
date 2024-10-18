@@ -95,10 +95,10 @@ ExampleSkill:
 
 
 ```yaml
-  ExampleSkill:
-    Skills:
-    - delay 0 ?variableisset{var=caster.example}
-    - message{m=<caster.var.example>} @self
+ExampleSkill:
+  Skills:
+  - delay 0 ?variableisset{var=caster.example}
+  - message{m=<caster.var.example>} @self
 ```
 > In this example a delay 0 is used to give a variable enough time to be set before its value is fetched. This has the drawback of making it impossible to exactly know beforehand how many intratick delays will be applied, but if, on the contrary, it's not already know how many intraticks will be needed to set the variable this can be a valuable tradeoff
 
