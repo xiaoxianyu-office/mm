@@ -76,8 +76,7 @@
     * [Attribute Operations](/Items/Attributes#operations)
     * [Stats Modifiers](/Stats#modifiers)
   * [SkillTree](/Skills/SkillTrees)
-  * [Intratick Scheduling](/Skills/Intratick-Scheduling)
-  * [Dynamic Metaskills](/Skills/Dynamic-Metaskills)
+  * [Advanced User Guides and Techniques](/Skills/Advanced-User-Guides-and-Techniques)
 
 <hr>
 
