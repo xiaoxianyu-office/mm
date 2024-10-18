@@ -12,7 +12,7 @@ But with Dynamic Metaskills this you are now able to:
 [[_TOC_]]
 
 # DISCLAIMER
-This is not an intended mechanic. It's just a happy accident that, somehow, consistently works. Do not expect this to be cutting edge, as, again, this is more of a convenient bug.
+This is not an intended mechanic. It's just a side-effect that consistently works because of how the `vskill` mechanic operates  
 
 Since this is pretty much uncharted territory, if you have any information useful to further expand this page and, by proxy, the knowledge available to every other MythicMobs user, let me know: [Lxlp's Discord Profile](https://discord.com/users/353257382811533322)
 
