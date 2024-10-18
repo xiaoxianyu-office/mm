@@ -7,7 +7,7 @@ If you do not consider yourself as very proficient with the rest of the plugin, 
 | Technique             |  Description                                                                   |
 |-----------------------|--------------------------------------------------------------------------------|
 | [Intratick Scheduling]| Schedule chunks of a SkillTree to be executed later in the same tick           |
-| [Dynamic Metaskills]  | Create and execute new inline Metaskills at runtime, also bypassing placeholder parsing limitations     |
+| [Dynamic Metaskills]  | Create and execute new inline Metaskills at runtime                            |
 
 
 
