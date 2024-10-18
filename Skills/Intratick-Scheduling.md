@@ -81,5 +81,27 @@ SkillMessage:
 >> - `2` if all delays are used inside of SkillMessage
 
 
+## Examples
+```yaml
+ExampleSkill:
+  Cooldown: 0
+  OnCooldownSkill: ExampleSkill-DisplayCooldown
+  Skills:
+  - delay 0
+  - setSkillCooldown{s=ExampleSkill;seconds=<skill.cooldown>/20} @self
+```
+> In this example if no `delay 0` is set then the `setSkillCooldown` would have run regardless, but the new cooldown value would have been overridden by ExampleSkill's, as the cooldown for the metaskill is set *after* any non delayed mechanics in the metaskill are executed.  
+> Using a `delay 0` allows to apply a delay to the setSkillCooldown mechanic, allowing it to set the cooldown *after* ExampleSkill's has been set *without* needing to wait for an extra tick, which could have allowed for possible edge cases to cause a bug
+
+
+```yaml
+  ExampleSkill:
+    Skills:
+    - delay 0 ?variableisset{var=caster.example}
+    - message{m=<caster.var.example>} @self
+```
+> In this example a delay 0 is used to give a variable enough time to be set before its value is fetched. This has the drawback of making it impossible to exactly know beforehand how many intratick delays will be applied, but if, on the contrary, it's not already know how many intraticks will be needed to set the variable this can be a valuable tradeoff
+
+
 <!-- LINKS -->
 [delay]: /Skills/Mechanics/delay
