@@ -14,4 +14,4 @@ If you do not consider yourself as very proficient with the rest of the plugin, 
 
 <!-- LINKS -->
 [Intratick Scheduling]: (/Skills/Intratick-Scheduling)
-[Dynamic-Metaskills]: (/Skills/Dynamic-Metaskills)
+[Dynamic Metaskills]: (/Skills/Dynamic-Metaskills)
