@@ -225,7 +225,7 @@ custom_item:
   Id: wooden_sword
   Attributes:
     All:
-      Gravity: 2 ADD
+      SafeFallDistance: 2 ADD
 ```
 
 ### FallDamageMultiplier‌
