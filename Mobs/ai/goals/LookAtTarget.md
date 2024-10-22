@@ -1,5 +1,5 @@
 ## Description
-Causes the mob to look at nearby players
+Causes the mob to look at its target
 
 
 ## Attributes
