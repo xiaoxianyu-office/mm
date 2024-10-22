@@ -12,6 +12,9 @@ Every [pack] now allows for a `pins.yml` file. This file can contain a list of l
 | `/mm pins wand [pack] [pinName]`                                                                                                                                                                          | mythicmobs.command.pins                                                                                                                                                                          | While holding a pin wand, left-clicking will create the multi-pin and points to it and right-clicking will remove the most recent point from a multi-pin                                                                                                                                                                          |
 
 
+## Mechanics
+- [MovePin](/Skills/Mechanics/MovePin)
+
 ## Targeters
 - [@Pin](/Skills/Targeters/Pin)
 - [@BlocksInPinRegion](/Skills/Targeters/BlocksInPinRegion)
