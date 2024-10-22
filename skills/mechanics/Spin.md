@@ -6,8 +6,9 @@ When a mob casts the spin mechanic repeatedly it will move upwards while spinnin
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| duration  | d         | How long (in ticks) the target entity should spin                    | 40      |
 | velocity  | v         | The velocity the target spins at                                     | 18      |
+
+> This mechanic inherits every attribute of the [Aura](/Skills/Mechanics/Aura) mechanic
 
 ### Velocity Attribute
 When you set velocity to 0, this mob's direction will be locked.
