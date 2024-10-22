@@ -126,6 +126,7 @@ are able to target locations as well.
 | [Mount][]                 | Summons a mob for the caster and mounts it                                               |
 | [MountMe][]               | Forces the targeted entity to mount the caster                                           |
 | [MountTarget][]           | Mounts the target                                                                        |
+| [MovePin][]               | Moves the given pin to the target location                                      |
 | [OpenTrades][]            | Opens the trades of the casting villager to the target player               |
 | [Oxygen][]                | Gives oxygen to a player target                                                          |
 | [Particle][]              | Creates particle effects around the target                                                                |
@@ -463,6 +464,7 @@ but not yet ready for use.
   [Mount]: /skills/mechanics/mount
   [MountMe]: /skills/mechanics/mountme
   [MountTarget]: /skills/mechanics/mounttarget
+  [MovePin]: /skills/mechanics/MovePin
   [OpenTrades]: /skills/mechanics/OpenTrades
   [Oxygen]: /skills/mechanics/oxygen
   [Particle]: /skills/mechanics/Particle
