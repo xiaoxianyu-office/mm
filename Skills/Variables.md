@@ -85,3 +85,14 @@ Variables can also be nested indefinitely: if this is done, the innermost variab
     - message{m="<caster.var.<caster.var.hello>>"} @PIR{r=10}
 ```
 > In this example, the message would spell "Hello there!"
+
+# [Mob Variables](/Mobs/Mobs#variables)
+Mobs can have some variable be already set once they spawn thanks to the [Mob Variables](/Mobs/Mobs#variables) field.
+```yaml
+VariableZombie:
+     Type: ZOMBIE
+     Variables:
+       SomeVariable: something
+       AnIntVariable: int/2
+       AFloatVariable: float/420.69
+```
