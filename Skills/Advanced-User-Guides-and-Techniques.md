@@ -1,6 +1,5 @@
 In this page you can find the more advanced uses of the plugin.  
-But still, be aware that you **must be an advanced user yourself** in order to properly understand and use these techniques in a reasonable and just manner.  
-If you do not consider yourself as very proficient with the rest of the plugin, I suggest you turn back for the time being, as **what you can find below may as well be detrimental to you** if used improperly.
+But still, be aware that you **must be an advanced user yourself** in order to properly understand and use these techniques in a reasonable and just manner. Because, while they are certainly a powerful tool, these techniques can be detrimental for you, either if used improperly or if relied on too heavily in the early stages of learning about the plugin 
 
 
 ## Advanced Techniques
