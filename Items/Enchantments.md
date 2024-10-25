@@ -29,6 +29,7 @@ Enchantments can also be added via the `namespace:enchant_name` syntax, if there
 lethal_pickaxe:
   Id: diamond_pickaxe
   Enchantments:
-  - DAMAGE_ALL 3
+  - SHARPNESS 3
   - KNOCKBACK 1
+  - mythic:example_enchant 2
 ```
