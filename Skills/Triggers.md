@@ -25,11 +25,11 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onDamaged](/Skills/Triggers/ondamaged) | When the mob is damaged                                      |
 | [onSpawn](/Skills/Triggers/onspawn)     | When the mob spawns                                          |
 | [onDespawn](/Skills/Triggers/ondespawn) | When the mob is despawned                                    |
-| [onReady / onFirstSpawn](/Skills/Triggers/onready) | Triggered the first time a mob is spawned from a spawner     |
+| [onReady](/Skills/Triggers/onready) | Triggered the first time a mob is spawned from a spawner     |
 | [onLoad](/Skills/Triggers/onload)       | When the mob is loaded after a server restart                |
 | [onSpawnOrLoad](/Skills/Triggers/onspawnorload) | When the mob either [spawns](/Skills/Triggers/onspawn) or [loads](/Skills/Triggers/onload)   |
 | [onDeath](/Skills/Triggers/ondeath)     | When the mob dies                                            |
-| [onTimer:*#*](/Skills/Triggers/ontimerticks) | Every \# ticks (where \# is the interval in ticks)           |
+| [onTimer](/Skills/Triggers/ontimerticks) | Every \# ticks (where \# is the interval in ticks)           |
 | [onInteract](/Skills/Triggers/oninteract) | When the mob is right-clicked                                |
 | [onPlayerKill](/Skills/Triggers/onplayerkill) | When the mob kills a player                                  |
 | [onEnterCombat](/Skills/Triggers/onentercombat) | When the mob enters combat (requires threat tables be on)    |
@@ -39,7 +39,7 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onPrime](/Skills/Triggers/onprime)     | When the creeper charges up for an explosion                 |
 | [onCreeperCharge](/Skills/Triggers/oncreepercharge) | When the creeper is charged (when lightning hits a creeper)  |
 | [onTeleport](/Skills/Triggers/onteleport) | When the mob teleports (typically only used for endermen)    |
-| [onSignal:*[signal]*](/Skills/Triggers/onsignalsignal) | When the mob receives a signal                               |
+| [onSignal](/Skills/Triggers/onsignalsignal) | When the mob receives a signal                               |
 | [onShoot](/Skills/Triggers/onshoot)     | When the mob fires a projectile                              |
 | [onBowHit](/Skills/Triggers/onbowhit)   | When the mob's fired projectile hits an entity               |
 | [onTame](/Skills/Triggers/ontame)       | When the mob gets tamed                                      |
