@@ -1,6 +1,6 @@
 ## Description
 Executes the skill when the mob hears a sound, [if this feature has been enabled](/Mobs/Mobs#hearing).  
-The `<skill.var.volume>`[placeholder](/Skills/Placeholders#variable-placeholders) can be used in the triggered skill to return a float value between 1 and 15 representing the distance from the sound source
+The `<skill.var.volume>` [placeholder](/Skills/Placeholders#variable-placeholders) can be used in the triggered skill to return a float value between 1 and 15 representing the distance from the sound source
 
 > The associated [@trigger](/Skills/Targeters/Trigger) is the entity that generated the sound  
 
