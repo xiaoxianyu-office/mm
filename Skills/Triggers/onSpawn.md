@@ -1,6 +1,6 @@
 ## Description
 Executes the skill when the mob spawns.  
-> There is no associated [@trigger]
+> There is no associated [@trigger](/Skills/Targeters/Trigger)
 
 
 ## Examples
@@ -12,8 +12,3 @@ EXAMPLE_MOB:
     # when the mob spawns
     - message{m=SPAWN} @World ~onSpawn
 ```
-
-
-<!-- LINKS -->
-[ThreatTables]: /Mobs/ThreatTables
-[@trigger]: /Skills/Targeters/Trigger
