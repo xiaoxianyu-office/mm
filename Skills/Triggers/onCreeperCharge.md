@@ -17,5 +17,5 @@ EXAMPLE_MOB:
 
 ## Aliases
 - [x] onCreeper_Charge
-- [x] Charge
-- [x] Charged
+- [x] onCharged
+- [x] onCharge
