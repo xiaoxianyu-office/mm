@@ -1,6 +1,6 @@
 **Difficulty: Beginner**
 
-You may have a special mob that spawns, such as a boss, that you want players on the server to know about. You can use the [Message Mechanic](/skills/mechanics/message) combined with the [onSpawn Trigger](/Skills/Triggers#onspawn) to achieve this.
+You may have a special mob that spawns, such as a boss, that you want players on the server to know about. You can use the [Message Mechanic](/skills/mechanics/message) combined with the [onSpawn Trigger](/Skills/Triggers/onSpawn) to achieve this.
 
 It is worth noting that this may not work for mobs spawned from a Spawner that is in currently unloaded chunks.
 

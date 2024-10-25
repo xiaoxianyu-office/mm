@@ -317,11 +317,11 @@ ZOMBIE:
 
 
 <!-- LINKS -->
-[~onHear]: /Skills/Triggers#onhear
-[~onDamaged]: /Skills/Triggers#ondamaged
-[~onAttack]: /Skills/Triggers#onattack
-[~onBowHit]: /Skills/Triggers#onbowhit
-[~onShoot]: /Skills/Triggers#onshoot
+[~onHear]: /Skills/Triggers/onHear
+[~onDamaged]: /Skills/Triggers/onDamaged
+[~onAttack]: /Skills/Triggers/onAttack
+[~onBowHit]: /Skills/Triggers/onBowHit
+[~onShoot]: /Skills/Triggers/onShoot
 [onChat]: /skills/mechanics/onChat
 [aura]: /skills/mechanics/aura
 [raytrace]: /skills/mechanics/raytrace

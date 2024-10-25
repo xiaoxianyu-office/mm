@@ -307,7 +307,7 @@ ExampleMob:
 
 #### Hearing
 Allows the mob to "hear" sounds like a warden would.  
-Turning this on enables the new [~onHear](/Skills/Triggers#onhear) trigger.  
+Turning this on enables the new [~onHear](/Skills/Triggers/onHear) trigger.  
 ```yaml
 ICanHearYou:
   Type: ZOMBIE

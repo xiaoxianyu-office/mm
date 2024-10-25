@@ -274,7 +274,7 @@ Defaults to `false`.
 ```
 
 #### ReviveHealth
-When the mob's death event gets cancelled (via a [Cancelevent](/skills/mechanics/cancelevent) mechanic [~onDeath](/Skills/Triggers#ondeath)) the one specified is the amount of health the mob's will be set to. If the value is `-1`, the mob will heal to its own max health value.
+When the mob's death event gets cancelled (via a [Cancelevent](/skills/mechanics/cancelevent) mechanic [~onDeath](/Skills/Triggers/onDeath)) the one specified is the amount of health the mob's will be set to. If the value is `-1`, the mob will heal to its own max health value.
 ```yaml
 #This mob will always return to 50 health every time the death event is cancelled
 ExampleMob:

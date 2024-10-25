@@ -13,7 +13,7 @@ Could get aggroed by other entities.
 
 ### All breedable animals
 They can usually be fed by some item and, subsequently, try to breed.  
-This can be handled by intercepting the event [~onBreed](/Skills/Triggers#onbreed) (and then either cancelling it or some other mechanic) or completely prevented by using the [Age](/Mobs/Options#age) option
+This can be handled by intercepting the event [~onBreed](/Skills/Triggers/onBreed) (and then either cancelling it or some other mechanic) or completely prevented by using the [Age](/Mobs/Options#age) option
 
 ### Most bosses
 Have an hardcoded ai or some other hardcoded features.
@@ -30,7 +30,7 @@ The damage type in those instances if of the `DROWNING` type, and can thus be fu
 Does not get targeted by default by multi entity targeters, and a [specific filter](/Skills/Targeters#target-filters) must be used.  
 
 ### AXOLOTL
-Can be Bucketed. Defend against this by using a [onBucket](/Skills/Triggers#onbucket) trigger
+Can be Bucketed. Defend against this by using a [onBucket](/Skills/Triggers/onBucket) trigger
 
 ### BEE
 When allowed to randomfly, it will enter placed beehives and pollinate flowers.  

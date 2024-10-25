@@ -19,7 +19,7 @@ SkeletonKing:
 You can display the mobs health in its nameplate above it, you can do this many different ways, here are 2 examples, one which shows the mobs health as a number (15/20) and another which has a bar that changes as the mob loses health.
 
 ### Number
-You will need to use the [SetName](/skills/mechanics/setname) mechanic and the [~onDamaged](/Skills/Triggers#ondamaged) trigger. We will use the mobs display option to set the information. We are using the caster.hp and caster.mhp placeholders to get the current HP and the max HP.
+You will need to use the [SetName](/skills/mechanics/setname) mechanic and the [~onDamaged](/Skills/Triggers/onDamaged) trigger. We will use the mobs display option to set the information. We are using the caster.hp and caster.mhp placeholders to get the current HP and the max HP.
 ```yaml
 SkeletonKing:
   Type: WITHER_SKELETON
