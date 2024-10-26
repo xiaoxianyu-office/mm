@@ -1,3 +1,5 @@
+[[_TOC_]]
+
 ## Introduction
 
 Conditions are used to determine whether or not an action may execute.
@@ -13,61 +15,57 @@ When applying multiple conditions, all of them must be met in order for the skil
 To see how to use the premium only in-line conditions, [click here!](/skills/Inline-Conditions)
 
 
-## Usage
-
-### Types
-
+## Types
   
-Conditions can be broken into three types:
+Conditions can be broken into four types:
 
 1. Entity Conditions: These check the conditions of an entity.
 2. Location Conditions: These check the conditions at a location. If a location condition is used while an entity is targeted, it will check the conditions at the entity's location.
-3. Compare conditions: These check for certain conditions between two different "things". For example, "Cuboid" will return true if a target is within a cube where the corners are two coordinates, while "StringEquals" will return true or false depending on whether two strings match.
+3. Compare conditions: These check for certain conditions between two different "things". For example, "Cuboid" will return true if a target is within a cube where the corners are two coordinates
+4. Meta conditions: they will not necessarily check against any inherent property of either the caster or a target. For instance, "StringEquals" will return true or false depending on whether two strings match. Those strings *can* be placeholders that fetch the value from either the caster or a target, but that is just one possible application.
 
-Conditions can also be used in three different places within a meta skill:
+## Usage
+Conditions can also be used in three different places within a metaskill:
+#### Conditions
+Conditions in this section check against the caster or its location.
+```yaml
+  Conditions:
+  - health{h=>10}
+```
+> Checks if the caster has more than 10 health points
 
-1. Conditions: Conditions in this section check the conditions of the caster or the caster's location.
-2. TargetConditions: Conditions in this section check the conditions of the target or target location inherited from the skill's targeter.
-3. TriggerConditions: Conditions in this section check the conditions of the entity that triggered the skill.
-
-### Examples
 ```yaml
   Conditions:
   - globalscore{objective=Test;v=>10}
 ```
-In the example above, the globalscore condition will check the caster's global score.
+> In the example above, the globalscore condition will check the caster's global score.
+
+##
+#### TargetConditions
+Conditions in this section check against the [inherited target](/Skills/Metaskills#inheritance) of the metaskill
+
+```yaml
+  TargetConditions:
+  - health{h=>10}
+```
+> Checks if the inherited targeted entities have more than 10 health points, and only those that do will be inherited as an inherited target by the metaskill. If none do then the metaskill, by default, will not execute.
+
 ```yaml
   TargetConditions:
   - globalscore{objective=Test;v=>10}
 ```
-The example above uses the exact same condition, but here the globalscore condition will check the inherited target's global score. Since globalscore is an entity condition, it will only work if an entity is targeted.
+> The example above the globalscore condition will check the inherited target's global score. Since globalscore is an entity condition, it will only work if an entity is targeted.
 
-**Format**:
+##
+#### TriggerConditions
+Conditions in this section check against the trigger of the metaskill
 ```yaml
-SkillName:
-  Conditions:
-    - condition [variable]
   TargetConditions:
-    - condition [variable] [action]
-  TriggerConditions:
-    - condition [variable] [action] [action_variable]
-    - condition{variable1=value;variable2=value} [action] [action_variable]
+  - health{h=>10}
 ```
+> Checks if the trigger of the metaskill has more than 10 health points
 
-These new "actions" control how the skill acts when a condition is met
-or not met. Here are some examples:
-```yaml
-YourAwesomeSkill:
-  Conditions:
-    - day required
-  TargetConditions:
-    - stance defensive power 0.5
-  TriggerConditions:
-    - stance{stance=defensive} power 0.5
-    - score{objective=test;value=>20} cancel
-    - haspotioneffect{type=POISON;level=>0;duration=0to100} true
-```
-**Ranged Values:**  
+## Ranged Values  
 Ranged values use either the format **#to#** or **#-#**. You must use "to" instead of "-" if you want to use negative numbers in the range. For:
 ```yaml
 YourMagnificentSkill:
@@ -78,7 +76,6 @@ YourMagnificentSkill:
   TriggerConditions:
     - distance{d=1to10} true
 ```
-
 
 ## Condition Actions
 
@@ -131,6 +128,19 @@ OtherSkill:
 > `day true`  
 > is checked before  
 > `sunny orElseCast OtherSkill`  
+
+```yaml
+YourAwesomeSkill:
+  Conditions:
+  - day true
+  TargetConditions:
+  - stance{s=defensive} power 0.5
+  TriggerConditions:
+  - stance{stance=defensive} power 0.5
+  - score{objective=test;value=>20} false
+  - haspotioneffect{type=POISON;level=>0;duration=0to100} true
+```
+
 
 ## Composite Conditions
 Conditions can also be grouped by parenthesis and evaluated via the **AND** (`&&`) and **OR** (`||`) boolean operators.
