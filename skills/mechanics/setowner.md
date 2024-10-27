@@ -37,9 +37,9 @@ SetOwner:
 HealOwner:
   Cooldown: 10
   TargetConditions:
-  - health{h<20} true
+  - health{h=<20} true
   Skills:
    - heal{a=10}
-   - message{m=<3}
+   - message{m=I healed you!}
 ```
 > This skill would only heal the owner of the mob once every 10 seconds and only if they have less than 20 points of health left
