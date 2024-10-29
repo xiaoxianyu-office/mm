@@ -232,8 +232,8 @@ TestOwner:
 | coordinatey                              | cy               | Sets the y axis coordinate                    | |
 | coordinatez                              | cz               | Sets the z axis coordinate                    | |
 | length                                   |                  | Multiplied the direction vector by the specified value                            | |
-| blocktypes                               | blocktype, bt    | Only targets selected block types. Multiple blocks can be listed by separating them using a `,`<br>You can add a `#` at the front of the type to indicate that the block only needs to match part of the type, add `@` to indicate that the block only needs to match the start of the type | |
-| blockignores                             | blockignore, bi  | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` | |
+| blocktypes                               | blocktype, bt    | Only targets selected block types. Multiple blocks can be listed by separating them using a `,`<br>You can add a `#` at the front of the type to indicate that the block only needs to match part of the type, add `@` to indicate that the block only needs to match the start of the type<br>You can add a `*` at the front of the type to indicate that the one specified is not a block type, but a [block tag](https://minecraft.wiki/w/Tag#Block_tags_2) (example: `blocktype=*sculk_replaceable`  ) | |
+| blockignores                             | blockignore, bi  | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,`<br>Can use the special syntaxes specified in `blocktype` | |
 | coordinateyaw                            | cyaw             | Sets the yaw value                        | |
 | coordinatepitch                          | cpitch           | Sets the pitch value                        | |
 | blockcentered                            | centered         | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself | |
@@ -369,12 +369,6 @@ Currently, sort can have the following values:
 - LOWEST_THREAT
 
 
-<!--
-Unused Attributes
-| Attribute <!-- ETA --> | Aliases   | Description                                             | Default |
-|-----------|-----------|----------------------------------------------------------------------|---------|
-| ignoretype |          |                                                                      |         |
--->
 
 
 <!-- LINKS -->
