@@ -39,7 +39,7 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onPrime](/Skills/Triggers/onprime)     | When the creeper charges up for an explosion                 |
 | [onCreeperCharge](/Skills/Triggers/oncreepercharge) | When the creeper is charged (when lightning hits a creeper)  |
 | [onTeleport](/Skills/Triggers/onteleport) | When the mob teleports (typically only used for endermen)    |
-| [onSignal](/Skills/Triggers/onsignalsignal) | When the mob receives a signal                               |
+| [onSignal](/Skills/Triggers/onsignal) | When the mob receives a signal                               |
 | [onShoot](/Skills/Triggers/onshoot)     | When the mob fires a projectile                              |
 | [onBowHit](/Skills/Triggers/onbowhit)   | When the mob's fired projectile hits an entity               |
 | [onTame](/Skills/Triggers/ontame)       | When the mob gets tamed                                      |
