@@ -29,7 +29,7 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onLoad](/Skills/Triggers/onload)       | When the mob is loaded after a server restart                |
 | [onSpawnOrLoad](/Skills/Triggers/onspawnorload) | When the mob either [spawns](/Skills/Triggers/onspawn) or [loads](/Skills/Triggers/onload)   |
 | [onDeath](/Skills/Triggers/ondeath)     | When the mob dies                                            |
-| [onTimer](/Skills/Triggers/ontimerticks) | Every \# ticks (where \# is the interval in ticks)           |
+| [onTimer](/Skills/Triggers/onTimer) | Every \# ticks (where \# is the interval in ticks)           |
 | [onInteract](/Skills/Triggers/oninteract) | When the mob is right-clicked                                |
 | [onPlayerKill](/Skills/Triggers/onplayerkill) | When the mob kills a player                                  |
 | [onEnterCombat](/Skills/Triggers/onentercombat) | When the mob enters combat (requires threat tables be on)    |
