@@ -5,6 +5,8 @@ While Stats system can be complicated to learn at first, its versatility will en
 
 Stats are defined in the`stats.yml` file. This file can exist in the root directory of MythicMobs (`/plugins/MythicMobs/`) or in a [Pack](MythicMobs/-/wikis/Packs) folder.
 
+> **WARNING: To be able to use Stats on Items, [Crucible](/../../../mythiccrucible/-/wikis/home) must be installed**
+
 - [Custom Stat Options](#custom-stat-options)
   - [Custom Stat Types](#custom-stat-types)
   - [Specific Type Options](#specific-type-options)
@@ -16,6 +18,7 @@ Stats are defined in the`stats.yml` file. This file can exist in the root direct
   - [Items](#items)
 - [Examples](#Examples)
   - [Example Custom Stats](#example-custom-stats)
+
 
 # Custom Stat Options
 Options that can be used in the Stat in order to better customize it
@@ -599,6 +602,7 @@ ExampleItem:
   - CRITICAL_STRIKE_DAMAGE 2.0 ADDITIVE
   - HEALTH 20to30 ADDITIVE
 ```
+> **WARNING: To be able to use Stats on Items, [Crucible](/../../../mythiccrucible/-/wikis/home) must be installed**
 
 # Examples
 
