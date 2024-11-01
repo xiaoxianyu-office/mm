@@ -23,7 +23,7 @@ ImmortalCow:
   Skills:
   - skill{s=[
     - cancelevent
-    - e:p{p=HEART;hs=0.5;vs=0.5;y=1.5}
+    - particle{p=HEART;hs=0.5;vs=0.5;y=1.5}
     - speak{m=Call an ambulance, but not for me!}
     ];sync=true} @self ~onDeath
 ```
