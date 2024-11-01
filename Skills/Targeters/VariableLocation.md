@@ -13,7 +13,7 @@ Targets the location stored in the specified variable. One such variable can be 
 ExampleSkill:
   Skills:
   - setvarloc{var=caster.1;v=@targetlocation} @self
-  - e:p{y=2} @VariableLocation{var=caster.1}
+  - particle{y=2} @VariableLocation{var=caster.1}
 ```
 
 ## Aliases
