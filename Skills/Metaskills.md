@@ -153,7 +153,7 @@ You can also define a list of mechanics to be executed instead of another metask
 ```yaml
   OnCooldownSkills:
   - s{s=entity.village.no}
-  - e:p{p=VILLAGER_ANGRY;y=1.5}
+  - particle{p=VILLAGER_ANGRY;y=1.5}
 ```
 
 
