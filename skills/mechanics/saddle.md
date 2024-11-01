@@ -27,7 +27,7 @@ ExampleMob:
     - saddle @self
     ];
     onTick=[
-    - e:p{p=crit;hs=0.3;vs=0.2;y=1;a=2} @self
+    - particle{p=crit;hs=0.3;vs=0.2;y=1;a=2} @self
     - closeinventory @Passenger
     ];
     onEnd=[
