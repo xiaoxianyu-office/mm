@@ -23,12 +23,12 @@ Returns the # of points target locations that comprise a rectangle. Depending on
 ExampleMob1:
   Type: ZOMBIE
   Skills:
-  - e:p{p=FLAME;a=1} @Rectangle{d=12;f=false;r=45,45,0;yOffset=1.5;outline=true} ~onDamaged
+  - particle{p=FLAME;a=1} @Rectangle{d=12;f=false;r=45,45,0;yOffset=1.5;outline=true} ~onDamaged
 
 ExampleMob2:
   Type: ZOMBIE
   Skills:
-  - e:p{p=SOUL_FIRE_FLAME;a=1} @Rectangle{d=12;r=45,45,45;yOffset=3;fill=true} ~onDamaged
+  - particle{p=SOUL_FIRE_FLAME;a=1} @Rectangle{d=12;r=45,45,45;yOffset=3;fill=true} ~onDamaged
 ```
 
 
