@@ -56,7 +56,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | zombieattack       | | Zombie melee attack                                                             |
 | [leapattarget](/Mobs/ai/goals/leapattarget) | | Makes the mob leap at its target                       |
 | moveindoors        |              |                                                                    |
-| [movethroughvillage](/Mobs/ai/goals/movethroughvillager) |              |                              |
+| [movethroughvillage](/Mobs/ai/goals/movethroughvillage) |              |                              |
 | [movetoblock](/Mobs/ai/goals/movetoblock)| | Makes the mob go towards a specific type of block         |
 | [movetolava](/Mobs/ai/goals/movetolava) | | Makes the mob move towards lava                            |
 | [movetowater](/Mobs/ai/goals/movetowater) | | Makes the mob move towards water                         |
