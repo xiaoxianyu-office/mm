@@ -253,6 +253,13 @@ Other than being able to use PlaceholderAPI placeholders anywhere placeholder su
 | %mythic_spawner_[name]_warmup% | Returns the warmup of the spawner called `name`                      |
 | %mythic_spawner_[name]_warmupleft% | Returns the remaining warmup of the spawner called `name`        |
 
+## PlaceholderAPI Parsing
+When using placeholders via PlaceholderAPI, it is important to remember that some of them are meant to be parsed against a player, and if parsed against a mob they may behave unexpectedly.  
+More concretely, this means that:  
+- If used inside a mechanic, the target must be a player  
+- If used inside a condition, the checked entity must be a player (caster for conditions, inherited targets for targetconditions, trigger for triggerconditions)  
+
+...and so on  
 
 # Custom Placeholders
 It's possible to create custom placeholders in any Pack by creating a file named `placeholders.yml` in the pack directory. These can be static or you can define conditional placeholders - the first one that evaluates true will be chosen, or the `Default` if they're all false.
