@@ -125,14 +125,13 @@ Signal Commands
 ---------------
 
 -   **/mm signal &lt;UUID&gt; &lt;signal&gt;**
-    -   Used to signal mobs to toggle certain skills
-    -   Only works when used with the mobs UUID, doesnt work with
-        mobnames
-    -   Usually used as a tellraw-command component
-    -   This command is available to all players. However players cannot
-        abuse this command unless they have the operator powers
-        neccessary to find specific mob UUIDs and internal signal names
-        of mobs.
+  -   Used to signal mobs to toggle certain skills
+  -   Only works when used with the mobs UUID, doesnt work with mobnames
+  -   Usually used as a tellraw-command component
+  - To use this, all 3 of these permissions must be given
+    - `mythicmobs.signal`
+    - `mythicmobs.command.signal`
+    - `mythicmobs.command.base`
 
 Permissions
 ===========
