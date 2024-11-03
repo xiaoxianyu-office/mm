@@ -22,3 +22,5 @@ Generates a particle effect based on an equation.
 - [x] effect:particleeq
 - [x] particleequation
 - [x] particleeq
+- [x] e:peq
+- [x] peq
