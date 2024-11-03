@@ -15,3 +15,7 @@ The targeted players will be the ones at a distance from the caster between the 
   Skills:
   - ignite @PlayersInRing{min=2;max=10}
 ```
+
+
+## Aliases
+- [x] pring
