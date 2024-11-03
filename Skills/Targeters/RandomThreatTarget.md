@@ -15,3 +15,4 @@ Targets a random entity on the casting mob's [Threat Table](/Mobs/ThreatTables)
 
 ## Aliases
 - [x] RTT
+- [x] threattablerandomtarget
