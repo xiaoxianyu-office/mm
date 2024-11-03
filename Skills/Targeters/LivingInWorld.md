@@ -17,3 +17,6 @@ EntityCount:
 
 ## Aliases
 - [x] EIW
+- [x] allinworld
+- [x] livingentitiesinworld
+- [x] entitiesinworld
