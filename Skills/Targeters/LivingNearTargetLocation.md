@@ -22,6 +22,7 @@ ExampleSkill2:
 
 
 ## Aliases
+- [x] livingentitiesneartargetlocation
 - [x] LNTL
 - [x] ENTL
 - [x] ENT
