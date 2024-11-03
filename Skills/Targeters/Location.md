@@ -1,5 +1,5 @@
 ## Description
-Targets the specified coordinates in the caster's world
+Targets the specified coordinates in a world
 
 
 ## Attributes
