@@ -2,7 +2,7 @@
 Sets the given metakill's cooldown to the given value (in seconds)
 
 > If used to set the cooldown of the metaskill the mechanic is in a delay of at least `0` between the execution of the metaskill and the mechanic must be used
-
+> The target Metaskill needs to have a Cooldown option to begin with. If you do not wish for it to have a Cooldown but you still want to use this mechanic to set it dynamically, use `Cooldown: 0`
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
