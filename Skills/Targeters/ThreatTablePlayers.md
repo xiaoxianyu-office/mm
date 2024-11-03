@@ -11,3 +11,8 @@ Targets all the players on the casting mob's [Threat Table](/Mobs/ThreatTables)
   Skills:
   - ignite @ThreatTablePlayers
 ```
+
+
+## Aliases
+- [x] ttp
+- [x] playersinthreattable
