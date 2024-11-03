@@ -19,3 +19,7 @@ ExampleSkill:
       - ignite @MobsNearOrigin{r=10;types=IncredibleZombie,SpookyScarySkeleton}
     ]}
 ```
+
+
+## Aliases
+- [x] mobssnearsource
