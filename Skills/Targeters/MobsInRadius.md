@@ -19,3 +19,4 @@ ExampleSkill:
 
 ## Aliases
 - [x] MIR
+- [x] mobs
