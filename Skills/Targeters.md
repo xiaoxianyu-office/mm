@@ -181,7 +181,7 @@ Some meta targeters also allow the mechanic to be casted "fromOrigin". This will
 
 | Targeter | Shorthand | Description                                                                     |
 |----------|-----------|---------------------------------------------------------------------------------|
-| @None    |           | Provides no target. (Useful for mechanics with no target input.)                |
+| @[None]  |           | Provides no target. (Useful for mechanics with no target input.)                |
 | @[Region]|           | Special targeter to target a region. Only works with specific mechanics         |
 
 
@@ -461,4 +461,5 @@ Currently, sort can have the following values:
   [TargetedLocation]: /Skills/Targeters/TargetedLocation
   [TargetedTarget]: /Skills/Targeters/TargetedTarget
 <!-- Special Targeters -->
+  [None]: /Skills/Targeters/None
   [Region]: /Skills/Targeters/Region
