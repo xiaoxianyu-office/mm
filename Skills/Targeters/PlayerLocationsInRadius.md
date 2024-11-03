@@ -1,5 +1,5 @@
 ## Description
-Targets the locations all players in the given radius around the caster
+Targets the locations of all players in a given radius around the caster
 
 
 ## Attributes
@@ -17,4 +17,6 @@ Targets the locations all players in the given radius around the caster
 
 
 ## Aliases
+- [x] LocationRadius
 - [x] PLIR
+- [x] PLR
