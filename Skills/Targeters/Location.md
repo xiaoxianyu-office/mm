@@ -21,3 +21,8 @@ ExampleSkill:
   - setblock{m=DIAMOND_BLOCK} @Location{location=100,70,-120,0,0}
   - setblock{m=EMERALD_BLOCK} @Location{x=100;y=71;z=-120}
 ```
+
+
+## Aliases
+- [x] l
+- [x] loc
