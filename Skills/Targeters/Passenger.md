@@ -11,3 +11,7 @@ Targets the rider of the casting mob
   Skills:
   - message{m="Get off!"} @Passenger
 ```
+
+
+## Aliases
+- [x] rider
