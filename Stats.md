@@ -168,7 +168,7 @@ The player inherits the `BaseValue` of these stats; Mobs also inherit them as de
 |[PARRY_COUNTERATTACK](#parry_counterattack)                  |How much damage is returned to the opponent when parrying.                                        |
 |[PARRY_POWER](#parry_power)                                  |How much damage is mitigated by Parry.                                                            |
 |[PARRY_NEGATION](#parry_negation)                                      |Reduces the [PARRY_CHANCE](#parry_chance) of the opponent. |
-
+| [SCALE](#scale)                                             | The scale of the entity                |
 
 # Built-in Stats Breakdown
 
@@ -575,6 +575,27 @@ PARRY_POWER:
 ```
 
 </details>
+
+##
+#### `SCALE`
+The Scale of the entity
+<details><summary>Configuration</summary>
+<br>
+
+```yml
+SCALE:
+  Enabled: false
+  AlwaysActive: false
+  Display: 'Scale'
+  BaseValue: 1
+  Tooltips:
+    Additive: '+<value> Scale'
+    Multiply: '+<value> Scale'
+    Compound: 'x<value> Scale'
+```
+
+</details>
+
 
 ##
 # Implementations with Configurations
