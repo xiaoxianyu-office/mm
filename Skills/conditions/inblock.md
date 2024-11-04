@@ -6,7 +6,7 @@ Checks the material at the target location. See the [Spigot Javadoc](https://hub
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| block     | blocks, b, material, mat, m | A list of blocks to match                          |         |
+| block     | blocks, b, material, mat, m | A list of blocks to match                          |<!--type:Material--><!--list--> |
 
 
 ## Examples

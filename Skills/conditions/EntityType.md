@@ -6,7 +6,7 @@ A list of valid entity types can be found on the [Spigot Javadocs](https://hub.s
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type      | types, t  | A list of entity types to match                                      |         |
+| type      | types, t  | A list of entity types to match                                      |<!--type:EntityType--><!--list--> |
 
 
 ## Examples

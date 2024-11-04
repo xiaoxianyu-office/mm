@@ -7,7 +7,7 @@ A list of valid dimensions can be found in the [Spigot Enviroment javadoc](https
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| dimension | d, environment, env | A list of dimensions to check                              | THE_END |
+| dimension | d, environment, env | A list of dimensions to check                              | THE_END<!--type:WorldEnviroment--><!--list--> |
 
 
 ## Examples

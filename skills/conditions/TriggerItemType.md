@@ -5,7 +5,7 @@ Checks against the item material type that triggered the skill. Only works with 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| types     | type, t, material, mat, m, items, item, i | A list of [materials] to check against | DIRT  |
+| types     | type, t, material, mat, m, items, item, i | A list of [materials] to check against | DIRT<!--type:Material--><!--list--> |
 
 
 ## Examples

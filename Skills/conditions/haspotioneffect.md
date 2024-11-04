@@ -6,7 +6,7 @@ Tests if the target entity has a potion effect
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type      | t         | The potion effect type                                               | ANY     |
+| type      | t         | The potion effect type                                               | ANY<!--type:PotionEffectType--> |
 | level     | lvl, l    | An optional level range to match                                     |         |
 | duration  | d         | An optional duration range to match                                  |         |
 

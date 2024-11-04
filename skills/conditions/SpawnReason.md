@@ -5,7 +5,7 @@ Checks against the spawn reason of the target(s)
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| reason    | r         | The reason to check for. Can be any of the [Bukkit][] ones             |         |
+| reason    | r         | The reason to check for. Can be any of the [Bukkit][] ones             |<!--type:SpawnReason--> |
 
 
 ## Examples
