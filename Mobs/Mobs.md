@@ -352,7 +352,6 @@ MerchantTest:
       Item1: 5 EMERALD
       Item2: 5 DIAMOND
       Result: DIAMOND_SWORD
-      MaxUses: 5
     2:
       Item1: 64 EMERALD
       Result: mmoitems.SWORD.CUTLASS
@@ -363,9 +362,10 @@ MerchantTest:
       Result: 1 CUSTOM_ITEM
       MaxUses: 1
 ```
+> If `MaxUses` is not set, it will default to `10000`
 
-Examples
------------------------------
+
+## Examples
 
 More mob examples can be found in the [Examples](/examples/Common-Examples#mobs) section.
 <!--  ONLY NEED TO LINK USERS TO EXAMPLES SECTION
