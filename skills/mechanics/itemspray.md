@@ -15,7 +15,7 @@ Unless otherwise specified with the `allowpickup` option, those items will be pa
 | yOffset     | yo, y   | The y offset the items will start at                                 | 1       |
 | allowpickup | ap        | Whether the itemspray's items should be real items, enabling players to pick them up                                                                                        | false   |
 | gravity     | g       | Whether the items should be affected by gravity                      | true    |
-| audience    |         | The [audience] of the effect                                         | world   |
+| audience    |         | The [audience] of the effect                                         | world<!--type:Audience--> |
 
 
 ## Examples

@@ -5,7 +5,7 @@ Adds an attribute modifier to the attributable target
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| attribute | attr      | The [attribute]                                                 | GENERIC_LUCK |
+| attribute | attr      | The [attribute]                      | GENERIC_LUCK<!--type:SpigotAttribute--> |
 | operation | op        | The [operation] to perform                                        | ADD_NUMBER |
 | name      | modifierName | The name of the modifier                                    | <caster.uuid> |
 | amount    | amt, a    | The modifier of the attribute                                          | 0     |

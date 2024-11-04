@@ -7,7 +7,7 @@ Disguises be installed to enable Disguise functionality.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | disguise  | d, type   | The disguise to apply to the target.                          | player Ashijin |
-| audience  |           | The [audience] of the disguise                                       |         |
+| audience  |           | The [audience] of the disguise                           |<!--type:Audience--> |
 
 
 ## Examples

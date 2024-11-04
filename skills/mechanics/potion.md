@@ -13,7 +13,7 @@ effects.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type      | t, effect | The type of [potion effect](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) to apply.   | SLOW    |
+| type      | t, effect | The type of [potion effect](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) to apply.   | SLOW<!--type:PotionEffectType--> |
 | duration  | d         | The duration of the effect in ticks [1].                             | 100     |
 | level     | lvl, l    | The modifier-level of the potion effect. The real level is level's value +1.| 0|
 | force     | overwrite, ow, override, or | Whether not to override the current potion effect or not. | false |

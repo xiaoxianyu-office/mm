@@ -10,7 +10,7 @@ disguises.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | disguise  | d, type   | The disguise to apply to the mob.                             | player Ashijin |
-| audience  |           | The [audience] of the disguise                                       |         |
+| audience  |           | The [audience] of the disguise                           |<!--type:Audience--> |
 
 
 ## Examples

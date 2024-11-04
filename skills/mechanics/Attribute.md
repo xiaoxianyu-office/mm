@@ -6,7 +6,7 @@ Sets the base value of the targeted entity's [attribute][]
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| attribute | attr      | The [attribute][] to set                                        | GENERIC_LUCK |
+| attribute | attr      | The [attribute][] to set             | GENERIC_LUCK<!--type:SpigotAttribute--> |
 | amount    | amt, a    | The amount of the attribute                                            | 0     |
 | duration  | dur       | The duration of the attribute                                          | 0     |
 

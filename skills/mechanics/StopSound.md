@@ -5,7 +5,7 @@ Stops a sound from playing from either the vanilla game or a resource pack for t
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| sound     | s         | Sound to stop playing                         | entity.zombie.attack_iron_door |
+| sound     | s         | Sound to stop playing                         | entity.zombie.attack_iron_door<!--type:Sound--> |
 | soundcategory | source, sc, category | The category at which the sound is played, useful for resourcepacks | MASTER |
 
 ### SoundCategory Attribute

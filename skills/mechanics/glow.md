@@ -11,7 +11,7 @@ This mechanic is also an [aura].
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | auraname  | buffname, debuffname | The name of the aura                                      | #glowing|
 | color     | c         | The [color] with which the entity will glow                          | white   |
-| audience  |           | The [audience] of the glow effect                                    | nearby  |
+| audience  |           | The [audience] of the glow effect                                    | nearby<!--type:Audience--> |
 > This mechanic inherits every attribute of the [Aura] mechanic 
 >> - The `auraname` attribute is **defaulted** at `#glowing`
 >> - The `charges` attribute is **set** at `1` and cannot be modified.  

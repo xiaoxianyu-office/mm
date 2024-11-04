@@ -5,7 +5,7 @@ Sets the EnderDragon respawn phase if an EnderDragon battle is going on in the t
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| phase     | p         | The phase to set                                                     | NONE    |
+| phase     | p         | The phase to set                                                     | NONE<!--type:DragonBattleRespawnPhase--> |
 
 ### Phase Attribute
 The possible values of the phase attribute (at the time of writing) are listed below.  

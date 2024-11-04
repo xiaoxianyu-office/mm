@@ -8,8 +8,8 @@ Creates a custom boss bar on the casting mob (cannot be player).
 | name      | n         | The name of the bossbar.                                             | infobar |
 | display   | d, bartimerdisplay, bartimertext | The text displayed on the bar            | <caster.name> |
 | value     | v         | How filled the bossbar is. Must be between 0.0 and 1.0.              | 1.0     |
-| color     | c, bartimercolor | The [Color](/Mobs/BossBar#color) of the bossbar               | RED     |
-| style     | s, bartimerstyle | The [Style](/Mobs/BossBar#style) of the bossbar               | SOLID   |
+| color     | c, bartimercolor | The [Color](/Mobs/BossBar#color) of the bossbar               | RED<!--type:BarColor--> |
+| style     | s, bartimerstyle | The [Style](/Mobs/BossBar#style) of the bossbar               | SOLID<!--type:BarStyle--> |
 
   
 

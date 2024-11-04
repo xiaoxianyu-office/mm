@@ -8,7 +8,7 @@ This mechanic must be synced, meaning that either the mechanic or the initial sk
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount    | a         | The amount of the operation                                          | 1       |
 | damagetype| type, dt, t | The type of the damage to evaluate                                 | ALL     |
-| action    | mod, m    | The [modifier](/Items/Attributes#operations) to use                  | ADD     |
+| action    | mod, m    | The [modifier](/Items/Attributes#operations) to use                  | ADD<!--type:SpigotAttributeOperation-->|
 
 
 ## Examples

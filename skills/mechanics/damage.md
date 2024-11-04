@@ -16,7 +16,7 @@ Damages the targeted entity.
 | ignoreArmor | ia, i   | Whether or not to ignore armor, but will still use enchantment modifiers when calculating total damage                                                                       | false   |
 | preventknockback | pkb, pk | Whether or not to prevent knockback                             | false   |
 | preventimmunity  | pi      | Whether or not to prevent the [damage immunity ticks] on the target by setting them to 0 after the damage is inflicted                                                | false   |
-| damagecause | dc, cause | Sets the damage cause for this damage mechanic.<br/> (This option is only available for 1.17+)                                                                     | entity_attack |
+| damagecause | dc, cause | Sets the damage cause for this damage mechanic.<br/> (This option is only available for 1.17+)                                                                     | entity_attack<!--type:DamageCause--> |
 | ignoreenchantments |ignoreenchants, ie  | Whether or not to ignore enchantments when calculating total damage.<br>(This option is only available for 1.19+) | false         |
 | noanger   | na        | Whether or not to generate anger when damaging the entity            | false   |
 | ignoreinvulnerability | ignoreinvulnerable, ii | Whether or not to ignore the [damage immunity ticks] on the target by setting them to 0 before the damage is inflicted                                 | false   |

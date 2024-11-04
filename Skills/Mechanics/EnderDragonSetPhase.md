@@ -5,7 +5,7 @@ Sets the EnderDragon phase on the target EnderDragon entity
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| phase     | p         | The phase to set                                                    | CIRCLING |
+| phase     | p         | The phase to set                                                    | CIRCLING<!--type:EnderDragonPhase--> |
 
 ### Phase Attribute
 The possible values of the phase attribute (at the time of writing) are listed below.  

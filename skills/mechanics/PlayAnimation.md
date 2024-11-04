@@ -6,7 +6,7 @@ Forces the entity to play an animation
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | animation | a, effect, e | The animation to play                                             | 1       |
-| audience  |           | The [audience] of the effect                                         | world   |
+| audience  |           | The [audience] of the effect                                         | world<!--type:Audience--> |
 
 ### Animation Attribute
 | ID    | Animation               |

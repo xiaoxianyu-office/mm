@@ -8,7 +8,7 @@ Causes a geyser of liquid to shoot out of the ground at the targeted entity or l
 | type      | t         | The type of liquid. Can be “WATER” or “LAVA”                         | WATER   |
 | height    | h         | How high the geyser will go. Will be set to *at least* 1 even if specified otherwise. | 3       |
 | interval  | i, speed, s | The interval (in ticks) between each iteration of the geyser animation | 10  |
-| audience  |           | The [audience] of the effect                                         | nearby  |
+| audience  |           | The [audience] of the effect                                         | nearby<!--type:Audience--> |
 
 
 ## Examples

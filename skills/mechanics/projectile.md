@@ -159,25 +159,25 @@ Examples:
 ### BLOCK Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
+| bulletmaterial | material, mat | The material of the bullet                                  | STONE<!--type:Material--> |
 | bulletspin | bspin    | The spin of the bullet                                               | 0       |
-| audience  |           | The [Audience][] of the bullet                                       | world   |
+| audience  |           | The [Audience][] of the bullet                                       | world<!--type:Audience--> |
 
 ### SMALLBLOCK Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
-| audience  |           | The [Audience][] of the bullet                                       | world   |
+| bulletmaterial | material, mat | The material of the bullet                                  | STONE<!--type:Material--> |
+| audience  |           | The [Audience][] of the bullet                                       | world<!--type:Audience--> |
 
 ### ITEM Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
+| bulletmaterial | material, mat | The material of the bullet                                  | STONE<!--type:Material-->  |
 |bulletModel| model     | The CustomModelData of the material                                  | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletmatchdirection | bmd, bulletsmall | Should the bullet face where the projectile is facing | false |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
-| audience  |           | The [Audience][] of the bullet                                       | world   |
+| audience  |           | The [Audience][] of the bullet                                       | world<!--type:Audience--> |
 
 ### MOB Bullet
 | Attribute | Aliases   | Description                                                          | Default |
@@ -192,7 +192,7 @@ Examples:
 ### TRACKING Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
+| bulletmaterial | material, mat | The material of the bullet                                  | STONE<!--type:Material--> |
 |bulletModel| model     | The CustomModelData of the material                                  | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
@@ -204,12 +204,12 @@ Examples:
 | yawspeed  | ys        | The yaw rotation speed                                               | 0       |
 | rollspeed | rs        | The roll rotation speed                                              | 0       |
 | rotationspeed | rotspeed, rots | The rotation speed of the bullet, in the x,y,z format      | 0,0,0   |
-| audience  |           | The [Audience][] of the bullet                                       | world   |
+| audience  |           | The [Audience][] of the bullet                                       | world<!--type:Audience--> |
 
 ### REALTRACKING Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
+| bulletmaterial | material, mat | The material of the bullet                                  | STONE<!--type:Material--> |
 |bulletModel| model     | The CustomModelData of the material                                  | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
@@ -217,7 +217,7 @@ Examples:
 ### DISPLAY Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat, bulletitem | The material of the bullet                      | STONE   |
+| bulletmaterial | material, mat, bulletitem | The material of the bullet                      | STONE<!--type:Material--> |
 |bulletModel| model     | The CustomModelData of the material                                  | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
@@ -242,7 +242,7 @@ Examples:
 | hideFirstTick | hft   | Hides the item for the first tick                                    | false   |
 | bulletCullingHeight | cullHeight | The bullet's display culling height                       | 0.0     |
 | bulletCullingWidth | cullWidth | The bullet's display culling width                          | 0.0     |
-| audience  |           | The [Audience][] of the bullet                                       | world   |
+| audience  |           | The [Audience][] of the bullet                                       | world<!--type:Audience--> |
 | bulletgen | generation, bulletgeneration | If MythicCrucible is installed, the generation option for the bullet item |
 
 ### ME Bullet
@@ -267,7 +267,7 @@ Examples:
 | bulletCullingDistance | bulletViewDistance, bulletViewRange | The range in which the bullet will be visible                                                                                        | 50      |
 | bulletCullingHeight | cullHeight | The bullet's display culling height                       | 0.0     |
 | bulletCullingWidth | cullWidth | The bullet's display culling width                          | 0.0     |
-| audience  |           | The [Audience][] of the bullet                                       | world   |
+| audience  |           | The [Audience][] of the bullet                                       | world<!--type:Audience--> |
 
 
 ## Examples

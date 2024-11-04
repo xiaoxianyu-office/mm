@@ -14,7 +14,7 @@ codes](/Skills/Placeholders#color-codes) and
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | message   | msg,m     | The message to send                                                  | None    |
-| audience  |           | the [audience] of the message                                        |         |
+| audience  |           | the [audience] of the message                                        | <!--type:Audience-->|
 
 
 ## Examples

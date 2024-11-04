@@ -5,7 +5,7 @@ Change blocktype at target location.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| material  | m, mat, t, type, types | The material for the block to be set to                              | [DIRT](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html "CLICK ME to view valid block materials")                                                                                              |
+| material  | m, mat, t, type, types | The material for the block to be set to                              | [DIRT](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html "CLICK ME to view valid block materials")<!--type:Material-->                                            |
 | physics   | p         | Whether to apply physics to the affected area                        | true    |
 
 

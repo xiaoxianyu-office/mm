@@ -11,7 +11,7 @@ Bukkit material/block names can be acquired in-game. Simply hold the block you w
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| material  | mat, m, block, b | The [type of block](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html) used for the blockmask                      | GRAVEL  |
+| material  | mat, m, block, b | The [type of block](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html) used for the blockmask                      | GRAVEL<!--type:Material--> |
 | radius    | r         | The radius of the blockmask effect                                   | 0       |
 | radiusy   | ry        | The y component of the radius                                        | `radius`|
 | noise     | n         | Defines the randomness of the effect                                 | 0       |
@@ -19,7 +19,7 @@ Bukkit material/block names can be acquired in-game. Simply hold the block you w
 | shape     | s         | The shape of the effect. `Sphere`/`Cube`                             | SPHERE  |
 | noair     | na        | Mask no air blocks only                                              | true    |
 | onlyair   | oa        | Mask air blocks only                                                 | false   |
-| audience  |           | The [audience] of the effect                                         | nearby  |
+| audience  |           | The [audience] of the effect                                         | nearby<!--type:Audience--> |
 | occ       | o, oc     | If onlyair is used, target transparent blocks as well                | true    |
 
 ### Duration Attribute
