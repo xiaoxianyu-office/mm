@@ -129,7 +129,7 @@ flowchart TD
 
 But what about elements that are present on both the mob and its template?
 
-## Shared Elements
+### Shared Elements
 When both the Mob and its Template share some elements, one of the following three things happens:
   * The element of the template is overridden by the one in the Mob. (**Overridden**)
     * Example: both `MonsterFaction_Base` and `ZombieBrute` have a `PROJECTILE` DamageModifier, so the one in `ZombieBrute` overrides the one in the Template, and is the one that is ultimately applied
@@ -170,7 +170,7 @@ To make this more understandable, the following is a list of all of the elements
 \* A special note must be made regarding the behavior of the AIGoalsSelector and the AITargetSelectors elements, as only stating that they are "merged" is a bit reductive. The selector of the Mob are, in fact, added to the end of the Template's. So, for instance, if the Template has a `clear`,`meleeattack` AIGoals and the Mob has a `randomstroll` one, the final mob will effectively have `clear`,`meleeattack`,`randomstroll` as its AIGoals.
 If one wishes to reset the Selectors from the Template, one can either use the [`Exclude`](#excluding-elements) element or use the `clear` Selector, as that will "delete" every Selector that came before it.
 
-## Excluding Elements
+### Excluding Elements
 It is possible to stop a Mob from inheriting unwanted elements from its Template using the following syntax
 ```yaml
   Exclude:
@@ -310,3 +310,12 @@ flowchart TD
 ```
 
 ##
+
+## Item Templates
+[Items](/Items/Items#template) can use Templating like mobs while referencing other items. One small issue: only one template can be used at a time, so [Multi Templates](#multi-templates) cannot be used on them!
+```yaml
+MyItem:
+  Template: MyOtherItem
+```
+
+But you can still get a good amount of utility out of them via [Chained Templates](#chained-templates)
