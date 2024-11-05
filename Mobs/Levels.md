@@ -50,6 +50,7 @@ Mob levels (for random-spawned mobs) can automatically be set by the plugin by s
     ScalingEquations:
       Health: V * ((1.05)^(L-1))
       Damage: V * ((1.05)^(L-1))
+      Scale: V
     # Alternate legacy method of scaling mobs attributes
     DefaultLevelModifiers:
       Health: 0.1
