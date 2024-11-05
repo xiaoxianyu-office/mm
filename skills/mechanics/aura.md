@@ -46,7 +46,7 @@ If set to `true`, additional attributes becomes available
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bartimerdisplay | bartimertext | The text in the bossbar                                    | auraname |
-| bartimercolor |       | The [Color](/Mobs/BossBar#color) of the bossba       | RED<!--type:BarColor--> |
+| bartimercolor |       | The [Color](/Mobs/BossBar#color) of the bossbar      | RED<!--type:BarColor--> |
 | bartimerstyle |       | The [Style](/Mobs/BossBar#style) of the bossbar    | SOLID<!--type:BarStyle--> |
 
 
