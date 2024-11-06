@@ -141,7 +141,7 @@ example_item:
 Special field that allows to hide specific things from the item tooltip.
 All possible flags can be found:
 - [here if you have **Spigot**](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html)
-- [here if you have **Paper**](https://jd.papermc.io/paper/1.21/org/bukkit/inventory/ItemFlag.html) 
+- [here if you have **Paper**](https://jd.papermc.io/paper/1.21.3/org/bukkit/inventory/ItemFlag.html) 
 > If the server version is <1.20.5, you can also use `HIDE_POTION_EFFECTS`
 ```yml
 example_item:
