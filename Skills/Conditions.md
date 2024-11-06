@@ -281,7 +281,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [LocalDifficulty](/skills/conditions/localdifficulty)                         | Location | Tests the difficulty scale at the target location                                         |
 | [LookingAt](/Skills/Conditions/LookingAt)                                     | Entity   | Checks if the player is looking at something                                                  |
 | [LunarPhase](/skills/conditions/lunarphase)                                   | Location | Checks the target world's lunar phase                                                      |
-| [MaterialIsOnCooldown](/skills/conditions/MaterialIsOnCooldown)               | Entity   | Checks if the target player's specified material is on cooldown                               |
+| [MaterialisOnCooldown](/skills/conditions/MaterialIsOnCooldown)               | Entity   | Checks if the target player's specified material is on cooldown                               |
 | [MobsInChunk](/skills/conditions/mobsinchunk)                                 | Location | Matches a range to how many mobs are in the target location's chunk                       |
 | [MobsInRadius](/skills/conditions/mobsinradius)                               | Location | Checks how many mobs are in a given radius                                                 |
 | [MobsInWorld](/skills/conditions/mobsinworld)                                 | Location | Matches a range to how many mobs are in the target world                                  |
