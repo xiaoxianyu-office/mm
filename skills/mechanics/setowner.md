@@ -1,10 +1,10 @@
 ## Description
 Sets the "owner" attribute of the Mythic Mob to the given target. This is a special attribute used within MythicMobs, and different from the normal "vanilla" owner of a mob.  
-Does nothing if the caster is not a Mythic Mob, or the target is not a Player.  
+
+Does nothing if the caster is not a Mythic Mob.  
+If the casting mob is a `Wolf`,`Cat` or `Parrot` and the target is a Player, then the mechanic will _also_ set their Vanilla Owner as the targeted player.  
+
 Works with the [@Owner Targeter](/Skills/Targeters/Owner), and the [Owner Condition](/skills/conditions/owner).  
-
-If the casting mob is a `Wolf`,`Cat` or `Parrot`, then the mechanic will _also_ set their Vanilla Owner as the targeted player.  
-
 
 While an Owner is set, a mob will never attack or target it, even if specified otherwise. A mob will still retain any aggro it had against the owner before it was set as such.
 
