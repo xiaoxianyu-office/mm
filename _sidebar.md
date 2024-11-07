@@ -6,12 +6,19 @@
 ##### [Compatible Plugins](Compatible-Plugins)
 ##### [API Information](API)
 
+---
+
+##### [<img src="https://raw.githubusercontent.com/Lxlp38/MythicScribe/refs/heads/master/assets/icon128x128.png" alt="MythicScribe" width="4%"> MythicScribe](https://marketplace.visualstudio.com/items?itemName=Lxlp.mythicscribe)
+
 ##### [Guides](/Guides)
 * [Troubleshooting](/Troubleshooting/Troubleshooting)
 * [FAQ / Common Issues](FAQ)
 * [Examples](/examples/Common-Examples)
 
+
 ##### [Packs](Packs)
+
+---
 
 ##### [Mobs](/Mobs/Mobs)
   * [Mob Options](/Mobs/Options)
@@ -58,6 +65,8 @@
 ##### Spawning
   * [Spawners](/Spawners)
   * [Random Spawns](/Random-Spawns)
+
+---
 
 ##### [Stats](Stats)
   * [Custom Stat Options](/Stats#custom-stat-options)
