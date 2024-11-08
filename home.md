@@ -92,7 +92,6 @@ Getting Started
 -   [FAQ's]
 -   [Examples]
 -   [Guides](/Guides)
--   [Included Starter Mobs]
 
 
 [![](http://img.youtube.com/vi/3rZtjFyLp3I/0.jpg)](http://www.youtube.com/watch?v=3rZtjFyLp3I "[MythicMobs Tutorial ①] Basic knowledge: How to install and run MythicMobs")
@@ -106,7 +105,6 @@ Getting Started
   [FAQ's]: FAQ
   [Permissions]: Commands-and-Permissions#permissions
   [Videos]: Videos
-  [Included Starter Mobs]: starter-mobs
 
 Help & Questions
 ----------------
