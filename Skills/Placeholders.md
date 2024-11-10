@@ -102,7 +102,7 @@ These placeholders will return whatever attribute of the caster that is called. 
 | <caster.skill.\[skill_name\].cooldown> | Returns the current cooldown of the give skill as a float number |
 | <caster.raytrace.#>                | Returns the name of the block being looked at by the caster if within # range, if # is specified. If only <caster.raytrace> is used, then the range defaults to `4.5`. If no block is found, `AIR` is returned.|
 | <caster.children.size>             | Returns the number of children this entity has                    |
-| <caster.attack_cooldown>           | Returns the attack cooldown of the player's equipped item         |
+| <caster.attack_cooldown>           | Returns the attack cooldown of the player's equipped item. The value will be a float between 0 (maximum cooldown for the item) and 1 (no cooldown) |
 
 ## Variable Placeholders
 These placeholders will return whatever variable has been called. For instance <caster.var.\[name\]> will return the value of the caster's \[name\] variable.  
