@@ -1,10 +1,11 @@
 Lets you make simple or advanced calculations. Any placeholders that returns a number is supported.
 You can use math in most places that supports placeholders.
 
-Operators
------------
+[[_TOC_]]
+
+## Operators
 Most of these operators can be found here https://www.objecthunter.net/exp4j/#Built-in_operators
-#### Math Operators
+### Math Operators
 
 | Operator |   Description    |  Example  |
 |:--------:|:----------------:|:---------:|
@@ -15,7 +16,7 @@ Most of these operators can be found here https://www.objecthunter.net/exp4j/#Bu
 |    ^     |      Power       |   2 ^ 2   |
 |    %     |    Remainder     |   2 % 2   |
 
-#### Boolean Operators
+### Boolean Operators
 | Operators |       Description        | Example |
 |:---------:|:------------------------:|:-------:|
 |    \<     |        Less than         |   2<5   |
@@ -27,8 +28,7 @@ Most of these operators can be found here https://www.objecthunter.net/exp4j/#Bu
 *Boolean operators will return `1` if the expression is true and `0` if it's false.*
 
 
-Functions
----------
+## Functions
 Most of these functions can be found here https://www.objecthunter.net/exp4j/#Built-in_functions
 
 |     Function     | Description                                                     |
@@ -61,12 +61,12 @@ Most of these functions can be found here https://www.objecthunter.net/exp4j/#Bu
 |    max(x, y)     | maximum                                                         |
 |   atan2(y, x)    | principal value of the arc tangent of y/x, expressed in radians |
 | random(min, max) | random with limits                                              |
+| clamp(value, min, max) | Clamps a number between a given minimum and maximum. If the number you provide is less than the minimum, it will return the minimum. If it's greater than the maximum, it returns the maximum. If it's between the minimum and maximum, it returns the number unchanged |
 
 NOTE: You can request to add more operators and functions by making a suggestion ticket in our [issues page](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/issues)
 
 
-Example Usage
-------------
+## Example Usage
 ```yml
 MyCoolMob:
   Type: HUSK
