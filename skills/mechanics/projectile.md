@@ -254,6 +254,8 @@ Examples:
 | bulletEnchanted | enchanted | Whether the bullet's model should be enchanted                 | false   | 
 | bulletGlowing | glowing | Whether the bullet's model should be glowing                       | false   |
 | bulletglowcolor |     | The glow color of the bullet, if `bulletGlowing` is set to true      |         |
+| bulletCulling  | culling | Whether to apply culling for the bullet model                     | true    |
+| bulletViewRadius |    | From how far the bullet can be seen, if greater than 0.              | -1      |
 
 ### TEXT Bullet
 | Attribute | Aliases   | Description                                                          | Default |
