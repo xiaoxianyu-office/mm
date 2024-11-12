@@ -317,6 +317,38 @@ ICanHearYou:
   - message{m="I can hear you <trigger.name>! <skill.var.volume>? Way too loud!"} @trigger
 ```
 
+#### Totem
+Allows you to configure a custom structure that, once built, will summon a mob
+```yaml
+ExampleMob:
+  Type: ZOMBIE
+  Totem:
+
+    # The block that once placed will prompt the plugin to check for a totem
+    Head: player_head
+
+    # A list of offset vectors and materials that define what the totem should look like
+    Pattern:
+    - 1,2,0 player_head
+    - 0,2,0 player_head
+    - -1,2,0 player_head
+    - 1,1,0 NETHERITE_BLOCK
+    - -1,1,0 NETHERITE_BLOCK
+    - 0,1,0 NETHERITE_BLOCK
+    - 0,0,0 NETHERITE_BLOCK
+
+    # Optional list of replacements blocks for the pattern.
+    # If a replacement for them is not set, every block in the pattern will be replaced with AIR
+    Replacement:
+    - 0,0,0 AIR
+```
+
+The 'Head''s value is the actual block type that, once placed in the world, will prompt the plugin to check if the totem structure is built. It is, as such, suggested to not use a common block type for this
+
+Block offsets are in a x,y,z syntax, configured from the perspective of facing yaw=0 and 0,0,0 being the very bottom of the totem where the mob spawns.
+
+<img src="https://i.imgur.com/yOc8Hnm.gif" alt="Mob Totem" width="50%">
+
 
 #### Variables
 Instead of using a lot of `setvariable` mechanics `~onSpawn`, you can make a mob spawn with already set [variables](/Skills/Variables) via the use the of Variables mob field.
