@@ -10,7 +10,7 @@ Plays a sound from either the vanilla game or a resource pack at the targeted en
 | volume    | v         | The volume of the sound.                                             | 1.0     |
 | radius    | r         | The radius in which the sound will be heard                      | `volume`*16 |
 | soundcategory | category, sc | The category at which the sound is played, useful for resourcepacks | MASTER |
-| audience  |           | The [audience] of the effect                                         | world   |
+| audience  |           | The [audience] of the effect                                         | world<!--type:Audience--> |
 
 ### SoundCategory Attribute
 A list of sound categories can be found [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/SoundCategory.html).
