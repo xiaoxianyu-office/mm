@@ -15,7 +15,7 @@ You can force a new line in the hologram by using `\n`
 | chatprefix| cp        | The prefix for the chat message            | &lt;caster.name&gt;&f&lt;&co&gt;  |
 | duration  | d, ticks, time, t | The amount of time the hologram will be displayed for.               | MESSAGE LENGTH * 4  |
 | sendchatmessage | chatmessage, chat | Whether the message shows up in chat                   | true    |
-| audience  |           | The [Audience] of the mechanic                                       | tracked |
+| audience  |           | The [Audience] of the mechanic                                       | tracked<!--type:Audience--> |
 
 > This mechanic inherits every attribute of the [Aura] mechanic  
 >> - The `auraname` attribute is **set** at `#speaking`
