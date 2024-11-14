@@ -341,5 +341,16 @@ NetheritePops:
 | hasparticles       | particles, p | Whether particles should be present                      | true    |
 | hasicon            | icon, i | Whether the effect icon should be displayed                   | true    |
 
+
+#### Equippable
+Used to handle the [equippable item component](https://minecraft.wiki/w/Data_component_format/equippable) of an item 
+```yaml
+  Material: IRON_HELMET
+  Equippable:
+    Model: yourNamespace:yourCustomModel
+    Slot: HEAD
+```
+
+
 ## Examples
 More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
