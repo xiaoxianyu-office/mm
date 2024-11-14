@@ -8,6 +8,49 @@ In each page you will find further descriptions as  comments inside the page mar
 `[ExampleMechanic](Wiki-Editors-Resources/ExampleMechanic)`  
 So, if a resource is on the wiki itself, please do use this method.
 
+## Embedded Data
+There are bits of embedded data in the wiki in the form of html comments. These bits of data are used to make datasets for the wiki and it's important that they are not edited without proper care
+
+### Attribute Data
+Those are added to the default value field of any attribute.
+There are two types of data can be embedded, and they can be used together and put in any order. So long as they are *there* somewhere it's fine
+
+This also works for universal attributes that are not inside any specific mechanic
+
+`| type      | types, t  | A list of entity types to match           |<!--type:EntityType--><!--list--> |`
+
+#### Type
+If used, this will make it so that the attribute value can only be from a specific enum (like the Material or BarStyle ones, to say a few)
+
+For that purpose [a list of valid types can be found here](https://github.com/Lxlp38/MythicScribe/blob/21d2ad98234b911200ab0f70370d3752e7573401/src/objectInfos.ts#L93) and can be put in any casing
+
+#### List
+If this is used, it will declare that the attribute value can be a comma separated list of elements.
+If used with `type`, each element will need to be from the same enum
+
+
+### Trigger Data
+Triggers can have any one of those comments in any point in the page (preferably just before the `## Description`)
+
+- `MobTrigger` for triggers that are meant to be used by mobs only
+- `PlayerTrigger` for triggers that all players can activate
+- `ItemTrigger` for triggers specifically meant to be used from items
+- `ArchetypeTrigger` for triggers that are meant to be used in conjunction 
+
+`<!--type:PlayerTrigger-->`
+
+The absence of any specified type will make the trigger be considered "Universal" and can, as such, be used in multiple places. If in doubt, leave it like that.
+
+### Targeter Universal Attribute Data
+Determines if a list of universal attributes for targeters is either Entity ones or Location ones. 
+
+Realistically speaking, you will never need to touch this.
+
+This is set by putting a comment in the Attribute header of the attributes table
+
+`| Attribute <!-- ETA --> | Aliases   | Description                                           | Default |`
+
+The values can either be ETA for entities or LTA for locations
 
 ## Example Pages
 - [Mechanic Wiki Page](Wiki-Editors-Resources/ExampleMechanic)
