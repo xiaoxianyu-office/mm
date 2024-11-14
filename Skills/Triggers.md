@@ -103,6 +103,16 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onSkillDamage](/Skills/Triggers/onskilldamage) | When the mob deals damage to other entities via a mechanic   |
 | [onHear](/Skills/Triggers/onhear)       | When the mob hears a sound, [if enabled](/Mobs/Mobs#hearing) |
 
+<!--
+
+# Player Triggers
+The triggers in this section **cannot be used by normal mobs** and are intended for *players* to trigger, which can normally happen only if another addon plugin (such as [MythicCrucible] or [MythicRPG]) adds some compatibility for that.
+| Trigger                                | When it fires...                                              |
+|----------------------------------------|---------------------------------------------------------------|
+| [onBlockPlace](/Skills/Triggers/onBlockPlace) | When a player places a block                           |
+| [onBlockBreak](/Skills/Triggers/onBlockBreak) | When a player breaks a block                           |
+
+-->
 
 <!-- LINKS -->
 [ThreatTables]: /Mobs/ThreatTables
