@@ -9,6 +9,7 @@ Targets random locations near the origin of the metaskill
 | radius    | r, maxradius, maxr | The radius in which target points will be generated         | 5       |
 | minradius | minr      | The minimum radius in which target points will be generated          | 0       |
 | spacing   | s         | The minimum amount of space between selected targets                 | 0       |
+| onSurface | onsurf, os| Only target locations above solid blocks                             | false   |
 
 ## Examples
 ```yaml
