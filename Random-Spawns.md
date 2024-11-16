@@ -64,6 +64,21 @@ A complete list of all available randomspawn options.
     -   Type: SuperZombie
     -   Type: SkeletalMage,WitchBoss
     -   May also use vanilla mob types.
+    -   Optionally, can also have this syntax to have a single randomspawn spawn multiple mobs with different weights
+
+```yaml
+Deeps:
+  Types:
+  - RegularZombie 100
+  - BigZombie 50
+  - GiantZombie 5
+  - HugeZombie 1
+  Worlds: world
+  Chance: 0.1
+  Priority: 1
+  Action: ADD
+  PositionType: LAND
+```
 
 <!-- -->
 
