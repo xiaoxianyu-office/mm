@@ -344,13 +344,69 @@ NetheritePops:
 
 #### Equippable
 Used to handle the [equippable item component](https://minecraft.wiki/w/Data_component_format/equippable) of an item 
+
+| Tag               | Description                                                             | Default  |
+|-------------------|-------------------------------------------------------------------------|----------|
+| Model             | The resource location of the equipment model to use when equipped. If a namespace is not used, it will default to `minecraft:` |          |
+| Slot              | The [slot](/Skills/EquipSlot) to put the item on. If not specified, the plugin will try to "guess" it based on whether the base material contains any of the following strings: `_HELMET`, `_CHESTPLATE`, `_LEGGINGS` or `_BOOTS` |          |
+| CameraOverlay     | The resource location of the overlay texture to use when equipped. If a namespace is not used, it will default to `minecraft:` |          |
+| Dispensable       | Whether the item can be dispensed by using a dispenser                  | true     |
+| Swappable         | Whether the item can be equipped into the relevant slot by right-clicking | true   |
+| DamageOnHurt      | Whether this item is damaged when the wearing entity is damaged           | true   |
+
 ```yaml
   Material: IRON_HELMET
   Equippable:
-    Model: yourNamespace:yourCustomModel
+    Model: yourNamespace:thePathToYourCustomModel
     Slot: HEAD
+    CameraOverlay: yournamespace:thePathToYourTexture
+    Dispensable: true
+    Swappable: true
+    DamageOnHurt: true
 ```
 
+#### UseCooldown
+Used to handle the [use_cooldown item component](https://minecraft.wiki/w/Data_component_format/use_cooldown) of an item 
+
+| Tag               | Description                                                             | Default  |
+|-------------------|-------------------------------------------------------------------------|----------|
+| CooldownGroup     | The unique resource location to identify this cooldown group. If present, the item is included in a cooldown group and no longer shares cooldowns with its base item type, but instead with any other items that are part of the same cooldown group. If a namespace is not used, it will default to `minecraft:` |         |
+| CooldownSeconds   | The cooldown duration in seconds. Must be an integer, so the cooldown cannot be defined up to the tick |          |
+
+```yaml
+ExampleItem:
+  Material: STICK
+  UseCooldown:
+    CooldownGroup: CoolWands
+    CooldownSeconds: 3
+``` 
+
+#### Tool
+Used to handle the [tool item component](https://minecraft.wiki/w/Data_component_format/tool) of an item 
+
+| Tag               | Description                                                             | Default  |
+|-------------------|-------------------------------------------------------------------------|----------|
+| DamagePerBlock    | The amount of durability to remove each time a block is broken with this tool. Must be a non-negative integer |          |
+| DefaultMiningSpeed | The default mining speed of this tool, used if no rule overrides it    | 1.0      |
+| Rules             | A list of rules for the tool                                            |          |
+
+| Rule Attributes    | Aliases | Description                                                   | Default |
+|--------------------|---------|---------------------------------------------------------------|---------|
+| materials          | material, m | A list of materials for which this rule applies           |         |
+| speed              | s       | If the material being mined matches, overrides the default mining speed   | 1.0     |
+| isCorrectForBlock  | isCorrect, correct, c | If the material being mined matches, overrides whether or not this tool is considered correct to mine at its most efficient speed, and to drop items if the block's loot table requires it | false  | 
+
+```yaml
+ExampleTool:
+  Material: IRON_PICKAXE
+  Tool:
+    DamagePerBlock: 2
+    DefaultMiningSpeed: 3
+    Rules:
+    - iDontThinkThisIsEvenParsed{mat=DIRT;speed=2}
+    - like{mat=STONE;speed=4;correct=true}
+    - atAll{mat=COBBLESTONE;speed=5;correct=true}
+```
 
 ## Examples
 More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
