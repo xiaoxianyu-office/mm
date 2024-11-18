@@ -353,9 +353,13 @@ Used to handle the [equippable item component](https://minecraft.wiki/w/Data_com
 | Dispensable       | Whether the item can be dispensed by using a dispenser                  | true     |
 | Swappable         | Whether the item can be equipped into the relevant slot by right-clicking | true   |
 | DamageOnHurt      | Whether this item is damaged when the wearing entity is damaged           | true   |
+| EquipSound        | The sound to play when the item is equipped                               | item.armor.equip_generic |
+| EntityTypes       | A list of Entity Types that can equip this item                           |        |
 
 ```yaml
-  Material: IRON_HELMET
+KING_HELMET:
+  Id: PAPER
+  Display: '&dKing Helmet'
   Equippable:
     Model: yourNamespace:thePathToYourCustomModel
     Slot: HEAD
@@ -363,6 +367,9 @@ Used to handle the [equippable item component](https://minecraft.wiki/w/Data_com
     Dispensable: true
     Swappable: true
     DamageOnHurt: true
+    EquipSound: "item.armor.equip_iron"
+    EntityTypes: 
+      - "PLAYER"
 ```
 
 #### UseCooldown
@@ -392,21 +399,33 @@ Used to handle the [tool item component](https://minecraft.wiki/w/Data_component
 
 | Rule Attributes    | Aliases | Description                                                   | Default |
 |--------------------|---------|---------------------------------------------------------------|---------|
-| materials          | material, m | A list of materials for which this rule applies           |         |
-| speed              | s       | If the material being mined matches, overrides the default mining speed   | 1.0     |
-| isCorrectForBlock  | isCorrect, correct, c | If the material being mined matches, overrides whether or not this tool is considered correct to mine at its most efficient speed, and to drop items if the block's loot table requires it | false  | 
+| materials          |         | A list of materials for which this rule applies. Can, optionally, also be a single block tag   |         |
+| speed              |         | If the material being mined matches, overrides the default mining speed   | 1.0     |
+| isCorrectForBlock  |         | If the material being mined matches, overrides whether or not this tool is considered correct to mine at its most efficient speed, and to drop items if the block's loot table requires it | false  | 
 
 ```yaml
-ExampleTool:
-  Material: IRON_PICKAXE
+OBSIDIAN_BREAKER:
+  Id: COD
+  Display: '&8Obsidian Breaker'
   Tool:
-    DamagePerBlock: 2
-    DefaultMiningSpeed: 3
+    DamagePerBlock: 1
+    DefaultMiningSpeed: 0.0
     Rules:
-    - iDontThinkThisIsEvenParsed{mat=DIRT;speed=2}
-    - like{mat=STONE;speed=4;correct=true}
-    - atAll{mat=COBBLESTONE;speed=5;correct=true}
+      - materials: "OBSIDIAN,CRYING_OBSIDIAN"
+        speed: 10000.0f
+        isCorrectForBlock: true
 ```
-
+```yaml
+TREE_BREAKER:
+  Id: COD
+  Display: '&aTree Breaker'
+  Tool:
+    DamagePerBlock: 1
+    DefaultMiningSpeed: 0.0
+    Rules:
+      - materials: "completes_find_tree_tutorial" # Example of a Tag being used
+        speed: 10000.0f
+        isCorrectForBlock: true
+```
 ## Examples
 More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
