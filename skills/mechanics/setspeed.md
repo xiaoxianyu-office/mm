@@ -17,7 +17,7 @@ or, to say it in other words
 ```math
 MovementSpeed=speed/5
 ```
-So, if you want to set the mob's MovementSpeed to 0.2, you will need a speed value of 1; if you want a MovementSpeed of 0.4, you will need a aspped value of 2 and so on
+So, if you want to set the mob's MovementSpeed to 0.2, you will need a speed value of 1; if you want a MovementSpeed of 0.4, you will need a speed value of 2 and so on
 
 <!--
 This value will then be multiplied by the default speed value of the respective speed type:
