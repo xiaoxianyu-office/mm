@@ -53,6 +53,17 @@ Defaults to `false`.
     PreventStacking: true
 ```
 
+#### ItemModel
+The model that should be applied to the item, which [works like this item component](https://minecraft.wiki/w/Data_component_format#item_model)
+```yaml
+MODELED_ITEM:
+  Id: PAPER
+  Display: '&dKing Helmet'
+  Options:
+    ItemModel: SomeModel
+```
+
+
 # Playerheads
 Only applicable to playerhead type items
 
