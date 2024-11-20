@@ -33,7 +33,7 @@ are able to target locations as well.
 | [ArrowVolley][]           | Fires a volley of arrows                                                                 |
 | [Attribute][]             | Sets an attribute on the target entity, if attributable                                                                 |
 | [AttributeModifier][]     | Adds an attribute modifier to the attributable target                                                                 |
-| [AuraRemove][]            | Removes an aura from the target entity                                                   |
+| [AuraRemove][]            | Removes an [aura] from the target entity                                                   |
 | [BarCreate][]             | Creates a custom boss bar on the casting mob                                             |
 | [BarRemove][]             | Removes a custom boss bar on the casting mob                                             |
 | [BarSet][]                | Modifies a custom boss bar on the casting mob                                            |
@@ -226,7 +226,7 @@ are able to target locations as well.
 | [Speak][]                 | Causes the mob to speak in chat, with options for speech bubbles                         |
 | [Spin][]                  | Causes the target to spin                                                   |
 | [Spring][]                | Creates a temporary spring of liquid at the target                                       |
-| [Stun][]                  | Stuns the target entity                                                                  |
+| [Stun][]                  | Applies an [aura] that stuns the target entity                                                                  |
 | [StopUsingItem][]         | Stops the targeted entity from using an item                                             |
 | [Suicide][]               | Causes the caster to die                                                                 |
 | [Summon][]                | Summons other mobs at the target                                                         |
@@ -270,7 +270,7 @@ by these will "inherit" the targets (if applicable).
 | [Aura][]                | Applies an aura to the targeted entity, allowing for skills to be run onStart/onTick/onEnd/Etc which all originate from the target.                     |
 | [CancelEvent][]         | Cancels the Event that triggered the current skill-tree. Only works for certain triggers.                                                                |
 | [CancelSkill][]         | Cancels the execution of the Metaskill when triggered.                                                                |
-| [Cast][]                | "Casts" a meta-skill using various advanced options.                                                                                                    |
+| [Cast][]                | Applies an [aura] that "Casts" a meta-skill using various advanced options.                                                                                                    |
 | [Chain][]               | Chains a skill between multiple targets that are near each other.                                                                                       |
 | [ChainMissile][]        | A missile that chains between entities. **Premium-Only** mechanic!                                                                                      |
 | [Delay][]               | Delays execution of the current skill list by a set number of ticks.                                                                                    |
