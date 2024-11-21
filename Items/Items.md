@@ -412,7 +412,7 @@ OBSIDIAN_BREAKER:
     DefaultMiningSpeed: 0.0
     Rules:
       - materials: "OBSIDIAN,CRYING_OBSIDIAN"
-        speed: 10000.0f
+        speed: 10000.0
         isCorrectForBlock: true
 ```
 ```yaml
@@ -424,7 +424,7 @@ TREE_BREAKER:
     DefaultMiningSpeed: 0.0
     Rules:
       - materials: "completes_find_tree_tutorial" # Example of a Tag being used
-        speed: 10000.0f
+        speed: 10000.0
         isCorrectForBlock: true
 ```
 ## Examples
