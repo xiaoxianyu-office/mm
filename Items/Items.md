@@ -427,5 +427,29 @@ TREE_BREAKER:
         speed: 10000.0
         isCorrectForBlock: true
 ```
+
+#### Spawner
+Configure the options for a SPAWNER item
+```
+TestSpawner:
+  Material: SPAWNER
+  Display: 'Testing Spawner'
+  Spawner:
+    Delay: 0
+    MinSpawnDelay: 20
+    MaxSpawnDelay: 80
+    RequiredPlayerRange: 16
+    SpawnCount: 4
+    SpawnRange: 8
+    MaxNearbyEntities: 8
+    Mobs:
+    - Type: TestingDummy
+      Weight: 5
+      MinBlockLight: 10
+      MaxBlockLight: 10
+      MinSkyLight: 10
+      MaxSkyLight: 10
+```
+
 ## Examples
 More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
