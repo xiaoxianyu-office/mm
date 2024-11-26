@@ -30,6 +30,7 @@ Options that can be used in the Stat in order to better customize it
 | Type                 | The [Type](Stats#custom-stat-types) of the stat                                 |
 | Display              | The name with which the stat is displayed                                       |
 | Tooltips             | How the stat is shown on items. Depends on the Modifier used                    |
+| ShowInLore           | Whether to show the tooltips formatting for each modifier                       |
 | Priority             | The priority with which the stat will take effect, compared to others           |
 | MinValue             | Minimum value for the stat                                                      |
 | MaxValue             | Max value for the stat                                                          |
@@ -77,6 +78,14 @@ A list of options only available if the specified type is used in the stat
 | Compound             | The tooltip to show for compound modifiers                                      |
 | Setter               | The tooltip to show for setter modifiers                                        |
 | Rounding             | The amount of numbers after the point in the value of the stat                  |
+| ShowInItemLore       | Whether the tooltips should be shown in an items's lore. Defaults to true, overridden by the ShowInLore options if they are set |
+
+| ShowInLore           | Description                                                                     |
+|----------------------|---------------------------------------------------------------------------------|
+| Additive             | Whether to show the Additive modifier tooltip in an item's lore                 |
+| Multiply             | Whether to show the Multiply modifier tooltip in an item's lore                 |
+| Compound             | Whether to show the Compound modifier tooltip in an item's lore                 |
+| Setter               | Whether to show the Setter modifier tooltip in an item's lore                   |
 
 ```yml
 EXAMPLE_STAT:
@@ -90,6 +99,8 @@ EXAMPLE_STAT:
     Compound: 'x<value>% Speed'
     Static: 'Force <value> <display>'
     Rounding: 2
+  ShowInLore:
+    Compound: false
 ```
 
 # Modifiers
