@@ -165,6 +165,29 @@ Deeps:
     -   **Cooldown: 60**
 -->
 
+
+- **Structures: \[list\]**
+  - A list of structures in which the mob can spawn. If set, the mob will be able to spawn only there.
+
+```yaml
+Nether_Fortress:
+  Types:
+  - blaze_wisp 100
+  - blazer 60
+  - blaze_soldier 60
+  - blaze_skeleton 50
+  Worlds: world_nether
+  Chance: 0.02
+  Priority: 1
+  Action: ADD
+  PositionType: LAND
+  Structures:
+  - 'minecraft:fortress'
+  - 'incendium:forbidden_castle'
+  - 'incendium:infernal_altar'
+```
+
+
 ### Extra Options in config.yml
 
 These options, located in `MythicMobs/config/config-spawning.yml`-file, are responsible for how SpawnPoints are generated on your server. It's best to use common sense when adjusting these values, as misconfigurations of this section may cause lag on your server.
