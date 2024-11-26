@@ -218,7 +218,15 @@ Other than the options written above, you can also determine specific behaviors 
 | top       | placement, required | The placement in the damage leaderboard required for this drop to be generated for the player                                                                    | 2147483647 |
 | billboarding | billboard, bill | The [billboarding] of the hologram                         | VERTICAL |
 | brightness | bright, b | The brightness of the hologram                                      | 0       |
+| fortune   | | Whether this drop should be affected by the fortune enchant                    | false   |
+| fortuneMod | | How much each level of the fortune enchant impact the drop amount             |         |
 
+
+### Fortune
+Fortune drop amount calculation:
+```math
+  amount = min(1, floor(<random.float.0to1> * (2 + fortuneLevel) * fortuneMod ) ) * amount
+```
 
 ### Example
 ```yaml
