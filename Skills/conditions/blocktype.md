@@ -6,7 +6,7 @@ Valid for any [Bukkit material type](https://hub.spigotmc.org/javadocs/spigot/or
 ## Attributes
 | Attribute | Aliases                   | Description                                          | Default |
 |-----------|---------------------------|------------------------------------------------------|---------|
-| types     | type, t, material, mat, m, block, b | A list of materials or MMOItem's block name to check | DIRT<!--type:Material--><!--list--> |
+| types     | type, t, material, mat, m, block, b | A list of materials or MMOItem's block name to check. Does also support wildcards and block tags | DIRT<!--type:Material--><!--list--> |
 
 
 ## Examples
@@ -15,6 +15,10 @@ Conditions:
 - blocktype{type=dirt} true
 ```
 
+```yaml
+  Conditions:
+  - blockType{type=#leaves,*_log,redstone_torch[lit=true]}
+```
 
 ## Aliases
 - [x] inblock
