@@ -6,7 +6,7 @@ The blockunmask effect is used to revert blockchanges made by the blockmask effe
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | radius    | r         | The radius of the blockunmask effect                                 | 0       |
-| shape     | s         | The shape of the effect. `Sphere`/`Cube`                             | SPHERE  |
+| shape     | s         | The shape of the effect. `Sphere`/`Cube`                             | SPHERE<!--type:Shape-->|
 
 
 ## Examples

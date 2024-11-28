@@ -16,7 +16,7 @@ Bukkit material/block names can be acquired in-game. Simply hold the block you w
 | radiusy   | ry        | The y component of the radius                                        | `radius`|
 | noise     | n         | Defines the randomness of the effect                                 | 0       |
 | duration  | d         | Duration of the effect in ticks                                      | 0       |
-| shape     | s         | The shape of the effect. `Sphere`/`Cube`                             | SPHERE  |
+| shape     | s         | The shape of the effect. `Sphere`/`Cube`                             | SPHERE<!--type:Shape-->|
 | noair     | na        | Mask no air blocks only                                              | true    |
 | onlyair   | oa        | Mask air blocks only                                                 | false   |
 | audience  |           | The [audience] of the effect                                         | nearby<!--type:Audience--> |

@@ -5,7 +5,7 @@ Causes the casting mob to change its level.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| action    | a         | The type of the operation to perform                                 | SET     |
+| action    | a         | The type of the operation to perform                                 | SET<!--type:SetLevel_Action-->|
 | level     | l         | Amount used in the operation                                         | 1       |
 
   

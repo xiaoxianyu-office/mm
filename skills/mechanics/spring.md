@@ -8,7 +8,7 @@ normally destroyed by liquids. Use wisely
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type      | t         | The type of spring. Can be `water` or `lava`                         | water   |
+| type      | t         | The type of spring. Can be `water` or `lava`                         | water<!--type:Fluid-->|
 | duration  | d         | The duration (in ticks) the spring will last                         | 40      |
 
 

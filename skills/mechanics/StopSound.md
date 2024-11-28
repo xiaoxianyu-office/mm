@@ -6,7 +6,7 @@ Stops a sound from playing from either the vanilla game or a resource pack for t
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | sound     | s         | Sound to stop playing                         | entity.zombie.attack_iron_door<!--type:Sound--> |
-| soundcategory | source, sc, category | The category at which the sound is played, useful for resourcepacks | MASTER |
+| soundcategory | source, sc, category | The category at which the sound is played, useful for resourcepacks | MASTER<!--type:SoundCategory-->|
 
 ### SoundCategory Attribute
 A list of sound categories can be found [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/SoundCategory.html).

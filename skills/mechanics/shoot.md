@@ -11,7 +11,7 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type      | t         | Type of projectile to shoot.                                         | arrow   |
+| type      | t         | Type of projectile to shoot.                                         | arrow<!--type:Shoot_Type-->|
 | damage    | d, amount | How much damage the projectile will cause                            | 5       |
 | velocity  | v         | The velocity of the projectile                                       | 1       |
 | maxDistance | md      | The maximum distance the projectile will travel                      | 64      |
@@ -55,13 +55,13 @@ The types for the projectile can be
 These attributes apply if the projectile is of `type` `POTION`
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| potiontype     | ptype, effect, pt, pe | The type of the potion applied to the projectile, if POTION | SLOW |
+| potiontype     | ptype, effect, pt, pe | The type of the potion applied to the projectile, if POTION | SLOW<!--type:PotionEffectType-->|
 | potionduration | pduration, pd | The duration of the potion effect                           | 100     |
 | force          | overwrite, ow, override, or | Whether to override the effect on the target if already applied    | false  |
 | potioncolor | pc      | The color of the potion                                              | #FFFFFF |
-| hasParticles | particles | Whether not to show the status effect particles.               | true    |
-| hasIcon   | icon  | Whether not to show the status effect icon.                          | true    |
-| ambientparticles | ambient  | Whether to show ambient particles.                           | false   |
+| hasParticles | particles | Whether not to show the status effect particles.                  | true    |
+| hasIcon   | icon  | Whether not to show the status effect icon.                              | true    |
+| ambientparticles | ambient  | Whether to show ambient particles.                             | false   |
 
 
 #### Trident Type Attributes

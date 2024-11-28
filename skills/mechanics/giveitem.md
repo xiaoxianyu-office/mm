@@ -9,7 +9,7 @@ fakeLooting was added in 4.12 MM and it makes the item being given show up on th
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | items, i, type, t, material, mat, m | The item material (supports for MythicMobs' [Items](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Items) and [Droptables](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/Drops#drop-tables)) You can specify an amount by putting a space and a number after the item name                |         |
+| item      | items, i, type, t, material, mat, m | The item material (supports for MythicMobs' [Items](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Items) and [Droptables](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/Drops#drop-tables)) You can specify an amount by putting a space and a number after the item name                | <!--type:Material-->|
 | fakeLooting | dofakelooting, fl | Plays the pickup-item animation from the origin            | false   |
 
 

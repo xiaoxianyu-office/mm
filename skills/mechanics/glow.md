@@ -10,7 +10,7 @@ This mechanic is also an [aura].
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | auraname  | buffname, debuffname | The name of the aura                                      | #glowing|
-| color     | c         | The [color] with which the entity will glow                          | white   |
+| color     | c         | The [color] with which the entity will glow                          | white<!--type:GlowColor--> |
 | audience  |           | The [audience] of the glow effect                                    | nearby<!--type:Audience--> |
 > This mechanic inherits every attribute of the [Aura] mechanic 
 >> - The `auraname` attribute is **defaulted** at `#glowing`

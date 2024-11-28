@@ -5,7 +5,7 @@ Creates a firework effect at the target.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type      | t         | The Type of firework. See below for a list.                          | BALL    |
+| type      | t         | The Type of firework. See below for a list.                          | BALL<!--type:FireworkEffectType-->|
 | power     | p, duration, d | The flight duration of the firework.                            | 2       |
 | flicker   | f         | Whether to add the flicker effect to the explosion.                  | false   |
 | trail     | tr        | Whether to add the trail effect to the firework rocket.              | false   |

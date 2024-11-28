@@ -6,7 +6,7 @@ Sets the max health of the target entity.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount    | a         | The amount to set max health by                                      | 1.0     |
-| mode      | m         | The method of setting max health. `STATIC` will set the max health directly to amount value. `SCALE` will set the new max health but also scale the current health of the entity accordingly                                                                                    | STATIC  |
+| mode      | m         | The method of setting max health. `STATIC` will set the max health directly to amount value. `SCALE` will set the new max health but also scale the current health of the entity accordingly                                                                                    | STATIC<!--type:SetMaxHealth_Mode-->|
 
 
 ## Examples

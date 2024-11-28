@@ -5,8 +5,8 @@ Creates an orbiting Atom effect at the location.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| particleorbital | particleo, po | The [particle] that will be displayed at the orbitals     |`particle`|
-| particlenucleus | particlen, pn | The [particle] that will be displayed at the nucleus       | reddust |
+| particleorbital | particleo, po | The [particle] that will be displayed at the orbitals     |`particle`<!--type:Particle-->|
+| particlenucleus | particlen, pn | The [particle] that will be displayed at the nucleus       | reddust<!--type:Particle-->|
 | amountnucleus | amountn, apn, an | The amount of particles for the nucleus                   | 50      |
 | orbitals  | o         | The amount of orbitals around the nucleus                            | 2       |
 | amountorbital | amounto, apo, ao | The amount of particles for each orbital                  | 1       |

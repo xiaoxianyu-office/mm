@@ -6,7 +6,7 @@ Creates a cloud of particles around the target location
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| particle  | p         | The particle effects to use                                          | reddust |
+| particle  | p         | The particle effects to use                                          | reddust<!--type:Particle--> |
 | type      | effect, t | The type of the effect given by the cloud                            | SLOW<!--type:PotionEffectType--> |
 | potionduration | pd   | The duration of the potion effect                                    | 100     |
 | level     | lvl, l    | The level of the potion effect                                       | 1       |

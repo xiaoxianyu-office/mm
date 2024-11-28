@@ -16,7 +16,7 @@ A list of possible operations for the action-syntax:
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | objective | obj, o    | Specifies the scoreboard objectiv to be changed. If the objective doesn't exist it will automatically be created by the mechanic                                               |         |
-| action    | a         | The operation to perform                                             | ADD     |
+| action    | a         | The operation to perform                                             | ADD<!--type:ScoreAction--> |
 | value     | v         | The value to perform the operation with                              |         |
 
   

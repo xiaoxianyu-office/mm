@@ -7,7 +7,7 @@ have [Threat Tables](/Mobs/ThreatTables) enabled in order to have any effect.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount    | a         | The amount of threat to give the target. Can be negative.            | 1       |
-| mode      | m         | The [mode](#mode-attribute) of the operation                         | add     |
+| mode      | m         | The [mode](#mode-attribute) of the operation                         | add<!--type:ThreatMode-->|
 
 
 ### Mode Attribute

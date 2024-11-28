@@ -6,7 +6,7 @@ Changes the weather in the casting mob's world.
 
 | Attribute | Aliases   | Description                                               | Default |
 |-----------|-----------|-----------------------------------------------------------|---------|
-| type      | t         | The type of weather. Can be "sunny", "rainy", or "stormy" | sunny   |
+| type      | t         | The type of weather. Can be "sunny", "rainy", or "stormy" | sunny<!--type:Weather_Type-->|
 | duration  | d         | How long (in ticks) the weather will be forced to last    | 500     |
 
 #### Weather Types

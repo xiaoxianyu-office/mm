@@ -6,7 +6,7 @@ not a player. Requires the `sync=true` attribute.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| mode      | m         | The gamemode to change the target to.                                | SURVIVAL|
+| mode      | m         | The gamemode to change the target to.                                | SURVIVAL<!--type:Gamemode-->|
 
 
 ## Examples

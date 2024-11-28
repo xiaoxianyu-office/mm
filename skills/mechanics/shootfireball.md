@@ -16,8 +16,8 @@ Shoots a fireball from the mob towards the target entity or location.
 | fromorigin| fo        | Whether the fireball should be shot from the [origin]                | false   |
 | playsound | ps        | Whether or not to play the fireball launching sound when it is created | false |
 | smallfireball | small,sml | Whether or not to use the smaller blaze fireball instead of the ghast fireball                                                                                       | false   |
-| type      | t         | The type of the fireball                                             | SMALL   |
-| item      | material  | The [material] of the fireball, if ITEM type was used           | BLAZE_POWDER |
+| type      | t         | The type of the fireball                                             | SMALL<!--type:ShootFireball_Type--> |
+| item      | material  | The [material] of the fireball, if ITEM type was used           | BLAZE_POWDER<!--type:Material-->|
 
 
 ### Type Attribute

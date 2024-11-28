@@ -8,7 +8,7 @@ mechanic.
 | Attribute | Aliases | Description                                       | Default |
 |-----------|---------|---------------------------------------------------|---------|
 | amount    | a       | The amount of projectiles                         | 10      |
-| source    | s       | The type of the volley. Can be REGULAR or RAIN    | REGULAR |
+| source    | s       | The type of the volley. Can be REGULAR or RAIN    | REGULAR<!--type:Volley_Source-->|
 | radius    | r       | The radius of the volley                          | 1       |
 | yoffset   | y       | The y offset of the target location of the projectiles | 0  |
 | canPickup   | pickup  | Whether the arrows can be picked up by players             | true    |

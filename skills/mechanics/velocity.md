@@ -7,7 +7,7 @@ force-skills or simulated wind.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| mode      | m         | The operation to perform. Can be SET, ADD, REMOVE, DIVIDE, or MULTIPLY. | SET  |
+| mode      | m         | The operation to perform. Can be SET, ADD, REMOVE, DIVIDE, or MULTIPLY. | SET<!--type:Velocity_Mode-->|
 | velocityx | vx, x     | Velocity on the x-axis. Can be negative.                                | 1    |
 | velocityy | vy, y     | Velocity on the y-axis. Can be negative.                                | 1    |
 | velocityz | vz, z     | Velocity on the z-axis. Can be negative.                                | 1    |

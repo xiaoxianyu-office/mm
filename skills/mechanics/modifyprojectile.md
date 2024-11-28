@@ -5,8 +5,8 @@ Modifies the projectile, missile, or orbital that activated the mechanic.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| trait     | t         | The trait to modify:<br>`INERTIA`, `POWER`, `VELOCITY`, `RADIUS` and `YOFFSET`                                                                                   | `VELOCITY` |
-| action    | a         | The action to perform for modifying the projectile trait:<br>`ADD`, `SET`, `MULTIPLY`                                                                                  | `MULTIPLY` |
+| trait     | t         | The trait to modify:<br>`INERTIA`, `POWER`, `VELOCITY`, `RADIUS` and `YOFFSET`                                                                                   | `VELOCITY`<!--type:ModifyProjectile_Trait-->|
+| action    | a         | The action to perform for modifying the projectile trait:<br>`ADD`, `SET`, `MULTIPLY`                                                                                  | `MULTIPLY`<!--type:ModifyProjectile_Action-->|
 | value     |v          | The value to use for the modification                             | 0          |
 
 ### Trait Attribute

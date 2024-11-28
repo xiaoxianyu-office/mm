@@ -22,7 +22,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | onBounceSkill| onBounce    |Meta-Skill executed when the projectile bounces. **Premium Only**.|        |
 | onHitBlockSkill |onHitBlock, ohb | Meta-Skill executed when the projectile hits a block.     |         |
 | onInteractSkill |onInteract| Meta-Skill executed when the projectile is interacted with.     |         |
-| BulletType   | bullet, b   | The type of the bullet. If set, additional attributes becomes available depending on the specified bullet type. A list of bullet types and associated attributes is available [below](/skills/mechanics/projectile#projectile-bullets)                                       | NONE    |
+| BulletType   | bullet, b   | The type of the bullet. If set, additional attributes becomes available depending on the specified bullet type. A list of bullet types and associated attributes is available [below](/skills/mechanics/projectile#projectile-bullets)                                       | <!--type:Projectile_BulletType-->|
 | Interval  | int, i      | How often (in ticks) the projectile updates its position           | 1       |
 | HorizontalRadius | hRadius, hR, r | The horizontal radius entities will be hit in around the projectile.                                                                                                                                    | 1.25    |
 | VerticalRadius   | vRadius, vR | The vertical radius entities will be hit in around the projectile.                                                                                                                                      | 1.25    |
@@ -56,7 +56,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | hitConditions | conditions, cond, c | A list of conditions that a target must meet in order for the projectile to be able to hit it. **Premium Only** Mechanic  |  |
 | stopconditions | stpcond | A list of conditions that a target must meet in order for the projectile to end when hitting them                                                                         | null     |
 | fromorigin | fo       | Whether the projectile should start from the origin of the mechanic | false    |
-| requireLineOfSight | rlos, los, requirelos | Whether the starting point must have line-of-sight to the origin.  Values can be `true`, `false`, `PLAYERS_ONLY`                                             | PLAYERS_ONLY |
+| requireLineOfSight | rlos, los, requirelos | Whether the starting point must have line-of-sight to the origin.  Values can be `true`, `false`, `PLAYERS_ONLY`                                             | PLAYERS_ONLY<!--type:Projectile_HighAccuracyMode-->|
 | drawHitbox |          | Draw the hitbox of the projectile, useful for debugging             | false    |
 | tickinterpolation | interpolation, ti | Interpolates the specified amount of additional points between each tick of the projectile. The onTick and onHit skills will be applied there as well. Useful to fill in the gaps with super-fast projectiles and also prevent entities from being "skipped over"      | 0        |
 | shareSubHitboxCooldown | shcd | Whether all meg sub hitboxes should share the same immune delay with its base entity | true | 
@@ -64,7 +64,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 ### Projectile-Specific Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| Type      |           | The "type" of projectile. Default projectiles are launched from the mob's location towards the target. METEOR type projectiles fall from the sky above the target.       | NORMAL  |
+| Type      |           | The "type" of projectile. Default projectiles are launched from the mob's location towards the target. METEOR type projectiles fall from the sky above the target.       | NORMAL<!--type:Projectile_Type-->|
 | gravity   | g         | Determines the gravity of the projectile; use fractions (0.1-0.2) for low gravity                                                                                        | 0       |
 | Bounces   | bounce    | Should the projectile bounce. Bounce radius depends on the projectile's hitbox. **Premium Only**.                                                                              | false   |
 | BounceVelocity | bv   | Every time the projectile bounces, its velocity will be multiplied by this value. **Premium Only** .                                                                      | 0.9     |
@@ -73,7 +73,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | HeightFromSurface| hfs| For NORMAL projectiles, how high above the surface the projectile should glide if HugSurface is set to TRUE. For METEOR projectiles, how high above the surface the projectile starts above the target.                                                                              | 0.5     |
 | MaxClimbHeight | mch  | The number of attempts the projectile will make to **increase** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 3       |
 | MaxDropHeight  | mdh  | The number of attempts the projectile will make to **decrease** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 10      |
-| highAccuracyMode | ham| Whether to use high-accuracy mode, which raytraces every tick to ensure the projectile cannot ever go through anything. Values can be `true`, `false`, `PLAYERS_ONLY`         | PLAYERS_ONLY |
+| highAccuracyMode | ham| Whether to use high-accuracy mode, which raytraces every tick to ensure the projectile cannot ever go through anything. Values can be `true`, `false`, `PLAYERS_ONLY`         | PLAYERS_ONLY<!--type:Projectile_HighAccuracyMode-->|
 
 
 ## Special Notes

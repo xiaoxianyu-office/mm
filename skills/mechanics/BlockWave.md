@@ -11,7 +11,7 @@ Note that the blockwave effect will never actually change any blocks in the worl
 | radius    | r         | The radius of the blockwave effect                                   | 2       |
 | radiusy   | ry        | The y radius of the blockwave effect                                 |`radius` |
 | duration  | d         | Duration of the effect in ticks                                      | 15      |
-| shape     | s         | The shape of the effect (Sphere/Cube)                                | sphere  |
+| shape     | s         | The shape of the effect (Sphere/Cube)                                | sphere<!--type:Shape-->|
 | velocity  | v         | The speed of the effect                                              | 0.2     |
 | horizontalvelocity | velocityh, vh | The speed of the effect in the horizontal direction     | 0       |
 | specificvelocities | sv | Whether to make use of the `vx`, `vy` and `vz` attributes          | false   |
