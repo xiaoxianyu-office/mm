@@ -1,5 +1,7 @@
 ## Description
 
+Summons mobs of the given type around the target.
+
 <!--
 To utilize the summon mechanic in Mythic Mobs, you will need the following:
 
@@ -7,9 +9,6 @@ To utilize the summon mechanic in Mythic Mobs, you will need the following:
 
   - ChatGPT, 16/05/2023, oil on canvas
 -->
-
-Summons mobs of the given type around the target.
-
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
@@ -55,4 +54,3 @@ RaiseSkeletons:
 
 <!--TAGS-->
 <!--tag:Summon-->
-
