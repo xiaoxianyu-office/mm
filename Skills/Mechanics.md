@@ -151,6 +151,7 @@ are able to target locations as well.
 | [Potion][]                | Applies a potion effect to the target                                                    |
 | [PotionClear][]           | Removes all potion effects from target entity                                            |
 | [Prison][]                | Imprisons the target inside a block                                                      |
+| [PrintParentTree]         | Prints debug information regarding the Metaskill executing the mechanic and its SkillTree |
 | [Propel][]                | Propels the caster towards the target                                                      |
 | [Pull][]                  | Pulls the target towards the mob                                                         |
 | [PushBlock][]             | Pushes the block at the target location in the given direction                                                          |
@@ -490,6 +491,7 @@ but not yet ready for use.
   [Potion]: /skills/mechanics/potion
   [PotionClear]: /skills/mechanics/potionclear
   [Prison]: /skills/mechanics/prison
+  [PrintParentTree]: /skills/mechanics/PrintParentTree
   [Propel]: /skills/mechanics/propel
   [Pull]: /skills/mechanics/pull
   [PushBlock]: /skills/mechanics/PushBlock
