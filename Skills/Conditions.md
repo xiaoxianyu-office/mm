@@ -242,7 +242,6 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [HeightAbove](/skills/conditions/heightabove)                                 | Location | Checks if the target's Y location is above a value                                            |
 | [HeightBelow](/skills/conditions/heightbelow)                                 | Location | Checks if the target's Y location is below a given value                                      |
 | [Holding](/skills/conditions/holding)                                         | Entity   | Checks if the target is holding a given material(support MythicMobs and MMOItems)             |
-| [InBlock](/skills/conditions/inblock)                                         | Location | Checks the material at the target location                                                 |
 | [inClaim](/skills/conditions/inClaim)                                         | Location | Checks if the target location is inside a claim                                               |
 | [InCombat](/skills/conditions/incombat)                                       | Entity   | Checks if the target mob is considered in combat                                              |
 | [InPinRegion](/skills/conditions/InPinRegion)                                 | Location | Checks if the target location is within a region delimited by two pins                        |

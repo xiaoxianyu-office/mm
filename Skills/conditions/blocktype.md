@@ -1,6 +1,6 @@
 ## Description
 This condition tests if material type present at the target location is the specified one.  
-Valid for any [Bukkit material type](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html).
+Valid for any [Spigot material type](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html), wildcards and block tags.
 
 
 ## Attributes
@@ -11,8 +11,8 @@ Valid for any [Bukkit material type](https://hub.spigotmc.org/javadocs/spigot/or
 
 ## Examples
 ```yaml
-Conditions:
-- blocktype{type=dirt} true
+  Conditions:
+  - blocktype{type=dirt} true
 ```
 
 ```yaml
