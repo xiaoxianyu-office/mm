@@ -40,3 +40,7 @@ TSSB_oE:
 
 ## Aliases
 - [x] shootshulker
+
+
+<!--TAGS-->
+<!--tag:Projectile-->

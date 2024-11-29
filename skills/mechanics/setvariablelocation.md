@@ -22,3 +22,7 @@ TestSkill:
 ## Aliases
 - [x] variableSetLocation
 - [x] setVarLoc
+
+
+<!--TAGS-->
+<!--tag:Variable-->

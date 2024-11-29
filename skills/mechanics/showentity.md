@@ -19,3 +19,7 @@ Shows the caster, if hidden via the use of the [hide] mechanic, to the targeted 
 
 <!-- LINKS -->
 [hide]: /skills/mechanics/hide
+
+
+<!--TAGS-->
+<!--tag:Effect-->

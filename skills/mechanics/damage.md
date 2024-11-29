@@ -105,3 +105,7 @@ if the varibute: <caster.var.somevariable>'s value is 5,this mechaine will does 
 
 ## Aliases
 - [x] d
+
+
+<!--TAGS-->
+<!--tag:Damage-->

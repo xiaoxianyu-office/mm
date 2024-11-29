@@ -15,3 +15,7 @@ ExampleMob:
   Skills:
   - setDisplayEntityItem{i=MyMythicItem} @self ~onSpawn
 ```
+
+
+<!--TAGS-->
+<!--tag:Item-->

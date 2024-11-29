@@ -25,3 +25,7 @@ UntagSkill:
 ## Aliases
 - [x] removescoreboardtag
 - [x] tagremove
+
+
+<!--TAGS-->
+<!--tag:Scoreboard-->

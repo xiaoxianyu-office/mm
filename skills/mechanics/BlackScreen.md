@@ -22,3 +22,7 @@ BlackScreen:
 ## Aliases
 - [x] effect:blackScreen
 - [x] e:blackScreen
+
+
+<!--TAGS-->
+<!--tag:Aura-->

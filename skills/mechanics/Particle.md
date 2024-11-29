@@ -75,3 +75,8 @@ This particle type will replace the spawned particle with the selected entity. T
 <!-- LINKS -->
 [particle type]: /Skills/Mechanics/Particle/Particle-Types
 [particle types wiki page]: /Skills/Mechanics/Particle/Particle-Types
+
+
+<!--TAGS-->
+<!--tag:Particle-->
+<!--tag:Effect-->

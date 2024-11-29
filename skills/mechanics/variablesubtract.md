@@ -22,3 +22,7 @@ scope. Only works with numeric variable types.
 - [x] subtractVariable
 - [x] subVar
 - [x] reduceVariable
+
+
+<!--TAGS-->
+<!--tag:Variable-->

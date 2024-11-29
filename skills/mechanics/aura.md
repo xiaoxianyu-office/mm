@@ -85,3 +85,8 @@ deal regular damage as the multiplier would not trigger either.
 
 <!-- LINKS -->
 [Implemented Placeholders]: /Skills/Placeholders#variable-placeholders
+
+
+<!--TAGS-->
+<!--tag:Aura-->
+<!--tag:Meta-Mechanic-->

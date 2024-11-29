@@ -17,3 +17,7 @@ ThrownCripplingPotion:
   Skills:
   - shootpotion{type=SLOW;duration=200;level=4;velocity=5} @target
 ```
+
+
+<!--TAGS-->
+<!--tag:Projectile-->

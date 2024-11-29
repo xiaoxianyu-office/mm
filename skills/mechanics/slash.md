@@ -50,3 +50,7 @@ SlashSword:
 ```
 
 [Crucible]: https://mythiccraft.io/index.php?resources/crucible-create-unbelievable-mythic-items.2
+
+
+<!--TAGS-->
+<!--tag:Meta-Mechanic-->

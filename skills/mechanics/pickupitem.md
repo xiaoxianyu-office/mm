@@ -22,3 +22,8 @@ The called metaskill will have some of its linked data overriden/set to be the f
   Skills:
   - pickupitem @ItemsInRadius{r=10}
 ```
+
+
+<!--TAGS-->
+<!--tag:Item-->
+<!--tag:World-->

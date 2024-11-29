@@ -20,3 +20,9 @@ This mechanic must be synced, meaning that either the mechanic or the initial sk
 
 ## Aliases
 - [x] modDamage
+
+
+<!--TAGS-->
+<!--tag:Damage-->
+<!--tag:Meta-->
+

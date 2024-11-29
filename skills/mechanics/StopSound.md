@@ -24,3 +24,8 @@ SilenceEndermanSkill:
 - [x] effect:stopsound
 - [x] e:ss
 - [x] ss
+
+
+<!--TAGS-->
+<!--tag:Sound-->
+<!--tag:Effect-->

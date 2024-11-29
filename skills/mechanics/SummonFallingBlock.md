@@ -17,3 +17,8 @@ Summons a falling block of the specified material at the targeted locations
 
 <!-- LINKS -->
 [material]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+
+<!--TAGS-->
+<!--tag:Summon-->
+

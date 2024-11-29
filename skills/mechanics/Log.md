@@ -19,3 +19,8 @@ Logs a message to console directly. For debugging or preservation purposes.
 - [x] console
 - [x] print
 - [x] printf
+
+
+<!--TAGS-->
+<!--tag:Message-->
+<!--tag:Meta-->

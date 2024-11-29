@@ -28,3 +28,7 @@ Creates a custom boss bar on the casting mob (cannot be player).
 ## Aliases
 - [x] barAdd
 - [x] createBar
+
+
+<!--TAGS-->
+<!--tag:BossBar-->

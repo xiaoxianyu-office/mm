@@ -28,3 +28,7 @@ IceBolt:
 - [x] gcd
 - [x] setgcd
 - [x] setglobalcooldown
+
+
+<!--TAGS-->
+<!--tag:Meta-->

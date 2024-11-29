@@ -17,3 +17,7 @@ This location can then be used via the relevant [Targeter](/Skills/Targeters/Tra
 ## Aliases
 - [x] settrackedlocation
 - [x] stl
+
+
+<!--TAGS-->
+<!--tag:Meta-->

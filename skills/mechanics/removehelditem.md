@@ -35,3 +35,8 @@ This example checks for if the player (now the caster) is holding an apple, and 
 ## Aliases
 - [x] consumeHeldItem
 - [x] takeHeldItem
+
+
+<!--TAGS-->
+<!--tag:Item-->
+<!--tag:Inventory-->

@@ -15,3 +15,7 @@ This skill despawns the mob immediately when it is right clicked.
   Skills:
   - remove @self ~onInteract
 ```
+
+
+<!--TAGS-->
+<!--tag:Meta-->

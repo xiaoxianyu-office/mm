@@ -16,3 +16,8 @@ ExampleMob:
   Skills:
   - propel{v=1;delay=1} @trigger ~onDamaged ?~distance{d=>6}
 ```
+
+
+<!--TAGS-->
+<!--tag:Movement-->
+

@@ -30,3 +30,9 @@ MyCoolMob:
           ]
       } @trigger ~onDamaged
 ```
+
+
+<!--TAGS-->
+<!--tag:Meta-->
+<!--tag:Meta-Mechanic-->
+

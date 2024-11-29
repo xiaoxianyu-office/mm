@@ -15,3 +15,7 @@ Once called by a projectile, this mechanic will change the projectile's directio
   Skills:
   - setprojectiledirection @ProjectileForward{f=10;rot=45}
 ```
+
+
+<!--TAGS-->
+<!--tag:Meta-->

@@ -34,3 +34,7 @@ SetButton:
 
 ## Aliases
 - [x] setblock
+
+
+<!--TAGS-->
+<!--tag:World-->

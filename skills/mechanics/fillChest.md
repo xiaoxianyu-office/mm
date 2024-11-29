@@ -28,3 +28,9 @@ Example of filling a chest with a droptable.
 - [x] populateChest
 - [x] fillContainer
 - [x] populateContainer
+
+
+<!--TAGS-->
+<!--tag:Item-->
+<!--tag:Inventory-->
+<!--tag:World-->

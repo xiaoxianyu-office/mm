@@ -20,3 +20,7 @@ ExampleSkill2:
   Skills:
   - ignite
 ```
+
+
+<!--TAGS-->
+<!--tag:Aura-->

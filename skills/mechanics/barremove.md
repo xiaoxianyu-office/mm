@@ -13,3 +13,7 @@ Removes a custom boss bar on the casting mob (cannot be player).
   Skills:
   - barRemove{name="MyBossBar"} @self ~onInteract
 ```
+
+
+<!--TAGS-->
+<!--tag:BossBar-->

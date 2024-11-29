@@ -25,3 +25,7 @@ ExampleMob:
 
 
   [attribute]: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/Attribute.html
+
+
+<!--TAGS-->
+<!--tag:Attribute-->

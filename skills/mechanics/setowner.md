@@ -43,3 +43,7 @@ HealOwner:
    - message{m=I healed you!}
 ```
 > This skill would only heal the owner of the mob once every 10 seconds and only if they have less than 20 points of health left
+
+
+<!--TAGS-->
+<!--tag:Meta-->

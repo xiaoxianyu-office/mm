@@ -15,3 +15,7 @@ ExampleMob:
   Skills:
   - disengage @trigger ~onDamaged
 ```
+
+
+<!--TAGS-->
+<!--tag:Movement-->

@@ -16,3 +16,8 @@ The caster of the swap mechanic will change places with the target.
 
 ## Aliases
 - [x] tpswap
+
+
+<!--TAGS-->
+<!--tag:Teleport-->
+

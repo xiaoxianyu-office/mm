@@ -32,3 +32,7 @@ Teleports all of the players in a radius of 50 blocks to a locations that is 10 
 - [x] teleportlocation
 - [x] tpt
 - [x] tpl
+
+
+<!--TAGS-->
+<!--tag:Teleport-->

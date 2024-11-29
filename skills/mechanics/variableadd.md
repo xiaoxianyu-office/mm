@@ -22,3 +22,7 @@ scope. Only works with numeric variable types.
 - [x] varAdd
 - [x] addVar
 - [x] incrementVariable
+
+
+<!--TAGS-->
+<!--tag:Variable-->

@@ -27,3 +27,8 @@ Guardian_Beam:
 - [x] effect:beam
 - [x] e:guardianbeam
 - [x] e:beam
+
+
+
+<!--TAGS-->
+<!--tag:Effect-->

@@ -16,3 +16,7 @@ SuperJump:
   Skills:
   - jump{velocity=20}
 ```
+
+
+<!--TAGS-->
+<!--tag:Movement-->

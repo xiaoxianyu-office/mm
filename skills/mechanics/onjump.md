@@ -73,3 +73,7 @@ Fireball_oH:
 <!-- LINKS -->
 [Paper-Only]: https://papermc.io/downloads/all
 [aura]: /skills/mechanics/aura
+
+
+<!--TAGS-->
+<!--tag:Aura-->

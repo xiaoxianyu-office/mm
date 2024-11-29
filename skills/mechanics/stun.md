@@ -28,3 +28,9 @@ ExampleSkill:
 
 <!-- LINKS -->
 [aura]: /skills/mechanics/aura
+
+
+<!--TAGS-->
+<!--tag:Aura-->
+<!--tag:AI-->
+

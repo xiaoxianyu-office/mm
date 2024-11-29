@@ -23,3 +23,7 @@ Modifies a custom boss bar on the casting mob (cannot be player).
     style=SEGMENTED_6
     } @self ~onDamaged
 ```
+
+
+<!--TAGS-->
+<!--tag:BossBar-->

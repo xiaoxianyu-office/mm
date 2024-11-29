@@ -20,3 +20,7 @@ See [Extra: Disguises](/Mobs/Disguises) for how to apply and use disguises.
 
 ## Aliases
 - [x] disguiseRemove
+
+
+<!--TAGS-->
+<!--tag:Disguise-->

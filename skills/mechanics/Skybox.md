@@ -25,3 +25,7 @@ Makes every player in a 20 blocks radius see the "rainy" skybox
 ## Aliases
 - [x] effect:skybox
 - [x] e:skybox
+
+
+<!--TAGS-->
+<!--tag:Effect-->

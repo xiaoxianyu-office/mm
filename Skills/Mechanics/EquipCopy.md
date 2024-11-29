@@ -13,3 +13,8 @@ Causes the caster to equip a copy of the target's equipment
   Skills:
   - equipcopy @target
 ```
+
+
+<!--TAGS-->
+<!--tag:Item-->
+<!--tag:Inventory-->

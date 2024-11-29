@@ -23,3 +23,8 @@ Hurts the target for half (50%) of its max health.
 ## Aliases
 - [x] damagepercent
 - [x] percentdamage
+
+
+
+<!--TAGS-->
+<!--tag:Damage-->

@@ -33,3 +33,8 @@ Unless otherwise specified with the `allowpickup` option, those items will be pa
 <!-- LINKS -->
 [Bukkit]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
 [audience]: /Skills/Audience
+
+
+<!--TAGS-->
+<!--tag:Effect-->
+<!--tag:Item-->

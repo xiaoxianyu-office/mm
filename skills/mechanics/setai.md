@@ -21,3 +21,7 @@ TemporaryAISwitcher:
 
 ## Aliases
 - [x] ai
+
+
+<!--TAGS-->
+<!--tag:AI-->

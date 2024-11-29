@@ -29,3 +29,7 @@ AMob:
 - [x] bd
 - [x] weaponDamage
 - [x] wd
+
+
+<!--TAGS-->
+<!--tag:Damage-->

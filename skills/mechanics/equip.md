@@ -23,3 +23,8 @@ EquipCrown:
   Skills:
   - equip{item=KingsCrown HEAD}
 ```
+
+
+<!--TAGS-->
+<!--tag:Item-->
+<!--tag:Inventory-->

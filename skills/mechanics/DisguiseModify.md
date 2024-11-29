@@ -28,3 +28,7 @@ This will set the item displayed in the disguise's main hand as the real one
 
 ## Aliases
 - [x] modifydisguise
+
+
+<!--TAGS-->
+<!--tag:Disguise-->

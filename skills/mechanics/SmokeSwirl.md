@@ -20,3 +20,7 @@ SmokeSwirlSkill:
 ## Aliases
 - [x] effect:smokeswirl
 - [x] e:smokeswirl
+
+
+<!--TAGS-->
+<!--tag:Effect-->

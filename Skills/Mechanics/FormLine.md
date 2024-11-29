@@ -29,3 +29,9 @@ Makes the casting mob follow a linear path to a location
 
 ## Aliases
 - [x] lineup
+
+
+<!--TAGS-->
+<!--tag:Movement-->
+<!--tag:Aura-->
+<!--tag:AI-->

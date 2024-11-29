@@ -20,3 +20,7 @@ Does not support targeters.
 
 ## Aliases
 - [x] mms
+
+
+<!--TAGS-->
+<!--tag:Scoreboard-->

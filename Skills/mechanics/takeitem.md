@@ -21,3 +21,9 @@ Would remove a stack of dirt from the nearest player's inventory
 - [x] take 
 - [x] itemtake
 - [x] takeitems
+
+
+<!--TAGS-->
+<!--tag:Item-->
+<!--tag:Inventory-->
+

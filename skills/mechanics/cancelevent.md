@@ -53,3 +53,7 @@ customskeleton:
   - cancelevent{sync=true} @self ~onShoot
   - cancelevent{sync=true} @self ~onDamaged
 ```
+
+
+<!--TAGS-->
+<!--tag:Meta-->

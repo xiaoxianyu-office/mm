@@ -22,3 +22,8 @@ Gives the caster an item from the target entity or location when fakelooting is 
 - [x] givefromtarget
 - [x] giveitemsfromtarget
 - [x] itemgivefromtarget
+
+
+<!--TAGS-->
+<!--tag:Inventory-->
+<!--tag:Item-->

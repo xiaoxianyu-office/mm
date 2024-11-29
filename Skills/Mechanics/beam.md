@@ -21,3 +21,7 @@ Creates a beam of a material between the caster and the target
   Skills:
   - beam{d=100;rs=2;syo=100} @selflocation
 ```
+
+
+<!--TAGS-->
+<!--tag:Meta-Mechanic-->

@@ -52,3 +52,7 @@ ChatSkill:
 [aura]: /skills/mechanics/aura
 [skill-scoped variable]: /Skills/Variables
 [Implemented Placeholders]: /Skills/Placeholders#variable-placeholders
+
+
+<!--TAGS-->
+<!--tag:Aura-->

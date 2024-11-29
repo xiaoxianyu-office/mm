@@ -32,3 +32,7 @@ A list of possible operations for the action-syntax:
 
 
 [^mod]: shorthand for "Modular Division"
+
+
+<!--TAGS-->
+<!--tag:Scoreboard-->

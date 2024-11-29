@@ -26,3 +26,7 @@ CallSkeletalHorse:
 
 ## Aliases
 - [x] vehicle
+
+
+<!--TAGS-->
+<!--tag:Mount-->

@@ -19,3 +19,7 @@ It will create the objective if it does not currently exist.
   - setscore{o=TestScore;e=Bob;v=1} ~onInteract 
 ```
 ![](https://i.imgur.com/0HKvAUM.png)
+
+
+<!--TAGS-->
+<!--tag:Scoreboard-->

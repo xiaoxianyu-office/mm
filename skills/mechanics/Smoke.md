@@ -21,3 +21,7 @@ SmokeMonster:
 ## Aliases
 - [x] effect:smoke
 - [x] e:smoke
+
+
+<!--TAGS-->
+<!--tag:Effect-->

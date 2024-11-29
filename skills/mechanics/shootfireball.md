@@ -52,3 +52,7 @@ FireballBarrage:
 <!-- LINKS -->
 [origin]: /Skills/Targeters/Origin
 [material]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+
+<!--TAGS-->
+<!--tag:Projectile-->

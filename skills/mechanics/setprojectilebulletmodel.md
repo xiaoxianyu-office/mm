@@ -14,3 +14,7 @@ This example would set the projectile bullet model number to 1234.
   Skills:
   - setProjectileBulletModel{model=1234}
 ```
+
+
+<!--TAGS-->
+<!--tag:Meta-->

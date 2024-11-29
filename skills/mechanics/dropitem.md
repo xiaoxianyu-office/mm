@@ -40,3 +40,7 @@ Example of dropping items from a DropTable.
 
 <!-- LINKS -->
 [metaskill]: /Skills/Metaskills
+
+
+<!--TAGS-->
+<!--tag:Item-->

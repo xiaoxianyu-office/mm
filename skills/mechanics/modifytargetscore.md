@@ -33,3 +33,8 @@ the casting mob in battle.
 
 
 [^mod]: shorthand for "Modular Division"
+
+
+
+<!--TAGS-->
+<!--tag:Scoreboard-->

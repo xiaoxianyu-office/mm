@@ -17,3 +17,7 @@ Drops the head of the person who clicked on the mob.
 
 ## Aliases
 - [x] dropHead
+
+
+<!--TAGS-->
+<!--tag:Item-->

@@ -13,3 +13,7 @@ REQUIRES `forcesync=true`.
   Skills:
   - closeinventory{forcesync=true} @target ~onTimer:100
 ```
+
+
+<!--TAGS-->
+<!--tag:Inventory-->

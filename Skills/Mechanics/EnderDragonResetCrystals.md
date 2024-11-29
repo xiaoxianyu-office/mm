@@ -16,3 +16,7 @@ Generates the EnderDragon crystals if an enderdragon battle is going on in the t
 
 ## Aliases
 - [x] resetEnderResetCrystals
+
+
+<!--TAGS-->
+<!--tag:World-->

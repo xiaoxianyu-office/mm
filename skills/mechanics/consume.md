@@ -17,3 +17,8 @@ zombie killed.
   Skills:
   - consume{d=1000;h=20} @MobsInRadius{type=ZOMBIE;r=20}
 ```
+
+
+<!--TAGS-->
+<!--tag:Damage-->
+<!--tag:Health-->

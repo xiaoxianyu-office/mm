@@ -39,3 +39,7 @@ You can also use a targeter in as the attribute value's, like the following
   Skills:
   - pushblock{dir=@Forward{f=1}} @ForwardWall{f=5;y=1;h=2;w=2}
 ```
+
+
+<!--TAGS-->
+<!--tag:World-->

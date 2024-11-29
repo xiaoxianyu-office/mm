@@ -48,3 +48,7 @@ SuperShockslam:
   - delay 2
   - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=11} @Self
 ```
+
+
+<!--TAGS-->
+<!--tag:Movement-->

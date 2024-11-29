@@ -30,3 +30,7 @@ CrushingLeap:
   - effect:explosion @self
   - damage{amount=20} @EntitiesInRadius{r=5}
 ```
+
+
+<!--TAGS-->
+<!--tag:Movement-->

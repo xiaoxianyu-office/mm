@@ -32,3 +32,7 @@ interacted with, instead of the new health being 5/5 it would become
 
 ## Aliases
 - [x] setmaxhp
+
+
+<!--TAGS-->
+<!--tag:Health-->

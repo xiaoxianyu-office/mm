@@ -26,3 +26,7 @@ The header of the toast is set by the frame type, such as `challenge` being titl
 - [x] toastmsg
 - [x] advmessage
 - [x] advancementmessage
+
+
+<!--TAGS-->
+<!--tag:Message-->

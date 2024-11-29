@@ -33,3 +33,7 @@ It will create the objective if it does not currently exist.
 ![](https://i.imgur.com/0HKvAUM.png)
 
 [^mod]: shorthand for "Modular Division"
+
+
+<!--TAGS-->
+<!--tag:Scoreboard-->

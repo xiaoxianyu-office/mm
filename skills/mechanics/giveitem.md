@@ -31,3 +31,8 @@ The below example would give the players 6 cookies.
 - [x] give
 - [x] giveitems
 - [x] itemgive
+
+
+<!--TAGS-->
+<!--tag:Inventory-->
+<!--tag:Item-->

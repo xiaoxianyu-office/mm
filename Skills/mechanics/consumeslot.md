@@ -25,3 +25,8 @@ Would remove whatever item is in the HAND equipment slot the nearest player's in
 
 ## Aliases
 - [x] consumeslotitem
+
+
+<!--TAGS-->
+<!--tag:Item-->
+<!--tag:Inventory-->

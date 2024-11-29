@@ -20,3 +20,7 @@ Will forcibly reverse all effects created by the blockmask effect in the specifi
 ## Aliases
 - [x] effect:blockUnmask
 - [x] e:blockunmask
+
+
+<!--TAGS-->
+<!--tag:Effect-->

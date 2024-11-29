@@ -23,3 +23,7 @@ ResetMyMobScore:
 
 ## Aliases
 - [x] sms
+
+
+<!--TAGS-->
+<!--tag:Scoreboard-->

@@ -29,3 +29,8 @@ The formula for this is `v * 16 = max volume distance`. For example if you use â
 
 <!-- LINKS -->
 [Paper-Only]: https://papermc.io/downloads/all
+
+
+<!--TAGS-->
+<!--tag:Effect-->
+<!--tag:Sound-->

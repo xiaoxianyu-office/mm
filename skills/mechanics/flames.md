@@ -17,3 +17,7 @@ FlamesSkill:
 ## Aliases
 - [x] effect:flames
 - [x] e:flames
+
+
+<!--TAGS-->
+<!--tag:Effect-->

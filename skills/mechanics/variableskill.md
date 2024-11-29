@@ -53,3 +53,7 @@ In this example, the VariableSkill mechanic will execute a metaskill whose name 
 ## Aliases
 - [x] metavariableskill
 - [x] vskill
+
+
+<!--TAGS-->
+<!--tag:Meta-Mechanic-->

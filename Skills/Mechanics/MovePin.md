@@ -15,3 +15,7 @@ Cannot move MultiPins.
   - movepin{pin=example} @selflocation
 ```
 > Moves the pin named "example" to the current location of the caster
+
+
+<!--TAGS-->
+<!--tag:Pin-->

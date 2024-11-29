@@ -17,3 +17,7 @@ EnderSkill:
 ## Aliases
 - [x] effect:ender
 - [x] e:ender
+
+
+<!--TAGS-->
+<!--tag:Effect-->

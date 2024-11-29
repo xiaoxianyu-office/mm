@@ -13,3 +13,7 @@ Sets the head pitch of the target entity
   Skills:
   - setpitch{amount=45} @EIR{r=10}
 ```
+
+
+<!--TAGS-->
+<!--tag:Movement-->

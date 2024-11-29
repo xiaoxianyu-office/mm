@@ -31,3 +31,7 @@ HitMob:
 ## Aliases
 - [x] physicalDamage
 - [x] meleeHit
+
+
+<!--TAGS-->
+<!--tag:Damage-->

@@ -38,3 +38,7 @@ When the entity's AI calculates a path, it checks the block types along the pote
 ## Aliases
 - [x] setmalus
 - [x] malus
+
+
+<!--TAGS-->
+<!--tag:AI-->

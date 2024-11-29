@@ -35,3 +35,9 @@ dirtToDiamonds:
 
 ## Aliases
 - [x] blockBreakAndGiveItem
+
+
+<!--TAGS-->
+<!--tag:World-->
+<!--tag:Inventory-->
+<!--tag:Item-->

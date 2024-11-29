@@ -26,3 +26,7 @@ OpenSecretDoor:
 
 ## Aliases
 - [x] lever
+
+
+<!--TAGS-->
+<!--tag:World-->

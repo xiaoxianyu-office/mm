@@ -40,3 +40,7 @@ ExampleMob:
 ## Aliases
 - [x] setsaddle
 - [x] givesaddle
+
+
+<!--TAGS-->
+<!--tag:Inventory-->

@@ -36,3 +36,7 @@ something. Can use any aura attribute
 [metaskill]: /Skills/Metaskills
 [aura]: /skills/mechanics/aura
 [Implemented Placeholders]: /Skills/Placeholders#variable-placeholders
+
+
+<!--TAGS-->
+<!--tag:Aura-->

@@ -24,3 +24,7 @@ SuperLightningSkill:
 ## Aliases
 - [x] effect:lightning
 - [x] e:lightning
+
+
+<!--TAGS-->
+<!--tag:Effect-->

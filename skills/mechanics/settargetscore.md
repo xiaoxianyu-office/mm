@@ -25,3 +25,7 @@ the casting mob in battle.
 
 ## Aliases
 - [x] sts
+
+
+<!--TAGS-->
+<!--tag:Scoreboard-->

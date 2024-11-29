@@ -42,3 +42,9 @@ This mechanic is also an [aura].
 [aura]: /skills/mechanics/aura
 [metaskill]: /Skills/Metaskills
 [targeters]: /Skills/Targeters
+
+
+<!--TAGS-->
+<!--tag:Aura-->
+<!--tag:Movement-->
+<!--tag:AI-->

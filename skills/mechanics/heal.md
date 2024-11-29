@@ -35,3 +35,7 @@ The same mob with 17 health will gain 17 health on top of its maximum of
 
 ## Aliases
 - [x] h
+
+
+<!--TAGS-->
+<!--tag:Health-->

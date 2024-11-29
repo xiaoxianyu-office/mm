@@ -41,3 +41,10 @@ CUSTOM_ITEM:
 <!-- LINKS -->
 [aura]: /skills/mechanics/aura
 [showentity]: /skills/mechanics/showentity
+
+
+
+<!--TAGS-->
+<!--tag:Effect-->
+<!--tag:Aura-->
+

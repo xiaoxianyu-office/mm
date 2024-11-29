@@ -42,3 +42,7 @@ Example: if you leave it blank and use it on a villager building, you will see t
 
 <!-- LINKS -->
 [material]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+
+<!--TAGS-->
+<!--tag:Effect-->

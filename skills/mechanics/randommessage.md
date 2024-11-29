@@ -33,3 +33,8 @@ This will do the same as above, but this time sending 2 random messages per each
 - [x] randommsg
 - [x] rm
 - [x] rmsg
+
+
+<!--TAGS-->
+<!--tag:Random-->
+<!--tag:Message-->

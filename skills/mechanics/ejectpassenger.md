@@ -17,3 +17,7 @@ Ejects any passengers that are currently riding the mob.
 
 ## Aliases
 - [x] eject_passenger
+
+
+<!--TAGS-->
+<!--tag:Mount-->

@@ -26,3 +26,7 @@ SpinningSpider:
 ## Aliases
 - [x] effect:spin
 - [x] e:spin
+
+
+<!--TAGS-->
+<!--tag:Movement-->

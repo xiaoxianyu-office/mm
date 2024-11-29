@@ -26,3 +26,7 @@ DeathGrip:
   - delay 60
   - pull{v=6;to=true} @PIR{r=10}
 ```
+
+
+<!--TAGS-->
+<!--tag:Movement-->

@@ -25,3 +25,7 @@ Causes a storm for 10 minutes when the mob spawns.
 Skills:
   - weather{type=storm;duration=6000} ~onSpawn
 ```
+
+
+<!--TAGS-->
+<!--tag:World-->

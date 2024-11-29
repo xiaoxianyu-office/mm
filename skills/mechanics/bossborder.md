@@ -18,3 +18,7 @@ Traps the the target player within a border around the caster.
 ## Aliases
 - [x] effect:bossBorder
 - [x] e:bossBorder
+
+
+<!--TAGS-->
+<!--tag:Effect-->

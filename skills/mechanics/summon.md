@@ -51,3 +51,8 @@ RaiseSkeletons:
 
 <!-- LINKS -->
 [metaskill]: /Skills/Metaskills
+
+
+<!--TAGS-->
+<!--tag:Summon-->
+

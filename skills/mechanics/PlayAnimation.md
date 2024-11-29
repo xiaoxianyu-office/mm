@@ -32,3 +32,7 @@ SwingSkill:
 - [x] effect:playanimation
 - [x] e:playanimation
 - [x] playarmanimation
+
+
+<!--TAGS-->
+<!--tag:Effect-->

@@ -27,3 +27,7 @@ StaticSheep:
   Skills:
   - lightning{d=6} @EntitiesInRadius{r=10} ~onTimer:100
 ```
+
+
+<!--TAGS-->
+<!--tag:Damage-->

@@ -21,3 +21,8 @@ Generates a particle effect based on an equation.
 - [x] particleequation
 - [x] e:peq
 - [x] peq
+
+
+
+<!--TAGS-->
+<!--tag:Particle-->

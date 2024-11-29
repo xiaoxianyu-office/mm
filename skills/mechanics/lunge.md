@@ -15,3 +15,7 @@ Applies forward directional velocity to the target.
   Skills:    
   - lunge{velocity=15;velocityY=5} @Self
 ```
+
+
+<!--TAGS-->
+<!--tag:Movement-->

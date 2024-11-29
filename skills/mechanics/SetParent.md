@@ -18,3 +18,7 @@ ZombieFollower:
   Skills:
   - setparent @MIR{r=20;t=ZombieBoss;limit=1;sort=NEAREST} ~onTimer:20 ?!hasparent
 ```
+
+
+<!--TAGS-->
+<!--tag:Meta-->

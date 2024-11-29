@@ -21,3 +21,7 @@ EnderBeamSkill:
 
 ## Aliases
 - [x] effect:enderbeam
+
+
+<!--TAGS-->
+<!--tag:Effect-->

@@ -21,3 +21,8 @@ Causes the mob to pathfind to a location.
 ## Aliases
 - [x] pathto
 - [x] navigateto
+
+
+<!--TAGS-->
+<!--tag:Movement-->
+<!--tag:AI-->

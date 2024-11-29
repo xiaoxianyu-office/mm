@@ -13,3 +13,7 @@ Applies a bone meal effect to the target blocks.
   Skills:
   - bonemeal @selflocation
 ```
+
+
+<!--TAGS-->
+<!--tag:World-->

@@ -24,3 +24,7 @@ then remove themselves after 200 ticks (10 seconds).
   Skills:
   - arrowvolley{a=20;s=25;v=10;f=50;rd=200} @Target
 ```
+
+
+<!--TAGS-->
+<!--tag:Projectile-->

@@ -17,3 +17,7 @@ Sets the caster's target to the trigger when right clicked.
 
 ## Aliases
 - [x] target
+
+
+<!--TAGS-->
+<!--tag:Threat-->

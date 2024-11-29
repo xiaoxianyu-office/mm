@@ -49,3 +49,7 @@ ExampleSkill:
       ;p=10;skip=2} @Origin
     ];repeat=180;repeati=1}
 ```
+
+
+<!--TAGS-->
+<!--tag:Meta-Mechanic-->

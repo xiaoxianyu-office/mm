@@ -23,3 +23,8 @@ ExplosiveBlast:
 
 ## Aliases
 - [x] explode
+
+
+<!--TAGS-->
+<!--tag:Damage-->
+<!--tag:World-->

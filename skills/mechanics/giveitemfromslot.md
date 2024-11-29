@@ -26,3 +26,8 @@ Give caster's main hand item to all players on the server, and plays the pickup 
 
 ## Aliases
 - [x] givefromslot
+
+
+<!--TAGS-->
+<!--tag:Inventory-->
+<!--tag:Item-->

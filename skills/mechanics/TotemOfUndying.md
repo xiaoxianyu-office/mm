@@ -25,3 +25,7 @@ PlayTotemEffect:
 - [x] totemofundying
 - [x] e:totemofundying
 - [x] totemeffect
+
+
+<!--TAGS-->
+<!--tag:Effect-->

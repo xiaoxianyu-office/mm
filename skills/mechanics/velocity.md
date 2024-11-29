@@ -32,3 +32,7 @@ internal_mobname:
   Skills:
   - velocity{m=set;x=0;y=0;z=0;delay=1} @self ~onDamaged
 ```
+
+
+<!--TAGS-->
+<!--tag:Movement-->

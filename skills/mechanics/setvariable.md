@@ -83,3 +83,7 @@ VariableSend:
 ## Aliases
 - [x] setvar
 - [x] variableset
+
+
+<!--TAGS-->
+<!--tag:Variable-->

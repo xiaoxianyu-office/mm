@@ -48,3 +48,8 @@ Makes the target glow red for 1000 ticks (50 seconds).
 [audience]: /Skills/Audience
 [color]: #valid-colors
 [aura]: /skills/mechanics/aura
+
+
+<!--TAGS-->
+<!--tag:Aura-->
+<!--tag:Effect-->

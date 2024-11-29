@@ -31,3 +31,7 @@ ExampleMob:
 
 <!-- LINKS -->
 [fawePaste]: /Skills/mechanics/fawepaste/
+
+
+<!--TAGS-->
+<!--tag:World-->

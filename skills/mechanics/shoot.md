@@ -88,3 +88,7 @@ ArrowBarrage:
 
 ## Aliases
 - [x] shootprojetile
+
+
+<!--TAGS-->
+<!--tag:Projectile-->

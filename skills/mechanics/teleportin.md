@@ -22,3 +22,7 @@ Will teleport the player that triggered the skill to the right of the caster.
 - [x] tpin 
 - [x] tpdir 
 - [x] tpi
+
+
+<!--TAGS-->
+<!--tag:Teleport-->

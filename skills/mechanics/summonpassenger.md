@@ -21,3 +21,9 @@ Will summon the mob "MyZombie" to ride the caster of the mechanic.
 - [x] passenger
 - [x] summonRider
 - [x] rider
+
+
+<!--TAGS-->
+<!--tag:Mount-->
+<!--tag:Summon-->
+

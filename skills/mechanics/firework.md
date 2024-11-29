@@ -32,3 +32,7 @@ The type attribute's value can be one of the following
 - [x] effect:firework
 - [x] effect:fireworks
 - [x] e:firework
+
+
+<!--TAGS-->
+<!--tag:Effect-->

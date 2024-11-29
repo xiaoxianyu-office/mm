@@ -16,3 +16,7 @@ Turns the blocks at the target location(s) into falling blocks, making them star
 ## Aliases
 - [x] destabilizeBlock
 - [x] destabilizeBlocks
+
+
+<!--TAGS-->
+<!--tag:World-->

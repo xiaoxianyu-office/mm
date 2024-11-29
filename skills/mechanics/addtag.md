@@ -34,3 +34,7 @@ TagTest:
 ## Aliases
 - [x] addscoreboardtag
 - [x] tagadd
+
+
+<!--TAGS-->
+<!--tag:Scoreboard-->

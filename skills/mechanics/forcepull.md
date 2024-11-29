@@ -18,3 +18,7 @@ ForceGrip:
   Skills:
   - forcepull{spread=5} @EntitiesInRadius{r=30}
 ```
+
+
+<!--TAGS-->
+<!--tag:Teleport-->
