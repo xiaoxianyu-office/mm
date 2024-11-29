@@ -34,3 +34,4 @@ The formula for this is `v * 16 = max volume distance`. For example if you use â
 <!--TAGS-->
 <!--tag:Effect-->
 <!--tag:Sound-->
+<!--tag:Paper-Only-->

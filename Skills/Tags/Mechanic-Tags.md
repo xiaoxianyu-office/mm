@@ -17,6 +17,9 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Setai](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setai) | MythicMobs | Toggles the target AI |
 | [Setpathfindingmalus](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetPathfindingMalus) | MythicMobs | Sets the pathfinding malus of a mob, influencing how a particular entity evaluates different types of blocks when calculating its path |
 | [Stun](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/stun) | MythicMobs | Holds the target in place temporarily. |
+| [Togglesitting](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/togglesitting) | MythicMobs | Toggles the sitting state for cats, dogs, foxes, and parrots. |
+| [Wolfsit](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/wolfsit) | MythicMobs | Sets the sitting state of the target wolf. |
+| [Goatram](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/GoatRam) | MythicMobs | Causes the casting goat mob to ram the targeted entity |
 
 ## Attribute
 | Mechanic | Plugin | Description |
@@ -219,7 +222,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Projectile](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/projectile) | MythicMobs | The Projectile skill fires a meta-"projectile" that can be decorated |
 | [Randomskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/randomskill) | MythicMobs | Executes a random skill from the list of supplied [skills](/skills/mechanics/skill) |
 | [Raytrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytrace) | MythicMobs | Traces a ray to the target. |
-| [Raytraceto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytraceto) | MythicMobs | Traces a ray to the target, like the [Raytrace](/skills/mechanics/raytrace) mechanic, but with additional attributes regarding the start and end position of the ray |
+| [Raytraceto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytraceto) | MythicMobs | Traces a ray to the target, like the [Raytrace](/skills/mechanics/raytrace) mechanic, but with additional attributes regarding the start and end position of the ray. |
 | [Slash](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/slash) | MythicMobs | The Slash meta-mechanic can execute other skills in a slash-shaped pattern |
 | [Sudoskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/sudoskill) | MythicMobs | The SudoSkill mechanic allows you to force the targeted entity to “cast” |
 | [Switch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Switch) | MythicMobs | A switch allows a condition to be tested against a list of (cases) values. |
@@ -258,6 +261,17 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Throw](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/throw) | MythicMobs | Throws all targets away from the mob (or origin). |
 | [Velocity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/velocity) | MythicMobs | Modifies the velocity of the targeted entity(s) |
 
+## Paper-Only
+| Mechanic | Plugin | Description |
+|----------|--------|-------------|
+| [Goatram](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/GoatRam) | MythicMobs | Causes the casting goat mob to ram the targeted entity |
+| [Onjump](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onjump) | MythicMobs | Applies an [aura] to the target that triggers a skill when they jump. |
+| [Playblockbreaksound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockBreakSound) | MythicMobs | Plays the target block's breaking sound. |
+| [Playblockfallsound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockFallSound) | MythicMobs | Plays the target block's falling sound |
+| [Playblockhitsound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockHitSound) | MythicMobs | Plays the target block's hit (damage) sound |
+| [Playblockplacesound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockPlaceSound) | MythicMobs | Plays the target block's placement sound. |
+| [Playblockstepsound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockStepSound) | MythicMobs | Plays the target block's step sound (The sound played when an entity walks on it) |
+
 ## Particle
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
@@ -277,6 +291,14 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
 | [Movepin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/MovePin) | MythicMobs | Moves the given [pin](/Pins) to the target location |
+
+## Premium-Only
+| Mechanic | Plugin | Description |
+|----------|--------|-------------|
+| [Chainmissile](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/chainmissile) | MythicMobs | Shoots a chaining homing missile at the target   |
+| [Raytrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytrace) | MythicMobs | Traces a ray to the target. |
+| [Raytraceto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytraceto) | MythicMobs | Traces a ray to the target, like the [Raytrace](/skills/mechanics/raytrace) mechanic, but with additional attributes regarding the start and end position of the ray. |
+| [Fawepaste](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fawepaste) | MythicMobs | Pastes a Schematic using the FAWE Plugin found here: [FAWE](https://www.spigotmc.org/resources/fast-async-worldedit.13932/) |
 
 ## Projectile
 | Mechanic | Plugin | Description |

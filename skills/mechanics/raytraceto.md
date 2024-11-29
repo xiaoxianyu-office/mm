@@ -1,5 +1,7 @@
 ## Description
-Traces a ray to the target, like the [Raytrace](/skills/mechanics/raytrace) mechanic, but with additional attributes regarding the start and end position of the ray. **\[PREMIUM ONLY\]**
+Traces a ray to the target, like the [Raytrace](/skills/mechanics/raytrace) mechanic, but with additional attributes regarding the start and end position of the ray.
+
+> **This is a [Premium-Only] mechanic!**
 
 
 ## Attributes
@@ -43,5 +45,10 @@ MyRaytraceToSkill:
 ```
 
 
+<!-- LINKS -->
+[Premium-Only]: Premium-Features
+
+
 <!--TAGS-->
 <!--tag:Meta-Mechanic-->
+<!--tag:Premium-Only-->

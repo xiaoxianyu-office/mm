@@ -19,3 +19,8 @@ ExampleMob:
 
 <!-- LINKS -->
 [Paper-Only]: https://papermc.io/downloads/all
+
+
+<!--TAGS-->
+<!--tag:Paper-Only-->
+<!--tag:AI-->

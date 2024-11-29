@@ -18,3 +18,7 @@ Sets the sitting state of the target wolf.
 # Sitting
 - wolfSit{state=true} @self ~onInteract
 ```
+
+
+<!--TAGS-->
+<!--tag:AI-->
