@@ -40,6 +40,7 @@
 
 ##### [Skills](/Skills/Skills)
   * [Mechanics](/Skills/Mechanics)<!--   * [In-line skill](/Skills/inline-skills)-->
+    * [*Mechanics by Tag*](/Skills/Tags/Mechanic-Tags)
   * [Targeters](/Skills/Targeters)
     * [Filters](/Skills/Targeters#target-filters)
   * [Triggers](/Skills/Triggers)
