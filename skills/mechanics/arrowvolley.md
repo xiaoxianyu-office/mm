@@ -1,7 +1,6 @@
 ## Description
 
-Fires a volley of arrows towards the target with a number of
-configurable properties.
+Fires a volley of arrows towards the target with a number of configurable properties.
 
 
 ## Attributes
