@@ -268,6 +268,7 @@ by these will "inherit" the targets (if applicable).
 | **[Skill][]**           | Executes a meta-skill. The butter for your bread.                                                                                                       |
 | **[VariableSkill][]**   | Executes a meta-skill. Supports placeholders.                                                                                                       |
 | [Aura][]                | Applies an aura to the targeted entity, allowing for skills to be run onStart/onTick/onEnd/Etc which all originate from the target.                     |
+| [Beam][]                | Creates a beam of a material between the caster and the target  |
 | [CancelEvent][]         | Cancels the Event that triggered the current skill-tree. Only works for certain triggers.                                                                |
 | [CancelSkill][]         | Cancels the execution of the Metaskill when triggered.                                                                |
 | [Cast][]                | Applies an [aura] that "Casts" a meta-skill using various advanced options.                                                                                                    |
@@ -598,6 +599,7 @@ but not yet ready for use.
   [VariableSkill]: /skills/mechanics/variableskill
   [Aura]: /skills/mechanics/aura
   [aura]: /skills/mechanics/aura
+  [Beam]: /skills/mechanics/Beam
   [CancelEvent]: /skills/mechanics/cancelevent
   [CancelSkill]: /skills/mechanics/CancelSkill
   [Cast]: /skills/mechanics/cast
