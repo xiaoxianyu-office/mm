@@ -5,7 +5,9 @@ mechanics together.
 
 Some Mechanics are able to target Entities, Locations, or both! Some
 don't target anything. You control what your skill targets using a
-[Targeter][].
+[Targeter][].  
+
+You can also find some of the mechanics listed by tag [here](/Skills/Tags/Mechanic-Tags)
 
 
 [[_TOC_]]
