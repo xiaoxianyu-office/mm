@@ -167,6 +167,7 @@ are able to target locations as well.
 | [Remove][]                | Removes the target mob                                                                   |
 | [RemoveHeldItem][]        | Removes some of the item the target player is holding                                    |
 | [RemoveOwner][]           | Removes the ownership of the target mob                                                  |
+| [RotateTowards][]         | Rotates the caster towards the target location                                   |
 | [RunAIGoalSelector][]     | Change the caster's [AIGoalSelectors]                                                      |
 | [RunAITargetSelector][]   | Change the caster's [AITargetSelectors]                                                    |
 | [Saddle][]                | Equips or remove a saddle on the target entity                                          |
@@ -505,6 +506,7 @@ but not yet ready for use.
   [Remove]: /skills/mechanics/remove
   [RemoveHeldItem]: /skills/mechanics/removehelditem
   [RemoveOwner]: /skills/mechanics/removeowner
+  [RotateTowards]: /skills/mechanics/RotateTowards
   [RunAIGoalSelector]: /skills/mechanics/runaigoalselector
   [RunAITargetSelector]: /skills/mechanics/runaitargetselector
   [Saddle]: /skills/mechanics/saddle
