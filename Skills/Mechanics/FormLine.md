@@ -33,5 +33,5 @@ Makes the casting mob follow a linear path to a location
 
 <!--TAGS-->
 <!--tag:Movement-->
-<!--tag:Aura-->
+<!--tag:Meta-Mechanic:Aura-->
 <!--tag:AI-->

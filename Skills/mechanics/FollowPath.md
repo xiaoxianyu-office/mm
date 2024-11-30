@@ -45,6 +45,6 @@ This mechanic is also an [aura].
 
 
 <!--TAGS-->
-<!--tag:Aura-->
+<!--tag:Meta-Mechanic:Aura-->
 <!--tag:Movement-->
 <!--tag:AI-->

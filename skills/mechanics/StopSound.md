@@ -27,5 +27,4 @@ SilenceEndermanSkill:
 
 
 <!--TAGS-->
-<!--tag:Sound-->
-<!--tag:Effect-->
+<!--tag:Effect:Sound-->

@@ -25,4 +25,4 @@ Will teleport the player that triggered the skill to the right of the caster.
 
 
 <!--TAGS-->
-<!--tag:Teleport-->
+<!--tag:Movement:Teleport-->

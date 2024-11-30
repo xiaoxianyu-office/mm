@@ -35,4 +35,4 @@ Teleports all of the players in a radius of 50 blocks to a locations that is 10 
 
 
 <!--TAGS-->
-<!--tag:Teleport-->
+<!--tag:Movement:Teleport-->

@@ -38,4 +38,4 @@ Creates a particle line helix effect at the targeted entity or location.
 
 
 <!--TAGS-->
-<!--tag:Particle-->
+<!--tag:Effect:Particle-->

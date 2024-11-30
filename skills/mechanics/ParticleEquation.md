@@ -25,4 +25,4 @@ Generates a particle effect based on an equation.
 
 
 <!--TAGS-->
-<!--tag:Particle-->
+<!--tag:Effect:Particle-->

@@ -78,5 +78,4 @@ This particle type will replace the spawned particle with the selected entity. T
 
 
 <!--TAGS-->
-<!--tag:Particle-->
-<!--tag:Effect-->
+<!--tag:Effect:Particle-->

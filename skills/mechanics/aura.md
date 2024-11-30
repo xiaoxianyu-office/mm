@@ -88,5 +88,5 @@ deal regular damage as the multiplier would not trigger either.
 
 
 <!--TAGS-->
-<!--tag:Aura-->
+<!--tag:Meta-Mechanic:Aura-->
 <!--tag:Meta-Mechanic-->

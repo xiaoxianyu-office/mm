@@ -51,5 +51,5 @@ Makes the target glow red for 1000 ticks (50 seconds).
 
 
 <!--TAGS-->
-<!--tag:Aura-->
+<!--tag:Meta-Mechanic:Aura-->
 <!--tag:Effect-->

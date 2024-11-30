@@ -32,36 +32,6 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 
 
 [>> Go to top](#)
-## Aura
-| Mechanic | Plugin | Description |
-|----------|--------|-------------|
-| [Aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/aura) | MythicMobs | The Aura mechanic acts as a status effect on the target entity, and can |
-| [Auraremove](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/auraremove) | MythicMobs | Removes an aura from the target |
-| [BlackScreen](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/BlackScreen) | MythicMobs | Causes the player's screen to black out. |
-| [Bouncy](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Bouncy) | MythicMobs | Applies an aura to the target that makes it bouncy |
-| [Cast](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/cast) | MythicMobs | Cast is an [Aura] mechanic similar to |
-| [Fly](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fly) | MythicMobs | Makes the player fly, similar to the /fly command |
-| [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura] that causes the holding mob to follow a path |
-| [FormLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FormLine) | MythicMobs | Makes the casting mob follow a linear path to a location |
-| [Glow](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/glow) | MythicMobs | Makes the target entity glow (like with the Glowing potion effect) |
-| [Hide](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hide) | MythicMobs | Hides the caster from the targeted players for a set duration |
-| [Onattack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onattack) | MythicMobs | Applies an aura to the target that triggers a skill when they damage |
-| [Onblockbreak](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onblockbreak) | MythicMobs | Applies an aura to the target that triggers a skill when they break a block |
-| [Onblockplace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onblockplace) | MythicMobs | Applies an aura to the target that triggers a skill when they break a block |
-| [OnChat](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/OnChat) | MythicMobs | Applies an [aura] on the target player that triggers a [metaskill] when they type a chat message |
-| [Ondamaged](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ondamaged) | MythicMobs | Applies an aura to the target that triggers a skill when they take |
-| [Ondeath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ondeath) | MythicMobs | Applies an aura to the target that triggers a skill when they die |
-| [Oninteract](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/oninteract) | MythicMobs | Applies an aura to a PLAYER that triggers a skill when they interact (right click) while holding an item, or are looking at a block (NOT AIR) that gets outlined (5 block range). |
-| [Onswing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onswing) | MythicMobs | Applies an aura to the target that triggers a skill when they swing (left click) |
-| [Onshoot](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onshoot) | MythicMobs | Applies an aura to the target that triggers a skill when they shoot with a bow |
-| [Orbital](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/orbital) | MythicMobs | The Orbital skill fires a special type of |
-| [StatAura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StatAura) | MythicMobs | Applies an [aura] to the target that applies a specific [stat] to them. |
-| [Stun](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/stun) | MythicMobs | Holds the target in place temporarily. |
-| [Terminable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Terminable) | MythicMobs | Creates an [aura] that, after each mechanic of its onStart [metaskill], checks if a set of conditions is met: If so, the execution of the onStart skill is immediately cancelled |
-| [Onjump](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onjump) | MythicMobs | Applies an [aura] to the target that triggers a skill when they jump. |
-
-
-[>> Go to top](#)
 ## BossBar
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
@@ -116,16 +86,32 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Hide](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hide) | MythicMobs | Hides the caster from the targeted players for a set duration |
 | [Itemspray](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/itemspray) | MythicMobs | Causes an explosion of temporary items at the target location |
 | [FakeLightning](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FakeLightning) | MythicMobs | Will strike a “fake” lightning bolt at the specified target |
-| [Particle](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Particle) | MythicMobs | Creates a particle effect at the targeted entity or location. |
 | [PlayAnimation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayAnimation) | MythicMobs | Forces the entity to play an animation |
 | [Showentity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/showentity) | MythicMobs | Shows the caster, if hidden via the use of the [hide] mechanic, to the targeted players. |
 | [Skybox](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Skybox) | MythicMobs | Changes the skybox for the target players. |
 | [Smoke](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Smoke) | MythicMobs | Creates a puff of smoke at the location of the targeter. |
 | [SmokeSwirl](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SmokeSwirl) | MythicMobs | Creates a swirling vortex of smoke at the targeted entity or location. |
-| [Sound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Sound) | MythicMobs | Plays a sound from either the vanilla game or a resource pack at the targeted entity or location |
-| [StopSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StopSound) | MythicMobs | Stops a sound from playing from either the vanilla game or a resource pack for the targeted entity |
 | [Time](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Time) | MythicMobs | Sets the world's time |
 | [TotemOfUndying](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/TotemOfUndying) | MythicMobs | Plays the effect of a totem resurrecting a player with options to specify CustomModelData to use from resource packs |
+### Particle
+| Mechanic | Plugin | Description |
+|----------|--------|-------------|
+| [Particle](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Particle) | MythicMobs | Creates a particle effect at the targeted entity or location. |
+| [Atom](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Atom) | MythicMobs | Creates an orbiting Atom effect at the location. |
+| [ParticleBox](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleBox) | MythicMobs | Creates a box of particles at the targeted entity or location. |
+| [ParticleEquation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleEquation) | MythicMobs | Generates a particle effect based on an equation. |
+| [ParticleLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleLine) | MythicMobs | Creates a line of particles from the caster to the targeted entity or location. |
+| [ParticleLineHelix](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleLineHelix) | MythicMobs | Creates a particle line helix effect at the targeted entity or location. |
+| [ParticleLineRing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleLineRing) | MythicMobs | Creates a particleline ring. |
+| [ParticleOrbital](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleOrbital) | MythicMobs | Creates a particle orbital effect, where the particle will orbit around the targeted entity or location. |
+| [ParticleRing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleRing) | MythicMobs | Creates a ring of particles around the targeted entity or location. |
+| [ParticleSphere](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleSphere) | MythicMobs | Creates a sphere of particles at the targeted entity or location. |
+| [ParticleTornado](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleTornado) | MythicMobs | Creates a tornado styled particle effect. |
+### Sound
+| Mechanic | Plugin | Description |
+|----------|--------|-------------|
+| [Sound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Sound) | MythicMobs | Plays a sound from either the vanilla game or a resource pack at the targeted entity or location |
+| [StopSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StopSound) | MythicMobs | Stops a sound from playing from either the vanilla game or a resource pack for the targeted entity |
 | [PlayBlockBreakSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockBreakSound) | MythicMobs | Plays the target block's breaking sound. |
 | [PlayBlockFallSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockFallSound) | MythicMobs | Plays the target block's falling sound |
 | [PlayBlockHitSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockHitSound) | MythicMobs | Plays the target block's hit (damage) sound |
@@ -255,6 +241,33 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Switch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Switch) | MythicMobs | A switch allows a condition to be tested against a list of (cases) values. |
 | [Totem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/totem) | MythicMobs | The totem mechanic places an invisible "totem", similar to the |
 | [Volley](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/volley) | MythicMobs | Shoots a volley of arrows or item-projectiles at the targeted entity or |
+### Aura
+| Mechanic | Plugin | Description |
+|----------|--------|-------------|
+| [Aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/aura) | MythicMobs | The Aura mechanic acts as a status effect on the target entity, and can |
+| [Auraremove](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/auraremove) | MythicMobs | Removes an aura from the target |
+| [BlackScreen](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/BlackScreen) | MythicMobs | Causes the player's screen to black out. |
+| [Bouncy](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Bouncy) | MythicMobs | Applies an aura to the target that makes it bouncy |
+| [Cast](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/cast) | MythicMobs | Cast is an [Aura] mechanic similar to |
+| [Fly](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fly) | MythicMobs | Makes the player fly, similar to the /fly command |
+| [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura] that causes the holding mob to follow a path |
+| [FormLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FormLine) | MythicMobs | Makes the casting mob follow a linear path to a location |
+| [Glow](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/glow) | MythicMobs | Makes the target entity glow (like with the Glowing potion effect) |
+| [Hide](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hide) | MythicMobs | Hides the caster from the targeted players for a set duration |
+| [Onattack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onattack) | MythicMobs | Applies an aura to the target that triggers a skill when they damage |
+| [Onblockbreak](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onblockbreak) | MythicMobs | Applies an aura to the target that triggers a skill when they break a block |
+| [Onblockplace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onblockplace) | MythicMobs | Applies an aura to the target that triggers a skill when they break a block |
+| [OnChat](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/OnChat) | MythicMobs | Applies an [aura] on the target player that triggers a [metaskill] when they type a chat message |
+| [Ondamaged](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ondamaged) | MythicMobs | Applies an aura to the target that triggers a skill when they take |
+| [Ondeath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ondeath) | MythicMobs | Applies an aura to the target that triggers a skill when they die |
+| [Oninteract](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/oninteract) | MythicMobs | Applies an aura to a PLAYER that triggers a skill when they interact (right click) while holding an item, or are looking at a block (NOT AIR) that gets outlined (5 block range). |
+| [Onswing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onswing) | MythicMobs | Applies an aura to the target that triggers a skill when they swing (left click) |
+| [Onshoot](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onshoot) | MythicMobs | Applies an aura to the target that triggers a skill when they shoot with a bow |
+| [Orbital](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/orbital) | MythicMobs | The Orbital skill fires a special type of |
+| [StatAura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StatAura) | MythicMobs | Applies an [aura] to the target that applies a specific [stat] to them. |
+| [Stun](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/stun) | MythicMobs | Holds the target in place temporarily. |
+| [Terminable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Terminable) | MythicMobs | Creates an [aura] that, after each mechanic of its onStart [metaskill], checks if a set of conditions is met: If so, the execution of the onStart skill is immediately cancelled |
+| [Onjump](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onjump) | MythicMobs | Applies an [aura] to the target that triggers a skill when they jump. |
 
 
 [>> Go to top](#)
@@ -295,6 +308,15 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [SetPitch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetPitch) | MythicMobs | Sets the head pitch of the target entity |
 | [Setrotation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setrotation) | MythicMobs | Changes the rotation of the target (only works on non-player entities). |
 | [Spin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Spin) | MythicMobs | Causes the target entity to spin around for the given duration |
+### Teleport
+| Mechanic | Plugin | Description |
+|----------|--------|-------------|
+| [Forcepull](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/forcepull) | MythicMobs | Teleports all targeted entities to a location within &lt;spread&gt; |
+| [Swap](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/swap) | MythicMobs | Swaps the caster and targets locations |
+| [Teleportin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/teleportin) | MythicMobs | Will teleport the target relative to the caster's yaw |
+| [Teleport](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/teleport) | MythicMobs | Teleports the caster to the targeted location/entity |
+| [Teleportto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/teleportto) | MythicMobs | Will teleport the targeted entity or entities to the specified location. |
+| [Teleporty](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/teleporty) | MythicMobs | Teleports the caster to the specified Y coordinate |
 
 
 [>> Go to top](#)
@@ -308,23 +330,6 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [PlayBlockHitSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockHitSound) | MythicMobs | Plays the target block's hit (damage) sound |
 | [PlayBlockPlaceSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockPlaceSound) | MythicMobs | Plays the target block's placement sound. |
 | [PlayBlockStepSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockStepSound) | MythicMobs | Plays the target block's step sound (The sound played when an entity walks on it) |
-
-
-[>> Go to top](#)
-## Particle
-| Mechanic | Plugin | Description |
-|----------|--------|-------------|
-| [Particle](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Particle) | MythicMobs | Creates a particle effect at the targeted entity or location. |
-| [Atom](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Atom) | MythicMobs | Creates an orbiting Atom effect at the location. |
-| [ParticleBox](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleBox) | MythicMobs | Creates a box of particles at the targeted entity or location. |
-| [ParticleEquation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleEquation) | MythicMobs | Generates a particle effect based on an equation. |
-| [ParticleLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleLine) | MythicMobs | Creates a line of particles from the caster to the targeted entity or location. |
-| [ParticleLineHelix](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleLineHelix) | MythicMobs | Creates a particle line helix effect at the targeted entity or location. |
-| [ParticleLineRing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleLineRing) | MythicMobs | Creates a particleline ring. |
-| [ParticleOrbital](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleOrbital) | MythicMobs | Creates a particle orbital effect, where the particle will orbit around the targeted entity or location. |
-| [ParticleRing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleRing) | MythicMobs | Creates a ring of particles around the targeted entity or location. |
-| [ParticleSphere](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleSphere) | MythicMobs | Creates a sphere of particles at the targeted entity or location. |
-| [ParticleTornado](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleTornado) | MythicMobs | Creates a tornado styled particle effect. |
 
 
 [>> Go to top](#)
@@ -385,19 +390,6 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 
 
 [>> Go to top](#)
-## Sound
-| Mechanic | Plugin | Description |
-|----------|--------|-------------|
-| [Sound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Sound) | MythicMobs | Plays a sound from either the vanilla game or a resource pack at the targeted entity or location |
-| [StopSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StopSound) | MythicMobs | Stops a sound from playing from either the vanilla game or a resource pack for the targeted entity |
-| [PlayBlockBreakSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockBreakSound) | MythicMobs | Plays the target block's breaking sound. |
-| [PlayBlockFallSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockFallSound) | MythicMobs | Plays the target block's falling sound |
-| [PlayBlockHitSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockHitSound) | MythicMobs | Plays the target block's hit (damage) sound |
-| [PlayBlockPlaceSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockPlaceSound) | MythicMobs | Plays the target block's placement sound. |
-| [PlayBlockStepSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockStepSound) | MythicMobs | Plays the target block's step sound (The sound played when an entity walks on it) |
-
-
-[>> Go to top](#)
 ## Stat
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
@@ -412,18 +404,6 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [SummonFallingBlock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SummonFallingBlock) | MythicMobs | Summons a falling block of the specified material at the targeted locations |
 | [Summon](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/summon) | MythicMobs | Summons mobs of the given type around the target. |
 | [Summonpassenger](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/summonpassenger) | MythicMobs | Summons a mob to mount the caster |
-
-
-[>> Go to top](#)
-## Teleport
-| Mechanic | Plugin | Description |
-|----------|--------|-------------|
-| [Forcepull](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/forcepull) | MythicMobs | Teleports all targeted entities to a location within &lt;spread&gt; |
-| [Swap](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/swap) | MythicMobs | Swaps the caster and targets locations |
-| [Teleportin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/teleportin) | MythicMobs | Will teleport the target relative to the caster's yaw |
-| [Teleport](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/teleport) | MythicMobs | Teleports the caster to the targeted location/entity |
-| [Teleportto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/teleportto) | MythicMobs | Will teleport the targeted entity or entities to the specified location. |
-| [Teleporty](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/teleporty) | MythicMobs | Teleports the caster to the specified Y coordinate |
 
 
 [>> Go to top](#)
