@@ -7,6 +7,13 @@ Each targeter can have more than one tag, and it is listed under each section fo
 [[_TOC_]]
 
 [>> Go to top](#)
+## Gun
+| Targeter | Plugin | Description |
+|----------|--------|-------------|
+| [MuzzleLocation](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Targeters/MuzzleLocation) | MythicCrucible | Targets a location in front of the caster's eyes, with a rotation in degrees |
+
+
+[>> Go to top](#)
 ## Untagged
 These targeters have not been tagged yet.
 

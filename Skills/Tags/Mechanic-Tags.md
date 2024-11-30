@@ -22,12 +22,14 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Wolfsit](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/wolfsit) | MythicMobs | Sets the sitting state of the target wolf. |
 | [GoatRam](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/GoatRam) | MythicMobs | Causes the casting goat mob to ram the targeted entity |
 
+
 [>> Go to top](#)
 ## Attribute
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
 | [Attribute](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Attribute) | MythicMobs | Sets the base value of the targeted entity's [attribute][] |
 | [AttributeModifier](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/AttributeModifier) | MythicMobs | Adds an attribute modifier to the attributable target |
+
 
 [>> Go to top](#)
 ## Aura
@@ -58,6 +60,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Terminable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Terminable) | MythicMobs | Creates an [aura] that, after each mechanic of its onStart [metaskill], checks if a set of conditions is met: If so, the execution of the onStart skill is immediately cancelled |
 | [Onjump](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onjump) | MythicMobs | Applies an [aura] to the target that triggers a skill when they jump. |
 
+
 [>> Go to top](#)
 ## BossBar
 | Mechanic | Plugin | Description |
@@ -65,6 +68,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Barcreate](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/barcreate) | MythicMobs | Creates a custom boss bar on the casting mob (cannot be player). |
 | [Barremove](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/barremove) | MythicMobs | Removes a custom boss bar on the casting mob (cannot be player). |
 | [Barset](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/barset) | MythicMobs | Modifies a custom boss bar on the casting mob (cannot be player). |
+
 
 [>> Go to top](#)
 ## Damage
@@ -80,6 +84,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Lightning](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/lightning) | MythicMobs | Causes a lightning strike at the target entity or location, dealing |
 | [Suicide](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/suicide) | MythicMobs | Instantly kills the mob |
 
+
 [>> Go to top](#)
 ## Disguise
 | Mechanic | Plugin | Description |
@@ -89,6 +94,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Undisguise](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/undisguise) | MythicMobs | Removes the mob's active disguise, if it has one |
 | [Disguisetarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/disguisetarget) | MythicMobs | Runs a disguise string on the target mob |
 | [Doppleganger](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/doppleganger) | MythicMobs | Copies the appearance of the target player |
+
 
 [>> Go to top](#)
 ## Effect
@@ -126,6 +132,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [PlayBlockPlaceSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockPlaceSound) | MythicMobs | Plays the target block's placement sound. |
 | [PlayBlockStepSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockStepSound) | MythicMobs | Plays the target block's step sound (The sound played when an entity walks on it) |
 
+
 [>> Go to top](#)
 ## Experience
 | Mechanic | Plugin | Description |
@@ -134,6 +141,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [ClearExperience](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ClearExperience) | MythicMobs | Clears experience for the target player |
 | [GiveExperienceLevels](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/GiveExperienceLevels) | MythicMobs | Gives experience levels to the targeted players |
 | [TakeExperienceLevels](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/TakeExperienceLevels) | MythicMobs | Takes experience levels to the targeted players |
+
 
 [>> Go to top](#)
 ## Health
@@ -144,6 +152,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Healpercent](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/healpercent) | MythicMobs | Heals the target entity for a percentage of its max-health |
 | [Sethealth](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/sethealth) | MythicMobs | Sets the health of the target entity. |
 | [Setmaxhealth](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setmaxhealth) | MythicMobs | Sets the max health of the target entity. |
+
 
 [>> Go to top](#)
 ## Inventory
@@ -161,6 +170,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Giveitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/giveitem) | MythicMobs | Gives an item to the target |
 | [Saddle](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/saddle) | MythicMobs | Allows to either equip or remove a saddle on the target entity. |
 | [Takeitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/takeitem) | MythicMobs | Removes the specified amount of an item from the target player's inventory |
+
 
 [>> Go to top](#)
 ## Item
@@ -183,6 +193,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Stopusingitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/stopusingitem) | MythicMobs | Stops the targeted living entity from using an item, i.e |
 | [Takeitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/takeitem) | MythicMobs | Removes the specified amount of an item from the target player's inventory |
 
+
 [>> Go to top](#)
 ## Message
 | Mechanic | Plugin | Description |
@@ -195,6 +206,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [SendTitle](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SendTitle) | MythicMobs | Displays a "title" and/or "subtitle" message to all targeted players. |
 | [Sendtoast](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/sendtoast) | MythicMobs | Displays an advancement-like "toast" message to all targeted players |
 | [Speak](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/speak) | MythicMobs | Makes the caster speak using chat and speech bubbles |
+
 
 [>> Go to top](#)
 ## Meta
@@ -222,6 +234,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Switch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Switch) | MythicMobs | A switch allows a condition to be tested against a list of (cases) values. |
 | [Endprojectile](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/endprojectile) | MythicMobs | Terminates the projectile this mechanic has been called from, activating its onEnd skill in the process. |
 
+
 [>> Go to top](#)
 ## Meta-Mechanic
 | Mechanic | Plugin | Description |
@@ -243,6 +256,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Totem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/totem) | MythicMobs | The totem mechanic places an invisible "totem", similar to the |
 | [Volley](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/volley) | MythicMobs | Shoots a volley of arrows or item-projectiles at the targeted entity or |
 
+
 [>> Go to top](#)
 ## Mount
 | Mechanic | Plugin | Description |
@@ -255,6 +269,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Remount](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/remount) | MythicMobs | Causes the casting mob to remount the mob it spawned riding. |
 | [Summonpassenger](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/summonpassenger) | MythicMobs | Summons a mob to mount the caster |
 
+
 [>> Go to top](#)
 ## Movement
 | Mechanic | Plugin | Description |
@@ -265,17 +280,22 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Goto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/goto) | MythicMobs | Causes the mob to pathfind to a location. |
 | [Jump](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/jump) | MythicMobs | Causes the mob to jump with the given velocity |
 | [Leap](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/leap) | MythicMobs | Causes the mob to leap through the air at the target |
-| [Look](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/look) | MythicMobs | Causes the entity to look at its target |
 | [Lunge](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/lunge) | MythicMobs | Applies forward directional velocity to the target. |
-| [MatchRotation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/MatchRotation) | MythicMobs | Sets the caster's yaw and pitch to the same value of the target's |
 | [Propel](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/propel) | MythicMobs | Propels the caster of the mechanic towards the target. |
 | [Pull](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/pull) | MythicMobs | Pulls all targeted entities towards the caster with a base velocity, |
+| [Throw](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/throw) | MythicMobs | Throws all targets away from the mob (or origin). |
+| [Velocity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/velocity) | MythicMobs | Modifies the velocity of the targeted entity(s) |
+### Rotation
+| Mechanic | Plugin | Description |
+|----------|--------|-------------|
+| [Look](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/look) | MythicMobs | Causes the entity to look at its target |
+| [MatchRotation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/MatchRotation) | MythicMobs | Sets the caster's yaw and pitch to the same value of the target's |
 | [Recoil](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Recoil) | MythicMobs | Kicks the target's screen to simulate recoil. |
+| [RotateTowards](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/RotateTowards) | MythicMobs | Rotates the caster towards the target location, up to a maximum yaw/pitch increment from the current rotation. |
 | [SetPitch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetPitch) | MythicMobs | Sets the head pitch of the target entity |
 | [Setrotation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setrotation) | MythicMobs | Changes the rotation of the target (only works on non-player entities). |
 | [Spin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Spin) | MythicMobs | Causes the target entity to spin around for the given duration |
-| [Throw](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/throw) | MythicMobs | Throws all targets away from the mob (or origin). |
-| [Velocity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/velocity) | MythicMobs | Modifies the velocity of the targeted entity(s) |
+
 
 [>> Go to top](#)
 ## Paper-Only
@@ -288,6 +308,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [PlayBlockHitSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockHitSound) | MythicMobs | Plays the target block's hit (damage) sound |
 | [PlayBlockPlaceSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockPlaceSound) | MythicMobs | Plays the target block's placement sound. |
 | [PlayBlockStepSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockStepSound) | MythicMobs | Plays the target block's step sound (The sound played when an entity walks on it) |
+
 
 [>> Go to top](#)
 ## Particle
@@ -305,11 +326,13 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [ParticleSphere](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleSphere) | MythicMobs | Creates a sphere of particles at the targeted entity or location. |
 | [ParticleTornado](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ParticleTornado) | MythicMobs | Creates a tornado styled particle effect. |
 
+
 [>> Go to top](#)
 ## Pin
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
 | [MovePin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/MovePin) | MythicMobs | Moves the given [pin](/Pins) to the target location |
+
 
 [>> Go to top](#)
 ## Premium-Only
@@ -319,6 +342,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Raytrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytrace) | MythicMobs | Traces a ray to the target. |
 | [Raytraceto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytraceto) | MythicMobs | Traces a ray to the target, like the [Raytrace](/skills/mechanics/raytrace) mechanic, but with additional attributes regarding the start and end position of the ray. |
 | [Fawepaste](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fawepaste) | MythicMobs | Pastes a Schematic using the FAWE Plugin found here: [FAWE](https://www.spigotmc.org/resources/fast-async-worldedit.13932/) |
+
 
 [>> Go to top](#)
 ## Projectile
@@ -336,12 +360,14 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Shootskull](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shootskull) | MythicMobs | Shoots a wither skull from the mob towards the target entity or |
 | [Volley](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/volley) | MythicMobs | Shoots a volley of arrows or item-projectiles at the targeted entity or |
 
+
 [>> Go to top](#)
 ## Random
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
 | [Randommessage](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/randommessage) | MythicMobs | Sends a random message to the target player |
 | [Randomskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/randomskill) | MythicMobs | Executes a random skill from the list of supplied [skills](/skills/mechanics/skill) |
+
 
 [>> Go to top](#)
 ## Scoreboard
@@ -357,6 +383,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Addtag](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/addtag) | MythicMobs | Adds a scoreboard tag to the target. |
 | [Removetag](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/removetag) | MythicMobs | Removes a scoreboard tag from the target. |
 
+
 [>> Go to top](#)
 ## Sound
 | Mechanic | Plugin | Description |
@@ -369,11 +396,13 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [PlayBlockPlaceSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockPlaceSound) | MythicMobs | Plays the target block's placement sound. |
 | [PlayBlockStepSound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PlayBlockStepSound) | MythicMobs | Plays the target block's step sound (The sound played when an entity walks on it) |
 
+
 [>> Go to top](#)
 ## Stat
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
 | [StatAura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StatAura) | MythicMobs | Applies an [aura] to the target that applies a specific [stat] to them. |
+
 
 [>> Go to top](#)
 ## Summon
@@ -383,6 +412,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [SummonFallingBlock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SummonFallingBlock) | MythicMobs | Summons a falling block of the specified material at the targeted locations |
 | [Summon](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/summon) | MythicMobs | Summons mobs of the given type around the target. |
 | [Summonpassenger](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/summonpassenger) | MythicMobs | Summons a mob to mount the caster |
+
 
 [>> Go to top](#)
 ## Teleport
@@ -395,6 +425,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Teleportto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/teleportto) | MythicMobs | Will teleport the targeted entity or entities to the specified location. |
 | [Teleporty](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/teleporty) | MythicMobs | Teleports the caster to the specified Y coordinate |
 
+
 [>> Go to top](#)
 ## Threat
 | Mechanic | Plugin | Description |
@@ -404,6 +435,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Threat](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/threat) | MythicMobs | Modifies the mob's threat value towards the target |
 | [Taunt](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Taunt) | MythicMobs | Modifies the threat level that the caster holds with the target entities |
 | [Clearthreat](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/clearthreat) | MythicMobs | Makes a mob clear its threat table |
+
 
 [>> Go to top](#)
 ## Variable
@@ -415,6 +447,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Setvariable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setvariable) | MythicMobs | Sets a [variable](/skills/variables) |
 | [Variablesubtract](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/variablesubtract) | MythicMobs | Subtracts an amount to a [variable](/skills/variables) on the specified |
 | [Variableunset](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/variableunset) | MythicMobs | Unsets a [variable](/skills/variables). |
+
 
 [>> Go to top](#)
 ## World
@@ -442,6 +475,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Undopaste](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/undopaste) | MythicMobs | Undoes a previous paste done via the [fawePaste] mechanic, based on its id or on the schematic used |
 | [Weather](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/weather) | MythicMobs | Changes the weather in the casting mob's world. |
 | [Fawepaste](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fawepaste) | MythicMobs | Pastes a Schematic using the FAWE Plugin found here: [FAWE](https://www.spigotmc.org/resources/fast-async-worldedit.13932/) |
+
 
 [>> Go to top](#)
 ## Untagged
