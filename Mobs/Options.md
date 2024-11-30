@@ -23,7 +23,7 @@ Equivalent to the NBT-tag `CustomNameVisible`.
 Defaults to `false`.
 ```yml
   Options:
-  AlwaysShowName: false
+    AlwaysShowName: false
 ```
 
 #### AttackSpeed
