@@ -430,7 +430,7 @@ TREE_BREAKER:
 
 #### Spawner
 Configure the options for a SPAWNER item
-```
+```yaml
 TestSpawner:
   Material: SPAWNER
   Display: 'Testing Spawner'
