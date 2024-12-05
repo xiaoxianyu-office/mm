@@ -1,5 +1,6 @@
 ## Description
-Checks against the material of the item that triggered the skill.
+Checks against the material of the item that triggered the skill.  
+Wildcards (`*_SWORD`) and item tags (`#arrows`)
 
 
 ## Attributes
