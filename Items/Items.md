@@ -348,7 +348,7 @@ Used to handle the [equippable item component](https://minecraft.wiki/w/Data_com
 | Tag               | Description                                                             | Default  |
 |-------------------|-------------------------------------------------------------------------|----------|
 | Model             | The resource location of the equipment model to use when equipped. If a namespace is not used, it will default to `minecraft:` |          |
-| Slot              | The [slot](/Skills/EquipSlot) to put the item on. If not specified, the plugin will try to "guess" it based on whether the base material contains any of the following strings: `_HELMET`, `_CHESTPLATE`, `_LEGGINGS` or `_BOOTS` |          |
+| Slot              | The [slot](/Skills/EquipSlot) to put the item on. If not specified, the plugin will try to "guess" it based on whether the base material contains any of the following strings: `_HELMET`, `_CHESTPLATE`, `_LEGGINGS`, `_BOOTS` or `SHIELD` |          |
 | CameraOverlay     | The resource location of the overlay texture to use when equipped. If a namespace is not used, it will default to `minecraft:` |          |
 | Dispensable       | Whether the item can be dispensed by using a dispenser                  | true     |
 | Swappable         | Whether the item can be equipped into the relevant slot by right-clicking | true   |
