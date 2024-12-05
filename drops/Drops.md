@@ -34,7 +34,8 @@ The chance for the specified item to be dropped.
 ## Drop Types
 | **Type**                    | **Explanation**                                          | **Example**                             |
 |-----------------------------|----------------------------------------------------------|-----------------------------------------|
-| [mythicmob](/drops/DropTypes/MythicMob)| Will drop a MythicMob                         |                |
+| [MythicMob](/drops/DropTypes/MythicMob)| Will drop a MythicMob                         |                |
+| [Mythic Item](/drops/DropTypes/MythicItem)| Will drop a Mythic Item                    |                |
 | **champions-exp**           | Will drop experience points for the plugin `Champions`.  |                                         |
 | [skillapi-exp](/drops/DropTypes/SkillAPIExp)| Will drop experience points for the plugin `SkillAPI` |                                         |
 | **heroesexp**               | Will drop experience points for the plugin `Heroes`.     |                                         |
