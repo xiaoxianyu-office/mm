@@ -461,5 +461,28 @@ TestSpawner:
       MaxSkyLight: 10
 ```
 
+
+#### DropOptions
+Allows the item to be inherently dropped with specific [FancyDrops Options](/drops/FancyDrops#drop-attributes)
+
+```yaml
+LegendarySword:
+  Id: DIAMOND_SWORD
+  Display: '<red>Legendary Sword'
+  DropOptions:
+    # Default drop settings for this item
+    DropGlowColor: GOLD
+    DropBeamColor: '#FFA500' # Orange beam
+    DropLootsplosion: true
+    DropHologram: true
+    DropVFX: true
+    DropVFXMaterial: DIAMOND
+    DropVFXData: 0
+    DropVFXColor: '#55FF55'
+    DropBillboarding: CENTER
+    DropBrightness: 15
+    DropClientSide: false
+```
+
 ## Examples
 More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
