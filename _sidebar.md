@@ -8,8 +8,6 @@
 
 ---
 
-##### [<img src="https://raw.githubusercontent.com/Lxlp38/MythicScribe/refs/heads/master/assets/icon128x128.png" alt="MythicScribe" width="10%"> MythicScribe - **VSCode Extension**](https://marketplace.visualstudio.com/items?itemName=Lxlp.mythicscribe)
-
 ##### [Guides](/Guides)
 * [Troubleshooting](/Troubleshooting/Troubleshooting)
 * [FAQ / Common Issues](FAQ)
@@ -19,6 +17,8 @@
 ##### [Packs](Packs)
 
 ---
+---
+
 
 ##### [Mobs](/Mobs/Mobs)
   * [Mob Options](/Mobs/Options)
@@ -38,6 +38,13 @@
   * [Extra: Disguises](/Mobs/Disguises)
   * [Extra: ModelEngine](Model-Engine)<!--* [Templating](Config/Templating)-->
 
+---
+
+##### [<img src="https://raw.githubusercontent.com/Lxlp38/MythicScribe/refs/heads/master/assets/icon128x128.png" alt="MythicScribe" width="10%"> MythicScribe - VSCode Extension](https://marketplace.visualstudio.com/items?itemName=Lxlp.mythicscribe)
+
+---
+
+
 ##### [Skills](/Skills/Skills)
   * [Mechanics](/Skills/Mechanics)<!--   * [In-line skill](/Skills/inline-skills)-->
     * [*Mechanics by Tag*](/Skills/Tags/Mechanic-Tags)
@@ -50,6 +57,8 @@
   * [Placeholders](/Skills/Placeholders)
   * [Variables](/Skills/Variables)
 
+---
+
 ##### [Items](/Items/Items)
   * [Options](/Items/Options)
   * [Attributes](/Items/Attributes)
@@ -58,10 +67,14 @@
   * [Banner Layers](/Items/Banner-Layers)
   * [Firework](/Items/Firework)<!--* [Templating](Config/Templating)-->
 
+---
+
 ##### Drops & DropTables
   * [Drops](/drops/Drops)
   * [DropTables](/drops/DropTables)
   * [FancyDrops](/drops/FancyDrops)
+
+---
 
 ##### Spawning
   * [Spawners](/Spawners)
@@ -73,6 +86,9 @@
   * [Custom Stat Options](/Stats#custom-stat-options)
   * [Modifiers](/Stats#modifiers)
   * [Built in Stats](/Stats#built-in-stats)
+
+---
+---
 
 ##### Other
   * [Particles Types](/Skills/Mechanics/Particle/Particle-Types)
