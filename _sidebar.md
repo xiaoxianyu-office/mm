@@ -8,7 +8,7 @@
 
 ---
 
-##### [<img src="https://raw.githubusercontent.com/Lxlp38/MythicScribe/refs/heads/master/assets/icon128x128.png" alt="MythicScribe" width="15%"> MythicScribe - **VSCode Extension**](https://marketplace.visualstudio.com/items?itemName=Lxlp.mythicscribe)
+##### [<img src="https://raw.githubusercontent.com/Lxlp38/MythicScribe/refs/heads/master/assets/icon128x128.png" alt="MythicScribe" width="10%"> MythicScribe - **VSCode Extension**](https://marketplace.visualstudio.com/items?itemName=Lxlp.mythicscribe)
 
 ##### [Guides](/Guides)
 * [Troubleshooting](/Troubleshooting/Troubleshooting)
