@@ -428,6 +428,16 @@ TREE_BREAKER:
         isCorrectForBlock: true
 ```
 
+#### TooltipStyle
+Used to handle the [tooltip style](https://minecraft.wiki/w/Data_component_format/tooltip_style) of an item.  
+The resource location of the custom sprites for the tooltip background and frame which references textures `/assets/<namespace>/textures/gui/sprites/tooltip/<id>_background` and `/assets/<namespace>/textures/gui/sprites/tooltip/<id>_frame`, which can be used with a TooltipStyle's value of <namespace>:<id>
+
+```yaml
+ExampleItem:
+  Id: STONE_SWORD
+  TooltipStyle: minecraft:verycooltooltip
+```
+
 #### Spawner
 Configure the options for a SPAWNER item
 ```yaml
