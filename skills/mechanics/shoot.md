@@ -35,6 +35,7 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 | calculatefiringangle | cfa        | If this is set and the projectile has `gravity`, the projectile will  trace an arc in the air before landing at the target location                                  | false   | 
 | verticalnoise  | vn  | The vertical noise (randomness) of the shot projectile | ((1-`accuracy`)*45)/10 |
 | horizontalnoise | hn  | The horizontal noise (randomness) of the shot projectile   | (1-`accuracy`)*45 |         
+| fromorigin| fo        | Whether the projectile should be shot from the origin of the mechanic| false   |  
 > This mechanic inherits every *inheritable* attribute of the [Damage](/Skills/Mechanics/Damage) mechanic
 
 ### Type Attribute
