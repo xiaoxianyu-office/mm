@@ -17,8 +17,6 @@
 ##### [Packs](Packs)
 
 ---
----
-
 
 ##### [Mobs](/Mobs/Mobs)
   * [Mob Options](/Mobs/Options)
@@ -87,7 +85,6 @@
   * [Modifiers](/Stats#modifiers)
   * [Built in Stats](/Stats#built-in-stats)
 
----
 ---
 
 ##### Other
