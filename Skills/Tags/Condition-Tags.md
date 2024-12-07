@@ -104,7 +104,7 @@ These conditions have not been tagged yet.
 | [IsUsingSpyglass](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsUsingSpyglass) | MythicMobs | If the target player is using a spyglass |
 | [Itemissimilar](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/itemissimilar) | MythicMobs | Checks if the target player's inventory slot holds an item that is similar to the specified one |
 | [Itemrecharging](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/itemrecharging) | MythicMobs | Checks if the weapon of the target entity is recharging |
-| [ItemType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ItemType) | MythicMobs | Checks against the material of the item that triggered the skill. |
+| [ItemType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ItemType) | MythicMobs | Checks against the material of the item that triggered the skill |
 | [Lastdamagecause](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/lastdamagecause) | MythicMobs | Checks the target's last damage cause |
 | [Lastsignal](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/lastsignal) | MythicMobs | Matches the last signal received by the target mob |
 | [Level](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/level) | MythicMobs | Checks the target MythicMob's level |

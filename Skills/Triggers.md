@@ -104,19 +104,6 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onHear](/Skills/Triggers/onhear)       | When the mob hears a sound, [if enabled](/Mobs/Mobs#hearing) |
 
 
-<!--
-# Player Triggers
-The triggers in this section **cannot be used by normal mobs** and are intended for *players* to trigger, which can normally happen only if another addon plugin (such as [MythicCrucible](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/home) or [MythicRPG](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/home)) adds some compatibility for that.  
-
-Regardless, they will be listed here since they are implemented by MythicMobs and can be used by other addons
-| Trigger                                | When it fires...                                              |
-|----------------------------------------|---------------------------------------------------------------|
-| [onBlockPlace](/Skills/Triggers/onBlockPlace) | When a player places a block                           |
-| [onBlockBreak](/Skills/Triggers/onBlockBreak) | When a player breaks a block                           |
-| [onItemDrop](/Skills/Triggers/onItemDrop) | When the player drops an item                              |
-| [onItemPickup](/Skills/Triggers/onItemPickup) | When a player picks up an item                         |
--->
-
 <!-- LINKS -->
 [ThreatTables]: /Mobs/ThreatTables
 [@trigger]: /Skills/Targeters/Trigger
