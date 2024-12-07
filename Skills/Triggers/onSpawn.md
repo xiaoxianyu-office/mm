@@ -3,6 +3,10 @@ Executes the skill when the mob spawns.
 > There is no associated [@trigger](/Skills/Targeters/Trigger)
 
 
+## Implementations
+- [MythicCrucible](/../../../mythiccrucible/-/wikis/Skills/Triggers/onSpawn)
+
+
 ## Examples
 ```yml
 EXAMPLE_MOB:

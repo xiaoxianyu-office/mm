@@ -9,6 +9,10 @@ For example, skeletons with bows will shoot arrows; ghasts, blazes, or ender dra
 | `<skill.var.bow-tension>`      |
 
 
+## Implementations
+- [MythicCrucible](/../../../mythiccrucible/-/wikis/Skills/Triggers/onShoot)
+
+
 ## Examples
 ```yml
 EXAMPLE_MOB:

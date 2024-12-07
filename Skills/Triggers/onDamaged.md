@@ -9,6 +9,10 @@ Executes the skill when the mob takes damage.
 | `<skill.var.damage-cause>`     |
 
 
+## Implementations
+- [MythicCrucible](/../../../mythiccrucible/-/wikis/Skills/Triggers/onDamaged)
+
+
 ## Examples
 ```yml
 EXAMPLE_MOB:

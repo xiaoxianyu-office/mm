@@ -2,6 +2,9 @@
 Executes the skill when the mob kills a player.  
 > The associated [@trigger](/Skills/Targeters/Trigger) is the player that has been killed
 
+## Implementations
+- [MythicCrucible](/../../../mythiccrucible/-/wikis/Skills/Triggers/onKillPlayer)
+
 
 ## Examples
 ```yml

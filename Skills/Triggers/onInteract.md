@@ -3,6 +3,10 @@ Executes the skill when a player interacts with, or *right-clicks*, the mob.
 > The associated [@trigger](/Skills/Targeters/Trigger) is the player that interacted with the caster
 
 
+## Implementations
+- [MythicCrucible](/../../../mythiccrucible/-/wikis/Skills/Triggers/onInteract)
+
+
 ## Examples
 ```yml
 EXAMPLE_MOB:

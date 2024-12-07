@@ -10,6 +10,10 @@ Executes a skill when the mob's projectile hits an entity.
 | `<skill.var.damage-cause>`     |
 
 
+## Implementations
+- [MythicCrucible](/../../../mythiccrucible/-/wikis/Skills/Triggers/onBowHit)
+
+
 ## Examples
 ```yaml
 NotYourAverageSkeleton:

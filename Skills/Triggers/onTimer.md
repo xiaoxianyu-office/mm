@@ -11,6 +11,10 @@ This trigger does not act relatively to the mob's spawn time, but to a global cl
 > There is no associated [@trigger](/Skills/Targeters/Trigger).
 
 
+## Implementations
+- [MythicCrucible](/../../../mythiccrucible/-/wikis/Skills/Triggers/onTimer)
+
+
 ## Examples
 ```yml
 EXAMPLE_MOB:
