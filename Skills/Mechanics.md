@@ -59,6 +59,7 @@ are able to target locations as well.
 | [Command][]               | Executes a command for each target                                                       |
 | [Consume][]               | Deals damage and restores health per target hit                                          |
 | [ConsumeSlot][]           | Remove an item from a specific slot of the player's inventory                            |
+| [DirectionalVelocity]     | Changes the velocity on the target entity on a specific vector              |
 | [Disengage][]             | Causes the caster to leap backwards away from the target entity                          |
 | [Disguise][]              | Changes the caster's disguise                                                            |
 | [DisguiseModify][]        | Modifies the caster's already applied disguise                                                            |
@@ -400,6 +401,7 @@ but not yet ready for use.
   [Command]: /skills/mechanics/command
   [Consume]: /skills/mechanics/consume
   [ConsumeSlot]: /skills/mechanics/consumeslot
+  [DirectionalVelocity]: /skills/mechanics/DirectionalVelocity
   [Disengage]: /skills/mechanics/disengage
   [Disguise]: /skills/mechanics/disguise
   [DisguiseModify]: /skills/mechanics/DisguiseModify
