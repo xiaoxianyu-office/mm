@@ -18,6 +18,10 @@
 
 ---
 
+##### [<img src="https://raw.githubusercontent.com/Lxlp38/MythicScribe/refs/heads/master/assets/icon128x128.png" alt="MythicScribe" width="10%"> MythicScribe - VSCode Extension](https://marketplace.visualstudio.com/items?itemName=Lxlp.mythicscribe)
+
+---
+
 ##### [Mobs](/Mobs/Mobs)
   * [Mob Options](/Mobs/Options)
     * [Display Options](/Mobs/DisplayOptions)
@@ -35,10 +39,6 @@
   * [Vanilla Overrides](Vanilla-Overrides)
   * [Extra: Disguises](/Mobs/Disguises)
   * [Extra: ModelEngine](Model-Engine)<!--* [Templating](Config/Templating)-->
-
----
-
-##### [<img src="https://raw.githubusercontent.com/Lxlp38/MythicScribe/refs/heads/master/assets/icon128x128.png" alt="MythicScribe" width="10%"> MythicScribe - VSCode Extension](https://marketplace.visualstudio.com/items?itemName=Lxlp.mythicscribe)
 
 ---
 
