@@ -163,7 +163,7 @@ Deeps:
     -   Added in MythicMobs 5.2.0
     -   **Cooldown: 60**
 
-
+<!-- -->
 - **Structures: \[list\]**
   - A list of structures in which the mob can spawn. If set, the mob will be able to spawn only there.
 
