@@ -158,12 +158,10 @@ Deeps:
     -   **PositionType: LAND**
 
 <!-- -->
-<!--
 -   **Cooldown: \[number\]**
     -   The interval, in seconds, that must elapse between the spawning of two mobs by this same RandomSpawn
     -   Added in MythicMobs 5.2.0
     -   **Cooldown: 60**
--->
 
 
 - **Structures: \[list\]**
