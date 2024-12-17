@@ -16,6 +16,8 @@ This is not an intended mechanic. It's just a side-effect that consistently work
 
 Since this is pretty much uncharted territory, if you have any information useful to further expand this page and, by proxy, the knowledge available to every other MythicMobs user, let me know: [Lxlp's Discord Profile](https://discord.com/users/353257382811533322)
 
+Also, while this is also repeated later on in the page, it is EXTREMELY important for you to understand that, if this feature is used in conjunction with *any* string sourced from a player, that *will* allow the player to use *any* mythic mechanic (**command mechanic included**) in a trivially easy way. So, to reiterate: make sure everything that ends up in a dynamic metaskill has been made by a developer and is not dependent on user input or user-controlled value, or make sure the user controller value is validated and sanitized
+
 # How does this work?
 Basically, it all boils down to two things:
 - The usage of the [variableskill mechanic]
