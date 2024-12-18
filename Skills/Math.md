@@ -61,7 +61,7 @@ Most of these functions can be found here https://www.objecthunter.net/exp4j/#Bu
 |    max(x, y)     | maximum                                                         |
 |   atan2(y, x)    | principal value of the arc tangent of y/x, expressed in radians |
 | random(min, max) | random with limits                                              |
-| clamp(value, min, max) | Clamps a number between a given minimum and maximum. If the number you provide is less than the minimum, it will return the minimum. If it's greater than the maximum, it returns the maximum. If it's between the minimum and maximum, it returns the number unchanged |
+| clamp(min, max, value) | Clamps a number between a given minimum and maximum. If the number you provide is less than the minimum, it will return the minimum. If it's greater than the maximum, it returns the maximum. If it's between the minimum and maximum, it returns the number unchanged |
 
 NOTE: You can request to add more operators and functions by making a suggestion ticket in our [issues page](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/issues)
 
