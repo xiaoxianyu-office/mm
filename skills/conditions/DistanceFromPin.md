@@ -17,4 +17,4 @@ Checks if the target is within a certain distance of a specified [pin]
 
 
 <!-- LINKS -->
-[pin]: Pins
+[pin]: /Pins

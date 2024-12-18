@@ -18,4 +18,4 @@ If the Pin is a Multi-Pin made via a Pin Wand, this targets all of the associate
 
 
 <!-- LINKS -->
-[pin]: Pins
+[pin]: /Pins

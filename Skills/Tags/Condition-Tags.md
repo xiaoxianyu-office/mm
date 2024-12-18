@@ -27,8 +27,8 @@ These conditions have not been tagged yet.
 | [Charged](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/charged) | MythicMobs | Checks if the target creeper is charged |
 | [Crouching](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/crouching) | MythicMobs | This condition checks if the target player is crouching or not. |
 | [Cuboid](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/cuboid) | MythicMobs | Whether the target is within a cuboid that has `location1` and `location2` as opposite vertices |
-| [DamageAmount](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/DamageAmount) | MythicMobs | Checks for a range of damage the entity took, if the skilltree originated from a [onDamaged Trigger](/Skills/Triggers/onDamaged) or an [onDamaged Aura](/skills/mechanics/ondamaged). |
-| [DamageCause](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/DamageCause) | MythicMobs | Checks the cause of the damage the entity took, if the skilltree originated from a [onDamaged Trigger](/Skills/Triggers/onDamaged) or an [onDamaged Aura](/skills/mechanics/ondamaged) |
+| [DamageAmount](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/DamageAmount) | MythicMobs | Checks for a range of damage the entity took, if the skilltree originated from a [onDamaged Trigger](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onDamaged) or an [onDamaged Aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/ondamaged). |
+| [DamageCause](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/DamageCause) | MythicMobs | Checks the cause of the damage the entity took, if the skilltree originated from a [onDamaged Trigger](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onDamaged) or an [onDamaged Aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/ondamaged) |
 | [Damagetag](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/damagetag) | MythicMobs | Checks whether the damage that caused the current skill tree has a specific tag |
 | [Dawn](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/dawn) | MythicMobs | Checks if the time in the world at the target location is dawn, from 22000 to 2000 in-game time. |
 | [Day](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/day) | MythicMobs | Checks if the time in the world at the target location is day, from 2000 to 10000 in-game time. |
@@ -36,7 +36,7 @@ These conditions have not been tagged yet.
 | [Directionalvelocity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/directionalvelocity) | MythicMobs | A condition that checks checks if the target has a velocity matching the given parameters. |
 | [Distance](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/distance) | MythicMobs | Whether the distance between the caster and target is within the given range |
 | [DistanceFromLocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/DistanceFromLocation) | MythicMobs | Whether the distance between the target and a specified location is within a certain range |
-| [DistanceFromPin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/DistanceFromPin) | MythicMobs | Checks if the target is within a certain distance of a specified [pin] |
+| [DistanceFromPin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/DistanceFromPin) | MythicMobs | Checks if the target is within a certain distance of a specified [pin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Pins) |
 | [Distancefromspawn](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/distancefromspawn) | MythicMobs | Whether the distance from the world's spawn point to the target is within the given range |
 | [Distancefromtrackedlocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/distancefromtrackedlocation) | MythicMobs | Checks if the distance between the caster and its tracked location is within the specified values |
 | [Dusk](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/dusk) | MythicMobs | Checks if the time in the world at the target location is dusk, from 14000 to 18000 in-game time. |
@@ -80,7 +80,7 @@ These conditions have not been tagged yet.
 | [Holding](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/holding) | MythicMobs | Checks if the target is holding a given material |
 | [InClaim](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/InClaim) | MythicMobs | Checks if the target location is inside a supported Land Protection claim |
 | [Incombat](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/incombat) | MythicMobs | If the target mob is considered in combat |
-| [InPinRegion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/InPinRegion) | MythicMobs | Checks if the target location is within a region delimited by two [pins]. |
+| [InPinRegion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/InPinRegion) | MythicMobs | Checks if the target location is within a region delimited by two [pins](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Pins). |
 | [Inside](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/inside) | MythicMobs | Checks if the target has a block over their head |
 | [IsInSurvivalMode](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsInSurvivalMode) | MythicMobs | Checks if the target player is in survival mode |
 | [Isbaby](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/isbaby) | MythicMobs | Checks if the target entity is a baby (e.g |
@@ -128,18 +128,18 @@ These conditions have not been tagged yet.
 | [Mounted](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/mounted) | MythicMobs | Checks if the target entity is riding a mount/vehicle |
 | [Moving](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/moving) | MythicMobs | Checks ff the target has a velocity greater than zero |
 | [Mythicmobtype](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/mythicmobtype) | MythicMobs | Checks the MythicMob type of the target mob |
-| [Mythicpack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/mythicpack) | MythicMobs | Check if a [Pack](/wikis/Packs) with the specified id is present on the server. |
-| [MythicPackVersion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/MythicPackVersion) | MythicMobs | Check if a [Pack](/wikis/Packs) with the specified id is present on the server with the specified version. |
-| [MythicPackVersionGreater](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/MythicPackVersionGreater) | MythicMobs | Check if a [Pack](/wikis/Packs) with the specified id is present on the server with a version that is either greater or equal the specified one. |
+| [Mythicpack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/mythicpack) | MythicMobs | Check if a [Pack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Packs) with the specified id is present on the server. |
+| [MythicPackVersion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/MythicPackVersion) | MythicMobs | Check if a [Pack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Packs) with the specified id is present on the server with the specified version. |
+| [MythicPackVersionGreater](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/MythicPackVersionGreater) | MythicMobs | Check if a [Pack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Packs) with the specified id is present on the server with a version that is either greater or equal the specified one. |
 | [Name](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/name) | MythicMobs | Checks against the name of the target entity |
 | [NearClaim](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/nearClaim) | MythicMobs | Checks if the target location is near any claims of any supported plugins |
 | [Night](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/night) | MythicMobs | Checks if the time is night, from 14000 to 22000 in-game time |
 | [Notinregion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/notinregion) | MythicMobs | Checks if the target location is **not** within the given WorldGuard region |
-| [Offgcd](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/offgcd) | MythicMobs | Checks if the target mob has an active [Global Cooldown](/skills/mechanics/globalcooldown) |
+| [Offgcd](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/offgcd) | MythicMobs | Checks if the target mob has an active [Global Cooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/globalcooldown) |
 | [Onblock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/onblock) | MythicMobs | Matches the block the target entity is standing on |
 | [Onground](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/onground) | MythicMobs | If the target entity is standing on solid ground |
-| [OriginDistanceFromPin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/OriginDistanceFromPin) | MythicMobs | Checks if the [@origin] is within a certain distance of a specified [pin] |
-| [OriginLocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/OriginLocation) | MythicMobs | Checks if the [origin] is at a given location |
+| [OriginDistanceFromPin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/OriginDistanceFromPin) | MythicMobs | Checks if the [@origin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Origin) is within a certain distance of a specified [pin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Pins) |
+| [OriginLocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/OriginLocation) | MythicMobs | Checks if the [origin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Origin) is at a given location |
 | [Outside](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/outside) | MythicMobs | If the target has open sky above them |
 | [Owner](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/owner) | MythicMobs | Checks if the target entity is the owner of the caster |
 | [Ownerisonline](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ownerisonline) | MythicMobs | Checks if the owner of the target mob is online |
@@ -176,9 +176,9 @@ These conditions have not been tagged yet.
 | [Thundering](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/thundering) | MythicMobs | Checks if it's thundering in the target world. |
 | [TriggerBlockType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/TriggerBlockType) | MythicMobs | Checks against the material type that triggered the skill |
 | [TriggerItemType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/TriggerItemType) | MythicMobs | Checks against the item material type that triggered the skill |
-| [Variableequals](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/variableequals) | MythicMobs | A condition that checks the value of a [variable](/Skills/Variables). |
+| [Variableequals](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/variableequals) | MythicMobs | A condition that checks the value of a [variable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Variables). |
 | [Variableinrange](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/variableinrange) | MythicMobs | Checks if the given numeric variable is within a certain range. |
-| [Variableisset](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/variableisset) | MythicMobs | Checks if the given [variable](/Skills/Variables) is set. |
+| [Variableisset](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/variableisset) | MythicMobs | Checks if the given [variable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Variables) is set. |
 | [Vehicleisdead](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/vehicleisdead) | MythicMobs | Checks if the casters mounted vehicle is dead. |
 | [Velocity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Velocity) | MythicMobs | Checks the velocity of the target entity against a range |
 | [Wearing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/wearing) | MythicMobs | This condition checks if the target entity is wearing the selected item. |

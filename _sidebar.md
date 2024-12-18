@@ -91,7 +91,7 @@
   * [Particles Types](/Skills/Mechanics/Particle/Particle-Types)
   * [Audience](/Skills/Audience)
   * [Equipment Slots](/Skills/EquipSlot)
-  * [Pins](Pins)
+  * [Pins](/Pins)
 
 ##### Technical
   * [Math](/Skills/Math)

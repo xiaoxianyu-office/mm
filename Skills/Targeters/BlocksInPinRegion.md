@@ -16,5 +16,5 @@ Targets the blocks in a region delimited by two pins
 
 
 <!-- LINKS -->
-[pin]: Pins
-[pins]: Pins
+[pin]: /Pins
+[pins]: /Pins

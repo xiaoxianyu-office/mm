@@ -17,5 +17,5 @@ Checks if the target location is within a region delimited by two [pins].
 
 
 <!-- LINKS -->
-[pin]: Pins
-[pins]: Pins
+[pin]: /Pins
+[pins]: /Pins

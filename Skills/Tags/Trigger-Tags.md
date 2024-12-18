@@ -18,7 +18,6 @@ Each trigger can have more than one tag, and it is listed under each section for
 ## ProtocolLib-Only
 | Trigger | Plugin | Description |
 |----------|--------|-------------|
-| [OnPressQ](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onPressQ) | MythicMobs | When a player presses Q to drop the item |
 | [OnPressCtrlQ](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onPressCtrlQ) | MythicMobs | When a player presses Ctrl+Q to drop a stack of items |
 
 
@@ -35,7 +34,7 @@ These triggers have not been tagged yet.
 | [OnBlockBreak](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onBlockBreak) | MythicMobs | When the player breaks a custom block or a furniture |
 | [OnItemPickup](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onItemPickup) | MythicMobs | When the player picks up an item. |
 | [OnItemDrop](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onItemDrop) | MythicMobs | When the player drops an item |
-| [OnHear](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onHear) | MythicMobs | Executes the skill when the mob hears a sound, [if this feature has been enabled](/Mobs/Mobs#hearing) |
+| [OnHear](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onHear) | MythicMobs | Executes the skill when the mob hears a sound, [if this feature has been enabled](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/Mobs#hearing) |
 | [OnCombat](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onCombat) | MythicMobs | The default trigger if none was used |
 | [OnConsume](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onConsume) | MythicMobs | Triggered when the item is eaten |
 | [OnCrouch](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onCrouch) | MythicMobs | Executes the skill when the player holding or equipping the item starts to crouch |
@@ -54,7 +53,7 @@ These triggers have not been tagged yet.
 | [OnShoot](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onShoot) | MythicMobs | Executes the skill when the mob shoots a projectile |
 | [OnSignal](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onSignal) | MythicMobs | This Trigger has a special syntax: `~onSignal:<signal>`   |
 | [OnSpawn](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onSpawn) | MythicMobs | Executes the skill when the mob spawns |
-| [OnSpawnOrLoad](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onSpawnOrLoad) | MythicMobs | Executes the skill when either [~onSpawn](/Skills/Triggers/onSpawn) or [~onLoad](/Skills/Triggers/onLoad) would trigger. |
+| [OnSpawnOrLoad](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onSpawnOrLoad) | MythicMobs | Executes the skill when either [~onSpawn](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onSpawn) or [~onLoad](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onLoad) would trigger. |
 | [OnPotionSplash](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onPotionSplash) | MythicMobs | Executes the skill when the potion is splashed |
 | [OnSwing](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onSwing) | MythicMobs | Executes the skill when the player holding or equipping the item left clicks |
 | [OnChangeTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onChangeTarget) | MythicMobs | Executes the skill when the mob changes target. |
@@ -62,7 +61,7 @@ These triggers have not been tagged yet.
 | [OnTimer](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onTimer) | MythicMobs | This Trigger has a special syntax: `~onTimer:<ticks>`   |
 | [OnUse](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onUse) | MythicMobs | Executes the skill when the player holding the item right-clicks. |
 | [OnRightClick](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onRightClick) | MythicMobs | Executes the skill when the player holding or equipping the item right-clicks |
-| [OnReady](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onReady) | MythicMobs | Executes the skill when the mob is ready to spawn from a [spawner](/Spawners) |
+| [OnReady](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onReady) | MythicMobs | Executes the skill when the mob is ready to spawn from a [spawner](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Spawners) |
 | [OnFish](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFish) | MythicMobs | When a player holding or equipping the item is fishing, ie casting the line out |
 | [OnFishBite](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFishBite) | MythicMobs | Executed when, for the player holding or equipping the item, there is a bite on the hook and it is ready to be reeled in |
 | [OnFishCatch](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFishCatch) | MythicMobs | When a player holding or equipping the item has successfully caught a fish and is reeling it in. |
@@ -73,6 +72,7 @@ These triggers have not been tagged yet.
 | [OnTame](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onTame) | MythicMobs | Executes the skill when the player tames the mob |
 | [OnEquip](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onEquip) | MythicMobs | When the item is equipped as an armor piece |
 | [OnUnEquip](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onUnEquip) | MythicMobs | When the item is unequipped as an armor piece |
+| [OnItemDrop](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onItemDrop) | MythicMobs | When the player drops an item |
 | [OnPressF](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onPressF) | MythicMobs | When a player presses F to swap the item |
 | [OnLoad](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onLoad) | MythicMobs | Executes the skill when the mob is loaded after a server restart. |
 | [OnJoin](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onJoin) | MythicMobs | Executes the skill when the player holding or equipping the item joins the server |
@@ -90,8 +90,8 @@ These triggers have not been tagged yet.
 | [OnPressF_HAND](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onPressF_HAND) | MythicCrucible | When a player presses F to swap the item, and it ends up in the main hand |
 | [OnPressF_OFFHAND](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onPressF_OFFHAND) | MythicCrucible | When a player presses F to swap the item, and it ends up in the offhand |
 | [OnPaint](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onPaint) | MythicCrucible | When a [Paint Brush](Paint-Brush) paints a furniture |
-| [OnFurnitureInventoryOpen](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFurnitureInventoryOpen) | MythicCrucible | Triggers when the [Furniture Inventory](/Skills/Mechanics/furnitureinventory) is opened |
-| [OnFurnitureInventoryClose](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFurnitureInventoryClose) | MythicCrucible | Triggers when the [Furniture Inventory](/Skills/Mechanics/furnitureinventory) is closed |
+| [OnFurnitureInventoryOpen](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFurnitureInventoryOpen) | MythicCrucible | Triggers when the [Furniture Inventory](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furnitureinventory) is opened |
+| [OnFurnitureInventoryClose](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFurnitureInventoryClose) | MythicCrucible | Triggers when the [Furniture Inventory](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furnitureinventory) is closed |
 | [OnStartDestroyBlock](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onStartDestroyBlock) | MythicCrucible | Executes the skill when the player holding or equipping the item starts destroying a block |
 | [OnStopDestroyBlock](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onStopDestroyBlock) | MythicCrucible | Executes the skill when the player holding or equipping the item stops destroying a block |
 

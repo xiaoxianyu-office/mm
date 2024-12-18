@@ -17,5 +17,5 @@ Checks if the [@origin] is within a certain distance of a specified [pin]
 
 
 <!-- LINKS -->
-[pin]: Pins
-[@origin]: Skills/Targeters/Origin
+[pin]: /Pins
+[@origin]: /Skills/Targeters/Origin

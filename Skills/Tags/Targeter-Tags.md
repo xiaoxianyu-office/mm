@@ -31,15 +31,15 @@ These targeters have not been tagged yet.
 | [None](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/None) | MythicMobs | Provides no target |
 | [EntitiesInRadius](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesInRadius) | MythicMobs | Targets all entities in the given radius around the caster |
 | [EntitiesInRing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesInRing) | MythicMobs | Targets all entities in a ring around the caster |
-| [EntitiesInRingNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesInRingNearOrigin) | MythicMobs | Targets all the entities in a ring near the [origin] |
+| [EntitiesInRingNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesInRingNearOrigin) | MythicMobs | Targets all the entities in a ring near the [origin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Origin) |
 | [EntitiesNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesNearOrigin) | MythicMobs | Targets all entities in the given radius around the origin of the metaskill |
 | [Father](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Father) | MythicMobs | Targets the father of the casting mob |
 | [FloorOfTargets](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/FloorOfTargets) | MythicMobs | Targets the first solid block below the inherited targets |
 | [Forward](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Forward) | MythicMobs | Targets a location in front of the caster |
 | [ForwardWall](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/ForwardWall) | MythicMobs | Targets a plane of blocks in front of the caster |
 | [HighestBlock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/HighestBlock) | MythicMobs | Targets the highest block at the skill origin |
-| [InteractionLastAttacker](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/InteractionLastAttacker) | MythicMobs | Targets the last entity that attacked the caster, if the caster is of the `INTERACTION` [Type](/Mobs/Mobs#type). |
-| [InteractionLastInteract](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/InteractionLastInteract) | MythicMobs | Targets the last entity that interacted with the caster, if the caster is of the `INTERACTION` [Type](/Mobs/Mobs#type). |
+| [InteractionLastAttacker](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/InteractionLastAttacker) | MythicMobs | Targets the last entity that attacked the caster, if the caster is of the `INTERACTION` [Type](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/Mobs#type). |
+| [InteractionLastInteract](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/InteractionLastInteract) | MythicMobs | Targets the last entity that interacted with the caster, if the caster is of the `INTERACTION` [Type](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/Mobs#type). |
 | [ItemsInRadius](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/ItemsInRadius) | MythicMobs | Targets all items in a radius around the caster |
 | [ItemsNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/ItemsNearOrigin) | MythicMobs | Targets all items in a radius around the origin of the metaskill |
 | [Line](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Line) | MythicMobs | Targets locations between the mob and the inherited target |
@@ -91,11 +91,11 @@ These targeters have not been tagged yet.
 | [TargetedTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/TargetedTarget) | MythicMobs | Targets the inherited targeted entities |
 | [TargetLocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/TargetLocation) | MythicMobs | Targets the location the casting player is looking at, or the locations of the mob's target |
 | [Target](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Target) | MythicMobs | Targets the caster's target. |
-| [ThreatTablePlayers](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/ThreatTablePlayers) | MythicMobs | Targets all the players on the casting mob's [Threat Table](/Mobs/ThreatTables) |
-| [RandomThreatTargetLocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/RandomThreatTargetLocation) | MythicMobs | Targets the location of a random entity on the casting mob's [Threat Table](/Mobs/ThreatTables) |
-| [RandomThreatTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/RandomThreatTarget) | MythicMobs | Targets a random entity on the casting mob's [Threat Table](/Mobs/ThreatTables) |
-| [ThreatTable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/ThreatTable) | MythicMobs | Targets every entity on the casting mob's [Threat Table](/Mobs/ThreatTables) |
-| [TrackedLocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/TrackedLocation) | MythicMobs | Targets the caster's [Tracked Location](/skills/mechanics/tracklocation) |
+| [ThreatTablePlayers](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/ThreatTablePlayers) | MythicMobs | Targets all the players on the casting mob's [Threat Table](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ThreatTables) |
+| [RandomThreatTargetLocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/RandomThreatTargetLocation) | MythicMobs | Targets the location of a random entity on the casting mob's [Threat Table](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ThreatTables) |
+| [RandomThreatTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/RandomThreatTarget) | MythicMobs | Targets a random entity on the casting mob's [Threat Table](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ThreatTables) |
+| [ThreatTable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/ThreatTable) | MythicMobs | Targets every entity on the casting mob's [Threat Table](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ThreatTables) |
+| [TrackedLocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/TrackedLocation) | MythicMobs | Targets the caster's [Tracked Location](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/tracklocation) |
 | [TrackedPlayers](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/TrackedPlayers) | MythicMobs | Targets players that are within the render distance of the caster |
 | [TriggerLocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/TriggerLocation) | MythicMobs | Targets the location of the entity that triggered the skilltree |
 | [Trigger](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Trigger) | MythicMobs | Targets the entity that triggered the skilltree |

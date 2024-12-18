@@ -113,7 +113,7 @@ Spawner Commands
 
 Pins Commands
 -------------
-Check the [Pins wiki page](Pins#commands)
+Check the [Pins wiki page](/Pins#commands)
 
 Utility Commands
 ----------------

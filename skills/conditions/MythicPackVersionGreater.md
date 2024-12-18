@@ -1,5 +1,5 @@
 ## Description
-Check if a [Pack](/wikis/Packs) with the specified id is present on the server with a version that is either greater or equal the specified one.
+Check if a [Pack](/Packs) with the specified id is present on the server with a version that is either greater or equal the specified one.
 
 
 ## Attributes
