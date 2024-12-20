@@ -54,10 +54,10 @@ This example below, will cancel all damage the mob receives, and replace it with
 ```yaml
 SelfDamage:
   Conditions:
-  - damageTag{tag=SelfDamage} false
+  - damageTag{tag=SELFDAMAGE} false
   Skills:
   - cancelevent
-  - damage{a=10;tag=SelfDamage} @self
+  - damage{a=10;tag=SELFDAMAGE} @self
 ```
 
 # Death
