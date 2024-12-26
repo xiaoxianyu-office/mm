@@ -6,7 +6,7 @@ Sets the targeted display entity's transformations
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | action    | a         | The action to use. Can be `SET`, `ADD`, `MULTIPLY`, `DIVIDE`         | SET<!--type:DisplayTransformation_Action-->|
-| transformationtype | transformation, type, tt | The type of the transformation. Can be `TRANSLATION`, `SCALE`, `RIGHT_ROTATION`, `LEFT_ROTATION`                                                 | TRANSLATION<!--type:DisplayTransformation_Type-->|
+| transformationtype | transformation, type, tt | The type of the transformation. Can be `TRANSLATION`, `SCALE`, `RIGHT_ROTATION`, `LEFT_ROTATION`                                                 | TRANSLATION<!--type:TRANSLATION,SCALE,RIGHT_ROTATION,LEFT_ROTATION-->|
 | value     | val       | The value of the transformation                                      | 0,0,0   |
 
 

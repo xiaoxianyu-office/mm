@@ -8,7 +8,7 @@ Changes the velocity on the target entity on a specific vector
 | yaw       |           | The yaw of the vector for the velocity change                        |         |
 | pitch     |           | The pitch of the vector for the velocity change                      |         |
 | velocity  | v         | The magnitude of the velocity change                                 |         |
-| mode      | m         | The mode to use                      | SET<!--type:DirectionalVelocity_Mode--> |
+| mode      | m         | The mode to use                      | SET<!--type:SET,ADD,REMOVE,MULTIPLY,DIVIDE,MINIMUM--> |
 
 ### Mode Attribute
 Accepted values are

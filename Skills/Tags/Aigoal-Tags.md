@@ -13,7 +13,7 @@ These aigoals have not been tagged yet.
 | Aigoal | Plugin | Description |
 |----------|--------|-------------|
 | [Arrowattack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/arrowattack) | MythicMobs | A basic ranged attack that ranged entities can use. |
-| [Bowattack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/bowattack) | MythicMobs |  |
+| [Bowattack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/bowattack) | MythicMobs | An advanced ranged attack that can often cause the shooter to strafe backwards or clockwise. |
 | [Breed](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/breed) | MythicMobs | Causes the mob to be able to breed with other mobs. |
 | [Crossbowattack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/crossbowattack) | MythicMobs |  |
 | [FleeConditional](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/fleeConditional) | MythicMobs | \*\***This is a Premium only feature**\*\*<br> |
@@ -31,4 +31,6 @@ These aigoals have not been tagged yet.
 | [Movetoblock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/movetoblock) | MythicMobs |  |
 | [Movetolava](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/movetolava) | MythicMobs | Causes the mob to move towards lava. |
 | [Movetowater](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/movetowater) | MythicMobs | Causes the mob to move towards water. |
+| [DoNothing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/doNothing) | MythicMobs | \*\***This is a Premium only feature**\*\*<br> |
+| [Gotospawn](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/gotospawn) | MythicMobs |  |
 
