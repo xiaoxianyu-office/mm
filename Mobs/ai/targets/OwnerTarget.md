@@ -16,3 +16,4 @@ Targets whatever the mob's owner attacks
 
 ## Aliases
 - [x] ownerAttack
+- [x] ownerhurt
