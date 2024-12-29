@@ -6,7 +6,7 @@ Wildcards (`*_SWORD`) and item tags (`#arrows`)
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| types     | type, t, material, mat, m | A list of [materials] to check against               | DIRT    |
+| types     | type, t, material, mat, m, i, item | A list of [materials] to check against               | DIRT    |
 
 
 ## Examples
