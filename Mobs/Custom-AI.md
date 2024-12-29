@@ -116,18 +116,18 @@ SuperMob:
 | AI Target          | Aliases      | Description                                                        |
 |--------------------|--------------|--------------------------------------------------------------------|
 | clear              |              | Special Option. Clears all of the mob's AI                         |
-| attacker           | hurtbytarget, damager | Targets whatever attacks the mob                          |
-| monsters           |              | Targets monsters                                                   |
+| [hurtbytarget](/Mobs/ai/targets/HurtByTarget) | attacker, damager | Targets whatever attacks the mob   |
+| [monsters](/Mobs/ai/targets/Monsters) | monster | Targets monsters                                     |
 | players            |              | Targets players                                                    |
 | villagers          |              | Targets villagers                                                  |
-| golems             |              | Targets Golems                                                     |
+| [irongolem](/Mobs/ai/targets/Irongolems) | irongolem, iron_golems, iron_golem | Targets Golems         |
 | [nearestConditionalTarget](/Mobs/ai/targets/nearestconditionaltarget)<br>**[Premium-only]** | nearestConditional, nearestIf | Targets the nearest entity that meets the conditions provided            |
 
 ## All Creatures ([Faction](/Mobs/Factions) Support)
 | AI Target          | Aliases      | Description                                                        |
 |--------------------|--------------|--------------------------------------------------------------------|
-| OtherFaction       |              | Targets ANY entities that are in a different faction               |
-| OtherFactionMonsters |            | Targets any monsters that are in a different faction               |
+| [NearestOtherFaction](/Mobs/ai/targets/NearestOtherFaction) | OtherFaction | Targets ANY entities that are in a different faction |
+| [NearestOtherFactionMonsters](/Mobs/ai/targets/NearestOtherFactionMonsters) | OtherFactionMonsters | Targets any monster that is in a different faction |
 | OtherFactionVillagers |           | Targets any villagers that are in a different faction              |
 | [SpecificFaction](/Mobs/ai/targets/specificfaction) [faction_name] | | Targets any entities that are in the given faction                                                                                        |
 | [SpecificFactionMonsters](/Mobs/ai/targets/specificfactionmonsters) [faction_name] | | Targets any monsters that are in the given faction                                                                   |
