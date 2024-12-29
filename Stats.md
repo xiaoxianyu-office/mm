@@ -61,7 +61,7 @@ A list of options only available if the specified type is used in the stat
 |----------------------|---------------------------------------------------------------------------------|
 | DamageType           | Specify a custom damage type. Use `ALL` to modify the final total damage of the skill                  |
 | Conditions           | Specify conditions which can affect the Modifier                                |
-| DamageFormula        | Define a formula for how the damage is modified. See [HERE](#fire_resistance) for an example of this |
+| DamageFormula        | Define a formula for how the damage is modified. See [HERE](#fire_resistance) for an example of this<br>Some additional keys the damage formula can use are:<br>- `d` to express the damage's original value<br>- `v` to express the stat's value |
 
 ### DAMAGE_BONUS
 
