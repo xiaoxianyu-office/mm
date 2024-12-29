@@ -19,6 +19,8 @@ To utilize the summon mechanic in Mythic Mobs, you will need the following:
 | level     | l         | The level of the mob being summoned                                  | 0       |
 | yaw       |           | The yaw of the summoned entities. If not set, will inherit the caster's |      |
 | pitch     |           | The pitch of the summoned entities. If not set, will inherit the caster's |    |
+| usetargetyaw | uty    | Whether the yaw of the target location/entity should be used to set the yaw of the summoned entity, unless the `yaw` attribute is set                                         | false   |
+| usetargetpitch | utp  | Whether the pitch of the target location/entity should be used to set the pitch of the summoned entity, unless the `pitch` attribute is set                                    | false   |
 | radius    | r, noise, n| The radius around the target within which the mobs will be summoned | 0       |
 | yRadius   | yr, ynoise, yn| Overrides the Y component of radius.                             | radius  |
 | yRadiusUpOnly | yradiusonlyup, yruo, yu| Whether the Y spread should only go upward, not downward.                                                                                      | false   |
