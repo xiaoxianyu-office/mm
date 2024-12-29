@@ -118,8 +118,8 @@ SuperMob:
 | clear              |              | Special Option. Clears all of the mob's AI                         |
 | [hurtbytarget](/Mobs/ai/targets/HurtByTarget) | attacker, damager | Targets whatever attacks the mob   |
 | [monsters](/Mobs/ai/targets/Monsters) | monster | Targets monsters                                     |
-| players            |              | Targets players                                                    |
-| villagers          |              | Targets villagers                                                  |
+| [Players](/Mobs/ai/targets/Players) | player | Targets players                                         |
+| [Villagers](/Mobs/ai/targets/Villagers) | villager | Targets villagers                                 |
 | [irongolem](/Mobs/ai/targets/Irongolems) | irongolem, iron_golems, iron_golem | Targets Golems         |
 | [nearestConditionalTarget](/Mobs/ai/targets/nearestconditionaltarget)<br>**[Premium-only]** | nearestConditional, nearestIf | Targets the nearest entity that meets the conditions provided            |
 
@@ -128,12 +128,11 @@ SuperMob:
 |--------------------|--------------|--------------------------------------------------------------------|
 | [NearestOtherFaction](/Mobs/ai/targets/NearestOtherFaction) | OtherFaction | Targets ANY entities that are in a different faction |
 | [NearestOtherFactionMonsters](/Mobs/ai/targets/NearestOtherFactionMonsters) | OtherFactionMonsters | Targets any monster that is in a different faction |
-| OtherFactionVillagers |           | Targets any villagers that are in a different faction              |
 | [SpecificFaction](/Mobs/ai/targets/specificfaction) [faction_name] | | Targets any entities that are in the given faction                                                                                        |
 | [SpecificFactionMonsters](/Mobs/ai/targets/specificfactionmonsters) [faction_name] | | Targets any monsters that are in the given faction                                                                   |
 
 ## Tameable Creatures
-| AI Goal       | Description                               |
+| AI Target     | Description                               |
 |---------------|-------------------------------------------|
-| ownerattacker | Targets whatever attacks the mob's owner. |
-| ownertarget   | Targets whatever the mob's owner attacks. |
+| [OwnerAttacker](/Mobs/ai/targets/OwnerAttacker) | Targets whatever attacks the mob's owner. |
+| [OwnerTarget](/Mobs/ai/targets/OwnerTarget) | Targets whatever the mob's owner attacks. |
