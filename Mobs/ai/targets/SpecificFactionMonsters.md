@@ -7,6 +7,7 @@ Causes the mob to target monsters of a specific faction.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | faction | f        | The faction to target |        |
 
+
 ## Examples
 ```yaml
 ExampleMob:
@@ -15,3 +16,7 @@ ExampleMob:
     - clear
     - specificfactionmonsters{f=somefaction}
 ```
+
+
+## Aliases
+- [x] nearestspecificfactionmonsters
