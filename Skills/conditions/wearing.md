@@ -7,7 +7,7 @@ This condition checks if the target entity is wearing the selected item.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | armorslot | slot, s   | The item slot to check.                                              | HEAD<!--type:EquipSlot--> |
-| material  | mat, m, mythicmobsitem, mmitem, mmi, item, i, t, type, types | A material or MythicItem name to check for. Also supports MMOItems in the format mmoitems.TYPE.ID                                               | DIRT    |
+| material  | mat, m, item, i, t, type, types | A material or MythicItem name to check for. Also supports MMOItems in the format mmoitems.TYPE.ID                                               | DIRT    |
 
 **Valid Slots:**
 
