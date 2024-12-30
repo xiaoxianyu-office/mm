@@ -9,6 +9,7 @@ Causes the mob to flee from wolves.
 | speed | s        | The speed at which to flee |    1.2    |
 | safespeed | ss        | The speed at which to flee once a safe distance (50 blocks) away |    1    |
 
+
 ## Examples
 ```yaml
 ExampleMob:
@@ -17,3 +18,7 @@ ExampleMob:
     - clear
     - fleewolf{d=10;s=2;ss=1}
 ```
+
+
+## Aliases
+- [x] runfromwolves
