@@ -10,6 +10,7 @@ Causes the mob to flee from a specific faction.
 | safespeed | ss        | The speed at which to flee once a safe distance (50 blocks) away |    1    |
 | faction | f        | The faction to flee from |        |
 
+
 ## Examples
 ```yaml
 ExampleMob:
@@ -18,3 +19,7 @@ ExampleMob:
     - clear
     - fleefaction{distance=5;speed=2;safespeed=2;faction=somefaction}
 ```
+
+
+## Aliases
+- [x] runfromfaction
