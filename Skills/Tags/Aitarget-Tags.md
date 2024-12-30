@@ -12,7 +12,17 @@ These aitargets have not been tagged yet.
 
 | Aitarget | Plugin | Description |
 |----------|--------|-------------|
+| [HurtByTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/HurtByTarget) | MythicMobs | Targets whatever attacks the mob |
+| [IronGolems](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/IronGolems) | MythicMobs | Targets Iron Golems |
+| [Monsters](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/Monsters) | MythicMobs | Targets monsters |
 | [Nearestconditionaltarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/nearestconditionaltarget) | MythicMobs | Causes the mob to target based on conditions. |
+| [NearestOtherFaction](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/NearestOtherFaction) | MythicMobs | Targets ANY entities that are in a different faction |
+| [NearestOtherFactionMonsters](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/NearestOtherFactionMonsters) | MythicMobs | Targets any monster that is in a different faction |
+| [OwnerAttacker](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/OwnerAttacker) | MythicMobs | Targets whatever attacks the mob's owner |
+| [OwnerTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/OwnerTarget) | MythicMobs | Targets whatever the mob's owner attacks |
+| [Players](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/Players) | MythicMobs | Targets players |
 | [SpecificFaction](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/SpecificFaction) | MythicMobs | Causes the mob to target a specific faction. |
 | [SpecificFactionMonsters](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/SpecificFactionMonsters) | MythicMobs | Causes the mob to target monsters of a specific faction. |
+| [Villagers](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/Villagers) | MythicMobs | Targets villagers |
+| [Custom-AI](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/Custom-AI) | MythicMobs | Clears all of the mob's AI |
 

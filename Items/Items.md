@@ -217,7 +217,7 @@ example_item:
 Sets what NBT tags to put on your items.
 This allows cross-over with a lot of other plugins, or just for storing custom information.
 
-Before you add an NBT tag to your items, you have to know [SNBT formatting](https://minecraft.fandom.com/wiki/NBT_format#SNBT_format).
+Before you add an NBT tag to your items, you have to know [SNBT formatting](https://minecraft.wiki/NBT_format#SNBT_format).
 A tag value's type can be changed by adding a prefix to the tag value:
 
 | Prefixes | int/ | float/ | double/ | byte/ | bool/ | boolean/ |

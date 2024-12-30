@@ -75,7 +75,7 @@ custom_item:
 ```
 
 ### ArmorToughness
-Alters the damage reduction percentage of the armor attribute. [MC wiki](https://minecraft.fandom.com/wiki/Armor#Armor_toughness).
+Alters the damage reduction percentage of the armor attribute. [MC wiki](https://minecraft.wiki/Armor#Armor_toughness).
 ```yml
 custom_item:
   Id: diamond_chestplate

@@ -18,6 +18,7 @@ Each trigger can have more than one tag, and it is listed under each section for
 ## ProtocolLib-Only
 | Trigger | Plugin | Description |
 |----------|--------|-------------|
+| [OnPressQ](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onPressQ) | MythicMobs | When a player presses Q to drop the item |
 | [OnPressCtrlQ](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onPressCtrlQ) | MythicMobs | When a player presses Ctrl+Q to drop a stack of items |
 
 
@@ -72,7 +73,6 @@ These triggers have not been tagged yet.
 | [OnTame](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onTame) | MythicMobs | Executes the skill when the player tames the mob |
 | [OnEquip](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onEquip) | MythicMobs | When the item is equipped as an armor piece |
 | [OnUnEquip](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onUnEquip) | MythicMobs | When the item is unequipped as an armor piece |
-| [OnItemDrop](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onItemDrop) | MythicMobs | When the player drops an item |
 | [OnPressF](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onPressF) | MythicMobs | When a player presses F to swap the item |
 | [OnLoad](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onLoad) | MythicMobs | Executes the skill when the mob is loaded after a server restart. |
 | [OnJoin](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onJoin) | MythicMobs | Executes the skill when the player holding or equipping the item joins the server |
