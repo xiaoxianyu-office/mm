@@ -29,9 +29,9 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [float](/Mobs/ai/goals/Float) | swim         | Makes the mob swim in water/not                         |
 | [lookatplayers](/Mobs/ai/goals/lookatplayers) | | The mob will look at nearby players                  |
 | [LookAtTarget](/Mobs/ai/goals/LookAtTarget) | | The mob will look at its target                        |
-| opendoors          | opendoor     | The mob will open doors it runs into and close the door behind it  |
+| [opendoor](//Mobs/ai/goals/OpenDoor)| opendoors | The mob will open doors it runs into and close the door behind it  |
 | closedoors         | restrictopendoor | Not sure what this one does                                    |
-| randomlookaround   | lookaround   | The mob will randomly look around                                  |
+| [randomlookaround](/Mobs/ai/goals/RandomLookAround) | lookaround   | The mob will randomly look around                                  |
 | [gotospawnlocation](/Mobs/ai/goals/gotospawn) | gotospawn | Mob will pathfind to its spawn location    |
 | [doNothing](/Mobs/ai/goals/doNothing)<br>**[Premium-only]** | | Causes the mob to do nothing if conditions are met.                                                                                      |
 
@@ -43,8 +43,8 @@ This zombie would attack players, and walk around randomly when not targeting an
 | avoidzombies       |              | Causes the mob to avoid Zombies                                    |
 | [meleeattack](/Mobs/ai/goals/meleeattack) | | Causes the mob to move to and melee-attack its target    |
 | [movetowardstarget](/Mobs/ai/goals/MoveTowardsTarget) | | Causes the mob to move towards its target    |
-| randomstroll       |              | The mob will randomly walk around                                  |
-| restrictsun        |              | In theory this will keep the mob from entering sunlight            |
+| [randomstroll](/Mobs/ai/goals/RandomStroll) |              | The mob will randomly walk around         |
+| [restrictsun](/Mobs/ai/goals/RestrictSun) | | Will prevent the mob from entering sunlight              |
 | [fleeplayers](/Mobs/ai/goals/fleeplayers) | runfromplayers | Causes the mob to avoid Players           |
 | [fleegolems](/Mobs/ai/goals/fleegolems) | runfromgolems | Causes the mob to avoid Iron Golems          |
 | [fleevillagers](/Mobs/ai/goals/fleevillagers) | runfromvillagers | Causes the mob to avoid villagers   |
@@ -52,8 +52,8 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [fleefaction](/Mobs/ai/goals/fleefaction) | runfromfaction | Causes the mob to avoid entities in a given faction                                                                                            |
 | [fleesun](/Mobs/ai/goals/fleesun) | | The mob will hide in the shade when the sun it out               |
 | [fleeConditional](/Mobs/ai/goals/fleeconditional)<br>**[Premium-only]** | fleeIf | Causes the mob to flee based on provided conditions. Safe speed is required for distances greater than 5                   |
-| spiderattack       | | Uses the attack a spider would                                                  |
-| zombieattack       | | Zombie melee attack                                                             |
+| [spiderattack](/Mobs/ai/goals/SpiderAttack) | | Uses the attack a spider would                         |
+| [zombieattack](/Mobs/ai/goals/ZombieAttack) | | Zombie melee attack                                    |
 | [leapattarget](/Mobs/ai/goals/leapattarget) | | Makes the mob leap at its target                       |
 | moveindoors        |              |                                                                    |
 | [movethroughvillage](/Mobs/ai/goals/movethroughvillage) |              |                              |
@@ -62,12 +62,13 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [movetowater](/Mobs/ai/goals/movetowater) | | Makes the mob move towards water                         |
 | [movetowardsrestriction](/Mobs/ai/goals/MoveTowardsRestriction) |            | Make a mob move towards its "Restriction Point" for some Entities (for instance, the village of a Villager) |
 | [MoveTowardsConditional](/Mobs/ai/goals/movetowardsconditional)<br>**[Premium-only]** | | Causes the mob to move towards a target based on provided conditions                                                |
+| [FollowRoute](/Mobs/ai/goals/FollowRoute) | followpath | Makes the mob follow a specific path, one time only. | 
 | patrol x1,y1,z1;x2,y2,z2;x3,y3,z3;… | patrolroute|Makes the mob patrol between the specified locations |
-| gotolocation x,y,z | goto           | Makes the mob go to the specified location(Notice Followrange must more than the distance between location and mob)                                                    |
+| [gotolocation](/Mobs/ai/goals/GoToLocation) x,y,z | goto           | Makes the mob go to the specified location(Notice Followrange must more than the distance between location and mob)                        |
 | gotoowner #        |                | Makes the mob move towards its [owner](/Skills/Targeters/Owner) when beyond a certain distance (defaults to 5 blocks)<br>[Followrange](/Mobs/Options#followrange) must be more than the distance between the owner and the mob)                                                    |
 | gotoparent          |               | Makes the mob move towards its parent mob                        |
-| panicWhenOnFire     | panic         | Run around panicking when on fire and look for water             |
-| randomFly           |               | Fly around randomly                                              |
+| [Panic](/Mobs/ai/goals/Panic) | panicWhenOnFire | Run around panicking when on fire and look for water |
+| [randomFly](/Mobs/ai/goals/RandomFly) |               | Fly around randomly                            |
 
 ## Animals Only
 | AI Goal            | Aliases      | Description                                                        |
