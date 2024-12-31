@@ -7,7 +7,8 @@ Causes the mob to stop doing anything based on provided conditions.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| conditions |         | The conditions to use |        |
+| conditions | c, cond, fleeconditions | The conditions to use                                 |         |
+
 
 ## Examples
 This would cause the mob to stop it's AI if the [day](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/conditions/day) condition is met.
@@ -18,3 +19,7 @@ ExampleMob:
     - clear
     - doNothing{conditions=[ - day true ]}
 ```
+
+
+## Aliases
+- [x] nothing
