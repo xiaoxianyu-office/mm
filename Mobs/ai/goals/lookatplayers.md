@@ -16,3 +16,7 @@ ExampleMob:
     - clear
     - lookatplayers{r=12}
 ```
+
+
+## Aliases
+- [x] lookatplayer
