@@ -1,20 +1,17 @@
-Goal: Move To Block
---------------
-
+## Description
 Makes the mob move towards the specified block type. 
 
-### Attributes
 
+## Attributes
 | Attribute      | Aliases  | Description                                   | Default |
-|----------------|----------|-----------------------------------------------|:-------:|
-| material       |          | The block type to target                      |         |
-| radius         |          | The radius in which to search for the block   |         |
-| radiusy        |          | The y radius in which to search for the block |         |
-| speed          |          | The speed of movement                         |         |
+|----------------|----------|-----------------------------------------------|---------|
+| material       | m, mat   | The block type to target                    | IRON_ORE<!--type:Material--> |
+| radius         | r, search, searchrange | The radius in which to search for the block   | 8 |
+| radiusy        | ry, verticalsearchrange, vsearch, yr, yradius | The y radius in which to search for the block | 2 |
+| speed          | s        | The speed of movement                         | 0.9     |
 
 
 ### Examples
-
 ```yaml
 ExampleMob:
   Type: Pig
@@ -22,3 +19,7 @@ ExampleMob:
     - clear
     - moveToBlock{material=STONE;radius=8;radiusY=2;speed=0.9}
 ```
+
+
+## Aliases
+- [x] gotoblock
