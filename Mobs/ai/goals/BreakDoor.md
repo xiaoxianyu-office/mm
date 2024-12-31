@@ -9,6 +9,7 @@ Causes the mob to break down doors it runs into
 ## Examples
 ```yaml
   AIGoalSelectors:
+  - clear
   - breakdoor
 ```
 
