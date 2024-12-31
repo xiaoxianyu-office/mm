@@ -24,9 +24,9 @@ This zombie would attack players, and walk around randomly when not targeting an
 | AI Goal            | Aliases      | Description                                                        |
 |--------------------|--------------|--------------------------------------------------------------------|
 | clear              | reset        | Removes the AI from the mob                                        |
-| breakdoors         |              | Causes the mob to break down doors it runs into                    |
-| eatgrass           |              | Makes the mob occasionally… eat grass                              |
-| float              | swim         | Makes the mob swim in water/not                                    |
+| [breakdoors](/Mobs/ai/goals/BreakDoor) |              | Causes the mob to break down doors it runs into                    |
+| [eatgrass](/Mobs/ai/goals/EatGrass) | | Makes the mob occasionally… eat grass                          |
+| [float](/Mobs/ai/goals/Float) | swim         | Makes the mob swim in water/not                         |
 | [lookatplayers](/Mobs/ai/goals/lookatplayers) | | The mob will look at nearby players                  |
 | [LookAtTarget](/Mobs/ai/goals/LookAtTarget) | | The mob will look at its target                        |
 | opendoors          | opendoor     | The mob will open doors it runs into and close the door behind it  |
@@ -42,7 +42,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | avoidskeletons     |              | Causes the mob to avoid Skeletons                                  |
 | avoidzombies       |              | Causes the mob to avoid Zombies                                    |
 | [meleeattack](/Mobs/ai/goals/meleeattack) | | Causes the mob to move to and melee-attack its target    |
-| movetowardstarget  |              | Causes the mob to move towards its target                          |
+| [movetowardstarget](/Mobs/ai/goals/MoveTowardsTarget) | | Causes the mob to move towards its target    |
 | randomstroll       |              | The mob will randomly walk around                                  |
 | restrictsun        |              | In theory this will keep the mob from entering sunlight            |
 | [fleeplayers](/Mobs/ai/goals/fleeplayers) | runfromplayers | Causes the mob to avoid Players           |
@@ -60,7 +60,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [movetoblock](/Mobs/ai/goals/movetoblock)| | Makes the mob go towards a specific type of block         |
 | [movetolava](/Mobs/ai/goals/movetolava) | | Makes the mob move towards lava                            |
 | [movetowater](/Mobs/ai/goals/movetowater) | | Makes the mob move towards water                         |
-| movetowardsrestriction |            |                                                                  |
+| [movetowardsrestriction](/Mobs/ai/goals/MoveTowardsRestriction) |            | Make a mob move towards its "Restriction Point" for some Entities (for instance, the village of a Villager) |
 | [MoveTowardsConditional](/Mobs/ai/goals/movetowardsconditional)<br>**[Premium-only]** | | Causes the mob to move towards a target based on provided conditions                                                |
 | patrol x1,y1,z1;x2,y2,z2;x3,y3,z3;… | patrolroute|Makes the mob patrol between the specified locations |
 | gotolocation x,y,z | goto           | Makes the mob go to the specified location(Notice Followrange must more than the distance between location and mob)                                                    |
@@ -77,7 +77,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 ## Creepers Only
 | AI Goal            | Aliases      | Description                                                        |
 |--------------------|--------------|--------------------------------------------------------------------|
-| creeperswell       | creeperexplode | Make a creeper want to explode on its target                     |
+| [creeperswell](/Mobs/ai/goals/CreeperSwell) | creeperexplode | Make a creeper want to explode on its target                     |
 
 ## Ranged Entities Only
 | AI Goal            | Aliases      | Description                                                        |
