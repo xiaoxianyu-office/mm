@@ -7,6 +7,7 @@ Causes the mob to move towards water.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | speed | s        | The speed at which to move |    0.9    |
 
+
 ## Examples
 ```yaml
 ExampleMob:
@@ -15,3 +16,7 @@ ExampleMob:
     - clear
     - movetowater{s=2}
 ```
+
+
+## Aliases
+- [x] gotowater
