@@ -7,6 +7,7 @@ Causes the mob to leap towards its target.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | speed | s        | The speed at which to leap at the target |    1.2    |
 
+
 ## Examples
 ```yaml
 ExampleMob:
@@ -15,3 +16,7 @@ ExampleMob:
     - clear
     - leapattarget{s=4}
 ```
+
+
+## Aliases
+- [x] leaptowardstarget
