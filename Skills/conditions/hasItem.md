@@ -5,7 +5,7 @@ Tests if the target player or an item container has exactly the given number of 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | i, material, m, type, t | The item to check for                                  | DIRT    |
+| item      | i, material, m, type, t, mat, types | The item to check for                      | DIRT<!--type:Material-->|
 | amount    | a         | The amount to check for                                              | >0      |
 
 
