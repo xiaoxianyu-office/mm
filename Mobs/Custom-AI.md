@@ -30,7 +30,6 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [lookatplayers](/Mobs/ai/goals/lookatplayers) | | The mob will look at nearby players                  |
 | [LookAtTarget](/Mobs/ai/goals/LookAtTarget) | | The mob will look at its target                        |
 | [opendoor](//Mobs/ai/goals/OpenDoor)| opendoors | The mob will open doors it runs into and close the door behind it  |
-| closedoors         | restrictopendoor | Not sure what this one does                                    |
 | [randomlookaround](/Mobs/ai/goals/RandomLookAround) | lookaround   | The mob will randomly look around                                  |
 | [gotospawnlocation](/Mobs/ai/goals/gotospawn) | gotospawn | Mob will pathfind to its spawn location    |
 | [doNothing](/Mobs/ai/goals/doNothing)<br>**[Premium-only]** | | Causes the mob to do nothing if conditions are met.                                                                                      |
@@ -38,9 +37,6 @@ This zombie would attack players, and walk around randomly when not targeting an
 ## Creatures Only
 | AI Goal            | Aliases      | Description                                                        |
 |--------------------|--------------|--------------------------------------------------------------------|
-| avoidcreepers      |              | Causes the mob to avoid Creepers                                   |
-| avoidskeletons     |              | Causes the mob to avoid Skeletons                                  |
-| avoidzombies       |              | Causes the mob to avoid Zombies                                    |
 | [meleeattack](/Mobs/ai/goals/meleeattack) | | Causes the mob to move to and melee-attack its target    |
 | [movetowardstarget](/Mobs/ai/goals/MoveTowardsTarget) | | Causes the mob to move towards its target    |
 | [randomstroll](/Mobs/ai/goals/RandomStroll) |              | The mob will randomly walk around         |
@@ -55,7 +51,6 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [spiderattack](/Mobs/ai/goals/SpiderAttack) | | Uses the attack a spider would                         |
 | [zombieattack](/Mobs/ai/goals/ZombieAttack) | | Zombie melee attack                                    |
 | [leapattarget](/Mobs/ai/goals/leapattarget) | | Makes the mob leap at its target                       |
-| moveindoors        |              |                                                                    |
 | [movethroughvillage](/Mobs/ai/goals/movethroughvillage) |              |                              |
 | [movetoblock](/Mobs/ai/goals/movetoblock)| | Makes the mob go towards a specific type of block         |
 | [movetolava](/Mobs/ai/goals/movetolava) | | Makes the mob move towards lava                            |
