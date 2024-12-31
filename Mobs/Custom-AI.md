@@ -63,12 +63,13 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [movetowardsrestriction](/Mobs/ai/goals/MoveTowardsRestriction) |            | Make a mob move towards its "Restriction Point" for some Entities (for instance, the village of a Villager) |
 | [MoveTowardsConditional](/Mobs/ai/goals/movetowardsconditional)<br>**[Premium-only]** | | Causes the mob to move towards a target based on provided conditions                                                |
 | [FollowRoute](/Mobs/ai/goals/FollowRoute) | followpath | Makes the mob follow a specific path, one time only. | 
-| patrol x1,y1,z1;x2,y2,z2;x3,y3,z3;… | patrolroute|Makes the mob patrol between the specified locations |
+| [patrol](/Mobs/ai/goals/Patrol) x1,y1,z1;x2,y2,z2;x3,y3,z3;… | patrolroute | Makes the mob patrol between the specified locations |
 | [gotolocation](/Mobs/ai/goals/GoToLocation) x,y,z | goto           | Makes the mob go to the specified location(Notice Followrange must more than the distance between location and mob)                        |
-| gotoowner #        |                | Makes the mob move towards its [owner](/Skills/Targeters/Owner) when beyond a certain distance (defaults to 5 blocks)<br>[Followrange](/Mobs/Options#followrange) must be more than the distance between the owner and the mob)                                                    |
-| gotoparent          |               | Makes the mob move towards its parent mob                        |
+| [gotoowner](/Mobs/ai/goals/GoToOwner) # |                | Makes the mob move towards its [owner](/Skills/Targeters/Owner) when beyond a certain distance (defaults to 5 blocks)<br>[Followrange](/Mobs/Options#followrange) must be more than the distance between the owner and the mob)                                                    |
+| [gotoparent](/Mobs/ai/goals/GoToParent) |       | Makes the mob move towards its parent mob            |
 | [Panic](/Mobs/ai/goals/Panic) | panicWhenOnFire | Run around panicking when on fire and look for water |
 | [randomFly](/Mobs/ai/goals/RandomFly) |               | Fly around randomly                            |
+| [randomNod](/Mobs/ai/goals/RandomNod) |         | Makes the mob randomly nod its head                  |
 
 ## Animals Only
 | AI Goal            | Aliases      | Description                                                        |
