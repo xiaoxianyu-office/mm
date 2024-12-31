@@ -15,6 +15,6 @@ Makes the mob move towards its [owner](/Skills/Targeters/Owner) when beyond a ce
 ## Examples
 ```yaml
   AIGoalSelectors:
-    - clear
-    - gotoowner
+  - clear
+  - gotoowner{fr=10;mr=3}
 ```
