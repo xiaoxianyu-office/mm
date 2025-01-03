@@ -1363,6 +1363,22 @@ Required if setting villager professions.
 ```
 
 
+## Wolfs
+
+#### Variant
+Sets the [Wolf Variant](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Wolf.Variant.html)
+```yaml
+  Options:
+    Variant: black
+```
+
+#### Color
+Sets the [Color](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html) of the Wolf's Collar
+```yaml
+  Options:
+    Color: RED
+```
+
 ## Zombie Villagers
 
 #### Profession
