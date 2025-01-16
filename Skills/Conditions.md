@@ -60,7 +60,7 @@ Conditions in this section check against the [inherited target](/Skills/Metaskil
 #### TriggerConditions
 Conditions in this section check against the trigger of the metaskill
 ```yaml
-  TargetConditions:
+  TriggerConditions:
   - health{h=>10}
 ```
 > Checks if the trigger of the metaskill has more than 10 health points
