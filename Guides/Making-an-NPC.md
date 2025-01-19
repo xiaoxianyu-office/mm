@@ -9,28 +9,24 @@ The first step is simply making your mob file, this can be anywhere, for this ex
 Using the below mob as a base, we can make a simple NPC that just stands still. We are using [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81/) to make the mob look like a player.
 
 `plugins/MythicMobs/Mobs/NPC/Steve.yml`
+
 ```yaml
 NPC_Steve:
-  Type: ARMOR_STAND
+  Type: INTERACTION
   Display: 'Steve'
   Disguise: Player Steve setDynamicName true
   Options:
     AlwaysShowName: true
-    Collidable: false
     Despawn: persistent
-  Skills:
-  - cancelevent{sync=true} @self ~onDamaged
 ```
 
 - `NPC_Steve` This is what you'll use to spawn your NPC. /mm m spawn NPC_Steve
-- `Type: ARMOR_STAND` You can use whatever you like but we'll be using armor stand since it has no AI, no sound etc.
+- `Type: INTERACTION` You can use whatever you like but we'll be using an interaction entity since it has no AI, no sound etc.
 - `Display: 'Steve'` This is what will appear above your NPC's head.
 - `Disguise: Player Steve setDynamicName true` This is what makes our NPC look like a player. You can replace "Steve" with whatever player name you want. You must keep the setDynamicName as true so the NPC can use the Display setting. For more information about using custom skins [read here](/Mobs/Disguises)
 - `AlwaysShowName: true` This makes the nameplate show above your NPC.
-- `Collidable: false` This stops the NPC from being pushed around.
 - `Despawn: persistent` This will keep your NPC spawned on reloads, restarts and chunk unloads.
 
-For the skills we are using a cancelevent onDamaged to stop the mob from taking any damage. We are using a skill rather than Invincible: true as an option as this will prevent *all* damage sources including skills or other plugins.
 
 # Step 2 - Adding messages and commands
 
@@ -40,7 +36,6 @@ You can add messages or commands to your NPC using the [Message](/Skills/mechani
 This example will send a message to the player when they right click the NPC. We are adding the [Universal Attribute](Skills/Mechanics#universal-attributes) `cd=3` which will give it a cooldown of 3 seconds between clicks.
 ```yaml
   Skills:
-  - cancelevent{sync=true} @self ~onDamaged
   - message{m=&bWelcome to Hypixel &a<trigger.name>&b!;cd=3} @trigger ~onInteract
 ```
 
@@ -48,7 +43,6 @@ This example will send a message to the player when they right click the NPC. We
 This example will open a menu from DeluxeMenus for the player who right clicks the NPC.
 ```yaml
   Skills:
-  - cancelevent{sync=true} @self ~onDamaged
   - command{c="dm open shops-blocks <trigger.name>"} @trigger ~onInteract
 ```
 
@@ -64,7 +58,7 @@ You will also need to add a nametag bone to your models to display the name abov
  `plugins/MythicMobs/Mobs/NPC/Steve.yml`
 ```yaml
 NPC_Steve:
-  Type: ARMOR_STAND
+  Type: INTERACTION
   Display: 'Steve'
   Options:
     AlwaysShowName: true
@@ -72,13 +66,13 @@ NPC_Steve:
     Despawn: persistent
   Skills:
   - model{m=SteveModel;n=name;save=true} @self ~onSpawn
-  - cancelevent{sync=true} @self ~onDamaged
 ```
 
 With the model mechanic the attributes are
 - `m=SteveModel` This is where the name of your model goes, for example we have `plugins/ModelEngine/Blueprints/SteveModel.bbmodel`
 - `n=name` This is the name of our [nametag bone](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/Modeling/Bone-Behaviors#nametag) we created.
 - `save=true` Tells ModelEngine that the model should be preserved, even across restarts
+
 
 # Step 4 - Spawning the NPC
 
