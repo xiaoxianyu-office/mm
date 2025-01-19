@@ -1,5 +1,5 @@
 ## Description
-Applies an aura to the target that triggers a skill when they break a block
+Applies an aura to the target that triggers a skill when they place a block
 
 
 ## Attributes
