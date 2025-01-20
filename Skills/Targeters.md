@@ -339,20 +339,24 @@ This is done with the attributes:
 | Attribute <!-- ETA --> | Aliases   | Description                                             | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | sort      | sortby    | How to sort the targeted entities/locations                          |         |
-| limit     |           | The limit to the targeted entities/locations after the sort is applied|        |
+| skipTargetsUpToIndex | stuti | skips the first `n` targets of the targeter after the sort is applied, if >0 |0|
+| limit     |           |The limit to the targeted entities/locations after the skip is applied, if >0 |0|
 
 <!-- 
 
 | Attribute LTA | Aliases   | Description                                                      | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | sort      | sortby    | How to sort the targeted entities/locations                          |         |
-| limit     |           | The limit to the targeted entities/locations after the sort is applied|        |
+| skipTargetsUpToIndex | stuti | skips the first `n` targets of the targeter after the sort is applied, if >0 |0|
+| limit     |           |The limit to the targeted entities/locations after the skip is applied, if >0 |0|
 
 -->
 
 Lets say you want your ability to only target the 2 nearest players within 30 blocks. To do this, you'd simply set the limit 2 to and sort by nearest:
 
--   **@PlayersInRadius{r=30;limit=2;sort=NEAREST}**
+```yaml
+  - mechanic @PlayersInRadius{r=30;limit=2;sort=NEAREST}
+```
 
 Currently, sort can have the following values:
 
@@ -368,6 +372,22 @@ Currently, sort can have the following values:
 - HIGHEST_THREAT
 - LOWEST_THREAT
 
+So the targeter will, in this order:
+- Sort the targets based on the provided sort attribute, if any (and if limit and skipTargetsUpToIndex are >0)
+- Skip the first n targets based on the skipTargetsUpToIndex attribute's value, if >0
+- Return the first n targets based on the value of the limit attribute, if > 0
+
+So, in essence, you can fetch target(s) at specific index(es) by using both limit and skipTargetsUpToIndex
+```yaml
+GiveRewards:
+  Skills:
+  - skill{s=[
+    - message{m="You are first!"} @targeted{limit=1} #targets the player that has the highest threat
+    - message{m="You are second!"} @targeted{limit=1;stuti=1} #targets the player that has the second highest threat
+    - message{m="You are third!"} @targeted{limit=1;stuti=2} #targets the player that has the third highest threat
+    - message{m="You aren't on the podium!"} @targeted{stuti=3} #targets everyone else
+    ]} @ThreatTablePlayers{sort=HIGHEST_THREAT}
+``` 
 
 
 
