@@ -381,14 +381,10 @@ So, in essence, you can fetch target(s) at specific index(es) by using both limi
 ```yaml
 GiveRewards:
   Skills:
-  - skill{s=GiveRewards_Exec} @ThreatTablePlayers{sort=HIGHEST_THREAT}
-
-GiveRewards_Exec:
-  Skills:
-    - message{m="You are first!"} @targeted{limit=1} #targets the player that has the highest threat
-    - message{m="You are second!"} @targeted{limit=1;stuti=1} #targets the player that has the second highest threat
-    - message{m="You are third!"} @targeted{limit=1;stuti=2} #targets the player that has the third highest threat
-    - message{m="You aren't on the podium!"} @targeted{stuti=3} #targets everyone else
+  - message{m="You are first!"} @ThreatTablePlayers{sort=HIGHEST_THREAT;limit=1} #targets the player that has the highest threat
+  - message{m="You are second!"} @ThreatTablePlayers{sort=HIGHEST_THREAT;limit=1;stuti=1} #targets the player that has the second highest threat
+  - message{m="You are third!"} @ThreatTablePlayers{sort=HIGHEST_THREAT;limit=1;stuti=2} #targets the player that has the third highest threat
+  - message{m="You aren't on the podium!"} @ThreatTablePlayers{sort=HIGHEST_THREAT;stuti=3} #targets everyone else
 ``` 
 
 
