@@ -269,6 +269,8 @@ Examples:
 | bulletCullingDistance | bulletViewDistance, bulletViewRange | The range in which the bullet will be visible                                                                                        | 50      |
 | bulletCullingHeight | cullHeight | The bullet's display culling height                       | 0.0     |
 | bulletCullingWidth | cullWidth | The bullet's display culling width                          | 0.0     |
+| bulletBrightness | bulletBrightnessBlock | The bullet's brightness, if the value is > -1     | -1      |
+| bulletBrightnessSky| |The bullet's sky light brightness, if the value is > -1                | -1      |
 | audience  |           | The [Audience][] of the bullet                                       | world<!--type:Audience--> |
 
 
@@ -314,4 +316,3 @@ hitConditions usage example:
 <!--TAGS-->
 <!--tag:Projectile-->
 <!--tag:Meta-Mechanic-->
-
