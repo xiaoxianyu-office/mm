@@ -180,6 +180,21 @@ The player inherits the `BaseValue` of these stats; Mobs also inherit them as de
 |[PARRY_POWER](#parry_power)                                  |How much damage is mitigated by Parry.                                                            |
 |[PARRY_NEGATION](#parry_negation)                                      |Reduces the [PARRY_CHANCE](#parry_chance) of the opponent. |
 | [SCALE](#scale)                                             | The scale of the entity                |
+| STEP_HEIGHT                                                 | The step height attribute                |
+| ARMOR                                                       | The armor attribute                      |
+| ARMOR_TOUGHNESS                                             | The armor toughness attribute            |
+| BURNING_TIME                                                | The burning time attribute               |
+| EXPLOSION_KNOCKBACK_RESISTANCE                          | The explosion knockback resistance attribute |
+| FALL_DAMAGE_MULTIPLIER                                      | The fall damage multiplier attribute     |
+| GRAVITY                                                     | The gravity attribute                    |
+| JUMP_STRENGTH                                               | The jump strength attribute              |
+| KNOCKBACK_RESISTANCE                                        | The knockback resistance attribute       |
+| MOVEMENT_EFFICIENCY                                         | The movement efficiency attribute        |
+| OXYGEN_BONUS                                                | The oxygen bonus attribute               |
+| SAFE_FALL_DISTANCE                                          | The safe fall distance attribute         |
+| SNEAKING_SPEED                                              | The sneaking speed attribute             |
+| WATER_MOVEMENT_EFFICIENCY                                   | The water movement efficiency attribute  |
+
 
 # Built-in Stats Breakdown
 
