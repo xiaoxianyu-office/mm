@@ -31,7 +31,7 @@ Options that can be used in the Stat in order to better customize it
 | Display              | The name with which the stat is displayed                                       |
 | Tooltips             | How the stat is shown on items. Depends on the Modifier used                    |
 | ShowInLore           | Whether to show the tooltips formatting for each modifier                       |
-| Priority             | The priority with which the stat will take effect, compared to others           |
+| Priority             | The priority with which the stat will take effect, compared to others. *Lower* values make it so the stat will trigger *before* stats with higher values |
 | MinValue             | Minimum value for the stat                                                      |
 | MaxValue             | Max value for the stat                                                          |
 | Triggers             | What triggers the stat effect. Can be any MythicMobs trigger, minus the "on" bit. <br />(For instance: to use `onAttack`, one needs to write `ATTACK` as a trigger) <br />As of v.5.4.0, only damaging triggers are available; keep an eye on dev builds for expanded functionality.|
