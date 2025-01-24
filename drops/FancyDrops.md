@@ -210,6 +210,7 @@ Other than the options written above, you can also determine specific behaviors 
 | itemvfx   | ivfx, vfx | Whether the drop should have a item vfx                                      | |
 | vfxmaterial | vfxmat, vfxm | The material of the vfx                                                 | |
 | vfxdata   | vfxd      | The data of the vfx                                                  | 0       |
+| vfxmodel   | vfxitemmodel | The item model of the vfx. Minecraft 1.21.3+                             | |
 | vfxcolor  | vfxc, color | The color of the vfx                                                       | |
 | pityModifier | pitymod, pmod | The modifier of the pity                                      | 0.0     |
 | resetpity | resetp, rp | Whether the pity should be reset                                    | false   |
@@ -239,7 +240,7 @@ Fortune drop amount calculation:
   - augment_sword_midas_6{itemglow=true;itemglowcolor=AQUA;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
   - blue_stained_tiles{itemglow=true;itemglowcolor=GREEN;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
   - black_stained_tiles{itemglow=true;itemglowcolor=BLUE;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21;vfxc=#55ff55} 1 1
-  - bismuth_2{itemglow=true;itemglowcolor=DARK_RED;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxdata=21} 1 1
+  - bismuth_2{itemglow=true;itemglowcolor=DARK_RED;hn=true;lootsplosion=true;vfxmaterial=POTION;vfxmodel="mythic:effects/item_beam_3"} 1 1
 ```
 
 <!-- LINKS -->
