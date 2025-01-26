@@ -1,6 +1,6 @@
 ## Description
 Checks against the material of the item that triggered the skill.  
-Wildcards (`*_SWORD`) and item tags (`#arrows`)
+Uses the [Item Matcher](/Items/Item-Matcher)
 
 
 ## Attributes
@@ -18,3 +18,7 @@ Wildcards (`*_SWORD`) and item tags (`#arrows`)
 
 <!-- LINKS -->
 [materials]: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+
+<!--TAGS-->
+<!--tag:ItemMatcher-->
