@@ -1,5 +1,6 @@
 ## Description
-Checks if the target is holding a given material
+Checks if the target is holding a given material.  
+Uses the [Item Matcher](/Items/Item-Matcher)
 
 
 ## Attributes
@@ -19,3 +20,7 @@ This is an example of using an item from MMOItems. mmoitems.category.item
 Conditions:
 - holding{m=mmoitems.TOOL.PICKAXE_5} true
 ```
+
+
+<!--TAGS-->
+<!--tag:ItemMatcher-->
