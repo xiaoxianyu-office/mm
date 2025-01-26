@@ -1,5 +1,6 @@
 ## Description
-Removes the specified amount of an item from the target player's inventory
+Removes the specified amount of an item from the target player's inventory.  
+Uses the [Item Matcher](/Items/Item-Matcher)
 
 
 ## Attributes
@@ -26,4 +27,4 @@ Would remove a stack of dirt from the nearest player's inventory
 <!--TAGS-->
 <!--tag:Item-->
 <!--tag:Inventory-->
-
+<!--tag:ItemMatcher-->
