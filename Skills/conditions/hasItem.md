@@ -1,5 +1,6 @@
 ## Description
 Tests if the target player or an item container has exactly the given number of the given material.
+Uses the [Item Matcher](/Items/Item-Matcher)
 
 
 ## Attributes
@@ -22,3 +23,7 @@ Tests if the target player or an item container has exactly the given number of 
   Conditions:
   - hasitem{i=mmoitems.SWORD.CUTLASS;amount=1to10} true
 ```
+
+
+<!--TAGS-->
+<!--tag:ItemMatcher-->
