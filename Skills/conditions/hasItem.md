@@ -1,5 +1,5 @@
 ## Description
-Tests if the target player or an item container has exactly the given number of the given material.
+Tests if the target player or an item container has exactly the given number of the given material.  
 Uses the [Item Matcher](/Items/Item-Matcher)
 
 
