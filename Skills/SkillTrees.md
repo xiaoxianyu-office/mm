@@ -16,7 +16,7 @@ stateDiagram-v2
                 MetaSkillInfo: MetaSkill Info
                 state MetaSkillInfo {
                     Caster
-                    Targers
+                    Targets
                     Trigger
                     Origin
                     SkillParameters
