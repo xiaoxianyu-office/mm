@@ -53,6 +53,24 @@ Defaults to `false`.
     PreventStacking: true
 ```
 
+#### MaxDurability
+Changes the maximum number of uses an item has. Note: Must be an unstackable item.     
+```yaml
+  Options:
+    MaxDurability: 600
+```
+
+#### Consumable
+Allows item to be eaten. Includes customisable animations and sounds.
+```yaml
+  Options:
+    Consumable:
+      ConsumeSeconds: 3
+      HasParticles: false
+      Animation: SPEAR
+      Sound: item.crossbow.quick_charge_3
+```
+
 #### ItemModel
 The model that should be applied to the item, which [works like this item component](https://minecraft.wiki/w/Data_component_format#item_model)
 ```yaml
