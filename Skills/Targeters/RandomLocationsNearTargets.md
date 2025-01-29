@@ -9,6 +9,7 @@ Targets random locations near the inherited targets
 | radius    | r, maxradius, maxr | The radius in which target points will be generated         | 5       |
 | minradius | minr      | The minimum radius in which target points will be generated          | 0       |
 | spacing   | s         | The minimum amount of space between selected targets                 | 0       |
+| onsurface | surface   | Whether the selected location should be on a surface that is not air | false   |
 
 
 ## Examples
