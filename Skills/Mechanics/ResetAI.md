@@ -15,3 +15,7 @@ Attempts to resets the AI of a casting mob to the base type's default.
 
 ## Aliases
 - [x] resetaigoals
+
+
+<!--TAGS-->
+<!--tag:AI-->
