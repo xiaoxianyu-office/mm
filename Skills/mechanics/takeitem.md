@@ -6,7 +6,7 @@ Uses the [Item Matcher](/Items/Item-Matcher)
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | material, m, i, mat, mi, mythicitem, t, type | The item, or material, to remove  | DIRT    |
+| item      | material, m, i, mat, t, type, types | The item, or material, to remove  | DIRT    |
 | amount    | a              | The amount to remove                                            | 1       |
 | exact     | e         | Whether the name of the item should match exactly to the specified one | true  |
 
