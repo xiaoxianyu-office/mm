@@ -168,6 +168,7 @@ are able to target locations as well.
 | [Remove][]                | Removes the target mob                                                                   |
 | [RemoveHeldItem][]        | Removes some of the item the target player is holding                                    |
 | [RemoveOwner][]           | Removes the ownership of the target mob                                                  |
+| [ResetAI][]               | Attempts to resets the AI of a casting mob to the base type's default                                                  |
 | [RotateTowards][]         | Rotates the caster towards the target location                                   |
 | [RunAIGoalSelector][]     | Change the caster's [AIGoalSelectors]                                                      |
 | [RunAITargetSelector][]   | Change the caster's [AITargetSelectors]                                                    |
@@ -227,6 +228,7 @@ are able to target locations as well.
 | [Smoke][]                 | Creates a puff of smoke                                                     |
 | [SmokeSwirl][]            | Creates a persistent "swirl" of smoke                                       |
 | [Sound][]                 | Plays a sound effect from both vanilla Minecraft and resource packs         |
+| [StealItem][]             | Steals an item from the target and puts it in the mob's hand                                           |
 | [StopSound][]             | Stops a sound effect from playing                                           |
 | [Speak][]                 | Causes the mob to speak in chat, with options for speech bubbles                         |
 | [Spin][]                  | Causes the target to spin                                                   |
@@ -508,6 +510,7 @@ but not yet ready for use.
   [Remove]: /skills/mechanics/remove
   [RemoveHeldItem]: /skills/mechanics/removehelditem
   [RemoveOwner]: /skills/mechanics/removeowner
+  [ResetAI]: /skills/mechanics/ResetAI
   [RotateTowards]: /skills/mechanics/RotateTowards
   [RunAIGoalSelector]: /skills/mechanics/runaigoalselector
   [RunAITargetSelector]: /skills/mechanics/runaitargetselector
@@ -567,6 +570,7 @@ but not yet ready for use.
   [Smoke]: /skills/mechanics/Smoke
   [SmokeSwirl]: /skills/mechanics/SmokeSwirl
   [Sound]: /skills/mechanics/Sound
+  [StealItem]: /skills/mechanics/StealItem
   [StopSound]: /skills/mechanics/StopSound
   [Speak]: /skills/mechanics/speak
   [Spin]: /skills/mechanics/Spin
