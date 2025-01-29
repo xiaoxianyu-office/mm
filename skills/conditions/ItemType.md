@@ -7,6 +7,7 @@ Uses the [Item Matcher](/Items/Item-Matcher)
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | types     | type, t, material, mat, m, i, item | A list of [materials] to check against               | DIRT    |
+| strict    | exact, e  | Whether the matcher should more strictly match the target item       | false   |
 
 
 ## Examples
