@@ -8,7 +8,7 @@ Uses the [Item Matcher](/Items/Item-Matcher)
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | item      | material, m, i, mat, t, type, types | The item, or material, to remove  | DIRT    |
 | amount    | a              | The amount to remove                                            | 1       |
-| exact     | e         | Whether the name of the item should match exactly to the specified one | true  |
+| exact     | e, strict | Whether the name of the item should match exactly to the specified one | true  |
 
 
 ## Examples
