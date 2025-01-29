@@ -32,3 +32,13 @@ Using `*` at any point in the entry will make it so any * present will match aga
 
 For blocks only, it is possible to specify some specific [block states](https://minecraft.wiki/w/Block_states) to be matched by specifying them inside of a pair of square brackets `[]` after the entry
   - redstone_torch[lit=true;facing=north]
+
+
+<!-- 
+
+| Attribute ITEMMATCHER | Aliases   | Description                                              | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| strict    | exact, e  | Whether the matcher should more strictly match the target item       | false   |
+| types     | type, t, material, mat, m, item, i | The items to match. Can be a list           | DIRT    |
+
+-->
