@@ -69,7 +69,7 @@ Spawner Commands
 -   Use **g:group_name** to run commands on a whole group of spawners.
 -   Use **r:radius** to run commands on all spawners within **radius** blocks
 -   Use **?** for a single-character wildcard: Running the command **/mm s set ?at leashrange 32** will set it on spawners named Cat, Rat, Fat, but not one named Matt.
--   Use ***** for any number of wildcard characters: Running the command **/mm s set T* leashrange 32** will set the leash range to 32 on all spawners starting with T
+-   Use ***** for any number of wildcard characters: Running the command **/mm s set T\* leashrange 32** will set the leash range to 32 on all spawners starting with T
 -   **Running the command using \* for the spawner name will change ALL spawners**
 -   **/mm spawners** (alias: **/mm s**) *Base for all spawner related commands.*
 -   **/mm s create** *[spawner_name]* *[mob name]*
