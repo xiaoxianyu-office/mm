@@ -11,10 +11,10 @@ Executes a random skill from the list of supplied [skills](/skills/mechanics/ski
 ## Weight
 You can also make your skills be executed with different chances via the weight system by simply adding a space and a number after the skill names. Skills without a weight will default to weight 1. The higher the number the higher chance that skill has for being picked.
 
-In this example SkillOne will have the highest chance of being picked, followed by SkillTwo, then SkillFour since it has the default weight of 1, then lastly SkillThree will have the lowest chance.
+In this example SkillOne will have the highest chance of being picked, then SkillFour since it has the default weight of 1, then SkillTwo with its weight of 0.5 and, lastly, SkillThree will have the lowest chance.
 ```yaml
 Skills:
-- randomskill{skills=SkillOne 10,SkillTwo 0.5,SkillThree 0,SkillFour}
+- randomskill{skills=SkillOne 10,SkillTwo 0.5,SkillThree 0.1,SkillFour}
 ```
 
 ## Examples
