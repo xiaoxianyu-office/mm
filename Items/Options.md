@@ -37,6 +37,15 @@ Defaults to `false`.
     Unbreakable: true
 ```
 
+
+#### Glint
+Adds the enchantment glint visual effect to an item
+Defaults to `false`.  
+```yaml
+  Options:
+    Glint: true
+```
+
 #### HideFlags
 Hides all the item flags, making things like enchants not visible in the item's lore (please note however that the item will still have an enchanted glow).  
 Defaults to `false`.  
