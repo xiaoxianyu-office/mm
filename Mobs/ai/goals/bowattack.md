@@ -16,7 +16,7 @@ ExampleMob:
   Type: Skeleton
   AIGoalSelectors:
     - clear
-    - bowattack{speed=1;amin=20;radius=15}
+    - bowattack{speed=1;radius=15}
 ```
 
 
