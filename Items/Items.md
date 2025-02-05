@@ -476,6 +476,14 @@ LegendarySword:
     DropClientSide: false
 ```
 
+#### Rarity
+Sets the rarity of the item.  
+Can be COMMON, UNCOMMON, RARE and EPIC
+```yaml
+TheMusical:
+  Rarity: EPIC
+  Material: COMPASS
+```
 
 ## Examples
 More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
