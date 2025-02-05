@@ -22,3 +22,4 @@ EXAMPLE_MOB:
 ## Aliases
 - [x] onLeaveCombat
 - [x] onCombatDrop
+- [x] onExitCombat
