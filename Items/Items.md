@@ -282,21 +282,14 @@ another_example_item:
       somedenizentag: a_string
 ```
 
-#### Armor Trim NBT
-```yml
-another_example_item: 
-  Id: iron_chestplate
-  NBT: 
-    Trim: 
-      material: minecraft:iron
-      pattern: minecraft:shaper
+#### Trim
+Sets the trim of the item.
 ```
-```yaml
-# 1.21+
-Trim_1_21:
-  Id: IRON_CHESTPLATE
-  Options:
-    Trim: amethyst.shaper
+example_item:
+  Material: GOLD_CHESTPLATE
+  Trim:
+    Material: IRON
+    Pattern: WILD
 ```
 
 #### Firework
@@ -482,6 +475,7 @@ LegendarySword:
     DropBrightness: 15
     DropClientSide: false
 ```
+
 
 ## Examples
 More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
