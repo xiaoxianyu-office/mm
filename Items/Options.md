@@ -62,13 +62,6 @@ Defaults to `false`.
     PreventStacking: true
 ```
 
-#### MaxDurability
-Changes the maximum number of uses an item has. Note: Must be an unstackable item.     
-```yaml
-  Options:
-    MaxDurability: 600
-```
-
 #### Consumable
 Allows item to be eaten. Includes customisable animations and sounds.
 ```yaml
