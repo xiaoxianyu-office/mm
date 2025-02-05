@@ -133,49 +133,6 @@ Only usable on leather armor type, banners, shields and such.
 ```
 
 
-# Fireworks
-Options for the FIREWORK and FIREWORK_CHARGE items  
-For Colors and FadeColors, you can specify what colors you want using the format **RED,GREEN,BLUE**  
-
-```yaml
-  Firework:
-    Colors:
-    - 255,0,255
-    - 0,0,0
-    FadeColors:
-    - 200,0,0
-    Flicker: true
-    Trail: true
-```
-
-
-# Books
-Options for book items
-
-#### Title
-The title of the book.  
-Defaults to `Unknown`.  
-```yaml
-  Title: <green>How to make YouTube Videos
-```
-
-#### Author
-The author of the book.  
-Defaults to `Unknown`.  
-```yaml
-  Author: CarsonJF
-```
-
-#### Pages
-A list, with each entry being a page of the book.  
-```yaml
-  Pages:
-  - "Page 1"
-  - "Page 2\n\nwith some other lines"
-  - "Page 3"
-```
-
-
 # Examples
 ```yaml
 ClothSlippers:
