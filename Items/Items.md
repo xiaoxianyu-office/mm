@@ -82,6 +82,14 @@ example_item:
   Model: 12345
 ```
 
+#### MaxDurability
+Changes the maximum number of uses an item has. Note: Must be an unstackable item.     
+```yaml
+example_item:
+  Id: diamond_sword
+  MaxDurability: 600
+```
+
 #### Durability
 Sets the amount of durability to take off the item. The below example sets a Diamond Sword to have 1461 durability since by default it has 1561.
 ```yml
