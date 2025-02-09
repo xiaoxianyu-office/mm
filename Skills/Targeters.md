@@ -41,6 +41,8 @@ Links to targeters added by addon plugins. Any targeters from these links will n
 | @[Vehicle][]                                                                                                                          |    | Targets the caster's vehicle                                                                                                                          |
 | @[InteractionLastAttacker][]                                                                                                                          | @lastAttacker                                                                                                                          | Targets the last entity that attacked the casting `INTERACTION` entity                                                                                                                         |
 | @[InteractionLastInteract][]                                                                                                                          | @lastInteract                                                                                                                          | Targets the last entity that interacted with the casting `INTERACTION` entity                                                                                                                         |
+| @[OwnerLocation][]                                                                                                                          |    | Targets the position of the owner of the mob                                                                                                                         |
+| @[ParentLocation][]                                                                                                                          | @summonerlocation                                                                                                                          | Targets the position of the parent of the mob                                                                                                                         |
 
 
 ### Multi-Entity Targeters
@@ -441,6 +443,8 @@ GiveRewards:
   [NearestStructure]: /Skills/Targeters/NearestStructure
   [ObstructingBlock]: /Skills/Targeters/ObstructingBlock
   [Origin]: /Skills/Targeters/Origin
+  [Ownerlocation]: /Skills/Targeters/Ownerlocation
+  [ParentLocation]: /Skills/Targeters/ParentLocation
   [ProjectileForward]: /Skills/Targeters/ProjectileForward
   [SelfEyeLocation]: /Skills/Targeters/SelfEyeLocation
   [SelfLocation]: /Skills/Targeters/SelfLocation
