@@ -24,3 +24,4 @@ In this example, when the created projectile ends for whatever reason, it will d
 
 ## Aliases
 - [x] playersnearsource
+- [x] PNO
