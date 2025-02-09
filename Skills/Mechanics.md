@@ -262,6 +262,7 @@ are able to target locations as well.
 | [Velocity][]              | Modifies the velocity of the target entity(s)                               |
 | [Weather][]               | Modifies the weather in the target world                                    |
 | [WolfSit][]               | Forces a targeted wolf to sit.                                              |
+| [WorldEditReplace][]      | Replaces blocks in a region using WorldEdit                                              |
 
 
 ## Meta Mechanics
@@ -604,7 +605,7 @@ but not yet ready for use.
   [Velocity]: /skills/mechanics/velocity
   [Weather]: /skills/mechanics/weather
   [WolfSit]: /skills/mechanics/wolfsit
-  
+  [WorldEditReplace]: /skills/mechanics/WorldEditReplace
   
   <!-- METAMECHANICS -->
   [Skill]: /skills/mechanics/skill
