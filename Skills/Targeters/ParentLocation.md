@@ -1,5 +1,5 @@
 ## Description
-Targets the location of the parent of the casting mob
+Targets the location of the [parent](/Skills/Targeters/Parent) of the casting mob
 
 
 ## Attributes
