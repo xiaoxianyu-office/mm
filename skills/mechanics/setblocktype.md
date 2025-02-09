@@ -14,7 +14,7 @@ Sets a block at the location of the caster
 ```yaml
 SetBlockExample:
   Skills:
-  - setblock{m=STONE;md=0} @selflocation
+  - setblock{m=STONE} @selflocation
 ```
 ##
 Sets a mmoitems block at the location of the target
