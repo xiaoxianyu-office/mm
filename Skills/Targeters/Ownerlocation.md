@@ -1,5 +1,5 @@
 ## Description
-Targets the location of the owner of the casting mob
+Targets the location of the [owner](/Skills/Targeters/Owner) of the casting mob
 
 
 ## Attributes
