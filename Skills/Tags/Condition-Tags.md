@@ -7,6 +7,16 @@ Each condition can have more than one tag, and it is listed under each section f
 [[_TOC_]]
 
 [>> Go to top](#)
+## ItemMatcher
+| Condition | Plugin | Description |
+|----------|--------|-------------|
+| [HasItem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasItem) | MythicMobs | Tests if the target player or an item container has exactly the given number of the given material |
+| [Holding](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/holding) | MythicMobs | Checks if the target is holding a given material |
+| [ItemType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ItemType) | MythicMobs | Checks against the material of the item that triggered the skill |
+| [Wearing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/wearing) | MythicMobs | This condition checks if the target entity is wearing the selected item |
+
+
+[>> Go to top](#)
 ## Untagged
 These conditions have not been tagged yet.
 
@@ -64,7 +74,6 @@ These conditions have not been tagged yet.
 | [HasEnchantment](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/HasEnchantment) | MythicMobs | Checks if the target entity's equipped item has an enchantment |
 | [Hasgravity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasgravity) | MythicMobs | If the target has gravity |
 | [Hasinventoryspace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasinventoryspace) | MythicMobs | If the target player has empty inventory space |
-| [HasItem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasItem) | MythicMobs | Tests if the target player or an item container has exactly the given number of the given material. |
 | [HasOffhand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/HasOffhand) | MythicMobs | Checks if the target entity has something in the offhand |
 | [Hasowner](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasowner) | MythicMobs | This condition checks if the target mob has an owner |
 | [Hasparent](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasparent) | MythicMobs | This condition checks if the target mob has a parent. |
@@ -77,7 +86,6 @@ These conditions have not been tagged yet.
 | [Heightabove](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/heightabove) | MythicMobs | Checks if the target's Y location is above a value |
 | [Heightbelow](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/heightbelow) | MythicMobs | Checks if the target's Y location is below a given value |
 | [Height](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/height) | MythicMobs | Checks if the target's Y location is within a range |
-| [Holding](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/holding) | MythicMobs | Checks if the target is holding a given material |
 | [InClaim](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/InClaim) | MythicMobs | Checks if the target location is inside a supported Land Protection claim |
 | [Incombat](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/incombat) | MythicMobs | If the target mob is considered in combat |
 | [InPinRegion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/InPinRegion) | MythicMobs | Checks if the target location is within a region delimited by two [pins](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Pins). |
@@ -104,7 +112,6 @@ These conditions have not been tagged yet.
 | [IsUsingSpyglass](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsUsingSpyglass) | MythicMobs | If the target player is using a spyglass |
 | [Itemissimilar](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/itemissimilar) | MythicMobs | Checks if the target player's inventory slot holds an item that is similar to the specified one |
 | [Itemrecharging](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/itemrecharging) | MythicMobs | Checks if the weapon of the target entity is recharging |
-| [ItemType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ItemType) | MythicMobs | Checks against the material of the item that triggered the skill |
 | [Lastdamagecause](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/lastdamagecause) | MythicMobs | Checks the target's last damage cause |
 | [Lastsignal](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/lastsignal) | MythicMobs | Matches the last signal received by the target mob |
 | [Level](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/level) | MythicMobs | Checks the target MythicMob's level |
@@ -181,7 +188,6 @@ These conditions have not been tagged yet.
 | [Variableisset](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/variableisset) | MythicMobs | Checks if the given [variable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Variables) is set. |
 | [Vehicleisdead](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/vehicleisdead) | MythicMobs | Checks if the casters mounted vehicle is dead. |
 | [Velocity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Velocity) | MythicMobs | Checks the velocity of the target entity against a range |
-| [Wearing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/wearing) | MythicMobs | This condition checks if the target entity is wearing the selected item. |
 | [World](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/world) | MythicMobs | Checks the name of the target world. |
 | [Worldtime](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/worldtime) | MythicMobs | Matches a range against the target location's world's time. |
 | [Yaw](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/yaw) | MythicMobs | Checks the yaw of the target entity against a range. |

@@ -58,7 +58,9 @@ These targeters have not been tagged yet.
 | [NotLivingNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/NotLivingNearOrigin) | MythicMobs | Targets all non living entities in a radius near the origin |
 | [ObstructingBlock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/ObstructingBlock) | MythicMobs | Tries to target the block in front of the caster that is obstructing it |
 | [Origin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Origin) | MythicMobs | Targets the location of the "origin" or "source" of a meta-skill |
+| [Ownerlocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Ownerlocation) | MythicMobs | Targets the location of the [owner](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Owner) of the casting mob |
 | [Owner](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Owner) | MythicMobs | Targets the Owner of the casting mob |
+| [ParentLocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/ParentLocation) | MythicMobs | Targets the location of the [parent](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Parent) of the casting mob |
 | [Parent](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Parent) | MythicMobs | Targets the Parent of the casting mob |
 | [Passenger](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Passenger) | MythicMobs | Targets the rider of the casting mob |
 | [Pin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Pin) | MythicMobs | Targets the location of a [Pin]. |
@@ -104,6 +106,7 @@ These targeters have not been tagged yet.
 | [Vehicle](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Vehicle) | MythicMobs | Targets the caster's vehicle |
 | [WolfOwner](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/WolfOwner) | MythicMobs | Targets the vanilla owner of the caster, if the caster is a wolf |
 | [FurnitureInRadius](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Targeters/FurnitureInRadius) | MythicCrucible | Targets all the furniture in a radius, optionally filtering for some of them |
+| [FurnitureNearOrigin](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Targeters/FurnitureNearOrigin) | MythicCrucible | Targets all the furniture in a radius around the origin |
 | [Furniture](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Targeters/Furniture) | MythicCrucible | Targets the furnitures at the inherited locations, if any |
 | [ModelDriver](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Targeters/ModelDriver) | ModelEngine | Targets the driver of the casting modeled entity |
 | [ModelPart](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Targeters/ModelPart) | ModelEngine | Targets the location of a specific part of the specified model applied on the casting modeled entity |

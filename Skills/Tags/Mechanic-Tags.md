@@ -13,6 +13,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FormLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FormLine) | MythicMobs | Makes the casting mob follow a linear path to a location |
 | [Goto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/goto) | MythicMobs | Causes the mob to pathfind to a location |
+| [ResetAI](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ResetAI) | MythicMobs | Attempts to resets the AI of a casting mob to the base type's default |
 | [Runaigoalselector](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/runaigoalselector) | MythicMobs | Change pathfindergoals |
 | [Runaitargetselector](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/runaitargetselector) | MythicMobs | Change target pathfindergoals |
 | [Setai](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setai) | MythicMobs | Toggles the target AI |
@@ -151,11 +152,12 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Consumeslot](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/consumeslot) | MythicMobs | Removes an item from a specific slot of the player's inventory |
 | [EquipCopy](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/EquipCopy) | MythicMobs | Causes the caster to equip a copy of the target's equipment |
 | [Equip](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/equip) | MythicMobs | Equips the mob with an item |
-| [FillChest](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fillChest) | MythicMobs | Fills a chest with a list of items, or a [droptable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Drops#drop-tables) |
+| [FillChest](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fillChest) | MythicMobs | Fills a chest with a list of items, or a [droptable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/DropTables) |
 | [Giveitemfromslot](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/giveitemfromslot) | MythicMobs | Gives a copy of the caster's slot to the target |
 | [Giveitemfromtarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/giveitemfromtarget) | MythicMobs | Gives the caster an item while playing the pickup-item animation from the target entity or location when fakelooting is set to true |
 | [Giveitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/giveitem) | MythicMobs | Gives an item to the target |
 | [Saddle](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/saddle) | MythicMobs | Allows to either equip or remove a saddle on the target entity |
+| [StealItem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StealItem) | MythicMobs | Steals an item from the target and puts it in the mob's hand |
 | [Takeitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/takeitem) | MythicMobs | Removes the specified amount of an item from the target player's inventory |
 
 
@@ -170,14 +172,23 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Dropitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/dropitem) | MythicMobs | Drops a set of items or optionally a |
 | [EquipCopy](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/EquipCopy) | MythicMobs | Causes the caster to equip a copy of the target's equipment |
 | [Equip](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/equip) | MythicMobs | Equips the mob with an item |
-| [FillChest](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fillChest) | MythicMobs | Fills a chest with a list of items, or a [droptable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Drops#drop-tables) |
+| [FillChest](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fillChest) | MythicMobs | Fills a chest with a list of items, or a [droptable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/DropTables) |
 | [Giveitemfromslot](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/giveitemfromslot) | MythicMobs | Gives a copy of the caster's slot to the target |
 | [Giveitemfromtarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/giveitemfromtarget) | MythicMobs | Gives the caster an item while playing the pickup-item animation from the target entity or location when fakelooting is set to true |
 | [Giveitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/giveitem) | MythicMobs | Gives an item to the target |
 | [Itemspray](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/itemspray) | MythicMobs | Causes an explosion of temporary items at the target location |
 | [Pickupitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/pickupitem) | MythicMobs | Pick up the targeted item, if the caster is a player |
 | [SetDisplayEntityItem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setDisplayEntityItem) | MythicMobs | Sets the item component of Item Display entities |
+| [StealItem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StealItem) | MythicMobs | Steals an item from the target and puts it in the mob's hand |
 | [Stopusingitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/stopusingitem) | MythicMobs | Stops the targeted living entity from using an item, i.e |
+| [Takeitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/takeitem) | MythicMobs | Removes the specified amount of an item from the target player's inventory |
+
+
+[>> Go to top](#)
+## ItemMatcher
+| Mechanic | Plugin | Description |
+|----------|--------|-------------|
+| [StealItem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StealItem) | MythicMobs | Steals an item from the target and puts it in the mob's hand |
 | [Takeitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/takeitem) | MythicMobs | Removes the specified amount of an item from the target player's inventory |
 
 
@@ -237,7 +248,9 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Randomskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/randomskill) | MythicMobs | Executes a random skill from the list of supplied [skills](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/skill) |
 | [Raytrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytrace) | MythicMobs | Traces a ray to the target |
 | [Raytraceto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytraceto) | MythicMobs | Traces a ray to the target, like the [Raytrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/raytrace) mechanic, but with additional attributes regarding the start and end position of the ray |
+| [Remove](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/remove) | MythicMobs | Removes the targeted entity from existence |
 | [Slash](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/slash) | MythicMobs | The Slash meta-mechanic can execute other skills in a slash-shaped pattern |
+| [StealItem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StealItem) | MythicMobs | Steals an item from the target and puts it in the mob's hand |
 | [Sudoskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/sudoskill) | MythicMobs | The SudoSkill mechanic allows you to force the targeted entity to “cast” |
 | [Switch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Switch) | MythicMobs | A switch allows a condition to be tested against a list of (cases) values |
 | [Totem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/totem) | MythicMobs | The totem mechanic places an invisible "totem", similar to the |
@@ -257,7 +270,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Hide](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hide) | MythicMobs | Hides the caster from the targeted players for a set duration |
 | [Onattack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onattack) | MythicMobs | Applies an aura to the target that triggers a skill when they damage |
 | [Onblockbreak](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onblockbreak) | MythicMobs | Applies an aura to the target that triggers a skill when they break a block |
-| [Onblockplace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onblockplace) | MythicMobs | Applies an aura to the target that triggers a skill when they break a block |
+| [Onblockplace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onblockplace) | MythicMobs | Applies an aura to the target that triggers a skill when they place a block |
 | [OnChat](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/OnChat) | MythicMobs | Applies an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) on the target player that triggers a [metaskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Metaskills) when they type a chat message |
 | [Ondamaged](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ondamaged) | MythicMobs | Applies an aura to the target that triggers a skill when they take |
 | [Ondeath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ondeath) | MythicMobs | Applies an aura to the target that triggers a skill when they die |
@@ -349,6 +362,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Raytrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytrace) | MythicMobs | Traces a ray to the target |
 | [Raytraceto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytraceto) | MythicMobs | Traces a ray to the target, like the [Raytrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/raytrace) mechanic, but with additional attributes regarding the start and end position of the ray |
 | [Fawepaste](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fawepaste) | MythicMobs | Pastes a Schematic using the FAWE Plugin found here: [FAWE](https://www.spigotmc.org/resources/fast-async-worldedit.13932/) |
+| [WorldEditReplace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/WorldEditReplace) | MythicMobs | Replaces blocks in a region using WorldEdit |
 
 
 [>> Go to top](#)
@@ -442,7 +456,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Breakblock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/breakblock) | MythicMobs | Will break a block at the target location |
 | [EnderDragonResetCrystals](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/EnderDragonResetCrystals) | MythicMobs | Generates the EnderDragon crystals if an enderdragon battle is going on in the target location's dimension |
 | [Explosion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/explosion) | MythicMobs | Creates an explosion at the target entity or location |
-| [FillChest](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fillChest) | MythicMobs | Fills a chest with a list of items, or a [droptable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Drops#drop-tables) |
+| [FillChest](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fillChest) | MythicMobs | Fills a chest with a list of items, or a [droptable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/DropTables) |
 | [Pickupitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/pickupitem) | MythicMobs | Pick up the targeted item, if the caster is a player |
 | [Prison](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/prison) | MythicMobs | Encases the target entity inside a temporary prison of blocks |
 | [PushBlock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PushBlock) | MythicMobs | Pushes the block at the target location in the given direction using piston logic |
@@ -453,7 +467,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [ThunderLevel](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ThunderLevel) | MythicMobs | Causes a per-player storm effect (without rain) |
 | [Time](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Time) | MythicMobs | Sets the world's time |
 | [Togglelever](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/togglelever) | MythicMobs | Toggles a lever on and off at the supplied coordinates |
-| [TogglePiston](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/TogglePiston) | MythicMobs | Toggles a piston at the target location |
+| [Togglepiston](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/togglepiston) | MythicMobs | Toggles a piston at the target location |
 | [Undopaste](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/undopaste) | MythicMobs | Undoes a previous paste done via the [fawePaste](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/mechanics/fawepaste/) mechanic, based on its id or on the schematic used |
 | [Weather](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/weather) | MythicMobs | Changes the weather in the casting mob's world |
 | [Fawepaste](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fawepaste) | MythicMobs | Pastes a Schematic using the FAWE Plugin found here: [FAWE](https://www.spigotmc.org/resources/fast-async-worldedit.13932/) |
@@ -515,6 +529,8 @@ These mechanics have not been tagged yet.
 | [Setskillcooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setskillcooldown) | MythicMobs | Sets the given metakill's cooldown to the given value (in seconds) |
 | [ConsumeAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeAmmo) | MythicCrucible | Consumes ammo to execute a skill |
 | [ReloadAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ReloadAmmo) | MythicCrucible | will search the caster's inventory for the configured ammo item (or another item if overridden), and for each item it finds it will consume it and add ammo to the item. |
+| [ConsumeItemDurability](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeItemDurability) | MythicCrucible | Consume the durability of an item |
+| [Consumeitem](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/Consumeitem) | MythicCrucible | Removes some items from the casting player's inventory |
 | [GiveAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/GiveAmmo) | MythicCrucible | Sets the ammo amount of a player's weapon to its maximum. |
 | [InventoryClear](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/InventoryClear) | MythicCrucible | Clears the inventory of the targeted player |
 | [Parsearmor](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/parsearmor) | MythicCrucible | Updates the status of the target player's armor pieces |
