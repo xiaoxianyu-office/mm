@@ -1,7 +1,207 @@
 [[_TOC_]]
 
-# 5.8.0 (Dev Builds)
-## Items
+# 5.8.0
+
+**`Note: This update includes various optimizations, new mechanics, improvements, bug fixes, and additional API features. Please report any issues you find by opening an Issue or letting us know in the appropriate Discord channel.`**
+
+General
+-------
+- Added 1.21.3 and 1.21.4 support
+- Lots of micro-optimizations for performance (thank you, Taiyou!)
+- Added `Configuration.General.AnnounceOpReload` to `config-general.yml` to set whether Mythic reload announcements are sent to all online operators.
+- Optimized various projectile/entity selection mechanics and removed stream usage in key areas (e.g., `IEntitySelector`, `PacketEntityRenderer`).
+- Added a global option to automatically apply FancyDrops to all items (disabled by default).
+- Added `/mm m spawn [type] [amount] @targeter` command.
+
+Random Spawning
+---------------
+- **Multiple Mobs with Weights**: You can now specify multiple mobs in a Random Spawner entry with weighted values, for example:
+  ```yaml
+  Deeps:
+    Types:
+    - RegularZombie 100
+    - BigZombie 50
+    - GiantZombie 5
+    Worlds: world
+    Chance: 0.1
+    Priority: 1
+    Action: ADD
+    PositionType: LAND
+  ```
+- **Structures Support**: Added a `Structures:` list option allowing you to limit a Random Spawner to spawn mobs only in specific structures:
+  ```yaml
+  Nether_Fortress:
+    Types:
+    - blaze_wisp 100
+    Worlds: world_nether
+    Chance: 0.02
+    Priority: 1
+    Action: ADD
+    PositionType: LAND
+    Structures:
+    - 'minecraft:fortress'
+    - 'incendium:forbidden_castle'
+  ```
+- **New Config Options**:
+  - `RandomSpawning.MaxGenerationAttempts` to limit how many attempts the cluster generator tries when spawning.
+  - `RandomSpawning.LocalSpawningLimit` and a new `MaxLocalMobs` option on individual Random Spawners to override local limits.
+- **Renamed**: The old `GroupMultiplier` option is now `LocalGroupMultiplier` in `config-spawning.yml`, and its default value logic has changed.
+- Various improvements to cluster generation and structure detection logic.
+
+Mobs
+----
+- Streamlined variant options to `Options.Variant` for wolves, cats, frogs, villagers, etc., allowing for custom variants.
+- Added ability to configure **custom mob spawner items**, including the ability to set spawn delay, spawn range, etc.
+- Added Wolf-specific `Options.Variant` for custom wolf variants.
+
+Mechanics
+---------
+
+### `NEW: followPath`
+- An aura causing the target mob to walk along a defined path.
+
+### `NEW: log`
+- `log{message="Debug to console with variables <caster.var.test>"}` for simple logging.
+
+### `NEW: setTextDisplay`
+- `setTextDisplay{text="text here"} @Target` mechanic for displaying text.
+
+### `NEW: openTrades`
+- Opens a merchant menu for the targeted player.
+  - `realTrade/real` attribute determines if trades are with a real villager.
+
+### `NEW: movePin`
+- `movePin{pin=X}` mechanic to relocate pins.
+
+### `NEW: directionalVelocity`
+- `directionalVelocity{yaw=50}` applies velocity to the target based on specified angles.
+
+### `NEW: rotateTowards`
+- Rotates the caster toward the target.
+
+### `NEW: setChunkForceLoaded`
+- Force-loads a chunk at the target location.
+
+### `NEW: resetAI`
+- Reverts a mob’s AI to factory defaults.
+
+### `NEW: matchRotation`
+- `matchRotation{of=@targeter}` to match rotation of a given target.
+
+### `NEW: clearExperience`
+- Resets a player's experience points.
+
+### `NEW: setProjectileDirection`
+- `setProjectileDirection{magnitude=1}` for controlling projectile direction.
+
+### `NEW: lookAtTarget`
+- An AI goal causing a mob to look at its current target.
+
+### `UPDATED: dropItem`
+- Now includes a `then=` skill section targeting dropped items.
+
+### `UPDATED: setSpeed`
+- Respects the configured movement speed; defaults to mob's base if none is set.
+
+### `UPDATED: consumeSlotItem`
+- Properly removes items with `0` amount.
+
+### `UPDATED: shoot`
+- Now supports `item=<material>` for custom projectiles (e.g., `item=REDSTONE`).
+
+### `UPDATED: particleOrbital`
+- Terminates after the caster dies/despawns and supports placeholders for `ticks`.
+
+### `recoil`
+- Fixed recoil on 1.21+; placeholders can be used in recoil values.
+
+Conditions
+----------
+
+### `NEW: boundingBoxesOverlap`
+- Checks if bounding boxes overlap.
+
+### `NEW: distanceFromPin`
+- `distanceFromPin{pin=X;distance=<5}` condition.
+
+### `NEW: distanceFromLocation`
+- `distanceFromLocation{x=...;y=...;z=...;distance=...;world=...}` condition.
+
+### `NEW: PlaceholderBoolean`
+- True if a variable is 'true' or '1', otherwise false.
+
+### `NEW: originDistanceFromPin`
+- Checks distance from a specific pinned location.
+
+### `NEW: stringEmpty / stringNotEmpty`
+- Checks if a string is empty or not.
+
+### `lookAt`
+- Now has `distance`/`d` attribute (defaults to 5) to check if a mob is looking at a target within that distance.
+
+Targeters
+---------
+
+### `NEW: @BlocksInPinRegion`
+- Targets blocks within a pin-defined region.
+
+### `NEW: @HighestBlock`
+- Targets the highest block at the origin position.
+
+### `NEW: @TrackedPlayers`
+- Targets players currently rendering or tracking the mob.
+
+### `NEW: @ChunksinWERegion`
+- `@ChunksinWERegion{region=X}` targeter.
+
+### `NEW: @PNO`
+- Alias for `PlayersNearOrigin`.
+
+### `NEW: @OwnerLocation`
+- Targets the owner location of a tamed entity.
+
+### `NEW: @ParentLocation`
+- Targets the parent location.
+
+### `NEW: @WolfOwner`
+- Re-added targeter that selects the owner of a tamed wolf.
+
+### `skipTargetsUpToIndex`
+- Lets targeters skip the first N matched targets.
+
+### `@ObstructingBlock`
+- Rewritten for better performance.
+
+### `mobsInRadius`
+- Now properly detects vanilla mob types.### Placeholders
+- Added rounding support to `random.float` placeholder with syntax `<random.float.1to5{round=2}>`.
+- Added new math functions: `todegree(value)`, `toradian(value)`, and `clamp(value,min,max)`.
+- **NEW:** `caster.attack_cooldown` placeholder for vanilla swing cooldown.
+
+Items
+-----
+- Added `Options.Glint: true` to add the enchantment glint effect.
+- Added Mythic color picker for customizing color-related item properties.
+- Added `vfxmodel/vfxitemmodel` support for Fancy Drops using 1.21.3+ item models.
+- Added `namespace:enchant_name` support in the `Enchantments` option.
+- Added `strict=true` to all item conditions/mechanics to prevent matching Mythic items with vanilla items.
+- Extended `Equippable` component to support additional fields.
+- Added `#tag` and `*wildcard` support to `itemType` condition.
+- Added `Tool` and `UseCooldown` sub-components for more item customization.
+- Reordered item components so `TooltipStyle` loads last.
+
+### NEW: `TooltipStyle` component for advanced item tooltips.
+### NEW: `Consumable` component:
+  ```yaml
+  Item:
+    Consumable:
+      ConsumeSeconds: 5
+      HasParticles: true
+      Animation: SPEAR
+      Sound: entity.chicken.egg
+  ```
+
+### NEW: `Food` Component
 - Added Food components for items, enabling the creation of edible items:
   ```yaml
   NetheritePops:
@@ -14,6 +214,70 @@
       CanAlwaysEat: true
       Effects:
       - regeneration{duration=60}```
+
+Stats
+-----
+- Added new Mythic Stats for the latest Minecraft attributes:
+  - `STEP_HEIGHT`
+  - `ARMOR`
+  - `ARMOR_TOUGHNESS`
+  - `BURNING_TIME`
+  - `EXPLOSION_KNOCKBACK_RESISTANCE`
+  - `FALL_DAMAGE_MULTIPLIER`
+  - `GRAVITY`
+  - `JUMP_STRENGTH`
+  - `KNOCKBACK_RESISTANCE`
+  - `MOVEMENT_EFFICIENCY`
+  - `OXYGEN_BONUS`
+  - `SAFE_FALL_DISTANCE`
+  - `SNEAKING_SPEED`
+  - `WATER_MOVEMENT_EFFICIENCY`
+
+API
+---
+- Refactored `EquipSlots` to allow for custom slots.
+- Added API methods for dumping item component data (e.g., `DropTable.usesWeights()`, `DropTable.GetDrops()`).
+
+- Added API condition type `ISkillMetaLocationComparisonCondition`.
+- Enhanced item matching with `BukkitItemMatcher`.
+- Exposed more plugin triggers and event calls for custom expansions.
+
+## Bug Fixes & Optimizations
+- Pre-generate and store default mob attributes for faster performance on spawn.
+- Improved world checking to fix some concurrency issues.
+- Improved rounding with placeholders.
+- Fixed random spawning mobs occasionally spawning in walls or negative coordinates.
+- Fixed plugin failing to load on older versions when building for new.
+- Fixed NPE with placeholder doubles in certain situations.
+- Fixed `onPrime` trigger for creepers.
+- Fixed custom blocks not working as mob totem heads.
+- Particle effects no longer limited by Spigot’s default view range incorrectly.
+- Fixed `force=true` option with `look` mechanic.
+- Fixed negative gravity on projectiles.
+- Fixed recoil on 1.21+.
+- Fixed spawners not saving correctly and reversed logic in `Spawners.DisableCommandSaving`.
+- Fixed `onDamaged` aura not triggering with skill damage.
+- Fixed `consumeSlotItem` failing with item amounts of `0`.
+- Fixed default potion level being `2` instead of `1`.
+- Fixed fireworks color loading with `RBG` instead of `RGB`.
+- Fixed `teleport{unsafe=false}` not placing players properly on a solid block.
+- Fixed `hasItem`, `holding`, and other item conditions to support new item matcher.
+- Fixed health regen stat incorrectly healing dead players.
+- Fixed MythicDamageEvent for entities that cannot be damaged (canceled properly).
+- Fixed `mobsInRadius` failing with certain vanilla types.
+- Fixed spawner items not applying correct mob data.
+- Fixed sub-hitbox metadata manipulations causing stack overflow.
+- Fixed `spin` effect so it stops if caster is dead.
+- Fixed IllegalArgumentException in `EnderBeam` mechanic.
+- Fixed `setDisplayEntityItem` mechanic not working properly with Crucible-generated items.
+- Fixed item display interpolation/rotation issues.
+- Fixed mobs without `MovementSpeed` becoming stuck when using the `setSpeed` mechanic.
+- Fixed `setSpeed` mechanic to now base multiplier on the mob type’s default speed if no config value.
+- Fixed `chicken jockey` option not working.
+- Fixed various boat types being broken on 1.21.4.
+- Many additional concurrency and caching fixes (faster item lookups, distanceSquared, etc.).
+
+This release includes many new features, bug fixes, and optimizations. If you encounter any issues or unexpected behavior, please report them in the appropriate channels!
 
 # 5.7.2
 ## General
@@ -209,241 +473,6 @@ Bugs / Other
 - Fixed persistent entities not loading correctly after chunk load due to papermc bug
 - Fixed error preventing plugin from loading on Arclight
 - Fixed config error causing plugin to require a restart after first install
-
-
-5.6.2
-=====
-
-Random Spawning
----------------
-- Rewrote the random spawning generator and added some new config options
-- Added `ReplaceObeysCap` to random spawning, defaulting to false.
-
-Bugs / Other
-------------
-- Added `onSummon` (alias `then`) attribute to `summon` mechanic, if specified will run the skill on the summoned mob after it's summoned.
-- Added `<caster/target/trigger.raytrace.#>` placeholder
-- Added `<target/trigger.stat.STAT_NAME>` placeholder
-- Added `DisplayOptions.TeleportDuration` option
-- Added `Options.VisibleByDefault`
-- Added `executeAfterDeath=true` option to `skill` and `vskill` mechanics
-- Added `fakelightning` and `fakeexplosion` aliases for those effect mechanics
-- Added `fromOrigin` to fireball mechanic
-- Added `inheritDespawnOption` option to summon mechanic
-- Added placeholder support to `limit` targeter option
-- Added placeholder support to WEPasteSchematicMechanic `x/y/z` offsets and `rotation` options
-- Added sub-hitbox deep active mob parent search
-- Attempt to catch errors in command mech to prevent npc breakage
-- Changed `permanent` option in hide mechanic to `ignoreAuraOptions`
-- Fixed spawner data sometimes getting wiped during reloads
-- Fixed GlowEffect auras not merging correctly
-- Fixed GlowEffect NPE
-- Fixed IllegalArgumentException in cluster spawning generator
-- Fixed NPE in Fireball mechanic closes #1561
-- Fixed NPE with invalid skill parameters
-- Fixed NPE with new random spawn generator
-- Fixed NPEs in GlowManager
-- Fixed NoSuchMethodError when spawning mobs
-- Fixed StackOverflowError caused by mob recursively damaging itself closes #1546
-- Fixed block light and sky light display options
-- Fixed error with EnderDragonAlive condition used with random spawns closes #1539
-- Fixed extremely rare race condition with mobs despawning the same tick they die
-- Fixed IllegalArgumentException in cluster spawning generator
-- Fixed mobs with no display name set having a display name
-- Fixed non-mob entities throwing an error with PreventOtherDrops
-- Fixed pin wand being able to break blocks
-- Fixed potion clear mechanic not clearing all potion effects when not providing any type.
-- Fixed some bugs with the Biomes field in random spawners closes #1558
-- Fixed some more issues with multi-hitbox support
-- Fixed `repeat=X` not working if repeatInterval is 0 closes #1555
-- Fixed scope.raytrace placeholders
-- Fixed bugs with rally mechanic
-- Removed a cancelDamage alias
-
-5.6.1
-=====
-- Added various new config options for items and drops
-- Added more tab completion to commands
-- Added all the new fancy drop effects for vanilla items
-- Added all the new fancy drop effects for MMOItems items
-- Added placeholder support to variable keys
-- Added some API stuff for item updating
-- Added more debugging information when a LibsDisguises disguise throws an error
-- Added placeholder support to @Pin targeter
-- Added way to use the trigger's stats in DamageModifier stats
-- Added Parent stats and capabilities for DamageModifier stat types
-- Added `stopCondition` to projectiles
-- Added `castasorbital` to orbital
-- Rewrote part of spawner saving
-- Fixed spawner files not deleting
-- Fixed ConcurrentModificationException that could rarely occur when copying spawners
-- Fixed plugin not loading on regular spigot - per-player drops require paper
-- Fixed fancy drop effects causing items added thru the api to not roll amounts closes #1502
-- Fixed mechanics still firing if a death event has been cancelled (does not...
-- Fixed recursive issue with cancelevent
-- Fixed some spawner command bugs
-- Fixed some loading bugs introduced with the change to default lowercase folder names
-- Fixed spawner copying not copying the spawner's group
-- Fixed `<caster.score.>` placeholder?
-- Fixed exit aura spelling`
-- Fixed complex stat initialization with formulas and ordering problems
-- Allow placeholder on projectile vertical radius
-- Fixed vector rotation calculation
-- Fixed NPE in ActiveInfo utility command
-
-
-5.6.0
-=====
-
-Highlights
-----------
-- Rewrote config files. Old settings should automatically migrate and are now located in a new `configs` folder
-- Added new `Fancy` Drops Per-Player Loot Drops
-- Glow effects no longer requires GlowAPI
-- Mob Egg improvements
-
-General
--------
-- Improved output of getCoordinates utility command
-
-Configs
--------
-- Added new config options for different hologram features and adjusted some settings
-
-Pins
-----
-- Added & improved some pin commands
-- Added `/mm pins toggleviewing` command for holograms
-- Added `/mm pins move` command
-- Changed `/mm pins list` to sort by nearest pins to you
-
-Mobs
-----
-- Added `Variables` field to mobs for pre-set variables available to skills
-- Added `Nameplate.Mounted: false` option for MEG mobs
-- Mob eggs are now fully configurable in `config-mobs.yml` and the display/lore can be overridden on a per-mob basis
-```
-SomeMob:
-  Egg:
-    Display: '<caster.name> EGG'
-    Lore:
-    - 'im a testing egg'
-```
-
-Mechanics
----------
-
-### `NEW: followPath`
-- Added `followPath mechanic` - an aura causing the target mob to walk along a defined path
-
-### `NEW: modifyDamage`
-- Make `modifyDamage` mechanic's default damage type be `ALL`
-- Make `modifyDamage` mechanic modify all damage types if `type=ALL`
-- Added `modifyDamage` mechanic allowing modification of the damage of the current triggering event
-
-### `Auras`
-- Added `cancelOnCasterDeath=true` option to all aura mechanics
-- Added debugging info for auras
-
-### `Hide`
-- Hide Mechanic now extends Aura
-- Added AbstractPlayer#hideEntity and AbstractPlayer#showEntity
-
-### `Hit`
-- Added `forcedDamage` to hit mechanic
-
-### `Glow`
-- Glow Effect no longer requires GlowAPI
-- Glow Effect now extends Aura
-
-### `takeItem`
-- Fixed other bugs with `takeItem` mechanic
-- Added `exact=false` option to `takeItem` mechanic
-
-Conditions
-----------
-### `NEW: lookingAt`
-- Added lookingAt player condition
-
-### `NEW: originLocation`
-- Added `originLocation{location=x,y,z}` condition to match if the origin is at a specific location
-
-Triggers
---------
-- Added `onSkillDamage` trigger, triggered by skill damage
-
-Targeters
----------
-- Added `bb=false` filter to make a targeter ignore MEG subhitboxes
-- Added `unique=false` entity targeter option, setting to false will allow a targeter to hit multiple sub-hitboxes at once on a modeled mob
-
-Placeholders
-------------
-- Added various `caster.target.` placeholders to act on the target of the caster
-- `<trigger.item.amount>` placeholder added
-
-Mob Drops
----------
-- Added various new drop options
-
-RandomSpawning
---------------
-- Added new options such as `LimitMultiplier` to help control Random Spawning
-
-API
----
-- Added PlayerLevelProvider
-- Added `MythicMobEggEvent` for when an egg is used
-
-Bugs / Other
-------------
-- Allowed placeholders in `radius` and `minRadius` attributes in `@RandomLocationsNearTargets` targeter
-- Fixed jigsaw structures not working with structure condition
-- Fixed NPE in GoToParent goal
-- Fixed onDamaged mechanic not working with custom damage types or multi-type damage
-- Fixed per-player loot vfx not moving with the loot with fancy drops
-- Fixed some backwards compatibility issues with the placeholder refactor
-- Fixed bug with hologram culling
-- Fixed inline items with skull textures throwing a Bukkit error
-- Skills will now try to detect if there's a `cancelevent` mechanic somewhere
-- Fixed double placeholders showing a decimal point when rounding=0
-- Fixed holograms sometimes appearing in the wrong world
-- Fixed target.l.x placeholder
-- Fixed `<caster.level>` placeholder to default to rounding to 0 places
-- Fixed typo in WorldScaling config parser
-- Fixed bug with world scaling
-- Fixed a potential bug in TargetInLineOfSight condition
-- Fixed crash caused by PreventTeleporting on endermen (closes #1431)
-- Fixed some bugs with pins
-- Fixed NPE in ActiveMob.checkEquipment
-- Fixed bug with using type=ALL with damageMod
-- Fixed action attribute in damageMod mechanic
-- Fixed recursive damage bug with lightning mechanic on onDamaged trigger
-- Fixed recursive damage bug with lightning mechanic on onDamaged trigger (again)
-- Fixed some placeholder bugs
-- Fixed ClassCastException in mob listener involving vanilla overrides
-- Fixed bottleneck with getting a mob's children from an async thread
-- Fixed bugs causing placeholders registered from add-ons not processing until after a reload
-- Fixed some things in the default stats.yml file
-- Fixed for potential memory leak involving random spawners used with MythicDungeons
-- Fixed bugs with auras that don't have names set
-- Fixed StatAura not giving stats for additional stacks
-- Fixed bug in stat displays and keys
-- Fixed custom MM nameplates trying to apply to MEG modeled mobs instead of vanilla mobs
-- Fixed caster spawn targeter mutating location
-- Fixed villager trade 2nd item using 1st count
-- Fixed metadata not syncing between subhitbox and parent on MEG mobs
-- Fixed projectiles not hitting MEG OBBs
-- Fixed look mech pitch and yaw being swapped
-- Fixed BlockLight and SkyLight properties
-- Fixed event firing before bullets are set
-- Fixed guardian beam issues
-- Fixed @self targeter sometimes requiring targetself=true which is unintuitive
-- Fixed PreventOtherDrops not affecting equipped items closes #1474
-- Fixed `<<` for ranges not working with nested placeholders
-- Fixed `@playersNearTargetLocations` meta-targeter not working with base entity targets
-- Fixed NPE with incorrectly configured mob bullets closes #1481
-- Fixed attack speed stat throwing an error on mobs that don't support attack speed closes #1484
 
 Older Changelogs
 ================
