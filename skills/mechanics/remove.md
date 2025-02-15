@@ -1,8 +1,12 @@
 ## Description
 Removes the targeted entity from existence. Does not work on players.
 
+
 ## Attributes
-> *This mechanic has no attributes*
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| onRemoveSkill | onRemove, then | The Metaskill to execute once an entity is removed          |         |
+
 
 ## Examples
 This mob would despawn 10 seconds after spawning:
@@ -19,3 +23,4 @@ This skill despawns the mob immediately when it is right clicked.
 
 <!--TAGS-->
 <!--tag:Meta-->
+<!--tag:Meta-Mechanic-->
