@@ -160,6 +160,7 @@ These placeholders will return whatever target selector has been used. For insta
 |  <target.itemstack_amount>   | Returns the amount of item entities on the ground            |
 | <target.stat.STAT_NAME> | Returns the value of the specified stat on the target             |
 | <target.raytrace.#>     | Returns the name of the block being looked at by the target if within # range, if # is specified. If only <target.raytrace> is used, then the range defaults to `4.5`. If no block is found, `AIR` is returned.|
+| <target.fovoffset{rotation=0;absolute=true}> | Returns the angular offset (in degrees) between the direction the caster is looking and the direction from the caster to the target entity. This offset can be used to determine how far the target is from the caster's center of view |
 
 ## Trigger Placeholders
 These placeholders will return whatever attribute of the entity that caused the skill to happen. For instance `<trigger.name>` combined with an `~onDeath` trigger will return the name of the entity that killed the mob.
