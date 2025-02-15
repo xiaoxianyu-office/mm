@@ -9,7 +9,7 @@ Steals an item from the target and puts it in the mob's hand
 | dropchance | dc | Sets the chance for the stolen item to be dropped upon death               | 0.0     |
 | strict    | exact, e  | Whether the matcher should more strictly match the target item       | false   |
 | types     | type, t, material, mat, m, item, i | The items to match. Can be a list           | DIRT    |
-
+| onSteal   | then      | The Metaskill to execute once an item is successfully stolen         |         |
 
 ## Examples
 ```yaml
@@ -28,3 +28,4 @@ Steals an item from the target and puts it in the mob's hand
 <!--tag:Item-->
 <!--tag:Inventory-->
 <!--tag:ItemMatcher-->
+<!--tag:Meta-Mechanic-->
