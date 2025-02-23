@@ -21,6 +21,10 @@ This skill despawns the mob immediately when it is right clicked.
 ```
 
 
+## Aliases
+- [x] delete
+
+
 <!--TAGS-->
 <!--tag:Meta-->
 <!--tag:Meta-Mechanic-->
