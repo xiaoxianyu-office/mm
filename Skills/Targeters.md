@@ -105,6 +105,7 @@ These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) ena
 | @[NearestStructure][]                                                                                                                          |    | Targets the nearest structure of the specified type within a radius in the caster's world                                                                                                                          |
 | @[VariableLocation][]                                                                                                                          | @varLocation                                                                                                                          | Targets the location stored in the specified variable                                                                                                                          |
 | @[HighestBlock][]                                                                                                                          |    | Targets the highest block at the skill origin                                                      |
+| @[PlayerLocationByName][]                                                                                                                          |    | Targets a specific player's location by their name                                                      |
 
 
 ### Multi-Location Targeters
@@ -445,6 +446,7 @@ GiveRewards:
   [Origin]: /Skills/Targeters/Origin
   [Ownerlocation]: /Skills/Targeters/Ownerlocation
   [ParentLocation]: /Skills/Targeters/ParentLocation
+  [PlayerLocationByName]: /Skills/Targeters/PlayerLocationByName
   [ProjectileForward]: /Skills/Targeters/ProjectileForward
   [SelfEyeLocation]: /Skills/Targeters/SelfEyeLocation
   [SelfLocation]: /Skills/Targeters/SelfLocation
