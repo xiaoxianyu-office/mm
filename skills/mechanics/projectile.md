@@ -7,7 +7,7 @@ It has a lot of options (more than any other mechanic) and can be a bit of a
 nightmare to jump into without knowing what you're doing.  
 It will disappear after hitting an entity or location that is able to stop the projectile. This behavior can be configured via attributes like `stopatblock`, `stopatentity` and `stopconditions`
 
-It is of importance to note that other mechanics (such as [Missile](/skills/mechanics/missile)) are an "extension" of this mechanic, and can as such use a great deal of this mechanic's attributes. The attributes that those mechanics can use are listen in [Inheritable Attributes](/skills/mechanics/projectile#inheritable-attributes)
+It is of importance to note that other mechanics (such as [Missile](/skills/mechanics/missile) and [Totem](/skills/mechanics/totem)) are an "extension" of this mechanic, and can as such use a great deal of this mechanic's attributes. The attributes that those mechanics can use are listen in [Inheritable Attributes](/skills/mechanics/projectile#inheritable-attributes)
 
 [[_TOC_]]
 
