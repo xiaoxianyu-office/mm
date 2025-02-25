@@ -1,5 +1,5 @@
 ## Description
-Creates an [aura] that, after each mechanic of its onStart [metaskill], checks if a set of conditions is met: If so, the execution of the onStart skill is immediately cancelled. This effectively adds a conditional cancel mechanic after each line of the cascading meta skill.  
+Creates an [aura] that, each tick, checks if a set of conditions is met: If so, the execution of the onStart skill is immediately cancelled. 
 
 
 ## Attributes
