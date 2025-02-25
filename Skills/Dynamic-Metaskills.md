@@ -91,7 +91,9 @@ As you already saw, the newly made metaskill is being stored inside a variable. 
 
 # Limitations
 Since this is not a planned feature, its implementations do have some problems.
-- Usage of other "skill" mechanics inline: when using "skill", "sudoskills" or other such skill mechanics directly inline will result in a console error, without the mechanic being executed. To solve this, it is necessary to continue using the vskill mechanic in place of these other ones. For the skill mechanic a simple replace will work, but to use a sudoskill you will need to make a vskill mechanic call a metaskill that executes said sudoskill mechanic itself
+- Usage of other "skill" mechanics inline: when using "skill", "sudoskills" or other such skill mechanics directly inline will result in a console error if used without delays, without the mechanic being executed. To solve this, it is necessary to do one of two things:
+- continue using the vskill mechanic in place of these other ones. For the skill mechanic a simple replace will work, but to use a sudoskill you will need to make a vskill mechanic call a metaskill that executes said sudoskill mechanic itself
+- use a delay of approximately 15 ticks before the execution of other metamechanics 
 ```yaml
 ExampleWorkaround:
   Skills:
@@ -118,6 +120,24 @@ AnotherWorkaround:
         - message{m=<caster.name>} @World
         ]}
     ]}
+
+```
+
+```yaml
+DelayWorkaround:
+  Skills:
+  - setvariable{var=skill.test;type=string;value=message} @self
+  - vskill{
+      skill=[
+        - delay 15
+        - randomskill{
+            skills=[
+              - <skill.var.test>{m=1}
+            ],
+            [
+              - <skill.var.test>{m=2}
+            ]} @self
+      ]} @self
 
 ```
 
