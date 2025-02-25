@@ -65,6 +65,7 @@ These targeters have not been tagged yet.
 | [Passenger](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Passenger) | MythicMobs | Targets the rider of the casting mob |
 | [Pin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Pin) | MythicMobs | Targets the location of a [Pin]. |
 | [PlayerByName](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/PlayerByName) | MythicMobs | Targets a specific player by their name |
+| [PlayerLocationByName](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/PlayerLocationByName) | MythicMobs | Targets a specific player's location by their name |
 | [PlayerLocationsInRadius](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/PlayerLocationsInRadius) | MythicMobs | Targets the locations of all players in a given radius around the caster |
 | [PlayersInRadius](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/PlayersInRadius) | MythicMobs | Targets all players in the given radius around the caster |
 | [PlayersInRing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/PlayersInRing) | MythicMobs | Targets all players in a ring around the caster |

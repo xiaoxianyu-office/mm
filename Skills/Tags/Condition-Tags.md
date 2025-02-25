@@ -192,6 +192,8 @@ These conditions have not been tagged yet.
 | [Worldtime](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/worldtime) | MythicMobs | Matches a range against the target location's world's time. |
 | [Yaw](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/yaw) | MythicMobs | Checks the yaw of the target entity against a range. |
 | [Ydiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ydiff) | MythicMobs | Checks the difference in y value (height) between the target entity and the caster. |
+| [Hitbox](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/Hitbox) | ModelEngine | Checks which hitbox was damaged or interacted with for multi-hitbox models |
+| [HitboxIsSubHitbox](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/HitboxIsSubHitbox) | ModelEngine | Checks if a hitbox other than the main hitbox was what triggered the skill |
 | [DrivingModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/DrivingModel) | ModelEngine | Checks if the target entity is the driver of a model |
 | [RidingModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/RidingModel) | ModelEngine | Checks if the target entity is a passenger of a model |
 | [ModelHasDriver](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/ModelHasDriver) | ModelEngine | Checks if the target modeled entity has a driver |
