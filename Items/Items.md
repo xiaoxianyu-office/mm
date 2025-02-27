@@ -29,10 +29,13 @@ example_item:
 
 #### Template
 Items can use [Templating](/Mobs/Templates) like mobs, while referencing other items.  
-Only one template can be used at a time.  
 ```yaml
 MyItem:
   Template: MyOtherItem
+```
+```yaml
+MyOtherItem:
+  Template: YetAnotherItem, AndAnotherOne
 ```
 
 <!-- 
