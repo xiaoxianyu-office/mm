@@ -312,10 +312,12 @@ flowchart TD
 ##
 
 ## Item Templates
-[Items](/Items/Items#template) can use Templating like mobs while referencing other items. One small issue: only one template can be used at a time, so [Multi Templates](#multi-templates) cannot be used on them!
+[Items](/Items/Items#template) can use Templating like mobs while referencing other items!
 ```yaml
 MyItem:
   Template: MyOtherItem
 ```
-
-But you can still get a good amount of utility out of them via [Chained Templates](#chained-templates)
+```yaml
+MyOtherItem:
+  Template: YetAnotherItem, AndAnotherOne
+```
