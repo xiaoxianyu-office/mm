@@ -9,6 +9,7 @@ The Slash meta-mechanic can execute other skills in a slash-shaped pattern. The 
 | onPointSkill   | onPoint, oP | Meta-Skill executed at every point of the slash         |               |
 | onHitEntitySkill | onHitEntity, ohe, oh | Meta-Skill executed when a point of the slash hits an entity. Only triggered once per entity for every execution of the slash mechanic                 |               |
 | Points         | p           | The amount of points in the slash                       | 32            |
+| specificStep   | ss          | Define a specific step/index from the generated points which should be shown, when the supplied value is greaten than 0 | 0 |
 | Duration       | d           | The amount of ticks the slash should "travel" for. A value of 0 executes an instantaneous slash                                                                         | 0             |
 | Width          | w           | The width of the slash. Increasing this value makes the slash's arc less arched                                                                                   | 1            |
 |  Height        | h           | The height of the slash. Increasing this value makes the slash's arc more arched                                                                                   | 1             |
