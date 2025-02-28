@@ -194,7 +194,9 @@ The player inherits the `BaseValue` of these stats; Mobs also inherit them as de
 | SAFE_FALL_DISTANCE                                          | The safe fall distance attribute         |
 | SNEAKING_SPEED                                              | The sneaking speed attribute             |
 | WATER_MOVEMENT_EFFICIENCY                                   | The water movement efficiency attribute  |
-
+| BLOCK_BREAK_SPEED                                           | The block break speed attribute          |
+| BLOCK_INTERACTION_RANGE                                     | The block interaction range attribute    |
+| ENTITY_INTERACTION_RANGE                                    | The entity interaction range attribute   |
 
 # Built-in Stats Breakdown
 
