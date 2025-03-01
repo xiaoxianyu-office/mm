@@ -298,7 +298,7 @@ ExampleMob:
     Offset: 1.8 
     
     # The Scale of the nameplate
-    Scale: 2
+    Scale: 1,1,1
 
     # If set, forces the nameplate to work with modeled entities from the ModelEngine plugin
     Mounted: true
