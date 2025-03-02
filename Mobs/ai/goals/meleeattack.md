@@ -15,5 +15,5 @@ ExampleMob:
   Type: ZOMBIE
   AIGoalSelectors:
     - clear
-    - meleeattack{s=1;fu=false;ar=4.0}
+    - meleeattack{s=1;fu=false}
 ```
