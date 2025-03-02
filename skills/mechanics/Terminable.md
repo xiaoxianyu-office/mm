@@ -5,9 +5,9 @@ Creates an [aura] that, each tick, checks if a set of conditions is met: If so, 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| terminateconditions | conditions, cond, c | The conditions to check against                  | null    |
+| terminateconditions | conditions, cond, c | The conditions to check against                  |<!--type:Conditions-->|
 | deep      |           | Whether the terminable aura, once its conditions have been met, should also stop the execution of the [metaskill] it has been called from                                       | false   |
-| onterminate | ox      | The [metaskill] to execute once the onStart is terminated            |         |
+| onterminate | ox      | The [metaskill] to execute once the onStart is terminated            |<!--type:Metaskill-->|
 > This mechanic inherits every attribute of the [aura] mechanic
 
 ### Deep Attribute

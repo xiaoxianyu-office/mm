@@ -159,8 +159,8 @@ Every condition shares and can use the following attributes
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onFailSkill | onFail  | The Metaskill to call if this condition does not check               |         |
-| onPassSkill | onPass  | The Metaskill to call if this condition does check                   |         |
+| onFailSkill | onFail  | The Metaskill to call if this condition does not check               |<!--type:Metaskill-->|
+| onPassSkill | onPass  | The Metaskill to call if this condition does check                   |<!--type:Metaskill-->|
 
 
 # Additional Conditions

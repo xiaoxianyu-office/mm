@@ -14,7 +14,7 @@ Creates a tornado styled particle effect.
 | sliceheight | sh      | Any value below 1 will cause an incomplete tornado, while anything above 10 will cause different sized spheres to appear in a strange order. This has yet to be fully defined   | 64      |
 | stoponcasterdeath | scd | Whether the effect should stop upon the death of its caster        | true    |
 | stoponentitydeath | sed |Whether the effect should stop upon the death of the entity it is used on|true|
-| cloudparticle | cp    | The particle type at the base of the tornado. Typically something like the “impact” as a tornado spins around, hence the largeexplode default value                    |largeexplode|
+| cloudparticle | cp    | The particle type at the base of the tornado. Typically something like the “impact” as a tornado spins around, hence the largeexplode default value                    |largeexplode<!--type:Particle-->|
 | cloudsize | cs        | The radius of the cloud's particle appearances                       | 5       |
 | cloudamount | ca      | How many particles will appear at each randomly generated cloud location. | 1  |
 | cloudhspread | chs    | The horizontal spreading of the cloud.                               | 1       |

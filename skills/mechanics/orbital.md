@@ -14,7 +14,7 @@ Added projectile bullets to Orbital in MM 4.11. See how to use them on the [proj
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onHit     | oH, onhitskill | Meta-Skill executed when the projectile hits something. Targets hit are inherited by the meta-skill                                                                    |         |
+| onHit     | oH, onhitskill | Meta-Skill executed when the projectile hits something. Targets hit are inherited by the meta-skill                                                                    |<!--type:Metaskill-->|
 | radius    | r         | The radius of the orbit around the target                            | 4       |
 | hitRadius | hr        | The radius around the orbital in which targets can be hit            | 1       |
 | verticalHitRadius | vhr, vr | The y component of the hitradius                           | `hitradius` |                                                                                                                       

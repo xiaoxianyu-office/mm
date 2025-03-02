@@ -17,7 +17,7 @@ effects!
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onBounce  | ob, m, meta, onbounceskill, ontick, ontickskill, ot, s, skill | The skill that bounces between targets                                                                                |         |
+| onBounce  | ob, m, meta, onbounceskill, ontick, ontickskill, ot, s, skill | The skill that bounces between targets                                                                                |<!--type:Metaskill-->|
 | bounces   | b         | How many times the chain should bounce                               | 2       |
 | delay     | d, bd, bouncedelay, i, interval | The delay between bounces                      | 1       |
 | radius    | r, bounceradius, bouncerange, range | How far the skill will bounce to a new target | 5    |
@@ -25,7 +25,7 @@ effects!
 | hitTarget | ht        | Whether the chain should do the initial from the caster to the first target | true    |
 | hitPlayers | hp       | Whether the chain should bounce to players                           | true    |
 | hitNonPlayers | hnp   | Whether the chain should bounce to non-players                       | false   |
-| bounceConditions | conditions, cond, c | Conditions applied to the bounce target             |         |
+| bounceConditions | conditions, cond, c | Conditions applied to the bounce target             |<!--type:Conditions-->|
 
 
 ## Examples

@@ -6,7 +6,7 @@ shulkers or sheeps.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| color     | c         | The color name                                                       |         |
+| color     | c         | The color name                                                       |<!--type:DyeColor-->|
 
 
 ## Examples

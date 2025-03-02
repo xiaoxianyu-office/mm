@@ -7,7 +7,7 @@ Applies an [aura] to the target that triggers a skill when they jump.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onJump    | oJ, onjumpskill | The Metaskill to execute if the target jumps                   |         |
+| onJump    | oJ, onjumpskill | The Metaskill to execute if the target jumps                   |<!--type:Metaskill-->|
 | cancelevent | cE      | Whether to cancel the event when it is triggered                     | false   |
 > This mechanic inherits every attribute of the [aura] mechanic
 

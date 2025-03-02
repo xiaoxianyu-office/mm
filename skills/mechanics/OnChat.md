@@ -8,7 +8,7 @@ Applies an [aura] on the target player that triggers a [metaskill] when they typ
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onChatSkill | onchat, oc, then  | The [metaskill] to execute when the player chats           |         |
+| onChatSkill | onchat, oc, then  | The [metaskill] to execute when the player chats           |<!--type:Metaskill-->|
 
 > This mechanic inherits every attribute of the [aura] mechanic
 

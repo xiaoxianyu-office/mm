@@ -14,7 +14,7 @@ To utilize the summon mechanic in Mythic Mobs, you will need the following:
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | type      | t, mob, m| The type of mob to summon. Can be a Mythic Mob type or a regular entity type                                                                 | SKELETON      |
-| onSummon  | onsummonskill, then | The [metaskill] to execute on the summoned mobs            |         |
+| onSummon  | onsummonskill, then | The [metaskill] to execute on the summoned mobs            |<!--type:Metaskill-->|
 | amount    | a         | The number of mobs to summon.                                        | 1       |
 | level     | l         | The level of the mob being summoned                                  | 0       |
 | yaw       |           | The yaw of the summoned entities. If not set, will inherit the caster's |      |
@@ -56,3 +56,4 @@ RaiseSkeletons:
 
 <!--TAGS-->
 <!--tag:Summon-->
+<!--tag:Meta-Mechanic-->

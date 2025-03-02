@@ -229,6 +229,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [SetProjectileDirection](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetProjectileDirection) | MythicMobs | Sets the calling projectile's movement direction to the given target |
 | [Tracklocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/tracklocation) | MythicMobs | Sets the casting mob's tracked location to the targeted location |
 | [Signal](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/signal) | MythicMobs | Sends a signal to the specified targeter |
+| [Setskillcooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setskillcooldown) | MythicMobs | Sets the given metakill's cooldown to the given value (in seconds) |
 | [Switch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Switch) | MythicMobs | A switch allows a condition to be tested against a list of (cases) values |
 | [Endprojectile](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/endprojectile) | MythicMobs | Terminates the projectile this mechanic has been called from, activating its onEnd skill in the process |
 
@@ -243,15 +244,21 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Chainmissile](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/chainmissile) | MythicMobs | Shoots a chaining homing missile at the target   |
 | [Skill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/skill) | MythicMobs | Executes another [MetaSkill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Metaskills), which must be located in |
 | [Variableskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/variableskill) | MythicMobs | Executes another meta-skill like the [Skill mechanic](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/skill), but allows for placeholders inside the skill attribute |
+| [Pickupitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/pickupitem) | MythicMobs | Pick up the targeted item, if the caster is a player |
 | [Polygon](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/polygon) | MythicMobs | The Polygon meta-mechanic can execute other skills in a polygon-shaped pattern |
 | [Projectile](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/projectile) | MythicMobs | The Projectile skill fires a meta-"projectile" that can be decorated |
+| [PushBlock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PushBlock) | MythicMobs | Pushes the block at the target location in the given direction using piston logic |
 | [Randomskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/randomskill) | MythicMobs | Executes a random skill from the list of supplied [skills](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/skill) |
 | [Raytrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytrace) | MythicMobs | Traces a ray to the target |
 | [Raytraceto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytraceto) | MythicMobs | Traces a ray to the target, like the [Raytrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/raytrace) mechanic, but with additional attributes regarding the start and end position of the ray |
 | [Remove](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/remove) | MythicMobs | Removes the targeted entity from existence |
+| [Shoot](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shoot) | MythicMobs | Shoots an arrow or item-projectile at the targeted entity or location |
+| [Shootshulkerbullet](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shootshulkerbullet) | MythicMobs | Shoots a shulker bullet at the target entity, giving them levitation on hit |
+| [Setskillcooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setskillcooldown) | MythicMobs | Sets the given metakill's cooldown to the given value (in seconds) |
 | [Slash](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/slash) | MythicMobs | The Slash meta-mechanic can execute other skills in a slash-shaped pattern |
 | [StealItem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StealItem) | MythicMobs | Steals an item from the target and puts it in the mob's hand |
 | [Sudoskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/sudoskill) | MythicMobs | The SudoSkill mechanic allows you to force the targeted entity to “cast” |
+| [Summon](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/summon) | MythicMobs | Summons mobs of the given type around the target |
 | [Switch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Switch) | MythicMobs | A switch allows a condition to be tested against a list of (cases) values |
 | [Totem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/totem) | MythicMobs | The totem mechanic places an invisible "totem", similar to the |
 | [Volley](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/volley) | MythicMobs | Shoots a volley of arrows or item-projectiles at the targeted entity or |
@@ -280,7 +287,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Orbital](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/orbital) | MythicMobs | The Orbital skill fires a special type of |
 | [StatAura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StatAura) | MythicMobs | Applies an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) to the target that applies a specific [stat](Stats) to them |
 | [Stun](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/stun) | MythicMobs | Holds the target in place temporarily |
-| [Terminable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Terminable) | MythicMobs | Creates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/aura) that, after each mechanic of its onStart [metaskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Metaskills), checks if a set of conditions is met: If so, the execution of the onStart skill is immediately cancelled |
+| [Terminable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Terminable) | MythicMobs | Creates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/aura) that, each tick, checks if a set of conditions is met: If so, the execution of the onStart skill is immediately cancelled |
 | [Onjump](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onjump) | MythicMobs | Applies an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) to the target that triggers a skill when they jump |
 
 
@@ -526,7 +533,6 @@ These mechanics have not been tagged yet.
 | [Shieldbreak](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shieldbreak) | MythicMobs | Breaks the target player's shield block if they are blocking |
 | [Shield](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shield) | MythicMobs | Adds absorption hearts |
 | [Shieldpercent](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shieldpercent) | MythicMobs | Applies an absorb shield to the target entity for a percentage of their |
-| [Setskillcooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setskillcooldown) | MythicMobs | Sets the given metakill's cooldown to the given value (in seconds) |
 | [ConsumeAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeAmmo) | MythicCrucible | Consumes ammo to execute a skill |
 | [ReloadAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ReloadAmmo) | MythicCrucible | will search the caster's inventory for the configured ammo item (or another item if overridden), and for each item it finds it will consume it and add ammo to the item. |
 | [ConsumeItemDurability](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeItemDurability) | MythicCrucible | Consume the durability of an item |

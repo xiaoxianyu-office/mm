@@ -6,7 +6,7 @@ Pick up the targeted item, if the caster is a player.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | fakelooting | fl      | Whether a fake looting animation should be played                    | true    |
-| onpickup  | pickup, then | The [metaskill] to execute once the item is picked up             |         |
+| onpickup  | pickup, then | The [metaskill] to execute once the item is picked up             |<!--type:Metaskill-->|
 
 ### OnPickup Attribute
 The called metaskill will have some of its linked data overriden/set to be the following
@@ -27,3 +27,4 @@ The called metaskill will have some of its linked data overriden/set to be the f
 <!--TAGS-->
 <!--tag:Item-->
 <!--tag:World-->
+<!--tag:Meta-Mechanic-->

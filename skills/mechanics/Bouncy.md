@@ -5,7 +5,7 @@ Applies an aura to the target that makes it bouncy
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onBounceSkill | onbounce, ob | The metaskill to execute on bounce                            |         |
+| onBounceSkill | onbounce, ob | The metaskill to execute on bounce                            |<!--type:Metaskill-->|
 | cancelevent | ce, canceldamage, cd | Whether to cancel fall damage for the duration of the aura| false |
 > This mechanic inherits every attribute of the [Aura](Skills/Mechanics/Aura) mechanic
 

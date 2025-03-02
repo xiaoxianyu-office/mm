@@ -5,7 +5,7 @@ Removes the targeted entity from existence. Does not work on players.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onRemoveSkill | onRemove, then | The Metaskill to execute once an entity is removed          |         |
+| onRemoveSkill | onRemove, then | The Metaskill to execute once an entity is removed          |<!--type:Metaskill-->|
 
 
 ## Examples

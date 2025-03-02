@@ -8,7 +8,7 @@ Sets the given metakill's cooldown to the given value (in seconds)
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| skill     | s   | The [metaskill] of which you want to set the cooldown                      |         |
+| skill     | s   | The [metaskill] of which you want to set the cooldown                      |<!--type:Metaskill-->|
 | seconds   | sec, time, t | The duration of the cooldown                                      | 0       |
 
 
@@ -39,3 +39,8 @@ ExampleSkill:
 
 <!-- ALIASES -->
 [metaskill]: /Skills/Metaskills
+
+
+<!--TAGS-->
+<!--tag:Meta-->
+<!--tag:Meta-Mechanic-->

@@ -7,7 +7,7 @@ This mechanic is also an [aura].
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | path      | p         | A list of either coordinates in the format `(x,y,z)` or [targeters]  |         |
-| onGoalSkill| onGoal, og, then | The [metaskill] to execute when the last point is reached    |         |
+| onGoalSkill| onGoal, og, then | The [metaskill] to execute when the last point is reached    |<!--type:Metaskill-->|
 | tolerance |           | The minimum distance the mob must be from each point in order to having "reached" it                                                                                   | 2       |
 | speed     | s         | The speed multiplier of the movement                                 | 1       |
 | duration  | ticks, t, d, time, t | The maximum duration of the mechanic. Unless set, it's the maximum possible value for an integer  |         |

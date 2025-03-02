@@ -8,8 +8,8 @@ Mechanic follows piston rules and will push other connected slime blocks as well
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | direction | dir, d    | The direction of the movement. Can also be a Targeter                | NORTH<!--type:NORTH,SOUTH,EAST,WEST,UP,DOWN-->|
-| onPush    | then      | The metaskill to execute once the block has been successfully pushed |         |
-| onFail    |           | The metaskill to execute if the block failed to be pushed            |         |
+| onPush    | then      | The metaskill to execute once the block has been successfully pushed |<!--type:Metaskill-->|
+| onFail    |           | The metaskill to execute if the block failed to be pushed            |<!--type:Metaskill-->|
 
 ### Direction Attribute
 The direction attribute can either be a `named direction` or a `targeter`
@@ -43,3 +43,4 @@ You can also use a targeter in as the attribute value's, like the following
 
 <!--TAGS-->
 <!--tag:World-->
+<!--tag:Meta-Mechanic-->

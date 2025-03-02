@@ -9,7 +9,7 @@ Rallies nearby mobs of the given types to focus-attack the given target.
 | radius    | r, hradius, hr | The radius (in blocks) in which to search for mobs to rally     | 10      |                                                              
 | vradius   | vr        | Overrides the vertical component of the radius.                      | radius  |
 | overwritetarget | ot      | Whether to rally mobs that already have a target                 | true    |
-| rallyconditions | conditions, cond, c | A list of conditions that the entities must pass in order to be rallied                                                                                        |         |
+| rallyconditions | conditions, cond, c | A list of conditions that the entities must pass in order to be rallied                                                                                        |<!--type:Conditions-->|
   
 
 ## Examples

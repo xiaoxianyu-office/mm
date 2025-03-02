@@ -4,10 +4,10 @@ The Slash meta-mechanic can execute other skills in a slash-shaped pattern. The 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onStartSkill   | onStart, oS | Meta-Skill executed at the start of the slash           |               |
-| onEndSkill     | onEnd, oE   | Meta-Skill executed at the end of the slash             |               |
-| onPointSkill   | onPoint, oP | Meta-Skill executed at every point of the slash         |               |
-| onHitEntitySkill | onHitEntity, ohe, oh | Meta-Skill executed when a point of the slash hits an entity. Only triggered once per entity for every execution of the slash mechanic                 |               |
+| onStartSkill   | onStart, oS | Meta-Skill executed at the start of the slash           |<!--type:Metaskill-->|
+| onEndSkill     | onEnd, oE   | Meta-Skill executed at the end of the slash             |<!--type:Metaskill-->|
+| onPointSkill   | onPoint, oP | Meta-Skill executed at every point of the slash         |<!--type:Metaskill-->|
+| onHitEntitySkill | onHitEntity, ohe, oh | Meta-Skill executed when a point of the slash hits an entity. Only triggered once per entity for every execution of the slash mechanic                 |<!--type:Metaskill-->|
 | Points         | p           | The amount of points in the slash                       | 32            |
 | specificStep   | ss          | Define a specific step/index from the generated points which should be shown, when the supplied value is greaten than 0 | 0 |
 | Duration       | d           | The amount of ticks the slash should "travel" for. A value of 0 executes an instantaneous slash                                                                         | 0             |
@@ -29,7 +29,7 @@ The Slash meta-mechanic can execute other skills in a slash-shaped pattern. The 
 | MatchCasterDirection | matchPlayerDirection, matchDirection, mcd, mpd, md, direction                    | Matches the direction of the slash to the caster's facing direction                    | true          |
 | directionTowardsTarget | dtt | If the yaw/pitch should be calculated to aim to the target | false      |
 | FromOrigin     |             | If the slash should start in the origin of the metaskill | false        |
-| HitConditions  | conditions, cond, c, oC, hC | List of [Inline Conditions](/Skills/Inline-Conditions) that an entity must met to be hit by the slash mechanic            |               |
+| HitConditions  | conditions, cond, c, oC, hC | List of [Inline Conditions](/Skills/Inline-Conditions) that an entity must met to be hit by the slash mechanic            |<!--type:Conditions-->|
 
 ## Examples
 This is a basic example of how a slash mechanic might look like once implemented

@@ -5,7 +5,7 @@ Applies an aura to the target that triggers a skill when they place a block
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onPlaceSkill | onplace, op | Skill to execute if the target places a block                   |         |
+| onPlaceSkill | onplace, op | Skill to execute if the target places a block                   |<!--type:Metaskill-->|
 | cancelEvent  | cancel, cE  | Whether or not to cancel the event that triggered the aura      | false   |
 
 > This mechanic inherits every attribute of the [aura] mechanic

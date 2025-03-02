@@ -7,7 +7,7 @@ be set to *false* later in a skill-tree.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| skill     | s, $, (), m, mechanics, meta | The metaskill to be executed. Accepts [Placeholders](/Skills/Placeholders)  |  |
+| skill     | s, $, (), m, mechanics, meta | The metaskill to be executed. Accepts [Placeholders](/Skills/Placeholders)  |<!--type:Metaskill-->|
 | forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft   | false   |
 | branch    | b, fork, f| Whether the called metaskill's skilltree should [branch](/skills/mechanics/skill#branch-attribute) off from the skilltree of the calling mechanic      | false   |
 | executeafterdeath | continueafterdeath | Whether the metaskill should be able to be called after the caster's death                                                                                 | false   |

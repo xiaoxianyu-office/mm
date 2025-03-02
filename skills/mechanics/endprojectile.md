@@ -5,7 +5,7 @@ Terminates the projectile this mechanic has been called from, activating its onE
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| conditions| condition, cond, con | The conditions to check before terminating the projectile |         |
+| conditions| condition, cond, con | The conditions to check before terminating the projectile |<!--type:Conditions-->|
 
 ##Examples
 

@@ -15,13 +15,13 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 ### Inheritable Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onStartSkill | onStart, oS | Meta-Skill executed when the projectile starts at the projectile's origin location.                                                                                      |         |
-| onTickSkill  | onTick, oT, m, meta, s, skill | Meta-Skill executed every [interval] ticks at the projectile's origin location                                                                                       |         |
-| onHitSkill   | onHit, oH   | Meta-Skill executed when the projectile hits entities that are allowed be hit. Targets hit are inherited by the meta-skill.                                              |         |
-| onEndSkill   | onEnd, oE   | Meta-Skill executed when the projectile ends.                   |         |
-| onBounceSkill| onBounce    |Meta-Skill executed when the projectile bounces. **Premium Only**.|        |
-| onHitBlockSkill |onHitBlock, ohb | Meta-Skill executed when the projectile hits a block.     |         |
-| onInteractSkill |onInteract| Meta-Skill executed when the projectile is interacted with.     |         |
+| onStartSkill | onStart, oS | Meta-Skill executed when the projectile starts at the projectile's origin location.                                                                                      |<!--type:Metaskill-->|
+| onTickSkill  | onTick, oT, m, meta, s, skill | Meta-Skill executed every [interval] ticks at the projectile's origin location                                                                                       |<!--type:Metaskill-->|
+| onHitSkill   | onHit, oH   | Meta-Skill executed when the projectile hits entities that are allowed be hit. Targets hit are inherited by the meta-skill.                                              |<!--type:Metaskill-->|
+| onEndSkill   | onEnd, oE   | Meta-Skill executed when the projectile ends.                   |<!--type:Metaskill-->|
+| onBounceSkill| onBounce    |Meta-Skill executed when the projectile bounces. **Premium Only**.|<!--type:Metaskill-->|
+| onHitBlockSkill |onHitBlock, ohb | Meta-Skill executed when the projectile hits a block.     |<!--type:Metaskill-->|
+| onInteractSkill |onInteract| Meta-Skill executed when the projectile is interacted with.     |<!--type:Metaskill-->|
 | BulletType   | bullet, b   | The type of the bullet. If set, additional attributes becomes available depending on the specified bullet type. A list of bullet types and associated attributes is available [below](/skills/mechanics/projectile#projectile-bullets)                                       | <!--type:Projectile_BulletType-->|
 | Interval  | int, i      | How often (in ticks) the projectile updates its position           | 1       |
 | HorizontalRadius | hRadius, hR, r | The horizontal radius entities will be hit in around the projectile.                                                                                                                                    | 1.25    |

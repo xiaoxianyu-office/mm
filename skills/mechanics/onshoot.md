@@ -9,7 +9,7 @@ Applies an aura to the target that triggers a skill when they shoot with a bow. 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onShootSkill | onshoot, osh, onbowshoot, onbowshootskill | Skill to execute when the entity shoots |   |
+| onShootSkill | onshoot, osh, onbowshoot, onbowshootskill | Skill to execute when the entity shoots |<!--type:Metaskill-->|
 | cancelEvent | cE      | Whether or not to cancel the event that triggered the aura           | false   |
 | forceaspower | fap    | Whether to pass the force of the bow as the skill's power            | true    |
 

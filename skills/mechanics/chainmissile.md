@@ -10,7 +10,7 @@ Shoots a chaining homing missile at the target
 | bounces   | b         | How many times the chain should bounce                               | 2       |
 | bounceradius | bouncerange, radius, range, r | How far the skill will bounce to a new target | 5       |
 | returnToCaster | return, rtc | If the missile should return to the caster | false | 
-| bounceConditions | conditions, cond, c | The conditions for the skill to bounce, similar to the [chain](/skills/mechanics/chain) mechanic |  | 
+| bounceConditions | conditions, cond, c | The conditions for the skill to bounce, similar to the [chain](/skills/mechanics/chain) mechanic |<!--type:Conditions-->| 
 > This mechanic inherits every attribute of the [Missile](Skills/Mechanics/Missile) mechanic
 
 

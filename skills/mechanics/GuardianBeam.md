@@ -9,9 +9,9 @@ Draws a guardian beam between the origin and the target.
 | interval  | int, i    | How often the effect will tick                                       | 1       |
 | startYOffset | syo    | The starting y offset of the beam                                    | 1       |
 | fromOrigin | fo       | Whether to make the effect start from the @origin instead of from @self| false |
-| onstartskill | onstart, os | Metaskill to execute when the effect starts                     |         |
-| ontickskill | ontick, ot | Metaskill to execute each interval tick                           |         |
-| onendskill | onend, oe | Metaskill to execute when the effect ends                           |         |
+| onstartskill | onstart, os | Metaskill to execute when the effect starts                     |<!--type:Metaskill-->|
+| ontickskill | ontick, ot | Metaskill to execute each interval tick                           |<!--type:Metaskill-->|
+| onendskill | onend, oe | Metaskill to execute when the effect ends                           |<!--type:Metaskill-->|
 
 
 ## Examples

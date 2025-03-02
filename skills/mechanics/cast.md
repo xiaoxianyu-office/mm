@@ -15,9 +15,9 @@ will also interrupt casting, such as cancelling on move or teleport.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onCastSkill | oncast, oc | Skill to execute if the cast finishes successfully                   |      |
-| onInterruptedSkill | oninterrupted, oninterrupt, oi | Skill to execute if the cast is interrupted |    |
-| onnotargetsskill | onnotargets, onnotarget, ont | Skill to execute if no target is found     |         |
+| onCastSkill | oncast, oc | Skill to execute if the cast finishes successfully                   |<!--type:Metaskill-->|
+| onInterruptedSkill | oninterrupted, oninterrupt, oi | Skill to execute if the cast is interrupted |<!--type:Metaskill-->|
+| onnotargetsskill | onnotargets, onnotarget, ont | Skill to execute if no target is found     |<!--type:Metaskill-->|
 | skillname | spellname, sn | Display name of the spell in the cast bar                        |         |
 | showCastBar | castbar, cb | Whether to show the cast bar                                     | true    |
 | cancelOnMove | com    | Whether to cancel the aura if the caster moves                       | false   |

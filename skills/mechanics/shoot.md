@@ -17,10 +17,10 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 | maxDistance | md      | The maximum distance the projectile will travel                      | 64      |
 | poweraffectsvelocity | pav | Whether the mobs power level should affect the velocity of the projectile                 | true    |
 | interval  | int, i    | How often per second the projectile creates a tick-event             | 4       |
-| item      |           | The item being shot. Only applicable to some projectile types        |         |
-| ontickskill | ontick, ot, m, meta, s, skill | The meta-skill to execute on each tick/interval of the projectile | None |
-| onhitskill | onhit, oh| The meta-skill to execute when the projectile hits its target        |         |
-| onendskill | onend, oe| The meta-skill to execute when the projectile misses and ends        |         |
+| item      |           | The item being shot. Only applicable to some projectile types        |<!--type:Material-->|
+| ontickskill | ontick, ot, m, meta, s, skill | The meta-skill to execute on each tick/interval of the projectile |<!--type:Metaskill-->|
+| onhitskill | onhit, oh| The meta-skill to execute when the projectile hits its target        |<!--type:Metaskill-->|
+| onendskill | onend, oe| The meta-skill to execute when the projectile misses and ends        |<!--type:Metaskill-->|
 | bounce    |           | Whether the projectile will bounce when it hits something            | false   |
 | pickup    |           | Can pickup the item.                                                 | false   |
 | expiration | duration, expire, e | How many ticks should the projectile exist for after it has landed before it gets removed                                                                         | 100     |
@@ -93,3 +93,4 @@ ArrowBarrage:
 
 <!--TAGS-->
 <!--tag:Projectile-->
+<!--tag:Meta-Mechanic-->

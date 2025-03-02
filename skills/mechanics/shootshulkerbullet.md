@@ -11,9 +11,9 @@ Shoots a shulker bullet at the target entity, giving them levitation on hit.
 | damage    | d         | The damage of the bullet                                             | 5       |
 | bounce    |           | Whether the bullet should bounce                                     | false   |
 | interval  | int, i    | how often in ticks this mechanic updates                             | 4       |
-| onTick    | oT, m, meta, ontickskill, s, skill | the skill this mechanic calls each interval |         |
-| onHit     | oH, onhitskill | the skill this mechanic calls when it hits the target           |         |
-| onEnd     | oE, onendskill | the skill this mechanic calls when it ends                      |         |
+| onTick    | oT, m, meta, ontickskill, s, skill | the skill this mechanic calls each interval |<!--type:Metaskill-->|
+| onHit     | oH, onhitskill | the skill this mechanic calls when it hits the target           |<!--type:Metaskill-->|
+| onEnd     | oE, onendskill | the skill this mechanic calls when it ends                      |<!--type:Metaskill-->|
 | startyoffset | syo    | The starting y offset of the bullet                                  | 0       |
 | forwardoffset | startfoffset, sfo | The forward offset of the bullet                         | 0       |
 
@@ -44,3 +44,4 @@ TSSB_oE:
 
 <!--TAGS-->
 <!--tag:Projectile-->
+<!--tag:Meta-Mechanic-->

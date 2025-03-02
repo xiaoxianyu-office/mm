@@ -5,7 +5,7 @@ Applies an aura to the target that triggers a skill when they swing (left click)
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onSwing   | onswingskill, osw | Skill to execute if the target swings / left clicks          |         |
+| onSwing   | onswingskill, osw | Skill to execute if the target swings / left clicks          |<!--type:Metaskill-->|
 
 > This mechanic inherits every attribute of the [aura] mechanic
 

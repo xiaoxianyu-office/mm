@@ -7,7 +7,7 @@ Applies an aura to an entity that triggers a skill when they are interacted with
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onrightclickskill | oninteractskill, onrightclick, oninteract, or, oi | Skill to execute if the target player interacts with a block or the target entity is interacted by a player                   |         |
+| onrightclickskill | oninteractskill, onrightclick, oninteract, or, oi | Skill to execute if the target player interacts with a block or the target entity is interacted by a player                   |<!--type:Metaskill-->|
 
 > This mechanic inherits every attribute of the [aura] mechanic
 

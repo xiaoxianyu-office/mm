@@ -5,8 +5,8 @@ Executes a random skill from the list of supplied [skills](/skills/mechanics/ski
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| skills    | s,  m, meta, metas  | The list of skills to execute, must be separated by a `,`  |         |
-| fallbackskill | fbskill, fbs | the metaskill to run if condition checks fail for all skills in the randomskill list |      |
+| skills    | s,  m, meta, metas  | The list of skills to execute, must be separated by a `,`  |<!--type:Metaskill-->|
+| fallbackskill | fbskill, fbs | the metaskill to run if condition checks fail for all skills in the randomskill list |<!--type:Metaskill-->|
 
 ## Weight
 You can also make your skills be executed with different chances via the weight system by simply adding a space and a number after the skill names. Skills without a weight will default to weight 1. The higher the number the higher chance that skill has for being picked.

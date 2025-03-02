@@ -5,7 +5,7 @@ Applies an aura to the target that triggers a skill when they die
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onDeathSkill | od     | Skill to execute if the target dies                                  |         |
+| onDeathSkill | od     | Skill to execute if the target dies                                  |<!--type:Metaskill-->|
 
 > This mechanic inherits every attribute of the [aura] mechanic
 

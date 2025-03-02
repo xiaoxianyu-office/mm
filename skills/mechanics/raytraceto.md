@@ -13,9 +13,9 @@ Traces a ray to the target, like the [Raytrace](/skills/mechanics/raytrace) mech
 | useeyelocation | uel  | If they ray should start from the eye location of the caster         | false   |
 | forwardoffset| startfoffset, sfo | The forward offset of the starting point of the ray       | 0       |
 | sideoffset| soffset, sso | The side offset of the starting point of the ray                  | 0       |
-| entityskill   | eskill, es | meta-skill to use when the ray hits an entity                   |         |
-| locationskill | lskill, ls | meta-skill to use when the ray hits a location                  |         |
-| headshotskill | hsskill, hs | meta-skill to use when it's a headshot                         |         |
+| entityskill   | eskill, es | meta-skill to use when the ray hits an entity                   |<!--type:Metaskill-->|
+| locationskill | lskill, ls | meta-skill to use when the ray hits a location                  |<!--type:Metaskill-->|
+| headshotskill | hsskill, hs | meta-skill to use when it's a headshot                         |<!--type:Metaskill-->|
 | maxdistance   | distance, md, d | max distance to trace                                      | 50      |
 | raywidth      | rw, w      | Width of the ray traced                                         | 0.2     | 
 | ignorepassableblocks | ignorepassable, ip    | ignores collision of passable blocks                                                                                                                     | true          |
@@ -23,7 +23,7 @@ Traces a ray to the target, like the [Raytrace](/skills/mechanics/raytrace) mech
 | accuracy             | ac, a                 | spread of the traced ray                                                                                                                                 | 1             |
 | verticalnoise        | vn                    | vertical spread of the ray                                                                                                                               | 0             |
 | horizontalnoise      | hn                    | horizontal spread of the ray                                                                                                                             | 0             |
-| raytraceConditions   | rc, rcond, rconditions| Conditions applied to the raytraced target                                                                                                               | NONE          |
+| raytraceConditions   | rc, rcond, rconditions| Conditions applied to the raytraced target                                                                                                               |<!--type:Conditions-->|
 | headshotmultiplier   | hsmultipler, hsm     | headshot power multiplier                                                                                                                                | 1             |
 
 
