@@ -338,6 +338,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [TargetWithin](/skills/conditions/targetwithin)                               | Entity   | Tests if the target's target is within a certain distance                                    |
 | [TargetNotWithin](/skills/conditions/targetnotwithin)                         | Entity   | Tests if the target's target is not within a certain distance                                |
 | [Targets](/skills/conditions/targets)                                         | Meta     | Tests if the number of inherited targets from the parent skilltree matches the given range.  |
+| [TemplateType](/skills/conditions/TemplateType)                               | Entity   | Checks if the target mob extends the specified Template                                       |
 | [Thundering](/skills/conditions/thundering)                                   | Location | If it's thundering in the target world                                                  |
 | [TriggerBlockType](/skills/conditions/TriggerBlockType)                       | Meta     | Checks against the material type that triggered the skill                              |
 | [TriggerItemType](/skills/conditions/TriggerItemType)                         | Meta     | Checks against the item material type that triggered the skill                         |
