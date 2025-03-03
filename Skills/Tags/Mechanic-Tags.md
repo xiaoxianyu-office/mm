@@ -556,6 +556,7 @@ These mechanics have not been tagged yet.
 | [UpdateLore](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/UpdateLore) | MythicCrucible | Reparses the lore in your item config |
 | [ResetAttackCooldown](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ResetAttackCooldown) | MythicCrucible | Resets the attack cooldown of the item in hand |
 | [SetCompassLocation](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetCompassLocation) | MythicCrucible | Sets the location a compass points to |
+| [SetCompassLodestone](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetCompassLodestone) | MythicCrucible | Sets the location a compass points to as a lodestone location |
 | [Setcrossbowcharged](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/setcrossbowcharged) | MythicCrucible | Sets the target player's held crossbow's CustomModelData and visualy sets it as either charged or not charged. |
 | [SetItemCustomModelData](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetItemCustomModelData) | MythicCrucible | Sets the CustomModelData of the used item |
 | [SetItemDisplay](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetItemDisplay) | MythicCrucible | Sets the item display name |

@@ -7,7 +7,7 @@ You can find a list of valid damage causes on the [Spigot Javadoc](https://hub.s
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| damagecause | cause, c | The damage cause to match                                     | ENTITY_ATTACK |
+| damagecause | cause, c | The damage cause to match                                     | ENTITY_ATTACK<!--type:DamageCause-->|
 
 
 ## Examples

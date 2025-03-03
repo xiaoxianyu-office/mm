@@ -7,7 +7,7 @@ Targets all blocks in a radius of the inherited targets.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | radius    | r         | The radius of the targeter                                           | 2       |
 | radiusy   | ry, yradius, yr | The y component of the radius                                  | radius  |
-| shape     | s         | The shape of the selected blocks. Can be `SPHERE`, `CUBE`            | SPHERE  |
+| shape     | s         | The shape of the selected blocks. Can be `SPHERE`, `CUBE`            | SPHERE<!--type:Shape-->|
 | noise     | n         | The randomness of the targeter                                       | 0       |
 | noair     | na        | Whether air should not be targeted                                   | true    |
 | onlyair   | oa        | Whether only air should be targeted                                  | false   |

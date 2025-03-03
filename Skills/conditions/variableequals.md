@@ -7,7 +7,7 @@ A condition that checks the value of a [variable](/Skills/Variables).
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | variable  | name, n, var, key, k | The name of the variable. Can optionally be prefixed with scope|    |
 | value| val, v | The value that the variable must equal to return true. Must be applicable for type or the mechanic will fail. Should be surrounded in double-quotes if using spaces. Value can also include placeholders, even from PlaceholderAPI.                                                        |         |
-| scope| s| The [scope](/Skills/Variables#variable-scopes) of the variable, e.g. where the variable is located                                                                                        |         |
+| scope| s| The [scope](/Skills/Variables#variable-scopes) of the variable, e.g. where the variable is located                                                                                        |<!--type:VariableScope-->|
 
 
 ## Examples

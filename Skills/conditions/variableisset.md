@@ -6,7 +6,7 @@ Checks if the given [variable](/Skills/Variables) is set.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | variable  | name, n, var, key, k | The name of the variable. Can optionally be prefixed with scope|    |
-| scope     | s         | The [scope](/Skills/Variables#variable-scopes) of the variable, e.g. where the variable is located                                                                            |         |
+| scope     | s         | The [scope](/Skills/Variables#variable-scopes) of the variable, e.g. where the variable is located                                                                            |<!--type:VariableScope-->|
 
 
 ## Examples

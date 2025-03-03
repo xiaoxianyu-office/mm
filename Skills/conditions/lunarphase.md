@@ -5,7 +5,7 @@ Checks for the current lunar phase
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| phases    | p, phase  | the lunar phase/s you want to check for. Can be a list.              | 0       |
+| phases    | p, phase  | the lunar phase/s you want to check for. Can be a list.              | 0<!--type:0,1,2,3,4,5,6,7--><!--list-->|
 
 ### Phase Attribute
 Please note that you **MUST** use the phase number. This chart is here to help you match the lunar phase to its number.
