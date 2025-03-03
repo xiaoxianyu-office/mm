@@ -321,6 +321,7 @@ by these will "inherit" the targets (if applicable).
 | [SetVariableLocation][] | Sets a variable to the target location                                                                                                                  |
 | [VariableUnset][]       | Unsets the variable                                                                                                                                     |
 | [VariableSubtract][]    | Subtracts an amount from a numeric variable                                                                                                             |
+| [Wait][]                | Puts the metaskill on hold until a set of conditions is met                                                                                                             |
 
 
 # Universal Attributes
@@ -662,3 +663,4 @@ but not yet ready for use.
   [OnJump]: /skills/mechanics/onjump
   [OnDeath]: /skills/mechanics/ondeath
   [Switch]: /skills/mechanics/Switch
+  [Wait]: /skills/mechanics/Wait
