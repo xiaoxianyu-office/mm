@@ -210,11 +210,8 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 ## Meta
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
-| [Cancelevent](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/cancelevent) | MythicMobs | Cancel the Event that triggered the skill |
-| [CancelSkill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/CancelSkill) | MythicMobs | Cancels the execution of the [Metaskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Metaskills) when triggered |
 | [Command](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/command) | MythicMobs | Executes a command for each target supplied |
 | [ModifyDamage](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ModifyDamage) | MythicMobs | Modifies the damage event that triggered the skill |
-| [Delay](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/delay) | MythicMobs | Causes the current skilltree to be delayed by X ticks |
 | [Globalcooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/globalcooldown) | MythicMobs | The Global Cooldown skill lets you set a caster's global |
 | [Log](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Log) | MythicMobs | Logs a message to console directly |
 | [Modifyprojectile](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/modifyprojectile) | MythicMobs | Modifies the projectile, missile, or orbital that activated the mechanic |
@@ -232,6 +229,13 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Setskillcooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setskillcooldown) | MythicMobs | Sets the given metakill's cooldown to the given value (in seconds) |
 | [Switch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Switch) | MythicMobs | A switch allows a condition to be tested against a list of (cases) values |
 | [Endprojectile](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/endprojectile) | MythicMobs | Terminates the projectile this mechanic has been called from, activating its onEnd skill in the process |
+### Flow
+| Mechanic | Plugin | Description |
+|----------|--------|-------------|
+| [Cancelevent](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/cancelevent) | MythicMobs | Cancel the Event that triggered the skill |
+| [CancelSkill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/CancelSkill) | MythicMobs | Cancels the execution of the [Metaskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Metaskills) when triggered |
+| [Delay](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/delay) | MythicMobs | Causes the current skilltree to be delayed by X ticks |
+| [Wait](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Wait) | MythicMobs | Puts the metaskill on hold (like the [delay](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/delay) mechanic) until a set of conditions is met |
 
 
 [>> Go to top](#)
@@ -247,18 +251,14 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Pickupitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/pickupitem) | MythicMobs | Pick up the targeted item, if the caster is a player |
 | [Polygon](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/polygon) | MythicMobs | The Polygon meta-mechanic can execute other skills in a polygon-shaped pattern |
 | [Projectile](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/projectile) | MythicMobs | The Projectile skill fires a meta-"projectile" that can be decorated |
-| [PushBlock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PushBlock) | MythicMobs | Pushes the block at the target location in the given direction using piston logic |
 | [Randomskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/randomskill) | MythicMobs | Executes a random skill from the list of supplied [skills](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/skill) |
 | [Raytrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytrace) | MythicMobs | Traces a ray to the target |
 | [Raytraceto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytraceto) | MythicMobs | Traces a ray to the target, like the [Raytrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/raytrace) mechanic, but with additional attributes regarding the start and end position of the ray |
-| [Remove](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/remove) | MythicMobs | Removes the targeted entity from existence |
 | [Shoot](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shoot) | MythicMobs | Shoots an arrow or item-projectile at the targeted entity or location |
 | [Shootshulkerbullet](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shootshulkerbullet) | MythicMobs | Shoots a shulker bullet at the target entity, giving them levitation on hit |
 | [Setskillcooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setskillcooldown) | MythicMobs | Sets the given metakill's cooldown to the given value (in seconds) |
 | [Slash](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/slash) | MythicMobs | The Slash meta-mechanic can execute other skills in a slash-shaped pattern |
-| [StealItem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StealItem) | MythicMobs | Steals an item from the target and puts it in the mob's hand |
 | [Sudoskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/sudoskill) | MythicMobs | The SudoSkill mechanic allows you to force the targeted entity to “cast” |
-| [Summon](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/summon) | MythicMobs | Summons mobs of the given type around the target |
 | [Switch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Switch) | MythicMobs | A switch allows a condition to be tested against a list of (cases) values |
 | [Totem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/totem) | MythicMobs | The totem mechanic places an invisible "totem", similar to the |
 | [Volley](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/volley) | MythicMobs | Shoots a volley of arrows or item-projectiles at the targeted entity or |
@@ -289,6 +289,15 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Stun](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/stun) | MythicMobs | Holds the target in place temporarily |
 | [Terminable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Terminable) | MythicMobs | Creates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/aura) that, each tick, checks if a set of conditions is met: If so, the execution of the onStart skill is immediately cancelled |
 | [Onjump](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onjump) | MythicMobs | Applies an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) to the target that triggers a skill when they jump |
+### Thenable
+| Mechanic | Plugin | Description |
+|----------|--------|-------------|
+| [Dropitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/dropitem) | MythicMobs | Drops a set of items or optionally a |
+| [PushBlock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/PushBlock) | MythicMobs | Pushes the block at the target location in the given direction using piston logic |
+| [Remove](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/remove) | MythicMobs | Removes the targeted entity from existence |
+| [StealItem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StealItem) | MythicMobs | Steals an item from the target and puts it in the mob's hand |
+| [Summon](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/summon) | MythicMobs | Summons mobs of the given type around the target |
+| [Wait](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Wait) | MythicMobs | Puts the metaskill on hold (like the [delay](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/delay) mechanic) until a set of conditions is met |
 
 
 [>> Go to top](#)
@@ -537,20 +546,25 @@ These mechanics have not been tagged yet.
 | [ReloadAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ReloadAmmo) | MythicCrucible | will search the caster's inventory for the configured ammo item (or another item if overridden), and for each item it finds it will consume it and add ammo to the item. |
 | [ConsumeItemDurability](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeItemDurability) | MythicCrucible | Consume the durability of an item |
 | [Consumeitem](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/Consumeitem) | MythicCrucible | Removes some items from the casting player's inventory |
+| [ConsumeUsedDurability](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeUsedDurability) | MythicCrucible | Consumes durability from the item that triggered the skilltree |
+| [ConsumeUsedItem](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeUsedItem) | MythicCrucible | Removes the item that triggered the skilltree |
 | [GiveAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/GiveAmmo) | MythicCrucible | Sets the ammo amount of a player's weapon to its maximum. |
 | [InventoryClear](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/InventoryClear) | MythicCrucible | Clears the inventory of the targeted player |
+| [OpenBackpack](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/OpenBackpack) | MythicCrucible | Opens the first backpack found in the player's inventory |
 | [Parsearmor](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/parsearmor) | MythicCrucible | Updates the status of the target player's armor pieces |
 | [ParseWeapon](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ParseWeapon) | MythicCrucible | Updates the status of the item the target player is holding in its main hand |
 | [UpdateLore](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/UpdateLore) | MythicCrucible | Reparses the lore in your item config |
 | [ResetAttackCooldown](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ResetAttackCooldown) | MythicCrucible | Resets the attack cooldown of the item in hand |
 | [SetCompassLocation](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetCompassLocation) | MythicCrucible | Sets the location a compass points to |
 | [Setcrossbowcharged](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/setcrossbowcharged) | MythicCrucible | Sets the target player's held crossbow's CustomModelData and visualy sets it as either charged or not charged. |
+| [SetItemCustomModelData](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetItemCustomModelData) | MythicCrucible | Sets the CustomModelData of the used item |
 | [SetItemDisplay](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetItemDisplay) | MythicCrucible | Sets the item display name |
 | [SetLore](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetLore) | MythicCrucible | Sets the new lore of the item |
 | [ModelSet](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ModelSet) | MythicCrucible | Sets the specified CustomModelData on the item the caster is holding |
 | [SetSlotModel](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetSlotModel) | MythicCrucible | Sets the specified CustomModelData on the item on the specified slot |
 | [Modeltoggle](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/modeltoggle) | MythicCrucible | Switches the item's CustomModelData value between two specified ones each time this mechanic is triggered |
 | [Furnitureinventory](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furnitureinventory) | MythicCrucible | Opens an inventory with a specified amount of slots and name to the target player |
+| [OpenFurniturePainter](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/OpenFurniturePainter) | MythicCrucible | Opens the furniture's painter for the target player |
 | [PlaceFurnitureAt](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/PlaceFurnitureAt) | MythicCrucible | Makes the casting player place a furniture at a specific location |
 | [Furnitureremoveat](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furnitureremoveat) | MythicCrucible | Removes the furniture at the target location |
 | [Furnitureremove](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furnitureremove) | MythicCrucible | Removes the furniture that casted the mechanic |
@@ -560,6 +574,7 @@ These mechanics have not been tagged yet.
 | [Furniturestate](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furniturestate) | MythicCrucible | Sets the casting Furniture's [State](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Furniture#furniture-states) as the specified one |
 | [DealCustomDurability](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/DealCustomDurability) | MythicCrucible | Modifies the custom durability of the held item. |
 | [SetItemNBT](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetItemNBT) | MythicCrucible | Sets an NBT value on an item |
+| [AnimateModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/AnimateModel) | ModelEngine | Programmatically animates a model's bone, without relying on animations |
 | [Brightness](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/Brightness) | ModelEngine | Configure the model's block and sky light. |
 | [ChangeParent](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/ChangeParent) | ModelEngine | Changes the parent of a bone to another bone. |
 | [ChangePart](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/ChangePart) | ModelEngine | Change the model of a rendering bone to use a different model. |

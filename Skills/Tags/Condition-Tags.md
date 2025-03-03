@@ -180,6 +180,7 @@ These conditions have not been tagged yet.
 | [Targetnotwithin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/targetnotwithin) | MythicMobs | Tests if the target's target is not within a certain distance. |
 | [Targets](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/targets) | MythicMobs | Checks if the number of inherited targets from the parent skilltree matches the given range. |
 | [Targetwithin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/targetwithin) | MythicMobs | Tests if the target's target is within a certain distance. |
+| [TemplateType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/TemplateType) | MythicMobs | Checks if the target mob extends the specified [Template](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/Templates) |
 | [Thundering](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/thundering) | MythicMobs | Checks if it's thundering in the target world. |
 | [TriggerBlockType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/TriggerBlockType) | MythicMobs | Checks against the material type that triggered the skill |
 | [TriggerItemType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/TriggerItemType) | MythicMobs | Checks against the item material type that triggered the skill |

@@ -44,3 +44,4 @@ Example of dropping items from a DropTable.
 
 <!--TAGS-->
 <!--tag:Item-->
+<!--tag:Meta-Mechanic:Thenable-->

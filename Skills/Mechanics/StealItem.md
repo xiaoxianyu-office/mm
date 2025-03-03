@@ -28,4 +28,4 @@ Steals an item from the target and puts it in the mob's hand
 <!--tag:Item-->
 <!--tag:Inventory-->
 <!--tag:ItemMatcher-->
-<!--tag:Meta-Mechanic-->
+<!--tag:Meta-Mechanic:Thenable-->

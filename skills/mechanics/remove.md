@@ -27,4 +27,4 @@ This skill despawns the mob immediately when it is right clicked.
 
 <!--TAGS-->
 <!--tag:Meta-->
-<!--tag:Meta-Mechanic-->
+<!--tag:Meta-Mechanic:Thenable-->
