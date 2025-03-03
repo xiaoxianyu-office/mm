@@ -195,7 +195,8 @@ There are some common attributes that can be used in most of the Targeters, depe
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| targetconditions                         | conditions, cond, c | [Inline Target Conditions](/Skills/Inline-Conditions#targetconditions) | |
+| targetconditions                         | conditions, cond, c | [Inline Target Conditions](/Skills/Inline-Conditions#targetconditions) |<!--type:Conditions-->|
+| fallback  | fb        | The fallback targeter to use, if this one returns no target          |<!--type:Targeter-->|
 
 ### Sudo Attributes
 | Attribute | Aliases   | Description                                                          | Default |
@@ -341,7 +342,7 @@ This is done with the attributes:
 
 | Attribute <!-- ETA --> | Aliases   | Description                                             | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| sort      | sortby    | How to sort the targeted entities/locations                          |         |
+| sort      | sortby    | How to sort the targeted entities/locations                          |<!--type:NONE,RANDOM,NEAREST,FURTHEST,HIGHEST_HEALTH,LOWEST_HEALTH,HIGHEST_THREAT,LOWEST_THREAT-->|
 | skipTargetsUpToIndex | stuti | skips the first `n` targets of the targeter after the sort is applied, if >0 |0|
 | limit     |           |The limit to the targeted entities/locations after the skip is applied, if >0 |0|
 
@@ -349,7 +350,7 @@ This is done with the attributes:
 
 | Attribute LTA | Aliases   | Description                                                      | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| sort      | sortby    | How to sort the targeted entities/locations                          |         |
+| sort      | sortby    | How to sort the targeted entities/locations                          |<!--type:NONE,RANDOM,NEAREST,FURTHEST-->|
 | skipTargetsUpToIndex | stuti | skips the first `n` targets of the targeter after the sort is applied, if >0 |0|
 | limit     |           |The limit to the targeted entities/locations after the skip is applied, if >0 |0|
 
