@@ -7,6 +7,7 @@ Targets all MythicMobs or vanilla overrides of the given type(s) in a radius aro
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | radius    | r         | The radius of the targeter                                           | 5       |
 | types     | type, t   | The type(s) of the target MythicMobs. Can be a list                  |         |
+| checkiftemplate | cit | Whether to check against the mob's templates instead of the mob's internal name | false |
 
 
 ## Examples
