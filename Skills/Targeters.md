@@ -346,15 +346,6 @@ This is done with the attributes:
 | skipTargetsUpToIndex | stuti | skips the first `n` targets of the targeter after the sort is applied, if >0 |0|
 | limit     |           |The limit to the targeted entities/locations after the skip is applied, if >0 |0|
 
-<!-- 
-
-| Attribute LTA | Aliases   | Description                                                      | Default |
-|-----------|-----------|----------------------------------------------------------------------|---------|
-| sort      | sortby    | How to sort the targeted entities/locations                          |<!--type:NONE,RANDOM,NEAREST,FURTHEST-->|
-| skipTargetsUpToIndex | stuti | skips the first `n` targets of the targeter after the sort is applied, if >0 |0|
-| limit     |           |The limit to the targeted entities/locations after the skip is applied, if >0 |0|
-
--->
 
 Lets say you want your ability to only target the 2 nearest players within 30 blocks. To do this, you'd simply set the limit 2 to and sort by nearest:
 
@@ -390,6 +381,15 @@ GiveRewards:
   - message{m="You are third!"} @ThreatTablePlayers{sort=HIGHEST_THREAT;limit=1;stuti=2} #targets the player that has the third highest threat
   - message{m="You aren't on the podium!"} @ThreatTablePlayers{sort=HIGHEST_THREAT;stuti=3} #targets everyone else
 ``` 
+
+
+<details><summary></summary>
+| Attribute LTA | Aliases   | Description                                                      | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| sort      | sortby    | How to sort the targeted entities/locations                          |<!--type:NONE,RANDOM,NEAREST,FURTHEST-->|
+| skipTargetsUpToIndex | stuti | skips the first `n` targets of the targeter after the sort is applied, if >0 |0|
+| limit     |           |The limit to the targeted entities/locations after the skip is applied, if >0 |0|
+</details>
 
 
 
