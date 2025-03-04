@@ -1,5 +1,5 @@
 ## Description
-Targets the caster's mount
+Targets the caster's original [mount](/Mobs/Mobs#mount)
 
 
 ## Attributes
