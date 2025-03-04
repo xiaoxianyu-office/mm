@@ -299,8 +299,8 @@ Sets the trim of the item.
 example_item:
   Material: GOLD_CHESTPLATE
   Trim:
-    Material: IRON
-    Pattern: WILD
+    Material: iron
+    Pattern: wild
 ```
 
 #### Firework
