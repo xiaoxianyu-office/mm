@@ -6,7 +6,7 @@ Unless otherwise specified with the `allowpickup` option, those items will be pa
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| items     | item, i   | The list of items to drop. This attribute works like the [DropItem](/skills/mechanics/dropitem)'s one                                                          | iron_sword<!--type:Material-->|
+| items     | item, i   | The list of items to drop. This attribute works like the [DropItem](/skills/mechanics/dropitem)'s one                                                          | iron_sword<!--type:Item-->|
 | amount    | a         | How many items will render from the spray                            | 10      |
 | duration  | d         | How long (in ticks) the items will exist                             | 20      |
 | radius    | r         | The radius/spread the items will start in                            | 0       |

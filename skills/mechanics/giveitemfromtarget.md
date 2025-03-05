@@ -7,7 +7,7 @@ Gives the caster an item from the target entity or location when fakelooting is 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | items, i  | The item material (supports for mythicmobs item)                     |<!--type:Material-->|
+| item      | items, i  | The item material (supports for mythicmobs item)                     |<!--type:Item-->|
 | fakeLooting | dofakelooting, fl | plays the pickup-item animation from the target            | true    |
 
 

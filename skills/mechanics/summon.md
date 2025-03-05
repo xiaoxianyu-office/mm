@@ -13,7 +13,7 @@ To utilize the summon mechanic in Mythic Mobs, you will need the following:
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type      | t, mob, m| The type of mob to summon. Can be a Mythic Mob type or a regular entity type                                                                 | SKELETON      |
+| type      | t, mob, m| The type of mob to summon. Can be a Mythic Mob type or a regular entity type                                                                 | SKELETON<!--type:Mob-->|
 | onSummon  | onsummonskill, then | The [metaskill] to execute on the summoned mobs            |<!--type:Metaskill-->|
 | amount    | a         | The number of mobs to summon.                                        | 1       |
 | level     | l         | The level of the mob being summoned                                  | 0       |

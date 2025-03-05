@@ -11,7 +11,7 @@ A list of particle types can be found **[here](/Skills/Mechanics/Particle/Partic
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | particle  | p         | The [particle type] to use.                                          | reddust<!--type:Particle-->|
-| mob       | m, t      | The entity to spawn as the particle. Cannot be the original entity. **Premium Only**.                                                                                        |         |
+| mob       | m, t      | The entity to spawn as the particle. Cannot be the original entity. **Premium Only**.                                                                                  |<!--type:Mob-->|
 | amount    | count, a  | The number of particles to create                                    | 10      |
 | spread    | offset    | The vertical spread of the particles                                 | 0       |
 | hSpread   | hs        | The horizontal spread of the particles                               | `spread`|

@@ -5,7 +5,7 @@ Tests the type of the targeted entity item
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| material  | mat, m, type, types, t | A list of items to match                                |<!--type:Material--><!--list-->|
+| material  | mat, m, type, types, t | A list of items to match                                |<!--type:Item--><!--list-->|
 
 
 ## Examples

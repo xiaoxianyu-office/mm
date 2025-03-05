@@ -5,7 +5,7 @@ Rallies nearby mobs of the given types to focus-attack the given target.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| types     | type, t   | A list of mob types to rally. The list can include both Mythic Mob types and regular Entity types                                                                           |         |
+| types     | type, t   | A list of mob types to rally. The list can include both Mythic Mob types and regular Entity types                                                                           |<!--type:Mob--><!--list-->|
 | radius    | r, hradius, hr | The radius (in blocks) in which to search for mobs to rally     | 10      |                                                              
 | vradius   | vr        | Overrides the vertical component of the radius.                      | radius  |
 | overwritetarget | ot      | Whether to rally mobs that already have a target                 | true    |

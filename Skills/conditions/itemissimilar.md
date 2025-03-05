@@ -7,7 +7,7 @@ To be more specific, their ItemStacks will be compared and the condition will re
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | i, material, m, mm, mythicitem | The item to check for                           | DIRT<!--type:Material-->|
+| item      | i, material, m, mm, mythicitem | The item to check for                           | DIRT<!--type:Item-->|
 | slot      | s         | The inventory slot to check for. Accepts 0 to 35, or equipment slots | HAND<!--type:EquipSlot-->|
 
 

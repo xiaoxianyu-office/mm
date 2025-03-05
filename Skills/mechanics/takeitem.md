@@ -6,7 +6,7 @@ Uses the [Item Matcher](/Items/Item-Matcher)
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | material, m, i, mat, t, type, types | The item, or material, to remove  | DIRT<!--type:Material-->|
+| item      | material, m, i, mat, t, type, types | The item, or material, to remove  | DIRT<!--type:Item-->|
 | amount    | a              | The amount to remove                                            | 1       |
 | exact     | e, strict | Whether the name of the item should match exactly to the specified one | true  |
 
