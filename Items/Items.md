@@ -332,6 +332,17 @@ SomeBook:
   - "Page 3"
 ```
 
+#### Consumable
+Allows item to be eaten. Includes customisable animations and sounds.
+```yaml
+  Options:
+    Consumable:
+      ConsumeSeconds: 3
+      HasParticles: false
+      Animation: SPEAR
+      Sound: item.crossbow.quick_charge_3
+```
+
 #### Food
 ```yaml
 NetheritePops:
