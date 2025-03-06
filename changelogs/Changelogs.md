@@ -1,5 +1,48 @@
 [[_TOC_]]
 
+# 5.9.0 (Dev Builds)
+
+Mechanics
+---------
+Add `specificStep/ss` to SlashMechanic
+
+### NEW: `wait`
+- New special keyword mechanic `wait`
+- Will pause the skill tree until a condition is met
+
+
+Targeters
+---------
+### NEW: `@PlayerLocationByName`
+
+# 5.8.1
+
+General
+-------
+- Added missing particles `infested`, `block_crumble`, `trail`
+- Added missing vanilla attributes as stats: 
+  - BLOCK_BREAK_SPEED
+  - BLOCK_INTERACTION_RANGE
+  - ENTITY_INTERACTION_RANGE
+- Added `then=` skill option to `dropItem` mechanic
+- Added `then=` skill option to `remove` mechanic
+- Added Placeholder support for `radius` in `MobsInRadiusTargeter`
+- Allow message mechanic to be used without target
+
+Bug Fixes / Other
+-----------------
+- Optimizations for menus
+- Refactor & cleanup Template System 
+- Removed some stray debugging
+- Fixed lifesteal stat being backwards
+- Fixed some issues with health regen stat
+- Fixed ConcurrentModificationException in SkillMechanic
+- Fixed some bugs with templates
+- Fixed branched metaskills being canceled with terminable
+- Fixed projectile rotations during the first tick for the shoot mechanic
+- Fixed metadata deep clone not cloning targets by value
+- Fixed console spam about magic values
+
 # 5.8.0
 
 **`Note: This update includes various optimizations, new mechanics, improvements, bug fixes, and additional API features. Please report any issues you find by opening an Issue or letting us know in the appropriate Discord channel.`**
