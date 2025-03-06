@@ -52,7 +52,7 @@ These targeters have not been tagged yet.
 | [MobsInRadius](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/MobsInRadius) | MythicMobs | Targets all MythicMobs or vanilla overrides of the given type(s) in a radius around the caster |
 | [MobsNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/MobsNearOrigin) | MythicMobs | Targets all MythicMobs or vanilla overrides of the given type(s) in a radius around the origin |
 | [Mother](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Mother) | MythicMobs | Targets the mother of the casting mob |
-| [Mount](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Mount) | MythicMobs | Targets the caster's mount |
+| [Mount](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Mount) | MythicMobs | Targets the caster's original [mount](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/Mobs#mount) |
 | [NearestPlayer](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/NearestPlayer) | MythicMobs | Targets the nearest player in a radius |
 | [NearestStructure](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/NearestStructure) | MythicMobs | Targets the nearest structure of the specified type within a radius in the caster's world |
 | [NotLivingNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/NotLivingNearOrigin) | MythicMobs | Targets all non living entities in a radius near the origin |

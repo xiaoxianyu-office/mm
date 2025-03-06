@@ -18,6 +18,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Runaitargetselector](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/runaitargetselector) | MythicMobs | Change target pathfindergoals |
 | [Setai](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setai) | MythicMobs | Toggles the target AI |
 | [SetPathfindingMalus](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetPathfindingMalus) | MythicMobs | Sets the pathfinding malus of a mob, influencing how a particular entity evaluates different types of blocks when calculating its path |
+| [Settonguetarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/settonguetarget) | MythicMobs | Sets the tongue target for a frog caster to the target entity |
 | [Stun](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/stun) | MythicMobs | Holds the target in place temporarily |
 | [Togglesitting](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/togglesitting) | MythicMobs | Toggles the sitting state for cats, dogs, foxes, and parrots |
 | [Wolfsit](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/wolfsit) | MythicMobs | Sets the sitting state of the target wolf |
@@ -537,7 +538,6 @@ These mechanics have not been tagged yet.
 | [Setspeed](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setspeed) | MythicMobs | Causes the target to change its speed attribute |
 | [Setstance](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setstance) | MythicMobs | Sets the "stance" attribute of the target Mythic Mob to the given |
 | [SetTextDisplay](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetTextDisplay) | MythicMobs | Sets the text component of target Text Display entity |
-| [Settonguetarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/settonguetarget) | MythicMobs | Sets the tongue target for a frog caster to the target entity. |
 | [Setgravity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setgravity) | MythicMobs | Sets whether gravity affects the target entity. |
 | [Shieldbreak](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shieldbreak) | MythicMobs | Breaks the target player's shield block if they are blocking |
 | [Shield](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shield) | MythicMobs | Adds absorption hearts |
