@@ -333,7 +333,8 @@ SomeBook:
 ```
 
 #### Consumable
-Allows item to be eaten. Includes customisable animations and sounds.
+Allows item to be eaten. Includes customizable animations and sounds.  
+Used to handle the [consumable component](https://minecraft.wiki/w/Data_component_format/consumable) of an item.  
 ```yaml
   Options:
     Consumable:
@@ -344,6 +345,8 @@ Allows item to be eaten. Includes customisable animations and sounds.
 ```
 
 #### Food
+Used to handle the [food component](https://minecraft.wiki/w/Data_component_format/food) of an item.  
+Required [Consumable](/Items/Items#consumable) to be set in order to work
 ```yaml
 NetheritePops:
   Material: NETHERITE_SCRAP
@@ -351,7 +354,6 @@ NetheritePops:
   Food:
     Nutrition: 2
     Saturation: 2
-    EatSeconds: 2
     CanAlwaysEat: true
 ```
 
