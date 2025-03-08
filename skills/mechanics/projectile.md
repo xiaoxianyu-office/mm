@@ -60,6 +60,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | drawHitbox |          | Draw the hitbox of the projectile, useful for debugging             | false    |
 | tickinterpolation | interpolation, ti | Interpolates the specified amount of additional points between each tick of the projectile. The onTick and onHit skills will be applied there as well. Useful to fill in the gaps with super-fast projectiles and also prevent entities from being "skipped over"      | 0        |
 | shareSubHitboxCooldown | shcd | Whether all meg sub hitboxes should share the same immune delay with its base entity | true | 
+| hitTargeter | htr     | An entity targeter. Once the projectile hits, targeted entities will be targeted by the onHit Metaskill and given immune delay just like the projectile's main target          | <!--type:Targeter--> |
 
 ### Projectile-Specific Attributes
 | Attribute | Aliases   | Description                                                          | Default |
