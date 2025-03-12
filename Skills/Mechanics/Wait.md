@@ -17,6 +17,7 @@ Puts the metaskill on hold (like the [delay](/skills/mechanics/delay) mechanic) 
 GroundSlam:
   Skills:
   - jump{v=5}
+  - delay 5
   - wait{cond=[ - onground ];tt=300}
   - explode
 ```
