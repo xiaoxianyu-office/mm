@@ -15,10 +15,6 @@ It is generally advised to use the `PreventOtherDrops` and `silent` mob options 
 <!-- ![image](uploads/5862ab1f31634ae0211a3c226d834540/image.png) -->
 ![image](uploads/934d66a2973c6e2cabce6d87cc0033db/left.png)
 
-**Note:** It is not recommended to make every mob on your server a ModelEngine mob, because each "bone" in the mob will be a separate armor stand.
-
-**Note:** Sometimes a model will de-sync from itself slightly giving the limbs a slight floating look, you can do some things to avoid this, but not much.
-
 ### Mechanics
 
 ModelEngine runs a few mechanics in order to apply to the mob.  
