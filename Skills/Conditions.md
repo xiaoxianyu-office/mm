@@ -167,7 +167,6 @@ Every condition shares and can use the following attributes
 Links to conditions added by addon plugins. Any conditions from these links will not work without that plugin installed.
 
 - [ModelEngine 4](https://git.mythiccraft.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions)
-- [ModelEngine Legacy](https://git.lumine.io/mythiccraft/modelengine/-/wikis/Conditions)
 - [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions)
 - [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Conditions)
 - [MCPets](https://mcpets.gitbook.io/mcpets/tutorials/mythicmobs-features#conditions)
