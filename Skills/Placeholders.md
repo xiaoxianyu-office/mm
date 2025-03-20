@@ -224,9 +224,9 @@ The following are only some of the placeholders that can have a `trigger` scope,
 | **Placeholder**             | **Function**                                                            |
 |-----------------------------|-------------------------------------------------------------------------|
 | <item.amount>               | Returns the amount of the item that triggered the skill                 |
-| <mythicitem.{Item}.material>| Returns the material of the specified mythic item                       |
-| <mythicitem.{Item}.model>   | Returns the custommodeldata of the specified mythic item                |
-| <mythicitem.{Item}.display> | Returns the display name of the specified mythic item                   |
+| <mythicitem.{MythicItem}.material>| Returns the material of the specified mythic item                 |
+| <mythicitem.{MythicItem}.model>   | Returns the custommodeldata of the specified mythic item          |
+| <mythicitem.{MythicItem}.display> | Returns the display name of the specified mythic item             |
 
 ## Score Placeholders
 | **Placeholder**             | **Function**                                                            |
