@@ -295,9 +295,9 @@ another_example_item:
 
 #### Trim
 Sets the trim of the item.
-```
+```yaml
 example_item:
-  Material: GOLD_CHESTPLATE
+  Material: GOLDEN_CHESTPLATE
   Trim:
     Material: iron
     Pattern: wild
