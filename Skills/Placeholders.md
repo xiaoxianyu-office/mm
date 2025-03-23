@@ -99,7 +99,7 @@ These placeholders will return whatever attribute of the caster that is called. 
 |       <caster.stance>              | Returns the current stance of the caster                          |
 | <caster.stat.{Stat}>               | Returns the value of the specified {Stat} on the caster           |
 | <caster.heldenchantlevel.{Integer}>    | Returns the enchant level of specified {Integer} enchant      |
-| <caster.skill.{SkillName}.cooldown> | Returns the current cooldown of the give skill as a float number |
+| <caster.skill.{Metaskill}.cooldown> | Returns the current cooldown of the give skill as a float number |
 | <caster.raytrace.{Float}>                | Returns the name of the block being looked at by the caster if within {Float} range, if {Float} is specified. If only <caster.raytrace> is used, then the range defaults to `4.5`. If no block is found, `AIR` is returned.|
 | <caster.children.size>             | Returns the number of children this entity has                    |
 | <caster.attack_cooldown>           | Returns the attack cooldown of the player's equipped item. The value will be a float between 0 (maximum cooldown for the item) and 1 (no cooldown) |
