@@ -14,7 +14,7 @@ Using the below mob as a base, we can make a simple NPC that just stands still. 
 NPC_Steve:
   Type: INTERACTION
   Display: 'Steve the Guide'
-  Disguise: Player <inherit> setSkin Steve setDynamicName true
+  Disguise: Player <Inherit> setSkin Steve setDynamicName true
   Options:
     AlwaysShowName: true
     Despawn: persistent
@@ -23,7 +23,7 @@ NPC_Steve:
 - `NPC_Steve` This is what you'll use to spawn your NPC. /mm m spawn NPC_Steve
 - `Type: INTERACTION` You can use whatever you like but we'll be using an interaction entity since it has no AI, no sound etc.
 - `Display: 'Steve the Guide'` This is what will appear above your NPC's head.
-- `Disguise: Player <inherit> setSkin Steve setDynamicName true` This is what makes our NPC look like a player. You can replace "Steve" with whatever player's skin you'd like to use. You must keep the setDynamicName as true so the NPC can use the Display setting. The `<inherit>` name placeholder sets the NPC to show its `Display:` name.  For more information about using custom skins [read here](/Mobs/Disguises).
+- `Disguise: Player <Inherit> setSkin Steve setDynamicName true` This is what makes our NPC look like a player. You can replace "Steve" with whatever player's skin you'd like to use. You must keep the setDynamicName as true so the NPC can use the Display setting. The `<Inherit>` (case-sensitive) placeholder sets the NPC to show its `Display:` name.  For more information about using custom skins [read here](/Mobs/Disguises).
 - `AlwaysShowName: true` This makes the nameplate show above your NPC.
 - `Despawn: persistent` This will keep your NPC spawned on reloads, restarts and chunk unloads.
 
