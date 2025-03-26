@@ -2,6 +2,13 @@
 
 # 5.9.0 (Dev Builds)
 
+General
+-------
+- Added step and lerp functions to all numeric placeholders
+```
+step(e, x) { 0, x < e; 1, x >= e
+lerp(a, b, r)```
+
 Mechanics
 ---------
 Add `specificStep/ss` to SlashMechanic
@@ -10,10 +17,45 @@ Add `specificStep/ss` to SlashMechanic
 - New special keyword mechanic `wait`
 - Will pause the skill tree until a condition is met
 
+### Projectiles
+- Added HitTargeter to projectile type mechanics
+
+hitTarget htr accepts an entity targeter. Entities targeted by htr would be processed through onHit and gain immune delay
+
 
 Targeters
 ---------
 ### NEW: `@PlayerLocationByName`
+### NEW: `@PredictedTargetLocation`
+`@PredictedTargetLocation{ticks=X}`
+- Targets the predicted location of the caster's target in the next X ticks based on their velocity
+
+# 5.8.2
+
+Bug Fixes / Other
+-----------------
+- Optimized Packet Entities
+- Optimized Projectiles
+- TargetSelf will now ignore all other filters
+- Removed some minor error logging
+- Fixed ENO including caster regardless of condition when targetself = true
+- Fixed HitTargeter on projectiles
+- Fixed some custom AI goals not loading since a few updates ago
+- Fixed some issues with the item matcher and associated mechanics
+- Fixed particles throwing errors on 1.20.X versions
+- Fixed ClassCastException in item tool rules
+- Fixed MountTarget mechanic being broken on newer versions
+- Fixed NPE in StatExecutor closes #1871
+- Fixed threat tables tracking threat even if damage was cancelled
+- Fixed threat not using final damage amounts after stats, damage modifiers, etc
+- Fixed FancyDrops damage tracking not tracking projectile or skill damage
+- Fixed FancyDrops not using final damage amount after stats, damage modifiers, etc when calculating contributions
+- Fixed FancyDrops damage calculations and leaderboards taking cancelled damage into account
+- Fixed case where death leaderboards wouldn't show for all players involved
+- Fixed terminated reference always being cloned
+- Fixed varequal and varrange not using skill meta
+- Fixed stat not using base value on startup
+- Fixed varinRange condition not being able to reference skill variables as a TargetCondition
 
 # 5.8.1
 
