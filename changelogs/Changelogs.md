@@ -44,7 +44,7 @@ Targeters
 - Fixed particles throwing errors on 1.20.X versions
 - Fixed ClassCastException in item tool rules
 - Fixed MountTarget mechanic being broken on newer versions
-- Fixed NPE in StatExecutor closes #1871
+- Fixed NPE in StatExecutor
 - Fixed threat tables tracking threat even if damage was cancelled
 - Fixed threat not using final damage amounts after stats, damage modifiers, etc
 - Fixed FancyDrops damage tracking not tracking projectile or skill damage
@@ -55,6 +55,7 @@ Targeters
 - Fixed varequal and varrange not using skill meta
 - Fixed stat not using base value on startup
 - Fixed varinRange condition not being able to reference skill variables as a TargetCondition
+- Fixed NPE in @ThreatTablePlayers targeter
 
 # 5.8.1
 
