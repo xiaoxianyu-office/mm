@@ -1,14 +1,16 @@
 [[_TOC_]]
 
 # 5.9.0 (Dev Builds)
-
-## General
+General
+-------
 - Added step and lerp functions to all numeric placeholders
 ```
 step(e, x) { 0, x < e; 1, x >= e
-lerp(a, b, r)```
+lerp(a, b, r)
+```
 
-## Mechanics
+Mechanics
+---------
 Add `specificStep/ss` to SlashMechanic
 
 ### NEW: `wait`
@@ -20,12 +22,13 @@ Add `specificStep/ss` to SlashMechanic
 
 hitTarget htr accepts an entity targeter. Entities targeted by htr would be processed through onHit and gain immune delay
 
-
-## Targeters
+Targeters
+---------
 ### NEW: `@PlayerLocationByName`
 ### NEW: `@PredictedTargetLocation`
 `@PredictedTargetLocation{ticks=X}`
 - Targets the predicted location of the caster's target in the next X ticks based on their velocity
+
 
 # 5.8.2
 ## Bug Fixes / Other
