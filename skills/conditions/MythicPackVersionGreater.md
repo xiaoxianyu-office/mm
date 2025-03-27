@@ -12,7 +12,7 @@ Check if a [Pack](/Packs) with the specified id is present on the server with a 
 ## Examples
 ```yaml
   Conditions:
-  - packversiongreater{p="ThePackId",v="1.2.3"} true
+  - packversiongreater{p="ThePackId";v="1.2.3"} true
 ```
 
 
