@@ -127,6 +127,7 @@ These conditions have not been tagged yet.
 | [Mobsinchunk](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/mobsinchunk) | MythicMobs | Matches a range to how many mobs are in the target location's chunk |
 | [Mobsinradius](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/mobsinradius) | MythicMobs | Checks how many mobs are in a given radius |
 | [Mobsinworld](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/mobsinworld) | MythicMobs | Matches a range to how many mobs are in the target world |
+| [MobsNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/MobsNearOrigin) | MythicMobs | Matches a range to how many mobs are in the given radius around the [origin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Origin) |
 | [Moist](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Moist) | MythicMobs | Checks if the target block of farmland is hydrated. |
 | [Moisturelevel](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/moisturelevel) | MythicMobs | Checks if the target block of farmland has the specified level of hydratation. |
 | [Motionx](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/motionx) | MythicMobs | Checks the X motion of the target entity against a range. |
