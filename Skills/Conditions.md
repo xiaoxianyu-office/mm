@@ -283,6 +283,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [MobsInChunk](/skills/conditions/mobsinchunk)                                 | Location | Matches a range to how many mobs are in the target location's chunk                       |
 | [MobsInRadius](/skills/conditions/mobsinradius)                               | Location | Checks how many mobs are in a given radius                                                 |
 | [MobsInWorld](/skills/conditions/mobsinworld)                                 | Location | Matches a range to how many mobs are in the target world                                  |
+| [MobsNearOrigin](/skills/conditions/MobsNearOrigin)                           | Meta     | Matches a range to how many mobs are in the given radius around the origin                |
 | [MobSize](/skills/conditions/mobsize)                                         | Entity   | Checks the size of an entity that can have its size changed                                |
 | [Moist](/skills/conditions/Moist)                                             | Location | Checks if the target block of farmland is hydrated                                            |
 | [MoistureLevel](/skills/conditions/moisturelevel)                             | Location | Checks if the target block of farmland has the specified level of hydratation                 |
