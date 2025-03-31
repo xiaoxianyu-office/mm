@@ -1,3 +1,4 @@
+```yaml
 #
 # Mob Configuration Options
 #
@@ -140,3 +141,4 @@ Configuration:
         PerBlocksFromSpawn: 100
 
 
+```

@@ -1,3 +1,4 @@
+```yaml
 #
 # Item Configuration Options
 #
@@ -51,3 +52,4 @@ Configuration:
   #================================================================================
   Furniture:
     DefaultType: DISPLAY                # Can be DISPLAY, ARMOR_STAND or ITEM_FRAME
+```

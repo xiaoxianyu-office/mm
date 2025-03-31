@@ -1,3 +1,4 @@
+```yaml
 #
 # Spawner Configuration Options
 #
@@ -59,3 +60,4 @@ Configuration:
 
     # Maximum number of times per group per tick a spawn point will be searched for
     MaxGenerationAttempts: 10
+```

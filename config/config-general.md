@@ -1,3 +1,4 @@
+```yaml
 #
 # General Configuration Options
 #
@@ -72,4 +73,4 @@ Configuration:
     Vault:
       Enabled: true
       ShowMoneyMessage: true
-      MoneyMessageFormat: '&7You receive <drop.amount> currency for slaying <dropper.name>'
+      MoneyMessageFormat: '&7You receive <drop.amount> currency for slaying <dropper.name>'```

@@ -1,3 +1,4 @@
+```yaml
 #
 # Skill Configuration Options
 #
@@ -35,3 +36,4 @@ Configuration:
       TargetOwner: true
       TargetNonMythic: true
       TargetVillagers: true
+```
