@@ -5,7 +5,7 @@
 ##### [Mythic Add-ons](Add-ons)
 ##### [Compatible Plugins](Compatible-Plugins)
 ##### [API Information](API)
-
+##### [Config Files](/Config)
 ---
 
 ##### [Guides](/Guides)
