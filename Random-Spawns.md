@@ -187,34 +187,4 @@ Nether_Fortress:
 
 
 ### Extra Options in config.yml
-
-These options, located in `MythicMobs/config/config-spawning.yml`-file, are responsible for how SpawnPoints are generated on your server. It's best to use common sense when adjusting these values, as misconfigurations of this section may cause lag on your server.
-
-```yaml
-Configuration:
-  RandomSpawning:
-
-    # Disable vanilla mob spawning
-    DisableVanillaSpawns: false
-
-    # Must be enabled for ADD method
-    GenerateSpawnPoints: true
-    # Area around players where mobs will try to spawn
-    SpawnRadiusPerPlayer: 64
-    SpawnRadiusPerPlayerMin: 16
-    SpawnRadiusPerPlayerY: 32
-    
-    PointsPerSecond:
-      Land: 5
-      Air: 1
-      Sea: 2
-      Lava: 1
-      Ground: 0
-    
-    # Maximum milliseconds per tick spent on spawning
-    MaxGenerationTime: 20
-    LimitMultiplier: 1.2
-
-```
-
-[1] 1 = 100 %, 0.5 = 50 % ...
+You can find general RandomSpawn options in the `MythicMobs/config/config-spawning.yml` file, with an up-tp-date copy of it that can be found [here](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Config/config-spawning)
