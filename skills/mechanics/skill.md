@@ -13,8 +13,7 @@ targeter is specified.
 | forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft   | false   |
 | branch    | b, fork, f | Whether the called metaskill's skilltree should branch off from the skilltree of the calling mechanic. The branch will originally clone the skilltree, but any changes made to the branch will not reflect on the original skilltree                                              | false   |
 | executeafterdeath | continueafterdeath | Whether the metaskill should be able to be called after the caster's death                                                                                 | false   |
-
-
+| snapshotcasterstats | snapshotstats, scs | Whether the caster's stats at the moment of the skill execution should be "saved in memory", so that every subsequent check/fetch operation made against them returns the saved amount. This can be useful if the metaskill includes somewhat big delays and the caster's stats can change during the metaskill execution | false |
 ### Branch Attribute
 Every time a skill is triggered from the mob file via a trigger, a `SkillTree` is generated. The `SkillTree` holds many informations, and among them there are the [Skill-Scoped Variables](/Skills/Variables#variable-scopes) and the [Skill Parameters](/Skills/Metaskills#skill-parameters-premium-feature) and their value.  
 
