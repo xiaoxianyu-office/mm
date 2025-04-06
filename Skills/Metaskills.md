@@ -460,6 +460,43 @@ Mob1:
 In the example above, the skill will still deal 20 damage to the target, we've just made the skill generic so that we can change the damage however we please on any mob.  
 The "skill parameter" system will pass __any__ options from the **skill/metaskill** mechanic (except options that are specific to it) down the skill tree where you can reference them later. If a later skill passes the same parameter, it will overwrite it. These can be used anywhere placeholders are supported.
 
+> Skill Parameters can be used from the [skill](/Skills/Mechanics/skill) and [variableskill](/Skills/Mechanics/variableskill) mechanics
+
+## Reserved Parameter Names
+The following names, in any casing, *cannot* be used as a skill parameter
+- `skill`
+- `s`
+- `meta`
+- `m`
+- `mechanics`
+- `cooldown`
+- `cd`
+- `delay`
+- `repeat`
+- `targetinterval`
+- `targeti`
+- `repeatinterval`
+- `repeati`
+- `power`
+- `powersplitbetweentargets`
+- `powersplit`
+- `splitpower`
+- `forcesync`
+- `sync`
+- `targetisorigin`
+- `sourceisorigin`
+- `castfromorigin`
+- `fromorigin`
+- `fo`
+- `origin`
+- `branch`
+- `fork`
+- `snapshotcasterstats`
+- `snapshotstats`
+- `scs`
+- `snapshottriggerstats`
+- `sts`
+- `targetcreative`
 
 <!-- GENERIC -->
 [Skills]: /Skills/Skills
