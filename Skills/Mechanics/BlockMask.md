@@ -45,6 +45,12 @@ Creates a layer of ice underneath the feet of all players within a 50 block radi
 ```
 ##
 
+```yaml
+- effect:blockmask{m=ice;r=2;d=20;onlyair=true} @origin ~onTimer:5 # this will replace air and transparent blocks (i.e. stairs, slabs and glass) with ice
+- effect:blockmask{m=ice;r=2;d=20;onlyair=true;occ=false} @origin ~onTimer:5 # this will replace only air with ice
+```
+##
+
 Will forcibly reverse all effects created by the blockmask effect in the specified radius. The blockunmask effect doesn't have any syntax options except for “radius”.
 
 ```yaml
