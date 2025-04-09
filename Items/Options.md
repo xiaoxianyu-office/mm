@@ -62,6 +62,13 @@ Defaults to `false`.
     PreventStacking: true
 ```
 
+#### StackSize
+Sets the maximum stack size of the item in the inventory. 
+```yaml
+  Options:
+    StackSize: 16
+```
+
 #### ItemModel
 The model that should be applied to the item, which [works like this item component](https://minecraft.wiki/w/Data_component_format#item_model)
 ```yaml
