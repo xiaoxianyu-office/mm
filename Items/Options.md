@@ -79,6 +79,13 @@ MODELED_ITEM:
     ItemModel: SomeModel
 ```
 
+#### FireResistant
+Whether the item is resistant to fire, as netherite is.  
+Defaults to `false`.  
+```yaml
+  Options:
+    FireResistant: true
+```
 
 # Playerheads
 Only applicable to playerhead type items
