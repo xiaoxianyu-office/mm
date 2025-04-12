@@ -223,6 +223,14 @@ MyCoolStick:
   - obsidian
 ```
 
+#### Glider
+Allows item to be used as an elytra.  
+Used to handle the [glider component](https://minecraft.wiki/w/Data_component_format/glider) of an item.  
+```yaml
+MyItem:
+  Glider: true
+```
+
 #### Group
 Sets the group the item is in for `/mm items browse`.
 ```yml
@@ -336,13 +344,34 @@ SomeBook:
 Allows item to be eaten. Includes customizable animations and sounds.  
 Used to handle the [consumable component](https://minecraft.wiki/w/Data_component_format/consumable) of an item.  
 ```yaml
-  Options:
-    Consumable:
-      ConsumeSeconds: 3
-      HasParticles: false
-      Animation: SPEAR
-      Sound: item.crossbow.quick_charge_3
+MyExampleItem:
+  Consumable:
+    ConsumeSeconds: 3
+    HasParticles: false
+    Animation: SPEAR
+    Sound: item.crossbow.quick_charge_3
+    ConsumeEffects:
+    - potion{type=absorption;d=200}
+    - randomteleport{radius=5}
+    - removePotion{type=wither}
+    - clearAllEffects
+    - sound{sound=entity.ghast.scream}     
 ```
+
+#### DeathProtection
+If present, this item protects the holder from dying by restoring a single health point, like a Totem of Undying does.  
+Used to handle the [death_protection component](https://minecraft.wiki/w/Data_component_format/death_protection) of an item.  
+```yaml
+MyTotemItem:
+  DeathProtection:
+    ConsumeEffects: # Same as Consumable's
+    - potion{type=absorption;d=200}
+    - randomteleport{radius=5}
+    - removePotion{type=wither}
+    - clearAllEffects
+    - sound{sound=entity.ghast.scream}     
+```
+
 
 #### Food
 Used to handle the [food component](https://minecraft.wiki/w/Data_component_format/food) of an item.  
