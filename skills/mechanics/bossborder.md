@@ -1,5 +1,5 @@
 ## Description
-Traps the the target player within a border around the caster.
+Traps the the target player within a vanilla world border around the caster.
 
 
 ## Attributes
