@@ -314,7 +314,7 @@ ICanHearYou:
   Hearing:
     Enabled: true
   Skills:
-  - message{m="I can hear you <trigger.name>! <skill.var.volume>? Way too loud!"} @trigger
+  - message{m="I can hear you <trigger.name>! <skill.var.volume>? Way too loud!"} @trigger ~onHear
 ```
 
 #### Totem
