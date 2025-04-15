@@ -1281,7 +1281,7 @@ Defaults to `-1` (instantly).
 
 #### ExplosionYield
 Determines the strength of the explosion.  
-Defaults to `-1` (none).
+Defaults to `-1` (The normal TNT Explosion Yield is used).
 ```yaml
   Options:
     ExplosionYield: 2
