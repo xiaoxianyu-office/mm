@@ -7,7 +7,7 @@ Checks the stance of the target mob.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | stance    | s         | The stance to match                                                  | DEFAULT |
-| strict    | str       | Whether to match exactly                                             | false   |
+| strict    | str       | Whether to match exactly. Checks if the current stance contains this word if set to false                                             | true    |
 
 
 ## Examples
