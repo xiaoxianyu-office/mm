@@ -25,8 +25,8 @@ A list of particle types can be found **[here](/Skills/Mechanics/Particle/Partic
 | directional| d        | Does the particle use directional travel. The [particle type] used must not have additional data (extra attributes)                                                             | false   | 
 | directionReversed| dr | Reverses the direction of the particles.                             | false   | 
 | direction | dir       | Specifies a vector for the particles to move towards.          | 0,0,0 (x,y,z) | 
-| fixedyaw  | yaw       | Sets the yaw of the effect                                           | -1111   |
-| fixedpitch| pitch     | Sets the pitch of the effect                                         | -1111   |
+| fixedyaw  | yaw       | Sets the yaw of the location target(s) of the mechanic. This is ignored if it remains -1111 | -1111   |
+| fixedpitch| pitch     | Sets the pitch of the location target(s) of the mechanic. This is ignored if it remains -1111 | -1111   |
 | audience  |           | The [audience] of the particle effect                                | nearby<!--type:Audience--> |
 | color     | c         | The color of the particle, if supported                              |<!--type:Color-->|
 | exactoffsets | eo     | Changes the formula with which random spawn locations for the particles are computed | false |
