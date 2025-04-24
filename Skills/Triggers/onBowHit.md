@@ -27,3 +27,4 @@ NotYourAverageSkeleton:
 
 ## Aliases
 - [x] onBow_Hit
+- [x] onArrowHit
