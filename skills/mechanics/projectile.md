@@ -250,6 +250,7 @@ Examples:
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletModel | model   | The MEG model to use for the bullet                                  |         |
+| bulletstate | state   | The state to play for the MEG model                                  |         |
 | bulletcolor |         | The tint of the bullet's model                                       |         |
 | bulletscale |         | The scale of the bullet                                              | 1       |
 | bulletEnchanted | enchanted | Whether the bullet's model should be enchanted                 | false   | 
