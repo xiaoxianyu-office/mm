@@ -102,7 +102,8 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onBucket](/Skills/Triggers/onbucket)   |When the cow is milked or an entity is bucketed (axolotl etc.)|
 | [onSkillDamage](/Skills/Triggers/onskilldamage) | When the mob deals damage to other entities via a mechanic   |
 | [onHear](/Skills/Triggers/onhear)       | When the mob hears a sound, [if enabled](/Mobs/Mobs#hearing) |
-
+| [onProjectileHit](/Skills/Triggers/onProjectileHit) | When a mob's special projectile hits an entity   |
+| [onProjectileLand](/Skills/Triggers/onProjectileLand) | When a mob's special projectile hits a block   |
 
 <!-- LINKS -->
 [ThreatTables]: /Mobs/ThreatTables
