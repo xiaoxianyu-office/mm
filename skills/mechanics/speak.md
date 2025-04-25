@@ -23,7 +23,7 @@ You can force a new line in the hologram by using `\n`
 >> - The `maxStacks` attribute is **set** at `1`  
 >> - The `mergeSameCaster` attribute is **set** at `false`  
 >> - The `overwriteCaster` attribute is **set** at `true`  
->> - The `refreshDuration ` attribute is **set** at `false`  
+>> - The `refreshDuration` attribute is **set** at `false`  
 
 ## Examples
 ```yaml
