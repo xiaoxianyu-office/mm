@@ -24,6 +24,11 @@ ExampleSkill:
     onEnd=[
       - effect:particles @RingAroundOrigin{r=5;p=15}
     ]}
+
+# This will draw a vertical circle instead of a flat one:
+VerticalRingSkill:
+  Skills:
+  - particles{p=enchanted_hit;a=1;} @RAO{r=2;rz=1.57;p=9;relative=true}
 ```
 
 
