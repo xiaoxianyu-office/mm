@@ -118,7 +118,7 @@ These work with the projectile, missile, and orbital mechanics.
 | [ARROW][]   |              | The bullet will be a minecraft projectile                                 |
 | [BLOCK][]   |              | The bullet will be a block                                                |
 | [SMALLBLOCK][]|            | The bullet will be a small block                                          |
-| [ITEM][]    | MYTHICITEM   | The bullet will be an item                                                |
+| [ITEM][]    | MYTHICITEM   | The bullet will be an item or MythicItem                                  |
 | [MOB][]     |              | The bullet will be a mob. If a Mythicmobs, it will retain its skills      |
 | [TRACKING][]| ARMOR_STAND, ARMORSTAND, PSTAND | The bullet will be an item, but its rotation will be adjusted depending on the projectile's direction                                                         |
 | [REALTRACKING][] | RTRACKING, REAL_ARMOR_STAND, REALARMORSTAND, STAND | As above, but a real armor stand will also be spawned instead of a packet |
@@ -173,8 +173,8 @@ Examples:
 ### ITEM Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE<!--type:Material-->  |
-|bulletModel| model     | The CustomModelData of the material                                  | 0       |
+| bulletmaterial | material, mat | The material of the bullet, either a vanilla item type or custom MythicItem    | STONE<!--type:Material-->  |
+|bulletModel| model     | The CustomModelData integer for the material (define model strings on a MythicItem instead)   | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletmatchdirection | bmd, bulletsmall | Should the bullet face where the projectile is facing | false |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
@@ -193,8 +193,8 @@ Examples:
 ### TRACKING Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE<!--type:Material--> |
-|bulletModel| model     | The CustomModelData of the material                                  | 0       |
+| bulletmaterial | material, mat | The material of the bullet, can be vanilla item type or MythicItem     | STONE<!--type:Material--> |
+|bulletModel| model     | The CustomModelData integer for the material (define model strings on a MythicItem instead)  | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
 | pitch     |           | The pitch rotation, in radians                                       | 0       |
@@ -218,8 +218,8 @@ Examples:
 ### DISPLAY Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat, bulletitem | The material of the bullet                      | STONE<!--type:Material--> |
-|bulletModel| model     | The CustomModelData of the material                                  | 0       |
+| bulletmaterial | material, mat, bulletitem | The material of the bullet, can be vanilla item type or MythicItem  | STONE<!--type:Material--> |
+|bulletModel| model     | The CustomModelData integer for the material (define model strings on a MythicItem instead) | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
 |bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
