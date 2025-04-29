@@ -22,7 +22,7 @@ This also works for universal attributes that are not inside any specific mechan
 #### Type
 If used, this will make it so that the attribute value can only be from a specific enum (like the Material or BarStyle ones, to say a few)
 
-For that purpose [a list of valid types can be found here](https://github.com/Lxlp38/MythicScribe/blob/21d2ad98234b911200ab0f70370d3752e7573401/src/objectInfos.ts#L93) and can be put in any casing
+For that purpose [a list of valid types can be found here](https://github.com/Lxlp38/MythicScribe/blob/master/generated/enumList/enumList.md) and can be put in any casing
 
 #### List
 If this is used, it will declare that the attribute value can be a comma separated list of elements.
