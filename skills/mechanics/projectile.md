@@ -173,7 +173,7 @@ Examples:
 ### ITEM Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet, either a vanilla item type or custom MythicItem    | STONE<!--type:Material-->  |
+| bulletmaterial | material, mat | The material of the bullet, either a vanilla item type or custom MythicItem    | STONE<!--type:Item-->  |
 |bulletModel| model     | The CustomModelData integer for the material (define model strings on a MythicItem instead)   | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletmatchdirection | bmd, bulletsmall | Should the bullet face where the projectile is facing | false |
@@ -193,7 +193,7 @@ Examples:
 ### TRACKING Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet, can be vanilla item type or MythicItem     | STONE<!--type:Material--> |
+| bulletmaterial | material, mat | The material of the bullet, can be vanilla item type or MythicItem     | STONE<!--type:Item--> |
 |bulletModel| model     | The CustomModelData integer for the material (define model strings on a MythicItem instead)  | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
@@ -210,7 +210,7 @@ Examples:
 ### REALTRACKING Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet, can be vanilla item type or MythicItem | STONE<!--type:Material--> |
+| bulletmaterial | material, mat | The material of the bullet, can be vanilla item type or MythicItem | STONE<!--type:Item--> |
 |bulletModel| model     | The CustomModelData integer for the material (define model strings on a MythicItem instead) | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
@@ -218,7 +218,7 @@ Examples:
 ### DISPLAY Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat, bulletitem | The material of the bullet, can be vanilla item type or MythicItem  | STONE<!--type:Material--> |
+| bulletmaterial | material, mat, bulletitem | The material of the bullet, can be vanilla item type or MythicItem  | STONE<!--type:Item--> |
 |bulletModel| model     | The CustomModelData integer for the material (define model strings on a MythicItem instead) | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
