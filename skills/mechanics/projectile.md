@@ -210,8 +210,8 @@ Examples:
 ### REALTRACKING Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE<!--type:Material--> |
-|bulletModel| model     | The CustomModelData of the material                                  | 0       |
+| bulletmaterial | material, mat | The material of the bullet, can be vanilla item type or MythicItem | STONE<!--type:Material--> |
+|bulletModel| model     | The CustomModelData integer for the material (define model strings on a MythicItem instead) | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
 
