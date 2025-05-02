@@ -321,8 +321,11 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [Region](/skills/conditions/region)                                           | Location | If the target is within the given WorldGuard region                                           |
 | [SameFaction](/skills/conditions/samefaction)                                 | Entity   | Tests if the caster and target are in the same faction                                       |
 | [Score](/skills/conditions/score)                                             | Entity   | Checks a scoreboard value of the target entity                                           |
+| [ServerIsPaper](/skills/conditions/ServerIsPaper)                             | Meta     | Checks whether the server is running a fork of paper.                                  |
 | [ServerNmsVersion](/skills/conditions/servernmsversion)                       | Meta     | Checks if the server is running the specified minecraft NMS version.                          |
 | [ServerVersion](/skills/conditions/serverversion)                             | Meta     | Checks if the server is running the specified minecraft version.                              |
+| [ServerVersionAfterOrEqual](/skills/conditions/ServerVersionAfterOrEqual)     | Meta     | Checks whether the server is after or equal to a specific version                      |
+| [ServerVersionBefore](/skills/conditions/ServerVersionBefore)                 | Meta     | Checks whether the server is before a specific version                                 |
 | [Size](/skills/conditions/Size)                                               | Entity   | Checks the size of the target entity                                                       |
 | [SkillOnCooldown](/skills/conditions/skilloncooldown)                         | Entity   | Checks if the given skill is in cooldown for the target                                       |
 | [SpawnReason](/skills/conditions/SpawnReason)                                 | Entity   | Checks against the spawn reason of the target                                          |
