@@ -1,5 +1,5 @@
 ## Description
-Checks whether the server is before or equal to a specific version
+Checks whether the server is before a specific version
 
 
 ## Attributes
