@@ -342,7 +342,7 @@ This is done with the attributes:
 
 | Attribute <!-- ETA --> | Aliases   | Description                                             | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| sort      | sortby    | How to sort the targeted entities/locations                          |<!--type:NONE,RANDOM,NEAREST,FURTHEST,HIGHEST_HEALTH,LOWEST_HEALTH,HIGHEST_THREAT,LOWEST_THREAT-->|
+| sort      | sortby    | How to sort the targeted entities/locations. Distance-based sorts are made against the mechanic's origin |<!--type:NONE,RANDOM,NEAREST,FURTHEST,HIGHEST_HEALTH,LOWEST_HEALTH,HIGHEST_THREAT,LOWEST_THREAT-->|
 | skipTargetsUpToIndex | stuti | skips the first `n` targets of the targeter after the sort is applied, if >0 |0|
 | limit     |           |The limit to the targeted entities/locations after the skip is applied, if >0 |0|
 
@@ -358,8 +358,8 @@ Currently, sort can have the following values:
 **General sorters:**
 - NONE *(usually sorts by how long the entity has existed)*
 - RANDOM
-- NEAREST
-- FURTHEST
+- NEAREST *(to the origin of the mechanic)*
+- FURTHEST *(from the origin of the mechanic)*
 
 **Entity Only Sorters**
 - HIGHEST_HEALTH
@@ -386,7 +386,7 @@ GiveRewards:
 <details><summary></summary>
 | Attribute LTA | Aliases   | Description                                                      | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| sort      | sortby    | How to sort the targeted entities/locations                          |<!--type:NONE,RANDOM,NEAREST,FURTHEST-->|
+| sort      | sortby    | How to sort the targeted entities/locations. Distance-based sorts are made against the mechanic's origin |<!--type:NONE,RANDOM,NEAREST,FURTHEST-->|
 | skipTargetsUpToIndex | stuti | skips the first `n` targets of the targeter after the sort is applied, if >0 |0|
 | limit     |           |The limit to the targeted entities/locations after the skip is applied, if >0 |0|
 </details>
