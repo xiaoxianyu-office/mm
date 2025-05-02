@@ -11,7 +11,7 @@ Each trigger can have more than one tag, and it is listed under each section for
 | Trigger | Plugin | Description |
 |----------|--------|-------------|
 | [OnJump](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onJump) | MythicMobs | Executes the skill when the player holding or equipping the item jumps |
-| [OnTridentThrow](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onTridentThrow) | MythicMobs | Executes the skill when the trident item is thrown |
+| [OnProjectileThrow](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onProjectileThrow) | MythicMobs | Executes the skill when the special projectile item is thrown |
 
 
 [>> Go to top](#)
@@ -74,6 +74,8 @@ These triggers have not been tagged yet.
 | [OnEquip](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onEquip) | MythicMobs | When the item is equipped as an armor piece |
 | [OnUnEquip](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onUnEquip) | MythicMobs | When the item is unequipped as an armor piece |
 | [OnPressF](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onPressF) | MythicMobs | When a player presses F to swap the item |
+| [OnProjectileHit](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onProjectileHit) | MythicMobs | Executes a skill when the mob's special projectile type (trident, snowball, wither skull, llama's spit etc) hits an entity. |
+| [OnProjectileLand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onProjectileLand) | MythicMobs | Executes a skill when the mob's special projectile type (trident, snowball, wither skull, llama's spit etc) lands on the ground without hitting an entity. |
 | [OnLoad](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onLoad) | MythicMobs | Executes the skill when the mob is loaded after a server restart. |
 | [OnJoin](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onJoin) | MythicMobs | Executes the skill when the player holding or equipping the item joins the server |
 | [OnRespawn](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onRespawn) | MythicMobs | Executes the skill when the player holding or equipping the item respawns |

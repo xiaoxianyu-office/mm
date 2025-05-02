@@ -76,7 +76,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [BlockUnmask](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/BlockUnmask) | MythicMobs | The blockunmask effect is used to revert blockchanges made by the blockmask effect |
 | [BlockWave](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/BlockWave) | MythicMobs | Creates a wave of the specified blocks, with varying shapes, speeds and blocks |
 | [BloodyScreen](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/BloodyScreen) | MythicMobs | Shows the near world border effect |
-| [Bossborder](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/bossborder) | MythicMobs | Traps the the target player within a border around the caster |
+| [Bossborder](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/bossborder) | MythicMobs | Traps the the target player within a vanilla world border around the caster |
 | [EnderBeam](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/EnderBeam) | MythicMobs | Summons an Ender Crystal which shoots a beam towards the target |
 | [Ender](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Ender) | MythicMobs | Plays the effect of an eye of ender breaking at the location of the targeter |
 | [FakeExplosion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FakeExplosion) | MythicMobs | Creates an explosion effect at the specified target |
@@ -548,6 +548,7 @@ These mechanics have not been tagged yet.
 | [Consumeitem](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/Consumeitem) | MythicCrucible | Removes some items from the casting player's inventory |
 | [ConsumeUsedDurability](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeUsedDurability) | MythicCrucible | Consumes durability from the item that triggered the skilltree |
 | [ConsumeUsedItem](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeUsedItem) | MythicCrucible | Removes the item that triggered the skilltree |
+| [ProjectileHit](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ProjectileHit) | MythicCrucible | Simulates an hit from a bow's projectile |
 | [GiveAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/GiveAmmo) | MythicCrucible | Sets the ammo amount of a player's weapon to its maximum. |
 | [InventoryClear](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/InventoryClear) | MythicCrucible | Clears the inventory of the targeted player |
 | [OpenBackpack](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/OpenBackpack) | MythicCrucible | Opens the first backpack found in the player's inventory |
