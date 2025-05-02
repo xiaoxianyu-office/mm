@@ -9,6 +9,7 @@ Inherits every attribute of the [Damage](/skills/mechanics/damage) mechanic.
 | multiplier       | m       | The percentage of damage to deal    | 1       |
 | forcedDamage     | fd, forced | If this attribute is set, the one specified will be the amount of flat damage that will be inflicted, without consideration for attribute modifiers and similar other modifiers |
 | triggerSkills | ts    | Whether the damage mechanic should also be able to trigger `onAttack` related triggers       | true |
+| scaleByAttackCooldown | sbac | Whether to scale the damage by the weapon's attack cooldown | false |
 > This mechanic inherits every attribute of the [Damage](/skills/mechanics/damage) mechanic
 >> - The `amount` attribute is ignored
 >> - The `triggerSkills` attribute is **defaulted** at `true`
