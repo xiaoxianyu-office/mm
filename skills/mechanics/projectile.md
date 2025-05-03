@@ -36,7 +36,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | SideOffset | soffset, so | The value of this attribute gets inherited by StartSideOffset and EndSideOffset if no value is specified for them                                                | 0       |  
 | StartSideOffset | ssoffset, sso | How far to the side of the mob the projectile starts      |sideoffset|
 | EndSideOffset | endoffset, esoffset, eso | How far to the side of the target location the projectile will end up                                                                                   |sideoffset|
-| startingdirection | startingdir, startdir, sdir | Start direction of the projectile. For now, it only works if inherited by a missile mechanic                                                      |@Targeted|
+| startingdirection | startingdir, startdir, sdir | Start direction of the projectile. For now, it only works if inherited by a missile mechanic                                                      |@Targeted<!--type:Targeter-->|
 | HorizontalOffset | hO | Horizontal Offset will rotate the projectile's horizontal starting velocity around a 360-degree axis                                                                      | 0        |
 | VerticalOffset   | vO | Vertical Offset will add a [slope](https://en.wikipedia.org/wiki/Grade_(slope)) to the projectile's starting direction. To give it a specific angle, you can use [this image](https://en.wikipedia.org/wiki/Grade_(slope)#/media/File:Slope_quadrant.svg) as reference: the value you need will be the number shown in red divided by 100 (so if you want 40°, you will need to input 83.9/100 = `0.839`)| 0        |
 | Accuracy  | ac, a     | Determines the accuracy of the projectile                           | 1        |
@@ -155,7 +155,7 @@ Examples:
 ### ARROW Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| arrowtype | bulletarrowtype | The type of the projectile to use. Can be `NORMAL`,`SPECTRAL`,`TRIDENT` | NORMAL |
+| arrowtype | bulletarrowtype | The type of the projectile to use. Can be `NORMAL`,`SPECTRAL`,`TRIDENT` | NORMAL<!--type:NORMAL,SPECTRAL,TRIDENT--> |
 
 ### BLOCK Bullet
 | Attribute | Aliases   | Description                                                          | Default |
@@ -183,7 +183,7 @@ Examples:
 ### MOB Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| mob       | mobType, mm | The mob of the bullet                                       | SkeletalKnight |
+| mob       | mobType, mm | The mob of the bullet                         | SkeletalKnight<!--type:Mob-->|
 | bulletspin | bspin    | The spin of the bullet                                               | 0       |
 | bulletmatchdirection | bmd | Should the bullet face where the projectile is facing           | false   |
 | bulletKillable | bk   | Allow other entities to damage the projectile bullet                 | false   |
@@ -263,7 +263,7 @@ Examples:
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletText| text      | The text of the bullet                                               | *       |
-| bulletBillboard | billboard | The [billboard type] of the bullet                             | CENTER  |
+| bulletBillboard | billboard | The [billboard type] of the bullet                             | CENTER<!--type:Billboard-->|
 |bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
 | bulletyoffset | byoffset, byo | The y offset of the bullet                                   | 0       |
 | bulletforwardoffset | bulletfo, bulletoffset, bfo | The forward offset of the bullet         | 1.8     |
