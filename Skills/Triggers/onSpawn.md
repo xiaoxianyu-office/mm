@@ -5,6 +5,7 @@ Executes the skill when the mob spawns.
 
 ## Implementations
 - [MythicCrucible](/../../../mythiccrucible/-/wikis/Skills/Triggers/onSpawn)
+- [MythicRPG](/../../../mythicrpg/-/wikis/Skills/Triggers/onSpawn)
 
 
 ## Examples
