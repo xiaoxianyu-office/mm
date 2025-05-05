@@ -3,8 +3,11 @@ Executes the skill when the mob dies.
 If the server is a Paper one, it is possible to cancel the death event as long as the cancelevent mechanic is synched. The health that the mob has after this is based on what is specified in the `ReviveHealth` Option.  
 > The associated [@trigger](/Skills/Targeters/Trigger) is the entity that killed the caster
 
+
 ## Implementations
 - [MythicCrucible](/../../../mythiccrucible/-/wikis/Skills/Triggers/onDeath)
+- [MythicRPG](/../../../mythicrpg/-/wikis/Skills/Triggers/onDeath)
+
 
 ## Examples
 ```yml
