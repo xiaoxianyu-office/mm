@@ -5,6 +5,7 @@ Executes the skill when a player interacts with, or *right-clicks*, the mob.
 
 ## Implementations
 - [MythicCrucible](/../../../mythiccrucible/-/wikis/Skills/Triggers/onInteract)
+- [MythicRPG](/../../../mythicrpg/-/wikis/Skills/Triggers/onInteract)
 
 
 ## Examples
