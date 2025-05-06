@@ -11,6 +11,7 @@ For example, skeletons with bows will shoot arrows; ghasts, blazes, or ender dra
 
 ## Implementations
 - [MythicCrucible](/../../../mythiccrucible/-/wikis/Skills/Triggers/onShoot)
+- [MythicRPG](/../../../mythicrpg/-/wikis/Skills/Triggers/onShoot)
 
 
 ## Examples
