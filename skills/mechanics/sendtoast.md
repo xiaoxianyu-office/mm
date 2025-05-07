@@ -10,7 +10,7 @@ The header of the toast is set by the frame type, such as `challenge` being titl
 | icon      | i         | The icon to send. Accepts any valid MATERIAL.                  | diamond_sword<!--type:Material-->|
 | iconnbt   | nbt       | The NBT of the icon.                                                 | NONE    |
 | message   | msg,m   | The message to send. Must be in double-quotes.                         | NONE    |
-| frame     | f       | The type of toast to send. MUST BE LOWERCASE. Options are: `challenge`, `task` or `goal`.                                                                                       | challenge<!--type:challenge,task,goal-->|
+| frame     | f       | The type of toast to send. MUST BE LOWERCASE. Options are: `challenge`, `task` or `goal`.                                                                                       | challenge<!--type:AdvancementDisplayFrame-->|
 
 
 ## Examples
