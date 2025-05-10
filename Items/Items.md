@@ -223,6 +223,19 @@ MyCoolStick:
   - obsidian
 ```
 
+#### BlockStates
+Allows you to specify the block states of items
+```yaml
+TestBlockStates:
+  Material: OAK_SLAB
+  Display: 'Waterlogged Slab'
+  Options:
+    Placeable: true # Crucible Option
+  BlockStates:
+  - type top
+  - waterlogged true
+```
+
 #### Glider
 Allows item to be used as an elytra.  
 Used to handle the [glider component](https://minecraft.wiki/w/Data_component_format/glider) of an item.  
@@ -537,6 +550,7 @@ TheMusical:
   Rarity: EPIC
   Material: COMPASS
 ```
+
 
 ## Examples
 More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
