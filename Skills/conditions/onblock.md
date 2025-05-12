@@ -7,7 +7,7 @@ A list of available materials can be found on the [Spigot Javadoc](https://hub.s
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| material  | types, type, t, mat, m, block, b | A list of materials. The condition will match if one is found. Does also support wildcards and block tags | STONE<!--type:Material--><!--list-->|
+| material  | types, type, t, mat, m, block, b | A list of materials. The condition will match if one is found. Does also support wildcards and block tags | STONE<!--type:Block--><!--list-->|
 
 
 ## Examples
