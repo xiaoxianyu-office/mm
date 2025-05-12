@@ -11,7 +11,7 @@ Bukkit material/block names can be acquired in-game. Simply hold the block you w
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| material  | mat, m, block, b | The [type of block](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html) used for the blockmask                      | GRAVEL<!--type:Material--> |
+| material  | mat, m, block, b | The [type of block](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html) used for the blockmask                      | GRAVEL<!--type:Block--> |
 | radius    | r         | The radius of the blockmask effect                                   | 0       |
 | radiusy   | ry        | The y component of the radius                                        | `radius`|
 | noise     | n         | Defines the randomness of the effect                                 | 0       |
