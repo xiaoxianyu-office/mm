@@ -5,7 +5,7 @@ Checks against the amount of specified blocks in a radius around the evaluated l
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| types     | type, t, material, mat, m, b, block | A list of [materials] to check against               | DIRT<!--type:Material--><!--list--> |
+| types     | type, t, material, mat, m, b, block | A list of [materials] to check against               | DIRT<!--type:Block--><!--list--> |
 | radius    | r         | The radius                                                           | 8       |
 | amount    | a         | The amount of blocks to match                                        | >0      |
 
