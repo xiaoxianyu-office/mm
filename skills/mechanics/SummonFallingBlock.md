@@ -5,7 +5,7 @@ Summons a falling block of the specified material at the targeted locations
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type      | types, t, material, mat, m | The [material] of the falling block                 | DIRT<!--type:Material--> |
+| type      | types, t, material, mat, m | The [material] of the falling block                 | DIRT<!--type:Block--> |
 
 
 ## Examples
@@ -21,4 +21,3 @@ Summons a falling block of the specified material at the targeted locations
 
 <!--TAGS-->
 <!--tag:Summon-->
-
