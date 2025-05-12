@@ -160,7 +160,7 @@ Examples:
 ### BLOCK Bullet
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE<!--type:Material--> |
+| bulletmaterial | material, mat | The material of the bullet                                  | STONE<!--type:Block--> |
 | bulletspin | bspin    | The spin of the bullet                                               | 0       |
 | audience  |           | The [Audience][] of the bullet                                       | world<!--type:Audience--> |
 
