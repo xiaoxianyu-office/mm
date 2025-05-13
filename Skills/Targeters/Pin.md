@@ -6,7 +6,7 @@ If the Pin is a Multi-Pin made via a Pin Wand, this targets all of the associate
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| name      | n, pin, p, key, k | The name of the [pin] to target                              |         |
+| name      | n, pin, p, key, k | The name of the [pin] to target                              |<!--type:Pin--> |
 | random | r |Whether to select a single and random location, if the specified pin is a Multi-Pin| false |
 
 
