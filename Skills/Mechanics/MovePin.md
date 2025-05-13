@@ -6,7 +6,7 @@ Cannot move MultiPins.
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| pin       | p         | The pin to move                                                      |         |
+| pin       | p         | The pin to move                                                      |<!--type:Pin--> |
 
 
 ## Examples
