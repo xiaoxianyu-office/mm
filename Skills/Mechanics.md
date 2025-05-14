@@ -188,6 +188,7 @@ are able to target locations as well.
 | [SetGravity][]            | Sets whether gravity affects the target entity                                           |
 | [SetHealth][]             | Sets the health of the target entity                                                     |
 | [SetInteractionSize][]    | Sets the size of the target `INTERACTION` entity.                                                     |
+| [SetItemGroupCooldown][]  | Sets the cooldown on an item group for the target player                                                     |
 | [setDisplayEntityItem][]  | Sets the item component of `ITEM_DISPLAY` entities.                                                     |
 | [SetLeashHolder][]        | Changes the holder of a mobs lead                                                          |
 | [SetLevel][]              | Changes the casting mob's level                                                          |
@@ -534,6 +535,7 @@ but not yet ready for use.
   [SetGravity]: /skills/mechanics/setgravity
   [SetHealth]: /skills/mechanics/sethealth
   [SetInteractionSize]: /skills/mechanics/SetInteractionSize
+  [SetItemGroupCooldown]: /skills/mechanics/SetItemGroupCooldown
   [setDisplayEntityItem]: /skills/mechanics/setDisplayEntityItem
   [SetLeashHolder]: /skills/mechanics/setleashholder
   [SetLevel]: /skills/mechanics/setlevel
