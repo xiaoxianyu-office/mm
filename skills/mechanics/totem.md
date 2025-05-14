@@ -16,6 +16,9 @@ poison or land mines.
 | Charges   | ch, c     | Determines how many times the totem can hit something before disappearing | 0  |
 | YOffset   | yo        | How high off the target the totem will spawn                          | 1      |
 | stopatentity | se     | Whether the totem should terminate upon hitting an entity             | false  |
+| hugsurface| hs        | Whether or not the totem should be aligned with the ground           | false   |
+| hugliquid | hugwater, huglava | Whether, when using hugSurface, a liquid can also count as a "surface" the totem can align itself with | false   |
+| heightfromsurface| hfs| How high above the surface the totem should align itself if HugSurface is set to true | 0.5     |
 > Inherits attributes from [Projectile](/skills/mechanics/projectile)
 
 
