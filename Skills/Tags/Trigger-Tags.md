@@ -68,8 +68,8 @@ These triggers have not been tagged yet.
 | [OnFishCatch](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFishCatch) | MythicMobs | When a player holding or equipping the item has successfully caught a fish and is reeling it in. |
 | [OnFishGrab](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFishGrab) | MythicMobs | When a player holding or equipping the item has successfully caught an entity |
 | [OnFishGround](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFishGround) | MythicMobs | When a bobber casted by a player holding or equipping the item is stuck in the ground |
-| [OnFishingReel](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFishingReel) | MythicMobs | When a player holding or equipping the item reels in their hook without receiving any bites |
-| [OnFishingFail](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFishingFail) | MythicMobs | When a player holding or equipping the item fails to catch a bite while fishing usually due to poor timing |
+| [OnFishReel](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFishReel) | MythicMobs | When a player holding or equipping the item reels in their hook without receiving any bites |
+| [OnFishFail](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFishFail) | MythicMobs | When a player holding or equipping the item fails to catch a bite while fishing usually due to poor timing |
 | [OnTame](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onTame) | MythicMobs | Executes the skill when the player tames the mob |
 | [OnEquip](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onEquip) | MythicMobs | When the item is equipped as an armor piece |
 | [OnUnEquip](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onUnEquip) | MythicMobs | When the item is unequipped as an armor piece |
@@ -97,4 +97,7 @@ These triggers have not been tagged yet.
 | [OnFurnitureInventoryClose](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFurnitureInventoryClose) | MythicCrucible | Triggers when the [Furniture Inventory](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furnitureinventory) is closed |
 | [OnStartDestroyBlock](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onStartDestroyBlock) | MythicCrucible | Executes the skill when the player holding or equipping the item starts destroying a block |
 | [OnStopDestroyBlock](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onStopDestroyBlock) | MythicCrucible | Executes the skill when the player holding or equipping the item stops destroying a block |
+| [OnClassGain](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Triggers/onClassGain) | MythicRPG | Triggers when the archetype is gained |
+| [OnClassLoss](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Triggers/onClassLoss) | MythicRPG | Triggers when the archetype is lost/removed |
+| [OnLevelUp](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Triggers/onLevelUp) | MythicRPG | Triggers when the [archetype](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Archetypes) [levels up](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Archetypes/Leveling) |
 

@@ -110,6 +110,7 @@ These conditions have not been tagged yet.
 | [Issaddled](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/issaddled) | MythicMobs | Checks if the target entity is saddled |
 | [IsTamed](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsTamed) | MythicMobs | Checks if the entity is tamed. |
 | [IsUsingSpyglass](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsUsingSpyglass) | MythicMobs | If the target player is using a spyglass |
+| [ItemGroupOnCooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ItemGroupOnCooldown) | MythicMobs | Checks whether the target player has the specified item group on cooldown |
 | [Itemissimilar](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/itemissimilar) | MythicMobs | Checks if the target player's inventory slot holds an item that is similar to the specified one |
 | [Itemrecharging](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/itemrecharging) | MythicMobs | Checks if the weapon of the target entity is recharging |
 | [Lastdamagecause](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/lastdamagecause) | MythicMobs | Checks the target's last damage cause |
@@ -164,7 +165,10 @@ These conditions have not been tagged yet.
 | [Region](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/region) | MythicMobs | Checks if the target is within the given WorldGuard region. |
 | [Score](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/score) | MythicMobs | Checks a scoreboard value of the target entity. |
 | [Globalscore](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/globalscore) | MythicMobs | Checks a global scoreboard value (the value associated with the fake player __GLOBAL__) |
+| [ServerIsPaper](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ServerIsPaper) | MythicMobs | Checks whether the server is running a fork of paper |
 | [Servernmsversion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/servernmsversion) | MythicMobs | Checks is the server is running a specific minecraft NMS version |
+| [ServerVersionAfterOrEqual](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ServerVersionAfterOrEqual) | MythicMobs | Checks whether the server is after or equal to a specific version |
+| [ServerVersionBefore](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ServerVersionBefore) | MythicMobs | Checks whether the server is before a specific version |
 | [Serverversion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/serverversion) | MythicMobs | Checks is the server is running a specific minecraft version |
 | [Mobsize](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/mobsize) | MythicMobs | Checks the size of an entity that can have its size changed (Slimes, Magma_cubes, and Phantoms). |
 | [Skilloncooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/skilloncooldown) | MythicMobs | Checks if the given skill is in cooldown for the target entity |
@@ -200,4 +204,8 @@ These conditions have not been tagged yet.
 | [RidingModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/RidingModel) | ModelEngine | Checks if the target entity is a passenger of a model |
 | [ModelHasDriver](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/ModelHasDriver) | ModelEngine | Checks if the target modeled entity has a driver |
 | [ModelHasPassengers](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/ModelHasPassengers) | ModelEngine | Checks if the target modeled entity has passengers |
+| [Archetype](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/Archetype) | MythicRPG | This condition checks if the player has a certain type of Archetype in a defined group |
+| [ArchetypeLevel](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/ArchetypeLevel) | MythicRPG | This condition checks if the player has a certain level of the Archetype in a defined group |
+| [HasLearnedSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasLearnedSpell) | MythicRPG | Whether the target player has learned the given spell |
+| [HasAchievement](https://git.lumine.io/mythiccraft/mythicachievements/-/wikis/Skills/Conditions/HasAchievement) | MythicAchievements | Checks if the player has a mythic achievement. |
 
