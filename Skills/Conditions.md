@@ -265,6 +265,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [isSaddled](/skills/conditions/issaddled)                                     | Entity   | Checks if the target entity is saddled                                                        |
 | [isTamed](/skills/conditions/IsTamed)                                         | Entity   | Checks if the target entity is tamed                                                          |
 | [IsUsingSpyglass](/skills/conditions/IsUsingSpyglass)                         | Entity   | Checks if the target player is using a spyglass                                               |
+| [ItemGroupOnCooldown](/skills/conditions/ItemGroupOnCooldown)                 | Entity   | Checks whether the target player has the specified item group on cooldown              |
 | [ItemIsSimilar](/skills/conditions/itemissimilar)                             | Entity   | Checks that targeted player's inventory slot if it's similar to an item                     |
 | [ItemRecharging](/skills/conditions/itemrecharging)                           | Entity   | Checks if the target's weapon is recharging                                                   |
 | [ItemType](/skills/conditions/ItemType)                                       | Meta     | Checks against the material of the item that triggered the skill                       |
