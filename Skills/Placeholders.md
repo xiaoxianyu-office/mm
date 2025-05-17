@@ -301,6 +301,7 @@ TestRandomPlaceholder:
 - green
 - blue
 ```
+> A value of "null" is not accepted
 
 
 # Examples
