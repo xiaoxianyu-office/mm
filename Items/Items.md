@@ -364,6 +364,7 @@ MyExampleItem:
     Animation: SPEAR
     Sound: item.crossbow.quick_charge_3
     ConsumeEffects:
+    # The following are SPECIAL MECHANICS and are the only ones that you can use in this field
     - potion{type=absorption;d=200}
     - randomteleport{radius=5}
     - removePotion{type=wither}
