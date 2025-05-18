@@ -69,6 +69,21 @@ Sets the maximum stack size of the item in the inventory.
     StackSize: 16
 ```
 
+#### GenerateUUID
+Applies a random UUID to the item upon generation. Useful to easily detect duped items. Enabling this option automatically prevents similar items from stacking, as they share different UUIDs.
+```yaml
+  Options:
+    GenerateUUID: true
+```
+
+#### GenerateTimestamp
+Applies the current unix time to the item on generation. Useful to backtrack the exact time an item was created. Enabling this option automatically prevents similar items from stacking, as they share different UUIDs.
+```yaml
+  Options:
+    GenerateTimestamp: true
+```
+
+
 #### ItemModel
 The model that should be applied to the item, which [works like this item component](https://minecraft.wiki/w/Data_component_format#item_model)
 ```yaml
