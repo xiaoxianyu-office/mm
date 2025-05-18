@@ -77,7 +77,7 @@ Applies a random UUID to the item upon generation. Useful to easily detect duped
 ```
 
 #### GenerateTimestamp
-Applies the current unix time to the item on generation. Useful to backtrack the exact time an item was created. Enabling this option automatically prevents similar items from stacking, as they share different UUIDs.
+Applies the current unix time to the item on generation. Useful to backtrack the exact time an item was created. Enabling this option will prevent items from stacking if they were generated at different times.
 ```yaml
   Options:
     GenerateTimestamp: true
