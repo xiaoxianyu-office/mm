@@ -17,17 +17,17 @@ duration and can also be used in other mechanics and conditions.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | auraName  | aura, b, buff, buffname, debuff, debuffname, n, name | Optional name, required to use associated mechanics & conditions that reference a specific aura. Given a random UUID if not defined.                            |         |
+| auratype  | auragroup, group, type, g | The type of the aura. It's similar to its name       |         |
 | onStartSkill | onStart, os | Meta-Skill executed when the aura first starts                  |<!--type:Metaskill-->|
 | onTickSkill  | onTick, ot  | Meta-Skill executed every [interval] ticks on the affected entity|<!--type:Metaskill-->|
 | onEndSkill   | onEnd, oe   | Meta-Skill executed when the aura ends                          |<!--type:Metaskill-->|
 | ShowBarTimer | bartimer, bt| If set, the aura will display a bar for caster during it        | false   |
-| auratype  | auragroup, group, type, g | The type of the aura. It's similar to its name       |         |
 | Charges   | c         | If set, the aura will fade when it hits zero charges. Modifiable by other mechanics.                                                                                     | 0       |
 | Duration  | ticks, t, d, time, t | The max duration (in ticks) the aura will persist.        | 200     |
 | Interval  | i         | How often (in ticks) the aura fires its onTick skill                 | 1       |
 | maxStacks | ms        | How many times the aura stacks on the same targeted entity if applied multiple times                                                                                          | 1       |
 | refreshDuration | rd  | Makes the aura's duration refresh to the amount defined in the mechanic should the entity have the same aura applied to it again                                              | true    |
-| mergeSameCaster | msc, mc | Merges all auras of the same name applied by one entity to another into one aura (Prevents a mob from being able to stack an aura multiple times on the same entity)            |         |
+| mergeSameCaster | msc, mc | Merges all auras of the same name applied by one entity to another into one aura (Prevents a mob from being able to stack an aura multiple times on the same entity)            | `false` if any among `mergeAll`, `overwriteAll` or `overwriteSameCaster` is `true` |
 | mergeAll        | ma  | Merges all auras of the same name applied by any and all entities to another into one aura (Prevents multiple mobs from being able to stack an aura multiple times on the same entity)| false  |
 | overwriteSameCaster | osc, oc | When applied, stops all of the same auras applied on the target by the same caster and replaces them with the new aura (cannot be used with merge options)                                                | false   |
 | overwriteAll    | overwrite, ow | When applied, stops all of the same auras applied on the target and replaces them with the new aura  (cannot be used with merge options)                                                                | false   |
