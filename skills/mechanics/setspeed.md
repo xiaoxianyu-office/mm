@@ -1,6 +1,7 @@
 ## Description
 Causes the target to change its speed attribute
 
+> The [MovementSpeed](/Mobs/Options#movementspeed) option must be explicitly set for this to work!
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
