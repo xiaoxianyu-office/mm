@@ -241,6 +241,7 @@ are able to target locations as well.
 | [SummonFallingBlock][]    | Summons a falling block                                                                          |
 | [SummonPassenger][]       | Summons a mob to ride the target.                                                         |
 | [Swap][]                  | Swaps locations with the target                                                          |
+| [SwingOffhand][]          | Makes the casting player swing their offhand                                                          |
 | [AddTag][]                | Adds a scoreboard tag to the target                                                      |
 | [RemoveTag][]             | Removes a scoreboard tag from the target                                                 |
 | [TakeItem][]              | Removes an item from the targeted player's inventory                                     |
@@ -586,6 +587,7 @@ but not yet ready for use.
   [SummonFallingBlock]: /skills/mechanics/SummonFallingBlock
   [SummonPassenger]: /skills/mechanics/summonpassenger
   [Swap]: /skills/mechanics/swap
+  [SwingOffhand]: /skills/mechanics/SwingOffhand
   [AddTag]: /skills/mechanics/addtag
   [RemoveTag]: /skills/mechanics/removetag
   [TakeItem]: /skills/mechanics/takeitem
