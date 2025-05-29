@@ -36,10 +36,11 @@ The chance for the specified item to be dropped.
 |-----------------------------|----------------------------------------------------------|-----------------------------------------|
 | [MythicMob](/drops/DropTypes/MythicMob)| Will drop a MythicMob                         |                |
 | [Mythic Item](/drops/DropTypes/MythicItem)| Will drop a Mythic Item                    |                |
+| [VanillaLootTable](/drops/DropTypes/VanillaLootTable) | Drop items from vanilla loot tables and datapacks | `- vanillaLootTable minecraft:table_name` |
 | **champions-exp**           | Will drop experience points for the plugin `Champions`.  |                                         |
 | [skillapi-exp](/drops/DropTypes/SkillAPIExp)| Will drop experience points for the plugin `SkillAPI` |                                         |
 | **heroesexp**               | Will drop experience points for the plugin `Heroes`.     |                                         |
-| [mcmmo-exp](/drops/DropTypes/McMMOExp)| Will drop experience points for the plugin `MCMMO`. | -` mcmmo-exp 69`                       |
+| [mcmmo-exp](/drops/DropTypes/McMMOExp)| Will drop experience points for the plugin `MCMMO`. | `- mcmmo-exp 69`                       |
 | **exp**                     | Will drop regular Minecraft experience points.           | `- exp 420`                                         |
 | [money](/drops/DropTypes/Money)| Will drop money for the plugin `Vault`.               | `- money 1500`                                        |
 | **mythicdrop &lt;item&gt;** | Will drop an &lt;item&gt; from the plugin `MythicDrops`. | `- mythicdrop CoolSword 1`                                        |
