@@ -118,8 +118,10 @@ SuperMob:
 | [Villagers](/Mobs/ai/targets/Villagers) | villager | Targets villagers                                 |
 | [irongolem](/Mobs/ai/targets/Irongolems) | irongolem, iron_golems, iron_golem | Targets Golems         |
 | [nearestConditionalTarget](/Mobs/ai/targets/nearestconditionaltarget)<br>**[Premium-only]**            | nearestConditional, nearestIf | Targets the nearest entity that meets the conditions provided            |
-| [OwnerAttacker](/Mobs/ai/targets/OwnerAttacker) | Targets whatever attacks the mob's owner.            |
-| [OwnerTarget](/Mobs/ai/targets/OwnerTarget) | Targets whatever the mob's owner attacks.                |
+| [OwnerAttacker](/Mobs/ai/targets/OwnerAttacker) | ownerHurtBy, ownerHurtByTarget, ownerDamager | Targets whatever attacks the mob's owner |
+| [OwnerTarget](/Mobs/ai/targets/OwnerTarget) | ownerAttack, ownerhurt | Targets whatever the mob's owner attacks.                |
+| [ParentHurtBy](/Mobs/ai/targets/ParentHurtBy) | parentHurtByTarget, parentDamager, parentAttacker | Targets the entity that attacks the mob's parent       |
+| [ParentTarget](/Mobs/ai/targets/ParentTarget) | parentHurt, parentAttack | Targets the entity that is being hit by the caster's parent |
 
 ## All Creatures ([Faction](/Mobs/Factions) Support)
 | AI Target          | Aliases      | Description                                                        |
