@@ -123,7 +123,9 @@ cool_display:
 ```
 
 ### Brightness
-Both blocklight and skylight must be set to override brightness. Values must be in range of `0` to `15`.
+Both blocklight and skylight must be set to override brightness. Values must be in range of `0` to `15`. 
+ 
+Use a value of `-1` to make it so the display entity uses the ambiens's blocklight/skylight without overriding them
 
 #### BlockLight & SkyLight
 ```yml
