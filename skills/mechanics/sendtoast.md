@@ -7,7 +7,7 @@ The header of the toast is set by the frame type, such as `challenge` being titl
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| icon      | i         | The icon to send. Accepts any valid MATERIAL or Mythic Items                  | diamond_sword<!--type:Item-->|
+| icon      | i         | The icon to send. Accepts any valid MATERIAL or Mythic Item          | diamond_sword<!--type:Item-->|
 | iconnbt   | nbt       | The NBT of the icon.                                                 | NONE    |
 | message   | msg,m   | The message to send. Must be in double-quotes.                         | NONE    |
 | frame     | f       | The type of toast to send. MUST BE LOWERCASE. Options are: `challenge`, `task` or `goal`.                                                                                       | challenge<!--type:AdvancementDisplayFrame-->|
@@ -16,7 +16,7 @@ The header of the toast is set by the frame type, such as `challenge` being titl
 ## Examples
 ```yaml
   Skills:
-  - sendtoast{icon=DIAMOND;iconnbt={CustomModelData:1};message="This is a Toast!";frame=challenge} @PlayersInRadius{r=10}
+  - sendtoast{icon=MyCustomDiamond;message="This is a Toast!";frame=challenge} @PlayersInRadius{r=10}
   - ...
 ```
 
