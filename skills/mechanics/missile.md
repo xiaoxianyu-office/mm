@@ -10,6 +10,7 @@ Missiles can target both a location and an entity.
 | Inertia   | in, intertia | Sets the "turning-rate" of the missile. Lower values make the missile turn around faster. Use big numbers (10-100) when trying to make your missiles turn slowly.         | 1.5     |
 | Bounces   | bounce    | Should the projectile bounce. Bounce radius depends on the projectile's hitbox. **Premium Only**.                                                                              | false   |
 | BounceVelocity | bv   | Every time the projectile bounces, its velocity will be multiplied by this value. **Premium Only** .                                                                      | 0.9     |
+| startWithParentVelocity | swpv, spv | Whether the missile, if called from another projectile, should start with the same velocity as the parent projectile                                          | false   |
 | HugSurface| hs        | Whether or not the projectile should move along the ground.          | false   |
 | HugLiquid | hugwater, huglava | when using hugSurface will also move on top of liquids       | false   |
 | HeightFromSurface| hfs| For NORMAL projectiles, how high above the surface the projectile should glide if HugSurface is set to TRUE. For METEOR projectiles, how high above the surface the projectile starts above the target.                                                                              | 0.5     |
