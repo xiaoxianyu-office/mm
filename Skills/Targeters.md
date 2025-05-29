@@ -241,7 +241,7 @@ TestOwner:
 | coordinateyaw                            | cyaw             | Sets the yaw value                        | |
 | coordinatepitch                          | cpitch           | Sets the pitch value                        | |
 | blockcentered                            | centered         | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself | |
-| faulty    |           | Whether the mechanic should use the old vector formula. Defaults to false        | |
+| faulty    |           | Whether the mechanic should use the old vector formula        | false |
 
 
 # Targeter Options
