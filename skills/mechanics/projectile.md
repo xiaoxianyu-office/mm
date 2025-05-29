@@ -55,6 +55,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | ImmuneDelay | immune, id | Sets the immunity delay (when the target can be hit by the projectile again) | 2000  |
 | hitConditions | conditions, cond, c | A list of conditions that a target must meet in order for the projectile to be able to hit it. **Premium Only** Mechanic  |<!--type:Conditions-->|
 | stopconditions | stpcond | A list of conditions that a target must meet in order for the projectile to end when hitting them                                                                         | null     |
+| doEndSkillOnHit | esoh | Whether the onEnd metaskill should be run when the projectile ends by hitting an entity | true |
 | fromorigin | fo       | Whether the projectile should start from the origin of the mechanic | false    |
 | requireLineOfSight | rlos, los, requirelos | Whether the starting point must have line-of-sight to the origin.  Values can be `true`, `false`, `PLAYERS_ONLY`                                             | PLAYERS_ONLY<!--type:Projectile_HighAccuracyMode-->|
 | drawHitbox |          | Draw the hitbox of the projectile, useful for debugging             | false    |
