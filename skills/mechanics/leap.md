@@ -9,7 +9,7 @@ at far as possible towards the target.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | velocity  | v         | The max velocity of the leap                                         | 100     |
-| noise     | n         | Added variance to where the mob will land                            | 1       |
+| noise     | n         | Added variance to where the mob will land                            | 0       |
 
 ### Velocity Attribute
 Because of the way this skill works, using very high velocity values is
