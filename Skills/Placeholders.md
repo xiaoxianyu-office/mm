@@ -173,6 +173,7 @@ These placeholders will return whatever target selector has been used. For insta
 | <target.stat.{StatName}> | Returns the value of the specified stat on the target             |
 | <target.raytrace.{Float}> | Returns the name of the block being looked at by the target if within {Float} range, if {Float} is specified. If only <target.raytrace> is used, then the range defaults to `4.5`. If no block is found, `AIR` is returned.|
 | <target.fovoffset{rotation=0;absolute=true}> | Returns the angular offset (in degrees) between the direction the caster is looking and the direction from the caster to the target entity. This offset can be used to determine how far the target is from the caster's center of view |
+| <target.distance>       | Return the distance between the caster and the mechanic's target. If the target cannot be found in the caster's world, returns the maximum double value |
 
 ## Trigger Placeholders
 These placeholders will return whatever attribute of the entity that caused the skill to happen. For instance `<trigger.name>` combined with an `~onDeath` trigger will return the name of the entity that killed the mob.
@@ -208,6 +209,7 @@ The following are only some of the placeholders that can have a `trigger` scope,
 | <trigger.item.model> | Returns the model of the item the trigger is holding                                            |
 | <trigger.stat.{Stat}> | Returns the value of the specified stat on the trigger                       |
 | <trigger.raytrace.{Float}>                | Returns the name of the block being looked at by the trigger if within {Float} range, if # is specified. If only <trigger.raytrace> is used, then the range defaults to `4.5`. If no block is found, `AIR` is returned.|
+| <trigger.distance>       | Return the distance between the caster and the skilltree's trigger. If the trigger cannot be found in the caster's world, returns the maximum double value |
 
 
 ## Misc Placeholders
