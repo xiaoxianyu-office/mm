@@ -117,7 +117,9 @@ SuperMob:
 | [Players](/Mobs/ai/targets/Players) | player | Targets players                                         |
 | [Villagers](/Mobs/ai/targets/Villagers) | villager | Targets villagers                                 |
 | [irongolem](/Mobs/ai/targets/Irongolems) | irongolem, iron_golems, iron_golem | Targets Golems         |
-| [nearestConditionalTarget](/Mobs/ai/targets/nearestconditionaltarget)<br>**[Premium-only]** | nearestConditional, nearestIf | Targets the nearest entity that meets the conditions provided            |
+| [nearestConditionalTarget](/Mobs/ai/targets/nearestconditionaltarget)<br>**[Premium-only]**            | nearestConditional, nearestIf | Targets the nearest entity that meets the conditions provided            |
+| [OwnerAttacker](/Mobs/ai/targets/OwnerAttacker) | Targets whatever attacks the mob's owner.            |
+| [OwnerTarget](/Mobs/ai/targets/OwnerTarget) | Targets whatever the mob's owner attacks.                |
 
 ## All Creatures ([Faction](/Mobs/Factions) Support)
 | AI Target          | Aliases      | Description                                                        |
@@ -126,9 +128,3 @@ SuperMob:
 | [NearestOtherFactionMonsters](/Mobs/ai/targets/NearestOtherFactionMonsters) | OtherFactionMonsters | Targets any monster that is in a different faction |
 | [SpecificFaction](/Mobs/ai/targets/specificfaction) [faction_name] | | Targets any entities that are in the given faction                                                                                        |
 | [SpecificFactionMonsters](/Mobs/ai/targets/specificfactionmonsters) [faction_name] | | Targets any monsters that are in the given faction                                                                   |
-
-## Tameable Creatures
-| AI Target     | Description                               |
-|---------------|-------------------------------------------|
-| [OwnerAttacker](/Mobs/ai/targets/OwnerAttacker) | Targets whatever attacks the mob's owner. |
-| [OwnerTarget](/Mobs/ai/targets/OwnerTarget) | Targets whatever the mob's owner attacks. |
