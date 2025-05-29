@@ -4,6 +4,8 @@ trigger other skills over its duration. Auras allow you to create custom
 status effects (i.e. buffs and debuffs) that are tracked for their
 duration and can also be used in other mechanics and conditions.  
 
+[[_TOC_]]
+
 | [Implemented Placeholders]         |
 |------------------------------------|
 | `<skill.var.aura-name>`            |
@@ -18,6 +20,7 @@ duration and can also be used in other mechanics and conditions.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | auraName  | aura, b, buff, buffname, debuff, debuffname, n, name | Optional name, required to use associated mechanics & conditions that reference a specific aura. Given a random UUID if not defined.                            |         |
 | auratype  | auragroup, group, type, g | The type of the aura. It's similar to its name       |         |
+| attachmenttype | attachment, attach | The [Attachment](#attachment-types) to apply to the entity the aura is applied to                             | NONE    |
 | onStartSkill | onStart, os | Meta-Skill executed when the aura first starts                  |<!--type:Metaskill-->|
 | onTickSkill  | onTick, ot  | Meta-Skill executed every [interval] ticks on the affected entity|<!--type:Metaskill-->|
 | onEndSkill   | onEnd, oe   | Meta-Skill executed when the aura ends                          |<!--type:Metaskill-->|
@@ -49,6 +52,27 @@ If set to `true`, additional attributes becomes available
 | bartimercolor |       | The [Color](/Mobs/BossBar#color) of the bossbar      | RED<!--type:BarColor--> |
 | bartimerstyle |       | The [Style](/Mobs/BossBar#style) of the bossbar    | SOLID<!--type:BarStyle--> |
 
+
+## Attachment Types
+Attachments are optional "objects" that are applied (attached) to the entity the aura is applied to
+
+| Attachment  | Aliases      | Description                                                               |
+|-------------|--------------|---------------------------------------------------------------------------|
+| [MODELENGINE](#modelengine-attachment) | MEG, ME      | A ModelEngine model                            |
+
+### ModelEngine Attachment
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| attachmentmodel | attachmodel, model | The model of the attachment                           |         |
+| attachmentstate | attachstate, state | The state the model will be playing                   |         |
+| attachmentcolor | attachcolor | The color applied to the model                               |         |
+| attachmentscale | attachscale | The scale of the model                                       | 1       |
+| attachmentViewRadius | attackviewradius | The view radius of the model. Leave as -1 to use ModelEngine's default settings | -1 |
+| attachmentEnchanted | attachEnchanted, enchanted | Whether the model should have an enchantment glint applied to it | false |
+| attachmentGlowing | attachGlowing, glowing | Whether the model should be glowing             | false   |
+| attachmentglowcolor | attachglowcolor | The glow color of the model, if `attachmentGlowing` is set to `true` | |
+| attachmentCulling | attachCulling, culling | Whether the model should be able to be culled by ModelEngine | true | 
+| attachmentoffset | attachoffset | The model's offset from the attached entity, in a `x,y,z,yaw,pitch` format.<br>Can also be written as `x,y,z` or `x,y,z,yaw` | 0,0,0,0,0 |
 
 ## Examples
 ```yaml
