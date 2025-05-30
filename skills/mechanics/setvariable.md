@@ -17,7 +17,7 @@ placeholders to store data.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | value     | val, v, amount, a    | The value to set the variable to. Must be applicable for `type` or the mechanic will fail. Should be surrounded in double-quotes if using spaces. Value can also include placeholders, even from PlaceholderAPI                                                                       |         |
-| type      | t         | The [type](/skills/variables#variable_types) of the variable. Set to STRING if you are using text instead of numbers                                                          | INTEGER |
+| type      | t         | The [type](/skills/variables#variable_types) of the variable. Set to STRING if you are using text instead of numbers                                                          | INTEGER<!--type:VariableType--> |
 
 
 ## Examples
