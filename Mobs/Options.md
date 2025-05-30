@@ -1248,9 +1248,9 @@ Defaults to `false`.
 ```
 
 
-### Snow Golem
+## Snow Golem
 
-## Derp
+#### Derp
 Whether the Snow Golem has its pumpkin already sheared.  
 Defaults to `false`.
 ```yaml
