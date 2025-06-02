@@ -443,7 +443,7 @@ Used to handle the [use_cooldown item component](https://minecraft.wiki/w/Data_c
 ExampleItem:
   Material: STICK
   UseCooldown:
-    CooldownGroup: CoolWands
+    CooldownGroup: coolwands # write only in lowercase!
     CooldownSeconds: 3
 ``` 
 
