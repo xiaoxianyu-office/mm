@@ -1,4 +1,3 @@
-```
 [[_TOC_]]
 
 # 5.9.0
@@ -9,6 +8,7 @@ General
 - Changed pack icons to use Mythic item syntax.
 - Scaling Equations and `LevelModifiers` can now work with any stats.
 - Added step and lerp functions to all numeric placeholders
+
 ```
 step(e, x) { 0, x < e; 1, x >= e
 lerp(a, b, r)
