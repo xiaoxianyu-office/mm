@@ -1,8 +1,13 @@
+```
 [[_TOC_]]
 
-# 5.9.0 (Dev Builds)
+# 5.9.0
+
 General
 -------
+- Added `/pins regionRedefine` command.
+- Changed pack icons to use Mythic item syntax.
+- Scaling Equations and `LevelModifiers` can now work with any stats.
 - Added step and lerp functions to all numeric placeholders
 ```
 step(e, x) { 0, x < e; 1, x >= e
@@ -11,23 +16,152 @@ lerp(a, b, r)
 
 Mechanics
 ---------
-Add `specificStep/ss` to SlashMechanic
+### NEW: swingOffhand
+- Added `swingOffhand` mechanic.
 
-### NEW: `wait`
-- New special keyword mechanic `wait`
-- Will pause the skill tree until a condition is met
+### NEW: setEntityPose
+- Added `setEntityPose{pose=X}` mechanic.
+
+### NEW: setItemGroupCooldown
+- Added `setItemGroupCooldown{group=namespace:key;ticks=20}` mechanic.
+
+### Hit
+- Added `scaleByAttackCooldown` to hit mechanic (scales damage based on weapon attack cooldown).
+
+### Leap
+- Noise now defaults to `0` on the `Leap` mechanic.
+
+### MetaSkill
+- Added `snapshotStats=true` to `MetaSkill` mechanic.
+
+### Missile
+- Added `startWithParentVelocity` option to `missile` mechanic.
 
 ### Projectiles
 - Added HitTargeter to projectile type mechanics
 
 hitTarget htr accepts an entity targeter. Entities targeted by htr would be processed through onHit and gain immune delay
 
+### Slash
+- Add `specificStep/ss` to SlashMechanic
+
+### Totem
+- `faceAwayFromCaster=true` option added to Totem mechanic.
+- `hugSurface=true` option added to Totem mechanic.
+
+### Wait
+- New special keyword mechanic `wait`
+- Will pause the skill tree until a condition is met
+
+Conditions
+----------
+
+### NEW: itemGroupOnCooldown
+- Added `itemGroupOnCooldown{group=namespace:key}` condition.
+
+### NEW: Server Version Conditions
+- Added `serverAfter{version=1.21.4;inclusive=true}`, `serverBefore{version=1.21.4;inclusive=false}`, and `serverIsPaper` conditions.
+
+### Stance
+- Changed default `strict` value to `true` for the `stance` condition.
+
 Targeters
 ---------
+- Fixed several bugs with `@FloorOfTarget` targeter.
+- Changed default `faulty=false` for location selector option.
+- Added `relative=true/false` to `@RingAroundOrigin` targeter.
+
 ### NEW: `@PlayerLocationByName`
 ### NEW: `@PredictedTargetLocation`
 `@PredictedTargetLocation{ticks=X}`
 - Targets the predicted location of the caster's target in the next X ticks based on their velocity
+
+Triggers
+---------
+- Renamed `onTridentHit` to `onProjectileHit`, `onTridentThrow` to `onProjectileThrow`.
+- Added `onProjectileLand` trigger.
+
+Placeholders
+------------
+### NEW: Distance Placeholders
+- Added `<target.distance>` and `<trigger.distance>` placeholders.
+
+### NEW: Epoch Placeholders
+- Added `<utils.epoch>`, `<utils.epoch.millis>`, and `<utils.epoch.ticks>` placeholders.
+
+Items
+-----
+
+### Vanilla Loot Table Drop
+- Added new drop type `- vanillaLootTable minecraft:table_name` to drop items from vanilla loot tables and data packs.
+
+### BlockStates Component
+- Added support for `BlockStates` component to specify block states on items:
+  ```yaml
+  TestBlockStates:
+    Material: OAK_SLAB
+    Display: 'Waterlogged Slab'
+    Options.Placeable: true
+    BlockStates:
+    - type top
+    - waterlogged true
+  ```
+
+### Glider Component
+- Added `Glider: true` option to items to implement the Glider component.
+
+### UUID & Timestamp Options
+- Added `Options.GenerateUUID: true/false` and `Options.GenerateTimestamp: true/false` to assign a UUID or timestamp to items on generation.
+
+API
+---
+### NEW: Event Methods
+- Exposed event methods.
+- Added `MythicSkillEvent` when a skill is called.
+
+### NEW: Crucible & RPG API
+- Exposed API for Crucible and RPG features.
+
+### NEW: Packet Display Entities API
+- Exposed more API methods for packet-based display entities.
+
+### NEW: Threat Table API
+- Exposed threat table map.
+
+### REMOVED: Deprecated Equipment Slot Method
+- Removed super-old deprecated method of referencing equipment slots by slot number.
+
+### AI Goals
+- Upgraded `ownerTarget` and `ownerAttacker` AI goals to be used by any mob; added `parentAttacker` and `parentTarget` AI goals.
+- Refactored owner interfaces for consistency.
+
+Bug Fixes & Optimizations
+-------------------------
+- General refactoring and internal cleanup.
+- Fixed terminable `onTerminate` skill not working in some cases.
+- Fixed logic bug with projectile target filters.
+- Fixed various mob options not applying since refactor.
+- Fixed several bugs arising from stats refactor.
+- Fixed API `get` method for max stack size.
+- Fixed `IllegalArgumentException` in `ItemMatcher`.
+- Fixed `NoSuchMethodError` with projectiles on 1.21.5.
+- Fixed bugs in new pet AI features.
+- Fixed async error in `MythicSkillEvent`.
+- Fixed initial display packet bullet rotation not being used when spinning.
+- Fixed an error occurring when a player joins on 1.21.5.
+- Fixed MEG bullets on totems not rotating with the spawning entity.
+- Fixed NPE with drops introduced recently.
+- Fixed breakage with drop weights.
+- Fixed last build breaking equipment.
+- Fixed Nexo drops not working in equipment.
+- Fixed equippable component applying even on pre-1.21.3 versions.
+- Fixed certain blocks not working with block‐based bullets.
+- Fixed `swingArm` mechanic on newer versions.
+- Fixed multiple errors when loading custom mechanics.
+- Fixed `MythicProvider` being registered too late in some cases.
+- Fixed typo in `PreventStingerLoss` option.
+- Fixed issues with `scaleByAttackCooldown` when hitting multiple targets.
+- Fixed several bugs with `@FloorOfTarget` targeter.
 
 
 # 5.8.2
