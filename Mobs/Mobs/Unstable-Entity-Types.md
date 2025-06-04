@@ -101,6 +101,10 @@ Gets aggroed by wolves
 ### SLIME
 Has an hardcoded ai.
 
+### SQUID
+Do not work with mechanics such as [lunge](/skills/mechanics/lunge) and [throw](/skills/mechanics/throw).  
+This also applies to GLOW_SQUID
+
 ### VEX
 Has an hardcoded ai.
 
