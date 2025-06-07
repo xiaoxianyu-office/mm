@@ -10,7 +10,7 @@ Makes the mob move towards its [owner](/Skills/Targeters/Owner) when beyond a ce
 | minrange  | mr        | Distance in which the mob will stop following the owner              | 4       |
 | speed     | s         | Speed of the movement                                                | 1.0     |
 | droptarget | dt       | Whether the current target should be dropped when the mob starts following the owner  | true |
-
+| teleportToWorld | ttw, tow | Whether the mob will teleport if the owner is in a different world | true |
 
 ## Examples
 ```yaml
