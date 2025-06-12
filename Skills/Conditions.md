@@ -188,6 +188,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [Charged](/skills/conditions/charged)                                         | Entity   | Checks if the target creeper is charged                                                       |
 | [Children](/skills/conditions/children)                                       | Entity   | Tests how many children the caster has                                                    |
 | [Color](/skills/conditions/color)                                             | Entity   | Tests the entity's colors                                                                 |
+| [CompareValues](/skills/conditions/CompareValues)                             | Meta     | Compares two values based on a specified operation                                           |
 | [Crouching](/skills/conditions/crouching)                                     | Entity   | Whether or not the target entity is crouching                                              |
 | [Cuboid](/skills/conditions/cuboid)                                           | Compare  | Whether the target is within the given cuboid between location1 x location2                 |
 | [DamageAmount](/skills/conditions/DamageAmount)                               | Meta     | Checks for a range of damage taken                                                           |
