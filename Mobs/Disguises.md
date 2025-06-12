@@ -88,7 +88,7 @@ Monkey:
 ```
 This feature requires LibsDisguises and the Holograms plugin: [https://www.spigotmc.org/resources/holograms.4924/](https://www.spigotmc.org/resources/holograms.4924/)
 
-If you have premium you can use multi line disguise names using the `setDynamicName` option
+If you have LibsDisguises premium you can use multi line disguise names using the `setDynamicName` option
 
 ![image](uploads/e9f3926c7a8d74dfb1b8fa6d2cd2d67c/image.png)
 
