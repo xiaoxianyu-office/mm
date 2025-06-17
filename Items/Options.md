@@ -47,8 +47,9 @@ Defaults to `false`.
 ```
 
 #### HideFlags
+**Note: this feature does not exist >=1.20.5!**
 Hides all the item flags, making things like enchants not visible in the item's lore (please note however that the item will still have an enchanted glow).  
-Defaults to `false`.  
+Defaults to `false`.
 ```yaml
   Options:
     HideFlags: true
@@ -63,7 +64,7 @@ Defaults to `false`.
 ```
 
 #### StackSize
-Sets the maximum stack size of the item in the inventory. 
+Sets the maximum stack size of the item in the inventory. Does not work when used alongside attributes.
 ```yaml
   Options:
     StackSize: 16
