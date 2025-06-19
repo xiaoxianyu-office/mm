@@ -16,6 +16,9 @@ The Polygon meta-mechanic can execute other skills in a polygon-shaped pattern. 
 | xOffset        | xo, x       | The offset on the X axis                                | 0             |
 | yOffset        | yo, y       | The offset on the Y axis                                | 0             |
 | zOffset        | zo, z       | The offset on the Z axis                                | 0             |
+| targetxoffset  | tx, txo     | Target X-axis offset                                          | 0       |
+| targetyoffset  | ty, tyo     | Target Y-axis offset                                          | 0       |
+| targetzoffset  | tz, tzo     | Target Z-axis offset                                          | 0       |
 | ForwardOffset  | foffset, fo | The Forward offset                                      | 0             |
 | Pitch          |             | The pitch rotation                                      | 0             |
 | Yaw            |             | The yaw rotation                                        | 0             |
@@ -23,6 +26,7 @@ The Polygon meta-mechanic can execute other skills in a polygon-shaped pattern. 
 | Radius         | r           | The hit radius                                          | 1             |
 | Rotation       | rot         | The rotation of the polygon, in the x,y,z format. Same as using pitch/yaw/roll                                                                           | 0,0,0         |
 | MatchCasterDirection | matchPlayerDirection, matchDirection, mcd, mpd, md, direction                    | Matches the direction of the polygon to the caster's facing direction                  | true         |
+| directiontowardstarget | dtt | Whether the yaw/pitch should be calculated so that the drawn shape aims to the target | false |
 | FromOrigin     |             | If the polygon should start in the origin of the metaskill | false      |
 | HitConditions  | conditions, cond, c, oC, hC | List of [Inline Conditions](/Skills/Inline-Conditions) that an entity must met to be hit by the polygon mechanic          |<!--type:Conditions-->|
 
