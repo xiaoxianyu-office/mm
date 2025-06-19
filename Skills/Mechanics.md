@@ -207,6 +207,7 @@ are able to target locations as well.
 | [SetParent][]             | Makes the target the parent of the casting mob                                            |
 | [SetPathfindingMalus][]   | Sets the pathfinding malus of a mob for given terrain types                                            |
 | [SetPitch][]              | Sets the head pitch of the target entity                                            |
+| [SetPose][]               | Sets the entity's pose                                                          |
 | [SetRotation][]           | Sets the rotation of the target                                                          |
 | [SetTarget][]             | Sets the caster's target                                                                 |
 | [SetTargetScore][]        | Sets the score of the target                                                             |
@@ -550,6 +551,7 @@ but not yet ready for use.
   [SetParent]: /skills/mechanics/SetParent
   [SetPathfindingMalus]: /skills/mechanics/SetPathfindingMalus
   [SetPitch]: /skills/mechanics/SetPitch
+  [SetPose]: /skills/mechanics/SetPose
   [setRaiderCanJoinRaid]: /Skills/Mechanics/setRaiderCanJoinRaid
   [SetRaiderPatrolBlock]: /skills/mechanics/setraiderpatrolblock
   [SetRaiderPatrolLeader]: /skills/mechanics/setraiderpatrolleader
