@@ -226,6 +226,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [HasAuraType](/skills/conditions/HasAuraType)                                 | Entity   | Checks if the target entity has the given aura type                                           |
 | [HasCurrency](/skills/conditions/hascurrency)                                 | Entity   | If the target has the given amount of vault currency                                          |
 | [HasEnchantment](/skills/conditions/HasEnchantment)                           | Entity   | Checks if the target entity's equipped item has an enchantment                                |
+| [HasFreeInventorySlot](/skills/conditions/HasFreeInventorySlot)               | Entity   | Checks if the evaluated entity has a free inventory slot                                      |
 | [HasGravity](/skills/conditions/hasgravity)                                   | Entity   | Tests if the target mob has gravity                                                          |
 | [HasInventorySpace](/skills/conditions/hasinventoryspace)                     | Entity   | Checks if the target player has empty inventory space                                         |
 | [HasItem](/skills/conditions/hasItem)                                         | Entity   | Tests if the target player has the given number of given material                            |
