@@ -1,5 +1,5 @@
 ## Description
-Checks if the evaluated entity has free inventory slots (at all)
+Checks if the evaluated entity has a free inventory slot (at all)
 
 
 ## Attributes
