@@ -19,6 +19,7 @@ poison or land mines.
 | hugsurface| hs        | Whether or not the totem should be aligned with the ground           | false   |
 | hugliquid | hugwater, huglava | Whether, when using hugSurface, a liquid can also count as a "surface" the totem can align itself with | false   |
 | heightfromsurface| hfs| How high above the surface the totem should align itself if HugSurface is set to true | 0.5     |
+| faceawayfromcaster | fafc | Whether the totem should face away from the caster when first placed | false |
 > Inherits attributes from [Projectile](/skills/mechanics/projectile)
 
 
