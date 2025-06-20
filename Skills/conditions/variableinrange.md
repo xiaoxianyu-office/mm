@@ -13,11 +13,17 @@ Checks if the given numeric variable is within a certain range.
 ## Examples
 
 ```yaml
+ShootCheck:
+  Cooldown: 0
   Conditions:
-  - variableInRange{var=caster.Cooldown;value=<0.01} cancel
+  - variableInRange{var=caster.shootsLeft;value=>0} castInstead ShootThemUp
   Skills:
-  - setvariable{var=caster.Cooldown;type=float;value="10"}
-  - message{m="&7Cooldown over!"}
+  - message{m="&7Reloading..."} @self
+  - delay 0
+  - setskillcooldown{skill=ShootCheckM;seconds=2} @self
+  - delay 20
+  - setvariable{var=caster.shootsLeft;value=10} @self
+  - message{m="&7Reloaded!"} @self
 ```
 
 
