@@ -7,7 +7,7 @@ is recommended.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount    | a         | The amount of the shield to give                                     | 1       |
-| maxabsorb | maxshield, ma, ms | The maximum value the shield on the entity should be| `Amount's value` |
+| maxabsorb | maxshield, ma, ms | The maximum value the shield on the entity should be         | 1       |
 
   
 ## Examples
