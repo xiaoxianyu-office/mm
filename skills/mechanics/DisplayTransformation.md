@@ -17,6 +17,9 @@ ExampleDisplayEntity:
   Skills:
   # sets the translation transform to `0,0,1` after 10 seconds the entity spawns
   - displaytransformation{action=set;transformation=translation;value=0,0,1;delay=200} @self ~onSpawn
+
+  # rotates the item display along the y-axis (similar to a dropped item)
+  - displaytransformation{action=MULTIPLY;transformation=LEFT_ROTATION;val=0,0.707,0,0.707} @self ~onTimer:10
 ```
 
 
