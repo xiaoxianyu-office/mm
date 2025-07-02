@@ -18,7 +18,8 @@ Traces a ray to the target, like the [Raytrace](/skills/mechanics/raytrace) mech
 | headshotskill | hsskill, hs | meta-skill to use when it's a headshot                         |<!--type:Metaskill-->|
 | maxdistance   | distance, md, d | max distance to trace                                      | 50      |
 | raywidth      | rw, w      | Width of the ray traced                                         | 0.2     | 
-| ignorepassableblocks | ignorepassable, ip    | ignores collision of passable blocks                                                                                                                     | true          |
+| ignorepassableblocks | ignorepassable, ip    | ignores collision of passable blocks                                                                          | true          |
+| ignoreentities | ignoreentity, ie    | ignores all entities                                                                          | false          |
 | fluidcollisionmode   | fcm                   | [Determines the collision behaviour when fluids get hit during ray tracing](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FluidCollisionMode.html) | NEVER<!--type:FluidCollisionMode-->|
 | accuracy             | ac, a                 | spread of the traced ray                                                                                                                                 | 1             |
 | verticalnoise        | vn                    | vertical spread of the ray                                                                                                                               | 0             |
