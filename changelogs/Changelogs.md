@@ -1,5 +1,86 @@
 [[_TOC_]]
 
+# 5.10.0 (Dev Builds)
+
+General
+-------
+- Added 1.21.7 support
+- Added `HAPPY_GHAST` entity type
+
+- Added `<target.armor>` placeholder
+- Added `xdiff` and `zdiff` conditions
+
+- PolygonMechanic
+- Added PlaceholderAngle
+
+# 5.9.5
+
+Bug Fixes
+---------
+- Updated some dependencies
+- Fixed items with attributes not stacking when they should
+- Fixed certain durability-related things not using data from the new durability components
+- Fixed some errors with level modifiers
+- Fixed several issues with recoil effect on newer versions
+- Fixed the freezeFacing option for the stun mechanic being inverted
+
+# 5.9.4
+
+Bug Fixes
+---------
+- Added `ignoreEntities` for raytraceTo mechanic
+- Fixed `ignorePassable=false` in raytrace mechanics phasing through barrier blocks 
+
+# 5.9.3
+
+Bug Fixes
+---------
+- Fixed some issues with ignoreSameFaction target filter
+
+# 5.9.2
+
+General
+-------
+- Added `teleportToWorld=true/false` to `GoToOwner/Parent` AI Goals.
+- Add "goal/g" aliases to runaitargetselector so they match the error message
+- Added `%mythic_stat_...%` papi placeholder
+- Added `<target.distanceSq>` and `<trigger.distanceSq>` placeholders
+
+Conditions
+----------
+### NEW: CompareValues
+
+Bug Fixes
+---------
+- Fixed suicide mechanic not counting the mob as damaging itself closes #1584
+- Fixed speech bubbles having yaw/pitch inverted on newer versions
+- Fixed MountMe mechanic maybe
+- Fixed MapList elements not working for configured item NBT
+- Fixed IllegalArgumentException with vanilla loot table drops closes #1949
+- Fixed error with mob types with copying mob spawners closes #1951
+- Fixed error in shield mechanic closes #1955
+- Fixed NPE in `<skill.targets>` placeholder closes #1961
+- Fixed ClientboundSetEntityDataPacket error on 1.21.4
+- Fixed ops being put into every faction in the PermissionFactionProvider
+- Fixed StackOverflowError on non-english servers
+- Fixed plugin not loading when a menu icon is misconfigured
+
+# 5.9.1
+
+Bug Fixes
+---------
+- Fixed VariableMath mechanic not supporting double variables
+- Fixed some bugs with ItemMatcher
+- Fixed moveTowardsTargetConditional AI goal
+- Fixed bouncing projectiles
+- Fixed several other issues with projectiles
+- Optimized projectiles that don't have hit skills
+- Fixed `Options.Color` not working on potions
+- Fixed error where projectiles with insanely high velocity could crash the server
+- Fixed raytrace error on 1.21.5
+- Fixed custom damage stats not triggering onDamaged auras
+- Fixed `hitself` not working on projectiles
+
 # 5.9.0
 
 General
