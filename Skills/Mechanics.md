@@ -339,7 +339,7 @@ The following attributes are applicable to all mechanics.
 | targetInterval | targetI | How many ticks must elapse between target selection               | 0       |
 | origin | | *[PREMIUM]** Change the origin to whatever targeter is supplied. Does not work if more than one target is parsed. `origin=@Forward{f=10}`<br>The targeter of the origin attribute will be parsed separately from the mechanic's targeter, so if you use something like `origin=@targetedlocation` it will not return the mechanic's explicit target, but the metaskill's inherited one  |   |
 | power     |           | [Power](/mobs/Power) multiplier                                      | 1       |
-| fromorigin | fo, sourceisorigin, castfromorigin | Whether to cast the mechanic from origin   | false   |
+| fromorigin | fo, sourceisorigin, castfromorigin | Whether to cast the mechanic from origin. This only works with a select few mechanics, and is usually listed as one of their attributes, too       | false   |
 | targetisorigin |      | Whether to set the target of the mechanic to be the origin           | false   |
 | targetcreative |      | Whether to target creative players                                   | false   |
 | splitPower| powersplit, powersplitbetweentargets | Whether to split the power between targets| false   |
