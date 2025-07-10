@@ -29,7 +29,7 @@ Options that can be used in the Stat in order to better customize it
 | AlwaysActive         | If the stat is forcefully applied to every registry of every entity             |
 | Type                 | The [Type](Stats#custom-stat-types) of the stat                                 |
 | Display              | The name with which the stat is displayed                                       |
-| Tooltips             | How the stat is shown on items. Depends on the Modifier used                    |
+| Formatting           | How the stat is shown on items. Depends on the Modifier used                    |
 | ShowInLore           | Whether to show the tooltips formatting for each modifier                       |
 | Priority             | The priority with which the stat will take effect, compared to others. *Lower* values make it so the stat will trigger *before* stats with higher values |
 | MinValue             | Minimum value for the stat                                                      |
@@ -78,7 +78,7 @@ A list of options only available if the specified type is used in the stat
 | Compound             | The tooltip to show for compound modifiers                                      |
 | Setter               | The tooltip to show for setter modifiers                                        |
 | Rounding             | The amount of numbers after the point in the value of the stat                  |
-| ShowInItemLore       | Whether the tooltips should be shown in an items's lore. Defaults to true, overridden by the ShowInLore options if they are set |
+| ShowInItemLore       | Whether the tooltips should be shown in an items's lore whenever `{stats-each}` is used. Defaults to true, overridden by the ShowInLore options if they are set |
 
 | ShowInLore           | Description                                                                     |
 |----------------------|---------------------------------------------------------------------------------|
@@ -93,14 +93,14 @@ EXAMPLE_STAT:
   AlwaysActive: false
   Type: STATIC
   FormulaKey: 'SPD'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Speed'
     Multiply: '+<value>% Speed'
     Compound: 'x<value>% Speed'
     Static: 'Force <value> <display>'
     Rounding: 2
   ShowInLore:
-    Compound: false
+    Compound: false # optional
 ```
 
 # Modifiers
@@ -216,7 +216,7 @@ DODGE_NEGATION:
   Enabled: false
   AlwaysActive: false
   Display: 'Accuracy'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Accuracy'
     Multiply: '+<value> Accuracy'
     Compound: 'x<value> Accuracy'
@@ -236,7 +236,7 @@ ATTACK_DAMAGE:
   Enabled: true
   AlwaysActive: false
   Display: 'Damage'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Damage'
     Multiply: '+<value> Damage'
     Compound: 'x<value> Damage'
@@ -256,7 +256,7 @@ ATTACK_SPEED:
   Enabled: true
   AlwaysActive: false
   Display: 'Attack Speed'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Attack Speed'
     Multiply: '+<value> Attack Speed'
     Compound: 'x<value> Attack Speed'
@@ -276,7 +276,7 @@ BONUS_DAMAGE:
   Enabled: false
   AlwaysActive: false
   Display: 'Bonus Damage'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Bonus Damage'
     Multiply: '+<value> Bonus Damage'
     Compound: 'x<value> Bonus Damage'
@@ -296,7 +296,7 @@ CRITICAL_STRIKE_CHANCE:
   Enabled: false
   AlwaysActive: false
   Display: 'Critical Strike'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Critical Strike'
     Multiply: '+<value> Critical Strike'
     Compound: 'x<value> Critical Strike'
@@ -319,7 +319,7 @@ CRITICAL_STRIKE_DAMAGE:
   Enabled: false
   AlwaysActive: true
   Display: 'Critical Damage'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Critical Damage'
     Multiply: '+<value> Critical Damage'
     Compound: 'x<value> Critical Damage'
@@ -339,7 +339,7 @@ CRITICAL_STRIKE_RESILIENCE:
   Enabled: false
   Display: 'Resilience'
   AlwaysActive: false
-  Tooltips:
+  Formatting:
     Additive: '+<value> Resilience'
     Multiply: '+<value> Resilience'
     Compound: 'x<value> Resilience'
@@ -359,7 +359,7 @@ DAMAGE_REDUCTION:
   Enabled: false
   AlwaysActive: false
   Display: 'Damage Reduction'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Damage Reduction'
     Multiply: '+<value> Damage Reduction'
     Compound: 'x<value> Damage Reduction'
@@ -379,7 +379,7 @@ DEFENSE:
   Enabled: false
   AlwaysActive: false
   Display: 'Defense'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Defense'
     Multiply: '+<value> Defense'
     Compound: 'x<value> Defense'
@@ -399,7 +399,7 @@ DODGE_CHANCE:
   Enabled: false
   AlwaysActive: false
   Display: 'Dodge'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Dodge Chance'
     Multiply: '+<value> Dodge Chance'
     Compound: 'x<value> Dodge Chance'
@@ -420,7 +420,7 @@ HEALTH:
   Enabled: false
   AlwaysActive: true
   Display: 'Health'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Health'
     Multiply: '+<value> Health'
     Compound: 'x<value> Health'
@@ -441,7 +441,7 @@ HEALTH_REGENERATION:
   Enabled: false
   AlwaysActive: false
   Display: 'Health Regeneration'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Regeneration'
     Multiply: '+<value> Regeneration'
     Compound: 'x<value> Regeneration'
@@ -464,7 +464,7 @@ LIFESTEAL_CHANCE:
   Enabled: false
   AlwaysActive: false
   Display: 'Lifesteal Chance'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Lifesteal Chance'
     Multiply: '+<value> Lifesteal Chance'
     Compound: 'x<value> Lifesteal Chance'
@@ -484,7 +484,7 @@ LIFESTEAL_POWER:
   Enabled: true
   AlwaysActive: false
   Display: 'Lifesteal Power'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Lifesteal Power'
     Multiply: '+<value> Lifesteal Power'
     Compound: 'x<value> Lifesteal Power'
@@ -504,7 +504,7 @@ MOVEMENT_SPEED:
   Enabled: false
   AlwaysActive: true
   Display: 'Movement Speed'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Movement Speed'
     Multiply: '+<value>% Movement Speed'
     Compound: 'x<value>% Movement Speed'
@@ -528,7 +528,7 @@ PARRY_CHANCE:
   Display: 'Parry Chance'
   BaseValue: 0
   Priority: 0
-  Tooltips:
+  Formatting:
     Additive: '+<value> Parry Chance'
     Multiply: '+<value> Parry Chance'
     Compound: 'x<value> Parry Chance'
@@ -557,7 +557,7 @@ PARRY_COUNTERATTACK:
   AlwaysActive: false
   Display: 'Parry Counterattack'
   BaseValue: 1
-  Tooltips:
+  Formatting:
     Additive: '+<value> Parry Counterattack'
     Multiply: '+<value> Parry Counterattack'
     Compound: 'x<value> Parry Counterattack'
@@ -577,7 +577,7 @@ PARRY_NEGATION:
   Enabled: false
   AlwaysActive: false
   Display: 'Expertise'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Expertise'
     Multiply: '+<value> Expertise'
     Compound: 'x<value> Expertise'
@@ -598,7 +598,7 @@ PARRY_POWER:
   AlwaysActive: false
   Display: 'Parry Power'
   BaseValue: 0.5
-  Tooltips:
+  Formatting:
     Additive: '+<value> Parry Power'
     Multiply: '+<value> Parry Power'
     Compound: 'x<value> Parry Power'
@@ -618,7 +618,7 @@ SCALE:
   AlwaysActive: false
   Display: 'Scale'
   BaseValue: 1
-  Tooltips:
+  Formatting:
     Additive: '+<value> Scale'
     Multiply: '+<value> Scale'
     Compound: 'x<value> Scale'
@@ -675,7 +675,7 @@ ARMOR_GENERIC:
   Display: 'Generic Armor'
   DamageFormula: 'd - v'
   BaseValue: 0
-  Tooltips:
+  Formatting:
     Additive: '+<value> Generic Armor'
     Multiply: '+<value> Generic Armor'
     Compound: 'x<value> Generic Armor'
@@ -695,7 +695,7 @@ ARMOR_BLUNT:
   DamageType: BLUNT
   DamageFormula: 'd - v'
   BaseValue: 0
-  Tooltips:
+  Formatting:
     Additive: '+<value> Blunt Armor'
     Multiply: '+<value> Blunt Armor'
     Compound: 'x<value> Blunt Armor'
@@ -715,7 +715,7 @@ ARMOR_SHARP:
   DamageType: SHARP
   DamageFormula: 'd - v'
   BaseValue: 0
-  Tooltips:
+  Formatting:
     Additive: '+<value> Sharp Armor'
     Multiply: '+<value> Sharp Armor'
     Compound: 'x<value> Sharp Armor'
@@ -735,7 +735,7 @@ DAMAGE_BLUNT:
   Display: 'Blunt Damage'
   DamageType: BLUNT
   BaseValue: 0
-  Tooltips:
+  Formatting:
     Additive: '+<value> Blunt Damage'
     Multiply: '+<value> Blunt Damage'
     Compound: 'x<value> Blunt Damage'
@@ -756,7 +756,7 @@ DAMAGE_SHARP:
   Display: 'Sharp Damage'
   DamageType: SHARP
   BaseValue: 0
-  Tooltips:
+  Formatting:
     Additive: '+<value> Sharp Damage'
     Multiply: '+<value> Sharp Damage'
     Compound: 'x<value> Sharp Damage'
@@ -769,7 +769,7 @@ FIRE_RESISTANCE:
   Enabled: false
   AlwaysActive: false
   Display: 'Fire Resistance'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Fire Resistance'
     Multiply: '+<value> Fire Resistance'
     Compound: 'x<value> Fire Resistance'
@@ -792,7 +792,7 @@ SPEED:
   AlwaysActive: false
   Type: STATIC
   FormulaKey: 'SPD'
-  Tooltips:
+  Formatting:
     Additive: '+<value> Speed'
     Multiply: '+<value>% Speed'
     Compound: 'x<value>% Speed'
