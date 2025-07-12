@@ -10,6 +10,7 @@ Targets all living entities in cone with a specified angle, length and rotation 
 | rotation  | rot       | The rotation of the cone                                             | 0       |
 | usepitch  | pitch, p  | Whether to generate the cone also depending on the caster's pitch    | false   |
 | yoffset   | yo        | The y offset to be added to the generated cone's location            | 0       |
+| livingonly | lo       | Whether to target only living entities                               | true    |
 
 
 ## Examples
