@@ -356,7 +356,9 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [World](/skills/conditions/world)                                             | Location | Checks the name of the target world.                                                       |
 | [WorldTime](/skills/conditions/worldtime)                                     | Location | Matches a range against the target location's world's time.                               |
 | [Yaw](/skills/conditions/yaw)                                                 | Entity   | Checks the yaw of the target entity against a range.                                       |
+| [xDiff](/skills/conditions/xdiff)                                             | Entity   | Checks the difference in X between the targeted entity and the caster.                     |
 | [yDiff](/skills/conditions/ydiff)                                             | Entity   | Checks the difference in Y between the targeted entity and the caster.                     |
+| [zDiff](/skills/conditions/zdiff)                                             | Entity   | Checks the difference in Z between the targeted entity and the caster.                     |
 
 More Examples
 -------------
