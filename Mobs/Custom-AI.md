@@ -56,6 +56,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [movetolava](/Mobs/ai/goals/movetolava) | | Makes the mob move towards lava                            |
 | [movetowater](/Mobs/ai/goals/movetowater) | | Makes the mob move towards water                         |
 | [movetowardsrestriction](/Mobs/ai/goals/MoveTowardsRestriction) |            | Make a mob move towards its "Restriction Point" for some Entities (for instance, the village of a Villager) |
+| [MoveWithinDistanceOfTarget](/Mobs/ai/goals/MoveWithinDistanceOfTarget) | | Moves towards the target to be within a certain range    |
 | [FollowRoute](/Mobs/ai/goals/FollowRoute) | followpath | Makes the mob follow a specific path, one time only. | 
 | [patrol](/Mobs/ai/goals/Patrol) x1,y1,z1;x2,y2,z2;x3,y3,z3;… | patrolroute | Makes the mob patrol between the specified locations |
 | [gotolocation](/Mobs/ai/goals/GoToLocation) x,y,z | goto           | Makes the mob go to the specified location(Notice Followrange must more than the distance between location and mob)                        |
