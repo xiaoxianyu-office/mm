@@ -15,7 +15,7 @@ A list of available targets can be found [here](/Mobs/Custom-AI#ai-target-select
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| target    | aitargetselector, s, string, targetselector | The target selector you want to append                               |         |
+| target    | aitargetselector, s, string, targetselector, goal, g | The target selector you want to append                               |         |
 
 
 ## Examples
