@@ -88,17 +88,22 @@
 ---
 
 ##### Other
+  * [Math](/Skills/Math)
+  * [Pins](/Pins)
+
+---
+
+##### Enums
   * [Particles Types](/Skills/Mechanics/Particle/Particle-Types)
   * [Audience](/Skills/Audience)
   * [Equipment Slots](/Skills/EquipSlot)
-  * [Pins](/Pins)
-
-##### Technical
-  * [Math](/Skills/Math)
-  * [Item Matcher](/Items/Item-Matcher)
   * Operations
     * [Attribute Operations](/Items/Attributes#operations)
     * [Stats Modifiers](/Stats#modifiers)
+  * [Shape](/Enum/Shape)
+
+##### Technical
+  * [Item Matcher](/Items/Item-Matcher)
   * [SkillTree](/Skills/SkillTrees)
   * [Advanced User Guides and Techniques](/Skills/Advanced-User-Guides-and-Techniques)
 
