@@ -21,3 +21,5 @@ Targets all entities in the given radius around the caster
 - [x] livingInRadius  
 - [x] allInRadius  
 - [x] EIR
+- [x] entitiesnearby
+- [x] nearbyentities
