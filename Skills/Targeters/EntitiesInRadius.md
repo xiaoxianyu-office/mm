@@ -5,7 +5,7 @@ Targets all entities in the given radius around the caster
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| radius    | r         | The radius of the targeter                                           | 5       |
+| shape     |           | The "shape" in which to fetch entities. Can be any [shape](/Enum/Shape)| SPHERE|
 | livingonly| living, l | Whether the targeter should target only living entities              | true    |
 
 
