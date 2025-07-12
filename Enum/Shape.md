@@ -1,4 +1,4 @@
-When a mechanic/targeter/etc. tells you one of your attributes can be a Shape, it means that its value can be any among the following ones:
+When a mechanic/targeter/etc. tells you one of your attributes can be a Shape ***and it links to this page***, it means that its value can be any among the following ones:
 
 [[_TOC_]]
 
