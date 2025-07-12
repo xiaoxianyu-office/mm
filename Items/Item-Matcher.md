@@ -40,5 +40,6 @@ For blocks only, it is possible to specify some specific [block states](https://
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | strict    | exact, e  | Whether the matcher should more strictly match the target item       | false   |
 | types     | type, t, material, mat, m, item, i | The items to match. Can be a list           | DIRT    |
+| vanillaonly | vanilla | Whether the matched item can only be a vanilla one                   | false   |
 
 -->
