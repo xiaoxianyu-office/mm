@@ -175,6 +175,7 @@ These placeholders will return whatever target selector has been used. For insta
 | <target.fovoffset{rotation=0;absolute=true}> | Returns the angular offset (in degrees) between the direction the caster is looking and the direction from the caster to the target entity. This offset can be used to determine how far the target is from the caster's center of view |
 | <target.distance>       | Return the distance between the caster and the mechanic's target. If the target cannot be found in the caster's world, returns the maximum double value |
 | <target.distancesquared> | Return the squared distance between the caster and the mechanic's target. If the target cannot be found in the caster's world, returns the maximum double value |
+| <target.armor>          | Returns the target's armor value                                  | 
 
 ## Trigger Placeholders
 These placeholders will return whatever attribute of the entity that caused the skill to happen. For instance `<trigger.name>` combined with an `~onDeath` trigger will return the name of the entity that killed the mob.
