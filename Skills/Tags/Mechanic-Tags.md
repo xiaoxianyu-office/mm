@@ -502,6 +502,7 @@ These mechanics have not been tagged yet.
 | [AddTrade](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/AddTrade) | MythicMobs | Changes the trades of a villager |
 | [Animatearmorstand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/animatearmorstand) | MythicMobs | Makes an armor stand assume a pose over a specified time |
 | [ArmAnimation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ArmAnimation) | MythicMobs | Makes the caster swing their arm |
+| [SwingOffhand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SwingOffhand) | MythicMobs | Makes the casting player swing their offhand |
 | [Currencygive](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/currencygive) | MythicMobs | Gives money to players |
 | [Currencytake](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/currencytake) | MythicMobs | Takes money from players |
 | [DisplayTransformation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/DisplayTransformation) | MythicMobs | Sets the targeted display entity's transformations |
@@ -534,6 +535,7 @@ These mechanics have not been tagged yet.
 | [Setmobcolor](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setmobcolor) | MythicMobs | Changes the target color, can only be applied to colorable mobs such as |
 | [Setname](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setname) | MythicMobs | Sets the display name of the caster |
 | [Setnodamageticks](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setnodamageticks) | MythicMobs | Sets the immunity ticks on the target |
+| [SetPose](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetPose) | MythicMobs | Sets the entity's [pose](https://jd.papermc.io/paper/1.21.6/org/bukkit/entity/Pose.html) |
 | [SetRaiderCanJoinRaid](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setRaiderCanJoinRaid) | MythicMobs | Sets if the target raider entity can join a raid or not |
 | [Setraiderpatrolblock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setraiderpatrolblock) | MythicMobs | Sets the target raider to patrol the given location |
 | [Setraiderpatrolleader](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setraiderpatrolleader) | MythicMobs | Sets if the target raider should be a raider patrol leader or not |

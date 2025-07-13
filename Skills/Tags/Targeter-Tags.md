@@ -29,9 +29,10 @@ These targeters have not been tagged yet.
 | [ChunksInWERegion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/ChunksInWERegion) | MythicMobs | Targets the 0,0 chunk corners of the chunks in a specified WorldGuard region |
 | [Cone](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Cone) | MythicMobs | Targets random points in a cone in front of the caster |
 | [None](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/None) | MythicMobs | Provides no target |
-| [EntitiesInRadius](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesInRadius) | MythicMobs | Targets all entities in the given radius around the caster |
+| [LivingInCone](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/LivingInCone) | MythicMobs | Targets all living entities in cone with a specified angle, length and rotation relative to facing direction |
 | [EntitiesInRing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesInRing) | MythicMobs | Targets all entities in a ring around the caster |
 | [EntitiesInRingNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesInRingNearOrigin) | MythicMobs | Targets all the entities in a ring near the [origin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Origin) |
+| [EntitiesInRadius](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesInRadius) | MythicMobs | Targets all entities in the given radius around the caster |
 | [EntitiesNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesNearOrigin) | MythicMobs | Targets all entities in the given radius around the origin of the metaskill |
 | [Father](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Father) | MythicMobs | Targets the father of the casting mob |
 | [FloorOfTargets](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/FloorOfTargets) | MythicMobs | Targets the first solid block below the inherited targets |
@@ -43,7 +44,6 @@ These targeters have not been tagged yet.
 | [ItemsInRadius](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/ItemsInRadius) | MythicMobs | Targets all items in a radius around the caster |
 | [ItemsNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/ItemsNearOrigin) | MythicMobs | Targets all items in a radius around the origin of the metaskill |
 | [Line](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Line) | MythicMobs | Targets locations between the mob and the inherited target |
-| [LivingInCone](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/LivingInCone) | MythicMobs | Targets all living entities in cone with a specified angle, length and rotation relative to facing direction |
 | [LivingInLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/LivingInLine) | MythicMobs | Targets any entities in a line between the inherited target and the casting mob |
 | [LivingInWorld](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/LivingInWorld) | MythicMobs | Targets all living entities in the caster's world |
 | [LivingNearTargetLocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/LivingNearTargetLocation) | MythicMobs | Targets all living entities near the inherited target |

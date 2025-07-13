@@ -34,6 +34,7 @@ These conditions have not been tagged yet.
 | [Chance](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/chance) | MythicMobs | Sets the probability of the metaskill being executed. |
 | [Children](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/children) | MythicMobs | Checks how many children the caster has. |
 | [Color](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/color) | MythicMobs | Checks the color of Sheeps, Shulkers, Cat (Type), Parrots (Variants), Horses, Llamas, and TraderLlamas. |
+| [CompareValues](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/CompareValues) | MythicMobs | Compares two values based on a specified operation |
 | [Charged](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/charged) | MythicMobs | Checks if the target creeper is charged |
 | [Crouching](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/crouching) | MythicMobs | This condition checks if the target player is crouching or not. |
 | [Cuboid](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/cuboid) | MythicMobs | Whether the target is within a cuboid that has `location1` and `location2` as opposite vertices |
@@ -73,7 +74,7 @@ These conditions have not been tagged yet.
 | [Hascurrency](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hascurrency) | MythicMobs | If the target has the given amount of vault currency |
 | [HasEnchantment](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/HasEnchantment) | MythicMobs | Checks if the target entity's equipped item has an enchantment |
 | [Hasgravity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasgravity) | MythicMobs | If the target has gravity |
-| [Hasinventoryspace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasinventoryspace) | MythicMobs | If the target player has empty inventory space |
+| [HasFreeInventorySlot](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/HasFreeInventorySlot) | MythicMobs | Checks if the evaluated entity has a free inventory slot (at all) |
 | [HasOffhand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/HasOffhand) | MythicMobs | Checks if the target entity has something in the offhand |
 | [Hasowner](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasowner) | MythicMobs | This condition checks if the target mob has an owner |
 | [Hasparent](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasparent) | MythicMobs | This condition checks if the target mob has a parent. |
@@ -196,8 +197,10 @@ These conditions have not been tagged yet.
 | [Velocity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Velocity) | MythicMobs | Checks the velocity of the target entity against a range |
 | [World](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/world) | MythicMobs | Checks the name of the target world. |
 | [Worldtime](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/worldtime) | MythicMobs | Matches a range against the target location's world's time. |
+| [Xdiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Xdiff) | MythicMobs | Checks the difference in x value (height) between the target entity and the caster. |
 | [Yaw](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/yaw) | MythicMobs | Checks the yaw of the target entity against a range. |
 | [Ydiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ydiff) | MythicMobs | Checks the difference in y value (height) between the target entity and the caster. |
+| [Zdiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Zdiff) | MythicMobs | Checks the difference in z value (height) between the target entity and the caster. |
 | [Hitbox](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/Hitbox) | ModelEngine | Checks which hitbox was damaged or interacted with for multi-hitbox models |
 | [HitboxIsSubHitbox](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/HitboxIsSubHitbox) | ModelEngine | Checks if a hitbox other than the main hitbox was what triggered the skill |
 | [DrivingModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/DrivingModel) | ModelEngine | Checks if the target entity is the driver of a model |

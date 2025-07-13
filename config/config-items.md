@@ -42,6 +42,25 @@ Configuration:
     SaveRatios: false                   # Save generated stat ratios for the Item Updater
 
   #================================================================================
+  # Lore Templates (requires Crucible)
+  #================================================================================
+  LoreTemplates:
+    EnableDefaultTemplate: false        # If the default template should be applied to all items
+    DefaultTemplateName: DEFAULT        # The name of the default template
+    DefaultTemplate:                    # The default lore template
+    - Line:
+        - '{stats}'
+        - '{stats}<gray>Bonus Stats:'
+        - '{stats-each}<green> <stat.display>'
+    - Filler: ''
+    - Line:
+        - '{augments:GEM}<gray>Gems:'
+        - '{augments-each:GEM}<yellow><augment.display>'
+    - Filler: ''
+    - Line:
+        - '{lore}'
+
+  #================================================================================
   # Custom Blocks (requires Crucible)
   #================================================================================
   CustomBlocks:

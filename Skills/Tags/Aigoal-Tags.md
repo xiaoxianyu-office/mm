@@ -37,6 +37,7 @@ These aigoals have not been tagged yet.
 | [MoveTowardsRestriction](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/MoveTowardsRestriction) | MythicMobs | Make a mob move towards its "Restriction Point" for some Entities (for instance, the village of a Villager) |
 | [MoveTowardsTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/MoveTowardsTarget) | MythicMobs | Causes the mob to move towards its target |
 | [Movetowater](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/movetowater) | MythicMobs | Causes the mob to move towards water. |
+| [MoveWithinDistanceOfTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/MoveWithinDistanceOfTarget) | MythicMobs | Moves towards the target to be within a certain range |
 | [OpenDoor](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/OpenDoor) | MythicMobs | The mob will open doors it runs into and close the door behind it |
 | [Panic](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/Panic) | MythicMobs | Run around panicking when on fire and look for water |
 | [RandomFly](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/RandomFly) | MythicMobs | Fly around randomly |

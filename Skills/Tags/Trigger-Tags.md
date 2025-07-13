@@ -95,9 +95,13 @@ These triggers have not been tagged yet.
 | [OnBreak](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onBreak) | MythicCrucible | Executes the skill when the player holding or equipping the item breaks it |
 | [OnFurnitureInventoryOpen](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFurnitureInventoryOpen) | MythicCrucible | Triggers when the [Furniture Inventory](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furnitureinventory) is opened |
 | [OnFurnitureInventoryClose](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onFurnitureInventoryClose) | MythicCrucible | Triggers when the [Furniture Inventory](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furnitureinventory) is closed |
+| [OnCancelUse](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onCancelUse) | MythicCrucible | Executes the skill when the player stops using the item. |
 | [OnStartDestroyBlock](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onStartDestroyBlock) | MythicCrucible | Executes the skill when the player holding or equipping the item starts destroying a block |
 | [OnStopDestroyBlock](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onStopDestroyBlock) | MythicCrucible | Executes the skill when the player holding or equipping the item stops destroying a block |
 | [OnClassGain](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Triggers/onClassGain) | MythicRPG | Triggers when the archetype is gained |
 | [OnClassLoss](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Triggers/onClassLoss) | MythicRPG | Triggers when the archetype is lost/removed |
 | [OnLevelUp](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Triggers/onLevelUp) | MythicRPG | Triggers when the [archetype](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Archetypes) [levels up](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Archetypes/Leveling) |
+| [OnQuickcastOpen](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Triggers/onQuickcastOpen) | MythicRPG | Triggers when the player with the archetype starts the quick cast |
+| [OnQuickCastClose](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Triggers/onQuickCastClose) | MythicRPG | Triggers when the player with the archetype ends the quick cast |
+| [OnLearnSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Triggers/onLearnSpell) | MythicRPG | Triggers when the player with the archetype learns a new spell |
 

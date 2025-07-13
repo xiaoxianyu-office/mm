@@ -20,6 +20,8 @@ These aitargets have not been tagged yet.
 | [NearestOtherFactionMonsters](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/NearestOtherFactionMonsters) | MythicMobs | Targets any monster that is in a different faction |
 | [OwnerAttacker](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/OwnerAttacker) | MythicMobs | Targets whatever attacks the mob's owner |
 | [OwnerTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/OwnerTarget) | MythicMobs | Targets whatever the mob's owner attacks |
+| [ParentHurtBy](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/ParentHurtBy) | MythicMobs | Targets the entity that attacks the mob's parent |
+| [ParentTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/ParentTarget) | MythicMobs | Targets the entity that is being hit by the caster's parent |
 | [Players](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/Players) | MythicMobs | Targets players |
 | [SpecificFaction](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/SpecificFaction) | MythicMobs | Causes the mob to target a specific faction. |
 | [SpecificFactionMonsters](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/targets/SpecificFactionMonsters) | MythicMobs | Causes the mob to target monsters of a specific faction. |
