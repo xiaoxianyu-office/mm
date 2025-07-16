@@ -266,6 +266,7 @@ Examples:
 | bulletText| text      | The text of the bullet                                               | *       |
 | bulletBillboard | billboard | The [billboard type] of the bullet                             | CENTER<!--type:Billboard-->|
 |bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
+| bulletRotation  | rotation | Forces the rotation of the bullet with the specified pitch, yaw and roll, in the x,y,z format. Leave empty to allow the bullet to dynamically rotate based on the travel direction |   |
 | bulletyoffset | byoffset, byo | The y offset of the bullet                                   | 0       |
 | bulletforwardoffset | bulletfo, bulletoffset, bfo | The forward offset of the bullet         | 1.8     |
 | backgroundcolor | color | The Background color, in the ARGB format                          | 64,0,0,0 |
