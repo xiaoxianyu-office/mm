@@ -227,8 +227,9 @@ TestOwner:
 | xoffset                                  | xo, x            | Centers the offset on the x axis           | |
 | yoffset                                  | yo, y            | Centers the offset on the y axis           | |
 | zoffset                                  | zo, z            | Centers the offset on the z axis           | |
-| forwardOffset                            | foffset, fo      | Centers forward and backward offset, based on the caster's viewing angle | |
-| sideOffset                               | soffset, so      | Centers left and right offset, based on the caster's viewing angle | |
+| forwardOffset                            | foffset, fo      | Centers forward and backward offset, based on the caster's viewing angle | 0 |
+| sideOffset                               | soffset, so      | Centers left and right offset, based on the caster's viewing angle | 0 |
+|  upoffset                                | uoffset, uo      | Centers up and down offset, based on the caster's viewing angle | 0 |
 | rotatex                                  | rotx             | Rotation on the x axis                    | |
 | rotatey                                  | roty             | Rotation on the y axis                    | |
 | rotatez                                  | rotz             | Rotation on the z axis                    | |
