@@ -225,6 +225,7 @@ The following are only some of the placeholders that can have a `trigger` scope,
 | <random.float.#to#>         | Returns a random float number in the specified range                    |
 | <utils.epoch>               | Returns the current epoch                                               |
 | <utils.epoch.seconds>       | Returns the current epoch                                               |
+| <utils.epoch.timestamp>     | Returns the amount of milliseconds elapsed since the epoch              |
 | <utils.epoch.millis>        | Returns the amount of milliseconds of the current epoch                 |
 | <utils.epoch.ticks>         | Returns the current epoch, converted in ticks. Assumes that the server always maintains 20 ticks per second. Accounts for milliseconds. <br>While unorthodox, since time within Minecraft (and by extension Mythic) is measured in ticks, this may be of some help streamlining some processes where converting the normal epoch time to accomodate for ticks may be burdensome if done at scale |
 
