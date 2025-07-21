@@ -141,6 +141,59 @@ Some of these variables are only generated and available under some special circ
 ```
 > If you execute this metaskill yourself, this will send you a message saying `1 2 1 2` because the target of every mechanic is the caster, so the affected registry is always the caster's even if a "target" scope is used
 
+## Meta Variable Placeholders
+You can append some specific keywords at the end of a variable placeholder in order to tweak its return value, getting some special return based on the variable type
+
+### All Variable Types
+|    **Placeholder**          | **Function**                                                            |
+|-----------------------------|-------------------------------------------------------------------------|
+| <{VariableScope}.var.{VariableName}.expires>  | Whether the variable can expire                       |
+| <{VariableScope}.var.{VariableName}.expiration>  | The expiration timestamp for the variable          |
+| <{VariableScope}.var.{VariableName}.saved>  | Whether the variable is saved                           |
+| <{VariableScope}.var.{VariableName}.type>  | The type of the variable                                 |
+
+### Location Variable Type
+|    **Placeholder**          | **Function**                                                            |
+|-----------------------------|-------------------------------------------------------------------------|
+| <{VariableScope}.var.{VariableName}.x> | The x component of the location                              |
+| <{VariableScope}.var.{VariableName}.y> | The y component of the location                              |
+| <{VariableScope}.var.{VariableName}.z> | The z component of the location                              |
+| <{VariableScope}.var.{VariableName}.yaw> | The yaw component of the location                          |
+| <{VariableScope}.var.{VariableName}.pitch> | The pitch component of the location                      |   
+| <{VariableScope}.var.{VariableName}.world> | The world of the location                                |
+
+### Vector Variable Type
+|    **Placeholder**          | **Function**                                                            |
+|-----------------------------|-------------------------------------------------------------------------|
+| <{VariableScope}.var.{VariableName}.x> | The x component of the location                              |
+| <{VariableScope}.var.{VariableName}.y> | The y component of the location                              |
+| <{VariableScope}.var.{VariableName}.z> | The z component of the location                              |
+
+### Set Variable Type
+|    **Placeholder**          | **Function**                                                            |
+|-----------------------------|-------------------------------------------------------------------------|
+| <{VariableScope}.var.{VariableName}.size> | The size of the set                                       |
+
+### List Variable Type
+|    **Placeholder**          | **Function**                                                            |
+|-----------------------------|-------------------------------------------------------------------------|
+| <{VariableScope}.var.{VariableName}.{Index}> | Returns the element of the list at the given index (must be an integer) |
+| <{VariableScope}.var.{VariableName}.size> | The size of the list                                      |
+| <{VariableScope}.var.{VariableName}.first> | The first element of the list                            |
+| <{VariableScope}.var.{VariableName}.last> | The last element of the list                              |
+| <{VariableScope}.var.{VariableName}.reversed> | Returns the list with a reversed order                |
+| <{VariableScope}.var.{VariableName}.sorted> | Returns the list after sorting it                       |
+| <{VariableScope}.var.{VariableName}.shift> | Returns the first element of the list and removes it from the list itself |
+| <{VariableScope}.var.{VariableName}.pop> | Returns the last element of the list and removes it from the list itself |
+
+### Map Variable Type
+|    **Placeholder**          | **Function**                                                            |
+|-----------------------------|-------------------------------------------------------------------------|
+| <{VariableScope}.var.{VariableName}.{Key}> | Returns the value associated with the given key          |
+| <{VariableScope}.var.{VariableName}.size> | The size of the map                                       |
+| <{VariableScope}.var.{VariableName}.keys> | Returns a list of all the keys in the map                 |
+| <{VariableScope}.var.{VariableName}.values> | Returns a list of all the values in the map             |
+
 
 ## Target Placeholders
 These placeholders will return whatever target selector has been used. For instance <target.name> + @NearestPlayer will return the name of the player closest to the casting mob. The following are only some of the placeholders that can have a `target` scope, and in general any placeholder that is also present in the [Caster Placeholder](#caster-placeholders) section will also work.
