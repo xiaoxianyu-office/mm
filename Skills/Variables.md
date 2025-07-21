@@ -13,6 +13,10 @@ an error if you try to use a variable type for something that makes no sense.
 | FLOAT    | A number with decimal places.    |
 | DOUBLE   | A number with decimal places. Can represent much larger numbers than a FLOAT | 
 | STRING   | A word or sentence.              |
+| SET      | A set of unordered and unique values |
+| LIST     | An ordered list of entries       |
+| MAP      | A list of key-value pairs        |
+| LOCATION | A location in the server. Can only be set via special mechanics |
 
 
 # Variable Scopes
@@ -34,6 +38,57 @@ All variable mechanics and conditions accept `var=` and `scope=` attributes to d
     - setvariable{var=somevariable;scope=target; ...}
 ```
 
+## Special Variable Types
+
+### Set
+```yaml
+  # Create a set
+  - setvariable{var=skill.example;type=SET;val=1,2,hello}
+
+  # Add a value to a set
+  - variableadd{var=skill.example;amount=world}
+  - variableadd{var=skill.example;amount=1} # If you add a value that is already present, the set will not change
+
+  # Remove a value from a set
+  - variablesubtract{var=skill.example;amount=hello}
+
+  # Print a set
+  - message{m=<skill.ver.example>} # 1,2,world
+```
+
+### List
+```yaml
+  # Create a list
+  - setvariable{var=skill.example;type=LIST;val=1,2,hello}
+
+  # Add a value to a list
+  - variableadd{var=skill.example;amount=world}
+
+  # Remove a value from a list (using its index)
+  - variablesubtract{var=skill.example;amount=0}
+
+  # Print a list
+  - message{m=<skill.ver.example>} # 2,hello,world
+  - message{m=<skill.ver.example.0>} # 2
+```
+
+### Map
+```yaml
+  # Create a map
+  - setvariable{var=skill.example;type=LIST;val="hello=world;mamma=mia"}
+
+  # Add a value to a map
+  - variableadd{var=skill.example;amount="pizza=pasta;please=help"}
+
+  # Remove a value from a map(using its key)
+  - variablesubtract{var=skill.example;amount=hello}
+
+  # Print a map
+  - message{m=<skill.ver.example>} # mamma=mia;pizza=pasta;please=help
+  - message{m=<skill.ver.example.please>} # help
+```
+
+
 ## Variable Mechanics
 Variable mechanics are special mechanics that utilize variables. They can target entities, locations, or nothing, but the target can affect the outcome depending on what scope you're using. For example, trying to get a target-scope'd variable will obviously fail if you're not targeting an entity.
 
@@ -41,9 +96,9 @@ Variable mechanics are special mechanics that utilize variables. They can target
 |--------------------------------------------------------|--------------------------------------------------|
 | [SetVariable](/skills/mechanics/setvariable)           | Initializes and sets a variable.                 |
 | [SetVariableLocation](/skills/mechanics/setvariablelocation)   | Sets a variable, whose value depends on the target location.                 |
-| [VariableUnset](/skills/mechanics/variableunset)           | Unsets the variable.                 |
-| [VariableAdd](/skills/mechanics/variableadd)           | Adds to a numeric variable.                      |
-| [VariableSubtract](/skills/mechanics/variablesubtract) | Subtracts from a numeric variable.               |
+| [VariableUnset](/skills/mechanics/variableunset)           | Unsets the variable.                  |
+| [VariableAdd](/skills/mechanics/variableadd)           | Adds to a  variable.                      |
+| [VariableSubtract](/skills/mechanics/variablesubtract) | Subtracts from a  variable.               |
 | [VariableMath](/skills/mechanics/variablemath)         | Lets you do calculations with numeric variables. |
 
 
