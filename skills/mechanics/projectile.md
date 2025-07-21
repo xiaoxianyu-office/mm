@@ -28,7 +28,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | VerticalRadius   | vRadius, vR | The vertical radius entities will be hit in around the projectile.                                                                                                                                      | 1.25    |
 | Duration  | maxDuration, md, d | The max duration (in ticks) the projectile will persist.    | 400     |
 | MaxRange  | mr        | The maximum range (in blocks) the projectile will travel.            | 40      |
-| Velocity  | v         | The velocity of the projectile                                       | 5       |
+| Velocity  | v         | The velocity of the projectile, expressed in blocks traveled per second| 5     |
 | DeathDelay| death, dd | Delays the removal of project bullets when the projectile is terminated | 2    |
 | StartYOffset | syo    | Lets you offset where on the casting mob the projectile shoots from. | 1       |
 | StartFOffset | forwardoffset, sfo |  How far in front of the mob the projectile starts       | 1       |
