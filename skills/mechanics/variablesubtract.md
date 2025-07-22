@@ -1,12 +1,20 @@
 ## Description
 Subtracts an amount to a [variable](/skills/variables) on the specified
-scope. Only works with numeric variable types.
+scope.
+
+> This mechanic can
+> - subtract numeric values to Integer, Float and Double variables
+> - remove a value from a Set variables
+> - remove a value from a List variables by specifying its index (starts at 0)
+> - remove a key-value pair from Map variables by specifying their key
+> 
+> [More Info Here](/Skills/Variables#special-variable-types)
 
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| amount    | a, value, val, v  | The amount to subtract                                       | 0       |
+| amount    | a, value, val, v  | The value to subtract                                       | 0       |
 > This mechanic inherits every *inheritable* attribute of the [SetVariable](skills/mechanics/setvariable) mechanic
 
 
