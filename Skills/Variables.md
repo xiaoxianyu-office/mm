@@ -53,7 +53,7 @@ All variable mechanics and conditions accept `var=` and `scope=` attributes to d
   - variablesubtract{var=skill.example;amount=hello}
 
   # Print a set
-  - message{m=<skill.ver.example>} # 1,2,world
+  - message{m=<skill.var.example>} # 1,2,world
 ```
 
 ### List
@@ -68,8 +68,8 @@ All variable mechanics and conditions accept `var=` and `scope=` attributes to d
   - variablesubtract{var=skill.example;amount=0}
 
   # Print a list
-  - message{m=<skill.ver.example>} # 2,hello,world
-  - message{m=<skill.ver.example.0>} # 2
+  - message{m=<skill.var.example>} # 2,hello,world
+  - message{m=<skill.var.example.0>} # 2
 ```
 
 ### Map
@@ -84,8 +84,8 @@ All variable mechanics and conditions accept `var=` and `scope=` attributes to d
   - variablesubtract{var=skill.example;amount=hello}
 
   # Print a map
-  - message{m=<skill.ver.example>} # mamma=mia;pizza=pasta;please=help
-  - message{m=<skill.ver.example.please>} # help
+  - message{m=<skill.var.example>} # mamma=mia;pizza=pasta;please=help
+  - message{m=<skill.var.example.please>} # help
 ```
 
 
