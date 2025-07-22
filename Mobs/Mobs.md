@@ -366,6 +366,12 @@ VariableZombie:
 > - a `AnIntVariable` variable of type `INTEGER` and of value `2`
 > - a `AFloatVariable` variable of type `FLOAT` and of value `420.69`
 
+Possible prefixes:
+- `int/`
+- `float/`
+- `set/`
+- `list/`
+- `map/`
 
 #### Trades
 Customizes the villager trades.
