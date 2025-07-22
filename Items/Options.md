@@ -24,8 +24,8 @@ Sets the repair cost of the item.
 If set to less than 0, the vanilla one will be used.  
 Defaults to `-1`.  
 ```yaml
-  Options:
-    RepairCost: 10
+  # Not an option, apparently, but kept here because of repairable
+  RepairCost: 10
 ```
 
 #### Unbreakable
