@@ -15,7 +15,7 @@ Executes the specified metaskill *once and separately* for each target of the me
 # Skills file
 ExampleForEach:
   Skills:
-  - setvariable{var=skill.listuuid;type=STRING;val=""} @self
+  - setvariable{var=skill.listuuid;type=LIST;val=""} @self
   - foreach{skill=ExampleSkill} @PIR{r=10;sort=NEAREST}
   - message{m=<skill.var.listuuid>}
 
