@@ -101,13 +101,19 @@ Variable mechanics are special mechanics that utilize variables. They can target
 | [VariableSubtract](/skills/mechanics/variablesubtract) | Subtracts from a  variable.               |
 | [VariableMath](/skills/mechanics/variablemath)         | Lets you do calculations with numeric variables. |
 
-
 ## Variable Conditions
 | Condition                                        | Description                                    |
 |--------------------------------------------------|------------------------------------------------|
-| [Variable Equals](/skills/conditions/variableequals)    | Checks if a variable equals a given value.     |
-| [Variable Is Set](/skills/conditions/variableisset)     | Checks if a variable is set.                   |
-| [Variable In Range](/skills/conditions/variableinrange) | Checks if a number variable is within a range. |
+| [VariableEquals](/skills/conditions/variableequals)    | Checks if a variable equals a given value.    |
+| [VariableIsSet](/skills/conditions/variableisset)     | Checks if a variable is set.                   |
+| [VariableInRange](/skills/conditions/variableinrange) | Checks if a number variable is within a range. |
+| [VariableContains](/skills/conditions/VariableContains) | Checks if a variable contains a given value. |
+
+## Variable Targeters
+| Targeter                                         | Description                                    |
+|--------------------------------------------------|------------------------------------------------|
+| @[VariableLocation](/Skills/Targeters/VariableLocation) | Targets the location stored in the specified Location variable. |
+
 
 # Variable Placeholders
 Variables can be referenced in any MythicMobs mechanics or values that allow placeholders. This is usually done using the format `<scope.var.variable>`.
