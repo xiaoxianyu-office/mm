@@ -347,6 +347,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [Thundering](/skills/conditions/thundering)                                   | Location | If it's thundering in the target world                                                  |
 | [TriggerBlockType](/skills/conditions/TriggerBlockType)                       | Meta     | Checks against the material type that triggered the skill                              |
 | [TriggerItemType](/skills/conditions/TriggerItemType)                         | Meta     | Checks against the item material type that triggered the skill                         |
+| [VariableContains](/skills/conditions/VariableContains)                       | Meta     | Checks if the given variable contains a certain value                                         |
 | [VariableEquals](/skills/conditions/variableequals)                           | Meta     | Checks if the given variable has a particular value.                                          |
 | [VariableInRange](/skills/conditions/variableinrange)                         | Meta     | Checks if the given numeric variable is within a certain range.                               |
 | [VariableIsSet](/skills/conditions/variableisset)                             | Meta     | Checks if the given variable is set.                                                          |
