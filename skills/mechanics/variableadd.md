@@ -1,12 +1,20 @@
 ## Description
 Adds an amount to a [variable](/skills/variables) on the specified
-scope. Only works with numeric variable types.
+scope.
+
+> This mechanic can
+> - sum numeric values to Integer, Float and Double variables
+> - add a value to Set variables
+> - append a value to List variables
+> - add a key-value pair to Map variables
+> 
+> [More Info Here](/Skills/Variables#special-variable-types)
 
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| amount    | a, value, val, v  | The amount to add                                            | 0       |
+| amount    | a, value, val, v  | The value to add                                             | 0       |
 > This mechanic inherits every *inheritable* attribute of the [SetVariable](skills/mechanics/setvariable) mechanic
 
 
