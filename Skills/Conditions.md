@@ -12,7 +12,7 @@ Conditions can be used in [1]:
 
 When applying multiple conditions, all of them must be met in order for the skill to be executed. Some conditions allow arrays that can be split by commas. Such conditions only require one of the strings in the array to match.
 
-To see how to use the premium only in-line conditions, [click here!](/skills/Inline-Conditions)
+To see how to use in-line conditions, [click here!](/skills/Inline-Conditions)
 
 
 ## Types
