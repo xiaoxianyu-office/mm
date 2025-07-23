@@ -1,5 +1,5 @@
 ## Description
-Sets the given metakill's cooldown to the given value (in seconds)
+Sets the given metaskill's cooldown to the given value (in seconds)
 
 > If used to set the cooldown of the metaskill the mechanic is in a delay of at least `0` between the execution of the metaskill and the mechanic must be used
 
