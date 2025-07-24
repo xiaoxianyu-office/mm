@@ -319,9 +319,10 @@ Sets the trim of the item.
 ```yaml
 example_item:
   Material: GOLDEN_CHESTPLATE
-  Trim:
-    Material: iron
-    Pattern: wild
+  Options:
+    Trim:
+      Material: iron
+      Pattern: wild
 ```
 
 #### Firework
