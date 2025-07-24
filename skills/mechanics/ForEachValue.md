@@ -21,7 +21,7 @@ Executes the specified metaskill *once and separately* for each value of the spe
 ExampleForEachValue:
   Skills:
   - setvariable{var=skill.listnames;type=LIST;val="Steve,Alex"} @self
-  - foreach{skill=ExampleSkill;values=<skill.var.listnames>} @self # Can also directly use the entry1,entry2,entry3... syntax
+  - foreachvalue{skill=ExampleSkill;values=<skill.var.listnames>} @self # Can also directly use the entry1,entry2,entry3... syntax
 
 ExampleSkill:
   Skills:
@@ -33,7 +33,7 @@ ExampleSkill:
 ExampleForEachValueForMap:
   Skills:
   - setvariable{var=skill.mapnames;type=MAP;val="Steve=hello;Alex=1,2,3"} @self
-  - foreach{skill=ExampleSkill;values=<skill.var.mapnames>} @self # Can also directly use the key=value;key2=value2... syntax
+  - foreachvalue{skill=ExampleSkill;values=<skill.var.mapnames>} @self # Can also directly use the key=value;key2=value2... syntax
 
 ExampleSkill:
   Skills:
