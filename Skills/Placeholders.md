@@ -250,7 +250,7 @@ Some of these variables are only generated and available under some special circ
 ```
 > If you execute this metaskill yourself, this will send you a message saying `1 2 1 2` because the target of every mechanic is the caster, so the affected registry is always the caster's even if a "target" scope is used
 
-## Meta Variable Placeholders
+### Meta Variable Placeholders
 
 You can append some keywords (that we will call "meta keywords"), each specific to a variable's type, at the end of a variable placeholder in order to modify its return value and type. Each keyword has an
 - `Input Type`, which is the variable type the keyword applies to
@@ -301,7 +301,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 > - It does some form of conversion to its value (In this case, adding a value of 1 to the integer's value)
 > - It returns an Integer value
 
-### Universal Meta Keywords
+#### Universal Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|----------|
 | .expires | BOOLEAN | Whether the variable can expire             |
@@ -321,7 +321,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .tomap | MAP | Converts the value to a Map without doing any specific operations, allowing chaining for Map operations. If not further metadata is used after this, the value will not be formatted as a Map |
 | .totime | TIME | Converts the value to a Time without doing any specific operations, allowing chaining for Time operations. If not further metadata is used after this, the value will not be formatted as a Time |
 
-### Integer Meta Keywords
+#### Integer Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|----------|
 | .add.{Integer} | INTEGER | The addition between the value and the specified Integer |
@@ -330,7 +330,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .div.{Integer} | INTEGER | The division between the value and the specified Integer |
 | .abs | INTEGER | The absolute value of the value |
 
-### Float Meta Keywords
+#### Float Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|----------|
 | .add.{Float} | FLOAT | The addition between the value and the specified Float |
@@ -339,7 +339,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .div.{Float} | FLOAT | The division between the value and the specified Float |
 | .abs | FLOAT | The absolute value of the value |
 
-### Double Meta Keywords
+#### Double Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|----------|
 | .add.{Double} | DOUBLE | The addition between the value and the specified Double |
@@ -348,7 +348,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .div.{Double} | DOUBLE | The division between the value and the specified Double |
 | .abs | DOUBLE | The absolute value of the value |
 
-### Boolean Meta Keywords
+#### Boolean Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|----------|
 | .inverse     | BOOLEAN     | The inverse of the value |
@@ -358,7 +358,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .intersection.{Boolean} | BOOLEAN | Logical AND with specified Boolean |
 | .difference.{Boolean} | BOOLEAN | True if value is true and argument is false |
 
-### String Meta Keywords
+#### String Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|--------------|
 | .size | INTEGER | The length of the string |
@@ -381,14 +381,14 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .regex.{pattern} | BOOLEAN | Whether the string matches the regex `pattern` |
 | .{index} | STRING | Returns the character at the specified `index` |
 
-### Set Meta Keywords
+#### Set Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|--------------|
 | .size | INTEGER | The number of elements in the set |
 | .join.{delimiter} | STRING | Joins all elements using the `delimiter` |
 | .contains.{element} | BOOLEAN | Whether the set contains the given `element` |
 
-### Location Meta Keywords
+#### Location Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|--------------|
 | .x | DOUBLE | The X coordinate |
@@ -399,7 +399,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .pitch | DOUBLE | The pitch |
 | .coords | LIST | A list with the X, Y, and Z coordinates |
 
-### Vector Meta Keywords
+#### Vector Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|--------------|
 | .x | DOUBLE | The X component |
@@ -413,7 +413,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .sub.{vector} | VECTOR | Subtracts another vector |
 | .rotate.{axis}.{angle} | VECTOR | Rotates the vector around `axis` by `angle` radians |
 
-### List Meta Keywords
+#### List Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|--------------|
 | .size | INTEGER | Number of elements in the list |
@@ -439,7 +439,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .remove.{index} | LIST | Removes value at given `index` |
 | .{index} | STRING | Element at specified `index` |
 
-### Map Meta Keywords
+#### Map Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|--------------|
 | .size | INTEGER | Number of key-value pairs |
@@ -448,7 +448,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .get.{key} | STRING | Value associated with the specified `key` |
 | .{key} | STRING | Value associated with the specified `key` |
 
-### Time Meta Keywords
+#### Time Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|--------------|
 | .delta.{timestamp} | INTEGER | Difference between the value's time and the and given `timestamp` |
