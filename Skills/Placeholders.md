@@ -252,15 +252,19 @@ Some of these variables are only generated and available under some special circ
 
 ### Meta Variable Placeholders
 
-You can append some keywords (that we will call "meta keywords"), each specific to a variable's type, at the end of a variable placeholder in order to modify its return value and type. Each keyword has an
+You can append some keywords (that we will call "meta keywords"), each specific to a variable's type, at the end of a variable placeholder in order to modify its return value and type.
+
+```yaml
+<{VariableScope}.var.{VariableName}.{keywords}>
+```
+
+Each keyword has an
 - `Input Type`, which is the variable type the keyword applies to
 - `Output Type`, which is the variable type that can be created from the keyword's returned value
 
 > Placeholder support is allowed in every place inside of Variable Placeholders, so each keyword can also be another placeholder to be parsed
 
-```yaml
-<{VariableScope}.var.{VariableName}.{keywords}>
-```
+##
 
 ```yaml
 <skill.var.exampleString.capitalize>
