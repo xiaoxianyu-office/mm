@@ -16,60 +16,14 @@
 - Added `Set` variable type
 - Added `List` variable type
 - Added `Map` variable type
+- Added `Boolean` variable type
+- Added `Vector` variable type
+- Added `Time` variable type
 
-- Refactored all <[scope].var.[variableName]> placeholders. It is now possible to append a key at the end of the placeholder (in the format <[scope].var.[variableName].key>) to tweak the return value of the placeholder based on the type of the variable the placeholder is fetching. This type of placeholder is called "Meta variable Placeholder"
+- Refactored all <[scope].var.[variableName]> placeholders. It is now possible to append a keyword at the end of the placeholder (in the format <[scope].var.[variableName].keyword>) to tweak the return value of the placeholder based on the type of the variable the placeholder is fetching. This type of placeholder is called "Meta variable Placeholder"
+  - Keywords can be chained together
 
-### Meta Variable Placeholders Introduced
-#### All Variable Types
-|    **Placeholder**          | **Function**                                                            |
-|-----------------------------|-------------------------------------------------------------------------|
-| <{VariableScope}.var.{VariableName}.expires>  | Whether the variable can expire                       |
-| <{VariableScope}.var.{VariableName}.expiration>  | The expiration timestamp for the variable          |
-| <{VariableScope}.var.{VariableName}.saved>  | Whether the variable is saved                           |
-| <{VariableScope}.var.{VariableName}.type>  | The type of the variable                                 |
-
-#### Location Variable Type
-|    **Placeholder**          | **Function**                                                            |
-|-----------------------------|-------------------------------------------------------------------------|
-| <{VariableScope}.var.{VariableName}.x> | The x component of the location                              |
-| <{VariableScope}.var.{VariableName}.y> | The y component of the location                              |
-| <{VariableScope}.var.{VariableName}.z> | The z component of the location                              |
-| <{VariableScope}.var.{VariableName}.yaw> | The yaw component of the location                          |
-| <{VariableScope}.var.{VariableName}.pitch> | The pitch component of the location                      |   
-| <{VariableScope}.var.{VariableName}.world> | The world of the location                                |
-
-#### Vector Variable Type
-|    **Placeholder**          | **Function**                                                            |
-|-----------------------------|-------------------------------------------------------------------------|
-| <{VariableScope}.var.{VariableName}.x> | The x component of the location                              |
-| <{VariableScope}.var.{VariableName}.y> | The y component of the location                              |
-| <{VariableScope}.var.{VariableName}.z> | The z component of the location                              |
-
-#### Set Variable Type
-|    **Placeholder**          | **Function**                                                            |
-|-----------------------------|-------------------------------------------------------------------------|
-| <{VariableScope}.var.{VariableName}.size> | The size of the set                                       |
-
-#### List Variable Type
-|    **Placeholder**          | **Function**                                                            |
-|-----------------------------|-------------------------------------------------------------------------|
-| <{VariableScope}.var.{VariableName}.{Index}> | Returns the element of the list at the given index (must be an integer) |
-| <{VariableScope}.var.{VariableName}.size> | The size of the list                                      |
-| <{VariableScope}.var.{VariableName}.first> | The first element of the list                            |
-| <{VariableScope}.var.{VariableName}.last> | The last element of the list                              |
-| <{VariableScope}.var.{VariableName}.reversed> | Returns the list with a reversed order                |
-| <{VariableScope}.var.{VariableName}.sorted> | Returns the list after sorting it                       |
-| <{VariableScope}.var.{VariableName}.shift> | Returns the first element of the list and removes it from the list itself |
-| <{VariableScope}.var.{VariableName}.pop> | Returns the last element of the list and removes it from the list itself |
-
-#### Map Variable Type
-|    **Placeholder**          | **Function**                                                            |
-|-----------------------------|-------------------------------------------------------------------------|
-| <{VariableScope}.var.{VariableName}.{Key}> | Returns the value associated with the given key          |
-| <{VariableScope}.var.{VariableName}.size> | The size of the map                                       |
-| <{VariableScope}.var.{VariableName}.keys> | Returns a list of all the keys in the map                 |
-| <{VariableScope}.var.{VariableName}.values> | Returns a list of all the values in the map             |
-
+- All implemented placeholders as of this version can be found [here](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Placeholders?version_id=b268bb2c702690e2fecfe64d82001fa0bea37607#meta-variable-placeholders)
 
 ## Mechanics
 - Added [ForEach](/Skills/Mechanics/ForEach) mechanic
