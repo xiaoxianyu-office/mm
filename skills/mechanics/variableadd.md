@@ -2,13 +2,7 @@
 Adds an amount to a [variable](/skills/variables) on the specified
 scope.
 
-> This mechanic can
-> - sum numeric values to Integer, Float and Double variables
-> - add a value to Set variables
-> - append a value to List variables
-> - add a key-value pair to Map variables
-> 
-> [More Info Here](/Skills/Variables#special-variable-types)
+> This mechanic has different behavior based on the variable type. [More Info Here](/Skills/Variables#special-variable-types)
 
 
 ## Attributes
