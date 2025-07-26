@@ -27,6 +27,10 @@ __**Note:** Usage of many variables in skills are locked to the premium versions
 |      <&nl>      | Forces a new line                                                          |  <br>   |
 |    <&heart>     | Returns a heart                                                            | `❤`    |
 |    <&skull>     | Returns a skull and bones                                                  | `☠`    |
+|    <&lt>        | Returns the less than symbol                                               | `<`     |
+|    <&gt>        | Returns the greater than symbol                                            | `>`     |
+|   <^dot>        | Returns a dot                                                              | `.`     |
+|   <^dot2>       | Returns the placeholder that returns a dot. Useful when there is sensitive placeholder parsing involved | `<^dot>`     |
 
 # Color Codes
 These color codes work anywhere in mob- and skill-files. They will even
