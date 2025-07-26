@@ -2,13 +2,7 @@
 Subtracts an amount to a [variable](/skills/variables) on the specified
 scope.
 
-> This mechanic can
-> - subtract numeric values to Integer, Float and Double variables
-> - remove a value from a Set variables
-> - remove a value from a List variables by specifying its index (starts at 0)
-> - remove a key-value pair from Map variables by specifying their key
-> 
-> [More Info Here](/Skills/Variables#special-variable-types)
+> This mechanic has different behavior based on the variable type. [More Info Here](/Skills/Variables#special-variable-types)
 
 
 ## Attributes
