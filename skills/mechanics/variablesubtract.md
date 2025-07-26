@@ -2,7 +2,7 @@
 Subtracts an amount to a [variable](/skills/variables) on the specified
 scope.
 
-> This mechanic has different behavior based on the variable type. [More Info Here](/Skills/Variables#special-variable-types)
+> This mechanic has different behavior based on the variable type. [More Info Here](/Skills/Variables#variable-types-behavior)
 
 
 ## Attributes
