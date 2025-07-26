@@ -461,7 +461,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 |--------------|-------------|--------------|
 | .delta.{timestamp} | INTEGER | Difference between the value's time and the and given `timestamp` |
 | .formatted.{pattern} | STRING | Formatted date/time using the specified pattern. The pattern can be anything the Java function [ZoneOffset.of](https://docs.oracle.com/javase/8/docs/api/java/time/ZoneOffset.html#of-java.lang.String-) accepts |
-| .duration | STRING | Interprets the Time as a raw "amount of seconds" and displays the total amount of Seconds, Minutes, Hours, Days, Months and Years. Can be useful for countdowns and the likes, especially if paired with the `.delta` meta keywords|
+| .duration | STRING | Interprets the Time as a raw "amount of milliseconds" and displays the total amount of Seconds, Minutes, Hours, Days, Months and Years. Can be useful for countdowns and the likes, especially if paired with the `.delta` meta keywords|
 
 # Placeholder Attributes
 Some placeholders can use a set of attributes to further define the output they will give
