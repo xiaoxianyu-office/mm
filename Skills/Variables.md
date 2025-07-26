@@ -13,10 +13,13 @@ an error if you try to use a variable type for something that makes no sense.
 | FLOAT    | A number with decimal places.    |
 | DOUBLE   | A number with decimal places. Can represent much larger numbers than a FLOAT | 
 | STRING   | A word or sentence.              |
+| BOOLEAN  | A value that can either be true or false |
 | SET      | A set of unordered and unique values |
 | LIST     | An ordered list of entries       |
 | MAP      | A list of key-value pairs        |
-| LOCATION | A location in the server. Can only be set via special mechanics |
+| LOCATION | A location in the server         |
+| VECTOR   | A list composed of 3 DOUBLE values |
+| TIME     | A moment in time, represented by the number of milliseconds since the epoch |
 
 
 # Variable Scopes
@@ -38,7 +41,53 @@ All variable mechanics and conditions accept `var=` and `scope=` attributes to d
     - setvariable{var=somevariable;scope=target; ...}
 ```
 
-## Special Variable Types
+## Variable Types Behavior
+
+### Number
+Includes INTEGER, FLOAT and DOUBLE since their behavior is functionally the same
+```yaml
+  # Create your number variable
+  - setvariable{var=skill.example;type=DOUBLE;val=1.5}
+
+  # Add a value to a number
+  - variableadd{var=skill.example;amount=2}
+
+  # Remove a value from a number
+  - variablesubtract{var=skill.example;amount=1}
+
+  # Print a number
+  - message{m=<skill.var.example>} # 2.5
+```
+
+### String
+```yaml
+  # Create your string variable
+  - setvariable{var=skill.example;type=STRING;val="oh oh hello"}
+
+  # append a value to a string
+  - variableadd{var=skill.example;amount=" world"}
+
+  # Remove every substring from a string
+  - variablesubtract{var=skill.example;amount="oh oh "}
+
+  # Print a string
+  - message{m=<skill.var.example>} # hello world
+```
+
+### Boolean
+```yaml
+  # Create your boolean variable
+  - setvariable{var=skill.example;type=BOOLEAN;val=true} # can also be "1" or "yes" for "true". Every other value is "false"
+
+  # Performs an OR logical operation on the boolean
+  - variableadd{var=skill.example;amount=1} # Sets the boolean to true if either current or added value is truthy (OR logic)
+
+  # Performs an AND logical operation on the boolean
+  - variablesubtract{var=skill.example;amount=1} # Sets the boolean to true only if both current and added value are truthy (AND logic)
+
+  # Print a boolean
+  - message{m=<skill.var.example>} # true
+```
 
 ### Set
 ```yaml
@@ -75,7 +124,7 @@ All variable mechanics and conditions accept `var=` and `scope=` attributes to d
 ### Map
 ```yaml
   # Create a map
-  - setvariable{var=skill.example;type=LIST;val="hello=world;mamma=mia"}
+  - setvariable{var=skill.example;type=MAP;val="hello=world;mamma=mia"}
 
   # Add a value to a map
   - variableadd{var=skill.example;amount="pizza=pasta;please=help"}
@@ -88,9 +137,55 @@ All variable mechanics and conditions accept `var=` and `scope=` attributes to d
   - message{m=<skill.var.example.please>} # help
 ```
 
+### Location
+```yaml
+  # Create your location variable
+  - setvariable{var=skill.example;type=LOCATION;val=world,1,2,3}
+  - setvarloc{var=skill.specialexample;val=@selflocation} # You can also set a location variable via this special mechanic
+
+  # Increase the coordinates values
+  - variableadd{var=skill.example;amount=1,2,3}
+
+  # Decrease the coordinates values
+  - variablesubtract{var=skill.example;amount=1,1,1}
+
+  # Print a location
+  - message{m=<skill.var.example>} # world,1.0,3.0,5.0
+```
+
+### Vector
+```yaml
+  # Create your vector variable
+  - setvariable{var=skill.example;type=VECTOR;val=1,2,3}
+
+  # Increase the component values
+  - variableadd{var=skill.example;amount=1,2,3}
+
+  # Decrease the component values
+  - variablesubtract{var=skill.example;amount=1,1,1}
+
+  # Print a location
+  - message{m=<skill.var.example>} # 1.0,3.0,5.0
+```
+
+### Time
+```yaml
+  # Create your time variable
+  - setvariable{var=skill.example;type=TIME;val=1234}
+
+  # Increase the value
+  - variableadd{var=skill.example;amount=2}
+
+  # Decrease the value
+  - variablesubtract{var=skill.example;amount=1}
+
+  # Print a time
+  - message{m=<skill.var.example>} # 1235
+```
+
 
 ## Variable Mechanics
-Variable mechanics are special mechanics that utilize variables. They can target entities, locations, or nothing, but the target can affect the outcome depending on what scope you're using. For example, trying to get a target-scope'd variable will obviously fail if you're not targeting an entity.
+Variable mechanics are special mechanics that utilize variables. They can target entities, locations, or nothing, but the target can affect the outcome depending on what scope you're using. For example, trying to get a target-scoped variable will obviously fail if you're not targeting an entity.
 
 | Mechanic                                               | Description                                      |
 |--------------------------------------------------------|--------------------------------------------------|
@@ -117,6 +212,10 @@ Variable mechanics are special mechanics that utilize variables. They can target
 
 # Variable Placeholders
 Variables can be referenced in any MythicMobs mechanics or values that allow placeholders. This is usually done using the format `<scope.var.variable>`.
+
+Variable Placeholders can also use Meta Keywords to change the output of the placeholder, and they can even chain Meta Keywords together to obtain a "compound" effect.
+
+Find out more on the [Meta Variable Placeholder Explanation](/Skills/Placeholders#meta-variable-placeholders)
 
 # Variable Fallback
 When using placeholder variables, you can also specify a "default" value that will be used if the variable is undefined by using the syntax `<scope.var.variable|default>`.
