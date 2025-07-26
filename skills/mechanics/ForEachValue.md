@@ -2,9 +2,11 @@
 Executes the specified metaskill *once and separately* for each value of the specified list/map formatted value. Each metaskill that will be called will have special skill parameters set depending on the iterated value:
 - For list-formatted inputs
   - `<skill.value>` for the iterated value
+  - `<skill.index>` for the index of the value
 - For map-formatted inputs
   - `<skill.key>` for the iterated key
   - `<skill.value>` for the iterated value
+  - `<skill.index>` for the index of the key-value pair
 
 
 ## Attributes
