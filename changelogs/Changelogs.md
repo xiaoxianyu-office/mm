@@ -7,6 +7,10 @@
 - Added `HAPPY_GHAST` entity type
 
 - Added `<target.armor>` placeholder
+- Added `<&lt>` placeholder
+- Added `<&gt>` placeholder
+- Added `<^dot>` placeholder
+- Added `<^dot2>` placeholder
 - Added `xdiff` and `zdiff` conditions
 
 - PolygonMechanic
