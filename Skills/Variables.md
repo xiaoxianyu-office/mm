@@ -68,7 +68,7 @@ Includes INTEGER, FLOAT and DOUBLE since their behavior is functionally the same
   - variableadd{var=skill.example;amount=" world"}
 
   # Remove every substring from a string
-  - variablesubtract{var=skill.example;amount="oh oh "}
+  - variablesubtract{var=skill.example;amount="oh "}
 
   # Print a string
   - message{m=<skill.var.example>} # hello world
