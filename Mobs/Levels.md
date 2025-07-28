@@ -1,6 +1,6 @@
 Mob levels are a useful function for adding levels to your mob, which allow for several useful features.
 
-For example, you can have the mob's damage and health scale up as their level increases, or you can have them drop more items depending on what their level is (see _BonusLevelItems_ in [Droptable Options](/drops/Drops#droptable-options)).
+For example, you can have the mob's damage and health scale up as their level increases, or you can have them drop more items depending on what their level is (see _BonusLevelItems_ in [Droptable Options](/drops/DropsTables#droptable-options)).
 
 Or, for more advanced configs you could change their drops completely depending on what level they are, give them different skills depending on their level, or even change where/how they spawn depending on what level they are (using spawners and randomspawns.)
 
