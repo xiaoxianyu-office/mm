@@ -3,8 +3,7 @@ Adds a scoreboard tag to the target.
 
 This is used in conjunction with the **hastag condition** (see
 [Conditions](/skills/conditions/hastag)). You can also use the vanilla command
-`/scoreboard players tag <player name> add [Tag Name]` to do
-the same thing.
+`/tag <targets> add <name>` to do the same thing.
 
 
 ## Attributes
