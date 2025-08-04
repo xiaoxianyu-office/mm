@@ -246,6 +246,17 @@ Variables can also be nested indefinitely: if this is done, the innermost variab
 ```
 > In this example, the message would spell "Hello there!"
 
+> Due to a limitation of mythic's placeholder parser, using the same placeholder both "on its own" *and* inside another placeholder as a nested value is very dangerous, and will most likely result in the nested placeholder not being correctly parsed! 
+> For instance, this  
+> ```yaml
+>  - message{m=<skill.var.test> <skill.var.<skill.var.test>>} # Don't do this!  
+> ```
+> Will have an uncertain outcome! To fix this, it is needed to change the variable name or to parse it beforehand  
+> ```yaml
+>  - setvariable{var=skill.segment;type=STRING;val=<skill.var.<skill.var.test>>}
+>  - message{m=<skill.var.test> <skill.var.segment>} # Do this instead!
+> ```
+
 # [Mob Variables](/Mobs/Mobs#variables)
 Mobs can have some variable be already set once they spawn thanks to the [Mob Variables](/Mobs/Mobs#variables) field.
 ```yaml
