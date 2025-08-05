@@ -317,17 +317,17 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .saved | BOOLEAN |Whether the variable is saved                  |
 | .type | STRING | The type of the variable                        |
 | .get | STRING | Forcefully returns the value of the variable. Used to make the "to{VariableType}" keyword return a correctly formatted value                             |
-| .toint | INTEGER | Converts the value to an Integer without doing any specific operations, allowing chaining for Integer operations. If not further keyword is used after this, the value will not be formatted as an Integer |
-| .tofloat | FLOAT | Converts the value to a Float without doing any specific operations, allowing chaining for Float operations. If not further keyword is used after this, the value will not be formatted as a Float |
-| .todouble | DOUBLE | Converts the value to a Double without doing any specific operations, allowing chaining for Double operations. If not further keyword is used after this, the value will not be formatted as a Double |
-| .toboolean | BOOLEAN | Converts the value to a Boolean without doing any specific operations, allowing chaining for Boolean operations. If not further keyword is used after this, the value will not be formatted as a Boolean |
-| .tostring | STRING | Converts the value to a String without doing any specific operations, allowing chaining for String operations. If not further keyword is used after this, the value will not be formatted as a String |
-| .tolocation | LOCATION | Converts the value to a Location without doing any specific operations, allowing chaining for Location operations. If not further keyword is used after this, the value will not be formatted as a Location |
-| .tovector | VECTOR | Converts the value to a Vector without doing any specific operations, allowing chaining for Vector operations. If not further keyword is used after this, the value will not be formatted as a Vector |
-| .tolist | LIST | Converts the value to a List without doing any specific operations, allowing chaining for List operations. If not further keyword is used after this, the value will not be formatted as a List |
-| .toset | SET | Converts the value to a Set without doing any specific operations, allowing chaining for Set operations. If not further keyword is used after this, the value will not be formatted as a Set |
-| .tomap | MAP | Converts the value to a Map without doing any specific operations, allowing chaining for Map operations. If not further keyword is used after this, the value will not be formatted as a Map |
-| .totime | TIME | Converts the value to a Time without doing any specific operations, allowing chaining for Time operations. If not further keyword is used after this, the value will not be formatted as a Time |
+| .toint | INTEGER | Converts the value to an Integer without doing any specific operation, allowing chaining for Integer meta keywords. If not further keyword is used after this, the value will not be formatted as an Integer |
+| .tofloat | FLOAT | Converts the value to a Float without doing any specific operation, allowing chaining for Float meta keywords. If not further keyword is used after this, the value will not be formatted as a Float |
+| .todouble | DOUBLE | Converts the value to a Double without doing any specific operation, allowing chaining for Double meta keywords. If not further keyword is used after this, the value will not be formatted as a Double |
+| .toboolean | BOOLEAN | Converts the value to a Boolean without doing any specific operation, allowing chaining for Boolean meta keywords. If not further keyword is used after this, the value will not be formatted as a Boolean |
+| .tostring | STRING | Converts the value to a String without doing any specific operation, allowing chaining for String meta keywords. If not further keyword is used after this, the value will not be formatted as a String |
+| .tolocation | LOCATION | Converts the value to a Location without doing any specific operation, allowing chaining for Location meta keywords. If not further keyword is used after this, the value will not be formatted as a Location |
+| .tovector | VECTOR | Converts the value to a Vector without doing any specific operation, allowing chaining for Vector meta keywords. If not further keyword is used after this, the value will not be formatted as a Vector |
+| .tolist | LIST | Converts the value to a List without doing any specific operation, allowing chaining for List meta keywords. If not further keyword is used after this, the value will not be formatted as a List |
+| .toset | SET | Converts the value to a Set without doing any specific operation, allowing chaining for Set meta keywords. If not further keyword is used after this, the value will not be formatted as a Set |
+| .tomap | MAP | Converts the value to a Map without doing any specific operation, allowing chaining for Map meta keywords. If not further keyword is used after this, the value will not be formatted as a Map |
+| .totime | TIME | Converts the value to a Time without doing any specific operation, allowing chaining for Time meta keywords. If not further keyword is used after this, the value will not be formatted as a Time |
 
 #### Integer Meta Keywords
 |  Placeholder | Return Type | Return Value |
