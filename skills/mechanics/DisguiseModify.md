@@ -1,6 +1,6 @@
 ## Description
 Modifies an *already* applied disguise on the target entity.  
-Like the [Disguise](/skills/mechanics/disguise) mechanic, [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81/) and [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) must be installed. [Here](/Mobs/Disguises) you can find our documentation on the matter.  
+Like the [Disguise](/skills/mechanics/disguise) mechanic, [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81/) must be installed. [Here](/Mobs/Disguises) you can find our documentation on the matter.  
 The syntax for the disguise in this mechanic is completely equivalent to the one used in the `/modifydisguise` command.
 
 
