@@ -1,10 +1,8 @@
 ### Mob Disguises
 
-**Mob disguises are dependent on the plugins [LibsDisguises ](https://www.spigotmc.org/resources/libs-disguises.81/)and [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/). They will not work without both of those plugins. [The most up to date documentation for LibsDisguises can be found here](https://www.spigotmc.org/wiki/lib-s-disguises/)**
+**Mob disguises are dependent on the plugins [LibsDisguises ](https://www.spigotmc.org/resources/libs-disguises.81/). They will not work without both of those plugins. [The most up to date documentation for LibsDisguises can be found here](https://www.spigotmc.org/wiki/lib-s-disguises/)**
 
 Most features do not require the premium version of LibsDisguises because LibraryAddict is a pretty nice dude.
-
-**Note:** Some version of ProtocolLib work better than others- some versions break mob disguises, other players disguises, we do not have control over this. The LibsDisguises plugin will try to auto-update to a working version but sometimes that may fail. [check the discord if this is the case, normally we have backup links to working versions](mythicmobs.net/discord)
 
 ### Now that the technical mumbo-jumbo is over... What is a disguise?
 
