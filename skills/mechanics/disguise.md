@@ -1,6 +1,6 @@
 ## Description
 Runs a disguise string on the casting mob. This skill requires Libs'
-Disguises and ProtocolLib be installed to enable Disguise functionality.
+Disguises to be installed to enable Disguise functionality.
 
 See [Add-On: Disguises](/Mobs/Disguises) for a list of available
 disguises.
