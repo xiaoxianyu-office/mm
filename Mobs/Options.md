@@ -125,7 +125,7 @@ Defaults to `false`.
 ```
 
 #### LockPitch
-Keeps the mob's head from looking up/down. Requires [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/).
+Keeps the mob's head from looking up/down.
 Defaults to `false`.
 ```yml
   Options:
