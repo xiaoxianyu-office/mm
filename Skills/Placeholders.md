@@ -489,6 +489,7 @@ Other than being able to use PlaceholderAPI placeholders anywhere placeholder su
 | %mythic_spawner_[name]_cooldownleft% | Returns the remaining cooldown of the spawner called `name`    |
 | %mythic_spawner_[name]_warmup% | Returns the warmup of the spawner called `name`                      |
 | %mythic_spawner_[name]_warmupleft% | Returns the remaining warmup of the spawner called `name`        |
+| %mythic_stat_[name]%        | Returns the value of the specified stat on the evaluated player         |
 
 ## PlaceholderAPI Parsing
 When using placeholders via PlaceholderAPI, it is important to remember that some of them are meant to be parsed against a player, and if parsed against a mob they may behave unexpectedly.  
