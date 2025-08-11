@@ -20,6 +20,8 @@ an error if you try to use a variable type for something that makes no sense.
 | LOCATION | A location in the server         |
 | VECTOR   | A list composed of 3 DOUBLE values |
 | TIME     | A moment in time, represented by the number of milliseconds since the epoch |
+| METASKILL | An inline MetaSkill, parsed at the moment of the variable's creation |
+| ITEM     | An itemstack, that can be used to store and modify an item's data |
 
 
 # Variable Scopes
@@ -181,6 +183,39 @@ Includes INTEGER, FLOAT and DOUBLE since their behavior is functionally the same
 
   # Print a time
   - message{m=<skill.var.example>} # 1235
+```
+
+### MetaSkill
+```yaml
+  # Create your MetaSkill variable
+  - setvariable{var=skill.example;type=METASKILL;val=[
+    - message{m=hello world} @self
+    ]}
+
+  # Print the MetaSkill's original text
+  - message{m=<skill.var.example>}
+
+  # Execute the MetaSkill
+  - vskill{variable=skill.example}
+```
+> If the MetaSkill contains metamechanics (like skill or projectile), you must wait 15~21 ticks before executing it to prevent errors
+
+### Item
+```yaml
+  # Create your Item variable
+  - setvariable{var=skill.example;type=ITEM;val=<target.item.itemstack.HAND>}
+
+  # Update your Item variable
+  - setvariable{var=skill.example;type=ITEM;val=<skill.var.example.withname.test.withlore.hello,world>}
+
+  # Print the Item's ItemStack
+  - message{m=<skill.var.example>}
+
+  # Give the Item
+  - giveitem{variable=skill.example}
+
+  # Take the Item
+  - takeitem{variable=skill.example}
 ```
 
 
