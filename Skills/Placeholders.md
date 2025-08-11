@@ -313,22 +313,20 @@ Given that each meta keyword has a specific input and output type, it is possibl
 #### Universal Meta Keywords
 |  Placeholder | Return Type | Return Value |
 |--------------|-------------|----------|
-| .expires | BOOLEAN | Whether the variable can expire             |
-| .expiration | TIME | The expiration timestamp for the variable   |
-| .saved | BOOLEAN |Whether the variable is saved                  |
-| .type | STRING | The type of the variable                        |
-| .get | STRING | Forcefully returns the value of the variable. Used to make the "to{VariableType}" keyword return a correctly formatted value                             |
-| .toint | INTEGER | Converts the value to an Integer without doing any specific operation, allowing chaining for Integer meta keywords. If not further keyword is used after this, the value will not be formatted as an Integer |
-| .tofloat | FLOAT | Converts the value to a Float without doing any specific operation, allowing chaining for Float meta keywords. If not further keyword is used after this, the value will not be formatted as a Float |
-| .todouble | DOUBLE | Converts the value to a Double without doing any specific operation, allowing chaining for Double meta keywords. If not further keyword is used after this, the value will not be formatted as a Double |
-| .toboolean | BOOLEAN | Converts the value to a Boolean without doing any specific operation, allowing chaining for Boolean meta keywords. If not further keyword is used after this, the value will not be formatted as a Boolean |
-| .tostring | STRING | Converts the value to a String without doing any specific operation, allowing chaining for String meta keywords. If not further keyword is used after this, the value will not be formatted as a String |
-| .tolocation | LOCATION | Converts the value to a Location without doing any specific operation, allowing chaining for Location meta keywords. If not further keyword is used after this, the value will not be formatted as a Location |
-| .tovector | VECTOR | Converts the value to a Vector without doing any specific operation, allowing chaining for Vector meta keywords. If not further keyword is used after this, the value will not be formatted as a Vector |
-| .tolist | LIST | Converts the value to a List without doing any specific operation, allowing chaining for List meta keywords. If not further keyword is used after this, the value will not be formatted as a List |
-| .toset | SET | Converts the value to a Set without doing any specific operation, allowing chaining for Set meta keywords. If not further keyword is used after this, the value will not be formatted as a Set |
-| .tomap | MAP | Converts the value to a Map without doing any specific operation, allowing chaining for Map meta keywords. If not further keyword is used after this, the value will not be formatted as a Map |
-| .totime | TIME | Converts the value to a Time without doing any specific operation, allowing chaining for Time meta keywords. If not further keyword is used after this, the value will not be formatted as a Time |
+| .cache       |             | Given the input value and the keywords used after it, this keyword will cache the result the first time the placeholder is parsed, and directly return the cached value each subsequent parsing |
+| .formatted   | STRING      | Returns a more human-readable version of the input value |
+| .toint | INTEGER | Converts the value to an Integer without doing any specific operation, allowing chaining for Integer meta keywords |
+| .tofloat | FLOAT | Converts the value to a Float without doing any specific operation, allowing chaining for Float meta keywords |
+| .todouble | DOUBLE | Converts the value to a Double without doing any specific operation, allowing chaining for Double meta keywords |
+| .toboolean | BOOLEAN | Converts the value to a Boolean without doing any specific operation, allowing chaining for Boolean meta keywords |
+| .tostring | STRING | Converts the value to a String without doing any specific operation, allowing chaining for String meta keywords |
+| .tolocation | LOCATION | Converts the value to a Location without doing any specific operation, allowing chaining for Location meta keywords |
+| .tovector | VECTOR | Converts the value to a Vector without doing any specific operation, allowing chaining for Vector meta keywords |
+| .tolist | LIST | Converts the value to a List without doing any specific operation, allowing chaining for List meta keywords |
+| .toset | SET | Converts the value to a Set without doing any specific operation, allowing chaining for Set meta keywords |
+| .tomap | MAP | Converts the value to a Map without doing any specific operation, allowing chaining for Map meta keywords |
+| .totime | TIME | Converts the value to a Time without doing any specific operation, allowing chaining for Time meta keywords |
+
 
 #### Integer Meta Keywords
 |  Placeholder | Return Type | Return Value |
@@ -430,6 +428,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .last | STRING | Last element in the list |
 | .reverse | LIST | The list reversed |
 | .sort | LIST | The list sorted alphabetically |
+| .sortnum | LIST | This list sorted numerically. Each element of the list needs to be a number |
 | .pop | STRING | Removes and returns the last element. Does side effect on the list |
 | .shift | STRING | Removes and returns the first element. Does side effect on the list |
 | .get.{index} | STRING | Element at specified `index` |
@@ -463,6 +462,35 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .delta.{timestamp} | INTEGER | Difference between the value's time and the and given `timestamp` |
 | .formatted.{pattern} | STRING | Formatted date/time using the specified pattern. The pattern can be anything the Java function [ZoneOffset.of](https://docs.oracle.com/javase/8/docs/api/java/time/ZoneOffset.html#of-java.lang.String-) accepts |
 | .duration | STRING | Interprets the Time as a raw "amount of milliseconds" and displays the total amount of Seconds, Minutes, Hours, Days, Months and Years. Can be useful for countdowns and the likes, especially if paired with the `.delta` meta keywords|
+
+#### Item Meta Keywords  
+| Placeholder | Return Type | Return Value |
+|-------------|-------------|--------------|
+| .withType.{material} | ITEM | Returns the same item but with its type set to the specified `material` (case-insensitive, must match a valid `Material` enum) |
+| .withDurability.{value} | ITEM | Returns the same item but with its durability set to the specified integer `value` |
+| .withMaxDurability.{value} | ITEM | Returns the same item but with its maximum durability set to the specified integer `value` |
+| .withLore.{list} | ITEM | Returns the same item but with its lore set to the specified list of strings. |
+| .withName.{name} | ITEM | Returns the same item but with its display name set to `name` |
+| .withMythicType.{type} | ITEM | Returns the same item but with its persistent "Mythic Type" set to `type`, allowing you to make Mythic believe the modified item is the `type` mythic item |
+| .withEnchants.{map} | ITEM | Returns the same item but with enchantments replaced by those provided in the map. Removes all previous enchantments before applying the new ones |
+| .withCustomData.{namespace}.{key}.{value} | ITEM | Returns the same item but with custom persistent data (`value` stored under `namespace:key`) |
+| .withAmount.{value} | ITEM | Returns the same item but with its stack amount set to `value` |
+| .withUUID.{uuid} | ITEM | Returns the same item but with its UUID nbt set to the specified value |
+| .withTimestamp.{timestamp} | ITEM | Returns the same item but with its timestamp nbt set to the specified integer value |
+| .withCustomModelData.{value} | ITEM | Returns the same item but with its Custom Model Data set to `value` |
+| .withModel.{namespace}.{path} | ITEM | Returns the same item but with its item model set to `{namespace}:{path}` |
+| .type | STRING | The item's type as a string (Material name) |
+| .durability | INTEGER | The current durability value of the item |
+| .maxDurability | INTEGER | The maximum durability value of the item |
+| .lore | LIST | The item's lore as a list of strings |
+| .name | STRING | The display name of the item |
+| .mythicType | STRING | The persistent "Mythic Type" value of the item, if set |
+| .enchants | MAP | A map of all enchantments on the item |
+| .getCustomData.{namespace}.{key} | STRING | The string value stored in the item's custom persistent data under `{namespace}:{key}` |
+| .customModelData | INTEGER | The item's Custom Model Data value |
+| .model | STRING | The item's model identifier in `namespace:path` format |
+| .amount | INTEGER | The stack amount of the item |
+
 
 # Placeholder Attributes
 Some placeholders can use a set of attributes to further define the output they will give
