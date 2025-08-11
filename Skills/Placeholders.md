@@ -142,6 +142,7 @@ These placeholders will return whatever target selector has been used. For insta
 | <target.distance>       | Return the distance between the caster and the mechanic's target. If the target cannot be found in the caster's world, returns the maximum double value |
 | <target.distancesquared> | Return the squared distance between the caster and the mechanic's target. If the target cannot be found in the caster's world, returns the maximum double value |
 | <target.armor>          | Returns the target's armor value                                  | 
+| <target.item.itemstack.{EquipSlot}> | Returns the ItemStack of the item in the specified slot on the target player. The slot can either be a named one (HAND, OFFHAND etc.) or a number |
 
 ## Trigger Placeholders
 These placeholders will return whatever attribute of the entity that caused the skill to happen. For instance `<trigger.name>` combined with an `~onDeath` trigger will return the name of the entity that killed the mob.
