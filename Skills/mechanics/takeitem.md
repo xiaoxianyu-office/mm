@@ -10,6 +10,7 @@ Uses the [Item Matcher](/Items/Item-Matcher)
 | amount    | a              | The amount to remove                                            | 1       |
 | exact     | e, strict | Whether the name of the item should match exactly to the specified one | true  |
 | vanillaonly | vanilla | Whether the matched item can only be a vanilla one                   | false   |
+| variable  | var       | The Item variable whose value is to be taken from the inventory. When set, `item` is ignored |
 
 
 ## Examples
