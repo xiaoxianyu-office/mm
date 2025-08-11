@@ -429,8 +429,6 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .reverse | LIST | The list reversed |
 | .sort | LIST | The list sorted alphabetically |
 | .sortnum | LIST | This list sorted numerically. Each element of the list needs to be a number |
-| .pop | STRING | Removes and returns the last element. Does side effect on the list |
-| .shift | STRING | Removes and returns the first element. Does side effect on the list |
 | .get.{index} | STRING | Element at specified `index` |
 | .join.{delimiter} | STRING | Joins elements using `delimiter` |
 | .contains.{element} | BOOLEAN | Whether the list contains `element` |
