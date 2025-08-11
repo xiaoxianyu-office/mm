@@ -11,6 +11,7 @@ be set to *false* later in a skill-tree.
 | forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft   | false   |
 | branch    | b, fork, f| Whether the called metaskill's skilltree should [branch](/skills/mechanics/skill#branch-attribute) off from the skilltree of the calling mechanic      | false   |
 | executeafterdeath | continueafterdeath | Whether the metaskill should be able to be called after the caster's death                                                                                 | false   |
+| variable  | var       | The MetaSkill variable whose value is to be executed. When set, `skill` is ignored |
 
 
 ## Examples
