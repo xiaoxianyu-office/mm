@@ -185,3 +185,7 @@ Once you get the hang of using individual base-skills, you can use Meta-Skills t
   [Conditions]: /Skills/conditions/
   [Here is a list of all the targeters]: /Skills/Targeters/
   [Click here to see which triggers work with Crucible]: https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers
+
+# Cheat Sheet
+![image](uploads/ebf67740e7bc604db56a95cf62397030/image.png)
+> You can use this fabulous schema made by the fantastic [ShenKuro](https://discord.com/users/695202854134218763)
