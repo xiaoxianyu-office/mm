@@ -9,7 +9,7 @@ EXAMPLE_MOB:
   Type: CHICKEN
   Skills:
     # sends a message to all the players in the world
-    # when the mob takes damage
+    # when the mob despawns
     - message{m=DESPAWNED} @World ~onDespawn
 ```
 
