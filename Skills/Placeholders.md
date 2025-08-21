@@ -203,6 +203,7 @@ The following are only some of the placeholders that can have a `trigger` scope,
 | <mythicitem.{MythicItem}.material>| Returns the material of the specified mythic item                 |
 | <mythicitem.{MythicItem}.model>   | Returns the custommodeldata of the specified mythic item          |
 | <mythicitem.{MythicItem}.display> | Returns the display name of the specified mythic item             |
+| <mythicitem.{MythicItem}.itemstack> | Returns the itemstack of the specified mythic item              |
 
 ## Score Placeholders
 | **Placeholder**             | **Function**                                                            |
