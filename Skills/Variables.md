@@ -205,6 +205,13 @@ Includes INTEGER, FLOAT and DOUBLE since their behavior is functionally the same
   # Create your Item variable
   - setvariable{var=skill.example;type=ITEM;val=<target.item.itemstack.HAND>}
 
+  # Some prefixes can be used to induce some specific behavior. Eligible prefixes are `mythic:`, `slot:` and `material:`
+  - setvariable{var=skill.example;type=ITEM;val=mythic:BanditTunic}
+  - setvariable{var=skill.example;type=ITEM;val=material:STONE}
+  - setvariable{var=skill.example;type=ITEM;val=slot:HAND}
+  - setvariable{var=skill.example;type=ITEM;val=slot:10}
+
+
   # Update your Item variable
   - setvariable{var=skill.example;type=ITEM;val=<skill.var.example.withname.test.withlore.hello,world>}
 
