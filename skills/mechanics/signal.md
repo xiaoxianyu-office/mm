@@ -6,7 +6,7 @@ dedicated "~onSignal" trigger in its skill arsenal (see examples).
 
 The signal can either be matched by comparing directly behind the
 trigger (~onSignal:*ping*) or by the new
-[lastsignal-condition](http://www.mythicmobs.net/manual/doku.php/conditions/lastsignal).
+[lastsignal-condition](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/conditions/lastsignal).
 
 
 ## Attributes
