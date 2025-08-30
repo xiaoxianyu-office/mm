@@ -8,6 +8,7 @@ Uses the [Item Matcher](/Items/Item-Matcher)
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | types     | type, t, material, mat, m, i, item | A list of [materials] to check against               | DIRT<!--type:Item--><!--list-->|
 | strict    | exact, e  | Whether the matcher should more strictly match the target item       | false   |
+| vanillaonly | vanilla | Whether the matched item can only be a vanilla one                   | false   |
 
 
 ## Examples
