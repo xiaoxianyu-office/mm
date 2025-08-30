@@ -264,6 +264,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [isPlayer](/skills/conditions/isplayer)                                       | Entity   | Checks if the target is a player                                                              |
 | [isRaiderPatrolLeader](/skills/conditions/isRaiderPatrolLeader)               | Entity   | Checks if the target entity is the captain of a pillager group                                |
 | [isSaddled](/skills/conditions/issaddled)                                     | Entity   | Checks if the target entity is saddled                                                        |
+| [isSkill](/skills/conditions/IsSkill)                                         | Meta     | Checks whether the specified metaskill exists                                                  |
 | [isTamed](/skills/conditions/IsTamed)                                         | Entity   | Checks if the target entity is tamed                                                          |
 | [IsUsingSpyglass](/skills/conditions/IsUsingSpyglass)                         | Entity   | Checks if the target player is using a spyglass                                               |
 | [ItemGroupOnCooldown](/skills/conditions/ItemGroupOnCooldown)                 | Entity   | Checks whether the target player has the specified item group on cooldown              |
@@ -319,6 +320,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [PlayersOnline](/skills/conditions/playersonline)                             | Meta     | Matches the number of players online                                                        |
 | [Plugin](/skills/conditions/plugin)                                           | Meta     | Checks if the specified plugin is running on the server                                       |
 | [Premium](/skills/conditions/premium)                                         | Meta     | Checks if MythicMobs Premium is running on the server                                     |
+| [ProjectileHasEnded](/skills/conditions/ProjectileHasEnded)                   | Meta     | Checks if the calling projectile has ended                                                    |
 | [Raining](/skills/conditions/raining)                                         | Location | If it's raining in the target world                                                     |
 | [Region](/skills/conditions/region)                                           | Location | If the target is within the given WorldGuard region                                           |
 | [SameFaction](/skills/conditions/samefaction)                                 | Entity   | Tests if the caster and target are in the same faction                                       |

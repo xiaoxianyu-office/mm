@@ -9,7 +9,7 @@ targeter is specified.
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| skill     | s, $, (), m, mechanics, meta | The metaskill to be executed                      |<!--type:Metaskill-->|
+| skill     | s, $, (), m, mechanics, meta, spell | The metaskill to be executed                      |<!--type:Metaskill-->|
 | forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft   | false   |
 | branch    | b, fork, f | Whether the called metaskill's skilltree should branch off from the skilltree of the calling mechanic. The branch will originally clone the skilltree, but any changes made to the branch will not reflect on the original skilltree                                              | false   |
 | executeafterdeath | continueafterdeath | Whether the metaskill should be able to be called after the caster's death                                                                                 | false   |
