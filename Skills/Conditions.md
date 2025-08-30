@@ -320,6 +320,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [PlayersOnline](/skills/conditions/playersonline)                             | Meta     | Matches the number of players online                                                        |
 | [Plugin](/skills/conditions/plugin)                                           | Meta     | Checks if the specified plugin is running on the server                                       |
 | [Premium](/skills/conditions/premium)                                         | Meta     | Checks if MythicMobs Premium is running on the server                                     |
+| [ProjectileHasEnded](/skills/conditions/ProjectileHasEnded)                   | Meta     | Checks if the calling projectile has ended                                                    |
 | [Raining](/skills/conditions/raining)                                         | Location | If it's raining in the target world                                                     |
 | [Region](/skills/conditions/region)                                           | Location | If the target is within the given WorldGuard region                                           |
 | [SameFaction](/skills/conditions/samefaction)                                 | Entity   | Tests if the caster and target are in the same faction                                       |
