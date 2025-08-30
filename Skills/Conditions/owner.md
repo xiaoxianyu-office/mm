@@ -14,3 +14,7 @@ Checks if the target entity is the owner of the caster.
   TargetConditions:
   - owner true
 ```
+
+
+## Aliases
+- [x] isOwner
