@@ -190,6 +190,7 @@ These conditions have not been tagged yet.
 | [Thundering](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/thundering) | MythicMobs | Checks if it's thundering in the target world. |
 | [TriggerBlockType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/TriggerBlockType) | MythicMobs | Checks against the material type that triggered the skill |
 | [TriggerItemType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/TriggerItemType) | MythicMobs | Checks against the item material type that triggered the skill |
+| [VariableContains](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/VariableContains) | MythicMobs | s |
 | [Variableequals](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/variableequals) | MythicMobs | A condition that checks the value of a [variable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Variables). |
 | [Variableinrange](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/variableinrange) | MythicMobs | Checks if the given numeric variable is within a certain range. |
 | [Variableisset](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/variableisset) | MythicMobs | Checks if the given [variable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Variables) is set. |

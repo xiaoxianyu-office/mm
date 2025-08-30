@@ -227,7 +227,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [SetProjectileDirection](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetProjectileDirection) | MythicMobs | Sets the calling projectile's movement direction to the given target |
 | [Tracklocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/tracklocation) | MythicMobs | Sets the casting mob's tracked location to the targeted location |
 | [Signal](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/signal) | MythicMobs | Sends a signal to the specified targeter |
-| [Setskillcooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setskillcooldown) | MythicMobs | Sets the given metakill's cooldown to the given value (in seconds) |
+| [Setskillcooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setskillcooldown) | MythicMobs | Sets the given metaskill's cooldown to the given value (in seconds) |
 | [Switch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Switch) | MythicMobs | A switch allows a condition to be tested against a list of (cases) values |
 | [Endprojectile](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/endprojectile) | MythicMobs | Terminates the projectile this mechanic has been called from, activating its onEnd skill in the process |
 ### Flow
@@ -248,6 +248,8 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Chain](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/chain) | MythicMobs | Chain allows you to make skills that bounce between targets, like a |
 | [Chainmissile](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/chainmissile) | MythicMobs | Shoots a chaining homing missile at the target   |
 | [Skill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/skill) | MythicMobs | Executes another [MetaSkill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Metaskills), which must be located in |
+| [ForEach](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ForEach) | MythicMobs | Executes the specified metaskill *once and separately* for each target of the mechanic |
+| [ForEachValue](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ForEachValue) | MythicMobs | Executes the specified metaskill *once and separately* for each value of the specified list/map formatted value |
 | [Variableskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/variableskill) | MythicMobs | Executes another meta-skill like the [Skill mechanic](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/skill), but allows for placeholders inside the skill attribute |
 | [Pickupitem](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/pickupitem) | MythicMobs | Pick up the targeted item, if the caster is a player |
 | [Polygon](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/polygon) | MythicMobs | The Polygon meta-mechanic can execute other skills in a polygon-shaped pattern |
@@ -257,7 +259,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Raytraceto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/raytraceto) | MythicMobs | Traces a ray to the target, like the [Raytrace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/raytrace) mechanic, but with additional attributes regarding the start and end position of the ray |
 | [Shoot](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shoot) | MythicMobs | Shoots an arrow or item-projectile at the targeted entity or location |
 | [Shootshulkerbullet](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shootshulkerbullet) | MythicMobs | Shoots a shulker bullet at the target entity, giving them levitation on hit |
-| [Setskillcooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setskillcooldown) | MythicMobs | Sets the given metakill's cooldown to the given value (in seconds) |
+| [Setskillcooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setskillcooldown) | MythicMobs | Sets the given metaskill's cooldown to the given value (in seconds) |
 | [Slash](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/slash) | MythicMobs | The Slash meta-mechanic can execute other skills in a slash-shaped pattern |
 | [Sudoskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/sudoskill) | MythicMobs | The SudoSkill mechanic allows you to force the targeted entity to “cast” |
 | [Switch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Switch) | MythicMobs | A switch allows a condition to be tested against a list of (cases) values |

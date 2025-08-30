@@ -11,7 +11,10 @@ Configuration:
   # Item Updater
   #================================================================================
   ItemUpdating:
-    Enabled: true
+    Enabled: false
+    OnLogin: true
+    OnScroll: true
+    OnInvClose: true
 
   #================================================================================
   # FancyDrop Everything (EXPERIMENTAL)

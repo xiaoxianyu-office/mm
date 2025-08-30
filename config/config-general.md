@@ -21,7 +21,10 @@ Configuration:
     DebugMode: false
     DebugSpawners: false
     ErrorLogging: true
+
     ThreadPoolSize: -1
+    UseVirtualThreads: false
+
     AnnounceOpReload: false
 
     # Tries to match mobs by their display name and turn them into Mythic Mobs when
