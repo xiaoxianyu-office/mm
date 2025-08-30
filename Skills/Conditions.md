@@ -264,6 +264,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [isPlayer](/skills/conditions/isplayer)                                       | Entity   | Checks if the target is a player                                                              |
 | [isRaiderPatrolLeader](/skills/conditions/isRaiderPatrolLeader)               | Entity   | Checks if the target entity is the captain of a pillager group                                |
 | [isSaddled](/skills/conditions/issaddled)                                     | Entity   | Checks if the target entity is saddled                                                        |
+| [isSkill](/skills/conditions/IsSkill)                                         | Meta     | Checks whether the specified metaskill exists                                                  |
 | [isTamed](/skills/conditions/IsTamed)                                         | Entity   | Checks if the target entity is tamed                                                          |
 | [IsUsingSpyglass](/skills/conditions/IsUsingSpyglass)                         | Entity   | Checks if the target player is using a spyglass                                               |
 | [ItemGroupOnCooldown](/skills/conditions/ItemGroupOnCooldown)                 | Entity   | Checks whether the target player has the specified item group on cooldown              |
