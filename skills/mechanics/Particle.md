@@ -42,8 +42,8 @@ This particle type will replace the spawned particle with the selected entity. T
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | useEyeLocation | uel  | (true/false) Whether to base the particles on the entity's eyes      | false   |
-| forwardOffset | startfoffset, sfo | The forward-offset from the targeted entity,does not work when set directional to true                                                                            | 0       |
-| sideOffset| soffset, sso | The side-offset from the targeted entity, does not work when set directional to true | 0 |
+| forwardOffset | startfoffset, sfo | The forward-offset from the targeted entity, does not work when `directional` is set to true | 0       |
+| sideOffset| soffset, sso | The side-offset from the targeted entity, does not work when `directional` is set to true | 0 |
 
 ## Examples
 ```yaml
