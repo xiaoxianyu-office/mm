@@ -378,6 +378,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .remove.{text} | STRING | The string with occurrences of `text` removed |
 | .contains.{text} | BOOLEAN | Whether the string contains `text` |
 | .substring.{start}.{end} | STRING | A substring from index `start` to `end` |
+| .shift.{Integer} | STRING | Removes the first `Integer` characters |
 | .split.{regex}.{joiner} | STRING | Splits the string by `regex`, then joins it with `joiner` |
 | .indexof.{text} | INTEGER | The index of the first occurrence of `text` |
 | .lastindexof.{text} | INTEGER | The index of the last occurrence of `text` |
