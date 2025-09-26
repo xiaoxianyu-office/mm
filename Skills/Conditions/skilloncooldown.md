@@ -6,7 +6,7 @@ Checks if the given skill is in cooldown for the target entity
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| skill     | s         | The metaskill to check                                               |         |
+| skill     | s         | The metaskill to check                                               |<!--type:MetaSkill-->|
 
 
 ## Examples
