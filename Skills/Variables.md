@@ -224,6 +224,13 @@ Includes INTEGER, FLOAT and DOUBLE since their behavior is functionally the same
   # Take the Item
   - takeitem{variable=skill.example}
 ```
+> In some versions that are older than 1.21.7 there are issues with
+>  - Keeping an item variable persistently (on a persistent mob or on a player)
+>  - Using <target.item.itemstack.HAND> to set the variable
+> 
+> The TLDR is, on the affected versions, when an ItemStack is serialized to a string and subsequently deserialized from said string, some data will be lost. If you are on one of the affected versions, you can still use this variable, but must:
+> - Only use it to store temporary data that is *not* supposed to be persistent across server restarts
+> - Not use the <target.item.itemstack.HAND> placeholder to set the variable, and instead use the slot: prefix as shown above
 
 
 ## Variable Mechanics
