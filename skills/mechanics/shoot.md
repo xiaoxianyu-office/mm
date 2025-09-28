@@ -58,6 +58,7 @@ These attributes apply if the projectile is of `type` `POTION`
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | potiontype     | ptype, effect, pt, pe | The type of the potion applied to the projectile, if POTION | SLOW<!--type:PotionEffectType-->|
 | potionduration | pduration, pd | The duration of the potion effect                           | 100     |
+| potionlevel    | plevel, lvl, pl | The level of the potion effect                            | 1       |
 | force          | overwrite, ow, override, or | Whether to override the effect on the target if already applied    | false  |
 | potioncolor | pc      | The color of the potion                                              | #FFFFFF<!--type:Color--> |
 | hasParticles | particles | Whether not to show the status effect particles.                  | true    |
