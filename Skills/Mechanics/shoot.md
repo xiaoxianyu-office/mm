@@ -29,6 +29,9 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 | piercelevel | pl      | The amount of times the arrow can pierce through an entity           | 0       | 
 | verticaloffset       | vo         | The vertical offset of the shot projectile               | 0       |
 | horizontaloffset     | ho         | The horizontal offset of the shot projectile             | 0       |
+| forwardoffset | startfoffset, sfo | The forward offset of the shot projectile | 1 |
+| sideoffset | soffset, so | The side offset of the shot projectile | 0 |
+| startsideoffset | ssoffset, sso | The side offset of the shot projectile. Yes, it is the same as the above, but *this* attribute has placeholder support. | `sideOffset's value`|
 | gravity   | g         | Whether the projectile should be affected by gravity                 | true    |
 | startyoffset | syo    | The starting y offset of the projectile                              | 0       |
 | adjustvelocity | av   | If the caster is a player, adjusts the velocity and direction as if the player was shooting it themselves | true  |
