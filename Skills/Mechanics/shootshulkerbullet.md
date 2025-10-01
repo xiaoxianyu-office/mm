@@ -16,6 +16,7 @@ Shoots a shulker bullet at the target entity, giving them levitation on hit.
 | onEnd     | oE, onendskill | the skill this mechanic calls when it ends                      |<!--type:Metaskill-->|
 | startyoffset | syo    | The starting y offset of the bullet                                  | 0       |
 | forwardoffset | startfoffset, sfo | The forward offset of the bullet                         | 0       |
+| fromorigin | fo | Whether to shoot the shulker bullet from the origin                        | false   |
 
 
 ## Examples
