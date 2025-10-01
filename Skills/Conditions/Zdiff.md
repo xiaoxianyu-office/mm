@@ -1,5 +1,5 @@
 ## Description
-Checks the difference in z value (height) between the target entity and the caster.
+Checks the difference in z value between the target entity and the caster.
 
 
 ## Attributes
