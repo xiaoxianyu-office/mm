@@ -42,6 +42,13 @@ Added projectile bullets to Orbital in MM 4.11. See how to use them on the [proj
 | maxdropheight | mdh        | The number of attempts the projectile will make to **decrease** its y-location by 1 before terminating itself, when the projectiles is "hugging" either a block or a liquid| 10|
 | bullettype    | bullet, b  | The [Projectile Bullet Type](/skills/mechanics/projectile#projectile-bullets). Also makes the orbital inherits every related attribute                               | NONE<!--type:Projectile_BulletType-->|
 | castAsOrbital | cao        | Whether the metaskills should be casted by the orbital itself rather than from the caster, as Projectiles do                                                              | false  |
+| immunedelay | immune, iD | Sets the immunity delay (when the target can be hit by the projectile again) | 2000 |
+| drawhitbox |  | Draw the hitbox of the orbital, useful for debugging | false |
+| hitconditions | conditions, cond, c | A list of conditions that a target must meet in order for the orbital to be able to hit it. **Premium Only** Mechanic | <!--type:Conditions--> |
+| stopconditions | stpcond | A list of conditions that a target must meet in order for the orbital to end when hitting them | <!--type:Conditions--> |
+| hitTargeter | htr     | An entity targeter. Once the orbital hits, targeted entities will be targeted by the onHit Metaskill and given immune delay just like the orbital's main target          | <!--type:Targeter--> |
+| shareSubHitboxCooldown | shcd | Whether all meg sub hitboxes should share the same immune delay with its base entity | true | 
+
 
 > This mechanic inherits every attribute of the [Aura](/skills/mechanics/aura) mechanic
   
