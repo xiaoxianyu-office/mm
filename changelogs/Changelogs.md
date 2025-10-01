@@ -27,17 +27,9 @@
 
 ## Variables
 - New variable types: `Set`, `List`, `Map`, `Boolean`, `Vector`, `Time`, **Item**, **MetaSkill**
-- Meta Variable Placeholders (refactor): `<[scope].var.[name].keyword>` with keyword chaining
-  - New meta keywords & utilities:
-    - `shuffle` for `List`
-    - `cache`
-    - `formatted`
-    - `|` defaulting in `get` keyword for `Map`/`List`
-    - `.shift.Integer` for `String` (drop first N chars)
-- Improved default handling when meta keywords are used
-- `Variable.ofType` updated; `PolymorphicPlaceholder` added/optimized
+- [Meta Variable Placeholders](/Skills/Placeholders#meta-variable-placeholders): `<[scope].var.[name].keyword>` with keyword chaining
+- `Variable.ofType` updated; `PolymorphicPlaceholder` added
 - Mob Variables can set all registered variable types
-- Added new syntax conveniences for `Time` variables
 - Internals: relocated Default Variable handler for Crucible usage
 
 ## Mechanics
@@ -83,7 +75,6 @@
 ## Items & Equipment
 - Item flags: allow full flags (e.g., `HIDE_ATTRIBUTES`) in `Hide` field
 - Compatibility: drop unsupported `HIDE_POTION_EFFECTS` on > 1.20.5
-- Item variables: added `slot:` prefix for values; serialization fixes
 - Item systems:
   - Faster item cache on reload (also parses placeholders/variables)
   - Fixed tool rules (closes #2027)
