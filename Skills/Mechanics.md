@@ -52,6 +52,7 @@ are able to target locations as well.
 | [BreakBlockAndGiveItem][] | Breaks the block at the target location and gives an item/droptable                      |
 | [ClearExperience][]       | Clears the experience for the targeted players                                                     |
 | [ClearExperienceLevels][] | Clears the experience levels for the targeted players                                                     |
+| [ClearTarget][]           | Forces the target of the mechanic to reset its current target                                                     |
 | [GiveExperienceLevels][]  | Gives experience levels to the targeted players                                                     |
 | [TakeExperienceLevels][]  | Takes experience levels to the targeted players                                                     |
 | [CloseInventory][]        | Closes the target player's inventory                                                     |
@@ -403,6 +404,7 @@ but not yet ready for use.
   [BreakBlockAndGiveItem]: /skills/mechanics/breakBlockAndGiveItem
   [ClearExperience]: /skills/mechanics/ClearExperience
   [ClearExperienceLevels]: /skills/mechanics/ClearExperienceLevels
+  [ClearTarget]: /skills/mechanics/ClearTarget
   [GiveExperienceLevels]: /skills/mechanics/GiveExperienceLevels
   [TakeExperienceLevels]: /skills/mechanics/TakeExperienceLevels
   [CloseInventory]: /skills/mechanics/closeinventory
