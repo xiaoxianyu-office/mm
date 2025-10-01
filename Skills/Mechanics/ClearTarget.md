@@ -15,3 +15,8 @@ Forces the target of the mechanic to reset its current target
 
 ## Aliases
 - [x] resetTarget
+
+
+<!--TAGS-->
+<!--tag:Threat-->
+<!--tag:AI-->
