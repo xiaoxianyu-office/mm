@@ -1,41 +1,123 @@
 [[_TOC_]]
 
-# 5.10.0 (Dev Builds)
+# 5.10.0 (Release)
 
 ## General
-- Added 1.21.7 support
+- Added **1.21.7** and **1.21.8** support
 - Added `HAPPY_GHAST` entity type
+- Performance: faster second-pass processing and improved caching for entity lookups and item parsing on reload
+- Default config: added several missing options
 
-- Added `<target.armor>` placeholder
-- Added `<&lt>` placeholder
-- Added `<&gt>` placeholder
-- Added `<^dot>` placeholder
-- Added `<^dot2>` placeholder
-- Added `xdiff` and `zdiff` conditions
+## API & Events
+- New: `MythicReloadCompleteEvent`
+- New (core): `ReloadEvent`
+- New: `MythicPlayerVariableSetEvent`, `MythicPlayerVariableRemoveEvent`
+- `MythicHealMechanicEvent` now also calls `EntityRegainHealthEvent`
+- Added meta access to `DamageMetadata`
+- Added old meta access in `SkillTriggerMetadata`
+- Added API groundwork for RPG cross-compatibility
 
-- PolygonMechanic
-- Added PlaceholderAngle
+## Placeholders
+- Added `<target.armor>`, `<&lt>`, `<&gt>`, `<^dot>`, `<^dot2>`
+- Added `PlaceholderAngle`
+- Placeholders now supported in more places (e.g., item browser parsing)
+- Fixed generic `int`, `float`, and `double` placeholders not parsing variables
+- Fixed PlaceholderVector not working under complex cases
+- Fixed placeholders with Item NBT (string/int/float/double) not resolving
 
 ## Variables
-- Added `Set` variable type
-- Added `List` variable type
-- Added `Map` variable type
-- Added `Boolean` variable type
-- Added `Vector` variable type
-- Added `Time` variable type
-
-- Refactored all <[scope].var.[variableName]> placeholders. It is now possible to append a keyword at the end of the placeholder (in the format <[scope].var.[variableName].keyword>) to tweak the return value of the placeholder based on the type of the variable the placeholder is fetching. This type of placeholder is called "Meta variable Placeholder"
-  - Keywords can be chained together
-
-- All implemented placeholders as of this version can be found [here](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Placeholders?version_id=b268bb2c702690e2fecfe64d82001fa0bea37607#meta-variable-placeholders)
+- New variable types: `Set`, `List`, `Map`, `Boolean`, `Vector`, `Time`, **Item**, **MetaSkill**
+- Meta Variable Placeholders (refactor): `<[scope].var.[name].keyword>` with keyword chaining
+  - New meta keywords & utilities:
+    - `shuffle` for `List`
+    - `cache`
+    - `formatted`
+    - `|` defaulting in `get` keyword for `Map`/`List`
+    - `.shift.Integer` for `String` (drop first N chars)
+- Improved default handling when meta keywords are used
+- `Variable.ofType` updated; `PolymorphicPlaceholder` added/optimized
+- Mob Variables can set all registered variable types
+- Added new syntax conveniences for `Time` variables
+- Internals: relocated Default Variable handler for Crucible usage
 
 ## Mechanics
-- Added [ForEach](/Skills/Mechanics/ForEach) mechanic
-- Added [ForEachValue](/Skills/Mechanics/ForEachValue) mechanic
-- Updated [variableadd](/skills/mechanics/variableadd) and [variablesubtract](/skills/mechanics/variablesubtract) mechanics to work with new variable types
+- **New**: [`ForEach`](/Skills/Mechanics/ForEach) and [`ForEachValue`](/Skills/Mechanics/ForEachValue)
+- **New**: `ClearTarget` mechanic
+- Updated: `variableadd` / `variablesubtract` to support new variable types
+- Projectile family:
+  - Added many missing projectile options
+  - Added `startYOffset`, `startForwardOffset`, `startSideOffset` to `shoot` and `volley`
+- Orbital family:
+  - Added placeholder support to `ParticleOrbital` radius
+  - Added `immuneDelay`; fixed multi-hit immunity
+  - Removed `hs` alias for `hugSurface`
+  - Improved targeting logic with orbitals
+- Aura: `sync=true` now forces sync scheduler
+- Look mechanic: minor behavioral tweaks
+- Summon: fixed `useTargetYaw`/`useTargetPitch`
+- Stun: fixed `freezeFacing` inversion; fixed on newer versions
+
+## Teleport (Paper-only)
+- **Added** options to all teleport mechanics (Paper):
+  - Teleport cause
+  - Vehicle retention
+  - Support for Paper `TeleportFlag`s
+- Fixes: addressed regressions that broke teleport mechanics; additional polish to new options
+
+## Targeters & Triggers
+- Targeters:
+  - Added `shape` to `@EntitiesInRadius` and `@EntitiesNearOrigin`
+  - Added universal `upoffset` location attribute
+- Triggers:
+  - Shulkers now support `onShoot` and `onBowHit`
+  - Fixed `onDeath` for falling block mobs
 
 ## Conditions
-- Added [VariableContains](/Skills/Conditions/VariableContains) condition
+- **New**: [`VariableContains`](/Skills/Conditions/VariableContains)
+- **New**: `projectileHasEnded`
+- **New**: `isSkill{name=...}`
+- `mythicMobType` condition: `exactmatch=false` option
+- Added `xdiff` and `zdiff` conditions
+- Fixed health conditional parsing triggers
+
+## Items & Equipment
+- Item flags: allow full flags (e.g., `HIDE_ATTRIBUTES`) in `Hide` field
+- Compatibility: drop unsupported `HIDE_POTION_EFFECTS` on > 1.20.5
+- Item variables: added `slot:` prefix for values; serialization fixes
+- Item systems:
+  - Faster item cache on reload (also parses placeholders/variables)
+  - Fixed tool rules (closes #2027)
+  - Fixed cases where item mechanics could fail
+  - Attempted fix for `vanillaonly=true` in `ItemMatcher`
+
+## Mobs & Spawning
+- Options:
+  - `Options.Aware: false`
+  - `Options.PreventKnockback`
+  - `Hidden: true` (prevents mobs appearing in lists) and fixed inheritance making it useless
+- Datapacks: proper spawn location for mobs spawned by datapacks
+
+## Holograms & Displays
+- Holograms: fixed multiple regressions in previous builds
+- Text display bullets:
+  - Added `bulletRotation`
+  - Fixed rotation code on 1.20_R1
+
+## Compatibility & Misc
+
+## Bug Fixes & Other
+- Added placeholder support to summon radius attributes
+- Fixed NPEs: startup (#2029), `MythicConfig`, `ForEach`, `Summon`, vector with `DisplayItem` totems, target setting
+- Fixed recoil mechanic on 1.21.4+
+- Fixed errors when other plugins call certain methods before load
+- Fixed auras `IllegalStateException` introduced in a dev build
+- Fixed level modifier errors (rare cases)
+- Fixed `Log` mechanic message parsing
+- Fixed `variableequals` warnings when target variable absent
+- Fixed `onShoot` aura not setting `<skill.var.bow-tension>`
+- Fixed various missile `verticalOffset` issues
+- Fixed immutable list errors with glow on 1.21.8
+- Fixed `setOwner`/`removeOwner` for all tameable types
 
 # 5.9.5
 
