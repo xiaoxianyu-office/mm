@@ -357,7 +357,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .mul.{Double} | DOUBLE | The multiplication between the value and the specified Double |
 | .div.{Double} | DOUBLE | The division between the value and the specified Double |
 | .abs | DOUBLE | The absolute value of the value |
-> [Go To Explanation>>](/Skills/Placeholders#meta-variable-placeholders)  
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### Boolean Meta Keywords
 |  Placeholder | Return Type | Return Value |
