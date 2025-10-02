@@ -327,7 +327,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .toset | SET | Converts the value to a Set without doing any specific operation, allowing chaining for Set meta keywords |
 | .tomap | MAP | Converts the value to a Map without doing any specific operation, allowing chaining for Map meta keywords |
 | .totime | TIME | Converts the value to a Time without doing any specific operation, allowing chaining for Time meta keywords |
-
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### Integer Meta Keywords
 |  Placeholder | Return Type | Return Value |
@@ -337,6 +337,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .mul.{Integer} | INTEGER | The multiplication between the value and the specified Integer |
 | .div.{Integer} | INTEGER | The division between the value and the specified Integer |
 | .abs | INTEGER | The absolute value of the value |
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### Float Meta Keywords
 |  Placeholder | Return Type | Return Value |
@@ -346,6 +347,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .mul.{Float} | FLOAT | The multiplication between the value and the specified Float |
 | .div.{Float} | FLOAT | The division between the value and the specified Float |
 | .abs | FLOAT | The absolute value of the value |
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### Double Meta Keywords
 |  Placeholder | Return Type | Return Value |
@@ -355,6 +357,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .mul.{Double} | DOUBLE | The multiplication between the value and the specified Double |
 | .div.{Double} | DOUBLE | The division between the value and the specified Double |
 | .abs | DOUBLE | The absolute value of the value |
+> [Go To Explanation>>](/Skills/Placeholders#meta-variable-placeholders)  
 
 #### Boolean Meta Keywords
 |  Placeholder | Return Type | Return Value |
@@ -365,6 +368,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .union.{Boolean} | BOOLEAN | Logical OR with specified Boolean |
 | .intersection.{Boolean} | BOOLEAN | Logical AND with specified Boolean |
 | .difference.{Boolean} | BOOLEAN | True if value is true and argument is false |
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### String Meta Keywords
 |  Placeholder | Return Type | Return Value |
@@ -389,6 +393,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .insert.{index}.{text} | STRING | Inserts `text` at the specified `index` |
 | .regex.{pattern} | BOOLEAN | Whether the string matches the regex `pattern` |
 | .{index} | STRING | Returns the character at the specified `index` |
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### Set Meta Keywords
 |  Placeholder | Return Type | Return Value |
@@ -396,6 +401,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .size | INTEGER | The number of elements in the set |
 | .join.{delimiter} | STRING | Joins all elements using the `delimiter` |
 | .contains.{element} | BOOLEAN | Whether the set contains the given `element` |
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### Location Meta Keywords
 |  Placeholder | Return Type | Return Value |
@@ -407,6 +413,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .yaw | DOUBLE | The yaw |
 | .pitch | DOUBLE | The pitch |
 | .coords | LIST | A list with the X, Y, and Z coordinates |
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### Vector Meta Keywords
 |  Placeholder | Return Type | Return Value |
@@ -421,6 +428,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .add.{vector} | VECTOR | Adds another vector |
 | .sub.{vector} | VECTOR | Subtracts another vector |
 | .rotate.{axis}.{angle} | VECTOR | Rotates the vector around `axis` by `angle` radians |
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### List Meta Keywords
 |  Placeholder | Return Type | Return Value |
@@ -447,6 +455,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .insert.{index}.{value} | LIST | Inserts `value` at the given `index` |
 | .remove.{index} | LIST | Removes value at given `index` |
 | .{index} | STRING | Element at specified `index` |
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### Map Meta Keywords
 |  Placeholder | Return Type | Return Value |
@@ -456,6 +465,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .values | LIST | List of all values |
 | .get.{key} | STRING | Value associated with the specified `key` |
 | .{key} | STRING | Value associated with the specified `key` |
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### Time Meta Keywords
 |  Placeholder | Return Type | Return Value |
@@ -463,6 +473,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .delta.{timestamp} | INTEGER | Difference between the value's time and the and given `timestamp` |
 | .formatted.{pattern} | STRING | Formatted date/time using the specified pattern. The pattern can be anything the Java function [ZoneOffset.of](https://docs.oracle.com/javase/8/docs/api/java/time/ZoneOffset.html#of-java.lang.String-) accepts |
 | .duration | STRING | Interprets the Time as a raw "amount of milliseconds" and displays the total amount of Seconds, Minutes, Hours, Days, Months and Years. Can be useful for countdowns and the likes, especially if paired with the `.delta` meta keywords|
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### Item Meta Keywords  
 | Placeholder | Return Type | Return Value |
@@ -491,6 +502,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .customModelData | INTEGER | The item's Custom Model Data value |
 | .model | STRING | The item's model identifier in `namespace:path` format |
 | .amount | INTEGER | The stack amount of the item |
+> [Go To Explanation>>](#meta-variable-placeholders)  
 
 
 # Placeholder Attributes
