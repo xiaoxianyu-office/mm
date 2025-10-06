@@ -47,7 +47,7 @@ Defaults to `false`.
 ```
 
 #### HideFlags
-**Note: this feature does not exist >=1.20.5!** [Use this instead](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Items/Items#hide)
+**Note: this feature does not exist >=1.20.5!** [Use this instead](/Items/Items#hide)
 
 Hides all the item flags, making things like enchants not visible in the item's lore (please note however that the item will still have an enchanted glow).  
 Defaults to `false`.
