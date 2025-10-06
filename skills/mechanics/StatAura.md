@@ -1,5 +1,6 @@
 ## Description
-Applies an [aura] to the target that applies a specific [stat] to them.
+Applies an [aura] to the target that applies a specific [stat] to them.  
+The buff received is multiplied by the amount of stacks the aura has
 
 
 ## Attributes
