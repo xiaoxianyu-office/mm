@@ -224,7 +224,7 @@ Includes INTEGER, FLOAT and DOUBLE since their behavior is functionally the same
   # Take the Item
   - takeitem{variable=skill.example}
 
-  # For every mechanic that accepts a drop/droptable as a possible value, it is also possible to use the itemvariable drp type
+  # For every mechanic that accepts a drop/droptable as a possible value, it is also possible to use the itemvariable drop type
   # to drop the item stored in the specified item variable
   - equip{item=itemvariable{variable=skill.item} head} @self
   - giveitem{item=itemvariable{variable=skill.item}} @self
