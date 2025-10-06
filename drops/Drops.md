@@ -48,6 +48,7 @@ The chance for the specified item to be dropped.
 | [command](/drops/DropTypes/Command)| Will run a command in console.                    | `- cmd{c="warp <trigger.name> spawn"} 1`  |
 | [mmoitems](https://gitlab.com/phoenix-dvpmt/mmoitems/-/wikis/Item%20Drop%20Tables#adding-mmoitems-to-mythicmobs-drop-tables)    | Drops a `mmoitems` item                                    | `- mmoitems{type=SWORD;id=CUTLASS} 1 1` |
 | **nothing**                 | Will drop nothing. Can help while creating weighted droptables | `- nothing`                                        |
+| [ItemVariable](/drops/DropTypes/ItemVariable)| Drops the item defined in the specified item variable    | `- itemvariable{variable=caster.stolenitem} 1 1`|
 
 
 ### Example
