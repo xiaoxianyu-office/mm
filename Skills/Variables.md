@@ -205,9 +205,10 @@ Includes INTEGER, FLOAT and DOUBLE since their behavior is functionally the same
   # Create your Item variable
   - setvariable{var=skill.example;type=ITEM;val=<target.item.itemstack.HAND>}
 
-  # Some prefixes can be used to induce some specific behavior. Eligible prefixes are `mythic:`, `slot:` and `material:`
+  # Some prefixes can be used to induce some specific behavior. Eligible prefixes are `mythic:`, `slot:`, `drop` and `material:`
   - setvariable{var=skill.example;type=ITEM;val=mythic:BanditTunic}
   - setvariable{var=skill.example;type=ITEM;val=material:STONE}
+  - setvariable{var=skill.example;type=ITEM;val=drop:itemvariable{var=caster.otheritem}} # Works for both single and multi drops. Droptables will return one item rolled from them
   - setvariable{var=skill.example;type=ITEM;val=slot:HAND}
   - setvariable{var=skill.example;type=ITEM;val=slot:10}
 
@@ -218,10 +219,8 @@ Includes INTEGER, FLOAT and DOUBLE since their behavior is functionally the same
   # Print the Item's ItemStack
   - message{m=<skill.var.example>}
 
-  # Give the Item
+  # Give and Take the Item
   - giveitem{variable=skill.example}
-
-  # Take the Item
   - takeitem{variable=skill.example}
 
   # For every mechanic that accepts a drop/droptable as a possible value, it is also possible to use the itemvariable drop type
