@@ -91,8 +91,7 @@ Demon:
   Health: 60 # The amount of Health it has
   Faction: bad # Set the Demon's faction as "bad".
   Disguise: Player 164_ setCustomName Demon setCustomNameVisible false # Disguise it as a player with a skin. Requires LibsDisguises.
-  AIGoalSelectors:
-  - clear # Clears the mob's base AI
+  AIGoalSelectors:  # We will not clear the mob's base AI, instead adding to it
   - meleeattack # Uses melee attacks
   - randomstroll # Randomly walks
   - float # Randomly floats
