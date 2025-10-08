@@ -29,7 +29,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [float](/Mobs/ai/goals/Float) | swim         | Makes the mob swim in water/not                         |
 | [lookatplayers](/Mobs/ai/goals/lookatplayers) | | The mob will look at nearby players                  |
 | [LookAtTarget](/Mobs/ai/goals/LookAtTarget) | | The mob will look at its target                        |
-| [opendoor](//Mobs/ai/goals/OpenDoor)| opendoors | The mob will open doors it runs into and close the door behind it  |
+| [opendoor](/Mobs/ai/goals/OpenDoor)| opendoors | The mob will open doors it runs into and close the door behind it  |
 | [randomlookaround](/Mobs/ai/goals/RandomLookAround) | lookaround   | The mob will randomly look around                                  |
 | [gotospawnlocation](/Mobs/ai/goals/gotospawn) | gotospawn | Mob will pathfind to its spawn location    |
 | [doNothing](/Mobs/ai/goals/doNothing)<br>**[Premium-only]** | | Causes the mob to do nothing if conditions are met.                                                                                      |
