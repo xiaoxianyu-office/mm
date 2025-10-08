@@ -65,6 +65,7 @@ This zombie would attack players, and walk around randomly when not targeting an
 | [Panic](/Mobs/ai/goals/Panic) | panicWhenOnFire | Run around panicking when on fire and look for water |
 | [randomFly](/Mobs/ai/goals/RandomFly) |               | Fly around randomly                            |
 | [randomNod](/Mobs/ai/goals/RandomNod) |         | Makes the mob randomly nod its head                  |
+| [horrified](/Mobs/ai/goals/Horrified) |         | Run around frantically                               |
 
 ## Animals Only
 | AI Goal            | Aliases      | Description                                                        |
