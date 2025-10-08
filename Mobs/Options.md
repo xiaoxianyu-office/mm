@@ -328,6 +328,15 @@ Whether the mob should have [Threat Tables](https://git.mythiccraft.io/mythiccra
     UseThreatTable: true
 ```
 
+#### RandomizeProperties
+RandomizeProperties is the vanilla feature in charge of giving variations to mobs when they spawn, such as equipment, zombie leader status, animal variations, zombie/spider jockey, mob size, chance of spawning as baby, etc  
+This is ideal if you are heavily overriding entity behaviors and don't want the natural randomization  
+Defaults to `true`
+```yaml
+  Options:
+    RandomizeProperties: false
+```
+
 
 # Group specific options
 
