@@ -23,8 +23,7 @@ Then, let's give it some custom AI to prevent it from attacking unwanted entitie
 
 ```yml
   # ...
-  AIGoalSelectors:
-  - clear # Clears the mob's base AI
+  AIGoalSelectors:  # We will not clear the mob's base AI, instead adding to it
   - meleeattack # Uses melee attacks
   - randomstroll # Randomly walks
   - float # floats on water
