@@ -329,6 +329,7 @@ You can also specifically set whether to target a specific type of entity or not
 | targetowner|          | Whether to target the caster's owner                                 |         |
 | targetvanilla| targetnonmythic | Whether to target non-Mythic entities                       |         |
 | targetvillagers|      | Whether to target villagers                                          |         |
+| targetall |           | Whether to target everything. If this is true, all filters are ignored | false |
 
 ```yaml
   - damage{a=20} @EntitiesInRadius{r=10;targetplayers=true;targetsamefaction=true;targetowner=false}
