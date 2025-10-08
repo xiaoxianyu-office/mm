@@ -1,5 +1,6 @@
 ## Description
-Targets a specific entity by their UUID. Can be a placeholder.
+Targets a specific entity by their UUID. Can be a placeholder.  
+This targeter will target anything, regardless of targeter filters
 
 
 ## Attributes
