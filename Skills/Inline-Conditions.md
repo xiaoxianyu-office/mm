@@ -11,7 +11,7 @@ These conditions will check against the caster itself, they go at the end of a m
 SkeletalKnight:
   Type: WITHER_SKELETON
   Skills:
-  - messaage{m="You hit me in the rain?"} @trigger ~onDamaged ?raining
+  - message{m="You hit me in the rain?"} @trigger ~onDamaged ?raining
 ```
 
 For the condition to be true, you can use `?` and for the condition to be false you use `?!`
