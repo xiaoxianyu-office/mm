@@ -10,7 +10,7 @@ placeholders to store data.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | variable  | name, n, var, key, k | The name of the variable. Can optionally be prefixed with `scope` | |
-| scope     | s         | The [scope](/skills/variables#variable_scopes) of the variable, e.g. where the variable will be located                                                                       | SKILL<!--type:VariableScope-->|
+| scope     | s         | The [scope](/skills/variables#variable-scopes) of the variable, e.g. where the variable will be located                                                                       | SKILL<!--type:VariableScope-->|
 | save      |           | Whether the variable should save between reloads, reboots and disconnects. Does not apply to SKILL-scoped variables                                                            | false   |
 | duration  | d, e, expire | How long (in ticks) the variable should last. Does not apply to SKILL-scoped variables                                                                                      | Infinite|
 
