@@ -31,7 +31,7 @@ MidnightAura:
   Skills:
   - aura{auraName=midnight;i=1;ms=1;rd=true;
     onTick=[
-      - time{mode=SET;a=18000;personal=true;relative=false;sync=true} @self
+      - time{mode=SET;amount=18000;personal=true;relative=false;sync=true} @self
     ];
     onEnd=[
       - time{mode=RESET;sync=true} @self
