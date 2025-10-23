@@ -23,4 +23,4 @@ metaskillcondition_check:
 
 
 ## Aliases
-- [x] metaSkillCondition
+- [x] skillcondition
