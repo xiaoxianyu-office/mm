@@ -286,6 +286,7 @@ by these will "inherit" the targets (if applicable).
 | [Chain][]               | Chains a skill between multiple targets that are near each other.                                                                                       |
 | [ChainMissile][]        | A missile that chains between entities. **Premium-Only** mechanic!                                                                                      |
 | [Delay][]               | Delays execution of the current skill list by a set number of ticks.                                                                                    |
+| [DetermineCondition][]  | Determines the outcome of a Metaskill that is used as a Condition via the [MetaskillCondition](/Skills/Conditions/MetaskillCondition) condition                                                                                    |
 | [EndProjectile][]       | Terminates the projectile. Only usable in projectile mechanics.                                                                                         |
 | [ForEach][]             | Executes a metaskill once for each target of the mechanic                     |
 | [ForEachValue][]        | Executes a metaskill once for each entry or key-value pair in the specified value                     |
@@ -629,6 +630,7 @@ but not yet ready for use.
   [Chain]: /skills/mechanics/chain
   [ChainMissile]: /skills/mechanics/chainmissile
   [Delay]: /skills/mechanics/delay
+  [DetermineCondition]: /skills/mechanics/DetermineCondition
   [EndProjectile]: /skills/mechanics/endprojectile
   [ForEach]: /skills/mechanics/ForEach
   [ForEachValue]: /skills/mechanics/ForEachValue
