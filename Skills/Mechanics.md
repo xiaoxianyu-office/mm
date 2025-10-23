@@ -327,6 +327,7 @@ by these will "inherit" the targets (if applicable).
 | [SetVariableLocation][] | Sets a variable to the target location                                                                                                                  |
 | [VariableUnset][]       | Unsets the variable                                                                                                                                     |
 | [VariableSubtract][]    | Subtracts an amount from a numeric variable                                                                                                             |
+| [VariableMove][]        | Moves an already created variable across names and/or registries                                                                                                             |
 | [Wait][]                | Puts the metaskill on hold until a set of conditions is met                                                                                                             |
 
 
@@ -667,6 +668,7 @@ but not yet ready for use.
   [SetVariableLocation]: /skills/mechanics/setvariablelocation
   [VariableUnset]: /skills/mechanics/variableunset
   [VariableSubtract]: /skills/mechanics/variablesubtract
+  [VariableMove]: /skills/mechanics/VariableMove
   [Terminable]: /skills/mechanics/terminable
   [OnBlockBreak]: /skills/mechanics/onblockbreak
   [OnBlockPlace]: /skills/mechanics/onblockplace
