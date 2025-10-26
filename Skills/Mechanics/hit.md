@@ -1,5 +1,5 @@
 ## Description
-Simulates a physical hit from the mob. Takes melee stats and attribute modifiers into account.  
+Simulates a physical hit from the caster. Takes items (including enchantments), melee stats, and attribute modifiers, and potion effects into account.  
 Inherits every attribute of the [Damage](/skills/mechanics/damage) mechanic.  
 
 
