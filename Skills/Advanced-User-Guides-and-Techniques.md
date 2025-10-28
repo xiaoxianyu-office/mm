@@ -7,10 +7,11 @@ But still, be aware that you **must be an advanced user yourself** in order to p
 |-----------------------|--------------------------------------------------------------------------------|
 | [Intratick Scheduling]| Schedule chunks of a SkillTree to be executed later in the same tick           |
 | [Dynamic Metaskills]  | Create and execute new inline Metaskills at runtime                            |
-
+| [Placeholder Parsing] | Additional info regarding how placeholder parsing is executed                  |
 
 
 
 <!-- LINKS -->
 [Intratick Scheduling]: /Skills/Intratick-Scheduling
 [Dynamic Metaskills]: /Skills/Dynamic-Metaskills
+[Placeholder Parsing]: /Skills/Placeholder-Parsing
