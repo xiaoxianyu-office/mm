@@ -35,3 +35,4 @@ where the value of `<skill.var.operation>` will be inserted in the middle of 1 a
 - If `<skill.var.operation>` is +, the value will be the result of the (1+3)+4 math operation
 - If `<skill.var.operation>` is -, the value will be the result of the (1-3)+4 math operation
 - If `<skill.var.operation>` is 2, the value will be the result of the (123)+4 math operation
+- if `<skill.var.operation>` is -2, the value will be the result of the (1-23)+4 math operation
