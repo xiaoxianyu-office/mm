@@ -9,7 +9,11 @@ Those attributes that can have placeholders in their values are always parsed wh
 When a Placeholder is parsed, the operation *always* has certain steps that are executed in order
 - Mythic placeholders are replaced with their value
 - Papi placeholders are replaced with their value
-- Math operations are parsed, if the end value is supposed to be a number
+- Math operations are parsed.
+  - At this exact step, functions and operators in the [Math's](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Math) wiki page are also interpreted and used
+  - This happens only if the attribute's specific placeholder type (PlaceholderInteger, PlaceholderFloat etc.) has support for such, and some specific character (`*`, `-`, `+` etc.) appears in the string
+    - A PlaceholderString placeholder will not parse math
+    - A PlaceholderInt placeholder will parse math
 
 ## Compound parsing
 
