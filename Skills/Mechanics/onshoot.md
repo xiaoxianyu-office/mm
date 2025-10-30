@@ -19,7 +19,7 @@ Applies an aura to the target that triggers a skill when they shoot with a bow. 
 ## Examples
 ```yaml
   Skills:
-  - onShoot{auraName=fireball_bow;onShoot=[ shootfireball ];duration=200;charges=5} @self
+  - onShoot{auraName=fireball_bow;onShoot=[ shootfireball ];duration=200;charges=5;cancelEvent=true} @self
 ```
 In this example, the caster's next 5 bow shots will shoot fireballs
 instead of arrows.
