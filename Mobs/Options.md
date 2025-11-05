@@ -842,6 +842,24 @@ Defaults to `false`.
 ```
 
 
+## Copper_Golem
+
+#### WeatheringState
+The weathering state of the golem. Can be any of [these values](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/CopperGolem.CopperWeatherState.html)
+```yaml
+  Options:
+    WeatheringState: OXIDIZED
+```
+
+#### Waxed
+Whether the copper golem is waxed.  
+Defaults to `true`.
+```yaml
+  Options:
+    Waxed: false
+```
+
+
 ## Enderman
 
 #### PreventTeleport
