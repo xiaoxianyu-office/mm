@@ -777,6 +777,15 @@ Defaults to `false`.
 ```
 
 
+## Cow
+
+#### Variant
+The variant to use for the cow entity. Accepts a namespace, if there is a datapack adding more variants. Read more on the subject on the Minecraft Wiki [here](https://minecraft.wiki/w/Cow#Variants) and [here](https://minecraft.wiki/w/Mob_variant_definitions#Cow)
+```yaml
+  Options:
+    Variant: WARM
+```
+
 ## Chicken
 
 #### Jockey
@@ -786,6 +795,13 @@ Defaults to `false`.
 ```yaml
   Options:
     Jockey: true
+```
+
+#### Variant
+The variant to use for the chicken entity. Accepts a namespace, if there is a datapack adding more variants. Read more on the subject on the Minecraft Wiki [here](https://minecraft.wiki/w/Chicken#Variants) and [here](https://minecraft.wiki/w/Mob_variant_definitions#Chicken)
+```yaml
+  Options:
+    Variant: WARM
 ```
 
 
@@ -1168,6 +1184,13 @@ Defaults to `false`.
 ```yaml
   Options:
     Saddled: true
+```
+
+#### Variant
+The variant to use for the pig entity. Accepts a namespace, if there is a datapack adding more variants. Read more on the subject on the Minecraft Wiki [here](https://minecraft.wiki/w/Pig#Variants) and [here](https://minecraft.wiki/w/Mob_variant_definitions#Pig)
+```yaml
+  Options:
+    Variant: WARM
 ```
 
 
