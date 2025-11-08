@@ -173,16 +173,24 @@ Includes INTEGER, FLOAT and DOUBLE since their behavior is functionally the same
 ### Time
 ```yaml
   # Create your time variable
-  - setvariable{var=skill.example;type=TIME;val=1234}
+  - setvariable{var=skill.simpleexample;type=TIME;val=1234}
 
-  # Increase the value
+  # While a random int works too, most of the time you will want to use this variable type to store and epoch
+  # This can be smoothly done by using the <utils.epoch.*> family of placeholders
+  - setvariable{var=skill.example;type=TIME;val=<utils.epoch.timestamp>}
+
+  # Increase the time value
   - variableadd{var=skill.example;amount=2}
 
-  # Decrease the value
+  # Decrease the time value
   - variablesubtract{var=skill.example;amount=1}
 
-  # Print a time
-  - message{m=<skill.var.example>} # 1235
+  # Print the time
+  - message{m=<skill.var.example>} # Prints out whatever the current epoch is, after adding 2 and subtracting 1 milliseconds from it
+
+  # Please note that, for output purposes, it might be worthwhile to look at some funny meta-keywords
+  - message{m=<skill.var.example.formatted.Z>}
+  - message{m=<skill.var.example.duration>} # If you want to display the time as a duration. As in, how many seconds/minutes/hours etc. make up the stored value. For instace, a value of "61000" corresponds to "1 minute and 1 second"
 ```
 
 ### MetaSkill
