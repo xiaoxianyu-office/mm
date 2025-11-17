@@ -14,7 +14,7 @@ Applies an aura to the target that makes it bouncy
 ```yaml
 ExampleSkill:
   Skills:
-  - bouncy{auraName=bouce;onBounceSkill=ExampleSkill2;ce=true} @target
+  - bouncy{auraName=bounce;onBounceSkill=ExampleSkill2;ce=true} @target
 
 ExampleSkill2:
   Skills:
