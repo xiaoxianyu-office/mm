@@ -106,7 +106,7 @@ Do not work with mechanics such as [lunge](/skills/mechanics/lunge) and [throw](
 This also applies to GLOW_SQUID
 
 ### VEX
-Has an hardcoded ai.
+Has a hardcoded ai.
 
 ### WARDEN
 Has an hardcoded aggro system.
