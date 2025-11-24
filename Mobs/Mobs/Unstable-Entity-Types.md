@@ -53,38 +53,38 @@ Can be milked.
 By default, it does not attack its target in the day if they are not in a water block. A [custom ai](/Mobs/Custom-AI) must be set up in order to remove this behavior
 
 ### ENDER_DRAGON
-Has an hardcoded ai.
+Has a hardcoded ai.
 
 ### ENDERMAN 
 Avoids projectiles and is damaged by water.
 
 ### ENDERMITE
-Aggroes Endermen.  
+Draws aggro from Endermen.  
 
 ### FOX
 Has an unique attack pattern, can be useful but also problematic.
 
 ### GHAST
-Has an hardcoded ai.
+Has a hardcoded ai.
 Can be one-shotted by a fireball.
 
 ### GIANT
-Has an hardcoded ai.
+Has a hardcoded ai.
 
 ### IRON_GOLEM
-Can be healed via the use of iron ingots and get aggroed by default by most hostile mobs.
+Can be healed via the use of iron ingots and draws aggro by default from most hostile mobs.
 
 ### MAGMA_CUBE
-Has an hardcoded ai.
+Has a hardcoded ai.
 
 ### PARROT
 Can be one-shotted by a cookie.
 
 ### PHANTOM
-Has an hardcoded ai.
+Has a hardcoded ai.
 
 ### PIGLIN
-Has an hardcoded aggro priority
+Has a hardcoded aggro priority
 
 ### PILLAGER
 If, for any reason, a pillager loses his target while holding a charged crossbow, then it will freeze
@@ -93,13 +93,13 @@ If, for any reason, a pillager loses his target while holding a charged crossbow
 Has very unique interactions and behaviors that may cause problems.
 
 ### RABBIT
-Gets aggroed by other neutral mobs, such as foxes.
+Draws aggro from other neutral mobs, such as foxes.
 
 ### SKELETON
-Gets aggroed by wolves
+Draws aggro from wolves
 
 ### SLIME
-Has an hardcoded ai.
+Has a hardcoded ai.
 
 ### SQUID
 Do not work with mechanics such as [lunge](/skills/mechanics/lunge) and [throw](/skills/mechanics/throw).  
@@ -109,10 +109,10 @@ This also applies to GLOW_SQUID
 Has a hardcoded ai.
 
 ### WARDEN
-Has an hardcoded aggro system.
+Has a hardcoded aggro system.
 
 ### WITHER
-Has an hardcoded ai.
+Has a hardcoded ai.
 
 ### WOLF
 Can be healed via the use of specific items
