@@ -104,7 +104,7 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onHear](/Skills/Triggers/onhear)       | When the mob hears a sound, [if enabled](/Mobs/Mobs#hearing) |
 | [onProjectileHit](/Skills/Triggers/onProjectileHit) | When a mob's special projectile hits an entity   |
 | [onProjectileLand](/Skills/Triggers/onProjectileLand) | When a mob's special projectile hits a block   |
-| [onDismount](/Skills/Triggers/onDismount) | When a a player mounts the mob   |
+| [onDismounted](/Skills/Triggers/onDismounted) | When the mob is dismounted from |
 
 <!-- LINKS -->
 [ThreatTables]: /Mobs/ThreatTables
