@@ -2,7 +2,6 @@
 ##### [Changelogs](/changelogs/Changelogs)
 ##### [Premium Features](Premium-Features)
 ##### [Commands and Permissions](Commands-and-Permissions)
-  * [Custom Commands](/Skills/Skill-Commands)
 ##### [Mythic Add-ons](Add-ons)
 ##### [Compatible Plugins](Compatible-Plugins)
 ##### [API Information](API)
@@ -88,6 +87,10 @@
 
 ---
 
+##### [Custom Menus](/Custom-Menus)
+
+---
+
 ##### Other
   * [Math](/Skills/Math)
   * [Pins](/Pins)
@@ -103,7 +106,7 @@
     * [Stats Modifiers](/Stats#modifiers)
   * [Shape](/Enum/Shape)
 
-##### Technical
+##### **Technical**
   * [Item Matcher](/Items/Item-Matcher)
   * [SkillTree](/Skills/SkillTrees)
   * [Advanced User Guides and Techniques](/Skills/Advanced-User-Guides-and-Techniques)
