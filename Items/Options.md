@@ -128,6 +128,28 @@ This option also supports hashes.
     SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdlMGFhOTQzM2RiYTliNzU5MzJhMTFkYzk0ZDQwNmJkZTE5ZTg2MzUxNDIxNDkyYjNlZDM3OGM4ZTFhN2NjIn19fQ==
 ```
 
+### SkinURL
+The URL to the skin
+
+```yaml
+TestHeadURL:
+  Id: PLAYER_HEAD
+  Options:
+    Placeable: true
+    SkinURL: "https://textures.minecraft.net/texture/1c45ee6a2592e890f2aaa5a68aaa98f9e2f964327c15d18fdf7665c577af23cc" 
+```
+
+#### SkinID
+The ID of the skin. It's the last part of the canonical [skin URL](#skinurl)
+
+```yaml
+TestHeadID:
+  Id: PLAYER_HEAD
+  Options:
+    Placeable: true
+    SkinID: 1c45ee6a2592e890f2aaa5a68aaa98f9e2f964327c15d18fdf7665c577af23cc
+```
+
 
 # Dyeable Items
 
