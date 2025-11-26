@@ -247,6 +247,7 @@ Some of these variables are only generated and available under some special circ
 | <skill.var.sound-type>                                                                                  | [~onHear] trigger                                                                                       | Returns the type of the sound                                                                           |
 | <skill.var.hit-block-type>                                                                                  | [raytrace] mechanic                                                                                     | Returns the block that was hit, or AIR if none                                                          |
 | <skill.var.bow-tension>                                                                                  | [~onShoot] trigger                                                                                      | Returns the force with which the projectile has been shot                                               |
+| <skill.var.click-type>                                                                                  | [Custom Menus](/Custom-Menus#button-skills) Interactions                                                 | The type of the click used to interact with a [menu button](/Custom-Menus#button-skills). Returns `1` if rightclick was used, `0` otherwise                         |
 
 ```yaml
   Skills:

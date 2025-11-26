@@ -133,6 +133,10 @@ Signal Commands
     - `mythicmobs.command.signal`
     - `mythicmobs.command.base`
 
+Menu Commands
+-------------
+- **/mm menu open [menu name]** - Opens the associated custom menu. Requires either MythicMobs Premium or MythicRPG
+
 Permissions
 ===========
 
