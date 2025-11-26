@@ -1,5 +1,5 @@
 ## Description
-Executes the skill when a player dismounts the mob.
+Executes the skill when the mob is dismounted from (an dismounts the mob).
 
 ## Examples
 ```yml
@@ -10,10 +10,10 @@ EXAMPLE_MOB:
     - skill{s=[
       - cancelevent
       - message{m=Going somewhere?} @trigger
-     ];sync=true} @self ~onDismount 0.7
+     ];sync=true} @self ~onDismounted 0.7
 
 ```
 
 
 ## Aliases
-- [x] onUnmount
+- [x] onUnmounted
