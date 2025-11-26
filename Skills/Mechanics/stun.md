@@ -13,6 +13,7 @@ Holds the target in place temporarily.
 | noknockback | nokb, kb | When true, entity cannot be knocked back when stunned               | false   |
 > This mechanic inherits every attribute of the [Aura] mechanic 
 >> - The `interval` attribute is **set** at `1`
+>> - The `auraGroup` attribute is **defaulted** at `#stun`
 
 > Remember to use the aura's `duration` attribute to set a duration for the stun
 
