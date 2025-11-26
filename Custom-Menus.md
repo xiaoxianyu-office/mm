@@ -80,4 +80,4 @@ As shown above, each button in the menu can have a set of skills associated with
 
 
 <!-- LINKS -->
-[Implemented Placeholders]: /Placeholders#variable-placeholders
+[Implemented Placeholders]: /Skills/Placeholders#variable-placeholders
