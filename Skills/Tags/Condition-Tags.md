@@ -109,6 +109,7 @@ These conditions have not been tagged yet.
 | [Isplayer](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/isplayer) | MythicMobs | Checks if the target is a player |
 | [IsRaiderPatrolLeader](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/isRaiderPatrolLeader) | MythicMobs | Checks if the target entity is the captain of a pillager group |
 | [Issaddled](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/issaddled) | MythicMobs | Checks if the target entity is saddled |
+| [IsSkill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsSkill) | MythicMobs | Checks whether the specified metaskill exists |
 | [IsTamed](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsTamed) | MythicMobs | Checks if the entity is tamed. |
 | [IsUsingSpyglass](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsUsingSpyglass) | MythicMobs | If the target player is using a spyglass |
 | [ItemGroupOnCooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ItemGroupOnCooldown) | MythicMobs | Checks whether the target player has the specified item group on cooldown |
@@ -126,6 +127,7 @@ These conditions have not been tagged yet.
 | [LookingAt](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/LookingAt) | MythicMobs | Checks if the player is looking at either a block or an entity |
 | [Lunarphase](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/lunarphase) | MythicMobs | Checks for the current lunar phase |
 | [MaterialIsOnCooldown](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/MaterialIsOnCooldown) | MythicMobs | Checks if the target player's specified material is on cooldown. |
+| [MetaskillCondition](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/MetaskillCondition) | MythicMobs | Casts a Metaskill that will determine if the condition should check or not |
 | [Mobsinchunk](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/mobsinchunk) | MythicMobs | Matches a range to how many mobs are in the target location's chunk |
 | [Mobsinradius](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/mobsinradius) | MythicMobs | Checks how many mobs are in a given radius |
 | [Mobsinworld](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/mobsinworld) | MythicMobs | Matches a range to how many mobs are in the target world |
@@ -162,6 +164,7 @@ These conditions have not been tagged yet.
 | [Playerwithin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/playerwithin) | MythicMobs | Checks if any players are within a radius of the target. |
 | [Plugin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/plugin) | MythicMobs | Checks if the specified plugin is running on the server |
 | [Premium](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/premium) | MythicMobs | Checks if MythicMobs Premium is running on the server |
+| [ProjectileHasEnded](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ProjectileHasEnded) | MythicMobs | Checks if the calling projectile has ended |
 | [Raining](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/raining) | MythicMobs | Checks if it's raining in the target world. |
 | [Region](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/region) | MythicMobs | Checks if the target is within the given WorldGuard region. |
 | [Score](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/score) | MythicMobs | Checks a scoreboard value of the target entity. |
@@ -198,10 +201,10 @@ These conditions have not been tagged yet.
 | [Velocity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Velocity) | MythicMobs | Checks the velocity of the target entity against a range |
 | [World](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/world) | MythicMobs | Checks the name of the target world. |
 | [Worldtime](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/worldtime) | MythicMobs | Matches a range against the target location's world's time. |
-| [Xdiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Xdiff) | MythicMobs | Checks the difference in x value (height) between the target entity and the caster. |
+| [Xdiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Xdiff) | MythicMobs | Checks the difference in x value between the target entity and the caster. |
 | [Yaw](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/yaw) | MythicMobs | Checks the yaw of the target entity against a range. |
 | [Ydiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ydiff) | MythicMobs | Checks the difference in y value (height) between the target entity and the caster. |
-| [Zdiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Zdiff) | MythicMobs | Checks the difference in z value (height) between the target entity and the caster. |
+| [Zdiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Zdiff) | MythicMobs | Checks the difference in z value between the target entity and the caster. |
 | [Hitbox](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/Hitbox) | ModelEngine | Checks which hitbox was damaged or interacted with for multi-hitbox models |
 | [HitboxIsSubHitbox](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/HitboxIsSubHitbox) | ModelEngine | Checks if a hitbox other than the main hitbox was what triggered the skill |
 | [DrivingModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/DrivingModel) | ModelEngine | Checks if the target entity is the driver of a model |

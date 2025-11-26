@@ -10,6 +10,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 ## AI
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
+| [ClearTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ClearTarget) | MythicMobs | Forces the target of the mechanic to reset its current target |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FormLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FormLine) | MythicMobs | Makes the casting mob follow a linear path to a location |
 | [Goto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/goto) | MythicMobs | Causes the mob to pathfind to a location |
@@ -446,6 +447,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 ## Threat
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
+| [ClearTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ClearTarget) | MythicMobs | Forces the target of the mechanic to reset its current target |
 | [Rally](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/rally) | MythicMobs | Rallies nearby mobs of the given types to focus-attack the given target |
 | [Settarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/settarget) | MythicMobs | Sets the mob's target to the target entity |
 | [Threat](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/threat) | MythicMobs | Modifies the mob's threat value towards the target |
@@ -507,6 +509,7 @@ These mechanics have not been tagged yet.
 | [SwingOffhand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SwingOffhand) | MythicMobs | Makes the casting player swing their offhand |
 | [Currencygive](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/currencygive) | MythicMobs | Gives money to players |
 | [Currencytake](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/currencytake) | MythicMobs | Takes money from players |
+| [DetermineCondition](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/DetermineCondition) | MythicMobs | Determines the outcome of a Metaskill that is used as a Condition via the [MetaskillCondition](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/MetaskillCondition) condition |
 | [DisplayTransformation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/DisplayTransformation) | MythicMobs | Sets the targeted display entity's transformations |
 | [EnderDragonSetPhase](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/EnderDragonSetPhase) | MythicMobs | Sets the EnderDragon phase on the target EnderDragon entity |
 | [EnderDragonSetRespawnPhase](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/EnderDragonSetRespawnPhase) | MythicMobs | Sets the EnderDragon respawn phase if an EnderDragon battle is going on in the target location's dimension |
@@ -548,12 +551,10 @@ These mechanics have not been tagged yet.
 | [Shieldbreak](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shieldbreak) | MythicMobs | Breaks the target player's shield block if they are blocking |
 | [Shield](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shield) | MythicMobs | Adds absorption hearts |
 | [Shieldpercent](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shieldpercent) | MythicMobs | Applies an absorb shield to the target entity for a percentage of their |
+| [VariableMove](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/VariableMove) | MythicMobs | Moves an already created variable across names and/or registries |
 | [ConsumeAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeAmmo) | MythicCrucible | Consumes ammo to execute a skill |
 | [ReloadAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ReloadAmmo) | MythicCrucible | will search the caster's inventory for the configured ammo item (or another item if overridden), and for each item it finds it will consume it and add ammo to the item. |
-| [ConsumeHeldDurability](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeHeldDurability) | MythicCrucible | Consumes durability from the held item |
-| [ConsumeItemDurability](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeItemDurability) | MythicCrucible | Consume the durability of an item |
 | [Consumeitem](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/Consumeitem) | MythicCrucible | Removes some items from the casting player's inventory |
-| [ConsumeUsedDurability](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeUsedDurability) | MythicCrucible | Consumes durability from the item that triggered the skilltree |
 | [ConsumeUsedItem](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeUsedItem) | MythicCrucible | Removes the item that triggered the skilltree |
 | [ProjectileHit](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ProjectileHit) | MythicCrucible | Simulates an hit from a bow's projectile |
 | [GiveAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/GiveAmmo) | MythicCrucible | Sets the ammo amount of a player's weapon to its maximum. |
@@ -574,6 +575,7 @@ These mechanics have not been tagged yet.
 | [SetSlotModel](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetSlotModel) | MythicCrucible | Sets the specified CustomModelData on the item on the specified slot |
 | [SnapshotUsedBow](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SnapshotUsedBow) | MythicCrucible | Snapshots the state of the held bow for use with later projectile damage mechanics   |
 | [Modeltoggle](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/modeltoggle) | MythicCrucible | Switches the item's CustomModelData value between two specified ones each time this mechanic is triggered |
+| [FurnitureVariableSet](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/FurnitureVariableSet) | MythicCrucible | Sets a variable on the targeted Furniture Entity |
 | [Furnitureinventory](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furnitureinventory) | MythicCrucible | Opens an inventory with a specified amount of slots and name to the target player |
 | [OpenFurniturePainter](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/OpenFurniturePainter) | MythicCrucible | Opens the furniture's painter for the target player |
 | [PlaceFurnitureAt](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/PlaceFurnitureAt) | MythicCrucible | Makes the casting player place a furniture at a specific location |
@@ -582,7 +584,6 @@ These mechanics have not been tagged yet.
 | [Furniturecolor](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furniturecolor) | MythicCrucible | Sets the casting Furniture's [Color](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Furniture#color) as the specified one |
 | [Furniturestate](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furniturestate) | MythicCrucible | Sets the casting Furniture's [State](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Furniture#furniture-states) as the specified one |
 | [Furniturestate](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furniturestate) | MythicCrucible | Sets the casting Furniture's [State](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Furniture#furniture-states) as the specified one |
-| [DealCustomDurability](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/DealCustomDurability) | MythicCrucible | Modifies the custom durability of the held item. |
 | [SetItemNBT](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetItemNBT) | MythicCrucible | Sets an NBT value on an item |
 | [AnimateModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/AnimateModel) | ModelEngine | Programmatically animates a model's bone, without relying on animations |
 | [Brightness](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/Brightness) | ModelEngine | Configure the model's block and sky light. |
@@ -637,10 +638,13 @@ These mechanics have not been tagged yet.
 | [VFXSetVis](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/VFXSetVis) | ModelEngine | Set the visibility of the VFX. |
 | [VFXTint](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/VFXTint) | ModelEngine | Color the VFX, or animate from one color to another. |
 | [GiveMythicExperience](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/GiveMythicExperience) | MythicRPG | Gives a player experience |
-| [ModifyResource](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/ModifyResource) | MythicRPG | Modifies the target player's given reagent |
+| [ModifyResource](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/ModifyResource) | MythicRPG | Adds the specified amount to the target player's given reagent |
 | [OpenCustomMenu](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/OpenCustomMenu) | MythicRPG | Opens a [custom menu](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Custom-Menus) |
+| [QuickcastingActivate](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/QuickcastingActivate) | MythicRPG | Activates quickcasting for the casting player, if possible |
+| [QuickcastingDeactivate](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/QuickcastingDeactivate) | MythicRPG | Deactivates quickcasting for the casting player, if possible |
 | [SetArchetype](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetArchetype) | MythicRPG | Sets the target player's archetype |
 | [SetCustomMenuButton](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetCustomMenuButton) | MythicRPG | Sets a specific slot of the opened [custom menu](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Custom-Menus) to the specified button |
+| [SetQuickcastBinding](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetQuickcastBinding) | MythicRPG | Force-sets the casting player's quickcast binding if possible |
 | [ForgetSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/ForgetSpell) | MythicRPG | Make the target player unlearn a [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) |
 | [TeachSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/TeachSpell) | MythicRPG | Teaches a player a [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) |
 | [GrantAchievement](https://git.lumine.io/mythiccraft/mythicachievements/-/wikis/Skills/Mechanics/GrantAchievement) | MythicAchievements | Grants the player a mythic achievement. |

@@ -27,6 +27,7 @@ These aigoals have not been tagged yet.
 | [FleeVillagers](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/fleeVillagers) | MythicMobs | Causes the mob to flee from villagers. |
 | [FleeWolf](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/fleeWolf) | MythicMobs | Causes the mob to flee from wolves. |
 | [Float](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/Float) | MythicMobs | Makes the mob swim in water/not |
+| [Horrified](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/Horrified) | MythicMobs | Run around frantically |
 | [Leapattarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/leapattarget) | MythicMobs | Causes the mob to leap towards its target. |
 | [Lookatplayers](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/lookatplayers) | MythicMobs | Causes the mob to look at nearby players |
 | [LookAtTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/LookAtTarget) | MythicMobs | Causes the mob to look at its target |

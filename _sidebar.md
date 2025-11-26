@@ -2,6 +2,7 @@
 ##### [Changelogs](/changelogs/Changelogs)
 ##### [Premium Features](Premium-Features)
 ##### [Commands and Permissions](Commands-and-Permissions)
+  * [Custom Commands](/Skills/Skill-Commands)
 ##### [Mythic Add-ons](Add-ons)
 ##### [Compatible Plugins](Compatible-Plugins)
 ##### [API Information](API)
