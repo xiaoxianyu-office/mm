@@ -29,6 +29,8 @@ Damages the targeted entity.
 | rawtags      | rtag   | Works the same as tags and what is put here will also qualify as a tag, but it will not be UPPERCASED like tags |  |
 | damagetype| element, e| *Becomes one of the Tags*                                            |         |
 | triggerSkills | ts    | Whether the damage mechanic should also be able to trigger `onAttack` related triggers       | false  |
+| bonusdamage |  | The bonus damage to deal, in the format `FIRE 5,LIGHTNING 5` | |
+| bonusdamagemodifiers | bonusdamagemods | Multiplies the associated bonus damages by the specified values. for instance, to double the previous ones, you could use `FIRE 2,LIGHTNING 2` | |
 
 [damage immunity ticks]: /skills/mechanics/setnodamageticks
 
