@@ -9,7 +9,7 @@ Causes the entity to look at its target. Can be used to make cool effects or cre
 | force     | f         | Forces the mob to look at the target (even works with no AI)         | false   |
 | forcepaper | fp       | Whether to use Paper's method to force the mob to look at the target | false   |
 | immediately | immediate, i | Immediately causes the mob to turn towards the target with no turning animation. | true   |
-
+| speed | s, duration, ticks | The amount of ticks the entity will take to fully face towards the new direction | 10 |
 
 ## Examples
 The skill below causes the mob to immediately force it's head to face
