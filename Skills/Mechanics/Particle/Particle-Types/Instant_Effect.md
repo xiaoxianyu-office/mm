@@ -3,14 +3,18 @@
 
 
 ## Attributes
-> This particle has no attributes
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| color | c | The color of the particle | #FF0000 |
+| power | p | The power of the spell particle | 1 |
+> This particle has a [Spell](/Skills/Mechanics/Particle/Particle-Types#spell) Datatype, and inherits all of its attributes
 
 
 
 ## Examples
 ```yaml
   Skills:
-  - particle{p=instant_effect}
+  - particle{p=instant_effect;color=#FF0000;power=1}
 ```
 
 

@@ -76,6 +76,7 @@ These triggers have not been tagged yet.
 | [OnPressF](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onPressF) | MythicMobs | When a player presses F to swap the item |
 | [OnProjectileHit](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onProjectileHit) | MythicMobs | Executes a skill when the mob's special projectile type (trident, snowball, wither skull, llama's spit etc) hits an entity. |
 | [OnProjectileLand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onProjectileLand) | MythicMobs | Executes a skill when the mob's special projectile type (trident, snowball, wither skull, llama's spit etc) lands on the ground without hitting an entity. |
+| [OnDismounted](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onDismounted) | MythicMobs | Executes the skill when the mob is dismounted from (an dismounts the mob). |
 | [OnLoad](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Triggers/onLoad) | MythicMobs | Executes the skill when the mob is loaded after a server restart. |
 | [OnJoin](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onJoin) | MythicMobs | Executes the skill when the player holding or equipping the item joins the server |
 | [OnRespawn](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers/onRespawn) | MythicMobs | Executes the skill when the player holding or equipping the item respawns |

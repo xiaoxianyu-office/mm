@@ -12,6 +12,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 |----------|--------|-------------|
 | [ClearTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ClearTarget) | MythicMobs | Forces the target of the mechanic to reset its current target |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
+| [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FormLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FormLine) | MythicMobs | Makes the casting mob follow a linear path to a location |
 | [Goto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/goto) | MythicMobs | Causes the mob to pathfind to a location |
 | [ResetAI](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ResetAI) | MythicMobs | Attempts to resets the AI of a casting mob to the base type's default |
@@ -52,7 +53,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Damage](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/damage) | MythicMobs | Damages the targeted entity |
 | [ModifyDamage](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ModifyDamage) | MythicMobs | Modifies the damage event that triggered the skill |
 | [Percentdamage](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/percentdamage) | MythicMobs | Deals damage equal to a percent of the player's max health, where 1 is |
-| [Hit](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hit) | MythicMobs | Simulates a physical hit from the mob |
+| [Hit](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hit) | MythicMobs | Simulates a physical hit from the caster |
 | [Explosion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/explosion) | MythicMobs | Creates an explosion at the target entity or location |
 | [Lightning](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/lightning) | MythicMobs | Causes a lightning strike at the target entity or location, dealing |
 | [Suicide](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/suicide) | MythicMobs | Instantly kills the mob |
@@ -276,6 +277,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Cast](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/cast) | MythicMobs | Cast is an [Aura] mechanic similar to |
 | [Fly](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fly) | MythicMobs | Makes the player fly, similar to the /fly command |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
+| [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FormLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FormLine) | MythicMobs | Makes the casting mob follow a linear path to a location |
 | [Glow](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/glow) | MythicMobs | Makes the target entity glow (like with the Glowing potion effect) |
 | [Hide](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hide) | MythicMobs | Hides the caster from the targeted players for a set duration |
@@ -323,6 +325,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
 | [Disengage](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/disengage) | MythicMobs | Causes the caster to leap backwards away from the target entity |
+| [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FormLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FormLine) | MythicMobs | Makes the casting mob follow a linear path to a location |
 | [Goto](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/goto) | MythicMobs | Causes the mob to pathfind to a location |
@@ -519,6 +522,7 @@ These mechanics have not been tagged yet.
 | [Freeze](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/freeze) | MythicMobs | Sets the ticks frozen in powdered snow |
 | [Hologram](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hologram) | MythicMobs | Spawns a hologram at a target location. |
 | [Ignite](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ignite) | MythicMobs | Sets the targeted entity on fire. |
+| [OpenCustomMenu](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/OpenCustomMenu) | MythicMobs | Opens a [custom menu](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Custom-Menus) |
 | [OpenTrades](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/OpenTrades) | MythicMobs | Opens the trades of the casting villager to the target player |
 | [Oxygen](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/oxygen) | MythicMobs | Gives the target player an amount of oxygen. |
 | [Posearmorstand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/posearmorstand) | MythicMobs | Moves the extremities of an armorstand, the value is in radians. |
@@ -639,11 +643,10 @@ These mechanics have not been tagged yet.
 | [VFXTint](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/VFXTint) | ModelEngine | Color the VFX, or animate from one color to another. |
 | [GiveMythicExperience](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/GiveMythicExperience) | MythicRPG | Gives a player experience |
 | [ModifyResource](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/ModifyResource) | MythicRPG | Adds the specified amount to the target player's given reagent |
-| [OpenCustomMenu](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/OpenCustomMenu) | MythicRPG | Opens a [custom menu](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Custom-Menus) |
 | [QuickcastingActivate](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/QuickcastingActivate) | MythicRPG | Activates quickcasting for the casting player, if possible |
 | [QuickcastingDeactivate](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/QuickcastingDeactivate) | MythicRPG | Deactivates quickcasting for the casting player, if possible |
 | [SetArchetype](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetArchetype) | MythicRPG | Sets the target player's archetype |
-| [SetCustomMenuButton](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetCustomMenuButton) | MythicRPG | Sets a specific slot of the opened [custom menu](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Custom-Menus) to the specified button |
+| [SetCustomMenuButton](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetCustomMenuButton) | MythicRPG | Sets a specific slot of the opened [custom menu](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/../../../MythicMobs/-/wikis/Custom-Menus) to the specified button |
 | [SetQuickcastBinding](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetQuickcastBinding) | MythicRPG | Force-sets the casting player's quickcast binding if possible |
 | [ForgetSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/ForgetSpell) | MythicRPG | Make the target player unlearn a [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) |
 | [TeachSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/TeachSpell) | MythicRPG | Teaches a player a [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) |

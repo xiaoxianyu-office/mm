@@ -109,6 +109,7 @@ These conditions have not been tagged yet.
 | [Isplayer](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/isplayer) | MythicMobs | Checks if the target is a player |
 | [IsRaiderPatrolLeader](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/isRaiderPatrolLeader) | MythicMobs | Checks if the target entity is the captain of a pillager group |
 | [Issaddled](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/issaddled) | MythicMobs | Checks if the target entity is saddled |
+| [IsSibling](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsSibling) | MythicMobs | Whether the target is a sibling of the caster |
 | [IsSkill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsSkill) | MythicMobs | Checks whether the specified metaskill exists |
 | [IsTamed](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsTamed) | MythicMobs | Checks if the entity is tamed. |
 | [IsUsingSpyglass](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsUsingSpyglass) | MythicMobs | If the target player is using a spyglass |
