@@ -292,6 +292,7 @@ by these will "inherit" the targets (if applicable).
 | [EndProjectile][]       | Terminates the projectile. Only usable in projectile mechanics.                                                                                         |
 | [ForEach][]             | Executes a metaskill once for each target of the mechanic                     |
 | [ForEachValue][]        | Executes a metaskill once for each entry or key-value pair in the specified value                     |
+| [ForEachPin][]        | Executes a metaskill once for each pin of a multi-pin                     |
 | [GlobalCooldown][]      | Sets the caster's Global Cooldown timer                                                                                                                 |
 | [Missile][]             | Fires a homing projectile towards the target.                                                                                                           |
 | [ModifyProjectile][]    | Modifying the projectile / missile / orbital                                                                                                            |
@@ -639,6 +640,7 @@ but not yet ready for use.
   [EndProjectile]: /skills/mechanics/endprojectile
   [ForEach]: /skills/mechanics/ForEach
   [ForEachValue]: /skills/mechanics/ForEachValue
+  [ForEachPin]: /skills/mechanics/ForEachPin
   [GlobalCooldown]: /skills/mechanics/globalcooldown
   [Missile]: /skills/mechanics/missile
   [ModifyProjectile]: /skills/mechanics/modifyprojectile
