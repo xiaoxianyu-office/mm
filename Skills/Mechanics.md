@@ -90,6 +90,7 @@ are able to target locations as well.
 | [Extinguish][]            | Removes fire ticks from the target entity                                                |
 | [FawePaste][]             | Pastes a Schematic using FAWE (Fast Async World Edit)                                    |
 | [Feed][]                  | Feeds the target player                                                                  |
+| [Fear][]                  | Applies an aura that makes the target run around in fear                                                                  |
 | [FillChest][]             | Fills a chest with items, or a droptable                                                 |
 | [Firework][]              | Creates a firework effect at the target                                             |
 | [Flames][]                | Creates the flames effect at the location of the targeter                               |
@@ -445,6 +446,7 @@ but not yet ready for use.
   [Extinguish]: /skills/mechanics/extinguish
   [FawePaste]: /skills/mechanics/fawepaste
   [Feed]: /skills/mechanics/feed
+  [Fear]: /skills/mechanics/Fear
   [FillChest]: /skills/mechanics/fillChest
   [Firework]: /skills/mechanics/firework
   [Flames]: /skills/mechanics/flames
