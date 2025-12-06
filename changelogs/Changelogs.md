@@ -63,7 +63,7 @@ Conditions
 ### NEW: isSibling
 - Added `isSibling` condition to check sibling mob relationships  
 
-### Targets Condition Improvements
+### Targets Condition
 - `targets` condition may now specify a targeter instead of relying on inherited targets  
 
 ### Enhancements
@@ -137,7 +137,9 @@ API
 - Added RandomDouble bias (API-only)  
 - Added icon template API for custom menus  
 - Expanded templated menu icon functionality  
-- Added more placeholder/variable APIs and RandomDouble bias configuration  
+- Added more placeholder/variable APIs and RandomDouble bias configuration
+- Try to append Mythic Type before spawning so that it's available in CreateSpawnEvent
+
 
 Bug Fixes & Optimizations
 -------------------------
