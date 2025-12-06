@@ -25,6 +25,7 @@
 ##### [Mobs](/Mobs/Mobs)
   * [Mob Options](/Mobs/Options)
     * [Display Options](/Mobs/DisplayOptions)
+    * [Mannequin Options](/Mobs/MannequinOptions)
   * [Mob Levels](/Mobs/Levels)
   * [Mob Factions](/Mobs/Factions)
   * [Power Scaling](/Mobs/Power)
