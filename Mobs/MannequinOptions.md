@@ -85,5 +85,5 @@ Can be any of the models available in the [SkinModel Spigot Enum](https://hub.sp
 Defaults to `CLASSIC`
 ```yaml
   MannequinOptions:
-    Pose: SLIM
+    Model: SLIM
 ```
