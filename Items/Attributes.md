@@ -235,7 +235,7 @@ custom_item:
   Id: wooden_sword
   Attributes:
     All:
-      FallDamageMultiplier‌: 2 ADD
+      FallDamageMultiplier: 2 ADD
 ```
 
 ## Examples
