@@ -165,7 +165,7 @@ custom_item:
   Id: wooden_sword
   Attributes:
     All:
-      StepHeight‌: 2 ADD
+      StepHeight: 2 ADD
 ```
 
 ### JumpHeight
