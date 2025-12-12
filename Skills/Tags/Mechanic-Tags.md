@@ -11,6 +11,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
 | [ClearTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ClearTarget) | MythicMobs | Forces the target of the mechanic to reset its current target |
+| [Fear](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Fear) | MythicMobs | Applies an aura that makes the target run around in fear |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FormLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FormLine) | MythicMobs | Makes the casting mob follow a linear path to a location |
@@ -275,6 +276,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [BlackScreen](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/BlackScreen) | MythicMobs | Causes the player's screen to black out |
 | [Bouncy](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Bouncy) | MythicMobs | Applies an aura to the target that makes it bouncy |
 | [Cast](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/cast) | MythicMobs | Cast is an [Aura] mechanic similar to |
+| [Fear](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Fear) | MythicMobs | Applies an aura that makes the target run around in fear |
 | [Fly](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fly) | MythicMobs | Makes the player fly, similar to the /fly command |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
@@ -519,6 +521,7 @@ These mechanics have not been tagged yet.
 | [EnderDragonSpawnPortal](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/EnderDragonSpawnPortal) | MythicMobs | Generates the portal of the EnderDragon battle |
 | [Extinguish](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/extinguish) | MythicMobs | Removes any fire ticks from the target entity |
 | [Feed](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/feed) | MythicMobs | Feeds the targeted player |
+| [ForEachPin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ForEachPin) | MythicMobs | Runs a given metaskill for each pin in a multi-pin |
 | [Freeze](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/freeze) | MythicMobs | Sets the ticks frozen in powdered snow |
 | [Hologram](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hologram) | MythicMobs | Spawns a hologram at a target location. |
 | [Ignite](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ignite) | MythicMobs | Sets the targeted entity on fire. |

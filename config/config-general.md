@@ -16,6 +16,7 @@ Configuration:
 
   General:
     AllowMetrics: true
+    AnnounceOpReload: false
     CheckForUpdates: true
     DebugLevel: 0
     DebugMode: false
@@ -25,7 +26,9 @@ Configuration:
     ThreadPoolSize: -1
     UseVirtualThreads: false
 
-    AnnounceOpReload: false
+    # Whether to cache and reuse identical mechanics
+    # Reduces memory usage, but source information in errors will become inaccurate
+    ShareComponents: false
 
     # Tries to match mobs by their display name and turn them into Mythic Mobs when
     # spawned by a different plugin, for plugins that don't support Mythic

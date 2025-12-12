@@ -50,41 +50,9 @@ You can input both absolute or relative values:
 ## Attributes
 These are all the available attributes that can be put on the item.
 You can use general placeholders like `<random.#to#>` or `<random.float.#to#>`.  
-You can find out more about these attributes by looking at [The Minecraft Wiki page regarding them](https://minecraft.wiki/w/Attribute#Attributes)
+Most of the explanations on this page are excerpts from the [Minecraft Wiki](https://minecraft.wiki). You can find out more information about these attributes by looking at [Their page regarding them](https://minecraft.wiki/w/Attribute#Attributes)
 
-### AttackSpeed
-Determines the recharge rate of a fully charged attack.
-```yml
-custom_item:
-  Id: stick
-  Attributes:
-    MainHand:
-      AttackSpeed: 0.1 MULTIPLY
-```
-
-### Armor
-Sets the amount of armor.
-1 armor is equal to 0.5 armor plates.
-Vanilla caps the amount to 30.
-```yml
-custom_item:
-  Id: diamond_chestplate
-  Attributes:
-    Chest:
-      Armor: 2
-```
-
-### ArmorToughness
-Alters the damage reduction percentage of the armor attribute. [MC wiki](https://minecraft.wiki/Armor#Armor_toughness).
-```yml
-custom_item:
-  Id: diamond_chestplate
-  Attributes:
-    Chest:
-      ArmorToughness: 0.5
-```
-
-### Damage
+### ATTACK_DAMAGE
 Sets the damage dealt by melee attacks.
 1 damage equals to 0.5 hearts of damage dealt (without armor).
 ```yml
@@ -92,10 +60,20 @@ custom_item:
   Id: stick
   Attributes:
     All:
-      Damage: 0.2 ADD_SCALAR
+      ATTACK_DAMAGE: 0.2 ADD_SCALAR
 ```
 
-### Health
+### ATTACK_SPEED
+Determines recharging rate of attack strength. Its value is the number of full-strength attacks per second.
+```yml
+custom_item:
+  Id: stick
+  Attributes:
+    MainHand:
+      ATTACK_SPEED: 0.1 MULTIPLY
+```
+
+### MAX_HEALTH
 The maximum health modifier the user can have when either holding or wearing the item.
 1 health equals to 0.5 hearts.
 ```yml
@@ -103,144 +81,312 @@ custom_item:
   Id: diamond_chestplate
   Attributes:
     MainHand:
-      Health: 2 ADD
+      MAX_HEALTH: 2 ADD
 ```
 
-### Luck
-Sets the amount of luck modifier of the item. 
-This modifier affects the result of loot tables and also the [mob drops](/drops/Drops).
+### MOVEMENT_SPEED
+Movement speed is the speed at which entities can move, but this is not the actual speed value in blocks/second. The entity's actual speed in blocks/second is a bit over 20 times this value.
 ```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      MOVEMENT_SPEED: -0.2 MULTIPLY_BASE
+```
+
+### FLYING_SPEED
+This attribute is a flight speed modifier in some unknown metric
+```yaml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      FLYING_SPEED: 1 ADD
+```
+
+### ATTACK_KNOCKBACK
+Determines the knockback applied to attacks
+```yaml
 custom_item:
   Id: stick
   Attributes:
-    OffHand:
-      Luck: -10 ADD
+    MainHand:
+      ATTACK_KNOCKBACK: 1 ADD
 ```
 
-### KnockbackResistance
-Sets the horizontal scale knockback resisted from attacks.
+### KNOCKBACK_RESISTANCE
+Determines the scale of horizontal knockback resisted from attacks and projectiles. Vertical knockback is not affected. It does not affect explosions.  
+The resistance functions as a percentage from 0.0 (0% resistance) to 1.0 (100% resistance) (e.g. 0.4 is 40% resistance, meaning the attributed entity takes 60% of usual knockback)
 ```yml
 custom_item:
   Id: diamond_chestplate
   Attributes:
     Chest:
-      KnockbackResistance: 2 MULTIPLY_BASE
+      KNOCKBACK_RESISTANCE: 2 MULTIPLY_BASE
 ```
 
-### MovementSpeed
-Sets the movement speed modifier of the item.
+### ARMOR
+This attribute defines the [armor defense points](https://minecraft.wiki/w/Armor#Armor_points).
+1 armor is equal to 0.5 armor plates.  
+Armor points above 20 will not be shown, and the actual cap is at 30.  
 ```yml
 custom_item:
-  Id: wooden_sword
+  Id: diamond_chestplate
   Attributes:
-    All:
-      MovementSpeed: -0.2 MULTIPLY_BASE
+    Chest:
+      ARMOR: 2
 ```
 
-### MaxAbsorption
-The maximum absorption of this mob.  
-Determines the highest health they may gain by the Absorption effect
+### ARMOR_TOUGHNESS
+Alters the damage reduction percentage of the armor attribute. [MC wiki](https://minecraft.wiki/Armor#Armor_toughness).
 ```yml
 custom_item:
-  Id: wooden_sword
+  Id: diamond_chestplate
   Attributes:
-    All:
-      MaxAbsorption: 1 ADD
+    Chest:
+      ARMOR_TOUGHNESS: 0.5
 ```
 
-### Scale
+### LUCK
+Sets the amount of luck modifier of the item. 
+This modifier affects the [result of loot tables](https://minecraft.wiki/w/Attribute#Luck) and also the [mob drops](/drops/Drops).
+```yml
+custom_item:
+  Id: stick
+  Attributes:
+    OffHand:
+      LUCK: -10 ADD
+```
+
+### SCALE
 The multiplier of the size of an entity
 ```yml
 custom_item:
   Id: wooden_sword
   Attributes:
     All:
-      Scale: 2 ADD
+      SCALE: 2 ADD
 ```
 
-### StepHeight‌
-The maximum number of blocks that an entity can step up without jumping. Sneaking only prevents drops from heights that are higher than this attribute.[5] This only happens if the height that the player is above a block is equal or less than the attribute  
-```yml
+### FOLLOW_RANGE
+This attribute determines the range in blocks within which a mob with this attribute targets players or other mobs to track. Exiting this range causes the mob to cease following the player/mob
+```yaml
 custom_item:
   Id: wooden_sword
   Attributes:
     All:
-      StepHeight: 2 ADD
+      FOLLOW_RANGE: 1 ADD
 ```
 
-### JumpHeight
-The height an entity can jump, similar to the Jump Boost effect
-```yml
-custom_item:
-  Id: wooden_sword
-  Attributes:
-    All:
-      JumpHeight: 2 ADD
-```
-
-### BlockInteractionRange
-The block interaction range for players in blocks
-```yml
-custom_item:
-  Id: wooden_sword
-  Attributes:
-    All:
-      BlockInteractionRange: 2 ADD
-```
-
-### EntityInteractionRange
-The entity interaction range for players in blocks
-```yml
-custom_item:
-  Id: wooden_sword
-  Attributes:
-    All:
-      EntityInteractionRange: 2 ADD
-```
-
-### BlockBreakSpeed
-The speed the player can break blocks as a multiplier
-```yml
-custom_item:
-  Id: wooden_sword
-  Attributes:
-    All:
-      BlockBreakSpeed: 2 ADD
-```
-
-### Gravity
-The gravity affecting an entity in blocks per tick squared
-```yml
-custom_item:
-  Id: wooden_sword
-  Attributes:
-    All:
-      Gravity: 2 ADD
-```
-
-### SafeFallDistance
-The number of blocks an entity can fall before fall damage starts to be accumulated. Also the minimum amount of blocks the entity has to fall to make fallling particles and sounds
-```yml
-custom_item:
-  Id: wooden_sword
-  Attributes:
-    All:
-      SafeFallDistance: 2 ADD
-```
-
-### FallDamageMultiplier‌
+### FALL_DAMAGE_MULTIPLIER
 The amount of fall damage an entity takes as a multiplier
 ```yml
 custom_item:
   Id: wooden_sword
   Attributes:
     All:
-      FallDamageMultiplier: 2 ADD
+      FALL_DAMAGE_MULTIPLIER: 2 ADD
+```
+
+### SAFE_FALL_DISTANCE
+The number of blocks an entity can fall before fall damage starts to be accumulated. Also the minimum amount of blocks the entity has to fall to make falling particles and sounds
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      SAFE_FALL_DISTANCE: 2 ADD
+```
+
+### GRAVITY
+The gravity affecting an entity in blocks per tick squared
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      GRAVITY: 2 ADD
+```
+
+### BLOCK_BREAK_SPEED
+The speed the player can break blocks as a multiplier
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      BLOCK_BREAK_SPEED: 2 ADD
+```
+
+### ENTITY_INTERACTION_RANGE
+The entity interaction range for players in blocks
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      ENTITY_INTERACTION_RANGE: 2 ADD
+```
+
+### BLOCK_INTERACTION_RANGE
+The block interaction range for players in blocks
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      BLOCK_INTERACTION_RANGE: 2 ADD
+```
+
+### JUMP_HEIGHT
+This attribute determines the initial vertical velocity of an entity when they jump, in blocks per tick
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      JUMP_HEIGHT: 2 ADD
+```
+
+### STEP_HEIGHT
+The maximum number of blocks that an entity can step up without jumping. Sneaking only prevents drops from heights that are higher than this attribute. This only happens if the height that the player is above a block is equal or less than the attribute  
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      STEP_HEIGHT: 2 ADD
+```
+
+### MAX_ABSORPTION
+The maximum absorption of this entity.  
+Determines the highest health they may gain by the Absorption effect
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      MAX_ABSORPTION: 1 ADD
+```
+
+
+### BURNING_TIME
+This attribute is a multiplier for how long an entity should remain on fire after being ignited.  
+A value of 0 eliminates the burn time.  
+It has no impact on the burning time increase when staying in fire
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      BURNING_TIME: 1 ADD
+```
+
+### EXPLOSION_KNOCKBACK_RESISTANCE
+This attribute defines what percentage of knockback from explosions an entity resists.  
+A value of 1 eliminates the knockback
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      EXPLOSION_KNOCKBACK_RESISTANCE: 1 ADD
+```
+
+### MOVEMENT_EFFICIENCY
+This attribute is a factor to improve walking on terrain that slows down movement.  
+A value of 1 removes the slowdown
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      MOVEMENT_EFFICIENCY: 1 ADD
+```
+
+### OXYGEN
+This attribute determines the chance that an entity's Air data tag decreases in any given game tick, while the entity is underwater. The chance is given by $`1⁄(OXYGEN + 1)`$
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      OXYGEN: 1 ADD
+```
+
+### SNEAKING_SPEED
+This attribute determines the movement speed factor when sneaking or crawling.  
+A factor of 1 means sneaking or crawling is as fast as walking, a factor of 0 means unable to move while sneaking or crawling.
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      SNEAKING_SPEED: 1 ADD
+```
+
+### WATER_MOVEMENT_EFFICIENCY
+This attribute is a factor of movement speed when submerged. A higher value lets entities move faster. This represents only the submersion factor itself; other factors (such as sprinting) also apply.
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      WATER_MOVEMENT_EFFICIENCY: 1 ADD
+```
+
+### SUBMERGED_MINING_SPEED
+This attribute determines the mining speed factor when underwater. A factor of 1 means mining as fast as on land, a factor of 0 means unable to mine while submerged. This represents only the submersion factor itself; other factors (such as not touching the ground) also apply.
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      SUBMERGED_MINING_SPEED: 1 ADD
+```
+
+### MINING_EFFICIENCY
+This attribute is a factor to speed up the mining of blocks when using the right tool.
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      MINING_EFFICIENCY: 1 ADD
+```
+
+### TEMPT_RANGE
+This attribute determines the range, in blocks, in which mobs can be tempted. When tempted, mobs follow the player while the player is holding a specific item.
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      TEMPT_RANGE: 1 ADD
+```
+
+### SWEEPING_DAMAGE_RATIO
+This attribute determines how much of the base attack damage gets transferred to secondary targets in a sweep attack. This is in addition to the base attack of the sweep damage itself. A value of 1 means that all of the base attack damage is transferred (sweep damage is attack_damage + 1)
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      SWEEPING_DAMAGE_RATIO: 0.5 ADD
+```
+
+### SPAWN_REINFORCEMENTS
+This attribute determines the chance for a zombie to spawn another zombie when attacked
+```yml
+custom_item:
+  Id: wooden_sword
+  Attributes:
+    All:
+      SPAWN_REINFORCEMENTS: 0 MULTIPLY
 ```
 
 ## Examples
-This example item will grant +10 luck when the item is held in the main
-hand, but will grant +7 luck and +2 extra damage if the item is held in
+This example item will grant +10 luck when the item is held in the main hand, but will grant +7 luck and +2 extra damage if the item is held in
 the offhand slot:
 ```yml
 lucky_charms:
