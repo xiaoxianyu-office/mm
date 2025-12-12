@@ -52,7 +52,7 @@ These are all the available attributes that can be put on the item.
 You can use general placeholders like `<random.#to#>` or `<random.float.#to#>`.  
 Most of the explanations on this page are excerpts from the [Minecraft Wiki](https://minecraft.wiki). You can find out more information about these attributes by looking at [Their page regarding them](https://minecraft.wiki/w/Attribute#Attributes)
 
-<!-- ENUM MythicBukkitAttributes START -->
+<!-- ENUM mythicbukkitattributes START -->
 
 ### ATTACK_DAMAGE
 Sets the damage dealt by melee attacks.
@@ -387,7 +387,7 @@ custom_item:
       SPAWN_REINFORCEMENTS: 0 MULTIPLY
 ```
 
-<!-- ENUM MythicBukkitAttributes STOP -->
+<!-- ENUM mythicbukkitattributes STOP -->
 
 ## Examples
 This example item will grant +10 luck when the item is held in the main hand, but will grant +7 luck and +2 extra damage if the item is held in
