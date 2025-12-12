@@ -305,7 +305,7 @@ custom_item:
 ```
 
 ### OXYGEN
-This attribute determines the chance that an entity's Air data tag decreases in any given game tick, while the entity is underwater. The chance is given by $`1⁄(OXYGEN + 1)`$
+This attribute determines the chance that an entity's Air data tag decreases in any given game tick, while the entity is underwater. The chance is given by $`\frac{1}{(OXYGEN + 1)}`$
 ```yml
 custom_item:
   Id: wooden_sword
