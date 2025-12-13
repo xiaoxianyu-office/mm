@@ -126,6 +126,16 @@ SummonSkeletons:
   - delay 20
   - summon{mob=SKELETON;amount=2;radius=5} @Self
 ```
+> Note that, to repeat a mechanic multiple times, you can also use the `repeat` and `repeatInterval` universal attributes
+> So, the above metaskill can be rewritten as
+> ```yaml
+> SummonSkeletons:
+>   Cooldown: 15
+>   Skills:
+>   - message{m="<caster.name><&co> Arise, my minions!"} @PlayersInRadius{r=40}
+>   - delay 20
+>   - summon{mob=SKELETON;amount=2;radius=5;repeat=2;repeatInterval=20} @Self
+> ```
 
 ### SmashAttack
 This skill causes the mob to teleport to its target, deals damage to the target and throwing them in the air.
