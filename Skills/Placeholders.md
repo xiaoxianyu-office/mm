@@ -568,6 +568,34 @@ TestRandomPlaceholder:
 ```
 > A value of "null" is not accepted
 
+# Static Placeholders
+Placeholders are considered "Static" when their parsing can only ever result in a single, defined output.
+
+As of now, this is only the case for [Custom Placeholders](#custom-placeholders) that have a single possible value
+```yaml
+TestPlaceholder: 'a single value'
+AnotherTestPlaceholder: 'another single value'
+```
+
+## Load-Time Static Placeholder Parsing
+Static Placeholders not parsed when the configuration line is executed at runtime, but are parsed and replaced as soon as the configuration is loaded in, only once per reload, and before any other parsing is done.
+
+This has numerous advantages!  
+The most obvious one is that of performance: If placeholders are replaced at load time, at runtime they will appear as normal strings, not needing to be parsed again and saving on resources.
+
+There is also quite an interesting application to this: since static placeholders are parsed and replaced *before anything else is*, they can be used *anywhere* in the configuration files, even in places where normal placeholders would not make sense, such as internal names, mechanic names or anything else!
+```yaml
+# placeholders.yml
+test: "message=1;"
+debug: "#log"
+```
+```yaml
+testPreparsedPlaceholders:
+  Skills:
+  - message{<placeholder.test>} @self
+  - <placeholder.debug>{message="hello world"}
+```
+
 
 # Examples
 **This will make a mob send a teal message to all players in a radius of 20 blocks around in itself, stating what entity killed it in green.**
