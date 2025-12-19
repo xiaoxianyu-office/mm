@@ -11,6 +11,7 @@ an error if you try to use a variable type for something that makes no sense.
 |----------|----------------------------------|
 | INTEGER  | A number with no decimal places. |
 | FLOAT    | A number with decimal places.    |
+| LONG     | A number with no decimal places. Can represent much larger numbers than an INT |
 | DOUBLE   | A number with decimal places. Can represent much larger numbers than a FLOAT | 
 | STRING   | A word or sentence.              |
 | BOOLEAN  | A value that can either be true or false |
@@ -46,7 +47,7 @@ All variable mechanics and conditions accept `var=` and `scope=` attributes to d
 ## Variable Types Behavior
 
 ### Number
-Includes INTEGER, FLOAT and DOUBLE since their behavior is functionally the same
+Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally the same
 ```yaml
   # Create your number variable
   - setvariable{var=skill.example;type=DOUBLE;val=1.5}
