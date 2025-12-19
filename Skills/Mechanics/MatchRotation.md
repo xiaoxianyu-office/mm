@@ -11,7 +11,7 @@ Sets the caster's yaw and pitch to the same value of the target's
 ## Examples
 ```yaml
   Skills:
-  - matchrotation @Parent
+  - matchrotation{target=@Parent}
 ```
 
 
