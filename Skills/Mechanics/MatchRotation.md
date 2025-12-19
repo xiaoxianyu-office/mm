@@ -1,5 +1,5 @@
 ## Description
-Sets the caster's yaw and pitch to the same value of the target's
+Sets the target's yaw and pitch to the same value of the specified target attribute
 
 
 ## Attributes
@@ -11,7 +11,7 @@ Sets the caster's yaw and pitch to the same value of the target's
 ## Examples
 ```yaml
   Skills:
-  - matchrotation{target=@Parent}
+  - matchrotation{target=@Parent} @self
 ```
 
 
