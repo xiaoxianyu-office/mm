@@ -319,6 +319,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .formatted   | STRING      | Returns a more human-readable version of the input value |
 | .tointeger | INTEGER | Converts the value to an Integer without doing any specific operation, allowing chaining for Integer meta keywords |
 | .tofloat | FLOAT | Converts the value to a Float without doing any specific operation, allowing chaining for Float meta keywords |
+| .tolong | LONG | Converts the value to a Long without doing any specific operation, allowing chaining for Long meta keywords |
 | .todouble | DOUBLE | Converts the value to a Double without doing any specific operation, allowing chaining for Double meta keywords |
 | .toboolean | BOOLEAN | Converts the value to a Boolean without doing any specific operation, allowing chaining for Boolean meta keywords |
 | .tostring | STRING | Converts the value to a String without doing any specific operation, allowing chaining for String meta keywords |
@@ -348,6 +349,18 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .mul.{Float} | FLOAT | The multiplication between the value and the specified Float |
 | .div.{Float} | FLOAT | The division between the value and the specified Float |
 | .abs | FLOAT | The absolute value of the value |
+| .round | INTEGER | Rounds the value to the nearest Integer |
+| .precision.{Integer} | FLOAT | Returns the same float value, but with a given maximum precision. Extra precision is rounded using the HALF_UP rounding mode |
+> [Go To Explanation>>](#meta-variable-placeholders)  
+
+#### Long Meta Keywords
+|  Placeholder | Return Type | Return Value |
+|--------------|-------------|----------|
+| .add.{Long} | LONG | The addition between the value and the specified Long |
+| .sub.{Long} | LONG | The subtraction between the value and the specified Long |
+| .mul.{Long} | LONG | The multiplication between the value and the specified Long |
+| .div.{Long} | LONG | The division between the value and the specified Long |
+| .abs | LONG | The absolute value of the value |
 > [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### Double Meta Keywords
@@ -358,6 +371,8 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .mul.{Double} | DOUBLE | The multiplication between the value and the specified Double |
 | .div.{Double} | DOUBLE | The division between the value and the specified Double |
 | .abs | DOUBLE | The absolute value of the value |
+| .round | LONG | Rounds the value to the nearest Long |
+| .precision.{Integer} | DOUBLE | Returns the same float value, but with a given maximum precision. Extra precision is rounded using the HALF_UP rounding mode |
 > [Go To Explanation>>](#meta-variable-placeholders)  
 
 #### Boolean Meta Keywords
