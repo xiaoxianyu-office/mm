@@ -14,7 +14,7 @@ Moves towards the target to be within a certain range
 ```yaml
   AIGoalSelectors:
   - clear
-  - moveTowardsDistanceOfTarget{s=2;minr=3;maxrange=6}
+  - MoveWithinDistanceOfTarget{s=2;minr=3;maxrange=6}
 ```
 
 
