@@ -8,7 +8,7 @@ No single mechanics can be used straight: they have to be in a [Metaskill]!
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | setcasterastrigger | cat |Sets the trigger of the called metaskill to the caster of this mechanic|false|
-| target    | t         | Sets the inherited targets of the called metaskill to the specified ones |     |
+| target    | t         | Sets the inherited targets of the called metaskill to the specified ones | <!--type:Targeter--> |
 
 > This mechanic inherits every attribute of the [Skill](/skills/mechanics/skill) mechanic
 
