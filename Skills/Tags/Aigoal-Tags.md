@@ -35,6 +35,7 @@ These aigoals have not been tagged yet.
 | [Movethroughvillage](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/movethroughvillage) | MythicMobs | Causes the mob to find a path through a village. |
 | [Movetoblock](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/movetoblock) | MythicMobs | Makes the mob move towards the specified block type. |
 | [Movetolava](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/movetolava) | MythicMobs | Causes the mob to move towards lava. |
+| [MoveTowardsTargetConditional](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/MoveTowardsTargetConditional) | MythicMobs | Paths to an entity that checks some conditions |
 | [MoveTowardsRestriction](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/MoveTowardsRestriction) | MythicMobs | Make a mob move towards its "Restriction Point" for some Entities (for instance, the village of a Villager) |
 | [MoveTowardsTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/MoveTowardsTarget) | MythicMobs | Causes the mob to move towards its target |
 | [Movetowater](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/ai/goals/movetowater) | MythicMobs | Causes the mob to move towards water. |

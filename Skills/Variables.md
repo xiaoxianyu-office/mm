@@ -278,7 +278,7 @@ Variables can be referenced in any MythicMobs mechanics or values that allow pla
 
 Variable Placeholders can also use Meta Keywords to change the output of the placeholder, and they can even chain Meta Keywords together to obtain a "compound" effect.
 
-Find out more on the [Meta Variable Placeholder Explanation](/Skills/Placeholders#meta-variable-placeholders)
+Find out more on the [Meta Variable Placeholder Explanation](/Skills/Placeholders/meta-variable-placeholders)
 
 # Variable Fallback
 When using placeholder variables, you can also specify a "default" value that will be used if the variable is undefined by using the syntax `<scope.var.variable|default>`.

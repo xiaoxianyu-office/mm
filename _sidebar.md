@@ -66,8 +66,9 @@ should be assumed incorrect unless it directly cites this documentation.
   * [Conditions](/Skills/conditions)
     * [In-line conditions](/Skills/Inline-Conditions)
   * [Metaskills](/Skills/Metaskills)
-  * [Placeholders](/Skills/Placeholders)
   * [Variables](/Skills/Variables)
+  * [Placeholders](/Skills/Placeholders)
+    * [Meta Variable Placeholders](/Skills/Placeholders/Meta-Variable-Placeholders)
 
 ---
 
@@ -111,7 +112,7 @@ should be assumed incorrect unless it directly cites this documentation.
 
 ---
 
-##### Enums
+##### Common Values
   * [Particles Types](/Skills/Mechanics/Particle/Particle-Types)
   * [Audience](/Skills/Audience)
   * [Equipment Slots](/Skills/EquipSlot)

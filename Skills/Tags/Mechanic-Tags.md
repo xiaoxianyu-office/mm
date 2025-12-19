@@ -578,7 +578,7 @@ These mechanics have not been tagged yet.
 | [SetItemCustomModelData](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetItemCustomModelData) | MythicCrucible | Sets the CustomModelData of the used item |
 | [SetItemDisplay](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetItemDisplay) | MythicCrucible | Sets the item display name |
 | [SetLore](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetLore) | MythicCrucible | Sets the new lore of the item |
-| [ModelSet](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ModelSet) | MythicCrucible | Sets the specified CustomModelData on the item the caster is holding |
+| [ModelSet](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ModelSet) | MythicCrucible | Sets the specified Model/[CustomModelData](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/skills/mechanics/SetItemCustomModelData) on the item the caster is holding. |
 | [SetSlotModel](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetSlotModel) | MythicCrucible | Sets the specified CustomModelData on the item on the specified slot |
 | [SnapshotUsedBow](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SnapshotUsedBow) | MythicCrucible | Snapshots the state of the held bow for use with later projectile damage mechanics   |
 | [Modeltoggle](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/modeltoggle) | MythicCrucible | Switches the item's CustomModelData value between two specified ones each time this mechanic is triggered |
@@ -623,6 +623,7 @@ These mechanics have not been tagged yet.
 | [ModifyState](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/ModifyState) | ModelEngine | Modify an animation played by the targeted active model |
 | [RemapModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/RemapModel) | ModelEngine | Remap a new model to the current model, part by part.<br> |
 | [RenderInit](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/RenderInit) | ModelEngine | Shows a model to the players, if the model was previously applied on the Modeled Entity by setting the `initrender` |
+| [RootMotion](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/RootMotion) | ModelEngine | Sets the root motion options for the model |
 | [Scale](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/Scale) | ModelEngine | Scale the model's hitbox or render scale. |
 | [State](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/State) | ModelEngine | Play or stop an animation on a model. |
 | [StateToggle](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/StateToggle) | ModelEngine | Toggle a state on the model |
@@ -649,7 +650,6 @@ These mechanics have not been tagged yet.
 | [QuickcastingActivate](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/QuickcastingActivate) | MythicRPG | Activates quickcasting for the casting player, if possible |
 | [QuickcastingDeactivate](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/QuickcastingDeactivate) | MythicRPG | Deactivates quickcasting for the casting player, if possible |
 | [SetArchetype](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetArchetype) | MythicRPG | Sets the target player's archetype |
-| [SetCustomMenuButton](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetCustomMenuButton) | MythicRPG | Sets a specific slot of the opened [custom menu](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/../../../MythicMobs/-/wikis/Custom-Menus) to the specified button |
 | [SetQuickcastBinding](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetQuickcastBinding) | MythicRPG | Force-sets the casting player's quickcast binding if possible |
 | [ForgetSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/ForgetSpell) | MythicRPG | Make the target player unlearn a [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) |
 | [TeachSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/TeachSpell) | MythicRPG | Teaches a player a [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) |
