@@ -36,3 +36,6 @@ MyCustomMenu:
 
 <!-- LINKS -->
 [custom menu]: /Custom-Menus
+
+<!--TAGS -->
+<!--tag:Custom-Menu>

@@ -22,3 +22,7 @@ Opens a [custom menu]
 
 <!-- LINKS -->
 [custom menu]: /Custom-Menus
+
+
+<!--TAGS -->
+<!--tag:Custom-Menu>
