@@ -184,6 +184,7 @@ are able to target locations as well.
 | [SetBlockType][]          | Change block type at target location                                                     |
 | [SetChunkForceLoaded][]   | Sets the force-loaded status of a location's chunk                                                     |
 | [SetCollidable][]         | Sets if the target should have a collidable hitbox or not                                                     |
+| [SetCustomMenuButton][]   | Sets a specific slot of the opened [custom menu] to the specified button |
 | [SetDragonPodium][]       | Sets the position of the dragon's podium at the target location                                                     |
 | [SetGameMode][]           | Sets the Game Mode of the target player                                                  |
 | [SetGliding][]            | Makes the target glide if they have elytra                                               |
@@ -539,6 +540,7 @@ but not yet ready for use.
   [SetBlockType]: /skills/mechanics/setblocktype
   [SetChunkForceLoaded]: /skills/mechanics/SetChunkForceLoaded
   [SetCollidable]: /skills/mechanics/setcollidable
+  [SetCustomMenuButton]: /Skills/Mechanics/SetCustomMenuButton
   [SetDragonPodium]: /skills/mechanics/SetDragonPodium
   [SetFaction]: /skills/mechanics/setFaction
   [SetFlying]: /skills/mechanics/SetFlying

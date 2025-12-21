@@ -343,7 +343,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
 | [Look](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/look) | MythicMobs | Causes the entity to look at its target |
-| [MatchRotation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/MatchRotation) | MythicMobs | Sets the caster's yaw and pitch to the same value of the target's |
+| [MatchRotation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/MatchRotation) | MythicMobs | Sets the target's yaw and pitch to the same value of the specified target attribute |
 | [Recoil](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Recoil) | MythicMobs | Kicks the target's screen to simulate recoil |
 | [RotateTowards](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/RotateTowards) | MythicMobs | Rotates the caster towards the target location, up to a maximum yaw/pitch increment from the current rotation |
 | [SetPitch](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetPitch) | MythicMobs | Sets the head pitch of the target entity |

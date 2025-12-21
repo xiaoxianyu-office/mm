@@ -214,6 +214,9 @@ These conditions have not been tagged yet.
 | [ModelHasPassengers](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/ModelHasPassengers) | ModelEngine | Checks if the target modeled entity has passengers |
 | [Archetype](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/Archetype) | MythicRPG | This condition checks if the player has a certain type of Archetype in a defined group |
 | [ArchetypeLevel](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/ArchetypeLevel) | MythicRPG | This condition checks if the player has a certain level of the Archetype in a defined group |
+| [HasArchetypesInCategory](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasArchetypesInCategory) | MythicRPG | Matches if the player has a certain amount of archetypes that belong to a category |
 | [HasLearnedSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasLearnedSpell) | MythicRPG | Whether the target player has learned the given spell |
+| [HasReagent](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasReagent) | MythicRPG | Matches if the player has a certain amount of a reagent |
+| [IsQuickcastingActive](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/IsQuickcastingActive) | MythicRPG | Whether the target player is currently using a quickcasting method |
 | [HasAchievement](https://git.lumine.io/mythiccraft/mythicachievements/-/wikis/Skills/Conditions/HasAchievement) | MythicAchievements | Checks if the player has a mythic achievement. |
 
