@@ -354,6 +354,20 @@ SomeBook:
   - "Page 3"
 ```
 
+#### AttackRange
+Changes the item's attack range. Used to handle the [attack_range component](https://minecraft.wiki/w/Data_component_format/attack_range) of an item.  
+
+```yaml
+AMythicItem:
+  AttackRange:
+    Min: 0
+    Max: 4
+    MinCreative: 0
+    MaxCreative: 5
+    HitboxMargin: 0.3
+    MobFactor: 1
+```
+
 #### Consumable
 Allows item to be eaten. Includes customizable animations and sounds.  
 Used to handle the [consumable component](https://minecraft.wiki/w/Data_component_format/consumable) of an item.  
