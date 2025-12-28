@@ -106,6 +106,7 @@ These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) ena
 | @[VariableLocation][]                                                                                                                          | @varLocation                                                                                                                          | Targets the location stored in the specified variable                                                                                                                          |
 | @[HighestBlock][]                                                                                                                          |    | Targets the highest block at the skill origin                                                      |
 | @[PlayerLocationByName][]                                                                                                                          |    | Targets a specific player's location by their name                                                      |
+| @[EscapeLocation][]                                                                                                                          |    | Targets a nearby safe escape location like how an Enderman would choose its teleport destination                                                      |
 
 
 ### Multi-Location Targeters
@@ -443,6 +444,7 @@ GiveRewards:
   [RandomThreatTargetLocation]: /Skills/Targeters/RandomThreatTargetLocation
 <!-- Single Location Targeters -->
   [CasterSpawnLocation]: /Skills/Targeters/CasterSpawnLocation
+  [EscapeLocation]: /Skills/Targeters/EscapeLocation
   [Forward]: /Skills/Targeters/Forward
   [HighestBlock]: /Skills/Targeters/HighestBlock
   [Location]: /Skills/Targeters/Location
