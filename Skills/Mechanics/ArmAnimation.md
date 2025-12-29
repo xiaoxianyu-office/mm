@@ -1,5 +1,5 @@
 ## Description
-Makes the caster swing their arm
+Makes the casting **player** swing their arm
 
 
 ## Attributes
