@@ -14,7 +14,7 @@ This mechanic must be synced, meaning that either the mechanic or the initial sk
 ## Examples
 ```yaml
   Skills:
-  - modifyDamage{a=2;modifier=ADDITIVE_MULTIPLIER;sync=true} @self ~onAttack 0.2
+  - modifyDamage{a=2;action=ADDITIVE_MULTIPLIER;sync=true} @self ~onAttack 0.2
 ```
 
 
