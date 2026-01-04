@@ -2,7 +2,7 @@
 Executes the skill when the mob is ready to spawn from a [spawner](/Spawners)
 
 
-## Aliases
+## Examples
 ```yml
 EXAMPLE_MOB:
   Type: VILLAGER
