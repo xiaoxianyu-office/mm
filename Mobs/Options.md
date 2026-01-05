@@ -1143,7 +1143,6 @@ Colors must be uppercase,can be any of the [Spigot Llama colors](https://hub.spi
     Color: CREAMY
 ```
 
-
 ## MinecartChest
 
 #### ChestContents
