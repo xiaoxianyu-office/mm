@@ -1,5 +1,5 @@
 ## Description
-Executes the skill when the mob is dismounted from (an dismounts the mob).
+Executes the skill when the mob is dismounted from.
 
 ## Examples
 ```yml
