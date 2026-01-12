@@ -2,6 +2,8 @@
 
 Mythic Mobs has a simple command structure that can be accessed by typing **/mythicmobs**. Typing that will display a menu with all available commands, and each level of commands will provide menus or information about what you can do. All command parameters surrounded by []'s are required, while &lt;&gt;'s are optional.
 
+> It is possible to create [Custom Commands](/Skills/Skill-Commands) by using [Metaskills](/Skills/Metaskills)
+
 ## Flags
 Some commands can have a set of flags before their first argument, changing how the command behaves.
 
