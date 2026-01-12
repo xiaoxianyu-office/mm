@@ -66,6 +66,7 @@ should be assumed incorrect unless it directly cites this documentation.
   * [Conditions](/Skills/conditions)
     * [In-line conditions](/Skills/Inline-Conditions)
   * [Metaskills](/Skills/Metaskills)
+    * [Custom Commands](/Skills/Skill-Commands)
   * [Variables](/Skills/Variables)
   * [Placeholders](/Skills/Placeholders)
     * [Meta Variable Placeholders](/Skills/Placeholders/Meta-Variable-Placeholders)
