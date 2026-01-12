@@ -498,6 +498,9 @@ The following names, in any casing, *cannot* be used as a skill parameter
 - `sts`
 - `targetcreative`
 
+# Custom Commands
+It is possible to use Metaskills to create [Skill Commands](/Skills/Skill-Commands)
+
 <!-- GENERIC -->
 [Skills]: /Skills/Skills
 [Meta Mechanic]: /Skills/Mechanics#meta-mechanics
