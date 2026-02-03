@@ -44,6 +44,8 @@ All variable mechanics and conditions accept `var=` and `scope=` attributes to d
     - setvariable{var=somevariable;scope=target; ...}
 ```
 
+> The variable's name should never contain dot (`.`) characters! They are used as delimitators, and putting them in a variable name will result in unwanted behaviors!
+
 ## Variable Types Behavior
 
 ### Number
