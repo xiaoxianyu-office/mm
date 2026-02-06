@@ -196,6 +196,7 @@ The following are only some of the placeholders that can have a `trigger` scope,
 | <utils.epoch.millis>        | Returns the amount of milliseconds of the current epoch                 |
 | <utils.epoch.ticks>         | Returns the current epoch, converted in ticks. Assumes that the server always maintains 20 ticks per second. Accounts for milliseconds. <br>While unorthodox, since time within Minecraft (and by extension Mythic) is measured in ticks, this may be of some help streamlining some processes where converting the normal epoch time to accomodate for ticks may be burdensome if done at scale |
 | <skill.power>               | Returns the [power](/Mobs/Power) of the metaskill in which the placeholder is evaluated |
+| <centertext{v=example;w=10}> | Centers the given text. The attributes are:<br>`value/v/text/line`: The text to center<br>`pixelwidth/width/w/pw`: The total pixels (integer) to account for (will center at half the width)<br>`bold/b`: Whether the provided value is bolded<br>`singlepixelunicodes/spus`: A list of unicodes of 1-3 pixels to use for extra precision. Defaults to `" , , , "` |
 
 ## Item Placeholders
 | **Placeholder**             | **Function**                                                            |
