@@ -25,7 +25,7 @@ Damages the targeted entity.
 | ignoreeffects| ieff   | Whether or not effects should be ignored                             | false   |
 | ignoreresistance | ir | Whether or not resistance should be ignored                          | false   |
 | poweraffectsdamage | pad | Should the skill's power affect the damage inflicted              | true    |
-| tags         | tag    | Allows you to specify any number of arbitrary tags for the damage mechanic using `tags=THIS,THAT`. All tags inserted will be UPPERCASED, so always use uppercased names when checking against them |         |
+| tags         | tag    | Allows you to specify any number of arbitrary tags for the mechanic using `tags=THIS,THAT`. All tags inserted will be UPPERCASED, so always use uppercased names when checking against them |         |
 | rawtags      | rtag   | Works the same as tags and what is put here will also qualify as a tag, but it will not be UPPERCASED like tags |  |
 | damagetype| element, e| *Becomes one of the Tags*                                            |         |
 | triggerSkills | ts    | Whether the damage mechanic should also be able to trigger `onAttack` related triggers       | false  |
