@@ -261,6 +261,7 @@ Examples:
 | bulletCulling  | culling | Whether to apply culling for the bullet model                     | true    |
 | bulletViewRadius |    | From how far the bullet can be seen, if greater than 0.              | -1      |
 | bulletBrightness |    | The brightness of the bullet                                         |         |
+| bulletalod | alod     | Whether to use LOD culling on the bullet                             | true    |
 
 ### TEXT Bullet
 | Attribute | Aliases   | Description                                                          | Default |
