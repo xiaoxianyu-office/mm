@@ -44,3 +44,17 @@ And, based on their identifier, they will be parsed as different file types
 | `placeholder` |                       | Custom Placeholder File  |
 | `stat`        |                       | Stat File         |
 
+```
+📦ExamplePack
+ ┣ 📂files
+ ┃ ┣ 📂aRandomFolder
+ ┃ ┃ ┣ 📂aNestedFolder
+ ┃ ┃ ┃ ┗ 📜ThisIsADroptableFile.droptable.yml
+ ┃ ┃ ┣ 📜ThisIsAMobFile.mob.yml
+ ┃ ┃ ┗ 📜ThisIsAPlaceholderFile.placeholder.yml
+ ┃ ┣ 📂anotherRandomFolder
+ ┃ ┃ ┣ 📜ThisIsAMobFile.mob.yml
+ ┃ ┃ ┗ 📜ThisIsASkillFile.skill.yml
+ ┃ ┗ 📜ThisIsAStatFile.stat.yml
+ ┗ 📜packinfo.yml
+```
