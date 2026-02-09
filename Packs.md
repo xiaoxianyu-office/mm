@@ -40,9 +40,20 @@ And, based on their identifier, they will be parsed as different file types
 | `item`        |                       | Item File         |
 | `droptable`   | `drop`                | Droptable File    |
 | `randomspawn` | `rspawn`, `spawn`     | RandomSpawn File  |
+| `spawner`     |                       | Spawner File      |
 | `menu`        |                       | Custom Menu File  |
 | `placeholder` |                       | Custom Placeholder File  |
 | `stat`        |                       | Stat File         |
+
+Some files are also recognized only by their extension
+```yaml
+filename.extension
+```
+
+| Extension     | File Parsing Type   |
+|---------------|---------------------|
+| `schem`       | Schematic File      | 
+
 
 ```
 📦ExamplePack
@@ -54,6 +65,7 @@ And, based on their identifier, they will be parsed as different file types
  ┃ ┃ ┗ 📜ThisIsAPlaceholderFile.placeholder.yml
  ┃ ┣ 📂anotherRandomFolder
  ┃ ┃ ┣ 📜ThisIsAMobFile.mob.yml
+ ┃ ┃ ┣ 📜ThisIsASchematic.schem
  ┃ ┃ ┗ 📜ThisIsASkillFile.skill.yml
  ┃ ┗ 📜ThisIsAStatFile.stat.yml
  ┗ 📜packinfo.yml
