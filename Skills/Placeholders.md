@@ -123,10 +123,13 @@ These placeholders will return whatever target selector has been used. For insta
 |      <target.l.w>       | Returns the world name the target is in                           |
 |      <target.l.x>       | Returns the X coordinate of the target                            |
 |     <target.l.x.{Float}> | Returns the X coordinate of the target +- random number between {Float} |
+|     <target.l.x.double>  | Returns the precise X coordinate of the target                    |
 |      <target.l.y>       | Returns the Y coordinate of the target                            |
 |     <target.l.y.{Float}> | Returns the Y coordinate of the target +- random number between {Float}|
+|     <target.l.y.double>  | Returns the precise Y coordinate of the target                    |
 |      <target.l.z>       | Returns the Z coordinate of the target                            |
 |     <target.l.z.{Float}> | Returns the Z coordinate of the target +- random number between {Float} |
+|     <target.l.z.double>  | Returns the precise Z coordinate of the target                    |
 |     <target.l.yaw>      | Returns the yaw of the target                                     |
 |    <target.l.pitch>     | Returns the pitch of the target                                   |
 |     <target.level>      | Returns the level of the target                                   |
