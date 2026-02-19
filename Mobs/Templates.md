@@ -432,7 +432,7 @@ flowchart TD
     D[DiamondArmorSet]  --> |Is Inherited by| C[ZombieBrute]
 ```
 
-##
+---
 
 ## Item Templates
 [Items](/Items/Items#template) can use Templating like mobs while referencing other items!
