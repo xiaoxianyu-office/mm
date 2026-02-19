@@ -10,7 +10,7 @@ Each keyword has an
 
 > Placeholder support is allowed in every place inside of Variable Placeholders, so each keyword can also be another placeholder to be parsed
 
-##
+---
 
 ```yaml
 <skill.var.exampleString.capitalize>
@@ -29,7 +29,7 @@ Each keyword has an
 > - It does some form of conversion to its value (in this case, returning the length of the string)
 > - It returns an Integer value
 
-## 
+---
 
 Given that each meta keyword has a specific input and output type, it is possible to *chain* them together, obtaining a compound effect where each keyword coverts the variable's value and pass the result to the following one
 
