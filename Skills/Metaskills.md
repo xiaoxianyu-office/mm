@@ -400,7 +400,9 @@ ExampleMob:
     ]} @trigger ~onInteract
 ```
 > In this example you can see both the syntax to write a inline metaskill and some of the features of a normal Metaskill (target inheritance, use of delays) being used
-##
+
+---
+
 ```yaml
   Skills:
   - skill{s=[
@@ -412,7 +414,9 @@ ExampleMob:
     ]} @target
 ```
 > In this example you can see how Inline Metaskills can be nested and how they share the same [skilltree], enabling them to use skill scoped variables
-##
+
+---
+
 ```yaml
   Skills:
   - skill{branch=true;s=[
