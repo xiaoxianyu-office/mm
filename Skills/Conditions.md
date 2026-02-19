@@ -40,7 +40,8 @@ Conditions in this section check against the caster or its location.
 ```
 > In the example above, the globalscore condition will check the caster's global score.
 
-##
+---
+
 #### TargetConditions
 Conditions in this section check against the [inherited target](/Skills/Metaskills#inheritance) of the metaskill
 
@@ -56,7 +57,8 @@ Conditions in this section check against the [inherited target](/Skills/Metaskil
 ```
 > The example above the globalscore condition will check the inherited target's global score. Since globalscore is an entity condition, it will only work if an entity is targeted.
 
-##
+---
+
 #### TriggerConditions
 Conditions in this section check against the trigger of the metaskill
 ```yaml
