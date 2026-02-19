@@ -82,7 +82,9 @@ Attachments are optional "objects" that are applied (attached) to the entity the
 Gives the target (Which in this case is the entity itself) the
 Retributing_Light aura that lasts 12 seconds. Every 10 ticks (or half a
 second) it will fire the RetributingLightDamage skill.
-##
+
+---
+
 ```yaml
  Skills:
   - onDamaged{auraName=fire_shield;onHit=FireShield;duration=200;charges=5;multiplier=0.5} @self
@@ -91,7 +93,9 @@ In this example, the caster's next 5 hits taken in 10 seconds would
 trigger the FireShield skill targeting whatever hit them and also deal
 50% damage. However, if FireShield's conditions failed, it would deal
 regular damage as the multiplier would not trigger either.
-##
+
+---
+
 ```yaml
   Skills:
   - onAttack{auraName=fiery_strikes;onHit=FireStrike;duration=200;charges=5;multiplier=2} @self
