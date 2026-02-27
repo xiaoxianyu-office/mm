@@ -7,6 +7,20 @@ Each condition can have more than one tag, and it is listed under each section f
 [[_TOC_]]
 
 [>> Go to top](#)
+## Damage
+| Condition | Plugin | Description |
+|----------|--------|-------------|
+| [AttackOnCooldown](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/AttackOnCooldown) | MythicCrucible | Checks if the player has an active [attack cooldown](https://minecraft.wiki/w/Damage#Attack_cooldown) |
+
+
+[>> Go to top](#)
+## Item
+| Condition | Plugin | Description |
+|----------|--------|-------------|
+| [AttackOnCooldown](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/AttackOnCooldown) | MythicCrucible | Checks if the player has an active [attack cooldown](https://minecraft.wiki/w/Damage#Attack_cooldown) |
+
+
+[>> Go to top](#)
 ## ItemMatcher
 | Condition | Plugin | Description |
 |----------|--------|-------------|
@@ -206,6 +220,12 @@ These conditions have not been tagged yet.
 | [Yaw](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/yaw) | MythicMobs | Checks the yaw of the target entity against a range. |
 | [Ydiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ydiff) | MythicMobs | Checks the difference in y value (height) between the target entity and the caster. |
 | [Zdiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Zdiff) | MythicMobs | Checks the difference in z value between the target entity and the caster. |
+| [EquipSlot](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/EquipSlot) | MythicCrucible | This condition checks if the player has the Crucible item equipped in a particular slot |
+| [FurnitureDirection](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/FurnitureDirection) | MythicCrucible | Checks if the targeted Furniture entity has a specific direction |
+| [FurnitureState](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/furnitureState) | MythicCrucible | Checks if the target Furniture's [State](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Furniture#furniture-states) is the specified one |
+| [FurnitureType](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/FurnitureType) | MythicCrucible | Checks if the target furniture is of the specified type |
+| [IsFurniture](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/IsFurniture) | MythicCrucible | Checks if the targeted entity is a Furniture or if there is a Furniture entity at the targeted location |
+| [Custommodeldata](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/custommodeldata) | MythicCrucible |  |
 | [Hitbox](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/Hitbox) | ModelEngine | Checks which hitbox was damaged or interacted with for multi-hitbox models |
 | [HitboxIsSubHitbox](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/HitboxIsSubHitbox) | ModelEngine | Checks if a hitbox other than the main hitbox was what triggered the skill |
 | [DrivingModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/DrivingModel) | ModelEngine | Checks if the target entity is the driver of a model |

@@ -19,7 +19,9 @@ duration and can also be used in other mechanics and conditions.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | auraName  | aura, b, buff, buffname, debuff, debuffname, n, name | Optional name, required to use associated mechanics & conditions that reference a specific aura. Given a random UUID if not defined.                            |         |
+| components| component, comp  | The aura components to apply. Better explained later in the page |      | 
 | auratype  | auragroup, group, type, g | The type of the aura. It's similar to its name       |         |
+| tags               | tag     | A list of comma-separated tags that the aura will have. The tags do nothing on their own, but can be used to "mark" the aura and better check against it                    |
 | attachmenttype | attachment, attach | The [Attachment](#attachment-types) to apply to the entity the aura is applied to                             | NONE    |
 | onStartSkill | onStart, os | Meta-Skill executed when the aura first starts                  |<!--type:Metaskill-->|
 | onTickSkill  | onTick, ot  | Meta-Skill executed every [interval] ticks on the affected entity|<!--type:Metaskill-->|
@@ -44,13 +46,27 @@ duration and can also be used in other mechanics and conditions.
 | CancelOnQuit        | coq     | Cancels the aura if the entity with the aura logs out. (Only really applies to players)                                                                            | true    |
 | DoEndSkillOnTerminate | desot, alwaysrunendskill, ares | Whether or not the aura will run onEndSkill when it's removed by auraremove mechanic                                                       | true    |
 
-### ShowBarTimer Attribute
-If set to `true`, additional attributes becomes available
-| Attribute | Aliases   | Description                                                          | Default |
-|-----------|-----------|----------------------------------------------------------------------|---------|
-| bartimerdisplay | bartimertext | The text in the bossbar                                    | auraname |
-| bartimercolor |       | The [Color](/Mobs/BossBar#color) of the bossbar      | RED<!--type:BarColor--> |
-| bartimerstyle |       | The [Style](/Mobs/BossBar#style) of the bossbar    | SOLID<!--type:BarStyle--> |
+## Components
+An aura can define multiple components to use. Each defined component can trigger additional metaskills and apply specific features.  
+
+> [!tip]
+> If you are familiar with mechanics such as [onDamaged](/Skills/Mechanics/onDamaged) or [onAttack](/Skills/Mechanics/onAttack), then this might sound pretty familiar to you. In fact, those mechanics are just an aura with a single specific component applied to them. But by using proper aura components, you will be able to create an aura that has multiple such effects at the same time!
+
+Components have the same syntax of mechanics, and each has its own specific attributes you can define 
+
+```yaml
+  - aura{auraname=MultiAura;duration=200;interval=10;
+      components=[
+        - onattack{onattack=[ - particles{p=flame;a=50;s=1} @self ]}
+        - ondamaged{ondamaged=[ - particles{p=soulflame;a=50;s=1} @self ]}
+        - stat{stat=HEALTH;type=ADDITIVE;value=20}
+      ]}
+```
+
+| Component                                                       | Description                          |
+|-----------------------------------------------------------------|--------------------------------------|
+| [fear](/Skills/Mechanics/AuraComponents/Fear.md)                | Makes the target run around in fear  |
+| [fly](/Skills/Mechanics/AuraComponents/Fly.md)          | Makes the target player have creative flight |
 
 
 ## Attachment Types
@@ -73,6 +89,14 @@ Attachments are optional "objects" that are applied (attached) to the entity the
 | attachmentglowcolor | attachglowcolor | The glow color of the model, if `attachmentGlowing` is set to `true` | |
 | attachmentCulling | attachCulling, culling | Whether the model should be able to be culled by ModelEngine | true | 
 | attachmentoffset | attachoffset | The model's offset from the attached entity, in a `x,y,z,yaw,pitch` format.<br>Can also be written as `x,y,z` or `x,y,z,yaw` | 0,0,0,0,0 |
+
+## ShowBarTimer Attribute
+If set to `true`, additional attributes becomes available
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| bartimerdisplay | bartimertext | The text in the bossbar                                    | auraname |
+| bartimercolor |       | The [Color](/Mobs/BossBar#color) of the bossbar      | RED<!--type:BarColor--> |
+| bartimerstyle |       | The [Style](/Mobs/BossBar#style) of the bossbar    | SOLID<!--type:BarStyle--> |
 
 ## Examples
 ```yaml

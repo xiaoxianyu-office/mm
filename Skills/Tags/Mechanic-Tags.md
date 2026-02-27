@@ -510,7 +510,7 @@ These mechanics have not been tagged yet.
 | [Activatespawner](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/activatespawner) | MythicMobs | Activates a MythicMobs [spawner](Spawners), causing it to spawn mobs |
 | [AddTrade](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/AddTrade) | MythicMobs | Changes the trades of a villager |
 | [Animatearmorstand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/animatearmorstand) | MythicMobs | Makes an armor stand assume a pose over a specified time |
-| [ArmAnimation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ArmAnimation) | MythicMobs | Makes the caster swing their arm |
+| [ArmAnimation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ArmAnimation) | MythicMobs | Makes the casting **player** swing their arm |
 | [SwingOffhand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SwingOffhand) | MythicMobs | Makes the casting player swing their offhand |
 | [Currencygive](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/currencygive) | MythicMobs | Gives money to players |
 | [Currencytake](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/currencytake) | MythicMobs | Takes money from players |
@@ -533,6 +533,7 @@ These mechanics have not been tagged yet.
 | [Potion](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/potion) | MythicMobs | Applies a potion effect to the target entity, which is usually |
 | [Sendresourcepack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/sendresourcepack) | MythicMobs | Sends a resource pack to the targeted player. |
 | [Setcollidable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setcollidable) | MythicMobs | Sets if the target of the mechanic should have a collidable hitbox or not. |
+| [SetCustomMenuButton](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetCustomMenuButton) | MythicMobs | Sets a specific slot of the opened [custom menu](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Custom-Menus) to the specified button |
 | [SetDragonPodium](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetDragonPodium) | MythicMobs | Sets the position of the dragon's podium (aka the point the dragon circles around) at the target location |
 | [SetFaction](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setFaction) | MythicMobs | Sets or changes the target mob's faction. |
 | [SetFlying](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetFlying) | MythicMobs | Sets whether the target player is flying |
@@ -645,6 +646,7 @@ These mechanics have not been tagged yet.
 | [VFXScale](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/VFXScale) | ModelEngine | Scale the VFX. |
 | [VFXSetVis](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/VFXSetVis) | ModelEngine | Set the visibility of the VFX. |
 | [VFXTint](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/VFXTint) | ModelEngine | Color the VFX, or animate from one color to another. |
+| [SetQuickcastBinding](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetQuickcastBinding) | MythicRPG | Force-sets the casting player's quickcast binding if possible |
 | [GiveMythicExperience](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/GiveMythicExperience) | MythicRPG | Gives a player experience |
 | [ModifyResource](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/ModifyResource) | MythicRPG | Adds the specified amount to the target player's given reagent |
 | [QuickcastingActivate](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/QuickcastingActivate) | MythicRPG | Activates quickcasting for the casting player, if possible |
