@@ -65,8 +65,9 @@ Components have the same syntax of mechanics, and each has its own specific attr
 
 | Component                                                       | Description                          |
 |-----------------------------------------------------------------|--------------------------------------|
-| [fear](/Skills/Mechanics/AuraComponents/Fear.md)                | Makes the target run around in fear  |
-| [fly](/Skills/Mechanics/AuraComponents/Fly.md)          | Makes the target player have creative flight |
+| [fear](/Skills/Mechanics/AuraComponents/Fear)                   | Makes the target run around in fear  |
+| [fly](/Skills/Mechanics/AuraComponents/Fly)             | Makes the target player have creative flight |
+| [glow](/Skills/Mechanics/AuraComponents/Glow)                   | Makes the target glow                |
 
 
 ## Attachment Types

@@ -1,17 +1,4 @@
-## Description
-Makes the target entity glow (like with the Glowing potion effect).  
-This mechanic is also an [aura].
-
-> **[Glow API](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)** is required for minecraft version 1.16.
-
-> Please note that this mechanic is not actually giving the *glowing* effect in any form: it will just *look* like it. If you want to check against the presence of this mechanic, you must check against the presence of the applied aura (an [hasaura](/skills/conditions/hasaura) condition con do the trick, for instance)
-
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
-|-----------|-----------|----------------------------------------------------------------------|---------|
-| auraname  | buffname, debuffname | The name of the aura                                      | #glowing|
-| color     | c         | The [color] with which the entity will glow                          | white<!--type:GlowColor--> |
-| audience  |           | The [audience] of the glow effect                                    | nearby<!--type:Audience--> |
+::include{file=/Skills/Mechanics/AuraComponents/Glow.md}
 > This mechanic inherits every attribute of the [Aura] mechanic 
 >> - The `auraname` attribute is **defaulted** at `#glowing`
 >> - The `charges` attribute is **set** at `1` and cannot be modified.  
@@ -43,11 +30,6 @@ Makes the target glow red for 1000 ticks (50 seconds).
 - [x] effect:glow
 - [x] e:glow
 - [x] glow
-
-<!-- LINKS -->
-[audience]: /Skills/Audience
-[color]: #color-attribute
-[aura]: /skills/mechanics/aura
 
 
 <!--TAGS-->
