@@ -1,5 +1,5 @@
 ## Description
-Tests if the target's target is within a certain distance.
+Tests if the target's vanilla target is within a certain distance.
 
 
 ## Attributes
