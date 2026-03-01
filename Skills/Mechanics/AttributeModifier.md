@@ -6,7 +6,7 @@ Adds an attribute modifier to the attributable target
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | attribute | attr      | The [attribute]                      | GENERIC_LUCK<!--type:PaperAttribute--> |
-| operation | op        | The [operation] to perform                                        | ADD_NUMBER<!--type:PaperAttributeOperation--> |
+| operation | op        | The [operation] to perform                                        | ADD_NUMBER<!--type:AttributeModifierOperation--> |
 | name      | modifierName | The name of the modifier                                    | <caster.uuid> |
 | amount    | amt, a    | The modifier of the attribute                                          | 0     |
 | duration  | dur       | The duration of the attribute                                          | 0     |
