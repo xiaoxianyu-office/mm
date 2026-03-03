@@ -59,6 +59,11 @@ dependencies {
 ```
 --------------------------
 
+# Placeholders
+You can find the Placeholders API [here](/API/Placeholders)
+
+---
+
 Examples
 --------
 The MythicMobs API contains numerous events and helper classes to help
