@@ -344,3 +344,14 @@ public class DistancePlaceholder extends NumericEntityScopedPlaceholder {
 ```
 > [!important]
 > the `EntityScopedPlaceholder`'s constructor has a different signature from `GenericPlaceholder`'s. This is the only class inhereting `GenericPlaceholder` which can change the constructor signature! Don't go make new signatures on your own!
+
+# Registering the placeholders
+
+```java
+import io.lumine.mythic.core.skills.CustomComponentRegistry;
+
+...
+
+        this.componentRegistry = new CustomComponentRegistry(this, Lists.newArrayList())
+                .registerCustomComponent(CustomComponentRegistry.MythicComponentType.PLACEHOLDER, "package.path");
+```
