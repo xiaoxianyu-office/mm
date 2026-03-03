@@ -123,7 +123,7 @@ public class ExamplePlaceholder extends GenericPlaceholder<String> implements St
 ```
 
 
-# Fetching Placeholder Arguments
+# Fetching Placeholder Arguments and Attributes
 
 You can, optionally, fetch placeholder arguments (`<example.placeholder.argument1.argument.2>` or `<example.placeholder{argument1=hello;argument2=world}>`) using one of the following methods
 
@@ -133,6 +133,18 @@ You can, optionally, fetch placeholder arguments (`<example.placeholder.argument
 
 > [!warning]
 > When you want to use placeholder arguments, you will have to also set a value for `usedPlaceholderArguments` in the `MythicPlaceholder` annotation
+
+## Fetching an Attribute from the main MythicLineConfig
+If you only need to fetch an attribute from the *main* configuration (and not from the one of a specific placeholder segment) you can just do the following
+```java
+    public NumericEntityScopedPlaceholder(EntityScopedPlaceholderArguments context, int rounding) {
+        super(context);
+        if(context.config == null) {
+            return;
+        }
+        this.rounding = context.config.getInteger(new String[] {"rounding", "round", "r"}, rounding);
+    }
+```
 
 ## Simple Placeholder Argument
 ```java
@@ -277,3 +289,58 @@ public class SkillCooldownPlaceholder extends EntityScopedPlaceholder<Double> im
     }
 }
 ```
+
+# Other Kinds of GenericPlaceholder
+Other than GenericPlaceholder, you can also inherit from
+- `EntityScopedPlaceholder` - automatically prepends caster., target. etc. etc. to the placeholder name
+- `NumericEntityScopedPlaceholder` - extends EntityScopedPlaceholder, while also automatically returning a Double value with a rounding attribute
+
+## EntityScopedPlaceholder
+This class allows you access to two very useful functions
+- `getEntity.get(PlaceholderContext)` returns the AbstractEntity against which to parse the placeholder
+- `getLocation.get(PlaceholderContext)` returns the AbstractLocation against which to parse the placeholder
+
+> [!note]
+> NumericEntityScopedPlaceholder inherits EntityScopedPlaceholder, and you can also use that one
+
+```java
+@MythicPlaceholder(placeholder="stance")
+public class StancePlaceholder extends EntityScopedPlaceholder<String> implements StringPlaceholder {
+
+    public StancePlaceholder(EntityScopedPlaceholderArguments arguments) {
+        super(arguments);
+    }
+
+    @Nullable
+    @Override
+    public String applyToScope(PlaceholderContext placeholderContext) {
+        if (this.getEntity.get(placeholderContext) instanceof ActiveMob am) {
+            return am.getStance();
+        }
+        return null;
+    }
+}
+```
+```java
+@MythicPlaceholder(placeholder="distance")
+public class DistancePlaceholder extends NumericEntityScopedPlaceholder {
+
+
+    public DistancePlaceholder(EntityScopedPlaceholderArguments context) {
+        super(context);
+    }
+
+    @Nullable
+    @Override
+    public Number applyToScopeWithNumericFormatting(PlaceholderContext placeholderContext) {
+        var caster = placeholderContext.meta().getCaster().getEntity().getLocation();
+        var target = getLocation.get(placeholderContext);
+        if (caster.getWorld().equals(target.getWorld())) {
+            return caster.distance(target);
+        }
+        return null;
+    }
+}
+```
+> [!important]
+> the `EntityScopedPlaceholder`'s constructor has a different signature from `GenericPlaceholder`'s. This is the only class inhereting `GenericPlaceholder` which can change the constructor signature! Don't go make new signatures on your own!
