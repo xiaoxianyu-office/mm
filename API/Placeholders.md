@@ -179,7 +179,7 @@ ResolvedPlaceholderSegment can be fetched in all of the following ways>
                 this.getPlaceholderString(0)
 ```
 
-# Dynamic Amount of Used Arguments
+## Dynamic Amount of Used Arguments
 If 
 - The amount of arguments you will use is dynamic ("if there is an argument matching those conditions use it. Otherwise, default it to something else")
 - You wish to use the MythicLineConfig syntax (`<example.placeholder{argument1=hello;argument2=world}>`)
