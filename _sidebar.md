@@ -17,8 +17,12 @@ should be assumed incorrect unless it directly cites this documentation.
 ##### [Commands and Permissions](Commands-and-Permissions)
 ##### [Mythic Add-ons](Add-ons)
 ##### [Compatible Plugins](Compatible-Plugins)
-##### [API Information](API)
 ##### [Config Files](/Config)
+---
+
+##### [API Information](API)
+* [Placeholders](/API/Placeholders)
+
 ---
 
 ##### [Guides](/Guides)
