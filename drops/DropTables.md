@@ -20,6 +20,7 @@ internal_droptablename:
   MaxItems: <amount> #defaults to TotalItems' value
   BonusLuckItems: <multiplier>
   BonusLevelItems: <multiplier>
+  BiasStat: <stat>
 #Conditions of the dropper
   Conditions:
   - condition 1
@@ -68,6 +69,12 @@ internal_droptablename:
 -   Works with Luck attribute, Luck-based enchants/curses, and Luck potion effects
 -   Works like: ```amount = amount + (luck * bonus_luck_items)```
 -   Requires that ```TotalItems```, ```MinItems```, or ```MaxItems``` are set on the table
+
+**BiasStat: \[Stat\]**
+- The [stat](/Stats) to use for this item's Loot Bias
+- Loot Bias increases the rare drop chances of Weighed DropTables
+- A value of 0 would make no changes, a value of 100 would make rare drops roughly twice as likely
+- Defaults to the `LOOT_BIAS` stat
 
 ### Examples
 
