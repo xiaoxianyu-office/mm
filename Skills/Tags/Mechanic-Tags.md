@@ -11,7 +11,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
 | [ClearTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ClearTarget) | MythicMobs | Forces the target of the mechanic to reset its current target |
-| [Fear](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Fear) | MythicMobs | Applies an aura that makes the target run around in fear |
+| [Fear](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Fear) | MythicMobs |  |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FormLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FormLine) | MythicMobs | Makes the casting mob follow a linear path to a location |
@@ -86,7 +86,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Firework](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/firework) | MythicMobs | Creates a firework effect at the target |
 | [Flames](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/flames) | MythicMobs | Creates the flames effect at the location of the targeter |
 | [Geyser](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/geyser) | MythicMobs | Causes a geyser of liquid to shoot out of the ground at the targeted entity or location |
-| [Glow](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/glow) | MythicMobs | Makes the target entity glow (like with the Glowing potion effect) |
+| [Glow](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/glow) | MythicMobs |  |
 | [GuardianBeam](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/GuardianBeam) | MythicMobs | Draws a guardian beam between the origin and the target |
 | [Hide](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hide) | MythicMobs | Hides the caster from the targeted players for a set duration |
 | [Itemspray](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/itemspray) | MythicMobs | Causes an explosion of temporary items at the target location |
@@ -276,12 +276,12 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [BlackScreen](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/BlackScreen) | MythicMobs | Causes the player's screen to black out |
 | [Bouncy](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Bouncy) | MythicMobs | Applies an aura to the target that makes it bouncy |
 | [Cast](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/cast) | MythicMobs | Cast is an [Aura] mechanic similar to |
-| [Fear](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Fear) | MythicMobs | Applies an aura that makes the target run around in fear |
-| [Fly](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fly) | MythicMobs | Makes the player fly, similar to the /fly command |
+| [Fear](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Fear) | MythicMobs |  |
+| [Fly](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fly) | MythicMobs |  |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FormLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FormLine) | MythicMobs | Makes the casting mob follow a linear path to a location |
-| [Glow](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/glow) | MythicMobs | Makes the target entity glow (like with the Glowing potion effect) |
+| [Glow](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/glow) | MythicMobs |  |
 | [Hide](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hide) | MythicMobs | Hides the caster from the targeted players for a set duration |
 | [Onattack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onattack) | MythicMobs | Applies an aura to the target that triggers a skill when they damage |
 | [Onblockbreak](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onblockbreak) | MythicMobs | Applies an aura to the target that triggers a skill when they break a block |

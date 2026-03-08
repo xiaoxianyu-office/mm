@@ -1,13 +1,8 @@
-::include{file=/Skills/Mechanics/AuraComponents/Fly.md}
-> This mechanic inherits every *inheritable* attribute of the [Aura](/Skills/Mechanics/Aura) mechanic
+> [!important]
+> Use The [fly] [aura component] instead
 
-
-## Examples
-```yaml
-  Skills:
-  - fly{duration=100} @trigger ~onInteract
-```
-
+[fly]: /Skills/Mechanics/AuraComponents/fly
+[aura component]: /Skills/Mechanics/aura#components
 
 <!--TAGS-->
-<!--tag:Meta-Mechanic:Aura-->
+<!--tag:Deprecated-->

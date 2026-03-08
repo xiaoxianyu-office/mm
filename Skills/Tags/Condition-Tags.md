@@ -90,7 +90,7 @@ These conditions have not been tagged yet.
 | [Hasgravity](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasgravity) | MythicMobs | If the target has gravity |
 | [HasFreeInventorySlot](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/HasFreeInventorySlot) | MythicMobs | Checks if the evaluated entity has a free inventory slot (at all) |
 | [HasOffhand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/HasOffhand) | MythicMobs | Checks if the target entity has something in the offhand |
-| [Hasowner](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasowner) | MythicMobs | This condition checks if the target mob has an owner |
+| [Hasowner](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasowner) | MythicMobs | This condition checks if the target mob has an owner. |
 | [Hasparent](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasparent) | MythicMobs | This condition checks if the target mob has a parent. |
 | [HasPassenger](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/hasPassenger) | MythicMobs | Checks if the target entity has a passenger |
 | [Haspermission](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/haspermission) | MythicMobs | This condition checks if the target player has a permission. |
@@ -201,9 +201,9 @@ These conditions have not been tagged yet.
 | [Sunny](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/sunny) | MythicMobs | Checks if the weather is sunny in the target world. |
 | [Targetinlineofsight](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/targetinlineofsight) | MythicMobs | Tests if the target entity has line of sight to their target |
 | [Targetnotinlineofsight](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/targetnotinlineofsight) | MythicMobs | Tests if the target doesn't have line of sight to their target. |
-| [Targetnotwithin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/targetnotwithin) | MythicMobs | Tests if the target's target is not within a certain distance. |
+| [Targetnotwithin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/targetnotwithin) | MythicMobs | Tests if the target's vanilla target is not within a certain distance. |
 | [Targets](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/targets) | MythicMobs | Checks if the number of inherited targets from the parent skilltree matches the given range. |
-| [Targetwithin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/targetwithin) | MythicMobs | Tests if the target's target is within a certain distance. |
+| [Targetwithin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/targetwithin) | MythicMobs | Tests if the target's vanilla target is within a certain distance. |
 | [TemplateType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/TemplateType) | MythicMobs | Checks if the target mob extends the specified [Template](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Mobs/Templates) |
 | [Thundering](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/thundering) | MythicMobs | Checks if it's thundering in the target world. |
 | [TriggerBlockType](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/TriggerBlockType) | MythicMobs | Checks against the material type that triggered the skill |
