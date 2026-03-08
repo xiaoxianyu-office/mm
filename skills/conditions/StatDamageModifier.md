@@ -10,7 +10,7 @@ Can be useful to differentiate between positive and negative effects.
 
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| value     | v, amount, a, damage, d, multiplier, m | The minimum multiplier to check for. Defaults to 1. Will return true if the multiplier is bigger than the value to check for.  
+| value     | v, amount, a, damage, d, multiplier, m | The minimum multiplier to check for. Defaults to 1. Will return true if the multiplier is bigger than the value to check for.  | 1 |
 
 
 ## Examples
