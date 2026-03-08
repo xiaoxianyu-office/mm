@@ -1,4 +1,4 @@
-> [!important]
+> [!important] This Mechanic is Deprecated
 > Use The [fly] [aura component] instead
 
 [fly]: /Skills/Mechanics/AuraComponents/fly

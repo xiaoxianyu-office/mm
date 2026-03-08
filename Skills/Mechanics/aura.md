@@ -65,9 +65,12 @@ Components have the same syntax of mechanics, and each has its own specific attr
 
 | Component                                                       | Description                          |
 |-----------------------------------------------------------------|--------------------------------------|
-| [fear](/Skills/Mechanics/AuraComponents/Fear)                   | Makes the target run around in fear  |
-| [fly](/Skills/Mechanics/AuraComponents/Fly)             | Makes the target player have creative flight |
-| [glow](/Skills/Mechanics/AuraComponents/Glow)                   | Makes the target glow                |
+| [Fear](/Skills/Mechanics/AuraComponents/Fear)                   | Makes the target run around in fear  |
+| [Fly](/Skills/Mechanics/AuraComponents/Fly)             | Makes the target player have creative flight |
+| [Glow](/Skills/Mechanics/AuraComponents/Glow)                   | Makes the target glow                |
+| [OnAttack](/Skills/Mechanics/AuraComponents/OnAttack)           | Applies an aura component to the
+target that triggers a skill when they damage
+something. It is also possible to change the damage event itself                |
 
 
 ## Attachment Types

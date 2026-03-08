@@ -12,3 +12,7 @@ Makes the target entity glow (like with the Glowing potion effect).
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | color     | c         | The [color] with which the entity will glow                          | white<!--type:GlowColor--> |
 | audience  |           | The [audience] of the glow effect                                    | nearby<!--type:Audience--> |
+
+
+<!--TAGS-->
+<!--tag:Aura:Component-->

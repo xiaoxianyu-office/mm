@@ -1,4 +1,4 @@
-> [!important]
+> [!important] This Mechanic is Deprecated
 > Use The [glow] [aura component] instead
 
 [glow]: /Skills/Mechanics/AuraComponents/glow
