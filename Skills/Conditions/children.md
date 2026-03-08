@@ -19,7 +19,7 @@ Checks how many children the caster has.
   - children{a=>2} true
 ```
 
-##
+---
 
 This example showcases a parent mob that will summon children until it reaches 3 total, and then will stop until 1 is killed or de-spawned
 
