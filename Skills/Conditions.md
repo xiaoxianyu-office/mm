@@ -339,6 +339,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [SpawnReason](/skills/conditions/SpawnReason)                                 | Entity   | Checks against the spawn reason of the target                                          |
 | [Sprinting](/skills/conditions/Sprinting)                                     | Entity   | Checks if the target **Player** is sprinting                                                  |
 | [Stance](/skills/conditions/stance)                                           | Entity   | Checks the stance of the target mob                                                        |
+| [StatDamageModifier](/skills/conditions/StatDamageModifier)                                           | Meta | Used in stat triggers to check the increased damage (as a multiplier).                                                        |
 | [StringEmpty](/skills/conditions/StringEmpty)                                 | Meta     | Checks if the provided string is empty                                                        |
 | [StringNotEmpty](/skills/conditions/StringNotEmpty)                           | Meta     | Checks if the provided string is not empty                                                    |
 | [StringEquals](/skills/conditions/stringequals)                               | Meta     | Checks if value1 equals value2. Both values can use variables and placeholders.           |
