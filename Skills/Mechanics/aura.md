@@ -71,6 +71,7 @@ Components have the same syntax of mechanics, and each has its own specific attr
 | [OnAttack](/Skills/Mechanics/AuraComponents/OnAttack)           | Applies an aura component to the
 target that triggers a skill when they damage
 something. It is also possible to change the damage event itself                |
+| [OnBlockBreak](/Skills/Mechanics/AuraComponents/OnBlockBreak) | Applies an aura component to the target that triggers a skill when they break a block |
 
 
 ## Attachment Types
