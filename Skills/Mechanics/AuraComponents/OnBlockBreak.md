@@ -60,3 +60,7 @@ AreaMining2:
 
 ## Aliases
 - [x] onbreakblock
+
+<!--TAGS-->
+<!--tag:Event-->
+<!--tag:Block-->

@@ -13,4 +13,5 @@ Applies an [aura](/Skills/Mechanics/Aura) that makes the target run around in fe
 - [x] feared
 
 <!--TAGS-->
-<!--tag:Aura:Component-->
+<!--tag:AI-->
+<!--tag:Movement-->

@@ -72,7 +72,17 @@ Components have the same syntax of mechanics, and each has its own specific attr
 target that triggers a skill when they damage
 something. It is also possible to change the damage event itself                |
 | [OnBlockBreak](/Skills/Mechanics/AuraComponents/OnBlockBreak) | Applies an aura component to the target that triggers a skill when they break a block |
-
+| [OnBlockPlace](/Skills/Mechanics/AuraComponents/OnBlockPlace) | Applies an aura component to the target that triggers a skill when they place a block |
+| [OnChat](/Skills/Mechanics/AuraComponents/OnChat) | Applies an aura component on the target player that triggers a metaskill when they type a chat message |
+| [OnDamaged](/Skills/Mechanics/AuraComponents/OnDamaged)           | Applies an aura component to the
+target that triggers a skill when they take damage from
+something. It is also possible to change the damage event itself                |
+| [OnDeath](/Skills/Mechanics/AuraComponents/OnDeath) | Applies an aura component to the target that triggers a skill when they die |
+| [OnInteract](/Skills/Mechanics/AuraComponents/OnInteract) | Applies an aura component to the target that triggers a skill when they right click an entity/get right clicked by a player |
+| [OnSwing](/Skills/Mechanics/AuraComponents/OnSwing) | Applies an aura component to the target player that triggers a skill when they swing their arm (left click) |
+| [OnShoot](/Skills/Mechanics/AuraComponents/OnShoot) | Applies an aura component to the target that triggers a skill when they shoot a projectile |
+| [Stat](/Skills/Mechanics/AuraComponents/OnShoot) | Applies an aura component to the target that that applies a specific stat to them |
+| [Stun](/Skills/Mechanics/AuraComponents/Stun) | Holds the target in place temporarily |
 
 ## Attachment Types
 Attachments are optional "objects" that are applied (attached) to the entity the aura is applied to

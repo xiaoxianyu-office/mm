@@ -11,7 +11,6 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
 | [ClearTarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ClearTarget) | MythicMobs | Forces the target of the mechanic to reset its current target |
-| [Fear](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Fear) | MythicMobs |  |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FormLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FormLine) | MythicMobs | Makes the casting mob follow a linear path to a location |
@@ -22,7 +21,6 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Setai](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setai) | MythicMobs | Toggles the target AI |
 | [SetPathfindingMalus](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SetPathfindingMalus) | MythicMobs | Sets the pathfinding malus of a mob, influencing how a particular entity evaluates different types of blocks when calculating its path |
 | [Settonguetarget](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/settonguetarget) | MythicMobs | Sets the tongue target for a frog caster to the target entity |
-| [Stun](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/stun) | MythicMobs | Holds the target in place temporarily |
 | [Togglesitting](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/togglesitting) | MythicMobs | Toggles the sitting state for cats, dogs, foxes, and parrots |
 | [Wolfsit](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/wolfsit) | MythicMobs | Sets the sitting state of the target wolf |
 | [GoatRam](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/GoatRam) | MythicMobs | Causes the casting goat mob to ram the targeted entity |
@@ -61,6 +59,13 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 
 
 [>> Go to top](#)
+## Deprecated
+| Mechanic | Plugin | Description |
+|----------|--------|-------------|
+| [Fly](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fly) | MythicMobs |  |
+
+
+[>> Go to top](#)
 ## Disguise
 | Mechanic | Plugin | Description |
 |----------|--------|-------------|
@@ -86,7 +91,6 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Firework](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/firework) | MythicMobs | Creates a firework effect at the target |
 | [Flames](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/flames) | MythicMobs | Creates the flames effect at the location of the targeter |
 | [Geyser](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/geyser) | MythicMobs | Causes a geyser of liquid to shoot out of the ground at the targeted entity or location |
-| [Glow](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/glow) | MythicMobs |  |
 | [GuardianBeam](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/GuardianBeam) | MythicMobs | Draws a guardian beam between the origin and the target |
 | [Hide](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hide) | MythicMobs | Hides the caster from the targeted players for a set duration |
 | [Itemspray](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/itemspray) | MythicMobs | Causes an explosion of temporary items at the target location |
@@ -276,25 +280,12 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [BlackScreen](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/BlackScreen) | MythicMobs | Causes the player's screen to black out |
 | [Bouncy](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Bouncy) | MythicMobs | Applies an aura to the target that makes it bouncy |
 | [Cast](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/cast) | MythicMobs | Cast is an [Aura] mechanic similar to |
-| [Fear](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Fear) | MythicMobs |  |
-| [Fly](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/fly) | MythicMobs |  |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FollowPath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FollowPath) | MythicMobs | Crates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) that causes the holding mob to follow a path |
 | [FormLine](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/FormLine) | MythicMobs | Makes the casting mob follow a linear path to a location |
-| [Glow](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/glow) | MythicMobs |  |
 | [Hide](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hide) | MythicMobs | Hides the caster from the targeted players for a set duration |
-| [Onattack](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onattack) | MythicMobs | Applies an aura to the target that triggers a skill when they damage |
-| [Onblockbreak](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onblockbreak) | MythicMobs | Applies an aura to the target that triggers a skill when they break a block |
-| [Onblockplace](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onblockplace) | MythicMobs | Applies an aura to the target that triggers a skill when they place a block |
 | [OnChat](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/OnChat) | MythicMobs | Applies an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) on the target player that triggers a [metaskill](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Metaskills) when they type a chat message |
-| [Ondamaged](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ondamaged) | MythicMobs | Applies an aura to the target that triggers a skill when they take |
-| [Ondeath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ondeath) | MythicMobs | Applies an aura to the target that triggers a skill when they die |
-| [Oninteract](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/oninteract) | MythicMobs | Applies an aura to a PLAYER that triggers a skill when they interact (right click) while holding an item, or are looking at a block (NOT AIR) that gets outlined (5 block range) |
-| [Onswing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onswing) | MythicMobs | Applies an aura to the target that triggers a skill when they swing (left click) |
-| [Onshoot](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onshoot) | MythicMobs | Applies an aura to the target that triggers a skill when they shoot with a bow |
 | [Orbital](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/orbital) | MythicMobs | The Orbital skill fires a special type of |
-| [StatAura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StatAura) | MythicMobs | Applies an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) to the target that applies a specific [stat](Stats) to them |
-| [Stun](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/stun) | MythicMobs | Holds the target in place temporarily |
 | [Terminable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Terminable) | MythicMobs | Creates an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/aura) that, each tick, checks if a set of conditions is met: If so, the execution of the onStart skill is immediately cancelled |
 | [Onjump](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/onjump) | MythicMobs | Applies an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) to the target that triggers a skill when they jump |
 ### Thenable
@@ -429,13 +420,6 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [Settargetscore](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/settargetscore) | MythicMobs | Modifies the a scoreboard-objective value of the specified targeter(s) |
 | [Addtag](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/addtag) | MythicMobs | Adds a scoreboard tag to the target |
 | [Removetag](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/removetag) | MythicMobs | Removes a scoreboard tag from the target |
-
-
-[>> Go to top](#)
-## Stat
-| Mechanic | Plugin | Description |
-|----------|--------|-------------|
-| [StatAura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/StatAura) | MythicMobs | Applies an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/aura) to the target that applies a specific [stat](Stats) to them |
 
 
 [>> Go to top](#)

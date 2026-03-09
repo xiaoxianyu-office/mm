@@ -28,4 +28,5 @@ something. It is also possible to change the damage event itself.
 - [x] onhit
 
 <!--TAGS-->
-<!--tag:Aura:Component-->
+<!--tag:Event-->
+<!--tag:Damage-->

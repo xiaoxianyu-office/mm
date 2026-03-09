@@ -194,6 +194,7 @@ These conditions have not been tagged yet.
 | [SpawnReason](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/SpawnReason) | MythicMobs | Checks against the spawn reason of the target(s) |
 | [Sprinting](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Sprinting) | MythicMobs | Checks if the target **Player** is sprinting |
 | [Stance](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/stance) | MythicMobs | Checks the stance of the target mob. |
+| [StatDamageModifier](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/StatDamageModifier) | MythicMobs | Used in stat triggers to check the increased damage (as a multiplier). |
 | [StringEmpty](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/StringEmpty) | MythicMobs | Checks if the provided string is empty |
 | [Stringequals](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/stringequals) | MythicMobs | Checks if value1 equals value2 |
 | [StringNotEmpty](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/StringNotEmpty) | MythicMobs | Checks if the provided string is not empty |

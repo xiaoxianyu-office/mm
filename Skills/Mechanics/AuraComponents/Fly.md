@@ -8,4 +8,4 @@ Makes the player fly, similar to the /fly command.
 - [x] flight
 
 <!--TAGS-->
-<!--tag:Aura:Component-->
+<!--tag:Player-Only-->

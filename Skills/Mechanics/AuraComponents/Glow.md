@@ -18,4 +18,4 @@ Makes the target entity glow (like with the Glowing potion effect).
 - [x] effect:glow
 
 <!--TAGS-->
-<!--tag:Aura:Component-->
+<!--tag:Effect-->
