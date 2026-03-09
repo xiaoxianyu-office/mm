@@ -56,3 +56,7 @@ AreaMining2:
   Skills:
   - breakblock{doDrops=true;doEffect=true;useTool=false;forcesync=true} @BlocksInRadius{r=3;ry=3}
 ```
+
+
+## Aliases
+- [x] onbreakblock
