@@ -24,6 +24,8 @@ something. It is also possible to change the damage event itself.
 [aura]: /skills/mechanics/aura
 [Implemented Placeholders]: /Skills/Placeholders#variable-placeholders
 
+## Aliases
+- [x] onhit
 
 <!--TAGS-->
 <!--tag:Aura:Component-->
