@@ -170,7 +170,7 @@ public class ExamplePlaceholder extends GenericPlaceholder<String> implements St
     @Nullable
     @Override
     public String applyWithMetaKeywords(PlaceholderContext placeholderContext) {
-        return this.argument.get(placeholderContext);
+        return this.argument.getOrDefault(placeholderContext, PlaceholderString::get, null);
     }
 }
 ```
@@ -237,23 +237,25 @@ The placeholder name itself can have wildcard arguments. You can use and fetch t
 public class SkillCooldownPlaceholder extends EntityScopedPlaceholder<Double> implements DoublePlaceholder {
 
     private final ResolvedPlaceholderSegment<PlaceholderString> skill;
-    private Types type = Types.SECONDS;
+    private final Types type;
 
     public SkillCooldownPlaceholder(EntityScopedPlaceholderArguments context) {
         super(context);
         this.skill = getPlaceholderString(0, SegmentSource.WILDCARD_ARGS);
-        var cooldownType =
-                this.<String>getResolver()
-                        .mlcGetter(MythicLineConfig::getString)
-                        .mlcAttributeAlias("type")
+        this.type =
+                this.<Types>getResolver()
+                        .mlcGetter(mythicLineConfig ->
+                                mythicLineConfig.getEnum(new String[]{"type"}, Types.class, null)
+                        )
                         .segIndex(0)
-                        .segValueParser((a) -> a)
-                        .segValueChecker((s) -> s.equalsIgnoreCase("millis"))
+                        .segValueParser(s -> Types.valueOf(s.toUpperCase()))
+                        .segValueChecker(s ->
+                                Arrays.stream(Types.values()).anyMatch(b -> b.name().equals(s.toUpperCase()))
+                        )
+                        .defaultValue(Types.SECONDS)
                         .build()
-                        .get();
-        if (cooldownType.getValue() != null && cooldownType.getValue().equalsIgnoreCase("millis")) {
-            this.type = Types.MILLIS;
-        }
+                        .get()
+                        .value();
         initializeMetaKeywords();
     }
 
@@ -344,6 +346,25 @@ public class DistancePlaceholder extends NumericEntityScopedPlaceholder {
 ```
 > [!important]
 > the `EntityScopedPlaceholder`'s constructor has a different signature from `GenericPlaceholder`'s. This is the only class inhereting `GenericPlaceholder` which can change the constructor signature! Don't go make new signatures on your own!
+
+## ScopedVariablePlaceholder
+The placeholder type to inherit if you are fetching a variable's value from somewhere. The variable name will be assumed to be the first extra placeholder argument found
+
+```java
+@MythicPlaceholder(placeholder="caster.var")
+public class CasterVariablePlaceholder extends ScopedVariablePlaceholder {
+
+    public CasterVariablePlaceholder(GenericPlaceholderArguments metaContext) {
+        super(metaContext);
+    }
+
+    @Nullable
+    @Override
+    protected VariableRegistry getRegistry(PlaceholderContext context) {
+        return manager.getPlugin().getVariableManager().getRegistry(VariableScope.CASTER, context.meta(), context.entity());
+    }
+}
+```
 
 # Registering the placeholders
 
