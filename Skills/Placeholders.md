@@ -228,7 +228,7 @@ Some of these variables are only generated and available under some special circ
 ```
 > If you execute this metaskill yourself, this will send you a message saying `1 2 1 2` because the target of every mechanic is the caster, so the affected registry is always the caster's even if a "target" scope is used
 
-### Meta Placeholders
+# Meta Placeholders
 You may now be wondering "Ok, but what is that `Return Type` listen after the placeholder's explanation?"<br>
 That value determines
 - What data the placeholder is returning and, subsequently
@@ -251,9 +251,15 @@ Do you want to remove possible whitespace characters from the edges? then you ca
 # Placeholder Attributes
 Some placeholders can use a set of attributes to further define the output they will give
 
+## All placeholders
+| Attribute | Aliases   | Description                                                               | Default |
+|-----------|-----------|---------------------------------------------------------------------------|---------|
+| default   | def, \|  | The default value returned if the placeholder is unable to fetch its intended value    | UNDEFINED |
+
+## Double Return Type Placeholders
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| rounding  | round, r  | The rounding of the returned float value                             | 2       |
+| rounding  | round, r  | The rounding of the returned double value                            | 2       |
 
 ```yaml
   Skills:
