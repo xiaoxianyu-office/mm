@@ -73,7 +73,7 @@ should be assumed incorrect unless it directly cites this documentation.
     * [Custom Commands](/Skills/Skill-Commands)
   * [Variables](/Skills/Variables)
   * [Placeholders](/Skills/Placeholders)
-    * [Meta Variable Placeholders](/Skills/Placeholders/Meta-Variable-Placeholders)
+    * [Meta Placeholders](/Skills/Placeholders/Meta-Placeholders)
 
 ---
 

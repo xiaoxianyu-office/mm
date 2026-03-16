@@ -202,7 +202,7 @@ Bug Fixes & Optimizations
 
 ## Variables
 - New variable types: `Set`, `List`, `Map`, `Boolean`, `Vector`, `Time`, **Item**, **MetaSkill**
-- [Meta Variable Placeholders](/Skills/Placeholders/meta-variable-placeholders): `<[scope].var.[name].keyword>` with keyword chaining
+- [Meta Variable Placeholders](/Skills/Placeholders/meta-placeholders): `<[scope].var.[name].keyword>` with keyword chaining
 - `Variable.ofType` updated; `PolymorphicPlaceholder` added
 - Mob Variables can set all registered variable types
 - Internals: relocated Default Variable handler for Crucible usage

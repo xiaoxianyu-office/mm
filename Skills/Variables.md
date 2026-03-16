@@ -278,9 +278,9 @@ Variable mechanics are special mechanics that utilize variables. They can target
 # Variable Placeholders
 Variables can be referenced in any MythicMobs mechanics or values that allow placeholders. This is usually done using the format `<scope.var.variable>`.
 
-Variable Placeholders can also use Meta Keywords to change the output of the placeholder, and they can even chain Meta Keywords together to obtain a "compound" effect.
+Variable Placeholders can also use Meta Placeholders to change the output of the placeholder, and they can even chain Meta Placeholders together to obtain a "compound" effect.
 
-Find out more on the [Meta Variable Placeholder Explanation](/Skills/Placeholders/meta-variable-placeholders)
+Find out more on the [Meta Placeholder Explanation](/Skills/Placeholders/meta-placeholders)
 
 # Variable Fallback
 When using placeholder variables, you can also specify a "default" value that will be used if the variable is undefined by using the syntax `<scope.var.variable|default>`.
