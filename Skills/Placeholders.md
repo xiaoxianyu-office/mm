@@ -188,7 +188,7 @@ So, for instance, the `<caster.name>` placeholder will be retuning the name of t
 ## Text Placeholders
 |    Placeholder              | Function                                                                | Return Type  |
 |-----------------------------|-------------------------------------------------------------------------|--------------|
-| <bar{value=0;maxValue=100;length=100;remainingSymbol="|";progressSymbol="|";remainingPrefix=<gray>;progressPrefix=<green>}> | Returns a formatted bar with the specified values | String |
+| <bar{value=0;maxValue=100;length=100;remainingSymbol="#";progressSymbol="#";remainingPrefix=<gray>;progressPrefix=<green>}> | Returns a formatted bar with the specified values | String |
 | <centertext{value=The text to center;pixelwidth=100;singlepixelunicodes= , , , ;bold=false}> | Centers the given text. The attributes are:<br>`value/v/text/line`: The text to center<br>`pixelwidth/width/w/pw`: The total pixels (integer) to account for (will center at half the width)<br>`bold/b`: Whether the provided value is bolded<br>`singlepixelunicodes/spus`: A list of unicodes of 1-3 pixels to use for extra precision. Defaults to `" , , , "` | String |
 
 ## Variable Placeholders
