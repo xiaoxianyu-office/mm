@@ -166,6 +166,8 @@ So, for instance, the `<caster.name>` placeholder will be retuning the name of t
 | <skill.power>               | Returns the [power](/Mobs/Power) of the metaskill in which the placeholder is evaluated | Float |
 | <skill.targets>             | Returns the amount of inherited targets                                 | Integer      |
 | <spawner.pir>               | Returns the amount of players in the spawner's radius                   | Integer      |
+| <char.[String]>             | Returns the given Unicode identifier to the respective character (`<char.007B>` --> `{`)<br> The identifier can optionally be prepended with `\u`<br>This is intended to be used inside of other placeholders or other similar context, where the load order is important.<br>For instance, all special characters will be replaced even before normal placeholders are, so, if you wanted to use those special characters inside of sensitive contexts, you may find that they are replaced *too early*. This can be solved by using this placeholder | String |
+ 
 
 ## Item Placeholders
 |    Placeholder              | Function                                                                | Return Type  |
