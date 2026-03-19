@@ -27,7 +27,7 @@ CatchOnFire:
 
 Intermediate:
 
-Apple on onSwing aura to yourself that shoots out a projectile whenever you swing. It will play the skeleton shoot sound when the projectile spawns, have flame particles and a firecharge while it travels, and will deal between 2-4 MAGIC damage. 
+Apply a onSwing aura to yourself that shoots out a projectile whenever you swing. It will play the skeleton shoot sound when the projectile spawns, have flame particles and a firecharge while it travels, and will deal between 2-4 MAGIC damage. 
 
 ```yaml
 ApplyAura:
