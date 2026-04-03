@@ -108,6 +108,7 @@ should be assumed incorrect unless it directly cites this documentation.
 ---
 
 ##### [Custom Menus](/Custom-Menus)
+##### [Dialogs](/Dialogs)
 
 ---
 
