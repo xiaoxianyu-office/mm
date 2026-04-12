@@ -77,7 +77,7 @@ Components have the same syntax of mechanics, and each has its own specific attr
 | [OnInteract](/Skills/Mechanics/AuraComponents/OnInteract) | Applies an aura component to the target that triggers a skill when they right click an entity/get right clicked by a player |
 | [OnSwing](/Skills/Mechanics/AuraComponents/OnSwing) | Applies an aura component to the target player that triggers a skill when they swing their arm (left click) |
 | [OnShoot](/Skills/Mechanics/AuraComponents/OnShoot) | Applies an aura component to the target that triggers a skill when they shoot a projectile |
-| [Stat](/Skills/Mechanics/AuraComponents/OnShoot) | Applies an aura component to the target that that applies a specific stat to them |
+| [Stat](/Skills/Mechanics/AuraComponents/Stat) | Applies an aura component to the target that that applies a specific stat to them |
 | [Stun](/Skills/Mechanics/AuraComponents/Stun) | Holds the target in place temporarily |
 
 ## Attachment Types
