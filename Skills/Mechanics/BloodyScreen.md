@@ -2,6 +2,8 @@
 Shows the near world border effect.  
 Players must enable Fancy Graphics to see the effect.  
 
+Note: Players with the effect are unable to use the trigger "onUse" in skills.
+
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
