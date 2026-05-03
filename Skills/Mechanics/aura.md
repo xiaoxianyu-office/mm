@@ -19,7 +19,7 @@ duration and can also be used in other mechanics and conditions.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | auraName  | aura, b, buff, buffname, debuff, debuffname, n, name | Optional name, required to use associated mechanics & conditions that reference a specific aura. Given a random UUID if not defined.                            |         |
-| components| component, comp  | The aura components to apply. Better explained later in the page |      | 
+| components| component, comp  | The aura components to apply. Better explained later in the page |<!--type:AuraComponents--> | 
 | auratype  | auragroup, group, type, g | The type of the aura. It's similar to its name       |         |
 | tags               | tag     | A list of comma-separated tags that the aura will have. The tags do nothing on their own, but can be used to "mark" the aura and better check against it                    |
 | attachmenttype | attachment, attach | The [Attachment](#attachment-types) to apply to the entity the aura is applied to                             | NONE    |
