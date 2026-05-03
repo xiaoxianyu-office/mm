@@ -86,8 +86,8 @@ So, for instance, the `<caster.name>` placeholder will be retuning the name of t
 > [!important] {scope}
 > In the following list, every time you see a placeholder that starts with [{scope}], it means that you can use there *any* of the scopes stated above
 
-> [!note] Other words in `{}`
-> When you see other words written in `{}` (such as `{auraname}`), it means that, when using the placeholder, you must write the requested context there (in case of `{auraname}`. you should write the name of the aura you want to check against. `<caster.aura.youraura.stacks>`) 
+> [!note] Other words in `[]`
+> When you see other words written in `[]` (such as `[auraname]`), it means that, when using the placeholder, you must write the requested context there (in case of `[auraname]`. you should write the name of the aura you want to check against. `<caster.aura.youraura.stacks>`) 
 
 | Placeholder                        | Function                                                          | Return Type  |
 |:----------------------------------:|-------------------------------------------------------------------|:------------:|
@@ -137,7 +137,7 @@ So, for instance, the `<caster.name>` placeholder will be retuning the name of t
 | <[{scope}].raytrace{maxdistance=4.5}> | Returns the name of the block being looked at by the entity if within `maxdistance` range (defaults to `4.5`),. If no block is found, `AIR` is returned.|
 | <[{scope}].skill.`{Metaskill}`.cooldown> | Returns the entity's current cooldown of the give skill as a float number | Float   |
 | <[{scope}].stance>                 | Returns the current stance of the entity                          | String       |
-| <[{scope}].stat.{Stat}>            | Returns the value of the specified {Stat} on the entity           | Float        |
+| <[{scope}].stat.[Stat]>            | Returns the value of the specified {Stat} on the entity           | Float        |
 | <[{scope}].threat>                 | Returns the amount of threat the caster has towards the entity    | Double       |
 | <[{scope}].tt.top>                 | Returns the name of the top threat holder of the entity           | String       |
 | <[{scope}].tt.size>                | Returns how many entities are on the entity's threat table        | Integer      |
@@ -174,16 +174,16 @@ So, for instance, the `<caster.name>` placeholder will be retuning the name of t
 |-----------------------------|-------------------------------------------------------------------------|--------------|
 | <item.amount>               | Returns the amount of the item that triggered the skill                 | Integer      |
 | <item.droplevel>            | Returns the drop level of the item, if this is a drop. Otherwise, behaves like `<item.amount>` | Integer      |
-| <mythicitem.{MythicItem}.material>| Returns the material of the specified mythic item                 | String       |
-| <mythicitem.{MythicItem}.model>   | Returns the custommodeldata of the specified mythic item          | String       |
-| <mythicitem.{MythicItem}.display> | Returns the display name of the specified mythic item             | String       |
-| <mythicitem.{MythicItem}.itemstack> | Returns the itemstack of the specified mythic item              | String       |
+| <mythicitem.[MythicItem].material>| Returns the material of the specified mythic item                 | String       |
+| <mythicitem.[MythicItem].model>   | Returns the custommodeldata of the specified mythic item          | String       |
+| <mythicitem.[MythicItem].display> | Returns the display name of the specified mythic item             | String       |
+| <mythicitem.[MythicItem].itemstack> | Returns the itemstack of the specified mythic item              | String       |
 
 ## Score Placeholders
 |    Placeholder              | Function                                                                | Return Type  |
 |-----------------------------|-------------------------------------------------------------------------|--------------|
-| <[{scope}].score.{Objective}>  | Returns the score of the scoped entity from "{Objective}"              | Integer    |
-| <global.score.{Objective}>  | Returns the score of fake player: \_\_GLOBAL\_\_ score from "{Objective}" | Integer    |
+| <[{scope}].score.[Objective]>  | Returns the score of the scoped entity from "{Objective}"              | Integer    |
+| <global.score.[Objective]>  | Returns the score of fake player: \_\_GLOBAL\_\_ score from "{Objective}" | Integer    |
 | <score.objective.player>    | Returns the score of the defined player from "objective"                | Integer      |
 | <score.objective.dummyname> | Returns the score of "dummyname" (fake player) from "objective"         | Integer      |
 
@@ -200,11 +200,11 @@ Some of these variables are only generated and available under some special circ
 
 | Variable Placeholder              | Function                                                                                                                                                                    | Return Type | Generated by                                                                                                               |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------- |
-|   <caster.var.{VariableName}>     | Returns the value of the variable {VariableName} on the variable registry of the caster of the mechanic                                                                     |             |                                                                                                                            |
-|   <target.var.{VariableName}>     | Returns the value of the variable {VariableName} on the variable registry of the target of the mechanic                                                                     |             |                                                                                                                            |
-|    <world.var.{VariableName}>     | Returns the value of the variable {VariableName} on the variable registry of the world the mechanic is used in                                                              |             |                                                                                                                            |
-|   <global.var.{VariableName}>     | Returns the value of the variable {VariableName} on the variable registry of the whole server                                                                               |             |                                                                                                                            |
-|    <skill.var.{VariableName}>     | Returns the value of the variable {VariableName} on the current [skill tree](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/SkillTrees)                        |             |                                                                                                                            |
+|   <caster.var.[VariableName]>     | Returns the value of the variable {VariableName} on the variable registry of the caster of the mechanic                                                                     |             |                                                                                                                            |
+|   <target.var.[VariableName]>     | Returns the value of the variable {VariableName} on the variable registry of the target of the mechanic                                                                     |             |                                                                                                                            |
+|    <world.var.[VariableName]>     | Returns the value of the variable {VariableName} on the variable registry of the world the mechanic is used in                                                              |             |                                                                                                                            |
+|   <global.var.[VariableName]>     | Returns the value of the variable {VariableName} on the variable registry of the whole server                                                                               |             |                                                                                                                            |
+|    <skill.var.[VariableName]>     | Returns the value of the variable {VariableName} on the current [skill tree](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/SkillTrees)                        |             |                                                                                                                            |
 |    <skill.var.damage-amount>      | Returns the amount of damage taken or done                                                                                                                                  |             | [~onDamaged] trigger <br> [~onAttack] trigger <br> [~onBowHit] trigger <br> [onDamaged] mechanic <br> [onAttack] mechanic  |
 |     <skill.var.damage-type>       | Returns the type of damage taken or done, if any                                                                                                                            |             | [~onDamaged] trigger <br> [~onAttack] trigger <br> [~onBowHit] trigger <br> [onDamaged] mechanic <br> [onAttack] mechanic  |
 |     <skill.var.damage-cause>      | Returns the cause of damage taken/done                                                                                                                                      |             | [~onDamaged] trigger <br> [~onAttack] trigger <br> [~onBowHit] trigger <br> [onDamaged] mechanic <br> [onAttack] mechanic  |
