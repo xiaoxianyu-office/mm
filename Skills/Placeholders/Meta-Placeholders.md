@@ -60,7 +60,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 |--------------|-------------|----------|
 | .cache       |             | Given the input value and the keywords used after it, this keyword will cache the result the first time the placeholder is parsed, and directly return the cached value each subsequent parsing |
 | .formatted   | STRING      | Returns a more human-readable version of the input value |
-|. typename    | STRING      | Returns the type name of the previous value's return type | 
+| .typename    | STRING      | Returns the type name of the previous value's return type | 
 | .toInteger | INTEGER | Converts the value to an Integer without doing any specific operation, allowing chaining for Integer meta keywords |
 | .toFloat | FLOAT | Converts the value to a Float without doing any specific operation, allowing chaining for Float meta keywords |
 | .toLong | LONG | Converts the value to a Long without doing any specific operation, allowing chaining for Long meta keywords |
