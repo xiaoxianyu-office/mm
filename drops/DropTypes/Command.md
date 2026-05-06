@@ -16,7 +16,7 @@ A `<drop.amount>` [placeholder](/Skills/Placeholders#misc-placeholders) can inst
 ## Examples
 ```yaml
   Drops:
-  - command{c="say Hello World! I was dropped <drop.amount> times!"} 1-10 1
+  - command{cmd="say Hello World! I was dropped <drop.amount> times!"} 1-10 1
 ```
 
 
