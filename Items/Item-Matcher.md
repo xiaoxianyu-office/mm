@@ -15,9 +15,9 @@ Writing the [Spigot material type](https://hub.spigotmc.org/javadocs/spigot/org/
 ##
 
 Using `#` at the start of an entry will match against
-  - items with that [Item Tag](https://minecraft.wiki/w/Tag#Item_tags_2)
+  - items with that [Item Tag](https://minecraft.wiki/w/Item_tag_(Java_Edition))
     - `#arrows`, `#axes` and so on
-  - blocks with that [Block Tag](https://minecraft.wiki/w/Tag#Block_tags_2)
+  - blocks with that [Block Tag](https://minecraft.wiki/w/Block_tag_(Java_Edition))
     - `#air`, `#animals_spawnable_on` and so on
 
 ##
