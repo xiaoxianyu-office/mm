@@ -22,7 +22,7 @@ This is an additional field on the mob config, `DropOptions`, that allows you to
     ItemVFX:
       Material: STONE
       Model: 0
-    RequiredDamagePercent: 1
+    RequiredDamagePercent: 0.1
     HologramTimeout: 6000
     HologramMessage:
     - ...
@@ -135,7 +135,7 @@ Options regarding the default VFX of the items
 The required amount of damage to inflict on the mob, quantified as percent of its health, in order for the drops to be generated for the specific player.  
 ```yaml
   DropOptions:
-    RequiredDamagePercent: 1
+    RequiredDamagePercent: 0.1
 ```
 
 
