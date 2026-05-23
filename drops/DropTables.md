@@ -85,7 +85,7 @@ snow_loving_zombie:
   Type: zombie
   Health: 100
   Equipment:
-  - snowsword:0
+  - snowsword HAND
   Drops:
   - exp 75-125 1
   - rare_snowsword_droptable
