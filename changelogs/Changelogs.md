@@ -1,5 +1,193 @@
 [[_TOC_]]
 
+# 5.12.1
+
+General
+-------
+- Particle effects are now queued and bundled to greatly reduce packet usage, and particle effects will not respect the client's particle settings (configurable)
+- Added support for using duration units in skill cooldowns and most mechanics with durations and intervals by adding a suffix (e.g. `5s` = 5 seconds, `20t` = 20 ticks)
+```yaml
+Cooldown: 5t
+Cooldown: 1m
+
+- potion{type=POISON;duration=10s}
+```
+
+Stats
+-----
+
+### NEW: MUTATOR Stats
+- Added the `MUTATOR` custom stat type for applying a stat value to other stats through components, formulas, and operations
+
+```yaml
+AGILITY:
+  Enabled: false
+  Type: MUTATOR
+  AlwaysActive: true
+  Display: 'Agility'
+  PlayerBaseValue: 0
+  Components:
+    - Stat: BONUS_DAMAGE
+      Formula: 'v / 5'
+      Operation: ADDITIVE
+    - Stat: CRITICAL_STRIKE_CHANCE
+      Formula: 'v / 1000'
+      Operation: ADDITIVE
+```
+
+Command Skills
+--------------
+
+### Command Parent
+- Added `Command.Parent` to command skills to allow for creation of sub-commands.
+
+```yaml
+ParentCommandSkill:
+  Command:
+    Id: parent
+
+ChildCommandSkill:
+  Command:
+    Id: child
+    Parent: ParentCommandSkill
+```
+
+Mechanics
+---------
+
+### OnAttack Aura Component
+- Added trigger condition support to the `onattack` aura component
+
+```yaml
+- aura{auraname=Counter;duration=200;components=[ - onattack{onattack=CounterSkill} ]} @self ?targetwithin{d=5}
+```
+
+### ToggleSitting
+- Added the `togglesitting` mechanic for controlling pet sitting
+
+```yaml
+- togglesitting{state=toggle} @target
+- sit{state=true} @target
+```
+
+Conditions
+----------
+
+### NEW: canBeHitByProjectile
+- Added the `canBeHitByProjectile` condition
+- Custom MEG hitboxes are skipped through the API
+
+```yaml
+- canBeHitByProjectile
+- hitByProjectile
+```
+
+### NEW: petsitting
+- Added the `petsitting` condition for checking whether a pet is sitting
+
+```yaml
+- petsitting
+- petsit
+```
+
+Triggers
+--------
+
+### NEW: onEffectRemove
+- Added the `onEffectRemove` trigger
+
+```yaml
+Skills:
+  - skill{s=EffectRemovedSkill} ~onEffectRemove
+```
+
+Items
+-----
+
+### CustomModelData Component
+- Added support for typed `CustomModelData` component values
+- Supports `float`, `string`, `boolean`, and `color` data
+- Supports scalar, list, and map-list formats
+- Requires Paper 1.21.4+
+
+```yaml
+CustomModelData:
+  - float/1,2,3
+  - string/example_model
+  - boolean/true
+  - color/#ff8800
+```
+
+API
+---
+- Exposed stat registration methods for addons
+- Added `MythicStatsRegistrationEvent`
+- Added `PlaceholderDuration`
+- Added experimental API for packet item lore
+
+Bug Fixes / Other
+-----------------
+- `incombat` can now check players tracked by the combat-tag tracker
+- Improved Folia handling for `RandomSpawnGenerator`
+- Improved Folia handling for `SetTextDisplayMechanic` entity writes
+- Improved caster scheduling for virtual casters
+- Optimized MythicMenu rendering by skipping per-render placeholder resolution for static placeholders
+- Optimized text pixel length calculation
+- Cached regex metakeyword patterns
+- Optimized boss bar updates
+- Optimized single-token placeholder parsing
+- Optimized random location target selection
+- Optimized final damage calculation
+- Optimized spawner clock ticking
+- Optimized target condition evaluation allocations
+- Optimized random generation in `ChanceCondition`
+- Optimized drop hot paths
+- Optimized `EntitiesNearbyTargeter`
+- Optimized `PlaceholderInt` parsing
+- Optimized `IEntitySelector` player filtering
+- Optimized variable string joins
+- Optimized `MapVariable`, `MapSerializer`, and `AuraRegistry` loops
+- Fixed `blockwave` to use the existing `BlockState` when no material is specified
+- Fixed `setDisplayEntityItem` nt supporting block display entities
+- Fixed some issues with default stat base values in `stats.yml`
+- Fixed `sortNum` placeholder output for list variables
+- Fixed `sortNum` placeholder output for set variables
+- Fixed documented defaults not being honored in `playersInRadius`
+- Fixed MiniMessage tags not parsing in custom kill messages
+- Fixed default flash particles not being colored white
+- Fixed overlapping `blockmask` mechanics with durations so newer masks keep their duration when older masks expire
+- Fixed `RandomSpawner` `REPLACE` recursion on Mythic-initiated spawns
+- Fixed `hasitem` defaulting amount to the condition variable instead of `>0`
+- Fixed nameplate brightness
+- Fixed stat executor loading order
+- Fixed parent command handling for command skills
+- Fixed `stats.yml` extraction timing so addons can register stats early
+- Fixed `particlelineequation` ignoring `eqy` and `eqz`
+- Fixed `teleport` losing `preservepitch` and `preserveyaw` during safe spawn lookup
+- Fixed `particlesphere` applying `yoffset` twice
+- Fixed `trail` particle location key using the source instead of the target
+- Fixed `aura{cancelOnDeath=false}` persisting through player respawn
+- Fixed `MythicMobDeathEvent` and drops being missed during async skill clock races
+- Fixed 1.21.1 compatibility issues
+- Fixed inverted `BukkitAttribute.values()` filtering
+- Fixed `onTick` auras continuing after expiry
+- Fixed negative-duration aura loops
+- Fixed nested entity targeters in `location=` slots not applying sort, conditions, or limit
+- Fixed `onattack` skill variables for `damage-amount`
+- Fixed `onattack` skill variables for `damage-type`
+- Fixed `onattack` skill variables for `damage-cause`
+- Fixed `MobsNearOrigin` throwing an NPE when type is missing
+- Fixed `MobsNearOrigin` to log a config error when type is missing
+- Fixed `pickupitem` leaving fancy-drop PDC on picked-up items
+- Fixed `giveitem` filling decorated pots instead of dropping items beside them
+- Fixed summoning issues
+- Fixed durations returning excessive precision
+- Fixed math formulas returning excessive precision
+- Fixed `damage{}` not respecting `triggerSkills`
+- Fixed `stun` allowing players to teleport upward
+- Fixed `stun` restoring `g=` as an aura group option
+- Fixed `-1` not giving infinite duration on potions
+
 # 5.12.0
 
 General
