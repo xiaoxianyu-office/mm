@@ -76,6 +76,7 @@ Components have the same syntax of mechanics, and each has its own specific attr
 | [OnDamaged](/Skills/Mechanics/AuraComponents/OnDamaged) | Applies an aura component to the target that triggers a skill when they take damage from something. It is also possible to change the damage event itself          |
 | [OnDeath](/Skills/Mechanics/AuraComponents/OnDeath) | Applies an aura component to the target that triggers a skill when they die |
 | [OnInteract](/Skills/Mechanics/AuraComponents/OnInteract) | Applies an aura component to the target that triggers a skill when they right click an entity/get right clicked by a player |
+| [OnInput](/Skills/Mechanics/AuraComponents/OnInput) | Applies an aura component to the target player that triggers a skill and sets variables based on their used inputs |
 | [OnSwing](/Skills/Mechanics/AuraComponents/OnSwing) | Applies an aura component to the target player that triggers a skill when they swing their arm (left click) |
 | [OnShoot](/Skills/Mechanics/AuraComponents/OnShoot) | Applies an aura component to the target that triggers a skill when they shoot a projectile |
 | [Stat](/Skills/Mechanics/AuraComponents/Stat) | Applies an aura component to the target that that applies a specific stat to them |
