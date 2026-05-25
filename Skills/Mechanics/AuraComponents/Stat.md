@@ -23,6 +23,7 @@ The following aura will double the critical strike chance of the caster for 5 se
 
 ## Aliases
 - [x] stataura
+- [x] stats
 
 
 <!-- LINKS -->
