@@ -65,6 +65,7 @@ Components have the same syntax of mechanics, and each has its own specific attr
 
 | Component                                                       | Description                          |
 |-----------------------------------------------------------------|--------------------------------------|
+| [ChunkLoad](/Skills/Mechanics/AuraComponents/ChunkLoad) | Keeps the chunk the target is in loaded for the duration of the aura  |
 | [Fear](/Skills/Mechanics/AuraComponents/Fear)                   | Makes the target run around in fear  |
 | [Fly](/Skills/Mechanics/AuraComponents/Fly)             | Makes the target player have creative flight |
 | [Glow](/Skills/Mechanics/AuraComponents/Glow)                   | Makes the target glow                |
