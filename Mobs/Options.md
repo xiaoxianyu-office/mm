@@ -107,6 +107,13 @@ Allows non-despawning mobs to heal once the chunk they are in gets reloaded. Def
     HealOnReload: false
 ```
 
+#### Hidden
+If true the mob will not show up in commands or menus, useful for template mobs. Defaults to `false`
+```yml
+  Options:
+    Hidden: true
+```
+
 
 #### Invincible
 Makes the mob completely invincible to all types of damage. This option cannot be changed by command skills.
