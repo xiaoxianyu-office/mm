@@ -79,6 +79,7 @@ Components have the same syntax of mechanics, and each has its own specific attr
 | [OnInput](/Skills/Mechanics/AuraComponents/OnInput) | Applies an aura component to the target player that triggers a skill and sets variables based on their used inputs |
 | [OnSwing](/Skills/Mechanics/AuraComponents/OnSwing) | Applies an aura component to the target player that triggers a skill when they swing their arm (left click) |
 | [OnShoot](/Skills/Mechanics/AuraComponents/OnShoot) | Applies an aura component to the target that triggers a skill when they shoot a projectile |
+| [ProjectileRebound](/Skills/Mechanics/AuraComponents/ProjectileRebound) | Rebounds incoming projectiles away from the target, optionally back at whoever fired them |
 | [Stat](/Skills/Mechanics/AuraComponents/Stat) | Applies an aura component to the target that that applies a specific stat to them |
 | [Stun](/Skills/Mechanics/AuraComponents/Stun) | Holds the target in place temporarily |
 

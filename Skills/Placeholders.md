@@ -99,6 +99,9 @@ So, for instance, the `<caster.name>` placeholder will be retuning the name of t
 | <[{scope}].block.type>             | Returns the location block's type                                 | String       |
 | <[{scope}].children>               | Returns a list of the entity children's uuids                     | List         |
 | <[{scope}].children.size>          | Returns the amount of children the entity has                     | Integer      |
+| <[{scope}].cinematic.active>        | Returns whether the player is in an active cinematic camera (`true`/`false`)| String        |
+| <[{scope}].cinematic.frame>         | Returns the current frame of the active cinematic, or `-1` if none | Integer       |
+| <[{scope}].cinematic.progress>      | Returns the progress of the active cinematic from `0.0` to `1.0`, or `0` if none| Double        |
 | <[{scope}].damage>                 | Returns the entity's Attack_Damage attribute value                | Double       |
 | <[{scope}].display>                | Returns the entity's displayed name                               | String       |
 | <[{scope}].distance>               | Returns the distance between the entity and the caster            | Double       |
@@ -109,6 +112,7 @@ So, for instance, the `<caster.name>` placeholder will be retuning the name of t
 | <[{scope}].item.model>             | For Item entities, returns the item's custom model data. Otherwise, returns 0 | Integer |
 | <[{scope}].item.itemstack.`{slot}`> | Returns the itemstack of the item in the entity's `slot`         | String       |
 | <[{scope}].item.type>              | For Item entities, returns the item's type. Otherwise, returns AIR| String       |
+| <[{scope}].itemcount.`{material/item}`>| Returns how many of the given vanilla material or Mythic item id the player has in their inventory| Integer       |
 | <[{scope}].entity_type>            | Returns the type of the entity                                    | String       |
 | <[{scope}].faction>                | Returns entity's faction                                          | String       |
 | <[{scope}].fovoffset{rotation=0;absolute=true}> | Returns the angular offset (in degrees) between the direction the caster is looking and the direction from the caster to the target entity. This offset can be used to determine how far the target is from the caster's center of view | Double     |
@@ -139,12 +143,15 @@ So, for instance, the `<caster.name>` placeholder will be retuning the name of t
 | <[{scope}].stance>                 | Returns the current stance of the entity                          | String       |
 | <[{scope}].stat.[Stat]>            | Returns the value of the specified {Stat} on the entity           | Float        |
 | <[{scope}].threat>                 | Returns the amount of threat the caster has towards the entity    | Double       |
+| <[{scope}].throwstrength.`{component}`>| Returns the throw strength in a throw context. `{component}`: `horizontal`, `vertical`, or `total` (default)| Double        |
 | <[{scope}].tt.top>                 | Returns the name of the top threat holder of the entity           | String       |
 | <[{scope}].tt.size>                | Returns how many entities are on the entity's threat table        | Integer      |
 | <[{scope}].type>                   | Returns the internal id of a MythicMob or the entity name otherwise | String     |
 | <[{scope}].type.name>              | Returns the display name of a MythicMob or the entity name otherwise | String    |
 | <[{scope}].uuid>                   | Returns the UUID of the entity                                    | String       |
 | <[{scope}].velocity>               | Returns the entity's velocity                                     | Double       |
+| <[{scope}].velocity.global.`{component}`>| Returns the entity's velocity in world space. `{component}`: `x`, `y`, `z`, or `total` (default)| Double        |
+| <[{scope}].velocity.relative.`{component}`>| Returns the entity's velocity in its local frame. `{component}`: `x`, `y`, `z`, or `total` (default)| Double        |
 | <[{scope}].ydiff>                  | Returns the difference in the y value between the caster and the location | Double |
 
 [{scope}]: /Skills/Placeholders/Scoped-Placeholder-Table
@@ -155,14 +162,19 @@ So, for instance, the `<caster.name>` placeholder will be retuning the name of t
 | <drop.amount>               | Returns the amount dropped while used in specific drop types            |              |
 | <drops.xp>                  | Returns the xp dropped via specific drop types                          |              |
 | <drops.money>               | Returns the money dropped through the vault plug-in                     |              |
+| <echo.[text]>               | Returns the given text after the placeholders inside it are parsed       | String       |
 | <random.#to#>               | Returns a random integer in the specified range                         |              |
 | <random.float.#to#>         | Returns a random float number in the specified range                    |              |
+| <random.float.rounded.#to#> | Returns a random float in the specified range, rounded to 2 decimals     | String       |
 | <random.uuid>               | Returns a random uuid                                                   | String       |
 | <utils.epoch>               | Returns the current epoch                                               | Long         |
 | <utils.epoch.seconds>       | Returns the current epoch                                               | Long         |
 | <utils.epoch.timestamp>     | Returns the amount of milliseconds elapsed since the epoch              | Long         |
 | <utils.epoch.millis>        | Returns the amount of milliseconds of the current epoch                 | Long         |
 | <utils.epoch.ticks>         | Returns the current epoch, converted in ticks. Assumes that the server always maintains 20 ticks per second. Accounts for milliseconds. <br>While unorthodox, since time within Minecraft (and by extension Mythic) is measured in ticks, this may be of some help streamlining some processes where converting the normal epoch time to accomodate for ticks may be burdensome if done at scale | Long         |
+| <skill.[skill].charges>     | Returns the available charges of the given skill for the caster          | Integer      |
+| <skill.[skill].maxcharges>  | Returns the maximum charges configured for the given skill               | Integer      |
+| <skill.[skill].overflowcharges>| Returns the overflow charges of the given skill for the caster        | Integer      |
 | <skill.power>               | Returns the [power](/Mobs/Power) of the metaskill in which the placeholder is evaluated | Float |
 | <skill.targets>             | Returns the amount of inherited targets                                 | Integer      |
 | <spawner.pir>               | Returns the amount of players in the spawner's radius                   | Integer      |
@@ -200,6 +212,7 @@ Some of these variables are only generated and available under some special circ
 
 | Variable Placeholder              | Function                                                                                                                                                                    | Return Type | Generated by                                                                                                               |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------- |
+| <dialog.[key]>                     | Returns the value submitted for the [key] input of an open dialog (shorthand for <skill.var.dialog.[key]>). <dialog.button> returns the clicked button index                 | String       | [showDialog](/Skills/Mechanics/ShowDialog) mechanic                                                                         |
 |   <caster.var.[VariableName]>     | Returns the value of the variable {VariableName} on the variable registry of the caster of the mechanic                                                                     |             |                                                                                                                            |
 |   <target.var.[VariableName]>     | Returns the value of the variable {VariableName} on the variable registry of the target of the mechanic                                                                     |             |                                                                                                                            |
 |    <world.var.[VariableName]>     | Returns the value of the variable {VariableName} on the variable registry of the world the mechanic is used in                                                              |             |                                                                                                                            |

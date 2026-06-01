@@ -225,6 +225,7 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .values | LIST | List of all values |
 | .get{key=[String]} | STRING | Value associated with the specified `key` |
 | .{key} | STRING | Value associated with the specified `key` |
+| .sortByValue | LIST | List of keys sorted by their associated values (numerically if every value is a number, otherwise alphabetically) |
 > [Go To Explanation>>](#)  
 
 # Time Meta Keywords
