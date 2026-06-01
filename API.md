@@ -112,7 +112,7 @@ Collection<ActiveMob> activeMobs = MythicBukkit.inst().getMobManager().getActive
 
 Registering Custom Components
 -----------------------------
-Addons can register their own mechanics, conditions, targeters, and placeholders using the same annotation-based system Mythic uses internally, plus custom triggers. Add MythicMobs to `depend` (or `softdepend`) in your `plugin.yml` first.
+Addons can register their own mechanics, conditions, and targeters using the same annotation-based system Mythic uses internally, plus custom triggers. Add MythicMobs to `depend` (or `softdepend`) in your `plugin.yml` first. For placeholders, see the dedicated [Placeholders API](/API/Placeholders) page.
 
 ### Custom Mechanics
 A mechanic is a class annotated with `@MythicMechanic`, extending `SkillMechanic`, and implementing one of the dispatch interfaces:
@@ -184,17 +184,6 @@ new CustomComponentRegistry(this, "com.example.myplugin.mythic")
         .registerCustomComponent(CustomComponentRegistry.MythicComponentType.MECHANIC,
                 "com.example.myplugin.mythic.mechanics");
 ```
-
-### Custom Placeholders
-Placeholders use the `@MythicPlaceholder` annotation and are registered with the `PLACEHOLDER` component type. They are **not** picked up by the base package scan, so register them explicitly:
-
-```java
-new CustomComponentRegistry(this, "com.example.myplugin.mythic")
-        .registerCustomComponent(CustomComponentRegistry.MythicComponentType.PLACEHOLDER,
-                "com.example.myplugin.mythic.placeholders");
-```
-
-See the full [Placeholders API](/API/Placeholders) page for how to write a placeholder class, fetch arguments, and use the scoped and wildcard variants.
 
 ### Custom Triggers
 A trigger is a `SkillTrigger` created with a name and optional aliases, then registered:
