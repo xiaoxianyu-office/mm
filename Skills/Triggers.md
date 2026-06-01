@@ -105,6 +105,8 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onProjectileHit](/Skills/Triggers/onProjectileHit) | When a mob's special projectile hits an entity   |
 | [onProjectileLand](/Skills/Triggers/onProjectileLand) | When a mob's special projectile hits a block   |
 | [onDismounted](/Skills/Triggers/onDismounted) | When the mob is dismounted from |
+| [onCinematicStart](/Skills/Triggers/onCinematicStart) | When a cinematic camera path begins playing on a player |
+| [onCinematicEnd](/Skills/Triggers/onCinematicEnd) | When a cinematic camera path ends on a player (finish, cancel, quit, or death) |
 
 <!-- LINKS -->
 [ThreatTables]: /Mobs/ThreatTables

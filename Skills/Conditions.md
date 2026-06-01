@@ -227,6 +227,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [HasAuraStacks](/skills/conditions/hasaurastacks)                             | Entity   | Tests if the target has the given range of stacks from an aura                               |
 | [HasAuraType](/skills/conditions/HasAuraType)                                 | Entity   | Checks if the target entity has the given aura type                                           |
 | [HasCurrency](/skills/conditions/hascurrency)                                 | Entity   | If the target has the given amount of vault currency                                          |
+| [HasDialogOpen](/skills/conditions/HasDialogOpen)                             | Entity   | Checks if the target player has a dialog open                                                 |
 | [HasEnchantment](/skills/conditions/HasEnchantment)                           | Entity   | Checks if the target entity's equipped item has an enchantment                                |
 | [HasFreeInventorySlot](/skills/conditions/HasFreeInventorySlot)               | Entity   | Checks if the evaluated entity has a free inventory slot                                      |
 | [HasGravity](/skills/conditions/hasgravity)                                   | Entity   | Tests if the target mob has gravity                                                          |
@@ -251,12 +252,14 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [IsInSurvivalMode](/skills/conditions/IsInSurvivalMode)                       | Entity   | Checks if the target player is in survival mode                                               |
 | [Inside](/skills/conditions/inside)                                           | Location | Checks if the target has a block over their head                                              |
 | [isBaby](/skills/conditions/isbaby)                                           | Entity   | Checks if the target entity is a baby                                                         |
+| [isCancelled](/skills/conditions/IsCancelled)                                 | Meta     | Checks if the triggering event is cancelled                                                   |
 | [isCaster](/skills/conditions/iscaster)                                       | Entity   | Checks if the target is the caster                                                            |
 | [isChild](/skills/conditions/ischild)                                         | Entity   | Checks if the target is a child of the caster                                                 |
 | [isClimbing](/skills/conditions/isClimbing)                                   | Entity   | Checks if the target entity is climbing                                                       |
 | [IsCreeperPrimed](/skills/conditions/IsCreeperPrimed)                         | Entity   | Checks if the target creeper is primed to explode                                             |
 | [isFlying](/skills/conditions/isflying)                                       | Entity   | Checks if the target player is flying                                                         |
 | [isFrozen](/skills/conditions/isfrozen)                                       | Entity   | Checks if the target entity is frozen                                                         |
+| [isInCinematic](/skills/conditions/IsInCinematic)                             | Entity   | Checks if the target player is in an active cinematic                                         |
 | [isLeashed](/skills/conditions/isleashed)                                     | Entity   | Checks if the target has been leashed                                                         |
 | [isLiving](/skills/conditions/isliving)                                       | Entity   | Checks if the target is a living entity                                                       |
 | [isMonster](/skills/conditions/ismonster)                                     | Entity   | Checks if the target is a monster                                                             |
