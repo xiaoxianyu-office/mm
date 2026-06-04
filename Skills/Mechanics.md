@@ -18,7 +18,7 @@ Links to mechanics added by addon plugins. Any mechanics from these links will n
 
 - [ModelEngine 4](/../../../model-engine-4/-/wikis/Skills/Mechanics)
 - [Mythic Crucible](/../../../mythiccrucible/-/wikis/Skills/Mechanics)
-- [Mythic Enchantments](/../../../mythicenchants/-/wikis/Skills/Mechanics)
+- [Mythic Enchantments](/../../../mythicenchants/-/wikis/Mechanics/Mechanics)
 - [MCPets](https://mcpets.gitbook.io/mcpets/tutorials/mythicmobs-features#mechanics)
 
 
