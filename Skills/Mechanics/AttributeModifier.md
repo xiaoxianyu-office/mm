@@ -1,5 +1,6 @@
 ## Description
-Adds an attribute modifier to the attributable target
+Adds an attribute modifier to the attributable target.
+Not supposed to be used on players.
 
 
 ## Attributes
