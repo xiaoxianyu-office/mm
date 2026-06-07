@@ -5,6 +5,8 @@ Supported Plugins:
 - GriefPrevention
 - Lands
 - CrashClaim
+- PlotSquared
+- Residence
 
 
 ## Attributes
