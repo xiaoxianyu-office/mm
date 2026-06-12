@@ -34,6 +34,23 @@ Configuration:
     # spawned by a different plugin, for plugins that don't support Mythic
     CompatibilityMode: false
 
+  Packet:
+    # Wrap multi-particle emissions in ClientboundBundlePacket for atomic client-side render.
+    ParticleBundleEnabled: true
+    # Max particle packets per bundle. Clamped to [1, 4096]. Ignored if disabled.
+    ParticleBundleSize: 512
+    # Accumulate all particle packets emitted in a tick into one bundle per player, flushed at tick end.
+    # Supersedes per-call bundling when on. Disable to revert to per-call bundles.
+    ParticleTickBatchEnabled: true
+    # Respect each player's vanilla particle setting (All / Decreased / Minimal).
+    # When false (default) particles always send regardless of client preference.
+    RespectClientParticleVisibility: false
+    # % of particles each level actually receives when the above is true.
+    ClientParticleVisibility:
+      All: 100
+      Decreased: 50
+      Minimal: 10
+
   #================================================================================
   # Features - Set to false to totally disable a feature
   #================================================================================

@@ -79,5 +79,8 @@ These auracomponents have not been tagged yet.
 
 | Auracomponent | Plugin | Description |
 |----------|--------|-------------|
+| [ChunkLoad](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/AuraComponents/ChunkLoad) | MythicMobs | Applies an [aura] component to the target entity that keeps the chunk(s) containing the aura holder force-loaded for the duration of the aura |
 | [OnInteract](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/AuraComponents/OnInteract) | MythicMobs | Applies an aura component to a PLAYER that triggers a skill when they interact (right click) while holding an item, or are looking at a block (NOT AIR) that gets outlined (5 block range). |
+| [OnInput](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/AuraComponents/OnInput) | MythicMobs | Triggers a skill on player input |
+| [ProjectileRebound](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/AuraComponents/ProjectileRebound) | MythicMobs | Applies an [aura](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/Aura) that rebounds incoming projectiles away from the aura holder, optionally sending them back at whoever fired them. |
 

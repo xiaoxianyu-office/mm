@@ -129,7 +129,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 | [ClearExperienceLevels](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ClearExperienceLevels) | MythicMobs | Clears the experience levels for the targeted players |
 | [ClearExperience](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ClearExperience) | MythicMobs | Clears experience for the target player |
 | [GiveExperienceLevels](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/GiveExperienceLevels) | MythicMobs | Gives experience levels to the targeted players |
-| [TakeExperienceLevels](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/TakeExperienceLevels) | MythicMobs | Takes experience levels to the targeted players |
+| [TakeExperienceLevels](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/TakeExperienceLevels) | MythicMobs | Takes experience levels from the targeted players |
 
 
 [>> Go to top](#)
@@ -442,6 +442,7 @@ Each mechanic can have more than one tag, and it is listed under each section fo
 |----------|--------|-------------|
 | [Variableadd](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/variableadd) | MythicMobs | Adds an amount to a [variable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/variables) on the specified |
 | [Variablemath](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/variablemath) | MythicMobs | Sets a variable to the result of a math equation, where 'x' is the |
+| [VariableMove](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/VariableMove) | MythicMobs | Moves an already created variable across names and/or registries |
 | [Setvariablelocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setvariablelocation) | MythicMobs | Sets a value of type string |
 | [Setvariable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/setvariable) | MythicMobs | Sets a [variable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/variables) |
 | [Variablesubtract](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/variablesubtract) | MythicMobs | Subtracts an amount to a [variable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/skills/variables) on the specified |
@@ -488,6 +489,8 @@ These mechanics have not been tagged yet.
 | [Animatearmorstand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/animatearmorstand) | MythicMobs | Makes an armor stand assume a pose over a specified time |
 | [ArmAnimation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ArmAnimation) | MythicMobs | Makes the casting **player** swing their arm |
 | [SwingOffhand](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/SwingOffhand) | MythicMobs | Makes the casting player swing their offhand |
+| [CinematicCamera](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/CinematicCamera) | MythicMobs | Plays a smooth cinematic camera path for the target player, moving their view along a series of keyframes |
+| [CinematicCancel](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/CinematicCancel) | MythicMobs | Interrupts an active [cinematicCamera](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/CinematicCamera) for the target player, immediately returning their camera and control |
 | [Currencygive](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/currencygive) | MythicMobs | Gives money to players |
 | [Currencytake](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/currencytake) | MythicMobs | Takes money from players |
 | [DetermineCondition](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/DetermineCondition) | MythicMobs | Determines the outcome of a Metaskill that is used as a Condition via the [MetaskillCondition](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/MetaskillCondition) condition |
@@ -501,6 +504,8 @@ These mechanics have not been tagged yet.
 | [Freeze](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/freeze) | MythicMobs | Sets the ticks frozen in powdered snow |
 | [Hologram](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/hologram) | MythicMobs | Spawns a hologram at a target location. |
 | [Ignite](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ignite) | MythicMobs | Sets the targeted entity on fire. |
+| [OnKeyPress](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/OnKeyPress) | MythicMobs | Applies an aura to the targeted entity that triggers a skill when the player presses a specific key. |
+| [OnKeyRelease](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/OnKeyRelease) | MythicMobs | Applies an aura to the targeted entity that triggers a skill when the player releases a specific key. |
 | [OpenCustomMenu](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/OpenCustomMenu) | MythicMobs | Opens a [custom menu](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Custom-Menus) |
 | [OpenTrades](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/OpenTrades) | MythicMobs | Opens the trades of the casting villager to the target player |
 | [Oxygen](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/oxygen) | MythicMobs | Gives the target player an amount of oxygen. |
@@ -535,7 +540,8 @@ These mechanics have not been tagged yet.
 | [Shieldbreak](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shieldbreak) | MythicMobs | Breaks the target player's shield block if they are blocking |
 | [Shield](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shield) | MythicMobs | Adds absorption hearts |
 | [Shieldpercent](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/shieldpercent) | MythicMobs | Applies an absorb shield to the target entity for a percentage of their |
-| [VariableMove](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/VariableMove) | MythicMobs | Moves an already created variable across names and/or registries |
+| [CloseDialog](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/CloseDialog) | MythicMobs | Closes any open [Dialog](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Dialogs) for the target player. |
+| [ShowDialog](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Mechanics/ShowDialog) | MythicMobs | Shows a [Dialog](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Dialogs) to the target player |
 | [ConsumeAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ConsumeAmmo) | MythicCrucible | Consumes ammo to execute a skill |
 | [ReloadAmmo](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/ReloadAmmo) | MythicCrucible | will search the caster's inventory for the configured ammo item (or another item if overridden), and for each item it finds it will consume it and add ammo to the item. |
 | [Consumeitem](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/Consumeitem) | MythicCrucible | Removes some items from the casting player's inventory |
@@ -559,6 +565,7 @@ These mechanics have not been tagged yet.
 | [SetSlotModel](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SetSlotModel) | MythicCrucible | Sets the specified CustomModelData on the item on the specified slot |
 | [SnapshotUsedBow](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/SnapshotUsedBow) | MythicCrucible | Snapshots the state of the held bow for use with later projectile damage mechanics   |
 | [Modeltoggle](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/modeltoggle) | MythicCrucible | Switches the item's CustomModelData value between two specified ones each time this mechanic is triggered |
+| [UpgradeItem](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/UpgradeItem) | MythicCrucible | Upgrades the [level](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Levels) of the item in the specified slot |
 | [FurnitureVariableSet](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/FurnitureVariableSet) | MythicCrucible | Sets a variable on the targeted Furniture Entity |
 | [Furnitureinventory](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/furnitureinventory) | MythicCrucible | Opens an inventory with a specified amount of slots and name to the target player |
 | [OpenFurniturePainter](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Mechanics/OpenFurniturePainter) | MythicCrucible | Opens the furniture's painter for the target player |
@@ -586,7 +593,6 @@ These mechanics have not been tagged yet.
 | [ModelUndisguise](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/ModelUndisguise) | ModelEngine | Undisguise the targeted player. |
 | [BodyRotation](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/BodyRotation) | ModelEngine | Configure the body rotation of the modeled entity. |
 | [CullConfig](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/CullConfig) | ModelEngine | Configure the culling of a modeled entity, |
-| [LockModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/LockModel) | ModelEngine | Lock or unlock the rotation of a modeled entity. |
 | [Model](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/Model) | ModelEngine | Add or remove a model from the targeted entity. |
 | [PairModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/PairModel) | ModelEngine | Forcibly show or hide a modeled entity from the targeted players. |
 | [Petrify](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/Petrify) | ModelEngine | Create a statue of the model |
@@ -597,6 +603,7 @@ These mechanics have not been tagged yet.
 | [LeashSelf](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/LeashSelf) | ModelEngine | Visually leash a leash bone to another leash bone of the same model. |
 | [DefaultState](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/DefaultState) | ModelEngine | Configure the default animations of an active model. |
 | [LockModelHead](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/LockModelHead) | ModelEngine | Locks the head of the model into place |
+| [LockModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/LockModel) | ModelEngine | Lock or unlock the rotation of a modeled entity. |
 | [ModifyState](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/ModifyState) | ModelEngine | Modify an animation played by the targeted active model |
 | [RemapModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/RemapModel) | ModelEngine | Remap a new model to the current model, part by part.<br> |
 | [RenderInit](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/RenderInit) | ModelEngine | Shows a model to the players, if the model was previously applied on the Modeled Entity by setting the `initrender` |
@@ -622,15 +629,31 @@ These mechanics have not been tagged yet.
 | [VFXScale](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/VFXScale) | ModelEngine | Scale the VFX. |
 | [VFXSetVis](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/VFXSetVis) | ModelEngine | Set the visibility of the VFX. |
 | [VFXTint](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Mechanics/VFXTint) | ModelEngine | Color the VFX, or animate from one color to another. |
-| [SetQuickcastBinding](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetQuickcastBinding) | MythicRPG | Force-sets the casting player's quickcast binding if possible |
-| [GiveMythicExperience](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/GiveMythicExperience) | MythicRPG | Gives a player experience |
+| [BindSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/BindSpell) | MythicRPG | Forces a binding for a learned [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) onto a target player's hotbar slot. |
+| [CancelCast](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/CancelCast) | MythicRPG | Cancels the target player's active [spell cast](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells/Casting#cast-time) |
+| [CastSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/CastSpell) | MythicRPG | Casts a learned [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) on the target player, running it through the full cast pipeline |
+| [GiveMythicExperience](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/GiveMythicExperience) | MythicRPG | Gives a player experience. |
+| [Interrupt](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/Interrupt) | MythicRPG | Interrupts the target's active spell cast. |
+| [ModifyCastTime](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/ModifyCastTime) | MythicRPG | Modifies the remaining time on the target player's active [cast](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells/Casting#cast-time). |
 | [ModifyResource](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/ModifyResource) | MythicRPG | Adds the specified amount to the target player's given reagent |
+| [ModifySpellCooldown](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/ModifySpellCooldown) | MythicRPG | Modifies the cooldown of a learned [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) on the target player |
 | [QuickcastingActivate](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/QuickcastingActivate) | MythicRPG | Activates quickcasting for the casting player, if possible |
 | [QuickcastingDeactivate](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/QuickcastingDeactivate) | MythicRPG | Deactivates quickcasting for the casting player, if possible |
+| [SetActiveRPGProfile](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetActiveRPGProfile) | MythicRPG | Switches the casting player's active RPG profile to the given slot |
 | [SetArchetype](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetArchetype) | MythicRPG | Sets the target player's archetype |
-| [SetQuickcastBinding](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/SetQuickcastBinding) | MythicRPG | Force-sets the casting player's quickcast binding if possible |
+| [BindSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/BindSpell) | MythicRPG | Forces a binding for a learned [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) onto a target player's hotbar slot. |
 | [ForgetSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/ForgetSpell) | MythicRPG | Make the target player unlearn a [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) |
 | [TeachSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/TeachSpell) | MythicRPG | Teaches a player a [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) |
+| [UnsetSpellBinding](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/UnsetSpellBinding) | MythicRPG | Clears the [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) currently bound to the given hotbar slot on the target player |
+| [WaystoneClearRespawn](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/WaystoneClearRespawn) | MythicRPG | Unbinds the target player's [waystone](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Waypoints) respawn point |
+| [WaystoneDiscover](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/WaystoneDiscover) | MythicRPG | Marks the target player as having discovered a [waystone](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Waypoints) |
+| [WaystoneForget](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/WaystoneForget) | MythicRPG | Resets a [waystone](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Waypoints) back to UNDISCOVERED for the target player |
+| [WaystoneHide](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/WaystoneHide) | MythicRPG | Forces a [waystone](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Waypoints) to be hidden from one player regardless of their actual state |
+| [WaystoneOpenMenu](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/WaystoneOpenMenu) | MythicRPG | Opens the [waystone](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Waypoints) teleport menu for the target player |
+| [WaystoneReveal](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/WaystoneReveal) | MythicRPG | Forces a [waystone](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Waypoints) to be visible to one player regardless of their actual state |
+| [WaystoneSetRespawn](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/WaystoneSetRespawn) | MythicRPG | Binds the target player's respawn point to a [waystone](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Waypoints) |
+| [WaystoneSetState](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/WaystoneSetState) | MythicRPG | Low-level mechanic that sets the target player's state for a [waystone](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Waypoints) to any of the three states |
+| [WaystoneTeleport](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Mechanics/WaystoneTeleport) | MythicRPG | Teleports the target player directly to a [waystone](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Waypoints), skipping the menu |
 | [GrantAchievement](https://git.lumine.io/mythiccraft/mythicachievements/-/wikis/Skills/Mechanics/GrantAchievement) | MythicAchievements | Grants the player a mythic achievement. |
 | [IncrementAchievement](https://git.lumine.io/mythiccraft/mythicachievements/-/wikis/Skills/Mechanics/IncrementAchievement) | MythicAchievements | Increment criteria of achievement by a specified amount |
 

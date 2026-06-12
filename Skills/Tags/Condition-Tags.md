@@ -107,12 +107,14 @@ These conditions have not been tagged yet.
 | [Inside](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/inside) | MythicMobs | Checks if the target has a block over their head |
 | [IsInSurvivalMode](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsInSurvivalMode) | MythicMobs | Checks if the target player is in survival mode |
 | [Isbaby](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/isbaby) | MythicMobs | Checks if the target entity is a baby (e.g |
+| [IsCancelled](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsCancelled) | MythicMobs | Checks whether the triggering event is currently cancelled. |
 | [Iscaster](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/iscaster) | MythicMobs | Checks if the target is the caster of the skill |
 | [Ischild](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ischild) | MythicMobs | Checks if the target is a child of the caster of the skill |
 | [IsClimbing](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/isClimbing) | MythicMobs | Checks if the target entity is climbing |
 | [IsCreeperPrimed](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsCreeperPrimed) | MythicMobs | Checks if the target creeper is primed to explode |
 | [Isflying](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/isflying) | MythicMobs | Checks if the evaluated player is flying |
 | [Isfrozen](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/isfrozen) | MythicMobs | Checks if the target entity is frozen |
+| [IsInCinematic](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsInCinematic) | MythicMobs | Checks if the target player is currently in an active cinematic camera path. |
 | [IsInvulnerable](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/IsInvulnerable) | MythicMobs | Checks whether the target entity is invulnerable |
 | [Isleashed](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/isleashed) | MythicMobs | Checks if the target entity is leashed |
 | [Isliving](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/isliving) | MythicMobs | Checks if the target is a living entity |
@@ -222,6 +224,7 @@ These conditions have not been tagged yet.
 | [Ydiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/ydiff) | MythicMobs | Checks the difference in y value (height) between the target entity and the caster. |
 | [Zdiff](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Conditions/Zdiff) | MythicMobs | Checks the difference in z value between the target entity and the caster. |
 | [EquipSlot](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/EquipSlot) | MythicCrucible | This condition checks if the player has the Crucible item equipped in a particular slot |
+| [ItemUpgradeLevel](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/ItemUpgradeLevel) | MythicCrucible | Checks the [level](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Levels) of the item in the specified slot |
 | [FurnitureDirection](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/FurnitureDirection) | MythicCrucible | Checks if the targeted Furniture entity has a specific direction |
 | [FurnitureState](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/furnitureState) | MythicCrucible | Checks if the target Furniture's [State](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Furniture#furniture-states) is the specified one |
 | [FurnitureType](https://git.lumine.io/mythiccraft/mythiccrucible/-/wikis/Skills/Conditions/FurnitureType) | MythicCrucible | Checks if the target furniture is of the specified type |
@@ -233,11 +236,20 @@ These conditions have not been tagged yet.
 | [RidingModel](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/RidingModel) | ModelEngine | Checks if the target entity is a passenger of a model |
 | [ModelHasDriver](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/ModelHasDriver) | ModelEngine | Checks if the target modeled entity has a driver |
 | [ModelHasPassengers](https://git.lumine.io/mythiccraft/model-engine-4/-/wikis/Skills/Conditions/ModelHasPassengers) | ModelEngine | Checks if the target modeled entity has passengers |
-| [Archetype](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/Archetype) | MythicRPG | This condition checks if the player has a certain type of Archetype in a defined group |
-| [ArchetypeLevel](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/ArchetypeLevel) | MythicRPG | This condition checks if the player has a certain level of the Archetype in a defined group |
-| [HasArchetypesInCategory](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasArchetypesInCategory) | MythicRPG | Matches if the player has a certain amount of archetypes that belong to a category |
+| [Archetype](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/Archetype) | MythicRPG | Checks whether the player has a specific archetype in a given group |
+| [ArchetypeLevel](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/ArchetypeLevel) | MythicRPG | Matches the player's archetype level in a given group |
+| [SpellCastProgress](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/SpellCastProgress) | MythicRPG | Matches the target player's active [cast](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells/Casting#cast-time) progress against a [ranged double](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/../../../MythicMobs/-/wikis/Skills/Conditions#ranged-doubles), where `0.0` means the cast just started and `1.0` means the cast is about to complete. |
+| [HasArchetypesInCategory](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasArchetypesInCategory) | MythicRPG | Matches if the player has a given number of currently-active archetypes whose `Category:` matches the value provided. |
 | [HasLearnedSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasLearnedSpell) | MythicRPG | Whether the target player has learned the given spell |
-| [HasReagent](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasReagent) | MythicRPG | Matches if the player has a certain amount of a reagent |
+| [HasPoints](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasPoints) | MythicRPG | Matches the player's [point](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Points) balance against a given amount. |
+| [HasReagent](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasReagent) | MythicRPG | Matches if the player has a certain amount of a [reagent](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells/Reagents). |
+| [HasSpellBound](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasSpellBound) | MythicRPG | Matches the player's hotbar bindings. |
+| [HasTalent](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasTalent) | MythicRPG | Matches if the player has points invested in the given [talent](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Archetypes/Talents). |
+| [HasUnlockedArchetype](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/HasUnlockedArchetype) | MythicRPG | Matches if the player has unlocked the given [archetype](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Archetypes), regardless of whether it is currently the active one in its group. |
+| [IsCastingSpell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/IsCastingSpell) | MythicRPG | Whether the target player is currently casting a [cast-time spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells/Casting#cast-time). |
+| [IsCastInterruptible](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/IsCastInterruptible) | MythicRPG | Whether the target player has an active [cast](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells/Casting#cast-time) that can be interrupted (i.e |
 | [IsQuickcastingActive](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/IsQuickcastingActive) | MythicRPG | Whether the target player is currently using a quickcasting method |
+| [ProfileSlot](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/ProfileSlot) | MythicRPG | Matches the slot index of the player's currently-active RPG profile. |
+| [SpellOnCooldown](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Skills/Conditions/SpellOnCooldown) | MythicRPG | Matches if the given [spell](https://git.lumine.io/mythiccraft/mythicrpg/-/wikis/Spells) is currently on cooldown for the target player. |
 | [HasAchievement](https://git.lumine.io/mythiccraft/mythicachievements/-/wikis/Skills/Conditions/HasAchievement) | MythicAchievements | Checks if the player has a mythic achievement. |
 

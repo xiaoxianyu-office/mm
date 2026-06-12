@@ -55,6 +55,11 @@ Configuration:
     # Whether Action: REPLACE spawners obey the spigot mob cap
     ReplaceObeysCap: false
 
+    # When true, a spawner's Cooldown is shared across all players/groups, so the
+    # first successful spawn locks out all other players until the cooldown elapses.
+    # When false, each player tracks the spawner's cooldown independently.
+    SharedCooldown: true
+
     # Maximum milliseconds per tick spent on spawning
     MaxGenerationTime: 5
 
