@@ -1,1 +1,31 @@
-bmFtZTogU3luYyBVcHN0cmVhbQoKb246CiAgc2NoZWR1bGU6CiAgICAtIGNyb246ICcwIDMgKiAqIConCiAgd29ya2Zsb3dfZGlzcGF0Y2g6Cgpqb2JzOgogIHN5bmM6CiAgICBydW5zLW9uOiB1YnVudHUtbGF0ZXN0CiAgICBzdGVwczoKICAgICAgLSB1c2VzOiBhY3Rpb25zL2NoZWNrb3V0QHY0CiAgICAgICAgd2l0aDoKICAgICAgICAgIGZldGNoLWRlcHRoOiAwCgogICAgICAtIG5hbWU6IEZldGNoIGFuZCBtZXJnZSB1cHN0cmVhbQogICAgICAgIHJ1bjogfAogICAgICAgICAgZ2l0IHJlbW90ZSBhZGQgdXBzdHJlYW0gaHR0cHM6Ly9naXQubHVtaW5lLmlvL215dGhpY2NyYWZ0L015dGhpY01vYnMud2lraS5naXQgMj4vZGV2L251bGwgfHwgdHJ1ZQogICAgICAgICAgZ2l0IGZldGNoIHVwc3RyZWFtCiAgICAgICAgICBCRUZPUkU9JChnaXQgcmV2LXBhcnNlIEhFQUQpCiAgICAgICAgICBnaXQgbWVyZ2UgdXBzdHJlYW0vbWFzdGVyIC0tbm8tZWRpdCB8fCBnaXQgbWVyZ2UgdXBzdHJlYW0vbWFpbiAtLW5vLWVkaXQgfHwgZWNobyAiTm8gY2hhbmdlcyIKICAgICAgICAgIEFGVEVSPSQoZ2l0IHJldi1wYXJzZSBIRUFEKQogICAgICAgICAgaWYgWyAiJEJFRk9SRSIgIT0gIiRBRlRFUiIgXTsgdGhlbgogICAgICAgICAgICBlY2hvICJDSEFOR0VEPXRydWUiID4+ICRHSVRIVUJfRU5WCiAgICAgICAgICBlbHNlCiAgICAgICAgICAgIGVjaG8gIkNIQU5HRUQ9ZmFsc2UiID4+ICRHSVRIVUJfRU5WCiAgICAgICAgICBmaQoKICAgICAgLSBuYW1lOiBQdXNoIGNoYW5nZXMKICAgICAgICBpZjogZW52LkNIQU5HRUQgPT0gJ3RydWUnCiAgICAgICAgcnVuOiBnaXQgcHVzaCBvcmlnaW4gbWFzdGVyCg==
+name: Sync Upstream
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch and merge upstream
+        run: |
+          git remote add upstream https://git.lumine.io/mythiccraft/MythicMobs.wiki.git 2>/dev/null || true
+          git fetch upstream
+          BEFORE=$(git rev-parse HEAD)
+          git merge upstream/master --no-edit || git merge upstream/main --no-edit || echo "No changes"
+          AFTER=$(git rev-parse HEAD)
+          if [ "$BEFORE" != "$AFTER" ]; then
+            echo "CHANGED=true" >> $GITHUB_ENV
+          else
+            echo "CHANGED=false" >> $GITHUB_ENV
+          fi
+
+      - name: Push changes
+        if: env.CHANGED == 'true'
+        run: git push origin master
