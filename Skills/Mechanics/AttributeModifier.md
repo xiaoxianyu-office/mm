@@ -1,12 +1,13 @@
 ## Description
-Adds an attribute modifier to the attributable target
+Adds an attribute modifier to the attributable target.
+Not supposed to be used on players.
 
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | attribute | attr      | The [attribute]                      | GENERIC_LUCK<!--type:PaperAttribute--> |
-| operation | op        | The [operation] to perform                                        | ADD_NUMBER<!--type:PaperAttributeOperation--> |
+| operation | op        | The [operation] to perform                                        | ADD_NUMBER<!--type:AttributeModifierOperation--> |
 | name      | modifierName | The name of the modifier                                    | <caster.uuid> |
 | amount    | amt, a    | The modifier of the attribute                                          | 0     |
 | duration  | dur       | The duration of the attribute                                          | 0     |
@@ -22,7 +23,7 @@ ExampleMob:
 
 <!-- LINKS -->
 [attribute]: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/Attribute.html
-[operation]: /Items/Attributes#operations
+[operation]: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/AttributeModifier.Operation.html
 
 
 <!--TAGS-->

@@ -70,185 +70,171 @@ Links to placeholders added by addon plugins. Any placeholders from these links 
 
 # Placeholders
 
-## Caster Placeholders
-These placeholders will return whatever attribute of the caster that is called. For instance `<caster.l.y.#>` will return the caster's Y location.
+## Scoped Placeholders
 
-|         Caster Placeholder         | Function                                                          |
-|:----------------------------------:|-------------------------------------------------------------------|
-|       <caster.damage>              | Returns the caster's Attack_Damage attribute value                |
-|      <caster.display>              | Returns the caster's displayed name                               |
-|      <caster.mythic_type>          | Returns the caster's internal mob type                            |
-|      <caster.type>                 |Returns the internal id of a MythicMob or the entity name otherwise|
-|      <caster.type.name>           |Returns the display name of a MythicMob or the entity name otherwise|
-|        <caster.uuid>               | Returns the UUID of the caster                                    |
-|       <caster.level>               | Returns the level of the caster                                   |
-|        <caster.name>               | Returns the name of the caster                                    |
-|         <caster.hp>                | Returns current hp of the caster                                  |
-|        <caster.mhp>                | Returns the max hp of the caster                                  |
-|        <caster.php>                | Returns the percent hp of the caster                              |
-|        <caster.thp>                | Returns the full number hp of the caster                          |
-|       <caster.tt.top>              | Returns the name of the top threat holder of the caster           |
-|        <caster.l.w>                | Returns the world name the caster is in                           |
-|        <caster.l.x>                | Returns the X coordinate of the caster                            |
-|       <caster.l.x.{Float}>       | Returns the X coordinate of the caster +- random number between {Float} |
-|     <caster.l.x.double>            | Returns the precise X coordinate of the caster                    |
-|        <caster.l.y>                | Returns the Y coordinate of the caster                            |
-|       <caster.l.y.{Float}>         | Returns the Y coordinate of the caster +- random number between {Float} |
-|     <caster.l.y.double>            | Returns the precise Y coordinate of the caster                    |
-|        <caster.l.z>                | Returns the Z coordinate of the caster                            |
-|       <caster.l.z.{Float}>               | Returns the Z coordinate of the caster +- random number between {Float} |
-|     <caster.l.z.double>            | Returns the precise Z coordinate of the caster                    |
-|       <caster.l.yaw>               | Returns the yaw of the caster                                     |
-|      <caster.l.pitch>              | Returns the pitch of the caster                                   |
-|       <caster.stance>              | Returns the current stance of the caster                          |
-| <caster.stat.{Stat}>               | Returns the value of the specified {Stat} on the caster           |
-| <caster.heldenchantlevel.{Integer}>    | Returns the enchant level of specified {Integer} enchant      |
-| <caster.skill.{Metaskill}.cooldown> | Returns the current cooldown of the give skill as a float number |
-| <caster.raytrace.{Float}>                | Returns the name of the block being looked at by the caster if within {Float} range, if {Float} is specified. If only <caster.raytrace> is used, then the range defaults to `4.5`. If no block is found, `AIR` is returned.|
-| <caster.children.size>             | Returns the number of children this entity has                    |
-| <caster.attack_cooldown>           | Returns the attack cooldown of the player's equipped item. The value will be a float between 0 (maximum cooldown for the item) and 1 (no cooldown) |
+Most placeholders that fetches data "from the environment" have a `scope` prepended to them. You can see the scope as "telling the placeholder" *which entity or location* to fetch the data from.
 
-## Target Placeholders
-These placeholders will return whatever target selector has been used. For instance <target.name> + @NearestPlayer will return the name of the player closest to the casting mob. The following are only some of the placeholders that can have a `target` scope, and in general any placeholder that is also present in the [Caster Placeholder](#caster-placeholders) section will also work.
+::include{file=/Skills/Placeholders/Scoped-Placeholder-Table.md}
 
-| **Target Placeholders** | **Function**                                                      |
-|:-----------------------:|-------------------------------------------------------------------|
-|      <target.uuid>      | Returns the UUID of the target                                    |
-|      <target.name>      | Returns the name of the target                                    |
-|       <target.hp>       | Returns current hp of the target                                  |
-|      <target.mhp>       | Returns the max hp of the target                                  |
-|      <target.php>       | Returns the percent hp of the target                              |
-|      <target.thp>       | Returns the full number hp of the target                          |
-|     <target.threat>     | Returns the threat level of the target                            |
-|      <target.l.w>       | Returns the world name the target is in                           |
-|      <target.l.x>       | Returns the X coordinate of the target                            |
-|     <target.l.x.{Float}> | Returns the X coordinate of the target +- random number between {Float} |
-|      <target.l.y>       | Returns the Y coordinate of the target                            |
-|     <target.l.y.{Float}> | Returns the Y coordinate of the target +- random number between {Float}|
-|      <target.l.z>       | Returns the Z coordinate of the target                            |
-|     <target.l.z.{Float}> | Returns the Z coordinate of the target +- random number between {Float} |
-|     <target.l.yaw>      | Returns the yaw of the target                                     |
-|    <target.l.pitch>     | Returns the pitch of the target                                   |
-|     <target.level>      | Returns the level of the target                                   |
-|   <target.block.type>   | Returns the block type of the target                              |
-|   <target.block.data>   | Returns the block data of the target block                        |
-|  <target.entity_type>   | Returns the entity type of the target                             |
-|  <target.item.type>     | Returns the type of the targeted item entity                      |
-|  <target.held.item>     | Returns the item held by the target                               |
-|  <target.itemstack_amount>   | Returns the amount of item entities on the ground            |
-| <target.stat.{StatName}> | Returns the value of the specified stat on the target             |
-| <target.raytrace.{Float}> | Returns the name of the block being looked at by the target if within {Float} range, if {Float} is specified. If only <target.raytrace> is used, then the range defaults to `4.5`. If no block is found, `AIR` is returned.|
-| <target.fovoffset{rotation=0;absolute=true}> | Returns the angular offset (in degrees) between the direction the caster is looking and the direction from the caster to the target entity. This offset can be used to determine how far the target is from the caster's center of view |
-| <target.distance>       | Return the distance between the caster and the mechanic's target. If the target cannot be found in the caster's world, returns the maximum double value |
-| <target.distancesquared> | Return the squared distance between the caster and the mechanic's target. If the target cannot be found in the caster's world, returns the maximum double value |
-| <target.armor>          | Returns the target's armor value                                  | 
-| <target.item.itemstack.{EquipSlot}> | Returns the ItemStack of the item in the specified slot on the target player. The slot can either be a named one (HAND, OFFHAND etc.) or a number |
-
-## Trigger Placeholders
-These placeholders will return whatever attribute of the entity that caused the skill to happen. For instance `<trigger.name>` combined with an `~onDeath` trigger will return the name of the entity that killed the mob.
+So, for instance, the `<caster.name>` placeholder will be retuning the name of the mechanic's caster, while `<target.name>` will also be returning a name, but this time it will be that of the mechanic's target
 
 ```yaml
-    Skills:
-    - message{m="<&b><caster.name><&r> was slain by <&a><trigger.name><&r>."} @PIR{r=20} ~onDeath
+  Skills:
+  - message{m=Hello <target.name>, i am <caster.name>} @NearestPlayer
 ```
 
-The following are only some of the placeholders that can have a `trigger` scope, and in general any placeholder that is also present in the [Caster Placeholder](#caster-placeholders) section will also work.
+> [!important] {scope}
+> In the following list, every time you see a placeholder that starts with [{scope}], it means that you can use there *any* of the scopes stated above
 
+> [!note] Other words in `[]`
+> When you see other words written in `[]` (such as `[auraname]`), it means that, when using the placeholder, you must write the requested context there (in case of `[auraname]`. you should write the name of the aura you want to check against. `<caster.aura.youraura.stacks>`) 
 
-| Trigger Placeholders | Function                                                                               |
-|:--------------------:|----------------------------------------------------------------------------------------|
-|    <trigger.uuid>    | Returns the UUID of the entity triggering the skill                                    |
-|    <trigger.name>    | Returns the name of the entity triggering the skill                                    |
-|     <trigger.hp>     | Returns the current hp of the entity triggering the skill                              |
-|    <trigger.mhp>     | Returns the max hp of the entity triggering the skill                                 |
-|   <trigger.threat>   | Returns the threat level of the entity triggering the skill                            |
-|    <trigger.l.w>     | Returns the world name of the entity triggering the skill                              |
-|    <trigger.l.x>     | Returns the X coordinate of the entity triggering the skill                            |
-|   <trigger.l.x.{Float}>    | Returns the X coordinate of the entity triggering the skill +- random number between {Float} |
-|    <trigger.l.y>     | Returns the Y coordinate of the entity triggering the skill                            |
-|   <trigger.l.y.{Float}>    | Returns the Y coordinate of the entity triggering the skill +- random number between {Float} |
-|    <trigger.l.z>     | Returns the Z coordinate of the entity triggering the skill                            |
-|   <trigger.l.z.{Float}>    | Returns the Z coordinate of the entity triggering the skill +- random number between {Float} |
-|   <trigger.l.yaw>    | Returns the yaw of the trigger                                                         |
-|  <trigger.l.pitch>   | Returns the pitch of the trigger                                                       |
-|  <trigger.held.item>   | Returns the item held by the trigger                                                      |
-|   <trigger.raytrace>     | Returns the name of the block being looked at by the trigger (4.5 blocks of range) |
-| <trigger.item.amount> | Returns the amount of the item the trigger is holding                                            |
-| <trigger.item.type> | Returns the type of the item the trigger is holding                                            |
-| <trigger.item.model> | Returns the model of the item the trigger is holding                                            |
-| <trigger.stat.{Stat}> | Returns the value of the specified stat on the trigger                       |
-| <trigger.raytrace.{Float}>                | Returns the name of the block being looked at by the trigger if within {Float} range, if # is specified. If only <trigger.raytrace> is used, then the range defaults to `4.5`. If no block is found, `AIR` is returned.|
-| <trigger.distance>       | Return the distance between the caster and the skilltree's trigger. If the trigger cannot be found in the caster's world, returns the maximum double value |
-| <trigger.distancesquared> | Return the squared distance between the caster and the skilltree's trigger. If the target cannot be found in the caster's world, returns the maximum double value |
+| Placeholder                        | Function                                                          | Return Type  |
+|:----------------------------------:|-------------------------------------------------------------------|:------------:|
+| <[{scope}].armor>                  | Returns the entity's armor value                                  | Double       |
+| <[{scope}].attack_cooldown>        | Returns the attack cooldown of the player's equipped item. The value will be a double between 0 (maximum cooldown for the item) and 1 (no cooldown) | Double |
+| <[{scope}].aura.`{auraName}`.stacks> | Returns the entity's amount of stacks for the specified aura    | Integer      |
+| <[{scope}].block.data>             | Returns the location block's data                                 | String       |
+| <[{scope}].block.hardness>         | Returns the location block's hardness                             | Float        |
+| <[{scope}].block.type>             | Returns the location block's type                                 | String       |
+| <[{scope}].children>               | Returns a list of the entity children's uuids                     | List         |
+| <[{scope}].children.size>          | Returns the amount of children the entity has                     | Integer      |
+| <[{scope}].cinematic.active>        | Returns whether the player is in an active cinematic camera (`true`/`false`)| String        |
+| <[{scope}].cinematic.frame>         | Returns the current frame of the active cinematic, or `-1` if none | Integer       |
+| <[{scope}].cinematic.progress>      | Returns the progress of the active cinematic from `0.0` to `1.0`, or `0` if none| Double        |
+| <[{scope}].damage>                 | Returns the entity's Attack_Damage attribute value                | Double       |
+| <[{scope}].display>                | Returns the entity's displayed name                               | String       |
+| <[{scope}].distance>               | Returns the distance between the entity and the caster            | Double       |
+| <[{scope}].distancesquared>        | Returns the distance between the entity and the caster, squared.<br>Realistically speaking, you should never need this. | Double       |
+| <[{scope}].enchantlevel.`{enchantname}`> | Returns the total amount of levels the entity has for the specified enchant. (the levels on all slots are summed) | Integer      |
+| <[{scope}].item>                   | For Item entities, returns its item                               | Item         |
+| <[{scope}].item.amount>            | For Item entities, returns the item's amount. Otherwise, returns 0 | Integer     |
+| <[{scope}].item.model>             | For Item entities, returns the item's custom model data. Otherwise, returns 0 | Integer |
+| <[{scope}].item.itemstack.`{slot}`> | Returns the itemstack of the item in the entity's `slot`         | String       |
+| <[{scope}].item.type>              | For Item entities, returns the item's type. Otherwise, returns AIR| String       |
+| <[{scope}].itemcount.`{material/item}`>| Returns how many of the given vanilla material or Mythic item id the player has in their inventory| Integer       |
+| <[{scope}].entity_type>            | Returns the type of the entity                                    | String       |
+| <[{scope}].faction>                | Returns entity's faction                                          | String       |
+| <[{scope}].fovoffset{rotation=0;absolute=true}> | Returns the angular offset (in degrees) between the direction the caster is looking and the direction from the caster to the target entity. This offset can be used to determine how far the target is from the caster's center of view | Double     |
+| <[{scope}].globalcooldown>         | Returns the entity's global cooldown                              | Integer      |
+| <[{scope}].hp>                     | Returns the entity's health                                       | Double       |
+| <[{scope}].php>                    | Returns the entity's health percent                               | Double       |
+| <[{scope}].mhp>                    | Returns the entity's max health                                   | Double       |
+| <[{scope}].heldenchantlevel.`{enchantname}`> | Returns the levels the entity has for the specified enchant in the HAND slot | Integer      |
+| <[{scope}].held.item>              | Returns the entity's held item                                    | Item         |
+| <[{scope}].input.`{inputType key}`>    | Returns whether the player entity is pressing the specified `{inputType key}`.<br> Available keys are `forward`, `backward`, `left`, `right`, `jump`, `sneak`, `sprint`.<br>In case the key is being pressed, returns `1`, otherwise `0`      | Integer      |
+| <[{scope}].lastsignal>             | Returns the entity's last received signal                         | String       |
+| <[{scope}].level>                  | Returns the entity's (mythic) level                               | Double       |
+| <[{scope}].l.pitch>                | Returns the location's pitch                                      | Double       |
+| <[{scope}].l.yaw>                  | Returns the location's yaw                                        | Double       |
+| <[{scope}].l.w>                    | Returns the location's world                                      | String       |
+| <[{scope}].l.x>                    | Returns the location's centered x coordinate                      | Double       |
+| <[{scope}].l.x.double>             | Returns the location's precise x coordinate                       | Double       |
+| <[{scope}].l.y>                    | Returns the location's centered y coordinate                      | Double       |
+| <[{scope}].l.y.double>             | Returns the location's precise y coordinate                       | Double       |
+| <[{scope}].l.z>                    | Returns the location's centered z coordinate                      | Double       |
+| <[{scope}].l.z.double>             | Returns the location's precise z coordinate                       | Double       |
+| <[{scope}].luck>                   | Returns the entity's luck                                         | Double       |
+| <[{scope}].mythic_type>            | Returns the entity's mythic type (internal mythic id)             | String       |
+| <[{scope}].name>                   | Returns the entity's name                                         | String       |
+| <[{scope}].pity.`{category}`>      | Returns the entity's pity for the given category                  | Double       |
+| <[{scope}].raytrace{maxdistance=4.5}> | Returns the name of the block being looked at by the entity if within `maxdistance` range (defaults to `4.5`),. If no block is found, `AIR` is returned.|
+| <[{scope}].skill.`{Metaskill}`.cooldown> | Returns the entity's current cooldown of the give skill as a float number | Float   |
+| <[{scope}].stance>                 | Returns the current stance of the entity                          | String       |
+| <[{scope}].stat.[Stat]>            | Returns the value of the specified {Stat} on the entity           | Float        |
+| <[{scope}].threat>                 | Returns the amount of threat the caster has towards the entity    | Double       |
+| <[{scope}].throwstrength.`{component}`>| Returns the throw strength in a throw context. `{component}`: `horizontal`, `vertical`, or `total` (default)| Double        |
+| <[{scope}].tt.top>                 | Returns the name of the top threat holder of the entity           | String       |
+| <[{scope}].tt.size>                | Returns how many entities are on the entity's threat table        | Integer      |
+| <[{scope}].type>                   | Returns the internal id of a MythicMob or the entity name otherwise | String     |
+| <[{scope}].type.name>              | Returns the display name of a MythicMob or the entity name otherwise | String    |
+| <[{scope}].uuid>                   | Returns the UUID of the entity                                    | String       |
+| <[{scope}].velocity>               | Returns the entity's velocity                                     | Double       |
+| <[{scope}].velocity.global.`{component}`>| Returns the entity's velocity in world space. `{component}`: `x`, `y`, `z`, or `total` (default)| Double        |
+| <[{scope}].velocity.relative.`{component}`>| Returns the entity's velocity in its local frame. `{component}`: `x`, `y`, `z`, or `total` (default)| Double        |
+| <[{scope}].ydiff>                  | Returns the difference in the y value between the caster and the location | Double |
 
+[{scope}]: /Skills/Placeholders/Scoped-Placeholder-Table
 
 ## Misc Placeholders
-|    **Placeholder**          | **Function**                                                            |
-|-----------------------------|-------------------------------------------------------------------------|
-| <drop.amount>               | Returns the amount dropped while used in specific drop types            |
-| <drops.xp>                  | Returns the xp dropped via specific drop types                          |
-| <drops.money>               | Returns the money dropped through the vault plug-in                     |
-| <random.#to#>               | Returns a random integer in the specified range                         |
-| <random.float.#to#>         | Returns a random float number in the specified range                    |
-| <utils.epoch>               | Returns the current epoch                                               |
-| <utils.epoch.seconds>       | Returns the current epoch                                               |
-| <utils.epoch.timestamp>     | Returns the amount of milliseconds elapsed since the epoch              |
-| <utils.epoch.millis>        | Returns the amount of milliseconds of the current epoch                 |
-| <utils.epoch.ticks>         | Returns the current epoch, converted in ticks. Assumes that the server always maintains 20 ticks per second. Accounts for milliseconds. <br>While unorthodox, since time within Minecraft (and by extension Mythic) is measured in ticks, this may be of some help streamlining some processes where converting the normal epoch time to accomodate for ticks may be burdensome if done at scale |
-| <skill.power>               | Returns the [power](/Mobs/Power) of the metaskill in which the placeholder is evaluated |
+|    Placeholder              | Function                                                                | Return Type  |
+|-----------------------------|-------------------------------------------------------------------------|--------------|
+| <drop.amount>               | Returns the amount dropped while used in specific drop types            |              |
+| <drops.xp>                  | Returns the xp dropped via specific drop types                          |              |
+| <drops.money>               | Returns the money dropped through the vault plug-in                     |              |
+| <echo.[text]>               | Returns the given text after the placeholders inside it are parsed       | String       |
+| <random.#to#>               | Returns a random integer in the specified range                         |              |
+| <random.float.#to#>         | Returns a random float number in the specified range                    |              |
+| <random.float.rounded.#to#> | Returns a random float in the specified range, rounded to 2 decimals     | String       |
+| <random.uuid>               | Returns a random uuid                                                   | String       |
+| <utils.epoch>               | Returns the current epoch                                               | Long         |
+| <utils.epoch.seconds>       | Returns the current epoch                                               | Long         |
+| <utils.epoch.timestamp>     | Returns the amount of milliseconds elapsed since the epoch              | Long         |
+| <utils.epoch.millis>        | Returns the amount of milliseconds of the current epoch                 | Long         |
+| <utils.epoch.ticks>         | Returns the current epoch, converted in ticks. Assumes that the server always maintains 20 ticks per second. Accounts for milliseconds. <br>While unorthodox, since time within Minecraft (and by extension Mythic) is measured in ticks, this may be of some help streamlining some processes where converting the normal epoch time to accomodate for ticks may be burdensome if done at scale | Long         |
+| <skill.[skill].charges>     | Returns the available charges of the given skill for the caster          | Integer      |
+| <skill.[skill].maxcharges>  | Returns the maximum charges configured for the given skill               | Integer      |
+| <skill.[skill].overflowcharges>| Returns the overflow charges of the given skill for the caster        | Integer      |
+| <skill.power>               | Returns the [power](/Mobs/Power) of the metaskill in which the placeholder is evaluated | Float |
+| <skill.targets>             | Returns the amount of inherited targets                                 | Integer      |
+| <spawner.pir>               | Returns the amount of players in the spawner's radius                   | Integer      |
+| <char.[String]>             | Returns the given Unicode identifier to the respective character (`<char.007B>` --> `{`)<br> The identifier can optionally be prepended with `\u`<br>This is intended to be used inside of other placeholders or other similar context, where the load order is important.<br>For instance, all special characters will be replaced even before normal placeholders are, so, if you wanted to use those special characters inside of sensitive contexts, you may find that they are replaced *too early*. This can be solved by using this placeholder | String |
+ 
 
 ## Item Placeholders
-| **Placeholder**             | **Function**                                                            |
-|-----------------------------|-------------------------------------------------------------------------|
-| <item.amount>               | Returns the amount of the item that triggered the skill                 |
-| <mythicitem.{MythicItem}.material>| Returns the material of the specified mythic item                 |
-| <mythicitem.{MythicItem}.model>   | Returns the custommodeldata of the specified mythic item          |
-| <mythicitem.{MythicItem}.display> | Returns the display name of the specified mythic item             |
-| <mythicitem.{MythicItem}.itemstack> | Returns the itemstack of the specified mythic item              |
+|    Placeholder              | Function                                                                | Return Type  |
+|-----------------------------|-------------------------------------------------------------------------|--------------|
+| <item.amount>               | Returns the amount of the item that triggered the skill                 | Integer      |
+| <item.droplevel>            | Returns the drop level of the item, if this is a drop. Otherwise, behaves like `<item.amount>` | Integer      |
+| <mythicitem.[MythicItem].material>| Returns the material of the specified mythic item                 | String       |
+| <mythicitem.[MythicItem].model>   | Returns the custommodeldata of the specified mythic item          | String       |
+| <mythicitem.[MythicItem].display> | Returns the display name of the specified mythic item             | String       |
+| <mythicitem.[MythicItem].itemstack> | Returns the itemstack of the specified mythic item              | String       |
 
 ## Score Placeholders
-| **Placeholder**             | **Function**                                                            |
-|-----------------------------|-------------------------------------------------------------------------|
-| <caster.score.{Objective}>  | Returns the score of the caster from "{Objective}"                      |
-| <target.score.{Objective}>  | Returns the targeters score from "{Objective}"                          |
-| <trigger.score.{Objective}> | Returns the score of the trigger from "{Objective}"                     |
-| <global.score.{Objective}>  | Returns the score of fake player: \_\_GLOBAL\_\_ score from "{Objective}" |
-| <score.objective.player>    | Returns the score of the defined player from "objective"                |
-| <score.objective.dummyname> | Returns the score of "dummyname" (fake player) from "objective"         |
+|    Placeholder              | Function                                                                | Return Type  |
+|-----------------------------|-------------------------------------------------------------------------|--------------|
+| <[{scope}].score.[Objective]>  | Returns the score of the scoped entity from "{Objective}"              | Integer    |
+| <global.score.[Objective]>  | Returns the score of fake player: \_\_GLOBAL\_\_ score from "{Objective}" | Integer    |
+| <score.objective.player>    | Returns the score of the defined player from "objective"                | Integer      |
+| <score.objective.dummyname> | Returns the score of "dummyname" (fake player) from "objective"         | Integer      |
 
-```yaml
-  - message{m=You have slain <trigger.var.slainmobs> Mobs!} @trigger ~onInteract
-```
+## Text Placeholders
+|    Placeholder              | Function                                                                | Return Type  |
+|-----------------------------|-------------------------------------------------------------------------|--------------|
+| <bar{value=0;maxValue=100;length=100;remainingSymbol="#";progressSymbol="#";remainingPrefix=<gray>;progressPrefix=<green>}> | Returns a formatted bar with the specified values | String |
+| <centertext{value=The text to center;pixelwidth=100;singlepixelunicodes= , , , ;bold=false}> | Centers the given text. The attributes are:<br>`value/v/text/line`: The text to center<br>`pixelwidth/width/w/pw`: The total pixels (integer) to account for (will center at half the width)<br>`bold/b`: Whether the provided value is bolded<br>`singlepixelunicodes/spus`: A list of unicodes of 1-3 pixels to use for extra precision. Defaults to `" , , , "` | String |
 
 ## Variable Placeholders
 These placeholders will return whatever variable has been called. For instance <caster.var.\[name\]> will return the value of the caster's \[name\] variable.  
 Some of these variables are only generated and available under some special circumstances, such as some specific trigger/attribute/metamechanic being used previously in the skilltree.  
 
-|   Variable Placeholder                                                                                  |   Generated by                                                                                          |   Function                                                                                              |
-|:-------------------------:|---------------------------------|------------------------------------------|
-| <caster.var.{VariableName}>                                                                                |    | Returns the value of the variable {VariableName} on the variable registry of the caster of the mechanic                                                                                                   |
-| <target.var.{VariableName}>                                                                                |    | Returns the value of the variable {VariableName} on the variable registry of the target of the mechanic                                                                                                   |
-| <world.var.{VariableName}>                                                                                |    | Returns the value of the variable {VariableName} on the variable registry of the world the mechanic is used in                                                                                                   |
-| <global.var.{VariableName}>                                                                                |    | Returns the value of the variable {VariableName} on the variable registry of the whole server                                                                                                   |
-| <skill.var.{VariableName}>                                                                                    |    | Returns the value of the variable {VariableName} on the current [skill tree](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/SkillTrees) |
-| <skill.var.damage-amount>                                                                               | [~onDamaged] trigger <br> [~onAttack] trigger <br> [~onBowHit] trigger <br> [onDamaged] mechanic <br> [onAttack] mechanic                                                                                       | Returns the amount of damage taken or done                                                                      |
-| <skill.var.damage-type>                                                                                 | [~onDamaged] trigger <br> [~onAttack] trigger <br> [~onBowHit] trigger <br> [onDamaged] mechanic <br> [onAttack] mechanic                                                                                                                     | Returns the type of damage taken or done, if any                                                                        |
-| <skill.var.damage-cause>                                                                                 | [~onDamaged] trigger <br> [~onAttack] trigger <br> [~onBowHit] trigger <br> [onDamaged] mechanic <br> [onAttack] mechanic                                                                                                                  | Returns the cause of damage taken/done                                                                        |
-| <skill.var.aura-name>                                                                                   | Every [aura] mechanic                                                                                   | Returns the name of the aura                                                                            |
-| <skill.var.aura-type>                                                                                   | Every [aura] mechanic                                                                                   | Returns the type of the aura                                                                            |
-| <skill.var.aura-charges>                                                                                | Every [aura] mechanic                                                                                   | Returns the amount of charges the aura has left                                                         |
-| <skill.var.aura-duration>                                                                               | Every [aura] mechanic                                                                                   | Returns the remaining duration of the aura                                                              |
-| <skill.var.aura-duration-millis>                                                                        | Every [aura] mechanic                                                                                   | Returns the remaining duration of the aura, in milliseconds                                             |
-| <skill.var.aura-stacks>                                                                                 | Every [aura] mechanic                                                                                   | Returns the amount of stacks the aura has left                                                          |
-| <skill.var.input>                                                                                       | [onChat] mechanic                                                                                       | Returns the chat input                                                                                  |
-| <skill.targets>                                                                                         |    | Returns the amount of inherited targets                                                            |
-| <skill.var.interval>                                                                                    | Using the `repeat` and `repeatInterval` [universal attributes]                                          | Returns the current iteration                                                                           |
-| <skill.var.itr>                                                                                         | Using the `repeat` and `repeatInterval` [universal attributes]                                          | Returns the current iteration                                                                           |
-| <skill.var.volume>                                                                                      | [~onHear] trigger                                                                                       | Returns a float value between 1 and 15 representing the intensity of the sound. Directly proportional to the distance (the further away the source, the higher this value)                                        |
-| <skill.var.sound-type>                                                                                  | [~onHear] trigger                                                                                       | Returns the type of the sound                                                                           |
-| <skill.var.hit-block-type>                                                                                  | [raytrace] mechanic                                                                                     | Returns the block that was hit, or AIR if none                                                          |
-| <skill.var.bow-tension>                                                                                  | [~onShoot] trigger                                                                                      | Returns the force with which the projectile has been shot                                               |
-| <skill.var.click-type>                                                                                  | [Custom Menus](/Custom-Menus#button-skills) Interactions                                                 | The type of the click used to interact with a [menu button](/Custom-Menus#button-skills). Returns `1` if rightclick was used, `0` otherwise                         |
+
+| Variable Placeholder              | Function                                                                                                                                                                    | Return Type | Generated by                                                                                                               |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------- |
+| <dialog.[key]>                     | Returns the value submitted for the [key] input of an open dialog (shorthand for <skill.var.dialog.[key]>). <dialog.button> returns the clicked button index                 | String       | [showDialog](/Skills/Mechanics/ShowDialog) mechanic                                                                         |
+|   <caster.var.[VariableName]>     | Returns the value of the variable {VariableName} on the variable registry of the caster of the mechanic                                                                     |             |                                                                                                                            |
+|   <target.var.[VariableName]>     | Returns the value of the variable {VariableName} on the variable registry of the target of the mechanic                                                                     |             |                                                                                                                            |
+|    <world.var.[VariableName]>     | Returns the value of the variable {VariableName} on the variable registry of the world the mechanic is used in                                                              |             |                                                                                                                            |
+|   <global.var.[VariableName]>     | Returns the value of the variable {VariableName} on the variable registry of the whole server                                                                               |             |                                                                                                                            |
+|    <skill.var.[VariableName]>     | Returns the value of the variable {VariableName} on the current [skill tree](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/SkillTrees)                        |             |                                                                                                                            |
+|    <skill.var.damage-amount>      | Returns the amount of damage taken or done                                                                                                                                  |             | [~onDamaged] trigger <br> [~onAttack] trigger <br> [~onBowHit] trigger <br> [onDamaged] mechanic <br> [onAttack] mechanic  |
+|     <skill.var.damage-type>       | Returns the type of damage taken or done, if any                                                                                                                            |             | [~onDamaged] trigger <br> [~onAttack] trigger <br> [~onBowHit] trigger <br> [onDamaged] mechanic <br> [onAttack] mechanic  |
+|     <skill.var.damage-cause>      | Returns the cause of damage taken/done                                                                                                                                      |             | [~onDamaged] trigger <br> [~onAttack] trigger <br> [~onBowHit] trigger <br> [onDamaged] mechanic <br> [onAttack] mechanic  |
+|      <skill.var.aura-name>        | Returns the name of the aura                                                                                                                                                |             | Every [aura] mechanic                                                                                                      |
+|      <skill.var.aura-type>        | Returns the type of the aura                                                                                                                                                |             | Every [aura] mechanic                                                                                                      |
+|     <skill.var.aura-charges>      | Returns the amount of charges the aura has left                                                                                                                             |             | Every [aura] mechanic                                                                                                      |
+|    <skill.var.aura-duration>      | Returns the remaining duration of the aura                                                                                                                                  |             | Every [aura] mechanic                                                                                                      |
+| <skill.var.aura-duration-millis>  | Returns the remaining duration of the aura, in milliseconds                                                                                                                 |             | Every [aura] mechanic                                                                                                      |
+|     <skill.var.aura-stacks>       | Returns the amount of stacks the aura has left                                                                                                                              |             | Every [aura] mechanic                                                                                                      |
+|        <skill.var.input>          | Returns the chat input                                                                                                                                                      |             | [onChat] mechanic                                                                                                          |
+|       <skill.var.interval>        | Returns the current iteration                                                                                                                                               |             | Using the `repeat` and `repeatInterval` [universal attributes]                                                             |
+|         <skill.var.itr>           | Returns the current iteration                                                                                                                                               |             | Using the `repeat` and `repeatInterval` [universal attributes]                                                             |
+|        <skill.var.volume>         | Returns a float value between 1 and 15 representing the intensity of the sound. Directly proportional to the distance (the further away the source, the higher this value)  |             | [~onHear] trigger                                                                                                          |
+|      <skill.var.sound-type>       | Returns the type of the sound                                                                                                                                               |             | [~onHear] trigger                                                                                                          |
+|    <skill.var.hit-block-type>     | Returns the block that was hit, or AIR if none                                                                                                                              |             | [raytrace] mechanic                                                                                                        |
+|     <skill.var.bow-tension>       | Returns the force with which the projectile has been shot                                                                                                                   |             | [~onShoot] trigger                                                                                                         |
+| <skill.var.click-type>            | The type of the click used to interact with a [menu button](/Custom-Menus#button-skills). Returns `1` if rightclick was used, `0` otherwise                                 |             | [Custom Menus](/Custom-Menus#button-skills) Interactions                                                                   |
 
 ```yaml
   Skills:
@@ -258,15 +244,38 @@ Some of these variables are only generated and available under some special circ
 ```
 > If you execute this metaskill yourself, this will send you a message saying `1 2 1 2` because the target of every mechanic is the caster, so the affected registry is always the caster's even if a "target" scope is used
 
-### Meta Variable Placeholders
-Check them out [here](/Skills/Placeholders/Meta-Variable-Placeholders)
+# Meta Placeholders
+You may now be wondering "Ok, but what is that `Return Type` listen after the placeholder's explanation?"<br>
+That value determines
+- What data the placeholder is returning and, subsequently
+- **What Meta Placeholders you can use to mutate it!**
+
+For instance... do you want to uppercase a string? Why not use
+
+```yaml
+<caster.name.uppercase>
+```
+
+Do you want to remove possible whitespace characters from the edges? then you can also
+
+```yaml
+<caster.name.uppercase.trim>
+```
+
+[See the full documentation HERE](/Skills/Placeholders/Meta-Placeholders)
 
 # Placeholder Attributes
 Some placeholders can use a set of attributes to further define the output they will give
 
+## All placeholders
+| Attribute | Aliases   | Description                                                               | Default |
+|-----------|-----------|---------------------------------------------------------------------------|---------|
+| default   | def, \|  | The default value returned if the placeholder is unable to fetch its intended value    | UNDEFINED |
+
+## Double Return Type Placeholders
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| rounding  | round, r  | The rounding of the returned float value                             | 2       |
+| rounding  | round, r  | The rounding of the returned double value                            | 2       |
 
 ```yaml
   Skills:

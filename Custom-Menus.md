@@ -15,6 +15,7 @@ Any top-level node will be loaded as a menu using the standard Mythic menu forma
 MyCustomMenu:
   Display: "My Custom Menu"
   Size: 27
+  Shared: false # Whether the Menu should not be cached and shared across players
   Schema:
     - '1 1 1 1 1 1 1 1 1'
     - '0 0 0 0 B 0 0 0 0'

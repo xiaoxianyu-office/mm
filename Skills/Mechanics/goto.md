@@ -13,8 +13,8 @@ Causes the mob to pathfind to a location.
 ## Examples
 ```yml
   Skills:
-  - goto{speedModifier=1;sh=5;sv=5} @owner
-  - goto{speedModifier=1;sh=5;sv=5} @location{c=100,65,100}
+  - goto{speed=1;sh=5;sv=5} @owner
+  - goto{speed=1;sh=5;sv=5} @location{c=100,65,100}
 ```
 
 

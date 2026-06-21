@@ -19,7 +19,9 @@ duration and can also be used in other mechanics and conditions.
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | auraName  | aura, b, buff, buffname, debuff, debuffname, n, name | Optional name, required to use associated mechanics & conditions that reference a specific aura. Given a random UUID if not defined.                            |         |
+| components| component, comp  | The aura components to apply. Better explained later in the page |<!--type:AuraComponents--> | 
 | auratype  | auragroup, group, type, g | The type of the aura. It's similar to its name       |         |
+| tags               | tag     | A list of comma-separated tags that the aura will have. The tags do nothing on their own, but can be used to "mark" the aura and better check against it                    |
 | attachmenttype | attachment, attach | The [Attachment](#attachment-types) to apply to the entity the aura is applied to                             | NONE    |
 | onStartSkill | onStart, os | Meta-Skill executed when the aura first starts                  |<!--type:Metaskill-->|
 | onTickSkill  | onTick, ot  | Meta-Skill executed every [interval] ticks on the affected entity|<!--type:Metaskill-->|
@@ -44,14 +46,42 @@ duration and can also be used in other mechanics and conditions.
 | CancelOnQuit        | coq     | Cancels the aura if the entity with the aura logs out. (Only really applies to players)                                                                            | true    |
 | DoEndSkillOnTerminate | desot, alwaysrunendskill, ares | Whether or not the aura will run onEndSkill when it's removed by auraremove mechanic                                                       | true    |
 
-### ShowBarTimer Attribute
-If set to `true`, additional attributes becomes available
-| Attribute | Aliases   | Description                                                          | Default |
-|-----------|-----------|----------------------------------------------------------------------|---------|
-| bartimerdisplay | bartimertext | The text in the bossbar                                    | auraname |
-| bartimercolor |       | The [Color](/Mobs/BossBar#color) of the bossbar      | RED<!--type:BarColor--> |
-| bartimerstyle |       | The [Style](/Mobs/BossBar#style) of the bossbar    | SOLID<!--type:BarStyle--> |
+## Components
+An aura can define multiple components to use. Each defined component can trigger additional metaskills and apply specific features.  
 
+> [!tip]
+> If you are familiar with mechanics such as [onDamaged](/Skills/Mechanics/onDamaged) or [onAttack](/Skills/Mechanics/onAttack), then this might sound pretty familiar to you. In fact, those mechanics are just an aura with a single specific component applied to them. But by using proper aura components, you will be able to create an aura that has multiple such effects at the same time!
+
+Components have the same syntax of mechanics, and each has its own specific attributes you can define 
+
+```yaml
+  - aura{auraname=MultiAura;duration=200;interval=10;
+      components=[
+        - onattack{onattack=[ - particles{p=flame;a=50;s=1} @self ]}
+        - ondamaged{ondamaged=[ - particles{p=soulflame;a=50;s=1} @self ]}
+        - stat{stat=HEALTH;type=ADDITIVE;value=20}
+      ]}
+```
+
+| Component                                                       | Description                          |
+|-----------------------------------------------------------------|--------------------------------------|
+| [ChunkLoad](/Skills/Mechanics/AuraComponents/ChunkLoad) | Keeps the chunk the target is in loaded for the duration of the aura  |
+| [Fear](/Skills/Mechanics/AuraComponents/Fear)                   | Makes the target run around in fear  |
+| [Fly](/Skills/Mechanics/AuraComponents/Fly)             | Makes the target player have creative flight |
+| [Glow](/Skills/Mechanics/AuraComponents/Glow)                   | Makes the target glow                |
+| [OnAttack](/Skills/Mechanics/AuraComponents/OnAttack) | Applies an aura component to the target that triggers a skill when they damage something. It is also possible to change the damage event itself|
+| [OnBlockBreak](/Skills/Mechanics/AuraComponents/OnBlockBreak) | Applies an aura component to the target that triggers a skill when they break a block |
+| [OnBlockPlace](/Skills/Mechanics/AuraComponents/OnBlockPlace) | Applies an aura component to the target that triggers a skill when they place a block |
+| [OnChat](/Skills/Mechanics/AuraComponents/OnChat) | Applies an aura component on the target player that triggers a metaskill when they type a chat message |
+| [OnDamaged](/Skills/Mechanics/AuraComponents/OnDamaged) | Applies an aura component to the target that triggers a skill when they take damage from something. It is also possible to change the damage event itself          |
+| [OnDeath](/Skills/Mechanics/AuraComponents/OnDeath) | Applies an aura component to the target that triggers a skill when they die |
+| [OnInteract](/Skills/Mechanics/AuraComponents/OnInteract) | Applies an aura component to the target that triggers a skill when they right click an entity/get right clicked by a player |
+| [OnInput](/Skills/Mechanics/AuraComponents/OnInput) | Applies an aura component to the target player that triggers a skill and sets variables based on their used inputs |
+| [OnSwing](/Skills/Mechanics/AuraComponents/OnSwing) | Applies an aura component to the target player that triggers a skill when they swing their arm (left click) |
+| [OnShoot](/Skills/Mechanics/AuraComponents/OnShoot) | Applies an aura component to the target that triggers a skill when they shoot a projectile |
+| [ProjectileRebound](/Skills/Mechanics/AuraComponents/ProjectileRebound) | Rebounds incoming projectiles away from the target, optionally back at whoever fired them |
+| [Stat](/Skills/Mechanics/AuraComponents/Stat) | Applies an aura component to the target that that applies a specific stat to them |
+| [Stun](/Skills/Mechanics/AuraComponents/Stun) | Holds the target in place temporarily |
 
 ## Attachment Types
 Attachments are optional "objects" that are applied (attached) to the entity the aura is applied to
@@ -74,6 +104,14 @@ Attachments are optional "objects" that are applied (attached) to the entity the
 | attachmentCulling | attachCulling, culling | Whether the model should be able to be culled by ModelEngine | true | 
 | attachmentoffset | attachoffset | The model's offset from the attached entity, in a `x,y,z,yaw,pitch` format.<br>Can also be written as `x,y,z` or `x,y,z,yaw` | 0,0,0,0,0 |
 
+## ShowBarTimer Attribute
+If set to `true`, additional attributes becomes available
+| Attribute | Aliases   | Description                                                          | Default |
+|-----------|-----------|----------------------------------------------------------------------|---------|
+| bartimerdisplay | bartimertext | The text in the bossbar                                    | auraname |
+| bartimercolor |       | The [Color](/Mobs/BossBar#color) of the bossbar      | RED<!--type:BarColor--> |
+| bartimerstyle |       | The [Style](/Mobs/BossBar#style) of the bossbar    | SOLID<!--type:BarStyle--> |
+
 ## Examples
 ```yaml
   Skills:
@@ -82,7 +120,9 @@ Attachments are optional "objects" that are applied (attached) to the entity the
 Gives the target (Which in this case is the entity itself) the
 Retributing_Light aura that lasts 12 seconds. Every 10 ticks (or half a
 second) it will fire the RetributingLightDamage skill.
-##
+
+---
+
 ```yaml
  Skills:
   - onDamaged{auraName=fire_shield;onHit=FireShield;duration=200;charges=5;multiplier=0.5} @self
@@ -91,7 +131,9 @@ In this example, the caster's next 5 hits taken in 10 seconds would
 trigger the FireShield skill targeting whatever hit them and also deal
 50% damage. However, if FireShield's conditions failed, it would deal
 regular damage as the multiplier would not trigger either.
-##
+
+---
+
 ```yaml
   Skills:
   - onAttack{auraName=fiery_strikes;onHit=FireStrike;duration=200;charges=5;multiplier=2} @self

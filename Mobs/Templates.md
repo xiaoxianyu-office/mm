@@ -130,18 +130,141 @@ flowchart TD
 But what about elements that are present on both the mob and its template?
 
 ### Shared Elements
-When both the Mob and its Template share some elements, one of the following three things happens:
-  * The element of the template is overridden by the one in the Mob. (**Overridden**)
-    * Example: both `MonsterFaction_Base` and `ZombieBrute` have a `PROJECTILE` DamageModifier, so the one in `ZombieBrute` overrides the one in the Template, and is the one that is ultimately applied
-  * The element of the Template is added alongside the one of the Mob. (**Partially Overridden**)
-    * Example: Since the Mob has no `Faction` element, it will inherit the one in the Template, ultimately  being considered as part of the `Monsters` faction
-    * Example: both `MonsterFaction_Base` and `ZombieBrute` have a DamageModifiers element, with the Template's having `PROJECTILE` and `ENTITY_ATTACK`, while the Mob has only `PROJECTILE`. Since no `ENTITY_ATTACK` DamageModifier is specified in the Mob, the Template's gets inherited, so in the end the `ZombieBrute` mob will take 75% of the damage it would normally take from the `ENTITY_ATTACK` damage source, despite not having that DamageModifier itself
-  * The elements of the Mob and of the Template are applied simultaneously, if the elements are part of a list. (**Merged**)
-    * Example: `Skills` and `KillMessages` are both a list of mechanics and messagges respectively, so you can add them to both the Template and the Mob and expect to see all of them to be present on the Mob
-    * `AIGoalSelectors` and `AITargetSelectors` are, too, considered a list, so by adding more of them on the Mob, more Selectors are being added at the end of the list, essentially becoming other Selectors but with less importance than the ones in the Template, since Selectors that are placed lower on the list are followed only the one ones above them cannot be.
-      * To clear the Selectors of the Template, just use the `clear` Selector
+When both the Mob and its Template share some elements, those are inherited in different ways depending on the *value* of the element in question.
 
-To make this more understandable, the following is a list of all of the elements a Template may have and how the Mob will treat them if the Mob has them too
+The *value* of the element generally falls into one of three categories:
+- The value is a `string`
+- The value is a `list` of strings
+- The value are other `elements`
+
+#### String Value
+```yaml
+TemplateMob:
+  Type: ZOMBIE
+  Faction: TemplateFaction
+
+ExampleMob:
+  Template: TemplateMob
+  Faction: ExampleFaction
+```
+This is the easiest to understand: when an element with a string value is inherited from a template (`TemplateMob`) to a mob (`ExampleMob`) that **also has the same element**, then the element is **overridden** 
+
+> So, when you spawn `ExampleMob`, its `Faction` will be `ExampleFaction`, since the mob's element has overridden the template's 
+
+#### List Value
+```yaml
+TemplateMob:
+  Type: ZOMBIE
+  KillMessages:
+  - <caster.name> yeeted <target.name>!!
+
+ExampleMob:
+  Template: TemplateMob
+  KillMessages:
+  - You're too weak <target.name>!!
+```
+
+When an element with a *list* of strings as its value is inherited from a template (`TemplateMob`) to a mob (`ExampleMob`) that **also has the same element**, then the element is **merged**
+
+This means that the resulting element will have **all** of the strings that made up the original lists, concatenated
+
+> So, when you spawn `ExampleMob`, its `KillMessages` will be
+> ```yaml
+> - <caster.name> yeeted <target.name>!!
+> - You're too weak <target.name>!!
+> ```
+> in this exact order
+
+##### Order in List Values
+
+There are instances where the *order* of inheritance matters a lot: for instance, if there is a list of instructions or a list of key-value pairs. For these situations, you must always remember that, usually, **lists are parsed from top to bottom**, so *instructions are parsed in that order*, and *in key-value lists, the bottom-most "wins out"*
+
+For instance, let's take the following example with some AI Goals
+
+```yaml
+TemplateMob:
+  Type: ZOMBIE
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+
+ExampleMob:
+  Template: TemplateMob
+  AIGoalSelectors:
+  - clear
+  - randomstroll
+```
+
+Given this situation, the end result will be
+```yaml
+  - clear
+  - meleeattack
+  - clear
+  - randomstroll
+```
+
+Which does look a bit odd. But worry not! Even in situations as peculiar as this one, there is always an underlying logic. For instance, here the `clear` goal clears everything that was before it. So, we effectively get 
+```yaml
+  - clear
+  - randomstroll
+```
+
+Another such instance is with DamageModifiers
+```yaml
+TemplateMob:
+  Type: ZOMBIE
+  DamageModifiers:
+  - ENTITY_ATTACK 1
+  - PROJECTILE 1
+
+ExampleMob:
+  Template: TemplateMob
+  DamageModifiers:
+  - ENTITY_ATTACK 0.5
+```
+
+Where, after the merge, the resulting list would be
+```yaml
+  - ENTITY_ATTACK 1
+  - PROJECTILE 1
+  - ENTITY_ATTACK 0.5
+```
+
+In which case, among multiple modifiers with the same name, only the *bottom-most* is ultimately counted. Meaning, the above can be rewritten as
+```yaml
+  - PROJECTILE 1
+  - ENTITY_ATTACK 0.5
+```
+
+#### Elements Value
+```yaml
+TemplateMob:
+  Type: ZOMBIE
+  Options:
+    FollowRange: 32
+    Despawn: true
+    Glowing: false
+
+ExampleMob:
+  Template: TemplateMob
+  Options:
+    FollowRange: 16
+```
+These are elements that, as a value, have other elements! Still, they do not behave like other elements with a "proper" value do.
+
+You can imagine the situation with "Elements that have other elements as values" being a sort of `folder`, and with the "Elements that have string or list values" being a sort of `file`. When you merge two folders, what happens is that *all files are kept*, **except** for those files that share the same name and folder.
+
+The same things happens here!
+
+For instance, `TemplateMob` has an `Option` element that, itself, has both a `FollowRange` element and a `Despawn` one. When `ExampleMob` inherits from `TemplateMobs`, *all options* are kept, **except** for `FollowRange`, which is in both `TemplateMob.Options` and in `ExampleMob.Options`.
+
+Now, what happens for it?  
+Well, `FollowRange` is an element with a string value, so it behaves like any other [Element with a string value](#string-value)!  
+Similarly, elements in here that have a list value also behaves [like their counterparts](#list-value)
+
+#### Examples
+
+To make this more understandable, the following is a *non-exhaustive* list of some of the elements a Template may have and how the Mob will inherit them if the Mob has them too. 
 
 | **Element** *(in the Template)*       | **How it is inherited** *(if the Mob has it too)*              |
 |---------------------------------------|----------------------------------------------------------------| 
@@ -309,7 +432,7 @@ flowchart TD
     D[DiamondArmorSet]  --> |Is Inherited by| C[ZombieBrute]
 ```
 
-##
+---
 
 ## Item Templates
 [Items](/Items/Items#template) can use Templating like mobs while referencing other items!

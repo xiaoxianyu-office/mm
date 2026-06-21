@@ -70,6 +70,25 @@ Configuration:
     SwapIsPickBlock: true               # Can be true or false
 
   #================================================================================
+  # Custom Equippables (requires Crucible)
+  #================================================================================
+  Equippables:
+    Enabled: false
+    CustomSlots:
+    - Id: NECKLACE
+      Display: 'Neck'
+      EquipConditions:
+      - itemGroup{group=NECK}
+    - Id: RING_1
+      Display: 'Ring'
+      EquipConditions:
+      - itemGroup{group=RING}
+    - Id: RING_2
+      Display: 'Ring'
+      EquipConditions:
+      - itemGroup{group=RING}
+
+  #================================================================================
   # Custom Furniture (requires Crucible)
   #================================================================================
   Furniture:

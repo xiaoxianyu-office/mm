@@ -1,5 +1,5 @@
 ## Description
-Takes experience levels to the targeted players
+Takes experience levels from the targeted players
 
 
 ## Attributes

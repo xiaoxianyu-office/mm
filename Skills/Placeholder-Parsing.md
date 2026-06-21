@@ -4,11 +4,32 @@ The value of certain attributes can be not only a static value, but also a value
 
 Those attributes that can have placeholders in their values are always parsed when the associated mechanic is executed, so that their value can always better reflect the current state of the mob, the target, the [SkillTree](/Skills/SkillTrees) and the likes
 
+## Mythic Placeholder Recognition
+
+A Mythic placeholder has the generic syntax of `<placeholder.segment1{attribute=value;attribute2=value2}.segment2.segment3{}>`
+
+In a text, as soon as a `<` character is spotted If
+
+- The found `<` would start a new placeholder
+- The character following `<` is **NOT**
+  - another `<`
+  - a space ` `
+  - an equal sign `=`
+
+
+from that point forward and as long as a matching number of `>` has not been found, that portion of text will be evaluated as a (possible!) Mythic placeholder. If no matching Mythic placeholder is found, the literal value of the placeholder is returned
+
+### Examples
+- `<skill.var.example>`: Will return the value of the variable
+- `<red>`: <red> is not a Mythic placeholder, so a `<red>`string will be returned
+- `<<skill.var.amount>`: The first `<` is followed by another `<`, which is a "blacklisted" character, so the first `<` will be treated as a simple string. On the other hand, the second `<` is a valid character to be starting a placeholder, so `<skill.var.amount>` gets correctly recognized as a placeholder. As a result, if we say that the value of the skill scoped variable is `N`, the result of this parsing will be `<N`
+
 ## Parsing Order
 
 When a Placeholder is parsed, the operation *always* has certain steps that are executed in order
 - Mythic placeholders are replaced with their value
 - Papi placeholders are replaced with their value
+  - If the targeted entity is a player, the Papi placeholders will be parsed against said player
 - Math operations are parsed.
   - At this exact step, functions and operators in the [Math's](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Math) wiki page are also interpreted and used
   - This happens only if the attribute's specific placeholder type (PlaceholderInteger, PlaceholderFloat etc.) has support for such, and some specific character (`*`, `-`, `+` etc.) appears in the string

@@ -1,5 +1,780 @@
 [[_TOC_]]
 
+# 5.12.1
+
+General
+-------
+- Particle effects are now queued and bundled to greatly reduce packet usage, and particle effects will not respect the client's particle settings (configurable)
+- Added support for using duration units in skill cooldowns and most mechanics with durations and intervals by adding a suffix (e.g. `5s` = 5 seconds, `20t` = 20 ticks)
+```yaml
+Cooldown: 5t
+Cooldown: 1m
+
+- potion{type=POISON;duration=10s}
+```
+
+Stats
+-----
+
+### NEW: MUTATOR Stats
+- Added the `MUTATOR` custom stat type for applying a stat value to other stats through components, formulas, and operations
+
+```yaml
+AGILITY:
+  Enabled: false
+  Type: MUTATOR
+  AlwaysActive: true
+  Display: 'Agility'
+  PlayerBaseValue: 0
+  Components:
+    - Stat: BONUS_DAMAGE
+      Formula: 'v / 5'
+      Operation: ADDITIVE
+    - Stat: CRITICAL_STRIKE_CHANCE
+      Formula: 'v / 1000'
+      Operation: ADDITIVE
+```
+
+Command Skills
+--------------
+
+### Command Parent
+- Added `Command.Parent` to command skills to allow for creation of sub-commands.
+
+```yaml
+ParentCommandSkill:
+  Command:
+    Id: parent
+
+ChildCommandSkill:
+  Command:
+    Id: child
+    Parent: ParentCommandSkill
+```
+
+Mechanics
+---------
+
+### OnAttack Aura Component
+- Added trigger condition support to the `onattack` aura component
+
+```yaml
+- aura{auraname=Counter;duration=200;components=[ - onattack{onattack=CounterSkill} ]} @self ?targetwithin{d=5}
+```
+
+### ToggleSitting
+- Added the `togglesitting` mechanic for controlling pet sitting
+
+```yaml
+- togglesitting{state=toggle} @target
+- sit{state=true} @target
+```
+
+Conditions
+----------
+
+### NEW: canBeHitByProjectile
+- Added the `canBeHitByProjectile` condition
+- Custom MEG hitboxes are skipped through the API
+
+```yaml
+- canBeHitByProjectile
+- hitByProjectile
+```
+
+### NEW: petsitting
+- Added the `petsitting` condition for checking whether a pet is sitting
+
+```yaml
+- petsitting
+- petsit
+```
+
+Triggers
+--------
+
+### NEW: onEffectRemove
+- Added the `onEffectRemove` trigger
+
+```yaml
+Skills:
+  - skill{s=EffectRemovedSkill} ~onEffectRemove
+```
+
+Items
+-----
+
+### CustomModelData Component
+- Added support for typed `CustomModelData` component values
+- Supports `float`, `string`, `boolean`, and `color` data
+- Supports scalar, list, and map-list formats
+- Requires Paper 1.21.4+
+
+```yaml
+CustomModelData:
+  - float/1,2,3
+  - string/example_model
+  - boolean/true
+  - color/#ff8800
+```
+
+API
+---
+- Exposed stat registration methods for addons
+- Added `MythicStatsRegistrationEvent`
+- Added `PlaceholderDuration`
+- Added experimental API for packet item lore
+
+Bug Fixes / Other
+-----------------
+- `incombat` can now check players tracked by the combat-tag tracker
+- Improved Folia handling for `RandomSpawnGenerator`
+- Improved Folia handling for `SetTextDisplayMechanic` entity writes
+- Improved caster scheduling for virtual casters
+- Optimized MythicMenu rendering by skipping per-render placeholder resolution for static placeholders
+- Optimized text pixel length calculation
+- Cached regex metakeyword patterns
+- Optimized boss bar updates
+- Optimized single-token placeholder parsing
+- Optimized random location target selection
+- Optimized final damage calculation
+- Optimized spawner clock ticking
+- Optimized target condition evaluation allocations
+- Optimized random generation in `ChanceCondition`
+- Optimized drop hot paths
+- Optimized `EntitiesNearbyTargeter`
+- Optimized `PlaceholderInt` parsing
+- Optimized `IEntitySelector` player filtering
+- Optimized variable string joins
+- Optimized `MapVariable`, `MapSerializer`, and `AuraRegistry` loops
+- Fixed `blockwave` to use the existing `BlockState` when no material is specified
+- Fixed `setDisplayEntityItem` nt supporting block display entities
+- Fixed some issues with default stat base values in `stats.yml`
+- Fixed `sortNum` placeholder output for list variables
+- Fixed `sortNum` placeholder output for set variables
+- Fixed documented defaults not being honored in `playersInRadius`
+- Fixed MiniMessage tags not parsing in custom kill messages
+- Fixed default flash particles not being colored white
+- Fixed overlapping `blockmask` mechanics with durations so newer masks keep their duration when older masks expire
+- Fixed `RandomSpawner` `REPLACE` recursion on Mythic-initiated spawns
+- Fixed `hasitem` defaulting amount to the condition variable instead of `>0`
+- Fixed nameplate brightness
+- Fixed stat executor loading order
+- Fixed parent command handling for command skills
+- Fixed `stats.yml` extraction timing so addons can register stats early
+- Fixed `particlelineequation` ignoring `eqy` and `eqz`
+- Fixed `teleport` losing `preservepitch` and `preserveyaw` during safe spawn lookup
+- Fixed `particlesphere` applying `yoffset` twice
+- Fixed `trail` particle location key using the source instead of the target
+- Fixed `aura{cancelOnDeath=false}` persisting through player respawn
+- Fixed `MythicMobDeathEvent` and drops being missed during async skill clock races
+- Fixed 1.21.1 compatibility issues
+- Fixed inverted `BukkitAttribute.values()` filtering
+- Fixed `onTick` auras continuing after expiry
+- Fixed negative-duration aura loops
+- Fixed nested entity targeters in `location=` slots not applying sort, conditions, or limit
+- Fixed `onattack` skill variables for `damage-amount`
+- Fixed `onattack` skill variables for `damage-type`
+- Fixed `onattack` skill variables for `damage-cause`
+- Fixed `MobsNearOrigin` throwing an NPE when type is missing
+- Fixed `MobsNearOrigin` to log a config error when type is missing
+- Fixed `pickupitem` leaving fancy-drop PDC on picked-up items
+- Fixed `giveitem` filling decorated pots instead of dropping items beside them
+- Fixed summoning issues
+- Fixed durations returning excessive precision
+- Fixed math formulas returning excessive precision
+- Fixed `damage{}` not respecting `triggerSkills`
+- Fixed `stun` allowing players to teleport upward
+- Fixed `stun` restoring `g=` as an aura group option
+- Fixed `-1` not giving infinite duration on potions
+
+# 5.12.0
+
+General
+-------
+- Added support for 1.21.11 and `26.1.x` (requires Java 25)
+- Added automatic config updating
+- Improved case-insensitive config loading
+- Added new `files/` pack directory
+- Added auto-generated `.internal` pack. This will contain some assets that can be auto-generated by Crucible, along with other helpful internal things that can modified.
+
+Stats System
+------------
+- Updated the default `stats.yml` with better base values
+- Added missing stats to the default `stats.yml`
+- Added `LOOT_BIAS` stat for affecting weighted droptables
+
+Mechanics
+---------
+
+### NEW: Aura Components
+- Rewrote auras to be component-based so a single aura can combine multiple effects
+- Added `targetIsCaster=true`
+- Added `decayStackOnExpire=true`
+- Added persistent `cancelOnQuit=false`
+- Added `ChunkLoadAuraComponent`
+- Added `projectilerebound`
+
+```yaml
+- aura{auraname=MultiAura;duration=200;interval=10;targetIsCaster=true;decayStackOnExpire=true;components=[ - onattack{onattack=[ - particles{p=flame;a=50;s=1} @self ]}, - stat{stat=HEALTH;type=ADDITIVE;value=20} ]} @target
+```
+
+### NEW: removeTaggedAuras
+- Added `removeTaggedAuras` for clearing aura instances by tag
+
+```yaml
+- removeTaggedAuras{tags=stun;limit=2} @target
+```
+
+### NEW: Charges / CooldownMode
+- Added `Charges` to skills and metaskills
+- Added `CooldownMode` to skills and metaskills
+
+```yaml
+Charges: 3
+CooldownMode: PARALLEL
+```
+
+### NEW: addSkillCharges
+- Added `addSkillCharges` for restoring charges to tracked skills
+
+```yaml
+- addSkillCharges{skill=Dash;amount=1;order=LATEST;overflow=true} @self
+```
+
+### NEW: showDialog
+- Added `showDialog` for opening custom Paper dialogs
+
+```yaml
+- showDialog{dialog=QuestOffer} @trigger
+```
+
+### NEW: closeDialog
+- Added `closeDialog` for force-closing an active dialog
+
+```yaml
+- closeDialog @trigger
+```
+
+### NEW: hide
+- Added `hide` / `hideFromPlayers` for hiding the caster from targeted players, with optional persistence
+
+```yaml
+- hide{permanent=true;save=true} @PlayersInRadius{r=30}
+```
+
+### NEW: enchantItem
+- Added `enchantItem` for applying enchantments directly to a target slot
+
+```yaml
+- enchantItem{enchant=SHARPNESS;level=1;slot=HAND} @self
+```
+
+### NEW: SetCustomMenuTitle
+- Added `SetCustomMenuTitle` / `setMenuTitle` for updating an open custom menu title
+
+```yaml
+- setMenuTitle{title="<gold>Boss Rewards"} @self
+```
+
+### Wait
+- Added `onTimeoutSkill` / `ontimeout` / `ots` to `wait`
+
+```yaml
+- wait{cond=[ - onground ];tt=300;ontimeout=TimeoutSkill}
+```
+
+### Sudo
+- Added `chained=true` to `sudo`
+
+```yaml
+- sudoskill{chained=true;skill=Example} @EIR{limit=3;radius=10}
+```
+
+### Heal
+- Added `tags` to heal mechanics
+
+```yaml
+- heal{a=10;tags=holy,burst} @self
+```
+
+### DropItem
+- Added `ForceDynamic` to `DropItem`
+
+```yaml
+- dropitem{item=MyDrop;ForceDynamic=true} @self
+```
+
+### Sound
+- Added `emitter` and `seed` options to sound mechanics
+
+```yaml
+- sound{s=minecraft:entity.warden.heartbeat;emitter=caster;seed=42} @self
+```
+
+### Projectile
+- Added `spread` to `volley`
+- Added `bulletBrightness` to projectile mechanics
+- Added `bulletALOD=false` to projectile mechanics
+
+```yaml
+- volley{spread=4} @target
+```
+
+### Throw
+- Added placeholder support and `triggers=false` to `throw`
+
+```yaml
+- throw{v="<caster.var.throw_speed>";vy=1.5;triggers=false} @target
+```
+
+### Custom Menus
+- Added `Shared: false` to custom menus
+- Added `UIElements` to custom menus
+
+```yaml
+CustomMenu:
+  Shared: false
+  UIElements:
+  - myc_menu_hats{char=\ue832;path=ui/cosmetics_gui_hat;height=256;ascent=14}
+```
+
+Conditions
+----------
+
+### NEW: input
+- Added `input` for checking live player movement keys
+
+```yaml
+- input{key=forward,sprint}
+```
+
+### NEW: skillIsRecharging
+- Added `skillIsRecharging` for checking skill recharge state
+
+```yaml
+- skillIsRecharging{skill=Dash}
+```
+
+### NEW: statDamageModifier
+- Added `statDamageModifier` for stat skill checks
+
+```yaml
+- statDamageModifier{m=1.01} castInstead PositiveEffectSkill
+```
+
+### NEW: inLiquid
+- Added `inLiquid`, including waterlogged block support
+
+```yaml
+- inLiquid
+```
+
+### NEW: isFrozen
+- Added `isFrozen`
+- Added `freezing` / `isfreezing` aliases
+
+```yaml
+- isFrozen
+```
+
+### NEW: uuid
+- Added `uuid` for comparing an entity against a specific UUID value
+
+```yaml
+- uuid{u="<trigger.uuid>"}
+```
+
+### NEW: goatHorn
+- Added `goatHorn` for checking whether a goat still has a horn
+
+```yaml
+- goatHorn
+```
+
+### NEW: isSheared
+- Added `isSheared` for checking sheep shearing state
+
+```yaml
+- isSheared
+```
+
+### NEW: trim
+- Added `trim` / `armorTrim` for checking armor trim pattern and material
+
+```yaml
+- trim{slot=CHEST;pattern=sentry;material=gold}
+```
+
+### NEW: blockAbove
+- Added `blockAbove` for checking material at an offset above the evaluated location
+
+```yaml
+- blockAbove{m=DIRT;y=2}
+```
+
+### NEW: isTarget
+- Added `isTarget` / `target` for checking whether the evaluated entity is the caster mob’s current target
+
+```yaml
+- isTarget
+```
+
+### inClaim
+- Extended `inClaim` support to PlotSquared
+- Extended `inClaim` support to Residence
+
+```yaml
+- inClaim
+```
+
+### Composite Conditions
+- Composite conditions may now contain spaces more reliably
+
+```yaml
+- ((day false || raining true) && onBlock{material=LIME_CONCRETE}) true
+```
+
+### Item Filters
+- Added placeholder support to `hasitem`
+- Added variable support to `hasitem`
+- Added placeholder support to `haspermission`
+- Added variable support to `haspermission`
+- Added runtime item filter resolution to item-related conditions and mechanics
+
+```yaml
+- hasitem{i="<caster.var.required_item>"}
+```
+
+Targeters
+---------
+
+### useBoundingBox
+- Added `useBoundingBox` / `bb=true` to shaped entity targeters and cone bounding-box checks for `@EIC`
+
+```yaml
+@EIC{a=45;r=12;bb=true}
+```
+
+### sort
+- Added `sort=OLDEST` and `sort=NEWEST` for entity target filters
+
+```yaml
+@EIR{r=20;sort=OLDEST}
+```
+
+### EntitiesInLine
+- Added placeholder + math support to `EntitiesInLine` radius
+
+```yaml
+@EntitiesInLine{r="<skill.var.beam_radius>"}
+```
+
+### RandomLocations
+- Added placeholder + math support to `RandomLocations` targeters
+
+```yaml
+@RandomLocations{a=5;r="<caster.var.scatter_radius>"}
+```
+
+Mobs
+----
+
+### NEW: 1.21.11 Entity Types
+- Added support for `CAMEL_HUSK`
+- Added support for `NAUTILUS`
+- Added support for `PARCHED`
+- Added support for `ZOMBIE_NAUTLIS`
+
+```yaml
+Type: CAMEL_HUSK
+```
+
+### NEW: Axolotl Variant
+- Added `Variant` support for Axolotls
+
+```yaml
+Variant: blue
+```
+
+### ThreatTable
+- Added `ThreatTable.DropUnreachableSeconds`
+
+```yaml
+ThreatTable.DropUnreachableSeconds: 10
+```
+
+### Saddles
+- Added newer mob support to saddle logic
+- Improved `isSaddled` support for newer mobs
+
+```yaml
+- isSaddled
+```
+
+Triggers
+--------
+
+### NEW: Input Triggers
+- Added `~onInputForward`
+- Added `~onInputBackward`
+- Added `~onInputLeft`
+- Added `~onInputRight`
+- Added `~onInputJump`
+- Added `~onInputSneak`
+- Added `~onInputSprint`
+
+```yaml
+- message{m="Jump detected"} ~onInputJump
+```
+
+### NEW: onHealed
+- Added `~onHealed`
+
+```yaml
+- skill{s=AfterHeal} ~onHealed
+```
+
+### NEW: onSheared
+- Added `~onSheared`
+
+```yaml
+- skill{s=AfterShear} ~onSheared
+```
+
+### NEW: onEffectApply
+- Added `~onEffectApply`
+
+```yaml
+- skill{s=OnPotionGain} ~onEffectApply
+```
+
+### NEW: onThrownByMechanic
+- Added `~onThrownByMechanic`, with `~onThrown` as an alias
+
+```yaml
+- skill{s=AfterThrow} ~onThrown
+```
+
+### NEW: onMount
+- Enabled `~onMount`
+
+```yaml
+- skill{s=MountedSkill} ~onMount
+```
+
+Placeholders
+------------
+
+### Placeholder Engine
+- Refactored placeholders onto a new parser/segment pipeline
+- Added wildcard registration
+- Added generic return types
+- Added `MythicLineConfig` support for meta keywords
+- Improved static placeholder parsing
+- Added `{default=...}` support to variable placeholders
+
+### NEW: Input Placeholder
+- Added live input placeholders for player movement state
+
+```text
+<trigger.input.jump>
+```
+
+### NEW: Aura Stacks Placeholder
+- Added `<caster.aura.ID.stacks>`
+
+```text
+<caster.aura.FireShield.stacks>
+```
+
+### NEW: <skill.power>
+- Added `<skill.power>`
+
+```yaml
+- message{m="Power: <skill.power>"} @self
+```
+
+### NEW: Skill Charge Placeholders
+- Added `<[scope].skill.SkillName.charges>`
+- Added `<[scope].skill.SkillName.maxcharges>`
+- Added `<[scope].skill.SkillName.overflowcharges>`
+
+```yaml
+- message{m="Dash: <caster.skill.Dash.charges>/<caster.skill.Dash.maxcharges> (+<caster.skill.Dash.overflowcharges>)"} @self
+```
+
+### NEW: damage-amount-post
+- Added `damage-amount-post`
+- Added `<skill.var.damage-amount-post>`
+
+```yaml
+- message{m="Final damage: <skill.var.damage-amount-post>"} @self
+```
+
+### NEW: Dialog Placeholders
+- Added dialog input placeholders
+
+```yaml
+- message{m="Class: <dialog.classChoice>"} @trigger
+```
+
+### NEW: itemcount
+- Added `itemcount` for counting vanilla or Mythic items in a player's inventory
+
+```yaml
+- message{m="Diamonds: <caster.itemcount.DIAMOND>"} @self
+```
+
+### NEW: <char.*>
+- Added `<char.*>` for deferred Unicode character insertion
+
+```text
+<char.007B>
+```
+
+### NEW: Random UUID
+- Added `<random.uuid>`
+
+```yaml
+- message{m="<random.uuid>"} @self
+```
+
+### Misc
+- Added `sortByValue` map meta keyword
+- Added `round` math support
+- Renamed `<item.level>` to `<item.droplevel>`
+
+Items
+-----
+
+### General
+- Added `Options.Glint: false` support
+
+### New Component Support
+- Added `AttackRange`
+- Added `BlocksAttacks`
+- Added `Weapon`
+- Added `KineticWeapon`
+- Added `PiercingWeapon`
+- Added `JukeboxPlayable`
+- Added `NoteBlockSound`
+- Added `UseRemainder`
+- Added `BreakSound`
+- Added `Instrument`
+- Added `Enchantable`
+- Added `RepairableBy`
+- Added `OminousBottleAmplifier`
+- Added `PotDecorations`
+- Added `banner_patterns`
+- Added `LodestoneTracker`
+
+```yaml
+AnItem:
+  Material: DIAMOND
+  AttackRange: 3.5
+  Weapon:
+    ItemDamagePerAttack: 2
+    DisableBlockingForSeconds: 0.5
+  JukeboxPlayable: "minecraft:thirteen"
+  UseRemainder: ADifferentItem
+  RepairableBy:
+  - STICK
+  PotDecorations:
+    Back: brick
+    Left: arms_up_pottery_sherd
+    Right: skull_pottery_sherd
+    Front: prize_pottery_sherd
+```
+
+API
+---
+- Added API for registering custom command functions
+- Added API for custom equippables
+- Added `MythicPlayerQuitEvent`
+- Added `MythicAuraStartEvent`
+- Added `MythicAuraStopEvent`
+- Added `MythicMobPreSpawnConfigureEvent`
+- Added `MythicTargetEvent`
+- Added final attack meta damage interception API
+- Exposed aura remaining ticks
+- Added menu hooks
+- Added icon hooks
+- Added color-picker hooks
+
+Compatibility
+-------------
+- Greatly improved Folia compatibility
+- Added `inClaim` support for PlotSquared
+- Added `inClaim` support for Residence
+
+Bug Fixes & Optimizations
+-------------------------
+- Refactored the placeholder engine
+- Improved static placeholder handling
+- Reduced hot-path allocations in projectiles
+- Reduced hot-path allocations in targeters
+- Reduced hot-path allocations in drops
+- Reduced hot-path allocations in cooldowns
+- Reduced hot-path allocations in clustering
+- Reduced hot-path allocations in registry lookups
+- Improved menu reload performance
+- Improved custom-name component caching
+- Optimized case-insensitive config handling
+- Fixed persistent aura save/rejoin issues
+- Fixed aura termination races
+- Fixed `removeAura` stat leaks
+- Fixed `onDamaged` aura regressions
+- Fixed random placeholder output regressions
+- Fixed MiniMessage placeholder regressions
+- Fixed bar placeholder regressions
+- Fixed stance placeholder regressions
+- Fixed threat-table placeholder regressions
+- Fixed cached stat placeholder regressions
+- Fixed static placeholder regressions
+- Fixed non-placeholder `<` parsing issues
+- Fixed recursive placeholder cache races
+- Fixed placeholder concurrency issues
+- Fixed negative projectile gravity
+- Fixed projectile hits against owner sub-hitboxes
+- Fixed text display brightness issues
+- Fixed zero-velocity display bullets
+- Fixed projectile bounce axis bugs
+- Fixed projectile NPEs
+- Fixed `doEndSkillOnHit=false` handling
+- Fixed random spawning logic
+- Fixed spawner stale data
+- Fixed per-player random spawn cooldowns
+- Fixed double spawns
+- Fixed natural despawn unregistering
+- Fixed persistent mob restore on chunk load
+- Fixed level scaling issues
+- Fixed `BaseValue` stat issues
+- Fixed stat rounding issues
+- Fixed heal percent issues
+- Fixed additive damage modifier behavior
+- Fixed `modDamage{action=ADD}` applying damage as a multiplier
+- Fixed item attribute doubling and reload resets
+- Fixed `OnCooldownSkill` redirects ignoring the target skill cooldown
+- Fixed menu generation issues
+- Fixed conditional menu issues
+- Fixed menu reload performance issues
+- Fixed hidden item handling
+- Fixed FAWE schematic lookup outside Mythic folders
+- Fixed `EntitiesInCone` targeting when looking up or down
+- Fixed `haspotion` condition issues
+- Fixed `inLiquid` condition issues
+- Fixed summon owner/parent flags
+- Fixed `runaigoal` priorities and stacking
+- Fixed hologram hex colors without Nexo
+- Fixed additional `26.1.x` follow-up issues
+- Fixed Folia chunk races
+- Fixed Folia command races
+- Fixed Folia potion effect threading issues
+- Fixed Folia visibility threading issues
+- Fixed Folia heal event threading issues
+- Fixed Folia totem handling
+- Fixed Folia trading handling
 
 # 5.11.0
 
@@ -202,7 +977,7 @@ Bug Fixes & Optimizations
 
 ## Variables
 - New variable types: `Set`, `List`, `Map`, `Boolean`, `Vector`, `Time`, **Item**, **MetaSkill**
-- [Meta Variable Placeholders](/Skills/Placeholders/meta-variable-placeholders): `<[scope].var.[name].keyword>` with keyword chaining
+- [Meta Variable Placeholders](/Skills/Placeholders/meta-placeholders): `<[scope].var.[name].keyword>` with keyword chaining
 - `Variable.ofType` updated; `PolymorphicPlaceholder` added
 - Mob Variables can set all registered variable types
 - Internals: relocated Default Variable handler for Crucible usage

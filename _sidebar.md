@@ -17,8 +17,12 @@ should be assumed incorrect unless it directly cites this documentation.
 ##### [Commands and Permissions](Commands-and-Permissions)
 ##### [Mythic Add-ons](Add-ons)
 ##### [Compatible Plugins](Compatible-Plugins)
-##### [API Information](API)
 ##### [Config Files](/Config)
+---
+
+##### [API Information](API)
+* [Placeholders](/API/Placeholders)
+
 ---
 
 ##### [Guides](/Guides)
@@ -69,7 +73,7 @@ should be assumed incorrect unless it directly cites this documentation.
     * [Custom Commands](/Skills/Skill-Commands)
   * [Variables](/Skills/Variables)
   * [Placeholders](/Skills/Placeholders)
-    * [Meta Variable Placeholders](/Skills/Placeholders/Meta-Variable-Placeholders)
+    * [Meta Placeholders](/Skills/Placeholders/Meta-Placeholders)
 
 ---
 
@@ -104,6 +108,8 @@ should be assumed incorrect unless it directly cites this documentation.
 ---
 
 ##### [Custom Menus](/Custom-Menus)
+##### [Dialogs](/Dialogs)
+##### [Cinematics](/Cinematics)
 
 ---
 

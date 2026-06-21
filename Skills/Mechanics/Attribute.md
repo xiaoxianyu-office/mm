@@ -1,5 +1,6 @@
 ## Description
-Sets the base value of the targeted entity's [attribute][]
+Sets the base value of the targeted entity's [attribute][].
+Not supposed to be used on players.
 
 
 ## Attributes

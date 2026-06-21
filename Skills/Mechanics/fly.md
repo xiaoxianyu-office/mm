@@ -1,18 +1,8 @@
-## Description
-Makes the player fly, similar to the /fly command. Can use any aura
-attribute.
+> [!important] This Mechanic is Deprecated
+> Use The [fly] [aura component] instead
 
-
-## Attributes
-> This mechanic inherits every *inheritable* attribute of the [Aura](/Skills/Mechanics/Aura) mechanic
-
-  
-## Examples
-```yaml
-  Skills:
-  - fly{duration=100} @trigger ~onInteract
-```
-
+[fly]: /Skills/Mechanics/AuraComponents/fly
+[aura component]: /Skills/Mechanics/aura#components
 
 <!--TAGS-->
-<!--tag:Meta-Mechanic:Aura-->
+<!--tag:Deprecated-->

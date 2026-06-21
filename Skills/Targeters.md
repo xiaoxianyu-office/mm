@@ -243,7 +243,7 @@ TestOwner:
 | coordinateyaw                            | cyaw             | Sets the yaw value                        | |
 | coordinatepitch                          | cpitch           | Sets the pitch value                        | |
 | blockcentered                            | centered         | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself | |
-| faulty    |           | Whether the mechanic should use the old vector formula        | false |
+| faulty    |           | Whether the old vector calculation formula should be used        | false |
 | blockSurface | surface | Whether the plugin should attempt to adjust the location to be on a surface | false |
 | blockSurfaceTolerance | surfaceTolerance | The tolerance used when searching for a surface, when `blockSurface` is set to `true`| 5 |
 

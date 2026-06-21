@@ -199,6 +199,7 @@ The player inherits the `BaseValue` of these stats; Mobs also inherit them as de
 | ENTITY_INTERACTION_RANGE                                    | The entity interaction range attribute   |
 | FLYING_SPEED                                                | The flying speed of the entity           |
 | FOLLOW_RANGE                                                | The follow range of the entity           |
+| LOOT_BIAS                                                | Extra luck towards rare items in a droptable           |
 
 # Built-in Stats Breakdown
 
@@ -626,6 +627,31 @@ SCALE:
 
 </details>
 
+##
+#### `LOOT_BIAS`
+Extra luck to drop rarer items from mythic droptables. This only applies to weighted items!
+- Default: 0 - the normal chance to drop rare items
+- -100: Only the most common item in a weighted list will be dropped
+- 100: rare items are twice as common
+- 1000: rare items are 10x as common
+<details><summary>Configuration</summary>
+<br>
+
+```yml
+LOOT_BIAS:
+  Enabled: true
+  Type: STATIC
+  Display: 'Loot Bias'
+  BaseValue: 0
+  MinValue: -100
+  Formatting:
+    Rounding: 1
+    Additive: '+<value> Loot Bias'
+    Multiply: '+<value> Loot Bias'
+    Compound: 'x<value> Loot Bias'
+```
+
+</details>
 
 ##
 # Implementations with Configurations

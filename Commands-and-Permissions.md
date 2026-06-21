@@ -64,6 +64,14 @@ Mob Egg Commands
 -    **/mm egg get [mob_name] &lt;amount&gt;** *Gives you mob eggs for the specified Mythic Mob.*
 -    **/mm egg give [player] [mob_name] &lt;amount&gt;** *Gives a player mob eggs for the specified Mythic Mob.*
 
+Camera Commands
+---------------
+
+The camera commands let you author [cinematicCamera](/Skills/Mechanics/CinematicCamera) paths in-game. Running **add** captures your current position, yaw, and pitch as a keyframe in the path's file (creating the file under `cutscenes/` if needed) and reloads it. Requires the **mythicmobs.command.camera** permission.
+
+-    **/mm camera &lt;pathId&gt; add [index] [hold=N] [easing=NAME] [relative=true]** *Adds a keyframe at your current location. `index` inserts at a position (appends if omitted); `hold` sets the leg duration in ticks; `easing` sets the leg easing; `relative=true` stores the point as an offset from the anchor.*
+-    **/mm camera &lt;pathId&gt; remove [index]** *Removes the keyframe at the given index (the last one if omitted).*
+
 Spawner Commands
 ----------------
 
@@ -162,6 +170,7 @@ Commands
 -   Access to individual commands can be given using
     **mythicmobs.command.&lt;command&gt;**
 
+- **mythicmobs.command.camera** - *Access to the **/mm camera** commands for authoring cinematic camera paths.*
 - **mythicmobs.command.info** - *Access to the **/mm info** command.*
 - **mythicmobs.command.mobs.list** - *Access to the **/mm mobs list** command.*
 - **mythicmobs.command.signal** - *Permission to use the "/mm signal

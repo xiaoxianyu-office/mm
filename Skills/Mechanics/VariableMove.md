@@ -25,3 +25,7 @@ Moves an already created variable across names and/or registries. By default, no
 - [x] moveVariable
 - [x] moveVar
 - [x] varMove
+
+
+<!--TAGS-->
+<!--tag:Variable-->

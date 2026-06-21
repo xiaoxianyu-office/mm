@@ -34,6 +34,7 @@ These targeters have not been tagged yet.
 | [EntitiesInRingNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesInRingNearOrigin) | MythicMobs | Targets all the entities in a ring near the [origin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Origin) |
 | [EntitiesInRadius](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesInRadius) | MythicMobs | Targets all entities in the given radius around the caster |
 | [EntitiesNearOrigin](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EntitiesNearOrigin) | MythicMobs | Targets all entities in the given radius around the origin of the metaskill |
+| [EscapeLocation](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/EscapeLocation) | MythicMobs | Targets a nearby safe escape location like how an Enderman would choose its teleport destination |
 | [Father](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Father) | MythicMobs | Targets the father of the casting mob |
 | [FloorOfTargets](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/FloorOfTargets) | MythicMobs | Targets the first solid block below the inherited targets |
 | [Forward](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Forward) | MythicMobs | Targets a location in front of the caster |

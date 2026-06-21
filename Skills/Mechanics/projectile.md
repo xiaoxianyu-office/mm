@@ -220,7 +220,8 @@ Examples:
 | Attribute | Aliases   | Description                                                          | Default |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletmaterial | material, mat, bulletitem | The material of the bullet, can be vanilla item type or MythicItem  | STONE<!--type:Item--> |
-|bulletModel| model     | The CustomModelData integer for the material (define model strings on a MythicItem instead) | 0       |
+|bulletModel| model     | The model of the bullet                                              |         |
+|bulletcustommodeldata| custommodeldata, cmd | The CustomModelData integer for the material    | 0       |
 |bulletColor|           | The color of the material, if applicable                             |         |
 | bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
 |bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
@@ -259,6 +260,8 @@ Examples:
 | bulletglowcolor |     | The glow color of the bullet, if `bulletGlowing` is set to true      |         |
 | bulletCulling  | culling | Whether to apply culling for the bullet model                     | true    |
 | bulletViewRadius |    | From how far the bullet can be seen, if greater than 0.              | -1      |
+| bulletBrightness |    | The brightness of the bullet                                         |         |
+| bulletalod | alod     | Whether to use LOD culling on the bullet                             | true    |
 
 ### TEXT Bullet
 | Attribute | Aliases   | Description                                                          | Default |

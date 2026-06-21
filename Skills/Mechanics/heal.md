@@ -9,6 +9,17 @@ the mob to more than its maximum health.
 | amount     | a        | The amount to heal the target                                        | 1       |
 | overheal  | oh        | Whether or not to apply overhealing as additional MaxHealth          | false   |
 | maxoverheal | maxabsorb, maxshield, mo, ma, ms | The maximum amount of overhealing that can be applied | 1 |
+| tags         | tag    | Allows you to specify any number of arbitrary tags for the mechanic using `tags=THIS,THAT`. All tags inserted will be UPPERCASED, so always use uppercased names when checking against them |         |
+| rawtags      | rtag   | Works the same as tags and what is put here will also qualify as a tag, but it will not be UPPERCASED like tags |  |
+
+### Tags Attribute
+```yaml
+- heal{amount=5;tags=BLESSING,PALADIN}
+```
+This allows you to set any tag you want on this type of heal to be used with the [DamageTag](/skills/conditions/damagetag) condition.  
+
+Tags are arbitrary, and can thus have any name, as long as that does not contain invalid characters.  
+You can set an indefinite number of tags for each heal mechanic. 
 
 
 ## Examples

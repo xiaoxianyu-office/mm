@@ -18,7 +18,7 @@ Links to mechanics added by addon plugins. Any mechanics from these links will n
 
 - [ModelEngine 4](/../../../model-engine-4/-/wikis/Skills/Mechanics)
 - [Mythic Crucible](/../../../mythiccrucible/-/wikis/Skills/Mechanics)
-- [Mythic Enchantments](/../../../mythicenchants/-/wikis/Skills/Mechanics)
+- [Mythic Enchantments](/../../../mythicenchants/-/wikis/Mechanics/Mechanics)
 - [MCPets](https://mcpets.gitbook.io/mcpets/tutorials/mythicmobs-features#mechanics)
 
 
@@ -333,6 +333,11 @@ by these will "inherit" the targets (if applicable).
 | [VariableSubtract][]    | Subtracts an amount from a numeric variable                                                                                                             |
 | [VariableMove][]        | Moves an already created variable across names and/or registries                                                                                                             |
 | [Wait][]                | Puts the metaskill on hold until a set of conditions is met                                                                                                             |
+| [CinematicCamera][]     | Plays a cinematic camera path for the target player |
+| [CinematicCancel][]     | Cancels an active cinematic for the target player |
+| [CloseDialog][]         | Closes any open dialog for the target player |
+| [OnKeyPress][]          | Applies an aura that triggers a skill when the player presses a key |
+| [OnKeyRelease][]        | Applies an aura that triggers a skill when the player releases a key |
 
 
 # Universal Attributes
@@ -687,3 +692,8 @@ but not yet ready for use.
   [OnDeath]: /skills/mechanics/ondeath
   [Switch]: /skills/mechanics/Switch
   [Wait]: /skills/mechanics/Wait
+  [CinematicCamera]: /skills/mechanics/CinematicCamera
+  [CinematicCancel]: /skills/mechanics/CinematicCancel
+  [CloseDialog]: /skills/mechanics/CloseDialog
+  [OnKeyPress]: /skills/mechanics/OnKeyPress
+  [OnKeyRelease]: /skills/mechanics/OnKeyRelease
