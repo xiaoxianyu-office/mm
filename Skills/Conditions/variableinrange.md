@@ -1,6 +1,8 @@
 ## Description
 Checks if the given numeric variable is within a certain range.
 
+Use `<skill.var.index>` to get the current index of the target (starting at 0).
+
 
 ## Attributes
 | Attribute | Aliases   | Description                                                          | Default |
