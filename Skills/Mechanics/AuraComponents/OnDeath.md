@@ -18,7 +18,7 @@ ApplyAura:
   Skills:
   - aura{d=1200;i=1;auraname=rip;components=[
     - onDeath{od=DropDiamonds}
-  ]} @self
+    ]} @self
 DropDiamonds:
   Skills:
   - dropitem{i=DIAMOND 3-5} @self
