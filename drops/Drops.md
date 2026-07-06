@@ -31,6 +31,23 @@ The chance for the specified item to be dropped.
   - Must be a number between 0 and 1 
   - **Note:** allows percentage chances. (10% instead of 0.1).
 
+### Dynamic Chances
+> Requires MythicMobs Premium (math and variables in numeric values are a Premium feature).
+
+The chance may also be a math expression, placeholder, or variable that resolves to a number. It is evaluated for the dropping mob every time loot is rolled, so drop rates can scale with level, stats, or a variable. A resolved value of `1` or higher always drops; `0` or lower never drops. The roll happens during loot generation, so dynamic chances also work with [FancyDrops](/drops/FancyDrops).
+
+```yaml
+YourMob:
+  Type: ZOMBIE
+  Drops:
+  # 5% per mob level (reaches 100% at level 20+)
+  - diamond 1 0.05*<caster.level>
+  # chance pulled from a variable set elsewhere on the mob
+  - emerald 1 <caster.var.scaledDrop>
+```
+
+> On the free version these expressions cannot be evaluated: the drop is treated as a guaranteed (100%) drop and a warning is logged on load.
+
 ## Drop Types
 | **Type**                    | **Explanation**                                          | **Example**                             |
 |-----------------------------|----------------------------------------------------------|-----------------------------------------|
