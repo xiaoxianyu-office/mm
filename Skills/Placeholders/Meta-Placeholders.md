@@ -83,6 +83,9 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .mul{amount=[Integer]} | INTEGER | The multiplication between the value and the specified Integer |
 | .div{amount=[Integer]} | INTEGER | The division between the value and the specified Integer |
 | .abs | INTEGER | The absolute value of the value |
+| .min{amount=[Integer]} | INTEGER | Returns the larger of the value and `amount`, so `amount` acts as a lower bound |
+| .max{amount=[Integer]} | INTEGER | Returns the smaller of the value and `amount`, so `amount` acts as an upper bound |
+| .clamp{min=[Integer];max=[Integer]} | INTEGER | Constrains the value between `min` and `max`. Either bound may be omitted, defaulting to the lowest and highest Integer values. Example: `<caster.var.spawn_chance.clamp{min=0;max=100}>` |
 > [Go To Explanation>>](#)  
 
 # Float Meta Keywords
@@ -93,6 +96,9 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .mul{amount=[Float]} | FLOAT | The multiplication between the value and the specified Float |
 | .div{amount=[Float]} | FLOAT | The division between the value and the specified Float |
 | .abs | FLOAT | The absolute value of the value |
+| .min{amount=[Float]} | FLOAT | Returns the larger of the value and `amount`, so `amount` acts as a lower bound |
+| .max{amount=[Float]} | FLOAT | Returns the smaller of the value and `amount`, so `amount` acts as an upper bound |
+| .clamp{min=[Float];max=[Float]} | FLOAT | Constrains the value between `min` and `max`. Either bound may be omitted, defaulting to the lowest and highest Float values. Example: `<caster.var.spawn_chance.clamp{min=0;max=100}>` |
 | .round | INTEGER | Rounds the value to the nearest Integer |
 | .precision{amount=[Integer]} | FLOAT | Returns the same float value, but with a given maximum precision. Extra precision is rounded using the HALF_UP rounding mode |
 > [Go To Explanation>>](#)  
@@ -105,6 +111,9 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .mul{amount=[Long]} | LONG | The multiplication between the value and the specified Long |
 | .div{amount=[Long]} | LONG | The division between the value and the specified Long |
 | .abs | LONG | The absolute value of the value |
+| .min{amount=[Long]} | LONG | Returns the larger of the value and `amount`, so `amount` acts as a lower bound |
+| .max{amount=[Long]} | LONG | Returns the smaller of the value and `amount`, so `amount` acts as an upper bound |
+| .clamp{min=[Long];max=[Long]} | LONG | Constrains the value between `min` and `max`. Either bound may be omitted, defaulting to the lowest and highest Long values. Example: `<caster.var.spawn_chance.clamp{min=0;max=100}>` |
 > [Go To Explanation>>](#)  
 
 # Double Meta Keywords
@@ -115,6 +124,9 @@ Given that each meta keyword has a specific input and output type, it is possibl
 | .mul{amount=[Double]} | DOUBLE | The multiplication between the value and the specified Double |
 | .div{amount=[Double]} | DOUBLE | The division between the value and the specified Double |
 | .abs | DOUBLE | The absolute value of the value |
+| .min{amount=[Double]} | DOUBLE | Returns the larger of the value and `amount`, so `amount` acts as a lower bound |
+| .max{amount=[Double]} | DOUBLE | Returns the smaller of the value and `amount`, so `amount` acts as an upper bound |
+| .clamp{min=[Double];max=[Double]} | DOUBLE | Constrains the value between `min` and `max`. Either bound may be omitted, defaulting to the lowest and highest Double values. Example: `<caster.var.spawn_chance.clamp{min=0;max=100}>` |
 | .round | LONG | Rounds the value to the nearest Long |
 | .precision{amount=[Integer]} | DOUBLE | Returns the same float value, but with a given maximum precision. Extra precision is rounded using the HALF_UP rounding mode |
 > [Go To Explanation>>](#)  

@@ -23,6 +23,25 @@ Zombie:
     Damage: 0.5
 ```
 
+# Level
+
+Sets the mob's default level. Place it at the top level of the mob definition. The value can be a fixed number, or a range written as `minTOmax`, in which case a random integer between the two values (inclusive) is rolled each time the mob spawns. A dash form like `3-7` is also accepted.
+
+```yaml
+SkeletonKing:
+  Type: skeleton
+  Level: 5
+```
+```yaml
+SkeletonPack:
+  Type: skeleton
+  Level: 3to7
+```
+
+This value is used whenever the mob is spawned without a level being given, such as from a spawner, `/mm mobs spawn`, a totem, or a mob bullet. Spawn sources that specify their own level override it, including the [summon](/skills/mechanics/summon) mechanic (which defaults to the caster's level) and the [setlevel](/skills/mechanics/setlevel) mechanic. If unset, the level defaults to 1, and the final spawn level is never lower than 1. An invalid value logs a config error and falls back to 1.
+
+The keys `MobLevel` and `Options.Level` are accepted as aliases of `Level`.
+
 # LevelModifiers
 
 These options, put under the LevelModifiers section, will increase the

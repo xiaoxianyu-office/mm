@@ -290,13 +290,19 @@ Possible filters include:
 | spectator |           | Whether spectator mode players can be targeted                                 |
 | armorstand| armor_stand | Whether armor stands can be targeted                                         |
 | marker    |           | Whether markers can be targeted                                                |
+| textdisplay | text_display | Whether text displays can be targeted                                        |
+| itemdisplay | item_display | Whether item displays can be targeted                                        |
+| blockdisplay | block_display | Whether block displays can be targeted                                     |
+| interaction |         | Whether interaction entities can be targeted                                     |
 | npc       |           | Whether Citizens NPCs can be targeted                                          |
 | animal    |           | Whether animals can be targeted                                                |
 | creature  |           | Whether creatures can be targeted                                              |
 | monster   |           | Whether monsters can be targeted                                               |
 | villager  |           | Whether villagers can be targeted                                              |
+| vanilla   |           | Whether to target only non-Mythic entities. Will ignore Mythic mobs if used     |
+| mythic    |           | Whether to target only Mythic mobs. Will ignore non-Mythic entities if used     |
 
-> If neither `ground`, `water` and `flying` are used and the default filters do not include any of them, then `Players`, `ArmorStands`, `Markers`, `Creative`, `Spectator`, `CitizensNPCs`, `Animals`, `Creatures`, `Monsters` and `Villagers` will also be ignored
+> If neither `ground`, `water` and `flying` are used and the default filters do not include any of them, then `Players`, `ArmorStands`, `Markers`, `TextDisplays`, `ItemDisplays`, `BlockDisplays`, `Interactions`, `Creative`, `Spectator`, `CitizensNPCs`, `Animals`, `Creatures`, `Monsters` and `Villagers` will also be ignored
 
 #### Ignore Attribute
 | Ignore Filter | Aliases   | Description                                                                |
@@ -306,6 +312,10 @@ Possible filters include:
 | spectator |           | Whether spectator mode players shouldn't be targeted                           |
 | armorstand| armor_stand | Whether armor stands shouldn't be targeted                                   |
 | marker    |           | Whether markers shouldn't be targeted                                          |
+| textdisplay | text_display | Whether text displays shouldn't be targeted                                  |
+| itemdisplay | item_display | Whether item displays shouldn't be targeted                                  |
+| blockdisplay | block_display | Whether block displays shouldn't be targeted                               |
+| interaction |         | Whether interaction entities shouldn't be targeted                             |
 | npc       |           | Whether Citizens NPCs shouldn't be targeted                                    |
 | animal    |           | Whether animals shouldn't be targeted                                          |
 | creature  |           | Whether creatures shouldn't be targeted                                        |
@@ -313,7 +323,8 @@ Possible filters include:
 | villager  |           | Whether villagers shouldn't be targeted                                        |
 | faction   |           | Whether entities in the same faction shouldn't be targeted                     |
 | owner     |           | Whether the caster's owner shouldn't be targeted                               |
-| vanilla   |           | Whether vanilla entities shouldn't be targeted                                 |
+| vanilla   | nonmythic | Whether vanilla (non-Mythic) entities shouldn't be targeted                     |
+| mythic    |           | Whether Mythic entities shouldn't be targeted                                   |
 
 ### Specific Filters
 You can also specifically set whether to target a specific type of entity or not by using the attributes below. The effects of these attributes override the effects of the more generic target/ignore attributes for the specific entity type the attribute handles
@@ -323,8 +334,13 @@ You can also specifically set whether to target a specific type of entity or not
 | targetplayers|        | Whether to target players                                            |         |
 | targetcreative|       | Whether to target players in creative mode                           |         |
 | targetspectator|      | Whether to target players in spectator mode                          |         |
+| targetinvulnerable|   | Whether to target invulnerable entities                              |         |
 | targetarmorstands|    | Whether to target armor stands                                       |         |
 | targetmarkers|        | Whether to target markers                                            |         |
+| targettextdisplays| targettextdisplay | Whether to target text displays                        |         |
+| targetitemdisplays| targetitemdisplay | Whether to target item displays                        |         |
+| targetblockdisplays| targetblockdisplay | Whether to target block displays                      |         |
+| targetinteractions| targetinteraction | Whether to target interaction entities                 |         |
 | targetnpcs|           | Whether to target Citizens NPCs                                      |         |
 | targetanimals|        | Whether to target animals                                            |         |
 | targetcreatures|      | Whether to target creatures                                          |         |

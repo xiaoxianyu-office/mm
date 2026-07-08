@@ -24,8 +24,13 @@ Configuration:
       TargetPlayers: true
       TargetArmorStands: false
       TargetMarkers: false
+      TargetTextDisplays: true
+      TargetItemDisplays: true
+      TargetBlockDisplays: true
+      TargetInteractions: true
       TargetCreativeMode: true
       TargetSpectatorMode: true
+      TargetInvulnerable: true
       TargetCitizensNPCs: false
       TargetAnimals: true
       TargetCreatures: true
