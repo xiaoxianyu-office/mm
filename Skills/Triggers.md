@@ -107,6 +107,8 @@ Links to triggers added by addon plugins. Any triggers from these links will not
 | [onDismounted](/Skills/Triggers/onDismounted) | When the mob is dismounted from |
 | [onCinematicStart](/Skills/Triggers/onCinematicStart) | When a cinematic camera path begins playing on a player |
 | [onCinematicEnd](/Skills/Triggers/onCinematicEnd) | When a cinematic camera path ends on a player (finish, cancel, quit, or death) |
+| [onEnterBounds](/Skills/Triggers/onEnterBounds) | When the mob moves into a defined region                     |
+| [onExitBounds](/Skills/Triggers/onExitBounds) | When the mob moves out of a defined region                     |
 
 <!-- LINKS -->
 [ThreatTables]: /Mobs/ThreatTables

@@ -250,6 +250,16 @@ example_mob:
     - You're too weak <target.name>!!
 ```
 
+#### Level
+Sets the mob's default [level](/Mobs/Levels).
+Accepts a fixed number or a range like `3to7`, which rolls a random level each time the mob spawns.
+This level is used whenever the mob is spawned without a level being specified.
+```yml
+example_mob:
+  Type: zombie
+  Level: 5
+```
+
 #### LevelModifiers
 MythicMobs can have [levels](/Mobs/Levels) and this field is used to determine which kinds of statistics they should gain on when their levels change.
 ```yml

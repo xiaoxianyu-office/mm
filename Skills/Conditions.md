@@ -245,6 +245,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [HeightAbove](/skills/conditions/heightabove)                                 | Location | Checks if the target's Y location is above a value                                            |
 | [HeightBelow](/skills/conditions/heightbelow)                                 | Location | Checks if the target's Y location is below a given value                                      |
 | [Holding](/skills/conditions/holding)                                         | Entity   | Checks if the target is holding a given material(support MythicMobs and MMOItems)             |
+| [inBounds](/skills/conditions/inBounds)                                       | Compare  | Tests whether the target is inside an axis-aligned bounds box between two corners             |
 | [inClaim](/skills/conditions/inClaim)                                         | Location | Checks if the target location is inside a claim                                               |
 | [InCombat](/skills/conditions/incombat)                                       | Entity   | Checks if the target mob is considered in combat                                              |
 | [InPinRegion](/skills/conditions/InPinRegion)                                 | Location | Checks if the target location is within a region delimited by two pins                        |
@@ -282,6 +283,7 @@ Links to conditions added by addon plugins. Any conditions from these links will
 | [Level](/skills/conditions/level)                                             | Entity   | Checks the target MythicMob's level                                                        |
 | [LightLevel](/skills/conditions/lightlevel)                                   | Location | Tests the light level at the target location                                              |
 | [LightLevelFromBlocks](/skills/conditions/lightlevelfromblocks)               | Location | Tests the light level originating from light-emitting blocks at the target location       |
+| [SkyLightLevel](/skills/conditions/skylightlevel)                             | Location | Tests the sky light level at the target location                                          |
 | [LineOfSight](/skills/conditions/lineofsight)                                 | Compare  | Tests if the target is within line of sight of the caster                                    |
 | [LineOfSightFromOrigin](/skills/conditions/lineofsightfromorigin)             | Compare  | Tests if the target is within line of sight of the caster                                    |
 | [LivingInRadius](/skills/conditions/LivingInRadius)                           | Location | Matches a range to how many living entities are in the given radius                       |

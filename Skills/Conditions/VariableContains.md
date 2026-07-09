@@ -11,13 +11,15 @@ Checks if the given variable contains a certain value.
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | variable  | name, n, var, key, k | The name of the variable. Can optionally be prefixed with scope|    |
 | scope| s| The [scope](/Skills/Variables#variable-scopes) of the variable, e.g. where the variable is located                                                                                        |<!--type:VariableScope-->|
-| compareType | compare, comp | The comparison type to use. Can be `ALL`, `ANY`, `STARTS_WITH` or `ENDS_WITH`. | ALL |
+| compareType | compare, comp | The comparison type to use. Can be `ALL`, `ANY`, `EXACT_ENTRY`, `STARTS_WITH` or `ENDS_WITH`. | ALL |
 | value     | val, v    | The value of the comparison                                          |         |
 
 ### CompareType attribute
 If the variable is a String, you can use either the `STARTS_WITH` or `ENDS_WITH` to check if the variable starts with or ends with the given value
 
 If the variable is a List or Set and the value is also a List or Set, you can use `ALL` to check if all elements of the value are present in the variable, or `ANY` to check if at least one element is present
+
+`EXACT_ENTRY` (aliases `EXACTENTRY`, `EE`) checks whether the value exactly matches one of the variable's comma-separated entries. Both the entries and the value are whitespace-trimmed before comparing, so a String variable holding `apple, banana` matches `banana`. The value is treated as a single entry: a comma-separated value like `apple,banana` is compared whole and will not match, use `ALL` or `ANY` for multiple entries. For String variables this differs from the default, which checks for a substring rather than a full entry
 
 
 ## Examples
@@ -30,6 +32,8 @@ If the variable is a List or Set and the value is also a List or Set, you can us
   - variablecontains{var=skill.examplestring;val=pizza}
 
   - variablecontains{var=skill.examplestring;val=dungeon_;compareType=STARTS_WITH}
+
+  - variablecontains{var=skill.examplestring;val=pizza;compareType=EXACT_ENTRY}
 ```
 
 
