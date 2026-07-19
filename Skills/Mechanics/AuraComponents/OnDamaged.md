@@ -21,6 +21,11 @@ damage.
 | deflectconditions | dconditions | If `deflectProjectiles` is enabled, it will have to follow the specified set of conditions to work |<!--type:Conditions-->|
 | modDamageType | damagetype | The [type](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html) of the damage that must be received in order to trigger the onHit metaskill |<!--type:DamageCause--> |
 
+> [!note]
+> The aura only consumes a charge and applies `cancelEvent`, `damageSub`, `damageMultiplier` or `damageModifiers` **if the `onHit` skill executed successfully**: its chance roll succeeds, it is not on cooldown and all of its conditions pass. If the skill fails, the damage event is left untouched and no charge is consumed. If no `onHit` skill is configured, the execution always counts as successful.
+>
+> Additionally, `cancelEvent` takes precedence over the damage-modifying attributes: if `cancelEvent` is `true`, the hit is cancelled and `damageSub`, `damageMultiplier` and `damageModifiers` are ignored.
+
 
 ## Examples
 ```yaml

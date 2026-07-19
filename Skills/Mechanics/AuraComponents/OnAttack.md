@@ -18,6 +18,11 @@ something. It is also possible to change the damage event itself.
 | damageMultiplier | multiplier, m | An optional multiplier to the original hit's damage       | 1       |
 | modDamageType | damagetype | The [type](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html) of the damage inflicted                                |<!--type:DamageCause--> |
 
+> [!note]
+> The aura only consumes a charge and applies `cancelEvent`, `damageAdd` or `damageMultiplier` **if the `onAttackSkill` executed successfully**: its chance roll succeeds, it is not on cooldown and all of its conditions pass. If the skill fails, the damage event is left untouched and no charge is consumed. If no `onAttackSkill` is configured, the execution always counts as successful.
+>
+> Additionally, `cancelEvent` takes precedence over the damage-modifying attributes: if `cancelEvent` is `true`, the hit is cancelled and `damageAdd` and `damageMultiplier` are ignored.
+
 
 <!-- LINKS -->
 [metaskill]: /Skills/Metaskills

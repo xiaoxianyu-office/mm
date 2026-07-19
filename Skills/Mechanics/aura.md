@@ -63,6 +63,9 @@ Components have the same syntax of mechanics, and each has its own specific attr
       ]}
 ```
 
+> [!note] Skill Execution, Charges and Event Modification
+> Event-triggered components (such as [OnDamaged](/Skills/Mechanics/AuraComponents/OnDamaged), [OnAttack](/Skills/Mechanics/AuraComponents/OnAttack), [OnShoot](/Skills/Mechanics/AuraComponents/OnShoot) and so on) only consume a [charge](#attributes) and apply their event-modifying attributes (`cancelEvent`, `damageMultiplier` and the like) **if their configured skill executed successfully**. A skill executes successfully when it is usable: its chance roll succeeds, it is not on cooldown and all of its conditions pass. If the skill fails, the triggering event is left untouched and no charge is consumed. If the component has no skill configured, the execution always counts as successful.
+
 | Component                                                       | Description                          |
 |-----------------------------------------------------------------|--------------------------------------|
 | [ChunkLoad](/Skills/Mechanics/AuraComponents/ChunkLoad) | Keeps the chunk the target is in loaded for the duration of the aura  |
