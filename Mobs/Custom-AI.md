@@ -133,3 +133,104 @@ SuperMob:
 | [NearestOtherFactionMonsters](/Mobs/ai/targets/NearestOtherFactionMonsters) | OtherFactionMonsters | Targets any monster that is in a different faction |
 | [SpecificFaction](/Mobs/ai/targets/specificfaction) [faction_name] | | Targets any entities that are in the given faction                                                                                        |
 | [SpecificFactionMonsters](/Mobs/ai/targets/specificfactionmonsters) [faction_name] | | Targets any monsters that are in the given faction                                                                   |
+
+# AI Pathfinding Malus
+The AIPathfindingMalus field overrides how the mob's navigation weighs specific path types when calculating paths. Each entry is a path type name followed by a value, separated by a space. The values are applied when the mob spawns and re-applied when it loads.
+
+- A negative value (e.g. -1) makes the path type impassable
+- A value of 0 means no penalty
+- A positive value makes the path type more expensive to cross, so paths through it are avoided when alternatives exist
+
+Movement goals that pick their own destination (such as randomstroll or the flee goals) only accept candidate positions whose path type malus is exactly 0. A positive malus is enough to make a spot invalid as a destination, even though the mob would still cross it while following a path.
+
+## Examples
+Let a ground mob wander across ponds. Land mobs default WATER to 8, so goals like randomstroll can never pick a target on water and a mob floating mid-pond will not move at all:
+```yaml
+PondWanderer:
+  Type: pig
+  AIPathfindingMalus:
+  - WATER 0
+  AIGoalSelectors:
+  - clear
+  - randomstroll
+  - float
+```
+
+Keep a mob from ever pathing into water. A negative malus makes water impassable to its navigation (it can still be knocked or pushed in):
+```yaml
+DuneStalker:
+  Type: husk
+  AIPathfindingMalus:
+  - WATER -1
+```
+
+Stop a fire-immune mob from detouring around burning ground. FIRE (fire, magma blocks, lit campfires) defaults to 16, and walkable blocks next to fire or lava default to 8:
+```yaml
+CinderBrute:
+  Type: zombified_piglin
+  AIPathfindingMalus:
+  - FIRE 0
+  - FIRE_IN_NEIGHBOR 0
+```
+
+Path straight through cactus fields and berry thickets. DAMAGING blocks are impassable by default, so mobs normally route around them. The mob still takes their damage unless it is immune:
+```yaml
+BrambleBoar:
+  Type: hoglin
+  AIPathfindingMalus:
+  - DAMAGING 0
+  - DAMAGING_IN_NEIGHBOR 0
+```
+
+Let a mob cross minecart tracks. Rails a mob is not already standing on count as UNPASSABLE_RAIL (default -1), which is why mobs refuse to walk over them:
+```yaml
+RailRunner:
+  Type: zombie
+  AIPathfindingMalus:
+  - UNPASSABLE_RAIL 0
+```
+
+Treat the tree canopy as walkable ground. Leaf blocks are impassable to pathfinding by default, even though mobs can physically stand on them:
+```yaml
+CanopyStalker:
+  Type: spider
+  AIPathfindingMalus:
+  - LEAVES 0
+```
+
+## Path Types
+Valid names come from the server version's PathType enum. On current versions:
+
+| Path type | Default | Applies to |
+|-----------|---------|------------|
+| `BLOCKED` | -1 | Solid blocks that cannot be pathed through |
+| `OPEN` | 0 | Air with no floor below |
+| `WALKABLE` | 0 | Normal walkable ground |
+| `WALKABLE_DOOR` | 0 | Closed wooden doors, for mobs whose AI can open doors |
+| `TRAPDOOR` | 0 | Trapdoors, lily pads, big dripleaf |
+| `POWDER_SNOW` | -1 | Powder snow |
+| `ON_TOP_OF_POWDER_SNOW` | 0 | Standing on powder snow |
+| `FENCE` | -1 | Fences, walls, closed fence gates |
+| `LAVA` | -1 | Lava |
+| `WATER` | 8 | Water |
+| `WATER_BORDER` | 8 | Walkable block next to water |
+| `RAIL` | 0 | Rails, while the mob is already on rails |
+| `UNPASSABLE_RAIL` | -1 | Rails the mob is not already standing on |
+| `FIRE_IN_NEIGHBOR` | 8 | Walkable block next to fire or lava |
+| `FIRE` | 16 | Fire and soul fire, magma blocks, lit campfires, lava cauldrons |
+| `DAMAGING_IN_NEIGHBOR` | 8 | Walkable block next to a damaging block |
+| `DAMAGING` | -1 | Cactus, sweet berry bushes |
+| `DOOR_OPEN` | 0 | Open doors |
+| `DOOR_WOOD_CLOSED` | -1 | Closed doors that can be opened by hand |
+| `DOOR_IRON_CLOSED` | -1 | Closed doors that need redstone |
+| `BREACH` | 4 | Air directly above water (swim navigation, breaching) |
+| `LEAVES` | -1 | Leaf blocks |
+| `STICKY_HONEY` | 8 | Honey blocks |
+| `COCOA` | 0 | Cocoa pods |
+| `DAMAGE_CAUTIOUS` | 0 | Wither roses, pointed dripstone |
+| `ON_TOP_OF_TRAPDOOR` | 0 | Standing on a trapdoor |
+| `BIG_MOBS_CLOSE_TO_DANGER` | 4 | Mobs wider than one block whose hitbox clips a dangerous block |
+
+Older server versions use different names for some of these (the [SetPathfindingMalus](/Skills/Mechanics/SetPathfindingMalus) mechanic page has the legacy table). An invalid name logs a config error and the entry is skipped.
+
+The [setpathfindingmalus](/Skills/Mechanics/SetPathfindingMalus) mechanic changes the same values at runtime from skills.

@@ -57,6 +57,24 @@ Icons contain:
 - `Display`: the Display Name of the icon
 - `Lore`: a list of lines of lore
 - `Skills`: Skills executed when the button is pressed
+- `HideFlags`: Whether to hide all item flags, making things like attributes or enchantments not visible in the icon's tooltip. Defaults to `true`
+- `Hide`: A list of specific tooltip sections to hide, using the same [syntax as items](/Items/Items#hide). Only useful when `HideFlags` is set to `false`
+- `Glint`: Whether the icon has the enchantment glint visual effect, like the [item option](/Items/Options#glint). Defaults to `false`
+- `Enchantments`: A list of enchantments applied to the icon, using the same [syntax as items](/Items/Enchantments)
+
+```yaml
+    SWORD_BUTTON:
+      Mapping: S
+      Material: DIAMOND_SWORD
+      Display: 'Epic Sword'
+      HideFlags: false
+      Hide:
+      - ATTRIBUTES
+      Glint: true
+      Enchantments:
+      - SHARPNESS 5
+      - KNOCKBACK 1
+```
 
 ### Modifying a Menu
 You can modify an open menu using the `setcustommenubutton{slot=11;icon=ICON}` mechanic

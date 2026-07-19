@@ -200,6 +200,20 @@ neutral_mob:
     - attacker
 ```
 
+#### AIPathfindingMalus
+Overrides the mob's pathfinding malus for specific path types, changing how its navigation weighs those blocks when calculating paths. Each entry is a path type name followed by the value.
+See [AI Pathfinding Malus](/Mobs/Custom-AI#ai-pathfinding-malus) for value semantics and the list of valid path types.
+```yml
+pond_wanderer:
+  Type: pig
+  AIPathfindingMalus:
+    - WATER 0
+  AIGoalSelectors:
+    - clear
+    - randomstroll
+    - float
+```
+
 #### Drops
 Add or completely modify the mob loot drops.
 Can be vanilla items, mythic items, experience points, cross-plugin items (if supported), or even custom drop tables with their own condition system.
