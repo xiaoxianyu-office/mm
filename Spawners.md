@@ -46,11 +46,20 @@ SpawnerName:
   ResetThreatOnLeash: false
   ShowFlames: false
   Breakable: false
+  Chance: 1
+  RandomRotation: false
+  UseWorldScaling: false
   Conditions: []
   ActiveMobs: 1
 ```
 Options
 -------
+
+**Value expressions:** numeric options (Radius, RadiusY, MaxMobs, MobLevel, MobsPerSpawn, Cooldown, Warmup, ActivationRange, LeashRange, Chance) accept all of the following:
+- a fixed value (`10`, `0.5`)
+- a random range in the `XtoY` format (`10to20`, `0.1to0.5`), rolled again each time the option is used
+- a placeholder or math expression (math/variable placeholders require MythicMobs Premium)
+
 | Option             | Description                      |Usage                       |Default|
 |--------------------------|-----------------------|-----------------------|-----------------------|
 |**mobtype: &lt;mobtype&gt;** or **mobname: &lt;mobtype&gt;:**|This is mob type that the spawner will spawn. Can only be set to an internal MythicMobs mob. Allows for an array of mobs with weightings.|/mm s set [name] mobtype 25%Mob1,25%Mob2,50%mMob2| N/A |
@@ -74,6 +83,9 @@ Options
 |**resetthreatonleash: &lt;true/false&gt;**|Resets ThreatTables (if enabled) when a mob teleports back to its spawner.||false|
 |**showflames: &lt;true/false&gt;**|Set this to true to show flames around the spawner.|/mm s set \<name\> showflames <true/false>|false|
 |**breakable: &lt;true/false&gt;**|Determines if the spawner is broken with the block it is placed on||false|
+|**chance: &lt;number&gt;**|The chance (0.0-1.0) for the spawner to spawn when it would otherwise spawn. A failed roll arms no cooldown or warmup and is retried on the next tick.|/mm s set \<name\> chance \<chance\>|1|
+|**randomrotation: &lt;true/false&gt;**|Whether spawned mobs get a random rotation instead of the spawner's configured yaw/pitch.|/mm s set \<name\> randomrotation &lt;true/false&gt;|false|
+|**useworldscaling: &lt;true/false&gt;**|Whether the world scaling level bonus is added to the spawned mob's MobLevel. Only applies when MobLevel is set; mobs spawning at their default level are unaffected.|/mm s set \<name\> useworldscaling &lt;true/false&gt;|false|
 |**conditions:**|the conditions to be met for the spawner to activate.|/mm s addcondition \<name\> \<condition\> \<action\>|None|
 | **SpawnConditions**| the conditions to be met by the position a mob is being attempted to be spawned at |      | None |
 |**activemobs: &lt;number&gt;**|Used to keep track of mobs connected to (spawned by) the spawner.|*it does not require any user setting*.||

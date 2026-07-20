@@ -75,7 +75,7 @@ YourMob:
   Type: ZOMBIE
   Drops:
   - diamond 3 0.2
-  - cmd{c="crate give <trigger.name> RewardCrate 1"} 1 0.6
+  - cmd{cmd="crate give <trigger.name> RewardCrate 1"} 1 0.6
   - exp 100to600 0.12
 ```
 ## In-line Drops
