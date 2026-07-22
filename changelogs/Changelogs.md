@@ -1,5 +1,295 @@
 [[_TOC_]]
 
+# 5.13.0
+
+General
+-------
+- Added `PackDependencies` and `FileDependencies` to `packinfo.yml`, letting a pack declare which plugins/files it needs so Mythic skips (instead of parsing and erroring on) content gated behind a missing dependency
+```yaml
+PackDependencies:
+- MythicCrucible
+FileDependencies:
+- enchantments/* MythicEnchants
+```
+- Spawners gained `Chance`, `RandomRotation`, and `UseWorldScaling` options; most spawner fields (`Cooldown`, `Warmup`, `MobsPerSpawn`, `MobLevel`, `Radius`, `RadiusY`, `ActivationRange`, `ScalingRange`, `LeashRange`) now accept placeholders and ranged values instead of only flat numbers
+```yaml
+Chance: 0.5
+RandomRotation: true
+Cooldown: 5to10
+MobsPerSpawn: 1to3
+```
+- Numeric attributes across 40+ mechanics (`missile`, `projectile`, `beam`, `summon`, `orbital`, `lightning`, `shootfireball`, `volley`, `raytrace`, particle effect mechanics, and more) now accept placeholders instead of only static numbers
+- Added `Hide`, `HideFlags`, `Glint`, and `Enchantments` icon options to menu configs; fixed conditionally-overridden icons showing item flags they shouldn't (#2232)
+
+Stats
+-----
+- Changed `CRITICAL_STRIKE_DAMAGE` back to a compounding multiplier on final damage instead of being folded into the same additive pool as mechanics like `modifyDamage{}`
+- Fixed a lost-update race in stat recompute that could drop concurrent stat changes (e.g. from async auras); health regen now reads the live stat value every tick instead of a cache that could desync
+
+Mechanics
+---------
+
+### NEW: Cinematics System
+- Added a scripted camera system for cutscenes, boss intros, and scripted reveals: keyframed camera paths are defined under `cutscenes/` (or inline) and played back for a player with the `cinematicCamera` mechanic (aliases `cinecam`, `camerapath`), supporting looping, per-leg easing curves, a packet-only `DISPLAY` camera or a `TELEPORT`-based fallback, and optional `onStart`/`onEnd` skills
+- Added the `cinematicCancel` mechanic (aliases `cinecancel`, `stopcinematic`) to stop an active cinematic early
+- Added the `isInCinematic` condition (aliases `incinematic`, `incine`, `cinematicactive`) and the `cinematic.active`, `cinematic.frame`, and `cinematic.progress` placeholders
+- Added the `/mm camera <pathId> add|remove` command for building camera paths in-game
+- Added `MythicCinematicStartEvent` (cancellable) and `MythicCinematicEndEvent` API events for addons
+- Fixed the `DISPLAY` camera mode not loading chunks along the camera path
+
+```yaml
+my_path_id:
+  duration: 100
+  easing: EASE_IN_OUT_CUBIC
+  points:
+  - "world,100,70,100,90,10"
+  - "~,0,5,-10,0,30,40"
+
+- cinematicCamera{path=my_path_id} @target
+```
+
+### NEW: clearpath
+- Added the `clearpath` mechanic (aliases `stoppath`, `clearnavigation`, `stopnavigation`), clearing the target mob's current navigation path
+
+```yaml
+- clearpath @self
+```
+
+### Mount Mode
+- Added a `mode` option to the `mount` and `summonPassenger` mechanics: `ADD` (adds as a passenger), `SET` (sets the passenger, fails if one already exists, previous default behavior), or `REPLACE` (replaces all current passengers)
+
+```yaml
+- mount{type=Wolf;mode=ADD} @self
+- summonPassenger{type=Horse;mode=REPLACE} @self
+```
+
+### OnDeath Aura Component
+- Added a `ce`/`cancelEvent` option to the `ondeath` aura component: on a successful on-death skill (Paper only), the death event is now cancelled and the entity revived instead of dying
+
+```yaml
+- aura{onDeathSkill=ReviveSkill;ce=true} @self
+```
+
+### Aura Component cancelOn* Flags
+- `cancelOnDeath`, `cancelOnCasterDeath`, `cancelOnTeleport`, `cancelOnChangeWorld`, `cancelOnGiveDamage`, and `cancelOnTakeDamage` can now be set on an individual aura component instead of only the aura line (#2254)
+
+```yaml
+- aura{auraname=Shield;duration=200;components=[
+    - ondamaged{cancelOnTakeDamage=true;ondamaged=BreakShield}
+  ]} @self
+```
+
+### Misc
+- `setProjectileDirection` now supports entity-target dispatch (e.g. `@target`) in addition to location targets (#2229)
+- Added `hitBlockConditions` (alias `hbcond`) to `missile`, `projectile`, and `slashProjectile`, letting conditions evaluated against the hit block decide whether the projectile is allowed to stop there
+- The `forEach` mechanic now exposes the current loop index via `<skill.var.index>`
+- The `delay` mechanic's `ticks` parameter now also accepts placeholders
+- `aura` merging can now override the attachment of an already-running instance instead of always keeping the original
+- Added the `firefly` particle type
+
+Conditions
+----------
+
+### NEW: isCancelled
+- Added the `isCancelled` condition (aliases `isCanceled`, `cancelled`, `canceled`), checking whether the triggering event is currently cancelled, e.g. after an earlier `cancelevent` in the same skill chain
+
+```yaml
+Skills:
+- cancelevent{}
+- message{m="blocked!"} ~onDamaged ?isCancelled
+```
+
+### NEW: skyLightLevel
+- Added the `skyLightLevel` condition, testing the sky light level (light from the sky only) at the target location
+
+```yaml
+- skylightlevel{l=10}
+```
+
+### entityType Condition: Nested Variant Matching
+- `entityType`/`mobtype` now accepts per-type constraints (`variant`, `color`, `style`, `mainGene`, `hiddenGene`, `biome`, `profession`, `crack`, `bodyColor`, `patternColor`, `pattern`) to match specific animal variants, villager professions/biomes, sheep/llama/shulker colors, iron golem crack state, tropical fish patterns, and more
+
+```yaml
+- entityType{type=[COW{variant=warm},SHEEP{color=rainbow}]}
+- entityType{type=VILLAGER{profession=librarian;biome=taiga}}
+```
+
+### Misc
+- Added a `shape` option (`SPHERE` default, `CYLINDER`, `SQUARE`) to `mobsInRadius`, matching the shape option already on the `EntitiesInRadius`/`EntitiesNearOrigin` targeters
+- Added the `angry` condition (alias `isAngry`) for bees, wolves, and vexes
+- Added the `pollinated` condition (aliases `isPollinated`, `hasNectar`) for bees
+- Expanded `isSheared` to also check bogged and snowmen
+- `variableContains` gained an `EXACT_ENTRY` (aliases `EXACTENTRY`, `EE`) compare type, matching a whole comma-separated entry instead of a substring
+- `heightAbove`/`heightBelow` now resolve their `height` value with the casting skill's metadata, so it accepts skill variables and other placeholders
+- Added the `inBounds` condition (aliases `withinBounds`, `insideBounds`); see `onEnterBounds` below
+
+Targeters
+---------
+
+### NEW: targetinvulnerable
+- Added the `targetinvulnerable` targeter option (default `true`); set to `false` to skip invulnerable entities (e.g. `Options.Invincible` mobs)
+
+```yaml
+@EntitiesInRadius{r=10;targetinvulnerable=false}
+```
+
+### mythic / vanilla Filters
+- Added `mythic` and `vanilla` as `target`/`ignore` filter values, restricting a targeter to only Mythic entities or only non-Mythic (vanilla) ones
+
+```yaml
+@EntitiesInRadius{r=10;target=mythic}
+@EntitiesInRadius{r=10;ignore=vanilla}
+```
+
+### NEW: Display/Interaction Target Filters
+- Added `targettextdisplays`, `targetitemdisplays`, `targetblockdisplays`, and `targetinteractions` filters (all default `true`), letting skills include or exclude text/item/block display and interaction entities
+
+### Misc
+- The `uuid` targeter now accepts a comma-separated list of UUIDs instead of only one
+
+Mobs
+----
+
+### NEW: Default Level
+- Added a top-level `Level` mob option (aliases `MobLevel`, `Options.Level`) setting the mob's default level, used whenever it spawns without an explicit one (spawner, `/mm mobs spawn`, totem, mob bullet, etc); accepts a fixed value or a `minTOmax` range rolled per spawn
+- Spawners with no `MobLevel` set now use the mob's own `Level` (or 1) instead of spawning level 0 mobs
+- Negative `LevelModifiers` values now work (previously silently ignored), so a stat can decrease per level
+- Mob level is never clamped below 1 anymore, including stray fractional levels from world scaling
+- A mob's saved level is read back correctly on reload/chunk-reload instead of being guessed from health
+
+```yaml
+MyBoss:
+  Type: ZOMBIE
+  Level: 5
+  LevelModifiers:
+    HEALTH: 50
+    MOVEMENT_SPEED: -0.005
+```
+
+### Misc
+- Added `DefaultMobOptions.PreventJockeyMounts`, `PreventConversion`, `PreventLeashing`, `PreventItemPickup`, and `NoDamageTicks` global defaults in `config-mobs.yml`; fixed `DefaultMobOptions.PreventVanillaDamage` never being read
+
+Triggers
+--------
+
+### NEW: onEnterBounds / onExitBounds
+- Added mob triggers that fire when a mob crosses into or out of an axis-aligned box defined by two corners (checked on the mob's timer clock; a mob spawning inside fires `onEnterBounds` on its first check). Corners accept a pin name, `world,x,y,z`, or `x,y,z`, and support placeholders/math
+
+```yaml
+Skills:
+- message{m="Entered the arena"} @World ~onEnterBounds{corner1=world,100,64,100;corner2=world,120,80,120}
+```
+
+Placeholders
+------------
+
+### NEW: min / max / clamp
+- Added `.min{amount=X}`, `.max{amount=X}`, and `.clamp{min=A;max=B}` meta placeholders for bounding a numeric placeholder or variable inline, instead of `variableSet`+`variableInRange` chains
+
+```yaml
+- setvariable{var=caster.spawn_chance;value=<caster.var.spawn_chance.clamp{min=0;max=100}>} @self
+```
+
+### Misc
+- Added `location.temperature` (aliases `l.temp`, `temp`), returning the adjusted biome temperature at a location
+- Added `absorption` (alias `absorb`), returning the scoped entity's current absorption (golden) health
+- `<skill.var.damage-type>` now falls back to the damage's tags (comma-joined) instead of the literal `SKILL` when no element is set; added `<skill.var.damage-tags>` for the raw tag list
+- Added `slot.item`, returning the item in an entity's equipment/inventory slot as a drillable item value supporting item meta-keywords
+
+Items
+-----
+- `BAG`-type items now default their stack size to 1 (still overridable via `Options.StackSize`)
+
+API
+---
+- Added `MythicLoadedEvent`, fired once the plugin has fully finished loading
+- Added `MythicCinematicStartEvent`/`MythicCinematicEndEvent` (see Cinematics System above)
+- `MythicTriggerEvent` now implements `Cancellable`
+- Added a `LootBag#give` overload taking a `BiFunction` so addons can override how drop items are added to a player's inventory
+- Added a `LootBag#give` overload taking a `BiConsumer` for custom handling of items that don't fit in the player's inventory
+- Fixed addon-registered placeholders being dropped when `MythicPlaceholdersLoadEvent` fired before the addon subscribed to it (#2214)
+- Restored the deprecated `SkillCondition#evaluateLocation(AbstractLocation)` overload for addon compatibility
+
+Compatibility
+-------------
+- Added support for Minecraft 26.2
+- Improved Folia handling across triggers, spawners, mechanics, projectiles, and particle batching (region-thread dispatch for `altitude`, `DEATH`/death-observer, random spawn, spawner ticking, mechanic entity state, projectile `onHit`, and scheduler usage)
+- Fixed `~onMount`/`~onDismount` throwing `NoClassDefFoundError` on 1.20.1
+- Fixed `EntityKnockbackEvent` breaking plugin load on 1.20.4
+- Fixed a snow golem entity-type lookup crash and guarded breeze projectile detection on pre-1.21
+
+Bug Fixes / Other
+-----------------
+- Cached compiled math expressions in placeholders, conditions, and variable math for up to ~20x faster evaluation
+- Reduced per-tick allocations in skill delay placeholders, targeters, and projectile packet dispatch
+- Optimized packet-bullet rotation parsing, entity-teleport packets, AoE condition location resolution, and boss bar range checks
+- Optimized player-movement tracking with a lock-free per-player location holder instead of cloning `Location` on every move event
+- Reduced target-list copying in hot `SkillMetadata` clones
+- Replaced chunk iteration with a direct AABB spatial query in `getEntitiesNearLocation`, with NaN/Infinite-coordinate guards and finite world-height bounds
+- Made `VariableRegistry`/`PlayerVariableRegistry` lock-free and stopped firing `MythicPlayerVariableSetEvent` twice per bulk-write entry
+- Reduced per-tick allocations across projectile, packet-render, and damage-trigger hot paths
+- Kept `VariableRegistry`'s backing map a `ConcurrentHashMap` after Gson deserialization instead of rebuilding it as Gson's `LinkedTreeMap`
+- Shared a single `WorldUnloadEvent` listener across all active projectiles instead of one per projectile
+- Skipped allocating a knockback-resistance `AttributeModifier`/UUID per hit in `doDamage` unless actually needed
+- Optimized the packet-entity renderer's per-tick player iteration and switched packet yaw/pitch to primitive storage
+- Replaced Stream pipelines with plain loops in `ILocationSelector` filtering
+- Removed throwaway list allocations in `PacketEntityRenderer.sendPacket`
+- Cut projectile per-tick packet dispatch overhead and cached entity UUIDs during target evaluation
+- Cut roughly a second off every `/mm reload` by caching jar annotation scans and skipping a per-item exception when no shield color is set
+- Sped up `/mm reload` further by narrowing config lookup-cache invalidation to just the affected section
+- Reduced per-tick target-evaluation overhead in projectile hit detection
+- Reduced redundant block-state lookups during projectile collision checks
+- Reduced allocations in projectile target buffering
+- Optimized async combat skill dispatch (~1.9x faster)
+- Optimized `CylinderShape`/`SquareShape` targeters, `altitude` condition, and `stun` mechanic location lookups; `onDamaged` aura matching no longer allocates a `HashMap` per hit
+- Optimized `pin` targeter random picks and hoisted repeated lookups out of timer-skill and mob-clock loops
+- Fixed O(n²) slowdown in `targetinterval` batching and `RandomRingPointTargeter` picks as target counts grow
+- Fixed `particletornado`'s cloud particle sending invalid data and spamming "particle data is void" in console
+- Fixed a NullPointerException in skill cooldown checks and mechanic dispatch when a caster's entity was null
+- Fixed player-dropped items ignoring `DropGlowColor`/`DropBeamColor` (#2264)
+- Fixed `chainmissile` never bouncing to new targets (#2287)
+- Fixed `PreventSnowFormation` not applying during a snow golem's death animation (#2149)
+- Fixed self-target damage mechanics being blocked when PvP is disabled (#2285)
+- Fixed `hitbox`/`hitboxissubhitbox` conditions not seeing the ModelEngine sub-hitbox bone struck by a projectile
+- Fixed the command-skill executor never initializing when only MythicRPG was installed
+- Fixed `blockmask` masking only occluding blocks by default instead of all non-air blocks (#2277)
+- Fixed dark hologram text and a concurrency NullPointerException in hologram rendering (#2199)
+- Guarded `rayTraceBlock` against infinite/NaN or extremely distant coordinates that could hang the server
+- Fixed the `attack_cooldown` placeholder and `~onAttack` trigger reading the post-reset cooldown value on 26.1+ (#2257)
+- Fixed a memory leak where projectile bookkeeping used entity metadata instead of persistent data, leaking until server restart
+- Fixed `~onHear` never reacting to projectile sounds (arrows, thrown potions, etc.)
+- Fixed `bulletKillable` projectiles terminating on their first hit instead of only on death or despawn (#2272)
+- Fixed the `stat` aura component losing its applied modifier on `/mm reload` (#2271)
+- Fixed `ARROW` projectile bullets dealing shield-bypassing vanilla arrow damage alongside the intended skill damage (#2274)
+- Fixed mobs keeping vanilla random equipment when their chunk unloaded before the deferred equip pass ran
+- Fixed `recoil`'s `pitch`/`yaw` options not resolving placeholders/math expressions per cast (#2265)
+- Fixed disabled stats not loading their display/formatting config, which NPE'd Crucible item lore generation
+- Fixed `~onBowHit` not firing for Crucible's simulated projectile skill damage (#2261)
+- Fixed the `damage` mechanic's re-entrancy guard dropping onAttack-triggered damage even with `triggerSkills`/`ts=true` set (#2269)
+- Fixed attribute-mapped stat changes (e.g. from async aura ticks) applying off the entity's owning thread and corrupting the attribute tracker (#2270)
+- Fixed `hugSurface`/`heightFromSurface` on the `totem` mechanic not actually positioning the model (#2267)
+- Fixed orbital `bullet=DISPLAY` rendering off its circular path due to a forward offset (#2237)
+- Fixed the `DamageModifier` stat's `TriggerStats`/`ParentStats` reading from the wrong stat's config scope (#2213)
+- Fixed `dialog` element/button conditions being evaluated against the caster instead of the viewer, buttons ignoring their own conditions/cooldown, and dialogs not reloading on `/mm reload` (#2251)
+- Fixed the `sound` mechanic's `volume` not supporting placeholders
+- Fixed the `metaskill` mechanic evaluating its target skill's Conditions twice per cast (#2246)
+- Fixed random-spawn `maxHeight` not being bounded to the world's build height limit (#2260)
+- Fixed a Model Engine model being applied twice on spawn when `Model.Id` was configured
+- Fixed duration fields (e.g. `Cooldown`, mechanic durations) losing the ability to be given as a random range after duration units were added
+- Fixed the `speak{}` mechanic's speech-bubble hologram rendering dark
+- Fixed `tracklocation` and other location-targeted mechanics silently doing nothing when cast with an entity targeter
+- Fixed the `onDeath` aura component not firing on player deaths
+- Fixed the `onDeath` aura component never firing when `cancelOnDeath` was enabled
+- Fixed spawner warmup not arming when the async despawn clock finalized a kill as a despawn before the death event arrived (#2204)
+- Guarded entity teleports against unloaded/null worlds, including the `teleport` mechanic and a projectile's end skill on world unload
+- Fixed `recoil`/`fear` forced rotation kicking players with "Invalid move player packet received"
+- Fixed the `charged`/`creeperCharged` condition failing to load due to a constructor mismatch
+- Fixed generated `tooltip_style` component keys not resolving under the MythicCrucible pack namespace
+- Fixed damage modifiers that reduce entity vs entity damage to exactly 0 not applying unless `CancelDamageIfZero` was also enabled
+- Fixed a race between the async mob clock and `EntityDeathEvent` that could skip the `DEATH` trigger or miss a killer's `PreventMobKillDrops` on quick deaths
+- Fixed `shoot` mechanic's `ITEM` and `BLOCK` projectile types not working
+- Fixed `blockwave` throwing `LIGHT` blocks
+
 # 5.12.1
 
 General
