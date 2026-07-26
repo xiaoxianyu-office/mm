@@ -567,6 +567,14 @@ TheMusical:
   Material: COMPASS
 ```
 
+#### Repairable
+Allows the item to be repaired, if damageable, in an anvil using the specified ingredient. Also repairs equipped items in the body slot of a tamed wolf.
+```yaml
+RepairMe:
+  Id: stone_pickaxe
+  Repairable:
+  - STICK
+```
 
 ## Examples
 More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
