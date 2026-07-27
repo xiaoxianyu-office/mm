@@ -66,7 +66,7 @@ the signal, and so on.
 Links to triggers added by addon plugins. Any triggers from these links will not work without that plugin installed.
 
 - [Mythic Crucible](https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/Skills/Triggers)
-- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Skills/Triggers)
+- [Mythic Enchantments](https://git.mythiccraft.io/mythiccraft/mythicenchants/-/wikis/Triggers/Triggers)
 
 
 # Triggers 
