@@ -71,18 +71,22 @@ example_item:
 ```
 
 #### CustomModelData
-Sets the CustomModelData tag on the item. `Model` is also another alias for `CustomModelData`.
+Sets the CustomModelData component on the item. `Model` is also another alias for `CustomModelData`.
+
+In addition to a regular number, other data types can be specified by prefixing the value with `type/`, similar to [NBT](#nbt). CustomModelData can also be a list.
 ```yml
 example_item:
   Id: leather_chestplate
   Display: <green>An Example Item</green>
-  CustomModelData: 12345
+  CustomModelData: 5
 ```
 ```yml
 example_item:
   Id: leather_chestplate
-  Display: <green>An Example Item</green>
-  Model: 12345
+  CustomModelData:
+  - float/1,2,3
+  - string/something
+  - boolean/true
 ```
 
 #### MaxDurability
@@ -404,17 +408,29 @@ MyTotemItem:
 
 #### Food
 Used to handle the [food component](https://minecraft.wiki/w/Data_component_format/food) of an item.  
-Required [Consumable](/Items/Items#consumable) to be set in order to work
+Required [Consumable](/Items/Items#consumable) to be set in order to actually consume a non-consumable item.
+```yaml
+MyThiccApple:
+  Material: apple
+  Display: 'Red Delicious'
+  Food:
+    Nutrition: 10
+    Saturation: 20
+    CanAlwaysEat: false
+```
 ```yaml
 NetheritePops:
   Material: NETHERITE_SCRAP
   Display: 'Delicious Scraps'
+  Consumable:
+    ConsumeSeconds: 0.5
+    HasParticles: true
+    Animation: EAT
   Food:
-    Nutrition: 2
-    Saturation: 2
+    Nutrition: 20
+    Saturation: 20
     CanAlwaysEat: true
 ```
-
 
 #### Equippable
 Used to handle the [equippable item component](https://minecraft.wiki/w/Data_component_format/equippable) of an item 
@@ -471,11 +487,11 @@ Used to handle the [tool item component](https://minecraft.wiki/w/Data_component
 | DefaultMiningSpeed | The default mining speed of this tool, used if no rule overrides it    | 1.0      |
 | Rules             | A list of rules for the tool                                            |          |
 
-| Rule Attributes    | Aliases | Description                                                   | Default |
-|--------------------|---------|---------------------------------------------------------------|---------|
-| materials          |         | A list of materials for which this rule applies. Can, optionally, also be a single block tag   |         |
-| speed              |         | If the material being mined matches, overrides the default mining speed   | 1.0     |
-| isCorrectForBlock  |         | If the material being mined matches, overrides whether or not this tool is considered correct to mine at its most efficient speed, and to drop items if the block's loot table requires it | false  | 
+| Rule Attributes    | Description                                                   | Default |
+|--------------------|---------------------------------------------------------------|---------|
+| materials          | A list of materials for which this rule applies. Can, optionally, also be a single block tag   |         |
+| speed              | If the material being mined matches, overrides the default mining speed   | 1.0     |
+| isCorrectForBlock  | If the material being mined matches, overrides whether or not this tool is considered correct to mine at its most efficient speed, and to drop items if the block's loot table requires it | false  | 
 
 ```yaml
 OBSIDIAN_BREAKER:
@@ -569,11 +585,211 @@ TheMusical:
 
 #### Repairable
 Allows the item to be repaired, if damageable, in an anvil using the specified ingredient. Also repairs equipped items in the body slot of a tamed wolf.
+
+Used to handle the [repairbale item component](https://minecraft.wiki/w/Data_component_format#repairable).
 ```yaml
 RepairMe:
   Id: stone_pickaxe
   Repairable:
   - STICK
+```
+
+#### PiercingWeapon
+Available on Minecraft 1.21.11 and newer. Allows an item's melee attack to pierce targets. `Knockback` controls whether targets are knocked back, while `Dismounts` controls whether hit targets are dismounted.
+
+Used to handle the [piercing_weapon item component](https://minecraft.wiki/w/Data_component_format#piercing_weapon).
+```yaml
+MyThiccSpear:
+  PiercingWeapon:
+    Knockback: true
+    Dismounts: false
+    Sound: item.crossbow.shoot
+    HitSound: entity.arrow.hit_player
+```
+
+#### KineticWeapon
+Available on Minecraft 1.21.11 and newer. Allows the item to perform a kinetic charge attack. Its condition groups control when the attack can damage, knock back, or dismount a target.
+
+Used to handle the [kinetic_weapon item component](https://minecraft.wiki/w/Data_component_format#kinetic_weapon).
+
+| Tag                    | Description                                                                                          | Default |
+|------------------------|------------------------------------------------------------------------------------------------------|----------|
+| ContactCooldownTicks   | The cooldown, in ticks, before the weapon can make contact with a target again                       | 10       |
+| DelayTicks             | The delay, in ticks, before the kinetic attack begins                                                | 0        |
+| ForwardMovement        | The amount of forward movement applied during the attack                                             | 0.0      |
+| DamageMultiplier       | The multiplier applied to the attack's damage                                                        | 1.0      |
+| Sound                  | The sound played when the kinetic attack is used                                                     | Optional |
+| HitSound               | The sound played when the kinetic attack hits a target                                               | Optional |
+| DamageConditions       | Conditions under which the attack can damage a target                                                |          |
+| KnockbackConditions    | Conditions under which the attack can knock back a target                                            |          |
+| DismountConditions     | Conditions under which the attack can dismount a target                                              |          |
+
+`DamageConditions`, `KnockbackConditions`, and `DismountConditions` use the following options:
+
+| Condition Attribute    | Description                                                                                          | Default  |
+|------------------------|------------------------------------------------------------------------------------------------------|----------|
+| MaxDurationTicks       | The maximum attack duration, in ticks, during which the condition can apply                           | Required |
+| MinSpeed               | The minimum speed required for the condition to apply                                                 | 0.0      |
+| MinRelativeSpeed       | The minimum speed relative to the target required for the condition to apply                          | 0.0      |
+
+
+```yaml
+MyThiccSpear:
+  KineticWeapon:
+    ContactCooldownTicks: 10
+    DelayTicks: 5
+    ForwardMovement: 0.9
+    DamageMultiplier: 1.25
+    Sound: item.mace.smash_ground
+    HitSound: item.mace.smash_air
+    DamageConditions:
+      MaxDurationTicks: 20
+      MinSpeed: 0.6
+      MinRelativeSpeed: 0.3
+    KnockbackConditions:
+      MaxDurationTicks: 10
+      MinSpeed: 0.4
+      MinRelativeSpeed: 0.2
+    DismountConditions:
+      MaxDurationTicks: 5
+      MinSpeed: 0.2
+      MinRelativeSpeed: 0.1
+```
+
+#### OminousBottleAmplifier
+Sets the amplifier of the Bad Omen effect granted by an ominous bottle.
+```yaml
+MyThiccOminousBottle:
+  Type: OMINOUS_BOTTLE
+  OminousBottleAmplifier: 4
+```
+
+#### PotDecorations
+Sets the items displayed on each face of a decorated pot. This also supports dropping custom sherds.
+
+Used to handle the [pot_decorations item component](https://minecraft.wiki/w/Damage_type).
+```yaml
+MyThiccPot:
+  PotDecorations:
+    Back: brick
+    Left: arms_up_pottery_sherd
+    Right: skull_pottery_sherd
+    Front: prize_pottery_sherd
+```
+
+#### UseRemainder
+Sets the item that remains after this item is used. Only works with Vanilla Items. 
+```yaml
+Item:
+  Id: pumpkin_pie
+  UseRemainder: sugar
+```
+
+#### Weapon
+Makes the item act as a weapon. `ItemDamagePerAttack` is the durability lost per attack, and `DisableBlockingForSeconds` is how long a blocking item is disabled when attacked.
+
+Used to handle the [weapon item component](https://minecraft.wiki/w/Data_component_format#weapon).
+```yaml
+MyThiccWeapon:
+  Id: stick
+  Weapon:
+    ItemDamagePerAttack: 2
+    DisableBlockingForSeconds: 0.5
+```
+
+#### Enchantability
+Sets the item's enchantability value for the enchanting table.
+```yaml
+MyThiccEnchant:
+  Enchantability: 5
+```
+
+#### BreakSound
+Sets the sound played when the item runs out of durability and breaks.
+```yaml
+MyThiccBreakSound:
+  BreakSound: "minecraft:block.glass.break"
+```
+
+#### JukeboxPlayable
+Sets the song played when the item is inserted into a jukebox.
+
+Used to handle the [jukebox_playable item component](https://minecraft.wiki/w/Data_component_format#jukebox_playable).
+```yaml
+MyThiccJukeboxSong:
+  Id: fermented_spider_eye  
+  JukeboxPlayable: "minecraft:thirteen"
+```
+
+#### NoteBlockSound
+Sets the sound played by a note block when this item is in a player head placed above it.
+
+Used to handle the [note_block_sound item component](https://minecraft.wiki/w/Data_component_format#note_block_sound).
+```yaml
+MyThiccNoteHead:
+  Id: player_head
+  NoteBlockSound: "minecraft:block.note_block.harp"
+```
+
+#### BlocksAttacks
+Allows the item to block attacks. Damage reduction entries select affected [damage types](https://minecraft.wiki/w/Damage_type) and control the blocked amount and angle. `ItemDamage` controls durability damage taken while blocking.
+
+Used to handle the [blocks_attacks item component](https://minecraft.wiki/w/Data_component_format#blocks_attacks).
+| Tag                    | Description                                                                                                                  | Default                        |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
+| BlockDelaySeconds      | The delay, in seconds, before blocking becomes active                                                                        | 0.0                           |
+| DisableCooldownScale   | Scales the cooldown applied when the item is disabled by an attack. If set to 0, this item can never be disabled by attacks. | 1.0                           |
+| DamageReductions       | A list of rules that control which damage is blocked and by how much                                                         | All damage is fully blocked   |
+| ItemDamage             | Controls the durability damage dealt to the blocking item                                                                    | Required                      |
+| HitBlockSound          | The sound played when an attack is successfully blocked                                                                      | None                          |
+| DisabledSound          | The sound played when blocking is disabled                                                                                   | None                          |
+| BypassedBy             | A damage type or damage-type tag that bypasses this component                                                                | None                          |
+
+Each entry in `DamageReductions` supports the following options:
+
+| Damage Reduction Attribute | Description                                                                                     | Default          |
+|----------------------------|-------------------------------------------------------------------------------------------------|------------------|
+| Type                       | A list of [damage types](https://minecraft.wiki/w/Damage_type) to which the rule applies        | All damage types |
+| Base                       | A fixed amount used when calculating the blocked damage                                         | Required         |
+| Factor                     | A multiplier used when calculating the blocked damage                                           | Required         |
+| HorizontalBlockingAngle    | The horizontal angle, in degrees, within which the attack can be blocked                        | 90.0             |
+
+`ItemDamage` supports the following options:
+
+| Item Damage Attribute | Description                                                                                          | Default |
+|-----------------------|------------------------------------------------------------------------------------------------------|---------|
+| Threshold             | The incoming damage threshold used when calculating durability damage                                | 0.0     |
+| Base                  | A fixed amount used when calculating durability damage                                               | 0.0     |
+| Factor                | A multiplier used when calculating durability damage                                                 | 1.5     |
+
+```yaml
+MyThiccShield:
+  Id: stick
+  BlocksAttacks:
+    BlockDelaySeconds: 0
+    DisableCooldownScale: 1
+
+    DamageReductions:
+    - Type: "#minecraft:is_projectile"
+      Base: 0
+      Factor: 1
+      HorizontalBlockingAngle: 90
+
+    - Type:
+      - "minecraft:player_attack"
+      - "minecraft:mob_attack"
+      Base: 0
+      Factor: 0.8
+      HorizontalBlockingAngle: 90
+
+    ItemDamage:
+      Threshold: 0
+      Base: 0
+      Factor: 1.5
+
+    HitBlockSound: "minecraft:item.shield.block"
+    DisabledSound: "minecraft:item.shield.break"
+    BypassedBy: "#minecraft:bypasses_shields"
 ```
 
 ## Examples
