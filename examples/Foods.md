@@ -15,5 +15,23 @@ donut:
   Skills:
   - skill{s=eatmeal} ~onConsume
 ```
-
 ![image](../uploads/66cd302e11d6e8fe2cc4a20b26f7f2e4/image.png)
+
+
+Netherite Candy
+--------------
+An example item that uses the [food](Items/Items#food) and [consumable](Items/Items#consumable) item components to make the normally non-edible item, edible. Using Mythic Mobs Free. 
+```yaml
+NetheriteCandy:
+  Material: NETHERITE_SCRAP
+  Display: 'Delicious Scraps'
+  Consumable:
+    ConsumeSeconds: 0.5
+    HasParticles: true
+    Animation: EAT
+  Food:
+    Nutrition: 20
+    Saturation: 20
+    CanAlwaysEat: true
+```
+![image](uploads/434a50c1df7835469c9eda2819f17ad0/image.png){width=368 height=111}
