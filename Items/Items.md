@@ -865,6 +865,47 @@ MyThiccShield:
     BypassedBy: "#minecraft:bypasses_shields"
 ```
 
+#### UseEffects
+
+Controls what happens while a player is holding right-click to use the item. (1.21.11+)
+
+Used to handle the [use_effects item component](https://minecraft.wiki/w/Data_component_format#use_effects).
+
+```yaml
+MyThiccEffect:
+  Id: stick
+  UseEffects:
+    CanSprint: true #Defauts to `false`
+    InteracVibrations: false #Defaults to `true`
+    SpeedMultiplier: 1.0 #Defaults to `0.2`
+```
+
+#### SwingAnimation
+
+Controls the item's attack swing animation. (1.21.11+)
+
+Used to handle the [swing_animation item component](https://minecraft.wiki/w/Data_component_format#swing_animation).
+
+```yaml
+MyThiccSwing:
+  Id: stick
+  SwingAnimation:
+    Type: WHACK #Defaults to `WHACK` but `NONE` and `STAB` are also available
+    Duration: 12 #Defaults to `6`. Measured in Ticks.
+```
+
+#### MinimumAttackCharge
+
+A single value from `0.0` to `1.0`. The item cannot attack until the attack cooldown has rechaged to at least this fraction. Vanilla spears use `1.0`, so they only attack at full charge. (1.21.11+)
+
+Used to handle the [minimum_attack_charge item component](https://minecraft.wiki/w/Data_component_format#minimum_attack_charge)
+
+```yaml
+MyThiccCharge:
+  Id: stick
+  MinimumAttackCharge: 1.0
+```
+
 ## Examples
 
 More item examples can be found in the [Examples](/examples/Common-Examples#items) section.
