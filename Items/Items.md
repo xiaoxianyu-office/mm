@@ -73,6 +73,15 @@ example_item:
     - There are some symbols, like <&sq>, that should never be put as is into a configuration. Use a placeholder!
 ```
 
+#### ItemName
+Used to set the [item_name item component](https://minecraft.wiki/w/Data_component_format#item_name).   
+Unlike [Display](Items/Items#display), it is not italic, does not count as a custom name for anvil or predicate checks, and suppports the same color formatting as [Display](Items/Items#display). 
+```yaml
+DirtyDiamond:
+  Id: diamond
+  ItemName: <#DAA06D>Dirt
+```
+
 #### CustomModelData
 
 Sets the CustomModelData component on the item. `Model` is also another alias for `CustomModelData`.
