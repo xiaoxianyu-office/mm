@@ -104,6 +104,15 @@ Defaults to `false`.
     FireResistant: true
 ```
 
+#### DamageType
+Changes the [damage type](https://minecraft.wiki/w/Damage_type) the item deals.   
+Used to handle the [damage_type item component](https://minecraft.wiki/w/Data_component_format#damage_type). (1.21.11+)
+
+```yaml
+  Options:
+    DamageType: spear
+```
+
 # Playerheads
 Only applicable to playerhead type items
 
