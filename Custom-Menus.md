@@ -57,23 +57,24 @@ Icons contain:
 - `Display`: the Display Name of the icon
 - `Lore`: a list of lines of lore
 - `Skills`: Skills executed when the button is pressed
-- `HideFlags`: Whether to hide all item flags, making things like attributes or enchantments not visible in the icon's tooltip. Defaults to `true`
-- `Hide`: A list of specific tooltip sections to hide, using the same [syntax as items](/Items/Items#hide). Only useful when `HideFlags` is set to `false`
+- `HideFlags`: Whether to hide all item flags, making things like attributes or enchantments not visible in the icon's tooltip. Defaults to `true`, or to `false` when a `Hide` list is present
+- `Hide`: A list of specific tooltip sections to hide, using the same [syntax as items](/Items/Items#hide). Setting it makes it the icon's flag list, so setting `HideFlags: true` alongside it still hides everything
 - `Glint`: Whether the icon has the enchantment glint visual effect, like the [item option](/Items/Options#glint). Defaults to `false`
 - `Enchantments`: A list of enchantments applied to the icon, using the same [syntax as items](/Items/Enchantments)
+- `TooltipStyle`: The resource location of the icon's custom tooltip sprites, like the [item component](/Items/Items#tooltipstyle). Requires Paper 1.21.3 or newer
 
 ```yaml
     SWORD_BUTTON:
       Mapping: S
       Material: DIAMOND_SWORD
       Display: 'Epic Sword'
-      HideFlags: false
       Hide:
       - ATTRIBUTES
       Glint: true
       Enchantments:
       - SHARPNESS 5
       - KNOCKBACK 1
+      TooltipStyle: minecraft:verycooltooltip
 ```
 
 ### Modifying a Menu

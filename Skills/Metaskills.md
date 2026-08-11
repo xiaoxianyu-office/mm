@@ -19,6 +19,7 @@ The syntax of a Metaskill is the following:
 ```yaml
 internal_skillname:
   CancelIfNoTargets: [true/false]
+  Hidden: [true/false]
   Conditions:
   - condition1
   - condition2
@@ -64,6 +65,18 @@ If you want to execute a specific metaskill in any way, you will have to use its
 ## CancelIfNoTargets
 If the metaskill should cancel its execution if no eligible targets are provided to it.  
 Defaults to `true`.
+
+
+## Hidden
+If the metaskill should be left out of command suggestions, such as the ones for `/mm test cast`. Useful for
+internal skills that are only ever called by other skills. The skill stays fully usable by its Internal SkillName.
+Defaults to `false`.
+```yaml
+my_utility_skill:
+  Hidden: true
+  Skills:
+  - message{m="Registered, but not suggested by /mm test cast"}
+```
 
 
 ## Conditions
