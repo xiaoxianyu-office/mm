@@ -11,9 +11,14 @@ example_item:
 These options are applicable to all items:
 
 #### Repairable
-Sets the repair cost of the item to maximum, making it completely uneditable in anvils and/or enchantment tables.  
-Will override the RepairCost option.  
-Defaults to `false`.
+Sets whether the item can be repaired.  
+When set to `false`, the repair cost of the item is set to maximum, and the RepairCost option is overridden.
+In an anvil this blocks repairing the item with materials, combining it with another of the same item, and
+applying enchanted books to it. Renaming is unaffected, and a grindstone resets the cost.  
+Defaults to `true`.  
+Not to be confused with the [Repairable](/Items/Items#repairable) item component, which instead sets which
+items can repair this one. Setting this to `false` also blocks that component, since the anvil rejects the
+operation on cost before it checks the repair materials.
 ```yaml
   Options:
     Repairable: false
@@ -21,7 +26,7 @@ Defaults to `false`.
 
 #### RepairCost
 Sets the repair cost of the item.  
-If set to less than 0, the vanilla one will be used.  
+If left at `-1`, the vanilla one will be used. Any other value is applied as-is, including other negative numbers.  
 Defaults to `-1`.  
 ```yaml
   # Not an option, apparently, but kept here because of repairable
@@ -102,6 +107,15 @@ Defaults to `false`.
 ```yaml
   Options:
     FireResistant: true
+```
+
+#### DamageType
+Changes the [damage type](https://minecraft.wiki/w/Damage_type) the item deals.   
+Used to handle the [damage_type item component](https://minecraft.wiki/w/Data_component_format#damage_type). (1.21.11+)
+
+```yaml
+  Options:
+    DamageType: spear
 ```
 
 # Playerheads

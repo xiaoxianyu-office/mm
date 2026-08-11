@@ -108,10 +108,17 @@ Allows non-despawning mobs to heal once the chunk they are in gets reloaded. Def
 ```
 
 #### Hidden
-If true the mob will not show up in commands or menus, useful for template mobs. Defaults to `false`
+If true the mob will be left out of command suggestions and the mob browser menu, useful for template mobs
+and internal utility mobs. Defaults to `false`.
+
+The mob stays fully usable by its internal name, and `/mm mobs list` still lists it. `/mm mobs list` is the
+one place that shows every loaded mob, hidden or not.
+
+**This is a top-level mob key, not an `Options:` key.** Nesting it under `Options:` does nothing.
 ```yml
-  Options:
-    Hidden: true
+example_mob:
+  Type: ZOMBIE
+  Hidden: true
 ```
 
 

@@ -952,8 +952,8 @@ Items
 - Added `UseRemainder`
 - Added `BreakSound`
 - Added `Instrument`
-- Added `Enchantable`
-- Added `RepairableBy`
+- Added `Enchantability`
+- Added `Repairable`
 - Added `OminousBottleAmplifier`
 - Added `PotDecorations`
 - Added `banner_patterns`
@@ -968,7 +968,7 @@ AnItem:
     DisableBlockingForSeconds: 0.5
   JukeboxPlayable: "minecraft:thirteen"
   UseRemainder: ADifferentItem
-  RepairableBy:
+  Repairable:
   - STICK
   PotDecorations:
     Back: brick

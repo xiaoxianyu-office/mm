@@ -73,6 +73,15 @@ example_item:
     - There are some symbols, like <&sq>, that should never be put as is into a configuration. Use a placeholder!
 ```
 
+#### ItemName
+Used to set the [item_name item component](https://minecraft.wiki/w/Data_component_format#item_name).   
+Unlike [Display](Items/Items#display), it is not italic, does not count as a custom name for anvil or predicate checks, and suppports the same color formatting as [Display](Items/Items#display). 
+```yaml
+DirtyDiamond:
+  Id: diamond
+  ItemName: <#DAA06D>Dirt
+```
+
 #### CustomModelData
 
 Sets the CustomModelData component on the item. `Model` is also another alias for `CustomModelData`.
@@ -138,6 +147,17 @@ example_item:
   Id: leather_chestplate
   Display: <green>An Example Item</green>
   Amount: 1
+```
+
+#### Hidden
+If true the item will be left out of command suggestions, `/mm items list`, and the item browser menu. Useful for
+template items and internal utility items. The item stays fully usable by its internal name. Defaults to `false`.
+
+Note that this is a top-level item key, not an `Options:` key.
+```yml
+example_item:
+  Id: leather_chestplate
+  Hidden: true
 ```
 
 #### Options
@@ -276,6 +296,8 @@ Used to handle the [glider component](https://minecraft.wiki/w/Data_component_fo
 MyItem:
   Glider: true
 ```
+> The value is not read: the item glides as long as the key is present, so `Glider: false` still applies it.
+> Remove the key entirely to disable gliding.
 
 #### Group
 
@@ -622,6 +644,26 @@ LegendarySword:
     DropBrightness: 15
     DropClientSide: false
 ```
+
+#### Repairable
+Sets which items can repair this one in an anvil.  
+Used to handle the [repairable component](https://minecraft.wiki/w/Data_component_format/repairable) of an item.  
+Accepts a list of item ids, a single item id, or an item tag prefixed with `#`. Entries without a namespace are
+assumed to be `minecraft:`.
+```yaml
+MySword:
+  Id: DIAMOND_SWORD
+  Repairable:
+  - EMERALD
+  - GOLD_INGOT
+
+MyOtherSword:
+  Id: DIAMOND_SWORD
+  Repairable: '#planks'
+```
+> Not to be confused with [Options.Repairable](/Items/Options#repairable), which instead controls whether the
+> item can be repaired at all. Setting that option to `false` maxes out the item's repair cost, which stops the
+> anvil before it ever checks these materials, so the two should not be combined.
 
 #### Rarity
 
