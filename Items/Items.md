@@ -646,7 +646,7 @@ LegendarySword:
 ```
 
 #### Repairable
-Sets which items can repair this one in an anvil.  
+Sets which items can repair this one in an anvil. Also repairs equipped items in the body slot of a tamed wolf.   
 Used to handle the [repairable component](https://minecraft.wiki/w/Data_component_format/repairable) of an item.  
 Accepts a list of item ids, a single item id, or an item tag prefixed with `#`. Entries without a namespace are
 assumed to be `minecraft:`.
@@ -674,19 +674,6 @@ Can be COMMON, UNCOMMON, RARE and EPIC
 TheMusical:
   Rarity: EPIC
   Material: COMPASS
-```
-
-#### Repairable
-
-Allows the item to be repaired, if damageable, in an anvil using the specified ingredient. Also repairs equipped items in the body slot of a tamed wolf.
-
-Used to handle the [repairable item component](https://minecraft.wiki/w/Data_component_format#repairable).
-
-```yaml
-RepairMe:
-  Id: stone_pickaxe
-  Repairable:
-  - STICK
 ```
 
 #### PiercingWeapon
