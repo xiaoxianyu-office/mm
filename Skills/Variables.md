@@ -3,42 +3,42 @@ Variables are a system for storing information. Using the variables system, you 
 [[_TOC_]]
 
 # Variable Types
-Variables can be one of several types, which is defined when the variable is initialized using the
-[setVariable](/skills/mechanics/setvariable) mechanic. Types are generally interchangeable and MythicMobs will do its best to apply certain variables to whatever situation is asked, however it will throw
-an error if you try to use a variable type for something that makes no sense.
 
-| **Type** | **Description**                  |
-|----------|----------------------------------|
-| INTEGER  | A number with no decimal places. |
-| FLOAT    | A number with decimal places.    |
-| LONG     | A number with no decimal places. Can represent much larger numbers than an INT |
-| DOUBLE   | A number with decimal places. Can represent much larger numbers than a FLOAT | 
-| STRING   | A word or sentence.              |
-| BOOLEAN  | A value that can either be true or false |
-| SET      | A set of unordered and unique values |
-| LIST     | An ordered list of entries       |
-| MAP      | A list of key-value pairs        |
-| LOCATION | A location in the server         |
-| VECTOR   | A list composed of 3 DOUBLE values |
-| TIME     | A moment in time, represented by the number of milliseconds since the epoch |
+Variables can be one of several types, which is defined when the variable is initialized using the [setVariable](/skills/mechanics/setvariable) mechanic. Types are generally interchangeable and MythicMobs will do its best to apply certain variables to whatever situation is asked, however it will throw an error if you try to use a variable type for something that makes no sense.
+
+| **Type** | **Description** |
+|----------|-----------------|
+| INTEGER | A number with no decimal places. |
+| FLOAT | A number with decimal places. |
+| LONG | A number with no decimal places. Can represent much larger numbers than an INT |
+| DOUBLE | A number with decimal places. Can represent much larger numbers than a FLOAT |
+| STRING | A word or sentence. |
+| BOOLEAN | A value that can either be true or false |
+| SET | A set of unordered and unique values |
+| LIST | An ordered list of entries |
+| MAP | A list of key-value pairs |
+| LOCATION | A location in the server |
+| VECTOR | A list composed of 3 DOUBLE values |
+| TIME | A moment in time, represented by the number of milliseconds since the epoch |
 | METASKILL | An inline MetaSkill, parsed at the moment of the variable's creation |
-| ITEM     | An itemstack, that can be used to store and modify an item's data |
-
+| ITEM | An itemstack, that can be used to store and modify an item's data |
 
 # Variable Scopes
-A variable's "scope" is **where** that variable exists. Not all scopes are applicable for all situations (e.g. a condition may not have a caster, rather the caster is the target of the condition).  
 
-| **Scope**| **Where the Variable Exists**                                                               |
-|----------|---------------------------------------------------------------------------------------------|
-| SKILL    | On the current skill tree. Always temporary and will vanish when the current queue of skills ends. |
-| CASTER   | On the casting mob.                                                                                |
-| TARGET   | On the target of the mechanic/condition.                                                           |
-| WORLD    | The current world.                                                                                 |
-| GLOBAL   | The server.                                                                                        |
+A variable's "scope" is **where** that variable exists. Not all scopes are applicable for all situations (e.g. a condition may not have a caster, rather the caster is the target of the condition).
 
+| **Scope** | **Where the Variable Exists** |
+|-----------|-------------------------------|
+| SKILL | On the current skill tree. Always temporary and will vanish when the current queue of skills ends. |
+| CASTER | On the casting mob. |
+| TARGET | On the target of the mechanic/condition. |
+| WORLD | The current world. |
+| GLOBAL | The server. |
 
 # Usage
+
 All variable mechanics and conditions accept `var=` and `scope=` attributes to determine what variable you're wanting to work with and where. You can also shorthand the scope using `var=scope.variable_name`. The following examples would return the same thing:
+
 ```yaml
     - setvariable{var=target.somevariable; ...}
     - setvariable{var=somevariable;scope=target; ...}
@@ -49,7 +49,9 @@ All variable mechanics and conditions accept `var=` and `scope=` attributes to d
 ## Variable Types Behavior
 
 ### Number
+
 Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally the same
+
 ```yaml
   # Create your number variable
   - setvariable{var=skill.example;type=DOUBLE;val=1.5}
@@ -65,6 +67,7 @@ Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally th
 ```
 
 ### String
+
 ```yaml
   # Create your string variable
   - setvariable{var=skill.example;type=STRING;val="oh oh hello"}
@@ -80,6 +83,7 @@ Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally th
 ```
 
 ### Boolean
+
 ```yaml
   # Create your boolean variable
   - setvariable{var=skill.example;type=BOOLEAN;val=true} # can also be "1" or "yes" for "true". Every other value is "false"
@@ -95,6 +99,7 @@ Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally th
 ```
 
 ### Set
+
 ```yaml
   # Create a set
   - setvariable{var=skill.example;type=SET;val=1,2,hello}
@@ -111,6 +116,7 @@ Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally th
 ```
 
 ### List
+
 ```yaml
   # Create a list
   - setvariable{var=skill.example;type=LIST;val=1,2,hello}
@@ -127,6 +133,7 @@ Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally th
 ```
 
 ### Map
+
 ```yaml
   # Create a map
   - setvariable{var=skill.example;type=MAP;val="hello=world;mamma=mia"}
@@ -143,6 +150,7 @@ Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally th
 ```
 
 ### Location
+
 ```yaml
   # Create your location variable
   - setvariable{var=skill.example;type=LOCATION;val=world,1,2,3}
@@ -159,6 +167,7 @@ Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally th
 ```
 
 ### Vector
+
 ```yaml
   # Create your vector variable
   - setvariable{var=skill.example;type=VECTOR;val=1,2,3}
@@ -174,6 +183,7 @@ Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally th
 ```
 
 ### Time
+
 ```yaml
   # Create your time variable
   - setvariable{var=skill.simpleexample;type=TIME;val=1234}
@@ -197,6 +207,7 @@ Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally th
 ```
 
 ### MetaSkill
+
 ```yaml
   # Create your MetaSkill variable
   - setvariable{var=skill.example;type=METASKILL;val=[
@@ -209,9 +220,11 @@ Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally th
   # Execute the MetaSkill
   - vskill{variable=skill.example}
 ```
-> If the MetaSkill contains metamechanics (like skill or projectile), you must wait 15~21 ticks before executing it to prevent errors
+
+> If the MetaSkill contains metamechanics (like skill or projectile), you must wait 15\~21 ticks before executing it to prevent errors
 
 ### Item
+
 ```yaml
   # Create your Item variable
   - setvariable{var=skill.example;type=ITEM;val=<target.item.itemstack.HAND>}
@@ -238,44 +251,48 @@ Includes INTEGER, FLOAT, LONG and DOUBLE since their behavior is functionally th
   # to drop the item stored in the specified item variable
   - equip{item=itemvariable{variable=skill.item} head} @self
   - giveitem{item=itemvariable{variable=skill.item}} @self
-
 ```
-> In some versions that are older than 1.21.7 there are issues with
->  - Keeping an item variable persistently (on a persistent mob or on a player)
->  - Using <target.item.itemstack.HAND> to set the variable
-> 
-> The TLDR is, on the affected versions, when an ItemStack is serialized to a string and subsequently deserialized from said string, some data will be lost. If you are on one of the affected versions, you can still use this variable, but must:
-> - Only use it to store temporary data that is *not* supposed to be persistent across server restarts
-> - Not use the <target.item.itemstack.HAND> placeholder to set the variable, and instead use the slot: prefix as shown above
 
+> In some versions that are older than 1.21.7 there are issues with
+>
+> - Keeping an item variable persistently (on a persistent mob or on a player)
+> - Using \<target.item.itemstack.HAND\> to set the variable
+>
+> The TLDR is, on the affected versions, when an ItemStack is serialized to a string and subsequently deserialized from said string, some data will be lost. If you are on one of the affected versions, you can still use this variable, but must:
+>
+> - Only use it to store temporary data that is _not_ supposed to be persistent across server restarts
+> - Not use the \<target.item.itemstack.HAND\> placeholder to set the variable, and instead use the slot: prefix as shown above
 
 ## Variable Mechanics
+
 Variable mechanics are special mechanics that utilize variables. They can target entities, locations, or nothing, but the target can affect the outcome depending on what scope you're using. For example, trying to get a target-scoped variable will obviously fail if you're not targeting an entity.
 
-| Mechanic                                               | Description                                      |
-|--------------------------------------------------------|--------------------------------------------------|
-| [SetVariable](/skills/mechanics/setvariable)           | Initializes and sets a variable.                 |
-| [SetVariableLocation](/skills/mechanics/setvariablelocation)   | Sets a variable, whose value depends on the target location.                 |
-| [VariableUnset](/skills/mechanics/variableunset)           | Unsets the variable.                  |
-| [VariableAdd](/skills/mechanics/variableadd)           | Adds to a  variable.                      |
-| [VariableSubtract](/skills/mechanics/variablesubtract) | Subtracts from a  variable.               |
-| [VariableMath](/skills/mechanics/variablemath)         | Lets you do calculations with numeric variables. |
+| Mechanic | Description |
+|----------|-------------|
+| [SetVariable](/skills/mechanics/setvariable) | Initializes and sets a variable. |
+| [SetVariableLocation](/skills/mechanics/setvariablelocation) | Sets a variable, whose value depends on the target location. |
+| [VariableUnset](/skills/mechanics/variableunset) | Unsets the variable. |
+| [VariableAdd](/skills/mechanics/variableadd) | Adds to a variable. |
+| [VariableSubtract](/skills/mechanics/variablesubtract) | Subtracts from a variable. |
+| [VariableMath](/skills/mechanics/variablemath) | Lets you do calculations with numeric variables. |
 
 ## Variable Conditions
-| Condition                                        | Description                                    |
-|--------------------------------------------------|------------------------------------------------|
-| [VariableEquals](/skills/conditions/variableequals)    | Checks if a variable equals a given value.    |
-| [VariableIsSet](/skills/conditions/variableisset)     | Checks if a variable is set.                   |
+
+| Condition | Description |
+|-----------|-------------|
+| [VariableEquals](/skills/conditions/variableequals) | Checks if a variable equals a given value. |
+| [VariableIsSet](/skills/conditions/variableisset) | Checks if a variable is set. |
 | [VariableInRange](/skills/conditions/variableinrange) | Checks if a number variable is within a range. |
 | [VariableContains](/skills/conditions/VariableContains) | Checks if a variable contains a given value. |
 
 ## Variable Targeters
-| Targeter                                         | Description                                    |
-|--------------------------------------------------|------------------------------------------------|
+
+| Targeter | Description |
+|----------|-------------|
 | @[VariableLocation](/Skills/Targeters/VariableLocation) | Targets the location stored in the specified Location variable. |
 
-
 # Variable Placeholders
+
 Variables can be referenced in any MythicMobs mechanics or values that allow placeholders. This is usually done using the format `<scope.var.variable>`.
 
 Variable Placeholders can also use Meta Placeholders to change the output of the placeholder, and they can even chain Meta Placeholders together to obtain a "compound" effect.
@@ -283,24 +300,23 @@ Variable Placeholders can also use Meta Placeholders to change the output of the
 Find out more on the [Meta Placeholder Explanation](/Skills/Placeholders/meta-placeholders)
 
 # Variable Fallback
-When using placeholder variables, you can also specify a "default" value that will be used if the variable is undefined by using the syntax `<scope.var.variable|default>`.
+
+When using placeholder variables, you can also specify a "default" value that will be used if the variable is undefined by using the syntax `<scope.var.variable{default=[defaultvalue]}>`.
 
 ```yaml
-    - message{m="Hello there, <target.var.title|wanderer>"} @trigger ~onInteract
+    - message{m="Hello there, <target.var.title{default=wanderer}>"} @trigger ~onInteract
 ```
 
-In this example, the NPC would reply with "Hello there, wanderer" if
-right-clicked by somebody who had no "title" variable set on them.
-However, if we did this:
+In this example, the NPC would reply with "Hello there, wanderer" if right-clicked by somebody who had no "title" variable set on them. However, if we did this:
 
 ```yaml
     - setVariable{var=target.title;value="Sir"} @trigger ~onInteract
 ```
 
-...somewhere along the line, even with a different mob, the first mob
-would say "Hello there, Sir".
+...somewhere along the line, even with a different mob, the first mob would say "Hello there, Sir".
 
 # Nested Variable
+
 Variables can also be nested indefinitely: if this is done, the innermost variable would be resolved first and, from there, each would be resolved from innermost to outermost
 
 ```yaml
@@ -309,21 +325,26 @@ Variables can also be nested indefinitely: if this is done, the innermost variab
     - setvariable{var=caster.example_name;type=STRING;val=Hello There!} @self
     - message{m="<caster.var.<caster.var.hello>>"} @PIR{r=10}
 ```
+
 > In this example, the message would spell "Hello there!"
 
-> Due to a limitation of mythic's placeholder parser, using the same placeholder both "on its own" *and* inside another placeholder as a nested value is very dangerous, and will most likely result in the nested placeholder not being correctly parsed! 
-> For instance, this  
+> Due to a limitation of mythic's placeholder parser, using the same placeholder both "on its own" _and_ inside another placeholder as a nested value is very dangerous, and will most likely result in the nested placeholder not being correctly parsed! For instance, this
+>
 > ```yaml
 >  - message{m=<skill.var.test> <skill.var.<skill.var.test>>} # Don't do this!  
 > ```
-> Will have an uncertain outcome! To fix this, it is needed to change the variable name or to parse it beforehand  
+>
+> Will have an uncertain outcome! To fix this, it is needed to change the variable name or to parse it beforehand
+>
 > ```yaml
 >  - setvariable{var=skill.segment;type=STRING;val=<skill.var.<skill.var.test>>}
 >  - message{m=<skill.var.test> <skill.var.segment>} # Do this instead!
 > ```
 
 # [Mob Variables](/Mobs/Mobs#variables)
+
 Mobs can have some variable be already set once they spawn thanks to the [Mob Variables](/Mobs/Mobs#variables) field.
+
 ```yaml
 VariableZombie:
      Type: ZOMBIE
