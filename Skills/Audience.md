@@ -16,3 +16,6 @@ Of particular relevance is the `audience=@Targeter` attribute, that allows any e
     Skills:
     - effect:particles{particle=reddust;y=2;audience=@Owner} @self
 ```
+
+## [Execution Audiences](https://gist.github.com/Taiyou06/0cb4963bec081a8928ffdd54f8a5a44a)
+Audience-scope handling that persists through relogs, restarts, and the entire effect execution chain.
